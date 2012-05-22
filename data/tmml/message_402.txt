@@ -1,0 +1,7 @@
+Even I have similar doubts. By doing so, we are infact altering the model
+altogether. However, the variational inference theory tells like that. I am
+also searching a justification for that.
+See, here I have a doubt as to your undertsadning of the word 'inference'. I
+feel that you are referring to the word in the context of infering some
+results from the model for the unseen examples. Is that true? What ever the
+'inference', paper mentios is part of model building it self.

@@ -1,0 +1,11 @@
+It doesn't seem like there is a consensus about the best way to predict
+topics for unseen documents given a trained model (is there?), especially
+since different model training methods produce different outputs.
+Generally, since the models are unsupervised, if you have the free CPU
+cycles you might as well just retrain the model using the new data. As you
+suggest, this may be particularly true if the new documents don't share a
+lot of hidden topic structure with the original corpus.
+If you have new documents coming in constantly, you might want to look at
+some recent work on stream-based topic models:
+http://www.cs.utexas.edu/users/sugato/papers/topic-models-long.pdf
+-David

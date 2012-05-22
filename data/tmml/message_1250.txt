@@ -1,0 +1,8 @@
+Has there been any probabilistic topic models built that
+take document length into account?
+It seems reasonable that two terms that co-appear in
+a ten-word document should have a stronger correlation
+than another pair in a 500-word document.
+If I recall correctly, topic models assume the topics in a
+document are independent of the document length.
+Thanks,

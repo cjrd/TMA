@@ -1,0 +1,80 @@
+              PI: Mary Beth Ruskai, University of Massachusetts
+              Lowell
+DMS-0203211
+
+Abstract:
+
+ 
+              ***************************************************************
+
+This project
+              is concerned with a number of mathematical problems
+which arise when quantum
+              particles are used to process and/or
+transmit information.   The P.I. plans to
+              continue the analysis 
+and refinement of models of noise; these are important
+              in both
+quantum communication and error analysis in quantum computation. 
+              
+Work in quantum communication includes a proposal which may resolve
+the
+              long-standing question of whether or not entangled inputs can
+enhance the
+              capacity of quantum channels to transmit classical
+information.   The P.I.
+              also plans to construct new classes of error
+correcting codes as prototypes
+              for codes which can be designed 
+to deal with those errors to which a
+              particular implementation 
+of quantum computation is most vulnerable.  Such
+              codes could
+be combined with other techniques to reduced the overall
+              code
+length.   The P.I. will also consider a random Hamiltonian
+approach to
+              the analysis of the efficiency of a proposed scheme
+for adiabatic quantum
+              computation.   Finally, the P.I. plans to
+continue the study of metrics in
+              information geometry, and their
+connection to measures of purity, relative
+              entropy, and distances
+between states.
+
+It has now been established that
+              quantum particles have the potential
+to provide the basis for vastly more
+              powerful computers, and new methods
+of secure communication.  Although
+              building quantum computers remains
+a formidable experimental challenge, the
+              feasibility of several methods
+of quantum communication and encryption have
+              already been convincingly
+demonstrated.   However, it is also clear that all
+              practical 
+instrumentation is imperfect and subject to noise and errors.
+This
+              is not surprising; dealing with noise has long been an important
+facet of
+              classical communication.   However, quantum information devices
+are subject to
+              a much larger and more complex variety of errors arising
+from noise.   This
+              gives rise to new mathematical challenges.   This
+proposal deals with a number
+              of these questions.   Effective methods
+of dealing with noise are essential to
+              the success of the nation's
+ability to exploit the power of quantum theory for
+              next generation of
+computers and cryptographic protocols.
+
+ 
+              ***************************************************************
+
+-- 
+
+

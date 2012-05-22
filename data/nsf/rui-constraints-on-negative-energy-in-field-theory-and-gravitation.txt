@@ -1,0 +1,46 @@
+              The research discussed here deals with the implications of a very unusual form
+              of energy. The existence of this so-called "negative energy" is allowed by the
+              laws of quantum field theory, which describe the behavior of matter and energy
+              on microscopic scales. Since negative energy would have repulsive gravitational
+              effects, this work lies at the intersection of quantum field theory and
+              Einstein's theory of gravity, general relativity. The focus of the research is
+              the extended investigation of restrictions imposed by the laws of physics on
+              negative energy. These generalized restrictions would involve the placement of
+              constraints on the distribution of negative energy in both time and space. In
+              addition, the scope of the constraints would be extended to include the effects
+              of gravitation. Regions of negative energy also appear to be accompanied by
+              large fluctuations in energy density, which could perhaps lead to large
+              fluctuations in the gravitational fields produced by the negative energy. How
+              this would affect the description of gravity, given in Einstein's theory as the
+              curvature of the geometry of space and time, in these circumstances is
+              currently not well understood. It is hoped to investigate this issue as
+              well.
+
+These topics are of interest for several reasons. Situations involving
+              negative energy, such as the Casimir effect and squeezed states of light, have
+              been produced in the laboratory. The amounts of negative energy generated in
+              these experiments are extremely tiny. However, if the laws of physics impose no
+              constraints on negative energy, then one might be able to create large amounts
+              of it and thereby produce bizarre macroscopic effects. Such effects could
+              include: traversable wormholes (tunnels connecting otherwise distant regions of
+              space and time), warp drives (for faster-than-light travel), time machines for
+              travel into the past, violations of the second law of thermodynamics (e.g.,
+              refrigerators requiring no power sources), and the destruction of black holes
+              (the remains of collapsed dead stars). However, research by Larry Ford and the
+              author has shown that quantum field theory does impose some rather strong
+              restrictions on negative energy. These constraints have come to be known as
+              "quantum inequalities", and yield severe limitations on the macroscopic effects
+              of negative energy mentioned above. Loosely speaking, they say that large
+              negative energies can exist for only short periods of time. It has recently
+              been realized that even the currently known quantum inequalities, although
+              formulated as restrictions in time, can be used to rule out or constrain the
+              ways in which negative energy can be distributed in space as well. These
+              results, together with some explicit examples of spatial distributions of
+              negative energy which are allowed by the laws of physics, indicate that
+              negative energy must be subtly intertwined with positive energy in space. Must
+              this always be the case? A major focus of the proposed investigation will be to
+              narrow the gap between distributions which can be ruled out and those which are
+              definitely allowed. The latter will involve the construction and analysis of
+              additional explicit examples. This represents a continuation of my previous
+              research and essentially aims to extend the scope of all of these results.
+

@@ -1,0 +1,24 @@
+Brendan,
+I know of a couple recent papers that did some comparisons between
+LDA-based methods for classification and SVMs.
+- Jun Zhu and colleagues have some comparisons between MedLDA, sLDA, and
+LDA+SVMs in their MedLDA paper:
+http://www.cs.cmu.edu/~junzhu/pub/medlda_icml09.pdf
+- In a recent paper (in press), some colleagues and I did a fairly thorough
+empirical comparison between several LDA-based models and SVMs, for
+multi-label classification.  Here's the arXiv preprint:
+http://arxiv.org/abs/1107.2462
+With respect to the issue you mentioned regarding the number of training
+samples:
+In our work, we found that the performance of LDA-based models and SVMs was
+highly dependent on statistics of the dataset.  Briefly:
+- LDA-based methods (and in particular, the "Dependency-LDA" model), had a
+very clear advantage over SVMs for large scale corpora that have many
+labels and relatively little training data for most labels
+-  On datasets with fewer labels, and many training examples per label,
+SVMs had an  advantage over the LDA-based methods.
+We did not look at the performance of sLDA, so can't say anything
+definitively about sLDA vs. SVMs.  However, for some of the reasons we
+discussed in our paper, I wouldn't be surprised if SVM performance relative
+to sLDA increases as the amount of training data increases.
+-Tim

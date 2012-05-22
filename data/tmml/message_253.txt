@@ -1,0 +1,11 @@
+hi thomas and all,
+i wasn't able to recreate your problem on my computer.  i ran the
+following command:
+./ctm est ../ap/ap.dat 5 seed AP-TEST/ settings.txt
+and it worked fine.  is this what you tried?
+however, i did find a memory leak and a bug with "rand"
+initialization.  these are fixed and there is a new version of ctm-c
+on-line at
+http://www.cs.princeton.edu/~blei/ctm-c/index.html
+best,
+dave

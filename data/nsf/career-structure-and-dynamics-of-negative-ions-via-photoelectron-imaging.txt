@@ -1,0 +1,27 @@
+              
+In this project funded by the Experimental Physical Chemistry Program of the
+              Chemistry Division, Sanov will combine  femtosecond spectroscopy with
+              photoelectron imaging to monitor the evolution of molecular orbitals in the
+              course of chemical reactions. The initial systems to be studied include
+              isolated and hydrated sulfur-containing molecular anions, and cluster anions.
+              These are chosen for their practical importance and for serving as prototypes
+              for the development of the new methodology. Photodissociation and unimolecular
+              decomposition, dynamics at conical intersections, microscopic solvation, wave
+              packet evolution, and  bimolecular reactions in ionic clusters will be
+              investigated.  The results of this research will find immediate application in
+              modeling the structure and dynamics of negative ions and solutions. 
+
+Many
+              important chemical processes involve ionic reactions, and the reactivity is
+              affected strongly by interactions with the environment.  In this research
+              cluster ions are used as model micro-solutions for the studies of elementary
+              processes relevant to biological and environmental chemistry. The results will
+              provide insight into how the intermolecular interactions affect the behavior of
+              electrons and chemical bonding. Photoelectron imaging experiments will be
+              incorporated in the undergraduate Physical Chemistry program as a way of
+              providing the students with hands-on research experience.  A fast-track
+              Internet-based mechanism for publishing the results of student research will be
+              developed. Students will be trained in research techniques in preparation for
+              advanced studies and for entry into the scientific/technical workforce.
+
+

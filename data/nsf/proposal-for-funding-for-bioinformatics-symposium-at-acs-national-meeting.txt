@@ -1,0 +1,20 @@
+              The Analytical and Surface Chemistry program and the Office of Multidisciplinary
+              Activities provides support for the Symposium on Bioinformatics held at the ACS
+              National Meeting in San Francisco March 26-31, 2000.  The symposium is
+              organized by Dr. Robert Kennedy of the University of Florida for the American
+              Chemical Society.  Bioinformatics refers to the use of computer searching and
+              modeling to maximize utility of database information.  It is particularly
+              relevant to the analytical chemistry community where large volumes of data are
+              being generated on protein sequences, signal transduction networks and genomic
+              sequences.  This is a significant, emerging area of scientific endeavor.  The
+              success of Bioinformatics will help integrate multiple disciplines including
+              analytical chemistry, biology, biochemistry, biotechnology and computing.  The
+              explosive growth in high throughput analytical measurements has resulted in
+              correspondingly large data bases of information.  It is imperative that
+              effective means of making correlations and identifications with this data are
+              developed.
+
+The purpose of the symposium is to bring together scientists to
+              promote an understanding of this emerging field, to promote collaborations and
+              chart future directions.  The symposium speakers include members from academia,
+              the biotechnology industry, the chemical industry and manufacturers.

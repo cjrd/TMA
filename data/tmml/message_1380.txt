@@ -1,0 +1,1 @@
+Hi,   Is there somebody knows the detailed derivation from Eq. (74) to Eq. (76) in the paper? I have been struggled for this for several days, still unclear. The paper is in the attachment. Thanks for any suggestion.

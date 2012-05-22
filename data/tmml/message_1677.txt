@@ -1,0 +1,6 @@
+dear ayan
+a gibbs sampler for the models in that paper can be found in jonathan
+chang's "lda" package for R.  (this package implements many other
+models as well.)
+best
+dave

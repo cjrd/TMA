@@ -1,0 +1,18 @@
+I build very excellent twitter topic models in 2007. But people used it
+differently back then. You can see a visualization of the results (an entry
+into the NSF visualization contest) here:
+http://web.media.mit.edu/~azinman/landscapeOfWordsH264.mov
+And yes, I know there's a typo in the video.
+For parsing this kind of stuff (well, myspace really), I spent a while
+working on a tokenizer for real world text. The focus was on correct
+parsing, not speed. But its reasonably fast despite being dumb CS-wise.
+I recently opened sourced it with the rest of my current thesis work. You
+can find it here:
+http://bitbucket.org/azinman/defuse/src/tip/smgtk/tokup/
+The rest of this list may very well enjoy using that tokenizer or improving
+it. It is far more sophisticated than normal regex ones, but does not try to
+preserve sentence boundaries (if you need that). It also includes a bunch of
+word lists that I've been curating over the years.
+Aaron Zinman
+Fluid Interfaces Group
+MIT Media Lab

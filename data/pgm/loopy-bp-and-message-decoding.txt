@@ -1,0 +1,457 @@
+
+One of the more interesting stories in the
+field of probabilistic graphical model,
+relate to the connection between the
+algorithm of loopy belief
+propagation, and the problem of decoding
+messages sent on a noisy channel. This is
+a connection that was discovered fairly
+recently, and has proven to have a
+tremendous impact on both disciplines,
+that of probabilistic graphical models,
+and that of message decoding. So, let's
+understand this decoding problem. Imagine
+that I want to send K bits across a noisy
+channel. If I just go ahead and I easily
+send those k bits. Then it's impossible
+for me to know from the noisy bits that I
+received at the other end what the correct
+bits ought to have been because we don't
+know which ones got corrupted and which
+ones didn't. And so what people have
+developed is the notion of coding theory
+where those K bits are passed through an
+encoder and what we get at the end are N
+bits, where N is usually greater than K,
+and those are the bits that are actually
+transmitted across a noisy channel to give
+us a set of noisy bits, Y1 up to YN, which
+we now hope to be able to decode in a way
+that ideally gives us bits V1 up to VK
+that are close and hopefully completely
+accurate relative to the bits that were
+originally sent, U1 on up to UK. That's
+our message coding and decoding in a
+nutshell. And the rate of a code such as
+this is K. Over M. That is you send M.
+Bits of which K. Are actual information. The
+bit error rate that one gets, and that's a
+function of the channel itself, is the
+overall probability that a bit that we
+get. On this side, say the first bit, what
+is the probability that the first bit is
+correct? That is, the same as, the, as the
+original bit. And so the error rate is the
+total average of the probability that
+these are different across the K decoded
+bits. So, we can now think about different
+channels and their properties. And there
+is this very important notion called a
+channel capacity. So, let's first think
+about different error rates that a
+channel, different error modes that a
+channel might exhibit. So, here's
+something called the binary symmetric
+channel, often abbreviated BSC, and the
+binary symmetric channel says that when I
+send a zero, then with probabilit .9, I
+get a zero; but with probability 0.1, I
+get a one. And conversely with prob, when
+I send the one I get a one with
+probability 0.9 and the zero with
+probability of 0.1. You can see why it's
+called the binary symmetric channel
+because the error is symmetric between
+zero and one. A different error
+[inaudible] erasure channel, where the
+bits don't get corrupted they just get
+destroyed. Now the big difference between
+the binary erasure channel, abbreviated
+BEC, is that when a bit gets destroyed I
+know it. That is what I get at the end, a
+question mark, as opposed to a bit where I
+don't actually know if that was the
+original bit that was sent or a corrupted
+bit. Here I know that the bit was
+corrupted. And finally here is what's
+called a Gaussian channel where the noise
+that gets added on top of [inaudible] is
+actually analog noise, and so there's sort
+of a Gaussian distribution relative to the
+signal that was sent. And it turns out
+that these different channels have very
+different notions of what capacity means.
+And capacity will define exactly what
+implications that it has in the moment but
+information theorist The super smart
+people have computed the capacity for
+different kinds of channels that it turns
+out, that for example, the capacity for
+binary symmetric channel is zero, is a
+little bit over 0.5 where the capacity
+binary erasure channel is 0.9 where 0.9 is,
+is this probability on getting the correct
+bit. And if you think about that, it makes
+perfect sense that the capacity of the
+channels where you know the bits were
+erased is higher than the once you have
+figure out whether bits are right or wrong.
+So this is less a more benign type of
+noise. And the, what you see over here is
+the capacity of the Gaussian channel. And
+it's, it's an expression that involves
+things like the width of this Gaussian for
+example, the wider it is, the lower the
+capacity. Now Shannon, in the very famous
+result known as Shannon's theorem related
+the notion of channel capacity and
+bit error probability in a way that tells us
+[inaudible] that an extremely sharp
+boundary between codes that are feasible and
+codes that are infeasible. So let's look at the
+pictogram. The x axis is the rate of the
+code. Remember the rate was k over n. In
+the example that we gave, mm-hm, and this
+a rate in multiples of channel capacity.
+So this says once you define the channel
+capacity we can look at the rate of a code
+and each code will try for a different,
+could, could be in a different point on
+the spectrum in terms of the rate. On this
+axis, we have the bit error probability.
+So, obviously, lower is better in terms of
+big error probability. And what Shannon
+proved is that this region over here, the,
+the, the region that I'm marking here in
+blue. The attainable region is you could
+construct codes that achieve any point in
+the space. That is for any point in this,
+in this two dimensional space of rate and bit
+error probability, you could achieve that,
+that, you can construct a code. He didn't
+show it as a constructive argument. It was
+a, it was a nonconstructive argument, but
+he proved that there existed such codes.
+Conversely, he showed that anything that
+passes. On this side of the boundary, the
+forbidden region is just not attainable.
+That is, no matter how clever of a coding
+theorist you are, you could not construct
+a code that had a rate above a certain
+value, and bit error probability that was
+below a certain value, which is the shape
+of this boundary that we see over here.
+And you can see why, the channel
+capacity's called capacity. Because this
+is a multiple of one. So this was
+Shannon's Theorem, and it set up as we
+said a nonconstructive, proof, that the
+blue region was an attainable region, but
+the question is, how can you achieve
+something that's close. To the Shannon
+limit? [inaudible] And around, up to
+a certain point in time, the mid 90's,
+this was sort of the diagram of the kind
+of achieve what, what was achievable in
+terms of codes, and so this is a diagram
+we'll see several times from in a minute,
+so here is on the x axis we have the
+signal to noise ratio measured in dB and
+on the y axis we have the log of the bit
+error probability. And what you see are
+codes that were used, first up here, we
+see the uncoded, version. And you can see
+that the uncoded is not very good. It has
+very high, bit error rates. So higher here
+is worse bit error rates. So, very
+bad. And, of course, as the signal to
+noise ratio moves to the left, the error
+rate grows. And what you see over here, in
+these two other lines, are. >> The bit
+error rate. Sorry. The curves achieved by
+two of the NASA space missions Voyager and
+Cassini. As you can see there was a good
+improvement between Voyager and Cassini.
+>> Yes. >> 1977 to 2004. And then in May
+93 a revolution happened in coding theory.
+And this was a paper by Berrou et al. You can
+read the title on the paper. It was a
+shocking title, it says near Shannon limit
+error on correcting codes. And they call
+this turbo-codes. And initially,
+when they tried to submit this paper,
+people didn't believe them, that this was
+possible. Because this was so much better
+than any of the previous codes that had
+been proposed. And people said, no, this
+can't be, can't possibly be the case. And
+then they checked it, and it turned out
+that, in fact, their code worked. But
+nobody really understood why. Okay, so
+know you might wonder, well, why the heck
+am I telling you all this? What does it
+have to do with the probabilistic
+graphical models? [sound] [inaudible]. So
+why was this so surprising? Because if you
+look at the turbo codes, in terms of this
+diagram that I showed you, a minute ago,
+you can see that, over here, we have,
+again, this is, remember, the uncoded.
+This is the same kind of diagram, signal
+to noise in the X axis. Bit, log bit error
+probability in the Y axis. Here, once
+again, we have voyager, and Cassini
+there. And look at the turbo codes. The
+turbo codes are way to the left. Of any of
+these previous codes. Now again remember
+left is better. Left means that you're
+achieving the same bit error probability
+with a higher signal to noise ratio. So,
+so what is the magic of turbo codes? And
+this is where we bring ourselves back to
+probabilistic graphical models. Because
+you might be sitting there thinking, well,
+you know, fine. Coding theory's great, but
+this isn't a coding theory class, so what
+does this have to do with probabilistic
+graphical models? So to understand that,
+let's look at what turbo codes do. So
+turbo codes took the same set of bits that
+you want to transmit U1 up to UK.
+And they pass them through two encoders,
+encoder one and encoder two. And then
+those bits will pass through our noisy
+channel over here, so that what we get at
+the end is noisy versions of those two
+sets of bits. And what we'd like to do
+really coding is a probabilistic inference
+problem when you think about it because
+what it's trying to do, is it's trying to
+compute a probability distribution over
+the message bits given the noisy
+evidence y1 and y2 which are the noisy
+bits I receive on the channel. But instead
+of trying to solve this probabilistic
+inference problem exactly. What
+Berrou et al proposed in this turbo coding
+paper, is this sort of iterative approach,
+where we have a decoder that matches the
+first encoder. So decoder one matches
+encoder one. And decoder one takes these
+noisy bits that you get from encoder one
+after they pass through the noisy channel.
+And decoder two gets a separate set of
+bits, the bits that were passed through
+encoder two and then the noisy channel.
+And what happens, roughly speaking in
+turbo codes is that the two decoders
+start to communicate with each other. So
+decoder one looks at its bits and it
+doesn't exactly know what the correct bits
+are but it computes a posterior over those
+noisy bits and it takes the posterior over
+each of the noisy bits and it passes it.
+To decoder two, which now uses it as a
+prior over the values of the, of these
+target bits to the U. Combines it with the
+evidence from the noisy bits Y, and now
+computes a more informed posterior over
+the U's. Which it then sends to decoder
+one. And this process continues to
+iterate. Until convergence. So each
+decoder computes a posterior and passes it
+to the other decoder which uses it as a
+prior. And if you look at the, the
+implications of this iterative algorithm
+what happens. So you can see here is, is
+the, are the different values for turbo
+for turbo decoding. And what you see here
+again is the signal-to-noise ratio of the,
+the X-axis, the log bit error probability
+on the Y-axis. And you can that initially
+in the first iteration of turbo decoding;
+the curve is not that great. But then as
+the iterations improve, the bit error rate
+goes down. So for example, for a fixed
+signal to noise ratio, say here. The bit
+error rate goes down from here to here
+over iterations. And what you see is the,
+as the dark line at the bottom is the
+optimum bit decision, if we were to do
+correct probabilistic inference. And so
+the surprising part was how close this
+totally heuristic and unmotivated
+algorithm, as it seemed at the time, comes
+to the optimum of the bit decision. The
+revolution that happened in this field
+came up when other people realize, people
+like a Mikolis and Maki and Fay, realize
+that what really going on here, is that
+this algorithm that we saw over here is
+running a variant of loopy belief
+propagation. Because what going on here is
+that, each of these decoders. Is actually
+running exact inference over a network
+that is sort of tractable and then its
+passing messages. These [inaudible], these
+beliefs that are being passed. Are what we
+have, as the delta I j. Between in these
+case, these two components. Really, what
+is going on here are two decoders that are
+communicating with each other via
+processes, is exactly identical to
+loopy belief propagation. And this
+caused a revolution in the field in two
+different ways. Actually, it caused a
+revolution in two different fields. It
+caused a revolution in. The field of
+probabilistic graphical models. Because up
+until that point, people had known that
+you could pass loopy messages over the
+graph. In fact, this was an observation
+that was made as early as 1988, by
+Judea Pearl, when he wrote the seminal
+book that really introduced Bayesian
+networks to the field of artificial
+intelligence. And he wrote at the time
+that, sure, you can pass these messages
+over this loopy graph, but it doesn't, but
+you have no guarantees of convergence, and
+you have no guarantees that this gets the
+right answers. And so it's not, perhaps, a
+good idea. And from 1988 until the mid
+1990s, the algorithm had been completely
+abandoned. Because people said that it had
+these limitations so wasn't a good idea.
+So when. People realize that in the
+context of coding theory this algorithm
+which is obviously heuristic has all these
+potential limitations. Nevertheless
+succeeds in achieving performance. That
+looks. Like this. Then people said, wait a
+minute. If it works so well for decoding,
+maybe it's a good algorithm to think about
+after all. And from the mid 1990s until
+today, this set up a huge amount of work
+in the field of probabilistic graphical
+models on understanding when and why
+loopy belief propagation works as
+well as constructing improved versions of
+loopy belief propagations, some of
+which were, we briefly mentioned in this
+course. That's the first revolution. The
+second revolution occurred in the field of
+coding theory. What people said, well if. All
+that's going on is that we're running
+loopy belief propagation over a graph
+that is trying to compute the posterior
+over the U's, the message bits given, the
+noisy bits, the Y's. Well, we can construct
+lots of other codes and use those codes
+and run loopy belief propagation on
+the resulting graph. And sure enough, some
+of the more successful codes that are in
+use today are in fact not the, necessarily
+the turbo codes that Berrou et al
+originally come up with but a class of
+codes called load density parity checking
+codes that are actually really good in
+elegant match to loopy belief
+propagation. Now it turns out [inaudible]
+security checking codes were actually
+invented by Robert Gallagher in 1962. And
+since 1962, up until sort of the late'90s,
+they had been totally abandoned because
+they were computationally intractable to
+do in terms of exact probabilistic
+inference. But by realizing that one could
+run loopy belief propagation as a way of
+decoding, using these codes that
+reintroduced the codes into the field and
+now they're wildly successful and there's
+all sorts of variations on them and
+extensions and so on. So what are these
+parity checking codes? So, in a parity
+checking code we're actually sending two
+types of bits. These are original bits U,
+U1 up to U4. The original set of bits. Are
+just, the first set of bits are just the
+original message bits. So I denoted them
+here, even though X1 is actually identical
+to U1. I just wanted to denote
+specifically X1 is the sent bit. So X1 is
+just a copy of U1, X4 is a copy of U4. And
+once again, the Ys are the noisy. Bits
+that are received after transmission. On
+the other side, the x's that you see here
+on the bottom are parity bits. Parity bits
+are like check sums on a file. They look
+at [inaudible] they compute different,
+parity of the different subsets of the
+bits. So x5 here is the parity that is
+whether even or odd, zero if even and one
+if odd, of u1, u2 and u3. We'll see
+[inaudible]. X6 tests the parity of a
+different set of bits. U1, U2 and U4 and
+X7 does U2, U3 and U4. So, here we're
+sending four original bits and three
+parity bits. So, this, in total is a code
+whose rate is four over seven because
+there're seven bits sent of which four
+message bits or, [inaudible] four message
+bits. And, when you think about this, this
+really lends itself beautifully to a
+belief propagation algorithm, because you
+have these because you have these factors
+over here, these This factor over U1, U2,
+U3 and the receive bit Y5 and so messages
+are passed over a graph of [inaudible]
+that has these factors associated with it
+as well as these factors over the
+singleton U1 up to U4 separately. So this
+as an evidence Y1 up to Y4 separately. And
+so decoding is now done as loopy belief
+propagation where we have as we said the
+U1 cluster, U2, U3, and U4. These are my
+singleton clusters. And then these are the
+large factors. And, some of you will
+recognize this as a bethe cluster graph.
+Bethe Structure Cluster graph. And so this
+is just a list of applications. This is
+probably the, maybe the most, one of the
+most ubiquitous applications of
+probabilistic graphical models, in use
+today. Simply because it exists in so many
+instantiations of, you know, in many set
+top boxes. And, when you're doing digital
+video broadcasting in communications of
+mobile television, mobile telephones to
+satellites. Nasa missions, wireless
+networks and so on. So, one of. Really
+powerful applications of loopy belief propagation
+in probabilistic graphical models that arose, from this unexpected concourse of
+these two disciplines. So. Really you
+could say that loopy belief propagation,
+which was originally discovered or
+proposed by Judea Pearl in 1988, was
+actually rediscovered by practitioners of
+coding theory. These were not
+theoreticians of coding theory, these were
+people actually sat down and engineered
+codes. And understanding those turbo codes
+in terms of loopy belief propagation, and
+that was done by a bunch of more machine
+learning and information theory type
+people, led to the development of many,
+many new and better codes and the current
+codes are actually coming gradually closer
+and closer. To the Shannon limit, in a
+constructive as opposed to a theoretical
+way. And at the same time the resurgence
+of interest in belief propagation led us
+to much of the work that we see today in
+approximate inference and graphical
+models. As well as both on theoretical
+understanding side as well as on, on new
+algorithms that people are coming up with
+derived from that new understanding.

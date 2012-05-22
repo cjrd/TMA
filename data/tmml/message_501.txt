@@ -1,0 +1,7 @@
+Hello,
+Using trained CTM data, I would like to create a document-topic matrix where
+(d,t) is the probability of document d being assigned to topic t.
+I am unsure of how to take the variational means and variances to
+probabilities. Can anyone offer me some advice?
+Thanks,
+-Matthew

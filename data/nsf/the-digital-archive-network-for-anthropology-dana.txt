@@ -1,0 +1,54 @@
+              This award has established a digital library collection for anthropological
+              materials. Faculty, students, and staff affiliated with the Archaeology
+              Technologies Laboratory (ATL) and the World Wide Web Instructional Committee
+              (WWWIC) at North Dakota State University (NDSU) are developing and implementing
+              the pilot program for the Digital Archive Network for Anthropology (DANA), a
+              network infrastructure for the seamless linking of distributed databases with
+              content of relevance to the domain of anthropology. The PI's are actively
+              collaborating with other individuals and institutions to develop a management
+              process for the operation of the digital archive and the policies and practices
+              necessary for quality assurance. Through this
+collaboration, standards that
+              promote stability, interoperability, and reusability of materials and products
+              are being developed. A unique feature of this Archive is the inclusion of
+              accurate, measurable, three-dimensional (3D) models of the material objects
+              along with 2D images and digitized documents.
+Specific goals of the project
+              are as follows:
+- Refine the protocol for creating accurate, measurable 3D
+              models through digitization that can be retrieved, inspected, and analyzed;
+-
+              Develop applications and protocols to enable the sharing of data worldwide;
+-
+              Improve current Java applications and client servlets for data searching and
+              retrieval;
+- Continuously evaluate the efficacy of our Java applications and
+              our servlets;
+- Develop software modules to enable search and retrieval access
+              to linked databases by way of specially designed searching interfaces and
+              common search protocols;
+- Collaborate with colleagues across the country and
+              abroad to develop metadata compliant information structure for archiving and
+              accessing digital models;
+- Use eXtensible Markup Language (XML) as the
+              primary medium for information exchange;
+- Create an anthropology markup
+              language (AnthML) for facilitating information exchange;
+- Develop a series of
+              software tools that provide varying levels of morphometric analyses so users
+              can select the level of search and analysis appropriate to their needs;
+-
+              Establish a set of collaborating institutions that will develop and maintain
+              participating databases;
+- Establish a DANA Advisory Board;
+- Establish a set
+              of criteria for content standards and quality control;
+- Provide academic
+              training in all of the areas covered by ATL activities mentioned
+              above.
+State-of-the-art technology for digital archiving and distributed
+              networking is being employed to develop DANA, the content of which will be
+              available via the Internet and will promote sharing of data while still
+              protecting pre-published data and culturally sensitive objects and
+              information.
+

@@ -1,0 +1,19 @@
+Hi all --
+Yet another Twitter tokenizer.  I wrote this last year and it's served us
+well enough:
+http://github.com/brendano/tweetmotif#readme
+just pipe text into it, e.g.:
+head data/all_background | python twokenize.py
+It has a philosophy of absolutely no normalization; it just focuses on
+getting reasonable segments out of the data.  The system Aaron posted does
+much more normalization.
+I actually had the experience of trying to run unsupervised learning on
+Twitter via everyone's favorite quick-and-dirty tokenizer,
+lower().split(\W+).  Results were horrible.  For example, you need to be
+smart about punctuation in order to get laughter/emoticon topics.
+I believe there are many text machine learning experiments out there that
+fail because tokenization wasn't done well.  This may especially matter for
+social media data (because it is so messy) and also more for unsupervised
+than supervised learning (because you have no labels to paper over feature
+extraction errors; i.e. bad tokenizations).  But that is speculation.
+-Brendan

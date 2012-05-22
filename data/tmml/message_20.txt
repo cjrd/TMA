@@ -1,0 +1,15 @@
+Hello list,
+I'm trying to implement a "model quality" indicator for the LDA model.
+Any ideas? I haven't really understood well how the perplexity was
+calculated in Blei's paper, I thought of calculating that, but haven't
+found a solution yet. Also, I'm working on a generalization of the LDA
+model for hierarchical data (in my case, administrative procedures that
+are somehow "generated" by the laws they're referring to), so it would
+make sense to compare both models and - but would be far beyond my hopes
+- perhaps even approximate the optimal number of topics.
+Any ideas?
+By the way, I should also compare LDA with LSI, but I guess citing
+previous studies will work just fine in my master's thesis, as I think
+the precision/recall graphs are the only way to go. :)
+Best regards,
+Matteo Dimai

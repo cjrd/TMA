@@ -1,0 +1,28 @@
+              The principal goal of this proposed work is to develop proper orthogonal
+              decomposition (POD) as a viable complementary alternative to conventional
+              experimental modal analysis for vibration systems.
+
+Proper orthogonal
+              decomposition has been used for obtaining "energy modes," as opposed to normal
+              modes, from sensed system outputs.  Proper orthogonal decomposition can indeed
+              yield normal modes in lightly damped systems if the mass distribution is known.
+              This research aims to overcome the requirement of a known mass distribution,
+              estimate modal frequencies and damping factors and associate them with the
+              correct mode, expand the applicability to arbitrary excitations, and compare
+              the performance of POD with classical experimental modal analysis.  Auxiliary
+              objectives are the extension from 1-D distributed-parameter systems to 2-D
+              systems, and the application of POD to multi-modal nonlinear responses. The
+              research approach will involve theoretical analyses, numerical simulations, and
+              experiments.  Simulations and experiments will be used to test theoretical
+              developments on simple systems with analytical solutions, and also on systems
+              with complicated geometries.  If POD were sufficiently developed, it would
+              significantly enhance our ability to extract vibration parameters as a
+              complement to traditional modal analysis.  Experimental vibration facilities
+              are globally prevalent, geared for industrial problems of noise, performance,
+              and safety.  Even if POD were used in a fraction of such laboratories, the
+              total POD activity would be quite large.  It will be particularly advantageous
+              to systems for which sensed inputs are not available.  The project is geared
+              for a doctoral student's research program.  The project will also involve an
+              undergraduate researcher for applying POD and conventional modal analysis on
+              experimental systems
+

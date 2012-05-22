@@ -1,0 +1,24 @@
+Hi,
+There is a parallel implementation of LDA downloadable here:
+http://code.google.com/p/plda/downloads/list
+But, I don?t know if there is an online parallel LDA implementation.
+Have a good day,
+Belkacem
+_____
+De : topic-models-bounces at lists.cs.princeton.edu
+[mailto:topic-models-bounces at lists.cs.princeton.edu] De la part de suhas
+mathur
+Envoy? : 8 juillet 2011 10:00
+? : topic-models at lists.cs.princeton.edu
+Objet : [Topic-models] Looking for implementations of online,parallizable
+LDA
+Hello
+Does anyone know of implementations of LDA that can take in streaming data
+(i.e. an 'online' version of LDA, which doesn't get to see all the data at
+once), AND can be parallelized over multiple machines to speed up the
+running time?
+the web, I have come across code that does each of these two things
+separately, but unless I am missing something, I haven't yet come across
+implementations that allow for both.
+Thanks,
+Suhas

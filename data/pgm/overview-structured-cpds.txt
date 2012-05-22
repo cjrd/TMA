@@ -1,0 +1,176 @@
+
+So far we focused solely on the global
+structure of the distribution. The fact
+that you can take it and factorize it as a
+product of factors that correspond to
+subset of variables. But it turns out that
+you also have other types of structures
+that you might want to encode. And that is
+actually really important for real world
+applications. So, to motivate that, let's
+look at the tabular representation of
+conditional probability distributions,
+which is what we've used universally,
+until now, in the examples that we've
+given. So the tabular representation is
+one of these examples where we have, you
+know, a row for each assignment. So this,
+just a reminder, this is G with parents I
+and V. And here we have a row for each
+assignment of the parents that gives us
+exclusively enumerating all of the entries
+that correspond to the probabilities of
+the variable'g'. So this is great,
+because. You say well, what's the problem?
+I mean it sounds like a very reasonable
+and very understandable representation.
+Well, that's great. But now let's consider
+a more realistic example. For instance in
+a medical application where we might have
+a variable corresponding to cough. Oh,
+there is lots and lots of things that
+might make you cough. You might have
+pneumonia or the flu or tuberculosis or
+bronchitis. Or just a common cold. And by
+the time you finish enumerating all of the
+many things that might make you cough, you
+realize that the variable usually might
+have as many as ten or fifteen or even
+twenty parents for a variable such as
+fever. So that's, so when you think about
+what the implications of that are,
+relative to a tabular CPD, you realize
+that if we have, K parents. And let's
+assume, for the moment, that they're all
+binary, just for simplicity. And the
+number of entries in the CPT grows
+as 2^K, or O(2^K),
+depending on the number of variable,
+values of the child. So, essentially,
+these situations are more common than not.
+And that means the tabular representations
+are really not suitable for a lot of real
+world applications. So we have to think
+beyond that. So fortunately, there's
+nothing in the definition of a Bayesian
+network that imposes on us a fully
+specified table as the only representation
+of a conditional probability distribution.
+The only thing we need is that the CPD
+P(X) given y from 1 up to to y_k needs to
+specify distribution over a x for each
+assignment Y1 to YK, and it can do that
+completely implicitly. It can do that as
+a little piece of C code that looks at Y1
+up to YK and, and prints out a
+distribution over X. Now, fortunately, we
+don't usually have, two, or, sorry. Or in
+fact, we can use any function, in,
+parametrized or as a C routine or anything
+to specify a factor over the scope, XY1 up
+to YK. Such that, well, it has to be a
+probability of distribution over X. So it
+has to sum, so when you sum up all the
+values of X. If we're given assignment Y.
+One. To Y. K. It has to sum to one.
+Anything that satifies these criteria,
+these constraints is a legitimate
+representation of the CPD. So, like I said,
+fortunately, we don't usually have to
+resort to C-code to specify CPDs. The
+theory that the framework of statistics
+has defined for us a multitude of
+different representations of a conditional
+probability distribution given a set of,
+of conditioning variables. So some
+examples include deterministic CPD's
+where x is a, deterministic function of
+y_1 up to y_k. We have already seen a
+couple of examples of that. You can think
+we can define and we will define CPD's
+that have the from of what's called a
+decision tree or regression tree.
+A framework that some of you
+have seen before. You can think of CPDs
+that are logistic functions or more
+generally log linear models. We're going
+to talk about things that are noisy OR /
+noisy AND which are noisy version of the
+deterministic CPDs. And then, in the
+continuous case, we also have, frameworks
+that allow us to represent the probability
+distribution of a continuous variable on a
+set of continuous or discrete parents. And
+that is really critical, because,
+obviously, when you have a variable that
+takes on a continuum of values, you can't
+possibly write down a table that lists
+every single one of them. Now one of the
+things that are intertwined with the
+notion of structure within a CPD is a
+useful notion called context specific
+independence. And it turns out that this
+notion arises in some of the,
+representations of CPDs that we're going
+to talk about. Context specific
+independence is a type of independence
+where we have a set of
+variables, X, and a set of variables, Y,
+and a set of variables, Z. And then we
+have a particular assignment, C, which is
+an assignment to some set of variables,
+big C. So this is conditioning, this is an
+independence statement that only hold a
+particular values of the conditioning
+variable C as opposed to all values of
+the conditioning variable C. Now the
+definition of this is exactly as we have
+seen before. So, except that if you
+remember before we had z stays, when we
+were doing conditional independance given z
+we had the z stays on the right hand side
+of the conditioning bar everywhere, well
+now z and c. Stay on the right hand side
+of the conditioning bar in all of these
+forms of the independent statement. So
+let's look at why contact specific
+independence might arise, when we have
+particular internal structure within a
+CPD. So let's imagine, let's, let's
+consider the case that X is a
+deterministic or of Y1 and Y2. And the
+question is. What form of context specific
+independence holds when we have, X being a
+deterministic, X being this deterministic
+OR? So let's look at these
+statements one at a time, and here we have
+that Y2 is false. What happens
+when Y_2 is false? Well when Y_2 is
+false, X is the same as Y_1, in which
+case obviously they're not going to be
+independent. On the other hand what if Y_2
+is true? Then I don't care
+about Y_2 anymore because Y_two
+is true because x is true and so here we
+have a notion of specific independence.
+What about this one? I'm now asking about
+Y1 being independent of Y2, given two
+possible values of X. What happens when X
+is false? What do I know about Y1 and Y2?
+They're both false. Well if they're both
+false, then they're independent of each
+other, because if you tell me that one of
+them is false, I already know the other
+one is false, so they're independent. And
+so this is another context
+specific independence, that hold here.
+Does it hold if I tell you that X is true?
+No, because I don't know which of Y1 and
+Y2 made X true. And so this last one
+doesn't hold. And so, here are two context
+specific independencies that hold in the
+context of deterministic CPD that wouldn't
+hold, neither of these would hold for
+general purpose CPD. Wouldn't necessarily
+hold for general purpose CPD, where X,
+depending on Y1 and Y2.

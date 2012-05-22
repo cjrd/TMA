@@ -1,0 +1,127 @@
+Hi all,
+I'm sorry, the last message wasn't complete.
+Here is my problem :
+Since some weeks, i'm using the LDA c-code of David Blei on my data and
+it works well.
+But some days ago, i ran the LDA c-code on new data, and I got a
+segmentation fault error. I don't understand why. I don't have a large
+corpus and the data are almost the same as before. I use the following
+command :
+./lda est 0.5 3 settings.txt ldaQBgrilleInCA.txt seeded param-p3
+And the result is the following. I dont understand the segmentation fault at the end :
+number of docs    : 32
+number of terms   : 98
+initialized with document 26
+initialized with document 31
+initialized with document 16
+**** em iteration 1 ****
+document 0
+alpha maximization : -3505.61468   -36.87107
+alpha maximization : -1198.36544   -36.32425
+alpha maximization : -369.60430   -34.86559
+alpha maximization : -84.33980   -31.11409
+alpha maximization : 2.40739   -22.55010
+alpha maximization : 20.72273   -9.21123
+alpha maximization : 22.18838   -1.02387
+alpha maximization : 22.20155   -0.01002
+alpha maximization : 22.20155   -0.00000
+new alpha = 1.03142
+**** em iteration 2 ****
+document 0
+alpha maximization : -3711.07549   -38.94643
+alpha maximization : -1272.65037   -38.39921
+alpha maximization : -395.66245   -36.93697
+alpha maximization : -92.73898   -33.15823
+alpha maximization : 0.28500   -24.41891
+alpha maximization : 20.45163   -10.37212
+alpha maximization : 22.16911   -1.24468
+alpha maximization : 22.18673   -0.01401
+alpha maximization : 22.18673   -0.00000
+new alpha = 0.98368
+**** em iteration 3 ****
+document 0
+alpha maximization : -7772.78179   -79.97376
+alpha maximization : -2741.04431   -79.42289
+alpha maximization : -910.30770   -77.92734
+alpha maximization : -257.29472   -73.88784
+alpha maximization : -37.65045   -63.31213
+alpha maximization : 23.81933   -39.90718
+alpha maximization : 33.74989   -11.12342
+alpha maximization : 34.16722   -0.59157
+alpha maximization : 34.16821   -0.00148
+alpha maximization : 34.16821   -0.00000
+new alpha = 0.53270
+**** em iteration 4 ****
+document 0
+alpha maximization : -14237.42073   -145.27315
+alpha maximization : -5078.02220   -144.72070
+alpha maximization : -1728.92408   -143.21060
+alpha maximization : -517.67999   -139.05253
+alpha maximization : -93.70246   -127.53936
+alpha maximization : 39.87699   -97.67073
+alpha maximization : 69.96645   -44.27390
+alpha maximization : 72.76850   -6.19962
+alpha maximization : 72.80646   -0.09722
+alpha maximization : 72.80647   -0.00002
+alpha maximization : 72.80647   -0.00000
+new alpha = 0.32206
+**** em iteration 5 ****
+document 0
+alpha maximization : -19719.72492   -200.64996
+alpha maximization : -7059.86038   -200.09697
+alpha maximization : -2423.05362   -198.58191
+alpha maximization : -738.20558   -194.38271
+alpha maximization : -140.36187   -182.52811
+alpha maximization : 55.99806   -149.95376
+alpha maximization : 106.09503   -82.37430
+alpha maximization : 112.51747   -17.50342
+alpha maximization : 112.69531   -0.60515
+alpha maximization : 112.69550   -0.00068
+alpha maximization : 112.69550   -0.00000
+new alpha = 0.24484
+**** em iteration 6 ****
+document 0
+alpha maximization : -23516.96954   -239.00596
+alpha maximization : -8432.54973   -238.45275
+alpha maximization : -2903.81616   -236.93559
+alpha maximization : -890.89635   -232.71892
+alpha maximization : -172.51700   -220.71659
+alpha maximization : 67.66292   -186.90718
+alpha maximization : 132.38172   -111.91000
+alpha maximization : 141.97743   -28.93398
+alpha maximization : 142.34705   -1.45729
+alpha maximization : 142.34786   -0.00340
+alpha maximization : 142.34786   -0.00000
+new alpha = 0.21079
+**** em iteration 7 ****
+document 0
+alpha maximization : -26008.45677   -264.17250
+alpha maximization : -9333.21173   -263.61918
+alpha maximization : -3219.25487   -262.10097
+alpha maximization : -991.06830   -257.87555
+alpha maximization : -193.57462   -245.79870
+alpha maximization : 75.44352   -211.35086
+alpha maximization : 149.97401   -132.26344
+alpha maximization : 161.88813   -37.91691
+alpha maximization : 162.43347   -2.33267
+alpha maximization : 162.43521   -0.00802
+alpha maximization : 162.43521   -0.00000
+new alpha = 0.19338
+**** em iteration 8 ****
+document 0
+alpha maximization : -27604.61988   -280.29536
+alpha maximization : -9910.21757   -279.74198
+alpha maximization : -3421.33839   -278.22320
+alpha maximization : -1055.23921   -273.99299
+alpha maximization : -207.05303   -261.87517
+alpha maximization : 80.46668   -227.07189
+alpha maximization : 161.35286   -145.62799
+alpha maximization : 174.83684   -44.24631
+alpha maximization : 175.51676   -3.04881
+alpha maximization : 175.51943   -0.01304
+alpha maximization : 175.51943   -0.00000
+new alpha = 0.18373
+Segmentation fault
+Has anyone met the same problem?
+Thanks in advance
+Marie

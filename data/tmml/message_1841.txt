@@ -1,0 +1,4 @@
+Hi Yangqing -- if R (and its regression implementation) is an option, I recently looked at Jonathan Chang's nice lda package that includes sLDA code:
+http://cran.r-project.org/web/packages/lda/
+Best regards
+gregor

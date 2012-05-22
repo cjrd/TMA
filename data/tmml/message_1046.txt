@@ -1,0 +1,12 @@
+Edel,
+There was some discussion of this paper in an earlier thread  - see
+the archives for Jun 29.  It's not theoretically well-founded.
+Essentially, they "hacked" LDA with the IDF weights.  Which I have to
+admit is an intriguing idea to me - the idea of "hacking" an algorithm
+as you would "hack" a piece of hardware, both of them being in some
+sense "machines", but that's my overly analogizing brain in action.
+You might be interested in another paper discussed in that thread, Joe
+Reisinger's "Spherical Topic Models" paper
+(www.icml2010.org/papers/45.pdf), which uses IDF weights by building
+an LDA-like model around vMF distributions.
+Dave

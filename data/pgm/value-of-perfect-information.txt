@@ -1,0 +1,346 @@
+
+We showed how influence diagrams can allow
+an agent to make decisions regarding what
+course of action the agent should take,
+given a set of observations. But often, we
+want to answer a different type of
+question. Which is, what observations
+should I even make before making the
+decision? For example, a doctor
+encountering a particular patient might
+have to decide which set of tests to
+perform on that patient. Tests are not
+free, they cause pain to the patient, they
+come with a risk, and they cost money. So
+which ones are worthwhile, and which ones
+are not? The same kind of question comes
+up in many other scenarios. So, for
+example, if you're running a sensor
+network, which sensor should I
+measure? The sensor might require energy
+in order to transmit the information, and
+that might be something that we want to
+consider carefully. And there is many
+other examples of that. It turns out that
+the same framework of influence diagrams
+can also be used to answer that question
+using rigorous formal foundations.
+So how do we provide a formal semantics for
+the notion of the value of getting
+information or the value of making an
+observation? So, the, the, formal
+definition that one can provide for this
+is the value of perfect information, so
+this stands for value...of
+perfect information. About a variable X is
+the value that we have by observing X
+before choosing an action at A and perfect
+means that we observe X would perfectly
+without, without any noise. How do we
+give that a formal
+value? Well, if D was our original
+influence diagram before I had the
+opportunity to observe x. We can compare
+the value of d to the value of a different
+influence diagram which is the one where I
+introduce an edge from x to a. Because
+that tells me what the value of the
+situation would be, if, if I had that, the
+ability to make that observation. So we
+can now define the value of perfect
+information to be simply a difference
+between the maximum expected utility that
+I have in the situation where I have this
+observation. Minus the value of the
+expected utility to the agent in a
+scenario where I don't. So in this example
+that we presented before, we saw that we
+compared two decision situations, one
+where the agent has found the company
+without any kind of additional information
+about the value of the market and the
+other is where the agent gets to make an
+observation regarding the survey variable
+prior to making the decision whether to
+found the company. So we can compare the
+value of the decision making situation
+with a variable from S to F minus the
+value of the decision making situation
+assuming the agent makes optimal decisions
+of the original decision making situation
+D. And we can compare that and see how
+much the agent's gained by this and if you
+recall, we computed this to be 3.25 and
+this was two so the value of perfect
+information was 1.25. Which means that the
+agent should be willing to pay anything up
+to 1.25 utility points before, in order to
+conduct the survey because doing that will
+increase his expected utility. So let's
+look at some properties of the value of
+perfect information. So the first
+important property of the value of perfect
+information, is assuming that there is no
+cost to the information. So not counting
+in how much it might cost to conduct a
+survey. One can show that the value of
+perfection information is always greater
+than or equal to zero. So let's first go
+ahead and convince ourselves that this is
+true. So, let's look at this expression
+over here which compares the maximum
+expected utility between two different
+influence diagrams. And remember, that
+each of these is obtained by optimizing
+over a decision rule. This one is,
+optimizes the, the MU of the original
+decision, D, is optimizing a decision rule
+delta, which is a CPD of A given its
+current set of parents Z. And this one,
+the new influence diagram, is optimizing a
+decision rule delta, where A has Z as a,
+all the original parents Z. Plus an
+additional parent X. And the point that
+one, that becomes on this when you think
+of it this way is that this is strictly
+larger class of CPDs than this. That is
+any CPD. Of the form delta of A given Z,
+is also a CPD. Of the form delta of A
+given Z and X. Which means, any decision
+rule that I could have implemented in my
+original influence diagram, I can also
+implement in the context of my current
+influence diagram. And if it had a
+particular value there, it would still
+have that same expected utility varia-,
+value, in the original diagram. But to go
+back to our example for, for instance, if
+the agent. Has a decision rule that found,
+[inaudible] to found the company
+regardless of the value of the survey.
+That is still legitimate decision rule
+even when they get to observe the survey,
+and it would have exactly the same
+expected utility. And so that means that
+the set of decisions that I get to
+consider is just larger in the context of
+the richer, of the richer influence
+diagram. And therefore one cannot possibly
+lose by exploring a larger, a larger space
+over which to optimize. Okay. So now let's
+think about the second property which is
+when this value of perfect information is
+equal to zero. And this follows from very
+similar reason to the one that we just
+talked about. So if the optimal decision
+rule for D. For my original influence
+diagram B is still optimal for the
+extended influence diagram. Then I've
+gained nothing from the information. That
+is I, any, any decision that I could, any
+decision move that I could of applied
+before I could still apply. And therefore,
+there I gained nothing from this initial
+observation. And so this gives us a very
+clear notion of when information is
+useful. Information is useful precisely
+when it changes my decision. In the police
+one case. >> Which, thinking about this
+from the other perspective. If there is no
+ability for an observation to change my
+decision, there really is no point in
+making it. Let?s see how this intuition
+manifests in an actual decision making
+scenario. So let?s imagine that our
+entrepreneur has decided against founding
+a widget company, and is now starting to
+pick between two companies that he can
+choose to join. For each company, there is
+the state that the company is in, so S1 is
+that the company is not, doesn't have that
+great of a management, things are not
+necessarily going so well, so that's S1.
+S2 is medium and S3 is the company's doing
+great. And the same thing holds for both
+companies. We are assuming that the
+company funders have access to some of the
+information, to this information about the
+company state because they can do some
+very in depth [inaudible] diligence and so
+the chances of the company to get funding.
+Depends on the state of the company. So
+you can see that if the company's state is
+poor, S one, then the chances of getting
+funding are 0.1, whereas if the company's
+doing great, the f, chances of getting
+funding are 0.9. And we're assuming that
+the agent's utility is one if the company
+that he cho, that he joins. It's funded
+and zero otherwise. But now let's think
+about the two strategies that the agent
+can take without information. And so, if
+the agent chooses to join company one. One
+can see company one is That the expected
+utility now is 0.72 and the expected
+utility of company two which is not doing
+as great is only 0.33 which's you know, if
+you look at the state of the company, that
+makes perfect sense. Now what happen if
+the agents now get to make an observation?
+And specifically we're going to let the
+agent make the observation. Of S two,
+regarding S two. Which is, in this case
+the weaker of the two companies. So, the
+agent has a little mole inside the company
+and can get access to that information
+before making his decision. What happens
+then? Well. The, if you look at the
+utilities values, you can see that if
+company one is in state, sorry if company
+two is in state one. Then, which is a not
+unlikely scenario, it happen with
+probability 40%, the chances of getting
+funding are 0.1. And so the agents
+expected utility in this case. So the
+expected utility if. The agent chooses C2
+and S, and the state of the second company
+is S1 is 0.1. The expected utility if the
+agent chooses the second company and it?s
+doing moderately well is 0.4. Both of
+these are lower than 0.72 that the agent
+can guarantee on expectation if he chooses
+for company one; even without any
+additional information from company one.
+And so in both of these cases the agent is
+going to prefer to stick with his original
+Choice Of going with company one. It is
+only in the one scenario that, that we
+have where. S, where the second company is
+doing really great. Then, his expected
+utility from going with that company is
+0.9 because that's the chances of getting
+funding in this case. And in that case, he
+would prefer. The changes in opinion and
+go with C two. But that happens with very
+low probability, that only happens if
+probability is at 0.1. And so that means
+that the value of information here is
+going to be very low because although
+there is a situation in which the agent
+changes his mind, it?s a very unlikely
+scenario. And sure enough if you look at
+the expected utility in the influence
+diagram with that edge I just added, it
+only goes up from 0.7 to 0.743, which
+means that the agent shouldn't be willing
+to pay his mall and company too much money
+in order to get that information about
+company two. Okay. Now let's look at a
+slightly different situation. Where now,
+neither company is doing so great. So, you
+can see that now company one is also kind
+of this sort of rocky start up without a
+very good benefit structure and, and
+unclear business model. In this case what
+happens? So once again we can complete the
+expected utility of the two actions and
+now we can see that the expected utility
+of choosing company one is 0.35 as
+compared to the expected utility of
+company two which is 0.33. Now the
+decisions are much more balanced relate to
+each other and so you would think that
+there would be a much high value of
+information and the chances that the agent
+would change his mind are considerably
+larger. So let's work our way through that
+and see that once again if we consider
+adding this edge from the mole and company
+too, we can now see that the agent is
+going to want to change his mind either
+when he observes S2 or when he observes S3
+because both of these, both 0.4 and 0.9
+are larger than, than the expected utility
+that he gets from sticking company one.
+And now indeed the expected utility rate
+goes up in the case where we have the
+influence diagram and it goes up to 0.43
+which is a much more significant increase
+in the expected utility relative to what
+we have before because now there is more
+value to the information. We change, the
+agent changes their opinion in two out of
+three scenarios and that happens with
+probability 0.6. Now let's look at. Yea,
+the third scenario, where now we've
+changed the probability that the company
+gets funded. Now we're back in the bubble
+days of the internet womb and basically,
+pretty much every company gets funded with
+a pretty high probability. Even if their
+business model is totally dubious. And in
+this case, what happens so now we can once
+again compute the expected [inaudible] of
+C-1. Which is 0.788. The expected
+[inaudible] of C-2. Which is 0.779. And we
+can see that again these expect
+[inaudible] are really close to each
+other. And intuitively what that's going
+to mean is that even if the agent changes
+their mind. It doesn't make much of the
+difference in terms of their expected
+[inaudible]. So here we see that because
+of, in this case we can see that 0.8 which
+is their expected utility in the case of
+the observed s2. This value S2 is bigger
+than 0.788 and so they're going to pick.
+They're going to the sight to change their
+mind. And go from C1 to C2 and similarly
+for S3. But the actual utility games in
+this case are fairly small. And so now the
+utility, the expected utility that we have
+in this scenario, where the agent gets to
+observe this variable without, before
+making a decision is zero. Eight one four
+two which is only a fairly small increase
+over the 0.788 that they could have
+guaranteed themselves without making that
+observation. So once again, this is a case
+where as a promo in company two doesn't
+get that much money. But to summarize,
+influence diagrams provide a very clear
+and eloquent interpretation for what it
+means to make an observation as simply the
+vow, the difference in the expected
+utility value or the NU values rather
+between two influence diagrams. And this
+allows us to provide an intuition about
+when information is valuable and that is
+only when it is induces a change in the
+action in at least one context. And now
+quantitatively it means that the extent
+which information is valuable depends both
+on how much my utility improves based on
+that change and on how likely the context
+or in which I changed the decision.
+We showed how influence diagrams can allow an agent to make decisions regarding what course of action
+the agent should take given a set of observations but often we want to answer a different type of question
+which is observations should I even make before making the decision?  For example a doctor encountering
+a particular patient might have to decide what kind of test to perform on that patient.  Tests are not
+they cause pain to the patient, they come with a risk and they cost money.  So which ones are worthwhile
+and which ones are not.  The same type of decisions comes up in many other scenarios.  So for example,
+if you're running a sensor network, which sensor should I measure? The sensor might require energy in
+order to transmit the information, and that might be something we want to consider carefully, and there
+are many other examples of that.  It turns out that the same framework of influence diagrams can also
+be used to answer that question using rigorous formal foundations.  So how do we provide formal semantics
+for the notion of the value of getting information?  Or the value of making an observation?  So the,
+the, formal definition that one can provide for this is the value of perfect of information.  So this
+stands for value of perfect information...  about a variable x is the value that we have by observing
+x before choosing an action at A.  And perfect means we observe x with, um, perfectly, without any noise.
+So how do we give that a formal value?  Well, if D was our original influence diagram before I had the
+opportunity to observe x, we can observe that value of D to the value of a different influence diagram
+which is the one where I introduce an edge from X to A, because that tells me what the value of the situation
+would be if I had the ability to make that observation.  SO we can define the value of perfect information
+to simply be the difference between the maximum expected utility I have in the situation where I have
+this observation, minus the value of the expected utility to the agent in the scenario where I don't.f
+So in this example that we have presented before, we compared two decision situations, one where the

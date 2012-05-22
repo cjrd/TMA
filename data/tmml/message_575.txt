@@ -1,0 +1,7 @@
+Perhaps it's a philosophical point, but to what extent are learned
+hyperparameters overly dependent on the structure of the model? In such
+cases, can we really talk about topics as sharing the colloquial meaning of
+the word?
+I'd like to hear the thoughts of people on the list about this.
+Cheers,
+David

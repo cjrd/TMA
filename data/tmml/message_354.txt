@@ -1,0 +1,5 @@
+dear david,
+i have run this sampler both ways, and have not seen any problems with
+the former.  both schedules yield a valid markov chain.
+best,
+dave

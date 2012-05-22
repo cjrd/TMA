@@ -1,0 +1,9 @@
+Q2: A good place to start would be these 2 recent papers and their
+"related work" sections.
+Lau, Greiser, Newman, Baldwin (2011). Automatic Labelling of Topic
+Models. ACL-HLT 2011.
+http://www.aclweb.org/anthology/P/P11/P11-1154.pdf
+Lau, Newman, Karimi, Baldwin (2010). Best Topic Word Selection for Topic
+Labelling. COLING 2011.
+http://www.aclweb.org/anthology/C/C10/C10-2069.pdf
+suhas mathur wrote:

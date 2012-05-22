@@ -1,0 +1,11 @@
+Hi:
+Did anyone try running Hierarchical Dirichlet Process based LDA
+(HDP-LDA) on a large collection (> 3K) of small documents (document
+word counts < 10-20). Is there any effect of the document size on
+learning the number of topics? From a couples of experiments, I
+noticed that the document size has a limiting effect on the corpus
+wide topics. I was using the HDP-LDA model (Hierarchical Dirichlet
+Process, Teh 2006) with the Chinese Restaurant Franchise based Gibbs
+sampler (Chong Wang's implementation). Any thoughts on this??
+Thanks!
+Clint

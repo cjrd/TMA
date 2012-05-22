@@ -1,0 +1,26 @@
+In LDA, it is useful to allow both the alpha and beta priors to be non-uniform,
+and to learn them. See Accounting for burstiness in topic models
+by Doyle and Elkan, ICML 2009.
+http://idiom.ucsd.edu/~gdoyle/papers/doyle-elkan-2009-icml-paper.pdf
+"Learning the hyperparameters can provide information
+about the corpus: alpha indicates how semantically diverse
+documents are, with lower alpha indicating increased di-
+versity, while beta indicates how similar the topics are,
+with higher beta indicating more similarity between top-
+ics. Learning non-uniform values for the hyperparam eters
+allows di fferent words and topics to have di fferent
+tendencies; some topics can be more general than oth-
+ers (e.g., function words versus medical jargon), and
+some words can be likely to appear in more topics than
+others (e.g., words with multiple senses)."
+Abstract: Many diff erent topic models have been used
+successfully for a variety of applications.
+However, even state-of-the-art topic models
+suff er from the important fl aw that they do
+not capture the tendency of words to appear
+in bursts; it is a fundamental property of lan-
+guage that if a word is used once in a doc-
+ument, it is more likely to be used again.
+We introduce a topic model that uses Dirich-
+let compound multinomial (DCM) distribu-
+tions to model this burstiness phenomenon.

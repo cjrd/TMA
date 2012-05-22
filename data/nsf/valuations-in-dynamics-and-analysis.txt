@@ -1,0 +1,63 @@
+              Proposal Number: DMS-0200614
+PI: Mattias Jonsson
+
+ABSTRACT
+
+The principal
+              investigator will use valuations, 
+a tool from algebra, to study local
+              problems 
+in dynamics and analysis in two complex dimensions. 
+Valuations can
+              be visualized  concretely as the
+different ways that a sequence of points can
+              converge
+to the origin. In fact, they parameterize all the
+local data at a
+              point. Local phenomena in complex variables, 
+such as the singularity of a
+              plurisubharmonic functions 
+or the rate of convergence of an orbit to a fixed
+              point,
+can be effectively studied by observing the behavior along
+different
+              approaches to the point. Valuations constitute a
+very powerful tool for this
+              study. The success of the
+approach depends on the fact that the set of all
+              valuations
+at a point in two dimensions is a set that can be understood:
+it
+              is a tree in the sense of an infinite collection of real 
+intervals welded
+              together at branch points so that no cycles
+appear. This tree is a complicated
+              but manageable object
+and its one-dimensionality has striking
+              applications.
+
+Dynamical systems are mathematical models that are widely
+              
+used in virtually every science for any situation that
+undergoes a
+              time-evolution. Sir Isaac Newton invented
+calculus, or mathematical analysis,
+              for the study of the
+planetary system, a prime example of a dynamical
+              system.
+Much of mathematics has developed as a respond to the need
+to model
+              and understand the world around us.
+In this proposal the principal
+              investigator will use a tool
+from a different field of mathematics in order to
+              understand
+certain dynamical systems. One example of a system
+that can be
+              studied arises from numerical (iterative) 
+algorithms, and the study of the
+              dynamical systems in 
+this proposal will give information on the performance
+              of 
+the algorithms.
+

@@ -1,0 +1,19 @@
+It should be noted that the posterior distribution on the latent
+variables obtained via variational methods may be sensible to
+initialization. Gibbs posterior (supposedly) looses this dependence
+after burn in.
+In this sense, variational methods substitute Gibbs' label
+switching issue (in those problems where the posterior is multi-
+modal) with the issue of sensitivity of the posterior to
+initialization. There are principled methods to deal with the label
+switching issue, I believe.
+For me, variational methods have an edge whenever Gibbs full-
+conditionals are not available and the only option for MCMC is
+Metropolis-Hastings or Metropolis-in-Gibbs, when the true posterior
+is uni-modal, or when the data have enough signal that initialization
+is practically irrelevant. (Deciding whether any of the latter two
+situations apply is often a judgement call.)
+These statements assume that I can afford the time (computational
+resources) to sample properly, and that I believe the model so much
+that I am really keen on the best possible answer I can get.
+Edo

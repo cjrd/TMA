@@ -1,0 +1,8 @@
+Hi,
+I am studying Hierarichial LDA. As far I understand is that, as the
+documents are submitted to hLDA, it generates term-frequency count of each
+document and then considered each words as data points and then do the
+clustering to generate the topics and then we have to arrange these topics
+in hierarchy, how this topics are arranging in hierarchy, what mathematics
+are used to do that?
+Thanks

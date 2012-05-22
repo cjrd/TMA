@@ -1,0 +1,7 @@
+Hi all,
+I am a new bee of LDA, I just wonder is there anyone who has tried lda-c
+written by David M. Blei with a large dataset, I want to apply it to a text
+dataset which contains about 800,000 texts and the word dimension is about
+1000,000. Is this possible? Thanks all!
+Best Regards!
+Yabin Zheng

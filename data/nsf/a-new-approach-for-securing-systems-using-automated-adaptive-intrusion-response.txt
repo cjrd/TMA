@@ -1,0 +1,21 @@
+              Networked information systems play an increasingly important role in critical
+              infrastructures such as power generation and distribution, transportation,
+              commerce, and national security. The continuing spate of security incidents
+              reported by organizations such as CERT Coordination Center demonstrates that in
+              spite of best efforts in securing systems, "hacker" attacks will penetrate even
+              the best defense mechanisms. To cope with such attacks, new techniques need to
+              be developed that can detect and respond to such attacks. Unfortunately,
+              existing approaches focus primarily on after-the-fact detection of such
+              attacks. Moreover, intrusion response relies primarily on human involvement.
+              These two factors mean that fast-progressing attacks (e.g., programmed attacks)
+              can effect significant damage before any protective response is launched.
+              Recovery from such damage is labor-intensive, and will render the target system
+              unavailable for hours if not days. This project will develop new approach that
+              automates intrusion responses so that the target system can defend itself from
+              serious damage due to attacks. It will build on the proposer's successful
+              research in specification-based intrusion detection. Key technical components
+              of this project include: specification language enhancements to express
+              response actions, techniques for isolating compromised processes so that they
+              do not interfere with the rest of the system, and deception techniques that can
+              provide an illusion of success to attacker while protecting the target the
+              system.

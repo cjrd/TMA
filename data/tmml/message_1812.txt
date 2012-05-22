@@ -1,0 +1,5 @@
+I'm glad to report we tried with more data, and the "online HDP" results were much better: English Wikipedia https://gist.github.com/1979640 .
+I also added a lemmatizer and did more careful vocab pruning, leaving only the 50k most frequent nouns, verbs, adjectives and adverbs, after filtering out lemmas that appeared in more than 10% of docs.
+Thanks everyone for their help and comments. There're still parameters to tune etc. but these results are already much more cheerful :)
+Best,
+Radim

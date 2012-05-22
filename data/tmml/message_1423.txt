@@ -1,0 +1,20 @@
+Dear List members,
+I am just a starter in the LDA. Now I am reading the source code of
+Gibbs-sampling based LDA such as JavaGibbsLDA [1] and [2].
+I found a little bit confused when I looked at the following section
+of the code on picking the topic index after Gibbs Sampling, i.e.,
+calculating p(z_i|z_-i, w).
+// cumulate multinomial parameters
+for (int k = 1; k < p.length; k++) {
+p[k] += p[k - 1];
+// scaled sample because of unnormalised p[]
+double u = Math.random() * p[K - 1];
+for (topic = 0; topic < p.length; topic++) {
+if (u < p[topic])
+break;
+Would somebody like to help me on understanding these two sectons? Why
+calculate the cumulative parameters after the gibbs sampling? How to
+you choose the Topic index from those z_i to z_k for a term w_n?
+Thanks very much for your time and help!
+Regards,
+Henry

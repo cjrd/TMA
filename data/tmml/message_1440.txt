@@ -1,0 +1,4 @@
+@Jerry:
+Isn't the Markov Logic Network model (http://alchemy.cs.washington.edu/)
+more general for this purpose ?
+Shibamouli

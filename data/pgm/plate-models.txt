@@ -1,0 +1,401 @@
+
+One very common kind of repeated structure
+occurs when we have multiple objects of
+the same type. So. That, where we want to
+have all these different copies of the
+objects. It's not copies of the objects,
+but objects of the same type all have a
+similar, or in fact, the same probablistic
+model. For reasons that we'll talk about
+momentarily, the most, one of the most
+common type of, such models is called the
+plate model. Let's start by modeling
+repetition so in this case imagine that
+we're repeatedly tossing the same coin
+again and again so we have an outcome
+variable. And what we'd like to model is
+the repetition of multiple tosses and so
+we're going to put a little box around
+that outcome variable and this box which
+is called a plate. Is a way of denoting
+that the outcome variable is indexed,
+which we usually don't denote explicitly
+by the notion, by different tosses of the
+coin T. And the reason for calling it a
+plate is because the intuition is that
+this is a stack of identical plates.
+That's kind of where the idea comes from
+for a plate model. And looking at what
+that model denotes is, if we have a set of
+coins, the coin tosses T_1 up to T_k. It
+basically says that we have a set of
+random variables, outcome of t_1 up to
+outcome of t_k. So we've just reproduced to
+the outcome variable in its mulitple
+copies. Now what does that explicitly
+correspond to? I'm now going to do
+something that we're gonna do a lot of
+times later on in the course when we talk
+about learning, which is I'm going to put
+the parameters off the CPD explicitly into
+the model. So this random variable theta
+is the actual CPD parameterization and I'm
+puting it explicilty so that I can show
+how different variables depend on that.
+And so if we have this, the parameters
+here we can see that theta is outside of
+the plate. Which means that it's not
+indexed, by t. Which means it's the
+same for all values of t. So what that
+means is that we have this cop-, this
+parameters theta over here. And we have all
+of these outcomes depend on the exact same
+parameterization. And the CPD of the
+outcome of T_1 is copied from this parameterization theta. Let's look at a slightly more
+interesting example. Going back to our
+university with multiple students, we now
+have a two variable model, where we have
+intelligence and grade. And we now index
+that by different students s. Which again
+indicates that we have a repetition, a
+copying of this template model. In this
+case, I only made two copies for, one for
+student one, and the other one for student
+two. And, once again, if we wanted to
+encode dependence on the parameters. So we
+might have theta I, which represents the
+CPD for I. So we might have theta G, which
+represents the CPD for G. And we would
+have exactly the same idea of theta_i and
+theta G, where theta I influences the two
+I variables and theta_s influences the two s
+variables. And, again, they're out of the
+plate. Sometimes
+in many models we will include those
+parameters explicitly within the model,
+but often when you have a parameter that's
+outside of all plates, we won't denote it
+explicitly. So we just omit it as we did
+in this original diagram before I
+annotated it. Now, just repeating the
+exact same model multiple times is not
+particularly interesting. So now let's
+talk about how you can overlap different
+plates or in, in, in different words,
+think about how different types of objects
+in the model overlap with each other. So
+in this case we have two kinds of objects
+that are universe of discourse
+We have courses, and we have
+students. And courses we're gonna call
+little c and students we're gonna call
+little s. And so now, let's think about
+how you might replicate variables that
+correspond to properties of courses and
+variables that correspond to properties of
+students. So the difficulty variable,
+belongs in the course plate, because it's
+a property of a course. So it's going to
+be the difficulty of the course. And now
+let's think about how we're going to put
+students in. One possibility is we're
+going to nest. The students plate inside
+the course plate. Now, what that means is
+that the student of each variable here,
+both of these variables are indexed by
+both s and c, because when a variable is
+nested in a plate, it means that it has
+the indicies of all plates that it's
+nested in. So, if, if the in, intelligence
+variable is both, is in both the S plate
+and the C plate, it's going to be indexed
+by both. So let's build that model, and
+see what it looks like when we, sort of,
+unravel the courses and unravel the
+students. It's gonna look like that. So
+we're going to have the difficulty of,
+let's say this is a two course model, and
+a two student model. So we have a
+difficulty of course one and a difficulty
+of course two. And now we have the
+variables in the nested plate, I and
+G, and we can see that they're both
+parameterized by both student and course.
+Let's think about the implications of this
+model. The implications are that the
+intelligence is now a property of both
+the student's intelligence of student in course. And that, the intelligence of the
+student in a particular course, influences
+the grade of the student in that course.
+And you can see that by having
+this dependency model, over here. Now what
+in fact, let's think about the
+implications of this. This tells us that
+there is a core specific intelligence for
+every student. For every student in every
+course and they may or may not be what we
+want. If you're taking radically different
+courses and one is an art class and one is
+a math class and you can say that there's
+and art intelligence, their representing
+skill if you will in art and you have a
+math skill that represents math
+intelligence then you might want to have
+two different kinds of intelligence and
+not necessarily assume that they're the
+same thing. Of course that kind of
+complicates the model, and if you have a
+bunch of courses that are, in some ways
+similar to each other, and take a similar
+set of skills, you might not want to have
+a bunch of independent – look –
+independent random variables. Sorry.
+This is, these ones. We're assuming that
+the student has two independent
+intelligences representing their, the
+intelligence in the two different courses.
+And in that case, you don't want the
+intelligence variable to be part of the
+course plate. And so that gives us
+an alternative representation, which is
+what's called, plates that are not the
+same, but that overlap. That are not
+nested that overlap with each other.
+So, in this case, we have the course
+plate, which is this plate over here and
+we have the student plate. Which is this
+one over here, and the assumption is, that
+this difficulty is the property
+only of the course. So, this is the
+difficulty. The intelligence is the
+property of the student and only the grade
+is the property, that depends on both. And when we unravel this one, what
+we end up with is a model that looks like this. So
+we have, in this case, the, we only have a
+single, we have a difficulty for the
+course. We have an intelligence for the
+student. And over here, let's denote
+things in the intersection in green. We
+have the grade of the student in the
+course depends on the difficulty of the
+course, and on the intelligence of the
+student. And so now we only have a single
+intelligence per student. And that is an alternative
+modeling. It's not that one of these is
+right and the other is wrong. They're just
+different. And once again, just to
+demonstrate a explicit parameter sharing,
+I just wanted to highlight again that the notion of parameter also applies to models
+such as this. So here we have a parameter
+theta_D. We have a parameter, theta_I
+and we have a parameter,
+theta_G and which influences
+the grade and that's shared
+among all the all of the different grade
+variables. So why are these kinds
+of plate models useful? So let's look at
+an example to convince ourselves that by
+building these richly structured models
+that involve multiple entities, you can
+actually get much more interesting
+conclusions. So let's look at this example
+over here. Imagine that we have this,
+first quarter freshman came into our
+university. And we'd like to figure out,
+what we can determine about him. So let's
+say that, in this particular university,
+a priori we believe that most students
+have high intelligence, and so this is the
+intelligence distribution. And 80 percent
+are high. Now this student that we're
+going to call George took two classes. He
+took Geology 101 and got an A. So,
+the probability that he is intelligent goes up. He took
+CS101, didn't do so well, got a C. Well,
+the probability goes down, but it doesn't
+go down to a very lower number, and that's
+because we know from the CPD for grade
+that we've seen previously, that we have,
+you know, there may be other, may be
+multiple reasons why a student might not
+do well in a class. For example, maybe it
+was a really hard class. And so maybe
+everybody did badly. And some of you
+shouldn't take this too seriously. If
+these are the only two courses that George
+took, we're kinda stuck. But now lets
+think about this in a more holistic
+context, or collective inference where
+we're going to think about, a number of
+students taking a number of classes and
+let's imagine that we have a bunch of
+grades for all of those students. So what
+we see here are the green ones are A's...
+The, yellow ones are Bs, and the red ones
+are Cs. And what you see here is shorthand
+for a bunch of observed grade variables.
+So I didn't put in all the little dots
+that represent, all the little ovals that
+represent the grade variables. I just put
+in this lines to indicate what they are.
+So you can think of this as a, as the
+induced Markov network, if you will. Okay.
+So now, so now, let's think about what
+kind of conclusions we can reach from this
+network. And what seems, even by looking.
+Even looking at this by eye, we can see
+that a bunch of people took CS101, and
+they all aced it except for our friend
+George. And furthermore, even if you look
+at this guy over here who got a C in every
+other class that he took, he still managed
+to ace CS101. So if we do the probablistic
+inference over this holistic model, what
+we're going to get is that we are pretty
+sure that CS101 is an easy class and if
+we're pretty sure about that, we are also
+pretty sure in this case where the
+intelligence is low. And so we can reach
+much more form conclusion in this setting,
+than we can by reasoning about
+individuals and isolation. Now this is a
+toy example. But we'll see later on
+examples of collective inference that
+where we have multiple interrelated
+entities, it could be related pixels in an
+image, it can be related web pages in
+a website that web pages
+point to each other. That if we try and
+label each entity in isolation we just 
+don't get a very informed conclusion, but by
+thinking about how they all relate to each
+other we get much stronger results, that
+are much more informed. So, just to
+summarize the plate dependency model. The
+plate dependency model has the following
+characteristics. It defines a dependency
+model for a template variable that is
+indexed by a bunch of object, types. So for
+example students and courses, or, or
+anything else. And we have for each of
+those template variables we have a set of
+template parents. And what we have
+[inaudible] is that each of these has to
+be a subset off this. So what does that
+mean? It means for example, that for the
+template variable g of s, c. So this
+is, g corresponds to variable a. S and c
+corresponds to the indicies, in this
+case u one and u two. And what we have is
+we have two template parentswe have
+I of s and D of c. And the, stipulation that u
+i is a subset
+of the variable of U_1 up to U_k.  How is this for example that
+we cannot have, an index in the parent  that doesn't appear in the child, so for
+example, we cannot have in this, in this
+model, for this reason and I'll describe
+in a minute and this for example honors.
+For student s depending on the grade, of
+the student in multiple courses. And the
+reason for that is that this is not a
+CPD. You have, the honors variable
+depending on a potentially unbounded,
+number of parents which are all of, the
+grades in which the students
+participated, and, it's not to say, that
+one can one define, such a dependency
+model, in fact, there are richer languages
+than plates, for which people have
+defined this notion of an aggregate,
+aggregator CPD. But it's not within the
+standard paradigm of what are
+traditionally called plate models. So by
+preventing that, we now have, effectively,
+a traditional model, where, you know, you
+have a random variable with a finite fixed
+set of parents. And so we can define a
+template CPD which we can then reuse
+in a model, for any copy of this template
+variable, where a copy is, is obtained for
+different instantiations of these indicies U
+So for example, so
+specifically, if we have this model if we
+have this variable A of U_1 up to U_K then
+for any instantiation little U_1 up to U_K
+which are concrete instantiations of the
+indicies we would have, the following
+model we would have the variable A of
+u on up to u_k depending on
+the specific. Which is potentially
+confusing notation, because the sets
+are a little bit hard to understand. But
+this really, just think concretely of the
+example. This exactly says that the
+intellig-, that the grade of a particular
+student in a particular course depends on
+the difficulty of that course, and on the
+intelligence of that student, that's all
+it says, okay? So it's just a general way
+of saying that. And, this
+is just the formal version of the
+statement that I made earlier that
+requires the parents not to have variables
+that are not explicitly instantiated in
+the child. So that we don't have a free
+floating variable that can be instantiated
+in, arbitrarily many ways. So to
+summarize, plate models
+are a language which allows us to define a
+template for an infinite set of Bayesian
+networks. Why infinite? Because you can
+have three students, ten students, 1,000
+students, a million students, an unbounded
+number of students. So there is an
+infinite set of Bayesian networks that we
+can use this language to encode and each
+of them induced by a different combination
+of the way many objects in our example,
+for instance students of courses. The
+parameters and the structure are reused.
+In, those, within, the Bayes net, and,
+across, the different Bayes nets, so, for
+example, within, our university example, we
+reuse the same parameter, and, if we have
+a different university, with the different
+set of student and courses, we could still
+use the same parameters. These models by
+allowing us to represent an intricate
+network of dependencies allow us to
+capture very richly correlated structures
+in a concise way, which allows us to do
+this kind of collective inference. Which
+is potentially a very powerful source for
+informed conclusions. Now I've presented
+plate models, which are the, perhaps
+earliest and one of the simplest of these
+languages. Which allow us to represent
+template structures. This is a simple one
+for example, it has this restriction on
+the parents not, having variables that are
+not instantiated in the child, and so for
+example you can't represent temporal
+models here, because x of t-1 is not
+instantiated in the variable x_t, so
+you can't have x_t-1 as a parent of x_t
+not in a plate model, I mean
+obviously we have languages that can do
+that, but not this one. Similarly, you
+can't have the genotype [of the mother] and the genotype
+of the father affect the genotype of the
+child because once again the child doesn't
+instantiate the mother and the father.
+These are separate indices. And so this is
+a limited language but there's many other
+languages that expand on it in different
+ways and they each have different trade
+offs in terms of what they express easily
+and what they don't. And there's an entire
+literature on this that we're not going to
+go into but has provided a number of very
+useful languages representing these claims
+of richly structured models.

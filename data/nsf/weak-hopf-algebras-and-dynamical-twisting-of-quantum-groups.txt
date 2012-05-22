@@ -1,0 +1,75 @@
+              The main objects of investigation of this project are weak Hopf algebras
+(also
+              called quantum groupoids in literature). These are group-like 
+objects that
+              generalize both Hopf algebras and usual groupoids and that 
+appear naturally
+              in the theory of semisimple tensor rigid (fusion) categories, 
+conformal field
+              theory, symmetries of algebra extensions, and the quantum 
+dynamical
+              Yang-Baxter equation. The investigator develops the general 
+theory of weak
+              Hopf algebras and their representations and applies it to 
+the study and
+              classification of fusion categories (every such a category is
+equaivalent to
+              the representation category of a semisimple weak Hopf algebra).
+One goal is to
+              extend the results known for the representation categories of
+ordinary
+              semisimple Hopf algebras, such as e.g., Larson-Radford theorems, 
+Stefan's
+              finiteness result (Ocneanu's rigidity), and Class Equation to
+              general
+semisimple tensor categories. Another goal is to use weak Hopf
+              algebra
+techniques to reveal the structure of modular categories which are
+              important
+because of  their applications to physics and geometry. The
+              investigator
+also studies weak Hopf algebras arising from dynamical twists
+              (these twists 
+give rise to solutions of the quantum dynamical Yang-Baxter
+              equation of Felder). 
+The goal here is to get a conceptual explanation of new
+              intriguing phenomena 
+related to dynamical twists,  such as, e.g.,
+              non-minimizable  dynamical twists 
+in group algebras and self-duality of
+              dynamical quantum groups.
+
+In this proposal the investigator studies problems
+              of the theory  of quantum groups. 
+The origins of this theory which was
+              created in 1980s are the classical theory of
+groups and  quantum physics. The
+              theory of groups is the classical mathematical
+subject that describes in
+              mathematical terms the phenomenon of symmetry
+(e.g., groups describe the
+              symmetry of molecular structure). Groups are fundamental
+objects as they
+              provide a universal language used in all areas of mathematics.
+The quantum
+              theory reveals the laws of physics that determine the behavior 
+of very small
+              particles and interactions between them.  This theory led to
+              many
+technological advances of the 20th century such as, e.g., development of
+              the
+nuclear physics. In order to give an adequate mathematical  description of
+               
+the structure  of quantum physical systems the theory of classical groups
+              
+is not sufficient, this is why the new theory of quantum groups was invented.
+              
+Among these  new objects the notions of weak Hopf algebras and quantum
+              
+groupoids are of special interest, as they have recently seen many
+              applications 
+on both sides of the mathematics-physics divide.  The present
+              proposal is devoted 
+to the study and classification of weak Hopf algebras and
+              exploring their applications 
+to various  areas of  mathematics and physics. 

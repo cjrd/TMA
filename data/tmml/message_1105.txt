@@ -1,0 +1,9 @@
+Hi, folks,
+I have two questions:
+1 why LDA does not using the Expectation Maximization method to inference the hidden
+variable, just as PLSA does.
+2 Is it worthwhile to make a evaluation on the several approaches for LDA inference?
+They include the Laplace approximation, higher-order variation techniques, and Monte
+Carlo method and the variational inference used by David M. Blei.
+Regards.
+Charly.

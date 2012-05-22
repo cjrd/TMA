@@ -1,0 +1,9 @@
+hi marie,
+the code should be easy to adjust to provide these values.
+you might try a number of heuristics, e.g., matching with KL
+divergence, but there's no reason that the topics will "match up"
+since you are estimating separate models.  a different approach would
+be to fit a model like fei-fei and perona's, where the topics and
+classification boundary are estimated simultaneously.
+best,
+dave

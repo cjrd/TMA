@@ -1,0 +1,25 @@
+              Lay Abstract   Murray
+
+This one-day symposium has the goals of bringing
+              together investigators working on diverse taxa, and moving the field toward a
+              unified framework of the neural mechanisms underlying navigational behaviors.  
+               Previous conferences on the subject of orientation and navigation have not
+              emphasized neural mechanisms, and a greater understanding of such neural
+              mechanisms is now possible using multichannel recording, and newly-developed
+              techniques for recording from freely-moving animals.  Eleven speakers will each
+              present a 30-minute talk on their work followed by 10 minutes of questions. 
+              All speakers will address common problems, models, and mechanisms shared among
+              all investigators, with the goal of developing a unifying framework to
+              understand the neural circuits utilized as animals find their way over both
+              short and long distances.  The objectives of this symposium are as follows: To
+              exchange ideas about state-of-the-art neuronal, computational, and behavioral
+              approaches to the analysis of oriented locomotion; To seek common neural
+              mechanisms of orientation and navigation used by multiple phyla and in diverse
+              sensory contexts; And to set short-term and long-term goals common to those
+              working on the mechanisms of oriented locomotion toward establishing a general
+              theory of the neuronal mechanisms of oriented locomotion.  These general
+              mechanisms will inform technologies now developing in the form of mobile
+              robots.    This symposium will provide an opportunity for a rich
+              cross-fertilization of ideas among researchers studying animal behavior and
+              those studying neurobiology.
+

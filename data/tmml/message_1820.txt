@@ -1,0 +1,8 @@
+Deal All,
+When we use topic models, for example LDA and HDP, is there a way to make
+the document vector sparse?
+For example, if we set the number of topics to be 5 in LDA, instead of
+getting a document vector over topics to be [0.2,0.2,0.2,0.2,0.2], we
+prefer [0,0.5,0,0,0.5] or [0,1,0,0,0]
+Is there a way to ensure the sparsity of document vector?
+Thank you!

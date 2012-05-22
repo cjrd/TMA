@@ -1,0 +1,21 @@
+Hi Suhas,
+This is an interesting point. For vanilla LDA, there is perfect
+symmetry between document id's and words, assuming that the number of
+documents is fixed. So you could flip the generative process and say
+that a "topic" is a distribution over documents, and each word gets a
+different distribution over topics; the two models are equivalent.
+Basically, with vanilla LDA you can either assume a fixed number of
+documents or a fixed number of words. In document modeling, it's more
+useful to be able to analyze new documents than to analyze new
+vocabulary words?it doesn't really make sense to imagine new unique
+words being added to existing documents, but there are real
+applications where it's useful to be able to analyze new documents
+with the topics you fit to existing documents.
+In other contexts, like the one you have in mind, the distinction is
+more arbitrary. If you're using batch methods like collapsed Gibbs or
+batch variational Bayes, then it doesn't matter what's a "document"
+and what's a "word." But if you're using online LDA then I guess I'd
+recommend making the "documents" be whatever there are more of, since
+this may decrease the amount of work you need to do per iteration.
+Best,
+Matt

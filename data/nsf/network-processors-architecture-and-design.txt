@@ -1,0 +1,27 @@
+              Two forces have exacerbated problems associated with packet processing. First,
+              demands for higher bandwidth and line rates challenge our abilities to perform
+              real-time packet processing. Second, more complex functional requirements and
+              services are being defined that significantly increase packet computational
+              demand. 
+
+In response, modern routers are being equipped with Network
+              Processors (NPs) that include both general-purpose multiprocessing and special
+              hardware capabilities. NPs push the envelope of our design capabilities. This
+              research aims at quantifying NP design and at developing a performance driven
+              methodology that is cognizant of both physical constraints (e.g., area, power)
+              and the computational requirements of packet applications.
+
+Principal
+              architectural approaches (parallelism, pipelining, instruction specialization)
+              are investigated and design procedures for exploiting these architectural
+              paradigms are developed. The NP architecture models along with associated
+              benchmarking lead to a coherent NP design methodology and extend our
+              understanding of real-time computer design.
+
+The research directly benefits
+              the rapidly expanding area of NP and router design, and network performance.
+              The techniques utilized are those of classical computer architecture, including
+              the formalization of the design constraints, development of design models, and
+              the use of benchmarks for quantitative model parameterization. 
+
+

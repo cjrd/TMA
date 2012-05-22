@@ -1,0 +1,8 @@
+Hi, Abhay,
+I didn't have a written up. but in the code i put online has that
+implementation.
+meanwhile, in the opt.cpp, it has a pointer to the pdf publication that has
+the explanations.
+let me know if that's not enough.
+best
+chong

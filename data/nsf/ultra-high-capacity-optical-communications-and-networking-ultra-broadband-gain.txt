@@ -1,0 +1,42 @@
+              This proposal was submitted in response to the solicitation NSF 01-65 on
+              "Ultra-High Capacity Optical Communications and Networking." In this proposed
+              research project, we study methods to achieve ultra-broadband gain materials
+              for broadband optical communications and networking. Broadband materials with a
+              gain profile of more than 500 nm wide are possible to be achieved in a single
+              thin-film waveguide device. The materials include the Esaki-junction type of
+              multi-band multi-quantum well gain material and the selective-area-growth (SAG)
+              type broadband gain material. With the proposed methods, a
+              multiple-quantum-well (MQW) material with a very broad and smooth gain profile
+              of more than 250 nm has been obtained. Using the fabricated material,
+              semiconductor lasers with a very wide tuning range of more than 200 nm and
+              wavelength converters that can convert signals across 250 nm wavelength range,
+              from 1550 nm to 1300 nm, have been demonstrated. In this research work, we will
+              try to understand the limitations of these proposed methods and explore
+              techniques to overcome them. It is highly possible to extend the full
+              operational wavelength range from 1150 nm to 1700 nm. More than 500 nm
+              bandwidth all optical operations of amplifying, switching, and wavelength
+              conversions are targeted to be accomplished.
+The issues of using semiconductor
+              optical amplifiers (SOAs) as an amplifying material have been their fast gain
+              recovery time. The fast gain recovery time, caused by the short carrier
+              lifetime, produces problems like high channel-crosstalk in a WDM system and
+              high amplified-spontaneous-emission (ASE) noise. In the proposed research work
+              we will study methods to increase carrier lifetime in a broadband SOA. In our
+              previous work, we have grown quasi-indirect bandgap superlattice materials and
+              observed materials changing from direct to indirect bandgaps when the
+              superlattice period is varying. It is highly possible to change the carrier
+              lifetime from the nanosecond scale to the microsecond scale with the
+              quasi-indirect bandgap material. We have also grown the 1550 nm InGaAsP type II
+              delta-doping gain material. We expect such a material will have a longer
+              carrier lifetime due to the spatial separation of electrons and holes in the
+              material.
+By combining the broadband gain material and the long carrier
+              lifetime material techniques, it is highly possible we can obtain an ideal gain
+              material with noise and crosstalk performance similar to the Er doped fiber
+              amplifier (EDFA) but with an extremely broad wavelength-operation range of
+              larger than 500 nm. Such a material can also be integrated with other thin-film
+              waveguide optical components to obtain multiple-function integrated photonic
+              devices. We believe this work will have a significant impact to the
+              ultra-broadband optical communications.
+
+

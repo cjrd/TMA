@@ -1,0 +1,6 @@
+Hi,
+there's also a quite comprehensible survey of different similarity
+measures usable in NLP by Lillian Lee,
+see http://www.cs.cornell.edu/home/llee/papers/aistats01.pdf
+Best,
+Patrick

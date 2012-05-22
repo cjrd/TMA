@@ -1,0 +1,14 @@
+Hi Gregor,
+Two pointers might be worth looking at:
+Shadow Dirichlet for Restricted Probability Modeling
+http://books.nips.cc/papers/files/nips23/NIPS2010_0900.pdf
+and
+Labeled LDA: A supervised topic model for credit attribution
+in multi-labeled corpora
+http://www.aclweb.org/anthology/D/D09/D09-1026.pdf
+Best,
+========
+Amr Ahmed
+Research Scientist
+Yahoo! Research
+http://www.cs.cmu.edu/~amahmed/

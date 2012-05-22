@@ -1,0 +1,8 @@
+Dear Hal and list members,
+Would you explain the last point on computing empirical likelihood;
+" use these 10000* drawn words as a 10000-component multinomial
+mixture model and compute the likelihood of the test data under this mixture".
+I have looked at several papers that use this method and I am still not sure
+how it is implemented.
+Thanks you,
+Said

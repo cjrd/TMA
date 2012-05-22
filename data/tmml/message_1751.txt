@@ -1,0 +1,10 @@
+Hi Chong,
+I am interested in the full derivation of \theta_j. In the paper
+you mention "We cannot derive \theta_j analytically, so we use projection
+gradient". Do you have an appendix to this paper that shows the derivation
+that you can share?  I see that you have mentioned that you found
+comparable performance using theta from vanilla LDA, but my application is
+different and I expect significant benefit from actually utilizing the CTR
+derivation for theta.
+Regards,
+Abhay

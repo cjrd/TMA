@@ -1,0 +1,11 @@
+              The determination of complete genomic sequences relies upon the ability to
+              purify relatively large quantities of cells or DNA. But because the majority of
+              microbial species can not be cultivated or live in close association with other
+              organisms, it is difficult to obtain large and uncontaminated samples of cells
+              sufficient for producing whole genome sequences of these organisms. The aims of
+              the proposed research are to develop methods for recovering and purifying DNA
+              of sufficient quality and quantity for genomic sequencing from small and/or
+              mixed populations of cells. Using a combination of cell and DNA enrichment
+              procedures, along with whole genome amplification methods, the ultimate goal of
+              this project is to devise conditions that would facilitate the analysis of a
+              complete microbial genome from a single cell.

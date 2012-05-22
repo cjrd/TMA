@@ -1,0 +1,19 @@
+Dear list, Dave again
+a packaged implementation of "Infinite LDA" is found at:
+http://arbylon.net/projects/knowceans-ilda-20110218.zip
+So far, there is no visible link -- no time to update my page now...
+I've included the following stuff:
+- IldaGibbs.java
+- all dependent Java classes
+- the NIPS corpus in svmlight format
+- LdaGibbs.java, my LDA implementation for comparison between the finite and
+infinite models
+- introductory notes on LDA and HDP that may serve as a basis to learn about
+LDA and HDP.
+Be warned: All of this is somewhat hot-needle stuff but I think it may help
+people get to terms with the HDP (possibly also with LDA).
+I've not validated the HDP implementation quantitatively, esp. the
+hyperparameter estimators need more attention.
+I'd be happy to get comments on this or contributions for improvements.
+Best
+gregor

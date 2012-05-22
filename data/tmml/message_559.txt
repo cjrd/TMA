@@ -1,0 +1,6 @@
+dear tim
+there is a lively debate about this in the statistics literature.
+among the better treatments is the statistical science paper by gelman
+and meng (1998).  it's clear, and it points to other useful references.
+best,
+dave

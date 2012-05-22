@@ -1,0 +1,27 @@
+              Computer Science (31)
+Bioinformatics brings together the fields of biology,
+              computer science, and information technology to analyze, among other things,
+              the gigabytes of genome data that have been collected over the past fifteen
+              years. The work that will be done by bioinformaticists in the 21st century will
+              dramatically change the practice of medicine much like the discovery of the
+              transistor altered the course of information technology in the 20th century.
+              The national need for bioinformaticists, estimated by one study to be 20,000 by
+              the year 2005, with the education and training to speak the complex languages
+              of biology and computer science will not be met by one institution alone.
+              
+
+The goal of this project is to develop courseware for general use in
+              diverse contexts at other institutions, even those without a degree program in
+              Bioinformatics. This project provides a packet of lecture presentations and
+              laboratory manuals that can be widely disseminated and used by teams of
+              biologists and computer scientists outside of RIT to support instruction in
+              Bioinformatics. These instructional materials are being developed by an
+              interdisciplinary team of biologists and computer scientists with input from
+              academic partners from outside institutions.
+
+This work includes supporting
+              material, prepared by computer scientists, written for biologists so that a
+              biologist can understand the computational processes being utilized to analyze
+              the biological data. Likewise supporting material, prepared by biologists,
+              written for computer scientists will be developed so that a computer scientist
+              can understand the basic biological processes being analyzed.

@@ -1,0 +1,5 @@
+Hi -- tau is Escobar and West's auxiliary variable method (1995), alpha is based
+on the ML fixed-point iteration in Minka (2003, not moment match). The latter
+works fine in other contexts, thus the primary suspect is tau...
+cheers
+gregor

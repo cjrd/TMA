@@ -1,0 +1,27 @@
+              
+This project is developing and testing a virtual laboratory via the Internet
+              to enhance the comprehension of the interdisciplinary nature of machine tool
+              building and maintenance technology, to reduce costs by maximizing the
+              adaptiveness of the curriculum, to enhance learning efficiency in a multimedia
+              and multi-intelligence approach (Gardner,1993), and to improve laboratory
+              safety with minimized environmental hazards. A coalition of a two-year college,
+              a four-year university, a community-based technology center, professional
+              associations, and partners from the multimedia software and machine tool
+              industry are working together on the project. The expected outcomes are three
+              simulation modules, each targeting a particular aspect of machine tool building
+              and maintenance technologies that will supplement and complement the existing
+              machine technology curriculum in the nation's two-year associate degree
+              programs. 
+
+A comprehensive and independent evaluation is being conducted
+              prior to national dissemination via both the Internet and CD-ROM to two-year
+              colleges, high schools and other community based training centers throughout
+              the nation. Pre- and post-tests are being used to evaluate the effect of the
+              proposed multimedia modules on students' attitudes and learning. A diverse
+              cohort of two-year college students, including women and minorities, are
+              participating in the field tests as control and test groups. 
+
+A national
+              workshop is being developed to help faculty members learn how to use the
+              modules and to develop "customized" modules for themselves. 
+

@@ -1,0 +1,8 @@
+Hi All,
+I have a text file representing link structure where i^th line represent
+document d[i] and entries in it are the docids which have link with d[i]. If
+i want to import this file data into R  two dimensional list, any idea how
+shall i do it. I want to represent this as link data used in lda package in
+R.
+Thanks,
+Govind

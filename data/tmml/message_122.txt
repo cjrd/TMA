@@ -1,0 +1,7 @@
+Dear all,
+Do you know any C/C++ or Java code of Gibbs sampling for LDA (both model
+estimation and inference procedure for unseen documents)? I would like to
+find stand-alone code other than Matlab toolbox because I want to apply LDA
+to online large-scale datasets.
+Thank you very much!
+Phan

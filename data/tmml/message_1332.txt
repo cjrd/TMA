@@ -1,0 +1,8 @@
+Hi everyone,
+I found that many values in *.gamma (one of the outputs after
+estimating a topic model) are larger than one. I think if the values
+are
+the posterior  for p(theta,z|w,alpha,beta), they should not be over 1. So
+do they mean something else?
+Regards,
+Peng

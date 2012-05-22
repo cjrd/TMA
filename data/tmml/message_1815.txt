@@ -1,0 +1,23 @@
+Hi Michael,
+There's a subtle difference. A conditional entropy H(D|W) cannot be
+greater than the entropy H(D),  but note that H(D|W) = sum_d sum_w
+p(D=d, W=w) log p(D=d | W=w). In other words, a sum over all values of
+D and all values of W.
+For IMI, what we're doing is selecting just the terms from that
+summation where W takes on a particular value w. The inequality would
+hold if we summed over all words:
+sum_w H(D | W=w, k) <= H(D | k).
+Here's an example. Let's say we have three documents:
+DOC 1: cat dog
+DOC 2: cat dog dog dog dog dog
+DOC 3: cat dog
+The entropy over documents is
+H(D) = 1.37
+Since "cat" is uniformly distributed over the same three documents,
+its entropy is greater:
+H(D | W=cat) = -log(1/3) = 1.58
+But "dog" is necessarily less uniformly distributed:
+H(D | W=dog) = 1.14
+When we sum over W and multiply by P(W=w), we get a value less than 1.37 (!).
+0.3 * 1.58 + 0.7 * 1.14 = 1.27
+-David

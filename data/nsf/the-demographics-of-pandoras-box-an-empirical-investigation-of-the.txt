@@ -1,0 +1,57 @@
+              	Gartner and Segura propose to explore the demographics of casualties in war. 
+              Their goal is to understand better the system of relationships and choices at
+              the individual, social group and institutional levels that produce the observed
+              distributions of battle casualties across groups in the society.  They plan to
+              examine whether and why casualty representation by group, as well as the larger
+              military manpower pool, varies on a variety of dimensions -- region,
+              socio-economic status, religious preference, race, and ethnicity -- within and
+              among conflicts.  Their previous research shows that variations in casualties
+              influence a variety of domestic political process, including individual, mass,
+              and elite opinion formation and elections.
+	Gartner and Segura theorize that: 
+              1) an understanding of who dies in war requires an understanding of who fights.
+               2)  Initially, those who fight and die emerge from a peactime personnel
+              process that is endogenous to the lessons of the previous conflict, the
+              duration of the peace, economic variables and other factors.  3)  Casualties
+              provide information that leads to a wartime process of personnel selection.  4)
+               In each situation, there are individual and institutional factors that affect
+              the demographics of those at risk in war.  5)  The relative influence of the
+              peactime and wartime processes is a function of the duraciton and intensity of
+              the conflict and the preceding peace.
+	Gartner and Segura focus empirically on
+              post-W.W.II American military manpower, and casualties from the Korean, Vietnam
+              and Gulf wars.  They use three distinct types of data.  First, they use data
+              from the National Archives and Records Administration, including the Korean
+              Conflict Casualties file and the South East Asia Casualties file.  Second, data
+              on unemployment, population, and other socio-economic variables are drawn from
+              the Millennial Edition of the Historical Statistics of the United States. 
+              Finally, new data, including a continuous measure of civilian-military pay
+              differentials and serial data on inductions, aggregated by race, religion,
+              region and ethnicity are collected from archival sources available from the
+              Department of Defense and state draft boards.
+	Three sets of hypotheses are
+              tested.  First, testable arguments are offered about the demographics of
+              manpower across the entire post-W.W.II era, drawing on general concepts such as
+              economic performance and institutional aspects of conscription.  Then, they
+              examine the role of casualties, both as a dependent variable and, when lagged,
+              as an independent variable.  Finally, they address specific issues about
+              African-Americans and Latinos in Vietnam and Korea.
+	For each group of
+              interest (minority, religion), Garner and Saguaro employ a cross-sectional time
+              series analysis to determine, first, if there is variation between the group's
+              share of the total population, military manpower pool, and wartime casualties. 
+              Second, they use multivariate analysis to determine which factors best explain
+              the deviation between these representations.  Finally, they attempt to identify
+              the determinants of variation in these deviations across time and space.  For
+              example, they examine African-American representation in society, the military,
+              and among causalities nationally and across states, and in each case across
+              time.
+	The normative and policy implications of the study are considerable.  A
+              principal tenet of democratic thought is that the benefits and costs of
+              membership in the body politic are visited equally on the citizenry.  If one or
+              more social groups bear a disproportionate share of these costs, and this
+              inequity is endemic in the institutional arrangements of society, then there
+              are clear implications for the legitimacy of the system and it ability to use
+              force effectively and in a manner consistent with the preferences of its
+              population. 
+

@@ -1,0 +1,9 @@
+              This is a collaborative research project between the Engineering Research Center
+              (ERC) for Computational Field Simulations at the Mississippi State Univesity
+              and NASA Marshall Space Flight Center and stennis space Center.  The objective
+              of the research is to address the issues related to improving the quakity of
+              numerical simualtions of rocket engines, both in operational and testing
+              environments.  The critical science barriers will be addressed in this grant. 
+              NASA will provide funds to develop the test-bed systems that will validate the
+              computational and simulation results in the Ejector-Mode Rocket Based Combined
+              Cycle (RBCC) engine performance and survivability studies.

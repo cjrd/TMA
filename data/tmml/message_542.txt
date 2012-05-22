@@ -1,0 +1,33 @@
+To summarize the theoretical differences between the algorithms for NMF,
+PLSI and LDA, it is acknowledged that:
+1) NMF with KL-divergence is the same as PLSI (see in the papers already
+mentionned)
+2) PLSI algorithm can be viewed as learning LDA using a Dirac
+variational distribution instead of a Dirichlet (used in the original
+paper of Blei and Jordan).
+Said differently, this is the same as the difference between K-means and
+Gaussian Mixture Models. Formally, we solve
+argmax_{\theta,\eta} P(\theta,\eta|data)
+in K-means and PLSI instead of
+argmax_{\theta} \int P(\theta,\eta|data) d\eta
+in GMMs and LDA where \eta is the set the latent variables in the
+documents (the mixture assignements in GMM and the vector of topics in
+LDA) and \theta contains the parameters of the model. I implemented both
+PLSI and LDA and after some basic matrix algebra, the algorithms look
+very similar. For more information, I suggest the reading of Wray L.
+Buntine: Variational Extensions to EM and Multinomial PCA. ECML 2002
+<http://www.informatik.uni-trier.de/%7Eley/db/conf/ecml/ecml2002.html#Buntine02>:
+23-34
+3) Gibbs sampling is the proper Bayesian learning of \theta, but in
+practice, people just take the mode of the distribution (to avoid label
+switching!), which is close to the solution of variational-LDA.
+4) NMF with L2 distance does not correspond to any known probabilistic
+model (but I would be interested in exploring it!)
+Guillaume
+PS: Thanks also for your feedback on the practical use of these
+algorithms: I'm often wondering if the use of stopwords is mandatory,
+and it seems that they make a strong difference...
+I would slightly re-phrase Daniel's point of view
+K-means can be interpreted as a limiting case of a particular Gaussian
+mixture model
+Fleder, Daniel wrote:

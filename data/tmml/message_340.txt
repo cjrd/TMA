@@ -1,0 +1,10 @@
+NaN typically occurs when you do 0/0 or -INF + INF or something like
+this.  if you do some operation (e.g. division by zero or log of zero)
+that results in +INF or -INF, you can easily get NaN when you do
+further work with this.  a NaN log-likelihood might result from some
+earlier operation where you did log(0) due to underflow or something.
+there is probably a way in MATLAB to tell it to throw an error
+whenever you generate INF of NaN.  you can do this in C like this:
+#include <fenv.h>
+feenableexcept(FE_INVALID);
+ben

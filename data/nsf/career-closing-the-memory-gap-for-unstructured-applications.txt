@@ -1,0 +1,25 @@
+              Many important non-numeric applications are data intensive; hence, they will
+              experience performance degradations as the gap between future processor and
+              memory speeds widen.  Unlike scientific workloads, non-numeric applications
+              perform unstructured computations that exhibit low control-flow and address
+              stream predictability, and low instruction and thread-level parallelism.  These
+              attributes limit the effectiveness of existing techniques for improving memory
+              performance on non-numeric applications.
+
+This CAREER award addresses the
+              memory gap problem for non-numeric applications through an integrated research
+              and education agenda.  In research, several novel latency tolerance techniques
+              will be developed to target unstructured computations.  First, techniques for
+              guiding prefetch instrumentation through runtime profile information will be
+              studies to address unpredictable program behavior.  Second, pointer prefetching
+              techniques that aggressively schedule serialized memory operations will be
+              developed to expose memory parallelism in pointer-intensive computations. 
+              Finally, "code-space" prefetch scheduling techniques will be investigated to
+              enable prefetching along the multiple paths of execution commonly found in
+              unstructured computations.  In education, the topics and tools developed
+              through research will be integrated into a curriculum that emphasized a
+              "learn-by-doing" philosophy.  In addition, undergraduate research programs and
+              graduate student workshops will be created.  Together, these education
+              activities will produce students with a strong background in experimental
+              systems.
+

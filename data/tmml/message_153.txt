@@ -1,0 +1,10 @@
+Hi to everybody, i would ask the meaning of the beta file, in the
+readme file in c code  was written that the beta file is a variational
+probability of Dirichilet distribution, this mean that is the
+posterior probability of a topic??.  In this way i am  waiting  a
+value in range 0,1 but may be with the normalization you will lost a
+lot of information.. or the values have a different meaning??
+Because in my data (general tex document) i have value in range (0.03,
+500) very hight range!! I processed 160 document with 4 topic
+thanks for the help
+Antonio

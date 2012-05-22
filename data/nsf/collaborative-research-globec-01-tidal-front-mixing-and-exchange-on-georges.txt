@@ -1,0 +1,44 @@
+                 Georges Bank supports a rich fishery because: (1) large portions of the bank
+              are shallow enough that light-limitation of phytoplankton is usually not
+              important; (2) deep waters rich in inorganic nutrients are available for mixing
+              onto the bank; and (3) the Bank's clockwise circulation can retain the
+              planktonic stages of important fish species.  The tidally mixed front (TMF) is
+              central to the productivity of Georges Bank through the processes of nutrient
+              injection in the north and retention of larvae on the south flank.  These two
+              regions are connected by a circulation pathway along the front in which
+              nutrients lead to phytoplankton and zooplankton growth, creating a donut-shaped
+              region of high production surrounding the crest.  It is suggested that the
+              productivity of this pathway is the result of northern edge nutrient injections
+              and is susceptible to climatic influences on nutrient supply in that region. 
+              
+
+  The overall objective of this project is to understand the processes
+              within the TMF that sustain the biological productivity of Georges Bank and the
+              success of the target species, cod and haddock.  This requires understanding
+              how mixing and circulation within the TMF supplies new nutrients, supports
+              primary production, and retain larvae.   GLOBEC dye tracer experiments have,
+              for the first time, measured directly the near-bottom Lagrangian circulation
+              and mixing in the TMF.  Results show that vertical mixing in the front, and the
+              on-bank flow through the base of the TMF, are dynamically connected. 
+
+  This
+              study is examining the 3-dimensional dynamics of the TMF based on these
+              measurements.  Models will help assess how the strength of the across- and
+              along-isobath circulation sets time and space scales compatible with the
+              development of cod and haddock larvae.  This project consists of a mix of data
+              analysis and modeling activities.  First, dye dispersion data and simple shear
+              dispersion models are being used to understand the link between cross-bank flow
+              and vertical mixing.  Second, a finite-volume coastal ocean model (FVCOM) will
+              be used to calculate the temporal and spatial structure of nutrient flux into
+              the   TMF, contrasting northern and southern flank inputs.  A coupled FVCOM-
+              NPZ (nutrient-phytoplankton-zooplankton) model are being used to test the
+              following hypotheses: (i) Nutrient injections in the north are advected around
+              the crest of the bank and lead to a plume of elevated phytoplankton  and
+              zooplankton production.  (ii) The plume enriches the area of larval entrainment
+              on the south flank.  If the above statements are true, then production in the
+              plume can be altered by the nutrient content of source waters in the Northeast
+              Channel of the Gulf of Maine, and these changes  will affect the feeding
+              environment of larval cod and haddock.  Finally, models incorporating the
+              measured 3-D flow and turbulence fields are being used to examine spatial
+              patterns of larval retention and define the kinds of  environmental transitions
+              that larvae experience during this process.

@@ -1,0 +1,48 @@
+              0070444
+Yoo
+
+The PI proposes to investigate a wavelength interchanging
+              cross-connect geared towards applications in the Next Generation Networks.  In
+              particular, he will pursue a parametric wavelength interchanging cross-connect
+              incorporating difference-frequency wavelength converters with integrated pump
+              sources.  The resulting wavelength interchanging cross-connect has the
+              following unique properties:
+
+
+accommodates signals of any protocol and
+              format,
+crossconnects subcarrier multiplexed optical header and baseband data
+              payload,
+offers scalability of Benes architecture,
+utilizes multichannel
+              wavelength conversion for reduced architecture,
+achieves polarization
+              insensitivity and wavelength independent filtering.
+
+The proposed effort
+              makes comprehensive studies of the Wavelength Interchanging Cross-Connect
+              covering architecture, simulation, design, fabrication and systems integration
+              issues.  Specifically, he will pursue an integrated effort of the following
+              research activities:
+
+1. Wavelength Interchanging Cross-connect Architecture
+              Studies, which will pursue a transparent and scalable architecture suited for
+              Next Generation Network applications,
+2. Wavelength Conversion Technology
+              Studies, which will design, fabricate, and prototype wavelength converters
+              supporting transparent multichannel wavelength conversion, and
+3.
+              Cross-connect Integration, which will bring space switches and wavelength
+              converters together to form a wavelength interchanging cross-connect.  The
+              designed architecture and network elements will be put to test at this step and
+              the simulation results will be experimentally verified.
+
+
+
+
+
+
+
+
+
+

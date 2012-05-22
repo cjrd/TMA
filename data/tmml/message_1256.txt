@@ -1,0 +1,7 @@
+Hi everyone,
+In gibbs sampling LDA, since we do not calculate the log likelihood,
+how can we measure the generalization performance of the models with
+different values on the number of topics. Are there any other quantity
+which could represent this like predictive perplexity?
+Regards,
+Peng

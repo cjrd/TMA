@@ -1,0 +1,35 @@
+{# <div class="container_title" id="standard_params_title">#}
+{#        Required Options#}
+{#    </div>#}
+
+<div class="standard_params" id="std_container">
+    {% for field in form.std_group %}
+        {% include "standard-field.html" %}
+    {% endfor %}
+</div>
+
+<div class="container_title linkarea inactive" id="advanced_params_title">
+    Advanced Options
+</div>
+
+
+<div class="container adv" id="lda_adv_container">
+    {% for field in form.lda_group %}
+        {% include "standard-field.html" %}
+    {% endfor %}
+</div>
+
+
+<div class="container notops adv" id="hdp_adv_container">
+    {% for field in form.hdp_group %}
+        {% include "standard-field.html" %}
+    {% endfor %}
+</div>
+
+<div class="container adv" id="ctm_adv_container">
+    {% for field in form.ctm_group %}
+        {% include "standard-field.html" %}
+    {% endfor %}
+</div>
+
+    

@@ -1,0 +1,59 @@
+              ABSTRACT
+CTS-0077520
+Rumchitzki, Davis S.
+CUNY City
+              College
+
+Atherosclerosis is by far the leading cause of death, bot above and
+              below age 65, in the United States and all western countries.  Atherosclerosis
+              is a disorder mainly of the large, relatively thick-walled arteries; smaller
+              arteries and veins under normal conditions are spared.  Atherosclerosis appears
+              to begin with the accumulation of extracellular lipoproteins in the artery wall
+              and develops into lesions.  This accumulation is often associated with high
+              plasma low-density lipoprotein (LDL) concentrations and thus lipoprotein
+              transport into and accumulations within the artery wall is the focus of intense
+              study.  We hypothesize that qualitative and quantitative vessel-vessel
+              differences in these processes underlie their different susceptibilities to
+              atherosclerosis.  Our group has develop a set of detailed theories, portions of
+              which seem to be vessel-independent, that explains much of the data on these
+              processes in large arteries.  What is lacking is a detailed understanding of
+              how they differ in other tissues.  To begin to fill this gap we propose an
+              experimental/theoretical study of LDL transport into and accumulation in the
+              valve leaflet, a tissue whose structure is radically different from the
+              aorta's, but which also accumulates LIPID AT HIGH PLASMA LDL.  We present
+              preliminary data suggesting an exciting new hypothesis that, even in the
+              absence of an internal elastic laminar, valve endothelial cells lay down a very
+              thin matrix layer that is much sparser than the bulk of its extracellular
+              matrix; if present, this layer would play a central role in filtration and
+              subendothelial tracer transport (goal 2 below).  In addition, data on the
+              transmural pressure dependence of these processes are inconclusive, and we
+              propose to address this in the aortic context.
+
+Our specific goals are:
+
+1.
+              To understand the effect of transmural pressure on the transport and
+              accumulation of LDL cholesterol in the artery wall in light of the observation
+              that atherosclerosis-prone vessels live at high transmural pressures and of the
+              apparently inconsistent historic data on pressure dependence.
+2. To
+              experimentally/theoretically study filtration and tracer convective-diffusion
+              in valve leaflets; to explain in large variation in Tompkins et al's (Circ.
+              Res., 64 1213, 1989) experimental tracer concentration vs depth profiles in
+              valves;
+3. To couple goal 2's results to our extracellular lipid liposome
+              formation and growth kinetic models to explain the liposome size distributions
+              in valves of cholesterol-fed rabbits.  We advance a new hypothesis that
+              liposome accumulation kinetics are tissue-independent and that the valve-aorta
+              difference in lipid accumulation thus lies in their different transendothelial
+              LDL transport.
+
+Successful completion of the project would lead to a better
+              understanding of how vessel structure and conditions, such as transmural
+              pressures, to which the vessel is exposed influence the transport into and
+              accumulation of large molecules (with lipoprotein cholesterol the major
+              molecule of interest) in vessel walls.  We hypothesize that this will underlie
+              the vessel's relative susceptibility to atherosclerosis.  This knowledge could
+              be useful in the long term in potentially selecting a vessel, in a
+              patient-specific way, to be sued as a bypass for clogged coronary artery. 
+

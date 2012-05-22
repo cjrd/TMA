@@ -1,0 +1,4 @@
+David Blei gave a talk on LDA and its applications at NYU during the NYC Machine Learning Week sometime in February 2011.
+I am looking for a soft copy of the slides (the related video is posted athttp://blip.tv/xamdam/topic-models-david-blei-part-1-4465005).
+Regards,
+Christopher

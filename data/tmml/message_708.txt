@@ -1,0 +1,8 @@
+Sinead Williamson et al had a paper on this at the nips topic models
+workshop:
+mlg.eng.cam.ac.uk/sinead/WilliamsonWangHellerBlei09.pdf
+documents select a small subset of "active" topics to draw words from. But
+you're right the dirichlet parameter on the per-document topic weights can
+be used to get at this sparsity as well.
+Anyway I'd also be interested in hearing more about models in this direction
+though. Especially sparse hierarchical topic models.

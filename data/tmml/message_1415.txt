@@ -1,0 +1,23 @@
+Hello,
+I would recommend reading the 10th chapter of Christopher Bishop's
+Pattern Recognition book on Variational Inference. I believe Daphne
+Koeller's new book on graphical models also has a chapter on
+variational inference.
+The way I understand it (which I hope isn't too off the mark) is that
+_all_ the parameters are free (i.e. conditioned only on global
+parameter settings like \alpha or \beta), and you seek to minimise the
+difference of this 'fully factored' model with the actual
+distribution. As a result, you seek settings of variables that
+minimise the KL divergence, i.e. where the derivative of the KL
+divergence with respect to that parameter is zero.
+Naively, I would say they are completely different. In variational
+calculus, you are actually varying over the possible set of functions;
+in variational inference, you have already assumed that the
+approximating function is the fully factored model, and hence you know
+what it's parameters are, and only search for the optimal settings of
+these parameters. To draw an analogue, if you were to solve the
+Brachistochrone problem using the "variational inference" approach,
+you could write down the function for the curve as a Fourier series,
+and then try to solve for the coefficients of the series. There might
+be a deep connection to the two that I'm unaware of though...
+Hope that helps,

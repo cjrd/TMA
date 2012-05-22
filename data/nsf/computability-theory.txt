@@ -1,0 +1,65 @@
+              Lempp proposes research in both applied and pure computability
+theory.  In the
+              former area, Lempp proposes to investigate the
+computational complexity of
+              models of uncountably categorical
+first-order theories, and of Boolean
+              algebras. He also propose to
+study the proof-theoretic strength of
+              combinatorial statements,
+esp. variants of Ramsey's Theorem, in order to find
+              new
+proof-theoretic systems of weak second-order arithmetic. In the
+latter,
+              i.e., in pure computability theory, Lempp plans to reach
+a better
+              understanding of three important degree structures, the
+computably enumerable
+              Turing degrees, the enumeration degrees of
+the Sigma^0_2-sets, and the Turing
+              degrees of differences of
+computably enumerable sets, by investigating their
+              finite
+substructures, in particular the embeddability of finite lattices
+and
+              extensions of embeddings of partial orders into these
+              degree
+structures.
+
+Computability theory is the study of the theoretical
+              limitations
+of computation by machines, irrespective of limitations of
+              bounds
+on memory space or run time. It is thus in some sense the
+theoretical
+              cousin of complexity theory, an area of computer
+science studying
+              computability within given time or memory space
+bounds. Typical results in
+              computability theory show that certain
+mathematical problems cannot be solved
+              by any computer, no matter
+how fast or how large. Up until the late 19th
+              century,
+mathematics was essentially algorithmic: If you solved a
+              problem,
+you could also give an effective procedure to find a
+solution.
+              However, in the late 19th century, it turned out that
+many mathematical proofs
+              could be done more abstractly and more
+elegantly, at the expense of
+              effectiveness. Suspicions about this
+approach came to the front in the 1930's
+              with the first
+undecidability results, showing that this abstraction often
+              led
+to "non-algorithmic solutions". Lempp's research focuses on the
+analysis
+              of unsolvable problems, mainly in algebra and
+combinatorics. Techniques and
+              results in this area are often not
+only of great theoretical interest, but
+              also have practical
+applications in computer science.
+

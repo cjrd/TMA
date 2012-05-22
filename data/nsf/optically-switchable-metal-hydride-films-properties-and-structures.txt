@@ -1,0 +1,53 @@
+              Thin films synthesized by electron-beam evaporation will be used to explore and
+              exploit the remarkable optical switching properties of certain
+              recently-discovered metal-hydride thin films, whereby some thin films (e.g.,
+              yttrium) can quickly and reversibly transform from a metallic mirror to a
+              transparent insulator, by inducing a relatively small change in the hydrogen
+              content of the thin film. The objectives of this project include:  1) to gain
+              an understanding of the mechanism responsible for the optical switching
+              (electron correlation, interstitial site occupancy, and other mechanisms have
+              been proposed);  2) to achieve an improvement in switching times;  3) to
+              understand the stability and strain effects in the films;   and 4) to provide a
+              demonstration of pixel switching in an array of micro-mirrors.  Control of
+              hydrogen content using gas pressure, electrochemical charge-transfer, and a
+              novel electrotransport technique will be explored.  Switching speed and the
+              diffusivity of hydrogen will be explored by investigating specific thin film
+              alloys, substrate-film strain effects, and overlayer thickness and composition.
+               The first arrays of micro-mirrors with driving electrodes will be patterned by
+              photo-lithographic techniques.  Various characterizational and analytical
+              techniques, including the new capabilities offered by nuclear magnetic
+              resonance force microscopy, as well as conventional Hall effect, x-ray
+              diffraction, and atomic force microscopy, will be employed to delineate
+              systematics in diffusion coefficients, transport properties, optical
+              transmission, and surface and film morphology. Students and post doctoral
+              research associates will participate in this research.
+%%% 
+This work will
+              explore and exploit the remarkable properties of certain thin films.  These
+              films (typically, these would be metallic coatings on windows and mirrors, or
+              would make up the small dots ("pixels") on video displays) can be made to
+              quickly switch from being a mirror to being transparent.  This "on-off mirror"
+              behavior is controlled by changing the amount of hydrogen that the film is
+              allowed to contain.  Such materials have immediate potential for applications,
+              from "smart windows" and other energy-saving large-scale products, to
+              switchable micro-mirrors for flat-panel displays.  This project represents a
+              multifaceted program to optimize and develop such materials.  Objectives
+              include:  1) understanding why the optical switching occurs;  2) making the
+              switching times faster, in order to make the materials useful for video
+              devices;  3) understanding the structure of the films;   and 4) demonstrating
+              pixel switching in an array of micro-mirrors.  The work will study the ways
+              that the hydrogen content can be changed; in particular, a new technique
+              whereby the hydrogen is swept along with an electrical current will be
+              examined. The structure of the films and variations in the speed of hydrogen
+              motion in the material will be investigated. The first arrays of micro-mirrors
+              with driving electrodes will be patterned to demonstrate the utility of these
+              switchable optical materials for video displays. This research will be
+              conducted with the assistance of graduate and undergraduate students as well as
+              postdoctoral research associates.  They will thereby receive training in one of
+              the current forefront areas of condensed matter physics and materials science.
+              This will facilitate their entry into the scientific/technological workforce
+              during the coming decades of this century.
+***
+
+
+

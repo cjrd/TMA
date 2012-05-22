@@ -1,0 +1,14 @@
+Estimating the likelihoods in LDA is a challenging problem.
+Several methods have been proposed to estimate test set perplexity.
+The following break-through paper by Wallach et al in ICML 2009 lists some:
+"Evaluation Methods for Topic Models" Hanna Wallach, Iain Murray,
+Ruslan Salakhutdinov and David Mimno. ICML, 2009, Montreal, Quebec.
+In my ACML'09 paper, I corrected two of their methods and proved
+one was unbiased.   See "Estimating Likelihoods for Topic Models,"
+at:
+http://www.nicta.com.au/people/buntinew/discrete_component_analysis
+Note I also did *exact* likelihood calculations in some cases, in order to
+really test things out.  The two methods that work well are:
+Mean Field Approximation for Importance Sampling  (much faster)
+Left-to-Right Sequential Sampler
+(provably unbiased)

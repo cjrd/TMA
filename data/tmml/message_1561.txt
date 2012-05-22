@@ -1,0 +1,12 @@
+Hi Jonathan,
+Thanks for your responses. It is very helpful. I really appreciate your help.
+Best regards,
+wluo
+At 2011-05-09 08:26:18?"Jonathan Chang" <foo at facebook.com> wrote:
+Hi wluo,
+I'm not entirely sure what you're asking but I'll try my best to respond.
+1.) In slda.em, y_d is treated as an observed *variable* with fixed *variance*. y_d is identical across iterations and each y_d is set to a particular value. If you have per-document annotations *distributions* instead of annotation observations, then you will perhaps need to modify the model.
+2.) a and b are estimated in the M-step of the training phase, and hence on training data.
+3.) Yes, the idea for prediction is to learn topics on the words, and then regress on z_bar to estimate y_d. That is you assign y_d as a deterministic function conditioned on your posterior estimates of z. Since y_d is unobserved in the testing phase, you do *not* make assignments of z conditioned on y_d.
+Cheers,
+Jonathan

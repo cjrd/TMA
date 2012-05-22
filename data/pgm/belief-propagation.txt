@@ -1,0 +1,410 @@
+
+An alternative class of algorithms to the
+variable elimination algorithms, is the
+class of message passing algorithms. And
+as we'll see this is a class that is in
+some ways closely related to the variable
+elimination, but also offers us additional
+flexibility in how we do summation 
+and factor product steps, so as to
+potentially come up with a lower complexity
+than would be required by even the minimal
+elimination ordering. So let's consider
+a simple Markov network of the following
+type. And let's assume that I don't want
+to go to the cost of eliminating
+variables. Although, in this network, it's
+not gonna be too expensive. And, instead,
+what we're going to do is we're going to
+construct what we call a cluster graph.
+The cluster graph is something where... it's...
+is a data structure in which
+we're going to take little bits of
+knowledge from this graphical model. And
+we're going to place them in things called
+clusters. So here we have four clusters.
+In this example, cluster one, is a cluster
+whose jurisdiction of influence is, the,
+the pair of variables AB. Cluster two has
+jurisdiction over B and C. Three is over C and
+D. And four is over A and D. And these
+clusters are going to sit there and
+they're going to talk to each other. And
+they're going to try and convince each
+other that what they think about a
+variable that they both consider to be
+under their jurisdiction is correct. So
+for example, cluster one is going to talk
+to cluster two about the variable B and
+it's going to tell cluster two what it
+thinks about B so that cluster two might
+become more informed about the
+distribution over B. And so, what we're
+going to do is, initially, each cluster is
+going to have its own little piece of
+information. So Phi 1 is going to go here.
+Phi 2 is going to go there. Phi 3 goes there
+and Phi 4 goes there. And now the variables
+are going to communicate with each other
+via these things called messages. So we're
+going to call we're going to slightly
+rename things. We're going to call the
+[inaudible] initial set of beliefs, if you
+will, or evidence that a factor that a
+cluster has over the variables in its
+jurisdiction, we're going to those psi. In
+the example were just have psi were just
+the phis of the original model but as will
+see sometimes it can become a little bit
+complicated than that. So now factor...
+The cluster one has the factor of psi 1.
+And cluster two has psi 2 and so on.
+And now lets imagine that psi 1 wants
+to send a message. I'm sorry, that psi 2,
+that cluster two wants to send a
+message to cluster one. So it has to
+figure out what it believes. A priori
+we're going to assume that its just going
+to, we're going to start out by
+initializing with a totally uninformed
+message. So because initially they haven't
+even started talking to each other. So all
+messages are initialized to be one. But
+now, cluster two can come back and say,
+okay. I'm going to take the information,
+uninformative as it was, that I got from
+cluster two. And notice that I call this
+message delta 2,1. Delta, 2 being the
+from. And 1 being the to, and so taken
+delta 2,1, and now factor one, cluster
+one is going to say well I'm going to pick
+that and I'm going to multiply it, with my
+current, thoughts about the variables A,B
+and that's going to give me a more
+informed factor and now I'm going to
+communicate that information to factor
+four, to cluster four. But cluster 4's
+doesn't care about a, sorry cluster four
+doesn't care about B. And so what I'm
+going to communicate to cluster four,
+which is this message delta 1,4, from one
+to four, is the sum over B, which is the
+variable that four doesn't wanna hear
+about, of the incoming message. Times my
+initial beliefs. For my initial factors.
+Now this general process is what keeps the
+message passing algorithm going. So each
+variable. Each cluster is going to send
+messages to its adjacent cluster that
+reflect this exact same process. So for
+example, just take a different example
+here is delta 3-4 so this is the message
+that goes from three to four and that
+message takes onto consideration the
+evidence the two sent to three which is
+this guy over here finds whatever three
+thought about CD to begin with. Notice,
+and this is important, that the message
+that three sends to four doesn't take into
+consideration, the information that it got
+from four. So there isn't in this
+expression over here The contribution of
+delta 4,3. Because you want to
+have, you want to avoid this case of I
+repeat back to you a rumor that you just
+told me and we all become more convinced
+about the truth of this rumor because, oh,
+you, I, I thought about this first but now
+you're reinforcing me by telling it to me
+again and the beliefs are just going to go
+up and up. And so what happens here is
+that we deliberately only restrict
+attention to evidence that comes in from other
+sources. So three only uses evidence from
+two, when reporting to four. And it only
+uses, conversely, evidence from four when
+reporting to two. And so now, this is this defines a set a, a communication
+protocol by which one factor or one
+cluster rather in the graph can
+communicate information to its neighbors.
+What do we do with this? So how do we
+generalize this message passing process?
+Let's construct a more general version of
+this. So this uses a data structure called
+a cluster graph. A cluster graph is an
+undirected graph whose nodes are not
+variables any more, not as, not in, this
+is not a, you know graphical model of the
+type that we've seen. The nodes in this
+undirected graph are clusters that
+correspond to subsets of variables just
+like we had before. And we're going to
+connect, two adjacent, two clusters, Ci
+and Cj. And this, this thing called the
+sepset, is the variable that they choose
+to talk about. And clearly each one can
+only talk about variables that it knows
+about which is why the sepset Sij has to
+be a subset of both Ci and Cj. So once
+again, Ci is the jurisdiction of cluster i,
+these are the variables that it
+understands, and Sij is the communication
+between two adjacent clusters in the
+cluster graph. So, now, given a set
+of factors Phi, we're going to initialize
+the, the model by giving each gra-, each
+cluster in the graph a certain amount of
+information. So each of my initial
+clusters, each of my initial factors phi k,
+in my graph, is going to be assigned to
+one and only one cluster. And this is
+important. It needs to be at least one, so
+that the information is taken into account
+somewhere. And it shouldn't be more than
+one, because if you give it to more than
+one person, to more than one cluster,
+they're going to, that you're going to
+double count the evidence. They're each
+going to think it's an independent piece
+of evidence, and it's going to be counted
+twice. Now where do we put the information
+corresponding to factor k? We put this
+only in a fact, we can only put it in a
+cluster that understands every single
+variable in that factor. So if we have a
+factor whose scope, has a certain, that
+has a certain scope, that scope better be
+a subset. Of the variables that the
+cluster understands, because otherwise we
+can't even talk about those variables. So,
+[sound] So once we've done that. See if I
+can, erase this. Okay. We can now define
+the initial beliefs of a particular
+cluster, as the product of all of the
+factors that are assigned to it. Now some
+variables might, some clusters might be
+assigned one factor. In which case psi is
+just equal to that phi. Some, because
+that, that was the case in the example
+that we just saw. Some clusters might have
+several factors assigned to them. In which
+case we need to multiply them to create a
+single factor that is sorta the total
+informed beliefs of the cluster. And some
+clusters might have no factors assigned to
+them. In which case this is a null product
+and is equal to one. So now let's look at
+an example of the sum of more interesting
+cluster graphs than the trivial one that
+we showed earlier. Here we have a set of
+factors: phi-1 of ABC; phi-2 of BC; phi-3; phi-4;
+phi-6 and so on. So initially, we have to
+figure out for each of those factors, a
+cluster in which to put it. For ABC,
+there's really only one choice because
+there is only one cluster in this entire
+graph that understands about all of A, B
+and C, and that is this cluster over here.
+BC however, has two choices. It can go
+into cluster one, or it can go into
+cluster two, because both cluster one and
+cluster two understand about B and C. We
+are going to put it in cluster two. I mean
+you can put it in either one, both are
+fine. Phi-3 has again two choices it can go
+into cluster two or it can go into cluster
+three. We're going to go ahead and make a
+decision to put it in cluster two.
+Cluster, phi-4, goes, has only, one choice,
+because only one cluster has both D and E
+in its scope. So it goes here. Phi-5
+similarly. Only over here. BD again there
+is more that one choice. We could put it
+in cluster two or we can put it in cluster
+three. Let's, for simplicity, put it in
+cluster three, and BDF only one choice.
+This is one possible way of assigning the
+cluster, the factors to clusters. There is
+other alternatives, as I said, that would
+work. If we do this we end up, for
+example, with psi 2. Being the product
+of phi2 times phi3. Where as psi 1 is
+simply equal to phi1. And psi3. Is
+equal to phi, to phi6 times phi7.
+Here is a different assignment of the same
+factors to different, to the clusters. And
+we can see that it, that it also equally
+legitimate. >> Okay this was one cluster
+graph for those set of factors. Here's another
+cluster graph ... >> So let's compare them
+one two one two for different for the
+exact same set of factors. Then notice is
+that even the clusters have never changed, what
+changed is the edges and the sepsets
+between them. >> That's in cluster graph. Okay
+so now let's think about message passing
+in the context of this more richly
+structured cluster graph to see what it
+looks like here. So here for example if
+we're interested in passing a message
+from. Cluster one to cluster four. We're
+going to take psi 1 which is the factor,
+the set of factors that were initially
+assigned to cluster four. But we have to
+take in the message that this cluster got
+from its other neighbor two. We're going
+to multiply them together and then we're
+going to sum out all of the variables that
+one understands but two doesn't. So here
+for example, one understands A and C and
+two doesn't, so we have to sum out over A
+and C. And that is the message delta 1,4. What about Delta 4-1? Delta 4-1 is
+the message goes in the other direction.
+And here, notice that four gets
+messages from all sorts of other
+clusters. So in addition to its original
+factor of psi 4, it gets a message
+from cluster two. It gets a message from
+cluster five then it gets a message from
+cluster three each over its own scope. All
+of these are going to be multiplied
+together to give the current, most
+informed beliefs about, about the
+variables B and E, which are then
+marginalizing over E, which cluster one
+doesn't understand to produce a message
+over B. And once again, we know that the
+message from one is not used to inform the
+message that four sends back. So that
+gives us overall the following expression
+for message passing, between cluster i and
+cluster j so delta ij, over the scope of
+this which is the sepset, Sij and
+that has the following general expression.
+It takes the factors initially assigned to
+cluster i, multiplies in all of the
+incoming messages. Other than from j.
+Multiply that all together, sums out the
+variables that cluster j doesn't know
+about. So everything that's in the scope
+of Ci, but not in the scope of Cj. And
+that gives us a factor over the sepset
+that is produced as a message. So putting
+that together that gives us an algorithm
+which is generally called belief
+propagation for the reasons that the
+clusters are propagating, if you will,
+informed beliefs to each other. And here
+is the summary of the algorithm. Each
+factor phi is first assigned to a cluster.
+That is used to construct our initial
+potentials. These psi's that we talked
+about. We initialize all of the messages
+before anybody starts communicating to be 1.
+And then we repeat the following process.
+We select some edge in the graph between
+adjacent clusters and we pass the message
+between cluster i and cluster j over that
+edge. Okay? And we repeatedly and this is
+the expression for that message. It's the
+one that we saw on the previous slide. And
+that process is repeated again and again.
+At the end of the process, we, now, a
+cluster needs to know what to believe
+about the variables that it understands.
+And so it takes all of the it takes its
+own initial beliefs, and all of the
+information that it got from all of its
+neighbors. Multiplies it all together and
+that produces these things which are called
+beliefs. Now there's several important,
+aspects of this algorithm that are left
+undefined. And that we're gonna need to
+talk about, later on. The first of these
+is repeat until when? When do we decide
+that we're done, and that we can stop? And
+we'll talk about that in the context of
+different variants of this algorithm,
+later on. The second thing that's left
+undefined is how I select each of the
+edges, how do I select the edges, which
+edge do I select to pass messages over? So
+here there is, you know, the obvious
+simple thing, which is just to go in some
+prespecified order and that's one option,
+is round robin message passing. But it
+turns out that there are better strategies
+than that and we'll talk about that too.
+So, is this algorithm any good? Well, it
+turns out that, you know, yes and no. So
+first of all, if you pass messages over a
+graph like the one that I showed before.
+Like, the, you know, little A, B, C, D
+loop. Eventually, you see that we achieve
+convergence. So this is, here we can see
+that, eventually, we do converge to some
+probability. But, that probability is a
+little bit off. That is, the answer is not
+exact. Now in general, with exceptions
+that we'll talk about, this is an
+approximate algorithm. Which shows that
+there's no free lunch. The problem was
+NP hard, it's not like I have an easy
+way of solving it. So given all these
+problems with the belief propagation
+algorithm, what makes us think that it's
+an effective algorithm to use? When the
+algorithm was. [inaudible] discovered in
+the 1990s Murphy, Weiss, and Jordan, as
+well as others looked at its performance
+in the context of real networks and
+specifically networks that have a lot of
+loops, which is what causes [inaudible] to
+misbehave. And so here is an example
+network. It's, it's called the pyramid
+network. It's a network that is analogous
+to one that arises in image analysis. And
+what we, what they showed is that when you
+compute on the one hand the exact
+marginals. On the X axis. And for
+different marginals in the network. And on
+the Y axis, we see the marginals computed
+by loopy belief propagation. We see
+that the marginals, by and large, sit
+almost exactly on a straight line, with
+few exceptions. So you'll see that the
+loopy belief propagation is very close to
+accurate on this network. Here's another
+network, this is a simplified version of a
+medical diagnostic network and once again
+you can see that the when it compared the
+correct marginal on the x axis to the
+belief propagation marginals on y axis,
+the marginal fit almost exactly on
+straight line which shows that again
+they're very close... The propagation is
+very close to accuracy. So, to summarize,
+the belief propagation algorithm passes
+messages over a graph of clusters that are
+connected to each other via sepsets. The
+adjacent clusters pass information to each
+other in these messages transmitting
+information only about the variables in
+the sepset which are the ones that they
+have in common. The message that cluster-i
+sends to cluster-j, summarizes everything
+that a i knows about the variables in the
+sepset, except for information that it
+obtains from j, so that one avoid direct
+double counting of the same piece of
+evidence where j gets his own information
+back again by i. We've seen that the
+algorithm may not converge. And it can have
+this oscillatory behavior, And that the
+resulting beliefs are pseudo-marginals, in
+that they are not necessarily the exact
+marginals from a theoretical perspective.
+But nevertheless, as we've seen, the
+algorithm actually performs quite well in
+a range of practical applications, which
+is why it's quite commonly used.

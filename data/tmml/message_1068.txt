@@ -1,0 +1,15 @@
+I came across this paper, titled "Rational Research Model for Ranking
+Semantic Entities"
+http://baggins.nottingham.edu.my/~wangwei/publications/rarerank.pdf
+They propose a RareRank (Resource Rank) algorithm wherein LDA scores are
+combined with a directed graph. It is used in the http://swse.deri.org/
+search engine. According to them "a three-step computation for entity
+prioritisation: in the frst step, data crawled from the Web is transformed
+to directed labelled graph, and ResourceRank algorithm is applied to
+compute ranking scores for resources.
+The second step extracts context graphs using the provenance of the
+data to compute ContextRank scores. In the fnal step, a resource-context
+graph is derived based on some pre-defned rules, and the two algorithms are
+integrated to produce ReConRank scores, which reflect importance of
+theresource and its context."
+Edel

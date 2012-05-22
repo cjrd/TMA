@@ -1,0 +1,32 @@
+              The objective of this Grant Opportunities for Academic Liaison with Industry
+              (GOALI) research project is to continue the comprehensive experimental and
+              theoretical study of electrospinning of polymer nanofibers with the emphasis
+              now on the fabrication of nanofiber assemblies and the evaluation of their
+              microstructure and properties.  Electrospinning is an emerging technology
+              producing polymer fibers in the diameter range from a few microns down to three
+              nanometers.  Previous collaborative research by the principal investigators has
+              advanced the understanding of the process in a single jet regime, including a
+              recent discovery and analysis of a hierarchical bending instability as a major
+              mechanism of production of small diameter fibers.  Potential industrial
+              applications of the process require further development of methods of nanofiber
+              placement and fabrication of nanofiber assemblies with controlled geometry,
+              orientation, and properties.  This research will provide a body of knowledge
+              necessary for the development of robust, industrially relevant methods and
+              devices for flexible and reproducible fabrication of large nanofiber assemblies
+              with controlled geometry and microstructure.  Development of better methods of
+              fabrication of nanofibers and their useful assemblies will produce a
+              considerable impact in the general area of nanostructured materials.
+
+In
+              order to establish new technologies for the control of nanofiber placement, the
+              research tasks will include experimental and theoretical analysis of the
+              density distribution of jets in the cloud region of the process envelope. 
+              Under normal conditions, non-woven sheets with random fiber orientation are
+              being produced.  By taking into account the interactions of the segments of the
+              jet with themselves and with the external field, electromechanical methods of
+              placement of the nanofibers into controlled oriented and gradient assemblies
+              will be explored.  Microstructure and properties of these assemblies will be
+              characterized and correlated with the process parameters.  The research will be
+              performed in close collaboration with the Donaldson Company, Lucent
+              Technologies Bell Laboratories, NIST, and SUNY Stony Brook/Brookhaven National
+              Laboratory.

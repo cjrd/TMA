@@ -1,0 +1,26 @@
+Hi list,
+I'm puzzled when reading Wei's paper: Nonparametric Pachinko Allocation.
+1. How to calculate the likelihood of an observation(word) assigned to a
+category(supertopic)?
+The paper doesn't give explicit formula for the category likelihood.Since a
+supertopic is a Dirichlet distribution over subtopic.the likelhood should
+in the form of Dirichlet Multinomial Distribution(aka polya distribution):
+p(z|
+\alpha)=\frac{\Gamma(\sum_{k}\alpha_{k})}{\Gamma(\sum_{k}n_{k}+\alpha_{k})}\prod\frac{\Gamma(n_{k}+\alpha_{k})}{\Gamma(\alpha_{k})}
+where z is the subtopic assignment of a document, n_k is the number of
+times the outcome in z was k.
+But how to calculate alpha,through parameter estimation like in PAM or
+through the \beta variable in categroy DP(see Teh's HDP)?
+2. How to adjust the subtopic menu(m variable in the paper) after a
+successful reassignment of observation category?
+When the observation category(supertopic) is changed, the subtopic menu
+assignment is invalid since menus differs throughout the categories.How to
+adjust it,simply resample a menu in the new category?What about the menus
+in the original category ,do we need update the menu statistics and remove
+some menu if necessary?
+Also from my experience on the barexample in the paper, i feel the
+Dirichlet distribution is bad at modelling correlation(especially those
+small \alpha). I discover a lot of "splitted" supertopics in my
+experiment(over 2 times of the "true" supertopic). Do you guys has similar
+findings?
+thanks in advance

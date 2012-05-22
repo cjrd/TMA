@@ -1,0 +1,31 @@
+hi, all
+There is a further question how we choose the appropriate iteration when using Gibbs sampling. For example, Blei used 10000 iteration
+in hLDA, and other authors applied 50 iteration for various dataset. How can we choose the appropriate iteration, and what is the best?
+Best regards
+Alfred xu
+alfredxn
+2010-07-14
+???? Laura Dietz
+????? 2010-07-13 20:44:03
+???? Lucas Kuhn
+??? topic-models at lists.cs.princeton.edu
+??? Re: [Topic-models] GibbsLDA++ no Convergence
+Hi Lucas,
+Blei and McAuliffe used variational inference in the sLDA paper, not
+Gibbs sampling.
+For Gibbs sampling convergence means that you reach the ergodic
+distribution. The chain varies from iteration to iteration, but the
+variability is constant across different windows/chains.
+One approach towards convergence diagnosis is to run multiple Gibbs
+chains and measure the variation within one chain and compare it to the
+variations of all chains together. The method is explained in [1,2].
+Cheers,
+Laura
+[1] A. Gelman (1996). `Inference and Monitoring Convergence'. In W. R.
+Gilks, S. Richardson, & D. J. Spiegelhalter (eds.),  Markov chain Monte
+Carlo in practice, pp. 131-143. Chapman & Hall, London.
+[2] S. P. Brooks & A. Gelman (1998). `General Methods for Monitoring
+Convergence of Iterative Simulations'. Journal of Computational and
+Graphical Statistics  7(4):434-455.
+http://www.jstor.org/stable/1390675?seq=8
+Lucas Kuhn wrote:

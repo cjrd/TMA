@@ -1,0 +1,38 @@
+              The goal of this project is to bridge the gap between the molecular genetics of
+              disease resistance genes and QTL studies examining the genetic architecture of
+              natural variation in disease resistance. The investigator will use a
+              candidate-gene analysis to test for associations between molecular variation in
+              well-characterized resistance genes of the plant Arabidopsis thaliana and
+              quantitative phenotypic variation in disease resistance to the bacteria
+              Pseudomonas syringae. The interaction between  A. thaliana and P. syringae is
+              an ideal system in which to investigate such association. A. thaliana has been
+              a model system for studies of the molecular basis of disease resistance in
+              plants, and four resistance genes (R genes) have been identified that recognize
+              and trigger defense responses in plants challenged with P. syringae strains.
+              Two of these genes, RPS4 and RPS5, are located very close to QTL the
+              investigator identified during her postdoctoral research; the QTL affect
+              quantitative variation in resistance to P. syringae. This raises the
+              possibility that these R genes also affect the plant's response to pathogen
+              attack quantitatively. These two QTL had very large effect and a significant
+              dominance effect, as is expected for R genes. To determine whether molecular
+              variation in the RPS4 and RPS5 genes contribute to the quantitative variation
+              observed among A. thaliana accessions, the two genes will be sequenced in 19
+              accessions from a world-wide collection of A. thaliana previously shown to vary
+              quantitatively in disease resistance to P. syringae. Associations between
+              molecular and phenotypic variation among these accessions will be tested using
+              a nested analysis of variance. Significant results will  indicate that a given
+              mutation during these genes' evolutionary history has caused a significant
+              deviation from the average disease resistance phenotype. Such information will
+              significantly increase our understanding of the evolution of these genes and
+              provide insights into the functional role of these genes. 
+
+Understanding how
+              molecular variation affects quantitative phenotypic variation is an important
+              goal of evolutionary biology as well as of agricultural and medical genetics.
+              Although much has been learned recently about the genetic architecture of
+              quantitative traits and about the molecular evolution of key genes, very few
+              studies have attempted to link the two fields. This research will be an
+              important step toward bridging the gap between these two fields and in
+              furthering our understanding of the molecular basis of disease resistance in
+              plants.
+

@@ -1,0 +1,230 @@
+
+In this video, I'd like to convey to you
+the main intuitions behind how
+regularization works, and we'll also write
+down the cost function that we'll use when
+we're using regularization. With the
+hand-drawn examples that will have on
+these slides I think I'll be able to
+convey part of the intuition. But and even
+better way to see for yourself how
+regularization works is if you implement
+it and sort of see it work for yourself.
+And if you do. There are plenty exercises
+after this. You get a chance to sort of
+see regularization in action for yourself.
+So, here's the intuition. In the previous
+video we saw that if we were to fit a
+quadratic function to this data, it gives
+us a pretty good fit of the data whereas
+if we were to fit an overly high order
+degree polynomial we end up with a curve
+that may fit the training set very well
+but really not the, not but over fit the
+data poorly and not generalize well.
+Consider the following. Suppose we were to
+penalize and make the parameters theta
+three and theta four really small. Here's
+what I mean. Here's our optimization
+objective, or here's our optimization
+problem, where we minimize our usual
+squared error cause function. Let's say I
+take this objective, and I modify it, and
+add to it, plus 1000. Theta three squared
+up 1000, Theta four squared. 1000 I'm just
+writing down as some, as some huge number.
+Now, if we were to minimize this function,
+well, the only way to make this new cost
+function small is if theta three and theta
+four are small, right? Because otherwise,
+[inaudible] 1000 times theta three. This,
+this, this new cost function's gonna be
+big. So when we minimize this new
+function, we're going to end up with theta
+three close to zero, and then theta four,
+close to zero. And thus as if we're
+getting rid of these two thrones over
+there. And if we do that well then, if
+theta three and theta four are close to
+zero then [inaudible] left was a quadratic
+function and so it ends up with
+[inaudible] data that's a quadratic
+function plus maybe tiny contributions
+from small terms, theta three, theta four,
+may be very close to zero. [sound]. And so
+we end up with, essentially, a quadratic
+function, which is good, because it's a,
+it's a much better, hypothesis. In this
+particular example, we looked at the
+effect of penalizing two of the parameter
+values being launched. More generally,
+here's the idea behind regularization. The
+idea is that if we have small values for
+the parameters. Then, having small values
+for the parameters. Somehow we usually
+correspond to having a simpler hypothesis,
+so for our last example, we penalize the
+theta three and theta four, and when both
+of these were close to zero we wound up
+with a much simpler hypothesis that was
+essentially a quadratic function but
+[inaudible] probably if we penalize all
+the perimeters usually that, we can think
+of that as trying to give us a simpler
+hypothesis as well because when you know,
+these perimeters are close to zero and
+this example that gave us a quadratic
+function, but more generally It is
+possible to show that having smaller
+values of the parameters corresponds to
+usually smoother functions as well, thus
+simpler, and which are therefore also less
+prone to overfilling. I realized that the
+reasoning for y having all the perimeter
+be small, why that corresponds to simple
+hypothesis, I realize that reasoning may
+not be entirely [inaudible] right now and
+it is kinda hard to explain, unless you
+implement it yourself and see it for
+yourself, but I hope that the example of
+having theta three and theta four be small
+and how that gave us a simpler hypothesis,
+I hope that helps explain why, at least
+gives some intuition as to why this might
+be true. Lets look at this specific
+example. For housing price predictions we
+may have a hundred features that we talked
+about. Where maybe x1 is the size, x2 is
+the number of bedrooms, x3 is the number
+of floors, and so on. And we may have a
+hundred features. And. I like the
+polynomial example. We don't know, right,
+we don't know that data three, data four,
+are the high order polynomial terms. So,
+if we have just a bag, if we have just a
+set of 100 features, it's hard to pick in
+advance which are the ones that are less
+likely to be relevant. So we have, you
+know, a 100, or a 101 parameters, and we
+don't know which ones to pick, to, we
+don't know which parameters to pick to try
+to shrink. So, in regularization, what
+we're going to do is take our cause
+function, here's my cause function for
+linear regression. And what I'm going to
+do is modify this cause function to shrink
+all of my parameters. Because, you know,
+I, I, I don't know which one or two to try
+the shrink. So I'm gonna modify my cause
+function to add a term at the end. Like
+so, when we add square brackets here as
+well. When I add an extra regularization
+term at the end to shrink every single
+parameter, and so this term would tend to
+shrink all of my parameters, theta one,
+theta two, theta three, up to theta 100.
+By the way, by convention. The summations
+here starts from one, so I'm not actually
+gonna penalize Theta-0 being large, that's
+a little convention. That the sum is from
+I=1 thru N, rather I=0 thru N, but in
+practice it makes very little difference,
+and whether you include, you know, Theta-0
+or not in practice, it will make very
+little Difference of results, but by
+convention usually we regularize only
+theta one, through theta 100. Writing down
+or regularize optimization objective. Or
+regularize cos function again. Here's
+[inaudible] data. Where this term on the
+right is a regularization term. And lamda
+here is called the regularization
+parameter. And what lambda does is it
+controls a tradeoff between two different
+goals. The first goal captured by the
+first term in the objective, is that we
+would like to train, is that we would like
+to fit the training data well. We would
+like to train-, fit the training set well.
+And the second goal is, we want to keep
+the parameters small, and that's captured
+by the second term, by the regularization
+objective. And, By the regularization
+serum. And what lambda, the regularization
+parameter does is it controls the trade
+off between these two goals. Between the
+goal of fitting the training set well, and
+the goal of keeping the parameters small
+and therefore keeping the hypothesis
+relatively simple to avoid over fitting.
+So our housing price prediction example,
+whereas previously if we had set a very
+high order polynomial we may have wound up
+with a very weakly or [inaudible] function
+like this. If you still fit a high order
+polynomial with all the polynomial
+features in there. But instead you just
+make sure to use this sort of regularized
+objective. Then, what you can get out is,
+in fact, a curve that isn't quite a
+quadratic function, but is much smoother
+and much simpler. And maybe a curve like
+the magenta line that, you know, fits.
+That, gives a much better hypothesis for
+this data. Once again, I realize it can be
+a bit difficult to see why shrinking the
+parameters can have this effect. But, if
+you implement this algorithm yourself with
+regularization, you will be able to see
+this effect firsthand. In regularize many
+regression, if the parameter, if the
+regularization parameter [inaudible] is
+set to be very large then what would
+happen is that we would end penalizing the
+parameter theta one, theta two, theta
+four, theta four very highly that is the
+hypnosis is this one down at the bottom.
+And if we end up [inaudible] feta one,
+feta two, feta three, feta four very
+heavily. Then well end up with all of
+these parameters close to zero. Right,
+feta one is close to zero. Feta two is
+close to zero. Feta three and feta four
+will end up being close to zero. And if we
+do that, is as if, we getting rid of these
+terms in our hypothesis. So that we just
+left with the hypothesis. That, looks like
+that, that says that, well, housing prices
+are equal to theta zero, and that is a kin
+to fitting a flat, horizontal straight
+line to the data, and this. Is an example
+of under fitting, and in particular this
+hypothesis, this straight line, it just
+fails to fit the training set well. It's
+just a fat straight line. It doesn't go,
+you know, go near, it doesn't go anywhere
+near most of our training examples. And
+another way of saying this is that. This
+hypothesis has too strong a preconception
+or too high a bias that housing prices are
+just equal to theta zero, and despite the
+clear data to the contrary [inaudible]
+chooses to fit this sort of flat line.
+Just a, flat horizontal line. I didn't
+draw that very well. This just horizontal
+flat line to the data. So for
+regularization to work well. Some care
+should be taken to choose a good choice
+for the regularization parameter Lambda as
+well. And, when we talk about [inaudible]
+selection later in this course, we'll talk
+about a way, a variety of ways, for
+automatically choosing the regularization
+parameter Lambda as well. So that is the
+idea behind regularization and the cost
+function we'll use in order to use
+regularization. In the next two videos,
+let's take these ideas and apply them to
+linear regression and to logistic
+regression so that we can then get them to
+avoid over fitting problems.

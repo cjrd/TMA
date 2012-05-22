@@ -1,0 +1,18 @@
+Apologies for the delay in response. Yes, the variance in the unconditional
+p(w) was intended to respect the rest of the model parameters in deriving a
+measure of generality.
+In all honesty i don't see the benefit of the weighted variance (and i
+confess I'm not sure what you're proposing the sample would be). The
+statistic i suggest could be computed quite simply using simulation. I
+forget standard notation, so apologies if i write this unconventionally, but
+if \Theta are your topic mixing proportions, which are dirichlet distributed
+with parameter \gamma, and the probability of word i in topic z were
+\beta_zi, then if you sample a bunch of p_j according to the following:
+1. sample a vector of mixing proportions \theta_j from a dirichlet with
+parameter gamma
+2. sample z given \theta from a multinomial with parameter \theta
+3. Set p_j to be \beta_zi for the z you just sampled
+After a sufficient number of samples, the variance of the vector of samples
+p will be a good approximate of the variance in the unconditional p(w_i).
+1000 ought to be enough to give you a decent idea.
+Hope that helps.

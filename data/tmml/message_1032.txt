@@ -1,0 +1,13 @@
+It's not surprising that IDF weighting improves the empirical performance of LDA,
+because it is true that later occurrences of a word are less informative than the
+first one. However, the cited paper inserts IDF weights as heuristic factors inside
+Gibbs sampling equations, which means the proposed algorithm no longer corresponds
+to a well-defined declarative model. It is possible to get a similar benefit by using the
+Dirichlet compound multinomial (DCM) instead of the multinomial, while still keeping a well-defined
+probabilistic model.
+Also, TF and IDF weighting schemes can be deduced from the DCM distribution, which captures
+the reality of the informativeness of words.
+References: G. Doyle and C. Elkan. Accounting for Word Burstiness in Topic Models. ICML 2009.
+http://www.machinelearning.org/archive/icml2009/papers/162.pdf
+C. Elkan. Deriving TF-IDF as a Fisher kernel. International Symposium on String Processing and Information Retrieval (SPIRE'05).
+http://www.springerlink.com/index/p018h15714377211.pdf

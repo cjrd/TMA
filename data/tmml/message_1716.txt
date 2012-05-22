@@ -1,0 +1,6 @@
+Hello Shriti,
+You should probably have a look into "bag of visual words" methods to
+compute visual features from an image.
+Like usual, the particular feature you would like to use will probably
+depend on the application and the type of images you have.
+best,

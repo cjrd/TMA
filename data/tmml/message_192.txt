@@ -1,0 +1,9 @@
+hi jiacheng,
+it may be.
+CG is not the only option.  you can consider looking at fixed point
+equations.  you can also consider running a gradient-based algorithm
+to increase the objective (but not necessarily hit the coordinate
+optimum).
+good luck with your research.
+best,
+dave

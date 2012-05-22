@@ -1,0 +1,7 @@
+Hi.
+I implemented Wallach's bigram topic model by myself. I fix the parameters,
+alpha = 50, beta = 0.01. After 10000 iterations, most of the bigrams only
+belong to one topic. Is this normal? Or there is something wrong with my
+code or my parameters?
+Thanks.
+Ying

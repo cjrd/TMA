@@ -1,0 +1,10 @@
+Thank both of you for your helpful advice.
+According to your information, I suppose that
+1, Generally speaking, the number of topics? K and the numbuf of words V??
+?are not same.
+2.For one certain document with N words, because a topic is assigned each word,
+there will be? N topics associated with these N words.
+Is it right?
+___________________________________________________________
+?????????????????
+http://card.mail.cn.yahoo.com/

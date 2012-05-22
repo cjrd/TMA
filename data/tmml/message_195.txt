@@ -1,0 +1,17 @@
+hi all,
+I try to implement the nCRP hLDA , but when I evaluate the algorithm
+using the bar example I found the tree structure stabilized very quickly(1-2
+iterations after the initialization), after that the tree structure doesn't
+change very much( once in a while a small branch will be created but trimmed
+very quickly) I use the initialization method suggested by David blei,and I
+runs the initialization serveral times and pick the initial state with the
+highest p(w|z,c). I also notice in the original nCRP paper David mentioned
+"To avoid them(Local Maxima), we randomly restart the sampler 25 times and
+take the trajectory with the highest average posterior likelihood", does
+"restart the sampler" means tring serveral initialization?
+Also I'd like to confirm that, after a document had been reassigned to
+a different path,is it correct to simply copy all level assignment to the
+new path. (by "copy", I mean when sampling the new level assignments,
+statistic like n_{-i,c{m,l}}^{d_i},n_{-i,c{m,l}}^{w_i} counts the level
+assignment that is previously resided in another path).
+Best

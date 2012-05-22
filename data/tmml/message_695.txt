@@ -1,0 +1,7 @@
+Hi Everyone,
+I would like to integrate LDA in my Python project, So I can called the
+C/C++ implementation  directly from Python. Does anyone have a wrapper or
+'fast'  implementation in Python laying around. This will really speed up my
+project. Thanks in advance.
+I am also not quite sure how to compile the C implementation of Prof Blei. I
+working on windows and have minGW

@@ -1,0 +1,22 @@
+               EIA-0074790
+Lerman, Kristina
+University of Southern California
+
+POWRE: 
+              Mathematical Modeling of Multi-Agent Systems
+
+This POWRE proposal outlines a
+              novel physics-based approach to solving computer science problems.  The
+              proposed activity leverages the author's training in physics, particularly the
+              physics of complex systems, and applies to the study of multi-agent systems. 
+              The goal of the research is to propose a feasible mechanism in which
+              interactions between agents with simple local strategies lead to desirable
+              group behavior in each of the two domains: coalition formation in a multiagent
+              system and dynamic routing in a sensor network.  The proposed mechanism is then
+              analyzed and a mathematical model of the process is constructed.  The model is
+              expressed as a series of coupled differential equations.  For the coalition
+              formation problem, for instance, the model describes how the number and
+              distribution of coalitions change with time.  The solutions of the equations
+              describe collective behavior, and they can be analyzed for different values of
+              the parameters.
+

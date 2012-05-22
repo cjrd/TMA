@@ -1,0 +1,17 @@
+Hi all,
+I am wondering whether there is some literature or heuristic or method to
+address the sparsity problem in topic models?
+For example, we know that a document should only contain a small number of
+topics even we choose a large number of topics for a whole dataset.
+In addition, is there any work or method to address the problem of
+"hierarchical sparsity"? For example, an author is usually only interested
+in a small number of topics and therefore, any of his or her paper should
+only consider a subset of his or her topics (sometimes only one!). In other
+words, the number of topics per document (T1) should be smaller than the
+number of topics per author (T2) while T2 is significantly smaller than the
+number of topics (T3) in the whole dataset.
+If we do not change traditional LDA or author-topic model, can we achieve
+the sparsity by changing to a asymmetric Dirichlet prior or through other
+heuristics?
+Thanks for any suggestions and pointers to other papers.
+Liangjie Hong

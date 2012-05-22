@@ -1,0 +1,8 @@
+Regularization of topic models with graph structure has been looked at
+by Mei et al.  (http://portal.acm.org/citation.cfm?id=1367512).  You
+might also want to look at Nallapati et al.
+(http://portal.acm.org/citation.cfm?id=1401957) or some of my own
+stuff (shameless plug: http://arxiv.org/abs/0909.4331) for some
+different approaches.
+Cheers,
+Jonathan

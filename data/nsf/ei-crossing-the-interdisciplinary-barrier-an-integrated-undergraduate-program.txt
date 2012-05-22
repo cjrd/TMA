@@ -1,0 +1,26 @@
+              EIA- 0122582
+Raymer, Michael
+Wright State University
+
+EI:  An Integrated
+              Undergraduate Program in Bioinformatics
+
+This project involves the
+              development of an interdisciplinary, integrated undergraduate program in
+              bioinformatics. In particular, the project's goal includes the design of a
+              program of undergraduate study that embodies an interdisciplinary synthesis of
+              the topics in computer science and biology required for graduates to
+              successfully pursue careers in bioinformatics. The project also plans to
+              implement, test, and refine the program of study so that it may be used as a
+              prototype for similar curricula at universities nation-wide. Pedagogy foci are
+              to design, integrate, and test approaches for teaching topics in bioinformatics
+              while providing research experiences for all students in the program. The
+              project is strengthened by the participation of a group of academic,
+              government, and industry bioinformatics researchers and professionals who act
+              as an advisory committee. The emerging science of bioinformatics seeks to
+              develop computational algorithms and techniques for analyzing large biological
+              databases in search of information that can be applied to specific problems in
+              the life sciences. This project addresses the education of professionals with a
+              background in this field and contributes to satisfying a nationally growing
+              workforce need.
+

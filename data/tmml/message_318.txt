@@ -1,0 +1,23 @@
+Hi,
+I am a newer to LDA and related topic models.
+Recently I met a problem that whether to use
+Variational EM (VEM) or Gibbs sampling (GS)
+to train the model. As D. Blei's variational HDP
+paper (ICML) said, VEM is superior to GS when
+the dimension of data is very high.
+However, when I read the original LDA paper
+published in JMLR, the VEM seems not benefit
+when data dimension is high.
+Assume we have N docs, V words in vocabulary,
+K topics, and M is the average length of documents.
+The computational complexity of VEM and GS
+seems to be the same, which is O(NKM).
+Is there any way to change this to be O(NKV)
+when documents are very large compared with
+the vocabulary size? As I know, the computational
+complexity of EM-PLSA (PLSI) is O(NKV).
+Thanks very much.
+Best regards,
+Yangqiu
+Best regards,
+Yangqiu.

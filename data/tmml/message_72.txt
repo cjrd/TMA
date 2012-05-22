@@ -1,0 +1,12 @@
+hi YW,
+new york is the same :)
+it's a little different.  when you set gamma = alpha + \sum_j phi_j
+in the objective, phi_i is a term in the log gamma function,
+log gamma(\alpha + \sum_j \phi_j)
+which complicates the derivative w/r/t phi_i.  however, taking its
+taylor approximation around alpha + \sum_{j \neq i} phi_j gives an
+expression that yields the exact update for phi_i that i wrote down
+earlier.  granted, i kind of reverse engineered this from your
+algorithm, but i still think that it's interesting.
+best,
+dave

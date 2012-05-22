@@ -1,0 +1,5 @@
+Hi,
+all,
+My question is, is it feasible to implement the LDA inference by the mean field approximation, an instance of variational method, and make a comparison with the Gibbs solution.
+Thanks.
+lxf

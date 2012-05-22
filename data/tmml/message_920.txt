@@ -1,0 +1,11 @@
+Hi Azeem,
+As one of the co-authors of Labeled LDA, I am very glad you are using this
+model for multi-labeled documents!
+I will be glad to assist, but can you please tell me a bit more about what
+exactly do you mean by "unsatisfactory performance"? Can you describe in
+more detail what kind of topics the model is performing poorly on? (e.g.:
+sub-topics,  rare topics, etc.)  How do the F1 numbers on these topics
+compare to the topics that is doing well on? Are you using any smoothing for
+the topic-specific distributions over words?
+Thanks
+-Ramesh

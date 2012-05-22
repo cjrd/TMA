@@ -1,0 +1,21 @@
+Hi All,
+I'm new to LDA, but I thought someone here might know the answer to this.
+Lets say we have two words:
+"business"
+"hockey"
+Lets assume that both words in the corpus are of relatively similar
+frequency.  However, that hockey seems to be a more specific word than the
+general business one.  Thereby, business would then occur presumably in many
+more topics than hockey?
+Also, then there is the problem of:
+"bush" -- the word might have two meanings, one being George Bush, and the
+other most common one might be the shrub.  However, in thier specific topic
+areas, they might not be that general.  They are merely ambigious forms.
+This is different than a word like business which might not be in any
+particular set of related topics, but perhaps scattered everywhere.  Of
+course, the exact examples I've chosen here are probably not the best
+choices, but hopefully you get the idea.
+If one was wanting to score a word based on it's generality, is there any
+good measure or formula for doing so?  For example, find me the most common
+words and rank them from most specific to most general?
+Thanks, Ian

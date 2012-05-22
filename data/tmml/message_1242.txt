@@ -1,0 +1,9 @@
+Hi Ayan,
+Sorry, I'm afraid there isn't! (At least not one that can be
+normalized analytically.) It is possible (although more complicated)
+to work around this problem using the machinery of the hierarchical
+Dirichlet process (HDP), however.
+What's your application? I assume you don't just need to generate
+random observations, since that wouldn't require conjugacy.
+Best,
+Matt

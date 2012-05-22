@@ -1,0 +1,11 @@
+Hi, all. I'm using Collapsed Gibbs sampling to implent GM-LDA for image annotation. I have some questions, could anyone help me?
+When estimating, how to estimate theta is more reasonable, right now I compute as follows:
+theta[m][k]  = (nd[m][k] + alpha ) / (ndsum[m] + K * alpha );
+theta[m][k] *= ( nd_vis[m][k] + alpha ) / ( ndsum_vis[m] + K * alpha );
+Is that right?
+When infer annotations for a new image, I could compute z_v from visual features from the image, then:
+(1) comput theta using visual features statistics, is that right?
+(2) How to compute z_w (topic of annotation words) for the new image.
+Can anyone help me or recommand some related papers, thank you very much.
+2011-07-14
+jiangg_211

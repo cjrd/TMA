@@ -1,0 +1,10 @@
+hi laura,
+if i understand correctly, you find K=137 for 60 documents.  this
+means that there are more than two components per document.  at most,
+the model should only use 60 components.  with an HDP, it should
+require fewer since each document exhibits multiple components.
+it's hard to know what's wrong, but one thing to try is to interleave
+hyper-parameter updates after many HDP updates of the z's.  perhaps
+the initial condition sends your sampler into a strange space.
+best,
+dave

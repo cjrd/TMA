@@ -1,0 +1,5 @@
+Hi Shivani,
+The answer will vary based on the size of your dataset, number of
+topics, document lengths, etc., but I'd say something like 100 passes
+should be enough.
+In my experience you don't really start to see significant speedups

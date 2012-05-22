@@ -1,0 +1,14 @@
+Hi Dan, Hi Corey,
+As timestamps t_{di} are drawn from a Beta, they have to be normalized
+to [0,1]. (see Step 2c in the generative process)
+The Beta distribution has some configurations for which sampling values
+0 or 1 are actually fairly high. (Wikipedia has some examples) Hope is
+that the parameters are learned to capture whether a topic is hot near
+the ends of your time range.
+Method of moments estimators game me quite some head ache in terms of
+stability/robustness. Sometimes I get extreme values eventually
+resulting in NaN. I switched to one of the other hyperparameter
+estimation method (e.g. Tom Minka's histogramm method), which are also
+part of mallet.
+Cheers,
+Laura

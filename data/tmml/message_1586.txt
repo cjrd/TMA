@@ -1,0 +1,5 @@
+Hi Stephan,
+I suggest you use perl to encode document as ASCII txt.
+You can find method in following link: http://stackoverflow.com/questions/3642813/convert-a-utf8-string-to-ascii-in-perl
+Best Regards,
+Xunyu

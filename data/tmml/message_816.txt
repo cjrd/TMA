@@ -1,0 +1,3 @@
+Well I was originally thinking about an analogy of the correlated topic model, where by tokens have some explicit correlation to each other. But now that I think about it perhaps that's covered already in the topic-word distribution, n-grams aside. Perhaps what's more-needed for errors like di ff icult is some token-equivalency distribution that uses edit distance or the like, but that's probably better done as a pre-processing step. Ideally the topic itself already does word-sense disambiguation.
+Perhaps I should have not fired that original reply so quickly ;)
+Aaron

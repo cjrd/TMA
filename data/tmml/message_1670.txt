@@ -1,0 +1,18 @@
+Hi Dave,
+Option 2 is definitely not kosher as such; it's going to give you
+wrong estimates for means and might dramatically understate marginal
+variances if there's substantial correlation between variables (which
+there usually is). OTOH, you could combine 1 and 2, averaging the
+conditional distributions across multiple iterations. That is, burn in
+the sampler, then record the conditional distribution for each
+variable every N samples thereafter, then approximate the true
+marginal with a mixture of the conditional distributions you've been
+collecting. This should give you less noisy estimates of the marginals
+than just averaging over raw posterior samples.
+Of course, depending on your application getting an accurate picture
+of the marginal distributions might not be as important as saving
+time, in which case the question has to be settled empirically.
+Especially given that it takes much longer to get a reasonable number
+of effectively independent samples than it does to burn in a sampler.
+Best,
+Matt

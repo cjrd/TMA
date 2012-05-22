@@ -1,0 +1,28 @@
+              With support from the Major Research Instrumentation (MRI) and Chemistry
+              Research Instrumentation and Facilities (CRIF) Programs, and the Division of
+              Experimental and Integrative Activities (EIA), Prof. Mark S. Gordon of Iowa
+              State University, in collaboration with IBM, Myricom and Packet Engines, will
+              design and build a cluster computer. This computer will look and perform
+              logically like a moderately sized MPP system, but at a fraction of the cost. 
+              Key to the development of a successful machine is optimal inter-node
+              communications, and the PI will utilize a) the expertise of the Iowa State
+              University Scalable Computing Lab together with the theoretical chemistry and
+              condensed matter physics groups; b) access to AIX source code via his
+              partnership with IBM; and c) optimization of communications technology via
+              interactions with Myricom and Packet Engines.  Gordon will focus on
+              optimization of throughput, reduction of latency, scalability of real
+              applications beyond 64 nodes, cluster heterogeneity, distributed file systems,
+              development of more effective message passing tools, system management and
+              scheduling, and applications in materials science.  
+
+Computational science
+              and engineering is positioned to play a leading role in solving grand challenge
+              problems that we face in the next decade.  These important problems include the
+              design of new materials and catalysts with desirable properties, the
+              elucidation of biological processes, the search for the origin of life, and the
+              development of viable methods for environmental remediation.  Solution of such
+              compelling and complex problems requires not only state-of-the-art
+              computational hardware, but also the development of the necessary models and
+              algorithms to take optimal advantage of modern computers.  This work will lead
+              to the development of a cluster environment that will enable grand challenge
+              applications that require scalable high-performance computing.  

@@ -1,0 +1,15 @@
+I can think of two quick/easy ways to make the topics consistent across two
+corpora:
+(i) Train an LDA model on the union of the two corpora, and
+(ii) Train the model on one, and perform inference using the trained model
+on the other. You can do this with David Blei's LDA-C code.
+Using the parameters from one corpus as a prior on the other corpus is a
+good idea that may keep the models close together, but may not guarantee
+absolute consistency.
+For a more sophisticated and elegant solution, you may also want to refer to
+Chong Wang's paper on Markov Topic
+Models<http://www.cs.princeton.edu/~chongw/papers/WangThiessonMeekBlei2009.pdf>
+that
+models the correlations between topics across multiple corpora.
+Thanks
+-Ramesh

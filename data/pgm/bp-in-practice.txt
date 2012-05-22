@@ -1,0 +1,300 @@
+
+The belief propagation algorithm when run
+over a general cluster graph is
+an iterative algorithm in which messages
+are defined in terms of previous messages.
+And we said before that when run over a general cluster graph, the algorithm may
+not converge and even if it converges, it
+may not get to the right answers. What
+we're gong to talk about now are how bad
+these problems are and what are some of
+the tricks that we use in practice in
+order to improve behavior of this
+algorithm in these two different regards.
+So let's get some intuition by looking
+back on our misconception example. This is
+not actually our misconception example. It's
+one where we modified some of the
+specifically the potential phi 1 AB to make
+the behavior even more extreme by making
+these potentials larger so that there is a
+stronger push to agreement between A and
+B. So A and B really, really prefer to
+agree. And what happens in this example we
+can see this beautiful oscillatory
+behavior of the belief propagation
+algorithm. So the x-axis is the iterations
+of BP, and this is some notion of
+distance. To the true distribution,
+to the true marginals. And why do you
+have such strong oscillations? Let's look
+at what these potentials are doing. So
+this potential over here pushes A and B to
+agreement. And so as you pass this
+message, A and B want to agree. A and D
+also want to agree. B and C want to agree.
+But C and D really want to disagree. And
+so as messages are passed they're, you're
+getting conflicting messages from both
+sides. D for example, on the C side, C
+keeps pulling at it to agree with it,
+sorry disagree with it. On the other hand,
+when you go all the way around the loop. C
+is actually urging D to agree with it. And
+so, from the one side, you're getting a
+pull for C and D, D to be the same. And
+from the other side, you're getting a pull
+for them to be different. And this, sort
+of, this conflict over the cycle, over the
+loop, causes this oscillatory behavior as
+messages are passed from one side or the
+other. This type of configuration of,
+specifically. Tight loops. Strong
+potentials. And conflicting directions. Is
+probably the single worst example for, the
+single worst scenario for belief
+propagation. This is the case where it's
+going to do the worst in terms of both
+convergence and in terms of the accuracy
+of the results that are obtained. Now in
+this example ultimately, you actually do
+get convergence. You can see it takes
+about 300 durations, but ultimately you
+get convergence. 300 is a lot for a graph
+this size. Here is one but up to 500, he
+didn't get convergence at all, now maybe
+if we ran it for 10,000 he, it might
+converge, but it's hard to say. And, so how
+do we improve the convergence as well as
+the accuracy properties of the network? So
+first let's look into what not to do. Here
+is the most important thing not to do,
+which is a variance of belief propagation
+called synchronous belief propagation. In
+synchronous belief propagation, which was
+actually one of the most commonly used
+variants of the very beginning of the use
+of the BP algorithm. All messages are
+updated in parallel. So all of the
+processors wake up to all of the, all of
+the clusters wake up, they look at all of
+their incoming messages and they compute
+all of the outgoing messages, all at once.
+>> Now, this is a great algorithm from the
+perspective of simplicity of
+implementation and also from the ability
+to parallelize because you can assign like
+a processor to each of the cluster and
+they're all working in parallel and there
+is no dependencies between them.
+Unfortunately, synchronous belief
+propagation is actually not a very good
+algorithm. And so what you see here is the
+number of messages that are, have
+converged, as a function of the amount of
+time spent. This is an ising grid, with
+certain parameters, it doesn't matter. And
+you can see that, you know, there is a
+certain improvement over time, and then it
+kind of asymptotes at the certain number
+of messages that have converged. By
+contrast, let's compare that behavior to
+asynchronous belief propagation, where
+messages are updated one at a time. So,
+this one and that one. Now notice that
+this algorithm is poorly specified,
+because I didn't tell you what order we
+should do the updates in. We'll come back
+to that in a minute. But, by, even by the
+simple virtue of passing messages in an
+asynchronous way, the behavior improves,
+both in terms of how quickly we get
+messages to converge. And in terms of the
+number of messages that are converged.
+Now, this is not a particularly good,
+message passing order. Here's a much
+better, message passing order. It takes a
+little bit longer, to get certain messages
+to converge, just trying to make sure that
+everything is converging, but notice that
+eventually, and in, not that, long of a
+time, it actually, converges to 100
+percent convergence rate [sound], right.
+So, here are some important observations
+regarding this. First of all, convergence
+is a local property in belief
+propagation. Some messages converge quite
+quickly, others might never converge, and
+when you have some messages that after you
+run the algorithm for a certain amount of
+time don't converge, one often simply just
+stops the algorithm and says you know,
+this is what we have and we're done.
+Synchronous belief propagation has
+considerably worse convergence properties
+than asynchronous belief propagation which
+is why pretty much at this point, very few
+people actually ever use synchronous
+belief propagation. And if we're using
+asynchronous belief propagation, the order
+in which messages are passed, makes a
+difference both to the rate of
+convergence, but even more surprisingly
+perhaps, to the actual extent to which
+messages are conversed, ever converged. So
+how do we pick, the message passing order?
+There's two there's now several different
+scheduling algorithms. We're going to
+present two of the more popular ones. The
+first called tree reparameterization or
+TRP for short. And what it does it picks a
+tree and then passes messages in the tree
+in the same way that you would do in a
+clique tree algorithm to sort of calibrate
+that tree keeping all other messages
+fixed. So for example, we might start by
+calibrating. The red tree. Which means I
+pass messages this way. And then back in
+the other direction. Keeping all other
+messages fixed. Now I pick a different
+tree. I'm gonna pick the blue tree. Here's
+a blue tree. Notice that I can't close the
+loop because otherwise it wouldn't be a
+tree. So I can't go all the way back to
+phi 1-1. And now I calibrate in the other
+direction. And I continue to do that by
+taking a tree and then, and then running
+it, and then calibrating it. And the only
+constraints that I need to satisfy is,
+first of all, that my trees cover all
+edges. So that's a constraint because
+otherwise I'm going to mis-communicate,
+miss a certain message that needs to be
+passed. And the second is not so much of a
+constraint but rather it tends to improve
+performance if the trees are larger. Which
+means it's good to pick spanning trees.
+Which span as much of the, of the, graph
+as possible without containing a loop. So
+spanning trees are good. That's one
+message-scheduling algorithm. The second
+message-scheduling algorithm is something
+that is called residual belief
+propagation. And there's actually several
+variants of that now. And what it does is
+it tries to look for good messages,
+messages that are high value messages. So
+it looks for two clusters whose beliefs
+disagree, a lot. And if they disagree that
+means that if I pass that message that's
+going to p-, potentially have a large
+impact on the receiving clique, or cluster
+rather. And so I'm going to look, I'm
+going to keep a priority queue. Method of,
+of edges. And I'm going to pick the
+messages from top of the queue based on how
+much I think they are going to affect, how
+of a effect they are going to have which
+is some kind of heuristic notion
+potentially of the disagreement between
+the two adjacent clusters. The other big
+important Trick, that people to use to
+improve the convergence of the belief
+propagation algorithm, is what's called
+smoothing, or sometimes damping, of
+messages. And this is a general trick
+that's often used to reduce oscillation in
+dynamic systems that are based on these
+kinds of fixed-point equations where the
+left hand side is defined in terms of the
+right hand side. So here we define
+delta ij in the original belief propagation
+algorithm as a function of other deltas
+And we've seen that, that can give rise to
+this oscillatory behavior this is just the
+standard belief propagation message. And
+what we're going to do now is instead of
+that, I'm going to do a kind of smoothed
+version. So I'm not going to let the
+message change too drastically. I'm going
+to have a weighted average where the
+weight is lambda of the new message. Which
+is this thing. And the old message. And
+that turns out to, again, dampen
+oscillations in the system and increase
+the chances that it converges. So let's
+look at some example behaviors. So here we
+see Synchronous belief propagation in red,
+over here. And this is the percentage, or
+fraction of message converged. So one
+would be perfect convergence. We can see
+that synchronous plateaus at about 25,
+twenty to 25 percent of messages
+converged, which is pathetic enough to be
+pretty much useless in practice, if only
+twenty percent of your messages converged,
+and really the remaining messages don't
+really mean very much. Without smoothing
+is the green line, this one. And we can
+see that this is asynchronous,
+asynchronous without smoothing. We can see
+that even without smoothing. The
+asynchronous algorithm achieves
+considerably better performance than the
+synchronous algorithm. We didn't even show
+synchronous without smoothing because it
+would be even worse. And then finally the
+blue line is asynchronous with smoothing.
+And we can see that it achieves perfect
+convergence at some point. And, you can,
+look, at behaviors of individual messages
+or individual marginals rather, individual
+beliefs. So here is the system I
+[inaudible] by the way, so, Ising grid.
+Which is sort of a standard setup for
+trying out convergences of various
+approximate inference algorithms, and so
+what you see here, the line here, the
+black line, is the true. Marginal. And you
+can see that synchronous belief
+propagation basically flip-flops around it
+in, indefinitely, whereas asynchronous
+belief propagation converges pretty
+quickly and very close to the right
+answers. Not always. This is a different
+variable in the same model. The black line
+again is the true. And here we can see
+that sure enough, asynchronous does improve
+convergence, but convergence is distilled
+to an answer that's not quite right. And
+you see that behavior you see both
+behaviors in real networks. And in
+practice, depending on all of the met, all
+of the factors that I mentioned at the
+very beginning. How tight the loops are.
+How strong or peaked the potential is.
+Those are going to determine how many of
+the factors have this oscillatory
+behavior, and how wrong the answers are.
+So, as we, so summarizing there's two main
+tricks for achieving BP convergence.
+Damping or smoothing and intelligent
+message passing. Convergence is often
+easier to obtain using these tricks then
+correctness. And convergence unfortunately
+doesn't guarantee correctness. And the bad
+case, the ones that negatively impact both
+of these are strong potentials that are
+pulling you in different directions and
+tight loops. And we're not going to have
+time to go into all of these into all of
+these topics but there is some new
+algorithm that actually have considerably
+better behavior both in terms of
+convergence and in terms of the accuracy
+of the results and that is based on a view
+of inference as optimizing some distance
+to the true distribution. And there's some
+really cool ideas as well as the math in
+this that much of this is outside the
+scope of this class.

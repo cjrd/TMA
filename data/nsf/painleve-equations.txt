@@ -1,0 +1,58 @@
+              PI: Aimo Hinkkanen, University of Illinois at
+              Urbana-Champaign
+DMS-0200752
+
+Abstract:
+
+The six Painleve differential
+              equations are prototypes of second order differential equations which do not
+              have movable singularities. In this project, the principal investigator will
+              study the following
+fundamental problems for the Painleve equations and
+              Painleve-related analysis. Firstly, the task of obtaining rigorous proofs for
+              the Painleve property of the solutions to Painleve equations in the remaining
+              open cases. Secondly, the question of finding sharp upper and lower bounds for
+              the usual order of growth of single-valued meromorphic solutions, and for other
+              natural measures 
+of growth for multi-valued solutions, as well as the
+              determination of the cases where less than maximal growth occurs. Thirdly,
+              applications motivated particularly by differential geometry 
+lead to the
+              question of classifying Painleve-type differential equations which are allowed
+              to
+have movable branch points subject to restrictions on their multiplicity.
+              The principal investigator will work towards such a classification and to
+              determine whether certain particular equations arising in applications have
+              this property.
+
+Over the last ten years, after a quiet period of many
+              decades, an enormous amount of literature has appeared on the Painleve
+              equations and their generalizations, due to a great number of interdisciplinary
+              connections and applications that have been found. On the theoretical side, the
+              Painleve property is related to the concept of integrability for non-linear
+              ordinary and partial differential equations. Other applications in pure
+              mathematics include differential geometry and random matrix models. On the
+              interdisciplinary side, the applications of Painleve
+equations include the
+              following: the Ising and antiferromagnet models in physics,
+statistical
+              mechanics in elasticity, quantum field theory and topological field
+              theory,
+general relativity and cosmology, supersymmetric gauge theories in
+              physics,
+resonant oscillations in shallow water, Hele-Shaw problems in viscous
+              fluids,
+plasma physics, superconductivity, nonlinear optics and fiber
+              optics,
+polymers, and polyelectrolytes. This provides a clear manifestation of
+              the enabling
+power of mathematics in science and engineering, and of the value
+              that theoretical understanding and precise problem solving in mathematics can
+              add to modeling and theory building
+elsewhere. Work performed under this
+              proposal will lead to a greater understanding of and concrete results for this
+              class of differential equations which is being used in numerous
+applications
+              in other areas of mathematics as well as in other sciences and engineering.
+
+

@@ -1,0 +1,7 @@
+hi all
+i believe that the important pieces of jonathan chang's LDA package (for R)
+are written in C.  it's very fast (and convenient), though i haven't tried
+to fit a very large data set with it.  (the biggest i've tried is 10K
+documents.)
+best
+dave

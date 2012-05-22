@@ -1,0 +1,7 @@
+Hi Peng,
+You might find the following paper of interest:
+Hanna Wallach, David Mimno and Andrew McCallum. "Rethinking LDA: Why
+Priors Matter." In Proceedings of the 23rd Annual Conference on Neural
+Information Processing Systems, 2009.
+Best wishes,
+Sinead

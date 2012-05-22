@@ -1,0 +1,42 @@
+              0080509
+Shur
+
+The purpose of the proposed project is to study the non-linear
+              transport phenomena in short - channel Field Effect Transistors.  Recently
+              Dyakonov and Shur have discovered that flow of the electron fluid in
+              two-dimensional channel should be unstable.  This instability results in plasma
+              wave generation in a terahertz frequency range.  As a consequence, the novel
+              terahertz devices (oscillator, detector, mixer) were proposed, and a terahertz
+              FET detector has been demonstrated.
+
+A strong non-linear regime of this
+              instability in a ballistic field effect transistor will be studied.  The
+              stationary non-linear oscillations resulting from development of the
+              instability will be investigated.  The shape, amplitude, and velocity of the
+              shock waves caused by the instability will be calculated taking into account
+              the viscosity of the electron fluid due to electron-electron scattering and the
+              external friction related to the scattering by phonons and impurities.  The
+              analytical results will be compared with the numerical calculation.  This
+              theory will also describe a non-linear regime of operation of a terahertz
+              radiation detector based on the short-channel field effect transistor.  This
+              instability will also be studied in the case of small electron densities when
+              the electron-electron collisions can be neglected (collisionless plasma).  The
+              conditions of the instability for collisionless plasma will be found.  The
+              linear regime of the instability will be also considered.  The resonant
+              frequencies of oscillations and the increment of instability will be
+              calculated.
+
+Another topic of their study is a so-called "runaway" effect in
+              two-dimensional systems, which leads to the negative differential resistance. 
+              Their preliminary estimates show that, in contrast to a three dimensional case,
+              such runaway takes place even for deformation optical and acoustic phonon
+              scattering.  It should lead to a negative differential mobility in 2D systems
+              based on silicon (germanium).  One of the main tasks of the project is to
+              investigate a possibility of the Gunn generation in 2D Si (Ge) MOS structures. 
+              The consequences of the negative differential in the two-dimensional FET
+              channel will be studied.  This case should differ substantially from the
+              conventional three-dimensional Gunn effect since diffusion non-exponential law
+              governs the charge relaxation in two-dimensional FET channel.  The role of
+              electron-electron interactions for 2D "runaway" will also be investigated.
+
+

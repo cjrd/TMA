@@ -1,0 +1,13 @@
+Hi all,
+the netflix competition uses RMSE instead of predictive perplexity for
+model comparison purposes.
+Then, there is netflix with its $1M competition using RMSE. Is that the
+right
+metric to focus on for them?
+I guess chosing the right metric depends what one wants to use the model
+for.
+What metric would you recommend for evaluating which model to use
+for movie-rating comparison?
+What are you ideas on this?
+Ciao,
+-Armin

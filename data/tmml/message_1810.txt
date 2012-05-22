@@ -1,0 +1,61 @@
+Call for Papers
+ACM Transactions on Intelligent Systems and Technology (ACM TIST)
+Special Issue on Social Web Mining
+Social network platforms (e.g., Facebook, Google+, Twitter) have been
+drawing increasing attention from everyday users worldwide to research
+communities and industries. For instance, it is reported that there
+are more than 750 million active Facebook users, of which 50% log on
+in any given day. The success of the social network platform provides
+a wealth of information, which brings great opportunities for
+e-Commerce, policy making, social media recommendations, and much
+more.
+However, it can be challenging to model the social networks and make
+predictions, given this prosperity of social networks leading to
+information overload.
+Social web mining aims at modeling social interactions (e.g., posting
+and messaging in Facebook) and relationships (e.g., friendship in
+Facebook, Followed / Following in Twitter, Friends / Family /
+Acquaintances / Following in Google+), and then learning inductive
+rules for predictions, which are carried out by leveraging the
+information available via various social networks and recent advances
+in machine learning and data mining. This special issue is aimed at
+providing a forum to highlight the leading works from the data mining
+and machine learning communities for making sense of social networks.
+Topics of interest include but are not limited to:
+-   Community detection
+-   Crawling of social networks
+-   Large scale graph mining
+-   Multi-relational data mining
+-   News/social media recommender systems
+-   Preference learning and elicitation in social networks
+-   Privacy protection in social networks
+-   Sentiment analysis in social networks (e.g., opinion mining in
+Twitter)
+Submissions
+On-Line Submission (will be available around January 1, 2012):
+http://mc.manuscriptcentral.com/tist  (please select "Special Issue:
+Social Web Mining" as the manuscript type)
+Details of the journal and manuscript preparation are available
+on the website http://tist.acm.org/
+Each paper will be peer-reviewed by at least three reviewers.
+Important Dates
+Full Paper Submission Deadline: February 28, 2012
+Review Notification: May 1, 2012,
+Final Manuscript: June 1, 2012,
+Electronic Publication Date: July 31, 2012,
+Guest Editors
+Francesco Bonchi
+Yahoo! Research Barcelona, Spain
+http://www.francescobonchi.com/
+Wray Buntine
+NICTA - ANU, Australia
+http://www.nicta.com.au/people/buntinew
+Ricard Gavald?
+Technical University of Catalonia, Spain
+http://www.lsi.upc.edu/~gavalda/
+Shengbo Guo
+Xerox Research Centre Europe, France
+http://www.xrce.xerox.com/Research-Development/Services-Innovation-Laboratory/Machine-Learning-for-Optimisation-and-Services/People/Shengbo-Guo
+Questions?
+bonchi at yahoo-inc.com,        wray.buntine at nicta.com.au,
+gavalda at lsi.upc.edu,         shengbo.guo at xrce.xerox.com

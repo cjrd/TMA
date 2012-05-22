@@ -1,0 +1,25 @@
+We studied something like this problem in this paper:
+http://www.cs.umass.edu/~mimno/papers/fast-topic-model.pdf
+We learned topic-word distributions (represented as a set of sparse
+arrays), and then compared methods for inferring topic distributions
+for new documents holding those topics fixed. The sampling-based
+methods in the paper are implemented in the Mallet package, and are
+very efficient as long as topics and words are sparse (see this
+tutorial for details:
+http://www.cs.umass.edu/~mimno/slides/fast-sparse-sampling.pdf). This
+sparsity holds for natural language, it might not for other data
+types.
+One pass of Gibbs sampling, which would fit your constraints, is
+adequate to get a pretty good topic distribution, although two or more
+is better. Gibbs sampling sets up a distribution over topics for each
+word, samples a single topic from that distribution, and adds 1 to
+that topic in your K-vector. Sampling can be fast because you can deal
+with sparse discrete counts instead of floating point numbers, but
+loses some information. You could also just add the whole distribution
+to your K-vector (see the CVB0 method in
+http://www.ics.uci.edu/~asuncion/pubs/UAI_09.pdf). Or you could keep a
+constant number of K-vectors, run a separate sampling sequence in each
+one and then average the resulting topic distributions (this is
+related to particle filtering, see
+http://www.cs.berkeley.edu/~kevin/research_files/caniniSG09.pdf).
+-David

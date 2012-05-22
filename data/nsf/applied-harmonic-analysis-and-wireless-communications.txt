@@ -1,0 +1,85 @@
+                  The increasing requirements on data rate and quality of
+service for
+              wireless communications systems call for new
+techniques to improve radio link
+              reliability and to increase
+spectral efficiency.  The three key technologies
+              to achieve these
+goals are equalization, diversity, and channel
+              coding.
+Mathematics is of fundamental importance to these
+              technologies,
+providing the theoretical basis as well as the means
+              for
+efficient numerical implementations.  The investigator derives
+              a
+theoretical and numerical framework for designing equalization
+techniques
+              for time-varying channels.  Using methods from
+pseudo-differential operator
+              theory and time-frequency analysis,
+he develops a qualitative and quantitative
+              theory for the
+approximate diagonalization of operators associated
+              with
+time-varying systems.  These theoretical results form a keystone
+in the
+              construction of fast and reliable numerical equalization
+methods that are
+              based on Krylov subspace techniques.  The
+investigator also studies the use of
+              frame theory in wireless
+communications.  Using concepts from sphere packings
+              and group
+theory, he analyzes theoretical properties of special frames
+              such
+as Grassmannian frames.  Furthermore, he develops theoretical
+              and
+numerical schemes in connection with multi-carrier communication
+systems
+              such as OFDM.  This includes the design of transmission
+signals with specific
+              properties using a generalization of the
+concept of prolate spheroidal wave
+              functions.  By taking recent
+tools from harmonic analysis into the wireless
+              communications
+community, this project enables further advances
+              and
+breakthroughs in wireless communications.  At the same time it
+stimulates
+              new research areas in applied mathematics and paves
+the road for further
+              interactions between applied mathematicians
+and communication engineers.
+    
+              The goal of this project is to develop mathematical concepts
+and computational
+              methods for wireless communications technology.
+The investigator combines
+              modern tools from mathematics with
+methods from information theory and signal
+              processing to develop
+new concepts and algorithms for key technologies in
+              wireless
+communications, such as coding, transmission, and
+              equalization.
+Mathematics is of fundamental importance to these
+              technologies,
+because it provides the theoretical basis as well as the
+              means
+for efficient numerical implementations.  By providing tools to
+improve
+              radio link reliability and increase data rates, this
+project is instrumental
+              in meeting the increasing requirements on
+future wireless communications
+              systems.  The project produces
+conceptual deliverables in the form of new
+              mathematical methods
+to analyze and construct wireless transmission systems. 
+              The
+project also produces concrete deliverables in the form of
+numerical
+              algorithms for use in the scientific and industrial
+sector.

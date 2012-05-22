@@ -1,0 +1,12 @@
+Hi Nicola --
+your method will work and it will be efficient as you only "query" the trained model with the new data:
+p(z|w,.) =c (n_mz + n'_mz + alpha) phi_zw
+where n'_mz is the count of the new tokens assigned to z. In effect, you are using n_mz + alpha as prior. Cf. Online LDA by AlSumait et al. (2008).
+Considering that parameters theta are constrained to change only with the updated counts, you do not optimise on the complete dataset. It will be as close as the statistics of the new data match those of the original data.
+If you want the best model of the complete data set in an update fashion, you may consider the model of your original corpus an initialisation state of the full dataset. Going over the complete corpus will introduce the perturbations you mention:
+p(z|w,.) =c (n_mz + n'_mz + alpha) (n_zw + n'_zw + beta) / (n_z + n'_z + V beta)
+Furthermore, this method is fairly efficient, as empirically fewer samples are required to reach a stationary state (as detected by the likelihood moving average).
+This worked well for me in a retrieval model (forthcoming publication) where the held-out data tokens (document completion method) are incorporated in the main corpus after convergence to query the complete data.
+You may also want to have a look at Hoffman et al. (2010) for a variational approach.
+Best
+gregor

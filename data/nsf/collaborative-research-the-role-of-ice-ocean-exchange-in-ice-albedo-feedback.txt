@@ -1,0 +1,12 @@
+              This research will examine and quantify the impact of ice-ocean heat exchange on
+              the ice-albedo feedback mechanism using SHEBA data and a hierarchy of ice-ocean
+              models ranging from simple turbulence scaling to large eddy simulations.  The
+              role of under-ice roughness altering the vertical turbulent fluxes of heat, of
+              open water conditions found in leads, and of summer-time melt-water
+              stratification in would be investigated.  Improved parameterizations for this
+              heat exchange over area scales of 10-100 km would be developed for use in large
+              scale regional and global models.  These parameterizations would then be tested
+              in these larger scale models.  The results will lead to be forecast capability
+              of global ocean-climate models. 
+
+

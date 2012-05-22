@@ -1,0 +1,38 @@
+              The purpose of the doctoral dissertation project is to experimentally test the
+              effect of bidders' information of their rivals' types in standard auctions.
+              Auctions are used widely for trading goods and services, ranging from artwork
+              and agricultural products to government assets such as PCS spectrum rights,
+              timber and mineral harvesting rights. While the existing studies on auctions
+              have made great strides, our understanding remains far from complete. In
+              particular, how bidders' knowledge of their rivals affects their bidding
+              behavior and the performance of various auctions is not well understood. The
+              existing work assumes that bidders have either no information or full
+              information about their rivals. In practice, however, bidders' knowledge about
+              their rivals tends to be asymmetric. For instance, in a procurement auction
+              contested by domestic firms and foreign firms, domestic firms are likely to be
+              better informed about the technical capabilities of their domestic rivals than
+              those of their foreign rivals. The current project will contribute to our
+              understanding of the impact bidders' information has on their behavior and on
+              the performance of standard auctions.
+
+Bidders' asymmetric knowledge about
+              their rivals matters and it may affect both the bidders' behavior and the
+              performance of alternative auction forms. The first chapter of my dissertation,
+              written jointly with Yeon-Koo Che, has also established a number of hypotheses
+              regarding how the equilibrium bidding behavior and the revenue performance of a
+              given auction will change as bidders learn more about their rivals' types. 
+              Testing our hypotheses requires controlling the information flow of the
+              bidders, which would be virtually impossible if one relied on the traditional
+              empirical method employing secondary data. A lab experiment is ideal since the
+              experiment designer can control the information flow precisely the way it is
+              modelled in the theory. We plan to conduct 6 sessions of lab experiments, each
+              of which will invite 32 subjects to participate in a series of auction games.
+              The research will feature some innovative techniques to improve the empirical
+              identification of the subjects' bidding behavior. While the main purpose of the
+              experiment will be to test the specific hypotheses of the theory chapter, it
+              will in the process contribute to the testing of the underlying Nash
+              hypothesis, by subjecting it to more comparative static restrictions. Further,
+              the test is expected to reveal the role bidders' risk aversion plays in auction
+              experiments.
+
+

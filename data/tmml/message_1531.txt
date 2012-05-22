@@ -1,0 +1,8 @@
+Hello!
+So far I mainly used Gibbs sampling for the inference of topic models.
+There, I chose ~2,500 iterations for my data set. Now I want to use a
+different model whose inference is done based on Variational Bayes. Can
+someone give me a hint what would be a comparable number of iterations
+for this inference method, is it related?
+Best regards,
+Sebastian

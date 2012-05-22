@@ -1,0 +1,15 @@
+dear ilias and all,
+each c_m is a vector of table assignments drawn from a nested chinese
+restaurant process.  the distribution p(c_m | c_{-m}) can be computed
+as follows. first, use the other drawn paths (c_{-m}) to populate the
+hierarchy.  then, compute the probability of each possible path
+through the hierarchy, including paths that contain new tables at one
+or more levels.
+by "drawn as a block," we mean that all levels are drawn at once from
+this distribution.  specifically, this is a distribution over paths,
+where the number of paths is equal to the number of nodes in the
+hierarchy.  each leaf corresponds to a path ending in that leaf.  each
+internal node corresponds to a path with new nodes below it.
+i hope this helps.
+best,
+dave

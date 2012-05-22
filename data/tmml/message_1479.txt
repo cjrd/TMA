@@ -1,0 +1,28 @@
+Dear David,
+The following is code ( LDA implementation at
+http://www.cs.princeton.edu/~blei/lda-c/lda-c-dist.tgz )
+allocates memory for phi for each documents in cycle but forgets to free it.
+void infer(char* model_root, char* save, corpus* corpus)
+FILE* fileptr;
+char filename[100];
+int i, d, n;
+lda_model *model;
+double **var_gamma, likelihood, **phi;
+document* doc;
+model = load_lda_model(model_root);
+var_gamma = malloc(sizeof(double*)*(corpus->num_docs));
+for (i = 0; i < corpus->num_docs; i++)
+var_gamma[i] = malloc(sizeof(double)*model->num_topics);
+sprintf(filename, "%s-lda-lhood.dat", save);
+fileptr = fopen(filename, "w");
+for (d = 0; d < corpus->num_docs; d++)
+if (((d % 100) == 0) && (d>0)) printf("document %d\n",d);
+doc = &(corpus->docs[d]);
+phi = (double**) malloc(sizeof(double*) * doc->length); // ***
+for (n = 0; n < doc->length; n++)
+phi[n] = (double*) malloc(sizeof(double) * model->num_topics); // ***
+likelihood = lda_inference(doc, model, var_gamma[d], phi);
+fprintf(fileptr, "%5.5f\n", likelihood);
+fclose(fileptr);
+sprintf(filename, "%s-gamma.dat", save);
+save_gamma(filename, var_gamma, corpus->num_docs, model->num_topics);

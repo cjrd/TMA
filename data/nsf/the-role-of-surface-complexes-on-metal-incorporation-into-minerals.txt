@@ -1,0 +1,41 @@
+              Reeder
+EAR-0207756
+
+
+This research project will investigate the fundamental
+              structural and coordinative aspects of metal sorption at the calcite-water
+              interface.  The experimental approach will combine laboratory experiments in
+              model systems with spectroscopic techniques to characterize the detailed
+              coordination geometry of selected metal and metalloid species adsorbed on
+              calcite.  Metals of interest include divalent lead and cadmium, selected
+              trivalent rare-earth elements, and arsenate anions.  These species are
+              important contaminants in soils, sediments, aquifers, and other near-surface
+              environments.  One goal of the research is to determine the role of adsorption
+              in controlling binding site preferences for minor element uptake by calcite
+              during crystal growth.  Observations that non-octahedral surface complexes for
+              Zn(II) and Cu(II) adsorbed on calcite result in preferential uptake on the less
+              constrained of two binding sites, suggests that site preferences for other
+              metals should also correlate with surface complex geometry.  The proposed
+              research tests this hypothesis for selected metals (Pb and Cd) and provides
+              structural information that can be used in predictive models.  A further goal
+              of the research is to evaluate how adsorption complexes control the
+              coordination of rare-earth elements following incorporation into calcite, where
+              observations have shown differences in coordination number between light and
+              heavy lanthanides.  The role of solution pH on the structure of surface
+              complexes will also be evaluated in laboratory and spectroscopic studies. 
+              Another component of the research project will identify the mechanism of
+              adsorption of arsenate ions on calcite.  Arsenate, an important contaminant in
+              some natural waters, shows similarities in behavior with phosphate.  The latter
+              is a strong inhibitor of calcite surface reactivity, and its presence may
+              reduce the ability of calcite to sorb and incorporate other impurity species. 
+              The results of this aspect of the research will provide insight to the
+              mechanism of surface inhibition as well as provide fundamental information
+              about arsenate interactions with calcite.
+
+Results from this research project
+              will contribute to a broader understanding of the molecular-scale processes
+              that govern the distribution and behavior of geochemically and environmentally
+              important elements in Earth's near-surface environment.  The results of this
+              work will also contribute to an understanding of ways in which the threat to
+              society posed by metal contaminants can be reduced.  
+

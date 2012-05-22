@@ -1,0 +1,54 @@
+              0079432
+Painter
+This grant will help develop a new instrument for polymer
+              characterization that will combine dielectric relaxation and two-dimensional
+              (2D) infrared spectroscopic measurements.  Dielectric relaxation measurements
+              have been used for many years as a probe of the dynamics of polymer chains,
+              through the detection of the transitions and relaxations that are a result of
+              various types of coupled or local motions.  Infrared spectroscopy provides a
+              probe of molecular level structure and, in certain systems, intermolecular
+              interactions.  Clearly, a technique (or, more accurately, a hybrid-technique)
+              that can measure the temperature and frequency range of various transitions and
+              relaxations, while simultaneously probing the functional groups involved and
+              the degree to which their motions are coupled, would be an extremely powerful
+              analytical tool.  Essentially, we will use a dielectric spectrometer to provide
+              an oscillating electric field to modulate the dipoles of a sample.  This
+              modulation can be probed by infrared spectroscopy.  Applying standard methods
+              of cross-correlation analysis, the resulting in-phase and out-of-phase signals
+              can be used to construct two dimensional plots, which, amongst other things,
+              allow an identification of the functional groups whose motions are coupled.  By
+              varying the oscillatory frequency applied to the sample and its temperature,
+              the molecular basis of the relaxations and transitions that occur in polymer
+              (and other) materials can be investigated, providing a new and powerful probe
+              of structure and dynamics.  The new instrument will be initially applied to the
+              range of problems facing our research groups, including the identification of
+              the functional groups involved in specific interactions in polymer blends, the
+              dynamics of functional groups and chain segments in such mixtures, the
+              relaxation phenomena that occur in crystallizable miscible blends, relaxations
+              in polymer liquid crystals and polymer dispersed liquid crystals, and so
+              on.
+%%%
+When a polymer chain is subjected to some external force, such as
+              stretching or other types of mechanical deformation, the chains take time to
+              adjust or "relax" to a new conformation.  Relaxation processes in polymers are
+              complex and depend upon factors such as the flexibility of the individual
+              chains in a sample and how much different chains are tangled up with one
+              another.  Relaxation processes have a profound effect on the properties of
+              polymers and hence their uses, ranging from applications in everyday life to
+              their incorporation into advanced devices.  An understanding of the molecular
+              mechanisms involved in such relaxations is therefore important in not only
+              understanding the behaviour of polymers presently in use, but designing
+              materials for new applications.  Unfortunately, this information is not easily
+              obtained, as certain techniques can measure relaxation processes, but give no
+              information on the molecular mechanisms involved, while others probe the
+              molecules themselves, but give no information on relaxations.
+To solve this
+              problem we are proposing to build a new hybrid instrument that will
+              simultaneously probe molecular relaxations (or polymer dynamics) and molecular
+              level structure.  Dielectric spectroscopy and infrared spectroscopy,
+              respectively, are the two techniques that will be combined and the new
+              instrument will be called a 2D-FTIR/Dielectric Spectrometer.  The two
+              techniques are both standard tools for analysis and our task is to construct a
+              sample cell that will allow these to work together.
+***
+

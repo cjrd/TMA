@@ -1,0 +1,10 @@
+LDA has drawn more attention in computer vision in recent years,
+especially for object recognition. See
+Li, F. & Perona, P. A Bayesian Hierarchical Model for Learning Natural
+Scene Categories Proc. CVPR, 2005
+Sivic, J.; Russell, B.C.; Efros, A.A.; Zisserman, A. & Freeman, W.T.
+Discovering object categories in image collections Proc. ICCV, 2005
+Niebles, J.C.; Wang, H. & Li, F. Unsupervised Learning of Human Action
+Categories Using Spatial-Temporal Words Proc. BMVC, 2006
+Xiaogang
+,>   I came across the following comment recently,

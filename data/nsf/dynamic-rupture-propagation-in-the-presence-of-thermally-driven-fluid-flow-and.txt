@@ -1,0 +1,16 @@
+              EAR-0229391
+
+While Seismologists have long known that friction is one of the
+              fundamental processes operating during earthquake rupture and slip, the actual
+              physical mechanism behind the frictional behavior we believe we see in
+              earthquakes remains elusive.  There are strong physical arguments that at the
+              high slip rates seen in earthquakes, frictional heating of pore fluids could
+              dynamically reduce the frictional stress, greatly increasing the stress drop. 
+              Under even more extreme conditions, frictional melting of the fault zone may
+              further affect the frictional environment.  We propose to investigate these
+              processes by coupling a 1-D hydrothermal/poroelastic model for heat flow and
+              fluid behavior with a 3-D dynamic faulting model for rupture and slip behavior.
+               Using this combined method, we will be able to investigate the effects of
+              thermal fluid pressurization and rock melting on fault stress, and determine
+              the resulting effects on fault motion and radiated seismic waves.  Behaviors
+              predicted by our models can be compared with seismic data for verification.

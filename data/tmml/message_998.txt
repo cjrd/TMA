@@ -1,0 +1,16 @@
+Dear Topic models list members,
+I have been looking at the topic modeling literature for applications
+of LDA where one would learn different types of features as different
+multinomials. For instance, if one wants to use different features for
+the same word according to a field the word appears in (title, body,
+etc.), but wants the resulting topics to have distinct distributions
+for each types of features. Is anyone knowledgeable of such
+adaptations to LDA, or would have thoughts on how to adapt VBEM LDA to
+such features?
+A second question, the computation of the likelihood of word features
+on a topic (represented by an inferred \gamma) is usually made using
+the expected values of \theta (ie \gamma normalized to sum to one).
+Has there been uses of the Dirichlet distribution to get better
+estimates on this likelihood?
+Many thanks,
+Bernard Brosseau-Villeneuve

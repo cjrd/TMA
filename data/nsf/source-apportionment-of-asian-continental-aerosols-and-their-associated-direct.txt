@@ -1,0 +1,13 @@
+              This project is an effort to use aerosol source apportionment to study the
+              origin, transformations, and light scattering properties of aerosols in the
+              outflow of Eastern Asia.  This study will be carried out in the context of the
+              ACE-Asia experiment.  Aerosols will be collected for this study at Cheju
+              Island, Korea and ground sites in China.  The analyses will include a broad
+              range of organic and inorganic compounds, and stable isotope ratios of
+              important tracer elements.  These analyses will involve ion chromatography, gas
+              chromatography with mass spectrometric detection, and magnetic-sector,
+              multi-collector inductively coupled plasma-mass spectrometry.  This is a
+              collaborative effort involving investigators from Georgia Institute of
+              Technology, NCAR, and Oregon State University.
+
+

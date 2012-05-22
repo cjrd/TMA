@@ -1,0 +1,15 @@
+              This project supports rapid airborne measurements of bulk aerosol ionic
+              composition during ACE-Asia (Aerosol Characterization Experiment). An automated
+              instrument will be deployed on the C-130 research aircraft. The instrument
+              consists of a particle-in-liquid sampler coupled to a dual channel ion
+              chromatograph (IC) analysis system. The following ions can be measured with a
+              sensitivity of about 5 pptv over a sample integration interval and duty cycle
+              of about 4 minutes: chloride, nitrate, sulfate, sodium, ammonium, potassium,
+              and calcium. Particles are collected directly into a liquid which is injected
+              online and continuously into the ion chromatograph.
+	The rapid ionic
+              concentration measurements will be used to chemically characterize and study
+              the evolution of the aerosol plumes advected from Asia. Another objective is to
+              quantify the extent to which ionic components contribute to aerosol optical
+              properties by synchronizing the airborne chemical and physical measurements.
+

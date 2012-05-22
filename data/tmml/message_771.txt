@@ -1,0 +1,9 @@
+Hi,
+I did also read the similar concern in DTM moidels. But then have a look
+at this "Gibbs Sampling for Logistic Normal Topic Models with Graph-Based
+Priors" by David Mimno which has non conjugancy issues due to logistic
+normal and multinomial but still uses a sampling based method. I do not know
+if it is always good to use variational methods if we have non conjugancy
+issues. Hope some one else can talk about this in details.
+Sincerely
+Tanmoy

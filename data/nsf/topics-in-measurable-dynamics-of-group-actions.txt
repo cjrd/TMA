@@ -1,0 +1,53 @@
+              The research proposed lies at the interface between measurable
+and topological
+              dynamics. In these and other areas of dynamics
+the problems  concerning the
+              relationship between the dynamical
+and cohomological properties of systems
+              proved to be very
+important. One circle of the proposed problems can
+              be
+informally called "inverse problems for coboundaries", and,
+roughly
+              speaking, is aimed to understand how and to what extent
+the dynamics of a
+              measurable group action can be recovered
+from the cohomological information,
+              and in particular, from the
+collection of all measurable coboundaries. It
+              turns out that,
+in the case of group actions, the algebraic properties of
+              the
+acting group play an important role. Another line of the
+proposed
+              research is an attempt to get a complete understanding
+of the possibility of
+              constructing minimal topological models
+for arbitrary families of measurable
+              dynamical systems.
+In the case when the family consists of one single
+              ergodic
+automorphism, the answer is given by the famous
+              Jewett-Krieger
+theorem.
+
+The classical theory of dynamical systems
+              originated with the
+study of qualitative behavior of the solutions of
+              differential
+equations describing the motion of a mechanical system.
+              The
+fundamental theorem of Liouville provided the bridge between
+the
+              classical theory and modern measurable dynamics. The study
+of the connections
+              between the different and seemingly
+unrelated properties of the measurable
+              systems, as well as
+relations between the measurable and continuous structures
+              in
+dynamics, strengthens our sense of connectedness of the entire
+building of
+              mathematics. 
+ 
+

@@ -1,0 +1,12 @@
+              This project focuses on the study of the effects of varying the strength of the
+              atomic interactions in a binary, two-spin-state Bose-Einstein Condensate in
+              Rb-87.  Two avenues of research will be pursued.  In the first series of
+              experiments the physics of a Feshbach resonance will be uniquely examined using
+              the double-condensate system.  In these experiments the second condensate
+              component is used as a tool that permits approaching the resonance suddenly
+              from both sides, and in a novel manner.  In the second series of experiments
+              the Feshbach resonance will be used to create binary Bose fluid systems of
+              varying interaction strengths, with a particular emphasis on the physics of
+              component separation.  In this set of experiments the second component serves
+              as a phase reference for interferometric studies of a condensate in the
+              vicinity of a resonance.

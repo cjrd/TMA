@@ -1,0 +1,2 @@
+Hello friends.can anybody explain me how topic modelling with lda find out
+the topic proportion of documents and how document inference is helpfull???

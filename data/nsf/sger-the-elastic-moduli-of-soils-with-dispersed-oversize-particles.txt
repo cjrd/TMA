@@ -1,0 +1,52 @@
+              To calculate the elastic deformation experienced by soils subjected to static or
+              dynamic loads, knowledge of the elastic moduli is required. Although the
+              response of soils to these kinds of loads may not be strictly represented as
+              linear elastic, solutions based on linear elastic behavior are commonly used
+              for the estimation of stresses or strains in the field. The elastic moduli are
+              normally evaluated in the laboratory using conventional triaxial compressive
+              tests on cylindrical samples. For meaningful test results, it is necessary to
+              maintain a ratio of sample diameter to the maximum particle size of
+              approximately 6:1 or greater.  For the conventional triaxial specimen diameter
+              of 2.8 in., the maximum grain size that can be tested is 0.5 in. Thus, when
+              soils are tested in the conventional triaxial apparatus, it is common practice
+              to remove "oversize" particles with an average diameter greater than 0.5 in.
+              Samples larger than 2.8 in. can be used in triaxial testing; however this
+              requires the use of large cells and large loading systems, making the tests too
+              expensive and time consuming to be used routinely.
+     The removal of
+              material larger than 0.5 in. from the samples tested in the conventional
+              triaxial apparatus will provide unreliable elastic moduli values for the
+              calculation of stresses and deformations associated with civil engineering
+              projects built in soils with large rock particles (i.e. glacial tills, residual
+              and colluvial soils). This proposal presents a theoretical method developed by
+              Hashin that calculates the elastic moduli of a composite made of an elastic
+              material containing dispersed large rigid particles. The Hashin method requires
+              only knowledge of the elastic moduli of the matrix that surrounds the particles
+              coupled with the concentration by volume of the rigid large particles in the
+              composite in order to calculate the elastic moduli of the mixture.  
+     The
+              objective of this one year exploratory investigation is to assess the validity
+              of the Hashin method by conducting ultrasonic velocity tests on dry mixtures of
+              soils (clay, silt, and sand) and dispersed oversize particles (gravel, glass
+              beads, sands). Also, stress-strain curves reported in the geotechnical
+              literature obtained from conventional static triaxial compression tests on
+              laboratory prepared soils-large particles mixtures will be used to obtain the
+              static elastic moduli.  Using the ultrasonic velocity measurements, the
+              laboratory dynamic elastic moduli will be  obtained. Using the results from
+              triaxial compression tests, the static elastic moduli will be obtained. The
+              laboratory elastic moduli will be then compared with those predicted by 
+              Hashin's  theoretical method in order to assess its reliability.
+     The
+              results of the exploratory research will be used as a basis to further explore
+              the validity of Hashin's method as it applies to soil-oversize particle
+              mixtures having a soil matrix with varying degrees of saturation and
+              heterogeneity.
+ 
+
+
+
+
+                                                   
+              
+
+

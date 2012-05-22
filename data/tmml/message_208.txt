@@ -1,0 +1,31 @@
+Edo,
+There are two implications of the label switching problem:
+a) you may not use the number of the cluster/topic for anything
+b) you may not average different samples, because the semantics of the
+topics might have changed (in the worst case: two topics exchanged all
+their words)
+You are absolutely right, the label switching problem is always there --
+especially in the sense of a).
+We were referring to the discussion "sample averaging is not allowed,
+because label switching (or call it topics switching semantics) may occur".
+We were pointing out, that empirically labels do not tend to exchange
+semantics within one sampling chain, which means the b) part of label
+switching seems not to occur under realistic conditions, and thus,
+averaging samples is not as prohibitive as it seems.
+I think one may even be able to quantify the exchange of semantics by
+monitoring changes in clusters over iterations. With change in cluster I
+mean something like, for two given iterations iterA and iterB calculate
+a measure Q.
+count the number of pairs of tokens (w1, w2) for which one the following
+condition is true:
+*  in iterA w1 and w2 were associated to the same topic AND in iterB w1
+was assigned to a different topic than w2
+*  in iterA w1 was assigned to a different topic than w2 AND in iterB w1
+and w2 were associated to the same topic
+Q = count / number of all pairs
+The higher Q the more different the semantics of topics in iterA and iterB.
+If Q is zero, you may have been in the exact same state, or the topics
+might have been renumbered.
+Just an idea. Maybe, one day, I will think this through....
+Cheers,
+Laura

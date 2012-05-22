@@ -1,0 +1,42 @@
+              ABSTRACT
+
+0070398
+Luying Xun
+Washington State University
+An LC/MS
+              Instrumentation for Biological Research
+
+A liquid chromatography/mass
+              spectrometry (LC/MS) instrument is especially useful for the detection and
+              identification of small organic compounds of biological interests, such as
+              metabolic intermediates, organic hormones, antibiotics, and natural organic
+              compounds.  The instrument can also determine the molecular weights of proteins
+              and can be used to assess post-translational modifications.  Several research
+              areas will benefit from this instrument.  The area that will benefit the most
+              is the study of biodegradation of environmental pollutants.  The LC/MS will
+              help elucidate biodegradation pathways of organic pollutants by detecting and
+              identifying the metabolic intermediates.  There are many pollutants and it is
+              important to know how they are degraded so that effective methods can be
+              designed for bioremediation.  Another research area that will immediately
+              benefit is plant biochemistry.  The LC/MS will help in the areas of
+              biosynthetic pathways of plant organic compounds that have high economic
+              values, protein production in plant cells, and nitrogen fixation by
+              plant/microorganism symbionts. 
+This award will allow Washington State
+              University to purchase a Waters LC/MS instrument.  The LC component, which is
+              the basic component in any high-performance LC instrument, is proposed to be
+              the Waters' (Waters Corp., Milford, MA) 2690XE separation module consisting of
+              two pumps and an autosampler.  The MS detector is proposed to be Waters' ZMD
+              [4000] detector.  This detector operates in either electrospray mode or
+              atmospheric pressure chemical ionization mode and detects a mass range from 50
+              to 4,000 Daltons.
+LC/MS instruments are essential for biological researchers. 
+              This award allows the College of Science and the College of Engineering and
+              Architecture at Washington State University to purchase the first LC/MS for the
+              college.  It is expected that approximately 17 undergraduate students, 24
+              graduate students, and 5 postdoctoral associates will be trained to use LC/MS. 
+              Moreover, the instrument will be used by students participating in training
+              programs at Washington State University, including those students participating
+              in the NSF IGERT program in the Center for Multiphase Environmental Research. 
+              
+

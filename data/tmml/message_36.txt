@@ -1,0 +1,9 @@
+Hi,
+in the npbayes matlab code the hyper prior H is just a fixed symmetric
+Dirichlet prior. As far as I know H is not optimized, it is fixed. To
+get the MAP estimate of the multinomial parameters you just add the word
+counts to the pseudo counts from the Dirichlet distribution and
+normalize it.
+The optimization of the hyper parameters \gamma, and \alpha_{0} is
+described in the appendix of the Teh el al. paper.
+Steffen

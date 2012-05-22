@@ -1,0 +1,3 @@
+I have been searching for hidden characters, mistakes, etc. in an input file for the hLDA program all week with no luck.  Somewhere along the line, something was corrupted (and it cannot be operator error). Would someone put me out of my misery and provide an example of an input file for the program so I can test my installation?
+Thanks in advance,
+Dave Robinson

@@ -1,0 +1,78 @@
+              Why do major power states frequently fail to achieve even limited objectives
+              when they use military force against vastly weaker targets? Recent research
+              suggests that war outcomes are largely a function of strategic selection (war
+              initiation), military-industrial capabilities, combat effectiveness, and
+              strategy choice. But this model cannot explain why a major power would ever
+              lose an armed conflict with a weak target. As the initiators of military
+              interventions, major powers have the advantage of selecting
+their target.
+              Additionally, in post-WWII major power military interventions, the major powers
+              invariably possess vastly superior military-industrial capabilities, higher
+              quality troops, better leadership, and, unlike their targets, the ability to
+              successfully execute even the most difficult and complicated military
+              strategies (e.g. maneuver or combined arms strategies). Yet, frequently, the
+              intervening major power is not able to achieve its war aims, or, if it does
+              secure its objectives, success is temporary and the state is not able to
+              maintain the objective (Arreguin-Toft 2001; Blechman and Kaplan 1978).
+
+The
+              student argues that the existence of political constraints on the ability of
+              major power states to pursue their objectives to the full extent of their
+              capabilities is a primary, but often neglected, or poorly operationalized,
+              factor that can account for the discrepancy between outcomes predicted based on
+              capabilities and observed outcomes in asymmetric conflicts. In particular,
+              certain domestic political characteristics of the intervening state, attributes
+              of the conflict, and characteristics of the international strategic context in
+              which an intervention takes place can create constraints on the ability of
+              major power leaders to use force effectively. Under some circumstances,
+              domestic political and international strategic constraints become the primary
+              determinants of violent conflict outcomes. This is particularly problematic for
+              major power states that use force against minor power or non-state targets
+              because, for the major power state, these interventions are initiated for
+              limited aims, in the absence of a credible claim to
+self-defense, and in a
+              context of numerous competing international concerns and commitments. 
+              
+
+Standard models of war outcomes are built on the implicit assumption that
+              both sides bring the full force of their capabilities to bear in a conflict.
+              The primary predictors in such models are variables that capture potential
+              power rather actual (situation specific) power. As a result, they are less able
+              to explain conflict outcomes the more limited the conflict is for one side.
+              
+
+This study develops a model of military intervention outcomes that accounts
+              for the fact that leaders must make operational decisions about foreign
+              conflict prosecution within the confines of competing domestic political and
+              geostrategic concerns. 
+
+To test the hypotheses derived from this model, this
+              project develops an original dataset of all major power military interventions
+              since the Second World War and conducts aggregate analyses employing event
+              history statistical techniques including competing-risks hazard analysis, an
+              estimation procedure appropriate for questions pertaining to the impact of
+              explanatory factors on both the outcome and duration of events.  
+
+This
+              study's focus on the dynamics of major power military intervention is
+              particularly relevant in the current international climate, in which a major
+              power war is much less likely than a series of violent contests between major
+              power states and inrogueli states or non-state actors. Better theory and
+              empirical evidence on the factors that affect the ability of states to achieve
+              their political objectives through the use of force may at times allow
+              decision-makers to design more effective military interventions. At other
+              times, however, it may caution them against the use of force altogether.
+
+The
+              results of this project will address: 1) the influence of political constraints
+              on the propensity of major power leaders to maintain, escalate, or withdraw
+              from military operations abroad, 2) the affect of domestic political and
+              geostrategic factors on intervention outcomes and duration, and 3) the
+              conditions under which domestic political and geostrategic constraints have a
+              significant effect on the conduct of foreign military operations. In addition
+              to its theoretical and empirical contributions, this project will
+result in a
+              detailed and comprehensive dataset of post-WWII major power military
+              operations, which will be made widely available to the social scientific
+              community.
+

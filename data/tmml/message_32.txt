@@ -1,0 +1,7 @@
+Hello,
+I looked into the HDP matlab code npbayes-r1 provided by Teh. I am not clear how
+to generate (and optimize) the multinomial distribution from H (see Figure 1 in
+'Hierarchical Dirichlet Processes').  I even don't understand this point from
+the paper. How to optimize the hyperparameters (H, \gamma, and \alpha_{0}).
+Anybody can explain that?
+Xiaogang

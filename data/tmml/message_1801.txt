@@ -1,0 +1,7 @@
+JSTOR provides access to n-gram counts for PNAS (as well as all of
+their other journals, though Nature was not included last time I
+checked).  In some cases (i.e., for academic research), they may be
+able to give you access to more than their standard 1,000-article
+limit.
+Best,
+Sean

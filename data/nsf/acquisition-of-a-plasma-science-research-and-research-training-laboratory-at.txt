@@ -1,0 +1,45 @@
+              CTS-0079783
+Lawrence J. Overzet
+University of Texas at Dallas
+MRI:
+              Acquisition of a Plasma Science Research and Research Training
+              Laboratory
+
+Abstract
+
+The acquisition and development of a plasma science
+              teaching and research laboratory is a joint effort among 5 faculty members in
+              the Schools of Engineering and Computer Science and Natural Science and
+              Mathematics at the University of Texas at Dallas. The laboratory development
+              provides five distinct plasma stations with related diagnostics on each system.
+              The five plasma-generation systems and the diagnostics for them offer a diverse
+              research-training experience for students. As these plasma systems were chosen
+              to reflect the research interests of the faculty, this laboratory also provides
+              a fertile research environment for the PIs. The facilities installed are the
+              following: 1] an inductively coupled plasma (ICP) system with a residual gas
+              analyzer, a Fourier Transform Infrared (FTIR) spectrometer, and an Absorption
+              Spectroscopy (AS) system; 2] a dc/pulsed magnetron source for sputter
+              deposition of films with optical emission spectroscopy (OES) and deposited film
+              analysis; 3] a hollow cathode discharge source with a microwave interferometer
+              and Langmuir probes; 4] a dc/rf parallel plate plasma source with an FTIR
+              spectrometer, deposited film analysis, Langmuir probe and current-voltage
+              probes; and 5] various lamps with OES, AS, and current-voltage measurement
+              capabilities. 
+
+The plasma science laboratory provides a research training
+              capability at UTD for both undergraduate (upper level) and graduate students in
+              Engineering and the Natural Sciences.  It encompasses a strong teaching
+              component, resonates with the needs of local industry, and can potentially
+              address needs of further removed industry. It will undoubtedly be used to train
+              non-traditional students as well. The extensive research backgrounds and
+              interests of the investigators in semiconductor processing (etching deposition
+              and doping), lighting plasmas, and space plasmas allow students, as well as
+              technical and research staff from local industry, to learn about basic plasma
+              processes and diagnostics in the expanding fields of plasma science and
+              technology. The Laboratory also enhances the research capabilities and teaming
+              of the five collaborating researchers along with other investigators in both
+              academe and industry. The lab is housed in modern clean room facilities, and
+              consequently the equipment is suitable for both research training and for
+              advanced research programs in materials processing, device manufacturing, and
+              lighting. 
+

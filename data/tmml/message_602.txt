@@ -1,0 +1,6 @@
+Hi everyone,
+I am reading the paper "Unsupervised Topic Modelling for Multi-Party Spoken Discourse" by Matthew Purver and have some questions about  using Gibbs sampling for drawing the topic change indicator for each utterance, c_u, conditioned on all other topic change indicators, c_ -u, all topic assignments z, and all words w.
+1. How can I decuct  expression in (7) in the paper.I think P(c_u|c_ -u), z_ -u, z_u) ? P(z_u|c_u, c_-u, z_-u) P(c_u|c_ -u).However, the result is different.
+2. what is the meaning of s_1_u-1 in expression(7)?
+Thanks a lot and best regards,
+Zhao Yu

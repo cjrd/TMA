@@ -1,0 +1,29 @@
+              
+EIA - 0228137                                    
+Alo, Richard A.
+University
+              of Houston - Downtown 
+
+Title:  Student/Faculty Mentor Teams for SIAM
+              Symposium on Computational Models and Simulation 
+
+This project supports
+              teams of mentors and students to participate in the SIAM Symposium on
+              Computational Models and Simulation for Intra-Cellular Processes to be held in
+              Washington, DC, October 4-5, 2002. The project provides access to a high
+              quality technical symposium encouraging a new generation of students to come
+              together with key researchers in the filed, hear research presentation and
+              discuss both technical and community building topics. Developments in High
+              Performance Computing and communications technologies have advanced quickly
+              allowing its tools of visualization and simulation to become new research tools
+              in advancing knowledge in areas where researchers were not traditionally major
+              users of high performance computing such as the soft science of biology. HPC is
+              now becoming a modality for major advances in both systems and intracellular
+              biological processes. Advances are needed in mathematical and statistical
+              methods to impact the prediction of spatio-temporal cellular behavior. The
+              areas require further development in high speed data mining and data analysis
+              techniques, knowledge acquisition tools, new information architectures,
+              scalable computing, collaborative technologies, simulations methods and
+              geometric software promoting and enhancing visualization as a research tool.
+              The project contributes to stimulate students in these areas.
+

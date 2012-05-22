@@ -1,0 +1,10 @@
+Hello list members,
+I am currently doing some little research on incremental ways of
+training LDA model and I am curious if you know of any incremental
+variational methods ? I know that there exist incremental Monte Carlo
+methods but was unable to find anything on incremental variational
+methods. Also, did you explored the problem of variable number of
+topics and if how they could appear and disappear over time ? Do you
+know of any work related to this problem ?
+Thanks,
+Mateusz

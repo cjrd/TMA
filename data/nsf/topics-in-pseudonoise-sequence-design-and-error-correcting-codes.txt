@@ -1,0 +1,66 @@
+              In this project, algebraic techniques are in use two to tackle 
+two classes of
+              problems related to improving the throughput and/or
+reliability of a
+              communication link are under study.  The first class
+of problems under study
+              is the design of long and efficient
+error-correcting codes.   Such codes are
+              of interest as longer
+error-correcting codes tend to ``average'' out the noise
+              and hence
+provide better performance.      The second class of problems
+              relates
+to the design and analysis of families of signature sequences that
+              are
+used to distinguish between the signals of different users in
+              a
+multi-user environment.  Examples of multi-user environments include
+Code
+              Division Multiple Access (CDMA) cellular and personal
+communication systems.  
+              More details on example problems drawn from
+each class are provided below. 
+              
+
+Since the early 80's, the promise of algebraic geometric (AG) codes
+has
+              been the delivery of a sequence of error-correcting codes of
+increasing length
+              whose asymptotic performance exceeds the
+Gilbert-Varshamov bound and for which
+              efficient and practical  
+encoding and decoding algorithms are available. 
+              Computationally
+efficient decoding algorithms for AG codes are now available
+              and there
+now exist explicit descriptions of algebraic curves of the
+              type
+required to construct these long codes.  Construction of good codes on
+              
+these curves requires the determination of a basis for a certain type
+of
+              vector space of functions defined on these curves.  The
+investigators study
+              efficient methods of generating such bases.  The
+use of novel algebraic
+              geometry techniques to generate pseudo-random
+sequences is an example of the
+              type of problem belonging to the second
+class.  The investigators examine
+              methods of generating sequences
+having pseudo-random properties such as low
+              correlation and large
+linear span.  Also under investigation are more
+              efficient means of
+assessing the performance of pseudo-random sequences in a
+              multi-user
+setting, for example, more efficient means of determining the
+              minimum
+Euclidean distance between adjacent multi-user signals. 
+              The
+performance in a multi-user setting, of a a specific sequence
+              family,
+known as family S(2) and previously co-designed by the PI is
+              also
+under study.  

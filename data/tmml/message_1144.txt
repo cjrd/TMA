@@ -1,0 +1,2 @@
+Hello Andrius,
+in LDA, each word comes from exactly *one* topic (`z`), and is drawn

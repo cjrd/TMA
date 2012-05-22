@@ -1,0 +1,8 @@
+Hi Dave,
+Thanks for weighing in on the thread. The only data that I have is how many times the song was played (or skipped). I have used these two to compute a user rating for the song. So, I end up with a classical user rating matrix.
+However, since the code compiles and seems really easy to run (I can easily adapt my data for the --user and --item options and use matrix factorisation) I am going to run it as an exercise anyway. And then see what rating predictions I get.
+Also, it seems that I can interpret the data I have as co-occurence data (using the rating for the song as its occurrence count since the rating is derived from the number of times the song was played by a user) and use the lda-c algorithm to use lda for rating prediction.
+Hopefully, I can get both these methods to work. And then compare them to the URP model.
+Thanks again for the input.
+Regards
+Rahul

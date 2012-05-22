@@ -1,0 +1,28 @@
+              This exploratory research grant provides the support for studies, with respect
+              to fundamental facets as well as practical facets, of manufacturing processes
+              of three-dimensional components in the micro-scale.  Moreover, the study will
+              include factors required to have components, so fabricated, to work together as
+              three-dimensional micro-actuators.  Letting  a length-measure to represent the
+              size of component, it is known that the volume of the component is proportional
+              to the cube of the length-measure, and the surface of the component is
+              proportional to the square of the length-measure.  Given this fact, as one move
+              from the much better understood macro world of manufacturing  to the relatively
+              unknown world of manufacturing in the micro world, surface dictated behavior as
+              a part of the component would be much more important than the volume dictated
+              behavior of the component.  As such this research will place special emphasis
+              on surfaces along with the material whose surfaces are be studied.  As these
+              components are expected to work together reliably when assembled to form
+              actuators, materials as a factor also looms large  in the studies.  Other
+              factor to be studied are method of measurement, handling, storage, among
+              others, of micro-scale components. 
+
+If successful, the results of this
+              exploratory research will improve the fundamental understanding of processes of
+              manufacturing three-dimensional components in the micro-scale as well as
+              factors which need to be taken into account when these components are assembled
+              to form micro-actuators.  A dominant factors in the fundamental understanding,
+              which will be the bases for successful application, is reliability.  The hope
+              is that the aforementioned knowledge will lead to requisite methodologies for
+              manufacturing in the micro-scale, especially in the truly three-dimensional
+              world.  
+

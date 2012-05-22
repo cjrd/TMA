@@ -1,0 +1,45 @@
+              This project is using the twin themes of spectroscopy and photochemistry as a
+              conceptual basis for developing chemistry lectures and chemistry laboratories
+              in upper level undergraduate courses which are logical extensions of the
+              materials presented in the lower level courses. This intergrated approach aims
+              to provide students with a clearer connection between the concepts presented at
+              different stages in their undergraduate education in chemistry. The project is
+              also producing software modules which are "Spectroscopy Tutors" that aim to
+              facilitate the learning of spectroscopy (IR, UV-VIS, NMR) and assist in the
+              intergration of spectroscopy and photochemistry throughout the undergraduate
+              curriculum including undergraduate research. These visions are being achieved
+              through a collaboration with Professor Leonard Fine and students at Columbia
+              University. In addition, partnerships have been established with faculty at two
+              undergraduate institutions (Professor Tom Poon, Claremont Colleges and
+              Professor Raymond Dominey, University of Richmond) and a community college
+              (Professor Ron Rusay, Diablo State College). The project couples the
+              undergraduate institutions by establishing an undergraduate exchange program in
+              which students from the undergraduate institutions spend a summer at Columbia
+              University under the mentorship of the PI, extending and enriching research
+              projects, which are initiated in the academic year. The PI is also mentoring an
+              undergraduate selected from Columbia Unversity's Minority Affairs summer
+              research program for undergraduates. The PI is mentoring a postdoctoral
+              associate who is involved in all aspects of the project and in particular the
+              intergration of research and education of undergraduates. The postdctoral
+              associate is assisting the PI in the development of course materials, the
+              development of IT tools for courses and laboratories and in the development of
+              course materials, the development of IT tools for course and laboratories, and
+              the development of the photochemical experiments for the undergraduate
+              laboratories and for undergraduate research. The outcomes of the project will
+              be disseminated through presentations at professional meetings, publications in
+              professional journals and an annual workshop led by the partnering faculty. As
+              part of the dissemination effort, the Spectroscopy Tutors produced will be made
+              available to undergraduates across the nation via the world wide web. In
+              addition, the PI is producing a web based video course in which he teaches
+              undergraduates spectroscopy and organic photochemistry. As part of the course,
+              modules are being developed to assist the students in learning the fundamental
+              principles of organic photochemistry. It is anticipated that the course and
+              laboratory materials, as well as IT modules developed in the project, can also
+              be profitably employed in the curriculum for the non-SMET education of
+              undergraduates. In collaboration with the Associate Dean for Assessment at
+              Columbia University, the PI is defining the desired educational objectives for
+              the students' experiences in the courses and laboratories and IT modules. This
+              assessment process aims to measure student performance on course-specific tests
+              and on the effectiveness of the Spectroscopy Tutors in the enhancing of
+              learning by students.
+

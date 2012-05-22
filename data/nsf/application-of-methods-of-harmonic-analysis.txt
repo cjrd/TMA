@@ -1,0 +1,23 @@
+              Abstract
+
+
+
+
+
+	Fefferman and Stein will study problems in harmonic
+              analysis, including 
+the decay of multilinear-operator-valued oscillatory
+              integrals, the domination of pseudodifferential operators, ergodic theory on
+              semisimple Lie groups, multi-parameter harmonic analysis and its applications
+              to several complex variables, constructive methods in fluid mechanics, discrete
+              versions of singular Radon transforms, scaling laws for mechanical systems, and
+              applications of harmonic analysis to atoms.
+
+	Harmonic analysis began with
+              the work of Fourier in the early 19th century.  Its theme is to analyze complex
+              behavior (heat flow, vibration,...) by writing it as a sum of basic pieces
+              behaving in the simplest way.  Harmonic analysis is crucial in many parts of
+              science and technology.  Fefferman and Stein are pursuing ideas in harmonic
+              analysis and relating them to problems in mathematics and physics.
+
+

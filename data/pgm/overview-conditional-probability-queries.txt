@@ -1,0 +1,302 @@
+
+So far, we've talked a lot about the
+representation of probabilistic graphical
+models. We've defined different classes of
+probabilistic graphical models,
+Bayes Nets, Markov Nets, and
+talked about their independence
+assumptions. Now let's operationalize
+probabilistic graphical models, and figure
+out how to use this declarative
+representation to answer actual queries.
+It turns out that there's many queries
+that one can use a PGM to answer.
+But perhaps one of the most commonly used
+one is what's called conditional
+probability query. So let's define a
+conditional probability query. In a
+conditional probability query we have some
+set of observations. E = little e, about a
+set of variables, big E These are
+the set of variable that we happen to
+observe. We also have a particular query
+that we care about. Which is usually which
+we're going to denote as a set of
+variables Y. So our goal here is to
+compute the. Conditional probability of
+the variables Y, given the evidence equals
+little e, or a conditional probability.
+This type of query is useful for a
+variety of different applications. For
+example, in the medical or fault diagnosis
+domains that we've spoken about, we might
+have observations about certain symptoms
+or test results. And we're interested in
+predicting the probability of different
+failure modes or different diseases. In
+the pedigree analysis example that we also
+talked about, we might have observations
+about the phenotype, or maybe even the
+genotype of some individuals in a family and
+are interested in reaching conclusions
+about other individuals. So unfortunately
+like most interesting problems, the problem of
+inference in probabilistic graphical model is
+NP Hard. So before we talk about that
+let's first remind ourselves what NP
+hardness is. I am not going to define it
+formally in this course but as a rough
+intuition if the problem is shown to be NP
+Hard it means that it is extremely
+unlikely to have an efficient solution.
+Slightly more formally, it means that all
+algorithms that people have devised for
+this problem and a bunch of problems that
+are equally hard require at the very least
+time exponential in the size of the
+representation of the problem which means
+that it's unlikely to be solvable for any
+problem that is bigger than a small
+handful of same variables in our context.
+So, which particular problems in the
+context of PGM inference are NP hard?
+Well, first, the basic problem of exact
+inference in the PGM is NP hard. So,
+given a PGM, P of Phi defined by a set of
+factors Phi and a particular target
+variable X, and the value, little X.
+Computing the probability of the, the
+event X=little X is NP hard. In fact,
+even a simpler special case of this
+problem, one where we just want to figure
+out whether this probability is even
+positive. That too, is NP hard. So one
+might then say well okay. Exact
+inference is, is intractable. But what if
+we compromise a little bit in accuracy.
+What if we're just looking for an
+approximate answer. After all, we don't
+necessarily care about the tenth
+significant digit in this probability.
+Does it make the problem easier?
+Unfortunately turns out that the answer is
+no. And there's many different variants of
+NP hardness results for approximate
+inference. This is just one of them. This
+one says that again. Given a PGM an event.
+X equals little x. And some set of
+observations. The problem of finding. A, an
+approximate answer P, for which, we are
+guaranteed that this approximate answer is
+with an Epsilon of the truth is NP hard.
+And this is true for any
+Epsilon, this is less than 0.5 and note
+that Epsilon equal to 0.5 can be obtained
+by simply random guessing or guessing the
+value equal to 0.5. So any nontrivial
+approximation for this kind of
+conditional probability query. Is also
+intractable. So it's a rather depressing
+observation and might want, might want to
+make us give up on using PGMs for
+inference. But it turns out that one
+shouldn't get depressed too quickly
+because importantly, this is a worse case
+result which means we can construct these
+bizarre PGMs for which exponential time is
+the best we can do, but it doesn't mean
+that in the general case one can't do
+better, and the rest of the inference
+section of this course will be devoted to
+showing a variety of algorithms that,
+whether for exact inference or approximate
+inference, can do considerably better than
+this worst case result would suggest. So,
+first let's to understand where these
+results might be getting, where these
+algorithms might be getting their power,
+let's drill down into the inference
+question a little bit more. And here is a
+slightly elaborated version of our student
+network where we now have additional
+variables. For example, the coherence of a
+course influences its difficulty and a
+variety of other variables that we're not
+going to talk about, so. Inference in of
+this model. And in general. Inference for
+probabilistic graphical models. Uses the notion
+of factors that we've talked about before.
+And it turns out that it's convenient to
+use factors. Because it means that the algorithms apply equally well to Bayes nets and Markov networks
+members. And, and it's a very useful
+instruction. So let's think about this
+Bayesian network in the context of the
+set of factors. So here for example, we
+had initially a prior probability over the
+c variable p of c. That translates into a
+factor whose scope is C. We had, for
+example, P of G given I and D. And that
+translates into this factor whose scope
+is G, I, and D. In general, each one of
+the CPDs in this network converts to a
+factor over the scope of the family, that
+is the variable and its parents. So now
+lets assume that our goal to compute the
+probability of the variable j. And so we'd
+like to compute p of j. And what we see
+here is the joint distribution. So, this
+is the joint distribution which we have
+defined using the chain rule for Bayesian
+networks. In order to compute P of J,
+what we need to do is only to eliminate or
+marginalize out all of the variables
+except for J. And so, we end up with a
+summation that looks like this. Which is
+why this problem of inference of
+conditional probability inference is often
+called sum products because we have sum
+over a product of the factors. The inference
+problem for Markov networks takes
+exactly the same form. So here we have,
+once again, a product of factors. In this
+case, the factors are the form in which
+the network are, is originally defined. So
+we have the factors phi one over AB, phi
+two, phi three, and phi four. And if we're
+interested in computing the probability P
+of D, then once again we need to compute
+the product of these factors and then
+marginalize out. Now, what I wrote here is
+not actually quite right. Because the
+prod-, the product of the factors isn't
+actually in Markov networks. P of ABCD.
+Rather, it's P tilde of ABCD. Which is
+the, unnormalized measure. And in order to
+get the normalized measure, we need to
+norm-, we need to normalize, or. Divide by
+the partition function. So, how do we deal
+with that, if our goal is to compute
+P of D? Well, the point is, that, if what
+we have computed, if we ignore the
+partition function, and rather, we compute
+P tilde of D. We can infer that P of D
+is actually equal to one over Z. P tilde of D, because, the normalizing
+[inaudible] constant is a constant. And
+so, if we've computed P tilde of D,
+we can obtain P of D by a simple process
+of renormalization. Of P tilde of D.
+[sound] What about evidence? Well,
+evidence it turns out can be done by
+simple preprocessing step of factor
+reduction. So, here if we're trying to
+compute the probability of a set of
+variables Y given evidence. That by
+definition is the ratio between the
+probability of y and the evidence divided
+by the probability of the evidence. And if
+we look at the numerator of this
+expression over here. And define a set of
+variable, define W to be all the variables
+that are neither query. Nor evidence. Then
+we can, once again, consider this as a
+sum-product expression. So p of y, and e,
+we're going to introduce the variables w,
+into this expression. So this probability,
+over here, is the sum, of this
+probability, marginalizing out the w. Now
+if we, now, re-write this expression. Over
+here we can view it as a product of
+factors and that's the case whether it's a
+Bayesian network or a Markov network. And
+that product of factors is only those
+factors which are only the components of
+those factors that are consistent with my
+evidence, E equals little e, which means
+I, reduce the factors by the evidence. So
+to understand what that means, let's look
+at this example over here. And, let's
+imagine, for example, that we have an
+observation Say A equals little A, and we
+want to compute the probability of the
+distribution in the context of this
+observation. What that means is that we're
+going to take every single one of those
+factors. Say A equals, say A equals a
+zero, we're going to remove. From every
+factor that involves, the entries that
+correspond to A=little a1. Because those
+are not going to be consistent with our
+observation, A=little a zero. Once we've
+reduced those factors to be consistent
+with those elements, we have, now, a,
+still a product of factors. And we can go
+ahead and treat it in exactly the same way
+as we did before. And so we now have a sum
+over the variables W that need to be
+eliminated of the product of the reduced
+factors. And once again we can ignore the
+partition function by computing this
+probability and then renormalizing at the
+end. [sound]. This applies equally well in
+the context of, Bayesian networks. So here
+we might have, say, the observation
+I=little I, H=little h. So now this is no
+longer an equality, but rather, a, because
+we have not yet conditioned on the
+evidence. And so if we want to make this
+equal, we have to reduce each one of the
+factors involving I and H, based on the
+evidence. And so this turns into
+Phi i of little i. Which as it
+happens is a constant because there is no
+other variable in the scope. And similarly
+here. And here, and for the H equals
+little h. We do the same thing. Which in
+this case involves only this factor over
+here. And now it's back to being an
+equality. And if we want to compute
+probability of J, given. I equals little
+I, and H equals little h, we take this
+summation. And we normalize [sound]. Just
+like before. [sound]. So to summarize the
+sum product algorithm can be done as
+follows. It looks at, you convert the
+conditional probability into a ratio that
+the numerator of this ratio is a product
+of reduced factors, summed out over the
+remaining variables. The denominator of
+this is simply the numerator summed up over
+the variables, over the query variables y.
+And if we divide these two together, we
+realize that we can get away by computing
+simply this product of reduced factors and
+normalizing at the end. There are many
+algorithms for computing conditional
+probability queries. One of those involves
+pushing the summations into the factor
+product. This gives rise to an algorithm
+called variable elimination. It turns out
+to be a special case of a class of
+algorithms called dynamic programming. And
+it's a form of exact inference. A
+generalization of this algorithm performs
+message passing over a graph that also
+effectively deals with summations and
+factor product and factor summation. And
+there's many variants of this algorithm,
+some of which are exact and others are
+approximate. Here are some names of
+algorithm only some of which we'll have
+[inaudible] opportunity discussed. And
+then, finally, there's a very different
+class of algorithms that uses random
+sampling as the key for as the key technique
+[inaudible]. And its sample. Complete
+instantiations or assignments in a variety
+of different ways and uses those
+assignments to approximate the probability
+of, of a particular query. So here we
+have. Both exact and approximate. Methods,
+and, and this is an approximate method.
+And we'll talk about some of these in the
+remaining part of the section of course.

@@ -1,0 +1,7 @@
+Halil,
+This is similar to a question I asked a few weeks ago:
+https://lists.cs.princeton.edu/pipermail/topic-models/2011-August/001542.html
+Specifically, from Wei and Croft 2006 we have:
+P(w | D) = sum_{z=1 to K} P(w | z) * P(z | D)
+The LDA code outputs both P(w|z) and P(z|D), so you should be good to go.
+Steve

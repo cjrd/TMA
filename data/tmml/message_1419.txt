@@ -1,0 +1,5 @@
+Hello,
+you can try this code Shuyo's code :
+https://github.com/shuyo/iir/blob/master/lda/lda.py
+regards
+xueliang

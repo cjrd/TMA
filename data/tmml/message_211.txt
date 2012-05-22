@@ -1,0 +1,30 @@
+hi all,
+(apologies for the long delay in answering these questions.)
+i hope i can clear up this confusion.  it is completely the fault of
+the authors.  the write-up has some errors.
+the goal is to sample the level assignment for a particular word.  the
+path through the infinite depth tree is fixed, as are all the other
+level assignments.
+this distribution is in equation 2.  the problem is that there are an
+infinite number of values of z.  we sample in stages.
+first, we sample from the distribution where z can take on one of the
+values in {1, 2, ..., max, > max).  these are each level up to the
+maximum level at which words are assigned, and a slot for a level
+greater than max.  for levels up to max, we can use the unnumbered
+equation following eq 2 (for the "prior" of z) and the numbered
+equation 3 (for the "likelihood" of w given z).
+(the first mistake in this section is that max is not the maximum
+level for a document, but rather the maximum level at which words are
+assigned in *any* document.)
+next, we need to compute the probability that z > max, bringing us to
+the second mistake in the section: the unnumbered equation following
+eq 3 is wrong.  the probability is proportional to
+p(z > max | w) \propto p(z > max) p(w | z > max)
+the first term p(z > max) = 1 - \sum_{i=1}^{max} p(z = i).  the second
+term p(w | z > max) is actually easy.  by the definition above, no
+words have been assigned to topics for any z > max.  so, using eq. 3,
+we see that p(w | z > max) = 1/V.
+i hope this clears things up.  i will fix them in the next revision of
+the paper.
+best,
+dave

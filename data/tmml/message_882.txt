@@ -1,0 +1,6 @@
+If one is using fixed, symmetric Dirichlet hyperparameters, it's
+probably not bad to scale by avg document length L, so something like
+alpha=0.05*L/T would do this (this on average allocates 5% of prob
+mass for mixing).  50/T could be excessive if you only have 10 words
+per doc.
+Dave

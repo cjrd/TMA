@@ -1,0 +1,8 @@
+Hi, Ruo
+that [label] indicates the true test label file, which i used for
+computing accuracy. if you don't have it, just put a random label file
+there. then the accuracy reported will not be correct. you can see the
+inf-labels.dat to see the predictive labels.
+thanks!
+best
+chong

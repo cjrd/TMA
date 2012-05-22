@@ -1,0 +1,13 @@
+Hi Radim,
+You find the macros and examples here:
+http://www.mpi-inf.mpg.de/~dietz/probabilistic-models-tikz.zip
+Macros are in the preamble of the *.tex (or *.lyx) file. They need the
+two *.sty files to compile.
+If you want to check first whether you like the output, look here:
+http://www.mpi-inf.mpg.de/~dietz/probabilistic-models-tikz.pdf
+As mentioned before, I prefer the directed factor graph notation over
+the classic plate diagrams. But you can create both with the macros.
+I hope the examples get you started! If you have any questions bump me
+an email.
+Cheers,
+Laura

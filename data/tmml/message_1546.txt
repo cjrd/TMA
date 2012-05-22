@@ -1,0 +1,17 @@
+Hi all,
+Thanks for all of your interesting suggestions. Laura, your experimental
+results are extremely interesting, thanks for the link!
+Xavier, I don't think the automatically determined genres will correspond
+precisely to the usual idea of what makes a genre, but rather to groups of
+artists that a certain type of music listener tends to listen to.
+I have also been thinking about the potential sparsity of the data. Users
+that have listened to just one artist or who have made just one download
+(which represents a very significant portion of my dataset) may not have a
+meaningful topic distribution, but my hope is that their topic distribution
+will give much weight to the genre that has the highest probability for the
+one artist they have listened to, and so their recommendation list will just
+be the other artists in that genre ranked by their probability within that
+genre, which I feel is the most natural thing for a recommendation system to
+do.
+Thanks,
+Harry

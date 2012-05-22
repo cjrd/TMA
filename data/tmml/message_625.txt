@@ -1,0 +1,17 @@
+It looks like most of the terms you are having trouble with are just
+expectations over multinomial distributions.  A multinomial
+distribution p(z | theta) is just a distribution over K outcomes (say
+{1..K}), and is parameterized by theta, a length-K vector which sums
+to 1; p(z = k | theta) is then defined as theta_k.
+The expectation of a function over this distribution can be written as
+E_p[f(z)] = sum_{k=1..K} p(z = k | theta) f(k)
+by definition of expectation.  Using the parameterization of the
+multinomial distribution, this sum is just
+sum_{k=1..K} theta_k f(k).
+In the expressions you're looking at, f(k) is usually the log
+probability of that outcome under a different multinomial
+distribution, say log p(z = k | phi) = log phi_k.  In which case, this
+expression is just
+sum_{k=1...K} theta_k log phi_k.
+Cheers,
+Jonathan

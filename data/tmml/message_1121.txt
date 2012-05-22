@@ -1,0 +1,3 @@
+Hi Vikas --
+the optimum number of topics (K in LDA) is dependent on a at least two factors:
+Firstly, your data set may have an intrinsic number of topics, i.e., may derive

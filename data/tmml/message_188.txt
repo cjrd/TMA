@@ -1,0 +1,7 @@
+Dear Topic list,
+I'm looking for articles or any document in the literature which makes a
+comparison between the Latent Dirichlet Allocation model and the
+Gaussian Mixture Model (GMM). Those that I found did not focus on that
+point. Any idea?
+Thanks,
+Marie

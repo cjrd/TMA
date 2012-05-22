@@ -1,0 +1,21 @@
+              0072110
+Menendez
+
+This three-year award will provide support for Jose
+              Menendez of Arizona State University to work with Jose Calleja at the
+              Universidad Autonoma de Madrid, Spain.  The primary goal of their research is
+              to perform inelastic light scattering studies of carbon nanotubes under high
+              magnetic fields, in the expectation of characterizing nanotube samples, which
+              always contain a heterogeneous distribution of nanotube sizes and structures. 
+              In addition, they plan to investigate some unusual magnetic field effects -
+              ranging from a metal-insulator transition to an enhancement of the predicted
+              Peierls distortion in 1D-metals -- that have been predicted
+              theoretically.
+
+The two laboratories are complementary.  The US laboratory is
+              equipped with Raman instrumentation with extremely high resolution and
+              contrast.  The Spanish laboratory is one of the few in the world where Raman
+              measurements with fields as high as 12T and temperatures as low as 0.3 K can be
+              performed routinely.  Carbon nanotubes have been proposed as the ideal tip
+              materials for scanning probe microscopies, as an alternative to composite 
+

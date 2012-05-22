@@ -1,0 +1,30 @@
+              Burnett, Roger M.
+MCB-0094577
+
+
+We will explore the principles by which
+              viruses are constructed from their constituent proteins, and advance ways of
+              imaging very large biological structures at high resolution.  The molecular
+              structures of two very large virions will be obtained by combining two
+              independent imaging methods.  Cryo-electron microscopy (EM) will yield
+              three-dimensional reconstructions of adenovirus and bacteriophage PRD1, and
+              their mutants.  Difference imaging will use the known X-ray structures of the
+              two major coat proteins with the EM reconstructions to define the molecular
+              envelopes and locations of proteins at the vertex and others acting as capsid
+              "cement."
+
+We want to understand the molecular interactions determining the
+              architecture and stability of adenovirus and bacteriophage PRD1, and to develop
+              our hypothesis that they have evolved from a common ancestor.  How can two
+              dsDNA viruses have large pseudo T=25 virions with quite different sizes,
+              although they are formed from similar major coat proteins?  Both proteins have
+              double "viral barrel" subunits to give trimers with pseudo-hexagonal shapes
+              that can closely pack.  How are these and other similarities, such as in DNA
+              organization and replication, maintained while the viruses have evolved?  They
+              infect very different hosts, and PRD1 has an unusual internal membrane.  The
+              role and evolution of cementing proteins will be studied by imaging viral
+              mutants.  These proteins are important in large macromolecular assemblies as
+              they resolve the conflicting requirements for weak interactions to ensure
+              accurate assembly of major components, and the strong bonding necessary for
+              stability.
+

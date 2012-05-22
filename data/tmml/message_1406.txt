@@ -1,0 +1,8 @@
+hi zhou
+i suggest looking at some of the foundational work on variational
+inference.  jordan et al.'s "introduction to variational methods for
+graphical models" (1999) is great.  the treatment of variational
+inference in "pattern recognition and machine learning" (bishop, 2006)
+is also excellent.  finally, take a look at matt beal's phd thesis.
+best
+dave

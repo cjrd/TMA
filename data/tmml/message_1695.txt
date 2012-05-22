@@ -1,0 +1,99 @@
+DEADLINE EXTENSION FOR PAPERS
+** Note: New paper submission deadline **
+The Workshop on Induction of Linguistic Structure (WILS)
+Co-located with NAACL-HLT 2012 Montreal, Quebec, Canada; June 07, 2012
+http://wiki.cs.ox.ac.uk/InducingLinguisticStructure
+Submission Deadline: April 14, 2012
+Workshop description:
+This workshop addresses the challenges of learning in an unsupervised
+or minimally supervised context with questions of linguistic
+structure. Inducing structured linguistic representations from text
+has long been a fundamental problem in Computational Linguistics and
+Natural Language Processing, drawing from theoretical Computer Science
+and Machine Learning. The popularity of the area is driven by two
+different motivations. Firstly, it can help us to better understand
+the cognitive process of language acquisition in humans. Secondly, it
+can help with portability of NLP applications into new domains and new
+languages. Most NLP algorithms rely on syntactic parse structure
+created by supervised methods, however in many cases there is no
+available training data, thus limiting the portability of these
+algorithms. Consequently work on unsupervised induction of the
+linguistic structure of language holds considerable promise, although
+current approaches are a long way from solving the general problems.
+This workshop aims to foster continuing research in structure
+induction, and bring together different communities working on these
+problems, be it from a cognitive or a text processing perspective.
+In this workshop, we solicit papers from many subfields of
+computational linguistics and language processing. Topics include, but
+are not limited to
+- grammar learning
+- part-of-speech and shallow syntax
+- learning semantic representations
+- inducing document and discourse structure
+- learning/projecting structures across multilingual corpora
+- relation induction across document collections
+-  evaluation of induced representations
+Our aim is to bring together work on fully unsupervised methods along
+with minimally supervised approaches (e.g., domain adaptation and
+multilingual projection).
+The workshop will solicit short papers (6 pages) for either oral or
+poster presentation. More details on paper submission will be provided
+in due course on the workshop website.
+The workshop will host the PASCAL Unsupervised grammar induction
+challenge, which aims to foster continuing research in grammar
+induction and part-of-speech induction, while also opening up the
+problem to more ambitious settings, including a wider variety of
+languages, removing the reliance on gold standard parts-of-speech and,
+critically, providing a thorough evaluation including a task-based
+evaluation.
+The shared task will evaluate dependency grammar induction algorithms,
+evaluating the quality of structures induced from natural language
+text. In contrast with the defacto standard experimental setup, which
+starts with gold standard part-of-speech tags, we will encourage
+competitors to submit systems which are completely unsupervised. The
+evaluation will consider the standard dependency tree based measures
+as well as measures over the predicted parts of speech. Our aim is to
+allow a wide range of different approaches, and for this reason we
+will accept submissions which predict just the dependency trees for
+gold PoS, just the PoS, or both jointly.
+While our focus is on unsupervised approaches, we recognise that there
+has been considerable related research using semi-supervised learning,
+domain adaption, cross-lingual projection and other partially
+supervised methods for building syntactic models. For this reason we
+will also support these kinds of systems.
+Important dates:
+Submission Deadline: April 14
+Notification of Acceptance: April 28
+Camera-ready papers Due: May 04
+Workshop: June 07, 2012
+Shared task dates
+Data made available: Jan 27
+Submissions due for evaluation: April 13
+Evaluation results released: April 23
+Team reports due: May 4
+Organizers:
+Trevor Cohn, University of Sheffield
+Phil Blunsom, University of Oxford
+Jo?o Gra?a, Spoken Language Systems Lab, INESC-ID Lisboa
+Program committee:
+Ben Taskar - University of Pennsylvania
+Percy Liang - Stanford University
+Andreas Vlachos - University of Cambridge
+Chris Dyer - CMU
+Mark Drezde - John Hopkins
+Shai Cohen - Columbia University
+Kuzman Ganchev - Google Inc.
+Andr? Martins - CMU/IST Portugal
+Greg Druck - Yahoo
+Ryan McDonald - Google Inc.
+Nathan Schneider - CMU
+Partha Talukdar - CMU
+Dipanjan Das - CMU
+Mark Steedman - University of Edinburgh
+Luke Zettlemoyer - University of Washington
+Roi Reichart - MIT
+David Smith - University of Massachusetts
+Ivan Titov - Saarland University
+Alex Clarke - Royal Holloway University
+Khalil Sima'an - University of Amsterdam
+Stella Frank - University of Edinburgh

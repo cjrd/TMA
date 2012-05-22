@@ -1,0 +1,11 @@
+Hi Zhen Chen,
+You generally extract the vocabulary from the corpus of documents at hand,
+rather than using a "pre-fabriqu?" vocabulary.
+You should go through the corpus and count how many times each
+word occurs and then keep some subset of the words (by frequency
+of occurrence and other criteria) as your vocabulary (see attached
+makevocab.py).
+One usually also removes common English words (see attached stopwords.py).
+A vocabulary size of 10 000 should be able to give you plenty of interesting
+topics, and will probably lead to topic models that will fit in RAM.
+Ivan

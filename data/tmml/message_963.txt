@@ -1,0 +1,16 @@
+Dear list members,
+I am just curious to know what tool/software/language people usually use
+for implementing Gibbs sampling for topic model like generative framework?
+Is it more convenient to work with R, OPENBUGS, MALLET or FACTORIE rather
+than writing code on C/C++/Java/MATLAB? I am currently working with a
+dataset which has few millions of documents. So, I have to think of the
+scalability of the implementations as well. Recently, I developed some code
+in MATLAB for smoothened LDA and discovered that MATLAB can't handle the
+enormous size of the dataset unless the documents are read sequentially in
+groups. Migrating over C/C++ is not that advantageous as I have to write
+codes for constrained optimization which is somewhat painful. So, I was just
+thinking if I can work with some standard library functions with some other
+tool that will also provide me enough flexibility in handling this large
+dataset. Any suggestion will be highly appreciated.
+Thanks,
+Ayan Acharya

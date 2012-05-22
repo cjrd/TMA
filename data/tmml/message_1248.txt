@@ -1,0 +1,28 @@
+Let me expand on this suggestion.
+Summary:   The Dirichlet(\rho*\vec\theta) distribution
+can be approximated by the DirichletProcess(\rho,\vec\theta)
+distribution which is *almost* conjugate to itself.
+This is what the Hierarchical Dirichlet Processes
+are all about.  Methods for this are an active area of research.
+When applied to a probability vector \vec\theta,
+the Dirichlet Process approximates the Dirichlet distribution.
+That is:
+Dirichlet(\rho*\vec\theta)
+is approximated by
+DirichletProcess(\rho,\vec\theta)
+In fact the two distribution have identical 1st, 2nd and 3rd order moments.
+The details are in our review article on the Pitman Yor Process:
+A Bayesian Review of the Poisson-Dirichlet Process
+Buntine and Hutter
+http://arxiv4.library.cornell.edu/abs/1007.0296v1
+The Dirichlet Process, when applied to finite probability vectors,
+is *almost* conjugate to itself.  Almost, because while you can integrate
+out the vector \vec\theta, you have to replace it with
+so-called table counts.  The relevant result appears in
+Corollary 17 of Buntine and Hutter.
+Thus one can do all sorts of tricks with hierarchical Dirichlets
+implemented as hierarchical Dirichlet Processes or Hierarchical Pitman Yor's.
+Some examples of this are in recent papers by Lan Du and co-authors.
+http://users.cecs.anu.edu.au/~dulan/
+We're get exceptional results applying this to a range of LDA variants.
+Wray Buntine

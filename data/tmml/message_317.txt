@@ -1,0 +1,18 @@
+Good afternoon.
+I'm seeking a paper explaining the use of a straightforward DP prior for
+LDA.  My primary purpose is to take a single step beyond LDA in explaining
+the DP to students as part of a class covering topic modeling.  I have found
+the following paper:
+http://wwwbrauer.informatik.tu-muenchen.de/~trespvol/papers/AISTATS-final2.p
+df
+I'm wondering whether there are alternative papers worth considering as
+well.
+A possible next pedagogical step would be to explain hierarchical LDA, so I
+want this DP-only step to be a smaller leap.
+More generally, I'm interested in your experiences teaching topic models in
+all of their variety.  In what order have you introduced the key concepts?
+You are welcome to examine the schedule for my graduate course, if you're
+curious how I'm approaching this:
+http://faculty.cs.byu.edu/~ringger/Winter2008-CS601R-1/schedule.html
+*All* feedback is welcome.
+Regards,

@@ -1,0 +1,20 @@
+                   This Small Business Innovation Research Phase I project is  to design a
+              generic framework for formalizing and automatically extracting domain-specific
+              information from unstructured text for the purpose of automatic processing. 
+              The rate at which new information becomes available has increased to a point
+              that it is impossible for people to identify the nature the information content
+              as it is made accessible and even less feasible to absorb the actual
+              information content.  Current search technologies solve the problem of finding
+              documents, but they do not address the fundamental problem of cognizance of the
+              information contained in newly available documents.  Being aware of the
+              information content has now become the real challenge.  Therefore it has become
+              critical to automatically process information as it becomes available.  The
+              framework will handle domain specific areas where language variations are
+              wide.
+     The commercial applications of Teragram's proffered technology
+              include alerts based on content, feature extraction for clustering and
+              visualization of large information contents, and structuring data from
+              documents into databases for numerous domains, including financial analysis,
+              financial earnings releases, sport results, weather forecasts, terrorist
+              events, election results, and product price comparisons.
+

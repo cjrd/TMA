@@ -1,0 +1,45 @@
+              Schroeder
+
+Hyperthermophlic archaea inhabit volcanic environments such as
+              hydrothermal vents or hot springs that may resemble conditions when life on
+              earth originated.  The hyperthermophilic, marine Archaeon Pyrobaculum
+              aerophilum belongs to a deep branch of the phylogenetic tree suggesting that
+              this organism is relatively ancient.  The objective of this research project is
+              to study the mechanism of denitrification in the Archaeon P. aerophilum.
+              Denitrification is a unique prokaryotic pathway that allows the microbe to
+              convert nitrate into dinitrogen gas. It is the only pathway in nature that
+              generates nitrogen gas from fixed N oxides and thus it is essential for the
+              maintenance of the global nitrogen cycle on earth.  Respiration of nitrate is
+              coupled to the generation of energy that fuels cell propagation.  The pathway
+              is found in both the domain Bacteria and the domain Archaea suggesting that
+              denitrification evolved most likely before the last common ancestor.  P.
+              aerophilum represents the oldest denitrifier isolated thus far and provides the
+              opportunity to compare an ancient process with that found in today's modern
+              microbes.  The denitrification pathway is well described in Gram-negative
+              bacteria, where two membrane-bound and two soluble enzyme complexes as well as
+              several soluble electron mediating proteins are required.  Based on previous
+              results in the PI's laboratory a different mechanism for denitrification is
+              proposed for P. aerophilum: Four membrane-bound enzyme complexes exist that all
+              interact with a menaquinone pool to reduce nitrate to N2 gas.  A combination of
+              biochemical, biophysical and molecular techniques will be employed to test this
+              hypothesis and further our understanding of the physiology of hyperthermophlic
+              Archaea. The objectives of this project are to further characterize the nitrate
+              reductase enzyme, which is interesting because of its novel membrane anchor. 
+              To obtain a more complete picture of the denitrification pathway, two
+              additional denitrification pathway enzymes, the nitrite reductase and the NO
+              reductase, will be purified and characterized.  To facilitate future structural
+              analysis of the nitrite and NO reductases the nir and nor genes will be cloned
+              and overexpressed.  Since the DNA sequence of P. aerophilum will be available
+              in the near future a selected set of genes involved in the denitrification
+              pathway will be analyzed for their differential expression in response to
+              selected and defined environmental growth conditions. 
+
+The results from this
+              research will further our knowledge about respiratory processes that are
+              essential functions of life. The study of an ancient Archaeon may give insight
+              into how electron transfer reactions have evolved. The investigation of the
+              denitrification process in diverse organisms will further our ability to
+              understand, predict and deal with global environmental changes that include the
+              nitrogen cycle.
+
+

@@ -1,0 +1,17 @@
+              This award supports the investigation of the discharge variablility of Ross Ice
+              Streams over the last millenium, using a combination of numerical simulation
+              and satellite remote sensing of flow features on the Ross Ice Shelf.  The
+              proposed collaborative research will use the Ross Ice Shelf record of flow
+              variability to deduce variations in ice stream discharge over the last 1000
+              years.  Changes in ice stream discharge disrupt flow of the ice shelf, in both
+              profound and subtle ways, distorting flow features and changing crevasse
+              patterns.  The result in an integrated record of many changes over the lifetime
+              of the ice within the shelf.  Interpretations of flow-trace and crevasse
+              geometry already made by Fahnestock and others will be used as a template for
+              the design of numerical modeling experiments.  The primary objectives are to
+              verify the imagery existing concepts of ice stream dishcarge variability and
+              will produce new data sets, both which will be use to the Antarctic glaciology
+              community.  Landsat-7 imagery will be used to measure velocity in areas of
+              particular interest where existing data are inadequate.  MODIS data, which has
+              better radiometric and spatial resolution will be used to improve feature
+              mapping on the ice shelf in sensitive areas.

@@ -1,0 +1,8 @@
+Hi,
+You are right that in prediction y_d is typically unobserved.  But
+conveniently, y_d is a leaf node of the sLDA graphical model and hence can be
+dropped from the inference step.   So to do predictions you can just run the
+standard LDA inference scheme (with the topics learned at train time), and
+then regress on the expected value of z_bar.
+Cheers,
+Jonathan

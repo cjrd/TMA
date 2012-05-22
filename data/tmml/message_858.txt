@@ -1,0 +1,13 @@
+Hi Jonathan,
+I agree with your comments. Even in our experiments with Labeled LDA on the
+task of multi-label document classification, we found that smoothing the
+topics with empirical frequencies from the corpus results in much better
+performance than using a uniform prior.
+However, as Laura said, the prior represents our prior belief about the
+probabilities. So, using prior freequencies from the same corpus that you
+are training your model on, MAY result in over fitting. In such cases, the
+best strategy is to use a prior  that is estimated from empirical
+frequencies from a different but large dataset that represents general
+English frequencies.
+Thanks
+-Ramesh

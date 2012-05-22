@@ -1,0 +1,18 @@
+Karsten -
+I am relatively new to topic modeling, so take what I have to say with a grain of salt. However, seeing that none of the experts have weighed in, I will respond. Hopefully any errors in my explanation will provoke a real expert to step in. :-)
+LDA describes topics as distributions over words. You can think of a topic as a point in a high-dimensional vector (word) space, but this means that the locations of topics are not themselves orthogonal vectors. Topics give a means for a non-orthogonal projection of a document into a lower-dimensional space. Are the topics themselves orthogonal? LDA assumes so, but we know that some topics are much more likely to occur together than others (http://www.jstor.org/stable/4537420). Thus, I would be hesitant to use a cosine metric. Based on my quick study, I would say that k-NN might work, but again I would be a bit weary of leaning too heavily on its results. The other techniques that you suggest are beyond my knowledge.
+I hope that gives you some bearing on the technique, and I look forward to hearing others' responses.
+David Mertens, Ph. D.
+Postdoctoral Research Scientist
+Amaral Lab and Department of Chemical and Biological Engineering
+Email: david.mertens at northwestern.edu
+Phone: 847-491-7238
+Cell: 217-721-8326
+Web: http://amaral.northwestern.edu/people/David_Mertens/
+Skype: dcmertens
+Mailing Address:
+2145 Sheridan Rd, Room EG80
+Northwestern University
+Evanston, IL 60208
+Charter on Email Overload: http://emailcharter.org/index.html
+________________________________

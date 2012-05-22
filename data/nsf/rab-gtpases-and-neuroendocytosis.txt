@@ -1,0 +1,31 @@
+              Proposal #9974517
+Lisa Elferink
+
+Synaptic transmission is the primary form of
+              communication between neurons.  It is a highly regulated process that underlies
+              virtually all neuronalpathways, from simple reflexes to higher order brain
+              function such as learning and memory.  Synaptic transmission involves the
+              release of neurotransmitters from synaptic and secretory vesicles by exocytosis
+              followed by the retrieval of vesicle membranes by endocytosis.  Therefore
+              endocytosis is essential for the continued secretory function of neural cells. 
+              Impairment of this process is likely to result in paralysis or mental
+              disorders.  The long term goal of this proposal is to examine the molecular
+              mechanism mediating secretory vesicle recycling and its role in synaptic
+              transmission.  Rab GTPases are a family of monomeric proteins involved in
+              membrane transport.  Rab15 will form a focal point for these studies since its
+              expression is enriched over other endosomal rabs in cells with high levels of
+              secretion such as neurons and neuroendocrine cells.  Moreover, rab15 localizes
+              to early endosomes in non-neuronal cells, consistent with its proposed role in
+              endocytosis.  This proposal describes experiments that examine the role of
+              rab15 in secretory vesicle recycling.  First we will identify the endocytic
+              transport step regulated by rab15 in non-neuronal cells - key findings will be
+              applied to neuroendocrine cells.
+Second, we will determine rab15's subcellular
+              localization in neuroendocrine cells.  Finally, we will examine the role of
+              rab15 in secretory vesicle recycling.  Together, these studies will shed new
+              light
+on the role of rab15 in regulating the recycling of secretory vesicles
+              during synaptic transmission and more generally, on the molecular mechanisms
+              determining the specificity of endocytosis in all cell types.
+
+

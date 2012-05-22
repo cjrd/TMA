@@ -1,0 +1,6 @@
+Hello,
+It is not the $$\eta$$ that directly form the multinomial distribution
+over topics, rather it's exponent (normalised of course), i.e.
+$$\frac{\exp( \eta ) }{ \sum \exp( \eta )}$$. The $$\theta$$ mentioned
+on page 4 of the paper for the mean parameters of the multinomial.
+Hope that helps,

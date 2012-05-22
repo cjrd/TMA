@@ -1,0 +1,17 @@
+It's easy to show that LDA topics often do NOT have semantic meaning, and
+simply reflect statistical correlations. We've found, for example, that
+LDA is an excellent way to find subsets of a corpus that contain
+consistent OCR errors or broken PDF ligatures (eg "difficult" comes out
+as "di ffi cult").
+As for showing that highly probable words in particular topics often do
+have semantic meaning, you might look at some recent work by Chang,
+Boyd-Graber, Gerrish, Wang and Blei:
+http://books.nips.cc/papers/files/nips22/NIPS2009_0125.pdf
+They found that when topics are well estimated (and they often aren't),
+people are very good at spotting randomly inserted words from other
+topics, indicating that the "true" words have a consistent, coherent
+meaning.
+Another approach is to find collections with existing topic annotations,
+for example this recent study:
+http://artfl.blogspot.com/2009/12/mapping-encyclopedie-classes-of.html
+-David

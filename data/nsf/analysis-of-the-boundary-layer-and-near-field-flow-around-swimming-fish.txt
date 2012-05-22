@@ -1,0 +1,35 @@
+              The object of this research is to measure fluid velocities to within 0.1 mm of
+              the body surface of a freely swimming fish, and use these measurements to
+              determine drag and other characteristics of the unsteady flow field. Up until
+              now, the drag of a swimming fish has not been definitively measured, yet its
+              value is important for determining how much power a fish uses for locomotion.
+              In the past, researchers have used a "rigid-body" concept, in which the drag of
+              an equivalently shaped object stretched straight in the flow is used as a proxy
+              for the swimming case. Such estimates have led to a number of contradictory
+              conclusions about fish swimming ability. There is no doubt that the lateral
+              body motion used by fish for propulsion will alter the fluid velocities near
+              the fish body. How these changes to the velocity field affect the drag remains
+              unknown. The major source of drag on any streamline body, rigid or swimming, is
+              confined to a very thin layer of fluid along the body surface. Within the very
+              thin layer, called the "boundary layer", fluid velocity increases from zero at
+              the body surface to approximately the speed of the current in only a few
+              millimeters. In order to measure the drag of a swimming fish, high-resolution
+              measurements of the fluid velocities must be made within this microscopic
+              region and also just outside the boundary layer in the "near-field." For this
+              research, non-invasive techniques based on digital particle image velocimetry
+              are used to measure flow velocity in the boundary layer and near field of
+              swimming fish. Pressures and shear stresses over the body surface are
+              determined from these measurements and combined to form estimates of total
+              viscous and pressure drag. The nature of the flow is analyzed to determine if
+              the boundary layer is laminar or turbulent and if the boundary layer has
+              separated over any part of the fish body. These questions have been debated for
+              years and are important for examining proposed drag-reducing capabilities in
+              swimming fish. Five local species of fish will be used in a comparative study.
+              These include scup, Atlantic mackerel, American eel, and two local dogfish
+              species.  These species encompass a range of swimming motions from anguilliform
+              to carangiform modes. Scup are also included because the observed drag can be
+              compared to existing measurements of in vivo muscle power. The results of this
+              study will further the understanding of how fish swim and how fish power
+              swimming with their muscles. The results will also improve understanding of
+              energetic behavior as it applies, for example, to migration, schooling
+              behavior, and flow sensing by the fish lateral line. 

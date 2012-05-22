@@ -1,0 +1,12 @@
+Hi everyone:
+At first, thanks for your detailed reply to my first question.
+So far as I know in most of current Gibbs sampling methods, the \alpha and
+\beta are given  previously without a learning process. Is there any way or
+published work aims at learning them in Gibbs sampling? Since EM can be used to
+learn parameters,can EM and Gibbs sampling combine together?
+I have talked about this with shao, but because of my fool I couldnot follow
+him. It will be greatly appreicated if any of you could give me another detailed
+instruction.
+Thanks again and best regards!
+Wan shi ru yi!
+Liu Qi

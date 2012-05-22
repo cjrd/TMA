@@ -1,0 +1,7 @@
+Hi All,
+Thanks for your valuable suggestions.
+To be specific I have used formula for perplexity as given on page 1008 of David Blei's LDA paper.
+Moreover, this paper http://portal.acm.org/citation.cfm?id=1282283 also uses same formula for computing perplexity and shows
+decrease in perplexity with increase in number of topics.
+thanks,
+vikas

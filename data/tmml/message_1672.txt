@@ -1,0 +1,13 @@
+Topic Modelers,
+I am considering the problem of document retrieval. My intuition is
+that a simple retrieval model, such as the vector space model (VSM),
+will have higher precision but lower recall, when compared to the
+fully-generative LDA model. VSM is more restrictive and gives fewer
+"hits", but the hits that it does give have high confidence (i.e.,
+exact-word match). On the other hand, LDA is more inclusive and can
+associate more terms (e.g., "car" with "automobile"), leading to
+higher recall but not quite the precision.
+Is there any work that confirms or disputes this intiution (i.e., that
+VSM has higher precision but lower recall vs. LDA), either
+theoretically or empirically?
+Steve

@@ -1,0 +1,57 @@
+              PI: Cary		Proposal: 0102648	                      
+
+The project by S. Craig
+              Cary, University of Delaware is supported by the program Biocomplexity in the
+              Environment, subprogram Genomic-Enabled Environmental Science and Engineering
+              (BE GEN-EN).  The project focuses on symbiotic associations in deep-sea thermal
+              vent communities. 
+
+Closely integrated symbiotic associations between
+              bacteria and eukaryotic hosts abound in nature. This is particularly the case
+              in marine systems where novel associations are being routinely discovered.
+              Whether the bacteria reside externally to the host or endosymbiotically the
+              functional role of these associations often remain poorly understood. This lack
+              of understanding, in part, stems from our inability to cultivate the majority
+              of these symbionts free from their host.  Even in instances where cultivation
+              is possible, it is unlikely that the physiological capacities of bacteria
+              measured in the laboratory truly represent those in the natural ecosystem. The
+              majority of episymbiont associations exist as a phenotypically and
+              phylogenetically mixed population making it extremely difficult to decipher the
+              role of independent members. 
+
+This project will employ a community level
+              genomic approach to understand the metabolic potential and phenotypes of the
+              members of a diverse episymbiotic bacterial community found associated with the
+              tube-dwelling polychaete, Alvinella pompejana. This association exists in an
+              extreme deep-sea hydrothermal vent biotope characterized by high concentrations
+              of heavy metals and the steepest thermal gradient experienced by any organism
+              yet described. It is likely that such an environment imposes strong selective
+              pressures on the symbiont/host association. In depth rRNA analysis of the
+              episymbiotic communities associated with A. Pompejana demonstrated the
+              dominance of a diverse assemblage of a single bacterial subdivision (epsilon
+              Proteobacteria). This constraint, found in the episymbiotic communities
+              throughout A. pompejana geographic and physiochemical range, has not been
+              described in any other symbiotic association. Because of the complex nature of
+              this association, no specific roles have been defined for this unique symbiosis
+              by habitat characterizations, in situ enzyme assays, classical cultivation
+              techniques or molecular analysis. This project will address a central
+              hypothesis that by understanding the collective genetic complexity of the
+              episymbiont community one can resolve a core metabolic strategy that defines
+              the
+community in the context of its environment.  Our approach assumes that by
+              placing the genome biocomplexity of this community directly into an
+              environmental context we will be able to resolve the ecological role and
+              interrelationships of this microbial/invertebrate association. To achieve this
+              goal, we will conduct a meta-genome scale analysis of the complex microbial
+              community found intimately associated with A. pompejana.  By coupling tightly
+              integrated bioinformatic and modeling components with both environmental
+              characterizations and microarray expression analyses we will then have the
+              ability to genetically dissect the episymbiont community and query their
+              functionality under various physiochemical conditions. The research will
+              involve an interdisciplinary, international team of investigators that bring to
+              the program expertise in microbial ecology, geochemistry, genomic sciences,
+              proteomics and bioinformatics. The productive partnerships between academia and
+              industry that were developed during previous work will allow access to
+              essential technical resources and expertise otherwise unavailable for this type
+              of investigation.
+

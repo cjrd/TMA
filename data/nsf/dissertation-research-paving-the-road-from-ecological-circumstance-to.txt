@@ -1,0 +1,16 @@
+              Abstract
+Defensive mimicry systems are typically categorized into two types:
+              Batesian, involving a defenseless mimic and a defended model, or Mullerian,
+              involving two or more defended co-models.  More recent theoretical treatments
+              of mimicry predict that the nature of a single mimicry system may vary over
+              space and time.  In this proposal, the work incorporates both the phenology and
+              the geography of three butterfly species to assess the dynamics of two
+              well-known mimicry systems: the viceroy/monarch system and the viceroy/queen.
+              While these systems were originally classified as Batesian mimicry,
+              accumulating evidence suggests that the viceroy is often unpalatable to avian
+              predators, while the models, the monarch and queen, can often be palatable.
+              Thus, the viceroy mimicry complex may span the continuum with roles of model
+              and mimic changing through space and time. This work will document the
+              chemistry responsible for unpalatability, spatial and temporal variation in
+              chemical defense of the three butterfly species, and variation in palatability
+              to vertebrate and invertebrate predators.

@@ -1,0 +1,5 @@
+              Carnegie-Mellon University  is hosting the ROBOCUP-2001: The Fifth International
+              Symposium, Competitions, and Demonstrations, in Seattle, Washington in the
+              Summer 2001.  The event is sponsored by the American Association for Artificial
+              Intelligence (AAAI). The award will pay for the travel of 40 students,
+              $500/person, to the ROBOCUP. 

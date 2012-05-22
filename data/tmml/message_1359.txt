@@ -1,0 +1,9 @@
+"?" \in \mathbb{R}^T //is// a multinomial
+i.e. \theta[1] + \theta[2] + ... + \theta[T]  = 1,
+so "drawing" from theta you get a topic
+indicator var.
+(Actually ? is a matrix, with D rows,
+each row being a multinomial)
+Also ? "is drawn" from a Dirichlet prior
+p(?_1,?_2, ... , ?_T | ?_1, ?_1, ..., ?_T) = Dir(?_1, ?_1, ..., ?_T)
+Ivan

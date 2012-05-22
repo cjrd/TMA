@@ -1,0 +1,39 @@
+              General purpose processors (GPPs) are designed to implement on fixed
+              configuration that is good on average but may not be well suited for individual
+              applications.  In fact, applications can have drastically different execution
+              characteristics (e.g. branch prediction technique preference, cache
+              configuration and policy preference, low-power opportunities).  This suggests
+              the use of device reconfigurability, but generic reconfigurable logic of any
+              substantial scale (e.g. most field programmable gate array (FPGA) technology)
+              is slow, lacks density, and is power-hungry.  Yet many processor structures are
+              easily adaptable to a wide variety of configurations.  This research will
+              develop dynamic, small-scale, partial reconfigurability for such structures. 
+              This "Dynaptable" approach has the further benefit that it integrates work at
+              the architectural, logic, and circuit levels.
+
+The Dynaptable approach
+              consists of three key elements:
+
+   1.  Flexible structures:  designing key
+              processor structures with judicious amounts of reconfigurable hardware to
+              provide flexibility in a low-cost, non-invasive way.
+
+   2.  Run-time
+              monitoring:  determining the current configuration's performance or
+              effectiveness compared to other possible competing configurations.
+
+   3. 
+              Dynamic reconfiguration:  using the results of run-time monitoring to adapt to
+              a new configuration that improves the chosen figure of merit (e.g. performance,
+              energy-delay product, fault tolerance).
+
+The research will identify the most
+              profitable places for adding small-scale reconfigurability, design the
+              requisite reconfigurable elements, and develop the most effective and
+              lowest-cost techniques for dynamic monitoring and adaptation.  This work will
+              have an impact on the design of a variety of processor components (branch
+              predictor, cache, datapath, etc.) for a range of processing environments
+              (embedded systems, superscalar, SMT, etc.).  The final goal is to develop a
+              consistent methodology for dynamically adapting GPP microarchitectures for
+              improved performance, lower power, and increased fault tolerance.
+

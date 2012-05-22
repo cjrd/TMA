@@ -1,0 +1,11 @@
+Hi All,
+I had the similar experience in working with a different dataset. And the
+difference is probably because of use of Gibbs sampling instead of
+variational EM.
+Thanks,
+Ayan Acharya
+(Graduate Student,
+Track: Communication, Networks and Systems,
+Electrical and Computer Engineering,
+University of Texas at Austin,
+Austin, Texas, USA)

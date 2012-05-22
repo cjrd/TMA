@@ -1,0 +1,23 @@
+              EIA- 0205152
+Sharon Dawes
+SUNY Albany
+
+Modeling the Social and Technical
+              Processes of Interorganizational Information Integration
+
+This grant will
+              develop and test dynamic models of information integration in
+              multi-organizational government settings.  Three questions will be addressed:
+              1) What are the critical factors and processes involved in integrating
+              information across levels and agencies in government? 2) How do the factors and
+              processes vary for different types and degrees of integration? and 3) Can the
+              process of integration be modeled in ways that improve understanding of
+              information system development and of inter-organizational  collaboration? Two
+              policy areas in particular will be featured; law enforcement and environmental
+              protection. Both areas include a full range of functions across
+              Federal-State-Local levels of government and both areas have efforts underway
+              to bridge those levels. The project will combine perspectives from
+              organizational behavior, computer and information science, and political
+              science, and will use system dynamics modeling and social processes modeling. 
+              
+

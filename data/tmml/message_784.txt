@@ -1,0 +1,6 @@
+thanks Laura. i wasn't quite sure if it was the number of times w (1) occurs
+in l or  (2) co-occurs with l in a window of text.  (1) seems to be more
+sensible in this case. the original authors did not spell this out in their
+paper unfortunately.
+thanks again,
+Ng

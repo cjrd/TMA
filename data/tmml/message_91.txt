@@ -1,0 +1,11 @@
+Bearing in mind the view that LDA and related models effect a form of
+non-negative matrix factorization on the document x term frequency
+matrix, one might try a form of independent component analysis on that
+matrix instead, e.g. one that minimizes the mutual information among
+the source components.  Hopefully that's conceptually satisfying to
+you.  There was a scheme tested on the NIH's Pubmed database by an
+internal effort there that did something like that with keyword groups
+serving as the components of the corpus.  The algorithm was more
+combinatorial than probabilistic in character though, if I remember
+correctly.  I can pass along a reference a bit later.
+Anthony

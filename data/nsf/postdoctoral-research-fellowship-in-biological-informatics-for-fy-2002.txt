@@ -1,0 +1,21 @@
+              This action funds an NSF Postdoctoral Research Fellowship in Biological
+              Informatics for FY2002.  The fellowship supports research and training at the
+              postdoctoral level at the intersection of biology and the informational,
+              computational, mathematical, and statistical sciences. The goal of the
+              fellowship is to provide training to a young scientist in preparation for a
+              career in biological informatics in which research and education will be
+              integrated. There is an increasing need for training in biological informatics
+              at all occupational levels, and it is expected that Fellows trained through
+              these fellowships will play important roles in training the future
+              workforce.
+
+The research and training plan for this fellowship is entitled
+              "Multi-species sequence comparison and compositional analysis of plant
+              centromeres."  This research seeks is to understand the composition,
+              organization and evolution of centromeres--regions that mediate chromosome
+              partitioning. Centromere sequences from relatives of the flowering plant
+              Arabidopsis thaliana are being compared to assess sequence conservation and
+              determine the types and abundance of sequence classes. This will distinguish
+              rapidly evolving sequences from those exhibiting significant conservation.
+ 
+

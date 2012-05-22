@@ -1,0 +1,8 @@
+Hi all!
+For my 1st post, I would like to let you know that I recently made public a
+Perl implementation of the LDA topic model.
+You may find it at http://www.people.fas.harvard.edu/~ptoulis/
+It is currently at an early state, so any comments/suggestions and more
+importantly bug reports are warmly welcome!
+Best,
+Panos

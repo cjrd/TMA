@@ -1,0 +1,8 @@
+Hi everyone,
+I do not quite understand why Blei's LDA code considers the parameter
+alpha as a scalar so that the learned dirichlet distribution is a
+K-dimensional symmetric Dirichlet. In my understanding, the elements in
+vector alpha could be different. Can anyone explain for me? Thank you
+so much.
+Regards,
+Peng

@@ -1,0 +1,8 @@
+Hi all,
+there is a small problem in lda-data.c; see attached diff. The problem
+is that the corpus c is not guaranteed to contain zeros (and on my
+mac, it doesn't), hence the realloc in the loop that follows could
+cause the program to fail.
+Fun,
+Stephan
+===================================================================

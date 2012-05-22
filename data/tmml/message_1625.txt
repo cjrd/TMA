@@ -1,0 +1,11 @@
+Hi Topic Modelers,
+I have recently made a few changes to the Dynamic Topic Models source code
+and updated the appropriate download (
+http://code.google.com/p/princeton-statistical-learning/downloads).  One of
+these changes was intended to fix a nonsense evidence lower bound; one
+addressed slow topic initialization, which could lead to poor (or identical)
+topics in the end; and one fixed bug in assessing convergence.
+Thanks go to Alex Kulesza and William Darling for pointing out these
+issue(s) and suggested fixes.
+Best,
+Sean

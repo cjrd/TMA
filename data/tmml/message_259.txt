@@ -1,0 +1,4 @@
+I was giving the posterior mean instead of the posterior mode, indeed,
+my mistake.
+Thanks for the clarification Erik.
+SImon

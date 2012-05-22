@@ -1,0 +1,18 @@
+              This Small Business Technology Transfer Research (STTR) Phase II project will
+              develop optical sensors, called optrodes, and their systems for monitoring
+              environmental water quality.  Phase I research demonstrated the ability of
+              optrodes to gather long-term environmental water quality data in harsh 
+              environments.  Phase II technical issues are concerned with:  (1) analyte
+              specific probe chemistries; (2) optical coatings; and (3) optical
+              configurations.  With respect to systems, Phase I found lifetime phase-base
+              measurement systems superior to traditional intensity-based systems.  Phase II
+              will develop an integrated phase-based analyzer capable of:  (1) resolving
+              dissolved oxygen, dissolved carbon dioxide, acidity, and temperature; and (2)
+              transmission by remote data telemetry.
+
+These innovations in optrode
+              technology will:  (1) improve mapping of geophysical fields; (2) substantially
+              reduce direct labor costs associated with conventional monitoring technologies;
+              (3) produce robust data for enhanced modeling capabilities; and (4) enable
+              other technology for protecting natural resources.
+

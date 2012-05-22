@@ -1,0 +1,14 @@
+Hi:-
+I have question on the paper: Variational Inference for Dirichlet
+Process Mixtures, Bayesian Analysis, 2006, David Blei and Michael
+Jordan.
+In the paper, the data points are drawn from Gaussian distribution.
+Page 5, equation 7 says that the base distribution for the DP is the
+conjugate prior and has the form:
+exp{ lambda1 * n + lambda2 * (-a(n)) - a(lambda) }, where n =
+[mean/(2*sigma^{2}),-1/(2*sigma^{2})] is the natural parameters of the
+Gaussian and a(n) = mean*mean/(2*sigma^{2}) + log(sigma)  is the log
+normalization of the Gaussian.
+Page 18 says that the base distribution is set to be a product of
+Gaussian N( mean0,n0*sigma^2 ) and Gamma(al,be). However, when I
+simplify the Gaussian-Gamma product I am unable to express it in the

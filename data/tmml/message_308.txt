@@ -1,0 +1,14 @@
+Hi all,
+I would like to use the LDA c-code for image classification.
+I have 5 semantic classes and for each class, i used LDA code for the
+estimation and got alpha, beta and gamma files.
+Then for all the images of the testing database, i did inference for
+each semantic class, using their respective models.
+At the end i got 5 gamma files and five likelihood files (one per class).
+Now i would like to make a decision in order to know which image of the
+testing database belong to which semantic class. I wonder if i can use
+the likelihood files and decide that an image belong to the class which
+maximises the likelihood among the five values for that image.  I'm not
+sure of that. Maybe there is a better way to do that.
+Can anybody help me?
+Thanks

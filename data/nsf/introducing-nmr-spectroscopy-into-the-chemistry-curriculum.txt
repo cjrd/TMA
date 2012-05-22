@@ -1,0 +1,24 @@
+              Chemistry (12)
+
+With the upgrade of our Varian continuous wave 60 MHz NMR
+              spectrometer to an efficient multinuclear FT-NMR spectrometer equipped with 2-D
+              capabilities using technology developed by Anasazi Inc., we are incorporating
+              modern NMR techniques across our chemistry laboratory curriculum at Florida
+              Institute of Technology. We introduce routine Proton and Carbon-13 analyses
+              into lower division labs, reinforcing identification techniques taught in the
+              lecture. More sophisticated experiments such as 2D and multinuclear analyses,
+              kinetics and equilibrium studies of reactions, Quantum Mechanics applied to NMR
+              analysis, and Dynamic NMR Spectroscopy are being adapted into upper division
+              labs. Most of the experiments are taken form the chemical education literature
+              such as the J. Chem. Educ. We anticipate the progressive integration of the
+              experiments into our curriculum to continue. We are also using this instrument
+              in ongoing undergraduate research projects. Students independently run samples
+              using the upgraded FT-NMR instrument without any operational difficulties and
+              the hardware/software operation is durable and reliable enough that requires
+              only moderate supervision during student usage. We are involving the Science
+              Education Department at Florida Tech in the evaluation of the project and plan
+              to present the results of this project at regional and national professional
+              meetings. In addition, we will submit articles describing any new NMR
+              experiment and/or resulting curriculum improvement to the Journal of Chem.
+              Educ. or the web-based The Chemical Educator for publication. 
+

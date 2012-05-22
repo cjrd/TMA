@@ -1,0 +1,16 @@
+              This Small Business Innovation Research (SBIR) Phase I project will demonstrate
+              the feasibility of fabricating a carbon nanotube based field emission device
+              (FED) and of operating FEDs.  The approach is a natural extension of the
+              patented Nanotube Catalyst Retaining Structure (NCRS) method.  Phase I is
+              expected to overcome limitations that have prevented FEDs from successful use
+              in the established liquid crystal display (LCD) market and to initiate a broad
+              range of other applications that require growth of aligned carbon nanotubes as
+              functional elements of microelectromechanical systems (MEMS).  This new concept
+              in nanotechnology will be useful in application of carbon nanotubes as
+              functional elements of integrated circuit (IC) and MEMS devices involving a
+              multi-layered structure of metal, insulator, and carbon nanotubes.
+
+Potential
+              commercial applications are expected in field emission displays, electron
+              microscopes, illumination devices, sensors, and similar devices.
+

@@ -1,0 +1,10 @@
+Dave Newman wrote:
+I think this heuristic only makes sense for T > 50 (and W > 200).
+If you set T=10, it follows that alpha=5. So your prior is a
+Dirichlet(5,5,5,5,5,5,5,5,5,5). This is a dense prior, in that is
+prefers each document having the same balanced mix of topics. This is
+probably not what you want in practice.
+Although its just a gut feeling, I agree that for comparing the models
+for different T something like alpha = C / T, for a fixed C is a good idea.
+Cheers,
+Laura

@@ -1,0 +1,13 @@
+Laura,
+Thank you for the response.
+Your points about the hyperparameters being on priors is well-taken.  But
+isn't it also typical to choose priors that match your data well?  I guess
+my point is this: Shouldn't we expect the word distributions for each topic
+to look more like the overall distribution in the corpus than a uniform
+distribution?  So far I've only tried this for a toy example with 2 topics
+and 200 documents, but it seems to yield more sensible topics and a better
+log-likelihood than the uniform case, (beta_i = 0.01).  Would using the
+vector of word frequencies rather than counts be more appropriate since each
+component would then be < 1?
+Thanks again,
+Jonathan Halcrow

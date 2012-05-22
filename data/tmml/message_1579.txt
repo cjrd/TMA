@@ -1,0 +1,26 @@
+Hi Timmy,
+I don't know of work evaluating reconstruction error on the original
+words-by-documents matrix, but there has been some recent work on
+semantic evaluations of topic models that have the same flavor of
+reconstruction error on the words-by-words co-occurrence matrix:
+David Newman, Jey Han Lau, Karl Grieser, Timothy Baldwin. Automatic
+Evaluation of Topic Coherence. NAACL (2010).
+David Mimno, Hanna Wallach, Edmund Talley, Miriam Leenders, Andrew
+McCallum. Optimizing Semantic Coherence in Topic Models. EMNLP (2011).
+David Mimno, David Blei. Bayesian Checking for Topic Models. EMNLP (2011).
+The first paper uses pointwise mutual information (PMI), the second
+uses a closely related metric, which we're calling "coherence". Both
+focus on the top N words in each topic, so they're aimed at measuring
+the individual quality of topics rather than the overall
+reconstruction error of the model. The "headline" of these papers is
+that if your model says two words have high probability in a given
+topic, and those two words never appear together in a document, it's
+very likely that a human will think that the topic is garbage. The
+third paper uses Bayesian model checking to evaluate the significance
+of the observed mismatch between the model's assumptions and the
+cooccurrence patterns in the data.
+The Coherence metric is implemented in Mallet as part of the
+TopicDiagnostics class. I've also written a version for lda-c output,
+which you can find here:
+http://www.cs.princeton.edu/~mimno/coherence.py
+-David

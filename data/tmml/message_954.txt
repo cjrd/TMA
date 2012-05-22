@@ -1,0 +1,10 @@
+Dear topics-models list,
+I'm sorry for the perhaps remedial question, but I am having some difficulty
+using the 'turbotopics' code provided.  There are three python scripts,
+lda_topics.py, compute_ngrams.py and turbotopics.py.  The readme file
+describes only the first two.
+By question is:
+I understand (well, i think) that to actually find the 'turbotopics' (that
+is, to find a list of n-grams that are representative of each topic in an
+LDA or CTM), one would run
+python lda_topics.py --assign=word-assignments.dat --corpus=corpus.txt

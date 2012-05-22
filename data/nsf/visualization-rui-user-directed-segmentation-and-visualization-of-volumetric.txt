@@ -1,0 +1,66 @@
+              By their nature, volumetric data sets, such as  CT, MRI and the Visible Human
+              cryosection 
+images,  are  not  subject  to  the  same  form  of  visual 
+              inspection and  cognitive  refinement  that 
+human experts apply when viewing
+              and interpreting 2D images. 
+The internal cycle of choices made by humans as
+              they  visually survey  an image is disrupted and
+forced into an external
+              process where users must adapt to the technical requirements of
+              the
+visualization system. This project proposes to continue research into an
+              immersive visualization
+system that is a first step toward  creating  a  user 
+              interaction  paradigm  that  more  naturally
+allows  users  to  apply  their
+              interpretive  expertise  to  the  visualization  and  segmentation 
+              of
+volumetric  data  sets.  In  this environment, segmentation, the process of
+              isolating discrete structures within a data volume, is performed in parallel
+              with visualization. Users have continuous control of the visualization and
+              segmentation algorithms and can freely exercise their expert
+interpretive
+              knowledge. 
+ 
+The current implementation, called the  Immersive Segmentation
+              Environment, emphasizes the 
+controlled application of high computational cost
+              algorithms to local regions of the data volume. 
+Using  stereo  graphics,  the
+               user  is  presented  with  the  illusion that  the  data  volume  occupies
+              
+physical space. The user interacts with the system using a 3D space tracked
+              probe. Visualization 
+and segmentation algorithms continuously operate on the
+              data volume within a local 
+neighborhood of the user.s position. This
+              neighborhood corresponds to the user.s visual focus 
+point. The algorithms
+              initialize themselves based upon an analysis of the local neighborhood and
+              
+heuristics. The system is implemented as a client/server application and
+              consequently allows a 
+user  at  a  low-cost  workstation  to  effectively 
+              use  remote computational  resources  to visualize 
+large volumetric data
+              sets. The system implements two main classes of segmentation algorithms. 
+Both
+              determine initial algorithm parameters based upon a cluster analysis of the
+              local neighborhood and are characterized by an iterative refinement approach.
+              
+ 
+The proposed research will continue to investigate the capabilities of
+              this unique user interaction 
+model for visualizing, exploring and
+              interpreting volumetric data sets. 
+
+The research plan contained in this
+              proposal is a natural outgrowth of prior work performed by 
+the PI. This
+              ongoing work has had a positive impact on the curriculum, student research
+              projects 
+and faculty research within the Computer Science department at the
+              UW-La Crosse. 
+
+

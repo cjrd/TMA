@@ -1,0 +1,6 @@
+In breaking down a corpus into topics, each of which is represented by a
+list of words ordered by their salience in that topic, non-negative
+matrix factorization (NMF/NTF) (or maybe other factorization/dimension
+reduction methods, though maybe less interpretable) seems to be on a par
+with LDA or other mixture models. Is there known comparison of these?
+Thanks!

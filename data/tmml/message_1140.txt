@@ -1,0 +1,12 @@
+...
+David's point is important.  Also, remember that real topics are not
+multinomial
+distributions.  Genuine topics are bursty, but multinomials are not.
+A method that assumes
+that topics are multinomials need more topics to fit a corpus as well
+as a method
+that takes into account burstiness.  So you could say that all methods that
+use multinomials as topics find too many topics.
+For illustrations, see Figures 2 and 3 of the ICML 2009 paper
+"Accounting for Word Burstiness in Topic Models,"
+available at http://cseweb.ucsd.edu/~elkan/TopicBurstiness.pdf

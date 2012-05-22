@@ -1,0 +1,3 @@
+I think inner product (cosine) of the two vectors may be reasonable,
+since they can be considered as the joint probability of word pairs
+p(w_i, w_j) = sum_z [p(w_i|z)p(w_i|z)p(z)]

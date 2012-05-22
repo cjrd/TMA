@@ -1,0 +1,48 @@
+              The primary goal of the proposed new work is the application of solid-state NMR
+              to the characterization of three types of polymeric nanostructures: (1)
+              hyperbranched polycarbonates, (2) dendritic poly(benzyl ether)s, and (3)
+              cross-linked amphiphiles of nanoscale dimensions with a core-shell morphology. 
+              The principal technique to be used to solve all three problems will be
+              stable-isotope labeling with rotational-echo double-resonance (REDOR)
+              detection.  This strategy involves two or more stable-isotope labels ( or
+              sometimes one label and C-13 at natural abundance) that are incorporated in or
+              near the region of interest, which might be an interface, or a core or surface
+              site of the nanoparticle.  REDOR then detects the dipolar coupling between
+              heteronuclear pairs of spins.  The coupling is directly related to an inferred
+              if the averaging effects of motion are absent or suppressed.  The first
+              research goal is to use C-13/H-2 REDOR to compare the chain packing in linear
+              phenol-polycarbonate with that in hyperbranched polycarbonate of identical
+              chemical composition.  Preliminary results indicate a considerable degree of
+              local order in the chain packing of the linear system.  REDOR will establish
+              the extent to which this order persists in the presence of 50% branching.  The
+              second research goal is to use C-13/F-19 REDOR to establish the packing of
+              chain ends within the internal architecture of a dendrimer, and to determine
+              the extent of interpenetration of chain ends between dendrimers.  The
+              stable-isotope labeled dendrimers will be imbedded within a matrix composed
+              either of other dendrimers or of polystyrene, the latter to form a blend
+              interface.  The third research goal is to use C-12, N-15, H-2 and F-19 labels
+              in various combinations for the core, interface, and shell of amphiphilic
+              core-shell nanostructures so that multi-frequency REDOR can identify
+              proximities at interfacial, cross-link, and surface sites.  These proximities
+              will be used to generate structural models that help interpret chemical,
+              biochemical, and mechanical properties, and to suggest strategies for the
+              synthesis of more effective materials.
+%%%
+Dendrimers and hyperbranched
+              polymers are valued for their low melt viscosity, high solubility, and the
+              possibility of many surface-active functional groups.  They can be used as
+              encapsulants, ultra-thin film coatings, and as nanoscale filler particles in
+              polymeric composites.  Individual molecules form discrete nanostructures with
+              few intermolecular entanglements and many of the other properties of more
+              mechanically stable nanoparticles.  Nanostructured amphiphiles mad by
+              cross-linking micelles formed from from block copolymers are true nanoparticles
+              whose proposed applications of societal importance are vast ranging form
+              environmental clean-up, to biomedical drug delivery, to functionalized surfaces
+              to support tissue growth.  Whether any of these nanoscale polymer applications
+              will actually succeed will depend on the ability of synthetic chemists to
+              control structure at the atomic level.  This structure depends largely on how
+              polymer chains pack within and on the nanoparticle.  The characterization of
+              chain packing, cross-linking, and the spatial distribution of functional groups
+              by solid-state NMR is sufficiently detailed that the directed synthesis of
+              tailored nanostructures will be practical.
+

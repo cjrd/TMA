@@ -1,0 +1,17 @@
+              Three magnetic storms were identified by the joint SHINE-GEM-CEDAR magnetic
+              storm campaign as candidates for a broad and inclusive study of the dynamics of
+              magnetic storms.  The periods to be studies are 10-11 May 1997, 24 Sept. - 1
+              Oct. 1998, and 18-31 Oct. 1998.  This study will examine the spatial and
+              temporal evolution of the electric fields in the inner magnetosphere during the
+              three storm study periods.  A global model for the storm-time electric field
+              will be obtained by mapping the ionospheric electric field (as determined from
+              ground based observations using the Assimilative Mapping of Ionospheric
+              Electrodynamic - AMIE - technique) into the magnetosphere along magnetic field
+              lines.  The effects of penetration of electric fields to lower latitudes and
+              hence the inner magnetosphere will be incorporated by a detailed analysis of
+              field-aligned  currents associated with the divergence of the ring current
+              computed by the Ring Current-Atmosphere interaction Model (RAM).  The RAM model
+              will also be further extended to include the effect of wave-particle scattering
+              of energetic O+ ions.  The model results will be compared with satellite
+              data.
+

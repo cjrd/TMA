@@ -1,0 +1,5 @@
+Check this paper: "Learning to Classify Short and Sparse Text & Web with
+Hidden Topics from Large-scale Data Collections <pdf/p91-phanA.pdf> "
+http://www2008.org/papers/pdf/p91-phanA.pdf
+Best,
+Nico

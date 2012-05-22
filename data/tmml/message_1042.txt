@@ -1,0 +1,11 @@
+dear veena
+the name "latent dirichlet allocation" was one of several candidates that
+andrew ng, mike jordan and i were considering.  (i can't remember the
+others.  this was in the early summer of 2001.)
+here is the idea behind the name.  theta is a per-document dirichlet random
+variable, and it is latent.  in the generative process, we draw z_n from
+mult(theta) and then draw each word from the corresponding topic
+distribution.  in this way, theta is used to parameterize the allocation of
+observed words to topic indicators.
+best
+dave

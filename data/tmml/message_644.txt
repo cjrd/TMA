@@ -1,0 +1,9 @@
+I can see final.gamma file after learning parameter alpha and beta.
+I guess that this file is a p(z|theta_d)  , where z is a sub-topic
+and theta_d is a topic of document d.
+What mathematical procedure is hidden behind this file?
+I think inference step seems similar. But after inference step we can only
+get p(z,theta) joint probability matrix.
+Isn't it little different? Do anyone knows?
+please answer me~
+Regards.

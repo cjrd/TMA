@@ -1,0 +1,9 @@
+hi david
+you have probably figured out your issue by now (or given up), but i
+have posted the JACM abstracts in the right format.
+they are found here:
+http://www.cs.princeton.edu/~blei/downloads/jacm.tgz
+the code and paper are here:
+http://www.cs.princeton.edu/~blei/publications.html
+best
+dave

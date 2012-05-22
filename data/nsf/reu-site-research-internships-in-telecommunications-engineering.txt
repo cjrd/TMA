@@ -1,0 +1,16 @@
+               
+This award provides funding to the University of Maryland-College Park for
+              the support of a five-year, REU Site " Research Internships in
+              Telecommunications Engineering-RITE Site," under the direction of Dr. Steven I.
+              Marcus. This eleven-week summer program will involve twenty-two students
+              annually in a diverse research experience on a wide range of topics in the
+              field of Telecommunications including communications systems and theory,
+              networking, signal processing, multimedia technology, information security, and
+              neuromorphic engineering. Each student will work in small groups (2-3 students)
+              with faculty members and graduate students. In addition to the fundamental
+              aspects of engineering disciplines, aspects of existing programs that combine
+              engineering and business perspectives will be incorporated into the RITE
+              students' experiences. The students will participate in industrial site visits
+              and interactions and will work closely with graduate research assistant mentors
+              throughout their summer research experience.
+

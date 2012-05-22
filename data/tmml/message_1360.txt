@@ -1,0 +1,7 @@
+Hi -- the standard Gibbs sampler of the LDA model (Griffiths and Steyvers 2004)
+has an increased iteration time for the first and partly the second iteration
+(depending on K and alpha, about 50%-100% above the third iteration). Is there
+literature on this curious phenomenon?
+Any ideas?
+Best regards
+gregor

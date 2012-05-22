@@ -1,0 +1,8 @@
+Hi,
+Here is the link
+http://www.cs.princeton.edu/~blei/ctm-c/
+If you are looking for Gibbs Sampling tools you could use OpenBUGS. (
+http://www.openbugs.info/w/)
+Hope this helps
+Sincerely
+Tanmoy Mukherjee

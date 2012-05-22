@@ -1,0 +1,6 @@
+Which implementation of LDA is the fastest?  I currently use lda-c
+(with a python frontend), and I'm wordering what I can do to my data
+(stemming, other dimensionality reductions?) to speed things up.  Any
+advice?
+Thanks in advance for any hints.
+Gregg Lind

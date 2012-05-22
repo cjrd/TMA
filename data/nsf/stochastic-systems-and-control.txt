@@ -1,0 +1,69 @@
+              0204669
+Duncan
+
+The major focus of this research is the application of a
+              stochastic 
+calculus for a fractional Brownian motion to stochastic systems,
+              
+especially for the problems of identification and control.  The 
+importance
+              of a fractional Brownian motion in stochastic models 
+has been exhibited in a
+              wide variety of applications, such as, 
+hydrology, economics and
+              telecommunications.  One goal of the 
+research is to develop further a
+              stochastic calculus for a fractional 
+Brownian motion similar to the way that
+              the stochastic calculus for 
+Brownian motion was developed to provide the
+              tools for solving 
+problems of stochastic systems with a fractional Brownian
+              motion.  
+Some tools of stochastic calculus that are planned for development
+              
+are necessary for solving the problems of identification, filtering 
+and
+              control of a stochastic system with a fractional Brownian 
+motion.  The
+              fractional Brownian motions for study include 
+processes with values in both
+              finite and infinite dimensional 
+spaces.  The study includes the existence and
+              the uniqueness of 
+solutions of stochastic differential equations and
+              stochastic partial 
+differential equations with a fractional Brownian motion
+              and 
+martingales that are formed from a fractional Brownian motion.  
+Another
+              family of stochastic models that are planned for study is 
+hidden Markov
+              models.  An investigation of adaptive control for 
+systems described by both
+              fractional Brownian motions and hidden 
+Markov models is planned.
+
+This
+              research focuses on a stochastic calculus for a fractional 
+Brownian motion. 
+              A fractional Brownian motion is a stochastic 
+process that has been important
+              in modeling physical systems such 
+as those arising in hydrology, economics
+              and telecommunications.  
+Stochastic calculus provides the basic tool for
+              solving problems of 
+stochastic models that contain a fractional Brownian
+              motion.  
+Fractional Brownian motions have a self similarity property and
+              
+many have a long range dependence property that often occur in 
+physical
+              phenomena.  It is planned to study the control of partially 
+known systems
+              that contain fractional Brownian motion and 
+hidden Markov models.  Such
+              control problems naturally arise in 
+applications.
+

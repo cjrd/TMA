@@ -1,0 +1,6 @@
+Hi All,
+How can I filter out non-important words such as I, the, to etc. when using
+lda to estimate the topics? I try to edit the vocabulary.txt file directly.
+It works when generating topics, but later when I try to visualize it using
+TMVE, seems the model is corrupted. Any ideas here?
+Spark

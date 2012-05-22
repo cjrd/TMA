@@ -1,0 +1,10 @@
+Hi list,
+I'd like to verify that my implementation of the nCRP is valid -- for each
+iteration, is it appropriate to simply multiply the CRP probability for each
+node in a path? (i.e., the number of documents present at each node divided
+by the total number of documents + gamma - 1)
+Or do we need to calculate the full probability (num_classes * log(gamma) +
+sum(gammaln(# docs at each node) - gammaln(gamma + total # docs)
++gammaln(gamma))?
+Thanks!
+David

@@ -1,0 +1,17 @@
+Dear all,
+I have recently been playing around with Pachinko allocation but
+encountered some problems. When I was training the 4-level PAM model
+using around 2000 text (the implementation is the PAM4L version in
+Mallet), the supertopic-subtopic alpha_ij values are always very
+small, in a scale of 0.01. My impression is that these alpha values
+should have sparse but large values (as have been shown in figure 3 of
+PAM's ICML paper), so that the correlation between the subtopics are
+captured. With the really small numbers learned in my case, the model
+would perform pretty poor in the testing time.
+I am wondering if I am not doing things right, such as parameter
+initialization (I am using a flat 1.0 initialization for all the
+supertopic-subtopic alphas), the parameter estimation (I am using
+Minka's fixed point iteration), and other possible caveats. Could
+someone familiar with PAM enlighten me where I might be wrong?
+Thanks,
+Yangqing

@@ -1,0 +1,11 @@
+Hi Ayan,
+Yes, you are right that sLDA can show weaker fit to data as well as
+poorer topic quality. This happens particularly when the content word
+representation do not really indicate the reason for the value of the
+response variable for e.g. bag-of-words in product reviews will throw
+off sLDA performance. This, though, is not a fault of sLDA. If the goal
+is to find better topics in presence of document discriminating labels,
+one can use the method used in "clustering the Tagged Web" by Daniel
+Ramage et. al. One can create document discriminating labels by using
+some supervised framework prior to topic modeling.
+Pradipto

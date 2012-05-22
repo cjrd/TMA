@@ -1,0 +1,6 @@
+Specifically, the stuff about Chib-style estimation is conceptually
+closest to what I was talking about, but better, and what I was
+actually doing was closer to algorithm 3, but somewhere between those
+two.
+The likelihood I was roughly talking about is on line 8 of algorithm
+3, and your answer is on line 14.

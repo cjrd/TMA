@@ -1,0 +1,10 @@
+Does anyone has any experience in/recommendation for the following work
+(apart from the authors themselves though :))?
+Jia Zeng: TMBP: A Topic Modeling Toolbox Using Belief Propagation
+http://arxiv.org/abs/1201.0838
+Thanks,
+Ayan Acharya
+(Graduate Student,
+Electrical and Computer Engineering,
+University of Texas at Austin, USA
+Webpage: http://www.ideal.ece.utexas.edu/~ayan/)

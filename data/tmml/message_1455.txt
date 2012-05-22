@@ -1,0 +1,9 @@
+Hi, all,
+It is known that original LDA doesn't consider temporal trend in data.
+Later, extension are made to cover this point. I know two works, David M. Blei's Dynamic Topic Models and Xuerui Wang's Topics over Time.
+Dynamic Topic Models separate data into time slices, then model the documents of each slice with one topic model, then chain the parameters together.
+Topics over Time however doesn't discretize  time into slices. Instead, it models time jointly with word co-occurrence patterns. Graphically,  a new node is added to the original LDA plate notation.
+As a natural model for model state change in time series, Hidden Markov Model is a suitable for model topic trend through the documents. Unfortunately, it seems not much work pay attention to this.
+So my question is: Is it possible to combine HMM with LDA to model the topic trend through different documents?
+Best,
+Charly

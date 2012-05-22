@@ -1,0 +1,15 @@
+Hello.
+I have a question regarding Gibbs sampling, but it bothers me specifically in the LDA algorithm.
+I've already read the some Gibbs sampling articles like "Parameter estimation for text analysis" and "Gibbs Sampling for the Uninitiated" , but I'm still missing something.
+Assuming we have 3 topics (z1,z2,z3) , m docs and n words (w1, ...wi, ... wn) in each document.
+If I look at some wi words, let say I know it "should be" topic z2 (if I generated a corpus, and wi word was generated from topic z2).
+In case that LDA already ran (successfully) and I got that wi is most reasonable for been z2,
+I understand the point that if I'll try to do again the Gibbs iteration for this wi - the most chances
+I'll get again z2 - because the proportions of the counters nwords[w][k] and ndocument[m][k] will give a bigger density
+(at least if we see lots of z2 in wi's document) and the random number generation will have more chance to be z2.
+But if we start from scratch, and for instance if the random initialization state set z1 to wi and z3 to all its document,
+how do I know that I'll eventually get z2 result?
+In other words, how the burn-in stage will make it happen (how it will be converged to the *right* answer)?
+Let assume we don't have any Identifiability problem here (or it occurs only between z1 and z3) - or it is part of the answer here?.
+Thanks for any help,
+Dovi

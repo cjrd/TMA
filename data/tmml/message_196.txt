@@ -1,0 +1,21 @@
+I'd like to hear all informed opinions about these questions:
+(1) When is it better to use variational EM, and when Gibbs sampling?
+Any intuitions, and any known results?
+(2) What are the guarantees for Gibbs sampling for convergence to a
+local optimum? A global optimum?  An optimum of what precisely?
+(3) Assume that Gibbs has reached steady-state (burnin is long enough)
+and we take samples from widely-separated epochs, to make the
+samples independent.  If these samples come from different modes of the
+posterior, is it meaningful to average them?
+(4) [Maybe the same as 3] Can too many iterations between samples allow
+topics to switch identity, so averaging is completely incorrect?
+(5) How do you compute log likelihood (LL) of the training data? (Forgive
+me if this is obvious!)
+My experience is that on a small dataset where I have a good idea what the
+topics should be, if I initialize intelligently, convergence happens to
+these topics.  However with random initialization, convergence happens to
+less-good (but still sensible) results.  This suggests that local optima
+are a problem.  So:
+(6) Has anyone investigated heuristics (e.g. any sort of annealing) to
+promote convergence to better optima?
+Charles Elkan

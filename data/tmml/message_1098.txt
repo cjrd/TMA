@@ -1,0 +1,9 @@
+Agreed. I simply recognize that hahah and haha are essentially the same, but
+do not necessarily separate from jaja. My tokenizer is a set of modules in a
+pipeline, and for different purposes I mix & match modules.
+Dan--what were you doing for celeb names? Just taking the bigrams and adding
+an underscore or the like? I would imagine that all the variations would be
+frequent enough not to need any kind of normalization, but perhaps I'm
+wrong. You also get socio-semantic-linguistic differences with the
+variations--gaga without the lady or using hussein in between barack & obama
+has such connotations.

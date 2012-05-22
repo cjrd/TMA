@@ -1,0 +1,11 @@
+Noortje,
+I think you want to use DeltaLDA from David Andrzejewski
+http://pages.cs.wisc.edu/~andrzeje/research/delta_lda.html
+It is writting using python and NumPy and is quite efficient. It is a
+special variant of LDA where you can have one of two different priors on
+p(topic|doc) -- one for successful documents and one for failing
+documents, setting them to the same values yields LDA. Maybe David's
+code includes a vanilla LDA implementation as well...
+Cheers,
+Laura
+Ivan Savov wrote:

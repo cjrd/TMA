@@ -1,0 +1,15 @@
+for 1): MedLDA (or sLDA) just provides ONE very basic way to consider side
+information. it can be helpful but is not gauranteed to provide the "ideal"
+large improvements you're hoping.
+"this works better for regression than for classification": i guess you
+misunderstood what we said in the paper. For regression, we observed that
+using a supervised LDA as the underlying
+topic model is better than using unsupervised one. For classification, we
+make this as a hypothesis (but didn't verify it because of time complexity
+issue). It doesn't mean using side information is not better than the
+methods that don't use.
+for 2): MedLDA only introduces one additional parameter C (which is
+unavoidable when using SVM). The dirichlet parameter \alpha can be estimated
+as in LDA. For cost function \Delta \ell, although we offer you a freedom to
+use other cost, you can just use the default 0/1 cost.
+Jun

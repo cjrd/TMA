@@ -1,0 +1,5 @@
+I find this question/answer pair to be a bit ambiguous. Just to be
+clear, the number of topics is not the same as the number of words,
+otherwise there wouldn't be much semantic compression! Each topic z
+has its own probability distribution over all words.
+Aaron

@@ -1,0 +1,5 @@
+hi
+I am new in here. I excuse for my basic questions.I download lda-c and make
+a solution in Visual C++ . but It has some errors. it can not find "lgamma"
+and "isnan". can anybody help me?Is there any patch or component or
+separated code that can add LDA in SRILM toolkit?best regards

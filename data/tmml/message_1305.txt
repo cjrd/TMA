@@ -1,0 +1,5 @@
+Hi guys,
+I read about this paper "Online LDA for adaptive streaming"  http://tinyurl.com/4623t9v and its follow-up http://tinyurl.com/64qfr6w in which the authors use actual word-topic counts from previous streams as asymmetric beta prior for the current text streams. New words in the current stream is set to b=0.01
+In this way, they are able to track topics and see topic drift (keyword changes) across text streams.
+My question is, won't using exact word-topic counts as prior favor very heavily towards seen words and make new words less likely?
+My requirements is to see compare and detect topics generated for new documents across each month and not sure if this approach is suitable.

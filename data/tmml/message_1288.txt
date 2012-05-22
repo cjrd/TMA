@@ -1,0 +1,14 @@
+Hi Dave --
+no problem to put up a zipped version with dependencies included that now are on
+SF.net.
+Code has been lying around way too long and I didn't want to wait longer, so
+it's a single class now ;)
+Before I find the time to wrap up the zip: The data reader NumCorpus.java is
+compatible with svm-light, which opens up example data used also for other
+implementations (like lda-c that uses the same input format). The NIPS0-12
+"quasi-standard" corpus is bundled with the knowceans-tools package that I host
+on sourceforge and that contains also the data reader. See:
+http://knowceans.cvs.sourceforge.net/viewvc/knowceans/knowceans-tools/ .
+Best
+Best regards
+gregor

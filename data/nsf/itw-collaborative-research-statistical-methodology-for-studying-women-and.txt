@@ -1,0 +1,26 @@
+              Institution:  University of Pennsylvania
+Proposal Number: EIA 0089872
+PI: 
+              Elaine L. Zanutto
+Title:  Collaborative Research: Statistical Methodology for
+              Studying Women and Minorities in Information Technology Careers Using CPS and
+              SESTAT Data
+
+
+This CISE Information Technology Workforce (ITW) proposal
+              requests funds to find a statistical methodology for dealing with the
+              limitations of data sets with small sample sizes for special subgroups of
+              interest.  The data sets to be used for the study are the Current Population
+              Survey (CPS) and the NSF's SESTAT database.  The researchers propose to study,
+              develop, and demonstrate methods of statistical inference that will provide
+              improved inferential conclusions than currently appear in the literature. 
+              These methods will address questions of whether or not, after taking into
+              account all the relevant background characteristics such as education and
+              experience, there are disparities in salary, promotion rates, and job
+              responsibilities among women and underrepresented minorities in IT.  They will
+              also attempt to identify unique characteristics of successful women and
+              underrepresented minorities in IT careers. This project has the potential to
+              provide improved methodology for researchers using the CPS and SESTAT data sets
+              as well as insights about women and underrepresented minorities who pursue IT
+              careers.
+

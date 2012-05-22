@@ -1,0 +1,15 @@
+Yee,
+Thanks for your reply!
+Seems reasonable to me. Just for curiosity, how would you evaluate the
+lower bound? I have tried with an approximation of the full
+likelihood, using plug-in estimates for \theta and \phi, and the
+results seem quite OK.
+Very interesting. I thought that starting from an uncertain situation
+should be better than starting from a situation when the model is sure
+about the assignments, although they come from a collapsed Gibbs. I
+have used extractions from a Dirichlet with \alpha=0.5, but I will
+consider Gibbs sampling in my experiments.
+"Working well" in this case means better final \gamma or less
+iterations? Is it a quality issue or just a speed one?
+Thanks in advance and best regards,
+Matteo Dimai

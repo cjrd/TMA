@@ -1,0 +1,7 @@
+hi armin,
+oops.  as you noticed, there is no inf-settings.txt file.  when doing
+inference, i suggest increasing the number of variational
+iterations.  or, you can set the program to always run to the
+variational convergence criterion by setting "var max iter" to -1.
+best,
+dave

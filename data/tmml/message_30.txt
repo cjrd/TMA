@@ -1,0 +1,12 @@
+hi matteo,
+regarding your system problems, i can't be of help.  (full
+confession: i've never heard of MinGW or MSys!)
+i think that estimating the topics from longer (heterogeneous)
+documents with or without the short documents is a fine idea.
+there are a number of distance functions that you can employ for
+comparing two gamma vectors.  personally, i have tried symmetrized KL
+between the two Dirichlets as well as the hellinger distance between
+the expected values.  i'm sure that there are many others that you
+could use.
+best,
+dave

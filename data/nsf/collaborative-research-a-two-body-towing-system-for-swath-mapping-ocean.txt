@@ -1,0 +1,32 @@
+              P.I. Gargett, Ann (Old Dominion University)	Proposal #: 0220504
+Collaborating
+              Inst: Woolsey, Craig (VA Tech.)	Proposal #: 0220745
+
+ The PIs propose to
+              construct a two-body towing system to create a stable measurement platform for
+              ocean turbulence measurements. This work builds on the potential for an
+              effective turbulence survey tool using acoustic Doppler current measurements in
+              non-standard ways. In particular, horizontally moving a 5-beam VADCP through
+              the ocean can produce vertical-plane "swath-maps" of crucial turbulence
+              quantities such as vertical momentum stresses, turbulent kinetic energy, and
+              its dissipation rate, as well as standard measurements of mean currents and
+              their vertical shear. These measurements require a sufficiently stable
+              platform, as proposed here. Preliminary offshore measurements taken from a
+              prototype towing system suggest that a two-stage design can provide the
+              required stability. This preliminary testing also clarified the design
+              modifications needed for continuous mapping in offshore environments: provision
+              of shipboard controls for (i) the length of cable between primary and secondary
+              tow bodies and (ii) mean attitude of the secondary tow body. Specifically, the
+              PIs propose to design the necessary control systems, build a complete towing
+              system for operation to depths of 200m, and carry out a coastal offshore test
+              cruise to document the motion characteristics of the system and collect
+              preliminary data with a 1.2MHz 5-beam VADCP, deployed in both upward and
+              downward looking modes. During the course of this work with a shallow system,
+              they will also explore options for accomplishing cable length adjustments in a
+              subsequent system to operate over full ocean depths. If successful, this
+              development would have broad impacts on upper ocean observational capabilities
+              in areas other than turbulence research, enabling spatial mapping of such
+              features as biological thin layers and the near-surface bubble clouds that
+              dominate gas transfer between ocean and atmosphere.
+
+

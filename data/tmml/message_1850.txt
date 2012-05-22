@@ -1,0 +1,7 @@
+Hi All,
+When we use topic models such as LDA, if we increase the number of topics
+normally the calculated perplexity decreases.
+But sometimes, I observe that perplexity increases with the number of
+topics. Does anyone observe the similar behavior on some other datasets?
+This may be due to the noisy nature of the dataset?
+Thank you.

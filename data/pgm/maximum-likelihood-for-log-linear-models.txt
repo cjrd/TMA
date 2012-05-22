@@ -1,0 +1,535 @@
+
+We previously discussed the notion of
+maximum likely destination, and showed how
+it can be applied in the context of
+directed networks, daisy networks. And
+everything was really cool. You could do
+maximum likely destination in enclosed
+form and, and it could all be really
+efficient and really elegant. Now we're
+going to. Look at the other class of
+networks, which is mark up networks and
+we're going to see how maximum likely
+destination pans out in the context of
+mark up networks and specifically when we
+use the log linear model representation
+because it's a lot easier to think about a
+parameter destination in that study. So
+let?s look at what a [inaudible]
+destination would look like a markup
+network. So first let?s go back and remind
+ourselves that, we use [inaudible] as an
+objection. So what would the [inaudible]
+look like? So first of all let?s remind
+ourselves that provability of relative to,
+for a distribution by a set of factors
+over this network. For data instance A.,
+B., and C., is going to have the form,
+five, one. Of AB times phi two of BC
+multiplied by normalizing constant which
+is the [inaudible] function. And so if we
+now take that and put it through the log,
+in order to define the log likelihood and
+then summing that out for multiple data
+instances, we see that we have the
+following expressions. We have a summation
+over instances M, of the log off. The Pi
+one of a. B for that instance plus log of
+pi two of BC for that instance minus log
+of Z. And here importantly notice that
+I've included the parameters of the model
+theta as an argument to the partition
+function which now explains why it's a
+partition function rather than a partition
+constant. It is a function of the
+parameters and as we change the parameters
+the partition function changes and, and
+that's going to turn out to be very
+important. So, now let's continue
+[inaudible] deriving this expression, and
+We can see that just like in the context
+of daisy network we can gather like term
+and consider for example how many times a
+particular entry on a factor five, one of
+A, B is used and its used in every
+instance where the variable A takes the
+value little A and the variable B takes
+the value little B. And so we can, again,
+accumulate like terms and we end up with a
+summation over here, over all possible
+value combinations, little a, little b, of
+the log of that factor [inaudible],
+multiplied by the counts. A baby. And
+similarly we have exactly the same form
+for the second factor BC, where for every,
+for every entry in the factor phi two of
+BC, we have a number of occurrences of
+that which is simply the counts, of BC in
+our data set. And finally we have, this
+partition function hanging off the end,
+which is accumulated once for every
+[inaudible]. So this looks great so far.
+Because we have, as in the context of
+Bayesian networks, we've decomposed the
+likelihood function, or, in this case, the
+[inaudible] function, rather, into a bunch
+of these terms, each of which involve one
+parameter, and a count of how many times
+the parameter is used. So, beautiful
+decomposition, and maybe we can just go
+ahead and optimize each parameter
+separately. Except that we have that nasty
+partition function hanging off the M. And
+if we look at the form of the partition
+function, that form is a sum over all
+possible values of A, B, and C of the
+product, the FI1-AD, FI2-BC. And one
+important observation is that when you
+stick the summation into a log, the log
+doesn't flow through the summation. And
+so, you don't get any decomposition of the
+parameters nicely into isolated pieces.
+And that is the killer, because the
+partition function is a term that couples
+the parameters and so there's no
+decomposition of the likelihood into
+separate independent pieces. There's part
+if it that decompose but the partition
+function, kills that decomposition. And as
+a consequence, it turns out that there is
+no closed form solution for this
+optimization problem. Unlike in the case
+of Bayesian networks where we had maximal
+likelihood estimation having a closed form
+that you could derive directly from the
+sufficient statistics which are the data
+counts. So to see this in action, here's a
+picture of, of a projection of a pro, of
+this of this probability distribution. So
+here we have written the probability
+distribution, distribution of the function
+of two. [inaudible] features. These are
+the indicator functions of A. One, B. One.
+And the indicator functions of b0 c1. And
+so, one of them is an entry in the first
+potential, in this potential, and the
+other one is an entry in this potential.
+And obviously you could have other
+features than that but I could only rather
+two dimensional features space. So, so we
+focus on just two parameters. And so that
+you see here, for the two axis one axis is
+one of these parameters on the second axis
+and the second of this parameters. So,
+the. Say that these are the coefficient of
+the indicator function and what you see
+here is the log likelihood. So, this is
+the surface of the log likelihood. And
+there's several things that can be seen
+from looking at the surface. First, it
+seems, and we'll show this in a moment,
+that there is a single global optimum of
+this function that happens right here in
+the middle of this contour. But we can
+also see the coupling between the
+parameters coming up, that it doesn't
+decompose nicely as the product of or in
+this case a summation of a function over
+one of the dimensions. A plus a functional
+in the second dimension. So, now let?s
+delve into the mass a little bit more and
+consider what the log-linear of function
+looks like in general cases of a
+log-linear model. So, just as a reminder,
+here is the definition of a log-linear
+model and it's defined as the sum of a set
+of coefficients which are a parameters
+beta i. Multiplied by a set of features.
+Which could be indicator features as we
+had in the previous slide but we also
+talked about other forms of features for
+log linear model in a previous modules.
+So, we're not going to go back there. But
+any function here would work. We add up
+all of the log linear functions and
+exponentiate that, and then we have the
+partition function that makes sure. That
+we have in distribution. So plugging this
+into the form of the log likelihood we.
+Take this and apply it to every single
+data instance, and so we end up with the
+following expression which is what we get
+after we do this manipulation of
+accumulating terms all of which involves a
+particular parameter theta i. And so now
+for each theta I, we have a summation over
+theta instances m of the value of the
+feature f I, so this is the feature of i.
+Applied. To the [inaudible] and stuff. Now
+notice that I've changed arguments on you
+in that. Here the future I has a limited
+scope; a certain subset of the variables.
+For example, the pair AB and here I've
+given it the entire assignment as an
+argument. This is a shorthand that we use
+where we allow the function, FI, to forget
+arguments that it doesn't care about. So
+if we give the function, say the first
+indicator feature all three arguments, A,
+B and C it's just going to forget about C
+and look at AB alone. And so this is just
+a convenient shorthand that allows us to
+sort of use a consistent. And simpler
+notation without as many indices. So this
+is the first term, of the log likelihood,
+and just as before we have a second term,
+where we accumulate a log partition
+function, for every instance in our data
+set. And just as a reminder, the log
+partition function has the following form;
+it is a log, of unfortunately a summation
+over an exponentially large space. Of
+this, this exponential function. So it has
+the form log sum X, which is a term that
+you might hear. In various context. But
+now we can do an analysis on what the log
+partition function looks like. And in
+order to do that we're going to State what
+the first and second derivatives of this
+log partition function are, relative to
+our parameters theta i. And let's first
+understand what, what we're doing here.
+So, this, the partition function, as we
+said, is a function of a parameter's
+theta. And what we have here is a vector
+of first derivates. One relative to every
+parameter theta i. And this is a matrix.
+Known as the Hessian. Of second
+derivatives relative to pairs of
+coefficients theta I, theta J. What the
+first line says in the theorem is that the
+first derivative of the log partition
+function is an expectation of the feature
+phi relative, so it's an expectation,
+that's what the e stands for. Of the
+feature FI relative to the distribution P
+sub theta. That is relative to the
+distribution that we get by parameterizing
+a graphical model using the parameters
+theta that defines the probability
+distribution, and now I can go ahead and
+compute the expectation. So, this is equal
+to sum over X, P theta of X, FI of X. And
+that is an expectation. In the same way
+that we treat FI as a random variable over
+the space X we can now consider the
+covariance of two random variables FI of X
+and FJ of X and what this second line
+tells me is that the matrix of second
+derivatives is really the covariance
+matrix of these of these random variables,
+that are define by a [inaudible] FI and a
+[inaudible] FJ. Well, let's go ahead and
+prove the first of these, statements. The
+second is more complicated, but really is,
+in terms of a lot more lines in the
+derivation, that the intuitions aren't
+considerably different, and there is no
+point going through the details. So, let's
+go ahead and plug through the, the
+derivative. And so we have a partial
+derivative of Z theta relative to theta I.
+And, and sorry, this is a partial
+derivative of log theta, log theta
+relative to theta I, and derivative of a
+log, is one over, of a log z, is one over
+z times the derivative of the expression
+in the middle. And so, that gives us this
+expression over here, where we have one
+over z times, and we've pushed in the
+derivative into the summation, because the
+derivative of the summation is the sum of
+the derivatives. And so, that gives us
+this next line of the expression. We can
+now continue and recall that the
+derivative of exponential is the
+exponential itself times the derivative of
+whatever is in the exponent of the
+exponential. And so that is going to give
+us. Here, the exponential itself, times
+the derivative of this summation relative
+to theta i. And now it's very simple. We
+have the summation over j, j as j, and we
+are taking the derivative relative to
+particular state I, and that derivative is
+either zero. So, the derivative relative
+to data I data I, state to j as j is equal
+to zero, if I is not equal to j, and is
+equal to. Beta. I, sorry is equal to one,
+or actually is equal to fj, fi if I is
+equal to j. Because the derivative of beta
+I itself, is one. And so that gives me fi
+is x over here. And now we just rearrange
+the expression just a little bit. Moving
+the FI to. This sign. And, what we have
+here, in this box down at the bottom, is
+really just the definition of the log
+linear model. It's one over the proficient
+function times the exponential of the sum
+of the weighted features. And so what we
+end up with is a form that looks like sum
+over X, [inaudible] of theta of X, times
+FI of X. Which is exactly what we wrote
+over here. A similar procedure will get us
+the formula in the second expression. Just
+with a lot more algebraic manipulation. So
+now let's, that was the log of the
+partition function. Now let's think about
+the implications regarding the log
+likelihood. So if you remember, the log
+likelihood had this term over here which
+was linear in the theta I's, and this
+additional term which was m times the log
+partition function. And, and now let's
+think about what are some of the
+implications. The log partition function
+because it's Hessian. Has this form. It
+turns out that, that means that it's a
+convex function. What does a convex
+function mean? It means that it's bowl
+shaped. It's nice bowl. Or, formally,
+there is a definition of convexity that
+says that if you have a function g of
+alpha x plus one minus alpha y, then.
+That's greater than or equal to alpha
+finds, sorry that's less than equal to,
+alpha times [inaudible] plus one minus
+alpha [inaudible] y and so that means if
+you draw a line from here is. X. Y. G of
+X. G of Y. Any point, along this line, is
+greater than or equal to the G value of
+the point in the middle. So that's the
+formal definition of convexity. And
+because the, [inaudible] is convex, sorry
+because the. Well's partition function is
+correct. It's negation, which is what we
+have here, is concave. Which means it's an
+inverted goal. And this function is
+linear. [inaudible]. So, we have a linear
+function plus a concave function. So, all
+together L of sayna is a concave function.
+Which means it has this nice cave shaped
+form. What are the implications of that?
+It means that there are no local optima to
+this function, and therefore it's going to
+be easy to optimize using techniques such
+as hill climbing, which climb up this
+inverted bowl, until they hit an optimum,
+which in that case has to be a global
+optimum, because the function has no local
+optimum. So let's think about how to
+actually perform this [inaudible]
+destination. So, let's go back to the log
+likelihood function. Now we're going to
+add this we're going to multiply by one
+over m so that we don't have a scaling
+issue with a log likelihood continues to
+grow with a number of data instances
+growth, and so that gives us. This
+expression over here, where note that the
+M has disappeared as a multiplier from the
+log partition function and now we have the
+one over M term in the linear component as
+well. And now if we go back and plug in
+the derivatives of theta I, we take the
+derivative of this expression relative to
+a particular parameter theta I, we have
+two cases. We've already said that the
+derivative of the log partition function
+relative to a parameter theta I is the
+expectation. Of theta I, of FI, which is
+the col, which is the feature that theta I
+most applies in [inaudible] theta. On the
+other hand, if we look here at the
+derivative relative to theta I, we can see
+that what we have here is also an
+expectation. It's an empirical
+expectation. It is the expectation or
+average. Of fi. In the data distribution.
+And so the derivative of the log
+likelihood relative to theta I, is a
+difference of two expectations. An
+empirical expectation and an expectation
+in the parametric distribution defined by
+my current set of parameters theta. The
+one immediate consequence from this is
+that a parameter studying theta hat, if
+there's a, the maximum likelihood estimate
+if and only if we have an equality of
+expectations. That is, if the expectation.
+Relative to the model. [inaudible] is
+equal to the expectation. In the day to
+day. And so the expectation in the model.
+Has to be equal to the expectation in the
+data. And that has to hold for every one
+of the features. In my log linear model.
+[inaudible]. Now that we've computed the
+gradient, let's think about how one might
+use it to actually do the optimization. So
+it turns out that a very commonly used
+approach to do this kind of likelihood
+optimization in the context of crs is the
+variance of gradient ascent. So here we
+have a likelihood surface, which is in as
+in this case a fairly nice. Function. And
+what we're going to do is we're going to,
+use a gradient process where at each point
+we compute the gradient we take a certain
+step in that direction and continue to
+climb up and the gradient that we've
+computed on the previous slide is what
+we're using. Now it turns out that plain
+vanilla gradient ascent is not actually
+the most efficient way to go. Typically,
+one uses a variant of gradient ascent
+called LBFGS, which is a quasi mutant
+method. So, very briefly, a mutant method
+is something that constructs a second
+order approximation to the function, at
+each point, as opposed to just a linear
+approximation, which looks only at the
+gradient. But since we don't want to spend
+the computational cost, in general, to
+compute a second order, or quadratic
+approximation to the function, a quasi
+mutant method. That kind of makes an
+approximate guess at what the step would
+be if we were to compute a second order of
+approximation. And we are not going to go
+into the details of LDFGS here but there
+is plenty of literature on that, that,
+that you can find. Now. In either case,
+for computing the gradient. In this
+context. The critical computational cost
+is the fact that we need the expected
+feature counts. And the expected feature
+counts come up in two places: in the data,
+that is when we compute this empirical
+expectation E of, E relative to D of the
+feature F I; but also in the second term
+in this derivative, relative to the
+current model. So E relative to the
+parameter vector theta in the current
+model of the feature F i. Now this second
+piece is really the rate limiting step,
+because it requires that at each point in
+the process we conduct inference on the
+model in order to compute the gradient,
+and so this is inexpensive competition
+because it requires that we run inference
+in a graphical model, which we know to be
+not an expensive step depending on the
+complexity of a graphical model. So to
+make this concrete, let's look at an
+actual example. Let's return to our
+example of the [inaudible] model, where
+the energy function of a set of random
+variables, X1 up to XN, is a, is the
+product of a bunch of pair wise term, is a
+sum of a bunch of pair wise terms,
+WIJXIXJ. And a, and a bunch of singleton
+terms, UI, XI and it's an energy function
+so it's negated. And so. Plugging in to
+the equation that we had before, the
+gradient equation relative to a particular
+parameter vector. Theta I, [inaudible]
+let's know look at what this looks like
+for the two types of parameters that we
+have here. The singleton parameter is UI,
+and the pair wise parameter is WIJ. So for
+the [inaudible] parameters ui, if we just
+go ahead and plug into this expression
+here, we're going to have where the
+empirical expectation simply the average
+of the beta xi of m over them all, over
+the beta instances m. So, assuming that
+each variable xi has its own parameter ui.
+We're going to sum up over all data
+instances and the value of the variable xi
+of m. And that is going to be our
+[inaudible] expectations once we average
+it overall of the beta instances. Now what
+about the, The model expectation,
+expectation relative to [inaudible]. Well,
+here we have. Two, two cases. I, we need
+to consider the probability that XI equals
+to one and the probability that XI is
+equals to -one and the case where XI equal
+to one makes a contribution of +one to the
+expectation and the case where XI equal to
+-one makes a contribution of -one to the
+expectation, so altogether we have p theta
+XI equals one, -p theta XI equals -one and
+that's because these two have, these two
+different coefficient +one and -one. A
+slightly more complicated version of this
+comes up when we have the peer wise
+derivative the derivative relative to the
+parameter wij. And here, once again, the
+empirical explanation is simply the
+average of XI of M, XJ of M, over the data
+instances M. And the probability term has
+four different probabilities corresponding
+to the four cases. Xi and XJ are both one,
+both, negative one, or one takes the value
+one and the other, negative one, and vice
+versa. And the two cases of +one+1, and
+-1-1, have a coefficient of one. Because
+of the product XI, XJ, is one in those
+cases. And the other two have a
+coefficient of negative one. And so we end
+up with this expression, P sub theta of
+XI=1, XJ=1. Plus, P theta of XY=-1XJ=-1.
+Minus the probability of the other two
+cases. So to summarize. We've seen that
+the partition function in undirected
+graphical models couples all of the
+parameters in our likelihood function. And
+that introduces complexities into this
+setting that we did not see in the context
+of Bayesian network. Specifically, we've
+seen that this that there's no close form
+solution for optimizing. The likelihood
+for this under active graphical models. On
+the other hand, we have also seen that the
+problem is a convex optimization problem.
+Which allows it to be solved using
+gradient ascent usually in lbfts
+algorithm. And because of the convexity of
+the function we're guaranteed that this is
+going to give us the global. Optimum,
+regardless of the initialization. The bad
+news, the further piece of bad news other
+than the fact that it has no close form of
+optimization is that in order to perform
+this gradient computation, we need to
+perform probabilistic inference and we
+need to do that at each gradient step in
+order to compute the expected [inaudible].
+And we've already seen that inferences are
+a costly thing. And this really
+dramatically increases the cost of
+parameter estimation in Markov networks
+say in comparison to Bayesian networks. On
+the other hand the features that we are
+computing, the expectation, are always
+within clusters. In a cluster graph or in
+a clique tree because of the family
+preservation property. And, and that
+implies that a single calibration step
+suffices for all of the feature
+expectations it wants, and so a single
+calibration, say, of the clique tree is
+going to be enough for us to compute all
+of the expected feature counts and, and
+then we can go from there and compute the

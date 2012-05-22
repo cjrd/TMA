@@ -1,0 +1,10 @@
+Dave,
+Arindam Banerjee and I had a paper where we studied online versions of LDA
+and a couple of other topic models -- mixture of vMF distributions and the
+DCM model. That may be useful for you:
+http://www.siam.org/proceedings/datamining/2007/dm07_040Banerjee.pdf
+Note that the online inference we used for LDA in this paper was an
+efficient heuristic based on MAP estimates, not the true online Bayesian
+update.
+Best,
+Sugato.

@@ -1,0 +1,45 @@
+              Atmospheric deposition of nitrogen to temperate forests has increased in recent
+              decades as a result of increased combustion of fossil fuels.  Knowing how
+              nitrogen in air pollution is retained within forests will improve the ability
+              of scientists to anticipate interactions among efforts to mitigate human
+              alterations of regional and global cycles of carbon and nitrogen.  For example,
+              the way that forests retain nitrogen affects the ability of forests to help
+              mitigate expected global warming due to increased carbon gases in the
+              atmosphere.  Because nitrogen often limits rates of plant growth, increased
+              nitrogen inputs could affect forest growth and health.  Most of the additional
+              nitrogen deposited onto the forest from air pollution is retained in the soil
+              rather than being taken up by plants.  The biological and chemical processes
+              whereby this incoming nitrogen, dominantly in the form of nitrate, is converted
+              to organically-bound forms that stay in the soil remains unknown.  Recent
+              evidence suggests that abiotic reactions (chemical reactions without
+              participation of living organisms) convert nitrate into organic nitrogen in
+              soil.  This suggestion challenges a widely held view that microorganisms living
+              in the soils are the dominant agents for nitrogen uptake in soil.  This abiotic
+              reaction of nitrate is particularly perplexing because the energetics of
+              nitrate reduction in soils are not favorable under normal conditions of
+              well-drained soils.  The fate of the organically bound nitrogen once it gets
+              into the soils is also largely unknown.  For example, it is not known how much
+              organic nitrogen is eventually converted back into an inorganic form that
+              plants can use. 
+
+The proposed studies will be among the first to investigate
+              the fate of dissolved organic nitrogen, which is increasingly recognized as
+              central to the nitrogen cycle of many forests.  The experiments use two ongoing
+              nitrogen addition experiments in the Harvard Forest of central Massachusetts
+              and the Howland Forest of central Maine. The first objective is to measure
+              reactions of nitrate in these forest soils that have received nitrogen
+              additions experimentally.  The PI's seek to determine whether nitrogen addition
+              has changed the capacity of soils to react with nitrate, either biotically or
+              abiotically.  The PI's also present in this proposal the "ferrous wheel
+              hypothesis," that reduced forms of iron in tiny pockets of poorly aerated soil
+              can reduce nitrate to another form of nitrogen, nitrite, which can then react
+              with dissolved organic carbon in the soils to form dissolved organic nitrogen. 
+              The second objective is to test this hypothesis in several laboratory
+              experiments, where the concentrations and combinations of hypothesized
+              reactants are varied systematically in a laboratory instrument, called a
+              "redox-pH-stat reactor," which controls the acidity and aeration of the soil
+              sample during the incubation.  As a result of its interdisciplinary nature, the
+              research requires the collaborative efforts of an ecologist (Davidson), a
+              chemist (Chorover) and a microbiologist (Dail), all of whom specialize in the
+              study of soils.  
+

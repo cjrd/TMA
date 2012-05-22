@@ -1,0 +1,248 @@
+
+Very important insights about variable
+elimination and how to best pick the
+elimination ordering is provided by
+thinking about the operations the variable
+elimination executes as operations on a
+graph. So let's see what that does. So
+let's consider the initial graph in our
+example and let's first view this graph in
+terms of the factors that it involves. So
+this is the set of factors that we have
+in, in our analysis, a viewed as
+undirected, viewed as simply factors. So
+what is the structure of the graph that
+corresponds to this set of factors? Well
+first we're going to make all the edges 
+undirected, but that's not enough because we
+see, for example, that we have a factor
+here which is a factor over G, I and D,
+and so what we need to do is we need to
+add an edge between I and D to represent
+the fact that they're together in the
+factor. Other examples, in that, other
+cases where we need to do this correspond
+to the other V structures that we have in
+this graph. So here, for example, we have
+a V structure involving J, so we're going
+to need to connect J's two parents and
+similarly for H's two parents. This step
+by the way is called, not by me,
+moralization. Because of the dubious moral
+value of marrying the parents of a child no
+matter how many of them there are. Umm,
+and so I did not invent that name. So
+having moralized the graph, we now have
+this version of it and this is what we
+previously defined to be the induced
+Markov Network for the current set of
+factors. So, now let's think about a
+variable elimination step and what it does
+to this graph. So let's begin by
+eliminating C and if you remember that
+involved this operation. And so first
+eliminating C is, changing the set of
+factors. It removes these two factors over
+here from the set. And introduces a new
+factor tau 1 of D. So, the
+induced graph is now going to look like
+the following. We've taken C out. And this
+the remainder is the induced graph over the set of
+factors. Okay? Now we are going to
+continue. We are going to eliminate D. So
+once again we are going to take the two
+factors that we have now introduced. ...
+Sorry ... These two factors that are
+involved here which is tau 1 of D and
+phi G of G, I and D. Going to multiply them. And
+going to eliminate D. And so the
+resulting, and then the resulting graph is
+now going to look like this. Where, again,
+the, the nodes with the, with the dashed
+edges are not really there, they're just
+there to remind us that they were there
+before. Continuing on, we're going to
+eliminate I, and that involves multiplying
+in, this term, this term, and this term.
+And now something interesting is going to
+happen. The factor that we introduced,
+which is tau three of S and G Is a factor
+that doesn't have an edge in the current
+graph. So if we're interested in having
+this graph represent our current set of
+factors we're going to need to introduce
+this edge between G and S. Because that
+edge, is necessary because S and G are
+together in the same factor. So that edge
+is called a fill edge It's an edge that I
+had to introduce because of the
+elimination ordering. So why don't we just
+think about this the way is using the
+following example. Imagine every variable
+that's eliminated is going off on a trip
+around the world And when it's doing that
+it is throwing a big goodbye bash and
+inviting all of its friends to come and
+join it. And when it does that all of its
+friends get to meet each other and say, oh
+you guys are nice I'm going to be your
+friends too. And so all of the friends of
+the variable that's eliminated become
+friends as a consequence of the
+elimination step, okay. So, let me write
+that down, all variables connected to in
+this case, I, become connected after it's
+eliminated, so become connected directly
+and that's a general, consequence of the
+elimination step process. It's just that the
+previous ones didn't happen to introduce
+fill edges. Okay, let's continue,
+[sound], so now we are going to eliminate
+H, H also doesn't introduce any fill edges
+[sound], and so we are going to end up
+with that, and basically the remaining
+steps are pretty mundane, we are going to
+eliminate G [sound], L [sound] and S, and
+we are going to end up with the following
+graph. So this particular variable
+elimination process only introduced one fill edge, which is a, a fairly
+conservative thing and shows that we, sort
+of that we just selected a pretty good
+elimination ordering in this case [sound]
+so we can now take and put all these edges
+that we ended up using together in a
+single graph and that graph is called the
+induced graph and the induced graph,
+which is denoted I, for induced,
+Phi comma alpha over a set of factors
+Phi and induced by a particular
+ordering alpha, because you remember that
+we were getting different complexities and
+we are going to have different fill edges,
+depending on the order in which variables
+are eliminated. So this variable, this
+induced graph, has the following,
+properties. It's an undirected graph where
+we connect every pair of variables Xi and
+Xj, if they ever appeared in the same
+factor when we ran variable elimination
+using alpha as the ordering. And so in this
+case all of the original, all of the black
+edges, were there to begin with and we
+ended up introducing just one of those
+additional, new or fill edges. So now,
+lets... There is some interesting
+properties of the induced graphs that
+are worth noting. First of all, there are
+some properties that relate factors
+produced during variable elimination. And
+cliques in the induced graph. So first
+let's define what a clique is. A clique is
+a maximal fully connected sub-graph So,
+let's parse that too. So for example, DIG,
+here, is a fully connected sub graph,
+because all of its three nodes are
+connected each other. And it's maximal,
+because I can't add any other variable to
+this and still have that property hold. So
+if I try and add S, for example, then S is
+not connected to D. If I try and add C, C
+is not connected to I or G. So I can't add
+any other variable to this particular
+clique, so it's a clique. Here is a clique
+that's not maximal So here is, so it's not
+[inaudible], so G L J is it's a
+fully connected sub graph. But it's
+not maximal because I can add S and still
+have that hold. Here's another clique in
+this graph. You have GID being one clique
+and GSL and J being another clique. We're
+going to have a third one which is GS and
+I another one which is CD. And let's see
+if I have enough colors to do this. And a
+final one which is G, H and J. And if we
+now look at the factors that we produced
+in the course of variable elimination, we
+see that there is an exact correspondence
+between the factors and those cliques
+so here for example, the yellow one is CD,
+which is this one over here. This one over
+here which is GID is the red one, this
+one. So that's the red one. This one has S,
+I, G, so that's the green one. This one
+This one is H, G, J which is the brown
+one. Tau 5 induces the big factor, the
+one that involves four variables and
+that's the blue factor over G, S, L, and
+J. And this one doesn't actually introduce
+any new cliques which is why it doesn't
+have any, cliques associated with it. So
+every factor produced during variable
+elimination is a clique in the induced
+graph. [sound] We can equally well check,
+and we saw that in the previous
+slide already that every maximal clique in
+the induced graph is a factor that's
+produced during variable elimination.
+We've demonstrated this to ourselves by
+inspection but let's actually get proof of
+this. So let's consider a maximal clique
+in this induced graph. So let's consider for
+example GSLJ that's a maximal clique.
+And now let's consider the run of variable
+elimination, and one of those variables
+has to be One of those variables has to be
+the one to be eliminated first. So, some
+variable in this clique. Some variable is
+first to be eliminated. Well, what happens
+when a variable is eliminated? Once it's
+eliminated it, it doesn't, have any more
+edges that get added to it. So once a
+variable is eliminated it has no more, no
+new neighbors are added to it.
+Which means that at the time that it was eliminated
+It had all the neighbors that it had in the clique
+All the clique members as neighbors.
+But if that's the case, then it means that it had factors involving all those other guys.
+So it participated in factors with all these other guys.
+And that means that when I multiply them all together we're going to end up with a factor over all of them.
+And that is a proof that every maximal clique in the
+induced graph must correspond to a factor
+produced during the variable elimination
+algorithm. So now that we, umm, have
+constructed a graphical view of variable
+elimination we can go ahead and construct
+a measure of a complexity variable
+elimination and that is a measure known as
+the induced width. So first we are going
+to define the width of an induced graph.
+Is the number of nodes in the largest
+clique graph by convention minus one. Why
+minus one? No good reason but that's what
+people, that's the of definition induced width
+The minimal induced width of the graph, is
+the minimum over all possible elimination
+orderings alpha of the width of the
+induced graph. So this is the best
+achievable complexity that one can aspire
+to with any elimination ordering. You can
+think of the minimal induced width of the
+graph as a lower bound on the best
+performance of variable elimination for
+any model that factorizes over the graph.
+In summary, we've seen that the variable elimination algorithm can be viewed quite intuitively
+as taking a set of steps, each of which corresponds to a graph.
+Specifically, a variable elimination step for a variable X takes all of X's neighbours,
+that may or may not have been connected before, and connects them to each other.
+The result of all this is something
+called the induced graph and we've seen
+that the induced graph is possibly quite
+connected as a result of this variable
+elimination process and that the cliques
+in this induced graph, that is, the
+maximally connected subsets, maximally
+fully connected subsets correspond
+directly to the complexity of the variable
+elimination algorithm. And as we'll see
+can therefore help us analyze its
+computational properties.

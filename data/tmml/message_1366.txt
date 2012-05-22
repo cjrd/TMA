@@ -1,0 +1,8 @@
+i worked on this last summer, and used LDA on
+70k short docs.  i estimated that document similarity
+(using topic proportions as the feature vector) was
+only 2.5X stronger at predicting similarity than randomly
+pairing docs.
+if you search the archives here, there was a
+thread on document length a couple months (?) back.
+iirc, somebody has had good luck with twitter data.

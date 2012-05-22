@@ -1,0 +1,9 @@
+Hi David,
+Thanks for the clarification.
+I was thinking about the standard perplexity measurement from page 1008 of
+Blei's LDA paper.
+2011/4/8 David Mimno <mimno at cs.umass.edu>
+but this could be controlled using the convergence criteria for variational
+EM.  I mean  if you are obtained increased values of perplexity calculated
+as:
+perp = exp ( (-1) * (sum_likelihoods / vocab_size)))

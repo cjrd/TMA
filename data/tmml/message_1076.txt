@@ -1,0 +1,19 @@
+Hi, everyone
+Dirichlet Process and its extensions like full hierarchical approaches
+based on DP are useful tools for
+modeling.
+Because sampling based inference method on infinite mixtures is cost,
+some variational methods are proposed such as Truncated DP in
+"Gibbs sampling methods for stick-breaking priors" and
+Dirichlet-multinomial allocation(DMA) in
+"Dirichlet Enhanced Latent Semantic Analysis".
+In these methods, finite mixture is used to approximate the DP.
+However, In the above papers, only one DP is applied in the model to
+sample distributions.
+I want to know for those models with DPs arranged according to any tree
+structure, like the model "M3" on page 20 in
+http://www.cse.buffalo.edu/faculty/mbeal/papers/hdp.pdf, can we use
+finite mixtures at all levels to approximate the inference?
+What kinds of impact might the method result in ?
+Thanks
+Peng

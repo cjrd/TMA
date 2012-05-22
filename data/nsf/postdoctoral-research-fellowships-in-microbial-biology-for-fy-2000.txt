@@ -1,0 +1,12 @@
+              This action funds an NSF Postdoctoral Research Fellowship in Microbial Biology
+              for 2000.
+
+The research and training plan is in the area of Microbial
+              Genetics and is entitled "Role of Gene Control Mechanisms in Microbial Methane
+              Production."  The primary goal of this study is to identify and characterize
+              the mechanism for genetic regulatory control of methanogenesis, which has a
+              pivotal role in the global carbon cycle.  A combination of physiological and
+              genetic approaches is being used to investigate the control networks that
+              mediate expression of a catabolic gene encoding carbon monoxide dehydrogenase
+              in the methanogen Methanosarcina actevorans.
+

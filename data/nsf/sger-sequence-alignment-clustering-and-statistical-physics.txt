@@ -1,0 +1,31 @@
+              
+
+0110903
+Yu
+This is a SGER award to support theoretical research and
+              education in the area of bioinfomatics using methods inspired by statistical
+              mechanics that differ from ones currently used in computational biology.   The
+              research centers on sequence alignment and clustering. An important problem in
+              this area is how to assign an accurate statistical  significance to a result
+              obtained from these bioinfomatics tools. A novel alignment method and
+              statistical theory recently developed by the PI will be enhanced to create a
+              more complete statistical theory and to address the statistical significance
+              problem. An aim of this work is to develop a better method to extract
+              appropriate alignment parameters where insertions, deletions, and substitutions
+              of biomonomers will be treated on an equal footing.  Another focus of this work
+              is to improve clustering methods using variants of the random-cluster model. 
+              The PI's new clustering method assumes no a priori knowledge of the nature of
+              the existing data and is expected to be more robust against noisy
+              data.
+%%%
+This SGER award supports theoretical research and graduate level
+              education in the area of bioinformatics.  The research is interdisciplinary
+              with a view to bring the formidable tools of statistical physics to bear on an
+              important part of the larger biological problem of understanding the meaning of
+              the enormous amount of genome data that has been collected.  The PI's research
+              addresses the problem of being able to reliably identify homology among
+              different sequences and to improve clustering tools that can be used to  help
+              identify gene expression patterns associated with a certain biological process
+              or disease. 
+***
+

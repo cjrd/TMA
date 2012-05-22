@@ -1,0 +1,19 @@
+Hi all,
+I have a simple hierarchical topic model (the model hierarchical, not the topics) in which the
+documents are in fixed, known groups. It has hierarchical Dirichlet topic multinomials at the
+document, group, and corpus levels, with each level backing off to the level above it, as governed
+by a level-specific concentration hyperparameter.   Plus a standard symmetric Dirichlet prior on
+P(w|t), so 4 concentration parameters in all.  I'd like to estimate them from the the data via slice
+sampling.
+I have several questions I'd appreciate advice on:
+1) How many samples should be drawn on each invocation of hyperparameter sampling -  5, say, or just
+1?   Obviously I'm only going to use the last one, right?
+2) Should I require a burn-in period of N Gibbs topic sampling iterations before the first
+invocation of hyperparameter sampling?  If so, what value of N?
+3) How many regular Gibbs topic sampling iterations should there be between invocations of
+hyper-sampling?  Some authors just interleave them, I believe, so that each topic iteration is
+followed by hyperparameter sampling.
+4) What step size is best?   Should it be say 0.01*initial value?  Or 0.1?  And does it make sense
+to adjust the step size as the magnitude changes (to prevent the value going negative)?
+thanks,
+Dave

@@ -1,0 +1,96 @@
+              Aldroubi
+0103104
+     The investigator and his colleagues develop a
+              mathematical
+framework and fast computational schemes for the
+              reconstruction
+of functions, signals or images from noisy, very large
+              sampled
+data sets, acquired on nonuniform grids, by nonideal
+              acquisition
+devices.  The problem of nonuniform sampling and
+              reconstruction
+is treated in the context of shift-invariant subspaces,
+              Besov
+spaces, and in arbitrary dimensions.  The theory is developed for
+the
+              case when the samples are obtained from weighted averages.
+Density conditions
+              for exact reconstruction are established.  When
+the data are noisy,
+              incomplete, or when the assumptions needed
+for exact reconstruction are not
+              satisfied, bounds on the error
+between the reconstructed and original signal
+              are derived in
+terms of the sampling densities, the averaging functionals,
+              and
+the noise statistics.  The development of the mathematical
+framework and
+              the computational schemes requires a new set of
+techniques and ideas, and
+              involves several areas of mathematics
+including wavelet theory, frame theory,
+              functional analysis, and
+harmonic analysis.
+     The project is motivated by
+              problems arising in data
+transmission, geophysical exploration, astronomy,
+              spectroscopy,
+and biomedical imaging.  The problem of reconstructing a signal
+              or
+an image from a set of nonuniform samples is encountered in
+              many
+applications of signal or image processing.  For example, the loss
+of
+              data packets during transmission through internet or from
+satellites can be
+              viewed as a nonuniform sampling and
+reconstruction problem.  In geophysical
+              exploration, the earth's
+magnetic field is measured by a combination of
+              airborn, fast
+moving acquisition devices, as well as scattered
+              stationary
+devices resulting in highly nonuniform sampling patterns, and
+              a
+huge data set.  The goal is to reconstruct the magnetic field and
+use it to
+              reveal geological features.  In fact, modern digital
+data processing of
+              signals or images always uses a sampled
+version of the original analog signals
+              or images.  However, the
+sampling devices are never ideal, and the collected
+              data consist
+of average samples.  Moreover these data are often very
+              large,
+incomplete, and corrupted by noise.  The question then arises
+whether
+              and how the original signal can be recovered from the
+data.  Therefore the
+              investigator aims to 1) quantify the
+conditions under which it is possible to
+              reconstruct a signal
+exactly from different sets of nonuniform
+              average-samples; 2) use
+these analytical results to develop explicit, and
+              computationally
+efficient reconstruction schemes; and 3) analyze the
+              performance
+of the algorithms under adverse conditions, or when the data
+              are
+incomplete or corrupted by noise.  The development of a theory
+              and
+algorithms that perform well under stringent and realistic
+situations
+              will help the analysis, processing and management of
+very large data sets
+              obtained digitally by new acquisition
+modalities, and transmitted or received
+              by communication networks
+such as the internet, cellular phones, and other
+              distributed
+communication systems.
+
+

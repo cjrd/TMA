@@ -1,0 +1,23 @@
+              0114483
+El-Sharkawi
+
+This project will explore the possibility of using new
+              techniques from computational intelligence in order to address the task of
+              imputing missing values in data collected by complex arrays of sensors. 
+              Sensors in a restricted environment can have readings relating to each other in
+              such a matter that missing data from a set of failed sensors can be restored
+              from the measurement of those remaining. When the reconstructed sensor readings
+              are supplied as input to a process, the operation of the system is therefore
+              still possible. Overall performance will degrade gracefully, if at all. 
+              Discovery of data constraints can be achieved by training an autoencoder using
+              sensor data. The trained encoder, having empirically discovered interrelations
+              among data, can then be used to restore lost readings from failed sensors. This
+              is achieved through either application of an alternating projection onto convex
+              set (POCS) algorithm or a more conventional search.
+
+Successful development
+              of missing sensor data (MISED) restoration will have significant impact on a
+              number of current technologies. The project will focus on applications to
+              currently open and important problem in energy and avionics. The project has
+              strong support from both industries.
+

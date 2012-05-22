@@ -1,0 +1,46 @@
+              0116047
+Pidaparti
+Structural materials of the 21st century will have to meet
+              increasingly demanding standards for performance and life. The strength and
+              integrity of a structural component deteriorates mainly due to corrosion and
+              fatigue along with other failure mechanisms in structural materials. Among
+              various aspects of corrosion, pitting corrosion is a complex process, and is a
+              major problem in many engineering industries. Pitting corrosion mechanism
+              usually initiate at the micro/nano-structure level and the details of the
+              mechanisms depend on the material composition, electrolyte and other
+              environmental conditions. Even though much effort has been put into assessing
+              the material loss due to corrosion over the years, the mechanical
+              characteristics and its relationship at multiple levels due to pitting
+              corrosion are not yet known. The material loss information along with the
+              topology and its relationship at various material scales are necessary for
+              better understanding and designing of corrosion resistant materials.
+
+The
+              objective of the proposed research is to develop a three-dimensional corrosion
+              growth model to aid in the assessment and design of materials and their effect
+              on structural integrity. Corrosion growth model will be developed as a discrete
+              dynamical system based on cellular automata approach. This approach
+              incorporates both macroscopic (corrosion pit distribution and the material
+              loss) and microscopic (chemical interaction mechanisms) scales of the corrosion
+              process into the model. Mechanisms involving both physical and mechanistic
+              basis will be used to obtain rules in developing corrosion growth models. The
+              developed models will be tested and validated using real data by collaborating
+              with Naval Surface Warfare Center, CRANE division, Indiana, and with the data
+              obtained from Raytheon Systems Company, Texas. A three-dimensional
+              visualization software will be developed to visualize the corrosion growth data
+              in real time to see the corrosion growth process. Algorithms developed through
+              this project will be directly used in materials and simulation courses in
+              Engineering and Computer Science disciplines.
+
+The proposed research will
+              greatly help to understand the corrosion growth process in materials. The 3D 
+              visualization capability will provide insight into better understanding of the
+              characteristics of corrosion growth process, and may lead to the development of
+              more efficient corrosion growth and prediction algorithms. A fundamental
+              understanding of the macro- and micro-level corrosion growth models based on
+              local rules will provide valuable information and tools for designing corrosion
+              resistant materials for a variety of engineering applications. The proposed
+              approach will provide a general solution to structural corrosion in materials
+              so that it can be scaled up to other structural materials.
+
+

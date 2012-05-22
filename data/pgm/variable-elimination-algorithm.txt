@@ -1,0 +1,303 @@
+
+We've already said that there is many
+different algorithms for inferencing
+graphical models. But the simplest and
+most fundamental is an algorithm typically
+known as variable elimination. Let's
+consider the variable elimination
+algorithm in the context of the simple
+example of a graphical model structured as
+a chain. Here we have we're interested,
+maybe, in computing the distribution over
+variable E. So we're interested in P of E.
+And as we've already said, that
+probability is proportional to the
+unnormalized measure, P tilde over
+A, B, C, D, and E, summing up. All of the
+variables except for E. So now let's see
+how we can do this more efficiently than
+simply constructing the joint distribution
+and then summing things out. So, the first
+thing we do is we write up this
+unnormalized measure as a product of the
+constituent factors. And for the moment,
+we're going to assume that we only have
+pairwise factors for the edges in this graph. So,
+we have a factor for AB, a factor for BC,
+CD, and DE. So those are the factors phi 1
+up to phi 4. Now what is the first
+observation that we have when we see the
+summation over A, B, C, and D of a product
+of factors? Well, we've already done this
+exercise previously, when we were doing
+some proofs related to graphical models.
+That, if you have a factor that doesn't
+mention a particular variable in it's
+scope, we can move it out of the scope of
+the summation. So specifically, phi 2
+of BC can be moved out of the summation
+over A, as can phi 3 of CD, and phi 4
+of DE. Which leaves us only with the
+summation over A, of phi 1 AB. So that
+gives us the expression over here. Now
+this is. Now this is a summation over a
+pair wise factor, and the result of this
+is a factor over a single variable B,
+which we're going to call tau 1 of B. So we end
+up with an expression that looks like this.
+So now let's continue this expression,
+developing this expression further.
+Knowing that we now have an expression
+that doesn't involve A only the variables
+B, C, D and E so that effectively we have
+eliminated E from the graph A we have
+eliminated A from the graphical model. So
+let's go back to this expression. We now
+have this product of four factors and once
+again we can look at what factors involve
+the variable B and which ones don't. And
+the ones that don't can be moved out of
+the summation, just as before, giving us
+this. For now we have an expression which
+is a product of these two factors, summed
+out over B. And this is going to give us
+an expression tau 2 whose scope is C. And so
+we now have an expression that does not
+involve the variable B, and so now we've
+eliminated B from this graphical model.
+And we can similarly continue to eliminate
+C and D so that ultimately we end up with
+an expression that involves only the
+variable E. And that expression is going
+to be proportional to the probably of the,
+to the marginal probability of E. Now is
+through this algorithm in the context of
+some of more complicated example which is,
+our enhanced student network that we played
+around with before. So lets imagine that
+our goal is to compute the probability of
+the variable J, this one. And in order to
+do that we are going to have to eliminate from
+the joint distribution all of the other
+variable except for J. So this is our, our
+expression. And note that we have this
+product of factors I've taken already in
+this expression the factors that we're,
+the CPDs and turned them into factors so
+that we can have a consistent notation.
+And now we need to eliminate every one of
+the variables except for J. So we're going
+to start with eliminating the variable C
+first. And, and so once again we're going
+to take the summation over C and we're
+going to push it in, leaving in the
+summation only the factors that involve
+C. And those are phi D and phi C. Multiplying
+them together and eliminating C is going
+to give us a factor which we are going to
+call tau 1 whose scope is D. Mm-hm. And by
+putting tau 1 into this expression and
+removing the ones that we've just
+multiplied together, we end up with this
+expression. Over here. Having eliminated
+C, we now go ahead and eliminate D. So,
+here we have the variable D, and which
+factor is involved D, well, tau 1 of D
+and phi G of G, I, and D. And, so, everything
+else is taken out of the summation and we
+just have this expression over here. And,
+that's going to give us, tau 2 whose
+scope is G and I, after having eliminated
+the variable D from this product, whose
+scope is G, I and D. And tau 2 gets put
+back into the bucket. Together, with
+everything else, [sound]. Moving forward
+we're now interested in eliminating I
+[sound]. And so the factors that involve I
+are tau 2 of G and I, and phi S
+of S and I, and phi I of I. And so we go
+ahead and multiply them together. To give us
+a factor, whose scope is G, I, S and
+eliminating I gives us a factor, tau 3
+whose scope is S and G. And so the
+process continues. And let's just finish
+it, all the way to the end. Now, our goal
+is to eliminate H. Well, H is a little bit
+of an interesting case. The only factor
+that mentions H is this factor, phi of H. And,
+if we think about what phi of H is, phi H, as it
+happens. Is P of H given G and J. And so
+for summing that up over H, we're actually
+summing up what is, in fact the
+conditional distribution. And since we
+know that a conditional distribution, when
+you sum up on the, the values on the left
+hand side, the summation is necessarily is
+equal to one. So in principal, we could
+have taken this entire expression. Erased
+it, and written one instead. And that
+would have given us something that is a
+factor that doesn't depend on anything
+would have just been, would have just
+disappeared. But for purposes of
+demonstration, we're not actually going to
+do that because in fact, not every
+algorithm is clever enough to notice these
+kinds of coincidences. It depends on
+whether they were designed to look for
+that. And so we're going to do this in the
+same way, in the same sort of naive way
+that we've done before, which is just.
+[inaudible]. Turn this in to a factor
+which is going to be Tau-4 of G comma J. So,
+so now we have that factor, which really
+is one, but we're not going to pay
+attention to that particular aspect for
+the purposes of demonstrating how the
+algorithm would work. Okay? Next is
+eliminating G, and we have this
+expression, which we inherited from the
+previous slide. And G is one of the big ones,
+because it appears in, phi L,
+tau 3 and tau 4. So when we
+think about the variables here in this
+scope, we see that this one actually has
+this product over here, actually has a
+scope of L, G, S, J which is the largest
+factor, the one with the largest scope
+that we've encountered so far. Summing out
+G, we end up with a factor whose scope is
+L, S, and J, so we're missing an S. And,
+and now we put that into. This expression,
+and out comes a now, product of two
+factors. And, really, at this point, we
+might as well just multiply them and end
+up with a factor over J and. Hold on. So
+that gives us variable elimination in
+its, naive form. What about variable
+elimination with evidence? Well, we've
+already basically established how to deal
+with evidence. If we're interested in,
+[inaudible] in, for example, solving the
+query probability of J, I= little i.
+Comma H equals little h, the way in which
+we do that is by, is by computing the
+probability of the joint event J, I
+equals little I, H equals little h and the
+way in which we do that is by reducing the
+factors to correspond to this scope. And
+so if these were, if, so we take each of
+the factors that involves I, and we
+basically instantiated to take the
+particular value for that I, the value
+little I, and similarly for H. And so we
+see here, for example, that, where as phi I
+initially depended on I, now it doesn't
+depend on anything. Because this is simply
+the value phi I of little I, which is a
+constant. And, whereas, for example, G
+depended on D and I, as we can see in the
+original example diagram. Here, phi G in
+the reduced factor doesn't depend on I,
+and is really probability of G, given
+little I and D. And the same reduction
+occurs for H=h, and so we end up with the
+following set of reduced factors. And now,
+once we have that set of reduced factors,
+we do elimination as, exactly as before.
+No changes whatsoever to the algorithm.
+The only aspect that's a little bit
+different is notice that we don't
+eliminate. No H and no I because there's
+no point in eliminating vat, a variable
+that has a single value. There's no need
+to sum up over it when it only has a
+single value. So, with, this gives us a
+unified framework for dealing with, with
+queries whether they involve evidence or
+not. And then how do we get the
+probability of J, given the evidence?
+Well, this is straight forward, we simply
+re-normalize. Because we, because we can
+take this. And simply divide by what it
+turns out to be, the probability, the
+normalizing constant. Is. [sound] So,
+let's see whether the same idea applies to
+Markov networks. So here's our simple
+Markov networks, n, network with four
+variables. Let's imagine that our goal is
+to compute P of D. And so in order to do
+that we need to eliminate A, B, and C from
+the unnormalized measures. So we have this
+being the unnormalized measure, and we're
+summing up over A, B, and C. And the
+process works in exactly the same way. So,
+if we want to sum out A first, then here
+is the factors that involve A, phi 1 of AB, this one. And phi 4 of A D,
+multiply them together, we've got a f,
+factor whose scope is A B D, and then we
+sum out A to get a factor whose scope is B
+D. That gives us a new set of factors
+where A has been effectively been
+eliminated from the graphical model. And
+at the end of the process, we get a factor
+over the single remaining variable D. So
+tau 3 of D and that factor is not the
+probability of D. It's proportional to the
+probability of D. It's actually equal to
+P tilde of D, which is the unnormalized
+measure. And so in order to get P of D, we
+renormalize. So to summarize this, the
+main routine in this algorithm, is
+something, is a routine which we call
+eliminate variable Z from a set of factors
+Phi. And what it does is the following. We
+first look within Phi, and we define the
+set of factors, Phi prime, which are all
+factors that involve Z. And that's what
+this mathematical expression says. The
+factors Phi I such that Zs in their
+scope. We take all those factors and we
+multiply them. And then we sum out the
+variable Z which is the one that we want
+to eliminate. Now, and here is the
+important point: we've already used up
+these factors, these ones over here have
+now been used. We don't want to reuse
+them. And so we take them out of the set
+of factors and instead we introduce the
+one that we just created by multiplying
+those factors and summing them up. This
+basic operation is what we use in the
+context of, the algorithm as a whole. We
+begin by reducing all factors by the
+evidence. In, which is just eliminating
+the rows that don't, that are not
+consistent with the observations. And that
+is what gets us our set of factors Phi. Now
+for each non-query variable we need
+to eliminate it. And so we have run one at a 
+time something that eliminates the
+variable Z from the set of factors Phi.
+Each such step changes my set of factors.
+It adds factors and removes, so actually
+it starts by removing factors. Which we have
+Phi prime from the previous one, from the
+previous line, and it adds, and you factor
+tau. And then finally at the very end
+when all variables have been eliminated,
+there may be one or more factors
+remaining. So that point we multiply all
+of the remaining factors and then we
+normalize to get a distribution. So to
+summarize, this is a very simple
+algorithm. It works equally well for
+Bayes nets and Markov nets. And it
+uses, and, a factor product and factor
+summation steps. And it does that by
+ensuring that when you mult-, that when
+you sum out a factor, when you do the
+summation step over variable Z, then all
+factors involving Z have been multiplied
+in, which is the critical piece of the
+correctness of this algorithm.

@@ -1,0 +1,15 @@
+A postdoctoral research position is available at UC Irvine in the area
+of statistical text modeling, with a focus on topic modeling. The
+project will involve investigating and developing new types
+of topic models and evaluating performance on large corpora.
+The ideal candidate will have knowledge of both Bayesian learning
+methods and text modeling, and prior experience in working with
+Bayesian computational methods such as MCMC techniques.
+The starting date can be as early as May - the initial funding
+for this project is for 1 year - but it is likely that funding
+will be available in addition for a 2nd year. The investigators
+on this project are Professor Mark Steyvers (msteyver at uci.edu
+<mailto:steyvers at uci.edu>)
+and Professor Padhraic Smyth (smyth at ics.uci.edu
+<mailto:smyth at ics.uci.edu>) - please
+contact either if interested and would like further information.

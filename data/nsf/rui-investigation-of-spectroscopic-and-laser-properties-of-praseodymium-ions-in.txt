@@ -1,0 +1,24 @@
+              This project, at an RUI institution, provides undergraduate students with
+              research experience through an active program in laser spectroscopy.  Students
+              are actively involved in the study of optical properties of rare earth ions
+              doped in crystalline host materials, and novel organic dyes in solid plastic
+              materials.  Measurements include time-resolved spectroscopic techniques to
+              study energy transfer characteristics and mechanisms.  Processes such as energy
+              transfer between sensitizers and activators, fluorescence quenching, Stoke's
+              shifts, and the effect of host materials on such processes are studied.  The
+              research aims to help students understand and solidify their thinking about
+              energy levels, selection rules, radiative and nonradiative processes.  Students
+              actively participate in weekly group discussions interacting with fellow
+              students and the PI.
+%%%
+The project is primarily oriented toward providing
+              research education experience for undergraduates in materials physics studies
+              including advanced characterization tools and analysis methods to address basic
+              research issues in a topical area with technological relevance. The research
+              will contribute basic materials science knowledge to important aspects of
+              processing and fabricating photonic devices such as lasers and sensors. An
+              important feature of the program is the way in which research and education are
+              integrated through the training of students in basic research in a
+              technologically significant area.
+***
+

@@ -1,0 +1,29 @@
+              This project integrates recent search developments in ad hoc netorks into
+              mainstream computer science and electrical engineering curricula.  It explores
+              students to challenges posed by this emerging class of systems, improving
+              studets' exposure to future infrastructures by developming real world ad hoc
+              networking test-beds and deployment platforms, and permits educators at other
+              U.S. institutions to do the same by sharing the system infrastructure and
+              educational materils developed for this project.  Specifically, the project
+              transforms several undergraduate and graduate level courses in computer systems
+              to address the challenges posed by wirless, mobile and embedded networks of
+              computers that form transient alliances in ad hoc networks.  This project
+              transforms classes in networking, databases, operations systems, adaptive
+              systems to integrate pervaive, ubiquitous, ad hoc networking and sensor
+              networks.  A three-tiered approach benefits both current classsroom
+              instructions as well as ongoing research on ad hoc network, and involves: 1)
+              The development of software and courseware infrastructure necessary to build,
+              use and evaluate system services for ad hoc networkss in a classroom setting.
+              2) Deployment of the critical mass of equipment to field a large, physical
+              test-bed.  This network consists of mobile computers, ranging form sensors and
+              pocket-sized information appliance through hand-helds to laptops.  Equipped
+              with a wireless networking card, and multi-purpose sensors such as camera,
+              these machine provide a real physical test-bed on which system services are
+              evaluated for ad hoc networks. 3) Collection of information from the deployed
+              test-bed on application communication pattersn, mobility models, and observed
+              link characteristics.  This information can be used to carry out
+              better-informed simulations of ad hoc networks.  This grant impacts computer
+              challenges the nation is facing, it results in innovative research on operating
+              systems, database and telecommunications, and it generates course materials and
+              define infrastructure that will allow the project to be repeated elsewhere in
+              the country

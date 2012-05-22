@@ -1,0 +1,1 @@
+/Users/cradreed/Research/TMBrowse/trunk/src/../data/pgm/bic-and-asymptotic-consistency.txt

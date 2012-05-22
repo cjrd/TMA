@@ -1,0 +1,110 @@
+              The dependability of critical systems is an increasing source of
+concern. 
+              Modern software systems are routinely composed of millions of
+lines of source,
+              including "legacy" code from previous generations and
+other vendors, yet
+              critical Internet services and financial systems are
+expected to exhibit "four
+              nines" or "five nines" (99.99% or 99.999%)
+availability.  Vast prior evidence
+              suggests that despite our best
+efforts at achieving a correct design, complex
+              systems can and will fail
+in unpredictable ways, often resulting from
+              unforeseen interactions
+between well-tested components not designed to be used
+              together.  The
+measured effects of such failures in the Internet arena are
+              staggering,
+and in mission-critical systems the costs could be measured in
+              human
+lives, as was nearly the case with bugs in the Patriot missile
+              guidance
+software used in the Gulf War.
+
+Since unexpected failures do in
+              fact occur even in the most careful
+designs, this work proposes a new approach
+              in which system design
+focuses not only on fault avoidance, but on rapid
+              recovery from
+unexpected faults.  In many cases, fault detection and recovery
+              can
+exploit relatively simple, well known techniques that have been proven
+to
+              work in keeping Internet systems highly available---despite their
+very large
+              scale, stressful workloads, and requirements of continuous
+uptime in spite of
+              high levels of software churn and integration of
+legacy code.  Software
+              watchdogs and timeouts can catch unexpected
+exceptional conditions; reactive
+              or prophylactic process- or node-level
+restarts can recover from or prevent
+              transient errors resulting from
+aging-related state corruption or unreclaimed
+              resources; virtual machine
+technology can effectively contain faults in
+              complex software systems.
+Although these mechanisms are simple, the challenge
+              lies in determining
+how software must be structured so that the mechanisms can
+              be applied.
+Similar techniques are well-known in the Internet protocol
+              design
+community and embedded-systems community, prior work from which
+              has
+inspired this approach.
+
+Brown and Patterson have proposed the term
+              "Recovery-Oriented Computing"
+(ROC) to broadly describe the above philosophy. 
+              The primary goals of
+the proposed work include the systematic investigation of
+              ROC
+engineering techniques to reduce MTTR (mean time to recovery) in
+              complex
+software systems, characterization of the properties of software
+              systems
+that make them amenable to ROC, and a set of design rules
+              and
+(re)structuring techniques for applying ROC to software
+              systems.
+Evaluation will include quantification of the trade-offs
+              between
+improvement in service availability and quality of service delivered
+              to
+users.  Testbeds for the work include a ubiquitous computing
+              environment
+co-developed with the Stanford Interactivity Lab, and a
+              prototype
+COTS-based satellite ground station network co-developed jointly
+              with
+the Stanford Space Systems Development Lab.
+
+The research is
+              complemented by new course offerings and revision of
+existing course
+              offerings, at the graduate and undergraduate levels, to
+refocus the software
+              engineering curriculum on models closer to
+industrial practice for building
+              complex critical-infrastructure
+systems.  A new joint graduate course being
+              co-taught with Prof. David
+Patterson at UC Berkeley focuses on applying ROC to
+              a variety of student
+research projects across many domains.  Proposed
+              revisions to
+advanced-undergraduate courses present Internet software
+              systems
+engineering as it is practiced in the field.  In both cases,
+              recognized
+industrial researchers and practitioners are contributing both
+              their
+experience and concrete data that currently is nowhere published
+              about
+how complex systems really fail in the field.
+

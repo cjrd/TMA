@@ -1,0 +1,27 @@
+              This Small Business Innovation Research (SBIR) Phase I project proposes to study
+              the feasibility of a
+simple and practical narrow-bandwidth vacuum ultraviolet
+              (VUV)laser light source,tunable
+around 157 nm.This work will combine recent
+              advances in laser technology and nonlinear-
+optical techniques with
+              previously-studied frequency-conversion schemes.A doubly-resonant
+four-wave
+              mixing in a guided-wave geometry will be used to convert UV light into the
+              VUV.
+Extrapolation from previously observed conversion efficiencies shows that
+              the overall
+conversion efficiency of this process may be increased by
+              100-1000x,from ~10 -4 to near-unity
+efficiency.The laser system that will be
+              developed to drive this process will be small-scale and
+all
+              solid-state.
+
+The commercial potential for such a device promises to
+              radically-improve the practicality of VUV light sources over current laser
+              systems,and will find immediate application as a tool for development of
+157nm
+              lithography for manufacturing of integrated circuits,and well as in a variety
+              of other
+basic science and technological applications.

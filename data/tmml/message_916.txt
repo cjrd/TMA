@@ -1,0 +1,18 @@
+Hi all,
+I encounter a problem when I apply topic modeling in image domain.
+I apply LDA (published code LDA from David M. Blei) to model and
+generate topic representation for images. However I notice that for a
+training images the gamma file has a large value for ONE and only ONE
+topic. In addition, all the words assignment in the beta file are
+assigned to the corresponding topic with almost probability 1. This
+happens even when the training images are randomly selected 4000+
+background images.
+This is strange to me because I think
+1.for an image it should contain some noisy words that may not be
+described by any topics.
+2.given a large random selected training set, there should be some
+images that contain more than 1 topics.
+I do not know whether this is normal in text/image topic modeling.
+Looking forward to your opinions towards this problem.
+Thanks,
+Xin

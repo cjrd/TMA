@@ -1,0 +1,10 @@
+Dear all,
+I have a doubt in the lda-c code implementation.
+in the lda_inference() function, the variational gamma parameter is updated
+using the following expression:
+var_gamma[k] = var_gamma[k] + doc->counts[n]*(phi[n][k] - oldphi[k]);
+However I am not sure about why there is a multiplication by doc->counts[n]?
+Only guess that I could make is, it is done to provide appropriate weight.
+Is that true? Can someone please provide the exact reason for doing that
+multiplication.
+regards

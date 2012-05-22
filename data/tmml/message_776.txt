@@ -1,0 +1,17 @@
+To June,
+Yes, it is  "./lda est 0.8 2 settings.txt ap.txt random output",
+the result is 2 [main] lda 2588 D:\cygwin\code\LDA\lda-c-dist\lda.exe: *** fatal error -cmalloc would have returned NLL   Hangup
+Luo
+At 2010-12-29 17:00:40?"??" <mzhu at seu.edu.cn> wrote:
+do you mean
+./lda est 0.8 2 settings.txt ap.txt random output ?
+June
+? 2010?12?29? ??4:48?luowang<luowang8182 at 163.com>???
+Dear all,
+When I perform estimating of LDA with commond ?./lda est 0,8 2 settings.txt ap.txt random output/", there is a error "3 [main] lda 12040 D:\cygwin\home\mycode\LDA\lda-c-dist\lda.exe: *** fatal error - cmalloc would have returned NULL". What is wrong with my code?
+Best regards.
+Luo
+_______________________________________________
+Topic-models mailing list
+Topic-models at lists.cs.princeton.edu
+https://lists.cs.princeton.edu/mailman/listinfo/topic-models

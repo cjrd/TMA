@@ -1,0 +1,4 @@
+I replied to you in the other email, but I think storage.mode doesn't work for
+what you want.  If you want to ensure that topics is an integer, multiply by
+100000L.  The trailing L tells R that the constant should be treated as an
+integer and not a float.

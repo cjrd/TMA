@@ -1,0 +1,49 @@
+The ICML 2010 Topic Models Workshop will take place on Friday, June 25 in
+Haifa, Israel.
+Workshop website: http://www.cs.toronto.edu/~amitg/topic_models_icml10.html
+We encourage original submissions including, but not limited to:
+Applications that build upon topics models: We encourage works that use
+topic models for applications such as document summarization,
+classification, annotation, machine translation, search, and more.
+Thorough evaluation of topic models: Recent papers have shown that existing
+evaluation techniques are insufficient. We are interested in evaluation
+methodologies for topic models both with respect to other topic models and
+non-topic model methods.
+Applying topic models to structured corpora and incorporating additional
+features into topic models: Considering the inner structure of a corpus may
+lead to enhanced analysis capabilities. Examples include the use of
+authorship information, the study of temporal changes and network models.
+Exploration of topic models in new domains: Recently topic models have been
+applied to problems in computational biology, collaborative filtering and
+more. It would be interesting to explore even further the applicability of
+these models.
+Approximate inference for topic models: Exact inference in hierarchical
+topic models is intractable and researchers resort to approximate methods.
+We welcome introduction of new approximate inference methods as well as
+further investigation and evaluation of existing methods, their extensions
+and combination.
+*Paper submission:
+*Papers can be submitted by seding an email to icml2010topicmodels at gmail.com.
+Papers should be submitted as pdf files in the ICML style
+<http://www.icml2010.org/sub.html>. Papers are limited to 4 pages.
+Supplementary material can be submitted as an attachment. *The paper
+submission deadline is April 26, 2010*.
+*Workshop Organizers:*
+Michal Rosen-Zvi, IBM research Labs, Haifa.
+Amit Gruber, University of Toronto.
+Richard Zemel, Univeristy of Toronto.
+*Program Committee:*
+Jordan Boyd Graber, University of Maryland
+Jonathan Chang, Facebook
+Laura Dietz, Max Planck Institute
+Jacob Eisenstein, Carnegie Mellon
+Jurgen Van Gael, University of Cambridge
+Katherine Heller, University of Cambridge
+Yan Liu, IBM
+Ramesh Nallapati, Stanford University
+John Paisley, Princeton University
+Max Welling, UC Irvine
+Eric Xing, Carnegie Mellon
+Please refer to the workshop webpage
+http://www.cs.toronto.edu/~amitg/topic_models_icml10.html for further
+information.

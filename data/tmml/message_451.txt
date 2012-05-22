@@ -1,0 +1,16 @@
+Really thank you, now I use the random initialization.
+Another question is how to choose the initial alpha, it seems to me that no
+matter what alpha do i choose,
+it kept increasing with a constant speed in the iterations, and not
+converged while the likelihood is converged,
+so I strongly doubt that LDA is easy to get into a local minima as respect
+to the likelihood.
+The same situation happens to the LDA-C implementation.
+???: Jiacheng Guo (MSR Student-Person Consulting)
+[mailto:v-jiag at microsoft.com]
+????: 2008?9?20? 14:27
+???: ???
+??: topic-models at lists.cs.princeton.edu
+??: RE: [Topic-models] Problem about LDA
+I think the problem is the initial beta distribution is identical for each
+topic. So the model is regressed to a more simple model.

@@ -1,0 +1,32 @@
+              0099572
+Sham
+The aim of this theoretical research is to contribute to the
+              construction of fundamental devices in quantum information processing and
+              computation, and in spin-enhanced optoelectronics.  The research is planned on
+              the theory of the basic physical processes involved in the realization of the
+              quantum algorithms by means of laser manipulation of electrons and their spin
+              degress of freedom in semiconductor nanostructures.  A photon in the laser beam
+              can excite an electron in a semiconductor nano-dot into a state known as an
+              exciton.  The circular polarization of the light can also give the exciton a
+              specific spin.  Here, the spin-polarized exciton is selected as the phsyical
+              representation of the fundamental unit of quantum information, the qubit. 
+              Optical control of a single exciton addresses the qubit and optical control of
+              two interacting excitons yields the operation of a quantum logic device.  The
+              research consists of (1) a computation of the energy structures of the
+              multiexciton states; (2) a theory of the nonlinear optical spectra of the
+              quantum dot under intense laser excitation as a diagnostic tool for the
+              conditions of operations; (3) design of the optical processes for the
+              operations of the basic devices; (4) a study of the environmental degradation
+              of the quantum nature of the exciton (decoherence); and  (5) test of the design
+              by numerical simulations of the time series of operations to accomplish simple
+              versions of key quantum algorithms.
+%%%
+The aim of this theoretical research
+              is to contribute to the construction of fundamental devices in quantum
+              information processing and computation, and in spin-enhanced optoelectronics. 
+              The research is planned on the theory of the basic physical processes involved
+              in the realization of the quantum algorithms by means of laser manipulation of
+              electrons and their spin degress of freedom in semiconductor
+              nanostructures.
+***
+

@@ -1,0 +1,3 @@
+Also there is the approach of modeling the changes over time directly in the
+model, which may be more what you're looking for.
+http://www.cs.umass.edu/~mccallum/papers/pamtot-aaaiws06.pdf for example.

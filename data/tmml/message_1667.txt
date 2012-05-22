@@ -1,0 +1,3 @@
+hi all,
+Is there any documentation that explain differences between PLSA and LDA?
+Best regards

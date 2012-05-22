@@ -1,0 +1,21 @@
+              0127676
+Benfey
+
+A critical first step in characterizing gene function is
+              defining the expression pattern of a gene. A novel methodology is being
+              developed in plants to rapidly determine the cell-type specific expression of
+              thousands of transcripts in concert. The technique involves separating plant
+              cells by protoplasting transgenic lines that express GFP in specific cell
+              types, obtaining an enriched population of GFP expressing cells using a
+              Fluorescence Activated Cell Sorter (FACS), and applying mRNA isolated from
+              sorted cells to microarrays. The result is an expression profile from a
+              specific cell type. Extensive controls have been performed and a first round of
+              the entire protocol with a single transgenic line has been completed. The
+              results are extremely promising with microarray profiles of specific genes in
+              agreement with their independently confirmed expression patterns in the
+              Arabidopsis root. The aims of this proposal are to: 1) Further test and develop
+              the methodology.   2) Expand the number of sorted cell lines.  3) Develop
+              computational tools to analyze and disseminate the data. The risk associated
+              with this project is balanced by the enormous potential benefit to the plant
+              community.
+

@@ -1,0 +1,6 @@
+              This work aims at a unified treatment of radiative corrections in neutral atoms,
+              using both perturbative approaches (exploiting nonrelativistic QED) and a full
+              nonperturbative treatment of the electron propagator. Studies will focus on the
+              two loop Lamb shift, but will also address radiative binding corrections in
+              cesium (relevant both for PNC and for hyperfine splitting) and energy
+              calculations in helium and helium-like ions. 

@@ -1,0 +1,5 @@
+Has anyone ever done something like Labeled LDA with hyperparameter
+manipulation rather than a hard constraint on the available topics?
+Also, which state-of-the-art discriminative models in particular did
+you have in mind?
+- Anthony

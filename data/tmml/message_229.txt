@@ -1,0 +1,71 @@
+Dear Mateusz and list,
+ok, I'm retrying ;)
+Mateusz Berezecki wrote:
+yes. \beta is a matrix of dimension K x V, and each row is a multinomial
+parameter vector \vec\beta_k. Note that \phi contains the same
+information but spread over terms, it's of dimension M x T_m x K, with
+T_m the number of terms in document m. For completeness, I'll give some
+more info on how to interpret \phi below...
+yes. Note that my notation rather agrees with the lda-c implementation
+than the LDA paper: In Eq. (9), the sum over all words of a document
+(with terms w_dm^j) is equal to what I described as sum over all terms
+(unique words) weighted by their frequencies, n_mt, or (n_dj if you take
+the indices for documents and terms used in the paper). This shows a
+lapse in my first post: Of course, the repetitions of terms in documents
+also go into \phi: E{n_kt} = \sum_{m=1:M} phi_tk^(m) n_mt.
+These are not really counts but rather expectations of counts, therefore
+double** class_word and double* class_total, not int... By summing the
+\vec\phi_t^(m) over all documents, we can get these expectations (I
+didn't really mean the variational \gamma's in the first post). If you
+add up (the non-integer) multinomial vectors, you get an expectation of
+a total count of occurrences for each dimension of the multinomial (in
+our case, topics associated with a given term t). Further explanation below.
+Please consider this count interpretation a _metaphor_. I used this
+because in a collapsed Gibbs sampler, there are real integer count
+variables that have the same function as these float arrays. You may
+have a look at Griffiths and Steyvers (PNAS, 2004) or
+http://www.arbylon.net/projects/LdaGibbsSampler.java for reference.
+Further, in collapsed variational Bayes (Teh et al., NIPS 2006), count
+distributions (and expectations) are used explicitly.
+Consider the equation:  s_\alpha = \sum_{m=1:M} \sum_{k=1:K} E_q{\log
+\theta_mk}
+- "sum" ... "over all documents and topics": \sum_{m=1:M} \sum_{k=1:K}
+- "expected suff stats": E_q{\log \theta_mk}
+- "suff stats": \log \vec\theta_m (cf. A.1 in LDA paper)
+- "expected":
+- Note that there are various quantities in the algorithm termed
+sufficient statistics, some of which don't seem to be exactly the formal
+sufficient statistics (e.g., cf. John Winn's thesis, 2003) but fulfil
+their task of compressing the info on the parameter.
+Once I'm writing anyway, another couple of remarks describing the
+thoughts that sparked my understanding of LDA (and mean-field
+approximations) -- maybe they help others, too:
+Look into how \phi and \gamma work as priors on the z and \theta
+variables in the variational approximation. They contain vague
+information on their associated variables \theta and z, repectively, and
+maintain a connection to global information.
+For \phi, specifically: \vec\phi_t^(m) is a multinomial parameter
+(distribution) of topic associations z=k to each term w=t in each
+document d=m, in other words, something like p(z=k | d=m, w=t).
+Averaging it over all documents (and transposing: tk -> kt) leads to the
+estimate of \beta_kt = p(w=t | z=k).
+It may be also worthwhile to look from where the \phi's are "fed" with
+information: In the E-step, Eq. (6) or (16), respectively, global (via
+the \betas) as well as local information (via the \gammas) is gathered
+into \phi, while in the M-step, via Eq. (9) local information of \phi is
+scattered globally.
+BTW: The repetitions of terms in documents also go into \phi: E{n_kt} =
+\sum_{m=1:M} phi_tk^(m) n_mt. That was missing in my first post.
+Regarding \gamma:
+\gamma_mk is a Dirichlet distribution over each document's \theta_m (and
+represents this throughout the variational optimisation). Getting the
+mean multinomial vector of this Dirichlet leads to an estimate for
+\theta_mk = p(z=k | d=m).
+During the E-step, the information of the document-specific topic-term
+distributions is smoothly gathered into a topic distribution via Eq.
+(8). This equation also reveals that some correlation exists between the
+\phi and \gamma distributions of one document.
+Ok, this may be redundant to what was said before, but in the hope of
+better insight.
+Cheers
+gregor

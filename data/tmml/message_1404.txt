@@ -1,0 +1,21 @@
+Hi,
+I'm still fairly new to LDA, and I've been playing with Yahoo's LDA
+implementation.
+The Yahoo code produces a file called:
+lda.worToTop.txt
+www.teddybears.com/	recreation/toys	(teddy,15) (bears,15) (enjoy,2)
+(teddy,15) (bears,15) (enjoy,2) (featuring,41) (teddy,15)
+www.bearsbythesea.com/	recreation/toys	(teddy,99) (bear,99) (store,81)
+(pismo,30) (beach,88) (california,24) (specialize,99) (muffy,99) (store,11)
+(complete,11) (collections,46) (checkout,84) (web,87)
+So this shows that teddy is in topic 15 adn in topic 99.
+However, what I thought I would be looking for, is a vector, whereby each
+word is defined as a set of probabilities into a particular topic.  (eg,
+with 600 topics I could have a vector that maps that word into each of those
+600 topics)
+This vector could then be used for calculating similarity against other
+words, etc.  Is the correct idea?
+If so, using the Yahoo LDA output, for each unique word, I have to calculate
+that vector and probability myself, using the above file?  Perhaps I'm
+missing something?
+Thanks, Ian

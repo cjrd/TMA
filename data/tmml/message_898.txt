@@ -1,0 +1,47 @@
+Hi, David:
+Thanks for your comments. I really appreciate.
+The model essentially uses sLDA-style hierarchy to model data ambiguity. For
+example, for the task of paragraph-wise topic tracking, suppose each
+document is ambiguously labeled with multiple class labels, and we want to
+identify the class label for each paragraph. We find the sLDA hierarchy an
+elegant way to model such ambiguity. Particularly, we cast z as the
+per-paragraph class label (we assume each paragraph is only relevant to one
+class, so z is a binary vector with only one entry being 1).  z is not
+observed, instead, only the document-level label y is observed (each
+document is ambiguously labeled, so y has multiple entries being 1), z and y
+are linked through a cost-sensitive voting process: the c-th component of y
+(the probability that the document is relevant to the c-th class) is roughly
+proportional to the c-th components of z-bar (the number of paragraphs that
+are relevant to the c-th class). This allows us to infer z (per-paragraph
+class label) for each paragraph.
+In essence, from z to the words in each paragraph is a naive Bayes
+classifier with the label z unobserved; from z_bar to y, is a softmax
+matching between averaged (latent) paragraph label to document label; from
+alpha to theta is a Dirichlet-based Bayesian treatment similar to LDA.
+As the topics are explicitly interpreted as class labels, so the number of
+topics always equals to the number of classes.
+This sLDA-style hierarchy provides an elegant way to model data ambiguity.
+An input-ambiguous system takes a (variable-length) set of vectors as input,
+and output a single vector, an example is multi-instance learning; an
+output-ambiguous system takes a single vector as input, and output
+a (variable-length) set of vectors, multi-label classification is one
+example of this; An double (both I&O) ambiguous system takes
+a (variable-length) set of vectors as input and output
+a (variable-length) set of vectors, an example task is multi-label
+multi-instance classification.
+The sLDA-style hierarchy is eligible for modeling all these three cases, for
+example:
+1. input ambiguity: paragraph-wise topic tracking in single-label document
+(one z per paragraph, y has only one entry being 1), i.e., given a document
+and its label, for each paragraph, judge whether this paragraph is relevant
+to the label;
+2. output ambiguity: multi-label text classification (one z per word, y has
+multiple entries being 1), i.e., given a set of ambiguously labeled
+documents, predict labels for incoming ambiguous documents
+3. double ambiguity: paragraph-wise topic tracking in multi-label document
+(one z per paragraph, y has multiple entries being 1), i.e., given a
+document and its label, disambiguate each paragraph (i.e., identify the most
+relevant label for each paragraph);
+Thanks for your interests and look forward to your feedbacks.
+Regards
+Shuang

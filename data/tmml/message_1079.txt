@@ -1,0 +1,8 @@
+i didn't mean to be mysterious. ?it will be a NIPS paper, and the
+camera-ready is due at the end of october. ?we will post it then.
+i should add: based on the title, there looks to be another NIPS paper
+about a similar problem. ?"Deterministic Single-Pass Algorithm for
+LDA" by?I. Sato,?K. Kurihara,?H. Nakagawa?is also on the list of
+accepted papers.
+best
+dave

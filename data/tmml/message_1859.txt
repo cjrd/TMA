@@ -1,0 +1,33 @@
+The previous error got sorted out. Thanks a lot for that
+Now, when I try to compile ('make') the hlda code, I get the following
+errors -
+In file included from utils.c:1:
+utils.h:17: error: expected ?=?, ?,?, ?;?, ?asm? or ?__attribute__? before
+?TIME?
+utils.c: In function ?init_random_number_generator?:
+utils.c:15: warning: implicit declaration of function ?time?
+utils.c: In function ?directory_exist?:
+utils.c:43: error: ?errno? undeclared (first use in this function)
+utils.c:43: error: (Each undeclared identifier is reported only once
+utils.c:43: error: for each function it appears in.)
+utils.c:43: error: ?ENOTDIR? undeclared (first use in this function)
+utils.c: In function ?read_vect?:
+utils.c:306: warning: format not a string literal and no format arguments
+utils.c: In function ?read_int?:
+utils.c:328: warning: format not a string literal and no format arguments
+utils.c: In function ?write_int?:
+utils.c:336: warning: format not a string literal and no format arguments
+utils.c: In function ?write_double?:
+utils.c:343: warning: format not a string literal and no format arguments
+utils.c: In function ?read_double?:
+utils.c:350: warning: format not a string literal and no format arguments
+utils.c: At top level:
+utils.c:357: error: expected ?=?, ?,?, ?;?, ?asm? or ?__attribute__? before
+?TVAL?
+utils.c: In function ?outlog?:
+utils.c:362: error: ?TVAL? undeclared (first use in this function)
+utils.c:363: warning: implicit declaration of function ?ctime?
+make: *** [utils.o] Error 1
+Can someone throw light on what exactly is the issue here?
+Thanking you
+Regards

@@ -1,0 +1,6 @@
+Hi all,
+I am trying to use R package by Jonathan Chang. I am newbie to R. I have
+data in lda format in text file and I want to use that for R package
+implementation of lda code. Can anyone please tell me how to do that ?
+Thanks,
+Govind

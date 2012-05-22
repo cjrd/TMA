@@ -1,0 +1,5 @@
+I guess you can try a few different number of topics and plot the perplexity
+and choose the one from the smooth portion. Or you may use other model which
+does not require the number of topics to be specified, such as HDP.
+Hope it helps.
+Yiliang

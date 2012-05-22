@@ -1,0 +1,29 @@
+I'm looking into using David Blei's turbo topics code, posted on his
+website, and I'm trying to make sense of the format for the input files.  If
+someone who has used the code before could make sure I'm understanding this
+right, I would greatly appreciate it.  I searched through the list archives,
+wondering if anyone had already answered this, and I couldn't find anything.
+It looks like I need three things:
+- a vocab file, one word per line, just like the input to LDA-C
+- a corpus file, with the (non-pre-processed) text of the documents, one
+document per line
+- an assignment file, whose format is somewhat nebulus to me
+this:
+One line per document, with the first element probably being the filename or
+the number of unique words in the document, as in the LDA-C input (though
+that's ignored, anyway, it looks like).  Presumably the order of the
+documents must be the same in both this and the corpus file.
+In the line, you have one entry per unique word, with the entry being
+[word_index]:[topic_number].
+And then turbo topics takes care of the rest?  Do I have the format right?
+I have a state file as output from mallet, and a corpus file already
+formatted close to what the turbo topics code wants, so it seems like it
+wouldn't be too much work to get everything into that format.  But, I would
+like to be sure I have the format right before doing that work.  Any help?
+Also, what if a word was labeled with more than one topic in a document?  It
+looks like you just label it with the topic that had the highest count for
+that word in that document (if you're going from a mallet output file)?
+That's what I understood from the paper, anyway.  You lose some
+information, but hopefully it's still good enough.
+Thanks,
+Matt Gardner

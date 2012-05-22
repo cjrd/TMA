@@ -1,0 +1,5 @@
+[apologies if this is a re-post; the last message was bounced ]
+I just returned from a short presentation by a visitor about topic analysis and it was noted that one of the benefits of topic analysis (e.g. LDA) over concept analysis (e.g. LSA) was the ability of topic analysis to better handle polysemy and synonymy. The discussion that followed resembled the religious discourses between Bayesians and Frequentists.
+I thought I understood the limitations of LSA relative to polysemy (Gaussian assumption, etc.), but would someone point me toward a formal discussion(s) that contrasts LSA and LDA?
+Many thanks,
+Dave

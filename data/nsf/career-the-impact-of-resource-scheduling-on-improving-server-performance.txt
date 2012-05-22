@@ -1,0 +1,22 @@
+              This proposal tackles fundamental problems in system design using a two-pronged
+              approach including both queueing theory and kernel-level implementation. 
+              Particular emphasis is placed on understanding the impact of heavy-tailed
+              properties in compute workloads.  The proposal
+focuses on two specific
+              research questions:
+
+(1) Is it possible to reduce the expected response time
+              of every request at a server, simply by changing the order in which requests
+              are scheduled?  Todays web servers employ FAIR scheduling, wherein requests are
+              time-shared fairly.  This proposal considers instead
+scheduling which biases
+              towards SHORT requests, and argues analytically and via implementation that
+              biasing towards SHORT requests improves response times for all requests.
+
+(2)
+              How should servers be designed to cope with transient overload conditions? 
+              Most of client dissatisfaction can be attributed to moments of temporary
+              overload at the server.  This proposal aims to  understand exactly what happens
+              to systems during overload, both via a formal queueing analysis and via a
+              rigorous systematic study of server/OS internals.
+

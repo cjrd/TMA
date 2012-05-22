@@ -1,0 +1,3 @@
+Not aware of an explicit comparison between LDA and NMF but Chris Ding published a study of equivalence between pLSI and NMF:
+http://ranger.uta.edu/~chqding/papers/NMFpLSIequiv.pdf
+http://ranger.uta.edu/~chqding/papers/

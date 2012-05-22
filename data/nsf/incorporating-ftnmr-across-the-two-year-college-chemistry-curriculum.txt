@@ -1,0 +1,18 @@
+              Chemistry (12) 
+Nuclear magnetic resonance (NMR) is an indispensable tool for
+              the determination of the structures of molecules, the analysis of chemical
+              mixtures, and the determination of reaction kinetics. Efforts to provide
+              students with hands-on experience using NMR in the laboratory are greatly aided
+              by converting an outdated Varian EM360 continuous-wave NMR spectrometer into a
+              modern multinuclear Fourier-transform instrument (FTNMR). This cost-effective,
+              user-friendly solution allows rapid data acquisition, making student collection
+              of spectra a routine procedure. Adaptation of experiments from the Journal of
+              Chemical Education and incorporation of FTNMR into current experiments allow
+              students at all stages of their chemical education to have access to the
+              instrument. FTNMR is used across the curriculum to demonstrate the power of the
+              technique in Introductory Chemistry, to determine molecular structure in
+              General Chemistry, and to perform multinuclear and two- dimensional experiments
+              in Organic Chemistry. Early and continued exposure to FTNMR reinforces
+              important chemical concepts, engages students, helps develop their
+              problem-solving skills, and exposes them to the uses of technology in
+              chemistry.

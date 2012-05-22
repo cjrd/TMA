@@ -1,0 +1,7 @@
+hi andrew,
+yes, it should be the former.
+(but the equation doesn't match the sentence.  i can see why you would
+interpret it to mean the latter.  we'll fix this in the next version
+of our paper.)
+best,
+dave

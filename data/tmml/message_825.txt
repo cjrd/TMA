@@ -1,0 +1,5 @@
+Hi all,
+Recently, I want to re-implement the hlda by matlab, but find that the computation complexity is terrible, especially when the number of documents exceeds 200. Dose anyone note this question? And, does anyone know how long does one iteration of the gibbs sampler take, when using it to analyse a collection of 12'913 abstracts from PNAS?
+Note that Dr. Sivic suggested that one iteration of gibbs sampler takes about 10s on 2Ghz machine, when considering a dataset of 125 images in CVPR08. Dose the computation cost increase linealy with the number of documents?
+Thanks.
+Best regards.

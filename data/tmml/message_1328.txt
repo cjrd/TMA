@@ -1,0 +1,15 @@
+Hi all,
+I'm using HDP model and the code 'npbayes-r1'. Can someone help me to
+solve a problem on constructing a presentation
+of HDP in the code.
+As *the*  paper (*Hierarchical Dirichlet Processes, *Y.W. Teh, M.I.
+Jordan, M.J. Beal and D.M. Blei. JASA 101(476):1566-1581, 2006.) said,
+HDP dose not assume a fixed finite number of topics, but why the
+number of topics ('numclass') is set manually in code 'testbar.m'? I
+have noticed that the number is updated with the iteration, but
+different initial values do effect the result of topic number. Can I
+use any function in 'npbayes-r1' to generate 'numclass' automatically?
+Or how to set the number of topics manually?
+Thank you very much!
+Best,
+christine

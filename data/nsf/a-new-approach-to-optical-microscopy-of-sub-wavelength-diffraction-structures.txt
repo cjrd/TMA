@@ -1,0 +1,37 @@
+              The objective of the proposed project is to use computer simulation to study the
+              feasibility of a new type of optical microscope for measuring the sizes and
+              shapes of three-dimensional objects whose dimensions are smaller than the
+              wavelength of the light employed. Conventional optical microscope based on
+              measurement of the intensity distribution on the image plane is not capable of
+              resolving spatial details much smaller than about one wavelength. The proposed
+              optical microscope, however, is based on ellipsometric measurements of the
+              electric field scattered by an object onto the back focal plane of the
+              objective lens. The ellipsometric data allow the relative phases among
+              different components of the Jones matrix of the optical system to be computed.
+              This phase information is then used to determine the shape of the object by
+              solving an electromagnetic inverse problem.
+
+
+The proposed microscope idea
+              should be of great scientific interest, since the technique of using the phase
+              information obtained from back-focal-plane ellipsometric measurements for
+              object shape reconstruction is novel. Also, the proposed method is insensitive
+              to positioning and focus errors of the sample, which is an important
+              consideration if the method is to be applied to solving metrology problems in
+              industry.
+
+
+The proposed feasibility study will consist of using computer
+              simulation to generate hypothetical data, which will then he used to test the
+              convergence and robustness of various numerical algorithms for solving the
+              electromagnetic inverse problem of shape reconstruction from the hypothetical
+              data. In the process of carrying out the feasibility study, the graduate
+              student involved will gain in-depth knowledge of optical imaging theory and
+              firsthand experience with various numerical methods of electromagnetic. As
+              such, the proposed project should be of great value in the education of
+              graduate students interested in working in an interdisciplinary area involving
+              both optics and electromagnetics. Also, if the results of the feasibility study
+              appear promising, future research projects may he initiated to test the
+              proposed microscope idea experimentally
+
+

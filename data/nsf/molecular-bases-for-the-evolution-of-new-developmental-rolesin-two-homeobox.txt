@@ -1,0 +1,35 @@
+              It has become clear that modifications in the interactions among developmental
+              regulatory genes are an important source of phenotypic change during the course
+              of evolution. Recruitment is an evolutionary process where an existing
+              regulatory gene acquires a new developmental role. One of the first cases of
+              recruitment to be recognized was the acquisition of a pair-rule patterning role
+              for even-skipped during insect evolution. Many other probable cases have since
+              been identified from various phyla, suggesting that recruitment is a relatively
+              common and important evolutionary process -- yet almost nothing is known about
+              the mechanistic basis for recruitment. This proposal focuses on three putative
+              cases of recruitment in echinoderms. One involves the expression of distal-less
+              in the imaginal rudiment of echinoids, before and during ectodermal
+              invagination. The other two are apparently independent cases, in holothuroids
+              and echinoids, where orthodenticle expression has become tightly correlated
+              with shifts in the cilated bands of larvae. The proposed research examines the
+              genetic, developmental, and evolutionary bases for these three cases of
+              recruitment. The first goal is to define the phylogenetic context. This
+              involves analyzing gene expression in several species, including ones with
+              morphologies that differ in ways that are likely to be informative. Comparative
+              expression data are used to identify when during the diversification of
+              echinoderms the new role appeared. These data are also used to identify species
+              that closely bracket the transition for experimental characterizations. The
+              second goal is to examine the altered developmental role experimentally. This
+              involves analyzing the phenotypic consequences of various manipulations of gene
+              expression: misexpression, overexpression, and blocked expression. These
+              experiments are done with species that have the new developmental role as well
+              as those that lack it.  Phenotypes resulting from these experiments will
+              provide functional information about the new role. The third goal is to seek
+              the genetic basis for each new role. This involves characterizing the genetic
+              basis for the expression domain associated with the new developmental role.
+              Transient expression assays are used to investigate this, involving
+              promoter/reporter constructs that are swapped between species. These
+              experiments will reveal whether the new expression domain is due to changes in
+              the sequence of the 5' flanking region (cis) or in the array of transcription
+              factors present in the nucleus (trans). These studies are expected to provide
+              important insights into the evolution of gene regulatory systems.

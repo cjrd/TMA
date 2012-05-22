@@ -1,0 +1,8 @@
+Dear Topic Modelers,
+I am trying to implement collapsed Gibbs sampling for the Hierarchical
+Pitman-Yor process and wondered if anybody would be willing to share
+some insight into sampling the hyperparameters (discount and strength
+of the various PY processes). Is there a public implementation of
+HPY-LDA that I could learn from?
+Cheers,
+Josh Shadlen

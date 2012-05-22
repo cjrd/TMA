@@ -1,0 +1,12 @@
+I spent some time tracking down a segfault like this in slda. I don't
+know if the same might apply to the lda code. The problem was that my
+validation dataset had tokens with indices greater than the largest in
+the training set.
+The quick fix is to make sure a document containing the token with the
+largest index is in the training data set - of course, then you have
+to refit the model. If you're at all familiar with C, it isn't too
+difficult to modify the code. For slda, I needed to modify the
+function read_data in corpus.cpp (I just assigned the vocab size to
+the variable nw directly, but you could add a command line switch or
+something).
+-Jared

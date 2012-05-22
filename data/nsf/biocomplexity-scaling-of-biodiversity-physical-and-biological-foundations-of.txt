@@ -1,0 +1,21 @@
+              0083422
+Brown
+	Underlying the diversity of life and the complexity of ecology
+              is order that reflects the operation of fundamental physical and biological
+              processes.  Scaling relationships are emergent quantitative features of
+              biodiversity. Some of them appear to be universal, occurring in virtually all
+              taxa of organisms and kinds of environments. They are patterns of structure or
+              dynamics that are self-similar or fractal-like over many orders of magnitude.
+              They can be described mathematically by power functions. They allow
+              extrapolation and prediction over a wide range of scales., They offer clues to
+              underlying mechanisms that powerfully constrain biodiversity. This research
+              will use the interplay of mathematical models and empirical measurements to
+              elucidate the physical and biological principles that determine how the life
+              history, abundance, distribution, and species richness of organisms scale with
+              body size, space, and time. The program of research and education activities
+              involves: (1) collaborations among physicists, mathematicians,
+              geologists/hydrologists, biologists and ecologists, (2) interactions among
+              scientists from seven institutions, (3) cooperation between the University of
+              New Mexico, the Santa Fe Institute, and Los Alamos National Laboratory, and (4)
+              interdisciplinary training for graduate students and postdoctoral fellows.
+

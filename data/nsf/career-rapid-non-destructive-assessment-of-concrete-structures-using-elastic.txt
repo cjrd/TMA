@@ -1,0 +1,21 @@
+              This proposal offers an approach for rapid and accurate non-destructive
+              evaluation (NDE) to assess the in-place condition of concrete structures.
+              Sensitive and practical NDE techniques are of great value to agencies that
+              govern the infrastructure. However, the time and effort required to perform
+              current NDE tests and to analyze the results limit widespread application. This
+              proposal aims to develop a rapid and robust method to collect elastic wave data
+              from a concrete structure and an approach for imaging structures that
+              characterizes the location, type and magnitude of damaged areas. The proposed
+              approach makes use of several innovations including (a) use of surface-guided
+              waves, (b) sensitive, non-contact wave reception techniques such as air-coupled
+              transducers and laser interferometry, (c) one-sided, point source, point
+              receiver NDE measurements such as surface wave transmission and velocity scans,
+              and (d) an imaging approach that makes use of the developed measurement data.
+              An educational plan is closely integrated with the proposed research.  The
+              intent of the educational plan is to design an undergraduate and graduate
+              engineering curriculum at Drexel University that responds to current needs of
+              the infrastructure industry. The plan also includes additional educational
+              outreach to encourage inner-city students to pursue a career in
+              engineering.
+
+

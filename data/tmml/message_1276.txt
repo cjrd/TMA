@@ -1,0 +1,12 @@
+Hi Bin,
+Thanks for taking an interest in the package.
+1.) The sample is
+actually multiplied by p(annotations[dd] | z_i, z_{-i}, variance, beta).  The
+variables in the code are very poorly named.   I have attached some draft
+documentation on the exact sampling equations that I tried to implement.
+2.)
+The variance should not be fixed; there's variance parameter on both slda.em
+and .slda.collapsed.gibbs.sampler.  No learning happens on the variance
+parameter yet but it's on the todo list.
+Cheers,
+Jonathan

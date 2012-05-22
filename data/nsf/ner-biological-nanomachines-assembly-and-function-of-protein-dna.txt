@@ -1,0 +1,28 @@
+              Through evolution, biology has produced a remarkably diverse and efficient
+              collection of proteins. These proteins assemble into a seemingly infinite
+              variety of nanobiostructures, and they promote an extensive repertoire of
+              chemical processes; hence, they comprise an interesting collection of
+              biomolecular nanomachines. The proteins that are responsible for the
+              maintenance and manipulation of DNA are one important subset of this
+              collection. Their capacity to assemble with, and to alter the structure of, DNA
+              is essential for all biological function.  These proteins function in the
+              packaging of DNA, the high-fidelity copying of genetic information, the reading
+              of the genetic code and its conversion into RNA, the generation of genetic
+              diversity, and the preservation of genetic and structural integrity of the
+              genome.  This project describes a new experimental approach to study the
+              assembly and function of several of the nanomachines that function in these
+              biological processes.  The method involves the direct visualization by
+              fluorescence microscopy, in real-time, of the assembly, disassembly, and
+              movement of these nanobiostructures on single, optically-trapped DNA molecules
+              using a novel, multi-port, laminar-flow, micro flow cell.  This instrument will
+              allows one to readily introduce an individual, optically-trapped DNA molecule
+              sequentially into a series of reaction conditions, and to visualize the changes
+              in structure/assembly of the molecules in real-time using multi-wavelength
+              fluorescence microscopy. The successful development of this instrument will
+              reveal important information about the structure and function of DNA-protein
+              interactions that cannot be obtained using large ensembles of DNA molecules
+              (where such information is often lost by averaging, or obscured by competing
+              intermolecular interactions). This research will provide revolutionary new
+              information about how proteins function to alter the structure of DNA.
+              Furthermore, the experimental techniques can be applied to the study of many
+              other nanoscale biostructures.

@@ -1,0 +1,10 @@
+Hello,
+Because of the logistic function, the topic parameters (\eta) can be
+shifted by an arbitrary amount with the same proportions ( exp( \nu_i
++ c )/\sum_j exp( \nu_j + c ) = exp( \nu_i )/\sum_j exp( \nu_j ) ) .
+So, without loss of generality, the Kth topic parameter is set to 0,
+and all other parameters are relative to it. After estimating the
+topic proportions of the K-1 topics at the very end, you can find the
+proportion of the Kth topic using 1 - \sum_{i=0}^{K-1} \theta_i. I
+hope that helps?
+Cheers,

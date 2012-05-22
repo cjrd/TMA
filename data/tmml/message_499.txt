@@ -1,0 +1,17 @@
+Thanks, David.
+If I were to try clustering with n-gram features, I would start by looking
+to Wang & McCallum's work on Topical N-grams for inspiration.  Probably
+worth pursuing.
+There is some fairly recent work on using the vMF in place of the
+multinomial for clustering, which I recently learned about through Charles
+Elkan's work:
+Zhong, S. & Ghosh, J. (2005). Generative model-based document
+clustering: a comparative study. Knowledge and Information Systems, 8(3),
+374?384.
+Elkan and others have followed up using the vMF and the Dirichlet Compound
+Multinomial:
+Elkan, C. (2006). Clustering documents with an exponential-family
+approximation of the Dirichlet compound multinomial distribution. In ICML
+?06: Proceedings of the 23rd International Conference on Machine learning.
+New York, NY: ACM, 289?296.
+Regards,

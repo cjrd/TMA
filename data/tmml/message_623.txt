@@ -1,0 +1,30 @@
+Hi,
+I have a question. I will be very grateful if someone can help me out!
+I want to regularize the statistical topic models (LDA and its
+variants) with a harmonic regularizer over a graph. That means, the
+data collection contains the documents as well as a graph associated
+with it. For example, we?ve a graph G= (V,E) where the nodes
+represent the words in the documents and the edge (<u,v>) weights
+represent a similarity value between word u and v. I want to
+regularize so that if two nodes/words are close in the graph with
+larger similarity value, they should be in the same topic. Therefore,
+I came up with the following optimization function:
+O(C,G) =        - (1-\lamda) * Sum_d    Sum_w    log (Sum_k P(w|z_k) *
+P (z_k|d)  +
+\lamda/2 Sum_<u,v> in E   weight(u,v) Sum_k (P(z_k|u) ? P (z_k|v))^2
+where d is the variable for documents, z for topics, w for tokens.
+\lamda is the biasing parameter between the regularizer and the model.
+I want to minimize this function. The first part is the LDA part and
+the 2nd part is the harmonic regularizer. However, I am not an expert
+in Machine Learning. I don?t know whether Gibbs sampling can be used
+to get the solution here or not. Is it possible then how? It would be
+a great help if someone can tell what will be the equation for P(w|z)
+and P(z) and P(z_i = j|z_-i, w) in Gibbs sampling?
+If Gibbs sampling can?t be applied, is EM is applicable here? If yes
+then how can I get the Max Likelihood estimates in the M-step (I mean
+the equations)? I?m not sure whether a point estimate is possible here
+or not. Any help/pointer on which method could be applied, would be
+really appreciated.
+Cheers,
+Shafiq Joty
+CS dept, UBC, Vancouver, Canada

@@ -1,0 +1,35 @@
+              9806051  Christman  Research is proposed to develop new statistical models and
+              related inference for count data observed on spatial lattice.  Two spatial
+              models for count data on a lattice are available in the classical frequentist
+              approach: (1) a conditionally specified model in which the distribution of the
+              variable, Y at a single site, depends functionally on the values of the
+              variable in its surrounding neighborhood, and (2) a simultaneously specified
+              model in which the joint distribution of Y over the entire region is given. 
+              The purpose of the proposed research is to extend the methodology of
+              conditionally specified models to other types of auto-distributions that do not
+              necessarily belong to exponential families.  The specific types of
+              distributions that are to be studied are hierarchical and mixture models
+              commonly seen in environmental applications.  In addition to determining the
+              conditions underwhich conditional auto-models have valid joint distributions,
+              the PI will study several aspects of modeling that are also relevant to models
+              based on exponential families.  For example, one area of research will be to
+              identify the appropriate means of expressing spatial dependence, i.e. through
+              which parameter is it better expressed.  The PI will perform this research
+              while a visiting professor for academic year 1998-99 in the Department of
+              Stateistics at Iowa State University.  There exists at Iowa State University a
+              remarkable concentration of expertise and interest in the faculty that is
+              relevant to the proposed research.  This collection of people is ideally suited
+              to bringing new ideas, observations, and expertise to bear on the problems of
+              modeling count data on a spatial lattice, especially as it applies to
+              environmental problems.  The proposed research will allow her to develop
+              statistical and computer skills that increase her capabilities and research
+              potential and will allow her to contribute to the advancement in the
+              statistical sciences as it relates to spatial modeling.   Further d evelopment
+              in her research abilities will directly improve the PI's teaching capability
+              both at the undergraduate and graduate levels by increasing her own
+              understanding of stochastic modeling general and spatial modeling in
+              particular.  The opportunity to build her expertise in modeling would provide
+              her with the tools to effectively mentor graduate as well as undergraduate
+              students and to collaborate fully with other researchers in spatial models. 
+              This POWRE project is  supported by the MPS Office of  Multidisciplinary
+              Activities (OMA).

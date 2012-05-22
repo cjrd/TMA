@@ -1,0 +1,5 @@
+Hi, all:
+I am a beginner about hlda, when I want to show results with the hlda-c(http://www.cs.princeton.edu/~blei/topicmodeling.html), I was confused with the programm. After much efforts, I still dont know how to use the hlda-c. so I come here to ask for some help. Can anyone kindly tell me how to use the hlda-c in details? in fact, I have complied the programm, and I have got the command file 'main', but I really dont know which I shold do the next step.
+Thank you.
+Best wishes.
+Aphang

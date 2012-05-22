@@ -1,0 +1,321 @@
+
+In this second tutorial video on Octave,
+I'd like to start to tell you how to move
+data around in Octave. So, if you have
+data from a sheet learning problem, how do
+you load that data in Octave? How do you
+put it into a matrix? How do you
+manipulate these matrices? How do you save
+the results? How do you move data around
+and operate the data? Here's my active
+window as before. Picking up from where we
+left off in the last video. If I type A,
+that's the matrix that we generated,
+right? [inaudible] just command=1, two,
+three, four, five, six. And, this is a
+three by two matrix. The size command in
+[inaudible] let's you, Tells you what is
+the size of the matrix so size A returns
+D2 it turns out that the size command
+itself is actually returning a 1x2 matrix
+so you can actually set as Z = size of A
+and as Z is now a 1x2 matrix where the
+first element of this is three and the
+second element of this is two. So you can
+type size of as Z as Z is a 1x2 matrix
+who's two elements contain the dimensions
+of the matrix A you can also type size A1.
+To give you back the first dimension of A
+the size of the first dimension of A so
+that's the number of rows a size of two to
+give you back a two which is the number of
+columns in the matrix A. If you have a
+better V. So let's say V=1, two, three,
+four. And you type length V, what this
+does is it gives you the size of the
+longest dimenstion. So, you can also type
+length. A and because A is a three by two
+matrix the longer dimension is a size
+three so this should entail three. But
+usually we apply we apply length only to a
+vector. So, you know, length one, two,
+three, four, five rather than apply link
+to matrixes because that's a, that's a
+little more confusing. Now. Lets look at
+how to load data and find data on a file
+system. When we start on Octave we're
+usually, we're often in a path that is you
+know the location of where the octave
+program is so the PWD command shows the
+current directory or the current path that
+Octave is in so right now we're in this
+somewhat maybe obscure directory the CD
+command that stands for change directory
+so I can go to C color / user / ANG /
+desktop. And, now I'm in your, my desktop.
+And if I type LS. Ls, is, sort of comes
+from a Unix or Linux command. But LS will
+list the directories on my desktop and so,
+you know, these are the files that are on
+my desktop right now. [sound], [sound] In
+fact on my desktop are two files features
+X and price Y that maybe come from a
+machine learning problem I want to solve
+so here's my desktop, here's features X.
+And features x is this window, excuse me,
+is this file, with two columns of data.
+This is actually my housing prices data.
+So I think, I think I have 47 rows in this
+data set, and so, the first house at size
+204 square feet has three bedrooms, second
+house has 1600 square feet, has three
+bedrooms, and so on. And price y is this
+file. That, has the prices of the data in
+my training set. So, [inaudible] why I
+just text files with my data. [inaudible]
+load this data into [inaudible] load
+features X.dat. And if I do that, I load
+the features X, we can load price Y. Got
+that. And by the way, there are multiple
+ways to do this. This command, if you put
+features X dot dat in strings and load it
+like so, this is oops typo there this is
+equivalent commands so you can but this
+way I'm just putting the file name with
+the string and the file name in the string
+and with octave use single quotes to
+represent strings like so, so that's a
+string and we can load. The file who's
+name is given by that string. Now the who
+command now shows me what variables I have
+in my active work space. So who shows me
+whether the variables the octave has in
+memory currently features x and price y
+are among them as well as the variables
+that we created in this session. So you
+can take features. X to display features X
+and there's my data and I can type size
+features X and that's my 47x2 matrix and
+sum of the size times Y that gives me my
+47x1 vector for this is a 47 dimensional
+vector this tall column vector that has
+all the prices Y in my training set. Now
+the who function. Show's you one of the
+variables that in the current workspace
+there's also the who S variable that gives
+you the detail view and so this also with
+an SIDN this also lists my variables
+except that it now listed sizes as well so
+A is a 3x2 matrix and features X is a 47x2
+matrix by price Y is a 47x1 matrix meaning
+this is just a vector and it shows you
+know how many bytes of memory it's taking
+up as well as what type of data this is
+double means double position floating
+points so that just means these are. Are
+a, a real value so floating-point numbers.
+Now if you want to get rid of, of the
+variable, you can use the clear command.
+So clear features X. And type who's again
+you notice that the features X variable
+has now disappeared, and how do you see
+data let's see let's take a variable V and
+set it to price Y one colon ten this sets
+V to be the first ten elements of, of the
+vector Y so let's type who. Or whose,
+whereas Y was a 47 by one vector. V is now
+ten by one, because V=price Y, one:10,
+this sets into the, just the first ten
+elements of Y. Let's say I wanna save this
+to date, to just [inaudible] save,
+hello.net and D. This will save the
+variable V into a file called hello.net.
+So let's do that. And now. A file has
+appeared on my desktop called hello.net. I
+happen to have had installed in this
+windows which is why you know this, this
+icon looks like this because windows has
+recognized this as a.net file but don't
+worry about it if this file looks like it
+has a different icon on your machine and
+let's say I clear all my variables, so if
+I if you type clear without anything then
+this actually deletes all the variables in
+your workspace, so type who's there's now
+nothing left in the workspace and if I
+load hello.net. I can now load that, my
+variable V which is my, That the data that
+previously saved into the hello.net file.
+So hello.net what we did just now the save
+hello.net to [inaudible] this saved the
+data in a binary format a somewhat more
+compressed binary format so that the V is
+a wall of data this you know will be
+somewhat more compressed and take up less
+the space if you want to save the data in
+a human readable format you type save
+hello.text the variable V and then dash
+key so this will save it. As a text, or as
+Ascii formatted text. And now, once I've
+done that, I have this file, hello.texas
+just appeared on my desktop. And, if I
+open this up, you see that this is a text
+file with my, with my data saved away. So
+that's how you load and save data now
+let's talk a bit about how to manipulate
+it let's say A = to that matrix again
+[sound] so is my 3x2 matrix let's
+[inaudible] indexing so if I type A3,2
+this indexes into the 3,2 element of the
+matrix A so this is like the, this is, you
+know and normally we would write this as A
+subscript three two or A subscript
+[sound]. The 3-2, and so that's the
+element in the third row and second column
+of A which is the element six. I can also
+type a two comma colon to fetch everything
+in the second row. So the colon Means,
+every element. Along that row or column.
+So AF2 colon, comma colon is this second
+row of A, right? And similarly if I do A
+colon comma two, then this means get
+everything in the second column of A. So
+this gives me two four six, right? This
+means of A everything comma second column.
+So this is my second column of A, which is
+two four six. Now, you might say use
+somewhat more sophisticated indexing
+operations. So [inaudible] I'll just
+quickly show you an example. You do this
+maybe less often, but let me do A, one,
+three, comma, colon. This means get all
+the elements of a, who's first index is
+103. This means I get everything from the
+first and third rows of a and from all .
+Columns, so this was the matrix A, and so
+A, one, three, comma, colon, means get
+everything from the first row and from the
+second row and, and from the third row.
+And colon means you know, I want both the
+first and the second columns and so this
+gives me this one, two, five, six.
+Although you, you use these sorts of more
+sophisticated indexing options maybe
+somewhat less often. To show you what else
+we're going to do here's the A matrix and
+that this was A: ,two gave me the second
+column you can also use this to do
+assignments so I can take the second
+column of A and assign that to ten eleven
+twelve and if I do that. I'm now, you
+know, taking the second column of A and
+I'm assigning this column vector ten,
+eleven, twelve to it. So now, A is this
+matrix, that's one, three, five and the
+second column has been replaced by ten,
+eleven, twelve. And here's another
+operation, it's A, let's, let's set A to
+be equal to A comma, 100, 101, 102, like
+so. And what this will do, is append
+another. Call in vector to the rate. So
+now. Oops, I think I made a mistake.
+Should I put semicolons there. And now. A
+is = to this, okay? I hope that makes
+sense. So, this 100, 101, 102, this is a
+column vector. And what we did was, we
+said, A, take A, and set it to the
+original definition. And then we put that
+[inaudible] vector to the right. And so
+ended up taking the matrix A, and which
+was, this, these six elements on the left.
+So we took the matrix A, and we appended
+another column vector to the right, which
+is now why, now A is A, three by three
+matrix, it looks like that. And finally
+when we [inaudible] I sometime use if we
+do A and then just a colon like so.
+[inaudible] special case [inaudible]. What
+this means is that put all elements of A
+into a single column vector and this gives
+me a nine by one vector [inaudible] all
+the elements of A concatenated together.
+Just couple of more examples I can also,
+let's see. Let's say I set A to be equal
+to One two three four five six okay and
+let's say I said B is = to eleven twelve,
+thirteen fourteen fifteen sixteen. I can
+create a new matrix C. As AB. This just
+means. So here's my matrix A, here's my
+matrix B and another set C to be equal to
+AB. When I'm doing [inaudible]
+concatenating them onto each other. So the
+left, the matrix A on the left and I have
+the matrix B on right and that's how I
+form this, you know just make sure it's a
+C by putting them together. I can also do
+C equals a semicolon B. The semicolon
+notation means that means I go put the
+next thing at bottom. So [inaudible]
+semicolon [inaudible]. It also puts
+[inaudible] A and B together expect that
+it now puts them on top of each other. So
+now I have A on top. And B at the bottom
+and, C here, is now a six by two matrix.
+So, so, just saying, the semi-colon thing
+usually means, you know, go to the next
+line. So, C is comprised by A, and go to
+the bottom of that and then put B at the
+bottom. And, by the way, this AB is the
+same as A, B and so, you know, either of
+these [inaudible] use the same result. So
+with that hopefully you now know how to
+construct matrices and hopefully this
+slide show, show you some of the commands
+that you can use to quickly put together
+matrices and take matrices and you know
+slam them together and form bigger
+matrices, and with just a few lines of
+code, Octave is very convenient in terms
+of how quickly we can assemble complex
+matrices and move data around. So that's
+it for moving data around in the next
+video we'll start to talk about how to
+actually do complex computations on this,
+on our data. So hopefully that gets you a
+sense of. How, with just a few commands,
+you can very quickly move data around in
+Octave. You know, those [inaudible]
+vectors and matrices, [inaudible] say
+data. Put together matrices to create
+bigger matrices, index into or select
+specific elements of the matrices. I know
+I went through a lot of commands. So I
+think the best thing for you to do is,
+afterward, to look at the transcript of
+the things I was typing. You know, look at
+the, look at the [inaudible] website, and
+download the transcript of the session
+from there. And, look for the transcript,
+and type some of those commands into
+Octave yourself, so that you can start
+[inaudible] command. And then again to
+work. And obviously there's no point at
+all to try to memorize all these commands.
+It's just. But, what you should do, is,
+hopefully from this video, you have gotten
+a sense of the sorts of things you could
+do. So that, when, later on, when you're
+to program a learning algorithm yourself,
+if you are trying to find a specific
+command that maybe you think Octave can
+do, because you think you might have seen
+it here. Should refer to the, to the
+transcript of this session, and look for
+that, in order to find the commands you
+wanna use. So, that's it for moving data
+around. And in the next video, what I'd
+like to do is [inaudible] to tell you how
+to actually do complex computations on our
+data, and. Of how to compute some of the
+data and actually start to implement
+learning algorithms.

@@ -1,0 +1,32 @@
+              The characterization of materials that possess a complex hierarchical
+              organization and are composed of multiple constituents, is an important problem
+              in materials science and engineering.  To obtain a comprehensive understanding
+              of such materials, a direct imaging technique that will allow chemical contrast
+              and spatial resolution on the nanometer scale would be extremely useful.
+              Near-Field Scanning Optical Microscopy (NSOM/SNOM), a relatively new technique,
+              is showing great potential for the topographic and spectroscopic imaging of the
+              surfaces of metals, polymers, semiconductors and biological materials in air as
+              well as in liquids at a submicron scale.
+
+The objective of this grant is to
+              set up a NSOM system at the University of Arizona for research and research
+              training in the optical characterization of the surface of materials in air as
+              well as in liquids. The major components of the instrument system are (i) a
+              NSOM with Atomic force microscopy (AFM) capabilities, (ii) a micron Raman
+              spectrometer, (iii) a fluorescence 
+spectrometer and (iv) a laser source.  A
+              team of researchers from a variety of disciplines such as materials science and
+              engineering, optical science, mechanical engineering and surgical biology will
+              be able to use this equipment system for advanced research and research
+              training.  It is also proposed to use the NSOM system for training and
+              educating undergraduates, especially through the NSF supported Research
+              Experience for Undergraduates (REU) program that has been active in the
+              department of materials science and engineering  since 1989.  The acquisition
+              of the system will tremendously benefit K-12 outreach activities as well as the
+              recruitment of under represented and minority students.  It is also planned to
+              use the NSOM facility as the core of a more comprehensive Arizona Major
+              Analytical Center (AMAC) for instrumentation and materials
+              characterization.
+
+
+ 

@@ -1,0 +1,59 @@
+              CCR-0132673
+CAREER: Assessment of Open-Source Software for High-Performance
+  
+              Computing 
+Edward B. Allen, P.I.
+
+ABSTRACT:
+
+This project will implement
+              an integrated program of empirical
+software-engineering research and an
+              exemplar of education in
+empirical methods for undergraduate and graduate
+              students in
+software engineering. This will be achieved through
+              research
+focused on assessing the quality of open-source software
+              for
+high-performance computing, and through development of relevant
+courses
+              and teaching modules.
+
+High-performance computing is the platform of choice
+              in many fields
+of science and engineering that are critical to modern
+              society.
+Off-the-shelf software packages in this category include tools
+              to
+implement mathematical models, and middleware to manage parallel
+and
+              distributed computation. The open-source approach of software
+development is
+              becoming increasingly attractive in this field.
+
+Research activities of this
+              program will employ empirical analysis
+methods to find ways to assess the
+              quality of open-source software
+for high-performance computing, enabling
+              scientific and engineering
+users to make better informed choices. Case studies
+              of selected
+software products will validate the practicality and usefulness
+              of
+obtaining such quality assessments.
+
+Software-engineering education in
+              America is largely lacking
+instruction in empirical analysis methods. A
+              spectrum of teaching
+materials targeted toward this need will be developed. 
+              Research
+results and instructional materials will be disseminated
+              through
+publications and the NSF-sponsored Center for Empirically
+              Based
+Software Engineering (CeBASE).
+
+

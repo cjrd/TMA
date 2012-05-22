@@ -1,0 +1,15 @@
+Dear all (Specically to Mr Charles Elkan)
+I am curious to know how the Dirichlet compound multinomial(DCM) is able to
+handle the burstiness nature of text documents? Because the following paper
+tells that the DCM is able to consider the burstiness.
+C. Elkan. Deriving TF-IDF as a Fisher kernel. International Symposium on
+String Processing and Information Retrieval (SPIRE'05).
+http://www.springerlink.com/index/p018h15714377211.pdf
+I am not able to visualize this. Please tell me in detail.
+I am even reading the paper:
+G. Doyle and C. Elkan. Accounting for Word Burstiness in Topic Models. ICML
+2009.
+http://www.machinelearning.org/archive/icml2009/papers/162.pdf
+Still not getting that visualization. Please help me in this regards
+regards
+veena

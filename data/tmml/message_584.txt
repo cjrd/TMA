@@ -1,0 +1,7 @@
+Hi,
+I have downloaded the c code for lda and could run it. However, I have a
+doubt regarding the values of alpha. In the paper by Blei (Latent Drichlet
+Allocation), alpha is a k-vector with components alpha_i>0. However, in the
+code, we are required to fill only a single value for alpha. Is alpha
+assumed to be a k-vector with all the values being same? or it is a scalar?
+Thanks in Advance

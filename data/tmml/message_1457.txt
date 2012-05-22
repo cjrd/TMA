@@ -1,0 +1,2 @@
+Please also see "the infinite factorial hidden markov model" by Van Gael et al. For a combination of hmm and ibp.
+Sent from my iPad

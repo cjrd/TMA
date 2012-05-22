@@ -1,0 +1,19 @@
+Hi Jim,
+An example would be useful, but I'm guessing what you're seeing is the
+same very common words at the top of every topic?
+The simplest solution is to remove common words beforehand -- in the
+context of academic papers, in addition to the usual syntactic stopwords
+like "the, and, of" we remove "paper" "based" and "abstract".
+There's some work from Penn State (sorry, I don't remember the title or
+authors -- possibly Lee Giles) on adaptively identifying low-information
+words using entropy.
+Another solution is to use optimized hyperparameters. By default, the
+prior over document-topic distributions puts equal weight on all topics,
+but if you can set the distribution so that some topics are much more
+probable than others, the stopwords and near-stopwords tend to collect in
+those topics. See Hanna Wallach's "Beyond Bag of Words" paper from ICML
+2006, for example. Mallet has an implementation of optimized
+hyperparameters: http://mallet.cs.umass.edu.
+You are correct that multinomial mixture models like LDA would not be the
+best choice for continuous tf-idf data.
+-David

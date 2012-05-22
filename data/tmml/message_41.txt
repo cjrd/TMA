@@ -1,0 +1,17 @@
+hi topic models list,
+i recently read a pre-print of "a collapsed variational bayesian
+inference algorithm for latent dirichlet allocation" (teh et al.),
+which will appear at this year's NIPS.  it's an excellent paper and i
+highly recommend it.  i plan to try this method at my first opportunity.
+the paper can be found at max welling's web-page:
+http://www.ics.uci.edu/~welling/publications/papers/nips2006-
+colvar.pdf
+a couple questions that i had:
+- is collapsed variational bayes faster than gibbs sampling on a per-
+iteration basis?  perhaps i missed this detail in the paper.
+- collapsing the topic parameters leads to an algorithm that can not
+be parallelized across documents.  can one collapse the \theta
+computation, and stick to traditional variational bayes for the
+topics?  (an empirical question: does this lessen the advantages of
+this procedure?)
+dave

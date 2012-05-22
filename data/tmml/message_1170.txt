@@ -1,0 +1,24 @@
+Hi Dave,
+There's probably someone more qualified to answer these questions than
+me, but I'll take a stab:
+This is an empirical question. If each iteration is cheap compared
+with sampling the stuff that's not a hyperparameter, then by all means
+do a bunch.
+Yup.
+There's no theoretical reason to. In practice, it's possible it could
+lead to you finding a better mode of the posterior. You could try it
+both ways.
+Again, I'd say that the answer depends on which is cheaper. If
+hyperparameter resampling is cheap, then you should do it more
+frequently.
+It's not really kosher to adjust the step size unless some pretty
+technical conditions are met. If you're not extremely careful you'll
+wind up sampling from a distribution other than the one you care
+about.
+I recommend you update the hyperparameters on a log scale if you're
+worried about the value going negative. Also, if you're using slice
+sampling this shouldn't be a problem, should it? Any setting of the
+hyperparameters that's less than 0 has 0 density which is certain to
+be outside of the slice.
+Hope that helps,
+Matt

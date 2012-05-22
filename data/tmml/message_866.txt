@@ -1,0 +1,5 @@
+Before I go off re-inventing the wheel, I was wondering if there was an
+implementation of SwitchLDA (or CI-LDA) available somewhere?
+ref: Statistical entity-topic models, Newman, Chemudugunta, and Smyth.
+Thanks in advance,
+=Dave Robinson

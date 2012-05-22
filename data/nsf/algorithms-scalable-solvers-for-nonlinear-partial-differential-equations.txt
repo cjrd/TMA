@@ -1,0 +1,44 @@
+              The focus of this three-year research effort is the design, analysis  and
+              software implementation of a class of parallel nonlinear iterative methods  for
+              the numerical solution of some highly nonlinear partial differential  equations
+              (PDEs) arising from important applications in computational fluid dynamics  and
+              computational biology. 
+The nonlinear PDEs to be considered in the project are
+               usually not strongly elliptic, and they often contain non-elliptic components
+              causing the solution to be nonsmooth and have local singularities, such as
+              boundary layers or sharp fronts. For smooth nonlinear problems, traditional 
+              nonlinear methods, such as Newton's methods, are capable of reducing the global
+              nonlinearities at a nearly quadratic convergence rate but become very slow once
+              the local singularities appear somewhere in the computational domain, even if
+              this happens to only a few components of a largenonlinear system. 
+The
+              proposed algorithm is motivated by the class of nonlinear preconditioning
+              algorithms introduced by Cai and Keyes in 2001 for solving algebraic nonlinear
+              equations that have unbalanced nonlinearities.
+In nonlinear preconditioning,
+              the global problem is partitioned into subproblems, and subspace nonlinear
+              eliminations are performed on all subproblems. 
+The subproblem are then
+              'glued' together by a Schwarz type domain decomposition method. Due to the
+              subspace nonlinear elimination, the local singularities are removed, and the
+              global system therefore has more uniform nonlinearity. A family of such
+              algorithms will be studied using a combination of multilevel/multigrid, domain
+              decomposition, nonlinear preconditioning, and nonlinear elimination methods.
+              Roughly speaking, in these algorithms, domain decomposition provides the
+              parallelism, multilevel provides the scalability with respect to the problem
+              size and to the number of processors on parallel computers, and nonlinear
+              elimination removes the sensitivity to the local singularities.
+Several
+              important application problems will be considered, including the steady state
+              incompressible Navier-Stokes equations with high Reynolds number and the
+              optimization of a steady state biofluid problem. To study the parallel
+              performance of the algorithms  on high performance computers, such as a cluster
+              of workstations and supercomputers,  a library  will be developed as a plug-in
+              package that is fully interoperable with PETSc of Argonne National Laboratory.
+              The proposed algorithm and software development 
+will have a great impact on
+              the application areas, and will also have substantial influence on other areas
+              of computational sciences where large nonlinear equations  need to be
+              solved.
+
+

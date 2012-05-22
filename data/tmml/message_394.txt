@@ -1,0 +1,13 @@
+Hi all,
+My question is about introducing a weight for words in a document. For
+example, I'm working with images, and a word represents a document. I
+consider that a word is a region of the image. But all the regions of
+the image don't have the same size for example, so just counting the
+occurrences of the different words might not be right. I saw that in
+some works, people also use geometrical features of the regions before
+performing the quantization when constructing the vocabulary. But is it
+possible to introduce a weight for each word in the bags-of-words
+representation instead of just counting the occurrences of the different
+words? Do you have any idea about papers related to this problem?
+Thanks,
+Marie

@@ -1,0 +1,82 @@
+              Funding is requested for a three year program that will: 1)
+              complete
+development of a small-scale, portable solid-state retrodirective
+              wireless
+power transmission (WPT) demonstration system; 2) use the solid-state
+              phased
+array transmitter and rectenna (rectifier + antenna) developed in task
+              1 for
+ground testing to determine the phase control of the transmitter.
+              This
+program will provide a path for the first US non-laboratory demonstration
+              of
+beamed power in which the transmitted beam will be controlled by a pilot
+              beam
+from the receiving antenna (a retrodirective system). The program
+              will
+demonstrate key components of an integrated microwave wireless
+              power
+transmission system: a phased array transmitter, rectifying receiving
+              antenna
+(rectenna) and the retrodirective control system. The transmitter
+              will
+operate at a frequency of 5.8 GHz and will consist of 4 panels, which
+              will
+allow beam steering in two dimensions. The array will consist of
+              640
+elements, arranged in 10 subarrays with 64 elements in each
+              subarray.
+Microstrip patch antenna will be used for low cost fabrication,
+              lightweight,
+planar structure, and good performance. The patch antennas will
+              be located on
+one side of the ground plane and the microwave and electronic
+              circuits will
+be on the other side. The signals are coupled from the circuits
+              to antenna
+elements through equal-phase microstrips. The distributing
+              microstrip
+circuits and power dividers are fed by a coaxial line connected to
+              the center
+of the subarray. The beam control subsystem will use photonics to
+              distribute
+reference phase information. A circular polarized rectenna will
+              be
+constructed. Since the power density level at the rectenna array will
+              be
+fairly low for the proposed experiment, techniques using low
+              breakdown
+voltage diodes or multi-antenna rectenna elements per diode will
+              be
+investigated. The ability of the retrodirective phase control system
+              to
+maintain tight beam steering can be measured by the use of simple
+              receivers
+located around the rectenna. The measured performance will be
+              compared with
+theoretical predictions for error sources (phase jitter, phase
+              bias,
+mechanical misalignment, and amplitude variations) systematically
+              introduced
+into the system. Beam patterns including side lobes and grating
+              lobes will be
+measured.
+The project will provide a practical demonstration of
+              wireless power
+transmission as an enabling technology for space solar power
+              for both
+terrestrial and extraterrestrial application. The program will be
+              coordinated
+and managed by the Center for Space Power (CSP) at Texas A&M
+              University
+(TAMU) and conducted by a team that includes researchers from the
+              Department
+of Electrical Engineering and the Johnson Space Center (JSC). NASA
+              support
+for this program will include laboratory and test facilities at NASA
+              Johnson
+Space Center.
+
+
+
+   

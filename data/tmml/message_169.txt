@@ -1,0 +1,10 @@
+Dear Prof. David Blei,
+Thanks very much for your reply.
+As you mentioned, we don't need to count each occurrence of each term,
+so could I conclude that the complexity is O(NKVz) where z is a ratio which
+measures the sparsity of occurrence? Vz is generally smaller than the value
+of M which is the average document length. Is this why VEM is faster
+than GS for high-dimensional problem.
+Many thanks.
+Best regards,
+Yangqiu.

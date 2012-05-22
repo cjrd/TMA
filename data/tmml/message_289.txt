@@ -1,0 +1,14 @@
+Hi list,
+I was trying these days to implement hLDA (by the way, is there any
+implementation available?) and I have some difficulties:
+In the second markov chain, where the path assignments are sampled (c_m),
+how do we calculate p(c_m | c_-m) ? According to the paper, this is implied
+by the CRP prior,
+but unfortunately it is not obvious to me how to use the CRP of Eq.(1) to
+calculate this prob.
+One more question: The paper says that c_m must be drawn as a block. This
+means that for each document
+we calculate c_m for all levels and then we move to the next document?
+Thanks!
+Regards,
+ilias.

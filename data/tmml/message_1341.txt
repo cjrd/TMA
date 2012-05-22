@@ -1,0 +1,6 @@
+Hi all,
+I'm trying to learn something about Chinese Restaurant Process, but confused
+by CRF (Chinese Restaurant Franchise) and nCRP(nested Chinese Restaurant
+Process),  Can anyone tell me the difference between those two?
+Thanks a lot!
+Christine

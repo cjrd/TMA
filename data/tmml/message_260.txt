@@ -1,0 +1,6 @@
+dear andre
+the support of the dirichlet distribution is the simplex, positive
+vectors that sum to one.  the MAP estimate of the posterior must be on
+the simplex.  it can't be negative.
+best,
+dave

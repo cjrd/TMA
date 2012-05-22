@@ -1,0 +1,517 @@
+
+We've shown how probabilistic graphical
+models can be used for a variety of
+inference tasks, like computing
+conditional probabilities or finding the
+map assignment. But often, the thing that
+you actually want to do with a probability
+distribution is make decisions in the
+world. So for example, if you're a doctor
+encountering a patient, it's not just
+enough to figure out what disease the
+patient has. Ultimately, you need to
+decide what treatment to give the patient.
+How do we use a probability distribution,
+specifically a probabilistic graphical
+model, in order to make good decisions? It
+turns out that the theoretical foundations
+for doing this kind of inference. Thus,
+were actually established long before
+models came to forefront, and that
+framework is called the framework of
+maximum expected utility. So let's
+formulate the problem that we're trying to
+solve, and then we can define the
+principle of MEU, or maximum expected
+utility. So what is the simple decision
+making situation D comprised of? Well, we
+have a set now. It's no longer a pure
+probabilistic model. We have other
+elements in it. We have an action A, which
+has several different choices that we
+might pick. For example, different drugs
+that we might choose to give the patient.
+We have a set of states of the world, X1
+up to XN. And the action can affect which
+of those states comes about. So this set
+of states might include those things that
+I can't affect, like the patient
+predisposing factor of which disease they
+have, or which test results came out which
+way. But it can also include things like
+the outcome that, that the patient will
+have, after I administer the drugs. So the
+set of variables that defines the state
+can involve things that I can affect, and
+things that I cannot affect. And then
+finally, the final piece of the puzzle
+here is something that defines the agent's
+preferences. That is, I cannot make
+decisions that weight different, that
+consider different actions without
+weighing the relative merits of different
+actions. And my way of evaluating the
+merits of different actions is to have
+some kind of numerical utility that tells
+me if I take action A, and this, and I
+have this particular state of the world,
+how happy am I? Am I
+very happy, medium, moderately happy or
+extremely unhappy. So, this numerical
+utility function is going the thing that's
+going to allow me to evaluate different
+actions in terms of how much I prefer
+them. So, now I can go ahead, and write
+down the notion of an expected utility,
+for a decision problem, the given, an
+action A. And the way in which that's done
+is a simple expectation. I sum up over all
+possible states of the world. The
+probability that I get that state given
+the action and remember not everything in
+that action might, everything in that
+state might be effected by, by the action.
+And then I multiply that by the utility of
+the state action pair. And, I sum up over
+all possible states that I might end up
+with. And that, summation, that
+expectation is the overall happiness that
+I have on average, in this decision making
+situation if I take the action A. Clearly
+I want to maximize my overall happiness,
+and so the purpose of the maximum expected
+utility computation, the principle of
+maximum expected utility. Maximum,
+expected, utility. Is that I want to
+choose the action A that maximizes this
+expected utility. We can use the, ideas
+that we developed in the context of
+graphical models to represent decision
+making situations in a very interpretable
+way. So this a structure called an
+influence diagram, and it's an extension
+of a Bayesian network with two additional
+pieces. We have, in addition to random
+variables, which are denoted, as usual, at
+ovals. So here's a random variable. And
+random variable is part of my state X. We
+also have two other kinds of nodes in this
+diagram. We have action variables. Which
+are places where it's not nature that gets
+to make a choice over the value of the
+variable, but rather the agent that gets
+the pick. And then we have the green
+diamonds at the bottom, which represents
+utility. Well let's look at this
+particular example, which is a probably
+one of the, it's the simplest thing you
+could construct. This a, budding entreprenuer who
+just graduated from college and ones of
+the site is whether to found a widget
+making company or not. So he has two
+possible actions S zero which is do not
+found and go take a more conventional job.
+And this is, found the company, which of
+course is a much more risky strategy. We
+have a random variable, which is the
+market for widgets. And, this is a poor
+market. Moderate. And the great market.
+And so now we can and we have a
+probability distribution over those
+different values. The utility of the
+agent obviously depends on both whether
+he decides to found the company and on the
+market. And we're denoting that by having
+both of these be parents of the utility
+variables. So the parents of the utility
+variable, or the utility function, are the
+attributes or the variables on which the
+utility, the agent utility depends. So in
+this case our utility has two arguments S
+and M, and we can see that if the agent
+decides not to found the company, then the
+utility is zero, regardless of the market
+condition for widgets because at that
+point you don't really care. And if the
+agent does decide to found the company and
+the market for widgets is poor then his
+utility is negative seven, say he invests
+a bunch of money and he, and ends up
+losing all of it. If the market is
+moderate his utility is five. And if the
+market is great the utility is twenty.
+Alright. So, now we can go ahead and
+compute expected utility for the two
+action choices. So, in this case, the
+expected utility of F zero is zero. And
+the expected utility of F1 is going to be
+equal to 0.5 times negative seven plus 0.3
+times five plus 0.2 times twenty. Which,
+if you add it all up, is equal to two. So
+obviously in this case the optimal action
+is to found the company. Let's look at a more
+complicated influence diagram that
+involves more random variables and also
+other richer structures. So this is an
+elaboration of our student network. It has
+the variables difficulty and intelligence,
+the grade, the quality of the letter, and
+in this case also a variable that
+represents the, the job. Student's job
+prospect which we're going to assume
+depend both on the quality of the letter
+as well as on the student's grade because
+the recruiter has access to the student's
+transcript. The student has one decision
+in this example, which is whether to study
+in the course or not, which is going to
+probably affect their grade. And so we
+have the study variable, the study action
+affects the distribution that the student
+has over grades. Now in this case, you'll
+notice that we have three different
+utility diamonds, VG. V S and V Q. What
+are these what do these represent? They
+represent different components of the
+utility functions, so this [inaudible]
+broken down the utility functions into
+constituent pieces. This one represent the
+happiness with the grade by itself, this
+is the utility that you gut by saying,
+yay, I got an A in the course, oh, it's
+not so good I got a C. So that's one piece
+of utility function. A second piece of
+your utility function is your overall
+career, aspirations, which is the value of
+getting a good job versus not getting a
+good job, so that's this piece over here.
+And the final one, is the component that
+is ascribed to the quality of life that you
+have during your studies. So if you don't
+study maybe a single and play ultimate
+frisbee and go to the movies every
+night and so that might give you more
+happiness than sitting there reading the
+books every evening. And so we're going to
+assume that particular utility
+defends on how much you study and how
+difficult the course is. Because maybe
+it's more fun to study if it's easy. And
+we're going to assume that your overall
+utility, that the agent's overall utility
+is the sum of these different components.
+And this is called the decomposed utility
+function. And we'll come back to that
+later. Now you might wonder why I would
+bother decomposing the utility function,
+instead of having just a single big
+monolithic utility function, that is
+affected by all of these, different
+factors. Well, that is exactly why.
+Because it is, in fact, affected by all of
+these different factors. So whereas, here,
+I have a utility function that has one
+argument. And another one has one argument
+and one has two arguments. If I had put
+them all together, I would have single
+monolithic which already function which
+has four arguments that would be much
+harder elicit, because the exponential
+combinatorial growth and the number of
+possible combinations that I need to
+consider. So this is a decomposition of a
+function and in this case, utility
+function into factors and in exactly the
+same way. For example, like to be compose
+a probability distribution as a product of
+factors. So, another interesting extension
+of the influence diagram representation
+allows us to capture, is the notion of the
+information available to the agent when
+they make their decision. So, let's look
+at this example over here, which
+elaborates our entrepreneur example. And
+here we come in with the assumption that
+the entrepreneur has the opportunity to
+conduct a survey, regarding the overall
+market demand for widgets, before deciding
+whether to found the company. Now, the
+survey is not entirely reliable, so over
+here, we have this CPD that tells us. How
+likely different survey results are to
+come up given different values of the true
+market demand. Now the point is, that
+having conducted the survey, the agent can
+base his decision on the value of the
+survey. And we denote that with the
+presence of a [inaudible] such as this.
+Which indicates that the. Founder, that
+the entrepreneur can make different
+decisions depending on how the value of
+the survey turns out. So from a formal
+perspective, that means there would be
+agents who [inaudible] to do is choose a
+decision rule, which we are going to
+denote delta at the action node, so the,
+and what, the decision rule is effectively
+a CPD, it tells the agent given an
+assignment of the values to the apparent
+[inaudible], which are the variable that
+the agent can observe prior to making
+decision, the agents based on that can
+decide on the probability distribution of
+the action that it takes in that
+particular situation. So here for example,
+we would have a CPD which. Tells us the
+probability of founding a company which in
+this case is a binary value variable,
+given the three possible values of the
+survey variable. They might say, why would
+I need to have CPD? Why would be urging
+anyone to make a random choice between two
+different actions? It turns out in fact,
+that in the single agents decision making
+situations there is no value to allowing
+that extra expressive power because of the
+terministic CPD would work just as well.
+Nevertheless for reasons that would become
+clear on the next point, is actually
+useful to think about the first CPD is the
+known on most cases that would actually be
+the terministic listening sample that we
+talking about. So now, that we given the
+agent that expressive power, how do you
+formulate the, the decision problem that
+they need to make? That is what did they
+get to choose and how do they choose it.
+So, given a decision role data for an
+action variable a. If we inject that into
+the decision network, now all of the
+variables on that network those a and the
+remaining variable x there, that all have
+a cpd associated from. So now we have
+effectively defined the joint. Probability
+distribution. Over all the variables X
+union. The variable A, because each of
+them has a CPD and so this. Is the, this
+probability distribution. And the agent
+expected utility, once they've selected
+the decision rule delta A, is simply the
+expectation over here. We average out over
+all possible scenarios, where scenarios
+are assigned into the chance variable X as
+well as into the agent action A, and for
+averaging out is the agent utility in that
+scenario. And so that's the overall
+expectation that the agent prior to
+anything going on can expect to gain,
+given this numeral dot A. So obviously the
+agents want, the agent wants to choose,
+the decision rule delta A, that is going
+to give him the maximum value for this
+expression that denotes his expected
+utility. And so this is the optimization
+problem of the agent is trying to solve.
+Okay. So how do we go about finding the
+decision rule that maximizes the agent's
+expected utility? So let's look at this
+first in the context of a simple example,
+and then we'll do the general case. So,
+over here, we see once more, the expected
+utility equation for a given decision
+rule. And now we're trying to optimize.
+This of A. So let's write down the
+expected utility in this particular
+example. So, the Bayesian network, in this
+case, has now two original CPDs. There is
+P of M that comes in from the M variable.
+There is P of S given M, which comes out
+from the survey variable. And we have the
+CPD that is, as yet, to be selected, which
+specifies the decision rule at the, at the
+action F. And then multiplied with all
+that is the utility. Which depends on the
+decision to found the company and on the
+true market value. Well this should look
+awfully familiar. It is simply a product
+of factors. Some of these factors are
+problematic factors and one of them the u,
+is a different numerical factor, but it's
+still a factor. Which, depends on a scope
+of some variables. In this case S and M.
+So now we can go ahead and apply the same
+kinds of analysis that we've done in
+previous computations. Specifically, we
+can. Since we're trying to optimize over
+this. Expression over here, the delta F of
+F given S. We're going to push in
+everything that we don't currently need to
+manipulate, which is just F and S. Which
+are the two things that appear in the
+factor of the decision rule? And so,
+specifically, we're going to push in M,
+and leave within the summation over M, all
+of the factors. That depend on M. And so
+that gives us a sum over M. P of M, P of F
+given M, U of F, M. And if we marginalize
+out M, what we end up with if we multiply
+these three factors and marginalize that
+M, is a factor that we're going to call MU
+of FS. And the reason it's called MU is to
+suggest that it has a utility component U,
+so MU and you. And now we have actually a
+fairly simple expression that the agent is
+trying to optimize. It's a summation over
+all possible values of S and F over here,
+of the delta, the decision rule that the
+agent takes over F given the situation, as
+given the observation S, multiplied by
+this factor that I just computed. And now,
+if our goal, is now to optimize this
+expression, what the agent ought to do is
+to pick, within this factor, U of FS, the
+highest value. The S that gives it the
+highest value in each circumstance S. So
+this is a little bit abstract, so let's
+look at this in the context of an actual
+numerical example to see this. So here are
+the three factors that, we have in this
+network to begin with. This is the CPD for
+M over here. The CPD for S, given M in the
+middle. And here is the utility factor U,
+it comes from here. And now if we're going
+to go through this expression, through
+this, computation. And we're going to
+compute. This. Expression over here. Th,
+this is what we get. It's a factor that
+gives us this value for each value for, of
+the variable of the action F and each
+value [inaudible]. And if we want to
+maximize the summation. And we look at
+this factor over here. It seems clear that
+what's going to maximize the summation, is
+if we put full weight on S zero, in the
+case S zero, which, if you think about, if
+you look at these CPDs as the case where
+the survey suggests that the market demand
+is bad. And, at the same time, in the
+other two cases, we're going to choose the
+action to found the company. And if you
+look at this you can see that no other
+choice of delta is going to give us a
+higher value for the summation than this
+deterministic choice that chooses in the
+case s zero, we choose zero and in the
+case s one and s two we choose the
+[inaudible] and so this is the optimal
+decision rule. And if you ask what is the
+expectation, what is the agent's expected
+utility with this strategy before it does
+anything, before it, before the survey is
+conducted? Well, it's just going to be the
+sum of zero+1.15+2.1, which sums up to
+2.25 as the overall, expected utility,
+sorry, 3.25. As the agent's overall
+expected utility in this case. Now, if you
+think back to the agent's expected utility
+when he didn't have the information, about
+the survey. That expected utility if you
+recall was two, so without. Survey, the
+agent's best Mac expected utility was
+equal to two. So by conducting the survey,
+the agent has gained 1.25 utility points.
+Then let's generalize this to arbitrary
+decision diagrams. We're going to focus,
+for the moment, on single utility nodes,
+and single action nodes. The more general
+case is a little bit more complicated, and
+we're not going to go through it, but the
+principles are very similar. So, once
+again, going into this example, we see
+that delta A, the decision rule with A,
+defines a joint distribution. Over all of
+the chance node and the action node, and
+that is multiplied by the utility in the
+scenario. And so we can open up the
+expected, the, the probability
+distribution piece of delta A, as a
+product of two types of CPDs. We have the
+original CPDs, which is simply the product
+over I, P of XI, given its parents. And
+then we multiply that by the decision
+rule, delta A. And we're going to use Z,
+just as a shorthand, to denote the
+parents. That is, the observations.
+[inaudible] that the agent makes, prior.
+Who, deciding on A. So we can do the exact
+same moving in of factors inside and
+outside of the summation. We're going to
+marginalize out everything except. The
+factor is because the variables that
+appear in this factor delta a, so
+everything plus a and its' pairing b. And
+we're going to sum out all of the
+remaining variables with, for simplicity
+we're going to denote w. So this is
+summing up over all variables other than a
+and z of this product of factors
+including. Utility variable. Utility
+factor. And, so we're going to get a
+utility factor, just as we did before,
+which is a function of A and its parents.
+And we want to optimize the, decision rule
+says to maximize the possible summation
+over here. And once again, the optimal
+decision rule is just the one that picks
+for every combination of the parent Z. The
+action [inaudible] gives us the maximum
+entry in this factor. So delta star of AZ
+is something that gives us a probability
+of one. This is the start of probability
+one. The action that gives us the
+argument. The arg max action for this
+factor. And, and the other action that
+selects to the probability zero in this
+conditioning case for z. So summarizing
+how this algorithm goes, to compute the
+maximum expected utility, and find the
+optimal decision [inaudible] in action A.
+We take the following steps. We treat A as
+a random variable, with, at this point an
+unknown CPD. We introduce an additional
+factor beyond the CPDs, which is the
+utility factor whose scope is the,
+variables that the, that the utility
+depends on. So now we have, as usual, a
+collection of factors. We now do
+effectively variable elimination
+algorithm. So this is plain, good old
+variable elimination to eliminate all
+variables except a and a's parents. Which
+produces a factor. New sub AZ and then for
+each parent assignment Z to the variable A
+we chose the action that maximizes over A
+within that factor. So summarizing this
+the MEU principle provides us with a
+rigorous foundation for decision making
+under uncertainty. Building on that, the
+framework of probabilistic graphical
+models allows us to provide a compactor
+presentation for complicated high
+dimensional decision making. Settings
+where we have multiple chance variables
+multiple actions, and utilities that
+depend on multiple variables. We can now
+build on inference methods in
+probabilistic graphical models.
+Specifically, in this case, the variable
+elimination algorithm, to both find the
+optimal strategy, and figure out the
+overall value to the agent of a particular
+decision situation. And whereas we didn't
+talk about this, these methods can also be
+extended for richer scenarios, where we
+have multiple utility componsen-,
+components, as in the example that we
+gave. As well as multiple decisions that
+the agent makes in a sequence.

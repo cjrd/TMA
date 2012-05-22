@@ -1,0 +1,261 @@
+
+So far, we've designed graphical models
+primarily as a data structure for encoding
+probability distribution. So, we talked
+about how you can take a probability
+distribution and, using a set of parameters
+that are somehow tied to the graph's structure
+one can go ahead and represent
+a probability distribution over a high
+dimensional space in a factored form. It
+turns out that one can view the graph
+structure in a graphical model using a
+completely complementary viewpoint, which
+is as a representation of the set of
+independencies that the probability
+distribution must satisfy. 
+That view turns out to be really
+enlightening and thought provoking and so
+let's talk about that, and we're going to
+begin by just defining the notion of independencies that we're going to utilize
+in subsequent presentations. So let's start
+by just defining the very basic notion of
+independence within a probability
+distribution. And initially we're just
+going to talk about the probability in the
+sorry the independence of events
+alpha and beta within a probability
+distribution. And let me just go ahead and
+introduce this notation, this says P, this
+symbol is the logical symbol for
+"satisfies". And this perpendicular symbol
+is a standard notation for independence.
+So this says: "P satisfies 'alpha is
+independent of beta.'" That's how one should
+read that statement. And there's actually
+three entirely equivalent
+definitions of the concept of
+independence. The first one says that the
+probability of the conjunction of the two
+events -- there's several
+different ways to denote
+conjunction, some people denote it as
+intersection, we typically denote it using
+a comma. So here is: the probability of
+alpha and beta holding both is simply the
+probability of alpha times the probability
+of beta, that's the first definition. The
+second definition is a definition about
+flow of influence. And this says: If you tell
+me beta, it doesn't effect my probability
+in alpha. So the probability of alpha
+given the information about beta is the
+same as the probability of alpha if you
+don't give me that information. And
+because probabilistic influence is
+symmetrical, we also have the exact
+converse of that. That is, the probability
+of beta given alpha is the same of the
+probability of beta. This is 
+independence of events. You can take that
+exact same definition and generalize it to independence 
+of random variables. Here we are going to
+read this the same way. This says: 
+"P satisfies 'X is independent of Y'" for two
+random variables X and Y. Once again we
+have the exact same set of definitions. So
+the first one says that P of X comma Y is equal
+to P of X times P of Y. The second says P of
+X given Y is equal to P of X and P of Y
+given X is equal to P of Y. You can make
+these three statements in two different
+but equivalent forms: The first is
+a universal statement. So for example you
+could read the first statement as saying:
+For every assignment x and y
+to the variables X and Y we have the P of
+the event X comma Y is equal to P of X
+times P of Y. So you can think of it as a
+conjunction of lots and lots of
+independent statements of the form over
+here. That's the first interpretation. The
+second interpretation is as an expression
+over factors. That is, this one tells me
+that the factor over here, which is the
+joint distribution over X and Y, is
+actually a product of two
+lower-dimensional factors, one of which is a factor
+whose scope is X and one is a factor
+whose scope is Y. These are all equivalent
+definitions, but each of them has a
+slightly different intuition, so it's useful to
+recognize all of them. So let's look at an
+example of independence. Here is a
+fragment of our students network. It has
+three random variables: intelligence, 
+difficulty and course grade. And this is a
+probability distribution that
+has a scope over three variables, and we can
+go ahead and marginalize that to get a
+probability distribution over the scope,
+which is a factor over the scope ID. As it
+happens, this is a marginal distribution
+which you can confirm for yourselves by
+just adding up the appropriate entries so,
+just as a reminder, to get i zero and d zero,
+we're going to add up this one, this one and that one.
+And that's going to give us this factor.
+And it's not difficult to test that if we then
+go ahead and marginalize P of I comma D to
+get P of I and P of D that P of I comma D
+is the product of these two factors. Here
+is an example of a distribution that
+satisifies an independence property. And
+here's the graphical model, and when you
+look at it, you can see that there's no
+direct connections between I and D, and
+we'll talk later about how that tells us
+that there is no -- that the two are actually
+independent in this distribution. Now,
+independence by itself is not a
+particularly powerful notion, because it
+happens only very rarely. That is, only in
+very few cases are you going to have
+random variables that are truly
+independent of each other. At least
+few interesting cases, you can always
+construct examples. So now we're going to
+define a much broader notion of much
+greater usefulness, which is the notion of
+conditional independence. Conditional
+independence, which applies equally well
+to random variables or to a set of random
+variable that is written like this. So
+here we have once again that P
+satisfies -- here we have again the
+independent sign, and here we have a
+conditioning sign. And this is read as:
+"P satisfies 'X is independent of Y given Z'".
+And once again we have three
+identical -- not identical, sorry, three
+equivalent definitions of this, of this
+property. The first says that "probability
+of X comma Y given Z is equal to the products
+of P of X given Z, times the probability
+of Y given Z". Once again, you can view
+this as a universally quantified statement
+over all possible values of X, Y, and Z;
+or as a product of factors. Definition
+number two is a definition of information
+flow: "Given Z, Y gives me no additional
+information that changes my probability
+of X" or "Given Z, X gives me no additional
+information that changes my probability in
+Y". Once again you can
+view this as an expression involving
+factors. Notice that this is very
+analogous to the definitions that we
+have for just plain old independence. Z
+effectively never moves, it always sits
+there on the right hand side of the
+conditioning bar and never moves, and so
+if you find yourself having a hard time
+remembering conditional independence, just
+remember that the thing you're
+conditioning on, just sits there on the
+right hand side of the conditioning bar
+all the time. Let me introduce one final
+definition, which is going to serve us
+quite well in an interesting
+derivation. It's very similar to the first
+definition, but it says that the
+probability of X comma Y comma Z -- the joined
+distribution -- is proportional, to... So
+we're going to forget the potential need
+to add normalizing constants. It's
+proportional to a product of two factors.
+Oops. One factor over X and Z and one
+factor over Y and Z. This turns out
+to be yet again another definition of
+conditional independence. Let's look at an
+example of conditional independence. Imagine
+that you have, that I give you two coins,
+and I'm telling you that one of those
+coins is fair, and the other one is biased,
+since it's going to come up heads 90
+percent of the time, but they look the
+same. So now you have a process by which
+you first pick a coin out of my hand, and
+then you toss it twice. So this is which
+coin you pick. And this is the two tosses.
+Now let's think about dependence and
+independence in this example. If I don't--
+if you don't know which coin you picked,
+and you toss the coin, and it comes out
+heads: what happens to the probability of
+heads in the second toss? It'll be higher, right?
+Because, if it came up heads the first time,
+that is more likely to happen. I mean, it
+happens 50/50 with a fair coin,
+but it happens with greater
+probability with a biased coin, and so the
+probability of having heads in the second
+toss is going to be higher now. On the
+other hand, if I now tell you, "No, no,
+you've picked the fair coin",
+you don't really care what the
+outcome of the first toss is. It doesn't
+tell you anything about the probability of
+the second toss. Similarly, if I tell you
+that it's the biased coin, it also
+doesn't tell you anything at that point.
+The first toss and the second toss are no
+longer correlated. And so what we have is
+that X1 and X2 are not independent, so P
+does not satisfy "X1 is independent of X2",
+but we have that P does satisfy "X1 is
+independent of X2 given C". So here's a
+very simple and intuitive example of
+conditional independence. Let's go back to
+another example of conditional
+independence. One in the distribution that
+we've seen before. This is actually a very
+analagous model. Because it also has, in
+this case, one common cause, which, in
+this case, is the student's intelligence.
+This is in the students example that
+we've seen before. We had two things that
+emanate from that. The student's grade in
+the course, and their SAT scores. And
+once again, it's, you can generate the
+joint distribution of I, S, G which is this,
+and now you can look at the probability of
+S and G given for example, i zero, and ask
+yourselves: "How does that
+decompose, and is that independent given--
+when we look at the probability of S given
+i zero and the probability of G given
+i zero?" And convince yourselves that in
+this case conditional independence applies.
+Now one somewhat counterintuitive
+property of independence that you kind of
+don't think about when you hear about
+conditional independencies the first time,
+is that conditioning on something doesn't
+just gain you independency as it did in
+the case of the coin or the case of the
+intelligence. But rather conditioning can
+also lose independency. So this is the
+other fragment of our students network,
+where we had the intelligence and the
+difficulty both influencing the grade. And
+we have already seen that although I and D
+are independent in the original
+distribution, they're not independent when
+we condition on grade. So this is a
+case where you can just convince
+yourselves of this by examining this
+distribution over here that I and D are
+not independent in this conditional
+distribution, even though they were in the
+marginal distribution.

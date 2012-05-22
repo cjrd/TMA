@@ -1,0 +1,21 @@
+              Lemmon Michael
+CCR-0208537
+"Performance Based Soft Real-time Scheduling in
+              Networked Control Systems"
+
+This project is developing novel methods for the
+              design of high performance networked control systems. The networked control
+              system under consideration distributes controller functionality over a
+              collection of micro-controllers that communicate over an ad-hoc communication
+              network. The project uses a soft variation of the (m,k)-firm guarantee model to
+              characterize task scheduling in networked control systems. The project consists
+              of three tasks. The first task obtains upper bounds on dropout probabilities
+              that assure robust performance of the closed loop system. These bounds define
+              the soft (m,k)-model, which is one major emphasis of the research. The second
+              emphasis is on the design of implementable schedulers that enforce the soft
+              (m,k) model arising from the control design.
+
+The project's broader impact is
+              achieved through the inclusion of methods and concepts developed in this
+              project in undergraduate courses that introduce embedded system principles. 
+

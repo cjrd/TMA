@@ -1,0 +1,29 @@
+                 The hypothalamo-pituitary-adrenal axis in vertebrate animals is important for
+              regulation of responses to stress, chiefly by release of adrenocorticotropic
+              hormone (ACTH) from the pituitary, which in turn stimulates release of steroid
+              glucocorticoids from the adrenal glands.  In birds, the peptide compound
+              arginine vasotocin (AVT), which regulates water balance and reproduction, may
+              be a major factor regulating ACTH release from the pituitary gland, though this
+              function has not yet been well defined in birds.  This project tests the
+              hypothesis that a novel VT receptor molecule is expressed by certain cells in
+              
+the pituitary, and mediates the stimulatory effect of AVT on ACTH release.  A
+              
+collaborative team with complementary skills will use molecular, cellular,
+              biochemical and behavioral approaches in a uniquely integrative, comparative
+              study to clone and characterize this novel receptor, to localize the cells
+              expressing the receptors, and to establish the physiological role for the VT
+              receptors. 
+  Results will be important in neuroendocrinology for
+              understanding comparative aspects of pituitary function in vertebrates other
+              than mammals; for an integrated understanding of molecular, cellular and
+              behavioral mechanisms for stress regulation; and for general aspects of poultry
+              reproduction.  It will also have a broader impact on bird physiology, on
+              general vertebrate endocrinology and reproductive behavior.  There is also a
+              strong impact on scientific infrastructure because the project has a training
+              component 
+including graduates and undergraduates, and involves three campuses
+              in an EPSCoR 
+state.
+
+

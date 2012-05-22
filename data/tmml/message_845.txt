@@ -1,0 +1,11 @@
+Hi All,
+I am looking for a 3 level LDA model (a level added on top of basic LDA
+like the case with multiple corpus). Is there any code available that can be
+readily extended to implement this model?
+Thanks,
+Ayan Acharya
+(Graduate Student,
+Track: Communication, Networks and Systems,
+Electrical and Computer Engineering,
+University of Texas at Austin,
+Austin, Texas, USA)

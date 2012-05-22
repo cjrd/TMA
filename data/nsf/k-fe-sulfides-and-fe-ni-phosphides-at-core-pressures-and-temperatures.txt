@@ -1,0 +1,25 @@
+              EAR-0073433
+Prewitt
+The density of the Earth's core is about 10% less than
+              that of pure nickel-iron at core pressures and temperatures.  Several elements
+              have been proposed to account for the low density of the core, including
+              sulfur, silicon, carbon, potassium, hydrogen, and oxygen.  Because potassium
+              and phosphorous are depleted in the Earth's mantle, it has been proposed that
+              this depletion may result from incorporation of these elements in Earth's core.
+               However, phases with compositions including these elements are known only from
+              syntheses at relatively low pressures and from meteorites, and there has been
+              little or no experimental work at higher pressures and temperatures, especially
+              those approaching core conditions.  Therefore, we will investigate the
+              high-pressure, high-temperature chemistry and structures of two different
+              classes of phases that could be present under core conditions, potassium-iron
+              sulfides and iron-nickel phosphides.  From these experiments, we expect to
+              provide information on the synthesis of these materials, their phase relations,
+              and their structural characteristics.  We also will investigate the
+              partitioning of K and P between bulk silicate earth and metallic liquids in the
+              presence or absence of S and/or C.  Experimental techniques will include
+              synthesis of appropriate materials under controlled vapor pressures,
+              temperature, and overall pressure, characterization of products with electron
+              and ion microprobes, and in-situ structural measurements at high-pressures and
+              temperatures using x-ray diffraction in our laboratory and at national
+              synchrotron sources, and by a variety of spectroscopic techniques.  
+

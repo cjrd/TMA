@@ -1,0 +1,31 @@
+              0094288  Peter Gegenheimer
+The transfer RNA (tRNA) species in a cell or
+              organelle are synthesized as large precursor molecules.  Their subsequent
+              maturation is accomplished by enzymes that recognize and break a single,
+              specific bond in each precursor RNA, thus separating the functional tRNA from
+              the nonessential fragments.  One of these enzymes, ribonuclease P (RNase P), is
+              present in bacteria and archaea, and in the nuclei, mitochondria, and
+              chloroplasts of all eukaryotic cells.  The RNase P enzymes from all known
+              bacteria contain a large RNA molecule and a small protein; it is the RNA
+              component which performs the essential reaction.  Although chloroplasts evolved
+              from a cyanobacteria, which possess a bacterial RNase P, the spinach
+              chloroplast enzyme appears to consist exclusively of protein.  Recent studies
+              demonstrated that the chloroplast enzyme uses a different catalytic mechanism
+              than the bacterial RNase P.  Transfer RNA maturation in chloroplasts is the
+              first example of a single biochemical reaction that is catalyzed in different
+              organisms by a protein or by an RNA enzyme.  The goal of this project is to
+              complete the characterization of this extraordinary enzyme.  The major
+              polypeptide associated with chloroplast RNase P activity is a novel
+              nuclear-encoded RNA-binding protein that is related to bacterial signal
+              transduction proteins as well as to the superfamily of dinucleotide-binding
+              proteins.  Preliminary modeling studies indicated a possible mechanism for
+              proteins of this class to bind tRNA.  This project will test this hypothesis by
+              completing the biochemical purification of chloroplast RNase P.  By treatment
+              of purified enzyme preparations with antibodies specific for each of the
+              polypeptides in this preparation, the investigators will identify which
+              polypeptides are necessary for RNase P activity.  cDNAs encoding these
+              polypeptides, as well as cDNAs able to restore activity to a bacterial strain
+              lacking RNase P, will be isolated and the respective proteins over-expressed
+              and characterized in vitro.  The results of these investigations will provide
+              insight into how a single biochemical reaction can be accomplished by an RNA
+              enzyme or by a protein enzyme.    

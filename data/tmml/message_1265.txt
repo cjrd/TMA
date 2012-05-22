@@ -1,0 +1,12 @@
+Gibbs/MCMC performance measures are called
+"diagnostics" in the statistical literature.
+Its an art, not a science.  Probably good enough
+to look at the training set log likelihood,
+the standard value that includes all the latent
+topic assignments.
+Measuring (provably) unbiased likelihood that
+marginalises out the latent topic assignments,
+is described in my Asian Machine Learning Conf.
+paper in 2009,
+based on some breakthrough techniques from Hanna Wallach's PhD.
+Wray Buntine

@@ -1,0 +1,4 @@
+Hi all,
+Recently, I try to classify the unlabeled data using hLda. Note that it is easy to model a tree and lots of related topics given a set of data, however, how can I organize these (many) topics into several pre-defined classes?
+Is there any previous detailed work?
+Thanks a lot!

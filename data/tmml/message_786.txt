@@ -1,0 +1,3 @@
+Hi Jonathan,
+Thanks for the pointer! Now going through the manual at http://cran.r-project.org/web/packages/Matrix/Matrix.pdf
+Thanks,

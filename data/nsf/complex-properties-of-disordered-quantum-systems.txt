@@ -1,0 +1,25 @@
+              This award supports computational and theoretical research on classical and
+              quantum complex systems.  The PI will study quantum complex systems and their
+              classical analogs with an aim to elucidate the relationship between them. 
+              Research will focus on understanding how the low energy states of the
+              two-dimensional  +J/-J Edwards-Anderson spin glass model change when
+              quantum-mechanical tunneling is introduced.  The PI will exploit a
+              computational algorithm developed to find all the ground states of the
+              classical model to enable the calculation of exact quantum eigenstates of much
+              larger system sizes than can be computed by other methods, in the limit of
+              small tunneling amplitudes. Preliminary results reveal that the quantum ground
+              states have a complex and rich structure that will be elucidated further in the
+              proposed research. The method is also being used to compare the effects of
+              quantum tunneling to other (classical) physical perturbations, such as coupling
+              to a deformable lattice.
+%%%
+This award supports computational and
+              theoretical research and education on classical and quantum complex systems.
+              The PI will use a model of a spin glass to study the relationship between
+              quantum complex systems and their classical analogs.  This work is of
+              fundamental importance to the fields of statistical mechanics and condensed
+              matter physics. It also contributes to efforts to control and manipulate
+              quantum mechanical states; such a capability may have long term impact on
+              information and communication technologies.
+***
+

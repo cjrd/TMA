@@ -1,0 +1,421 @@
+
+Until now we've tackled the problem of
+learning a model, structure, or parameters
+from the case of complete data. We're now
+going to move to what turns out to be a
+much harder situation, where we're trying
+to learn when we have only partially
+observed data. This arises in a variety
+of settings. It arises when we have a
+scenario where we, where some variables
+are just never observed. They are hidden
+or latent. It also occurs when some
+variables are just missing because some
+measurements weren't taken. It turns out
+as will see that these settings provide
+significant challenges both in terms of
+the foundations defining the learning
+tasks in a reasonable way and from a
+computational perspective where as we see
+the computational issues that arise in
+this incomplete data setting or
+considerably more challenging. I mention
+latent variables. Let's try to argue why
+we might care about latent variables. So,
+one reason is latent variables can often
+give rise to sparser and therefore easier
+to learn models. So let's imagine that
+this is my true network. G star, where we
+have three variables leading into this
+variable, H, and then the three variables
+at the bottom. And if all variables are
+binary, then this is a network that can
+be parameterized with seventeen
+independent parameters. But now, let's
+imagine that I've decided that h is
+latent. And I'm just going to learn the
+network over the observable variables which
+are the x's and the y's. And, so what is
+the network that correctly captures the
+structure of the distribution p over x
+one, x two, x three, y one, y two and y
+three. And it turns out that this network,
+if you think about this, has first because
+H is not there, an edge from every X to
+every Y. And furthermore. Because the Ys
+are no longer conditionally independent,
+given the X's, because they're only
+conditionally independent, given the H
+that I don't observe. Then I have also
+edges between the Ys directly. So the
+spaghetti actually turns out to look like
+this, with a total of 59 parameters in the
+network. So by dropping this one latent
+variable, I've created a model which is
+much harder to learn. Now, of course,
+learning a model with the latent variables
+is, by itself, a, A problematic situation
+but it may well be worth the tradeoff. So
+the other reason why we might care about
+learning latent variables is because they
+might be interesting. They might provide
+us with an interesting characterization of
+structure in the data, and I'll give
+examples of that in a later module. But
+for the moment, just as a teaser, imagine
+that we have a data set corresponding to
+3D point clouds, that are scanned of a
+human body. And we would like to discover
+from that, what are the, what is the limb
+structure of the person, that, to which
+the scans correspond? That is, we want to
+identify clusters in the data, cluster in
+the point cloud, that correspond
+to body parts. And so we want to basically
+end up with an output where each point has
+a latent variable representing which body
+part it belongs to. So having motivated
+why we might care about missing data,
+let's think about some of the complexities
+that arise. So let's imagine that somebody
+gives us this sequence over here and says,
+you know, here's these question marks,
+marks that correspond to missing data. How
+do we treat this? And the answer is, if
+you don't know why these data are missing,
+you have no idea how to proceed. And so to
+understand that, let's consider two
+different scenarios. The first one is an
+experimenter is asked to toss the coin.
+And occasionally, the, the coin misses the
+table, and drops on the floor, and the
+experimenter is, you know, too tired to go
+crawl under the table to see what
+happened. And so they don't record the
+value of the coin in the cases where it
+fell on the floor. Case two is the coin is
+tossed but the experimenter doesn't like
+tails. For some reason tails are, are you
+know, give him the heebie jeebies and so
+tails are not reported sometimes. Note in
+these two cases really should give rise to
+very different estimation procedures if we
+are trying to learn from this dataset.
+Specifically, in the first case, we should
+probably just ignore the question marks and
+just learn from the sequence of observed
+instances, HTHH. Because the other one,
+beside from being missing it doesn't help
+anything about the point. In case two on
+the other hand, we can't really ignore the
+missing measurements. We need to learn
+from the sequence H T, T, T H T H, because
+ignoring the missing values is effectively
+ignoring something that is, predominantly or
+entirely tails. And so, we can get
+incorrect estimates if we just ignore
+them. So in order to correctly learn the
+missing data we need to actually consider
+the, the mechanism by which the data was
+made to be missing. And so how do we model
+the notion of missing data? So, let's
+imagine that we have a set of random
+variables that, that define our model,
+and, in some instances, we may observe
+some, but not others. And so we're going
+to define a set of observability variables
+which are always observed. And basically,
+O sub I tells us, is one if XI is
+observed. And zero otherwise. And so we
+always know whether we observe the
+variable or not, and so OI is always
+observed. And now we're going to add a new
+set of random variables, which are also
+always observed. These are the variables
+that we're going to call yi which have the
+same value as xi. So each one has the same
+value space as xi. Except that there is
+also the, I didn't get to observe it
+value. And so in the real data case, we,
+in the real scenario, we basically get to
+observe the y and we get to observe the
+o's and the x's are not observed. Now, the Y's are a deterministic function of the X's
+and the O's. So Y is equal, YI is equal to
+XI when O is observed. And is equal to
+question mark when O is not observed. So
+in the cases wh-, where the val-, where I
+have OI is equal to one, I can reconstruct
+the value of XI. But for the cases where I
+don't have the observation, I can't. And
+so this is a way of just defining the, the
+observability, pattern that I have. With
+this set of variables, I can now model the
+two, the two different scenarios that we
+had before. In this scenario. This
+corresponds to the coin falling on the
+ground every once in awhile. We have a
+separate model over here that represents
+our, our observability pattern and we see
+that a variable is sometimes observed by
+chance. And that the target and observed
+value Y depends on X and on O, but there
+is no interaction between the value of the
+coin and whether I end up observing it or
+not. By comparison, in the case where the,
+experimenter doesn't like tails, we see
+that the X, that the true value of the X
+variable affects whether it's observed or
+not. And so, we have an edge from X to O.
+So when can, in which of those cases can
+we ignore the missing data mechanisms, and
+focus only on the likelihood of the stuff
+that I get to observe? And the answer is,
+one can define a notion called "missing at
+random." Missing at random is a way for me
+to say I can ignore the mechanism. With
+the observability and focus only on this
+piece over here. Personal famous
+[inaudible]. So one can show that it
+suffices for this question, for focusing
+only on the likelihood, that this
+distribution over X and Y and O have the
+following characteristics. That the
+observation variables, O. [inaudible] are
+independent of the unobserved X's. Which
+we're going to denote h, given the
+observed values. Y, which are my data
+instances. Which means that if, you tell
+me the values that you observe, then the
+fact that something may or may not been
+observed doesn't carry any additional
+information. Now this is a little bit of a
+tricky notion, so let's try and give an
+example. Imagine that a doctor, a patient
+come, comes into the doctor's office, and
+the doctor chooses what set of tests to
+perform. For example, the doctor chooses
+to perform or not perform say, a chest
+x-ray. The fact that the doctor didn't
+chose to perform a chest x-ray. Probably
+indicates that the person didn't come in
+with a deep cough or some other symptom,
+or some other symptom that suggested
+tuberculosis or pneumonia. And therefore
+the test wasn't performed. So, the
+observation or lack thereof, of a chest
+x-ray, the fact that a chest x-ray doesn't
+exist in my patient?s record, is probably
+an indication that the patient didn't have
+tuberculosis or pneumonia. So, these are
+not independent. So, in that model. We do
+not have the missing at random. Assumption
+holding because the observability pattern
+tells me something about the disease which
+is the unobserved valuable that I care
+about. On the other hand, if I have in my
+medical record. Things like the primary
+complaint, that the patient came in. For
+example, a broken leg. Then at that point,
+given that the primary complaint was a
+broken leg I already know that the patient
+is likely didn't have tuberculosis or
+pneumonia. And therefore given that
+observed feature, observed variable which
+is the primary complaint, the
+observability pattern no longer gives me
+any information about the variables that I
+didn't observe. And so that is the
+difference between a scenario that is
+missing at random and a scenario that
+isn't missing at random. For the perspe-,
+for the, for the purposes of our
+discussion, we're going to make the
+missing random assumption from here on.
+What's the next complication with the case
+of incomplete data? It turns out that the
+likelihood can have multiple, global
+maximum. So, intuitively, that's almost,
+almost obvious. Because, if you have a
+hidden variable. That has two values, zero
+and one. The values of zero and one don't
+mean anything. We could rename the one and
+zero. And just invert everything. And it
+would basically give us an exact the
+equivalent model to the one with zero and
+one. Because the names don't mean
+anything. So that immediately means, that
+I have a reflection of my likelihood
+function that occurs when I rename the
+variables. And, it turns out that this is
+not something that happens just in this
+case. When I have multiple hidden
+variables the problem only becomes worse
+because the number of local, the number of
+global maxima becomes exponentially
+large in the number of hidden variables.
+And so now we have a function with
+exponentially many reflections of itself
+and it turns out that this can also occur
+when you have missing data not just with hidden
+variables. So even if I already have a
+data where, where only some occurrences of
+a variable are missing its value, even that
+can give me multiple local in global
+maximum. So to understand that a little
+bit in more depth, let's go back to the
+comparisons between the likelihood in the
+complete data case and the likelihood in
+the incomplete data case. So, here is a
+simple model where I have two variables x
+and y with x being a parent of y. And I
+have three instances and if we just go
+ahead and write down the complete data
+likelihood. It turns out to have the
+following beautiful form which we've
+already seen before. Where we have, the
+product of probability is for the three
+instances. And, each of these can be,
+we've omitted writing the parameters for
+clarity, and that's going to be equal to,
+here is. The, probability for theta X0, Y0
+given the parameters, the second instance,
+and the third instance. And the point is
+this ends up being a nice decomposable
+function of the parameters. As, in terms
+of, of a product, which, when we take the
+log, ends up being a sum. So the
+likelihood decomposes. It decomposes by
+variables and it decomposes within the
+CPD. What about the incomplete data case?
+Let's make our life a little bit more
+complicated, and, whereas before we had
+these complete instances, now notice that
+these, both of these instances have an
+incomplete observation regarding the
+variable, X. And now let's write down the
+likelihood function in this case. Well,
+the likelihood function is now the
+probability of Y0, which is the first data
+instance, times the probability of X0 Y1,
+which is the second data instance, times
+another probability of Y0. So, since Pi P
+of Y zero appears twice of we've squared
+this term over here and the probability of
+Y zero is the sum over X of the
+probability of X comma Y zero. That is you
+have to consider both possible ways of
+completing the data X for the different
+values of X. X zero and X one. And so if
+we unravel this expression inside the
+parentheses, it ends up looking like this:
+Theta X0 times Theta Y0X0 plus Theta X1,
+Theta Y0 given X1. And the important
+observation about this expression, is that
+it is not a product of parameters in the
+model. Which means we cannot take its log
+and have it decompose over parameters of
+this summation. Because a log of a
+summation doesn't, doesn't decompose. And
+so that means that our nicely
+compositioned properties of the likelihood
+function have disappeared in the case of
+incomplete data. It does not decompose by
+variables. Notice we have a theta. For the
+X variable sitting in the same expression
+as an entry from the P of Y given
+X CPD. It does not decompose within
+CPD and even computing this likelihood
+function actually requires that we do a
+sum product computation. So it requires
+effectively a form of probabilistic
+inference. So what does that imply both of
+these properties that we talked about in
+previous slide? What does that imply
+about the likelihood function? Before, our
+likelihood function had the form of these
+gray lines over here. So for example like
+this. This is a likelihood function of the
+complete data scenario. Then, when we have
+a multi, when we have a case of incomplete
+data we're effectively summing up the
+probability of all possible completions of
+the unobserved variables and so the
+overall likelihood function ends up being
+a product of Ends up being a summation,
+sorry. A summation of likelihood functions
+that corresponds to the different ways
+that I have to complete the data. So this
+end up being, where this is one summation.
+So the likelihood function ends up being a
+sum of. Like, some of these nice concave
+likelihood functions. Well [inaudible]
+concave likelihood functions. But the
+point is, when you add them all up it doesn't look so nice at all. It ends up having multiple
+modes and it's very much harder to deal
+with. The second problem that we have, in
+addition to multi modality, is the fact
+that the parameters start being correlated
+with each other. So if you remember when
+we were doing the case of complete data,
+we had the likelihood function being
+composed as a product of little
+likelihoods for the different parameters.
+What happens when we have an incomplete,
+data scenario? So, when you look at this,
+you can see, for example, that when X is
+not observed, that when X is not observed.
+You have an active V structure that goes
+from theta YX through Y all the way to
+theta X. And so intuitively that suggests
+to us that there is a correlation, an
+interaction, between the values that I
+chose for theta Y given X and for theta X.
+And when you think about the intuition for
+that, it makes perfect sense. Because, for
+example, if theta X chooses to make XO
+very, very likely, then most of the
+instances where X is unobserved will be
+assigned to the XO case, and that's going
+to basically, have me, you can assign the
+data instances to the x0 and that's going
+to change the estimates of theta y given x0
+relative to theta y given x1 because most
+of the instances now correspond to x0
+rather than x1. In absence of correlation
+between sum and to see that correlation
+manifesting. Let's look at some graphs.
+And so what we're seeing here is actually
+the correlation between two entries in the
+CPD theta y given x. So, over here we see
+theta y given x0 and here is theta one
+given x1. What you see here is the contour
+plot of the likelihood function, a data
+points and zero missing measurements and
+you can see that this is a nice product
+likelihood function with a nice peak in
+the middle and there's no interaction
+between two parameters. But as we start to
+gain more, more missing measurements, you
+can see that the curves starts, that the
+counter flocks start to deform and even
+with three missing measurements see there
+is significant interaction between the
+value that I end up picking for theta
+of y given x1 and the value will be end up
+theta y given x0. So to summarize
+incomplete data, is actually something
+that arises very often in practice, and it
+raises multiple challenges and issues. How
+are the, how are the missing values
+generated? What makes them missing, turns
+out to be very important. The fact that
+there are certain components of the model
+that are just unidentifiable because there
+is several equally good solutions. So, if
+you pick the best one, you better realize
+that there are others that are equally
+good out there. And finally the complexity
+of the likelihood function is another
+significant complication when doing this
+kind of when trying to deal with
+incomplete data.

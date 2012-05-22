@@ -1,0 +1,13 @@
+Hi,
+Is there a good testing data for LDA (set of articles and vocabulary) to
+just see how LDA works?
+I used NIPS articles for this purpose (~1800 documents) but top words for
+each topic are not so nice e.g. some words appear in all topics ("neural",
+"system", "network").
+In other words observing top words for each topic it's difficult to
+determine a real topic e.g. words "linear", "vector", "matrix",
+"eigenvalue" - it's linear algeabra but I have not seen such "nice" top
+words in my experiments.
+So another question: how to get a "good"  training data  (not very
+large) for experiments with LDA like models?
+Thannks, Vasiliy.

@@ -1,0 +1,16 @@
+Hi Gregg,
+LDA is an dimensionality reduction on its own, so I am not sure about
+the benefits from combinations with yet another dim reduction. I would
+guess that you will not gain much by stemming, too. Both issues have
+already been discussed on this list and you find them in the archive.
+In order to speed things up, I would go for a different approach. Words
+that occur only in a single document do not contribute to the problem in
+an LDA sense and can be removed from the data. You could reduce the
+number of words by increasing a threshold X in "a word must occur in at
+least X different documents to be considered". Note that it is slightly
+different from "a word must occur at least Y times in the corpus".
+I have not tried something like this. It was just an idea one might play
+with. (@list, if this is not a good idea in general, I would like to
+know...)
+Cheers,
+Laura

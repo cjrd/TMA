@@ -1,0 +1,41 @@
+              Active sensing for three-dimensional auditory localization
+The proposed project
+              examines the production, reception and processing of acoustic signals for
+              spatial localization in a dynamic environment.  The research described in this
+              proposal utilizes the echolocating bat as a model system for the study of
+              auditory localization, with particular emphasis on the coordinated operation
+              between perception and action for the representation of three-dimensional
+              space.  The echolocating bat produces ultrasonic vocalizations and uses
+              information contained in the returning echoes to determine the direction and
+              distance of objects in space. With this acoustic information, the bat builds a
+              three-dimensional auditory representation of the world. 
+
+The research will
+              combine acoustics, behavior and modeling to specify general principles of
+              spatial information processing and orientation.  The big brown bat, Eptesicus
+              fuscus, an insectivorous North American bat that produces frequency modulated
+              (FM) sonar sounds will serve as the subject in three inter-related studies:  1)
+              Detailed measurements of the acoustic information available to the bat for
+              sound localization.  This study also examines how cues related to sound source
+              direction and distance are ultimately combined to represent an auditory
+              object's location in three-dimensional space.  2) Behavioral measurements of
+              the bat's active control over the direction and volume of the sonar beam used
+              to gather acoustic information from the environment. This study aims to
+              identify the active processes that contribute to the bat's spatial orientation
+              and tracking by echolocation, which shares important principles with other
+              sensorimotor systems. 3) Perceptual experiments will measure the resolution of
+              the bat's sonar receiver along the distance axis.  This study complements the
+              acoustic measures of sonar signal direction and beam width and the pressure
+              transformation of acoustic signals at the two ears to permit modeling of active
+              sensing for auditory localization in three-dimensional space.
+
+The
+              interdisciplinary work described in this proposal holds importance to the
+              public sector, contributing to education (cross-disciplinary research and
+              scientific training), technology (teleconferencing and radar/sonar) and society
+              (human factors).  Furthermore, the bat's motor control over the information
+              extracted from three-dimensional space presents a special opportunity to
+              examine and develop models of action and perception that bridge work in
+              audition and vision.  
+
+

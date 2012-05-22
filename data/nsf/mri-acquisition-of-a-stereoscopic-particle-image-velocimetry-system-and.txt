@@ -1,0 +1,11 @@
+              This MRI proposal provides funding for the purchase of a three-dimensial
+              particle imaging velocimetry (PIV) device to augment the existing equipment at
+              the Auburn University Plasma Science Laboratory (PSL).  The PSL has a unique
+              niche in the dusty plasma community - the ability to perform real-time,
+              two-dimensional particle transport investigations.  This new device makes it
+              possible to overcome the key limitation of the present PIV device, that it is
+              only able to measure two of the three velocity components of the particles. 
+              Because dusty plasmas, plasmas containing charged microparticles, are present
+              in many different environments, from astrophysical systems such as nebula and
+              planetary rings to industrial processing tools, understanding the behavior of
+              dusty plasmas in detail will have broad impact in a number of fields.

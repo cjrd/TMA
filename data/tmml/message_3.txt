@@ -1,0 +1,4 @@
+Hi,
+Gregor also has a free version of the Gibbs sampler for LDA:
+http://www.arbylon.net/projects/
+Cheers,

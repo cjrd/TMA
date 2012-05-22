@@ -1,0 +1,6 @@
+Hello,
+Jonathan, one of gensim's users, adapted and tried the HDP method of Chong Wang et al [1] on a medical dataset. The results don't seem very promising (for a tiny comparison of LDA and HDP over the same corpus: https://github.com/piskvorky/gensim/pull/73#issuecomment-3891114 ).
+Any pointers of how to tweak this method, or what to expect from it in practice? Has anyone tried HDP on their corpora, so we can cross-check the results?
+Cheers,
+Radim
+[1] Wang, Paisley, Blei: Online Variational Inference for the Hierarchical Dirichlet Process, JMLR (2011).

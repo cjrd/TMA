@@ -1,0 +1,37 @@
+              This proposal is designed to investigate the elastic response and ultrasonic
+              attenuation of a wide variety of "glasslike crystals" (materials that
+              simultaneously reflect both crystalline and glasslike properties).  The
+              scientific issues that will be addressed include: (a) the relationship between
+              inclusion compounds, quasicrystals, and structural glasses, (b) are tunneling
+              states (which are typically found in glasses at low temperatures) intrinsic to
+              inclusion compounds and/or quasicrystals, and (c) structure-property
+              relationships - to what extent can various structural features be used to
+              predict the elastic properties of a given material?  This research project will
+              use Resonant Ultrasound Spectroscopy (RUS) to probe the elastic properties of
+              the materials under investigation. RUS is a novel technique for determining the
+              elastic moduli of solids, based on the measurement of the resonances of a
+              freely vibrating body.  The ultrasonic attenuation of the materials will be
+              measured using a standard pulse-echo technique.  This proposal will contribute
+              toward the development of a strong solid-state program at The University of
+              Mississippi.  Both advanced undergraduate and graduate students will gain
+              in-depth experience in ultrasound experiments and the techniques of low
+              temperature physics.
+
+"Ordinary" materials are either crystals (with
+              long-range order, i.e., the atoms are arranged in a periodic array) or glasses
+              (with no long-range order).  This proposal will investigate the properties of
+              some "extraordinary" materials such as inclusion compounds and quasicrystals. 
+              These are materials that simultaneously display both crystalline and glasslike
+              properties.  The project will focus on the elastic properties of these
+              remarkable solids, using a relatively new technique, Resonant Ultrasound
+              Spectroscopy (RUS).  A study of materials that display the unusual combination
+              of glasslike and crystalline features is expected to have an impact on two
+              fronts.  First, the investigation of the glasslike properties found in these
+              materials is expected to lead to a better understaanding of the origin of
+              glassy behavior.  Since these materials are of interest for technological
+              (thermoelectric) applications, a better understanding of their properties is
+              essential for the design of materials with superior properties. Secondly, this
+              research will contribute to the training of young scientists at the
+              undergraduate and graduate level in Mississippi, who will gain in-depth
+              experience in the field of condensed-matter physics.
+

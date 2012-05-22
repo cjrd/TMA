@@ -1,0 +1,16 @@
+Dear All,
+I am using mallet lda (http://mallet.cs.umass.edu/) on a set of images
+represented b Bag-of-visual-words.
+The settings are: #topics=500, alpha=0.001 (i want sparse document vector),
+beta=0.01, #documents=10k+,#vocabulary=50k+
+I have got the below message during iteration: (after a few iterations)
+*[beta: NaN]
+NaN after topic 0 0
+<1550> LL/token: NaN
+NaN after topic 0 0
+<1560> LL/token: NaN
+NaN after topic 0 0
+<1570> LL/token: NaN*
+May I know what is the implication of that? Or what do I need to do for the
+settings?
+Thank you!!

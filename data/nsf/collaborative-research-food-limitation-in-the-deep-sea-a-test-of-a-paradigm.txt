@@ -1,0 +1,33 @@
+              Investigators at the Scripps Institution of Oceanography and the Woods Hole
+              Oceanographic Institution will collaborate on a project to tackle a major
+              paradigm in marine ecology: the coupling between a pelagically-derived food
+              supply and the dynamics of deep-sea benthic communities.  This coupling has
+              been difficult to establish without appropriate long time-series measurements,
+              which in turn have been limited by data storage capacity, longevity of battery
+              power to operate instrumentation, the inability to collect/analyze data and
+              alter sampling frequencies in real time, and the inability to correct or
+              compensate for malfunctions in real time.  The PIs will establish a long-term
+              seafloor observing site by tapping into the Hawaii-2 Observatory (H20) at 5000
+              m depth in the central North Pacific.  H2O is a prototype seafloor observing
+              system that has made long-term monitoring possible in the deep sea, by
+              providing electrical power from shore with real-time data acquisition and
+              control via an underwater telephone cable. By plugging a suite of sensors into
+              H2O, the PIs will study the short and long-term importance of a
+              temporally-varying food supply on an abyssal benthic community.  The following
+              questions will be afddressed: 1) What is the quality and quantity of sinking
+              particulate matter reaching the sea floor at the H20 site as representative of
+              the North Pacific central gyre? 2) What responses are elicited in the
+              epibenthic megafauna, as a proxy for benthic community activity, by the quality
+              and quantity of particulate matter arriving on the sea floor on time scales
+              from hours to years?  A monitoring system will be attached consisting of a
+              sedimentation sensor and digital time-lapse cameras, to monitor the flux of
+              particulate matter as well as the activity of epibenthic megafauna in two 20m2
+              areas of the sea floor at the H20 site in real-time. Temporal changes in
+              particle flux to the sea floor will be compared with the abundance and activity
+              of the mobile epibenthic megafauna in the replicate photographic areas. A
+              one-year test with real-time data acquisition and analyses combined with the
+              ability to alter sampling frequencies from shore will provide the first
+              long-term ecological monitoring of the abyssal sea floor to resolve the
+              importance of food limitation on deep-sea benthic communities.
+
+

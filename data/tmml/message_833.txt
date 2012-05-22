@@ -1,0 +1,27 @@
+Joe,
+I had this problem with the paper too.  I don't see how moving all
+that probability mass around is really legitimate in terms of modeling
+the document.
+Speaking of term weighting and generative models, I really liked your
+paper on vMF topic models, and had  some questions on it. First, given
+your preferred setup, it seems inevitable that the model will generate
+points that lie outside the positive orthant of the hypersphere,
+corresponding to documents with negative word counts.   Is there
+somehow a notion of "anti-words" at play here?
+Interesting how you have another vMF draw on top of the weighted
+spherical average of topics.  But I guess this makes sense: you can't
+expect the weighted average to correspond to the document directly,
+since the topic vectors aren't a basis for the whole spherical
+surface.
+An analogy for regular LDA might be drawing P(z|d), and then
+marginalizing z out of P(w|z)P(z|d) to get a "smoothed" P(w|d).  You
+then plug this into the multinomial and draw a word-count vector.
+Presto, a complete document without having to generate each individual
+word one at a time.
+I'm also curious whether you considered an asymmetric alpha in the
+Dirichlet prior, so that some topics could be more prominent in the
+corpus than others?    Also, did you try different term-weighting
+schemes other than tf-idf, for example like the info-content or
+pointwise MI of the other paper?
+thanks,
+Dave

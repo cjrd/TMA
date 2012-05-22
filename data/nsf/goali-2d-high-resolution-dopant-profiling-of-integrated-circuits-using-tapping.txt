@@ -1,0 +1,30 @@
+              0010059
+Schlaf
+
+The proposed three-year research collaboration between Lucent
+              Technologies and the PI focuses on the further development of a recently
+              demonstrated new technique for laterally resolved 2D dopant profiling. This new
+              technique uses standard tapping mode atomic force microscopy (TMAFM) with an
+              applied direct current (DC) bias between cantilever and sample. Using the TMAFM
+              phase signal, bias induced dopant density related variations in Coulomb forces
+              are detected, yielding a dopant density map of the investigated
+              surface.
+
+Since TMAFM is used to scan the surface, only very weak mechanical
+              interaction with the surface occurs resulting in a potentially more stable
+              operation than in to date used methods such as scanning capacitance microscopy
+              (SCM) or nano-spreading resistance profiling (nano-SRP) where the probe presses
+              down on the investigated surface during the measurement resulting in short
+              probe life.  While offering the benefits of reproducibility and long probe
+              life, the spatial and doping density resolution limits of the TMAFM method are
+              potentially similar to the existing methods.
+
+In this context the proposed
+              program aims at the further exploration of the basic physical mechanisms of the
+              method, finding and optimizing its maximum lateral and dopant density
+              resolutions, calibrating it using industry standards and testing its
+              application to "real life" industrial state-of-the-art integrated circuit
+              samples. In summary, these efforts focus on developing the PI's method into a
+              cutting edge metrology tool for integrated circuit research, development and
+              production.
+

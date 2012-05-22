@@ -1,0 +1,22 @@
+Hi there,
+I got some problems when read the paper On-Line LDA: Adaptive Topic Models
+for Mining Text Streams with Applications to Topic Detection and Tracking
+[1] by AlSumait, L
+1) what's the content of the beta(k,t)? i think the size of this matrix is
+KxV (K is the number of the topics and the V is the number of the unique
+words in the corpus), right?
+but i'm not quite sure what is the element of this matrix? in the paper it
+mentioned "So, the count of words in topics, resulted from running LDA on
+documents received at time t, can be used as the priors for the t + 1
+stream." from this line, i would say the element is the times of word (t)
+show up in the topic (k), but in the algorithm 1, it also mentioned that
+"Bt =Bt1??t,k?{1,???,K}" while the ?t is a multinomial distribution, how to
+join them? (thinking of one is a count while another is distribution)
+2) in the paper it mentioned "An emerging topic can be viewed as the one
+that is different from its peers in the same stream..."
+i'm not quite sure what's "peer" mean here, does it mean the other topics
+(i.e. different topic index respect to the K)  or the topic with the same
+topic index in previous time window?
+P.S. i have send this mail to the author of this paper but haven't got any
+response, so i post it here.
+Regards & Thanks,

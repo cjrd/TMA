@@ -1,0 +1,7 @@
+Hi Shuang
+This is one paper? (among the very good ones that others have suggested) that really helped me a lot. http://home.in.tum.de/~xiaoh/pub/3G_talk.pdf
+It presents the topic in a simple and elegant way, including a link to derivations of the Gibbs sampling (in chinese).
+Hope this helps.
+Popoola 'Toyin
+Pattern Recognition & Intelligent Systems
+Harbin Engineering University

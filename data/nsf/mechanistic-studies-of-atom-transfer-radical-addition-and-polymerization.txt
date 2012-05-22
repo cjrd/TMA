@@ -1,0 +1,54 @@
+              Professor Krzystof Matyjaszewski of the Department of Chemistry at Carnegie
+              Mellon University is supported by the Organic and Macromolecular Chemistry
+              Program for research on atom transfer radical polymerization, which is based on
+              the use of radical polymerization to convert monomer to polymer. The purpose of
+              the proposed research is to determine the structure of the catalytic and
+              intermediate species in both ATRA and ATRP, and to build structure-reactivity
+              correlations for alkyl, halide, metal and ligand components of the reactions.
+              These objectives will be met by employing an array of chemical analysis
+              techniques as well as examination of the kinetics and products of the model
+              compound reactions. More specifically, the structures of the catalyst in
+              non-polar media will be determined for various metal/ligand complexes using
+              EXAFS, EPR, UV-Visible and other spectroscopic methods. This is required
+              because very little information regarding the structures of such complexes in
+              non-polar media (such as vinyl monomers) exists. Another area of focus is the
+              determination of activation and deactivation rate constants of alkyl
+              halide/metal catalyst pairs. The ability of ATRA and ATRP to produce
+              well-controlled products depends heavily on these kinetic parameters, and
+              therefore their determination is of vital importance in the development of new
+              and more efficient catalysts. The systematic investigation of the structures
+              and reactivities of the species involved in ATRA and ATRP will lead to a
+              greater depth of understanding of these reactions. This will, in turn, advance
+              and optimize both synthetic methods, such as the development of more effective
+              catalysts, so that new materials (including small organic compounds and
+              polymers) can be produced more efficiently and with greater yields and
+              selectivity.
+
+Professor Krzystof Matyjaszewski of the Department of Chemistry
+              at Carnegie Mellon University using atom transfer radical polymerization (ATRP)
+              has been able to polymerize a wide range of monomers including various
+              styrenes, acrylates and methacrylates as well as other monomers such as
+              acrylonitrile, vinyl pyridine, and dienes. Although many of the polymer types
+              described have been prepared using other living polymerizations, ATRP remains
+              the most powerful, versatile, simple, and inexpensive. Researchers have been
+              striving to develop a living radical polymerization for nearly 40 years. An
+              alternative was sought because other types of living polymerizations are
+              severely limited by many factors: only a small number of monomers can be used,
+              the reactions are sensitive to moisture, and two or more monomers cannot be
+              randomly copolymerized. Radical polymerization, in contrast, can polymerize
+              hundreds of monomers, can copolymerize two or more monomers, and can be
+              performed in water as emulsions or suspensions. The Matyjaszewski research
+              group was the first to develop a "controlled/living radical polymerization"
+              (CRP) that used a simple, inexpensive polymerization system. It is capable of
+              polymerizing a wide variety of monomers, is tolerant of trace impurities
+              (water, oxygen, and inhibitor), and is readily applicable to industrial
+              processes. The system that was developed was termed Atom Transfer Radical
+              Polymerization (ATRP). ATRP is a robust system that has generated much interest
+              among polymer chemists in both industry and academia. Science Watch, a trade
+              journal, has recently listed three ATRP papers among the top ten cited papers
+              in chemistry today. Several commercial companies are pursuing CRP as evidenced
+              by 195 patent applications with 72 related to ATRP alone. The first commercial
+              product related to this method will be available this year. The first
+              applications are related to coatings but applications related to dispersants,
+              adhesives, additives, lubricants, and cosmetics will quickly follow.
+

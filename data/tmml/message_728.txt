@@ -1,0 +1,3 @@
+Well, it turns out that I guessed right on the file format.  If anybody ever
+is trying to do this again, at least the format is documented in the
+archives...

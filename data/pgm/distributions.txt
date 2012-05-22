@@ -1,0 +1,121 @@
+
+So before we get into the details of
+probabilistic graphical models, we need to
+talk a little bit about what a probability
+distribution is, just so we all have a
+shared vocabulary. So let's start with a
+very simple example of a joint distribution,
+one that is going to be extended in
+examples later on, in other parts of the
+course. And let's start with an example
+that involves just three random variables.
+This is what I call the "student example", and
+you have a student who has, who can be
+described in this case by a variable
+representing his intelligence, and that could
+be high or low. The student is taking a
+class. The class might be difficult or
+not. So this random variable B, this
+random variable I has two values.
+Difficulty variable also has two values.
+And then there's the grade that the
+student gets in the course, and that has
+three values, in this case we're going to
+assume A, B, and C. Now here is an example
+joint distribution over this, over this
+set of three random variables. So this is
+an example of P of I comma D comma G, it's a joint
+distribution. And let's think about how
+many entries are in such a joint
+distribution. Well, since we have three
+variables, and we want to, we need to
+represent the probability of every
+combination of values for each of these
+three variables, And so we have two, times
+two, times three possible combinations for a
+total of twelve possible values that we
+need to assign a probability to. So
+there's twelve total parameters in this
+probability dis[tribution]. And I'm going to introduce the
+notion of independent parameters which
+were going to talk about later, as well.
+Independent parameters are parameters
+whose value is not completely determined
+by the values of other parameters. So in
+this case, because this thing's a
+probability distribution, we know that all
+of the numbers here on the right have to
+sum to one, and therefore if you tell me
+eleven out of the twelve I know what the
+twelfth is, and so the number of
+independent parameters is eleven. And
+we'll see that that's a useful notion
+later on when we start evaluating the
+relative expressive power of different probability
+distributions. What are things that we can
+do with probability distributions? Well,
+one important thing that we can do is
+condition the probability distribution on
+a particular observation. So for example,
+assume that we observed that the student
+got an A. And so we have, now, an
+assignment to the variable G, which is g1.
+And that immediately eliminates all
+possible assignments that are not
+consistent with my observation. So
+everything but the g1 observations. Okay?
+And so that gives me a reduced probability
+distribution, and so this is an operation
+that's called reduction. I've taken the
+probability distribution. I've reduced
+away stuff that is not consistent with
+what I observed. Now that by itself
+doesn't give me a probability distribution
+because notice that these numbers no
+longer sum to one because they summed to
+one before I threw out a bunch of stuff.
+And so in order to get a probability
+distribution, what I do is I take this
+unnormalized measure. An indication -- the word
+measure indicates that it's a form of
+distribution, but the fact that it's
+unnormalized, means, that it doesn't
+sum to one, it doesn't normalize to one,
+so this unnormalized measure, if you
+want to turn it into a probability
+distribution, the obvious thing to do is
+to normalize it. And so, what we're
+going to do is, we're going to take all of
+these entries, we're going to sum them up.
+And that's going to give us a number, which
+in this case is 0.447. And we can now
+divide each of these by 0.447 and that's
+going to give us a normalized
+distribution, which in this case corresponds
+to the probability of I comma D given
+g1. So that's a way of taking an
+unnormalized measure and turning it into a
+normalized probability
+distribution. We'll see that this
+operation is one of the more important
+ones that we'll be using throughout the
+course. Okay. The final operation I am
+going to talk about regarding probability
+distribution is the operation of
+marginalization. And that is an operation
+that takes the probability distribution of
+a larger subset of variables and produces
+a probability distribution over a subset
+of those. So in this case we have a
+probability distribution over I and D, and
+say we want to marginalize I, which means
+we are going to basically sum up, we are
+going to throw away, I am going to
+restrict attention to D, and so what that
+does is: for example, if I want to compute
+the probability of D0, I'm going to add up
+both of the entries that have D0
+associated with them, and that's the one
+corresponding to I0 and the one
+corresponding to I1. And that's the
+marginalization of this probability distribution.

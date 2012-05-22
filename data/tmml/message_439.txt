@@ -1,0 +1,6 @@
+Hi Gregor, I didn't understand your first question, the derivation of
+eq.14 was in the email that you replied to.  As for the second
+observation about getting to good optimum then deviating from it, I
+hadn't seen behaviour like this.  shouldn't collapsed variational
+always improve on the free energy (up to small perturbations due to
+the gaussian approximation) at each iteration? -yw

@@ -1,0 +1,7 @@
+Dear list members,
+I just joined the list and I've a question :
+in order to do MODEL ESTIMATION we need to know the words indices from a
+certain vocabulary (in order to build our training data).
+I couldn't yet find that vocabulary obtained from the pool of articles
+extracted from JSTOR Science articles.
+Thank you in advance for your feedback,

@@ -1,0 +1,25 @@
+hi topics list,
+regarding initialization of the nested CRP, i do the following:
+for each document,
+1. associate it with a new branch in the tree, sharing only the root
+node
+2. sample the topic assignments for each word from
+p(z_0) p(z_1 | z_0) ...  p(z_N | z_0 ... z_{N-1}).
+3. resample the tree path for the document
+it might help to repeat this process a few times and choose the
+initial state that has the highest posterior mode.
+[ah... i just saw that joseph reisinger suggested a similar
+initialization scheme.]
+regarding hyperparameters, indeed, the prior on the topic
+distributions affects the size of the tree.  a small value of \eta
+leads to sparse distributions.  as a consequence, a bushier tree is
+needed to explain the data.
+once your implementation of the nested CRP is working, i suggest
+implementing hyper-parameter updates to search the space of
+hyperparameters.  we used metropolis-hastings in our implementation,
+with a truncated gaussian proposal.  however, i think that better
+methods of approximate inference for dirichlet hyperparameters have
+since been developed.  other members of the list might be able to
+point us to some.
+best,
+dave

@@ -1,0 +1,5 @@
+Just to be more clear.
+In the Eq. (6), there is $\beta$. After introducing the prior for the
+$\beta$, the $\beta$ in Eq. 6 will be replaced by the terms containing the
+variational parameters of $\beta$ because $\beta$ is random variable now,
+in my opinion.

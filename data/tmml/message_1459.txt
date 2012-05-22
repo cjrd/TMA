@@ -1,0 +1,7 @@
+Hi, all
+Does anyone have the source code of corr-LDA? Or anyone know the address to
+download it? I am eager to learn the implementation of this model.
+BR,
+Scrlett
+_____
+6/14/2011

@@ -1,0 +1,23 @@
+              This Small Business Innovation Research (SBIR) Phase II project seeks to
+              implement a  Combustion Chemical Vapor Deposition (CCVD) process for the
+              production of anode electrocatalyst layers for Proton Exchange Membrane Fuel
+              Cell (PEMFC) applications requiring reformate fuel feed gas.  In Phase I it was
+               demonstrated  that fabrication of Pt:Ru electrocatalysts as unsupported,
+              metallic nanoparticles is possible using CCVD. These electrocatalyst layers
+              behave electrochemically in a similar manner to commercially available Pt:Ru
+              electrocatalysts prepared on carbon supports using wet chemical methods, but
+              can be deposited directly onto both gas diffusion media and proton exchange
+              membranes. The Phase II project would involve optimization of catalyst
+              composition, continued development of web coating technology for mass
+              production of membrane electrode assemblies (MEAs) and commercialization of the
+              technology through construction of production equipment and licensing.
+
+Fuel
+              cells are of huge interest to the marketplace, as illustrated by sizable
+              investments in the technology and market capitalization of fuel cell companies.
+              For example, Daimler Chrysler has targeted the year 2004 for planned production
+              of fuel cell vehicles, and has slated more than $1.4 billion in investments to
+              reach that goal. However, for commercial viability, performance and cost of the
+              electrocatalyst layers must be improved. MCT, if successful, could contribute
+              in both arenas.
+

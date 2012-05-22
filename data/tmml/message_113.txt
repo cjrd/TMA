@@ -1,0 +1,18 @@
+hi ning,
+as a statistical model, LDA implicitly "assumes" that future data
+comes from the same distribution as the training data.
+smoothing amounts to putting a dirichlet prior over the topic
+distributions.  this doesn't account for new topics, but does account
+for the fact that new words may appear in existing topics.  dirichlet
+priors on the topics can also encourage sparsity in the topic
+distributions.
+the link that david sent out looks very interesting.  in addition,
+for a topic model with the flexibility to allow new documents to
+exhibit previously unseen topics, i suggest looking at the
+hierarchical dirichlet process (HDP):
+[Teh et al., 2007]	Teh, Y., Jordan, M., Beal, M., and Blei, D.
+(2007). Hierarchical Dirichlet processes. Journal of the American
+Statistical Association, 101(476):1566?1581.
+yee whye teh has code for posterior inference in HDPs on his web-page.
+all the best,
+dave

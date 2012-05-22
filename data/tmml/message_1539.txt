@@ -1,0 +1,8 @@
+Good morning.
+Unfortunately the answer is no.
+Gibbs gives you no guarantees about the convergence of the values of
+specific variables.  You only have guarantees about convergence in
+distribution.  In practice, distributions seem to settle down after a few
+(approx. 1000) iterations.  Diagnosing convergence of Gibbs samplers in our
+discrete models is still an open problem.
+Regards,

@@ -1,0 +1,13 @@
+Topic modelers,
+I have seen a few papers talking about using LDA on short documents
+(e.g., twitter messages). There are a few approaches. Some change the
+weight of each word in the document based on its specificity; others
+gather all the tweets from a given user into a single document; still
+others run vanilla LDA with no modifications. And I'm sure there's
+some I've missed.
+Two questions.
+1. What are your general thoughts and feelings about which approach is best?
+2. Are there any tools that implement any of the approaches? (Besides,
+of course, the vanilla LDA approach.)
+Thanks,
+Steve

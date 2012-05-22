@@ -1,0 +1,19 @@
+              gThe major goal of the research is to understand the molecular mechanisms
+              responsible for the formation of new species of microorganisms. The research
+              will target a single gene known to separate two closely related naturally
+              occurring species of yeast in the genus Pichia.  The two species live in two
+              different cactus types that have major differences in their host chemistry.  
+              Toxic natural products in one cactus type deter the growth of one species while
+              allowing growth of the other.   Identifying and isolating the gene(s)
+              responsible for this difference is the specific goal of the research.  A
+              molecular genetic knockout library recently created for baker's yeast will be
+              used to identify the candidate genes. 
+
+This research addresses the nature of
+              the fundamental process involved in the formation of new species.  It could
+              provide us with 1) the detailed molecular mechanism responsible for adaptation
+              to novel chemicals in natural plants and 2) the reasons for increased genetic
+              and biological diversity in microorganisms.  An important aspect of the work is
+              the use of modern genomic information from the widely studied baker's yeasts to
+              learn about the origin of new species in natural systems. 
+

@@ -1,0 +1,37 @@
+              Some pollution-abatement policies (including typical pollution taxes and
+              auctioned tradeable permits) have the attraction of cost-effectiveness but
+              impose a very large share of the economy-wide cost of regulation on the
+              regulated firms, causing substantial losses of profit in the regulated
+              industries. Other policies (such as systems of grandfathered tradeable permits)
+              manage to avoid imposing such large costs on the regulated firms, but
+              accomplishing this involves a very large sacrifice of cost-effectiveness, that
+              is, a very large increase in the regulatory cost to the economy as a whole. The
+              inability to avoid placing a large economic burden on key industries without
+              significantly increasing the overall economic cost has seriously hampered the
+              broader use of incentive-based and other policies that promise efficiency
+              improvements.  This project analyzes and evaluates the efficiency costs of
+              addressing significant distributional concerns in environmental policy. In
+              particular, the project examines the cost of "insulating" producers that have
+              an especially large stake in the economic outcomes of pollution policy, and
+              explores how efficiency costs change as the "insulation net" becomes broader to
+              protect a wider group of industrial stakeholders. It considers a wide range of
+              potential instruments with the aim of identifying relatively cost-effective
+              pollution-control policies that provide a reasonable degree of compensation or
+              insulation to key stakeholders - thus enhancing the prospects for political
+              feasibility. Policies to be considered include those involving inframarginal
+              exemptions to pollution taxes, partial grandfathering of pollution permits, and
+              (in the case of downstream firms) industry-specific corporate tax cuts or tax
+              credits.
+
+The research employs both analytically solved and numerical general
+              equilibrium models to delineate the circumstances under which the cost of
+              insulating key sectors is small. It considers the costs of avoiding serious
+              impacts both on "upstream" suppliers of polluting fuels and on "downstream"
+              firms that utilize such fuels intensively. The first major component of the
+              project focuses on C02-abatement policies. The second component generalizes the
+              analysis so that it can be applied to other pollutants such as NO2 and S02. The
+              third component - to be performed in tandem with the first two - involves
+              empirical work to improve key parameters of the theoretical and numerical
+              models and to introduce important "bottom-up" details into the energy system of
+              the numerical model.
+

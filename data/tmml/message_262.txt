@@ -1,0 +1,14 @@
+I haven't implemented the GEM version yet, but with fixed path lenghts, my
+experience was that the most important parameter is the smoothing
+parameter over the topic-word multinomials (I think it's eta in the
+original paper). Values of .01 lead to hundreds of branches, while .1
+leads to a more "reasonable" tree (even then, with most words in one or
+two branches). Based on those results, I wouldn't be surprised if a value
+of 1.0 for every word type (I'm assuming this is what you mean, and not
+that the sum of the parameters for every word type is 1.0) would result in
+a single path, since the penalty for adding low frequency words to a
+dirichlet multinomial with that much prior weight wouldn't overcome the
+penalty on adding paths to the graph.
+Note that these parameters also have a significant effect on held-out
+likelihood (higher values seems to mean better likelihood).
+-David

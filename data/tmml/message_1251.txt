@@ -1,0 +1,12 @@
+Dear Members,
+In correlated topic model, we assume some non-zero off-diagonal entries
+in the co-variance matrix of the normal distribution. Does it make any sense
+in the LDA framework to make all the topic components independent so that
+the co-variance matrix becomes diagonal? In case of Dirichlet distribution
+in the original LDA paper, there is just one constraint on the topic
+components (sampled from simplex) so that they are not completely
+independent. On the other hand, in the dynamic topic model paper, the
+authors assumed diagonal co-variance. Can anyone please explain me the
+significance?
+Thanks,
+Ayan Acharya

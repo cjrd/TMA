@@ -1,0 +1,19 @@
+John,
+you use a symmetric parameter on the PRIOR. that is your prior belief on
+how likely a word is observed in any topic, before you have a look at
+the data.
+Inference will tell you the POSTERIOR distribution of that parameter,
+that is the product of prior and likelihood of the data. This is where
+your observations n_i factor in.
+The only reason to use prior counts between 0 and 1 is that then, the
+Dirichlet distributions favors sparse word mixtures (i.e. only few words
+have significant mass). If your prior counts are >> 1, it the Dirichlet
+distrbution favors mixtures that spread equally across all words, which
+may lead to a estimates where all word-topic distributions look the
+same. (Have a look at the animation on wikipedia.)
+You should remember this when you come across the recommendation of for
+setting the Dirichlet prior on the topic-document prior to 50/T, in case
+you want to learn less than 50 topics.
+Hope this helps,
+Laura
+Jonathan Halcrow wrote:

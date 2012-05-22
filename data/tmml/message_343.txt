@@ -1,0 +1,27 @@
+Hi,
+I have some questions regarding hLDA model. I am sorry if they have been
+answered before or are too naive
+1. Can two topics in different dis-joint paths of the hLDA tree be same.
+Example let us say there are 3 documents, 1st one has topics {A,B,C,D} , 2nd
+one has topics {A,B,C,E} and 3rd one has topics {A,B,F,E}
+Thus all 3 paths are joint along topics {A,B}, the 3rd document splits here
+and the 1st two documents continue to the node C on the common path.
+But the 3rd document and the 2nd document have a common topic E. Thus is the
+topic E of document 3 the same as the topic E of document 2 or they both
+have to be different ?
+2. I couldn't get the point of generating a word from the root restaurant.
+This is assuming that all the documents have at least 1 common topic, which
+might not be the case ( if we are ignoring the stop-words )
+3. The number of topics in the entire collection of the documents is K and
+each document has L topics. The topics of the documents form a subset of the
+total number of topics in the corpus. Thus K can range from L to M*L ( the
+former case when all the documents have the same path and the latter when
+all are dis-joint except at the root ). However the distribution of the
+topics over the words from Dir(\beta) has K as a constant. Or is the
+distribution of topics over words sampled from Dir(\beta) everytime we
+sample the path for a document, since it might increase ( or decrease ) the
+total number of topics in the corpus i.e. K
+I am confused over these points in the paper and would be of great help if
+someone could clear them
+Thanks
+- Rachit Arora

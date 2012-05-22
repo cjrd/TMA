@@ -1,0 +1,102 @@
+                The goal of this study is to use a recently developed automatic optimization
+              procedure to further the design of a knowledge based speech signal
+              representation based on phonetic features, the message bearing components of
+              the speech signal. The knowledge based signal representation consists of
+              acoustic parameters that are exact measures performed on the speech signal or
+              its time frequency representation to target the linguistic information in the
+              speech signal. Such a representation can serve as the front end of a speech
+              recognition system, or it can be used as a speech training for those having
+              difficulty producing natural sounding speech (whether due to a speech
+              impairment, hearing loss or learning of a second language). A comparison of the
+              APs and the traditional cepstral based parameters in an HMM speech recognition
+              system shows that the APs are better able to extract the phonetically relevant
+              information from the speech signal and reduce speaker dependent effects.   In
+              previous research, APs were designed for the manner of articulation phonetic
+              features using acoustic phonetic knowledge and histogram analysis to eye ball
+              the data, a time consuming and subjective process. In contrast, the
+              optimization procedure we developed is efficient and uses the objective Fisher
+              criterion and classification trees. Furthermore, the optimization procedure
+              allows us to explore many parameters to determine the one(s) that best
+              characterizes a phonetic feature and separates it from its antonym(s). A
+              comparison of the hand designed manner of articulation APs and the optimized
+              ones in a speech recognition system shows that they yield comparable results.
+              In this project, we plan to complete the knowledge based speech signal
+              representation by using the optimization process to develop APs related to the
+              place of articulation phonetic features and the remaining manner of
+              articulation phonetic features.                                                
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                 

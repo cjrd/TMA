@@ -1,0 +1,11 @@
+Dear all,
+I am implementing "Supervised topic model" in Matlab language, following the paper by Blei and McAuliffe.
+I encounter a problem: after about 30 iterations of EM (corpus level), the per-document log-likelihood becomes NaN (Not a number).
+In my code, the vbem (document level) iterates for 200 times without convergence analysis. Is NaN problem due to too many vbem iteration times?
+I have checked my code for several times, and couldn't find out how to fix it.
+Interestingly, there is also a NaN check in Blei's code of LDA:
+assert(!isnan(likelihood));
+So is it a general problem in topic model related program?
+Thank you in advance.
+Best,
+Kevin

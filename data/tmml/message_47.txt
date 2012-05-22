@@ -1,0 +1,31 @@
+One approach I used when implementing this was to sample the topic
+memberships of the tokens in the reassigned document as a block from
+the distribution conditional on the assignments of the rest of the
+corpus.  Specifically:
+For each document:
+- Remove document's tokens from topics.
+- Remove document from path on tree.
+- Sample new path for document and record it in the path counts.
+- Sample from the topics on this new path a new topic membership for
+each token, then after sampling them all record them all in the topic
+counts.
+Sampling the tokens in each document as a block avoids making any
+arbitrary assumptions about where they should provisionally be before
+they are sampled.  I also tried recording each token's membership in
+the counts as it was sampled; this introduces an asymmetry in the way
+the topics for each token in a document are sampled but still seemed
+to work fine, though I didn't test in any quantitative way the
+'working fine'-ness of one versus the other.  For a fairly homogeneous
+corpus with very many documents, the contribution of one document to
+the samling distribution and thus the particulars of how its tokens
+are re-integrated during sampling is not very important anyway.
+I think intuitively though maybe you don't like that it seems the new
+empty topics will have an 'unfairly' low probability.  Consider that
+if a document establishes a new branch it is likely to have had poor
+overlap with the existing ones anyway, so that by virtue of just the
+smoothing a significant number of its tokens will land in the new
+branch.  (This calls into question choice of smoothing parameters
+though.)  Also maybe your method or some special hack for this case
+generally speaking can speed convergence even if it is strictly
+speaking a deviation from the model.
+Anthony

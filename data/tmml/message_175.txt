@@ -1,0 +1,30 @@
+I write this just because I saw an discussion of comparison between
+Gibbs sampling and VEM for learning LDA.  I am curious how they work
+in distributed computing environment. (I am working for a company who
+has intensive interest on processing huge data sets.)
+I just finished a MapReduce implementation of LDA/Gibbs-Sampling.
+Some recent experiments show that this program works fine on thousands
+of computers and with huge-scale synthetic data.
+This implementation benefits from the fact that Gibbs sampling
+represent the model by matrices of co-occurrences values.  In
+particular, in the distributed computing environment, each computer
+processes a part of the training data (the whole training corpus is
+too large to fit in the memory of a single computer) and outputs its
+opinion on how to updates the model parameters.  These opinions are
+then combined.  For LDA/Gibbs-sampling, as the model parameters are
+matrices of co-occurrences values, the opinions are sparse matrices of
+values.  This sparsity helps minimize the communication of opinions.
+Also, it simplifies the combining of opinions by summing the sparse
+matrices over, where summing can be highly accelerated in modern
+computers.
+For the VEM algorithm, it seems that the model parameters are
+represented a normalized probability matrix.  If we are to parallelize
+this algorithm, can we represent the opinion from each computer by
+sparse matrices?
+I am curious because if VEM (or expectation-propagation) can be
+MapReduced and is faster than Gibbs sampling, could we use Gibbs
+sampling to find a good initialization and then switch to VEM or EP to
+save time?  As we know, saving 1 hour for each computer would be
+significantly valuable if we are using thousands of computers.
+Best regards from Beijing preparing for Olympics.
+Yi Wang

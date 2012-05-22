@@ -1,0 +1,16 @@
+Hello list,
+I have a question about the collapsed variational Bayes method for
+inference presented in
+http://www.gatsby.ucl.ac.uk/~ywteh/research/inference/nips2006.pdf. I
+have understood the rationale behind using a collapsed version of VB
+and I have understood (well, I have a rough figure rather than a full
+understanding) the update equation. What I have not understood is how
+do you implement a stopping rule for the updates. Do you calculate the
+likelihood, in a similar fashion to LDA? If so, how? Can be
+convergence assessed in another way?
+I also haven't understood completely how do you initialize the \gamma
+variables, but I suppose that sampling from a symmetric Dirichlet
+should do the trick.
+Thanks in advance.
+Best regards,
+Matteo Dimai

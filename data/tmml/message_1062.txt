@@ -1,0 +1,1 @@
+Topics may not be meaningful in that these graphical models exploit a property of the usage of domain-specific words, but are not actually based upon how humans think about topics or assemble semantic frames. Perplexity is a convenient measure mathematically, but is more/less arbitrary cognitively speaking.

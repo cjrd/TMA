@@ -1,0 +1,6 @@
+The application is for research administration and not commercial
+enterprise, but this study of a topic-based browser for NIH grants has
+some details on bridging between "raw" models and applications that
+are useful for users who aren't text mining researchers:
+http://www.nature.com/nmeth/journal/v8/n6/full/nmeth.1619.html
+-David

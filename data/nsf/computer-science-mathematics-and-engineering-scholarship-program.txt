@@ -1,0 +1,8 @@
+              This program provides scholarships for students who are majoring in computer
+              science or mathematics or who are completing a double major combining
+              engineering with biology, chemistry, computer science, mathematics, or physics.
+              The program includes a special orientation, scholar-based and peer-based
+              mentoring (emphasizing both academic and socialization skills), formal
+              collaborations with the office of career development, a dedicated web site, the
+              establishment of a CSEMS Club, in addition to peer tutoring and internships
+              with high-technology partner firms.

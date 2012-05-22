@@ -1,0 +1,12 @@
+Re: hyperparameter optimization -- I have found this to have varying utility
+depending on the application for which you are using the topic model. Same
+with the heuristic approaches (and, depending on the publication, I've seen
+beta values of 0.1; 0.01; or 200/W).
+In practice, I've found that hyperparameter optimization gives me many more
+topics than I would have expected (~200 in a corpus with only ~2500 words
+and ~1500 documents) but then I did use an improper prior. Furthermore, the
+topics that were found tended to have high frequencies of domain-specific
+words.
+For the AT model, I've found that 200/W and 50/T work quite nicely.
+Cheers,
+David

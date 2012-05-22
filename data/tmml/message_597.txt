@@ -1,0 +1,6 @@
+currently, there is no windows version unfortunately:(
+cygwin under windows might be able to work.
+thanks!
+best
+chong
+2009/6/24 Yuan Miaolong <myuan at i2r.a-star.edu.sg>:

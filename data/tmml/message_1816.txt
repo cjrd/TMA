@@ -1,0 +1,4 @@
+hi all,
+??? does anyone have the code of JST(joint sentiment/topic) or the code of ASUM(aspect and sentiment unification model)?
+??? thanks very much.
+By Chaorong Wu

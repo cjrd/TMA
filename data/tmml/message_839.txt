@@ -1,0 +1,12 @@
+Hi Alfred,
+the best way is to diagnose at which iteration the chain converged (i.e.
+reached the ergodic distribution), then you let the chain run for some
+more iterations and pick the one solution that reached the maximum
+likelihood. (*)
+So this is actually the same question as Lucas asked.
+Cheers,
+Laura
+(*) actually this is a hack. According to MCMC you would have so average
+several the solutions of the chain from the ergodic part, however this
+might not give good results on LDA because of the unifentifiability problem.
+alfredxn wrote:

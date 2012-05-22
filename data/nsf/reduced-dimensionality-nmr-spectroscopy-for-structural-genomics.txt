@@ -1,0 +1,45 @@
+              Szyperski
+MCB 0075773
+
+This research focusses on the development and
+              application of novel Bio-NMR techniques which promise to have a broad imact for
+              science infrastructure beyond use in structural genomics.
+
+NMR is expected to
+              play an important role to harvest the fruits of genome sequencing projects by
+              supporting the functional analysis of gene products in "structural genomics". 
+              The mass production of protein structures in the framework of this "big
+              science" project requires new methodology for cost-effective structure
+              determination.  This research is dedicated to further develop
+              reduced-dimensionality (RD) triple resonance NMR experiments for use in
+              "structural genomics".  Such spectroscopy promises to be ideally suited because
+              it allows, firstly, matching of  the NMR measurement time to sensitivity
+              requirements for signal detection while retaining a high digital resolution for
+              automated spectral analysis, and secondly, assigning proteins with a smaller
+              set of NMR spectra when compared with conventional spectroscopy.  The current
+              proposal invokes both fundamental research, i.e., Bio-NMR methods development,
+              and applied research targeting the commercial effeciency of NMR parks or
+              consortia operated for structural genomics projects.  
+
+Research will aim at
+              the development of a protocol that allows identification of minimal sets of NMR
+              spectra for structure determination of a given protein in a structural genomics
+              enterprise.  Considering RD NMR experiments, this will allow one retaining a
+              high digital resolution when investments of spectrometer time have to be
+              minimized, as it can be expected within the frameworkk of a structural genomics
+              project.  Moreover, for application in structural genomics, the impact of RD
+              spectroscopy for the automatic resonance assignment of proteins will be
+              evaluated, and an 'RD NMR package' comprising RD pulse programs, NMR parameter
+              sets and job-files for automated spectral analysis will be devised.  Moreover,
+              research will focus on the implementation of improved RD experiments including
+              a suite of schemes that allows measurement of residual dipolar couplings in
+              dilute liquid crystalline media.  This development opens an avenue to merge
+              their measurement with the resonance assignment, as well as to make use of
+              variations of sums of scalar and residual dipolar couplings along the
+              polypeptide chain to establish sequential connectivities.
+
+This research
+              offers outstanding opportunities for involving students at all stages in their
+              academic development, and can be expected to play a valuable role in
+              integrating research and education.
+

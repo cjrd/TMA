@@ -1,0 +1,13 @@
+Hi all,
+We generally expect that topics which are from very different domains
+will be in very different parts of a corpus.   For example, topics about
+space travel shouldn't co-occur much with topics about agriculture;
+they'll generally be in different documents.    I know that standard LDA
+doesn't model this, and that there are other topic models (hierarchical,
+correlated) which do.    What I'm interested in is quantifying this
+"semantic distance".
+It strikes me that one way to define such a semantic distance is by
+computing a distribution P(d|t), i.e. the inversion of the usual P(t|d).
+This gives us a kind of "fuzzy document-set" notion which models the
+uncertainty about topic membership.   It's defined by Bayes rule as:
+P(d|t) = P(t|d)P(d)

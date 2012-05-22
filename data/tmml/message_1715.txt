@@ -1,0 +1,4 @@
+Hi,
+I want to run hlda-c code on images. Can anyone tell how to arrange images
+as set of words for training data set?
+Thank You

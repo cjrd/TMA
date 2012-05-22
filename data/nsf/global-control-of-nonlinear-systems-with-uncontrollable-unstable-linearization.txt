@@ -1,0 +1,88 @@
+              0203387
+Lin
+
+This program will systematically develop a nonsmooth feedback
+              design 
+methodology for the control of genuinely nonlinear systems that may
+              not 
+be dealt with, even locally, by any smooth feedback. Nonsmooth feedback
+              
+designs offer the potential to overcome some topological obstructions of
+              
+the system that cannot be addressed by smooth controls, for example, to
+              
+globally stabilize a nonlinear system that is not stabilizable by any linear
+              
+or smooth state feedback. The research will address some of the most
+              
+critical and challenging issues in the field of nonlinear control, including
+              
+global strong stabilization, practical output tracking and adaptive control
+              
+for nonlinearly parameterized systems with uncontrollable unstable
+              
+linearization.  A unique thread in our development is the explicit
+              
+construction of homogeneous-like Lyapunov functions and non-Lipschitz
+              
+continuous controllers, based on a synthesis of methods drawn from
+              
+differential geometric control theory, homogeneous systems theory, as 
+well
+              as the development of feedback domination design techniques for the 
+control
+              of nonlinear systems whose Jacobian linearization contains 
+uncontrollable
+              modes associated with eigenvalues on the right-half plane.   
+This work will
+              also include a geometric characterization and a higher-
+order normal form for
+              a significant class of nonlinear systems.
+
+Many control systems of practical
+              importance (e.g. internet network, 
+manufacturing systems, biomimetic actuator
+              systems, electrically 
+stimulated muscles, underwater or aerospace vehicles
+              and so on) have 
+genuinely nonlinear characteristics that cannot be dealt with
+              by existing 
+feedback design methods; most of them are smooth in nature. In
+              fact, a 
+goal of active research has been to transform a physical dynamic
+              system 
+into a linear one for which the well-developed modern control
+              techniques 
+(linear systems theory) are readily applicable. These
+              "linearizing" 
+techniques have serious limitations due to canceling the system
+              
+nonlinearity by feedback or neglecting the complexity of dynamic 
+systems.
+              Consequently, these design methods have not found wide 
+applications in a
+              number of new real-world problems, such as control of 
+complex network (e.g.
+              internet or power systems network) or controlling 
+the position and speed in
+              sophisticated weapons (e.g. missiles and 
+advanced combat aircraft). The
+              purpose of this research is to find ways to 
+take advantage of the potentially
+              dramatic, though nonintuitive, effects 
+caused by the inherent nonlinearity or
+              complex interactions of physical 
+forces with physical systems. The main
+              outcome of the proposed research 
+will be new, nonsmooth feedback design
+              methodologies for the control of 
+dynamic systems. It is expected that the
+              benefits to a systematic approach 
+towards using nonsmooth control will be
+              becoming widely appreciated, 
+particularly in industries (e.g. manufacturing,
+              aerospace, power and 
+biomedical engineering) where many applications of
+              nonsmooth control 
+can be found.
+

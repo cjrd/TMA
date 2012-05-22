@@ -1,0 +1,14 @@
+Dear Reading Group,
+I have a question regarding the 'meaningfulness' (is this a word?) of
+inferred topics produced from a topic model.
+Say for example, the [topic(i) x word distribution] of topic(i)
+follows an almost uniform distribution. Is this still meaningful? Is
+it possible that the [word x document] matrix is just in appropriate
+to infer enough meaningful topics and somehow this shortcomings are
+absorbed in performance measures such as perplexity, so it is not
+possible to pick it up?
+In other words, one may have a false sense of confidence in the inferred topics.
+Regards
+Alta de Waal
+Human Language Technologies Group
+South Africa

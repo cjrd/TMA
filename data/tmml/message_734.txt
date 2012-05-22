@@ -1,0 +1,15 @@
+hi
+I am deeply interested in understanding the working principle of LDA.
+After reading the paper written by David M. Blei,Andrew Y. Ng,Michael I.
+Jordan,*Latent Dirichlet Allocation,*Journal of Machine Learning Research 3
+(2003) 993-1022,
+i got the following queries:
+1.what is the significance of variational dirichlet parameter, Gamma. how it
+is helpful in calculating the inference from the test set. i am unable to
+understand the significance of   name.gamma and name .likelihood files that
+we are getting in inference.
+2. how we can prioritize the words in a topic based on their appearance in
+title, subtitle, or abstract of a document.
+3.how we can find the documents containing the words in a topic
+looking forward for your reply.
+Rohit

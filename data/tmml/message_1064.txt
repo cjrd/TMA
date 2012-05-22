@@ -1,0 +1,6 @@
+Hi All,
+? ?Does anybody have an implementation of a CRP or I'd be more than
+happy to have
+? ?distant dependent CRP implementation ( www.icml2010.org/papers/551.pdf )
+? ?Thank you very much in advance,
+? ?Levente Torok

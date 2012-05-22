@@ -1,0 +1,31 @@
+              0095700 DasSarma and Schreier
+In this project, a combination of genetic and
+              biochemical approaches are being used to investigate purple membrane synthesis
+              in a salt-loving archaeon, Halobacterium NRC-1.  The purple membrane is a
+              specialized region of the cell membrane that contains a two-dimensional
+              crystalline array of a single chromoprotein, bacteriorhodopsin (BR).  BR is
+              composed of a 1:1 complex of the protein moiety (bacterio-opsin) and
+              chromophore (retinal).  When fully induced under microaerobic and high
+              illumination conditions, purple membrane can cover up to 50 % of the cell's
+              surface and is able to support a period of phototrophic growth.  Previously,
+              transcription of the bop gene was shown to depend upon an upstream gene, bat,
+              and found to be sensitive to DNA supercoiling.  Additionally, the minimal
+              bacterio-opsin gene (bop) promoter was extensively mutagenized and shown to
+              contain an essential upstream activator sequence (UAS), a TATA box deviating
+              from the archaeal consensus, and a DNA supercoiling-sensitivity site within an
+              alternating purine-pyrimidine region.  The likely regulator, Bat, contains
+              homologies to the PAS-PAC (or LOV) redox sensing domain, a GAF light-responsive
+              domain, and an AraC type helix-turn-helix (HTH) DNA binding motif.  Three other
+              genes (crtB1, blp, and brp) containing UAS elements similar to the bop gene,
+              and clustered immediately upstream of bop, showed similar or identical
+              regulatory characteristics, and six TATA-binding protein (tbp) genes and seven
+              TFIIB (tfb) genes were found in the genome sequence.  The major goal of this
+              project is to understand the mechanism of coordinate regulation of
+              bacterio-opsin and retinal at the genetic level.  Specifically, the project
+              will (1) identify the proteins binding to the bop promoter, (2) define the
+              mechanism of action of the pleiotropic regulator, Bat, in concert with other
+              transcriptional factors, and (3) establish the members of the purple membrane
+              regulon.  The long-term goal is to better understand the mechanisms of
+              coordinate regulation of multigene systems in archaea, which should shed light
+              on the evolution of regulatory mechanisms across all branches of life.
+

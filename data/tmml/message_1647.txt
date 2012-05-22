@@ -1,0 +1,4 @@
+Can someone tell me how can i calculate de perplexity with my number of
+topics and my words distribution in this topics.
+Thanks !
+:D

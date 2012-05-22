@@ -1,0 +1,14 @@
+Hi Wray,
+Nice work! One question I've been meaning to ask about this paper:
+held-out likelihood is often used to compare different graphical model
+structures -- is there a general way to define an optimal mean field
+importance sampler for a new topic model? What would the mean-field
+importance sampler for CTM look like, for example?
+Also, what is the relationship between this mean field approximation and
+the standard variational approximation used in training models? The update
+in Eq. 4 doesn't quite match the standard variational update, for example,
+which seems like it should also minimize KL divergence with the
+intractable "real" model. More specifically, what are the implications of
+not including the variational Dirichlet, and just using variational
+multinomials over the words (if I'm understanding that correctly)?
+-David

@@ -1,0 +1,7 @@
+Hi List,
+I am back with more questions :)
+I have been wondering, is the stick breaking prior really necessary?
+Since the documents are already sharing nodes at the top of the tree,
+do we still need to add more statistical pressure to force the words
+to be near the top. I am just wondering whether anyone have tried.
+-Jake

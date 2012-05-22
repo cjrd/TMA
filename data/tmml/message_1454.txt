@@ -1,0 +1,10 @@
+Here is a link to a multi-threaded implementation of Teh et al's algorithm described in "Collapsed variational inference for HDP" (NIPS, 2007):
+http://www.bradblock.com/tm-0.1.tar.gz
+No third-party scientific libraries are needed.  I've also included the following:
+- Implementation of LDA using a collapsed Gibbs sampler
+- Special functions (Psi and Gamma functions, Dirichlet parameter estimation)
+- 20 Newsgroups subset tokenized in sparse matrix format ready for experimentation with the library
+I've included results of experiments I ran to investigate the predictive power of this CVHDP implementation against CGLDA as well as am examination of how HDP selects the number of topics.  Running times are included.  The software can be accessed via the command line or through a simple Java API.  Please see README in the distribution for details.
+If you are interested in integrating this in any other machine learning software packages or would like help implementing any other algorithms particularly for financial data sets, please let me know.
+Thanks,
+Brad

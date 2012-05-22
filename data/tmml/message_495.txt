@@ -1,0 +1,11 @@
+Dear list,
+Somebody says we can average over samples of iterations B, 2B, 3B ... ,
+where B is the length of the burn-in period. I have some confusion about
+this. Gibbs sampling is a random process. As the sampler goes on, is it
+possible that two different topics change their position, and how
+possible? If that does happen, we just can't average them, because we
+don't know the mapping between the two parameter sets of two iterations
+respectively.
+I will be grateful if someone make that clear to me!
+thanks,
+shaobs

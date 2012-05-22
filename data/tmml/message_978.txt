@@ -1,0 +1,6 @@
+Thanks for trying out a very experimental package =).  Oops, I had some
+changes which had not yet been committed.  If you get a fresh copy from svn
+it should compile just fine, otherwise you will have to wait for r-forge to
+rebuild the package (which will take at most a day, but probably less).
+Cheers,
+Jonathan

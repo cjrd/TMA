@@ -1,0 +1,116 @@
+
+
+button {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #222222;
+    background-image: -moz-linear-gradient(center top, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.11));
+    border-color: -moz-use-text-color -moz-use-text-color #222222;
+    border-radius: 0 0 0 0;
+    border-style: none none solid;
+    border-width: 0 0 1px;
+    box-shadow: 0 1px 3px #999999;
+    color: #FFFFFF;
+    font: 14px Helvetica Neue;
+    margin: 0;
+    padding: 6px 10px;
+    text-rendering: optimizelegibility;
+    text-shadow: 0 -1px 1px #222222;
+}
+
+button.first {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+button.last {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+button.active {
+    background-color: #416685;
+}
+
+button:hover {
+    background-color: steelblue;
+}
+
+#coherenceTable {
+    font: 16px Calibri, "Gill Sans", "Trebuchet MS", sans-serif;
+}
+
+
+.left_align {
+    float: left;
+    padding: 5px;
+}
+
+.right_align {
+    float: right;
+    padding: 5px;
+}
+
+.center_align {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 5px;
+}
+
+.plot_title {
+    text-align: center;
+    font-weight: bold;
+    padding-left: 50px;
+}
+
+#coherence.paper {
+    padding-bottom: 20px;
+    font: 16px Calibri, "Gill Sans", "Trebuchet MS", sans-serif;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    width: 950px;
+}
+
+#model_info.paper {
+    padding-bottom: 20px;
+    font: 16px Calibri, "Gill Sans", "Trebuchet MS", sans-serif;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 950px;
+    overflow: hidden;
+
+}
+
+td.score {
+    text-align: center;
+    background-color: white;
+}
+
+
+#perplexity_form {
+    border: 2px solid #CDCDCD;
+}
+
+#likelihood {
+    text-align: center;
+    border: 0px solid black;
+    border-spacing: 0px;
+    width: 700px;
+    height: 450px;
+    padding: 0px;
+}
+
+#perplexity_graph {
+    width: 550px;
+    text-align: center;
+    width: 550px;
+    height: 450px;
+}
+

@@ -1,0 +1,4 @@
+Hi Chaorong,
+Code for ASUM is here http://uilab.kaist.ac.kr/research/WSDM11/ASUM.zip
+Data used for the paper is also available from
+http://uilab.kaist.ac.kr/research/

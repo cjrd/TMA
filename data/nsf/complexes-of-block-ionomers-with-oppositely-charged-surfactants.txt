@@ -1,0 +1,40 @@
+              The major goal of this project is to explore two types of environmentally
+              responsive nanocomposite materials. The first materials are synthesized by
+              reacting block (or graft) copolymers, containing ionic and nonionic segments,
+              with oppositely charged surfactants. The second materials are synthesized by
+              reacting cross-linked networks containing ionic and nonionic segments, with
+              oppositely charged surfactants. The resulting materials combine two major
+              elements. First, they contain ionic polymer segments, which are neutralized
+              with oppositely charged surfactant ions to form water insoluble domains.
+              Second, they contain nonionic polymer segments linked to ionic chains, which
+              provide for dispersion or swelling of a whole composite in appropriate
+              solvents.   For these block ionomer complexes (BIC), the PI will characterize
+              the relationships between the structural parameters of the components and
+              physicochemical properties of the resulting BIC, as well as examines the routes
+              and extent of control of structure formation in such systems. For this purpose
+              the molecular architecture of the copolymers (i.e. linear vs. branched, block
+              vs. graft, length of the segment etc.) as well as the structure of surfactants
+              (i.e., hydro- vs. fluorocarbon tails, number of tails and their lengths) will
+              be varied. The response of these materials to pH, ionic strength, solvents and
+              temperature variations will be examined. The second part of this project will
+              extend the family of BIC using cross-linked polymer networks from ionic and
+              nonionic hydrophilic poly(ethylene oxide)  (PEO) chains. It is expected that
+              upon reacting with oppositely charged surfactants, a partially swollen
+              microheterogeneous bulk material will form in which the hydrophobic clusters,
+              from polyion-bound surfactant arrays, are joined by hydrophilic PEO chains. The
+              size and the structure of hydrophobic clusters as well as swollen hydrophilic
+              zones, their percolation and degree of swelling should be strongly dependent on
+              the overall complex composition as well as the characteristics of the original
+              block ionomer network. It is possible that such sensitivity will be a key to
+              effective control of the properties of BIC networks allowing their use as
+              environmentally responsive materials.
+	
+These studies will advance the
+              understanding of the principles involved in designing polymer-surfactant
+              dispersions and networks with controllable properties.  Complexes from polymer
+              networks and surfactants might be useful as versatile environmentally
+              responsive materials in a variety of applications, including resins for
+              bioseparation, biocatalysis, drug delivery and drug release systems. Therefore,
+              if this research is successful, it might have broader impact in various fields
+              where nanocomposite materials are needed.
+

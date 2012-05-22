@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">                                     
+	<title>TMA Summary</title>   
+	<script language="JavaScript" src="{{ STATIC_URL }}js/jquery-latest.js" type="text/JavaScript"></script>
+	<script language="JavaScript" type="text/JavaScript" src="{{ STATIC_URL }}js/browser_adjust.js"></script>     
+	<link rel="stylesheet" href="{{ STATIC_URL }}css/BasicBrowser.css" />
+
+	<script type='text/javascript' src='{{ STATIC_URL }}js/prototype.js'></script>   
+	<script type="text/javascript" src="{{ STATIC_URL }}js/scriptaculous.js?load=effects"></script>
+	<script type='text/javascript' src='{{ STATIC_URL }}js/lightwindow.js'></script>  
+	<link rel="stylesheet" href="{{ STATIC_URL }}css/lightwindow.css" type="text/css" media="screen" />   
+
+</head> 
+<body>  
+	
+	<body onload="init()" >                   
+		<div id="navigation">    
+		<table><tr>                
+		    <td class="linked"><a>Topics</a>
+		      <ul> 
+		        <li><a href="../topic-list">List of Terms</a></li> 
+		        <li><a href="../topic-graph">Term Distributions</a></li> 
+		        <li><a href="../topic-presence">Relative Presence</a></li>
+		      </ul> 
+		    </td> 
+		    <td class="linked"><a>Documents</a>
+		      <ul>
+		        <li><a href="../doc-graph">Topic Distributions</a></li>
+		      </ul> 
+		    </td>
+		    <td class="linked"><a>Terms</a>
+		      <ul> 
+		        <li><a href="../term-list">List by Frequency</a></li> 
+		        <li><a href="../term-graph">Topic Distributions</a></li> 
+		       </ul> 
+		    </td>
+		    <td class="linked"><a>About</a>
+		      <ul>
+		        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
+		      </ul> 
+		    </td>  
+		    <td></td>
+		</tr></table>
+		</div> 
+	<div id="header">
+		<h1>
+			{% block head1 %}
+			{% if alg %}
+			{{alg}} Summary
+			{% else %}
+			TMA
+			{% endif %}
+			{% endblock %}
+		</h1>
+		<hr>   
+	</div>  
+
+	 
+		<div id="summary">    
+			<div id="paper">         
+			<table>
+				<tr> 
+					<td>
+						<a href="../model" params="lightwindow_type=external"  class="lightwindow"><img src="{{ STATIC_URL }}images/likelihood.png" width="200" height="200" border="3" alt=""/></a>  
+					</td> 
+					<td>
+						<a href="../relationships" params="lightwindow_type=external"  class="lightwindow"><img src="{{ STATIC_URL }}images/forcegraph.png" width="200" height="200" border="3" alt=""/></a>  
+					</td>
+					<td>
+						<a href="../summary" params="lightwindow_type=external"  class="lightwindow"><img src="{{ STATIC_URL }}images/chord.png" width="200" height="200" border="3" alt=""/></a>  
+					</td>
+				</tr> 
+				<tr>
+					<td>
+						Model Analysis
+					</td>
+					<td>
+						Relationships
+					</td>
+					<td>
+						Comparisons
+					</td>            
+				</tr>
+			</table> 
+		</div> 
+	</div>
+
+            
+	<div id="topics"> 
+		<div id="h2header">
+			<h2>
+				-Terms by Topic-
+			</h2>                
+		</div>  
+		<table>                  
+			{% for top in table_topics %}
+			<tr class="titles"> 
+				{% for top in top.title_line %}
+				<td onclick="window.location.href='../topics/{{top.title}}-{{top.id}}'">{{top.title}}</td>        
+				{% endfor %}
+			</tr>   
+
+			{% for line in top.terms_line %}
+			<tr> 
+				{% for term in line %}
+				<td onclick="window.location.href='../terms/{{term.title}}-{{term.id}}'">{{term.title}}</td>        
+				{% endfor %}
+			</tr>  
+			{% endfor %}
+			<tr class="spacer">
+				{% for tcount in top.title_line %}
+				<td> </td>
+				{% endfor %}
+			</tr> 
+			{% endfor %} 
+		</table>
+	</div>  
+</body>
+</html>
+
+

@@ -1,0 +1,58 @@
+              Astronomy (11) A planetarium system is being incorporated into an undergraduate
+              astronomy curriculum. in addition the project provides a basis for outreach
+              programs to local elementary and high schools and the surrounding community.
+              Many astronomy topics are difficult to teach because of: (1) slow occurrence of
+              phenomena in real time; (2) restriction of the observer to the geocentric
+              perspective; (3) restriction of the
+observer to a single geographical area;
+              (4) lack of a dark nighttime sky in urban or suburban areas; (5) in an outdoor
+              laboratory setting, dependence upon weather conditions. The goals of this
+              project are to solve the above problems by:
+(1) increasing both the level and
+              pace of student comprehension in the several critical areas in
+the
+              undergraduate astronomy curriculum which are notorious for their teaching
+              difficulty; 
+(2) increasing the speed of student comprehension, increasing the
+              efficiency of astronomy
+lectures, allowing more classroom time to be devoted
+              to other topics; 
+(3) providing for activity-based learning experiences, which
+              in conjunction with lectures have been shown to increase student performance;
+              
+(4) promoting scientific inquiry in the classroom and beyond by encouraging
+              an appreciation of astronomy and of science in general. 
+The planetarium
+              system will achieve the above goals by accomplishing the following
+              objectives:
+(1) clearly illustrate both the actual and apparent motions of the
+              Earth, Moon, and Sun, from any vantage point on the Earth or from space, in
+              compressed time periods much shorter than actual; 
+(2) demonstrate the causes
+              of the seasons from those motions; 
+(3) demonstrate the causes of the phases
+              of the Moon and the causes of Solar and Lunar eclipses from those motions;
+              
+(4) present the real and apparent motions of all planets in an accelerated
+              time frame; 
+(5) illustrate the celestial coordinate system used by
+              astronomers by projecting it onto the background of stars; 
+(6) demonstrate
+              the effects of the slow precession of the Earth's axis of rotation in a greatly
+              accelerated time frame; 
+(7) project the positions of stars and of the
+              constellations down to near the human eye limit for a completely dark sky;
+              
+(8) have the capacity for presenting slide shows, or computer graphics and
+              animations; 
+(9) provide all of the above experiences in an environment that
+              is completely weather-proof;
+(10)provide for astronomy general education and
+              appreciation outreach programs. These factors are
+especially important at the
+              college, which resides on the Salt River Pima Maricopa Indian Reservation,
+              affording the local reservation residents ready access to the planetarium
+              public lectures, as well as participation in the campus astronomy curriculum.
+              Uses of the planetarium are being adapted from the literature on using
+              planetaria effectively in the teaching of astronomy.
+

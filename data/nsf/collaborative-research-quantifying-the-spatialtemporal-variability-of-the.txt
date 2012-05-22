@@ -1,0 +1,36 @@
+              There has been a significant change in the upper ocean characteristics of the
+              eastern Arctic in 1995. The change was manifested through the loss of a
+              near-surface layer known as the cold halocline layer (CHL). Without the CHL,
+              the Arctic water column looks and behaves like the Antarctic water column. The
+              local impact involves the likely initiation of considerable winter ocean heat
+              fluxes (15-20 W/m 2 ) and reduction of winter ice growth by 70-80% relative to
+              previous years in which the CHL was present. It is not known how long the CHL
+              did, or will, remain absent, though it appears to begun recovery by summer
+              1999. 
+
+This project will examine CTD stations throughout the Arctic region
+              in order to quantify the strength of the CHL as well as other
+              seasonally-averaged characteristics of the ocean-ice interaction (e.g., ocean
+              heat flux, bulk stability, reduction in ice growth potential). The
+              quantification is achieved through analysis of upper ocean integrated property
+              distributions, and then generating robust bulk property parameters describing
+              relevant physical quantities. The methodology was originally designed for
+              analysis of Antarctic ice-ocean interaction, but as recently shown, is equally
+              applicable to the Arctic. Once applied to the Arctic data, the parameters will
+              be averaged to provide climatologies for the various properties. The spatial
+              distribution of these climatologies will be compared to physical and dynamical
+              properties of the Arctic in an attempt to determine the relationship between
+              the climatological nature of the ocean-ice interaction and the
+              physical/dynamical setting. Methods of optimal interpolation will then be
+              applied, to the extent allowed by the sporadic data coverage, in an effort to
+              determine how the various integrated properties have changed through space and
+              time. This will provide spatial/temporal distributions of the ocean-ice
+              interaction that will be used to evaluate the manner in which the CHL and other
+              ocean-ice interactions have changed. The temporal variations will be examined
+              for evidence of cycles, trends, or other coherent patterns, as have been
+              suggested recently in the literature. Analysis of ocean data is ideal for this
+              undertaking given the long time scales of the medium which may reveal evidence
+              of the suspected changes even in sparsely sampled (in space and time) regions.
+              
+
+

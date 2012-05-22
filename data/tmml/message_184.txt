@@ -1,0 +1,6 @@
+Hi,
+I was wondering if code for computing hierarchical topics (using Chinese
+Restaurant Process) is publically available?
+Thanks,
+Kirill Kireyev
+University of Colorado - Boulder

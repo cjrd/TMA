@@ -1,0 +1,14 @@
+Dear ALL,
+I read the paper entitled "Finding scientific topics". I wonder how to
+obtain equation 5 using equation 2 and 3.
+In my opinion, we obtain using
+p(zi=j|z{-i},w{1,n})=p(zi=j,z{-i},w{1,n})/sumj(p(zi=j,z{-i},w{1,n})). The
+denominator is summing over the topics assigned to current word.
+The numerator, i.e. the joint probability of p(w,z) =p (w{1,n},z{1,n}) can
+be obtained by equation2*equation3, with the topic assigned to current word
+j (zi=j).
+However, I do not know how to obtain the equation 5 exactly. Can anybody
+show me how to obtain equation 5 step by step?
+Thanks very much!
+Best wishes,
+Limin

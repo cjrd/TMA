@@ -1,0 +1,17 @@
+                   This Small Business Innovation Research Phase I project will develop
+              innovative, grid-free, numerical models of two-phase, particulate,
+              incompressible turbulent flows. The intent is to provide a high fidelity model
+              for the simulation and analysis of numerous environmental and industrial flow
+              applications wherein particulate motion is a critical feature. Among the
+              potential benefits are more accurate and timely predictions of health hazards
+              and abatement strategies for the late-time dynamics of toxic particulates or
+              contaminant clouds arising from routine, accidental or purposeful chemical and
+              biological releases. This   work will be applicable to the dynamics of
+              pollutants in the atmosphere, particulate flows in liquids, two-phase turbulent
+              mixing and particulate dispersion, among others. 
+     This revolutionary
+              technology will expand its potential computational fluid dynamics (CFD) market
+              share by extending its capabilities to treat complex flows which are of great
+              importance to including: aircraft manufacturing, automobile manufacturing and
+              power generation. 
+

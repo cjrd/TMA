@@ -1,0 +1,2 @@
+Hi all,
+???? I have read several papers about the topic model and about its evolution, but I still have not found that there are some measurements about it ? Does anyone know it or there are not measurements about the topic model?

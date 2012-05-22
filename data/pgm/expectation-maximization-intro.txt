@@ -1,0 +1,347 @@
+
+We talked about the problem of, learning
+models with missing variables, missing
+data. And discussed some of the
+complexities of that learning problem. So,
+now we're going to basically bite the
+bullet and try and understand how one
+might go about doing, say, parameter
+estimation in the context of missing data
+nevertheless. So let's remind ourselves of
+one of the more important, difficulties in
+learning. Parameters for the missing data.
+So let's draw here the likelihood function
+that we might have. So the x-axis here is
+the param-, is a pictorial description of
+the parameter vector theta. And it's a
+one-dimensional depiction, but usually, of
+course, it'll be multidimensional. And
+what we see here on the y-axis is the
+likelihood function. In the context of
+complete data as, as we might remember the
+likely function had this really nice form.
+It was nice log concave function and in
+the context of daisy networks it could
+actually be optimized in closed form
+using, using a simply formula. In the
+context of missing data, however, the
+situation became considerably more
+complicated now like the assumption looks
+more like this. It's this nasty
+complicated multi model function, which is
+really impossible to optimism in closed
+form. So how do we go about optimizing a
+function that looks like this. There is it
+turns out two general classes of
+strategies. The first is a generic
+optimization method such as gradient
+ascent. So here for example, we have a
+pictorial depiction of gradient ascent. We
+might start out with a particular point in
+the parameter space. And we compute the
+gradient of that point. And we go in the
+direction of steepest ascent, which might
+take us to the next point. At which point
+we compute the gradient, and we continue
+until we reach what is going to be a. In
+generally local optimum of the function
+that we're trying to optimize. Now what I
+describe right now is a very simple
+radiant assent over parameter space but in
+general there are more efficient methods
+for improving the convergence, the rate of
+convergence of these algorithms, methods
+such as line search or [inaudible] radiant
+methods that basically are going to get us
+faster to whatever [inaudible] whatever
+[inaudible] we're gonna end up at So key
+question when applying [inaudible] such as
+this is how difficult it is to compute the
+gradient in this high dimensional space,
+fortunately the context of [inaudible]
+networks we can actually come up with a
+[inaudible] formed solution for that
+gradient, and that solution takes the
+following form. So the gradient of our log
+[inaudible] function relative to a
+particular parameter, theta of xi given
+UI. So this is in the context of, a
+standard say multinomial Bayesian network
+and little xi's of particular assignment
+to big XY and little UI and some
+assignment to its parents. That gradient
+has the following form: it's one over the
+value of the parameter at the point that
+which we are computing the gradient, times
+the summation over data instances. M. I of
+the probability of that particular
+assignment x I n u I to the node and its
+parent, that particular joint assignment,
+given all of the evidence in the nth
+instance. At the current value of
+parameter. So, we basically look at each
+and every one of the data instances,
+compute the probability of this event, xi,
+UI given whatever observations I happen to
+have seen. Whether x i or u i are observed
+or not, and then I compute that
+probability add this all up and divide by
+the values of parameter. So that's a nice
+sort of usable formula except that we have
+to understand some of the repercussions of
+that, specifically this requires that we
+compute this probability over a
+[inaudible] that is a [inaudible] , given
+the [inaudible] m , and we need to compute
+that for all variables i and for all data
+instances m So this effectively means that
+we have to run inference for every
+instance. And furthermore we need to
+compute the probability for every family
+in the Bayesian network. Now. Fortunately
+we can at least reduce the second part of
+this computational cost which is the fact
+of, that we need to run this for all i. By
+remembering the fact that we have, if we,
+say calibrate a clique tree or even a
+cluster graph then when we're done with
+the calibration because of the family
+preservation property a node and its
+parents are all going to be in the same
+clique or in the same cluster. So a single
+calibration process is going to give us
+all of these probabilities. At once but
+that's only true for given data instance
+m, which means that effectively what we
+end up with is the following computational
+cost which is that we need to run
+inference for each and every data instance
+at every iteration of the gradient process
+which is a very costly computation Now
+what are the pros of gradient ascent as a,
+as an optimization algorithm. It's a very
+flexible strategy, so whereas I, we just
+show how the formula applies to table
+CPS's. It can also be extended to long
+table CPD's via the chain rule for
+derivative. Which is not the same as the
+[inaudible]. However it also has some
+significant cons. First its, it turned out
+to be a little bit tricky. Not horrible,
+but a little bit tricky to ensure that the
+parameters define legal CPDs. So this
+gives rise to a constrained optimization
+problem where we need to make sure that
+the entries in the CPD are all graded and
+equal to zero and sum to one, and that
+imposes some additional burden on the
+optimization problem. And then it turns
+out that if you want to get any kind of
+reasonable convergence, you can't just do
+straight gradient accent. One needs to do
+something more clever like [inaudible]
+gradient or a line surge, which again
+tends to increase the computational cost.
+The second strategy, the one typically
+uses for optimizing the likelihood
+function, is, is a strategy that is
+specifically geared for, for likelihood
+functions. So it's a special-purpose
+algorithm that doesn't optimize any old
+function, but rather just specifically for
+likelihood functions. What?s the intuition
+behind this algorithm called expectation
+maximization or '''em for short, the
+intuition that you have a chicken and an
+egg problem here, if we had complete data
+then parameter estimation would be easy
+because we know how to do [inaudible]
+parameter estimation and [inaudible]
+networks in fact its a closed form
+problem. Conversely if we had Those full
+set of parameters, then computing the
+probability of the missing data would also
+be easy. Easy in the sense that it
+requires making [inaudible] using straight
+probabilistic inference which merely may
+not be computationally easy but
+conceptually computing the probability of
+missing data is an easy well-defined
+problem. So, we have two, sets of, of
+things that we need to infer or estimate.
+One is the parameters. And the other is
+the values of the missing variables.
+Missing data. And each of those is easy,
+given the other. And so what the EML
+rhythm does is effectively an iteration
+process, or, in fact, one can formally
+show a coordinate ascent process. Where we
+start out with some set of parameters use
+that to estimate the values of the missing
+data and then use that completion to
+re-estimate the parameters, and so on and
+so forth, until we reach convergence. So
+more formally we pick some starting point
+for the parameters. In fact, one can also
+initialize on, on the missing var-, on the
+values of the missing data. It's more
+standard to, to in many applications, to
+initialize with the parameters, but both
+are completely legitimate. So, say we pick
+a starting point for the parameters, and
+then we iterate these two steps. The first
+is what's called the "E" step, "E" step
+stands for expectation, in which we
+complete the data using the current
+parameters, and the second is the "M"
+step. Standing for maximization, and that.
+Estimates the parameters relative to data
+completion and maximization comes from,
+basically something like maximum
+likelihood. That's. That's where the M in
+maximization comes from. And it turns out
+that this iterative process is guaranteed
+to improve the likelihood function at each
+iteration. That is, at each iteration the
+likelihood function is going to be better
+than it was before the previous one. And
+so this process is an iterative improving
+process. Let's make this process more
+precise. So, let's consider each of those
+e steps and n steps separately. So, the
+expectation or estep. Remember this going
+from the parameters to the missing,
+variables. For each beta case D, and each
+family x, u, we are going to compute the
+probability of x, u. Given the observed
+values in, in that data instance, and
+given the current parameter setting, theta
+T. With that completion, which, note, is a
+soft completion. Because its a probability
+distribution over the parameters, over the
+missing variables not a single assignment
+to x and u. With that soft completion we
+are going to compute what is called the
+expected sufficient statistics, the
+expected sufficient statistics is very
+similar to the sufficient statistics that
+we had before, when we were computing
+sufficient statistics we were counting the
+number of times that we saw a particular
+combination x comma u, remember we had m
+Of X, U as being our sufficient
+statistics. Now we have a soft completion
+and so we have expected a soft sufficient
+statistics, which we are going to denote
+with an M hat. Sub-scripted by the
+parameter vector that gave rise to the
+completion. And, and had sub-theta T for a
+particular assignment X comma, U is going
+to be simply the sum. Over all the data
+instances of the probability that we just
+computed. The probability of X, U given
+the assignment D sub M and the parameter
+state of D. And that is a notion of
+expected counts or expected sufficient
+statistics which are now in the context of
+the m step going to use as if they were
+real sufficient statistics and so we're
+going to take these expected sufficient
+statistics and use them to perform maximum
+[inaudible] using the exact same formula
+that we would have used had these been
+real sufficient statistics so specifically
+for example in the context of multinomial
+[inaudible] we would have the next value
+of the parameters [inaudible] E plus one
+given X U, is M. Hat and bar of beta T Xu
+divided by m bar theta t of u. Which is,
+in using the soft count, the fraction of
+xu's among the u's. Let's consider, a
+concrete very simple example, which is
+that of, Bayesian clustering. So what we
+see here is your standard naive
+[inaudible] model, where we have a single
+class variable. And, a bunch of observed
+features. And the assumption here is that
+the class variable is, is missing. That
+is, it's. Sometimes are never, in most
+cases, never observed in the data, and so
+effectively, we're trying to identify what
+are the categories or classes of instances
+in this data under the assumption that
+within each class the feature values are,
+are, are independent. That is the features
+are conditionally independent in the
+class, as in the [inaudible] phase model.
+So instantiating our formula from the
+'''em algorithm for this setting, we get
+the following very natural formula. So the
+sufficient statistics for, for the class
+variable is simply the sum over all of the
+data instances of the probability of the
+class variable given the observed features
+for that data instances, for, for that
+data instance. And. The and the val-,
+current value of the parameters. That is,
+it's the soft counts of how many instances
+fall into each category when each instance
+is allowed to divide itself up of cross
+multiple categories so to use a soft
+assignment. The second set of sufficient
+statistics which represents the
+dependencies between one of the features
+and the class variable is [inaudible] had
+sub theta of x i [inaudible] and that once
+again sums up over all the data instances
+and simply looks at the probability of a
+particular class variable and a particular
+feature, variable and particular feature
+given the observed instance, the observed
+feature at that particular instance now
+with these expected counts we can now go
+ahead and do maximum [inaudible]
+destination and that gives rise to the
+following [inaudible] very simple
+equations which is that the theta
+[inaudible] is equal to [inaudible] sub
+theta [inaudible] divided by m which is a
+total number of [inaudible] instances and
+theta of [inaudible] given [inaudible] is
+going to be a sign N half, feta x I comma
+c. Divided by n half feta of c. Which
+again is the standard formula. But using
+soft rather than the hard counts.
+20120229_23-01-32-532_c1979a83-046d-47e7-b4cd-af0448a5141e.mp3
+So, to summarize the '''em algorithm, if
+we have in this case, the exact same
+problem that we had in the context of the
+gradient ascent algorithm, which is that
+we need to run inference, the probability
+of (xI, c) for each data inference of
+each generation. As for, the gradient
+ascent algorithm, this only requires a
+single calibration, because of the same
+family preservation property that was
+useful there applies equally here. What
+are the pros of [inaudible] its very easy
+to implement on top of an existing
+[inaudible] destination procedure that one
+might have for complete data so having
+implemented an mle procedure one can
+easily build on top of that by adding a
+separate e step for computing the
+[inaudible] expected sufficient statistics
+... >> Empirically, it turns out that the
+'''em also makes very rapid process,
+progress, in terms of converging, to a
+better and better set of parameters.
+Especially in early iterations. And we'll
+see some empirical results for that in a
+bit. The cons of the '''em algorithm is
+that the convergence generally slows down
+at later iterations, and so it requires
+sometimes that later iterations might use
+say some kind of conjugate gradient
+algorithm because it turns out that that's
+more effective there.

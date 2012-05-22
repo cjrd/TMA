@@ -1,0 +1,119 @@
+*Choice Models and Preference Learning
+Workshop<https://sites.google.com/site/cmplnips11/>
+*NIPS <http://nips.cc/Conferences/2011/> Workshop, 16/17 December 2011,
+Sierra Nevada, Spain*
+*Introduction*:
+Preference learning has been studied for several decades and has drawn
+increasing attention in recent years due to its importance in diverse
+applications such as web search, ad serving, information retrieval, recommender
+systems, electronic commerce, and many others. In all of these applications,
+we observe (often discrete) choices that reflect preferences among several
+entities, such as documents, webpages, products, songs etc. Since the
+observation then is partial, or censored, the goal is to learn the complete
+preference model, e.g.  to reconstruct a general ordering function from
+observed preferences.
+Traditionally, preference learning has been studied independently in several
+research areas, such as machine learning, data and web mining, artificial
+intelligence, recommendation systems, and psychology among others, with a
+high diversity of application domains such as social networks,
+information retrieval,
+web search, medicine, biology, etc. However, contributions developed in one
+application domain can, and should, impact other domains. One goal of this
+workshop is to foster this type of interdisciplinary exchange, by
+encouraging abstraction of the underlying problem (and solution)
+characteristics during presentation and discussion. In particular, the
+workshop is motivated by the two following lines of research:
+*1. Large scale preference learning with sparse data:* There has been a
+great interest and take-up of machine learning techniques for preference
+learning in learning to rank, information retrieval and recommender systems,
+as supported by the large proportion of preference learning based literature
+in the widely regarded conferences such as *SIGIR*, *WSDM*, *WWW*, *CIKM*.
+Different paradigms of machine learning have been further developed and
+applied to these challenging problems, particularly when there is a
+large number
+of users and items but only a small set of user preferences are provided.
+*2. Personalization in social networks: *recent wide acceptance of social
+networks has brought great opportunities for services in different domains,
+thanks to *Facebook*, *Linkin*, *Douban*, *Twitter*, etc. It is important
+for these service providers to offer personalized service (e.g.,
+personalization
+of Twitter recommendations).  Social information can improve the inference
+for user preferences. However, it is still challenging to infer user
+preferences based on social relationship.
+As such, we especially encourage submissions on theory, methods, and
+applications focusing on large-scale preference learning in social media. In
+order to avoid a dispersed research workshop, we solicit submissions
+(papers, demos and project descriptions) and participation that specifically
+tackle the research areas as below:
+- Preference elicitation
+- Ranking aggregation
+- Choice models and inference
+- Statistical relational learning for preferences
+- Link prediction for preferences
+- Learning Structured Preferences
+- Multi-task preference learning
+- (Social) collaborative filtering
+*Important Dates:*
+- Paper submission deadline: *25   October      2011*
+- Author notification:               5     November    2011
+- Final paper due:                   1     December   2011
+- Workshop date:                16/17 December  2011 *
+** *
+*Submission Instructions:*
+- We solicit extended abstracts using the NIPS style files ( available
+here <http://nips.cc/PaperInformation/StyleFiles> ). There is no page
+limit for submissions, however, a one-page summary by itself will not
+suffice. Submissions should include the title, authors' names, and email
+addresses. Note that we do not plan to publish the workshop proceedings, and
+we leave the choices of final venues (e.g., conferences or journals) to the
+authors.
+- Papers should be submitted to the EasyChair system at
+https://www.easychair.org/conferences/?conf=cmpl2011.
+- We are seeking funds to publish the talks on
+Videolecture.net<http://videolecture.net/>
+*Program:*
+The workshop program consists of a demo session, a poster/oral
+session, closing discussion.
+Moreover, we are excited to announce the following invited talks given
+by leading figures in the field:
+- Craig Boutilier, University of Toronto
+- Thore Graepel, Microsoft Research Cambridge
+- Zoubin Ghahramani, Cambridge University
+- Thorsten Joachims, Cornell University
+*Program Committee*:
+- Edwin Bonilla, NICTA-ANU
+- Tiberio Caetano, NICTA - ANU
+- Jonathan Chung-Kuan Huang, Carnegie Mellon University
+- Jo?hannes F?rnkranz, TU Darmstadt
+- John Guiver, Microsoft Research Cambridge
+- Eyke H?llermeier, Universit?t Marburg
+- Filip Radlinski, Microsoft
+- Chu Wei, Yahoo! Labs
+- Markus Weimer, Yahoo! Labs
+- Kai Yu, NEC Labs
+- Zhao Xu, Fraunhofer IAIS
+*Program Co-Chair*:
+- Jean-Marc Andreoli<http://www.xrce.xerox.com/Research-Development/Services-Innovation-Laboratory/Machine-Learning-for-Optimisation-and-Services/People/Jean-Marc-Andreoli>,
+Xerox Research Centre Europe
+- Cedric Archambeau <http://www.cs.ucl.ac.uk/staff/c.archambeau/>, Xerox
+Research Centre Europe
+- Guillaume Bouchard<http://www.xrce.xerox.com/Research-Development/Services-Innovation-Laboratory/Machine-Learning-for-Optimisation-and-Services/People/Guillaume-Bouchard>,
+Xerox Research Centre Europe
+- Shengbo Guo<http://www.xrce.xerox.com/Research-Development/Services-Innovation-Laboratory/Machine-Learning-for-Optimisation-and-Services/People/Shengbo-Guo>,
+Xerox Research Centre Europe
+- Kristian Kersting<http://www-kd.iai.uni-bonn.de/people.php?kristian.kersting>,
+Fraunhofer
+IAIS -- University of Bonn
+- Scott Sanner <http://users.cecs.anu.edu.au/~ssanner/>, NICTA-ANU
+- Martin Szummer <http://research.microsoft.com/en-us/um/people/szummer/>,
+Microsoft Research Cambridge
+- Paolo Viappiani <http://people.cs.aau.dk/~paolo/>, Aalborg University
+- Onno Zoeter<http://www.xrce.xerox.com/Research-Development/Services-Innovation-Laboratory/Machine-Learning-for-Optimisation-and-Services/People/Onno-Zoeter>,
+Xerox Research Centre Europe
+*Workshop Contact*:
+Email:   Shengbo *(dot*) Guo at xrce.xerox.com
+Phone: +33 (0)4 76 61 50 47
+Fax:      +33 (0)4 76 61 50 99
+WWW:  www.xrce.xerox.com
+Mailing address: Xerox Research Centre Europe, 6 chemin de Maupertuis,
+38240 Meylan, France

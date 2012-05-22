@@ -1,0 +1,8 @@
+Do the hyperparameters differ in this respect from the topics themselves?
+They are all latent variables, and hence, they depend strongly on the
+structure of the model.  Do you think, David, that the hyperparameters are
+somehow *more* dependent?  I would guess that they are actually less
+dependent, since they are of much lower dimensionality than the topic
+models.
+Of course referring to these as "topics" is already dubious.  I don't see
+why learning the hyperparameters makes that any less appropriate.

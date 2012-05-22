@@ -1,0 +1,140 @@
+
+corpus.c,148
+corpus* read_data(33,950
+void print_doc(78,2102
+void write_corpus(95,2355
+void init_doc(115,2764
+int remove_word(136,3153
+void split(158,3495
+
+corpus.h,160
+#define CORPUS_H21,805
+#define OFFSET 25,842
+typedef struct doc doc32,921
+} doc;doc37,1006
+typedef struct corpus corpus45,1067
+} corpus;corpus49,1137
+
+ctm.c,282
+llna_model* new_llna_model(43,1255
+llna_ss * new_llna_ss(60,1688
+void del_llna_ss(73,2023
+void reset_llna_ss(81,2159
+void write_ss(90,2334
+llna_model* corpus_init(102,2604
+llna_model* random_init(166,4398
+llna_model* read_llna_model(208,5392
+void write_llna_model(250,6601
+
+ctm.h,223
+#define LLNA_H22,804
+#define NUM_INIT 29,915
+#define SEED_INIT_SMOOTH 30,934
+typedef struct llna_modelllna_model37,993
+} llna_model;llna_model45,1156
+typedef struct llna_ssllna_ss53,1233
+} llna_ss;llna_ss59,1351
+
+estimate.c,270
+void expectation(49,1314
+void cov_shrinkage(103,2950
+void maximization(176,5012
+llna_model* em_initial_model(229,6333
+void em(243,6697
+void inference(339,9616
+void within_doc_split(392,11439
+int pod_experiment(416,12140
+void count(474,14015
+int main(494,14321
+
+gsl-wrappers.c,559
+double safe_log(27,959
+double log_sum(34,1047
+double vget(52,1287
+void vset(58,1367
+void vinc(64,1444
+double mget(70,1524
+void mset(76,1614
+void minc(82,1701
+void col_sum(88,1794
+void vprint(99,2007
+void vfprint(108,2143
+void mprint(119,2312
+void scanf_vector(131,2498
+void scanf_matrix(140,2664
+void printf_vector(148,2830
+void printf_matrix(157,3004
+void matrix_inverse(166,3179
+double log_det(184,3560
+void sym_eigen(205,3951
+double sum(220,4321
+void center(231,4497
+void normalize(241,4663
+double norm(251,4829
+int argmax(262,4991
+
+gsl-wrappers.h,30
+#define GSL_WRAPPERS_H21,811
+
+inference.c,810
+gsl_vector ** temp;50,1618
+int ntemp 51,1638
+void init_temp_vectors(53,1654
+double expect_mult_norm(67,1852
+void lhood_bnd(80,2142
+int opt_zeta(134,3737
+void opt_phi(151,3994
+void fdf_lambda(183,4796
+double f_lambda(190,4944
+void df_lambda(218,5936
+int opt_lambda(252,6928
+double f_nu_i(328,9142
+double df_nu_i(341,9439
+double d2f_nu_i(354,9735
+void opt_nu(365,9984
+double fixed_point_iter_i(375,10165
+void opt_nu_i(388,10465
+void init_var_unif(423,11347
+void init_var(442,11768
+llna_var_param * new_llna_var_param(460,12074
+void free_llna_var_param(473,12441
+double var_inference(483,12627
+void update_expected_ss(522,13696
+double sample_term(561,14730
+double sample_lhood(605,15878
+void expected_theta(644,16839
+double log_mult_prob(699,18337
+void write_word_assignment(721,18809
+
+inference.h,220
+#define LLNA_INFERENCE_H21,813
+#define NEWTON_THRESH 23,839
+typedef struct llna_var_param llna_var_param34,1028
+} llna_var_param;llna_var_param44,1256
+typedef struct bundle bundle47,1276
+} bundle;bundle52,1389
+
+params.c,108
+llna_params PARAMS;26,869
+void read_params(28,890
+void print_params(49,1668
+void default_params(62,2119
+
+params.h,148
+#define PARAMS_H21,805
+#define MLE 23,823
+#define SHRINK 24,837
+typedef struct llna_paramsllna_params26,855
+} llna_params;llna_params36,1065
+
+r-interface.c,216
+llna_model global_mod;29,973
+double r_mtx_get(37,1093
+gsl_matrix * r_to_gsl_matrix(43,1186
+gsl_vector * r_to_gsl_vector(60,1478
+void r_set_mod(79,1726
+void r_lhood_bound(102,2444
+void r_var_inference(132,3170
+
+r-interface.h,34
+#define LLNA_R_INTERFACE_H21,815

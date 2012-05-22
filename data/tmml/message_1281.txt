@@ -1,0 +1,26 @@
+Dear All,
+Sorry for the bother, but I have a perhaps nieve question regarding
+the differences between author-topic models and topic-models.
+Imagine the corpus consists of speeches and that the identity (and
+other covariates) of the speaker are known.  One way to infer ''what
+speakers are talking about'' is to model the speakers directly, as in
+Rosen-Zvi, et al 2004.  My question is: what is cost (or rather, ''how
+bad is it'') to ignore the identity of speaker when fitting a topic
+model, and to ex-post incorporate speaker information?  My interest is
+in examine how speaker-level covariates are related to speech.
+For example:
+Model A:  model authors directly as in  Rosen-Zvi, et. al 2004.  This
+gives posterior distribution of speakers in 'topic-space.'
+Model B:  model speeches only using LDA or CTM (Blei, et al).  After
+the model is fit, each document has a posterior of topic proportions.
+Aggregate up all the speeches of a given speaker to get an ''average
+speaker distribution''
+Clearly, these are very different (for one thing, Model B is no longer
+generative w.r.t speaker information).  But my question is: if we want
+to learn about the semantic space, and to assertian ''what speakers
+are talking about'' do we need to incorporate speakers in the topic
+model?
+Just curious if anyone knew of any comparisons of ex-ante vs ex-post
+use of speaker information in topic models.
+With thanks,
+Scott Moser

@@ -1,0 +1,33 @@
+              EAR-0001081
+Seaman
+
+Felsic magmas are the sources of the keystone components
+              of continental crust, and of the most explosive volcanic eruptions that
+              commonly occur on Earth.  The major factors in the evolution and eruptive
+              behavior of felsic magmas are their water concentrations and their degree of
+              oxidation.  In this study, synchrotron spectroscopy will be used to explore the
+              possibility that plagioclase crystals preserve information about the oxidation
+              state and the water concentration of the magmas from which the crystals grew. 
+              Both Fe 3+/G Fe and H2 concentrations in the nominally anhydrous plagioclase
+              will be measured and their use as proxies, for, respectively, oxygen fugacity
+              and water concentration of the magmas that produced the crystals, will be
+              explored.  Synchrotron microXANES (X-ray absorption near-edge structure)
+              spectroscopy of oxidation state of Fe in plagioclase crystals is based on
+              measuring small energy differences in cation/oxygen bonds between ferrous and
+              ferric ions that bond to oxygen.  Synchrotron microFTIR (Fourier transform
+              infrared) spectroscopy, like conventional FTIR spectroscopy, provides a
+              correlation between the wavelength of light absorbed and the nature of chemical
+              bonds in the mineral.  Synchrotron microFTIR analysis of H2 in plagioclase will
+              utilize a very bright source, eliminating the need to remove and polish
+              oriented single crystals, and allowing for the analysis of crystals in their
+              spatial context.  These techniques will be tested on the Lower Purico
+              ignimbrite (~1 Ma) in the Andean Altiplano Puna Volcanic Complex, for which
+              independent measurements of maximum magmatic water concentrations have already
+              been determined by SIMS and FTIR, and oxygen fugacity determinations have been
+              made on the basis of crystallization temperatures and mineral equilibria by
+              deSilva (1989, 1991) and Schmitt et al. (1998).  Along with testing these new
+              techniques, goals of this study include acquiring insight into the interplay of
+              oxygen fugacity, water concentration, mineral assemblage, and the eruption
+              style of siliceous magmas across a large range of geologic time.
+
+

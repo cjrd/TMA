@@ -1,0 +1,42 @@
+Hi Bailu,
+Thanks for your questions.
+1) The IBP assigns positive mass to a row with no non-zero elements.
+We wanted to avoid the situation where a document was generated from
+no topics. We also thought it was reasonable to assume that a longer
+document would tend to feature more topics than a shorter one. So, we
+noted that the following generative schemes are equivalent:
+for i=1:K
+sample y_i ~ Gamma(a_i,1)
+sample n_i ~ Poisson(y_i)
+end
+and:
+sample Y ~ Gamma(\sum_i a_i, 1)
+sample N ~ Poisson (Y)
+sample \theta ~ Dirichlet(a_1,...,a_K)
+for j=1:N
+sample c_j ~ Discrete(\theta)
+end
+for i=1:K
+Let n_i = \sum_j I(c_j = i)
+end
+where n_i is the number of words in topic i.
+The negative binomial distribution is (with slight reparametriseation)
+given by \int Poisson(n|y)Gamma(y|a,1)dy.
+I hope this explains our design decision. The paper "Decoupling
+sparsity and smoothness in the discrete hierarchical Dirichlet paper"
+by Chong Wang and David Blei offers another way to deal with all-zero
+rows.
+2. I've included this as an attachment. The notation is a little
+different from that in the paper, but hopefully not too different.
+3. X is not a problem, as we are not using any approximations. For Y,
+consider Y* and Y+ separately (as defined in the paper). For Y*, the
+the b_{mk} are not iid, but conditioned on the observed pi they are
+independent, with finite moments. So Liapunov's theorem holds. For Y+,
+we have the limit as K -> infinity of a sequence of random variables
+drawn as follows:
+\pi_k ~ Beta(a/K,1)
+b_{mk} ~ Bernoulli(\pi_k)
+- i.e. the b_mk, for a single m, are iid. We know the gamma random
+variables are iid. So the CLT holds.
+Hope that helps,
+Sinead

@@ -1,0 +1,24 @@
+Hi all,
+Say that you have a set of users, and each user has collected some set of
+items. So for a music recommendation system a user is someone who downloads
+songs from certain artists, and they can be represented as a multiset (since
+you can download multiple songs from the same artist) of artists.
+Would it be feasible to represent each "topic" as a probability distribution
+of artists (so a 'topic' here roughly represents a genre of music) and each
+user has a probability distribution of genres (representing the 'tastes' of
+a user). Then we can model a user's choice of what to download as: randomly
+choose from its set of genres a genre, then from this genre randomly choose
+an artist. This generative model of users downloading songs seems to be
+directly analogous to LDA where a user is a document and an artist is a word
+and a topic is a genre.
+It seems like dynamic topic modeling could apply as well (if you like Eminem
+and Lil Wayne now, you would have liked Run DMC in the early 90s) or
+correlated topic modeling (someone who likes metal isn't very likely to
+enjoy hip-hop perhaps).
+Once we have estimated the most likely distributions on our k genres and on
+our users, we could generate a "recommendation list" for a user by finding
+the most likely artists that a user will download based on the model and
+ordering them by likelihood (throwing out artists that a user has already
+downloaded).
+What do you guys think?
+Harry

@@ -1,0 +1,62 @@
+*******************************************************************************
+IEEE PerCom 2013
+11th IEEE Int. Conf. on Pervasive Computing and Communications
+March 18-22, 2013 - San Diego, CA, USA
+*******************************************************************************
+CALL FOR WORKSHOP PROPOSALS
+****************************************
+IEEE PerCom, now in its 11th edition, is the premier conference for presenting
+scholarly research in pervasive computing and communications. Advances in this
+field are leading to innovative platforms, protocols, systems and applications
+for always-on, always-connected services.
+The PerCom 2013 Organizing Committee invites proposals for one-day or half-day
+workshops affiliated with the conference. The workshops will be held prior to,
+or immediately after, the main conference. The purpose of these workshops is to
+provide a venue for presenting novel ideas in a less formal and typically more
+focused area than at the conference itself.
+Please visit http://www.percom.org to learn about earlier PerCom workshops.
+Note that PerCom workshops are expected to enable stimulating discussions of
+state-of-the-art, emerging, visionary,  and perhaps controversial topics.
+Workshops should be organized to promote such lively interaction. Plans to
+promote interaction and discussion should be clearly addressed in workshop
+proposals.
+Workshop proposals are solicited in all areas and topics pertaining to
+pervasive computing and communications research and applications. Workshops
+addressing new emerging research directions in pervasive computing and
+communication are especially welcome.
+Proposal Submission Guidelines:
+*******************************
+Each workshop proposal must include:
+- The name of the workshop.
+- The preferred date of the workshop (Monday or Friday).
+- The names, addresses, and a short bio (up to 200 words) of the organizers (up
+to three, from at least two different institutions).
+- A brief description (up to 1 page) of the technical issues that the workshop
+will address and the reasons why the workshop is of interest at this time.
+Please  also include a short discussion of related workshops and conferences
+and outline why the proposed workshop is unique.
+- The names of potential program committee members, and some consideration on
+the communities/groups it intends to attract.
+- The planned format of the workshop, including a strategy to facilitate lively
+and interactive discussions.
+- If applicable, a description of past versions of the workshop, including:
+number of submitted and accepted papers and number of attendees.
+- If the workshop does not have any past editions, an estimate of the expected
+number of submitted and accepted papers, and of the expected number of
+attendees.
+- A description of the publicity plan.
+- A call for papers.
+- The workshop website address.
+Workshop proposals should be submitted, no later than *May 31, 2012*, by e-mail
+(in PDF format), to the PerCom 2013 Workshop Co-chairs at the following address
+percom2013workshops at cs.uwaterloo.ca, with "PerCom 2013 Workshop Proposal" in the
+subject.
+Important Dates
+***************
+Workshop proposals submission Deadline: May 31, 2012
+Notification: June 22, 2012
+The following dates for the workshops schedule are strongly recommended.
+The date that papers are due to the IEEE is firm:
+Paper submissions: October 30, 2012
+Paper notifications: December 21, 2012
+Urs Hengartner and Gregor Schiele

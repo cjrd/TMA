@@ -1,0 +1,14 @@
+Hashtags, usernames, URLs, and emoticons, multi-character punctuation,
+and celebrity names were the token classes we modeled to get topics that
+seemed right in our ICWSM paper this year.
+http://nlp.stanford.edu/pubs/twitter-icwsm10.pdf
+There's an online demo here if you're silverlight inclined:
+http://twahpic.cloudapp.net/
+The celebrity name tokenization rule was important because, with it, you
+learn topics for music and celeb culture; without it, you end up
+learning topics with a bunch of first names.
+For our purpose, it was better to *not* normalize spelling and
+punctuation variations.  If you don't normalize things like dat/wit ->
+that/with you end up with nice clusters of words indicative of
+particular speaker communities' linguistic styles.
+dan

@@ -1,0 +1,35 @@
+              Abstract
+Wallach
+
+This project will study several related problems in
+              representation theory, non-commutative harmonic analysis and algebraic group
+              theory.  In representation theory it involves the construction, study and
+              application of small unitary representations of real reductive groups.  In
+              harmonic analysis, it involves dropping the K-finite condition in Paley-Wiener
+              theorems for rapidly decreasing functions on a real reductive group.  This
+              analysis will be applied to proving a version of the Casselman-Wallach theorem
+              depending on parameters.  This theorem will imply a meromorphic continuation of
+              non-K-finite Eisenstein series.  Related to these more analytic problems we
+              will study the algebraic problem of determining graded multiplicities for the
+              irreducible constituents of the action of a reductive algebraic group on an
+              affine cone.  The latter work also has applications to the analysis and to the
+              study of measures of entanglement in quantum computing.
+
+Representation
+              theory has its roots in nineteenth century invariant theory, early twentieth
+              century quantum mechanics and mid-twentieth century number theory.  In this
+              first decade of the twenty first century the theory has returned to its roots. 
+              The nineteenth century invariant theory emphasized concrete questions on binary
+              forms with algorithmic solutions. These problems have reemerged and are now
+              being generalized to apply to quantum computation.   Early quantum mechanics
+              studied puzzling and weird measurements involving photons, electrons etc. These
+              phenomena led to the Hilbert space approach to quantum mechanics. The
+              philosophical debates of the early quantum mechanics have reemerged as quantum
+              information technology.  The Hilbert space approach also gave birth to
+              representation theory, which has as one of its main applications in number
+              theory. The Langlands program has established a goal for the twenty first
+              century to establish a non-commutative class field theory (Wile's proof of
+              Fermat's Last Theorem is actually proof of a special case of the
+              Tanayama-Shimura conjecture which is a special case of the Langlands program). 
+              This project is in the interface of all of these exciting directions.
+

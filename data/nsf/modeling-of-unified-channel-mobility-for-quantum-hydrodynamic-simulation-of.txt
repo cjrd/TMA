@@ -1,0 +1,39 @@
+              The CMOS technology is now being ushered from l8Onm node to 13Onm node. For
+              lOOnm-l3Onm generation technology, many key issues of transistor design must be
+              reexamined. One of them is non-equilibrium transport which takes place in
+              nonoscale MOS devices. Because of continuous down-scaling of the device, the
+              gate length now becomes comparable to or smaller than the inelastic
+              mean-free-path. In this regime, the non-equilibrium /non-local transport of
+              carriers in MOS devices requires substantially different formulation from that
+              of the conventional one.
+In this research project, it is proposed to construct
+              a unified mobility model for carriers in the channel of bulk, SOI, thin-body
+              SOI, and DG MOSFETs applicable to gate length below lOOnm. Based on sound
+              physics of non-equilibrium transport including quantum effects, the
+              conventional low-field inversion layer mobility will be extended to the
+              high-field regime by seeking an effective average carrier energy which
+              characterizes the non-local transport occurring in the device. A series of
+              self-consistent Monte Carlo (MC) simulations of carriers in inversion layers
+              with a quantum mechanically corrected potential will be carried out in the
+              region encompassing retarding-, low-, and high-fields. A unified channel
+              mobility will be constructed in such a way that it can accurately predict
+              velocity overshoot at the drain end of the channel, quantization effects in the
+              inversion layer including tunneling, as well as thermionic emission-limited
+              current density across the source-channel barrier. This unified channel
+              mobility will then be incorporated in the quantum hydrodynamic (QHD) transport
+              equations for numerical simulation of nanometer-scale bulk, SOI, thin-body SOI,
+              and DG MOSFETs.
+It is expected that this research will provide a consistent
+              and easy means of moving the simulation hierachy from drift-diffusion to MC
+              Boltzmann via a hydrodynamic (HD) formulation. The project will enable
+              simulation of MOS devices with the channel length of 100nm and below. Such
+              capability is required of simulation of next generation of integrated circuits,
+              which are expected in a few years.
+The proposed research will also benefit
+              both graduate and undergraduate students on campus and engineers in industry
+              who take P.I.'s device simulation course through the distance learning. The
+              P.I. has constantly updated course materials based on research results of the
+              past NSF projects and other research projects supported by the industry.
+
+
+

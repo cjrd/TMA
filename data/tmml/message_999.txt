@@ -1,0 +1,11 @@
+Hello Bernard Brosseau-Villeneuve,
+In answer to your first question, check out Newman, Chemudugunta and
+Smyth in KDD 2006:
+http://www.ics.uci.edu/~newman/pubs/Newman_SIGKDD06.pdf
+Or my work with Heymann, Manning, and Garcia-Molina in WSDM 2009:
+http://www.stanford.edu/~dramage/papers/cluster-wsdm09.pdf
+These are models that generate observations from more than one kind of
+feature using a shared per-document multinomial theta.  For instance, in
+our WSDM paper, we treated words, tags, and anchor text as parallel sets
+of observations within each document.
+dan

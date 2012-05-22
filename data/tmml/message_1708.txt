@@ -1,0 +1,21 @@
+Hi everyone,
+I've been using the parallel LDA implementation (
+http://code.google.com/p/plda/wiki/PLDAQuickStart ) and I'm having
+some trouble interpreting the range of the output values from the
+inference stage. For instance, here's an inferred set of topic weights
+for a particular document:
+0.2 0.2 0.4 0 0 0.6 2 9 1.8 0 0 2.2 7.4 0.2 0 0 4.8 1.6 0 0.8 1.4 0
+0.8 0.4 0 0 0 0 0.6 3.6 0 0.8 0 0.2 0 0.8 0 3.4 0 0.4 3.2 57.4 0.4 0
+0.6 0.6 0 0.4 0.4 5.2 1 0.2 0 0 0 0.2 0 0.4 3.8 0 0 0 2.6 0 0.8 0 5.6
+1 1.4 1 0.6 0.4 1.6 0.4 0.2 0 1.4 0.4 0 0.4 0.2 0.2 0.8 3.6 0 0 0 1
+0.2 2.8 0.2 0 0.8 0 0 1.6 0.2 1.2 0 0
+I would have expected the outputs to be a distribution summed to 1,
+but that doesn't seem to be the case.
+I've been using these values, and also normalised versions in a
+vector-space search system to find similar documents but neither seems
+to work especially well. However, I know my stoplists could use some
+improvement, and I haven't experimented much with the alpha and beta
+values. Does anyone have any experience with PLDA and the inferred
+values?
+Dr. Ian Knopke
+BBC

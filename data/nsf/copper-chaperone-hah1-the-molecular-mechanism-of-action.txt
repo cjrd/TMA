@@ -1,0 +1,20 @@
+              Copper is essential for normal growth and development of mammalian cells. It
+              serves as a cofactor for numerous enzymes mediating neurotransmitter
+              biosynthesis, radical detoxification, oxidative phosphorylation, and iron
+              transport.  Currently, little is known on how copper became incorporated into
+              these proteins and how concentration of copper in a cell is regulated. This
+              project addresses these fundamental questions.  The research is focused on
+              HAH1, a copper-chaperone, which delivers copper specifically to
+              copper-transporting ATPases in mammalian cells.  The long-term goal of the
+              studies is to understand how HAH1 functions in a cell, and how its function is
+              regulated.  The experimental approach includes combination of protein
+              biochemistry, site-directed mutagenesis, protein fragment complementation assay
+              in cultured cell lines, and chemical labeling.  These techniques are utilized
+              (i) to determine the oligomerization state of intracellular HAH1 in the
+              presence of different copper concentrations, (ii) to characterize copper
+              occupancy of HAH1 within the cell, and (iii) to determine whether the in vivo
+              interactions between HAH1 and the copper-transporting ATPase are regulated by
+              changes in copper concentration.  The results of these experiments will
+              generate new information regarding key copper transporters in mammalian cells
+              and will advance understanding of basic mechanisms regulating intracellular
+              copper distribution. 

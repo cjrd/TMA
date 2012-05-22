@@ -1,0 +1,35 @@
+              1. The proposed research mainly deals with developing the first-order
+              generalized differential theory of variational analysis in broad classes of
+              infinite-dimensional spaces, with some basic aspects of the second-order
+              variational analysis in finite dimensions, and with their applications to
+              important problems arising in optimization, control, mechanics, and economics.
+              The main tools of the generalized differentiation in the proposed research are
+              based on the normal cones, subdifferentials, and coderivatives of nonsmooth
+              objects, in the study of which the PI has been involved for a long time.  The
+              project will pay a particular attention to the second-order subdifferential
+              theory and its applications to the Lipschitzian stability of variational
+              systems, mathematical programs with equilibrium constraints, and to some
+              problems of continuum mechanics. It will contain new development and
+              applications in the area of dynamic optimization for control systems governed
+              by differential, delay-differential, and partial differential
+              equations/inclusions. It also aims to develop new applications of variational
+              analysis to the study of Pareto optimality in equilibrium models of welfare
+              economics.    
+
+2. Variational analysis has been recognized as a fruitful
+              area in the modern Applied Mathematics that, on one hand, is concerned with
+              finding the best solutions in 
+large-scale mathematical models with
+              complicated ``nonsmooth" constraints and, on the other hand, develops
+              optimization strategies and technologies to solve a broad spectrum of real-life
+              problems arising in various areas of applied science, control, economics,
+              engineering, mechanics, etc. The proposed research aims to develop new methods
+              of variational analysis and its application to some important problems in
+              optimal control, economics, and mechanics. In particular, the proposed methods
+              of minimax control design are largely motivated by applications to
+              environmental systems. The proposed study of variational stability for
+              optimization problems with equilibrium constraints is motivated by applications
+              to practical problems of material design in continuum mechanics. New
+              applications of variational analysis will be developed to multiobjective models
+              of welfare economics.
+

@@ -1,0 +1,24 @@
+              ABSTRACT
+0203113
+Monteiro, Renato 
+GA Tech Res Corp -GIT
+
+In a semidefinite
+              programming (SDP) problem, a linear function of a symmetric matrix variable X
+              is minimized subject to linear equality constraints on X and the essential
+              constraint that X be positive semidefinite.  Many mathematical optimization
+              problems can be cast as SDP problems including linear programs, convex
+              quadratic problems with convex quadratic inequality constraints, matrix norm
+              minimization problems, and a variety of maximum and minimum eigenvalue
+              problems. In addition, SDP has many applications in combinatorial optimization,
+              engineering, statistics, and robust optimization.
+
+Today, there are numerous
+              algorithms and codes available for solving SDPs, and these methods can be
+              loosely grouped into two classes: second-order interior-point (IP) methods and
+              first-order nonlinear programming (NLP) methods. The choice of which class to
+              use for a particular application is determined primarily by
+problem size ---
+              second-order IP methods are more efficient on small- to medium-scale problems
+              while first-order NLP methods are better for large-scale problems.
+

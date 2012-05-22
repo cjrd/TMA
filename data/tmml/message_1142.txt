@@ -1,0 +1,16 @@
+Anthony,
+Convergence of a gibbs sampler involves luck with the initialization.
+Therefore if you run the gibbs sampler with exactly the same data,
+hyperparameters and numbers of topics twice, one may be converged after
+a few iterations and the other may take much longer.
+Since you can not even compare two runs with the same parameters, how
+can you compare two runs with different hyperparameters?
+You can just hope, that if you can say something about the average
+number of iterations till convergence over many runs.
+As a rule of thumb: The more degrees of freedom the model has (aka the
+larger the hypothesis space) the longer it takes to converge.
+However, you can give the approach a time budget (or iteration budget)
+in order to see which model does best - at average - under the budget
+constraints.
+Cheers,
+Laura

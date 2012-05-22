@@ -1,0 +1,8 @@
+Does anyone know if the code to estimate the model presented in
+A Joint Topic and Perspective Model for Ideological Discourse
+with Eric Xing, and Alexander Hauptmann, 2008 European Conference on
+Machine Learning and Principles and Practice of Knowledge Discovery in
+Databases (ECML/PKDD)
+is available?
+With thanks,
+Scott Moser

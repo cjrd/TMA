@@ -1,0 +1,13 @@
+Dear Friends,
+Currently, my job is designing a classifier to classify some short
+questions.
+The classifier can be trained by a collection of avialable questions with
+labels.
+And a question can be labeled to several related categories.
+Thus, the topic models might be useful.
+However, as I have known, the LDA model is an unsupervised model.
+Is there any alternative way to use topic models to do multi-labeled
+classification?
+Thanks!
+Yours,
+Bin

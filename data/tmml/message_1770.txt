@@ -1,0 +1,45 @@
+CALL FOR PAPERS - INTERNATIONAL JOURNAL OF COMPUTATIONAL LINGUISTICS (IJCL)
+ISSN: 2180-1266
+Volume 3, Issue 1
+Info. at http://www.cscjournals.org/csc/journals/IJCL/journal_cfp.php?JCode=IJCL
+Computer Science Journals (CSC Journals) invites researchers, editors, scientists & scholars to publish their scientific research papers in an International Journal of Computational Linguistics (IJCL) Volume 3, Issue 1.
+Computational linguistics is an interdisciplinary field dealing with the statistical and/or rule-based modeling of natural language from a computational perspective. Today, computational language acquisition stands as one of the most fundamental, beguiling, and surprisingly open questions for computer science. With the aims to provide a scientific forum where computer scientists, experts in artificial intelligence, mathematicians, logicians, cognitive scientists, cognitive psychologists, psycholinguists, anthropologists and neuroscientists can present research studies, International Journal of Computational Linguistics (IJCL) publish papers that describe state of the art techniques, scientific research studies and results in computational linguistics in general but on theoretical linguistics, psycholinguistics, natural language processing, grammatical inference, machine learning and cognitive science computational models of linguistic theorizing: standard and enriched context free models, principles and parameters models, optimality theory and researchers working within the minimalist program, and other approaches. IJCL is a peer review journal and a bi-monthly journal.
+CSC Journals anticipate and invite papers on any of the following topics:
+Comparative Surveys that Critique Previously Reports
+Models of Language Change and its Effect on Linguistics
+Computational Linguistics
+Models that Address the Acquisition of Word-order
+Computational Models
+Models that Combine Linguistics Parsing
+Computational Theories
+Models that Employ Statistical/probabilistic Grammar
+Corpus Linguistics
+Models that Employ Techniques from machine learning
+Formal Linguistics-Theoretic and Grammar Induction
+Natural Language Processing
+Information Retrieval and Extraction
+Quantitative Linguistics
+Language Generation
+Speech Analysis/Synthesis
+Language Learning
+Speech Recognition/Understanding
+Linguistics Modeling Techniques
+Spoken Dialog Systems
+Linguistics Theories
+Web Information Extraction/Mining
+Machine Translation
+Important Dates - IJCL CFP - Volume 3, Issue 1.
+Paper Submission: March 31, 2012
+Author Notification: May 15, 2012
+Issue Publication: June 2012
+For complete details about IJCL archives publications, abstracting/indexing, editorial board and other important information, please refer to IJCL homepage.
+We look forward to receive your valuable papers. If you have further questions please do not hesitate to contact us at cscpress at cscjournals.org. Our team is committed to provide a quick and supportive service throughout the publication process.
+A complete list of journals can be found at http://www.cscjournals.org/csc/bysubject.php
+Sincerely,
+J. Stewart
+Computer Science Journals (CSC Journals)
+B-5-8 Plaza Mont Kiara, Mont Kiara
+50480, Kuala Lumpur, Malaysia
+Tel: + 603 6207 1607, + 603 2782 6991
+Fax:+ 603 6207 1697
+Url: http://www.cscjournals.org

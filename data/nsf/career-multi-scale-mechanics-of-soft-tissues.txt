@@ -1,0 +1,35 @@
+              0093969
+Livesay
+This CAREER project is to establish a productive, integrated
+              research and educational program with a focus on the multi-scale mechanics of
+              soft tissues. One promising approach for the analysis of materials possessing
+              microstructure is homogenization, involving the analysis of a repeating
+              microstructural unit coupled to a macroscopic level analysis. However, the
+              applicability of this strategy to biologic soft tissues is currently limited,
+              since it has thus far been restricted to linear elastic media. Further research
+              and development are needed to extend the homogenization approach for
+              anisotropic and non-homogeneous media. This project will develop a research and
+              educational program on the multi-scale mechanics of soft tissues, through the
+              following specific objectives:
+
+1. Implement and optimize a homogenization
+              approach for computational analysis of multi-scale mechanics under finite
+              deformation. 
+2. Perform experimental validation of the homogenization
+              approach using synthetic tissues created with known microstructure.  
+3.
+              Extend the homogenization approach for the analysis of synthetic tissues
+              possessing both directional and spatial variation in material properties. 
+4.
+              Determine the multi-scale mechanical environment within biological soft tissue
+              under simple loading. 
+5. Integrate active learning experiences into existing
+              undergraduate and new graduate Biomedical Engineering courses. 
+
+The
+              fundamental research will develop critically important tools for the analysis
+              of the multi-scale mechanics of biological soft tissues. The complementary
+              educational improvements will increase student learning/retention and encourage
+              further study of multi-scale mechanics, thus enhancing the quality of
+              biomechanics education and research. 
+

@@ -1,0 +1,17 @@
+hi all,
+I'm using another tool of LDA----GibbsLDA++ , which offer the some useful
+information in the files of theta and phi:
+theta: p(topic|document)
+phi:    p(word|topic)
+So, my question is about posterior probability calculation:
+after estimation, given the files of theta and phi, the way I use to
+calculate the posterior probability p(topic|word) is:
+p(topic|word) = p(word|topic)*p(topic)/p(word)
+In which, p(word|topic) is supplied in the phi file, the other factors is
+calculated as:
+for the ith topic, p(topic_i)= SUM_j[p(topic_i|document_j)*p(document_j) ]
+for the ith word, p(word_i)= SUM_j[p(word_i|topic_j)*p(topic_j) ]
+in which, p(topic|document) can be found in theta, and p(word|topic) can be
+found in phi.
+so, is it a right way to calculate the posterior probability?
+Yujing Guo

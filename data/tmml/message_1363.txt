@@ -1,0 +1,31 @@
+Hi Dave,
+I've played around with these kinds of metrics some.  It seems to me that
+both of the methods you describe capture essentially the same thing, which
+is, "what other topics are used together with this topic."  While that could
+capture semantic similarity, in practice I've found that it more frequently
+captures other kinds of relationships.  For example, if you run a topic
+model on the set of campaign speeches from the 2008 presidential election,
+you find that for the topic on health care the similar topics that these
+metrics give are about veterans, families, quality of care, and insurance
+companies.  While certainly the topics are related, I'm not sure that it's
+the kind of semantic similarity you're looking for.
+Another thing you could try is do the same thing you described, but over
+words instead of documents (i.e., use phi instead of theta in the model).
+We found that this is pretty dominated by the top few words and not
+actually very useful.
+But the best metric we found for computing the semantic similarity of topics
+was a pairwise topic coherence, using the coherence metric from "Automatic
+Evaluation of Topic Coherence," by Newman et al., NAACL 2010.  Instead of
+computing the PMI of each word in a topic against every other word in the
+topic (judged by a database of counts from wikipedia - see the paper),
+instead compute it against every word in the other topic (or the top 10
+words, or however you want to cut it off).  That will give you a similarity
+metric (perhaps not in the technical sense of the word "metric") which you
+can then use to find the most similar topics to any given topic in your
+model.  We found that to work quite well.
+So both what you describe and this pairwise coherence metric that we used
+capture some kind of useful similarity of topics.  They just measure
+different things, and I think the coherence metric does a better job of
+semantic similarity.
+Cheers,
+Matt

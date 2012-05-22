@@ -1,0 +1,7 @@
+hi, Toyin
+did you try it on a linux machine? i coded it under linux environment, not
+tested on windows.
+looks like a gsl error. can you send me the dataset and i can take a look at
+that.
+best
+chong

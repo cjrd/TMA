@@ -1,0 +1,9 @@
+Just to follow up on Shriti's question:
+I too have had difficulty replicating, for example David M. Blei,
+Thomas Griffiths, Michael Jordan, Joshua Tenenbaum. Hierarchical topic
+models and the nested Chinese restaurant process  (figure 5),  using
+the h-lda code kindly provided.  I keep getting a segmentation fault.
+Could anyone point me to the corpus and settings used in the hlda
+papers (Blei et al 2003 and Blei et al 2007), please?
+With thanks,
+Scott

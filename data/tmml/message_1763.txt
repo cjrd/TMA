@@ -1,0 +1,6 @@
+Hello everybody
+I am trying to apply LDA to an e-comerce database. I was hoping to obtain, from this database, related set of products that customers buy together and therefore be able to recommend products to other customers based on their purchases. If the purchase fits into any of the topics with high probability then select some products from that topic to show to this new customer. My question is:
+How can I check and make sure that the topics I am obtaining have products that are related because they have been purchased together many times?. I get different results if I change the number of topics let say 40-150 (If I put 1000 topics the products will not be related will they?). I also get different results if I change the number of top words
+I am using MALLET
+Thank you all in advance
+Regards

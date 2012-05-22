@@ -1,0 +1,11 @@
+Hi,
+I'm looking for Prof. Michael Jordan's notes titled 'Introduction to
+Probabilistic Graphical Models' (2009) (organized in the form of a book with
+chapters). It appears that Prof. Jordan's notes have been widely used by
+instructors at a number of universities, but I can't tell whether these
+notes are freely available or only circulated with permission of the author.
+I have been able to find a 2003 version of these notes by Googling, but was
+wondering if anyone would be able to share the 2009 version (assuming the
+notes can be shared freely).
+Regards,
+Suhas

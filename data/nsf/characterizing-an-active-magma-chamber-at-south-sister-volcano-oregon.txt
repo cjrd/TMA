@@ -1,0 +1,28 @@
+              Characterizing an Active Magma Chamber at South Sister Volcano, Oregon:
+              Constraints From Gravity and GPS Measurements
+
+EAR-0208490
+PI:
+              Johnson	
+
+	Modeling of InSAR data by the USGS has determined that an uplift
+              of ~0.022 km 3 has developed since approximately 1998 due to an inflation
+              source at 5-7 km depth. This uplift has not been accompanied by seismic
+              activity. A goal of this project is to determine if this uplift is attributable
+              to new magma injection, expansion of an existing magma body, or hydrothermal
+              processes. If magma injection is producing the uplift, then an important second
+              goal will be to characterize the magma chamber. Important questions to be
+              addressed are: 1) does the magma chamber at 5-7 km depth contain only material
+              added within the past few years? 2) what  is the volume of the magma? 3) is the
+              magma basic or silicic? 4) what is the gas content of the magma? These
+              questions will be addressed by modeling the proposed gravity
+              measurements.
+	Three years of gravity observations on three radial profiles of
+              the uplift will be completed. Vertical control with leveling and GPS surveys is
+              planned by the USGS and will be available to this project. The siting of
+              stations and survey schedule will be optimized for the characterization and
+              removal of the annual groundwater and soil moisture signal from this data set.
+              Central to modeling of the gravity changes is observing the ratio of gravity
+              change to vertical uplift at monitored sites, which may be interpreted in terms
+              of mass and density change at depth.
+

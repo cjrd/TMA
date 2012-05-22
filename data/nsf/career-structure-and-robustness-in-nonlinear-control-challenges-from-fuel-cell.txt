@@ -1,0 +1,73 @@
+              The research objective of this proposal is to develop systematic design tools
+              that exploit, rather
+than override, nonlinearities and structural properties
+              in feedback systems. Encouraged by our
+preliminary results, we address the
+              problems of observer design and robustness to unmodeled
+dynamics, which are
+              crucial for practical applicability of nonlinear control techniques. The
+              variety of
+dynamic phenomena in nonlinear systems have hampered constructive
+              solutions to these problems.
+In contrast, we pursue structure-specific designs
+              which are tailored to inherent system properties
+and nonlinear phenomena. Our
+              robust design tools exploit types of unmodeled dynamics and
+multivariable
+              structures to recover stability and performance achievable with nominal
+              designs. Our
+observers take advantage of nonlinearities to enhance observer
+              convergence and to recover stability
+of full state-feedback designs in
+              certainty-equivalence implementations.
+
+In collaboration with United
+              Technologies Research Center, the PI will apply these design tools
+to emerging
+              feedback problems in fuel cell power systems. Fuel cell technology is
+              particularly suit-
+able for United States, because the wide geography makes
+              centralized power networks prone to
+failure, and the strict environmental
+              regulations accentuate the necessity of clean power genera-
+tion.A major
+              challenge for potential vehicular and portable power applications is the
+              high-order,
+interconnected, system structure, and severe nonlinearities, which
+              arise from tight integration of
+system components and wide variations in the
+              electric load. Robustness to unmodeled dynamics
+is crucial for reliability of
+              low-order designs. Nonlinear observers are of great importance
+              because
+commercially available sensor technologies are not designed to operate
+              in a fuel cell environment.
+The study of fuel cells will set the stage for
+              abstractions and broad design methodologies which will
+also impact other
+              technologies, such as computer networks, chemical processes, and fluid
+              control
+problems in aeroengines, where high-order system models and severe
+              nonlinearities constitute an
+obstacle to efficient and reliable feedback
+              designs.
+
+The educational objective of the proposal is to make nonlinear
+              concepts accessible to a wider
+spectrum of students. The PI will introduce a
+              new course for undergraduates, and graduate stu-
+dents who wish to study
+              nonlinear systems at an introductory level. This course will enhance
+              the
+appreciation of nonlinear systems among practitioners of the future, and
+              attract more students
+to our graduate research program. In collaboration with
+              the New Visions Program of local school
+districts and Rensselaer Polytechnic
+              Institute, we will include high-school students in project teams
+with our
+              undergraduates. Several pedagogical experiments and computer animations,
+              detailed in
+the proposal, will give them a motivating real-life exposure to
+              dynamic phenomena and control
+concepts.

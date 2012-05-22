@@ -1,0 +1,25 @@
+There might be a little confusion here: our NIPS workshop paper describes
+inference for the correlated topic model (CTM, minus estimation of the
+covariance matrix), and I believe Corr-LDA refers to the model of images
+and captions in this paper:
+http://www.cs.princeton.edu/~blei/papers/BleiJordan2003.pdf
+For that model, the latent indicator variables for a document are topic
+assignments for the image regions (z_1 ... z_N) and region assignments for
+the caption words (y_1 ... y_M). Gibbs sampling iterates over each of
+these latent variables in turn.
+To sample a topic for an image, you need to calculate a vector
+proportional to the conditional probability of each topic, which involves
+(1) the probability of the topic in the document given the other image
+region assignments, (2) the probability of the observed vector from the
+image given the multivariate gaussian for the topic, and (3) the
+probability of all the caption words currently associated with the image
+region given the topic's distribution over caption words.
+(1) is simple, (2) requires that you calculate the posterior distribution
+of a gaussian given all the image region vectors assigned to the topic,
+(3) is a bit tricky, since you are potentially adding multiple word tokens
+of the same type to a Dirichlet-multinomial distribution.
+To sample an association between a caption word and an image region (y_m),
+you need to create a distribution over the N regions proportional to the
+probability of generating the word from that region's topic-word
+distribution.
+-David

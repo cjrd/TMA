@@ -1,0 +1,9 @@
+They will not be equivalent. The author-topic model is structured so
+that authorship information changes the way that topics are learned
+and assigned to documents. Doing as you suggest would not allow the
+model to use this information when fitting topics. In general, when
+you fit the components of a complex model separately you cannot expect
+to get equivalent results to those you would have gotten by fitting
+them jointly.
+Best,
+Matt

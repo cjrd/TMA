@@ -1,0 +1,11 @@
+Dear members of this mailing list,
+After looking over the archive of this mailing list, I found some
+previous questions on calculating the perplexity.  Thanks for Gregor
+Heinrich's tutorial, where I found the answers to most the questions.
+However, I still get a question left  --- :-)  It seems that the
+perplexity relies on \Theta_{test_corpus}, does this mean that we need
+to do few iterations of Gibbs sampling with the test data to estimate
+\Theta_{test_corpus},  and then can we compute the perplexity?  If so,
+how many iterations are required?
+Best,
+Yi

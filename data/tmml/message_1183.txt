@@ -1,0 +1,8 @@
+Hello,
+Recently I am reading the "Unsupervised Prediction of Citation Influences"
+by Laura Dietz, Steffen Bickel, and Tobias Scheffer.
+I don't quite understand the derivation from Equation (12) to Equation (13),
+and the derivation of the denominator of equation (14).
+Could somebody help explain/elaborate a little bit more?
+Thanks.
+Huiping

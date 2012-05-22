@@ -1,0 +1,4 @@
+Hey, everyone! I'm glad to join this mailing list.
+I'm currently looking for the implementation (in python or other languages)
+of Author-Topic models, could you please offer some clue or advice?
+Thanks!

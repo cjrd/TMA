@@ -1,0 +1,9 @@
+Dear all,
+I am following the paper "A correlated topic model of science" by Blei
+and Lafferty. In the paper, the "expected Hellinger distance" between
+per document topic proportion was used to measure the similarity between
+documents. Could anyone kindly enlighten me on how the expected value
+E{sqrt(theta_i)} could be derived and computed?
+Best regards,
+Kong Aik
+Institute for Infocomm Research disclaimer:  "This email is confidential and may be privileged. If you are not the intended recipient, please delete it and notify us immediately. Please do not copy or use it for any purpose, or disclose its contents to any other person. Thank you."

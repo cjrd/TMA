@@ -1,0 +1,18 @@
+              This Small Business Innovation Research (SBIR) Phase I project proposes to
+              develop innovative visible blind UV detectors based on a novel metal-oxide
+              system that is analogous to Gallium Aluminum Nitride (GaN). It is based on a
+              wide band gap oxide system that is realized by alloying two primary oxide
+              compounds, exhibiting a wider and tunable band gap, creating semiconductor
+              materials which have energy gaps from 3.3 eV to 7.9 eV with high radiation
+              hardness. The project investigator has already patented the concept of making
+              and applying tailorable band gap oxide materials. The goal of this proposal is
+              to study the feasibility of growing wide band gap metal-oxides and ultraviolet
+              detectors on low cost substrates such as glass, polyimide, and silicon for
+              commercialization of cost effective products. 
+
+This technology can be
+              extended to produce large format detector arrays and which can improve their
+              reliability. Other areas where GaN detectors can be used are in
+              telecommunications, chemical sensing, and homeland security.
+
+

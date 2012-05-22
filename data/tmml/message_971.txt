@@ -1,0 +1,9 @@
+FACTORIE is intended to support exactly this kind of easy flexibility.  The LDA implementation takes about 15 lines of code to both define the model and read in the data.  Making modified models (such as "Cluster LDA" or "Topics over Time" or "Polylingual Topic Model") should take just a few additional lines.
+Its speed is reasonable, but not yet close to MALLET.  For example, FACTORIE LDA will do one sweep of collapsed Gibbs sampling through 700k tokens and 10 topics in about 8 seconds on a standard Mac laptop.  MALLET (non-SimpleLDA) is about 15 times faster.  Once we make some further optimizations and implement the KDD-2009-tricks in MALLET we are hoping its speed will improve dramatically.
+(An interesting side-note:  FACTORIE's implementation of linear-chain CRFs is actually *faster* than MALLET's---a feat I'm quite proud of since MALLET was hard-coded for finite-state-machines, and FACTORIE is designed to operate on arbitrary graphical models.)
+Caveats:
+FACTORIE is still 0.9.
+There are still holes in families of distributions and inference methods it supports.
+Documentation for it is still sparse.
+Best wishes,
+Andrew

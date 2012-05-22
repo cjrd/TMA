@@ -1,0 +1,4 @@
+Does any open-source code exist for the online HDP model (
+http://www.cs.princeton.edu/~chongw/papers/WangPaisleyBlei2011.pdf)?
+Thanks,
+Michael

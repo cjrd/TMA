@@ -1,0 +1,21 @@
+build such models on very short text. How would the model get affected by
+the word dependencies and how would the posterior distributions be like.
+Do you think a special treatment is necessary under such conditions?
+I am aware of previous work on twitter messages using topic models (bounded
+and unbounded number of clusters) and know from my own experiennce that
+sometimes the posteriors turn out to be wierd (looks like uniform
+distributions) for very short utterences.
+Especially when the problem is to extract some hidden themes like
+user intent, etc, it gets complicated as to how one could use such models to
+do inference. Definately CRF style methods would work just fine but there is
+too many unlabeled data to deal with and extract information from.
+I feel strongly that probabilitic topic models can have a lot to offer
+on short strings texts not just for documents. Any thoughts?
+PS: I have been suggested to look into deep belief networks. Could anyone
+share their thoughts on how they might be better compared to unsupervised
+clustering models where one can extract hidden components that might
+explain, say, an implied information such as the intent of a user for
+instance (not an easy task I must add)
+Many thanks in advance for sharing your thoughts.
+Best,
+Ash;

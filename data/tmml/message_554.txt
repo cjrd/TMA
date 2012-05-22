@@ -1,0 +1,19 @@
+Hi all --
+I'm curious about a seeming oddity that we've come across in doing
+empirical likelihood for evaluation.
+Say we're just doing simple LDA.  Empirical likelihood basically does
+the following:
+- estimate parameters of LDA
+- repeat 10000 times:
+- draw theta ~ Dir(alpha)
+- draw a bunch of words according to the LDA model using
+the drawn theta
+- use these 10000* drawn words as a 10000-component multinomial
+mixture model and compute the likelihood of the test data under this mixture
+The oddity is that the thetas you get by doing this are not really at
+all like the thetas that you have for actual, real documents.  I.e.,
+suppose you're using a symmetric dirichlet and you've estimated
+alpha=0.7 (for example).  Now, when you draw thetas, they're going to be
+appropriately sparse, but not really appropriately correlated.
+Yes, I know this says that we should use a different prior (eg.,
+correlated topic model).

@@ -1,0 +1,9 @@
+Hi Dear all,
+I am reading Blei's paper about LDA. When it came to the variational
+inference, I was so confused with the computation which I described in the
+attachment.
+Could somebody help me?
+Thanks a lot.
+Best regards.
+Yours sincerely
+Justin Cen

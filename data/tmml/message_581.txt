@@ -1,0 +1,5 @@
+Dear All:
+Hi, I have a little question about the topic-word distribution returned
+by the LDA: will the topic model prefers a skewed distribution or an even
+one?  Does the training process have a preference or not?
+thank you!

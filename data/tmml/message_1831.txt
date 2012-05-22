@@ -1,0 +1,4 @@
+Hello Wen,
+gensim supports read/write in the LDA-C format, see http://radimrehurek.com/gensim/corpora/bleicorpus.html . There are also tutorials on how to create your dictionary (mapping between words and ids) etc.
+Best,
+Radim

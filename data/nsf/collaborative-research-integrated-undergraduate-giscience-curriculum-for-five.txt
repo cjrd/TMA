@@ -1,0 +1,36 @@
+              Geography (88)
+The core purpose of this project is to adapt key elements of the
+              core curriculum developed by the National Council for Geographic Information
+              and Analysis (NCGIA,1997), combining these with materials already used on some
+              campuses in the University of Maine system. This is a collaborative project
+              designed to benefit five universities that are part of this system: 
+The
+              University of Southern Maine,
+The University of Maine, Fort Kent,
+The
+              University of Maine, Machias,
+The University of Maine, Augusta, and
+The
+              University of Maine, Farmington. 
+The broader purpose of this collaborative
+              project is to enhance GIScience education throughout the state of Maine on the
+              5 collaborating campuses. On each campus a dedicated laboratory is being
+              equipped to support the development of a modern geographical information
+              science (GIScience) curriculum, comprised of GIS and GPS technology and related
+              educational materials. We are developing and implementing a sequence of two
+              GIScience courses for undergraduate students in each of the five universities.
+              These are being designed to educate students to a common standard of
+              achievement, although there are local variations designed to meet the varied
+              needs of the 5 participating campuses. The new curriculum meets a growing need
+              for high-quality GIScience education in a variety of fields. We are designing
+              the two-course sequences to foster active learning by customizing exercises and
+              data sets to the diverse geographic locations and programmatic strengths of
+              each campus. Our project is also enhancing and developing the skills of the
+              faculty, and integrating advanced technology into a variety of disciplines. Our
+              plan is to disseminate our work through our teaching, on-site workshops for our
+              faculty colleagues, internet publication, and presentation at professional
+              meetings. Project evaluation is being assisted by on-site peer input during
+              faculty workshops, and periodic review by a three member advisory panel of
+              GIScience scholars and professionals.
+
+

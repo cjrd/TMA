@@ -1,0 +1,4 @@
+Dear All,
+I need some papers about how to infer ?the number of topics in a corpus. Is there any previous work on that?
+Thanks for your help.
+Regards,Darren

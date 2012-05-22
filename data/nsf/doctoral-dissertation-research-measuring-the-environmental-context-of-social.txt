@@ -1,0 +1,63 @@
+              Although many catastrophic events like earthquakes, floods, hurricanes, and
+              tornadoes may be characterized as natural disasters, the amount of devastation
+              associated with such events often is as much a product of the people and human
+              landscapes where they occur as the natural forces themselves.  This is
+              especially true if one tries to consider the risks associated with natural
+              hazards.  This doctoral dissertation research project will develop an
+              integrative methodology for the analysis of the ecology of urban earthquake
+              risks based on the techniques of remote sensing, geographic information systems
+              (GIS) and spatial analysis.  The research is guided by a conceptual framework
+              that takes a human ecological perspective and suggests the use of the built and
+              natural environments as contextual filters to understand social processes
+              associated with urban earthquake disasters.  The major thrust of the research
+              is oriented toward the exploration of the utility of remote sensing and GIS
+              techniques in identifying urban land-cover attributes that are strongly
+              associated with high and low levels of social vulnerability to earthquake
+              hazards.  The research will test the hypothesis that social vulnerability is
+              reflected in the characteristics of the spatial structure of the urban
+              neighborhoods that various population groups occupy, such as geographic
+              conditions, the form and development of settlements, and structure of open
+              spaces.  Many of these characteristics are physically represented by certain
+              urban land-cover attributes, such as constructions materials and soil types,
+              thus providing a means of measuring the relative importance of such
+              characteristics through the use of remote sensing and GIS.  The basic
+              hypothesis of this research will be tested in the Los Angeles metropolitan
+              area, a dynamic, data-rich urban region which was affected in 1994 by a major
+              earthquake disaster.  The research plan consists of three interrelated tasks. 
+              First, a GIS prototype will be developed using a set of measures for assessing
+              vulnerability in the contemporary urban realm of American cities without the
+              inclusion of remotely sensed variables.  Second, the utility of remote sensing
+              imagery will be demonstrated using data collected before the earthquake event. 
+              These data will provide spatially explicit variables regarding land-cover
+              attributes associated with variations of social vulnerability in the study
+              sites.  The third task will consist of a test of the validity of the remotely
+              sensed variables by re-assessing vulnerability in the study sites based
+              exclusively on such variables.  The results of the first and third tasks will
+              be compared and validated against reported damage figures from the 1994
+              earthquake disaster.
+
+The motivation for this project comes from the desire
+              to develop an empirical base for a flexible approach to vulnerability analysis
+              that can balance two competing demands.  The first need is to improve the
+              understanding of the linkage among various contextual and social factors that
+              produce vulnerability patterns.  The second is the need for offering a
+              practical way for planners and decision makers undertaking local mitigation
+              efforts to generate concrete profiles of vulnerable communities and to monitor
+              changes in these profiles.  The broader contributions of this project therefore
+              are both theoretical and empirical.  From a theoretical perspective, the
+              research will contribute to hazard research by answering questions regarding
+              the ecology of earthquake risk and how differential social vulnerability is
+              connected to variations in the physical settings of urban areas.  From an
+              empirical viewpoint, the product of this project will contribute to hazard
+              mitigation efforts by providing decision makers with tools for exploring
+              patterns of vulnerability and hence for implementing policies in a manner that
+              fulfills the needs of sustainable hazard mitigation.  The methods employed
+              offer a model of how to translate the technology for assessing vulnerability
+              into procedures for easy use by local governments, which can increase the
+              effectiveness of locally applied measures that could prevent earthquake hazards
+              from becoming major human disasters.  The techniques in question are relatively
+              low-cost and therefore the approach could suitably be modified to save lives in
+              other developed and developing countries.  As a Doctoral Dissertation Research
+              Improvement award, this award also will provide support to enable a promising
+              student to establish a strong independent research career.
+

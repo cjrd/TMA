@@ -1,0 +1,31 @@
+              
+	Microbial ectoenzyme activities in aquatic environments are important agents
+              of polymer hydrolysis and indicators of the state of microbial carbon,
+              nitrogen, or phosphorus nutrition.   Alkaline phosphatase, in particular, is a
+              good indicator of phosphorus limitation.   However, like most other biochemical
+              and molecular measurements, ectoenzyme activities, including alkaline
+              phosphatase, have been limited to discreet water samples.  We have developed a
+              continuous underway method for measuring alkaline phosphatase and other
+              microbial enzyme activities using high-sensitivity fluorescent substrates. 
+              This method has been successfully employed to map surface alkaline phosphatase
+              activity in a limited area of the Mississippi River plume and the Louisiana
+              shelf, the area where phosphorus limitation is likely to be most
+              intense.
+	This proposed study will use an improved automated enzyme
+              measurement system for extensive seasonal mapping of surface water alkaline
+              phosphatase activity in the Mississippi plume and along the Louisiana coast. 
+              This system will be coupled with continuous underway measurements of
+              temperature, salinity, in vivo fluorescence and other parameters provided by
+              the ship.  This work will be conducted in conjunction with a previously-funded
+              comprehensive process study of nitrogen, phosphorus, and silica limitation in
+              this area to be conducted by Quay Dortch and David Nelson.  The seasonal
+              alkaline phosphatase mapping will provide important
+information on the spatial
+              and temporal extent of phosphorus limitation, which will aid in the  selection
+              of stations for detailed nutrient enrichment experiments by Dortch and Nelson. 
+              These nutrient enrichment experiments, in turn, will supply detailed
+              information on the response of the community to nutrient enrichment, which will
+              help in the interpretation of the mapping data.  Additional alkaline
+              phosphatase measurements will be made on samples from the nutrient  enrichment
+              experiments to help in the interpretation of their physiological status.
+

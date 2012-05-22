@@ -1,0 +1,12 @@
+terminology -- I think when people are using the term in this context, they
+mean metric in the mathematical sense (at least I did).
+Neal
+http://en.wikipedia.org/wiki/Metric_(mathematics)
+It really is simple...  I don't understand why so many people in academia
+don't use this definition rigorously, and it kind of distrubs me how many
+well educated mathematicians, statisticians, engineers and computer
+scientists seem to be blissfully unware ... I digress.
+My point was despite the poor off putting nomenclature KL may still be a
+useful computation in some sense, but not in a statisticallly rigorous
+manner such that I can use it to test a hypothesis.
+Robin Kramer

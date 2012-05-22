@@ -1,0 +1,10 @@
+Hi,
+I found the old post below, which mentioned about a typo in section A.4.2.
+But even if the M is put into the formula, I still find the sign opposite.
+What I derived is
+\frac{\partial^2 L}{\partial \alpha_i \partial \alpha_j}=
+M[\Psi'(\sum_\alpha)-\delta(i,j)\Psi'(\alpha_i)]
+I assume \delta(i,j)=1 if i=j, and 0 otherwise.
+Please advise, thank you.
+regards
+Bing

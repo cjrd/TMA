@@ -1,0 +1,3 @@
+Fyi--my tokenizer can do things like find common typos and correct them...
+i.e. "don' t" -> "don't" and then has a filter to convert to "dont".
+Similarly "e.g." -> "eg" versus breaking them up.

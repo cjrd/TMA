@@ -1,0 +1,14 @@
+Dave and David,
+[sorry for the resend - accidentally sent as HTML the first time]
+Most grateful for pointing me to your paper on posterior predictive
+checking for topic models - it is quite provocative.
+Two clarifications regarding your paper:
+1. 'H' as a notational convention - I am not familiar with the
+notational convention 'H' you use in equation #2 on page 4? What does it
+signify?
+2. Document labels - You make numerous references to tokens and
+words, which I interpret as synonymous. But near the end of page 4 you
+start to also refer to 'document labels'. Do you intend this as a third
+synonym to words and tokens? If not, could you clarify what you are
+referring to?
+Implications of Mutual Information

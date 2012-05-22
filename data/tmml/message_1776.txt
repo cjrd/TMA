@@ -1,0 +1,5 @@
+Hello all,
+I am trying to implement the User Rating Profile Model [1] for collaborative filtering on a user rating matrix. Does anyone know of an example implementation of this model which I can use as reference for my implementation?
+Thanks
+Rahul
+[1] Modeling User Rating Profiles For Collaborative Filtering - Benjamin Marlin

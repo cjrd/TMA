@@ -1,0 +1,16 @@
+Hi Topic Model List Members,
+I am a new member to this list, but have been reading it for a while now and
+find it very valuable.
+I have a question regarding the GaP (Gamma-Poisson) model that was
+introduced by John Canny in 2004 in the article 'GaP; A factor model for
+discrete data'. I am trying to implement GaP and compare its performance
+with LDA. I also read an article by Nallapati et al: 'Multiscale Topic
+Tomography' where they discuss the useful properties of GaP.
+Has anyone ever tried to implement GaP and got similar results on the
+Cranfield dataset as in Canny's article? I get the same results as him for
+LDA, but not for GaP.
+Overall, what is your opinion on GaP, specifically the way that Canny
+implemented it (with an EM algorithm)
+Kind Regards
+Alta de Waal
+South Africa

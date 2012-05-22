@@ -1,0 +1,29 @@
+Dear All:
+Sorry for interrupting. I'm recently using mallet package for topic model training. I've sent the problem to mallet mail list, but received no response. So I come here to see if anyone has met with similar problem.
+I'm having a problem trying to use LDAStream for LDA training. When trained on the dataset attatched, it always reports the LDAHyper sampling error. I checked that this error message comes from LDAHyper.sampleTopicsForOneDoc() function, in the following segment:
+if (sample < topicTermMass) {
+//topicTermCount++;
+i = -1;
+while (sample > 0) {
+i++;
+sample -= topicTermScores[i];
+newTopic = topicTermIndices[i];
+When executing this segment, sample<0 and sample<topicTermMass, causing i=-1; I fixed this problem by adding
+if(i>=0) newTopic = topicTermIndices[i];
+Unfortunately, this further causes the following problem:
+Exception in thread "main" java.lang.IllegalArgumentException: alpha and beta must be strictly positive.
+at cc.mallet.util.Randoms.nextGamma(Randoms.java:196)
+at cc.mallet.util.Randoms.nextGamma(Randoms.java:189)
+at cc.mallet.types.Dirichlet.nextDistribution(Dirichlet.java:177)
+at cc.mallet.topics.LDAHyper.empiricalLikelihood(LDAHyper.java:1125)
+at cc.mallet.topics.LDAHyper.estimate(LDAHyper.java:331)
+at cc.mallet.topics.LDAHyper.estimate(LDAHyper.java:315)
+at sonfon.TopicModel.TopicTrain.crossVal(TopicTrain.java:228)
+at sonfon.TopicModel.TopicTrain.crossVal(TopicTrain.java:153)
+at test.Perplexity.trainLDA(Perplexity.java:39)
+at test.Perplexity.main(Perplexity.java:29)
+It seems the updated alpha and beta are below zero.
+How this problem could be fixed? Has anyone met with similar problem? I tried on several other datasets, and it works well. However, when performed on the attatched dataset, the problem occurs.
+Best
+Wishes
+sonfon

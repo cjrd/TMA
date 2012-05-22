@@ -1,0 +1,12 @@
+              The Geologic Data Center at SIO has multibeam bathymetry data for 241 cruises on
+              three vessels. These data have been locally archived and used to create custom
+              data products for the MGG community. In the future, the intention is to make
+              all these data available on line to the community and much of the cost for
+              doing this is provided by other support (other NSF directorates and programs).
+              Under this award, the PIs will clean up the existing data (systematically make
+              appropriate corrections, edit bad data, make consistent file names, etc..), and
+               migrate all the data to a common medium- a robotic digital tape library that
+              will be under the control of the Storage Resource Broker, an archive management
+              product of the San Diego Supercomputer Center.
+
+

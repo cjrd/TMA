@@ -1,0 +1,1 @@
+/Users/cradreed/Research/TMBrowse/trunk/src/../data/pgm/map-estimation-for-mrfs-and-crfs.txt

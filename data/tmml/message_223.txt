@@ -1,0 +1,6 @@
+Hi,All
+I am a newer to topic models, and I wonder why so few models using winbugs
+software for gibbs sampling? Is the reason that winbugs cannot handle large
+datasets?
+May someone can explain for me? Thanks a lot.
+Tracy

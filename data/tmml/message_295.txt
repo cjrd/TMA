@@ -1,0 +1,8 @@
+Good day,
+yes, I think I got it.
+So, if I understand well I use Eq. (1) (crp) to compute the prob of each
+possible path through the hierarchy, given the other assignments c_{-m}.
+Thank you for your help!
+By the way this is a very interesting paper!!
+Best Regards,
+ilias.

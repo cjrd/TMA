@@ -1,0 +1,15 @@
+              0093736
+Kleppa
+
+This research examines alloys of transition metals and
+              lanthanide metals and compounds formed between these metals and the noble
+              metals as well as lower melting metals indium and lead. The research includes
+              gallium alloys and compounds of gallium with the lanthanide metals. The
+              investigation of the noble metal compounds is carried out by direct synthesis
+              calorimetry at 1200 degrees C.  The gallium and indium compounds are studied by
+              the same technique at 1100 degrees C and the lead compounds at 900 degrees C.
+              
+%%%
+The thermodynamic data developed in this program is of value to
+              scientists designing new metal alloys.
+

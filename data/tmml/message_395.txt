@@ -1,0 +1,10 @@
+hi mateusz,
+in the E-step, optimize variational parameters for each document and
+compute expected sufficient statistics under the resulting variational
+distributions.  this step depends on a setting of the model
+parameters, i.e.,  the dirichlet hyperparameters and topic
+distributions.  in the M-step, optimize those model parameters
+according to those expected sufficient statistics.  repeat until the
+bound on the log likelihood of the data converges.
+best,
+dave

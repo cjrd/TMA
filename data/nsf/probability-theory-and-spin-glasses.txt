@@ -1,0 +1,23 @@
+              0243813
+Talagrand
+	Mean field models for spin glasses (such as the famous
+              Sherrington Kirkpatrick model) exhibit some completely new phenomenon of
+              probability theory, that at a high level can be described as the existence of
+              intricate structures among the near extreme values of large families of
+              correlated random variables. The rigorous study of these models is still in its
+              infancy, and the main goal of this proposal is to pursue it. Two of the
+              specific goals are to obtain a better understanding of the low-temperature
+              phase of the p-spin interaction model, and to start the study of the new
+              Hamiltonians introduced by F. Guerra in his broken replica-symmetry bound for
+              the Sherrington Kirkpatrick model. 
+	One of the central themes of probability
+              theory is the emergence of a kind of order out of large number of random
+              events. This is expressed by classical theorems, such as the law of large
+              numbers. These classical results relate to situations where the random events
+              are independent, that is, the outcome of one does not influence the outcome of
+              the others. Such an assumption is unrealistic in practice. We investigate the
+              emergence of new types of collective behavior in large collections of random
+              events, where each event can, and will, influence the outcome of the others.
+              The specific mathematical models have been motivated by the behavior of
+              magnetized particles, and are known as "spin glasses". 
+

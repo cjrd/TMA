@@ -1,0 +1,10 @@
+Hello Mateusz Berezecki,
+Even I had the similar feeling as you for the LDA-C code when i went through
+it initially. However, after keen observation, I realised that the equations
+mentioned in the paper, do match exactly with the code. Only thing is that,
+for efficient computation, some things may be precomputed and kept and
+so.Hence you may not get one-to-one correspondence between the paper and the
+code.
+Variational parameters are parameteres of the variational distrubutions, in
+the variational inferencing scheme.
+regards

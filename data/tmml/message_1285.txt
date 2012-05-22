@@ -1,0 +1,5 @@
+Hello,
+One issue I had run into is that the topic distributions should all be
+different (say random). If they are all the same, the topics aren't at
+all distinguishable, and the inference becomes degenerate.
+Cheers,

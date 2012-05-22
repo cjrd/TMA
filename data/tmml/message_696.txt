@@ -1,0 +1,3 @@
+hi -- as much as I remember, all it takes to get lda-c build+run using
+vc++ is to tweak the realloc calls and 1 or 2 array initialisations.
+Noortje wrote:

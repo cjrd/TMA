@@ -1,0 +1,9 @@
+Hi,
+Aaron: what do you mean by "performed the best" here? Also, how do you
+interpret something like JS-divergence "performing better" when it
+isn't a metric?
+Robin: I am not sure what you mean by 'metric' being a poor choice of
+terminology -- I think when people are using the term in this context,
+they mean metric in the mathematical sense (at least I did).
+Thanks,
+Neal

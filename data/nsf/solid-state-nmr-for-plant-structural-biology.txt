@@ -1,0 +1,71 @@
+              Schaefer, Jacob
+MCB-0089905
+
+The primary goal of this research is the
+              application of solid-state NMR to three problems of importance in plant
+              biophysics: (1) the identification of possible allosteric binding sites of the
+              CO2-fixing enzyme, ribulose-1,5-bisphosphate carboxylase-oxygenase or Rubisco;
+              (2) the characterization of the local conformation of a regulatory
+              hormone-protein complex with a promoter DNA binding region; and (3) the
+              determination of mechanisms of cross-linking for plant cell-wall proteins and
+              pectins.  The principal technique to be used to solve all three problems will
+              be stable-isotope labeling with rotational-echo double-resonance (REDOR)
+              detection.  REDOR methods have been under development now for a decade.  This
+              project represents an effort to extend the range of applicability of REDOR to
+              more difficult problems than have yet been attempted.  This laboratory
+              presently has four multi-frequency solid-state NMR spectrometers suitable for
+              REDOR structural biology problems, and a proposal pending for funding to build
+              two more.  Most plant science is done in industrial or academic biology
+              laboratories where there is no access to solid-state NMR.  A secondary goal of
+              this work is to make the plant-science community aware of the capabilities of
+              solid-state NMR to solve problems in structural biology.
+
+The long-range
+              societal importance of this research is the safe, efficient production of more
+              food.  Plants provide approximately 90% of the calories and 80% of the protein
+              for human consumption.  This has been true for at least the last 13,000 years
+              and is likely to continue to be true in the future.  An often-stated goal of
+              biotechnology in modern agriculture is the improvement in crop yield to feed
+              the hungry.  In many cases the hungry live on marginally arable land coming
+              under cultivation for the first time.  Of prime importance in this situation is
+              the efficiency of the carbon assimilation by Rubisco.  Rubisco catalyzes the
+              conversion of substrate sugar and CO2 to -CH2O- (photosynthesis and carbon
+              assimilation), and of substrate sugar and O2 to CO2 (photorespiration).  This
+              destructive competition is inevitable because of the nature of the primary
+              reaction site of Rubisco, which is highly conserved in all photosynthetic
+              bacteria, algae, and plants.  After several billion years of evolution,
+              however, higher plants have become capable of discriminating against the
+              photorespiratory pathway in favor of the carbon assimilation pathway, even
+              though O2 has grown to 21% of air and CO2 is only 0.03%.  Thus, plants grow
+              aerobically whereas photosynthetic bacteria only grow anaerobically.  The
+              control of Rubisco by plants may include alterations in the activity of the
+              primary site caused by non-substrate small-molecule binding at one or more
+              secondary sites.  The first research goal is to demonstrate the presence of
+              such an allosteric effect by in vitro and in vivo experiments using 15N{31P}
+              REDOR of  uniformly 15N-labeled Rubisco in the presence of various sugar
+              phosphates.  The existence of allosteric control of
+              photosynthesis/photorespiration might offer the possibility of altering
+              photorespiratory control in plants like soybeans by genetic modification of
+              secondary sites of Rubisco.  The motivation for such an effort would be to
+              adapt the plant to the conditions of high temperature, low water, and high
+              external CO2 expected to be common in the future.  The goal is to demonstrate
+              that solid-state NMR can reveal structural details of allosteric binding sites
+              not seen in crystal structures, and that solid-state NMR therefore has the
+              potential to direct biotechnology in the modification of the
+              photosynthesis/photorespiration selectivity of plants for improved carbon
+              assimilation.
+
+The millions of acres of farmland in the US currently planted
+              with transgenic soybeans, corn, potatoes, and cotton now support plants that
+              express foreign protein products (herbicide catabolizing enzymes and
+              insecticides) continually.    Transgenic plants with expression switched on/off
+              by application of an innocuous diffusable signal molecule are possible.  The
+              second goal of this research is to develop solid-state NMR technology that can
+              be used to help direct the design of the regulatory switch.
+
+Finally, we
+              recognize that a useful transgenic crop plant must be a highly integrated
+              system of carbon, nitrogen, and water management in a mechanically sound
+              structure.  The third goal of this research is to use solid-state NMR to gain
+              an understanding of the architecture of the plant cell wall.  
+

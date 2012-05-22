@@ -1,0 +1,22 @@
+Hi David,
+The short answer is you should look at a non-parametric version of LDA
+that chooses the number of topics for you. If you want to stick with
+simple LDA, then you should find a metric that matches something you
+care about and optimize the number of topics. Deciding on these
+metrics is non-trivial, although a number of people have chosen
+metrics for doing so. You can see a new paper on evaluation metrics
+for topic models that looks anew at this problem:
+Hanna Wallach, Iain Murray, Ruslan Salakhutdinov, and David Mimno.
+Evaluation Methods for Topic Models. ICML 2009.
+However, I find the premise of your question very interesting. Your
+question implies that the best number of topics is determined by some
+property of variance in the corpus, ie. that there is some true number
+of underlying topics that influence the number of topics used in LDA.
+I think it is helpful to move away from thinking of LDA in this way
+and think of it more as a general model that can be fit to the data.
+Perhaps there is an underlying property of the data that determines
+the best model parameters, but it is more helpful to try and optimize
+these directly for some task. Ultimately, you don't care if the model
+fits some true form of the data, you want a model that performs well.
+Of course, defining "performs well" is the interesting challenge.
+Mark

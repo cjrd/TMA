@@ -1,0 +1,30 @@
+              Procedural synthesis of natural and contextually appropriate gestures in
+              embodied virtual human agents is challenging.  Laban Movement Analysis (LMA)
+              offers a descriptive system for human gesture qualities that fills the gap
+              between pre-defined gesture playback systems and human animator intuition.  A
+              computational analog of LMA called EMOTE has been constructed whose parameters
+              modify the performance qualities of arm gesture movements.  EMOTE will be
+              developed in several new ways:
+
+* Connect EMOTE with an agent model so that
+              an agent's affect, personality, and communicative needs set appropriate EMOTE
+              parameters for gesture performance.
+
+* Investigate motion analysis techniques
+              for extracting EMOTE parameters from live dual or single camera views.
+
+*
+              Experimentally validate the automated acquisition of EMOTE parameters by using
+              professional LMA notators for ground truth.
+
+* Use the extracted parameters
+              to create instances of parameterized actions which may be subsequently used for
+              action, affect, and manner descriptions and, ultimately, for content-directed
+              analysis of existing film or video material.
+
+This study will help set
+              synthetic agent animation techniques on a sound empirical footing, provide
+              evidence that computers can in fact observe important motion qualities, and
+              lead to strong connections between internal agent state and external behavior
+              qualities.
+

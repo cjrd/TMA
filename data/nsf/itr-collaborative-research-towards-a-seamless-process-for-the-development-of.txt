@@ -1,0 +1,120 @@
+              Pnueli, Emerson, and Sistla
+CCR-0205571, CCR-0205483 and CCR-0205365
+"Towards
+              a Seamless Process for the Development of Embedded Systems"
+
+
+Embedded
+              systems are of vital economic importance and are literally
+becoming
+              ubiquitous. They have already become an integral component of
+safety critical
+              systems involving aviation, military,
+telecommunications, and process control
+              applications.  Interest in
+embedded systems is growing further due to the
+              expectation that they
+will become a key component of many commonplace consumer
+              appliances.
+Consumers will expect levels of reliability and
+              predictability
+associated with the very best brands of cars, televisions,
+              and
+refrigerators. Glitches, crashes, and general erratic behavior of
+              the
+sort seen with prior generations of consumer PC software products will
+be
+              unacceptable for these embedded applications.  It thus becomes
+crucial that
+              these embedded software systems satisfy high levels of
+correctness criteria,
+              well above those of today's large software
+systems, which are often highly
+              error-prone.
+
+Besides the requirement of a new standard of functional
+              correctness,
+embedded systems pose additional challenges which were not
+              fully
+addressed by previous validation and verification approaches.
+              These
+include adequate guarantees of timeliness, low or controlled
+              power
+consumption, and low or controlled memory utilization.  With the
+spread
+              of embedded systems, and the need to guarantee an acceptable
+level of
+              functionality and reliability of the applications they are
+embedded in, the
+              industry needs an effective and reliable development
+process. Due to market
+              constraints, such a process should also support
+a fast turn-around time as
+              well as enable the easy design of many
+customized variations of the same
+              product.
+
+This project is developing the foundation for a seamless
+              design
+process for embedded systems as described below.  In particular, it
+              is
+developing:
+
+ A formal visual language for requirements, including
+              behavioral,
+ temporal, and TPM constraints;
+
+ A methodology for the
+              automatic synthesis of an executable
+ specification from the requirement
+              specification language;
+
+ A methodology for the verification of the
+              intermediate and
+ distributed representation of the systems against
+              requirements;
+
+ A methododology for automatic code-distribution of
+
+              specifications, possibly with some architectural constraints
+ provided by the
+              user;
+
+ A model for representing hardware/software co-design
+ platforms that
+              enables modeling of both loosely- and tightly-coupled
+ components as well as
+              compositional reasoning about them;
+
+ Algorithms for automatically generating
+              
+ architecture-optimized code from executable specifications;
+
+ Methods for
+              translation validation of the
+ generated code and run-time validation on the
+              system using
+  monitors;
+
+ The Design of a profiler process which analyzes
+              machine code,
+ computes the resulting figures for time, power, and memory,
+              and
+ back-associate these figures with their executable specification
+
+              sources, enabling early-stage analysis of these requirements.
+
+The impact of
+              the project is to streamline and significantly
+accelerate the time to market
+              of embedded applications of both new
+products and revisions and customizations
+              of existing product lines.
+Another impact is to upgrade the level of
+              dependability and
+predictability of embedded software to new standards,
+              compatible and
+comparable to those expected from the best brands of
+              consumer
+products.
+

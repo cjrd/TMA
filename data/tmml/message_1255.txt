@@ -1,0 +1,22 @@
+Hello,
+In the course of reading materials on topic models and the bayesian
+When they mention "integrating out variables", what they are doing is
+actually "marginalisation". This is a topic covered in almost any text
+dealing with probability.
+If I could try to explain the motivation behind it succinctly, I would start
+with the idea of finding the expected value of a random variable.
+E(x) = \sum_{values of x} x * p(x)
+The expected value of a random variable X is computed by taking the sum over
+all the possible values of X _weighed by the probability that X takes that
+value_.
+When dealing with continuous random variables, we can replace that summation
+with an integration.
+Suppose we are trying to find the likelihood of finding a document d given a
+particular topic distribution \alpha and word distribution \beta (using the
+LDA model), we really don't care what the value of the latent variables
+(topic assignments) z_n are right? We probably would like to consider all
+possible assignments - in other words we want to calculate the _expected
+value of the likelihood_ - summing over, aka integrating out, the latent
+variables (weighed by the probability) gives us exactly that.
+I hope that helps.
+Cheers,

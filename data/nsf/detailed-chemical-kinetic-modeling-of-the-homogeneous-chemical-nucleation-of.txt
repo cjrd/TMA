@@ -1,0 +1,37 @@
+              Abstract
+
+
+Proposal Title:			Detailed Chemical Kinetic Modeling of
+              the
+				Homogeneous Chemical Nucleation of nanoparticles
+Proposal
+              Number:		CTS-0087315
+Principal Investigator:		Mark
+              Swihart
+Institution:			SUNY Buffalo
+
+The objective of this proposal is to
+              construct mechanistic models of chemical reactions for use in the prediction of
+              cluster formation leading to the production of particle nuclei.  The major
+              challenge is constructing mechanistic models is the extreme complexity created
+              by accounting for all possible reactions, products, and reactive intermediates.
+               Automatic generation of reaction mechanisms will be used to deal with the
+              complexity.  A system will be developed to convert a set of reactants and rules
+              by which they react into a detailed chemical mechanisms with rate parameters. 
+              The PIs plan to focus on silicon deposition because this system is of
+              importance in the microelectronics industry and because some experimental data
+              on this system are available for comparison with simulations.  This approach
+              will be employed to predict silicon nanoparticle contaminant formation, which
+              is a leading cause of yield loss, in semiconductor processing.  This project
+              will be a collaboration between the PI and co-PI (Linda Broadbelt) at
+              Northwestern University.  This work could lead to a more general predictive
+              description of a particle formation.  Model validation will be performed with
+              limited data available in the literature.  This work may be useful in
+              predicting the effects for changing operating conditions on particle formation
+              and contamination with the potential to increase yields of semiconductor
+              materials.
+
+
+
+
+                                                          

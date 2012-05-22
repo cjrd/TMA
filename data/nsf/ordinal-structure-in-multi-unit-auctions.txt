@@ -1,0 +1,27 @@
+              The research project will contribute to the basic theory of auctions of multiple
+              identical objects (``multi-unit auctions").  The focus of the project is on
+              establishing ``monotonicity" of equilibria in such auctions, i.e. that bids are
+              non-decreasing functions of the bidder's private information. Efforts to
+              establish monotonicity using standard approaches have stalled for the most part
+              in general environments of interest, but this research brings to bear promising
+              new tools from lattice theory. Existing research has applied such tools to
+              prove existence of monotone equilibrium in a limited model of one-sided
+              multi-unit auctions. This project aims to develop that approach further to
+              apply to large auctions with many buyers and sellers in more general
+              environments. Since monotonicity is a crucial ingredient for efficiency, such
+              research may lead to new results proving asymptotic efficiency of equilibria in
+              uniform-price auctions.
+
+Multi-unit auctions provide a compelling
+              ``micro-foundation" for markets with many buyers and sellers. Multi-unit
+              auction theory also models important real-world auctions such as U.S. Treasury
+              bond issue and regional electricity procurement auctions.  Unfortunately, the
+              basic theory of such auctions is quite incomplete. Worse yet, the existing
+              single-object auction theory provides an unreliable guide for understanding
+              multi-unit auctions. This research will clarify fundamental properties of
+              bidding behavior in multi-unit auctions and leverage its basic theory
+              contributions to re-address the fundamental and age-old question: ``When can we
+              expect markets to efficiently allocate resources?"
+
+
+

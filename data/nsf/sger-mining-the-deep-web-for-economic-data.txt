@@ -1,0 +1,17 @@
+              EIA-0204796
+Varian, Hal
+University of California - Berkeley
+
+SGER- Mining
+              the Deep Web for Economic Data
+
+This Small Grant for Exploratory Research
+              will support exploration of "the deep web;" that is, data which is held in
+              web-accessible databases, but which is generally not available via the use of
+              standard web-crawlers.  Data held in web databases may be several hundred times
+              larger than the web we routinely access, and which is held in html and other
+              tagged text files.  The domain to be explored is economic information, to see
+              whether these new data can help in economic forecasting.
+
+
+

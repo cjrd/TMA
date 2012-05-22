@@ -1,0 +1,4 @@
+Hi, all
+Recently, I am interested in the supervised LDA, and make some experience using the code downloaded from the homepage of Prof. Fei-fei Li. However, we note that the performance of SLDA is inferior to that of SVM. Especially, the difference is significant when the training samples increase. Is anyone aware of such difference?
+By the way, I am not sure why the variance of sufficient statistics should be calculated in the function 'doc_e_step'. I guess such variance is used to compute the eq 12 in the paper 'Simultaneous Image Classification and Annotation', but not know how to use it.
+Thanks!

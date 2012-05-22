@@ -1,0 +1,4 @@
+Dear all,
+I would like to do some basic analysis on word prediction. I think there should exist some tools to do prediction using N-gram language model. Do you know any of these tools? For example, it can do with smoothing or without smoothing.
+Thanks in advance.
+Alfred Yu

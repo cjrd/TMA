@@ -1,0 +1,7 @@
+Hi all,
+first of all thanks for letting us all play with the lda-implementation.
+I am a newbie and just now read the readme.txt. It mentions
+a inf-settings.txt, which I do not find. Could somebody be so
+nice to email me a sample?
+Thanks a lot,
+-Armin

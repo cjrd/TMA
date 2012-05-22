@@ -1,0 +1,7 @@
+The poisson distribution is just a very convenient distribution - but
+other models may be more appropriate.
+Assuming that document lengths are poisson distributed means that we
+expect all documents to be roughly of the same length. This might hold
+for some data sets, but might be violated for blog posts and comments.
+Cheers,
+Laura

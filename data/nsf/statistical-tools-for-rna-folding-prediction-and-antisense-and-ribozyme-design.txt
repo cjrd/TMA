@@ -1,0 +1,34 @@
+              0200970
+Ding
+	The long-term goal of this project is to develop statistical
+              methods and software for improved prediction of RNA secondary structure, and
+              for improved computational design of antisense oligonucleotides (oligos) and
+              trans-cleaving ribozymes as the vehicles for high-throughput functional
+              genomics and drug target validation in the post-genomic era. The objectives of
+              the project include: 1) development of statistical algorithms and methodology
+              for the rational design of antisense oligos and ribozymes; 2) experimental
+              testing and improvement of antisense design method with experimental feedback
+              data; 3) development of a statistical RNA folding software Sfold for RNA
+              folding prediction and design of antisense oligos and ribozymes; and
+              establishment and maintenance of a Sfold Web server for RNA folding and
+              antisense oligo and ribozyme design. The Web server will be freely accessible
+              by the scientific community for non-commercial applications. 			
+	Of the
+              estimated 30,000-40,000 genes in the human genome, definitive functions have
+              been assigned to only a few percent. Through gene down-regulation, antisense
+              oligos and ribozymes are important tools for the assignment of gene functions
+              and for the validation of human therapeutic targets. There is compelling
+              experimental evidence that the accessibility of the messenger or viral RNA by
+              antisense oligos or ribozymes is most constrained by the secondary structure of
+              the target. Recently, statistical approaches to the prediction of RNA secondary
+              structure and antisense targets have shown promise and advantages over
+              established methods. It is thus important to explore fully the advantages of
+              statistical approaches to RNA folding prediction and antisense oligo and
+              ribozyme design. It is expected that the methods and software developed from
+              this project will be widely used for functional genomics applications. This
+              grant is made under the Joint DMS/NIGMS Initiative to Support Research Grants
+              in the Area of Mathematical Biology. This is a joint competition sponsored by
+              the Division of Mathematical Sciences (DMS) at the National Science Foundation
+              and the National Institute of General Medical Sciences (NIGMS) at the National
+              Institutes of Health.  
+

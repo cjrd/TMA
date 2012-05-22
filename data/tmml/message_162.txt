@@ -1,0 +1,11 @@
+Hi Hal,
+This looks great!
+It looks like the Maths and Random classes in Mallet provide most of the
+same functions as stats.c. Take a look here:
+http://mallet.cs.umass.edu/mallet/javadoc/index.html
+I've actually found that if you write C-like code in java, the speed
+difference is insignificant. (Specifically, avoid object references and
+random access to multi-dimensional arrays in the innermost loops --
+indexing the topic-word counts as [word][topic] instead of the other way
+around makes a huge difference)
+-David

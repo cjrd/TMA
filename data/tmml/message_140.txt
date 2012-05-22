@@ -1,0 +1,37 @@
+dear shuiwang,
+yes, the second term should have \sum_{i=1}^{K}.  this is a typo.
+thanks for catching it!
+by inspection.  observe that the derivative is 0 when \gamma_i is set
+to the expression in (17).
+however, i now prefer a more general derivation of the same algorithm
+using the machinery of exponential family models and conditionally
+conjugate distributions.  this has been derived several times.  see
+one of the following references for details:
+@phdthesis{Beal:2003,
+Author = {Beal, M},
+School = {Gatsby Computational Neuroscience Unit, University College
+London},
+Title = {Variational algorithms for approximate {B}ayesian inference},
+Year = {2003}}
+@incollection{Bishop:2003,
+Address = {Cambridge, MA},
+Author = {Bishop, C. and Spiegelhalter, D. and Winn, J.},
+Booktitle = {Advances in Neural Information Processing Systems 15},
+Editor = {Becker, S. and Thrun, S. and Obermayer, K.},
+Pages = {777--784},
+Publisher = {MIT Press},
+Title = {{VIBES}: A Variational Inference Engine for {B}ayesian
+Networks},
+Year = {2003}}
+@inproceedings{Xing:2003,
+Author = {Xing, E. and Jordan, M. and Russell, S.},
+Booktitle = {Proceedings of the 19th Conference on Uncertainty in
+Artificial Intelligence},
+Title = {A generalized mean field algorithm for variational
+inference in exponential families},
+Year = {2003}}
+i assume that you mean section A.4.2.  indeed, this is another typo.
+there should be an M before the second term.  thanks for pointing it
+out.
+best,
+dave

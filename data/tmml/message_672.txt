@@ -1,0 +1,7 @@
+Hi, All
+currently i'm trying to get the optimal number of topics from a test
+dataset. In the paper from  Griffith, Steyvers about gibbs sampling they
+present a solution by getting the Estimate P(w|T) from the posterior.
+One should take the hamonic mean of the values from P(w|z).
+1. Would one recommend this method?
+2. Is there an easier calculation than the provided formula. Bayes Rule

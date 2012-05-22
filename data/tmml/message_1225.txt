@@ -1,0 +1,10 @@
+Hi Everyone,
+I want to design a topic model system that is scalable to at least a few
+million documents. The system must also deal with new documents on a daily
+basis.
+Are there literature/case studies on topic model scaling issues (such as
+multiprocessing, model adaptation, etc.)
+Thanks
+Alta de Waal
+CSIR
+South Africa

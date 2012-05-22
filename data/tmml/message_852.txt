@@ -1,0 +1,12 @@
+Hi all;
+I was wondering if there is a study on discriminative probabilistic model
+like (supervised topic model type of work) where sequence learning is being
+focused, i.e., CRF type of learning. There is only the "Latent Topic Random
+Fields.." by He and Zemel that I know of.
+However I am looking for a unified model. An earlier version of something
+that would describe what I am looking for would be the HMM-LDA models but
+they are unsupervised models. I am looking for labeled/supervised model.
+Do you know any other work on language modeling or applications on text or
+what not?
+Many thanks for your replies.
+-Asli

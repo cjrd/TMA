@@ -1,0 +1,35 @@
+              This grant undertakes an experimental study to elucidate and model the
+              mechanical behavior and thermal stability of a new class of bond coat materials
+              for thermal barrier coatings (TBCs). One of the key components of a TBC is its
+              bond coat, and there is clear empirical evidence that platinum additions to
+              aluminide bond coats enhance the overall performance and reliability of these
+              coatings. Other platinum group metals (Pd, Ru, Ir, Rh, and Os) are believed to
+              provide similar or even greater benefits, but the mechanisms that govern bond
+              coat performance are currently not well understood. The proposed study will
+              parallel and compliment a larger NSF-EC collaborative program on the dynamics
+              of layered multifunctional surfaces. One aspect of the NSF-EC study involves
+              processing and phase equilibria aspects of platinum group metal bond coats, and
+              the current study will be conducted in close collaboration with the NSF-EC team
+              to characterize the mechanical behavior and microstructural evolution of
+              Ru-based alloys and bond coats. The grant supports for the principal
+              investigator and graduate students to participate in annual workshops and
+              collaborations with the NSF-EC team with extended reciprocal visits of students
+              between European Countries and US. 
+
+The overall focus of this research
+              program will be to measure single-phase Ru-Ni-Al-Xn and ruthenium modified bond
+              coat properties, to develop a fundamental understanding of the substrate-bond
+              coat interactions that occur during thermal cycling (inter-diffusion,
+              viscoplasticity, morphological evolution, crack formation, etc.) and to derive
+              a science-based protocol for assessing the potential and assisting in the
+              development of ruthenium modified bond coats. The microsample tensile testing
+              approach to be used in this study permits characterization of small-scale and
+              highly scale-specific coatings and properties (elastic modulus, yield and creep
+              strength) in a way not possible by conventional means. The technological
+              motivation for this proposal is rooted in the fact that TBCs offer tremendous
+              opportunities for increasing the temperature capabilities and durability of gas
+              turbine engines. Through the proposed participation in annual workshops and
+              extended reciprocal visits, the students working on this project will gain
+              valuable experience into how research is conducted in both the U.S. and
+              Europe.
+

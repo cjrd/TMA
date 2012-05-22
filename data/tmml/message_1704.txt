@@ -1,0 +1,12 @@
+Dear Topic Modelers,
+I'm trying to run the R lasso code included in the Correlated Topic Model
+package. When I try to run build the graph, I get the following error:
+".Error in l1ce(y ~ X, data = data, sweep.out = ~1, bound = lambda) :
+you cannot sweep out all the variables"
+Does anyone know why this error is occurring and what it means or how I
+could resolve it?
+Thanks very much,
+Dan Hirschman
+PhD Candidate
+Department of Sociology
+University of Michigan

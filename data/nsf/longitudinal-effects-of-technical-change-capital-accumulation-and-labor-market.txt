@@ -1,0 +1,28 @@
+              This research uses household data to study how technical change in agriculture
+              affects rates of tropical deforestation. Data come from surveys conducted in
+              the Philippines over the period 1995-2001.  The timing and coverage of the data
+              provide an opportunity to study the direct and indirect
+effects of irrigation
+              on agricultural production and labor allocation, while controlling for a number
+              of agronomic features of the sample farms and important social factors such as
+              tenure security. It is also possible to trace the causal chain of impacts
+              leading from technology changes to changes
+in employment, incomes, and
+              activities undertaken by households living along the forest margin. 
+      
+              The analysis links three bodies of economic theory regarding agricultural
+              development, labor market dynamics, and environmental management. Specific
+              objectives include (1) assessing labor hiring and labor selling decisions in a
+              dynamic context and their implications for capital formation, subsequent factor
+              use, labor market participation, and forest pressure; (2) identifying the
+              importance of transaction and supervision costs, as well as tenure security and
+              site-specific factor productivity, for labor hiring and selling decisions; and
+              (3) testing and correcting for attrition bias in the sample, especially as
+              influenced by tenure security and factor productivity. Results will provide an
+              empirical foundation for assessing competing theories regarding poverty and the
+              environment, and will also inform broader debates regarding the distributional
+              effects of growth and development and their implications for important aspects
+              of household behavior. Results should have implications for a range of social
+              and environmental outcomes including economic development, poverty reduction,
+              biodiversity protection and carbon sequestration. 
+

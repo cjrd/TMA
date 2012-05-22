@@ -1,0 +1,14 @@
+Hi Jonathan,
+Hanna Wallach, Andrew McCallum and I have a paper at NIPS last year that
+has some experiments on this ("Rethinking LDA: Why Priors Matter"). We
+found that when we give the model the flexibility to have an asymmetric
+prior over topic-word distributions, it chooses not to use one, and
+instead essentially sets the hyperparameter to be the same for all words.
+Qualitatively, using a prior based on corpus frequencies means most topics
+will be poorly differentiated and dominated by "near stopwords" (ie highly
+frequent content words).
+The way I think of it is: if I tell you that the word "elephant" has
+very high probability in topic 13, does that make you think that most
+other topics are also likely to have high probability of producing
+"elephant"? Probably the opposite, if anything.
+-David

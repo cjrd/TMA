@@ -1,0 +1,12 @@
+Could you please let me know if there is any specific advantage of
+using Gibbs sampling methods [Griffiths et al., 2004] over variational
+methods [Blei et al., 2003] for the estimation of LDA (because, I have
+seen that many recent implementations of LDA are based on Gibbs
+sampling approach)?  I heard that VB is sensitive to initialization of
+the estimation process??
+Or could you point me to a paper or tech report that compares VB and
+MCMC approaches to LDA estimation and how they change the LDA results
+(other than the paper "On Smoothing and Inference for Topic Models" by
+Asuncion et al. )
+Thanks,
+Clint

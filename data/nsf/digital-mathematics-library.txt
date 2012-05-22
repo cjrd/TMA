@@ -1,0 +1,20 @@
+              In this project a working group of stakeholders are meeting several times over a
+              twelve-month period to plan a scalable digitization and digital library project
+              aimed at "capturing" the intellectual capital of "Twenty Centuries of
+              Mathematics". The Cornell University Library is serving as the coordinator of
+              this group. Participants in this activity are considering the key issues and
+              challenges and recommending strategies to inform a coordinated effort to
+              perform a retrospective digitization of the literature of mathematical
+              sciences. The resulting digital collection is to serve as an international
+              resource for researchers, scientists, faculty, and students, providing access
+              to a large body of historical materials that originally appeared in print form.
+              This project facilitates cooperation and coordination among a number of
+              currently uncorrelated digitization projects in mathematics that have emerged
+              at separate institutions and organizations in the U.S. and several other
+              countries. Coordination of these different efforts promises to promote a
+              systematic approach to digital preservation of mathematical sciences materials,
+              and provide users with an integrated means of accessing them.  Given the deep
+              connection of this project to the needs of the research community of
+              mathematical scientists, the NSF Division of Mathematical Sciences is providing
+              co-funding for this project.
+

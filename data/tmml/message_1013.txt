@@ -1,0 +1,5 @@
+Instructions for getting numpy/scipy to use ATLAS (under Linux) here:
+http://www.scipy.org/Installing_SciPy/Linux
+The SciPy documentation has instructions for using ATLAS under
+Windows/Mac too, if memory serves.
+-Jared

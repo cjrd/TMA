@@ -1,0 +1,23 @@
+              This Small Business Innovation Research (SBIR) Phase I project from JBliss
+              Imaging Systems will determine feasibility of specialized software that enables
+              people with low vision to quickly read and process information from many
+              sources, and to write and send information to many locations.   The research
+              objective is to combine optical character recognition (OCR), speech synthesis
+              and recognition technologies, together with displays based on the latest vision
+              research to provide an integrated system with a consistent, easy to learn,
+              command structure.  Customizable displays are needed to accommodate a variety
+              of visual impairments.  The user interface should not require viewing the
+              screen, yet it should present visual displays useful to a low vision person and
+              be intuitive to fully sighted teachers experienced with graphical user
+              interfaces (GUIs).  System functions should include the following: reading
+              printed documents; enlarging pictures; writing and word processing documents;
+              receiving, reading, and writing e-mail; accessing and interacting with the
+              Internet; using an address database; saving and retrieving documents; printing;
+              performing calculations; tracking financial accounts; and using a video camera
+              for magnification while hand writing and viewing 3D objects.
+
+Commercial
+              applications are in schools, libraries, businesses, and homes.  Since
+              approximately 5% of individuals over age 15 have difficulty reading newsprint,
+              even when wearing corrective lens, the potential market is large.
+

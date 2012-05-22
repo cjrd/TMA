@@ -1,0 +1,13 @@
+Dear all,
+I am using the LDA-C code. The code has an option for estimating the alpha
+parameters. When I use this part for my purpose, the Newtons method is not
+converging at all. What happens is that, in the 8th iteration itself the
+alpha value is getting reduced to zero.  So the algorithm ends up in NANs.
+Whether the initial value of alpha, has any role to play?
+I tried to understand the code there and I have a small doubt about the
+expression log_a = log_a - df/(d2f * a + df); I can understand that, this is
+in log scale. however if we directly compute this, the formula is
+a=a-df/d2f. I am not able to obtain the log scale equivalent of this. If
+anyone has it, please give me.
+regards
+veena

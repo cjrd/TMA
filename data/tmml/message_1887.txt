@@ -1,0 +1,5 @@
+Hi,
+I am using the HDP code from
+http://www.cs.princeton.edu/~blei/topicmodeling.html. I have a quick
+question ... how can I infer the topic distribution for a new
+document? I need something like the function getSampledDistribution

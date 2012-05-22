@@ -1,0 +1,79 @@
+              Proposal title: Complex differential geometry and rigidity
+Proposal number: DMS
+              - 0203647
+
+                         Abstract
+
+The proposer plans to do
+              research in the following three topics in differential
+geometry:  1) the
+              geometry of nonpositively curved Riemannian manifolds with 
+degenerate Ricci
+              tensor;  2) the structure of compact Kaehler manifold with nonpositive
+              
+bisectional curvature; 3) metric rigidity/non-rigidity for complex hyperbolic
+              spaces. 
+For topic 1), the proposer has obtained some results in the real
+              analytic cases, 
+and he proposes to investigate the smooth cases in this
+              context.  For 2), he  has 
+studied the class of compact Kaehler manifolds with
+              nonpositive bisectional curvature. 
+Under some additional non-degenerateness
+              assumption, he was able to obtain a structural 
+result for such manifolds,
+              which can be viewed as the dual version of classical 
+Howard-Smyth-Wu
+              splitting theorem. He would like to study the general case, as well as 
+some
+              other related  questions regarding this type of manifolds. For topic 3), he
+              proposes 
+to study two metric rigidity questions about  the complex
+              hyper!
+bolic space, in dimension two or higher. One is a non-equivariant
+              metric rigidity 
+question for quarter-pinched metrics, the other is for some
+              special type of CAT(0) 
+singular metrics.  
+
+The proposed research lies in
+              the field of differential geometry, which is a branch 
+of mathematics aimed at
+              understanding the interplay between the global structure and
+the curvature
+              (which measures the bending) of a given space. The major models of spaces 
+in
+              this study are Riemannian manifolds and Kaehler manifolds. This field is of
+              importance
+not only to many branches of mathematics, but also to other
+              sciences and engineering such 
+as physics. A well known example is the use of
+              Riemannian geometry in Einstein's theory of
+ the general relativity. Another
+              example is that the modern control theory uses almost 
+exclusively tools
+              developed in differential geometry. Within the field of differential
+              
+geometry, the study of nonpositively curved spaces and the rigidity
+              phenomenon often 
+associated with such spaces has been on the center stage
+              since early 70's, after the 
+discovery of Mostow and Margulis. It has drawn
+              much attention in 80's and 90's from the 
+mathematical world. The proposer and
+              others are trying to investigate these topics for 
+Kaehler manifolds, which
+              are  Riemannian manifolds with a special type of structure. 
+The recent
+              development in string theory suggests that the universe is the ten dimensional
+              
+product space of the usual (four dimensional) space time and a compact six
+              dimensional
+cross section which should be a special kind of Kaehler manifold
+              (the so-called Calabi-Yau 
+spaces). Besides reasons and existing/potential
+              application outside mathematics, Kaehler 
+geometry has become more of more
+              important within many fields of pure and 
+applied mathematics.   
+

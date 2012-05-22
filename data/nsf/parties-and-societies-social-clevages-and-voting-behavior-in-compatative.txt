@@ -1,0 +1,26 @@
+              This project conducts a large-scale comparative analysis of the impact of social
+              cleavages - especially those based on class, religion, race/ethnicity, and
+              gender - on voting behavior in 23 capitalist democracies since 1945.  It
+              examines four questions that have been the subject of much controversy in
+              recent years.  One, are social cleavages declining in importance as factors
+              predicting individual voting behavior?  Two, do party strategies, issue and
+              attitudinal differences, and social, economic, and political contexts explain
+              the patterns of change over time across each cleavage?  Three, what individual
+              and macro-level factors explain cross-national differences in the importance of
+              cleavages? And four, what has been the impact of these changes on the electoral
+              coalitions of major political parties?
+
+To answer these questions, the
+              project creates an original data set containing pooled information from over
+              200 surveys done in 23 countries since 1945.  The investigators recode the data
+              to provide cross-nationally comparable information on each respondent's class
+              location, religion, gender, political attitudes, and voting behavior.  They
+              next combine the survey data with national figures on ethnic-linguistic and
+              religious heterogeneity, percentage of women in the labor force, percentage of
+              regular church attendees, levels of social mobility, and welfare state
+              expenditures.  They lastly add information to the data set on party platforms
+              for most of the nations.  The investigators not only use the data to address
+              the substantive questions about changes and national differences in social
+              cleavage-based voting, but also make the data available to other researchers
+              interested in comparative voting behavior.
+

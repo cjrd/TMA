@@ -1,0 +1,16 @@
+              This Small Business Innovation Research (SBIR) Phase I project's objective is to
+              overcome the drawbacks of existing imaging sensor designs, and to demonstrate a
+              novel video camera design concept.  Named the Super-Eye, this camera is able to
+              provide simultaneously both large depth of field the dynamic scene and
+              selective high-resolution video images for the object of interest. The unique
+              advantages of the proposed Super-Eye concept include: (a) achieving
+              simultaneous high image resolution and large depth of field; (b) Intelligent
+              guidance of the high-resolution image channel; and (c) 3D Modeling
+              Capability.
+
+The requirements for high image resolution, large depth of
+              field, and wide field of view are applicable to both the commercial and
+              military markets.  The security surveillance market has experience near
+              double-digit growth and is expected to maintain this growth in light of the
+              events of 9/11. Security cameras are roughly 30 percent of the $100 billion
+              global security industry.

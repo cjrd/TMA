@@ -1,0 +1,12 @@
+This email is to announce the launch of topic-modeling-tool.
+topic-modeling-tool is a graphical-user-interface to LDA topic
+modeling, and is intended/designed for non-expert users wanting to do
+their own topic modeling.  topic-modeling-tool works with a single
+download and click on a jar file (on Windows, Mac or Linux).
+topic-modeling-tool is an interface to the popular and efficient
+MALLET implementation of LDA.  While the majority of users on this
+list will not have a need for a GUI, please feel free to pass on the
+link to colleagues interested in topic modeling but not interested in
+dealing with code.
+topic-modeling-tool is available here:
+http://code.google.com/p/topic-modeling-tool/

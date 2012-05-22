@@ -1,0 +1,9 @@
+Hi, all:
+I am running an experiment of LDA. I am wondering how can we decide the
+proper Topic number? what elements will influence the Topic number. I regard
+an image as a document, and the sift points as words. The document number is
+1000, for every document, there are nearly 2000 points. From your
+experience, what the topic number is proper?
+Thank you very much, appreciating your answers.
+BR,
+Scarlett

@@ -1,0 +1,21 @@
+Hi all,
+I am interested in applying LDA for a study I am conducting on a very small
+set of documents.  That is, I have between 2-6 documents, each which I
+believe to have very similar distributions over topics, and each document
+contains approximately 1,500,000 words over a vocabulary of approximately
+15,000.  I am interested ultimately in determining the best estimate of the
+topic distribution from which these documents were generated.
+Though I have very few documents, I do have some prior knowledge over what
+the beta parameters are, that is, the word distribution for each given
+topic.  What I am wondering is, what the best way to approach this problem
+would be, since I have no experience applying LDA or other methods to these
+types of problems.  I see a few possibilities:
+1)  Translate the prior knowledge into the values for the lambda parameters
+that govern the Dirichlet prior over the beta parameters, and fix those
+lambdas before learning.
+2)  Seed the initial values of beta at the values from prior knowledge
+3)  Because I believe these documents to come from highly similar topic
+distributions, simply drop the alpha parameters out of the model and just
+learn a two-stage hierarchical model.
+Any advice or insight would be helpful, thanks!
+Markus.

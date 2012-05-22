@@ -1,0 +1,235 @@
+
+So as we said at the very beginning,
+there's two main families of graphical
+models. There's those that are based on
+directed graphs, directed acyclic
+graphs, and those that are based on
+undirected graphs. The undirected
+graphical models are typically called
+Markov networks. They're also called
+Markov random fields. We're going to start
+by talking about the simplest sub class of
+those, which is pairwise Markov
+networks, and then we're gonna generalize
+it. So let's look again at a toy example
+just to illustrate what's going on. This
+is an example of four people who are
+studying together in study pairs. And
+notice that Alice and Charles don't get
+along. And, you know, Bob and Debbie had a
+bad breakup so they don't talk to each
+other either. And so really we only have
+the study pairs that are marked by the
+edges on this diagram. The random
+variables here indicate whether the
+students have a particular misconception
+because the material was a little confusing. So the
+random variable says does the student
+have a misconception or not, this
+particular misconception. The intuition
+here says if two students study together
+then they kind of influence each other. So we
+have for example if Alice and Bob study
+together then this edge indicates that if
+one of them has the misconception, the
+other one is likely to have the
+misconception. Now, this doesn't fit
+neatly into the purview of the directed
+graph, because the influence flows in both
+directions. You can't really point an
+arrow from Alice to Bob or from Bob to
+Alice. So we're going to use an undirected
+graph to represent this. So that's great,
+but how do you parametrize an undirected
+graph? Because you no longer have the
+notion of a conditional probability
+distribution, because there's no variable
+that's conditioning and one that you
+condition on. And so, and so, how do we do
+this? And we're, so we're going to use the
+general notion of a factor, which we
+defined previously. And notice that this
+really is a general factor, in that the
+numbers don't even, are not even within
+the range [0, 1]. Now, what do these factors
+mean? These factors have many names;
+they're called affinity functions or
+compatibility functions. They're also,
+they're also called soft constraints in
+different settings. So what these numbers
+mean is the oh, is the local happiness of
+the variables A and B to take a particular
+joint assignment. So here we have that,
+you know, we can see the that the happiest
+assignment as far as A and B are
+concerned, in isolation of everything
+else, is a0 b0. Okay. This is the case
+where neither student has the
+misconception. That's the happy
+assignment. We see that the second
+happiest assignment is a a1, b1 where
+again the students agree and in this case
+they both have the misconception. And
+finally, the other two in the middle are,
+are the least happy of all. Now this is a
+local happiness, and we have similar notions
+of happiness for the other pairs in the
+graph. So in this case, we see not only that there is
+there a strong sentiment in favor of
+agreement, it's much stronger than in the
+AB case. So B and C really like to agree
+with each other. They you know, it is
+very difficult for them to have opposing
+opinions. Okay, on the other hand Charles
+and Debbie like to argue with each other
+all the time, and so if one of them says it's
+going to rain today, the other one is
+going to say that its sunny today. And so
+really you can see that the preferred
+assignment for their local opinion is the
+ones that they disagree with each
+other. Okay? And again A and B like to
+agree. So this is sort of a you know
+describing the overall state by a bunch of
+little pieces and how we are gonna put
+these pieces together to define a joint
+probability distribution. We are going to
+use the notion of product of factors and
+so here we are and we are going to take
+all these factors and we are gonna
+multiply them together. That's great.
+Except that there's, this is in no way,
+shape, or form a probability distribution,
+because it's numbers aren't even in the
+interval [0, 1]. Which is why, you'll
+notice there's a little tilde on top of
+the P. This tilde [indicates un]normalized measure.
+Okay? So how do we turn an un-normalized
+measure into a probability distribution?
+Well, we normalize it. Well actually,
+sorry. Before that, here is the
+un-normalized measure. So you can see it
+here, this, just to sort of highlight the
+point, how do we turn this un-normalized
+measure into a probability distribution?
+We normalize it. And that normalization
+here has a name. It's called the
+partition function for historical
+reasons that come from its origins in
+statistical physics, and I'm not even
+gonna describe why it's called that, but
+that's what it's called. But you can think
+of it simply as the normalizing constant
+that is going to make all of these sum to
+one. So we're gonna get it by simply
+summing up all these entries, and that's
+going to give us the value Z. And if we
+divide all of these entries by Z, we get a
+normalized probability distribution. And
+that is the probability distribution
+that's defined by this graph. So now let's
+think about what these factors mean. And
+let's think about this factor phi1 of AB,
+which is this local happiness between A
+and B. And let's think about how it
+relates the probability distribution. So
+we might think that, this is the marginal
+probability of A and B in the joint
+distribution. Or maybe it's the
+conditional distribution of A given B, or
+maybe B given A. Or maybe it's a joint
+probability of A and B given C or D. The
+answer is, it's none of the above. So,
+let's go back and look at what this
+actually means in this particular context.
+So here we have the set of factors that we
+use to construct this distribution. And
+here, trust me, is the marginal, marginal
+probability of A and B. As defined by the
+set of factors PHI. We're going to use a
+little PHI here to denote the fact that
+it was derived from the set of
+factors PHI equals phi1 ... phi n. Oh come on.
+[inaudible]. Again phi1, 2, phi3 ...
+Okay. So lets compare this
+distribution, to the factor phi1. We
+can see that not only does it not respect
+the fact that A and B like to agree with
+each other. Here, A and B like to agree
+with each other by a lot. I mean, remember
+this is the, this is three times higher
+than the next highest value. Here, that
+probability has 0.13. And the other high
+value assignment in, on this side the
+one that had ten, has only 0.04. What is
+the single highest assignment here? It's
+this one. Let's think about why that is.
+This probabiity distribution is constructed
+by multiplying all four of these factors.
+And if you think about what's going on
+here, you see that B really, really likes
+to agree with C. So these guys are really
+closely tied together. And -- actually this
+should probably be [inaudible] -- and A and D similarly
+like to agree. So these are really, really
+closely tied together. These guys, C and
+D, strongly like to disagree. They like to
+have opposite values. Now all three of
+these factors are actually stronger. That
+is the differences between the assignments
+are bigger, than in phi1. So where are you
+gonna break the cycle. You can't have D
+agreeing with A, A agreeing with B, B
+agreeing with C and C disagreeing with D,
+doesn't work. And so somewhere this cycle
+has to be, this loop has to be broken and
+the place where it gets broken is A and B
+because it's a weaker factor. So the
+A and B probability is actually some kind
+of complicated aggregate of these
+different factors that are used to compose
+the Markov network. And this is actually
+an important point because it is going to
+come back and haunt us in later parts of
+the course. There isn't a natural mapping
+between the probability distribution and
+the factors that are used to compose it.
+You can't look at the probability distribution and say
+aha, this piece of it is what phi1 ought to be.
+This is in direct contrast to Bayesian
+network where the [factors] were all
+conditional probabilities, and you could
+just look at the distribution and compute
+them, here you can't do [that]. And, that,
+actually turns out to affect things, like
+how we can learn these factors from
+data, because you can't just extract them
+directly from the probability
+distribution. So with that definition we
+can, with that intuition, we can now go
+ahead and define a pairwise Markov
+network and I'm defining it exclusively
+because pairwise Markov networks are
+sufficiently commonly used as a class of
+general Markov networks that, that it's
+worth giving them they're own place. So a
+pairwise Markov network is an
+undirected graph whose nodes are the random
+variables X1 up to Xn. And we
+have edges Xi connecting to Xj and
+each one of them is associated with a
+factor, also known as a potential, phi i j,
+oops, Xi [inaudible] [X]j, okay. That's what -- this shouldn't be
+an edge, this should be a comma. That's a
+pairwise Markov network and from that.
+And here is an example of slightly
+larger Markov network, this is a Markov
+network that is in the form of a grid and
+this is the kind of network that's used
+for example when we are doing various
+operations on images because then the
+variables correspond to pixels for example.
+And this is the Markov network that
+corresponds to image the segmentation when
+we're using super pixels. In which case
+it's no longer a regular grid.

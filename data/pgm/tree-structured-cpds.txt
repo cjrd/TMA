@@ -1,0 +1,292 @@
+
+We've argued that table CPDs are
+problematic because of their exponential
+growth in the number of parents. One of
+the classes of structured CPDs that is
+most useful are classes, is the class of
+CPDs that encodes a dependence of a child
+on the parent. But a dependence that is
+only happening in certain contexts. One
+method for encoding that is using the
+class of what's called tree-structured
+CPDs. So to understand what
+tree-structured CPDs are let's look at
+this simple example. Imagine that we have
+a student, and the student is applying for
+a job. And the job, that the prospects of
+the student to get the job depend on three
+variables. Depend on the quality of the
+recommendation letter that they get from a
+faculty member, of their SAT scores, and
+whether the student chooses to apply for
+the job in the first place. So let's think
+about one possible CPD for this, for this
+model. So here we have a tree structure.
+And you can think about it as a set of, as
+a branching process where the distribution
+over a job looks at some variables and
+then decides what the distribution might
+look like. So for example, initially the,
+The dependence is on whether the student
+chooses to apply for the job or not. What
+happens if the student doesn't apply for
+the job? Well, you might say in that case
+the student doesn't get the job, but it
+turns out to be not the case. In the
+heydays of Silicon Valley, for example, we
+have the different Internet bubbles.
+Students were getting job offers without
+ever applying for jobs. And so it might
+actually happen that the student's
+probability of getting a job is not zero
+even in this case. And notice that the
+student not having applied for the job
+didn't submit either recommendation letter
+or the SAT scores which means that the
+student's job prospects don't depend in
+this scenario on either of these two
+variables. And so, in all possible
+configurations of the s and l variable,
+the s and l variables, the probability of
+the student getting a job is 0.2. What if
+the student did choose to apply for the
+job? Well, in this case we can imagine a
+recruiter whose primary interest is in the
+student's SAT scores. They don't really
+believe recommendation letters all that
+much. And so the next, and so the
+recruiter first looks at the student's SAT
+score. And if the student got a good score
+on the SAT, s1, then regardless of the
+recommendation letter, which the recruiter
+doesn't even choose to look at, the
+student's probability of getting a job is
+0.9. Only in the case where the student's
+SAT scores are not as strong does the
+recruiter go back and look at the letter,
+in which case there is a certain
+probability, say 60%, of getting a job if
+the letter is strong. And ten percent if
+the letter is weak. So we can see that we
+have a CPD that in this case depends on
+three binary variables and so really we
+would need to represent in principle eight
+different probability distributions over
+the j variable. But we've only represented
+four because in certain contexts some of
+the variables don't matter. So in fact
+this notion of a variable not mattering is
+related to the notion of context-specific
+independence, which we've defined
+previously. So one can formalize this in
+fact as a context-specific independence.
+So let's look at this tree and think about
+which context-specific independencies
+arise in the context of this
+tree-structured CPD. So, let's Looking at
+the first one, does j, the variable that
+we care about, depend on l? In the context
+A1. S1 Well, we can see that in the
+context A1S1, the recruiter never looks at
+the letter. So in fact, j is independent
+of l in this context. So the answer to
+this one is yes. Okay, what about the next
+one. J is independent of l given A1 alone.
+Well, in this case, we have, we're going
+down here and now there's two scenarios.
+One in which S = S1 and the other, S = S0
+and in this case, the recruiter does look
+at the letter and so this one in fact is
+not true. What about the next one? J is
+independent of l and s given A0. So let's
+look at the A0 case. And sure enough, in
+the A0 case there's no dependence on
+either l or s, so this one is also true.
+The last one is a little bit interesting,
+because it's a mix of context-specific and
+non-context-specific independence. So
+we're asking whether j is independent of l
+in the context S1. For both values of the
+variable a. And so now let's, and so to
+answer this question we actually need to
+do a case analysis because this reduces to
+two different independent statements. J is
+independent of l given S1 and A1 and j is
+independent of l given S1 and A0. So let's
+evaluate each of these two separately. J
+is independent of l given S1A1 is exactly
+this assertion, so this one's true. J is
+independent of l given S1 and A0 is
+represents this. Which, in fact, is a
+special case of this scenario. And so both
+of these in fact are true independent
+statements, and so since both cases hold
+we have another conditional independent
+statement that holds here. Let's look at
+another example that turns out to be
+representative of a large class of
+examples in this context. So here the
+student, when applying for the job, needs
+to submit a recommendation letter but has
+a choice between the two letters that they
+might, that they might elect to provide.
+One from one course and another from a
+second course. So letter one and letter
+two. Now the student's job prospects
+depend on the quality of the letter that's
+actually provided because, of course, the
+recruiter doesn't have access to the
+letter that was not provided. So if we
+look at this in the context of the
+[inaudible], they don't even like this.
+The first variable at the top corresponds
+the student choice and it has two branches
+c1 and c2, and in the c1 case, there is
+dependence only on the quality of letter
+one and then the c2 case, there is
+dependence only on the quality of letter
+two So this is an example of what
+[inaudible] Related to something called a
+multiplexer CPD, because effectively the
+choice variable determines the dependence
+on one set of circumstances or another set
+of circumstances. Now it turns out that
+this example has some interesting
+ramifications. Because not only do we have
+[inaudible] specific independence's that
+arise because of this restructure, it
+turns out that this, also implies non
+[inaudible] specific independence's that
+are quite useful as we'll see later on in
+the course. Specifically we have that
+letter one is independent of letter two
+given J and C Now, if you think about this
+from purely the proc-, the perspective of
+the, the separation structure, the flow of
+influence in this graph, we can see that
+the job actually activates the V
+structure, between letter one and letter
+two. So you wouldn't actually expect
+letter one and letter two to be
+conditionally independent. That is, we
+have a flow of influence because of
+inter-causal reasoning. But now let's
+think about this in more detail. And let's
+do a case analysis just like we did
+before. So we're now going to ask if
+letter one is independent of letter two,
+given j and C1. But what happens in the
+context C=C1? Well in this case, there's
+no longer a dependence between job and
+letter two, because the recruiter is never
+given the second letter. And so, in the
+context C1, the graph really looks like
+this, where there's no edge from l to the
+j. Conversely, looking at the other case
+analysis where C=C2, in this case this
+other edge is going to disappear and once
+again there's no V structure and so
+there's no active trail between these two
+variables L1 and L2. So effectively, in
+both of these cases, the active trail
+disappears and so that implies the
+independence assumption. That I mention
+this example is related to more general
+class of models called the multiplexer
+CPD. The multiplexer CPD in this case
+actually has the following structure. We
+have a set of random variables, zero on up
+to ZK all of which take on some value in
+some particular space. And the variable Y
+is a copy of one of the ZIs. The variable
+A, over here, is the multiplexer, the
+selector variable. And the selector
+variable takes on values in the space one
+to K and it selects which of the ZIs the Y
+copies. And notice that the Y here is
+deterministic, as we can see by the fact
+that we have these two lines surrounding
+it, which is our way of indicating
+deterministic dependencies. And so what is
+the CPD of the variable Y, given the
+selector A and the parent Z1 up to ZK? We
+can think about this as, remember we need
+to specify a probability distribution so
+this probability distribution is one, if Y
+is equal to Z sub A. So what does that
+mean? It means that, and zero otherwise.
+So what does that mean? It means that if
+A, say, is equal to little A, then
+deterministically Y is equal to sub little
+A, with probability one. That's just a
+formal way of saying that. So A tells us
+which of the variable Z Y needs to copy.
+This turns out to be an extremely useful
+concept in a variety of applications. So
+for example when we have perceptual
+uncertainty, when you have noisy sensors
+where we observe say What we have, say, a
+sensor observation of one of several
+airplanes, but we don't know which
+airplane it is that we're observing. And
+so the position of the observation is the,
+represents the position of the airplane
+that we're observing but the variable A
+here is the one that tells us which
+airplane it is, which we might also be
+uncertain about. And this gives rise to a
+whole set of problems known as
+registration, or correspondence, or data
+association problems which are very common
+in many applications. Different type of
+application for this, type of structured
+CPD, comes up in physical hardware
+configuration settings. So this is an
+actual example from a trouble-shooter, for
+printers used at Microsoft. And it turns
+out that all of the trouble-shooters that
+are part of the Microsoft operating system
+are, built on top of [inaudible] network
+technology. So here the task is to try and
+figure out why a printer isn't printing.
+So we have a variable here that tells us
+whether a printer is producing output. And
+that depends on a variety of factors, but
+one of the factors that it depends on is
+where the printer input is coming from. Is
+it coming from a local transport? We're
+not [inaudible] And depending on which of
+those it's coming from, there's a
+different set of failures that might
+occur. So, the variable here that serves
+the goal of the selector variable, is this
+variable Print Data Out. And that's the
+root of the tree that's used here. And,
+and depending on whether the print
+location is local or not, then you depend
+either on properties of the local
+transport or on properties of the network
+transport. And it turns out that even in
+this very, very simple network the use of
+tree CPDs reduces the number of parameters
+from 145 to about 55 and make the
+elicitation process much easier. So to
+summarize [inaudible] provide us with a
+compact representation that captures
+effectively this motion of dependence in a
+[inaudible] specific way. And as we've
+mentioned as relevant in a broad range of
+applications of which we're only given
+some examples, hardware configuration,
+medical settings, we're depending on the
+kind of situation that your in you might
+depend on one set of predisposing factors
+say or another Dependence on an agent
+action, as we've seen for example in the
+student's decision on whether to apply for
+a job or not or which letter to submit.
+And we've also discussed perceptual
+ambiguity where the value of the
+particular sensed observation depends on
+which real world object that observation
+comes from.

@@ -1,0 +1,16 @@
+Hi,
+I have trained an LDA model on my dataset and I have obtained the
+"model.beta", "model.gamma" and "model.alpha" files. By observing the
+top words for each topic it is evident that the model has been
+successfully trained.
+My question is the following:
+I have created a new file where I converted the columns of my original
+word-document matrix into empirical estimates of the distribution over
+words in each document (by dividing its column by its sum).
+Calling this matrix P, is it true that I can approximate P by simply
+multiplying my ".beta" and ".gamma" files ? (of course after
+exponentiating the beta file entries etc...)
+This would make sense in pLSI as it is obvious from the equations, but
+under LDA I am not sure that this appoximation is valid due to the
+additional a priori constraints imposed by the Dirichlet priors.
+Thank you in advance.

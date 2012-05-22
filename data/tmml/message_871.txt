@@ -1,0 +1,4 @@
+note that the SLDA model described in the papers only associates a single
+response to each document. to model multiple response values per document
+will be easy or hard, depending on the joint distribution of the document's
+responses given its word-to-topic assignments.

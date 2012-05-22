@@ -1,0 +1,8 @@
+Shivani,
+you can use the likelihood (or log likelihood) of a corpus, but you
+should use a test corpus, i.e. documents that are not used for training
+the model, to measure how well the model works in practice. Otherwise
+you may select the model that is best in overfitting to your training data.
+Cheers,
+Laura
+Shivani Rao wrote:

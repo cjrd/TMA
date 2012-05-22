@@ -1,0 +1,8 @@
+Hi Yiliang,
+We did something (sparse topical coding) different from the method of using sparse priors in a Bayesian setting.
+The basic idea is to use sparse coding technique to do LDA-like document analysis.
+http://uai.sis.pitt.edu/displayArticleDetails.jsp?mmnu=2&smnu=2&article_id=2182&author_id=1836
+The difference from LDA is that the document vector is no longer a normalized distribution; instead, it is a sparse weight vector
+to linearly combine multiple topics (multi-normial distributions over vocabulary).
+Best,
+Jun

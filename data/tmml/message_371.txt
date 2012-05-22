@@ -1,0 +1,8 @@
+Does anyone have experience or other observations on clustering
+per-document topic vectors produced by application of topic modeling to
+a document collection, particularly hard-assignment, hierarchical
+clustering (e.g., producing a dendogram), from which an analyst might
+more easily assess various partitions of the documents (e.g., so that an
+analyst can cut the dendogram to give a three-cluster partition of the
+documents and compare this to four- and five- cluster partitions
+produced by different cuts)? Best, Doug

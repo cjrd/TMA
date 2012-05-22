@@ -1,0 +1,37 @@
+              This proposal was submitted in response to the solicitation NSF 01-65 on
+              "Ultra-High Capacity Optical Communications and Networking." This proposal
+              deals with an innovative liquid space optical switching (LISOS) method based on
+              surface-tension-driven microfluidics. The final goal of this research targets
+              ultra high capacity, e.g., 1024x1024, optical cross connect switching systems.
+              Some of the featured aspects of performance include fast switching time (~
+              100s), low insertion loss (~ 0.2 dB), low crosstalk (~ 40dB), low power
+              consumption (~ 10W per switch), inherent latching function (i.e., no continuous
+              power), and reversible switching action. This technology will enable next
+              generation ultra high-speed optical communication at a very low cost.
+As the
+              signal traffic for optical fiber communication rapidly increases, all-optical
+              switching technology without opto-electronic conversion is considered the
+              ultimate goal. The conventional switching scheme using
+              optical-electrical-optical signal conversion simply cannot follow the high
+              signal rate (e.g., GHz - THz range) requirement for next generation network
+              communication. The use of micromachined mirrors for the direct switching of
+              light signals, which eliminates the signal conversion process, has been a major
+              alternative to the conventional approach. However, the extension of the
+              micromirror approach to ultra high capacity optical cross connect is facing the
+              fundamental limits in loss characteristics and manufacturing costs (labor and
+              time). The use of thermal-bubble-actuated index matching liquid has been
+              recently proposed as an alternative to the micromirror-based approach. The
+              actuation characteristic, however, is not desirable due to large, continuous
+              power requirement. Furthermore, the thermal stability requirement of the liquid
+              restricts the choices of optically optimum working liquids.
+In this research,
+              surface tension - a dominant force in microscale fluid motion - is proposed as
+              an actuation mechanism for LISOS. The novel electrical and mechanical control
+              of surface tension (Electrowetting and Mechanical Wetting) are used as
+              microactuation mechanisms with extremely low power consumption, reliable
+              operation, and high speed actuation. The proposed team, combining microfluidics
+              technology with the photonics capability, will design, fabricate, and test a
+              surface-tension-driven LISOS system (SLISOS) suitable to the high volume, high
+              speed requirement of the emerging optical communication requirements with the
+              aforementioned performance.
+

@@ -1,0 +1,10 @@
+Thanks David
+I have tried using them. The main problem with Mallet is its very heavy. The RAM
+usage is high for large corpora.
+I am interested in the Mahout's PLDA implementation because it uses Mapreduce
+and can be run on Yahoo hadoop clusters or the Amazon clusters.
+Currently I am trying to see if there people who have tried the Mahout and how
+they infer document proportions for large corpora.
+Regards,
+Shivani
+Quoting topic-models-request at lists.cs.princeton.edu:

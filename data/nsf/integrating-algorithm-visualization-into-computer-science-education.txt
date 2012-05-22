@@ -1,0 +1,15 @@
+              Computer Science (31)
+Through a collaboration of Grand Valley State University,
+              Alma College, and the University of Wisconsin/Oshkosh, this project explores
+              the use of the algorithm visualization (AV) tool JHAVE on student understanding
+              of computer algorithms. We are refining a suite of existing AV resources, each
+              of which consists of a visualization, a text description of the algorithm, and
+              questions that are presented to the students as they interactively explore the
+              algorithm. We are conducting usability studies of the resources on all campuses
+              in order to ensure portability of our results.
+
+We are focusing on evaluation
+              of the results of these resources using student surveys, faculty surveys and
+              examinations which will allow for cross-institution comparisons. We anticipate
+              using a working group format to dissemination and enhance our results. 
+

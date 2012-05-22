@@ -1,0 +1,61 @@
+              
+
+
+
+The Telluride Workshops arose from a strategic decision by the NSF
+              to
+encourage the interface between Neuroscience and Engineering.
+              The
+recommendation was for NSF to organize and fund a hands-on workshop to
+              draw
+together an international group of scientists interested in
+              exploring
+neuromorphic engineering. This new field seeks to design and
+              fabricate
+artificial neural systems, such as vision systems, head-eye
+              systems,
+auditory systems and autonomous robots, whose architecture and
+              design
+principles are based on those of biological nervous systems.
+
+The
+              three-week long Telluride Workshops, have been held annually since then
+(cf.
+              the Telluride homepage at http://www.ini.unizh.ch/telluride2000/).
+              The
+workshop includes background lectures, practical tutorials on analog
+              VLSI
+design, hands-on projects, and special interest groups. There are two
+              daily
+tutorials covering general material. Participants are free to explore
+              topics
+of their own choosing in the afternoon; while  projects and interest
+              groups
+meet in the late afternoons, and after dinner.
+
+About 60 people are
+              invited to the workshop. Participants are from academia,
+government
+              laboratories, and industry. Backgrounds span physics, robotics,
+computer
+              science, neurophysiology, electrical engineering, and
+              computational
+neuroscience.  The workshop provides background material in
+              cellular and
+systems neuroscience, all aspects of analog VLSI design,
+              simulation, layout,
+and testing as well as sensorimotor integration and active
+              vision systems.
+Working groups are established in a variety of areas such as
+              robotics and
+Central Pattern Generators, sensorimotor interactions,
+              inter-chip
+communications, active vision, audition, and spatial localization
+              using
+vision and audition together, attention and selection, locomotion
+              and
+industrial applications.
+
+
+
+

@@ -1,0 +1,5 @@
+Dear all,
+I am using ?Gibbs sampling to infer the parameters of LDA. I wonder that when the process converges, will the conditional transition probability for each word converge as well?
+Thanks for your help.
+Best Regards,
+Darren

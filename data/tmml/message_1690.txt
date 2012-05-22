@@ -1,0 +1,102 @@
+*********************************************************************
+Call For Participation
+WWW'12 Workshop on Mining Social Network Dynamics
+In conjunction with World Wide Web (WWW?12) Conference
+(http://eric.univ-lyon2.fr/msnd)
+16 April 2012
+Lyon, France
+*********************************************************************
+Mining Social Network Dynamics Workshop (MSND) aims at gathering
+researchers from the fields of social computing, machine learning, and
+data mining to think about the obstacles that hurdle the leveraging of
+understanding and capturing of social network dynamics. We target
+researchers from both industry and academia to join forces in this
+exciting area. We intend to discuss the recent and significant
+developments in the general area of mining social network dynamics and
+to promote cross-fertilization of techniques. In particular, we aim at
+identifying techniques from the data mining and machine learning
+fields that will enable researchers to understand the dynamic
+phenomena in social networks and social media, as well as specify
+important directions for the research communities. Understanding,
+capturing, mining and being able to predict dynamic behaviors is
+interesting for several areas such as marketing, security, and Web
+search.
+Exciting news: MSND will include a special session around social
+networks for journalism. This session was initially planned and
+organized at SMANE 2012. Our workshop will receive in the same
+occasion 4 papers for presentation coming from the same workshop.
+Please see the program below for more details.
+PROGRAM OF THE WORKSHOP.
+09h00-09h10 : introduction to the workshop
+09h10-10h00 : first invited speaker (MSND)
+Influence and Homophily in Networked User Behavior. Eytan Bakshy
+(Facebook)
+10h00-10h40 : session 1 (MSND)
+?	25 | Collective Attention and the Dynamics of Group Deals. Mao Ye,
+Chunyan Wang, Christina Aperjis, Bernardo Huberman and Thomas Sandholm
+?	14 | Identifying Communicator Roles in Twitter. Ramine Tinati,
+Leslie Carr, Wendy Hall and Jonny Bentwood
+10h40-11h00 : coffee break
+11h00-12h40 : session 2 (MSND)
+?	12 | Targeting Online Communities to Maximise Information Diffusion.
+Vaclav Belak, Samantha Lam and Conor Hayes
+?	18 | Stability of community cores in evolving networks. Massoud
+Seifi and Jean-Loup Guillaume
+?	10 | A Predictive Model for the Temporal Dynamics of Information
+Diffusion in Online Social Networks. Adrien Guille and Hakim Hacid
+?	21 | Predicting Information Diffusion on Social Networks With
+Partial Knowledge. Anis Najar, Ludovic Denoyer and Patrick Gallinari
+?	7 | Graph embedding on spheres and its application to visualization
+of information diffusion data. Kazumi Saito, Masahiro Kimura, Kouzou
+Ohara and Hiroshi Motoda
+12h40-14h00 : lunch break
+14h00-15h00 : Business session: "Social Media and News"
+?	Introduction. Jochen Spangenberg
+?	Introductory Keynote: Key issues, Challenges and Opportunities
+regarding Social Media and the News Business.Nic Newman
+?	Panel Discussion. Wilfried Runde, Denis Teyssou, Nic Newman,
+moderated by: Jochen Spangenberg
+15h00-15h30 : special session on social networks for journalism -
+SMANe 1 -
+?	30 | Effects of the Recession on Public Mood in the UK. Thomas
+Lansdall-Welfare, Vasileios Lampos and Nello Cristianini
+?	31 | Improving News Ranking by Community Tweets. Xin Shuai,
+Xiaozhong Liu and Johan Bollen
+15h30-16h00 : coffee break
+16h00-16h30 : special session on social networks for journalism -
+SMANe 2 -
+?	32 | TwitterEcho - A Distributed Focused Crawler to Support Open
+Research with Twitter Data. Matko Bosnjak, Eduardo Oliveira, Jose
+Martins, Eduarda Mendes Rodrigues and Luis Sarmento
+?	33 | Making Sense of it All: An Attempt to Aid Journalists in
+Analysing and Filtering User Generated Content. Sotiris Diplaris,
+Symeon Papadopoulos, Yiannis Kompatsiaris, Nicolaus Heise, Jochen
+Spangenberg, Nic Newman and Hakim Hacid
+16h30-18h00 : session 3 (MSND)
+?	20 | Supervised rank aggregation approach for link prediction in
+complex networks. Manisha Pujari and Rushed Kanawati
+?	26 | Social Networking Trends and Dynamics Detection via a cloud-
+based framework design. Athena Vakali, Maria Giatsoglou and Stefanos
+Antaris
+?	19 | Watch me Playing, I am a Professional: a First Study on Video
+Game Live Streaming. Mehdi Kaytoue, Arlei Silva, Loic Cerf, Wagner
+Meira and Chedy Ra?ssi
+?	16 | File diffusion in a dynamic peer-to-peer network. Alice Albano,
+Jean-Loup Guillaume and B?n?dicte Le Grand
+18h00-18h30 : conclusion of the workshop
+Abstract of the keynote speaker:
+Influence and Homophily in Networked User Behavior. Eytan Bakshy
+(Facebook)
+Social networks act as pathways for information diffusion, but to what
+extent does social information affect individual sharing decisions? We
+conduct field experiments that randomize the number of social signals
+(cues) that users receive about content.  This design allows us to
+rigorously evaluate how social signals influence sharing behavior,
+above and beyond correlations that arise from homophily. We find that
+the number of sharing friends an individual has, and the strength of
+ties with those friends, is a significant predictor of whether an
+individual shares content, even when no social information is
+displayed. In addition, the number of friends shown has a significant
+but relatively modest increase in the likelihood of sharing compared
+to the baseline condition in which no friends are displayed. Our work
+highlights how both practitioners and researchers alike can benefit

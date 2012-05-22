@@ -1,0 +1,22 @@
+Hello,
+I have a question regarding averaging information from
+multiple Gibbs sampling chains for LDA.
+I understand that to estimate the p(w|t) and p(t|d)
+distributions we burn in for NNNN iterations
+and then take samples every NNN iterations.
+What if we have two different chains. There may be
+similar topics in both chains but they will have different
+ids. Exchangeability means that the model allows
+arbitrary perm of the rows of phi AND cols of theta.
+However, we could find a matching? between the
+topic ids in the two chains and average together the
+information from both chains.
+Are there any papers that use this approach?
+Ivan
+_______
+? : In the following paper, they use the KL divergence and the
+Hungarian algorithm to find a minimal matching. Over 75% of
+the topics were "well matched" between runs with different seed.
+Scalable Parallel Topic Models by David Newman, Padhraic Smyth, Mark Steyvers:
+http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.76.5348&rep=rep1&type=pdf
+(see histograms on p. 7)

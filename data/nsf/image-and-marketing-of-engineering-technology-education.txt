@@ -1,0 +1,19 @@
+              This project is implementing the image and marketing recommendations from "A
+              National Agenda for the Future of Engineering Technician Education" published
+              January 1997 by Sinclair Community College. The goal is to create a strong,
+              positive image of engineering technology education, to market that image to
+              prospective students, and ultimately encourage more students to enter the
+              profession. The objectives are to: (1) identify components of a strong,
+              positive image of engineering technology education, (2) develop a comprehensive
+              marketing plan to convey this image to prospective students (3) produce
+              appropriate marketing materials to improve the nationwide image of engineering
+              technology careers, and (4) disseminate products on a national basis.
+
+In
+              this project, Sinclair Community College is partnering with the American
+              Society for Engineering Education/Engineering Technology Council, Middlesex
+              County College, Motorola University (a division of the Motorola Corporation),
+              the University of Central Florida, and the University of Dayton, Engineering
+              Technology Department. Additional community colleges across the country are
+              pilot testing and disseminating the materials produced.
+

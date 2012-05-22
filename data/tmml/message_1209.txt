@@ -1,0 +1,7 @@
+Dear All,
+In Mallet, I can easily get the probability of a topic for a given topic,
+i.e., P(T|D). However, in LDA code of Dr. Blei I couldn't figure it out yet.
+Can anyone tell me how to obtain those probabilities?
+Thank you for any help in advance,
+Best Regards,
+Halil Bisgin

@@ -1,0 +1,41 @@
+              The primary aim of this proposal is the development of diffractive
+              photonic
+components for the terahertz spectral range, and the exploration of
+              terahertz
+pulse propagation in strongly diffractive media.  One primary aim of
+              this
+proposal is to develop a range of new and useful optical components
+              specifically
+designed for the far infrared, or terahertz, spectral range,
+              based on the
+concepts of photonic crystals.  Researchers have made tremendous
+              strides in the
+use of periodically diffractive materials for optical
+              components, with examples
+ranging from fiber Bragg gratings to colloidal
+              crystal notch filters.  Such
+systems could also be useful as waveguides,
+              filters, tunable dispersive optics,
+and as components for wavelength division
+              multiplexing (WDM).  However, these
+ideas have rarely been implemented at
+              terahertz frequencies, a portion of the
+spectrum with increasing technological
+              importance.  Another important aspect of
+the proposed research involves the
+              propagation of THz radiation in strongly
+scattering media.  This area of
+              research has been of substantial interest in
+recent years, motivated by the
+              prospect of achieving localization of
+electromagnetic waves.  Interestingly,
+              although a clear demonstration of light
+localization is quite difficult in the
+              optical regime, this research has led to
+the development of techniques for
+              imaging in turbid media.  Since many of the
+expected applications of THz
+              imaging involve turbid or scattering media, it will
+be valuable to extend
+              these imaging studies to the THz regime
+

@@ -1,0 +1,3 @@
+This is reminiscent to me of the randomized inference procedure given
+by Bekkerman et al. for their comrafs in the ECML '06 paper linked in
+this page: http://www.cs.umass.edu/~ronb/mdc.html

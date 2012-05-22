@@ -1,0 +1,31 @@
+Hi All,
+I am doing some experiments using HDP, initializing different number of
+topics in HDP from 1 to 100. The following are result I got. My question is
+that the best number of topics obtained by HDP given the data seems around
+40, but the best PPL result appeared at initializing number of topics to be
+10 instead. This is not the result as expected. Ideally the best PPL should
+be with init#topic=40~50
+Any ideas for this? Thanks in advance!
+Leo
+init#topic & #topicbyHDP & PPL
+1  &  5 & 770.2
+5  &  7 & 638.1
+10  &  10 & 610.4
+15  &  16 & 668.0
+20  &  21 & 709.9
+25  &  25 & 698.8
+30  &  29 & 764.1
+35  &  30 & 755.2
+40  &  36 & 821.5
+45  &  40 & 784.4
+50  &  41 & 823.0
+55  &  43 & 781.6
+60  &  43 & 810.3
+65  &  52 & 834.5
+70  &  41 & 799.0
+75  &  45 & 837.1
+80  &  40 & 779.2
+85  &  46 & 806.7
+90  &  46 & 840.3
+95  &  37 & 783.5
+100  &  48 & 828.8

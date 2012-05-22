@@ -1,0 +1,8 @@
+Hi Shivani,
+You might also consider Mallet (http://mallet.cs.umass.edu). It has
+useful functions for importing documents, scales to million-doc
+corpora with thousands of topics, and supports topic inference on
+unseen documents.
+There's also a list of implementations on my topic modeling
+bibliography: http://www.cs.princeton.edu/~mimno/topics.html
+-David

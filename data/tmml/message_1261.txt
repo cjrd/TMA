@@ -1,0 +1,9 @@
+Thanks Chris. Very clear answer about the observability of the document
+length. As I understand, we can condition any of the unobserved variables we
+already have on the observed document length. For example, we can even
+condition the hyper-parameter Alpha (parameter of the Dirichlet for
+document-topic distributions). So now, we can allow longer documents to
+mention more topics, while short documents only a few. This can potentially
+be useful for processing document collections where the document sizes vary
+considerably. Not bad, if I understand correctly.
+2011/2/7 Chris Dyer <cdyer at cs.cmu.edu>

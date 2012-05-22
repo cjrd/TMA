@@ -1,0 +1,5 @@
+Hello all,
+Have any one of you adapted the LDA-C code to CORR-LDA? If yes, please give
+some hints as to how to do that.
+regards
+veena

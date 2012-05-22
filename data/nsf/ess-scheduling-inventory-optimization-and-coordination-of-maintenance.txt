@@ -1,0 +1,43 @@
+              Many industries rely on the proper functioning of their key assets, such as
+              airlines on jet engines, electric utilities on generators, and army on
+              helicopters.  A major obstacle on operation efficiency is asset unavailability
+              due to forced outages and regular maintenance operations.  The latter, although
+              planned, are generally characterized by long and uncertain durations.  Instead
+              of embarking on more intensive preventative maintenance programs, the trend is
+              to monitor asset conditions, and perform maintenance operations based on
+              conditions to increase asset availability and reliability.  This imposes major
+              challenges on the networks of maintenance service providers, including overhaul
+              shops, repair shops, part distributors, and spare part manufacturers, to have
+              short and predictable turn-around-times while reducing inventory in systems
+              traditionally characterized by massive uncertainties.
+
+The research is on
+              scheduling, inventory optimization, and coordination of maintenance service
+              networks under dynamic and uncertain environments to meet the challenges of
+              condition-based maintenance.  By closely collaborating with our industrial
+              partners United Technologies Research Center and i2 Technologies, Inc., three
+              tasks will be performed.  The first is to develop stochastic scheduling models
+              for large-scale maintenance service networks based on a realistic discrete
+              event simulation model provided by our industrial partners.  A solution
+              methodology that synergistically combines Lagrangian relaxation, stochastic
+              optimization, and simulation will be developed to provide near-optimal
+              solutions with quantifiable quality and confidence.  The second task is to
+              optimize part inventory, balancing inventory costs and part availability for
+              the scheduling method developed in Task 1.  Continuous and periodic review
+              policies will be examined, and ordinal optimization will be used to optimize
+              policy parameters.  In the third task, the autonomous nature of various
+              organizations within a maintenance service network will be investigated.  The
+              models of Tasks 1 and 2 will be decentralized.  A distributed and asynchronous
+              coordination mechanism will be established, building on the pricing concept
+              that is consistent with the methods developed in Task 1.  A mobile multi-agent
+              system will then be designed and implemented for Internet-based deployment of
+              the methods, paving the way for the next generation e-maintenance service
+              networks.  Our goal is to reap the full benefit of the new maintenance service
+              paradigm by having short and predictable turn-around-times while reducing
+              inventory levels, making the best use of asset condition information and the
+              information technology infrastructure.  The research shall also significantly
+              contribute to the fundamental theory and practice of scheduling, inventory
+              management, and supply chain management, improving the competitiveness and
+              reliability of service enterprises.
+
+

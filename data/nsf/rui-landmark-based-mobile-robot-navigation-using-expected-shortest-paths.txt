@@ -1,0 +1,5 @@
+              The topic of proposed work is development of robust algorithms for vision-based
+              mobile robot navigation. A probabilistic framework is proposed for reliable
+              navigation between landmarks in an unmodeled environment. In the considered
+              strategy, the robot first explores its environment to learn the landmarks, and
+              then uses the graph produced in the process for navigation.

@@ -1,0 +1,9 @@
+Hi List,
+Gregor, which method for the hyperparameter estimation do you use in
+your code?
+I had related issues when using a Dirichlet hyperparameter estimator
+based on moment matching (even with fixed-K LDA). As the sampler
+progresses, the hyperparameter got sparser and sparser until I hit NaN.
+In a non-parametric version this would yield a growing number of topics.
+Laura
+Viele Gruesse nach Darmstadt!

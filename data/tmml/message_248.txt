@@ -1,0 +1,27 @@
+Hi Laura --
+I don't know where a  Gibbs sampling approach for scalar hyperparameters
+is described in the literature. But why would a "standard" derivation
+not work?
+p(\alpha | \vec z) = 1/Z p(\vec z | \alpha) p(\alpha)
+p(\vec z | \alpha) = \prod_m \Delta(\vec n_m + \alpha) / \Delta(K, \alpha)
+where \Delta is the Dirichlet partition function (=multidimensional Beta):
+\Delta(\vec a) = \prod_n \Gamma(a_n) / \Gamma(\sum_n a_n)
+\Delta(N, a) = \Gamma(a)^N / \Gamma(Na)
+and \vec n_m are the topic observation counts for document m.
+The resulting distribution, with Gamma or other prior should then be
+"samplable" using (adaptive) rejection sampling.
+Just in case: The estimation approach using moment matching, as
+described in the paper by Tom Minka you mentioned, works fine in many
+cases. I estimate precision using Eq. 21 in the paper with point
+estimates of theta_k and averaged over k. Moment matching is rather
+efficient compared to Newton iterations etc., especially since the
+moments might as well be found using Monte Carlo simulations (for very
+large data sets). The empirical working condition for this approximate
+estimation is that M, K, and N should be >= 20K, assuming M is the
+corpus size, K the number of topics and N is the mean document length.
+If the condition is met, the estimate is too low, but only by a max of
+10% (testing with synthetic documents). If the data are too few compared
+to the topic count, the alpha estimate tends to drop very sharply.
+Best regards,
+gregor
+Laura Dietz wrote:

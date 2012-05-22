@@ -1,0 +1,22 @@
+              Abstract
+CTS-0103105
+Susmita Bose, Et. Al, Washington State
+              University
+
+
+
+This project will investigate the synthesis route for making
+              nano-powders of calcium phosphate based ceramics. It will explore the
+              possibility of dendrimer mediated synthesis of nano-powders of calcium
+              phosphate based ceramics that can be used for making dense and porous bone
+              grafts with improved mechanical properties. Among various ceramic materials,
+              calcium phosphate based ceramics are of significant interest because of their
+              excellent biocompatibility. However, the composition suffer from poor
+              mechanical properties due to sintering. The sinterability issues of these and
+              other calcium phosphate based compositions will be evaluated using nano-sized
+              powders. It is believed that the higher surface area of the starting
+              nano-powders will increase the sintering kinetics, and better sintering will
+              improve mechanical properties. The nano-powders will be synthesized by using
+              different dendrimers via sol-gel synthetic route. Preliminary cell
+              proliferation tests will also be conducted with these bone grafts.
+

@@ -1,0 +1,12 @@
+dear jake,
+first, it is necessary for considering infinite length trees.
+second, in practice, it helps encourage higher level topics to be more
+"abstract."  otherwise, the posterior has the flexibility to associate
+a higher level topic with (non-abstract) words from a document, and to
+simply not associate other documents with that topic.  (i've seen this
+happen.)  you are right that perhaps higher posterior probability is
+obtained with the "right" decomposition, but the sampler is easily
+stuck in a variety of local minima.
+best
+dave
+PS. i have to ask: why the email address "ccrraappyy at gmail.com"?

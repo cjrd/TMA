@@ -1,0 +1,23 @@
+              Oxygenic photosynthesis occurs in plants, cyanobacteria, and algae and is
+              essential in the maintenance of life on earth. This type of photosynthesis
+              requires the concerted action of two light-absorbing reaction centers, which
+              convert light energy into a transmembrane charge separation. One of these
+              reaction centers, photosystem II catalyzes the oxidation of water and produces
+              molecular oxygen and reduced plastoquinone. Photosystem II accumulates the four
+              oxidizing equivalents necessary for oxygen production at a manganese-containing
+              catalytic site. The sequentially oxidized forms of the catalytic site are
+              called the S states. Photosystem II consists both of integral,
+              membrane-spanning subunits and of extrinsic subunits, that do not span the
+              membrane. A subset of these extrinsic subunits is known to influence
+              light-driven electron and proton transfer events. The extrinsic subunit known
+              as the manganese stabilizing protein, MSP, prevents loss of manganese from the
+              PSII active site and is required for optimal rates of oxygen evolution. In this
+              multidisciplinary project, vibrational spectroscopy will be used to obtain
+              detailed information about structural changes occurring during the S state
+              cycle. The ultimate goal is to determine how oxygen-oxygen bond formation
+              occurs in photosynthetic oxygen evolution. In addition, vibrational
+              spectroscopy will be employed to test a possible mechanism by which MSP may
+              influence water oxidation. Finally, the idea that MSP changes conformation or
+              folds when it binds to the PSII reaction center will be tested using X-ray
+              scattering. These experiments will provide new information about the function
+              and assembly of complex membrane proteins.

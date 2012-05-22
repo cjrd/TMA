@@ -1,0 +1,19 @@
+It is pretty easy to add a line to calculate something very close to
+the log likelihood of a state as you are looping through doing the
+Gibbs sampling and then to average those along with everything else at
+the end.
+Consider that the conditional distribution from which you sample the
+topic assignments for each token for Gibbs sampling is very close to
+the unconditional distribution from which you would want that token's
+contribution to the log likelihood of the state in question.
+Alternatively, between sampling tokens you have sufficient statistics
+for something very close to the unconditional distribution except for
+the changes made so far during the Gibbs sampling of the current state
+w.r.t. the previous state.  Maybe you can say even more in light of
+exchangeability.
+I did not use this for generalization performance but did use it as a
+hint about convergence.  You are probably right to be interested in
+perplexity on a test set for generalization performance but that could
+be calculated in roughly the same way if, for instance, you were
+trying to Gibbs-sample in the test set somehow so as to, e.g., be able
+to handle new vocabulary in a plausibly right way.

@@ -1,0 +1,10 @@
+Hi -- Wei/Croft and Griffiths/Steyvers make assumptions that lead to a
+mathematically appealing retrieval function. Generally, the retrieval function
+is subject to your own use cases, and you may/should deviate from this
+"classical" work. A straight-forward alternative is to achieve what you want is
+to use a distance measure between p(z|q) and p(z|d) as well and design it in the
+way that captures your expected behaviour between "and" and "or" operators. I've
+used a gamma operator (from fuzzy logic) on the topic distributions, which may
+be a point of departure.
+Best
+gregor

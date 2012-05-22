@@ -1,0 +1,51 @@
+              0080738
+Shi
+
+The objective of this proposal is to develop innovative IV-VI
+              mid-infrared vertical-cavity surface-emitting (VCSEL) lasers.  Results from the
+              first IV-VI VCSEL that the PI's recently demonstrated were very promising. 
+              Further research and development on such lasers could lead to continuous wave
+              (cw) room temperature operation that will substantially advance the state of
+              the art of mid-IR diode lasers to meet the application needs.
+
+Mid-infrared
+              lasers have large market potential and high academic interests.  Desired
+              performance requirements for diode lasers that are not currently available
+              include continuous wave (cw) operation at room temperature, spectral purity,
+              and high output powers with good beam quality.  The IV-VI quantum well devices
+              to be studied under this proposal will have key advantages to meet these
+              needs.
+
+Among narrow gap semiconductors, IV-VI materials such as PbSe have
+              suppressed Auger non-radiative loss (by an order of magnitude over the best
+              III-V quantum wells) and much lighter electron and hole masses that lead to
+              further reduction of the lasing thresholds.  Previously these have enabled lead
+              salt lasers to set and maintain the records for maximum operating temperatures
+              for both pulsed and cw operation among all mid-IR semiconductor diodes.  They
+              also provide advantages of wide temperature and current tuning because of the
+              strong bandgap energy dependence on temperature.
+
+Especially exciting is the
+              prospect of IV-VI quantum well (QW) vertical cavity surface emitting lasers
+              (VCSELS) on BaF2 [111] substrates, which will have significantly improved heat
+              dissipation, an excellent beam quality with a circular and
+              near-diffraction-limited single-mode, very low threshold that could allow room
+              temperature cw operation.  High quality alternating BaF2 and Pbl-x SrxSe
+              materials can be grown together.  Because of the large contrast of refractive
+              indices, distributed Bragg reflector (DBR) with only 3-pair quarter wavelength
+              layers will provide reflectivity of nearly 100% with very broad bandwidth.  Due
+              to the broad DBR bandwidth, the alignment of the cavity resonance with the gain
+              peak is not as difficult as in other semiconductor DBRs, which allows for a
+              wide range of temperature tuning.  Such broadband mirrors also eliminate mode
+              hopping, reduce the fundamental lateral spread of the cavity mode and thus
+              allow an extremely low threshold to be achieved.  Recently the PI's have
+              demonstrated the first IV-VI VCSELs and the initial results are very
+              encouraging
+
+In the proposed research graduate students will be exposed to
+              diverse experimental techniques and will develop an excellent grasp of
+              cutting-edge technology.  The combination of nano-scale material science,
+              opto-electronics and processing technology provides an excellent opportunity
+              for education.
+***
+

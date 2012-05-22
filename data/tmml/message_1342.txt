@@ -1,0 +1,9 @@
+Hi, all.
+I have a question about the Kalman Filter parameters in Dynamic Topic Models.
+http://delivery.acm.org/10.1145/1150000/1143859/p113-blei.pdf?key1=1143859&key2=4413616921&coll=DL&dl=ACM&CFID=7731523&CFTOKEN=81408159
+Do we need to get the derivative of the variance (Mu and Sigma) of the
+Kalman Filter in the EM algorithm? Or they are set at the beginning of the
+algorithm?
+Any idea about that is welcome. Thanks very much.
+Best,
+Huan

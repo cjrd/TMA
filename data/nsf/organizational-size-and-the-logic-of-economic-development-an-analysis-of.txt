@@ -1,0 +1,61 @@
+              SES- 0111456
+Samuel Cohn
+Texas A&M University
+
+	This project is an analysis
+              of the social and political determinants of economic development in Brazil.
+              Current sociological writing on economic development is mis-specified because
+              it fails to account for differences between the determinants of growth for
+              small and large firms. Small firms represent the vast majority of employment in
+              third world nations but receive very little scholarly attention. It is
+              hypothesized that the relationship between state intervention and the growth of
+              microenterprise does not follow traditional models because a) small firms have
+              little influence on national governments and b) governments set policies based
+              on the priority of large firms - producing effects on small firms that are
+              unplanned but consequential.
+
+	The project considers state-year level
+              variation in employment in three Brazilian industries: restaurants,
+              barber/beauty shops and hotels. All three industries involve personal service;
+              however, restaurants and barber/shops have very low average firm size, while
+              hotels are large and subject to chain and multinational ownership. Data from
+              the Brazilian census has already been collected and analyzed to develop an
+              econometric model of employment in these sectors. This model allows for the
+              statistical control of economic factors such as market size, and the estimation
+              of the role of key costs such as rent, taxes and wages.
+
+	The residuals from
+              the econometric model have been used to identify a set of states with unusually
+              high or low levels of service sector activity net of market factors. National
+              Science Foundation funds will be used to support a year of fieldwork to allow
+              for qualitative investigation of the cases selected in this manner. The
+              principal investigator will perform a sustained contrast of three northeastern
+              states. One, Sergipe, has an extraordinarily high level of employment n
+              barber/beauty shops, and has maintained this level since 1940. One, Bahia, saw
+              a resurgence of service sector activity in the 1970's. The third, Alagoas, is
+              average in all respects.
+
+	The study will also do smaller analyses of
+              residual employment in other states. These include a) contrasting high and low
+              levels of service employment in two artificially-created "planned" capitols,
+              Campo Grande and Brasilia, b) the slow decline of services in both of Brazil's
+              major metropoli (Sdo Paulo and Rio de Janeiro), and c) the marked decline in
+              residual service employment in otherwise prosperous Rio Grande do Sul.
+              Interviews of businessmen and policy makers will be combined with relevant
+              documentary and archival sources. The methodology of the qualitative fieldwork
+              will resemble that standard sociological works on Brazilian economic
+              development such as those of Peter Evans. However, this study can link those
+              findings to econometric results from a time-series cross-section analysis
+              providing more rigorous tests of the impacts of the phenomena observed in the
+              field.
+
+	The quantitative and qualitative analysis tests theories drawn from
+              neoclassical economics, the orthodox state-led development literature,
+              political economy, the new network-based economic sociology, the informal
+              economy literature and the ethnic enclave literature. A goal of the project
+              however is to go beyond these theories and produce a new decision-theory-like
+              account that emphasizes the unanticipated developmental consequences of
+              policies designed for other purposes.
+
+
+

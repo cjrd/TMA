@@ -1,0 +1,5 @@
+I don't want to reserect the classic CS debate, especially because I
+know that the HotSpot JIT/compiler is very impressive, but what aspect
+of the implementation was put into C via JNI?  40% faster is a lot, so
+I'm curious what, if anything, was left in Java.
+Aaron

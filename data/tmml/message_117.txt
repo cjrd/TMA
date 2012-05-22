@@ -1,0 +1,15 @@
+hi list,
+i'm going through the excellent paper: "A Collapsed Variational
+Bayesian Inference Algorithm for Latent Dirichlet Allcation" by teh,
+newman, and welling from NIPS 2006.  (you may remember that i emailed
+this paper to the list sometime last year.)
+the results are very impressive: this looks to be a great alternative
+to mean field variational inference and collapsed gibbs sampling.
+i understand the gaussian approximation employed to update the
+variational parameters.  but how do you compute the likelihood bound
+function in equation 12?  this seems to need an expectation of log
+gamma functions under sums of bernoulli RVs.  the simplifications
+taken to get equation 15 no longer apply.  do you take taylor
+approximations of the gamma function too?
+best,
+dave

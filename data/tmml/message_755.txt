@@ -1,0 +1,4 @@
+I have really enjoyed using Omnigraffle for all of my figures
+(http://www.omnigroup.com/products/omnigraffle/).  It's super fast/easy to use
+and produces great looking results.  It's also got support for graphviz so you
+can use it to plot and tweak programmatically generated graphs.

@@ -1,0 +1,19 @@
+Yes, so then I take it that no one has made this account quantitative?
+I am interested particularly in that because if likelihood at a given
+iteration tends to decrease with increasing model complexity due to a larger
+parameter space for inference to explore, but also tends to increase due to
+increasing model complexity permitting a better upper bound on likelihood,
+then a maximum (or even minimum) of likelihood could be found by varying
+topics just due to the interaction of these two things and would not tell
+about the best number of topics without more information.
+Information such as the rates at which these two trends act with respect to
+changing number of topics, which would permit running inference (really,
+averaging many instances of inference) for the proper number of iterations
+at each choice of number of topics such that the model is expected to be
+equally converged for each choice.
+Speaking of a time (machine cycles, not inference algorithm cycles) budget,
+though, makes me think you're suggesting some form of speed prior here, but
+using other words, which is interesting, in that it provides a definite way
+to resolve the issue, and in that there's some work about speed priors to
+guide interpretation of what's being done, although maybe not directly
+applicable work.

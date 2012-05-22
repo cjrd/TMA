@@ -1,0 +1,49 @@
+              The Principle Investigator studies a new class of inequalities 
+on the flag
+              f-vector of convex polytopes. The flag f-vector 
+contains all the enumerative
+              incidence information between the 
+faces of a polytope. Thus to classify the
+              set of all possible 
+flag f-vectors is one of the great open problems in
+              discrete 
+geometry.  To date only partial results to this problem have 
+been
+              obtained.  In a related problem, the Principle Investigator 
+and his Research
+              Assistant will study the homology groups of 
+Newtonian coalgebras that arise
+              in polytopal theory.  These 
+homology groups were recently used to give an
+              algebraic proof 
+of the existence of the cd-index, an important invariant
+              in
+poset theory.  Understanding the homology of these chain 
+complexes will
+              give insight into new applications of Newtonian 
+coalgebras.
+
+Polytopes are
+              basic mathematical objects that appear in 
+discrete geometry.  The methods to
+              attack these problems are 
+unusually interdisciplinary as they involve
+              insights from both 
+geometry and algebra.  The results of this investigation
+              are 
+important as they relate both to the pure branches of 
+mathematics, such
+              as commutative algebra, algebraic geometry 
+and Hopf algebras, and to the
+              applied sciences, including 
+optimization and computer science.  Understanding
+              the enumerative 
+information of polytopes will give a theoretical basis for
+              stress 
+and rigidity problems in mechanical engineering, for the
+              
+reconstruction using sampling problem in computer vision, and
+              for
+determining the complexity of geometrically-based problems
+              in
+optimization.

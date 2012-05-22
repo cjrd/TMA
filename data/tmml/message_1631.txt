@@ -1,0 +1,8 @@
+Dear All,
+I am a little confused about the "Smoothing" part in the paper "Latent
+Dirichlet Allocation" JMLR 2003. Is there any code that has implemented the
+smoothing function? Is there any paper or technical report that explicitely
+show how the parameters are updated in the E-step for the smoothing lda?
+Thank you for your help.
+Best
+Bingqing Wang

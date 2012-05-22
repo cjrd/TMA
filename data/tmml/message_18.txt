@@ -1,0 +1,24 @@
+hi anthony and all,
+i hope i didn't take a critical tone.  i think that developing these
+algorithms for real and scalable applications is a fantastic
+endeavor, and it's certainly a good idea to explore procedures that
+aren't yet completely understood.  i was simply offering my
+perspective as to how the algorithms fit in to MCMC sampling for
+posterior inference.
+by \theta, i meant the per-document topic-level proportions.  i still
+don't totally understand what is meant by 'slightly old'
+distribution.  did this algorithm speed up convergence?
+by this i mean the following.  take the set-up of griffiths and
+steyvers (2004) where we only sample the topic assignments z_{1:N}
+and integrate out everything else.
+for each document
+(1) remove all of the topic assignments z_{1:N} for that document
+(2) for each i: resample z_i conditional on z_{1:i-1} and everything
+else.
+(3) accept or reject the resulting configuration.
+simply accepting the result of (2) is not correct (that's what i
+meant by 'wrong ways').  however, i haven't given much thought to how
+to perform step (3), or if this algorithm will work.  (it's more of a
+half-baked thought.)
+best,
+dave

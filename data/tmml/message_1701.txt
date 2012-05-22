@@ -1,0 +1,13 @@
+Hi Vasiliy,
+Here is a (very) recent paper on this subject - the "related work"
+section and associated references have pointers to some previous work
+in this area as well (full disclosure: including my own):
+Incorporating Lexical Priors into Topic Models
+Jagadeesh Jagarlamudi, Hal Daum? III,Raghavendra Udupa
+http://www.umiacs.umd.edu/~jags/pdfs/SeededLDA.pdf
+Another approach uses pre-defined concepts as topics in a similar way:
+Text Modeling using Unsupervised Topic Models and Concept Hierarchies
+Chaitanya Chemudugunta, Padhraic Smyth, and Mark Steyvers
+http://www.ics.uci.edu/~chandra/pubs/hctmtechreport.pdf
+Best,
+Dave

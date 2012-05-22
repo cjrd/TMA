@@ -1,0 +1,6 @@
+Hi all:
+I'm looking forward to some research in dynamic topic model. Are there any
+implementations of DTM.
+Thank you!
+Best Regards
+Xianming

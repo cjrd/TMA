@@ -1,0 +1,30 @@
+              0131874
+Smyth
+
+This grant provides partial support to upgrade the laboratory
+              for high-pressure X-ray diffraction and mineral physics studies in the
+              Department of Geological Sciences at the University of Colorado. The laboratory
+              currently comprises a Siemens/Bruker 18KW rotating-anode X-ray generator,
+              automated single-crystal and powder diffractometers, laser ruby fluorescence
+              pressure measurement facility, X-ray precession cameras for crystal
+              orientation, and three Merrill-Bassett type diamond anvil cells. The laboratory
+              works in close collaboration with Hartmut Spetzler's group on Gigahertz
+              Ultrasonic interferometry on combined X-ray and ultrasonic equation of state
+              measurements of natural and synthetic high pressure minerals. The upgrade for
+              the rotating-anode generator includes a new Mo anode, backup turbo pump,
+              roughing pump, and vacuum valves and gauges. The upgrade for the single-crystal
+              diffractometer system includes a control computer, LINUX workstation, and some
+              salary support for adaptation and installation of new diffractometer control
+              software. The upgrade of the powder diffraction system includes new computer
+              and control software. The upgrade of the laser pressure measurement facility
+              includes a safety door interlock system, computer upgrade, binocular
+              microscope, and optical bench for a new basement lab facility required for
+              laser safety. The upgrade of high-pressure diamond anvil cells includes two new
+              cells, one four-pin Be seat cell and one wide-aperture carbide-seat
+              high-temperature cell. The upgrade of the sample preparation facilities
+              includes tools for preparation of oriented, faceted single crystals for
+              ultrasonic studies, and facilities for preparation of high-pressure synthesis
+              runs in collaboration with the group at Bayerisches Geoinstitut in Bayreuth,
+              Germany.
+*** 
+

@@ -1,0 +1,66 @@
+              PROJECT SUMMARY
+Some of the best evidence for the effects of abrupt
+              environmental change on the Earth's biosphere and geochemical cycles can be
+              found in Cretaceous strata.  These rocks contain clear evidence for drastically
+              altered atmospheric composition and oceanic circulation that resulted in
+              widespread, episodic, and geologically ephemeral (~0.5 to 1 m.y.) oceanic
+              anoxic events (OAEs). The recent documentation of negative C isotope excursions
+              at the base of some mid-Cretaceous OAE deposits, and a likely contemporaneous
+              isotope anomaly of greater magnitude delineated by the d13C values of early
+              Aptian terrestrial flora, suggest that environmental perturbation during the
+              mid-Cretaceous may have been the result of greenhouse-gas-driven warming at
+              rates comparable to those inferred for the Paleocene-Eocene Thermal Maximum,
+              and currently experienced by Earth over the last century. Thus detailed,
+              integrative study of these mid-Cretaceous events, such as will be carried out
+              by this study, holds potential for refining our understanding of abrupt
+              climatic disturbance during greenhouse warming.
+This investigation is designed
+              to establish the nature of changes in environmental boundary conditions during
+              mid-Cretaceous OAEs, and to interpret the temporal and mechanistic relationship
+              of these changes within the context of potential forcing mechanisms. Two
+              oceanic anoxic events that represent the most extreme and widespread
+              environmental change are being studied: (1) the early Aptian OAE1a (119.5 to
+              120.5 Ma), and (2) the late Aptian to early Albian OAE1b (~108.5 to 113 Ma). 
+              Shelf and slope sections in the Sierra Madre Oriental of Mexico that represent
+              the most expanded sedimentary records available, and for which we have
+              developed a detailed chronostratigraphic framework are the primary field area
+              of study. These platform deposits have accumulation rates 3 to 15 times higher
+              than those typical of deep-sea sequences that should provide clear lead-lag
+              relationships between the different proxy records. We will also investigate
+              select deep-sea records of the OAEs to define a more global signal and a wider
+              paleo-depth perspective. One of the fundamental and previously unexplored
+              aspects of this investigation is to unravel, where possible, on a 103 to105 yr
+              time scale the precise phase relationship between proxy records and the
+              interactions, responses, and feedbacks of their inferred environmental
+              changes.
+The research will integrate a series of stratigraphic, paleontologic,
+              geochemical and isotopic proxies of carbon and nutrient cycling, productivity,
+              bottom-water oxygenation, and sea level. Detailed nannofossil, and planktic and
+              benthic foraminiferal assemblage studies are being carried out to determine
+              variation in surface- and deep-water environments including changes in nutrient
+              budgets, productivity, water column structure, temperature gradients, and
+              deep-water oxygenation.  Geochemical and isotopic records (d13Ccarb, d13Corg,
+              TOC, %CaCO3, and d34S) are being developed as proxies of carbon cycling,
+              organic carbon burial, productivity and anoxia.  In order to develop a more
+              complete understanding of the environmental implications of our geochemical and
+              isotopic proxy records, we will compare their rate/phasing/amplitude
+              relationships to paleoecological trends inferred from microfossil assemblage
+              data, and to the relative sea-level history. Isotopic analysis of terrestrial
+              vascular plant matter in the Barremian through Albian interval of a deep-sea
+              core (Site 398) will provide an independent and highly sensitive indicator of
+              disruption to normal carbon cycling, as well as shifts in CO2 fluxes and carbon
+              reservoirs.
+Finally, we will carry out numerical experiments using a box model
+              for the carbon isotopic systematics of the ocean and a linked biogeochemistry-
+              3D global ocean model in order to assess how the proxy records and their
+              inferred environmental conditions constrain a series of geological 'forcings'
+              relevant to the hypothesized mechanisms for the origin of the OAEs.  The
+              resulting set of high-resolution proxy records developed simultaneously from
+              statigraphically expanded sections, coupled with numeric modeling and
+              data-model comparisons should provide significant insight into the
+              oceanographic and atmospheric conditions underlying oceanic anoxic events.  
+              Moreover, this study of abrupt environmental change associated with the classic
+              Cretaceous OAEs should provide an end-member model for biogeochemical cycling
+              during greenhouse warming of other geologic periods, including the current
+              earth system.
+

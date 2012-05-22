@@ -1,0 +1,26 @@
+              AST 0205902
+
+PI Wood
+
+The set of interacting binary star systems called
+              cataclysmic variables serves as a marvelous laboratory to study how
+              astrophysical accretion processes work. In that group of binaries are a number
+              of broad categories of objects, each category further divided into classes of
+              objects of different outburst and quiescence behaviors. Significant amounts of 
+              observational effort has been expended in an attempt to understand the
+              underlying accretion physics in these systems  Now once seemingly intractable
+              computational problems are accessible via better algorithms and desktop
+              supercomputing with 3-dimensional hydrodynamic codes, and progress has been
+              made.
+
+This project will advance efforts to model a particular, and for a
+              long-while puzzling, phenomenon observed in SU Ursa Majoris-type systems:
+              so-called superhumps observed during especially bright outbursts. The PI has
+              successfully modeled approximate  superhump behavior using his smoothed
+              particle hydrodynamic code in a fully 3-dimensional mode.  The superhumps in
+              light curves  are true instabilities of  tilted accretion disks. This project
+              will expand the work by adding disk viscosity due to magnetic fields and
+              creating a grid of light curves and modeled disks that will be delivered to the
+              astronomy community as an atlas.
+***
+

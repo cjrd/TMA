@@ -1,0 +1,7 @@
+All the papers that talk about parameter estimation for LDA do not
+specify the terminating condition
+Is it the log likelihood, or is it when the parameters converge. Does
+this mean that \theta or \phi stop changing too much?
+Is there a specific equation?
+Thanks,
+Shivani

@@ -1,0 +1,5 @@
+Chris Bishop's new book is quite good, and contains more or less
+everything you need in order to understand all the sampling and
+variational inference stuff.
+http://research.microsoft.com/~cmbishop/PRML/index.htm
+Joel Reymont wrote:

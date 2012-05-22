@@ -1,0 +1,2 @@
+You can check the paper "Latent semantic models for collaborative filtering" by Hofmann. In that paper he has defined several graphical models that can be applied to a triplet (user, movie, rating) dataset. I think it should be possible to extend those models to apply Bayesian treatment and make it look closer to LDA.
+-Som

@@ -1,0 +1,22 @@
+Hi List,
+If you have no further knowledge about your corpus, can either learn
+models for different K's a choose K that maximizes perplexity or use a
+non-parametric approach. I personally prefer the nonparametric approach,
+as I found that is not as computationally expensive as training many
+"fixed K" models and usually converges relatively fast.
+But if you have more information, I totally agree with David Mimno:
+In our ICML06 paper we devised the citation influence model which is
+very robust against different choices of K. The model gave nearly
+constant prediction performance, where LDA degenerates with too many
+topics. In our recent work on learning shared tastes in online
+communities we experienced the same effect. If the model can choose
+among a ridiculously high number of topics, a high fraction of topics
+look identical. However, both approaches rely on having a network
+structure between documents as side information.
+My hint is: If you have network information, build it into an LDA style
+model and you don't need to worry too much about K. I guess that other
+kinds of side information helps as well. If you do not have side
+information, you have to resort to nonparametric approaches or use
+approximations of perplexity to find out the right K.
+Cheers,
+Laura

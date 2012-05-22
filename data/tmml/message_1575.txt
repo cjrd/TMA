@@ -1,0 +1,5 @@
+Hi All,
+Does anyone know if there is code available for MAP estimation or
+variational inference for the mixed membership stochastic block model?
+I am aware of a Gibbs sampling implementation here:
+http://cran.r-project.org/web/packages/lda/

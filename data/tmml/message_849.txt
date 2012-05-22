@@ -1,0 +1,3 @@
+Hi all,
+Currently, I apply  LDA on various documents. We note that the length of each document is totally different. For example, many documents have more than 200 words, and other documents only have 20 words. In this case, dose LDA can also work? If not, how can we deal with this difference?
+Many thanks for any help.

@@ -1,0 +1,11 @@
+Hi Vasiliy -- you can use NIPS and get good topics if you exclude "network" etc. as domain-specific stop words, for instance for document frequency > corpussize / 4. Examples for topics that a topic model then creates:
+- dendritic synaptic voltage membrane conductance channels neuron
+- orientation cortical dominance ocular cortex development lateral eye cells visual
+- rbf classifier classifiers radial decision centers lippmann mlp regions knn
+- ica source separation sources blind mixing signals amari entropy bell
+- posterior carlo monte bayesian covariance prior sampling variance mackay
+- kernel support svm kernels vapnik machines regression regularization margin sv
+(Example from a variant model, lda will be analogous)
+Other useful pointers are: ACL Anthology, AP data (also used in Dave Blei's lda-c code) and those reported in papers...
+Best
+gregor

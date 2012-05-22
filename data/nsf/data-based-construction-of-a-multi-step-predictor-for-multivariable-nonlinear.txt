@@ -1,0 +1,35 @@
+              Abstract
+
+
+Proposal Title: 	Data Based Construction of a Multi-Step Predictor
+              for Multivariable Nonlinear Stochastic Systems-with Applications to
+              Soft-Sensing, Process Monitoring and Predictive Control
+Proposal
+              Number:		CTS-9979873
+Principal Investigator:	Jay H. Lee
+Institution:		Purdue
+              University
+
+The main objective of this research is to develop a framework for
+              using plant data for the development of a reduced-order nonlinear multistep
+              prediction model, capable of predicting a long-term behavior of relevant
+              variables on the basis of incoming measurements, in the presence of both
+              deterministic and stochastic input changes.  Such a model is an essential
+              component of the envisioned computer-based system that performs the integrated
+              function of process monitoring, soft sensing, and predictive control.  The PI
+              will draw upon the subspace identification paradigm that enables the engineer
+              to build a state-space prediction model directly from input-output data. The
+              proposed research will address the following topics: (1) extension of linear
+              subspace identification to nonlinear stochastic systems, involving the
+              development of a nonlinear projection method for the construction of
+              state-space models, (2) a comparative evaluation of the nonlinear
+              projection-based method against other competing options including the direct
+              time-series based design and the internally recurrent neural network based
+              design, (3) development of a robust model predictive control method for
+              piecewise-linear state-space models, (5) development of  a software package for
+              the integrated control scheme, and (6) testing of the developed methods on
+              distillation columns and reactors.  The development of a model-based estimator
+              and controller is of great industrial importance, particularly for a process in
+              which control variables are complex functions of process variables such as
+              temperature and composition.
+

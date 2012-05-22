@@ -1,0 +1,15 @@
+Hi Topic Modelers.
+In this paper[1] Griffiths & Steyvers do model selection by
+computing the marginal likelihood of an Gibbs-LDA model with harmonic
+mean approximation.
+It's known that harmonic mean estimator is very unstable and can
+have infinite variance [2][3], so I find it especially surprising that
+they use it successfully and moreover have error bars on their data
+likelihood which are too small to print(!) ([1], Fig. 3).
+In my experiments, harmonic mean seems very unreliable for LDA
+marginal likelihood. Any ideas about how it was done in this PNAS paper?
+Thanks and sorry of this a beginner question.
+Tim
+[1] Griffiths & Steyvers, Finding Scientific Topics, PNAS 2004.
+[2] Radford Neal, http://radfordneal.wordpress.com/2008/08/17/the-harmonic-mean-of-the-likelihood-worst-monte-carlo-method-ever/
+[3] Gilks et al, MCMC in Practice, 1995.

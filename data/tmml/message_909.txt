@@ -1,0 +1,9 @@
+Dave Blei, Jerry Zhu, and I had a paper about using WordNet to give a
+prior for the distributions over topics.  It distinguished the senses
+of words (thus allowing WSD in a topic model setting) in the
+generative process but still used the same unannotated documents as
+input.  We did not evaluate on perplexity, and I don't have a good
+intuition of how that would pan out.
+http://www.umiacs.umd.edu/~jbg/docs/jbg-EMNLP07.pdf
+Cheers,
+Jordan

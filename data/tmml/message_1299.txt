@@ -1,0 +1,24 @@
+Hi Charlie,
+To perform Gibbs sampling, you need to write down a list of all the
+hidden variables in your model and, for each variable, write down the
+conditional distribution of that variable given settings of all other
+variables. Sampling then involves visiting each variable in turn and
+drawing a new value for that variable from its conditional
+distribution.
+In models that use only conjugate priors, these conditional
+distributions can be very simple. Standard LDA draws topic proportions
+for a document from a Dirichlet and then draws topic indicators from
+those multinomial proportions. Updates are simple. CTM draws log topic
+proportions from a normal and then draws topic indicators from the
+exponentiated values of those log proportions. The conditional
+distribution for those log topic proportions is then proportional to a
+normal (from the prior) multiplied by e^x/(e^x + ...), which is not a
+well-behaved distribution.
+You theoretically could Gibbs sample the CTM model, but evaluating
+those conditional distributions for the log topic proportions would be
+difficult. An alternative method (described in this paper:
+http://www.cs.princeton.edu/~mimno/papers/sampledlgstnorm.pdf) is to
+introduce additional auxiliary variables, which have simple
+conditional distributions themselves and make the conditional
+distributions for the log topic proportions much simpler.
+-David

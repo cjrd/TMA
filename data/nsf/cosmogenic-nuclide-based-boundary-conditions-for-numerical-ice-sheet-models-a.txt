@@ -1,0 +1,47 @@
+              
+0138486
+Harbor
+
+Major limitations in the successful use of ice sheet models
+              for climate research arise from limited field data for model calibration. This
+              may result in unrealistic simulations of ice sheet inception, growth, and
+              decay, and uncertainties in reconstructing ice sheet basal boundary conditions
+              and surface profiles.  For example, trimlines and weathering differences have
+              been interpreted as indicators of former ice sheet height in some locations,
+              while mapping and cosmogenic nuclide-based assessment of glacial erosion
+              patterns in Scandinavia suggest that such features in some cases represent
+              internal thermal boundaries between wet-(warm) based erosive ice and dry-(cold)
+              based non-erosive ice.  Such radical differences in interpretation have
+              profound impacts on reconstructed ice sheet thickness, dynamics, and extent,
+              and paleoclimates interpretations derived from ice sheet reconstructions. The
+              fact that uneroded areas have been identified in Scandinavia  within the known
+              limits of multiple ice sheet overriding events indicates that these uneroded
+              areas must have survived as non-eroding (presumably frozen-bed) patches
+              throughout ice sheet inception, growth, and decay. This observation represents
+              a significant new constraint on basal thermal conditions for ice sheet models
+              and is indicative of the types of constraints that field-based geomorphology
+              and glacial geology can provide to enhance ice sheet modeling efforts.  Over
+              the past three years the Principal Investigator Arjen Stroeven, Stockholm
+              University, and Derek Fabel, Australian National University, have worked
+              collaboratively with support from National Science Foundation (NSF) and Swedish
+              NSF to examine deglaciation chronology and patterns of erosion and landscape
+              preservation in the northern Swedish mountains, the core area of the
+              Fennoscandian Ice Sheet (FIS).  The  results provide the groundwork for
+              proposing the next phase of this work, in which they will reconstruct FIS
+              thickness, extent, and dynamics (including total ice volume-induced sea level
+              change) over critical periods of the last glacial cycle (Marine Isotope Stage
+              [MIS] 5d or 5b, inception phase; MIS 2, Last Glacial Maximum (LGM)  phase, and;
+              MIS 1, deglaciation phase). The paleotopography (height) of the FIS through a
+              glacial cycle will be simulated using a state-of-the-art thermomechanical
+              numerical ice sheet model, with key boundary conditions constrained both by
+              cosmogenic nuclide-based reconstructions of subglacial conditions, and by an
+              isostatic model. The team for this work has been expanded to include Alun
+              Hubbard, University of Edinburgh, Kurt Lambeck, Australian National University,
+              and  Jens-Ove Naslund, Stockholm University, in the areas of glaciological and
+              isostatic modeling.  New reconstructions will likely have wide significance,
+              both to European ice sheet and paleoclimate reconstructions and evaluations of
+              evidence of sea level low-stands (proxy for total land-based ice on earth) and
+              also in encouraging re-evaluation of the dynamics of inception, growth, and
+              decay of other major ice sheets worldwide.
+
+

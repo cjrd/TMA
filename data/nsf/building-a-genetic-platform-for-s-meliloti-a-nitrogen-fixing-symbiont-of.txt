@@ -1,0 +1,34 @@
+              Nitrogen-fixing symbioses are ecologically and agronomically important and
+              provide the major nitrogen input for many systems of sustainable agriculture.
+              For scientific and historical reasons, the interaction between Sinorhizobium
+              meliloti and a diploid alfalfa, Medicago truncatula, has become a model for
+              this kind of nitrogen-fixing symbiosis. The DNA sequence of the S. meliloti
+              genome has been determined and was predicted to encode about 6200 proteins. To
+              investigate the genome further, an integrated genetic strategy is being
+              developed that will provide a platform for many different types of genetic,
+              biochemical, physiological and taxonomic analysis. The strategy uses
+              high-throughput, genomic scale PCR and integrase technology to clone sequences
+              that encode every predicted gene in the S. meliloti genome. These clones can be
+              used immediately in creating DNA arrays for expression analysis and cross
+              species comparisons and, using the clones, it should be possible to move
+              smoothly to the construction of S. meliloti strains with reporter genes fused
+              to each predicted promoter, to the isolation of mutant strains lacking
+              precisely defined regions of the S. meliloti genome, and to the production of
+              proteins for biochemical characterization. The strategy also provides built-in
+              flexibility for incorporating technical advances in the future.
+              Characterization of gene expression and symbiotic phenotypes of the resulting
+              bacterial strains will allow investigators to investigate various bacterial
+              traits important to a productive symbiosis, such as resistance to acid soils
+              and heavy metals, cold tolerance, desiccation tolerance, competitiveness for
+              nodulation and efficiency of nitrogen fixation. 
+
+The information obtained by
+              studying S. meliloti and its symbiosis with alfalfa will be relevant to
+              understanding other symbioses and plant-microbe interactions in general.
+              Resources will be developed for sharing this genetic material and information.
+              Through both their immediate utility and their features designed to accommodate
+              changes necessitated by future research needs, these constructs should provide
+              a basis for many years of fruitful work. The strategy should be applicable to
+              many other organisms important to society in areas ranging from agriculture and
+              the environment to bioengineering.
+

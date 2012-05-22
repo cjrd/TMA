@@ -1,0 +1,308 @@
+
+Continuing in our discussion of parameter
+estimation, previously, we talked about
+maximum likelihood estimation, which tries to
+optimize the likelihood of the data, given
+the parameters. And an alternative
+approach that offers some better
+properties is the approach of Bayesian
+estimation, which is what we're gonna talk
+about today. So, first, let's understand
+why maximum likelihood estimation isn't
+perfect. So, consider two scenarios, in
+the first one the team, yeah, two teams
+that play ten times and the first team
+wins seven out of the ten matches. So if
+we're going to use maximum likelihood
+estimation, the probability of the first
+team winning is 0.7, which seems like a
+not unreasonable guess going forward. On
+the other hand, we take a dime out of our
+pocket and we toss it ten times and it
+comes up heads seven out of the ten
+tosses. Maximum likelihood estimation is
+going to come out with exactly the same
+estimate, which is that the probability of
+the next coin coming up heads is also 0.7.
+In this case, that doesn't seem like quite
+as reasonable an inference to make based
+on the results of the, these ten tosses.
+To elaborate the scenario still further
+let's imagine that we take that same dime
+and now we patiently sit and toss it
+10,000 times. And sure enough it comes out
+heads 7,000 out of the 10,000 tosses. Now
+the probability of heads is still 0.7, but
+now it might be a more plausible inference
+for us to make, than in the previous case,
+where we only had ten tosses to draw on.
+And so, maximum likelihood estimation has
+absolutely no ability to distinguish
+between these three scenarios. Between the
+case of a familiar setting, such as a coin
+versus an unfamiliar event, such as the
+two teams playing, on the one hand. And
+between the case where we toss a coin ten
+times versus tossing a coin 10,000 times.
+Neither of these distinctions is apparent
+in the maximum likelihood estimate. To
+provide an alternative formalism, we're
+going to go back to our view of parameter
+estimation as a probabilistic graphical
+model. Where we have the parameter theta
+over here and we have the data being
+dependent on the parameter theta. But
+unlike in the previous case where we were
+just trying to figure out the most likely
+value of theta, now we're going to take a
+radically different approach and we're
+going to assume that theta is in fact a random
+variable by itself. A continuous valued
+random variable which in this, as in the
+case of the coin toss takes on the value,
+in this case 01. But in either case it is
+a random variable and therefore something
+over which will maintain a probability
+distribution. Now this is in fact at
+the heart of Bayesian formalism.
+Anything about which we are uncertain we
+should view as a random variable over
+which we have a distribution that is
+updated over time as data is acquired.
+Well to understand the difference between
+this view, and the maximum likelihood estimation
+view. So, certainly we have, as before, that
+given theta the tosses are independent.
+But now that we're explicitly viewing
+theta as a random variable we have that if
+theta is unknown then the tosses are not
+marginally independent. So for example if we observe
+that x1 is equal to heads, that's going to
+tell us something about the parameter.
+It's going to increase the probability
+that the parameter favors heads over tails
+and therefore is going to change our
+probability in other coin tosses. So the
+coin tosses are dependent. Marginally. Not
+given Theta but without being given Theta,
+they're marginally dependent. So, that
+really gives us a joint probabilistic model,
+over all of the coin tosses and the
+parameter together. So, if we break down
+that probability distribution using this
+PGM that we have over here, it breaks down
+using the chain rule for that Bayesian
+network that we have drawn there. So we
+have p of theta, which is the parameter
+for the [inaudible] of this network, and
+then the probability of the x's given
+theta, which because of the structure of
+the network, we have that they are
+conditionally independent given theta, and
+so we have. That we, we can decompose this
+as a prior over theta times the product
+of the probabilities of the individual
+data Which this over here is just our good
+friend from before, the likelihood
+function. Which is just the probability of
+the data, given the parameters. And we've
+already, specified, computed what that is
+in the context of this coin tossing
+example. And that is, theta to the power
+of the number of heads times 1- theta to
+the power of the number of tails. But now
+we have an additional term which is the
+probability of theta, which we obtained
+from the prior that we have over theta.
+And now you can, by virtue having a prior,
+in fact joint distribution. We can now go
+ahead and compute a posterior over my
+parameter theta, given my data-set D. So
+this is after having observed the values
+of m coin tosses, I have a probability
+distribution over, a new probability
+distribution over the parameter and by
+simple application of Bayes rule that is
+going to break into the probability of the
+data given theta, which is again
+my likelihood function. Times the
+prior. Divided by the probability of the
+data which, importantly, just as in
+other applications of Bayes rule, is a
+normalizing constant. And constant here
+means relative to theta. Which means that
+if I know how to compute the numerator I
+can derive the denominator by simply, in
+this case integrating out over the value
+of theta to derive the normalizing
+constant required to make this a legal
+density function. For the most common
+parameter distribution to use when we have
+a parameter to describe the multinomial
+distribution over k different values
+such a this parameter theta is a what, is
+what called the Dirichlet distribution
+Now, the Dirichlet distribution is
+characterized by a set, alpha one up to the
+alpha K, of what are called hyper
+parameters. That is to distinguish them
+from the actual parameters theta. So the,
+probability distribution that is defined
+using these hyper-parameters is a density
+over Theta, P of Theta, which has the
+following form. Let's first look at this
+first part over here which is, which is
+the part that actually depends on the
+parameters Theta and what we see here is
+that we have for each of my para-, for
+each of the entries Theta I in the
+multinomial, we have an expression of the
+form Theta I to the power of Alpha I minus
+one or Alpha I is the associated
+hyperparameter. In order to make this a legal
+density we have, in addition, a
+normalizing constant, a partition
+function which in this case and, this is
+something we will come back to, has the
+following form that we're not going to
+dwell on right now. It's a ratio of these
+things called gamma functions. Where a
+gamma function is defined by the following
+integral. And for the moment, we don't
+really need to worry about this, because
+the only thing we really care about for
+the moment is the form of this internal
+expression over here. Knowing that it
+needed to be normalized in order to
+produce density. Now, intuitively, and
+we'll see this in a couple different ways.
+These hyper parameters, these alphas.
+Correspond intuitively to the number of
+samples that we've seen so far. So let's
+understand why that intuition holds. But
+before we do that, let's look at a couple
+of examples of Dirichlet distributions.
+And this is a special case of the
+Dirichlet distribution, where we have just
+two, values for the random variable. So
+it's really a distribution for a Bernoulli
+random variable. And in this case,
+Dirichlet's actually known often as a Beta
+distribution. But a Beta is just a
+Dirichlet with two. Hyper parameter. So
+here we have several examples of a
+Dirichlet or Beta distribution. This
+one. Is the Dirichlet or Beta 1,1 and
+notice that, that corresponds to a the
+uniform distribution. As we increase the
+number of as we increase the hyper
+parameters, for example we go to this
+green line which is Dirichlet 22. We
+notice that we get a peak in, in the
+middle. So there's. So there's an increase
+around 0.5, and that corresponds to a
+stronger belief that the parameter is
+centered around the middle. That.
+Probability increases yet further when we
+go to the Dirichlet five, five or beta
+five, five, where now we have an even
+bigger peak around the value in the
+middle. And as we shift the amount of data
+that we get and it's mixed, this
+distribution is going to get, to move to
+the left and to the, or to the right
+depending on the mix between heads or
+tails in this case. And as we get more and
+more data, the distribution becomes more
+and more peaked. So, so roughly speaking
+we have that the mix. Between alpha heads
+and alpha tails. The balance determines.
+From the position of the peak. And the
+total alpha. determines. How sharp it is. So
+now that we know a little bit about what
+the Dirichlet distribution looks like,
+let's see how it's updated as we obtain
+data. So let's consider a case where we
+have a prior, which we are going to assume
+is Dirichlet. We have a likelihood.
+Which is, for data set D, derived from a
+multinomial, a multinomial theta and now
+we'd like to figure out the posterior. P
+of theta given D, after having seen the
+data D. So, the likelihood we've already
+seen before, this is, the probability of
+the data set that has, in this case, MI
+being the number of instances. With value
+little xi, and so this is just a
+likelihood function. And the prior
+has the form of the Dirichlet [inaudible]
+with the associated hyper parameters. And
+what's important to see looking at this is
+that the theta I term in the likelihood
+and the theta I term in the prior have
+exactly the same form. So when you
+multiply the likelihood with the prior,
+you can bring together like terms, those
+with theta I at the base of the exponent,
+and you're going to end up with a
+posterior that looks exactly like a
+Dirichlet distribution as well because
+it's going to have the form. Theta I. The
+power of Mi plus alpha I minus one. So, if
+our prior was Dirichlet alpha one up to
+alpha k and the data counts are M1 up to
+Mk. Then the posterior is simply a
+Dirichlet with. Hyper parameters alpha
+one plus M1 up to alpha K plus MK. And
+that again s, suggests that the hyper
+parameters of a distribution represent
+counts that we've seen. If a priori our
+counts for x I were alpha I, and now we
+saw an additional m I counts for alpha I,
+then now in the posterior we have m alpha
+I plus m I counts that we've seen for that
+particular event. >> Now, from a formal
+perspective this is a useful term to know.
+This situation where the prior and the
+posterior have the same form. Is called
+the conjugate prior. So in this case the
+Dirichlet distribution is a conjugative
+prior for the multinomial because if we
+have a Dirichlet prior and a multinomial
+likelihood, we have a Dirichlet
+posterior. And it turns out that many
+parametric families have a nice
+conjugate prior that allows us to
+maintain a probability distribution over
+the parameters in closed form because the
+parameter, because the distribution over
+that parameter just keeps staying in
+exactly the same representational family,
+in this case the Dirichlet. So to
+summarize, we've presented the framework
+of Bayesian learning. Bayesian learning
+treats parameters as random variables,
+continuous variable random variables but
+still old random variables, which then
+allows us to reformulate the learning
+problem simply as an inference problem
+because what we're doing is taking a
+distribution over the random variables and
+updating it using evidence which in this
+case is the observed training data. Now,
+specifically in the context of discrete
+random variables over which we have a
+multinomial distribution on the likelihood
+and a Dirichlet distribution as the prior,
+we have this very elegant situation where
+the prior, the Dirichlet distribution
+prior is conjugate to the multinomial
+distribution, which, as we just discussed,
+means that the posterior has the same form
+as the prior. And that in turn allows us
+to keep a closed-form distribution on. The
+parameters which has the same form all
+along as we keep updating it and that
+update uses the sufficient statistics from
+the data for the update process usually in
+a very efficient form.

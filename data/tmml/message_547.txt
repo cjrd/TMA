@@ -1,0 +1,22 @@
+Dear Kevin,
+kevin chen wrote:
+Variables that are integrated out can in principle be viewed as
+collapsed nodes in the corresponding graphical model; in the LDA case
+leading to Dirichlet-compound multinomial nodes: p(z|a) = integral
+Mult(z|p) . Dir(p|a) dp = DCM(z|a). However, to me this  collapsed
+representation seems of limited use as the plate structure in the
+Bayesian network (document-wise and topic-wise parameter sets) is not
+easily retained.
+w_i indep z_i | theta because of the assumption z_i indep z_-i | theta,
+or in other words: If you know theta, additionally knowing all z_-i
+doesn't add to your information on z_i. However, this assumption only
+approximates reality because of the weak negative correlation of
+Dirichlet parameter dimensions (vector confined to K-simplex). But this
+correlation can be neglected for when token counts >> 0 as in virtually
+all practical applications. I should have mentioned this in the paper;
+it will be in the next version.
+It's generally easiest (regardless of inference methodology) to
+integrate out parameters "between" conjugate-exponential distribution
+pairs because this is possible in closed form.
+Best
+gregor

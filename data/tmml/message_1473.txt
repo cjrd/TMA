@@ -1,0 +1,2 @@
+exactly. Which is why I think it's better to use "frequency within a
+specific topic" as a coarse measure of generality.

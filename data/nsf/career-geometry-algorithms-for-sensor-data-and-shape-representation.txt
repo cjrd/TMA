@@ -1,0 +1,20 @@
+              New technology for capturing shape data from the real world
+requires new
+              algorithms to interpret and use it. Building on
+new ideas about reconstructing
+              a surface from a set of
+points in three-dimensional space, we consider
+              algorithms
+for computing different shape representations, and for
+aligning
+              point sets to each other. We look for simple,
+effective yet provably correct
+              algorithms, using tools from
+computational geometry but drawing on the huge
+              body of
+previous work in computer vision and graphics. This work
+complements
+              our teaching in graphics and algorithms, and
+helps us train graduate students
+              in research.
+

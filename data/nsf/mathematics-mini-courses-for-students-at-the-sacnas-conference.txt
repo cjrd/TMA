@@ -1,0 +1,23 @@
+              This project includes two mathematics mini-courses to be part of an enhanced
+              group of mathematics activities at the 2003 Conference of the Society for
+              Advancement of Chicano and Native Americans in Science (SACNAS) to be held on
+              October 2-5, 2003 in Albuquerque, New Mexico.  Each mini-course will consist
+              of
+six one-hour lectures by two instructors: an established mathematician with
+              an excellent record of research, mentoring and teaching, and a junior
+              mathematician who has demonstrated exceptional mentoring ability while carrying
+              out an outstanding research and teaching program.  The mini-course topics will
+              be
+"Coding Theory" and "Explorations in Mathematical Biology."
+
+The purpose
+              of each mini-course is to expose a large number of minority students (advanced
+              undergraduates and graduate students)to a topic in applied or pure mathematics
+              with particular emphasis on diverse approaches to problems, and connections to
+              other areas of mathematics or other disciplines.  The mini-courses are expected
+              to reach a point when open problems that have the potential to grow into
+              graduate research projects can be stated in context.  This is designed to
+              encourage students to continue on to graduate school and boost their confidence
+              by making them realize that, even at this stage, they are able to
+              understand
+the nature of motivating questions.

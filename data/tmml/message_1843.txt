@@ -1,0 +1,7 @@
+Hello Vasiliy,
+the most useful link, google.com/search?q=lda+gibbs+sampling , yields (among others):
+https://lists.cs.princeton.edu/pipermail/topic-models/2008-March/000188.html (from this very mailing list)
+and also
+http://www.cs.princeton.edu/~mimno/topics.html (with many implementations)
+Best,
+Radim

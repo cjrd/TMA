@@ -1,0 +1,54 @@
+Hi David,
+thank you for looking into my problem. Yes, that is exactly what I tried,
+and I obtained the following output:
+em max iter 1000
+var max iter 20
+cg max iter -1
+em convergence 0.001000
+var convergence 0.000001
+cg convergence 0.000001
+lag 10
+shrinkage? 0
+reading data from ../ap/ap.dat
+number of docs    : 2246
+number of terms   : 10473
+total             : 435838
+starting from seed
+SEED = 1200233966
+USING 1115574245
+initialized with document 1583
+initialized with document 1139
+initialized with document 222
+initialized with document 497
+initialized with document 882
+writing params
+writing gaussian
+writing topics
+***** EM ITERATION 0 *****
+doc     0   lhood -2.43592e+03   niter    20
+doc     1   lhood -2.50012e+03   niter    20
+doc     2   lhood -2.36372e+03   niter    20
+doc     3   lhood -1.91299e+03   niter    20
+doc     4   lhood -6.11285e+02   niter    20
+doc     5   lhood -3.88139e+03   niter    20
+doc     6   lhood -1.54644e+03   niter    20
+doc     7   lhood -5.12385e+02   niter    20
+doc     8   lhood -6.63233e+01   niter     9
+doc     9   lhood -1.06981e+03   niter    20
+doc    10   lhood -4.55100e+02   niter    20
+doc    11   lhood -8.23344e+02   niter    20
+doc    12   lhood -1.52137e+03   niter    20
+doc    13   lhood -2.63078e+02   niter    18
+doc    14   lhood -2.54963e+03   niter    20
+doc    15   lhood -1.14715e+03   niter    20
+doc    16   lhood -1.68525e+03   niter    20
+doc    17   lhood -3.14327e+03   niter    20
+doc    18   lhood -1.73685e+03   niter    20
+As you can see, after doc 18 nothing happens anymore, well at least nothing
+that produces an output, since the program is stuck in the loop again. Do
+you think it is possible that there are problems with the GSL? I am
+currently using version 1.9-3, perhaps I should upgrade to 1.10 instead. I
+also tried to link against cblas and not gslcblas, but that didn't solve the
+problem either.
+Thanks again,
+Thomas

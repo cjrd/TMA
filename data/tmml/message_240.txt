@@ -1,0 +1,8 @@
+Greetings,
+I am also very new to this area but thought I probably can answer some of the questions. Others please correct me in case I am wrong.
+"From these 2 information, how do I know the topic of each token from testing document? "
+I don't know how to get topic of each token for test documents. But you can get the topic distribution of each document from the new gamma file. Each line in the new gamma file is the values of \gamma for a document. To get topic distribution you need to normalize the gamma value with respect to a document. Probably you should substract alpha from each of the gamma value (not sure).
+"What is exactly the role of "word_assignment.dat" file?"
+This contains topic of each token for the training documents
+Hope I am correct and this helps
+-Som

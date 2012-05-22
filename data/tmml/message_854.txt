@@ -1,0 +1,4 @@
+jun zhu has a paper called "conditional topic random fields" icml 2010
+, which might be the type of models you are looking for.
+best
+chong

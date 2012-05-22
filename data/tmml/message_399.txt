@@ -1,0 +1,11 @@
+In English: The word "belongs the most" to the topic that gives it the
+highest probablity to occur. This >probability is different for topics
+p,q,...
+me all the other variables too. I think inference computes \theta too.
+Actually the inference which is explained in paper(which you are mentioning
+above) is part of the expectation atep. We are doing the variational
+inferencing there. At the end of this we have the present values of the
+variational parameters being estimated. estimation mentioned in the next
+section is the maximization step of the EM. I feel the order is correct.
+regards
+veena

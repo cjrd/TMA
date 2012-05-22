@@ -1,0 +1,10 @@
+ok, on closer scrutiny, I found why Ben recommended variance of
+unconditional p(w).  This is to take care of topic mixing proportions, i.e.,
+the \theta matrix in plate notation.
+But if that's the only concern, then a simpler (but coarser) solution might
+be to use a weighted variance instead of a simple variance:
+http://en.wikipedia.org/wiki/Weighted_mean#Weighted_sample_variance
+Where the weights are either 1/avg_over_d(P(z|d)) or the corresponding
+inverse log-likelihood.
+Regards,
+Shibamouli

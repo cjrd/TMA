@@ -1,0 +1,18 @@
+hi all,
+i've been fiddling with some topic modeling and was now going to try lda. i
+downloaded the lda-c package, made appropriate changes to make this compile
+with the windows CL compiler (the only substantial change seemed to be
+getting an implementation for lgamma, which i got from a site recommended on
+this list. the other changes were minor language things).
+however, when i compiled and ran the code things ran very quickly (too
+quickly!) and just gave this for the likelihoods, which are obviously bogus:
+0.0000000000    -1.#IND0e+000
+0.0000000000    -1.#IND0e+000
+0.0000000000    -1.#IND0e+000
+does anyone have a set of sources that they know works for windows, or a
+binary that they can point me to/send me that works? i wanted to fiddle with
+the algorithm and didn't want to figure out what's going wrong in the code
+on my own since it sounds like people on this list have created a binary
+that works on windows.
+cheers
+omar

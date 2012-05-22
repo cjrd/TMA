@@ -1,0 +1,5 @@
+Hello,
+I was understanding the paper and tried to use LDA implementation
+But, afai understand, there should be multiple alpha values(equal to the
+number of topics). But, I could see only a scalar value of alpha.
+Can someone plz clarify my doubt

@@ -1,0 +1,14 @@
+Hi,
+I am writing about the paper "Mixed Membership Stochastic Blockmodels" by
+Airoldi et al (JMLR 2008).
+This paper starts out by explaining that when dealing with relational data,
+the independence or exchangeability assumption that is invoked in LDA is no
+longer valid. Relational data problems can be thought of in terms of a
+graph, in which vertices represent the set of entities (people, or
+proteins, etc.) and the presence or absence of edges correspond to
+interactions (or lack thereof) between those entities. The 'data' is
+therefore a set of edges.
+(1) I'm not sure if my understanding for why the independence assumption is
+invalid is correct, and I'm looking for an intuitive explanation.
+(2) It appears to me that the independence assumption is invalid only
+because the relational graph we are dealing with, can be an arbitrary graph

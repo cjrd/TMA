@@ -1,0 +1,58 @@
+              Proposal: CMS-9820912
+PI: S. Saigal
+Carnegie Mellon University
+
+Title:
+              Analytical-Experimental Approach to Verified Cohesive Zone
+Fracture Models in
+              Engineering Applications
+
+Abstract: The chipping of coatings is studied using
+              the cohesive 
+zonebased cohesive finite elements formulation. An integrated
+              
+analytical/experimental/numerical approach is followed. The cohesive 
+zone
+              models are postulated to include irreversibility, rate-dependence, 
+and the
+              effect of environmental factors. These postulations are both 
+guided by and
+              validated by a set of experiments designed to highlight 
+various phenomenon
+              occurring in the fracture of materials systems. The 
+developments are applied
+              to the industrial application of chipping of 
+paint systems. For this
+              application, multiple, interacting cracks 
+propagating along unknown
+              trajectories need to be accounted for. The 
+cohesive finite elements approach
+              provides a natural vehicle for such 
+cracks. Additional applications of
+              cohesive elements include layered 
+constructions found in numerous engineering
+              applications such as 
+composites, laminated sheets, coated metal, and
+              microelectronic 
+devices. The proposed research is carried out in close
+              cooperation with 
+the DuPont Company. The experiments for validation as well
+              as for the 
+industrial application are carried out at DuPont.  The cohesive
+              models 
+are developed under the guidance of DuPont researchers to ensure that
+              
+these elements have full industry validity. The project serves as a 
+unique
+              training mechanism for graduate students, introducing them to
+              
+university-industry interactions as well as to the effectiveness of
+              
+combined analytical/numerical/experimental approaches in solving 
+real-world
+              problems.
+
+
+
+
+

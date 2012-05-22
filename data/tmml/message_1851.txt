@@ -1,0 +1,7 @@
+Hello Yiliang,
+As you increase the number of topics you will eventually over-fit the data,
+This tends to cause perplexity increase on the held out set.
+If you optimize the hyper parameters during the sampling with a large number of topics some of them will have a prior approaching 0, thus reducing the over fitting (try Mallet).
+Raphael Cohen
+Ben-Gurion University
+Date: Sun, 18 Mar 2012 15:24:29 +0800

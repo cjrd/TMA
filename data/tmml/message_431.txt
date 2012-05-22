@@ -1,0 +1,19 @@
+Since a normalization step is there, a factor which is constant to every k
+terms of (phi)ni?s can be neglected.
+???: Veena T [mailto:veenat2005 at gmail.com]
+????: 2008?10?30? 14:57
+???: topic-models at lists.cs.princeton.edu
+??: [Topic-models] Some clarification
+Hello all,
+I am a new person to this area.
+I was reading the Latent Dirichlet Allocation paper (JMLR). When it comes to
+the derivation of an expression for (phi)ni (due to non availability of the
+greek font, I am writing it like this), we have a lagragian multiplier
+appearing in the result of finding the derivative of L with respect to
+(phi)ni. However the paper does not give any details as to how to get rid of
+that term in the expression. Also the expression derived for (phi)ni in the
+process and that used in the algorithm is slightly different(I mean one term
+is missing)
+So please help me in this derivation.
+regards
+veena

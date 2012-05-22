@@ -1,0 +1,41 @@
+              This Faculty Early Career Development project describes an effort to integrate
+              innovative educational and research activities as a basis for an active career
+              in both areas. A dearth of science majors is a national problem with serious
+              implications for the country's technological future. The education component of
+              this plan focuses on attracting and retaining physics majors by improving the
+              class work and general environment of the University of Connecticut
+              undergraduate physics program. Pedagogical efforts will apply strategies that
+              have proved successful for large introductory courses to smaller courses for
+              physics majors. Student advising efforts include seminars for undergraduates on
+              graduate school, careers, and invited presentations from past UConn physics
+              graduates on their career choices. Advanced education and training along with
+              the creation of new knowledge is promoted through research into fundamental
+              properties of nanometer scale films of complex, functional oxides. An array of
+              advanced surface science probes will be brought to bear on in-situ grown films
+              in order to study questions concerning reduced dimensionality, strain, and
+              non-equilibrium structures. The focus will be on understanding properties that
+              are strongly altered in very thin films, particularly phase transitions. The
+              project will serve as a nexus for establishing interdisciplinary research at
+              UConn and foster ties with national laboratories. 
+
+This Faculty Early Career
+              Development project describes an effort to integrate innovative educational and
+              research activities as a basis for an active career in both areas. A dearth of
+              science majors is a national problem with serious implications for the
+              country's technological future. The education component of this plan focuses on
+              attracting and retaining physics majors. Pedagogical efforts will apply
+              strategies that have proved successful for large introductory courses to
+              smaller courses for physics majors. Student advising efforts include seminars
+              for undergraduates on graduate school, careers, and invited presentations from
+              past University of Connecticut physics graduates on their career choices.
+              Advanced education and training along with the creation of new knowledge is
+              promoted through research into fundamental properties of nanometer scale films
+              of complex, electronic materials. Under the proper conditions, very thin films
+              show properties that are remarkably different from the bulk versions of the
+              same compounds. However, such films are difficult to study with traditional
+              techniques and the reasons for the altered properties are largely unknown. This
+              project will adapt very powerful experimental techniques usually used on large
+              bulk samples for use with films. The project will serve as a nexus for
+              establishing interdisciplinary research at UConn and foster ties with national
+              laboratories.
+

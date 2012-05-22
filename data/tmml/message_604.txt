@@ -1,0 +1,27 @@
+Hello All:
+I am trying to run Correlated Topic Model in Windows environment. I have
+configured GSL and CBLAS library with Visual Studio and have tested sample
+programs with that as well. Now when I try to run the CTM code, it gives me
+following errors (41 in total).
+Error    36    error C2065: 'S_IRUSR' : undeclared identifier    f:\topic
+modeling\code\gsl-1.11-windows-sources\gsl\win32\ctm example\estimate.c
+260    example
+Error    37    error C2065: 'S_IWUSR' : undeclared identifier    f:\topic
+modeling\code\gsl-1.11-windows-sources\gsl\win32\ctm example\estimate.c
+260    example
+Error    38    error C2065: 'S_IXUSR' : undeclared identifier    f:\topic
+modeling\code\gsl-1.11-windows-sources\gsl\win32\ctm example\estimate.c
+260    example
+Error    68    error C2065: 'lhood' : undeclared identifier    f:\topic
+modeling\code\gsl-1.11-windows-sources\gsl\win32\ctm example\inference.c
+99    example
+Error    84    error C2275: 'gsl_vector' : illegal use of this type as an
+expression    f:\topic modeling\code\gsl-1.11-windows-sources\gsl\win32\ctm
+example\inference.c    292    example
+Error    86    error C2065: 'x' : undeclared identifier    f:\topic
+modeling\code\gsl-1.11-windows-sources\gsl\win32\ctm example\inference.c
+293    example
+...
+Can any body spot the error? Any other alternative of running the code on
+Windows platform?
+Thanks in advance.

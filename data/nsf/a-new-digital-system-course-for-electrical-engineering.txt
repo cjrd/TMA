@@ -1,0 +1,19 @@
+              Engineering - Electrical (55)
+
+This project investigates a shift in the
+              introductory digital systems course from the current focus on gate level design
+              to a HDL (hardware description language), register-transfer level focus. The
+              emphasis is placed on the fundamentals of current design methodologies and
+              skills to utilize the latest high-density programmable devices and synthesis
+              software tools. The PI is developing a textbook, a set of experiments, and a
+              web site to provide a detailed coverage of the concepts, principles, and
+              practices of register-transfer level design. Student surveys provide feedback
+              on the content, organization, continuity of topics, and level of difficulty.
+              Course instructors in the senior design course will assess the students'
+              digital circuit design abilities and compare them to those of earlier students
+              who had a traditional digital systems course. The PI is planning to present
+              papers at education-oriented conferences, to prepare manuscripts for education
+              journals, and to post complete lecture slide, class projects, and laboratory
+              experiments on his web site to supplement the material in the developed
+              textbook. 
+

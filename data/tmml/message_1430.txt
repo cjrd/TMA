@@ -1,0 +1,1 @@
+I should add that the issue I raised about? the high number of shared high-probability features across topics is much more pronounced when the number of topics is higher.

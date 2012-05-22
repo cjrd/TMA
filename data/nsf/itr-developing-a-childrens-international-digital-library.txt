@@ -1,0 +1,12 @@
+              The research program will develop a large-scale digital archive of children's
+              literature and explore problems in technology for access and use by children,
+              and in rights management.  There are five primary
+goals: (1) to give children
+              around the world access to international children's literature, (2) to
+              understand data acquisition and rights management in the creation of a
+              large-scale digital library, (3) to develop interface technologies that support
+              children using large amounts of digital information, (4) to evaluate the impact
+              of such a collection on children's librariesa and children's librarians, (5) to
+              evaluate the impact and benefits of such a collection for children.  The
+              project plans to develop a digital library of 10,000 children's books
+              representing 100 cultures.

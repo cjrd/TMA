@@ -1,0 +1,10 @@
+Hi,
+I'm running the vanilla LDA from the 2003 LDA paper, and am running into
+problems with the computation of the likelihood bound from Equation 15.  The
+computation of gammaln(var_gamma) , where var_gamma is the variational gamma
+hyperparameter, is giving me infinity.  i've checked the value of the phi
+variable from which var_gamma is estimated, and it seems normal (6220 rows,
+each row sums to 1), and can't seem to figure out what is wrong here, any
+help  or insight is appreciated..
+Thanks!
+Brian

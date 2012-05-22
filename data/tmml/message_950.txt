@@ -1,0 +1,7 @@
+hi dave (and all)
+frank wood has an implementation of the hierarchical PY process here
+www.sequencememoizer.com
+which should do the trick.  i haven't used it, and he noted to me that
+this assumes a uniform base distribution over a finite discrete set.
+best
+dave

@@ -1,0 +1,25 @@
+Dear all,
+I am a MS student at KAIST, Korea.
+I am currently studying on LDA and read the LDA paper (Blei et al., 2003)
+several times.
+But I did not understand some parts of it.
+I have some questions about LDA. Do anyone knows.
+1. p(w|a) and alpha are two parameters which control LDA.
+But these are mere parameters, not variables.
+Why do they appear in the graphical model of LDA?
+And why didn't they appear in the previous models(unigral, mixture of
+unigram,...)?
+2. I think alpha values should be composed of A by 1 vector.
+But source code in your web has it as a scalar variable.
+I saw some answers mentioning exchangeability from here.
+But I still can't understand it.
+Could you please give me link or some materials which can help me?
+3. In a graphical model of simple unigram model and others,
+we can know there are N number of words in each of M documents.
+But according to the rule of graphical model,
+it seems like that number N is fixed for all M documents
+But it seems rear because all M documents have same N words.
+Is number N fixed? or variable?
+Can we rewrite N as Ni? (i is index for M documents)
+I am looking forward to hearing from you.
+Regards, BSR

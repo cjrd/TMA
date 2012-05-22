@@ -1,0 +1,16 @@
+Hi Mark and all,
+As I understand, the original LDA text generative model did indeed account
+for document length. In the original paper on LDA it is stated that the
+document lengths can be generated from the Poisson distribution. I think
+that another reasonable prior for the document length would be Weibull
+distribution. However, in the same original paper on LDA Dave Blei says:
+"Furthermore, note that N is independent of all the other data generating
+variables (q and z). It is thus an ancillary variable and we will generally
+ignore its randomness in the subsequent development." Hence ignore is what
+all the other authors do after that. But for me, if we ignore the process of
+document length generation, then we don't have a generative model
+anymore. Can anyone shed more light on the original idea to ignore the
+document size?
+Thanks,
+Andrey
+2011/2/6 Mark Bucciarelli <mark at crosscutmedia.com>

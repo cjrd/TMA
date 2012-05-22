@@ -1,0 +1,2 @@
+I would like to get group members opnion about how topic models, LDA, HDP,
+HDPs, etc would perform where instead of documents, we deal with short text

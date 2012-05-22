@@ -1,0 +1,13 @@
+Hello,
+I am confused about an aspect of the sLDA model.
+It is said in (Blei, McAuliffe, 2007) that a response variable y for a
+document is sampled from a normal distribution based on the generated
+topic assignments to the words of the document. The respective normal
+distribution gets parameterized by two values, namely (i) what seems to
+me to be a scalar product of two vectors, ETA and Z^{bar} and (ii) by
+BETA^{2}.
+However, what confuses me is the given definition of Z^{bar} := (1/N) *
+SUM_n=1:N {z_n}. By this definition, Z^{bar} is a scalar value, not a
+vector!?
+I hope someone can explain this to me.
+Sebastian

@@ -1,0 +1,25 @@
+              This action funds an NSF Minority Postdoctoral Research Fellowship in Biological
+              Sciences for FY 2000.
+
+The research and training plan is in the area of
+              biophysics and is entitled "Protein Engineering of a Model Protein."  This
+              study uses a synthetic diiron-oxo protein (DF) as a model for the class of
+              metalloproteins that performs a variety of functions in living systems
+              including dioxygen transport, conversion of ribonucleotides to
+              deoxyribonucleotides, desaturation of fatty acids, and the solubilization and
+              storage of iron.  DF has been designed to serve as a minimal model of
+              diiron-oxo proteins and has been shown to contain a metal center that is very
+              similar to the diiron-oxo proteins.  The model is interesting because the
+              dinuclear metal centers in all diiron-oxo proteins contain many common
+              structural features, but at the same time contain subtle differences that give
+              rise to different activities.  This makes the diiron-oxo system attractive for
+              studying how protein environments can influence active site functions.  This
+              projects seeks to refine the first generation DF system into one that is
+              amenable for engineering and designing efforts and for studying diiron-oxo
+              protein function by (1) developing an efficient synthesis of DF which would
+              offer a quick way to generate large numbers of DF variants and (2) by
+              investigating the determinants for the function and structure of the center by
+              systematically altering the atoms near the active site.  Completing these goals
+              will guide efforts towards designing pre-defined functions into the diiron-oxo
+              centers.
+

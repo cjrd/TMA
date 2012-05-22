@@ -1,0 +1,26 @@
+              0236455
+Brodsky
+
+Funds from this grant will support an upgrade to a communal
+              geophysics computer facility in the Department of Earth & Space Sciences at
+              UCLA.   The current computing facility is based on an aging (vintage 1997)
+              Solaris environment consisting of Sun Ultra and SPARC workstations.  A new
+              multi-CPU SunBlade server, five SunBlade workstations and five PC workstations
+              running Linux will augment this network and will serve eleven faculty members
+              and their students.  An additional 2 TB RAID system will add significant
+              additional storage capacity for analysis of massive seismic data holdings.  The
+              University will provide funding for both a portion of the new equipment and
+              also for an upgrade of the Ethernet connection in the Geology building to 1
+              Gbit capacity.  A portion of this grant will also provide limited support for
+              the salary of a computer systems administrator during the installation phase. 
+              This upgraded facility will serve not only the startup needs of the lead PI,
+              Emily Brodsky, for her theoretical models of explosive eruption dynamics, but
+              also the needs of many other active faculty members including John Vidale,
+              David Jackson, Heidi Houston , Paul Davis and John Aurnou, to name a few.  The
+              increased computational speed and storage capacity of this compute facility
+              will foster leading research in earthquake seismology, seismic tomography and
+              geodynamics.  The proposal's broader impacts include both infrastructure
+              development for multiple researchers and their students and the promotion of
+              societally relevant earthquake mitigation efforts.
+*** 
+

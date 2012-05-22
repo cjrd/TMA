@@ -1,0 +1,17 @@
+I am applying the topic modeling to a different kind of data.
+My question may sound trivial (pls forgive me) but i have been stuck in trying to prepare my input files to implement the Hierarchical Dirichlet Process code you referred to.
+My confusion? specifically is with the data format.
+"The data is a file where each line is of the form:
+[M] [term_1]:[count] [term_2]:[count] ...? [term_N]:[count]
+where [M] is the number of unique terms in the document, and the
+[count] associated with each term is how many times that term appeared
+in the document."
+My understanding so far about representing documents in the vector-space model is that the 'words' are rows while the 'documents' are columns (word-documents?frequency matrix).?Therefore each row?of the matrix?are occurrence of word i in all the documents in the j colums.
+But the expression: "where [M] is the number of unique terms in THE DOCUMENT, and the [count] associated with each term is how many times that term appeared
+in THE DOCUMENT."- makes it sound like the rows of the matrix are documents while the columns are the the words.
+Is [M] the total number of? non-zero entries of the rows OR it is the sum of the values in the non-zero cells?
+Could you please attach a piece of the a corpus already in the LDA-C format . Also any other required input file. I can use these as template for preparing my data to use with the code you have provided.
+Thanks for all you do.
+Toyin Popoola
+toyinpopoola at ieee.org
+HEU

@@ -1,0 +1,13 @@
+Hi All,
+I want to use LDA as base model for web 2.0 content analysis.
+I am searching for some objective method to decide the values for hyper
+parameters (i.e. alpha & beta) and deciding the number of topics for the
+collection.
+Second thing is, if there is a way to decide objectively about the quality
+of topics discovered by LDA?
+My third question is related to compute the distance between topics, which
+one is a good measure for this, JS divergence or KL divergence ? or some
+other measure ...
+thanks a lot in advance,
+Nasir Naveed
+Uni Koblenz

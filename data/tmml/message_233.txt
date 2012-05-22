@@ -1,0 +1,17 @@
+Hi Topic Model List Members,
+I want to ask two questions about Dirichlet distribution p(\theta|\alpha):
+(1) Does it make sense when any one of \alpha is less than 1,
+if so, what is the mode of the Dirichlet distribution at this case?
+I tested it experimentally, and found that mode is at the corner of the
+simplex
+for which the corresponding \alpha is the smallest one amongst all, is that
+right?
+(2) How to find the maximum a posteriori estimation of \theta given the
+computed
+variational parameter of \gamma for \theta, it should be at the mode of the
+variational distribution q(\theta|\gamma),
+but for \gamma less than 1, how to do it? If (1) is correct, than the MAP
+estimation of \theta contains 0,
+which will ruin the previously computed sufficient statistics of
+p(\theta|\alpha), since log(\theta) will be very small.
+Yuanlong Shao

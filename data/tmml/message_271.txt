@@ -1,0 +1,5 @@
+(apologies for the mistitled previous email)
+I'm also interested in the answer to this question. From the fixed-
+depth nCRP paper the conditional probability of c_m breaks down into a
+product over the path probability and the data likelihood with that
+path setting, so my implementation computes this full probability.

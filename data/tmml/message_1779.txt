@@ -1,0 +1,38 @@
+The URP model provides a probabilistic framework for rating prediction in
+collaborative filtering data. If your goal is to predict user's preference,
+then this is the right model.
+Moreover, you can use the distributions on the topics to infer
+user-communities, and other interesting pattern discovery tasks (such as
+topic analysis). This is the reason why I wrote "probabilistic framework"...
+Few considerations:
+1. Variational vs Gibbs sampling: I suggest you start with the Gibbs
+sampling version (better performances in rating prediction and easier to
+implement)
+2. Number of topics: using the URP you have to specify the number of topics
+as input. You can choose the proper number of topics by performing some
+preliminary experiments to detect the number of topics that minimizes your
+error metric
+3. Prediction: URP provides for each pair <u,i> a distribution over rating
+values. Then you have to use this distribution to compute predictions,
+considering that:
+Expected value --> minimizes MSE and RMSE
+Most Probable value --> minimize the MPE
+...
+you can find further details in Marlin's paper and in his thesis
+(Collaborative Filtering: A Machine Learning Perspective).
+4. Other approaches: if your goal is just rating prediction, then the
+Probabilistic Matrix Factorization works better than URP (and you can
+easily find source code).
+If your goal is to maximize the precision and the recall of
+recommendations, than I wouldn't rely exclusively on rating prediction.
+My study (
+http://unical.academia.edu/NicolaBarbieri/Papers/803077/An_Analysis_of_Probabilistic_Methods_for_Top-N_Recommendation_in_Collaborative_Filtering)
+shows that estimation the item selection probability plays a key role in
+recommendations. And you can mix preference prediction and item selection,
+estimating the probability that a user will select an item and he/her will
+like it.
+5. Source code (Java). I need some time to clean the code. Since I've
+implemented the main probabilistic models for recommendations, the idea
+would be to release a comprehensive framework. Obviously this would need
+some time...  I'll send to you the main part of the URP algorithm as soon
+as possible.

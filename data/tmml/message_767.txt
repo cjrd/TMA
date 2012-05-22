@@ -1,0 +1,6 @@
+Hello
+I am interested in the topic model: Correlated Topic Model and found there
+is a paper about how to make the inference of CTM using gibbs sampling. Is
+there any shared tools or codes for this inference method?
+Thanks
+Tribiani Guo

@@ -1,0 +1,35 @@
+              Earth Systems Science (40) 
+Computers are an increasingly important tool in the
+              Earth Sciences and are used for research in fields such as paleoclimatology,
+              seismology, and hydrogeology. Many students now entering graduate school,
+              embarking on consulting careers, or obtaining jobs with state and federal
+              governments are called upon to use computers to model complex systems or to
+              acquire and handle digital datasets. Others are required to critically evaluate
+              modeling projects reported in the geological literature. Despite these trends,
+              undergraduate geology programs have been slow to initiate courses that develop
+              skills in these emerging areas of study and employment. Furthermore, computer
+              science offerings are not geared toward students in the Earth Sciences. This
+              project is developing a course within the geology curriculum to meet the need
+              for instruction in modeling in the earth sciences at the undergraduate level.
+              
+
+This course is making use of the reservoir/flux modeling software
+              STELLA(r), developed by High Performance Systems, Inc., to teach the
+              fundamentals of systems thinking and model construction, with application to a
+              wide variety of geological problems. At the same time, students are learning
+              how to program in the FORTRAN 90 computer language and are learning the basics
+              of the Linux/Unix operating system. The project is adapting modeling which has
+              been done within a number of different research contexts. The course differs
+              from computer methods courses developed by other university geology departments
+              in that it is teaching students computer skills by focusing on computer
+              modeling of geological and environmental problems. 
+
+The final products of
+              this project will include a detailed package of course notes, exercises, and
+              debugged STELLA(r) and FORTRAN programs available free of charge to faculty
+              interested in using these exercises in their courses. Colleagues at other
+              institutions will be made aware of the availability of these exercises through
+              an article in the Journal of Geoscience Education and through presentations at
+              the annual Geological Society of America and/or Council on Undergraduate
+              Research meetings.
+

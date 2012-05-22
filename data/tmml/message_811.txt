@@ -1,0 +1,9 @@
+Jon,
+Thanks; this is pretty much what I thought, but it's good to have it
+confirmed.  One more question (for you or anybody else who cares to
+reply): Would it correct to say that the Chinese Restaurant Process is
+a special case of the Dirichlet process in which the base distribution
+is a uniform, discrete, infinite distribution over the integers (or
+equivalent, any other countably infinite set)?
+thanks,
+Dave

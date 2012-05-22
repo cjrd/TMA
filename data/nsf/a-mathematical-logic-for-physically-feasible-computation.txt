@@ -1,0 +1,31 @@
+              Two years of support are being requested if at all possible. The reason for this
+              is 
+because it is necessary to complete several key steps before submission as
+              a regular 
+proposal.  The first summer is to prepare papers for presentation
+              and/or appearance in 
+conferences and/or journals.  During the ensuing
+              academic year, the intellectual content 
+of this potentially controversial
+              material will be circulated for comment, both publicly in 
+talks and privately
+              among colleagues.  Based on the feedback received, the ideas put forth 
+will
+              be modified and corrected. Only then does it make sense to use the following
+              
+summer to involve an undergraduate student in implementing the salient
+              features of the 
+proposed work for both a greater depth of understanding and
+              demonstration purposes.  
+  By this point in time, that would mean there
+              should be preliminary results 
+appearing in print, with supporting
+              documentation on the web explaining this material.  
+In addition, more capable
+              assistive computing technology will be available by then (to 
+help me overcome
+              my hand disability), so that I might be able to more actively 
+participate in
+              the implementation details of that work.  When all of this is readily in place,
+              
+then it will be possible to submit a competitive regular proposal. 

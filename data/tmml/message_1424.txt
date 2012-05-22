@@ -1,0 +1,11 @@
+Hi Henry,
+The relative probabilities of topics are stored in
+p[i] for i 1 ... T
+you want to sample from that vector.
+Math.random() gives you a float in [0,1),
+and the for loop is meant to check "in which bin"
+the random draw happened to fall in.
+Ivan
+PS: The cool part about Gibbs sampling is that we don't actually
+need to know the exact prob of topic k -- just their relative sizes,
+which saves us from having to calculate the normalization const.

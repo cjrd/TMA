@@ -1,0 +1,19 @@
+Hi all,
+These days I downloaded the CTM codes and tried to run it on my computer.
+( I have redirected the link to local BLAS library). Unfortunately the
+execution of program always halts on some iteration of EM. An example is
+like this:
+***** EM ITERATION 0 *****
+doc     0   lhood -2.11049e+02   niter     5
+doc     1   lhood -8.62415e+02   niter    20
+doc     2   lhood -1.32725e+02   niter     5
+I changed my data by removing some rows and run the CTM program
+respectively, and found that sometime it went through the EM iteration 0,
+but halted on iteration 1. Or it still halted on iteration 1, but can
+print out different number of lines of doc.
+I traced the execution of program and found it halts on a function vset()
+which is implemented by calling the function gsl_vector_set() in GSl
+library. I don't know what happend. Is there anybody who met the similar
+problem before? Any suggestion would be appreciated!
+best,
+Min

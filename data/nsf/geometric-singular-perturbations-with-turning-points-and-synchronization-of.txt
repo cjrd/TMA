@@ -1,0 +1,34 @@
+              NSF Award Abstract - DMS-0071931
+Mathematical Sciences: Geometric Singular
+              Perturbations with Turning Points and Synchronization of Coupled
+              Oscillators
+
+
+Abstract
+
+0071931 Liu
+
+
+
+This project in the area of
+              dynamical systems concerns two main areas of investigation.  First, it
+              investigates singularly perturbed systems with turning points, a class of
+              dynamical systems that occur in applications involving multi-scale physical
+              phenomena. The presence of turning points, where some eigenvalues of
+              linearization along the slow variables change sign, indicates stability loss of
+              the slow dynamic and complicates dynamical behavior.  This project extends
+              geometric singular perturbation theory to classes of problems to which current
+              theory cannot be applied directly.  Second, the project investigates the
+              phenomenon of synchronization in systems of non-identical coupled oscillators. 
+              The main focus is on the effects of diffusive couplings and individual
+              dissipations on synchronizations and their stabilities.
+
+The theory of
+              dynamical systems has application to a wide array of natural systems that
+              change in time, from the transmission of disease to the motion of planets and
+              spacecraft.  This project investigates two open problems in dynamical systems
+              whose solution will advance the theory and as a result allow prediction and
+              control of important natural systems.  Results of the project will have
+              significant impact on the understanding of multi-scale phenomena in biology,
+              fluid dynamics, electrical circuit design, and other areas.
+

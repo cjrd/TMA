@@ -1,0 +1,6 @@
+Hello all,
+I have been playing with Hoffman's online LDA for computing topic distribution of a corpus of size 6544. The main problem is, I am not sure how many passes would be sufficient.
+I crated a toy corpus of 30 documents and 4 explicit topics and for that corpus it took 100 passes to converge to the right distribution.
+How would this scale to a corpus of 6544 documents and 40K words?
+Any ideas?
+Shivani

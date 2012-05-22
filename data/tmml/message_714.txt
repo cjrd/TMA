@@ -1,0 +1,24 @@
+Hi Diane,
+Let me first try to answer why they use a K-1 x K-1 matrix, and not a K x K
+matrix. The problem is that of identifiability. Suppose I have a K dimensional
+Gaussian, and I map it into a K-1 dimensional simplex by exponentiating each
+component, and normalizing. Now under this mapping, two different points in the
+original space could map to the same point on the simplex (in fact, there are an
+infinite number of points in the original space that map to the same point in
+the simplex). Because of this, the correlations computed in the K dimensional
+space would be meaningless.
+If instead, we use a K-1 dimensional Gaussian and fix the K-th component to a
+constant (e.g. 0), then we get a one-to-one mapping between a point in the
+original space and a point on the K-1 simplex.
+One of the repurcussions of this approach, as you correctly point out, is that
+you lose all information about correlations with the K-th topic. Moreover, I
+think even the other correlations are not true correlations (though if you have
+a large number of topics, then the effect of this should be small).
+I don't have a good answer for what you can do if you want correlations for the
+K-th topic as well, but I think one possible way could be to add a fixed
+spurious background topic, which you do not care about in terms of correlations,
+and which doesn't mess up the other correlations (one example might be to use
+the average of the other topics, or if you were dealing with English, the
+average of the topics learnt over a large corpus).
+Thanks,
+Gaurav

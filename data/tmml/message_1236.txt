@@ -1,0 +1,40 @@
+Hi Peng,
+I read that paper also and I was fascinated by the results.
+i.e. topics capture cooccuring words which sometimes look like jargon and
+common terms use in some "subject".
+But also we want the rows of \Phi=p(w|t) to be sparse
+if there is small overlap between the rows of \Phi,
+then it is likely that there is only one topic t which
+has a significant value p(w|t)={t-th row of \Phi, the w-th column}
+so seeing w is "sufficient" evidence for topic t
+What should a topic=p(word|topic) look like?
+Is it a few words that occur a lot
+or a long tail of small but significant probabilities...
+Different values of the prior \vec{\beta} encode our prior belief about what
+topics are like.
+Setting     \vec{\beta} = [1.1   1.1   1.1 ], is like asking for lots of
+topics that are very similar (smooth mixtures around \vec{p}=(1/3,1/3,1/3) )
+Setting \vec{\beta} = [0.1   0.1   0.1 ], is like saying you would rather
+a probability over \vec{p} that is peaked at the corners and on the
+sides of the simplex
+And setting   \vec{\beta} = [0.0001   0.0001   0.0001 ], says you want
+a REALLY sparse
+p \in R^3 ... i.e. the distribution is really peaked in the corners.
+An asymmetric \vec{\beta} says that some words are more likely
+to occur than others, so maybe setting \vec{\beta} to produce
+power law words statistics would be a good idea, though it is a crude
+way of doing this since it affects the whole corpus.
+Define, s = \sum \beta_i, which is sometimes called the //scale// factor.
+The single parameter s is making a statement about how likely each
+word in the corpus is to occur.
+Setting this parameter to small values (s < T) will keep the Dirichlet sparse,
+but won't otherwise bias towards some set of words or another.
+Thus all terms in the vocabulary will be "explored" and much diverse topics
+will be captured in the process.
+Actually, they say, to produce power law word distr,  you can keep
+the \vec{\beta} constant but allow for \vec{\alpha} asymmetric and
+some topics will become "common topics" and other more rare.
+(  This would be interesting to try: What dist. over \Theta do you need to get
+a power law p(w) in the documents, if p(w|t) is trained from
+uniform \beta ? )
+They argue the AS regime is the best of both worlds.

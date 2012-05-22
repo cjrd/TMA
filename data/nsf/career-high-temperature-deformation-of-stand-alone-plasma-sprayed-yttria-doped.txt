@@ -1,0 +1,45 @@
+              Thermal barrier coatings of plasma-sprayed 7 wt.% Y2O3-ZrO2 (YSZ) are to be
+              extensively studied at representative use temperatures (800 degrees C-1400
+              degrees C) using a modified compression test for stand-alone coatings. For the
+              test, the YSZ coating is removed from the substrate to isolate its behavior,
+              and creep testing, stress relaxation, and fast fracture experiments will be
+              performed. In addition to mechanical testing, we will use the following
+              characterization methods for the proposed work: dilatometry, transmission
+              electron microscopy, X-ray diffraction, Raman Spectroscopy, and laser flash (to
+              measure thermal conductivity). Each method listed will provide the necessary
+              information to interpret the mechanical testing results. Thus, the principal
+              output of this research will be structure-property relationships of
+              plasma-sprayed YSZ in simulated operating environments. This will involve
+              establishing deformation mechanisms as a function of temperature, stress, time,
+              and sample microstructure (i.e. porosity and lamella size). This program will
+              also establish a foundation for a lifetime of educational excellence through
+              curriculum development, outreach, and mentoring. To increase non-majors
+              participation in materials classes at Purdue, web-based modules will be
+              designed that directly relate materials science applications to each of the
+              engineering majors, and then incorporated into the introductory materials
+              course. Beyond the activities at Purdue, an outreach program for science
+              students at Jefferson High School (JHS) in Lafayette, Indiana will be
+              established. In this program, high school juniors will spend 8 weeks of the
+              summer with our research group, then continue their research in the fall and
+              spring of their senior year through an established research based science class
+              at JHS. There will also be a significant undergraduate mentoring component in
+              the proposed work through support of a Purdue MSE undergraduate student every
+              fall and spring semester of the program, as well as a Research Experience for
+              Undergraduates (REU) student every summer.
+
+Virtually every commercial and
+              military aircraft flying today uses thermal barrier coatings (TBCs) to protect
+              the metallic structure of its gas turbine engine(s) from temperature extremes
+              and/or to allow the engine to be operated at higher, more efficient
+              temperatures. In addition to the transportation sector, the energy sector also
+              relies on the efficiency boosts TBCs provide industrial gas turbines (IGTs) as
+              they produce electricity. While the benefits of TBCs result in significant cost
+              savings in these and other sectors, there are still many aspects of TBCs we
+              don't understand. For example, they often shrink, crack and even detach from
+              the underlying metallic structure during elevated temperature service. Thus,
+              basic research into their high temperature mechanical properties will allow us
+              to fully utilize the benefits of using these coatings. At its most fundamental
+              level, then, this proposal focuses on determining the material properties that
+              govern how well TBCs "work" while they are in service and will serve as a basis
+              for designing next-generation TBCs. 
+

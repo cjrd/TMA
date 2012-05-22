@@ -1,0 +1,9 @@
+Hi modelers,
+Now that the major summer ML and NLP conferences have sent out
+acceptances, I'd like to update the topic model bibliography. Please
+send me either bibtex or better yet the XML format I use
+(http://www.cs.princeton.edu/~mimno/topicbib.xml), and I'll try to add
+as many as I can.
+Papers I've missed from previous years are welcome too, as are
+implementations and tutorials.
+-David

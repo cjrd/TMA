@@ -1,0 +1,183 @@
+
+So now, we're going to look more closely
+into the belief propagation algorithm, and
+understand some of the improper, important
+properties that it has. So here is our
+example cluster graph, with the four
+clusters over the loop. And now, let's
+remind ourselves that the cluster beliefs
+are defined to be the product of the
+cluster, of the factors assigned to the to
+the clusters, psi 1 up to
+psi 4, times the product of the
+messages that were incoming into the
+clusters. So for example, the beliefs over
+cluster one is psi 1 of AB times the
+message coming in from cluster four, whose
+scope is A and the message coming in from
+cluster two, whose scope is B. Now, a
+cluster graph is said to calibrated. If
+the clusters agree with each other. So
+specifically, if, in terms of their
+beliefs, beta i, if we were to ask cluster
+one what it thinks about, say, a variable
+B. And we were to ask cluster two what it
+thinks about the variable B, they would
+agree with each other. Formally, this says
+that if we marginalize out the belief that
+say, cluster I. And marginalize out the
+beliefs in cluster J. And we asked them
+what they agree about their joint
+sepset. Sij, they would agree
+with each other in terms of the, marginal
+beliefs. Now, an important property of
+cluster graph, belief propagation, is that
+convergence of the belief propagation
+algorithm implies calibration. So to
+understand why that's the case, let's, go
+through a simple derivation. So the
+convergence of belief propagation occurs
+when the message at the next time step
+equals the message at the previous time
+step. So, now let's see what the
+implications of that are. So, if this is
+the, message at the next time step, it's
+computed as, the product of the.
+psi i's, which are the factors
+assigned to the, to the cluster i, times
+all of the messages. Other. Except for.
+Cluster j. And those are all multiplied
+together and marginalized out over the
+sepset. So now let's remind ourselves of
+what the beliefs would be at this point in
+the process if you were to compute them.
+And that's derived from this expression
+over here. So this is the same psi i that
+we have over here and this is the product
+of all messages. So if this, if here, we
+have the product of psi i, and all messages
+except one. And here we have psi i and all
+messages, we can equally well rewrite it
+in this form over here, where we multiply
+in all of the messages, and then divide
+out the one that wasn't included, delta j,i
+So now, because of convergence, we
+have that this is equal to, this is equal
+to delta ij, because of this equality over
+here. And so if we rewrite that, we can
+see that we have that delta ij times delta
+ji is equal to this summation over here.
+Because we can multiply delta ji on the
+right hand side by delta ij on the left
+hand side. So we have shown that delta ji
+times delta ij is, is effectively the
+marginal over the beliefs at that point in
+the process. But we can equally well using
+the identical argument, show that delta ji
+times delta ij is also the marginal over
+the beliefs for cluster J. So if this is
+the beliefs for cluster I. This is the
+beliefs for cluster J and so and, but
+we've shown that in both cases. The
+marginals are equal to the same
+expression, which is the product of the
+messages on both sides of the link. And so
+because both expressions are equal to the
+same thing they must be equal to each
+other and this is exactly the calibration
+property that we were trying to prove. So
+we've shown the convergence of the belief
+propagation algorithm implies calibration.
+This expression, which corresponds to the
+sepset beliefs. Cuz it's the marginal over
+the cluster beliefs is called mu I j. And
+it's an expression that we'll use a little
+bit later. In particular, one of the
+important properties that we get by
+putting these pieces together. Is another
+property called reparameterization. Now that's a
+bit of a mouthful. Let's first do the
+derivation and understand what the word
+means. So remember that as we run belief
+propagation it'll be evident that we have
+these beliefs over the clusters. Which are
+defined in this expression. So,
+specifically for example we have for
+cluster one we have would have psi1
+times delta 4-1 times delta 2-1 and
+similarly for these other clusters. We
+also just now defined these cluster, these
+sepset beliefs. Which are, which we've
+just shown are a product of two messages
+on the two differ-, going in each
+direction. So, specifically here we would
+have, for example that mu of one two is
+equal to delta one two times delta two
+one. Now if we look at this graph, with
+all these, all these little factors
+attached to the clusters and the sepsets,
+we see that there's a lot of repetition
+here. So delta 4-1 appears, for example,
+here, but it also appears there. And, in
+fact, if we look at it, we see that each
+of these expressions appears, each of
+these message expressions appears exactly
+twice. So Delta 4-1 appears here and here.
+And, for example, delta 1-2 appears here
+and, and here. And so if we write all of
+these together in, in a different form, we
+can see that we, if we multiply all of the
+beliefs and divide by all of the sepsets.
+We would end up with multiplying in delta
+four one, for example, on the on the
+belief side but then canceling it out when
+we divide by nu one comma four. And
+similarly delta one two would be
+multiplied in on. In terms of beta two,
+but then canceling out in the denominator
+in Mu one two. So, if we wanted to write
+this in a little bit of a broader,
+setting. So if we have a product of the
+beliefs over here, multiplied, and then
+divided by a product of all of the
+sepsets, we can see that this numerator is
+equal to the product over i, of psi i,
+times the product of all of the incoming
+messages into clique i. The denominator is
+simply equal to the product of all of the
+messages on each direction. And we can see
+that, here, we're just counting the same
+message in two different ways. And so,
+each message appears once in the numerator
+and once in the denominator, which means
+that they all cancel with each other. And
+so what we end up with is the product of
+all of the initial potentials psi i. And
+that product is simply the unnormalized.
+Measure. And so. The implication of this
+is that this expression over here. This
+ratio is simply a different set of
+parameters that captures the original
+un-normalized measure that defines our
+distribution. And so we haven't lost
+information. No information lost. As, as a
+result of belief propagation algorithm.
+The representation of the unnormalized
+measure is still there just using a
+different set of parameters, specifically
+the cluster sepsets, the cluster beliefs and
+the sepset beliefs. So, to summarize.
+We've seen that, at convergence of belief
+propagation. The cluster graph beliefs all
+agree with each other on the variables
+that are shared among them. And as a
+consequence of that, the cluster graph
+beliefs are simply an alternative
+parameterization of the original
+un-normalized density. But one that has
+this nice calibration property, which
+allows us to read, off information, about
+a variable from any clique in which it
+appears. And so, we have reparameterized
+the original distribution into a more
+convenient and easily usable form.

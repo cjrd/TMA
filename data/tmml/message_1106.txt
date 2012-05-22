@@ -1,0 +1,9 @@
+Hi -- the reason for this is complexity, as explained in Dave Blei's JMLR
+article. PLSA is "just" learning the associations using empirical distributions.
+For LDA, the "relaxation" to the lower bound in variational EM is the analogon
+to this. There have been several evaluations comparing several methods (e.g.,
+Ascuncion et al. 2009, UAI), and I think also some results were presented at the
+NIPS conference. Laplace and higher-order variational may indeed be nice to have
+in a comparison.
+Best regards
+gregor

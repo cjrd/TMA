@@ -1,0 +1,19 @@
+              This Small Business Innovation Research (SBIR) Phase I project addresses the
+              need for a non-vacuum deposition approach for contact layers in CdTe solar
+              cells.  While sputtering is at present successfully employed, the objective of
+              this project is the development of a nanoparticle ink that could be used to
+              print submicron thick Te thin films.  To date, Te inks produce non-uniform
+              coatings owing to particle agglomeration.  The research objective of this
+              project is the formulation of a Te ink composed of dispersed, nonagglomerated
+              Te particles with diameter less than 50 nm.  The efficacy of this ink will be
+              demonstrated by fabrication of CdTe solar cells as follows.  First, the Te ink
+              will be sprayed onto the CdTe layer of a solar cell heterostructure.  Then,
+              this green body will be subjected to a thermal treatment.  Finally, the solar
+              cell will be finished by deposition of an opaque electrode.  Characterization
+              will be performed on the ink, the sprayed layers, and the finished CdTe
+              devices. 
+
+ If successfully developed, it is anticipated that this research
+              would be translated to a production-sized (i.e., 100 megawatt) CdTe solar cell
+              facility through the industrial subcontractor of this project.
+

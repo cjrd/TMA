@@ -1,0 +1,9 @@
+hi all
+indeed, it was the "go to" distribution for counts and didn't matter
+for the algorithm that we developed in the paper.
+that said, it seems that document length---and what it means for the
+distribution of words within a document---could make a difference in
+estimating the topics.  see, for example, doyle and elkan's excellent
+paper "accounting for word burstiness in topic models."
+best
+dave

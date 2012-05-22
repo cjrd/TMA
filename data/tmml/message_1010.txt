@@ -1,0 +1,2 @@
+Quoting Matt Hoffman <mdhoffma at CS.Princeton.EDU>:
+Python has matrix multiply built in? Or are you using a C language library?

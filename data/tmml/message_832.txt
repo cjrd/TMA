@@ -1,0 +1,3 @@
+Dear All:
+LDA assumes that the topic can be interpreted with a collection of word distributions. In many times, we may have trouble in interpreting the real means of these topics. So I'm wondering if there's a possibility to extract proper readable phrases/sentences from the documents to further label the topic. Any previous works have been done on this subject?
+Thanks a lot.

@@ -1,0 +1,22 @@
+KeMing,
+1. Yes, you could learn LDA-like topic models without time and
+analyze topics you learned with regard to time in a post-analysis
+manner (see an example in Griffiths and Steyvers, Finding Scientific
+Topics), but we want to study the dynamics of topic more
+systematically, i.e., putting time into the modeling part. TOT and
+DTM are two examples of this kind of effort, but the TOT model
+utilizes time differently from state-transition based models (such as
+DTM, cDTM, etc.). In all these models, topics discovered are
+influenced by both word co-occurrence and the temporal information.
+2. Other distributions could be used. The Beta distribution was used
+based on several observations/intuitions: a) we don't want to
+discretize time, and want a continuous distribution; 2) double-
+bounded; 3) versatile enough to have different shapes/trends; and 4)
+easy to parameterize, for inference convenience. If your time stamp
+was discretized already, then you could relax a) if you prefer, for
+instance. TOT model just shows that you can use time simply as a
+continuous random variable. Similar ideas have been explored in other
+papers as well, such as mixed membership model and supervised LDA.
+Hope that the above explanation could help.
+Best,
+Xuerui

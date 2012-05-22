@@ -1,0 +1,6 @@
+Dear Roi,
+I think you might want to have a look at "Nonparametric Bayes Pachinko
+Allocation" by Li, Blei, McCallum.
+http://www.cs.umass.edu/~mccallum/papers/npbpam-uai2007s.pdf
+Best,
+Laura

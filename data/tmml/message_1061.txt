@@ -1,0 +1,10 @@
+All,
+Our group is using the Mallet implementation of LDA for document analysis and one thing that we find inconvenient is having to choose the number of topics.  From what I've been able to fine, Hierarchical LDA seems to be what we are looking for.  However, I've noticed that there doesn't seem to have been much work done on HLDA in a while.  Is that because it's a solved problem and research has moved on, or because it's been replaced by something better?   Any assistance or pointers to the literature would be greatly appreciated.
+Mike
+Michael Matsko
+Associate
+Booz Allen Hamilton
+Office: 703-465-5751
+Fax: 703-525-3754
+Cell: 703-516-9789
+matsko_michael at bah.com

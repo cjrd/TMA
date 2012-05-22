@@ -1,0 +1,15 @@
+              
+	The goal of this project is to explore mechanisms of signaling to the
+              microtubule (MT)-based-cytoskeleton.  Doublecortin (DCX) is a novel microtubule
+              associated protein  (MAP) and is the major gene mutated in X-Lissencephaly and
+              Subcortical Band Heterotopia (X-LIS /SCLH), a severe disorder in neuronal
+              migration during development of the cerebral cortex.  Doublecortin kinase 2
+              (DCK2) is a chimeric protein with a domain highly related to that of DCX fused
+              to a protein kinase domain related to calmodulin-dependent protein kinases. 
+              The goal of this project is to investigate the functional effects and role of
+              phosphorylation in the interaction of DCK2 with the MT-cytoskeleton, and to
+              test the hypothesis that cellular events such as the establishment of neuronal
+              polarity and neuronal process extension may be dependent upon rapid modulation
+              of MT dynamics due to reversible signaling to and from members of the DCX/DCK
+              family of proteins.
+

@@ -1,0 +1,22 @@
+              
+This Small Business Innovation Research (SBIR) Phase 1 project will
+              demonstrate the capability of a universal solvent set concept to reduce the
+              environmental and health impact of solvents used in the construction of fuel
+              cells and printed wiring boards, without significantly increasing cost or
+              reducing performance. The key objectives involve (1) development of solubility
+              maps for mixtures of solvents using only the solvents and solvent mixtures
+              contained in the proposed universal solvent set (2) Formulation of trial
+              precursor solutions derived from the solubility maps (3) Screening of the trial
+              formulations for desirable characteristics (thermal stability, ease of
+              atomization, shelf life, low nozzle buildup) (4) Performance of trial thin film
+              depositions to produce sample fuel cell catalyst membranes and resistor
+              materials for printed wiring boards and (5) customer evaluation of fuel cell
+              and resistor material samples.
+
+The proposed work will facilitate creation of
+              environmentally friendly precursor solutions that will have impact in the fuel
+              cells and embedded passives industry and, in particular in the combustion
+              chemical vapor deposition process which is enabling next generation products in
+              electronics, advanced energy, and broadband.
+
+

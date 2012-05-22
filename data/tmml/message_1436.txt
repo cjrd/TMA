@@ -1,0 +1,5 @@
+There was a good discussion about this a few months ago:
+https://lists.cs.princeton.edu/pipermail/topic-models/2011-April/001297.html
+See here for the beginning of the thread:
+https://lists.cs.princeton.edu/pipermail/topic-models/2011-April/001286.html
+Steve

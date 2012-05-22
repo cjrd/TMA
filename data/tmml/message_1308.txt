@@ -1,0 +1,10 @@
+Hi, all
+I am looking for a twitter dataset with respect to both the 'following'
+relations and tweets content.
+I downloaded the Stanford twitter dataset and KAIST's twitter data (
+http://an.kaist.ac.kr/traces/WWW2010.html), however, the former only
+contains contexts of tweets while the latter one only contains social
+relations among twitters. Is there any dataset containing both relations and
+contexts of tweets?
+Thanks
+Zach.

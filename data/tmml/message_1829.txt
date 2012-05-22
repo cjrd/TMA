@@ -1,0 +1,3 @@
+Hi IIya,
+There are lots of different implementations of LDA.
+Just try a google search on "LDA code"

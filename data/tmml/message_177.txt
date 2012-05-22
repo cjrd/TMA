@@ -1,0 +1,27 @@
+Hi Yi --
+yes, it is necessary to do run the Gibbs sampler because you need to
+predict the association of topics to each of the word tokens of the test
+data, which cannot be expressed in closed form. In other words,
+calculating perplexity corresponds to querying the collection (Eq. 92 in
+the LDA primer).
+Empirically, for collections with document numbers M<=10000, sizes
+N<=1000, and topic count K<=200, training with  10-50 iterations already
+seems sufficient if the training corpus is at least 10 times smaller
+than the test corpus (note that if W_test << W_train, you can train all
+test documents at once). For single documents, 10 iterations are fine.
+Note that you don't need to run the Gibbs sampler over the training
+documents.
+These figures might be different depending on the semantic
+"distribution" properties of the particular corpus. A straight-forward
+test may be to check how the likelihood of the test documents changes
+(Eq. 104) between query iterations (you need to calculate this for
+perplexity, anyway).
+(Also, you could check how a known document from the training data set
+approximates its known theta_m, but then overfitting must be ruled out
+first, i.e., that the model does predict new documents much better than
+new ones.)
+I'll make the query character of perplexity calculation more explicit in
+the next version of the LDA primer.
+Best
+gregor
+Yi Wang wrote:

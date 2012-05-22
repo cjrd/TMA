@@ -1,0 +1,523 @@
+
+We previously described the problem of
+bayes net structure learning as an
+optimization problem, where we separated
+the problem into two pieces. One is
+defining a scoring function, and the, the
+second is coming up with an algorithm that
+optimizes that scoring function. We talked
+about how the optimization problem can be
+solved in the case where we're trying to
+learn a network structured as a tree, or
+rather, a forest. Where each variable has
+its most [inaudible] parent. But what
+about the more general case, where we are
+trying to learn an unrestricted network,
+or perhaps one that has weaker
+restrictions than simply a tree. So how do
+we address that problem? So first as a
+reminder our input is a training set. A
+scoring function, and some set of possible
+network structures. And, the output, the
+desired output, is some kind of network
+structure that maximizes the score within
+the set of families that, structures that
+we're willing to consider. So what happens
+if we try to solve this optimization
+problem in the case where the network,
+restricted network structure is not the
+class of trees? Well, in the context of
+trees we could apply a simple greedy
+algorithm for finding the maximum weight
+spanning tree. But when we have a more
+general network, even ones where we allow
+at most two parents per node, this greedy
+algorithm that builds up a tree no longer
+works. It's no longer guaranteed to find
+the optimal scoring network. Now, in fact,
+it turns out to be not surprising that
+this, that this simple algorithm's not
+going to work, because of the following
+theorem. The theorem states that the
+problem of finding the best network, the
+one that has the highest score with, at
+most, K parents, is an empty hard problem
+for any K bigger than one. So for K=to
+one, we're back in the context of trees
+are forests, and we have the [inaudible]
+time algorithm. But even for K=2, the
+problem turns out to be empty hard. And so
+no efficient algorithm is found for this
+problem. So what do we do? It turns out
+that the standard solution is some kind of
+heuristic hill climbing search. So we have
+a current network, which is the one that
+we're trying to improve. And we'll talk
+later about where we start this process.
+And now we look at different changes that
+we could make to this network. So we can
+consider, for example, making local
+perturbations that may or may not improve
+the quality of the network, relative the
+score, what we see here. This bar
+represents the score. So for example, this
+transition adds an edge from B to D. And
+we can see that here that turned out to
+improve the score because this bar as we
+see is larger than this bar. We can
+consider other changes. For example, this
+transition removes the edge from B to C
+and also gives rise to a slight
+improvement in the score, but not as large
+as the one where we added the edge from B
+to D. On the other hand, reversing the
+edge from B to C. Which is this
+transition, gives rise to a decrease in
+the score. And so we can look around us,
+and see which changes to the network
+improve the score and which ones don't.
+And then, probably try and go in the
+direction that generally improves the
+score. There are two main design choices
+that one needs to decide on when doing a
+heuristic search algorithm. The first is
+the set of operators. That is, the set of
+steps that we can take in perturbing one
+network to the other. So, for example, in
+the, in the example that we just saw, we
+were taking local steps. We were adding
+edges, deleting edges, or reversing edges.
+And these are fairly small perturbations,
+[inaudible] network. There's also out
+rhythms that use much global steps. Where
+we've taken entire node. Out of the
+network and stick in it somewhere else.
+And that's the larger step that is more
+costly. But also takes larger moves in the
+space of networks. So this is one step of
+design choices. The second set of design
+choices is with search technique, we end
+up using. So, do we do what's called
+[inaudible] climbing? Where we just try to
+climb up as quickly as we can. Or do we
+adopt a different type of local
+communitorial search arrhythmia where
+there are many different kinds. Some of
+which are listed here. And there are many
+others, and we're not going to talk about
+those. Very much. So let's start by
+talking about greedy hill climbing, which
+is the basis for most of the bayes net
+learning algorithms that are in use today.
+So, how does greedy hill climbing work? We
+start with a given network initially.
+Often, this is just the empty network. And
+the reason for starting with the empty
+network is that it induces sparsity. We
+don't have too complicated a network, and
+one's likely to over fit. We could also
+start with the best tree, which we get
+from one of the efficient tree learning
+algorithms that we talked about. We could
+also start with a random network. This is
+a way of, exploring the space more
+broadly, instead of starting out from a
+fixed starting point; we can start from a
+multiple random starting point. Or, in
+cases where we have an expert that has
+some knowledge of domain, we might use
+prior knowledge in order to initialize the
+process. Having initialized, we now
+iteratively try and improve the network.
+So we consider the different stuffs that
+we can take base on the operators that we
+define as being legitimate and then, for
+each of them we consider the score that we
+obtain from all possible changes. And then
+we apply the change that most improves the
+scores. So this is the greedy component.
+That is we look at all possible changes
+and we greedily pick the one that improve
+the score. That gives us a new network,
+which we can now again update by, again,
+considering possible next step changes
+that we could apply to this new network.
+And this process continues until we get
+stuck, that is, when none of the m,
+modifications that we have at our disposal
+improves the score. And when that happens,
+we are at what's called a local maximum.
+That is a place in the space of network
+where no change gives rise to an
+improvement in this work. What are some of
+the pitfalls of this greedy hill climbing
+process? Well, the first is that this
+local maximum is potentially a local
+maximum. That is, one that is not the
+global maximum. So if we pictorially draw
+the space of, of possible networks, see
+we're going to draw it as continuous even
+though it's discreet, what we have is sort
+of a space that looks like this. And if we
+start out from a point over here and we
+just take small hill climbing steps, we
+might end up at a position that is a very
+poor local maximum compared to the global
+maximum. Which could be considerably
+better. And this is quite common in the
+kind of communitorial search that we use
+in this, in this type of situation. A
+second problem is what's called a plateau.
+The plateau if we go back to this kind of
+visualization that we have here, is a case
+where looking around us. There's a whole
+bunch of networks that are all effectively
+the same score. And while some of the
+directions might give rise to, eventually,
+after a certain number of steps to a hill,
+others might not. And the problem is that
+we don't know which direction to go.
+Because they all look exactly the same in
+terms of the score. This happens quite
+often in the case of Bayesian network
+structure learning, because whenever you
+have a network, for example, like this.
+Other networks that are equivalent to
+them. For example the one where we just
+reversed, this edge and we have a, a
+parent that has two children as a opposed
+to a chain. This network is equivalent. To
+this one, I equivalent. And therefore,
+it's going to have the same score. And in
+general, you are going to have a lot of
+neighbors when you have more complicated
+graphs. A lot of networks that are
+equivalent, and therefore, have the same
+score. And moving around between them,
+it's not clear which of those is going to
+eventually give rise to a move that breaks
+us out of the plateau, into a net-, into a
+network that actually has a higher score.
+So these are significant issues in terms
+of using [inaudible] search for optimizing
+the score. [sound] The issue of, of local
+maximum plateau also relates to the
+question of search operators that we use.
+And we talked about edge addition, edge
+deletion and edge reversal. And the
+question that one might ask is why on
+Earth would we need edge reversal, because
+after all edge reversal can be sub-tuned
+by an edge deletion and then an edge
+addition. So why do we need to add a whole
+new set of operators into the pool that we
+have to evaluate. So this, it turns out,
+has to do with the greedy nature of our
+search. So to understand that, let's look
+at. This example. Let's assume that this
+is our graph, G star, that generated the
+data. And, now let's assume that we're
+going to try and learn a network from this
+dist, from the distribution derived from
+this graph. And, so, here we have.
+Initially our empty network which we're
+going to start out with and we have two
+strong correlations in this network, the
+one from between a and c and the one
+between b and c. And let's say that we
+pick the one between b and c as being
+stronger and therefore we're going to add
+it first, but now there is complete
+symmetry between the edge that might go
+from c to b, and the edge that might go
+from b to c. These two networks are
+equivalent. And they're going to have the
+same score. And so we can arbitrarily
+choose the edge that goes from c to b
+because it's as good as the other one. Now
+that, that edges in, we might go ahead add
+another one. Say, we're going to add the
+edge from a to z, and the question is, now
+what? The entrance c to d is wrong, and we
+really like to reverse it. But if we don't
+have a reversal operation, the only way to
+do that would be to remove that edge. And
+then add in the edge in the other
+direction. But removing that edge is going
+to cost us a lot in terms of score,
+because this was a really good edge. In
+fact it was the first one that we added.
+So removing it is going to cause a hit in
+terms of the score, and it's going to be a
+suboptimal move. It's not going to be a
+green move. And so if we don't have an
+edge reversal operation, this red network,
+the one that has the edge from A to C and
+the edge from C to B is now going to be a
+local maximum. And we're not going to be
+able to break out of it by looking just
+greedily within one step unless we have an
+end reversal step. So as reversal is a way
+of avoiding these very common local
+maximum. But it doesn't address all local
+maxima. Specifically, not the bigger ones
+that, that we've also discussed. So, what
+is the algorithm people typically use for
+addressing the, this problem without
+falling into this local maxima
+[inaudible], that frequency? So it turns
+out that a pretty good simple algorithm is
+the following: we do use greedy
+hill-climbing, but we augment it with two
+strategies that are attempts at avoiding
+local maximum plateau. The first is what's
+called random restarts, which is if you're
+climbing up and you get stuck; you take a
+certain number of random steps. And then
+starts climbing again. And the hope is
+that if we're at a local maximum that's
+fairly shallow then the small number of
+random steps will move us into the
+attraction are of a better maximum and we
+will continue to climb to a better
+optimum. A second strategy which is useful
+for both local maxima and cleptos, is
+what's called the Tubules. A tubules is a
+way of avoiding the same round over and
+over again. So here we have a sets of
+stats that we have taken, for example
+adding an edge from a to b. Or deleting an
+edge from c to d. And these are the steps
+that we recently taken. We keep a list of
+the k stuffs that we recently taken, and
+we constrain our search that it cannot
+reverse any of this stuffs. So
+specifically, if add a to b is on our
+list, then on our tubules we have that
+delete. The edge from A to B is not
+something that we can do while the add
+step is still in the list of the k most
+recent steps. And that forces us to make
+forward progress rather than doing the
+same step, reversing it, trying a
+different version of it, reversing that
+and that turns out to be helpful both in
+avoiding local maximum as well as making
+some progress in the context of plateaus.
+So how does [inaudible], how well does
+this work in practice? Let's first look at
+a synthetic example. This is the icu alarm
+network that we've seen before in the
+context of basnet parameter estimation.
+And what we see here are two learning
+scenarios. One in the blue line down here
+is learning parameters only. With the true
+structure given and the green line. Is
+where we're trying to do both parameters
+and structure at the same time, so trying
+to learn both. [sound]. And we can see on
+the x axis the number of theta instances m
+and on the y axis the distance between,
+the distance measured as kl divergents or
+relative entropy between the learned
+network. And the true network. And what we
+can see here is that, it's certainly the
+case that when we're trying to learn only
+parameters, we do better, at least
+initially. That is, for small numbers of
+samples, the case where we have the true
+network performs better in terms of
+learning and, distribution that's close to
+the right one. But as we get more and more
+data. Even with as few as around 2000
+samples, we're actually pretty close in
+performance. Now, this is very promising,
+because it says that the structure
+learning problem is not intrinsically that
+much more difficult than that of parameter
+estimate-, that of parameter estimation
+alone. Now. This result however should be
+taken with a grain of salt because the
+problem of learning from synthetic data,
+which is what we have here. This is data
+that is generated from. The network is
+actually easier than the problem of
+learning from a real data set, because
+synthetic data has a much clearer and
+stronger signal about the correlation
+structure than real data, and so the dis,
+so the, the performance here is probably a
+little bit misleading in terms of our
+ability to learn the network structure
+correctly when the when we don't have.
+When the data is not quite as nice as
+synthetically generated data. However,
+there is a lot of applications where even
+with real data [inaudible] structure
+learning has given significant advantages.
+One of those is this application from
+Microsoft research which aims to learn, to
+recog-, to predict where traffic jams are
+going to take place as well as where we
+might have surprises in terms of having
+less traffic or more traffic than normal.
+So here the idea is that we have some
+number of sensors on certain major
+freeways, and we know for example that
+certain areas of the freeway have a lot of
+traffic, other areas have less traffic,
+and we're trying to use that data to
+predict parts of the road system that
+don't have these sensors observed in them,
+as well as to predict how the traffic
+would look in 30 or 60 minutes. So, in
+particular, we'd like to predict, for
+example, parts of the road where, there's
+going to be, more traffic than we expect.
+So predicting a surprise, as well as, a
+good surprise, such as less traffic than
+we expect. So this is a used scenario
+where there is some amount of prior
+knowledge but it turns out that expert
+knowledge is not really adequate for
+understanding how different sources of
+information, different pieces of the road
+system are intertwined with each other and
+much better performance was derived by
+learning a Bayesian network structure from
+data that shows how these different,
+different accident reports, different the
+hour of the day and. Different areas in
+the freeway system are related to each
+other. And we can see that some of the
+correlations that were learned may not be
+quite as obvious as a human might have
+inferred. So for example the influences on
+this. Traffic in location fifteen. The
+most significant factors are the ones
+marked here in four, eleven and seventeen.
+And you might not have necessarily
+predicted that something that's all the
+way across the bridge in Seattle is the
+most indicative factor on this particular
+prediction problem. And so much better
+performance was derived by applying
+learning techniques to this problem. A
+very different application of structure
+learning is in the context of this
+application, which aims to do scientific
+discovery. In this context, a data set was
+acquired that measures for different
+proteins in a cell, the level of those
+proteins. And this was done at the level
+of single cells, so there were tens of
+thousands of measurements, each one
+corresponding to a protein profile in, in
+an individual cell. Now the goal from this
+experiment was to discover the control
+mechanism of how the level of one protein
+can influence the level of another. So to
+learn, for example, that a change in the
+protein level of some, of a protein such
+as PKC can influence the level of a
+protein called PKA, and the level of a
+protein called RAF, as part of the
+regulatory network of a cell. So the
+dataset was acquired and basic network
+learning was applied to this problem in
+order to try and understand this
+regulatory network within a cell. And what
+we see here are the edges that we learn by
+the by the basic network algorithm. And we
+can see that many of the edges
+specifically all the once that are mark in
+blue, where once that where known in
+literature before. Now, well that may seem
+perhaps less interesting to be discover
+something that was already known, this is
+an important validation for the basic
+network algorithm be. 'Cause it shows us
+that the network is learning something
+valuable and correct. And furthermore, it
+shows that, in a single experiment,
+Bayesian network learning applied to the
+right kind of data can reconstruct a
+cellular network that took biologists
+many, many years to put together. Now, not
+all of this is right. So for example this
+pink edge over here is an edge that was
+learned in one direction and really
+should've been learned in the other
+direction. That is, it's reversed relative
+to our current biological understanding.
+And some other edges, specifically the
+ones that are these dashed lines, for
+example this one, or that one or that one,
+were omitted from the network, that is,
+they should've been there but were not
+correctly learned. So this is definitely
+not perfect, but nevertheless it's a
+surprisingly impressive success story in
+the context. So taking just a single data
+set and reconstructing many years of a
+learned biology. What's also important is
+that some of these edges that were learned
+and these two red ones. We're one
+[inaudible] that had very weak support
+from the literature that is they were
+known to exist in a different cell type
+then the B cells in which these data were
+acquired that [inaudible] were not known
+to exist in B cell, and one of these,
+specifically this one was subsequently
+tested in a wet lab and found to be true
+in B cell as well, so the network reveal
+to biologist a connection that had not
+previously been establish in the context
+of B cell, and turn out to be of important
+because it [inaudible] to what?s called.
+Talk or communication between two
+different biological pathways. And so this
+is a very nice example of how Bayesian
+network structured learning can be used in
+this different paradigm. Where not only do
+we not necessarily have expert knowledge
+and we want to improve performance, but
+rather discovering the network structure
+is a goal in and of itself. To summarize,
+the [inaudible] network structured
+learning is a useful tool for building
+better predictive models. When the
+[inaudible] experts don't know the
+structure and that can be useful both for
+making predictions about new, new
+instances but also as we saw in this most
+recent example for knowledge discovery as
+well. So, for these very two different
+purposes. We've shown that in general
+finding the highest scoring network
+structure outside the context of forest or
+trees is a empty heart problem. And that,
+that is typically used, solved using
+simple heuristics search. And most
+commonly, this is done using local steps
+that modify the network using small local
+perturbations, such as edge
+addition/deletion, or reversal. And in
+order to avoid, the local, optima that one
+would get from this, we, typically use.
+Not just simple hill climbing but modify
+that using both taboo lists that avoid
+sort of undoing recent changes as well as
+random restarts so as to explore different
+parts of the space. While this is a
+surprisingly successful strategy, it turns
+out that there are actually much better
+algorithms out there that make much larger
+changes in the space simultaneously. These
+are computationally more expensive are
+harder to implement, but can make much
+larger moves in the space and therefore,
+especially for large spaces where the
+signal isn't immediately clear, can find
+better structures than a simple reading

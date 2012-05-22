@@ -1,0 +1,16 @@
+Hi all,
+I am currently working on a project in which we assume that a user's
+knowledge of a subject matter domain can be characterized as a distribution
+over topics and then use LDA topic modeling to attempt to infer changes in
+knowledge as they engage in reading over the web. We then validate the
+predictions of the model against observed pre- and post-test scores.
+I've read much of the well-known LDA work, but I was curious if anyone had
+any pointers to work/papers that specifically are looking at modeling latent
+knowledge using topic models (or other probabilistic models). I've been
+searching a great deal, but I am unsure if I am missing some important work
+or if this specific angle hasn't been well-explored. Perhaps the closest
+thing that I've seen so far are that attempt to infer things such as
+political preferences using topic model similarity to reference texts (e.g.
+Das 2009 and Yano 2009).
+Thanks!
+-Sanjay Kairam

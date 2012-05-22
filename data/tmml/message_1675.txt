@@ -1,0 +1,9 @@
+Dear All,
+Can anyone please share any code for the paper "Hierarchical Relational
+Models for Document Networks"?
+Thanks,
+Ayan Acharya
+(Graduate Student,
+Electrical and Computer Engineering,
+University of Texas at Austin, USA
+Webpage: http://www.ideal.ece.utexas.edu/~ayan/)

@@ -1,0 +1,80 @@
+CALL FOR PAPERS (with apologies for cross-posting)
+International Journal of Web Science  (IJWS) Special Issue on Social
+Web Search and Mining
+Main submission deadline: June 1st, 2012
+http://www.inderscience.com/browse/callpaper.php?callID=1796
+AIMS AND SCOPE
+Recent years have seen a flourishing of social media. Across the
+world, individuals can share news, opinions, experiences and expertise
+through Web-enabled devices, including desktops, laptops, tablets and
+mobile phones. There has been a fundamental shift thanks to
+significant advances in the ease of publishing and sharing content.
+Such examples include microblogs, blogs, bookmarking services, photo
+sharing platforms, forums, newsgroups, and location-based services.
+They have formed a new Web: social Web, which generates a lot of
+structured and semi-structured information. This information greatly
+enlarges the content of the Web. At the same time, it introduces many
+interesting research issues as well many real-world applications.
+These research issues have been receiving growing attentions in recent
+years.
+The aim of this special issue is to collect contemporary works
+concerning searching and mining the Social Web. The context of the
+special issue can be related to a wide range of areas including Web
+mining, social networks analysis, semantic Web, information retrieval,
+and natural language processing. We invite researchers and
+professionals from a broad range of disciplines to submit to this
+issue. Papers may encompass any or all of the following types of
+works: theoretical analysis, modelling, algorithms, simulation,
+visualisation and empirical studies.
+SUBJECT COVERAGE
+Topics of interest include but are not limited to:
+Microblog (e.g. Twitter, Weibo) search and mining
+Social network analysis
+Community detection and network evolution analysis
+Personalisation for search and for social interaction
+User profiling and recommender systems
+Collaborative search and question answering
+Sentiment analysis and opinion mining
+Topic detection and topic trend analysis
+User behaviour prediction
+Real-time social search and mining infrastructures
+Cross-media search and mining of user-generated content
+Entity search (e.g. expert finding, product search, organisation search, etc.)
+Semantic Web-based social applications
+Computational advertising for user-generated content
+Spam detection and anomaly detection of social media
+Geospatial and temporal analysis of social media
+Applications of social search and mining
+GUEST EDITORS
+Yi Fang (fangy at cs.purdue.edu) and Zenglin Xu (xu218 at purdue.edu),
+Purdue University, USA
+Jiang Bian (jiang.bian.prc at gmail.com) and Ziad Al Bawab
+(zalbawab at yahoo-inc.com), Yahoo! Labs, USA
+IMPORTANT DATES
+Submission deadline: 1 June, 2012
+Notification date: 15 July, 2012
+Final paper submission: 15 August, 2012
+SUBMISSION GUIDELINE
+Submitted papers should not have been previously published nor be
+currently under consideration for publication elsewhere. (N.B.
+Conference papers may only be submitted if the paper was not
+originally copyrighted and if it has been completely re-written).
+All papers are refereed through a peer review process. A guide for
+authors, sample copies and other relevant information for submitting
+papers are available on the Author Guideline page:
+http://www.inderscience.com/mapper.php?id=31.
+All papers must be submitted online. To submit a paper, please go to
+Online Submissions of Papers:
+http://www.inderscience.com/mapper.php?id=35&jid=370. If you
+experience any problems submitting your paper online, please contact
+submissions at inderscience.com or the Guest Editors, describing the
+exact problem you experience. (Please include in your email the title
+of the Special Issue, the title of the Journal and the names of the
+Guest Editors)
+ABOUT IJWS
+IJWS is a newly launched refereed scientific international journal.
+IJWS aims to improve the state-of-the-art of worldwide research in the
+areas of web theories, services, applications and standards by
+publishing high-quality papers in this area. IIJWS is committed to
+deepening the understanding of enabling theories and technologies for
+applying and developing the web as a global information repository.

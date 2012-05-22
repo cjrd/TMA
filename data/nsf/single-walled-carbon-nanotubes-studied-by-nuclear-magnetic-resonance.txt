@@ -1,0 +1,35 @@
+              This research is focused on investigation of single-walled carbon nanotubes
+              (SWNTs) using nuclear magnetic resonance (NMR).  The one-dimensional structural
+              characteristics of SWNTs could lead to novel correlated electronic states which
+              is one of the most fundamental issues in condensed matter physics.  NMR will be
+              used to examine the correlation of electrons in SWNTs.  The properties of SWNTs
+              can be modified by Li and K intercalations and NMR will be used to investigate
+              the intercalation mechanism and characterize changes of electronic properties. 
+              This could lead to new methods for tailoring the properties of SWNTs with
+              applications including Li batteries.  Finally, the accessibility of SWNTs by
+              gas molecules and the characteristics of adsorption will be investigated.  This
+              study provides insight into the nano-confinement effects on nanofluids and
+              could provide crucial information for the development of SWNT-based molecular
+              sensors and filters.  This research provides an excellent opportunity for
+              students to acquire a broad knowledge and research capabilities including novel
+              materials synthesis, state-of-the-art spectroscopy, fundamental physics, and
+              applications suitable for a wide range of careers including in academe,
+              industry, and government.
+
+This research is focused on investigation of
+              single-walled carbon nanotube (SWNT), a seamless cylinder formed by wrapping a
+              graphene sheet.  The study aims at understanding the electronic properties,
+              especially novel characteristics associated with the one-dimensional nature of
+              the structure.  Modifications of SWNT properties by lithium and potassium
+              intercalations will also be explored with potential applications such as
+              high-density lithium batteries.  Trapping of ambient gas molecules inside the
+              tubes of SWNTs will be studied.  This could lead to sensitive molecular sensors
+              and efficient gas filters.  The main technique to be used is nuclear magnetic
+              resonance, which provides detailed information on structures, molecular motion,
+              and electronic properties.  This research provides an excellent opportunity for
+              students to acquire a broad knowledge and research capabilities including novel
+              materials synthesis, state-of-the-art spectroscopy, fundamental physics, and
+              applications suitable for a wide range of careers including in academe,
+              industry, and government.  It will also attract high school and undergraduate
+              students to the exciting field of nanotechnology.
+

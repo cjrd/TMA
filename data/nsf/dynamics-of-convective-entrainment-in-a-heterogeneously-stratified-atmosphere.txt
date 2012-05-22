@@ -1,0 +1,22 @@
+              This research focuses on the nonsteady evolution of the convective boundary
+              layer (CBL) in an atmosphere with complex vertical structure.  As the CBL
+              grows, air from the free atmosphere is entrained into the top of the CBL by
+              turbulent mixing.  The structure of the entrainment layer and the entrainment
+              dynamics depend on the static stability of the atmosphere, as measured by the
+              temperature profile, and the vertical wind shear.  Convective entrainment in
+              conditions when the wind and temperature vary smoothly with height has been
+              studied extensively in laboratory tanks, numerical large-eddy simulations
+              (LES), and simple bulk models of the CBL.  Less studied is the development of
+              the CBL in fluids with more complex stratification, though there is evidence
+              that the CBL in such cases grows in an unsteady way, passing through a sequence
+              of transition regimes accompanied by strong variations in the intensity and
+              vertical structure of the entrainment.  In this study, the CBL entrainment
+              dynamics will be investigated numerically, by means of high-resolution LES, and
+              compared with observations from atmospheric, laboratory, and other numerical
+              studies.  Emphasis will be placed on the influence of discrete and nonlinear
+              temperature stratification on the entrainment characteristics with and without
+              wind shear.  Elements of the work include: (1) improvement of the
+              characterization of subgrid-scale turbulence in LES models; (2) numerical
+              studies of convective entrainment in conjunction with analysis of observational
+              and experimental data; (3) developing a parameterization of convective
+              entrainment in a heterogeneously stratified atmosphere with wind shear.

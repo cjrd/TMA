@@ -1,0 +1,50 @@
+              "Passive Site Remediation for Mitigation of Liquefaction Risk - From Concept to
+              Technology"
+The overall objective of this CAREER award is to demonstrate the
+              practical feasibility of a new concept using passive remediation to mitigate
+              the risk of soil liquefaction at critical facilities and lifelines; and
+              concurrently to incorporate education and outreach activities that will
+              increase public awareness, and especially that of female students of the
+              challenges of engineering in general, and geotechnical and geoenvironmental
+              engineering in particular, and to engage the students' excitement and
+              creativity in solving complex engineering problems.
+
+Passive site remediation
+              is integrally related to groundwater processes, including transport of
+              stabilizers through the groundwater (the inverse of contaminant transport). 
+              The idea is to slowly inject a stabilizing material at the up-gradient edge of
+              a site and deliver the stabilizer to the liquefiable area using the groundwater
+              flow.  Extensive soil liquefaction occurred in the 1995 Kobe earthquake,
+              especially at the Kobe Port.  The cost of repair has been estimated to be more
+              than $11 billion, and the port operations were essentially halted for months. 
+              Of particular concern are developed sites where traditional ground improvement
+              methods are difficult or impossible to implement.
+
+The aim of the project is
+              to demonstrate the practical viability of passive site remediation by
+              conducting laboratory and pilot-scale experiments; developing implementation
+              technology for its deployment; investigating verification tools to assess the
+              improvement achieved; modifying a numerical modeling code for use with gelling
+              fluids; and upon successful completion, producing a design manual for practical
+              application.  The practical feasibility is being investigated using column and
+              pilot-scale experiments.  The column experiments are done to determine the
+              optimal geochemical and physical conditions where passive site remediation
+              could be employed.  A cross-disciplinary pilot-scale research facility will be
+              constructed at Drexel University for 3-dimensional modeling of passive site
+              remediation techniques.  It will be used to develop optimal methods for
+              stabilizer delivery, and evaluate verification tools for assessing the
+              improvement achieved.  The contaminant transport code RT3D will be modified to
+              account for variable-density, variable-viscosity gelling fluids, and
+              subsequently used for numerical modeling.  The code will be calibrated using
+              the data from the column and pilot-scale experiments, and used to conduct
+              predictive modeling, and eventually be used to develop design and analysis
+              procedures.  The ultimate goal of the outreach and education is to promote
+              creativity and inspire imagination among several groups: undergraduate
+              engineering students, the Drexel student chapter of the Society of Women
+              Engineers (SWE), and elementary school girls from the Philadelphia
+              area.
+
+Passive site remediation techniques could have broad application for
+              developed sites susceptible to soil liquefaction, and to many environmental
+              remediation problems.
+

@@ -1,0 +1,10 @@
+In response to a question on the princeton mailing lists on LDA,? a memeber suggested picking the top topic for a document by picking the biggest number for that doc in final.gamma.
+I want to find a way to turn the document final.gamma into p(z_i|doc_j).
+As a example data set I have 20 documents, over 4 topics which return the following final.gamma. Two lines/documents shown below. Where each column is a topic, z_0, .. z_3.
+doc 1 5.0177453674 0.0177453674 0.0177453674 0.0177453674
+doc 2 1.0177453674 2.0177453674 0.0177453674 0.0177453674
+In the first line/that document appears to entirely made up of the first topic z_0. So a probability p(z_0|doc1)=1 p(z_i|doc1=0) for i=1,2,3 seems reasonable.
+But what of document 2. We have roughtly???? 1????? 2????? 0?????? 0 .
+What does this mean. Is a word in doc2 twice as likely to come from topic 2?????? should we have p(z_0|doc2)=1/3, p(z_1|doc2)=2/3????
+Thank you in advance,
+Fiona

@@ -1,0 +1,16 @@
+Hi All!
+I have been thinking hard about this and just feel its time to ask for help. Sorry if this sounds elementary but thats just where i am at on the? learning curve.
+My question is this:
+?How should i go about formulating an HDP model where
+- The 'words' are to be drawn as pairs of two types. Imagine if each word in the pair comes from 2 different codebooks. For example let the pair ' XY' like in human genotype. Suppose the Xs are a type of word and the Ys are a type of word, each having their codebook and the pairing is assumed random for each 'XY' word.
+- I suppose each XY pair word will be sampled simultaneously. the X part from its topic distribution z \x and the Y part from z /y
+- Both topic z \x and z \y have a common prior Gj which is drawn from Go with base distribution H.
+I am wondering how to represent Gj to show this. Will i have to have two observed nodes for the words, to reflect that sampling is done in pairs from the two codebooks of words?
+What if we could fix the number of topics for one type of words? How do i capture that?
+How do i come up wit the posterior distribution? given the observed pair and the othe HDP parameters?
+What is the process of deriving a gibbs sampler for such a system?
+I am still trying to find my feet with understanding and using the HDP concept and will appreciate it if someone can guide my thoughts. Relevant papers suggestion will be appreciated.
+In using the HDP concept to model a problem, what are the fundamental steps to consider?
+Thanks for your time.
+Pius
+HEU

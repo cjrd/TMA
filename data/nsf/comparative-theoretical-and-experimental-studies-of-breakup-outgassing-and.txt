@@ -1,0 +1,22 @@
+              Abstract
+CTS-0076648
+D. D. Joseph, University of Minnesota
+
+
+It is proposed
+              to investigate the process of liquid fragmentation when submitted to gas flow
+              induced stresses or to cavitation related vapor states.  These effects are
+              expected to be associated to high Weber number or very low-density conditions. 
+              Several additional contributing factors to the liquid breakup mechanism will be
+              investigated, such as morphology, molecular weights and viscoelastic
+              properties.  In particular, the instabilities already identified as
+              Rayleigh-Taylor in shock tube studies, will be now be considered from the
+              Kelvin Helmhoz viewpoint, for such phenomena as stripping the side of the drop,
+              the capillary instability of a filament pulled out of the drop, cavitation and
+              outgassing. The focus of this part of the research is to explain the eventual
+              droplet distribution as validated by high-speed movies and still photographs. 
+              Also, the breakup of polymer-thickened liquids under low-pressure conditions
+              has been shown to be very dependent on thickener concentration.  It is proposed
+              to examined the dependence of such a process on polymer type, concentration and
+              other related properties.
+

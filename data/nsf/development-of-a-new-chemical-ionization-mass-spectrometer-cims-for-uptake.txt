@@ -1,0 +1,17 @@
+              This project will develop a new Chemical Ionization Mass Spectrometer (CIMS)
+              instrument adapted to study peroxy radical reactions.  Peroxy radicals are
+              important oxidants in the ambient atmosphere and difficult species to measure. 
+              Initially, some experiments will be conducted with an existing CIMS instrument
+              at the National Center for Atmospheric Research to determine potential
+              improvements.  Then a new instrument will be constructed at University of Miami
+              and laboratory studies of the uptake of peroxy radicals on surfaces
+              representative of ambient atmospheric aerosols conducted using the new
+              spectrometer.  Results from this study should improve knowledge on the kinetics
+              of gas-surface heterogeneous interactions of oxidatively important peroxy
+              radicals on aerosol.  Broader impacts of the research include: a substantive
+              addition to current understanding of reactions of peroxy radicals in the
+              atmosphere; establishing a state of the art permanent instrument capacity
+              enhancement at University of Miami under the direction of a new female faculty
+              member; and through the mentoring of postdoctoral scholars and students
+              involved on this project promoting scholarship, technology transfer, and
+              research experience to a new generation of young scientists.

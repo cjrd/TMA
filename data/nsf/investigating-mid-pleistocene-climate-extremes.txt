@@ -1,0 +1,14 @@
+              Summary:  This project will obtain isotopic and trace metal analyses on planktic
+              and benthic foraminifers to test initial results from subpolar North Atlantic
+              cores suggesting that global ice volume during MIS 11 was similar to modern ice
+              volume and that sea level during MIS 11 was not substantially higher than
+              today.  The project will measure oxygen isotope ratios on planktic and benthic
+              foraminifers at three sites in the tropical Atlantic and Pacific Oceans to
+              compare these values against new and existing data from subpolar North Atlantic
+              cores.  In addition Mg/Ca ratios of  benthic and planktic foraminifers in
+              selected intervals will be measured as independent estimate of temperature
+              effects.  The new analyses will provide a means for separating temperature and
+              salinity effects from ice volume effects on the isotope values.  Cd/Ca and
+              carbon isotope measurements of benthic foraminifers will be used to detect deep
+              circulation changes associated with the glacial - interglacial transitions.  
+

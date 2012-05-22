@@ -1,0 +1,17 @@
+Here are some comparison plots (by Wray Buntine) that illustrate
+differences in perplexity versus running time.  They refer to
+discrete component analysis (DCA), which is another hierarchical
+Bayesian model of mixed membership.
+http://www.componentanalysis.org/wiki/index.php/Component_Analysis
+Edo
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~
+Edo Airoldi
+Machine Learning & Statistics
+School of Computer Science                   Office: (412) 268-7527
+Carnegie Mellon University                      Fax: (412) 268-1744
+5000 Forbes Avenue                           e-mail: edo at cmu.edu
+Pittsburgh, PA 15213                            web: www.cs.cmu.edu/
+~eairoldi
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~

@@ -1,0 +1,19 @@
+              EIA-0219627 Craig Douglas University of Kentucky Collaborative Research: 
+              ITR/AP-Predictive Contaminant Tracking Using Dynamic Data Driven Application
+              Simulation \(DDDAS\) Techniques
+
+This project will lead to a leap-ahead
+              technology in simulation capabilities.  Research in the development of new
+              methods and algorithms for the specific application areas is needed.  The
+              dynamic application requirements will dictate computing systems' support that
+              includes systems' software technologies, such as active middleware services for
+              real time, dynamic reconfiguration capabilities, resource discovery, load
+              balancing, security, fault tolerance, quality of service, and dynamic
+              interfaces with field measurement systems.   
+
+An encoded web stream set of
+              contaminations from actual situations (both above ground and underground) will
+              allow researchers besides us to tap into our virtual reality DDDAS environment.
+               Visualization systems will allow us to work with a variety of real networks,
+              sensors, and environments.
+

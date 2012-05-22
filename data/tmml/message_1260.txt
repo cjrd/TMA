@@ -1,0 +1,10 @@
+It's true that you cannot generate new text from a topic model without
+a length model, but you can infer topic mixtures and topic-term
+distributions with an explicit length model since those are
+independent of length (as Blei writes). One might imagine a topic
+model that relaxes this independence assumption by, e.g., assigning
+relative more probability to "flatter" topic distributions for "long"
+documents.  It may be helpful to think of document length as a random
+variable whose value is always observed (a shaded node in the
+graphical modeling language). Since it's always observed, you don't
+have to worry about an explicit model for it.

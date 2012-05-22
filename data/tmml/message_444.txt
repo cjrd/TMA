@@ -1,0 +1,13 @@
+It is my understanding of the dirichlet compound multinomial (DCM) is that
+sampling is allowed to go to infinity of for each number of samples. So, if
+you were sampling from a polya urn, you would sample: drawing once and
+replacing after infinitely many times, drawing twice and replacing after
+each infinitely many times, drawing three times and replacing after each and
+so on.
+Ultimately there is a unique distribution for each number of samplings with
+a larger propensity near the alpha proportions, depending on the confidence
+or size of the alphas, and the only time that a larger number of samples
+would cause a lower score, is if the samples were not represented in the
+proportions of alpha or the alphas were small to begin with.
+Of course with the DCM all topics would be integrated out.
+-Robin Kramer

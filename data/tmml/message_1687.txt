@@ -1,0 +1,8 @@
+Hello All,
+Now I am just running the HLDA( coded by Freddy Chong Tat Chua, and
+rewritten with Python) on text file (file size: 60M, number of words: about
+6M). It have taken more than 10 days on a cluster node (CPU: 7 cores, Intel
+L5320 @ 1.86GHz, Memory: 16G). But I do not know when can I get the results.
+Is there any parallel computation technique to speed up the process ?
+Thank you
+xueliang

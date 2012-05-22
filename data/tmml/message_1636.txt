@@ -1,0 +1,47 @@
+Hi,
+If anyone is interested, I forked the TMVE code to github [1] from the
+google code repo and started working on speeding up generate_db. Short
+results for the impatient: before, it took several hours for me to
+generate a database, now it takes several minutes.
+In doing so, I found what I believe to be is a bug- write_doc_doc and
+write_term_term use a dictionary to select the 100 smallest distances
+between pairs with the distance as the key. The problem with this is
+that dictionary keys must be unique. So if you have a list
+1 2 2 2 3 4 5
+and want to 5 smallest numbers you'll get
+1 2 3 4 5
+instead of
+1 2 2 2 3
+It might be rare in practice that the distances are not unique, but it
+occurred several times for me after a particular run from lda-c.
+I introduced numpy as a dependency, any relatively recent version >
+1.3 maybe even earlier should be fine. Beforehand, the n_docs *
+(n_docs +1)/2. * n_topics pairwise comparisons were done using for
+loops (!!!). In my case this was 16 billion distance calculations.
+This took hours. Using vectorized calculations with numpy and numpy's
+broadcasting, this takes minutes, if that. I just generated a database
+for ~25k documents, 10k vocabulary, 50 topics, and 8k average words
+per documents in about 15 minutes. Beforehand, I think this took
+around 2-6 hours. I'm not sure because I didn't time the old code, but
+I might overnight to provide a meaningful benchmark.
+I also replaced the sorting by comparison function with numpy's
+argsort, which is about 4-6 times faster. This introduces a
+difference, however. Before, ties were not moved in an index. Now,
+ties are move forward in the sorting. While this doesn't make a
+practical difference in the results, it means that results from before
+this change and after might not be the same.
+The last thing I did was replace the many calls to sqlite's execute
+over inner loops with the more efficient executemany, replacing the
+inner loops with generators over results.
+I'd be happy to see these changes get into upstream (I'd also be happy
+to help move upstream to github ;)). If someone else wants to have a
+look and/or run them first on their datasets to see what the output
+looks like. I'm not 100% it's bug free, though it should be the same
+as before with the changes mentioned above. I'd be particularly
+interested to hear about memory performance. I think I used generators
+everywhere this could be a problem. I'm also not sure if I bumped up
+the minimum Python requirement. I'm on 2.7.
+Thanks for this great code and open sourcing it.
+Cheers,
+Skipper
+[1] https://github.com/jseabold/tmve

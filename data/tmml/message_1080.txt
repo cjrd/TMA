@@ -1,0 +1,5 @@
+Thank you!! Is this licensed in such a way that I could include it in
+my Social Media Analytics Research Toolkit? The toolkit itself uses
+the openSUSE license, which is GPL, but it includes Mallet, which uses
+one of the Sun open source licenses, the Python NLTK, Perl, Ruby,
+PostgreSQL and a few other open source licenses.

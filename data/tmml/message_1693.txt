@@ -1,0 +1,34 @@
+Dear All,
+I'm trying to generate topic models based on JStor wordcounts data for
+economics journals (starting with just a single journal). I ran into a
+confusing issue and I was hoping someone else who had worked with the data
+might suggest a solution or at least help me better diagnose the problem.
+This is my first time trying to run topic models. My goal is to use Blei's
+CTM code to generate network/lasso graphs of topics, and then to see how
+those graphs change over time (for now, I am looking at decades, i.e. all
+the research articles in AER from 1961-1970).
+First, I ran the data through Mallet and it generated perfectly reasonable
+topic models (human interpretable topics). Then I tried running the data
+through Blei's CTM code and all of the topics produced were filled with
+short non-words, mostly suffixes and prefixes - "tion", "ing", "pro", etc.
+These words filled up 30-35 of the top 40 words from each of 40 topics,
+with some overlap (i.e. "tion" occurred in many topics). These words occur
+roughly 15-100 times each in the corpus, which in total contains a few
+million tokens. The same occurred when I used Blei's standard LDA code. I
+borrowed Mallet's stopwords list for processing the data, so there
+shouldn't be any difference in terms of which words were allowed in the
+vocabulary/corpus. I have not tried altering the default settings of the
+code, and EM convergence usually happened after 6-7 iterations. I'm happy
+to weed out these artifacts from the corpus (if I have to), but first I
+want to figure out why different implementations of LDA are producing such
+different results.
+Is there something obvious I've missed in constructing the corpus? Are
+there some alternate settings that might produce more human interpretable
+topics? Does anyone know why the two implementations produce different
+results? If anyone has worked explicitly with the JStor data, I would
+especially appreciate your advice.
+Thanks for your time!
+Dan Hirschman
+PhD Candidate
+Department of Sociology
+University of Michigan

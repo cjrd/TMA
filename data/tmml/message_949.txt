@@ -1,0 +1,3 @@
+I seem to have run into a mental road-block on the implementation of the Pitman-Yor process prior. I must be making this way too difficult; in any case, my results are beyond suspect. Does someone have (even a crude) implementation that includes a PY prior written in C (or R, JAGS, Winbugs, COBOL, etc.) that they would be willing to share as a candle in the darkness?
+Cheers,
+=Dave Robinson

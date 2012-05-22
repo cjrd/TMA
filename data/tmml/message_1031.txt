@@ -1,0 +1,8 @@
+Hi, all:
+The paper on term weight models with LDA
+(http://aclweb.org/anthology-new/N/N10/N10-1070.pdf) is indeed intriguing,
+in particular if IDF is used as a global weight.
+Unfortunately, IDF presumes that the discriminatiory power of a term in a
+query is unique an independent from other terms in the query or the
+collection. This not always the case.
+Edel

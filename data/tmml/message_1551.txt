@@ -1,0 +1,47 @@
+Dear All,??kindly spare a moment to chip
+in on these HDP related issues which I have been trying to resolve while learning the concept using the paper and the code in .
+??Hierarchical Dirichlet Process (with Split-Merge
+Operations) by Chong Wang
+and David Blei for topic modeling. The default
+parameters were used. The C++ Code is executed on a windows environment.
+?I have extracted features (words) from 48 video clips (treated as documents), represented them in the LDA-C format and used the data in the HDP code.
+Here are my observations/questions I need help on.
+1. In the directory of training results, there
+are nine .bin files and a tenth .bin file named mode.bin.
+Question: ?(a) which of these is the ?saved_model? to be
+used for inference?
+(b) in the mode-word-assignments.dat I obsered
+that the t-colum (which I assume to mean table) only ranged between 0 and 3.
+Does that imply there are 4 tables in most occupied or 4 tables at the end of
+the assignments? This confuses me because the last entry in the state.log file
+shows num.tables as 161.!
+2. In the state.log file I have probabilities
+like -368259.47534, etc. These log probabilities don?t make sense to me and I wonder
+what can be inferred from them.
+3. The last entry in the state.log file is
+this:
+time ?? ? ?iter
+??num.topics
+?num.tables ?likelihood ??????? ?gamma ??alpha
+?????split merge trial
+371.00 ?00999? ?0032 ??? ? ? ??00161
+????-343832.11109 ??1.00000
+?1.00000 ????0 ???0 ???0
+I interpret this to mean that after the 999th
+iteration, the algorithm had discovered 32 topics, assigned a total of 161 tables.
+Question: Likelihood???? I cannot interpret. Also
+should I leave the gamma and alpha values at the default values or it need to
+change based on my data.
+4. PRINTING TOPICS
+The README document says:
+?A R script (print.topics.R) is included to
+print topics. Make sure it is executable.
+For example print.topics.R mode-topics.dat
+vocab.dat topics.dat 10.
+I have installed R on my system but I cannot
+find the above mentioned script.
+Question: How?
+do I ?view the results of this HDP
+program in R? (graphically?), particularly the print.topics.R
+Thanks
+Toyin P.H.E.U

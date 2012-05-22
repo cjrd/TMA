@@ -1,0 +1,17 @@
+In English: The word "belongs the most" to the topic that gives it the
+highest probablity to occur. This probability is different for topics
+p,q,...
+See my mail for the question.
+me all the other variables too. I think inference computes \theta too.
+For graphical model problems, there are 3 basic problems,
+inference, parameter learning and structure learning,
+in the order of increasing difficult, structure learning is the
+most difficult one so that most of the work related to
+this topic just specify a graphical model in prior,
+while leave the other 2 problems to be solved
+lda_mle() This correspond to the M step of \alpha and \beta, but as it
+uses a constant \alpha for all the \k, so a sufficient statistics approach
+is used in the programming.
+LDA-C is exactly the same as in the LDA paper except that it uses constant
+\alpha
+and do not use the smoothing scheme for \beta.

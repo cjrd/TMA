@@ -1,0 +1,4 @@
+hi dovi --
+as i understand your question, identifiability is indeed part of the answer. lda
+makes no assumption on the sequence of topics: there's exchangeability of
+topics, expressed via z ~ Dir(theta | alpha) with symmetric/scalar alpha.

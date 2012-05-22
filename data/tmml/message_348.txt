@@ -1,0 +1,17 @@
+Dear Friends:
+I'm trying to obtain equation 5 in the paper "Finding scientific topics",
+and I got a paper called "Gibbs sampling in the generative model of Latent
+Dirichlet Allocation" written by the same author, which gives a more
+detailed derivation. You can find the paper in:
+http://citeseer.ist.psu.edu/613963.html
+I have a question about equation 3 in that paper:
+Shouldn't it be:
+p(w_i|z_i=j,z_{-i},w_{-i}) = \int p(w_i|z_i=j,\phi^{(j)})
+p(\phi^{(j)}|z_i=j,z_{-i},w_{-i})d\phi^{(j)}
+The difference is in the right most term. I don't see why \phi^{(j)} is
+independent of z_i=j given z_{-i} and w_{-i}.
+"Finding scientific topics".
+Please see the attachment for my derivation, if the attachment is somehow
+filtered, please use the following latex source code
+Regards
+Jeffrey

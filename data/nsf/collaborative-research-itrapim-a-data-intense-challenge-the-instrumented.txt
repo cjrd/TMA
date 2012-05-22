@@ -1,0 +1,36 @@
+              Collaborative Research: ITR/AP&IM Data Intense Challenge:  
+The Instrumented
+              Oil Field of the Future
+
+Mary Wheeler - University of Texas at Austin -
+              0121523
+Alan Sussman - University of Maryland, College Park - 0121161
+Joel
+              Saltz - Ohio State University Research Foundation - 0121177
+Manish Parashar -
+              Rutgers University - 0120934
+
+
+Increasing production from existing oil and
+              natural gas reservoirs is crucial for the US economy.  In order to better
+              monitor and optimize oil and gas production, advanced technologies from field
+              instrumentation to information technology and computational science are
+              essential.  Field technologies include time-lapse surface and borehole seismic,
+              permanent downhole sensors, intelligent well completions, fiber optics, and
+              remote control operations.  IT technologies include data management, data
+              visualization, parallel computing, and decision-making tools such as new wave
+              propagation and multiphase, multi-component flow and transport computational
+              portals.  These diverse technologies can be integrated to achieve real-time
+              monitoring and optimization of reservoir production:  The Instrumented
+              Oilfield.
+
+A major outcome of the proposed research is a computing portal
+              which will enable reservoir simulation and geophysical calculations to interact
+              dynamically with the data and with each other and which will provide a variety
+              of visual and quantitative tools.  Test data will be provided by oil and
+              service companies currently participating in UT Austin industrial affiliate
+              programs.  Since the proposed research is directed towards the general problem
+              of modeling and characterization of the earth's subsurface, it has immediate
+              application to other areas, including environmental remediation and storage of
+              hazardous wastes.
+

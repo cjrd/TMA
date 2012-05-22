@@ -1,0 +1,35 @@
+              The research focuses on new approaches for exposing concurrency and improving
+              performance in modern
+superscalar microprocessors.  These approaches include
+              semantic decomposition of instruction 
+sets and bitslice decomposition of data
+              paths to expose elements of the processor's control and data path 
+to allow
+              flexible, programmable control over at least a subset of the microarchitectural
+              features 
+that are available.  Preliminary analysis shows that there are
+              significant opportunities for reducing ALU 
+cycle time, power consumption, and
+              the deleterious effects of wire delay with little or no harmful 
+effects on
+              throughput measured in instructions per cycle.  Further, the research proposes
+              pre-execution 
+using partial operand knowledge to resolve conditional
+              branches, identify references that miss the cache, and mitigate the effects of
+              other problematic instructions.
+
+The primary objectives of the proposed
+              educational plan are to integrate advanced topics into the 
+University of
+              Wisconsin's computer architecture curriculum at the graduate and undergraduate
+              level; 
+to continue to involve undergraduate students in research to enhance
+              their educational experience 
+via exposure to leading-edge research topics; to
+              incorporate advanced pedagogic techniques into the 
+classroom environment in
+              order to accommodate all learning styles; and to exploit emerging web-based
+              
+technologies to streamline interactive and off-line communication between
+              instructor and students.
+

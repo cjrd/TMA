@@ -1,0 +1,7 @@
+Hi Nicola,
+Thanks for your reply. I have gone through your paper and have a few questions. It would be really helpful if you could take out the time to clear my doubts.
+First of all, a short summary of the data I have and how I am using it. I have data regarding the songs (identified by a unique ID) that a user has listened to and the number of times that the user has listened to this song (or skipped it). Based on the number of skips and plays each song has, I have computed a rating for that song (for that particular user) and thus obtain a user rating matrix.
+Therefore, my data is in a format similar tot he MovieLens 100k data. I do not have information regarding the genres of songs. This brings me to my first question - regarding the number of latent topics. Should I  then chose an arbitrary number of latent topics? Or is there anything inherently wrong in the approach I am taking (URP model) based on the data set that I have?
+And regarding the code, if you could provide me an example of how to sample the user rating matrix and then predict a rating for a random item, it would be very useful. The problem is that this is the first time that I am venturing into machine learning, and therefore I am having a little difficulty in understanding how to go about implementing these algorithms. Maybe if there is some online documentation that shows an example sampling and prediction - it would be really useful in clearing my mind about the topic.
+Thanks
+Rahul

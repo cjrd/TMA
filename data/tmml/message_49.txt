@@ -1,0 +1,18 @@
+Joel,
+The answer is easy: It depends on your data and the kind of answer you
+want to get.
+(This is the usual problem of choosing the right hyperparameters in a
+parametric setting :)
+alpha should be between 0 and 1, the closer to 0 it is, the less aspects
+you get in your topic mix
+k (the number of topics) depends on the granularity of topics you want
+to get
+if you try several different alpha and k values, you should use
+something like
+alpha = constant / k
+to be able to compare the different models (griffiths and steyvers
+recommend something like alpha = 50/k as a starting point, but you have
+to make sure that alpha stays below 1)
+You can also try to learn the alphas with a maximum likelihood II approach.
+Hope this helps,
+Laura

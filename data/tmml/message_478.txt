@@ -1,0 +1,38 @@
+Hello,
+I could not run the program with the AP sample dataset. I have tried different settings in the setting.txt. Following is that I get. I am running it twice with seeded and random alpha. Please let me know why I am not able to get a successful run. Thank you.
+~/wiki/LDAC/lda-c-dist> ./lda est estimate 20 settings.txt ap.dat seeded aprum
+reading data from ap.dat
+number of docs    : 2246
+number of terms   : 10473
+initialized with document 740
+initialized with document 594
+initialized with document 1646
+initialized with document 2235
+initialized with document 108
+initialized with document 1252
+initialized with document 2161
+initialized with document 639
+initialized with document 608
+initialized with document 942
+initialized with document 1089
+initialized with document 1922
+initialized with document 765
+initialized with document 342
+initialized with document 1525
+initialized with document 1234
+initialized with document 935
+initialized with document 2238
+initialized with document 1886
+initialized with document 716
+**** em iteration 1 ****
+document 0
+lda: lda-inference.c:78: lda_inference: Assertion `!isnan(likelihood)' failed.
+Aborted
+~/wiki/LDAC/lda-c-dist> ./lda est estimate 20 settings.txt ap.dat random aprum
+reading data from ap.dat
+number of docs    : 2246
+number of terms   : 10473
+**** em iteration 1 ****
+document 0
+lda: lda-inference.c:78: lda_inference: Assertion `!isnan(likelihood)' failed.
+Aborted

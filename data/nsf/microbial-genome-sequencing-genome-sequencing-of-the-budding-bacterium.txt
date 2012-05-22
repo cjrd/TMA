@@ -1,0 +1,32 @@
+              Dr. Timothy R. Hoover of the University of Georgia, Dr. Yves V. Brun of Indiana
+              University, and Dr. Naomi Ward of The Institute for Genomic Research have been
+              awarded a grant to sequence the genome of the budding bacterium Hyphomonas
+              neptunium.  The goal of the project is to identify and assign potential
+              functions to the genes in H. neptunium.  The H. neptunium genome consists of
+              approximately 2.7 million nucleotide base pairs forming about 2,000 genes. 
+              Random genomic DNA fragments will be sequenced, and the collected data will be
+              assembled into the complete genomic sequence.  Gene identification will be done
+              using an algorithm and potential roles for the gene products will be assigned
+              by comparing the sequences of these products with those in a database of
+              bacterial protein sequences.  Genes that match entries in the database will
+              have the corresponding role and gene common name associated with the match
+              assigned to the predicted coding region.
+
+Many bacteria reproduce through a
+              process known as budding.  Little is known about budding or associated
+              activities such as chromosome partitioning.  Understanding these processes is
+              critical for developing new strategies for controlling the growth of unwanted
+              bacteria or exploiting those with desirable activities.  This research will
+              enhance studies on budding by identifying all of the genes within a
+              representative budding bacterium.  Researchers can use these data to identify
+              proteins that have roles in budding or associated processes.  Interestingly,
+              the budding potential of a newly differentiated stalk cell is limited to about
+              seven budding events; thus H. neptunium can be used as a model for microbial
+              senescence. Such experiments can be adapted to be appropriate for
+              undergraduates, graduate students, or post-doctoral researchers.  Thus, this
+              research will provide significant educational opportunities for a wide variety
+              of students.  This is a Microbial Genome Sequencing Award funded through a
+              collaborative program between the National Science Foundation and the
+              Department of Agriculture.
+
+

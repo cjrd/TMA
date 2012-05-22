@@ -1,0 +1,25 @@
+              With the support of the Organic and Macromolecular Chemistry Program, Professor
+              Chrys Wesdemiotis, of the Department of Chemistry at the University of Akron,
+              is studying the gas phase chemistry of radicals and charged radicals.
+              Neutralization-reionization mass spectrometry is employed to obtain
+              experimental data regarding the stabilities and unimolecular reactions of
+              radicals related to amino acids, peptides, and nucleobases. Focus is placed on
+              the alteration of stability and reaction chemistry caused by the replacement of
+              acidic hydrogen atoms with metal ions. The synthesis and characterization of
+              distonic radical cations containing a metal ion and an organic radical site are
+              also under investigation. These metal ion-containing (and hence, charged)
+              radicals will be used as templates for the investigation of free radical
+              chemistry by tandem mass spectrometry. Solvated charged radicals will be
+              utilized to derive thermochemical data about amino acid and peptide-based
+              radicals.
+
+Molecules and ions containing unpaired electrons ("radicals") play
+              central roles in many chemical and biochemical processes. Development of a
+              detailed understanding of the structure and reactivity of these elusive species
+              remains a key focus of modern chemical research. With the support of the
+              Organic and Macromolecular Chemistry Program, Professor Chrys Wesdemiotis, of
+              the Department of Chemistry at the University of Akron, is generating and
+              studying radicals related to amino acids, proteins, and nucleic acid bases.
+              Through these studies, Professor Wesdemiotis is gaining a fundamental
+              understanding of the chemistry of these important species, implicated as key
+              intermediates in the oxidative damage of proteins and nucleic acids.

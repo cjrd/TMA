@@ -1,0 +1,33 @@
+              0089884
+Chan
+
+This is a three year cooperative proposal between Dr. Chiu-Shui
+              Chan of Iowa State University and Dr. Suchun Wan of Beijing Polytechnic
+              University to develop an interactive visualization tool for city planners to
+              manage urban growth and for designers to explore planning codes.  This project
+              will involve six U.S. researchers, including five faculty members and one
+              student of Iowa State University, and two Chinese scientists, one from the
+              Beijing Polytechnic University and one from the Beijing City Planning and
+              Administration Bureau.   
+
+They plan to design a tool in virtual reality (VR)
+              environments including a digital city and a set of planning regulations.  The
+              user will be able to navigate through the city, select a property lot,
+              determine planning issues, input data, visualize three-dimensional graphic
+              guidelines, and animate surroundings to see the potential impact caused by the
+              context. 
+
+This project is unique, in that it will develop a tool that can
+              support the inputs of new building designs, can use of the framework of local
+              government building codes in the analysis, and can evaluate designs using
+              aesthetic and functional bases.  The project presents a rare collection of
+              expertise across both disciplinary and international boundaries.  The tool
+              produced could become a part of the educational "toolkit" for urban design uses
+              by architecture departments and colleges.  The results of this project could
+              have substantial impact on teaching and training of future urban planners and
+              architects, and could have significant societal benefit.  The Natural Science
+              Foundation of China and the NSF jointly support this project.
+
+
+
+

@@ -1,0 +1,4 @@
+Hi all,
+I am doing some works on comparing topic models. Is there any papers that detail the procedure of calculating?perplexity?on held-out?data ?
+Best Regards
+Darren

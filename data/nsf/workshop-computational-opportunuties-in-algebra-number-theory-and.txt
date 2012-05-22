@@ -1,0 +1,29 @@
+              This workshop will bring together key people to discuss opportunities for
+              enhancing, via organized computational efforts, the research infrastructure in
+              Algebra, Number Theory, and Combinatorics.  The list of anticipated
+              participants includes researchers who use computational tools in their
+              research, researchers who have developed computational tools for use in
+              research, and researchers not currently making significant use of computational
+              tools.  An effort is being made to include women and other researchers from
+              groups under-represented in mathematics. The outcome of the workshop will be a
+              document that will contain general principles, strategies, and long-range goals
+              intended to be useful for the program officers in ANTC as they decide on future
+              proposal that contain computational aspects.  It is hoped that this document
+              will also stimulate further discussion and action within the research
+              community.
+
+
+Some of the main issues that will be addressed at this workshop
+              are:
+1. What kind of problems do we want to solve?
+2. What tools do we
+              need?
+3. Knowing what tools we need, how to we make them available and how do
+              we implement them?
+4. How can we simplify the process of making data available
+              to anyone who would like to use it?
+The workshop is intended as a
+              brainstorming session to systematically organize the communities' efforts
+              regarding these issues.
+
+

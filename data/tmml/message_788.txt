@@ -1,0 +1,15 @@
+Hi -- hopefully my question is not too much "off-topic": Regarding
+datasets for topic models, CiteSeer has been used quite frequently in
+the topic models literature, esp. with models that cover linkage and
+authoring structure. When using the CiteSeer "raw" data, it's  no
+surprise that this corpus is rather noisy: high portion of
+near-duplicate documents and duplicate authors, probably due to OCR
+errors. (The more recent CiteSeerX OAI dump does not seem to make a real
+difference.)
+Many experiments just use tiny subsets that were manually cleaned... But
+is there a reasonably cleaned version of CiteSeer (or a 20k+ documents
+subset) available somewhere ? Or alternatively, is there another
+"mid-size" dataset with metadata like citation and co-authoring
+structure (arXiv, Cora, Rexa, ACM)?
+Thanks for hints + best regards
+gregor

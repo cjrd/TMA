@@ -1,0 +1,5 @@
+Andreas,
+Probably you are right. I tested the algorithm as as stated in the paper with a window size of 1 and weight of 1 (meaning beta_t = topic_word_count_t * 1), alpha = 50/T , k=15 and beta = 0.01 and 3000 documents in each streams. (blogposts crawled over each month)
+Initially, i use phi (topic-word count normalized between 1 and 0) and I couldn't get it to work. I tested it across on 2 document streams and the topics for t-1 don't match at all (meaning i can see that topic n in t-1 looks like an evolved or similar to topic k in t and n!=k. I am not sure what is the reason here? Can anyone provide some insight?
+I then use actual word count for beta in my second experiment, I think the topics looked more similar across the two streams, but I am not sure if adjusting the weight and the window size will affect the results, especially for topic drift and detecting new topics.
+Anyone with any insights appreciated.

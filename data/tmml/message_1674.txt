@@ -1,0 +1,24 @@
+For medium and large collections of documents, the best vector-space
+algorithms are likely to have better precision *and* better recall than
+topic model methods.  There is too much research in this area to summarize
+briefly, but see "Latent semantic indexing (LSI) fails for TREC collections"
+in ACM SIGKDD Explorations Newsletter, available at
+http://dl.acm.org/citation.cfm?id=1964900
+Note that LSI is a linear version of a topic model like LDA.  Anyone who
+can't download the PDF can email me.
+Charles Elkan
+Abstract:  The aim of latent semantic indexing (LSI) is to uncover the
+relationships between terms, hidden concepts, and documents. LSI uses the
+matrix factorization technique known as singular value decomposition (SVD).
+In this paper, we apply LSI to standard benchmark collections. We find that
+LSI yields poor retrieval accuracy on the TREC 2, 7, 8, and 2004
+collections. We believe that the negative result is robust, because we try
+more LSI variants than any previous work. First, we show that using Okapi
+BM25 weights for terms in documents improves the performance of LSI. Second,
+we derive novel scoring methods that implement the ideas of query expansion
+and score regularization in the LSI framework. Third, we show how to combine
+the BM25 method with LSI methods. All proposed methods are evaluated
+experimentally on the four TREC collections mentioned above. The experiments
+show that the new variants of LSI improve upon previous LSI methods.
+Nevertheless, no way of using LSI achieves a worthwhile improvement in
+retrieval accuracy over BM25.

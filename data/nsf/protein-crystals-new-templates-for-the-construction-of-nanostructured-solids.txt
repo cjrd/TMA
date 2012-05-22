@@ -1,0 +1,30 @@
+              Divisions of Chemistry, Materials Research, Bioengineering and Environmental
+              Systems, and Molecular and Cellular Biosciences support this multidivisional
+              award to William Marsh Rice University. This Nanoscale Interdisciplinary
+              Research Team (NIRT) proposal was submitted in response to the solicitation
+              "Nanoscale Science and Engineering" (NSF 00-119).  Under this project, Vicki
+              Colvin, a material chemist with experience in template chemistry, Daniel
+              Mittleman, an optical engineer and George Phillips, a biologist with expertise
+              in protein crystal growth, will develop crystalline and monolithic
+              nanostructured metal and ceramic materials using crystals of streptavidin,
+              lysozyme and related proteins.  These protein crystalline structures will be
+              reinforced by glutaraldehyde cross-linking before the templating.  X-ray
+              diffraction studies and atomic force microscope imaging will be used to
+              characterize the prepared materials with respect to crystal symmetry,
+              periodicity and overall quality of the crystal arrangement. These porous and
+              three-dimensional open crystalline inorganic structures with nanometer spacing
+              may find applications in diffraction gradients, lenses, mirrors and other
+              devices for soft X-ray optics.  The research program will also provide a rich
+              multidisciplinary education and training opportunities in material and protein
+              chemistries to postdoctoral, graduate and undergraduate students.
+
+Under the
+              award, ordered mesoporous nanostructured metal and ceramic materials will be
+              fabricated using cross-linked protein crystals as sacrificial templates. The
+              broader impact of the project is the understanding the formation of
+              nanostructures, the templating effect of different protein crystal scaffolding,
+              and the determination of optical properties of the mesoporous structures
+              prepared in the soft X-ray range of the spectrum.  In addition, the research
+              program will provide a rich multidisciplinary education and training
+              opportunities in materials chemistry, protein chemistry and optics to graduate
+              and undergraduate students.

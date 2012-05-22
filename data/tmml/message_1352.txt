@@ -1,0 +1,6 @@
+Sorry, the article is:
+Parameter estimation for text
+analysis<http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.149.1327&rep=rep1&type=pdf>
+and another one:
+Latent Topic Models: The *Gritty
+Details*<http://dbgroup.cs.tsinghua.edu.cn/wangyi/lda/lda.pdf>

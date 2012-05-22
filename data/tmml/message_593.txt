@@ -1,0 +1,7 @@
+So, actually...
+here's the code.
+http://code.google.com/p/lda1pfs/
+It might even work right.  I just cleaned it up slightly just now but
+haven't done anything with it since last fall.  Got permission to
+release it recently.
+Anthony

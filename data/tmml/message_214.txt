@@ -1,0 +1,24 @@
+Hi,
+I recently started studying topic models, so my question might be quite
+trivial.
+My question is about P(d|z_i) vs. P(z_i|d) where z_i is the ith topic
+inferenced in a corpus
+and d is a document in the corpus.
+p(d|z_i) stands for the probability of document d generates the topic z_i,
+and
+p(z_i|d) stands for the probability of the topic belongs to the document d.
+(or is this interpretation right?)
+But in reality, I am not very clear about the differences between the two.
+Furthermore,
+I am trying to represent a document d in the k dimensional topic space for
+document
+clustering and other related applications. Which representation makes more
+sense
+between the two? In other words, d = {p(d|z_1), ..., p(d|z_k)} or d =
+{p(z_1|d), ..., p(z_k|d)}
+I think depending on the papers, some use the former and some use the
+latter.
+Best,
+Yeogirl Yun
+Founder & CTO
+Korea Wisenut, Inc.

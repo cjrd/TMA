@@ -1,0 +1,43 @@
+              Dear Professor Pang,
+
+ Here is the abstract in text form.
+
+Ronnie
+              Sircar.
+
+------------------------------------------------------------------
+
+Asymptotic and Statistical Analysis of Volatility and its Implications
+for Derivative Pricing and Risk Management
+
+Proposal Number: 0090067
+PI: K. Ronnie Sircar
+    Department of Operations Research & Financial Engineering
+ Princeton University.
+
+In modern financial markets, investors are increasingly faced with
+exposure to changing and uncertain volatility. This project concerns
+mathematical models in which volatility is a stochastic process, and
+their use in derivative pricing and risk management.  The main aim is
+to develop an efficient and robust framework in which models are
+calibrated from observable market data and then used to design
+risk-minimizing strategies that hedge a portfolio against the
+potentially serious consequences of changing volatility. This problem
+is important for investors from large trading institutions to
+individuals with pension funds.
+
+The spectacular growth in the size of the derivatives market over the
+last twenty-five years (currently it has a turnover of trillions of
+dollars in the US) plus recent infamous (and equally spectacular) risk
+(mis)management disasters, such as the Barings, Orange County and Long
+Term Capital Management fiascos, have created an urgent need for smart
+mathematical and computational models to quantify the respective risks
+and rewards of such investments. This project aims to build on the
+methodology introduced by Black, Scholes and Merton, to take into
+account the fluctuating nature of market volatility. Mathematical
+tools are combined with statistical analysis of past prices to produce
+formulas and software that accurately capture the potential losses and
+gains in today's vast derivative market.
+
+
+

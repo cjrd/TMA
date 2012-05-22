@@ -1,0 +1,6 @@
+I am now studying the LDA model. Because of my poor mathematics, I cannot really understanding how to do inference. So I download the LDA C program and want to learn from the source code.
+As I tried the program with ap.dat. I can get *.gamma, *.beta, and *.other file from estimation. From my understanding, gamma should be the -log of the probability of topic given by document. And \beta should be the probability of a token giving a topic.
+After doing estimation, we should use inference to infer topic of each token from testing data. The output of the LDA-C program are new gamma, and  likelihood of each document.
+Why do we need to get a new gamma and a likelihood from inference. From these 2 information, how do I know the topic of each token from testing document.
+Could anyone teach me how to do inference?
+Dickson

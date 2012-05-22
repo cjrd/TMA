@@ -1,0 +1,23 @@
+Hi sir:
+Because of urging to know exactly about LDA and I am a new-comer in
+LDA as well, I read part of the article you listed in your Email and I have
+some little questions.
+1. Below the equation 2, you said "The numerator is the joint distribution
+of all the random variables, which can be easily computed for any setting of
+the hidden variables." Can you give me an example about that?
+2. You mentioned that there are mainly two methods "Sampling and Variational
+Inference " for approximating the posterior distribution. I only tried
+solving the problem by the opensource code of Gibbs sampling. I am wondering
+given the same dataset, will the outcomes (Beta and Theta) be the same
+according to the two methods?
+3. I am anxious to open the link you give about Gibss sampling "
+http://cran.r-project.org/web/packages/lda/index.html"and found it mentioned
+corr-LDA code was included in it. However I downloaded the package and found
+the files' postfix was rd,rds etc. Without googling what it is, I have to
+ask what it means and what language it is ? I am looking forward to
+accessing the code of corr-LDA.
+As a new comer in LDA and not solid math background, some questions may
+be very easy and really appreciating your answer.
+BRs,
+Shuang
+2011/7/2 David Blei <blei at cs.princeton.edu>

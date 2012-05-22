@@ -1,0 +1,15 @@
+hi topic-models list---
+matt hoffman, francis bach, and i have a paper coming out soon about on-line
+variational inference for LDA.  in short, we use stochastic optimization on
+the variational objective function.
+there has been some recent discussion on this list about inference
+algorithms that can be used on streaming data.  with this discussion in
+mind, we decided to post the code before the paper.  it can be found here:
+http://www.cs.princeton.edu/~blei/downloads/onlineldavb.tar
+it is in python.  it requires that NumPy and SciPy are installed.
+as an illustration, matt has included a script that repeatedly downloads
+random wikipedia articles and updates an LDA posterior.  (in our forthcoming
+paper, we have fit such a model to 3.3M articles from wikipedia.)
+enjoy!
+best
+dave

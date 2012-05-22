@@ -1,0 +1,32 @@
+              This research program targets the design, preparation and characterization of
+              novel conductive polymer / cuprate superconductor nano-composite assemblies.
+              These hybrid structures will be generated in such a manner that the electrical
+              communication between the two component conductors is maximized with the goal
+              of fostering the flow of supercurrent into the polymer over macroscopically
+              large distances. Novel low temperature transport measurements completed with
+              superconductor / polymer / superconductor nano-bridges will allow for the
+              exploration of the low temperature electron-transfer phenomena and proximity
+              effects that occur in such hybrid systems. This new program will target
+              experiments in the following four areas: a) molecular engineering of conductive
+              polymer compounds for cryogenic applications; b) direct observation of
+              polymeric proximity effects using scanning probe methods; c) supercurrent flow
+              through polymer / superconductor nano-bridges; and d) suppression of
+              superconductivity in conductive polymer coated ultra-thin high-Tc films.
+              Through this highly interdisciplinary program, a series of scientists will be
+              trained in the important emerging area of hybrid electronic materials.
+
+The
+              integration of electronically conductive polymers into functional
+              superconductor-based structures is leading to a variety of new sensors and
+              devices which may exhibit enhanced sensitivity and selectivity that is not
+              currently available with the conventional devices. This interdisciplinary
+              program targets the preparation and characterization of a new class of
+              conductive polymer / high-Tc superconductor nano-composite assemblies. In
+              addition to the important knowledge base that will be derived from these
+              studies, it should be emphasized that this program possesses an important
+              educational component. Indeed, through this highly interdisciplinary program a
+              series of scientists will be trained in the important emerging area of hybrid
+              electronic materials with enhanced processibility, molecular tunability and
+              interesting sensor / display capabilities available with such polymeric
+              compounds.
+

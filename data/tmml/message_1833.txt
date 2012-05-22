@@ -1,0 +1,4 @@
+What is the number of 'words' in a typical document in your corpus? One way
+of interpreting alpha is as a pseudo count of each topic in a document, so
+if the number of words per document is much larger than alpha multiplied by
+the number of topics this may not be a problem.

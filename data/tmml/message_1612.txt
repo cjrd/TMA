@@ -1,0 +1,9 @@
+Hi Professor Blei,
+Thanks for your reference. I read your paper and studied your code. It is very nice to be able to update lambda as the new documents coming in as a stream.
+However, even in the online version of LDA, we still maintain a lambda matrix in memory. And I found my problem is that the W (i.e. number of unique tokens) is very big. After tokenization and removing tokens that occur less than 3 times, I got 1,297,685 unique tokens. This leads to a huge lambda matrix (K by W) which does not fit into the memory. So I fail to use your new algorithm because of that. I guess the influence would be marginal if I cut off my vocabulary even further but I do not have the support for that. I do not know whether there is a common accepted standard to filter out tokens before sending to LDA training.
+I noticed the paper uses a common word list to define the vocabulary. I feel somewhat unsafe to remove the rest of the tokens that not in the list. Maybe someone knows some reference that I can account on? Thanks for your helpful advice.
+Best,
+Kun Lu
+Ph.D Candidate
+School of Information Studies
+University of Wisconsin-Milwaukee

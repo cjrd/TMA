@@ -1,0 +1,11 @@
+We did some initial experimentation with initializing non-symmetric
+hyperparameter priors for each document's topic distribution and on each
+topic's word distribution.  These gave us ok results, but we got some
+good traction in our experiments from the hard constraints that Labeled
+LDA uses.
+One relevant state of the art model (as of last summer) is this one:
+S. Ji, L. Tang, S. Yu, and J. Ye. 2008. Extracting
+shared subspace for multi-label classification. In
+KDD, pages 381?389, New York, NY, USA. ACM.
+Daniel Ramage
+Anthony Di Franco wrote:

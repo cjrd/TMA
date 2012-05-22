@@ -1,0 +1,6 @@
+hi,
+If you have cluster computing resources, you can use parallel EM
+algorithm. And this could solve both problems.
+thank you!
+best
+chong

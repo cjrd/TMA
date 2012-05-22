@@ -1,0 +1,52 @@
+              The investigator and his colleagues
+will address a number of
+fundamental
+              problems about
+the geometry and arithmetic of moduli spaces:
+What is the
+              canonical model of the moduli space of curves of genus g?
+Can one construct
+              natural spaces that interpolate between the
+canonical model and the moduli
+              space of stable curves?
+Can these be interpretted as moduli spaces in their
+              own right?
+Can one count the number of rational
+points of moduli spaces of
+              curves, bounded
+with respect to various heights?  What are the
+              natural
+functions (effective divisors) one might use to specify
+              these
+heights?
+What are the naturally defined strata
+in the deformation
+              space of a plane curve singularity?
+How can one interpret blow-ups along such
+              strata?
+
+Algebraic geometry is the study of the solutions
+to systems of
+              polynomial equations.  Geometric
+aspects of the solution sets translate into
+              algebraic
+properties of the equations, and vice versa.  This
+approach has the
+              advantage that computers can
+manipulate equations very efficiently. 
+              Promising
+hypotheses can thus be checked on explicit examples.
+Increasingly,
+              computational approaches to geometry
+are transforming the education of
+              undergraduate
+and graduate students, both in pure mathematics
+and in related
+              fields where mathematics is applied.
+This emphasis on concrete examples and
+              explicit computation
+creates new research opportunities for young
+              people,
+especially those who have only just started to learn
+the technical
+              intricacies of the subject.

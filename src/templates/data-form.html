@@ -1,0 +1,27 @@
+<div id="data_toy" class="data_box">
+    {% for field in form.toy_group %}
+        {% include "standard-field.html" %}
+    {% endfor %}
+
+</div>
+
+<div id="data_upload" class="data_box">
+    {% for field in form.upload_group %}
+        {% include "standard-field.html" %}
+    {% endfor %}
+
+</div>
+
+<div id="data_url" class="data_box">
+    {% for field in form.url_group %}
+        {% include "standard-field.html" %}
+    {% endfor %}
+
+</div>
+
+<div id="data_arxiv" class="data_box">
+    {% for field in form.arxiv_group %}
+        {% include "standard-field.html" %}
+    {% endfor %}
+
+</div>

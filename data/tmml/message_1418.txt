@@ -1,0 +1,7 @@
+Hello,
+The following paper on the application of topic models in a supervised
+setting may be of interest to readers of this list:
+Statistical topic models for multi-label document classification
+T. N. Rubin, A. Chambers, P. Smyth, M. Steyvers
+http://arxiv.org/abs/1107.2462
+-Tim Rubin

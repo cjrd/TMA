@@ -1,0 +1,10 @@
+Hi list,
+Does anyone on this list have successfully applied the code of CTM ?
+I have some problems about the code of CTM.
+In the model estimating step, the parameter "var->lambda" is K-vector, but only the anterior K-1 iterms have been  iteratively computed, and the last iterm is set with zero.
+And in my experiment, the ouput file "final-lambda.dat" and "final-nu.dat" are D*K matirxs, but the last colum is zero.
+In the infering step, the output file "corpus-word-assgn.dat", all the words get the bigest probabilities at the K topic.
+Could anyone tell me wether it is right? Why the cycle is K-1 ,but not K?
+Thanks
+Cao Juan
+caojuan at ict.ac.cn

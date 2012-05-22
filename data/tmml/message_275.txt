@@ -1,0 +1,3 @@
+We use a pretty simple heuristic: if 10% or more of the words are assigned
+to a topic, and that accounts for more than two words (for very short
+documents like paper titles with no abstract), we assign it to that topic.

@@ -1,0 +1,11 @@
+Hi everyone,
+I have a question here: if we directly use LDA to a non-text data set,
+does the result still meaningful? That is to say when the feature space
+of the data set is not a vocabulary, can the relationship among the
+features be found as well? If it works, then the dimensional reduction
+through LDA becomes meaningful for those data sets with a high
+dimensional feature space.
+By the way, can anyone introduce some data sets normally preprocessed
+for LDA?
+Regards,
+Peng

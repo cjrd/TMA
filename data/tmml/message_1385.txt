@@ -1,0 +1,3 @@
+If you use a Mac, then Shark (one of the developer applications, in
+/Developer/Applications/Utilities) is a great, easy-to-use profiler.
+Matt

@@ -1,0 +1,6 @@
+HiXianling,
+I implemented one of Tom Minka's methods for estimating the Dirichlet parameters from a set of multinomials.? The code is very straightforward and can be accessed at the link below.? There are also other functions included such as fast approximations of psi, inverse psi, lngamma, and lnfactorial.
+http://www.bradblock.com/tm/SpecFun.java
+Thanks,
+Brad
+________________________________

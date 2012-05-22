@@ -1,0 +1,8 @@
+Hello,
+I've been playing with the "iLDA" implementation by Gregor Heinrich (http://www.arbylon.net/publications/ilda.pdf) and have a question about the number of sampling iterations and the number of topics found. Theoretically, the number of topics should be learned from the data given the chosen parameters beta and gamma. Also, the sampler should eventually converge to the 'correct' posterior so generally speaking if we run the sampler for many many iterations with specific parameter settings we should get a similar number of topics each time (similar -- not the exact same due to the stochastic nature of sampling).
+What I'm finding is that the longer the sampler runs (i.e. the higher the number of iterations) the number of topics just continues to grow. If I run it for 2,000 iterations I get ~60 topics, but if I run it for 5,000 iterations I get ~150 topics. This continues...
+My question is: is this (a) a bug in the code; (b) something we expect; (c) I just haven't ran the sampler long enough to get to that stable # of topics [do nonparametric methods require way more gibbs iterations?]; (d) ???
+Topics do get removed/'cleaned up' if the number of words assigned to them drops to 0 and you can observe that happening during the sampling. However, it happens quite rarely while adding topics happens quite often.
+I don't want to start getting into hacks, but might it make sense to put in some mechanism whereby if a topic hasn't been sampled in a long time (some # of iterations) and the number of words assigned to it is very low (below some delta) then remove it?
+Thanks for any suggestions you may have.
+Will Darling

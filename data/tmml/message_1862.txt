@@ -1,0 +1,4 @@
+My go-to dataset is 20 Newsgroups, it has some nicely separable topics:
+http://people.csail.mit.edu/jrennie/20Newsgroups/
+It consists of about 20,000 documents, but you could easily take a subset
+if you need something smaller.

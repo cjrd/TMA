@@ -1,0 +1,7 @@
+Hello,
+I have a question about the possibility of learning the value for \eta in the HDP topic model. In the HDP paper (Teh, et al.) in s.6.1 where the perplexity is tested for the HDP topic model vs. LDA, both models use a symmetric Dirichlet distribution with a fixed parameter of 0.5. Is this because this value cannot be learned in the HDP version?
+With eta very low, the topics will be sparse and therefore the HDP finds many topics. With a higher value of eta, the topics are more dense, and therefore the HDP finds less topics. This is intuitive. But what if we want to learn eta?
+I tried implementing an optimization algorithm within Chong Wang's HDP code based on Minka's fixed-point method but that led to eta --> 0 and therefore the # of topics --> infinity. Is there a more complicated approach that would need to be taken (or did I just not do it correctly)?
+Any input would be greatly appreciated!
+Thanks very much.
+Will Darling

@@ -1,0 +1,10 @@
+Hi Bin,
+One option is to use Labeled LDA,
+http://www.aclweb.org/anthology/D/D09/D09-1026.pdf which constrains each
+document's topic distribution to align with the document's label space.
+Because the per-document topics in this model are actually observed,
+it's less of a latent and more of a blatant dirichlet allocation.  It's
+competitive with an SVM baseline in our experiments, but state of the
+art discriminative models still beat it.
+dan
+Liu Bin wrote:

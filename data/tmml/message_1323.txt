@@ -1,0 +1,5 @@
+hi all,
+Does anybody Use LDA in Language Modeling in here? if so may i ask some
+questions?
+best regards
+Mehdi Hoseini

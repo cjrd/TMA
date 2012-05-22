@@ -1,0 +1,11 @@
+              Abstract
+CTS-0113527
+Joseph Klewicki, University of Utah
+
+It is proposed to
+              establish a repository of raw data that are obtained from the NSF-funded
+              Surface Layer Turbulence and Environmental Science Test  (SLTEST) facility in
+              Utah.  The conceptual objective is to develop software tools and data
+              repositories so that the massive amount of data obtained from SLTEST
+              measurements can be managed and processed in an efficient manner, and can be
+              made available to the scientific community.

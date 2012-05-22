@@ -1,0 +1,26 @@
+              At the end of Spring, 2003, Hendrik W. Lenstra Jr. will leave his position at
+              U.C. Berkeley and begin working full-time at the University of Leiden in the
+              Netherlands. During his 17 years at Berkeley, Lenstra wrote articles on
+              arithmetic geometry, algebraic number theory, computational number theory,
+              cryptography and commutative algebra. He frequently found innovative ways of
+              tying these fields together. Through his articles and outstanding lectures,  he
+              made people in each of these fields aware of the others. One purpose of this
+              conference is to honor Lenstra. However, the main intent is to bring people
+              together from these fields. This conference will be an opportunity for new
+              collaborations among people in different fields and to strengthen the knowledge
+              of the
+participants about the fields outside of their primary
+              focuses.
+
+Hendrik W. Lenstra Jr. is leaving his position at U.C. Berkeley
+              after spending 17 years making contributions to several fields of mathematics,
+              as well as the field of cryptography within computer science. Cryptography is
+              an important part of national security. Lenstra frequently found innovative
+              ways of tying these fields together. Through his articles and outstanding
+              lectures, he made people in each of these fields aware of the others.  In
+              addition to honoring Lenstra, this conference will bring people together from
+              these fields. This conference will be an opportunity for new collaborations
+              among people in different fields and to strengthen the knowledge of the
+              participants about the fields outside of their primary focuses. 
+
+

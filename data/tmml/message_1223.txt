@@ -1,0 +1,11 @@
+Hi everyone,
+In the paper "Dynamic Topic Model"(David Blei and Lafferty, ICML, 2006),
+the forward mean calculation equation in section 3.1, as well as the
+backward calculation, seem to be different from the corresponding equations
+in the reference "A New Approach to Linear Filtering and Prediction
+Problems"(Kalman, JBE, 1960).
+I am not quite familiar with Kalman Filter, can anyone tell me which
+textbook or paper gives the exact form of equation in Blei's paper?
+Thanks for any suggestion in advance.
+Best
+ZHOU Yun

@@ -1,0 +1,10 @@
+Dear all,
+I am a green hand of graphical model. And I want to ask some simple questions. Recently, I try to apply LDA to image classification and segmentation. I have 4 classes of objects (i.e., 'sky','sea','grassland',and 'sandy beach') in 100 images.  Each image may have more than one class of object. I use 80 images to learn the superparameters of LDA, and use 20 images to test. Now, I have several problems as follows:
+1. Should I construct the codebook and visual words with category label for these object?  How to construct the codebook?
+2. How to segment the objects from the images?
+I have read of [1] which aim to segment without supervision. In [1], the number of classes of the objects is unknown, the codebook and visual words are constructed without category label. Therefore, I think it is different from my case.
+Can somebody solve my problems, and provide some related papers and codes to make me learn the theory systematically. Thank you for you kindly help.
+[1] B. Russell, A. Efros, J. Sivic, W. Freeman, and A. Zisserman. "Using Multiple Segmentations to Discover Objects and their Extent in
+Image Collections". CVPR, 2006.
+Best regards,
+wluo

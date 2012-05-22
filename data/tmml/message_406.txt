@@ -1,0 +1,12 @@
+Hi, I have two questions about the model of CTM and DTM.
+1. In correlated topic models, the topic proportion is sampled from a
+logistic normal distribution instead of Dirichlet as in LDA. I didn't quite
+understand the intuition behind such a modeling. Why is logistic normal
+distribution has such power?
+2. In both correlated topic models and dynamic topic models, the natural
+parameter of a distribution is considered. Is this because of computational
+convenience (for easy approximation) or any other reason?  Or is this a
+standard procedure for all exponential family distributions?
+Any comment is appreciated!
+Thanks!
+-Lei

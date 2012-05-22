@@ -1,0 +1,5 @@
+This transformation follows Multinomial Theorem, see wikipedia:
+http://en.wikipedia.org/wiki/Multinomial_theorem
+Yuanlong Shao
+State Key Lab of CAD&CG
+Zhejiang University

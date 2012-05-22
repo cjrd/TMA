@@ -1,0 +1,12 @@
+Hi Laura,
+first of all, thank you very much for your help.
+Actually I was thinking that the CRP prior must by incorporated somehow at
+the time where you draw a whole path for a document as a block, according to
+the paper. So, having the previous state of the markov chain (or the initial
+assignments the first time), and knowing that the maximum number of leaves
+is number_of_existing_paths + number_of_existing_internal_nodes, I was
+thinking of a way to calculate the prior prob. of a new path but I guess
+that I am a little confused at this point.
+Thanks again,
+cheers.
+ilias.

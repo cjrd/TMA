@@ -1,0 +1,45 @@
+              Project Abstract
+Douglas Jesseph, North Carolina State University
+The
+              Mathematical Works of Thomas Hobbes
+
+This project is a renewal of support for
+              the preparation of three volumes of mathematical works of Thomas Hobbes.  The
+              works will appear through  Oxford University Press as part of the Clarendon
+              Edition of the Works of Thomas Hobbes.  Hobbes is a figure of central
+              importance in the development of early modern science, and his prominence as a
+              political theorist has placed him at the center of numerous studies of the
+              social, cultural, and intellectual context of seventeenth-century science.
+              Hobbes's significance for the development of mathematics is also profound,
+              although scholars have tended to overlook his mathematical work. This relative
+              neglect stems, in part, from the mistaken impression that his mathematical
+              writings are nothing more than misguided attempts to solve such unsolvable
+              problems as the squaring of the circle. Although Hobbes was convinced that his
+              first principles would enable the solution of such problems, the majority of
+              his mathematical writings concern methodological and philosophical issues that
+              are independent of his failed circle quadratures, and many other of his
+              writings are part of his long and bitter controversy with John Wallis and other
+              members of the Royal Society. A proper edition of his mathematical works is of
+              interest to STS scholarship generally, and particularly to studies of science
+              and mathematics in the seventeenth century.  
+
+A major obstacle impeding
+              scholarly attention to Hobbes's mathematics is the fact that the current
+              standard edition of his collected works has a completely inadequate
+              presentation of the mathematical material. The edition is almost useless for
+              scholarly investigation of Hobbes's mathematics. By including complete texts,
+              adequate diagrams, introductions, translations, notes, and a critical
+              apparatus, the mathematical volumes of the Clarendon Works will make accessible
+              a wealth of material relevant to studies
+of the philosophical, social, and
+              cultural background of seventeenth-century mathematics.  The PI has assembled
+              the printed sources in electronically editable form and has compared them line
+              by line with the originals. In addition, all known manuscript sources
+              (including those the PI has recently discovered) have been transcribed or
+              photocopied, and they are being rendered in electronically editable form.
+              Approximately one third of the material in Latin has been translated, with to
+              be completed in the summer of 2001.   This support permits final redaction of
+              all three volumes, (including notation of variants, writing introductions, and
+              preparation of explanatory notes).  They are to be ready for copy editing by
+              the Press in September of 2002.
+

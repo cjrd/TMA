@@ -1,0 +1,12 @@
+              The objective of the project is to design and fabricate a low-speed internal
+              combustion engine and associated measurement systems for real time
+              visualization of thermodynamic processes. The prototype engine addresses a
+              significant need in teaching fundamental thermodynamic processes. It provides
+              means to demonstrate typically non-intuitive or abstract processes, i.e. the
+              processes associated with an internal combustion engine. The system is designed
+              to provide maximum control of input variables with both display and
+              computerized acquisition of all parameters. This standalone tabletop system
+              provides real-time class demonstrations to courses such as thermodynamics, and
+              captures the primary input/output information that characterizes the system.
+              The physical demonstration system is used by instructors in high school,
+              technical or university settings.

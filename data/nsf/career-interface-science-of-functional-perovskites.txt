@@ -1,0 +1,52 @@
+              The objective of this CAREER project is a comprehensive education and research
+              program aimed at the development of next-generation devices using functional
+              perovskites by providing atomic-level understanding of interface properties
+              relevant for practical applications. Materials science research will be pursued
+              research toward: (a) mixed ionic-electronic conducting (MIEC) perovskite oxides
+              for electrochemical devices, and (b) ferroelectric thin films for capacitors
+              and microelectromechanical systems (MEMS). In these devices, interface
+              structure and properties play a key role in determining materials and device
+              properties. Providing a fundamental understanding of transport mechanisms
+              across interfaces will enable more energy-efficient, cost-effective devices,
+              and aid the design of thin film electrochemical devices. Ferroelectric
+              perovskites have a host of properties that enable further development of
+              technologies such as microelectromechanical systems (MEMS). The physical
+              properties of ferroelectric perovskite thin films are drastically different
+              from those of bulk materials, for reasons that are currently poorly understood.
+              Establishing the role of interfaces in observed behavior is expected to allow
+              development of optimized microstructures for applications in MEMS and
+              electronic devices. The method developed in this project will concentrate on
+              interfaces with known atomic arrangements and defect chemistry. These will be
+              obtained by controlled thin film growth experiments and by utilizing unique
+              capabilities of high-resolution transmission electron microscopy in combination
+              with electron energy-loss spectroscopy. Macroscopic measurements of transport
+              properties of oxide interfaces and of the physical behavior of ferroelectric
+              thin films is being studied to establish fundamental limits of interfacial
+              properties, relevant for all applications of functional perovskites.  In
+              addition, this research is intended to set the stage for atomic level
+              calculations that will need the true atomic structure as input. Part of the
+              research on thin film electrochemical devices will involve an established
+              collaboration with industry, as well as interdisciplinary research with
+              national and international university researchers in the areas of
+              electrochemical transport and electrical characterization. 
+An important
+              feature of the project is the training of students in interdisciplinary,
+              industrial and international collaborative activities, in technologically
+              important research areas. A main goal of the project is to thoroughly integrate
+              research into educational activities. Emphasis will be placed on (a)
+              participation of undergraduate students in research early in their studies (b)
+              interdisciplinary and international training, and (c) mentoring of students of
+              underrepresented groups with the goal to encourage them to pursue graduate
+              studies in materials science and engineering. Course development plans include
+              strengthening the core curriculum to emphasize conceptual understanding of the
+              course material for a broad interdisciplinary audience, and to incorporate new
+              technologies. Conceptual testing as a method to evaluate the success of the
+              educational activities will also be developed.
+%%% The project addresses
+              fundamental research issues in a topical area of materials science having high
+              technological relevance. The scope of the project will expose students to
+              challenges in materials synthesis, processing, and characterization. An
+              important feature of the project is the strong emphasis on education, and the
+              integration of research and education. 
+***  
+

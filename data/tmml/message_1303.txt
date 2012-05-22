@@ -1,0 +1,9 @@
+Dear All,
+Is anyone familiar with the literature Latent Dirichlet Co-clustering
+(LDCC: http://portal.acm.org/citation.cfm?id=1193349)? The authors employ
+Gibbs sampling for inference and avoids V-EM for local maxima problem. Can
+anyone give me an idea of how difficult it is to get out of the local maxima
+in V-EM in a hierarchical topic model like framework like LDCC? I am
+familiar with Hanna Wallach's work on "Rethinking LDA - why priors matter"
+Thanks,
+Ayan Acharya

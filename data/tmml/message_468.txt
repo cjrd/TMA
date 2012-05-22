@@ -1,0 +1,16 @@
+Dear list,
+I am wondering if the idea of variational inference with incompletely
+factorized q(x) has been explored in the "topic-model" literature.
+Example: q(Z) = q(z1,z2) prod_{i>=3} q(z_i) with q(z1,z2) some
+two-dimensional multinomial.
+Whenever such a constraint may improve results ([1] have shown this in a
+different setting), blocked Gibbs for dependent latent variables seems
+to be the solution of choice. Of course, derivation and inference may be
+simpler to implement, but is it also a matter of tractability in
+real-size problems (compared to GS)?
+Any hints or practical experience?
+Thanks and best regards
+gregor
+[1] Delbert Dueck, Brendan J. Frey. Probabilistic Sparse Matrix
+Factorization. PSI TR 2004?023. U. Toronto. September 28, 2004.
+http://www.psi.toronto.edu/pubs/2004/PSI-TR-2004-23.pdf

@@ -1,0 +1,24 @@
+              This is a research project in the design and implementation of novel Human
+              Computer Interfaces for educational use in structural molecular biology.  This
+              project will explore, define, and assess the role of computer-generated
+              physical models in teaching scientific content and concepts.  The purpose is to
+              enhance the understanding and communication of the complex world of life's
+              molecular machinery to a broad community.  Using structural data on biological
+              molecules and their complexes, the participants will prototype novel physical
+              models via automated design and fabrication technologies and develop
+              replication processes for broader distribution.  The models will be used
+              directly for enhance visualization and as input/output devices that
+              interactively integrate with commutation and computer graphics for information
+              retrieval, manipulation, and simulation.
+
+This project will provide new,
+              tangible modes of interacting with, and understanding of, both the fundamental
+              concepts and the complex data that are coming from the rapid advances in
+              genomics, proteomics, and other areas of structural molecular biology.  It will
+              enable a broad range of students to learn, query, and explore in a field of
+              growing scientific and social importance - the molecular basis of life. 
+              Physical models will give both haptic and visual support of the importance of
+              shape in biological function.  Use of physical models as tangible computer
+              interfaces will revolutionize how students explore and understand biomolecular
+              structure, interaction, and function.
+

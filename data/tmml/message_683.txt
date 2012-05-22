@@ -1,0 +1,7 @@
+Hi Dave,
+i came to the conclusion because in the document
+http://www.gatsby.ucl.ac.uk/~ywteh/research/npbayes/OrbTeh2010a.pdf points
+to that paper as a example for HDC Models and Topic Models.
+But thanks for the advice i will now work on the details.
+Thank you all
+Andreas

@@ -1,0 +1,18 @@
+              0073058
+McCoy
+This grant is supported by the Divisions of Materials Research,
+              Physics and Mathematical Sciences.  The focus of the grant is the exact study
+              of statistical mechanics of strongly interacting many-body systems and their
+              connection with pure mathematics and condensed matter physics.  The strongly
+              interacting systems of greatest interest are the XXZ spin-1/2 chain, lattice
+              models for generalized exclusion statistics and integrable perturbations, and
+              Ising and dimer models particularly on higher genus lattices.
+%%%
+This grant
+              is supported by the Divisions of Materials Research, Physics and Mathematical
+              Sciences.  The focus of the grant is the exact study of statistical mechanics
+              of strongly interacting many-body systems and their connection with pure
+              mathematics and condensed matter physics.  
+***
+
+

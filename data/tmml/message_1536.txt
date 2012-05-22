@@ -1,0 +1,16 @@
+All,
+I've been reading through AlSumait, et. al. "Topic Significance Ranking of LDA Generative Models" which deals with identifying "junk" topics.  While they address how to identify junk topics, they do not mention a way to remove those topics from the model.  Given that LDA has been run on a training corpus, is there currently any way to edit the resulting topic model (say the output from Mallet) in order to delete, shorten, or merge topics and regenerate a valid topic model?  The immediate application would be to get rid of the "junk" topics as identified in the AlSumait, et. al., paper and use the resulting topic model to classify additional documents.
+Additionally, are there any generally accepted protocols for topic model training?
+Sincerely,
+Mike Matsko
+Michael Matsko
+Associate
+Booz Allen Hamilton
+Office: 703-465-5751
+Fax: 703-525-3754
+Cell: 703-516-9789
+matsko_michael at bah.com
+_______________________________________________
+Topic-models mailing list
+Topic-models at lists.cs.princeton.edu<mailto:Topic-models at lists.cs.princeton.edu>
+https://lists.cs.princeton.edu/mailman/listinfo/topic-models

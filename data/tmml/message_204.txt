@@ -1,0 +1,15 @@
+Hey List,
+David Mimno wrote:
+My feeling is that the label-switching problem is unlikely to happen in
+LDA-gibbs samplers. (For a reasonable number of iterations.) If only one
+topic association is resampled at a time, it is rather unlikely that all
+words from topic 2 move to topic 3 after some iterations.
+For that reason, one may average samples (at least within a window of
+some iterations).  (For example the citation influence model, nearly
+always yielded same results.)
+Alternatively, one may evaluate the likelihood function for a number of
+iterations, and choose point estimates that yield the highest
+likelihood. (Or use this in combination with averaging)
+Does anyone has further thoughts on this?
+Cheers,
+Laura

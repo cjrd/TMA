@@ -1,0 +1,45 @@
+              
+Modern mobile communication systems strive to maximize capacity within the
+              system. The capacity of the system to handle multiple subscribers is adversely
+              affected by adjacent channel interference (ACI). ACI results from nonlinear
+              distortion created by the transmitter power amplifier (PA). This is especially
+              problematic for high power base station PAs within the cellular infrastructure.
+              Such distortion produces out-of-band signals that interfere with other
+              subscribers' reception. Thus ACI, effectively raises the noise floor forcing
+              lower bit rates and/or increased transmit power for those subscribers. As
+              medium rate data services for internet access are being introduced into the
+              cellular systems, higher demands are being placed on both capacity and quality
+              of service. For these reasons, minimization of ACI, which requires PA
+              linearization in basestation infrastructure, is of great
+              importance.
+
+Commercially available state-of-the-art base station PAs use
+              feed-forward linearization.  While this method is effective in improving ACI,
+              the architecture needs additional components as well as a high power combining.
+              These added components, and the losses they introduce in both DC and RF power,
+              tend to make PAs based on the feed-forward method both costly and
+              inefficient.
+
+Predistortion linearization is another method of linearization.
+              This approach is more cost effective than feed-forward linearization, because
+              the signal processing is done digitally, and there are no components following
+              the PA that waste power. However, the performance of predistortion is generally
+              not as good as feed-forward linearization, because a near perfect model of the
+              amplifier must be extracted and a predistorter model formulated to counteract
+              the distortion mechanisms. One area in which current models are deficient is in
+              characterizing memory effects. Memoryless predistortion has been thoroughly
+              investigated in the literature, but for high peak-to-average signals, such as
+              multicarrier CDMA or OFDM signals, self-heating effects arise, creating delay
+              responses in the distortion that manifest themselves as memory effects. In
+              general, higher power amplifiers, such as those used in basestations, are more
+              susceptible to memory effects than those used in lower power mobile
+              equipment.
+
+This proposal will outline a research program that will
+              investigate modeling of PA memory effects, as well as linearization of PAs that
+              exhibit such effects. The authors propose a research program that will develop
+              new methods in PA characterization and modeling, as well as advance the
+              state-of-the-art in predistortion linearization to achieve or exceed
+              performance levels previously seen only using costly and inefficient
+              feed-forward techniques.
+

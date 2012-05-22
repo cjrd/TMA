@@ -1,0 +1,11 @@
+David Newman and others at UC-Irvine have some very interesting papers about
+parallel Gibbs sampling in LDA which you might find helpful. The JMLR paper
+would be a good place to start
+http://portal.acm.org/citation.cfm?id=1755845
+I coded up a Python + NumPy + C implementation of one of their algorithms
+for multicore in order to speed up my own experiments.  I got major speedup
+vs standard collapsed Gibbs but did not do detailed benchmarks.  If you are
+interested it is available at
+http://www.github.com/davidandrzej/pSSLDA
+Hope that helps,
+Dave

@@ -1,0 +1,23 @@
+              Engineering - Electrical (55)
+
+This project is developing a real-time computer
+              controlled Power Electronics and Drives Laboratory that consists of
+              object-oriented software based experiments, modular based hardware experiments,
+              and state-of-the-art industrial drives from Allen-Bradley. Specific practices
+              and products that are being adapted are the use of object-oriented modeling of
+              components from RPI and Virginia Tech, and hardware implementation through
+              power electronic building blocks from Technical University of Munich.
+
+The
+              main features of the laboratory include PC software, DSP-based control
+              hardware, signal conditioning units and device drives and opto-isolation for
+              power electronic converters. Object-oriented modeling and visual programming
+              employ computer tools such as Saber and PEMag.
+
+Students are learning through
+              "hands-on" experience in graphical modeling and simulation,
+design, analysis,
+              and prototyping of power electronics experiments, the operation of industrial
+              grade drives, and through web-based and CD-ROM modular materials.
+
+

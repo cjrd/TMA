@@ -1,0 +1,14 @@
+              Henzinger, Thomas
+CCR-0208875
+"Towards Predictability and Portability in
+              Embedded Software"
+
+This project develops, implements, and validates
+              platform-independent programming models for embedded software with hard
+              real-time constraints.  For high-performance control applications, the
+              time-triggered programming language Giotto is implemented by targeting the
+              Embedded Machine.  The Embedded Machine is a virtual machine that mediates in
+              real time the interaction between software processes and physical environment
+              processes.  The Embedded Machine is ported to single-CPU and distributed
+              platforms.
+Embedded Machine code is validated by schedulability analysis.

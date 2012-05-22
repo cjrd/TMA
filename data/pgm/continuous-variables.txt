@@ -1,0 +1,255 @@
+
+That exploit additional forms of local
+structures some kind of pro matrix form
+are extremely valuable in context of
+general, in the general context of
+graphical models because they allow us to
+provide a much sparse representation. But
+they are absolutely essential when we have
+in networks that involves continuous
+variables because their tables are simply
+not an option. So let's look at some
+examples of networks that involve
+continous variables, and see what kind of
+representations we might want to
+incorporate here. So now, let's imagine
+that we have a continous temperature
+variable. Say the temperature in a room.
+And we have a sensor, a thermos-, a
+thermometer that mentions, that measures
+the, the temperature. Now, thermometers
+aren't perfect, and so, what we would
+expect, then, is the sensor is around the
+right temperature, but not quite. And so.
+One way to capture that is by saying that
+the sensor S is a normal distribution. And
+here's an all distribution. Around the
+true temperature, T, with some standard
+deviation, Sigma S. So this defines for
+every value of T a distribution over S. In
+a very compact parametric form that has
+just really the parameter of sigma S, and
+if we just say that S is a Gausian around
+the variable, around the value of the
+variable T. Now let's make the situation a
+little bit more interesting. This is the
+temperature now. And this is a
+[inaudible]. So we have P. And P. Prime.
+Now, P. Prime now depend, the, the
+temperature soon depends on the current
+temperature, as well as the outside
+temperature, because of some equalization
+of temperatures from the inside to the
+outside. So, what model what, we, might we
+have for T prime as the function of it's
+two parents? Temperature the current
+temperature and the outside temperature.
+Well, so one model might be just some kind
+of diffusion model that says that T is
+equal to some weighted combination. Sorry,
+T prime is a Gaussian around,
+a mean that's defined as a combination of
+the current temperature and the outside
+temperature. So you kind of combine the
+two, and because there is stochasticity in
+the process, we're going to say that T
+prime isn't exactly equal to this, but
+rather is a Gaussian around this mean.
+With some standard deviation stigmatic. To
+be distinguished from the standard
+deviation stigma x which is the center of
+deviance. Let's make life even more
+interesting. Let's imagine that there is a
+door in the room. The door can be opened
+or closed so it's a discreet variable,
+takes two values and clearly the extent of
+the diffusion is going to depend upon
+whether the door is open and we would
+expect different parameters to this
+system. In the case of two values of the
+discreet variable and so if we write the
+model now we're going to have that the
+temperature time, the temperature soon T
+prime, is going to be a Gaussian
+who's parameters, alpha and sigma depend
+on the value of a door variable. So, if b
+equals zero. We're going to have
+parameters alpha zero and sigma zero T.
+And if b equals one, we have
+a different set of parameters that equal
+to different diffusion process. So just to
+give all these things name this model that
+we had over here was called a linear
+Gaussian. We will define that more formally in the
+next slide. And this model is called the
+conditional linear Gaussian. Because
+the linear Gaussian whose parameters are
+conditioned on the discrete variable
+Door. So to generalize these models
+to a broader setting where, where we have
+a general variable Y and Y has parents X1
+up to XK the linear Gaussian model has the
+following form. It says that Y is a
+Gaussian, so that's what the N stands for,
+who's mean, is a linear function, and
+that's why it's called a linear
+Gaussian. Is a linear function of the
+parents X_i. And importantly whose
+variance doesn't depend at all. On the
+parents So the variance is fixed. That's
+the definition of a liner Gaussian CPD,
+and obviously, it's restricted. It doesn't
+capture every situation, but it's a useful
+model and a useful first approximation in
+many cases. Conditional linear Gaussian
+introduces into the mix, the possibility
+of one or more discrete parents. In this
+case, we just drew one more simplicity,
+but you could have more than one. And this
+is just a linear Gaussian whose
+parameters depend on the value of A. So,
+writing it down it looks exactly like
+this. We now have, for every one of the
+parameters, we have the ability for the
+parameters to depend on A. And this case,
+the variants, can depend on the continue
+on the discreet parent. But not on the
+continuous ones. And this is the
+conditional in your Gaussian model. And
+again, similarly it is a restricted model,
+and one can certainly generalize beyond
+that, as we'll show in a moment. But it's
+a very useful model that's used in a large
+number of applications. One example
+application that we've seen that involves
+continuous variables is the task of robot
+localization. I'm not going to show this
+video again now. We're going to see it
+again when we talk about temporal models.
+But, just as a reminder, what we have here
+is a robot whose location is a continuous
+quantity. So are the sensor observations
+that give a noisy version of how far away
+the robot is from an obstacle looking in
+each one of the different directions. Okay
+and so we have both the continuous state
+variable as well as the continuous
+observation that the robot needs to deal
+with. So what kind of observation model
+makes sense in this study. So here lets
+imagine that this line over here
+represents the true distance. From the
+robot's current location, from a given
+location to obstacle. So if the robot
+is looking in, if we're conditioning on
+the robots current location and we're
+asking, if I look in this diresction how
+far is it before I hit an obstacle. In
+this case that distance is, 200 and, I
+don't know, twenty centimeters. And what
+this tells us is that a sonar is a
+Gaussian. You can see this is the sonar.
+The red is the sonar. Is a Gaussian around,
+the true distance. Now, the laser, which
+is a different sensing modality for the
+same robot is also a Gaussian around that
+true distance. But because the laser is a
+more accurate sensor the standard
+deviation is lower for the laser than for
+the sonar. And that reflects the accuracy
+of these two different sensor modalities.
+Now, this is an idealized version. But
+surprisingly corresponds in useful ways to
+the real model. So let's actually look at
+some of the, Let's look first at the model
+that was used in the system. And then, at,
+which is the red line. And then we can
+look at the blue line. The red line
+actually involves three different
+components. So this is the actual center
+model. Used by the robots and we can see
+that it has three components. It has this
+peak Which is the Gaussian around the
+true distance. The next most obvious
+phenomenon is this ridiculous peak over
+here. This corresponds to a max range
+reading. This is what you get if there
+isn't an obstacle in that direction within
+a reasonable distance for the laser or the
+sonar to return any signal. And so that's
+why there's a very large peak, at, at,
+beyond a certain distance. That's the
+entire rest of the probability mass. The
+final most more subtle aspect of this
+probability distribution is that you see
+that this is higher than that. So, the,
+there's more probability mass, for the
+density, before the obstacle than after
+the obstacle. And why is that? Because
+once you get to the obstacle. The beam
+returns. But before you get to the
+obstacle there might be some other like,
+transient things, like a person walking in
+front of the obstacle. And that's going to
+return the beam in a way that doesn't
+represent the actual structure of the map.
+And so that's why we have a certain
+probability. Of having the ob, of having
+the, the beam return sooner than the
+obstacle, and that probability doesn't
+exist on the downside once the obstacle's
+been reached. So the actual probability
+distribution is an aggregation of these
+three signals. The sensor model around the
+obstacle in a given direction. This
+uniform distribution, before
+the obstacle would [inaudible]
+distribution return and the max range
+reading at the end. The red line is the
+model that was used and the blue
+line is, the actual measured distances in
+different settings to sort of show whether this
+really does, the model that was used
+really represents reality. And the answer
+is that, it does to a surprising extent.
+So this, this is an example of how
+continuous sensor, continuous
+distributions are going to be used in a
+real world application. The next example,
+of that, is actually the robot motion
+model. So here are the robots. And the
+robot is heading in a given direction
+alpha. Heading sorry, heading in this
+direction that's what it thinks it's going
+and the question is if it moves a certain
+distance it thinks it's moving a certain
+distance in a given direction. What is the
+Actual distribution over it's next
+location. And the answer is it's a little
+bit tricky because robots actually have
+heading and there's certain uncertainty
+alpha, over which is the difference
+between where they think they are going
+and where they are actually going. And
+then there is also noise. On the distant
+delta, that they think they moved, and,
+so, when you put all these together, the
+actual cloud, on, the distribution, on
+where the robots going to be, falling,
+[inaudible] move, is this weird, banana
+shaped distribution, which is centered
+around. This area where the robot thinks
+it is. But is, but has a sort of banana
+shape that's, where the banana shape is
+induced by the uncertainty about the
+angular trajectory. And if you actually
+run this for a while, you can see that the
+banana shape gets more and more and more
+diffuse. So here is the first banana
+shape, and now the robot turns, and
+there's more uncertainty over the heading.
+And so, you get. A larger and larger
+banana shaped distribution, on the robots
+position, assuming there's no evidence to
+correct, the position based on say sonar
+or laser readings.

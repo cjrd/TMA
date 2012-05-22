@@ -1,0 +1,61 @@
+              ABSTRACT DMS - 0206847.
+
+Abstract of the Project
+
+This project is centered
+              around the study of the Ricci flow on complete,
+non-compact Kaehler manifolds
+              of nonnegative holomorphic bisectional
+curvature. The main goal is to seek a
+              complete understanding of singular
+behavior of the maximal solutions to the
+              Kaehler-Ricci flow with
+nonnegative curvature,  in particular the geometry,
+              such as the rates of 
+curvature decay and volume growth of geodesic balls, of
+              complete Kaehler-Ricci solitons,
+which turn out to be the models for Type II
+              singularities and can be considered as a
+natural extension of Calabi-Yau
+              metrics on non-compact complex
+manifolds. Progress on the project will lead to
+              new understanding of geometry, analysis, 
+and complex structure and could have
+              important application to solving a
+well-known conjecture in complex geometry. 
+              The research will be based
+on the effort of extending the dimension reduction
+              method of Hamilton
+for the Ricci flow in the Riemannian case to the Kaehler
+              case where one
+has weaker curvature assumption. 
+
+
+The proposed project
+              deals with singular behavior of the Kaehler-Ricci
+flow, or Parabolic-Einstein
+              equations, and studies uniformization type
+problems for complete Kaehler
+              manifolds. The Kaehler-Ricci flow is an
+important type of geometric evolution
+              equations, which have profound
+importance and applications in science and
+              geometry. Some of the examples include 
+the motion of a surface by its mean
+              curvature, the flow of gas in a porous mechanism,
+the motion of a liquid
+              crystal, the diffusion of oil in shale, the
+reproduction of sparse species,
+              and image sharpening. The knowledge
+gained in this project would not only 
+              have significant implications to
+our understanding of complex geometry which
+              in turn could be very useful
+to the study of mathematical physics, but also
+              may lead to new
+understanding of singularity formations in other geometric
+              evolutions.
+
+------------------------------------------------------------------------
+
+

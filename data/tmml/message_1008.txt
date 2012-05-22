@@ -1,0 +1,5 @@
+Hello David,
+thanks for sharing the implementation, that's always appreciated and super-useful to the community. I'm looking forward to your full NIPS article, but in the meantime, I had a quick look at Mr. Hoffman's code. It seems like it does input subsampling, with an added twist of optional model decay between individual updates. Is that correct? I.e., instead of iterating over the whole corpus several times, updates happen over a smaller (random) subset of the corpus, but many more times.
+For those interested in the implementation side of things, I found a useful optimization in the code (commented as "Cf. Lee&Seung 2001.") -- phi is left implicit and gamma is updated directly. This "trick" speeds up the computation about 3x (compared to the LDA-C based online LDA as found in the current Gensim package), so I will include this optimization in the next release of Gensim, too.
+Thanks again and looking forward to your NIPS presentation,
+Radim

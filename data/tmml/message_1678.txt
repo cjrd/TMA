@@ -1,0 +1,4 @@
+Dear all,
+Can anyone share any code about calculating the perplexity of topic models?
+Best Regards
+Darren

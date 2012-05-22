@@ -1,0 +1,22 @@
+              This project requests incremental funding for the Regional Laboratory for
+              Applied Network Engineering Research and Training (RLANRT) project to build a
+              living on-line repository for network engineering instructional materials and
+              training.
+
+Continual exponential growth in traffic and bandwidth usage is
+              imposing severe strain on the Internet, and the gap between the immediate needs
+              of the Internet infrastructure and current classroom content is growing.  New
+              computer science and engineering solutions are needed, but producing the
+              necessary skills and talent is hampered by the small size of the current pool
+              of knowledgeable network engineering practitioners.
+
+Under the auspices of
+              RLANRT, JSU proposes to coordinate a Web-based repository for network
+              engineering curriculum materials.  Resources are the current instructors from
+              within and outside this institution, and Internet vendors such as CISCO, NOVEL,
+              and Microsoft.  These vendors have a wealth of training materials related to
+              their hardware and software, and the objective is to draw together the myriad
+              topics in a continual updated resource for both teachers and infrastructure
+              whose reliability and throughput at various levels will be secured by the
+              activities of engineers, users, and service providers alike.
+

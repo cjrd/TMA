@@ -1,0 +1,4 @@
+You will probably be interested in these discussions from last fall:
+https://lists.cs.princeton.edu/pipermail/topic-models/2010-September/000904.html
+https://lists.cs.princeton.edu/pipermail/topic-models/2010-September/000947.html
+https://lists.cs.princeton.edu/pipermail/topic-models/2010-October/000978.html

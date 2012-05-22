@@ -1,0 +1,24 @@
+Dear all,
+My understanding of 'Topic Models' is that it works "well" a-posteriori:
+That is investigating a given set of documents (be it text, images ...)
+My objective is to investigate the "predictability" of a given Topic Model
+on a New (understand random and unseen) documents (of same nature as the
+one used to obtain the initial Topic Model).
+The way I look at it:
+- posteriors are not useful considering the TM have been built on a "set of
+words" that "may very well be" different than the majority of the words
+used during the Topic Model generation + the Topic Model generation assumes
+that newdata is of similar origins to the hold-out data (same prior).
+- discrepancies also assumes the newdata is of similar origins to that of
+the hold-out ones
+I tried running few steps of the M-step in the EM determination with the TM
+resulting from the E- step to investigate if clear non-convergence could
+imply that TM cannot "predict relevant information" on the newdata, but had
+no good results (eventually I did something wrong considering I thought it
+was sound from a math perspective).
+I look for similar "future prediction" discussion in the mailinglist but
+didn't find much. Could anyone point me to some literature or ideas that
+would answer the following question:  Can this given TM be used on this
+given Data Set without any a-priori assumption ? (basically saying, you're
+safe, you can start using posteriors and discrepancies analysis)
+Thx

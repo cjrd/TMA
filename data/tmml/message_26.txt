@@ -1,0 +1,11 @@
+hi all,
+yes, each row is log p(w | z) for a particular topic.
+lda-c produces \gamma_d, which are dirichlet parameters that
+approximate the posterior distribution of \theta given the dth
+document, p(\theta | w_1,d, ..., w_N,d).  (in its exact form, this
+posterior is not in the dirichlet family.)
+see the paper "latent dirichlet allocation" from JMLR for details.
+as you suggest, one estimate of \theta is E[\theta | \gamma], which
+are the normalized values.
+best,
+dave

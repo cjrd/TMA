@@ -1,0 +1,14 @@
+I think the KL distance [1] is the most natural tool for comparing topics
+(since each topic (p(w|t))  is a probability distribution).
+You can try the idea from [NASW07], where they use  the Hungarian
+algorithm for matching on the topics extracted from different runs
+with "weight" being equal to the KL distance.
+They report to have about 80% of their topics match in-between runs
+of Gibbs sampling on the same data, i.e. for 80% of topics from run1
+there is a unique topic in run2 that is similar (low KL distance).
+Ivan
+______
+[1] http://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence
+[NASW07] D. Newman, A. Asuncion, P. Smyth, and M. Welling. Distributed
+inference for latent dirichlet allocation. Advances in Neural Information
+Processing Systems, 20:1081?1088, 2007.

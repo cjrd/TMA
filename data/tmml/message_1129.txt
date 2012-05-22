@@ -1,0 +1,6 @@
+There was a paper presented at SIGKDD 2010 that used a modified HDP to model
+a a set of varying corpora that used a shared global measure for all times.
+That paper is by Jianwen Zhang et al and is called "Evolutionary
+Hierarchical Dirichlet Processes for Multiple Correlated Time-varying
+Corpora".  It is similar to an HDP with 3 levels, but the DP draws depend on
+the previous days draws as well as their parents.

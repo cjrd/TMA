@@ -1,0 +1,8 @@
+Hi,
+I am new to LDA. I am using BibbsLDA++ to generate 100 topics. The
+result is a file, which contains the topic-document distributions. Each
+line is a document and each column is a topic. This file give me a
+distribution for each document across 100 topics. However, what I want
+to get it the distribution of each topic across all the document. How to
+do it?
+Thanks!

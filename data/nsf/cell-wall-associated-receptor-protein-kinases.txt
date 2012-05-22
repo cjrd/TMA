@@ -1,0 +1,97 @@
+              Cell walls are carbohydrate and protein structures that surround and separate
+              plant cells.
+As plant cells expand in a regulated fashion they must
+              necessarily modify and enlarge
+their cell walls to permit the subsequent
+              increase in volume. The cell wall itself might
+influence this expansion
+              process. Thus the cell has the potential to influence almost every
+aspect of
+              plant function simply because of its position and physical properties. For
+              this
+reason many have speculated on its role in a plant's development and
+              response to the
+outside world. Cell growth can occur in many dimensions, such
+              as the polarized
+expansion of a pollen tube tip, the creation of elongated
+              cells characteristic of many
+vegetative tissues, the establishment of a
+              meristem, or even the jigsaw-like arrangement
+of cells at the leaf surface.
+              Currently the understanding of how cell wall architecture is
+coordinated with
+              programmed and hormone regulated cell expansion events during
+development is
+              not well understood in angiosperms.
+Recent studies have identified a number of
+              proteins at the cell surface that could
+directly regulate cell wall functions,
+              and the Cell Wall Associated Kinases, or WAKs, are
+among these. There are five
+              cell wall associated kinases in Arabidopsis and
+representatives in other
+              angiosperm families. WAKs each have a cytoplasmic
+serine/threonine protein
+              kinase domain, span the plasma membrane and extend a domain
+into the cell
+              wall. WAKs physically link the plasma membrane to the carbohydrate matrix
+and
+              are unique in that they have the potential to directly signal cellular events
+              through
+their kinase domain.
+The WAK extracellular domain is variable between
+              the five isoforms, and collectively
+the family is expressed in all organs.
+              WAK1 and WAK2 are the most ubiquitously and
+abundantly expressed of the five
+              tandemly arrayed genes, and their messages are present
+in vegetative
+              meristems, junctions of organ types, and areas of cell expansion. They
+              are
+also induced by pathogen infection and wounding. The WAK1 but not WAK2
+              cell wall
+domain binds to a glycine rich protein (GRP) of the cell wall in in
+              vitro assays. WAK1
+and GRP can be co-immunoprecipitated from leaf or seedling
+              extracts, and this WAK is
+phosphorylated. Recent experiments demonstrate that
+              antisense WAK expression leads
+to the loss of cell expansion, and preliminary
+              results indicate that antisense GRP
+production causes an enhancement of cell
+              expansion (and eventual cell death). Thus GRP
+may be a negative regulator of
+              WAK activity. A large amount of WAK is also covalently
+linked to pectin, and
+              most of WAK that is bound to pectin is also phosphorylated. The
+data support a
+              model where WAK1 is bound to GRP as a phosphorylated kinase, and also
+binds to
+              pectin. How WAKs are involved in signaling from the pectin extracellular
+              matrix
+in coordination with GRPs will be key to the understanding of the cell
+              wall's role in cell
+growth.
+WAKs are poised to provide a direct signal from
+              the cell wall to the cytoplasm of many
+cell types during the development of
+              Arabidopsis. In order to characterize the
+associations and roles of GRPs and
+              WAKs in plants it will be necessary to generate
+additional (partial) loss of
+              function alleles of the two predominant WAKs and of GRP.
+These alleles can
+              then be used to determine the relationship of WAK mediated cell
+expansion to
+              other known signaling pathways. WAK kinase substrates will be also
+identified
+              and used to assay the activation of WAK by wall components and
+developmental
+              cues, and eventually mutant alleles of these substrates will help in
+              the
+analysis of WAKs and cell elongation. The goal is to understand how WAKs
+              in
+association with GRP and pectins regulate cytoplasmic components so that
+              the cell wall
+is coordinated with processes of cell growth.
+

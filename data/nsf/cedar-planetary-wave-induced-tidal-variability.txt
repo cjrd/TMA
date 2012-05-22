@@ -1,0 +1,21 @@
+              The atmospheric tides are global scale oscillations in the basic state of the
+              Earths atmosphere (winds, temperature and density) that are forced in the
+              lower-atmosphere and propagate vertically into the upper atmosphere and
+              ionosphere. Over the past decade basic understanding of the migrating
+              atmospheric tides has emerged, largely from an increase in the number of
+              ground-based observatories across the globe making wind and temperature
+              measurements of the mesosphere- and lower-thermosphere (MLT) roughly between 70
+              and 120km. The continuing increase in the availability of observational data
+              from ground and space based instruments is providing atmospheric scientists
+              with the opportunity to improve their theoretical understanding of the
+              mechanisms that drive atmospheric tides. This is accomplished through a process
+              that includes both numerical models and observational data. The basic approach
+              for this research is to use the Whole Atmosphere Community Climate Model
+              (WACCM) that has been under development at the National Center for Atmospheric
+              Research. WACCM is a fully nonlinear, four-dimensional global circulation model
+              of the atmosphere spanning from the surface to an altitude of 140km. Analysis
+              of WACCM results will be compared with the global network of MLT observations,
+              including those from the recently launched TIMED spacecraft, to validate the
+              tidal and planetary wave structure simulated by the model. Once validated, the
+              model will be utilized to estimate the affect of global scale planetary waves
+              on the structure of the atmospheric tides.

@@ -1,0 +1,6 @@
+dear shalini,
+the code uses an exchangeable dirichlet.  all the components of the
+dirichlet parameter vector are assumed to be the same value.  there is
+only a single scalar parameter.
+best,
+dave

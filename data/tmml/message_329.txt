@@ -1,0 +1,15 @@
+Dear list,
+I'd like to use LDA to tag words in test data with topics, as is shown
+with the different colored words of Figure 8 in "Latent Dirichlet
+Allocation".   Since 'lda inf' in the C implementation has no direct
+output for this,  I had thought (perhaps naively) to compute
+p(z|doc)p(w|z), estimating p(z|doc) by taking the gamma values output by
+'lda inf' for the given document, subtracting alpha from each gamma to
+obtain the expected number of words for that topic, then normalizing
+these expectations by their sum to obtain a probability.    But perhaps
+this is wrong, and I must use the phiN for this purpose?   Presumably I
+would have to modify the C code so as to make it write these out.
+I do see a word-assignments.dat file, but that is only for 'est'.
+Apologies if this has already been covered in the past
+thanks,
+Dave

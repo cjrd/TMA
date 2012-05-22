@@ -1,0 +1,221 @@
+
+So, today's topic is an important
+extention on the language of graphical
+models. And it's intended to deal with the
+very, large class of cases, where what
+we'd like to do is not just write down one
+kind of graphical model for a particular
+application. But rather, come up with
+something that is a general purpose,
+representation that allows us to solve
+multiple problems using the same exact
+model. So, to understand what that means
+in a somewhat more concrete setting, let's
+go back. Now for genetic inheratince that
+we have discussed previously it's arguably
+the earliest example of Bayesian network
+reasoning before Bayesian networks were
+invented and here we have as input a
+pedigree. Which is a family tree. And
+we're interested in reasoning about a
+particular trait. And for each pedigree
+and each trait we can construct a Bayesian
+network and the Bayesian network might
+look like this. But clearly if you had a
+somewhat different family tree, so
+suddenly you had another three cousins and
+a great grandfather join the family tree,
+or if you had a different family
+altogether, you would still want to use
+the same sort of ideas, the same pieces of
+what we used in the first network to
+construct this other network because there
+is clearly a lot of commonality between
+them. So we have, what you might call,
+sharing. Between models. But in addition
+to that. You also have in this example as
+a fairly obvious sharing within the model
+so for example, this CPD that tells us how
+Selma's genotype affects Selma's blood
+type presumably is the same process by
+which Marge's genotype affects Marge's
+blood type and the same for Maggie and
+Lisa and Bart and Homer and everybody. So,
+so we have this tremendous amount of
+sharing of both dependency models and
+parameters. Similarly, you might argue,
+you might, looking at this realize that
+the genetic inheritance model by which
+Bart's genotype is determined by the
+genotype of his two parents as the same
+inheritance model that applies to Lisa. To
+Maggie, to Marge, to Selma, and so on. So
+once again we have a lot of parameters
+that are shared not just between but also
+within the model. So we'd like to have
+some way of constructing models that have
+this, large amounts of shared structure
+that allows us to both construct large
+models from sparse parametrization and
+also to construct entire family of models
+from a single concise representation. This
+is not the only such application. This is
+probably the most commonly used type of
+graphical models are those that have
+shared structure and shared parameters.
+So, here is another example that we've
+seen previously, this is for natural
+language processing, a sequence model, for
+in this case trying to identify named
+entity recognition, a very common task
+for which graphical models have been used.
+And here, also, we have a sequence model,
+and we have, again, shared, shared pieces,
+for example. The parameters that relate
+the latent variable, in this case, what
+type of, what type of variable, what type of entity it is.
+Is it a person, is it a location, and so
+on. There is a set of parameters here, and
+they're going to be independent of the
+place and the sequence. In which we find
+the word because not because it's
+necessarily an exactly correct model I
+mean one could clearly imagine cases where
+the position in the sequence might make
+the difference but because it's often a
+very useful simplifying assumption,
+specifically because it allows us to A use
+parameters, reuse parameters and B allow
+us to apply the same model to sequences of
+varying length without having to worry
+about what is my fifteen word model versus
+what's my eighth word model and so this is
+a, another case where you have We have a
+tremendous amount of reuse of
+parameters. We've already seen similarly
+the examples in this segmentation clearly
+we don't want to have a separate model for
+every super pixel in the image there's
+hundreds of super pixels so we have
+sharing across superpixels
+So for example, the model here
+that, that relates the class label of the
+superpixel to the image features of that
+superpixel is generally one to be shared
+as are the parameters that involve
+adjacent superpixels. So these edge
+potentials are also going to shared across
+in this case, pairs of superpixels.
+And once again we
+have sharing across models as well because
+we are going to have one such model for
+image A and obviously we don't want to
+construct a separate model for every image
+so once again we have sharing between and within
+a model. So let's look at one
+example a little bit more concretely
+because it's an example that we're gonna
+use in some of the later analysis. So now,
+let's return to our university example
+where we have a student who takes a class
+and gets a grade and that the grade
+depends on the student's difficulty oh I
+am sorry difficulty of the course not
+intelligence of the student. Now this is
+all fine if we're interested in using just
+about an individual student, but now let's
+imagine that we want to think about an
+entire university. So now we have a
+difficulty variable. So these are all.
+Difficulty variables. For different
+courses in this case C_1 up to C_N are
+different courses that exist in our
+university and conversely on the other
+side we have multiple students and this is
+a set of intelligence variables that are
+indexed by different students so we have
+the intelligence of student one up to the
+intelligence of student m. Now note that
+these are different random variables they
+can and generally will take different
+values from each other but they all share
+a probabilistic model and that's sort of
+the kind of sharing that we have in mind.
+And what we see here, is that the grade of
+a student within a course, which are these
+variables down here, depend on the
+difficulty of the relevant course and the
+intelligence of the relevant student. So
+for example, the grade of student one in
+course one, depends on the difficulty of
+course one and on the intelligence. Of
+student one and once again we have sharing
+of the both the structure and the
+parameters across these different grade
+variables so that they all have the same
+kind of dependency structure in the same
+CPD. Another example is that of robot
+localization and this is another example
+of, in this case, the time series where
+the robot moves through time from one
+position to the other. And although the
+position at time T is different.
+Changes over time. We expect that the
+dynamics of the robot. Are fixed. We'll
+talk more about that later. So that gives
+us a graphical model that again, looks a
+little bit, this is one example of such a
+graphical model where we see that the
+position to the robot pose, over here,
+these X variables depend on for example
+the previous pose and on whatever control
+action the robot took. And we're assuming
+that once again we have sharing. Of these
+parameters for each instantiation of this
+variable. So what that gives rise to is a
+class of models that are represented in
+terms of template variables. Where a
+template variable is something that we end
+replicating, in many cases, again and
+again, within a single model as well as
+across models. And so the replication is
+indexed by the, by the fact that the
+variable. You can think of it as a
+function that takes arguments. And the
+arguments, for example, might be time
+points, as in this example over here. So
+here we have a location variable that's
+indexed by time point or sonar reading
+indexed by time point. We have, in this
+case, a genotype variable and a phenotype
+variable that's indexed by a particular
+person. A class label that's indexed by
+pixel. And similarly the difficultly of
+the intelligence and the grades that are
+indexed, in this case, by different
+combinations of indexees, course student
+or course student pairs. And a template
+model is a language that tells us how
+template variables can be the dependency
+models for template variables and how
+concrete instantiations of variables what
+are called ground variables. Like the ones
+that are actually indexed by a particular
+timepoint or person how they inherit the
+dependency molecule [inaudible]. And
+their's a whole range of such languages
+that have been developed in a special
+purpose way for different applications. So
+dynamic Bayesian networks are intended for
+dealing with temporal processes for
+example. Where we have replication over
+time we have a whole range of [inaudible]
+for object relational models both directed
+models and undirected models where you
+have multiple objects such as people or
+students and courses or pixels so people.
+courses, pixels, and lots of other things
+which can be related to each other in
+different ways and how you represent the
+dependency model over that ensemble in a
+coherent way.

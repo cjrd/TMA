@@ -1,0 +1,13 @@
+Hi,
+I think that there are numerous approaches available depending on what data
+you have and what you are trying to achieve, and because of that it can be a
+subjective task. However, there's a section in the Latent Dirichlet
+Allocation paper (the Experiment section I believe) where the authors
+describe a "perplexity" metric. Perplexity is the exponent of entropy so you
+can use it for any distribution. In the paper, the authors use the held-out
+test data and calculate its perplexity, varying the number of topics. See
+the graphs that are produced. I would guess that you should use the number
+of topics that give you the minimum perplexity. Again, I'm not sure if this
+is the best way, but it's easy to implement at least.
+Regards,
+Adnan

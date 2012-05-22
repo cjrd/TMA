@@ -1,0 +1,39 @@
+              Chemistry (12)
+
+This project seeks to enhance the undergraduate chemistry
+              curriculum at the institution by incorporating high resolution,
+              computer-controlled ultraviolet-visible-near infrared (UV-Vis-NIR) spectroscopy
+              into three upper-level laboratory courses: Instrumental Analysis, Inorganic
+              Synthesis, and Experimental Physical Chemistry. This is accomplished by
+              adapting several new or classic laboratory experiments from the chemical
+              education literature for use with the computerized Cary-14 and implementing
+              them into the three formal laboratory courses currently taught by the Chemistry
+              Department. The proposed experiments and instrumentation enhance the students'
+              critical thinking skills, increase their familiarity with a wide variety of
+              computerized equipment, and expose them to the scientific process of inquiry
+              through investigation. As a result of this formal change in curricula, the
+              students are better prepared to participate in independent research. The
+              institution is a comprehensive, urban, commuter campus with an ethnically
+              diverse student population and the chemistry department reflects that
+              diversity. 
+
+Funding provides an Aviv Instruments modernization of the
+              current Cary-14 spectrophotometer including a thermoelectrically cooled heater
+              in the cell housing, and release time for the PI and co-PIs to implement and
+              adapt experiments for the Cary-14 and our laboratory courses. This project is
+              for a duration of 33 months, as much of the first year is devoted to the
+              instrument modernization and initial development of the laboratory experiments.
+              These experiments are introduced into the formal laboratory courses in the
+              second year of the grant, then evaluated, revised and reintroduced in the final
+              year. The anticipated outcomes of this proposal include: 1) improved
+              undergraduate laboratory experiments; 2) decreased time for data acquisition;
+              3) increased time for data interpretation and analysis; 4) increased
+              understanding of digital data acquisition; 5) increased variety and quality of
+              laboratory experiments; 6) increased hands-on-time for each student; and 7)
+              integration of digital methods-instrumental output as well as Microsoft Excel,
+              Word, and PowerPoint-into the reporting of experimental results. This project
+              significantly improves the preparedness of our majors for research and future
+              employment in academics and industry. Dissemination of results is accomplished
+              through a web site linked to the chemistry department home page, publication in
+              referred chemical education journals, and presentation at regional and national
+              meetings.

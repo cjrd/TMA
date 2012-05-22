@@ -1,0 +1,23 @@
+Hi topic buddies --
+I thought the members of this list might be interested to know that
+version 0.2 of HBC (the Hierarchical Bayes Compiler) is now available.
+The original announcement for version 0.1 can be found at:
+http://nlpers.blogspot.com/2007/08/hierarchical-bayes-compiler.html
+The HBC web page is at:
+http://hal3.name/HBC
+or http://www.cs.utah.edu/~hal/HBC
+The "big deal" with version 0.2 is that variables that are distributed
+Dirichlet and are only ever used in a conjugate pairing with
+Multinomials can now be automatically collapsed.  This means, for
+instance, that the Griffiths+Steyvers collapsed Gibbs LDA is available
+for "free" (okay, you have to write six lines of code to specify LDA,
+but I think you can handle that).
+Finally, here's an appeal to the community:
+Currently, HBC only generates C code.  This is great because it's fast,
+but maybe you want Python or Java or whathaveyou.  Here's the deal (this
+is also posted as a comment on the blog link above).  If you want me to
+target HBC to your language of choice, then I need you to provide me
+with the equivalent of stats.c in your language.  If you do that, I'll
+promise to work on the code generator.
+Best,
+- Hal

@@ -1,0 +1,9 @@
+I am still a new to Factorie, but the model code in factorie would not
+be much longer than the HBC code. I guess something like one line HBC
+code refers to 3 lines Factorie code (as opposed to 100 lines Gibbs
+sampling code in java).
+However, you trade that for a lot of flexibility. If you head out for
+scalable algorithms, this flexibility of hacking the inference is
+actually what you need...
+Cheers,
+Laura

@@ -1,0 +1,51 @@
+              The consortium between Michigan State University and Florida State
+University
+              proposes the construction of a highly efficient,
+large-area neutron detector
+              for the detection of high-energy
+neutrons to be used in experiments with fast
+              rare isotopes at the
+National Superconducting Cyclotron Laboratory (NSCL).
+              This
+consortium is joined by Ball State University, Central
+              Michigan
+University, Concordia College in Moorhead, Minn., Hope
+              College,
+Indiana University at South Bend, Millikin University,
+              Western
+Michigan University, and Westmont College, each of which
+              will
+assemble and test one complete layer of the detector.
+
+The proposed
+              detector consists of 144 horizontal blocks of plastic
+scintillator arranged in
+              9 layers of 16 detectors each, covering an
+area of 2.0 m wide by 1.6 m high. 
+              The detector is position
+sensitive and features multi-hit capability.  The
+              addition of
+passive iron converters enhances the detection efficiency
+              for
+neutrons with energies above 100 MeV for an average efficiency of up
+to
+              70%.  The high detection efficiency will allow the investigation
+of very
+              neutron-rich nuclei that can only be produced with small
+intensities.
+
+The
+              detector will be used in connection with the new sweeper magnet
+with its focal
+              plane detectors in stand-alone mode as well as with
+the combination of sweeper
+              magnet and the S800 magnetic
+spectrograph.  It will therefore be essential for
+              the experimental
+program at the coupled cyclotron facility. The detector can
+              be
+optimized for even higher beam energies with only minor
+modifications due
+              to its modular design.  It could be the first
+detector to be used for fast
+              fragmentation beams at the Rare Isotope.

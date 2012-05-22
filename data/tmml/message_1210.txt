@@ -1,0 +1,10 @@
+Hi Halil,
+The .gamma file contains one vector (\gamma) per line. Normalize this vector
+to get the topic mixture (\theta) using
+\theta_i = \frac{\gamma_i}{\sum_{j} \gamma_j}.
+The LDA model does not really give the topic mixture (\theta) that generated
+the document. Instead, it gives a prior distribution Dirichlet(\gamma) on
+the random variable \theta. The equation above calculates the mean value of
+this distribution, which is `as good as it gets'.
+Regards,
+Goutham

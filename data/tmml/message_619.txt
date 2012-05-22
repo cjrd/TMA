@@ -1,0 +1,11 @@
+Hi, all
+I just started to read the paper "Hierarchical topic models and the nested chinese restaurant process",
+and I have some questions about nCRP and HLDA model illustration.
+1. Eq (1) gives the distribution of CRP, but in the following Gibbs sampler, how to compute thus probability?
+Note that, paper pointed that c_m can be enumerated by eq (1) in the last paragraoh of page 5, how to do?
+2. In the model illustration, step 4(b) mentioned "Draw w_n from the topic associated with restaurant c_z".
+Does it mean that a word w_n is chosen from p(w_n|z_n,c_z,beta), a multinormial probability conditioned on the topic z_n?
+3. I can not conclude the joint distribution of the HLDA model, can anyone offer more details?
+4. In the section 4 "approximate inference with Gibbs sampler", the author mentioned that we should sample variable z_(m,n)
+and c_(m,l), but why c_(m,l) evaluation is necessary? And is there any difference between LDA and HLDA in computing the z_(m,n)?
+Thanks a lot.

@@ -1,0 +1,15 @@
+Hi List:
+we did something similar to Shuang Hong's paper but with emphasis on the
+application of image annotation. The idea is that you treat an image as a
+document and treat caption words as class labels. Since each image is
+annotated with multiple caption words (each document has multiple class
+labels), we extend the original sLDA model to account for multivariate
+Bernoulli response variable of caption words. Instead of a 1-dimensional
+response variable, we have a T-dimensional multivariate Bernoulli response
+variable where T is the number of terms in the caption vocabulary. Our
+variational inference algorithm seems quite similar to the Shuang Hong's
+paper since we also use the convex dual representation of logistic sigmoid
+function to make the computation tractable. Please check out our icassp 2010
+paper attached in this email.
+thanks,
+-Pew Putthividhya

@@ -1,0 +1,11 @@
+Hi members,
+Can anyone please let me know if there is a conjugate prior for a Dirichlet
+distribution? I need to generate some observation according to the
+following:
+1. generate \theta~Pr(\alpha) where Pr is the distribution I am searching
+for and \theta is a probability vector and \alpha is some parameter
+2. generate y~Dir(\rho*\theta+some other vector coming from a different side
+information) where y is my observed probability vector and \rho is some
+scaling parameter.
+Thanks,
+Ayan

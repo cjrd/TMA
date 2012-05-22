@@ -1,0 +1,29 @@
+              0070278
+Sitar
+Liquefaction-induced foundation displacement during earthquakes
+              is a major cause of damage to all types of structures.  However, evidence from
+              historical events show that improved sites suffer less ground deformation and
+              subsidence than adjacent, unimproved areas.  However, as earthquake-engineering
+              moves in the direction of performance based design, the ability to adequately
+              and accurately predict the performance of the foundation elements, including
+              improved ground becomes paramount.
+
+The ultimate objective of this research
+              project is to develop a suite of empirical, experimental, and analytical data
+              on the parameters that control seismically induced deformations of improved
+              ground to serve as a rational basis for performance based design.  A 2-year
+              program of research incorporating 8 centrifuge experiments at UC Davis National
+              Geotechnical Centrifuge will be conducted.  This program of experimental work
+              is aimed at providing some of the much-needed high quality quantitative
+              experimental data.  However, since similar work aimed specifically at marine
+              structure and embankments is currently being planned at the Public Works
+              Research Institute (PWRI) and Port and Harbour Research Institute (PHRI) in
+              Japan, there exists a unique opportunity to integrate the parallel studies and
+              obtain the benefits of comparing and evaluating several independent data sets. 
+              
+
+This project is supported under the 3rd-year competition under NSF 98-36.
+              "US Japan Cooperative Research in Urban Earthquake Disaster Mitigation."
+ 
+
+

@@ -1,0 +1,17 @@
+Dear List,
+i currently work on the implementation of the Online LDA Paper of
+Loulwah Alsumait.[1]
+Unfortunately i have a problem with the KL Divergence in the paper. In
+the paper they set new words in a stream to a zero count in preveous
+streams. This leads to probability of zero for that word in all preveous
+topics. In the KL we have then log(0) calculations.
+Does anybody know if i could exclude the zero count terms from the KL
+calculations or is there another solution?
+[1]
+On-Line LDA: Adaptive Topic Models for Mining Text Streams with
+Applications to Topic Detection and Tracking.
+Loulwah AlSumait, Daniel Barbar?a, Carlotta Domeniconi
+Department of Computer Science
+George Mason University
+http://cs.gmu.edu/~carlotta/publications/AlsumaitL_onlineLDA.pdf
+Thank you

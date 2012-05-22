@@ -1,0 +1,31 @@
+Dear Members,
+as a start for understanding and using hdp models we are currently
+implementing the Chinese restaurant franchise sampler proposed in [1]
+and [2].
+First, a general question: would it be better to use stick breaking
+construction for gibbs sampling or is the proposed Chinese restaurant
+franchise sampler more useful in terms of ease of implementation?
+Is there any software out there that already implements a gibbs sampler
+for the CRF (either as proposed above or stick breaking construction)
+that you know of (maybe realizations of [1] and [2] by the authors)?
+This might help us to align the contents of the papers to an
+implementation and would give us some better understanding of the
+proposed samplers.
+In [2], we need different functions f for table and dish updates. Those
+are basically the topic proportions of tables and restaurants. In
+formula 56 a function f_k_new is used.
+This should be proportional to the count of customers assigned to the
+new dish k_new(which would be 1) over the count of all customers
+assigned to k_new without the current customer(which would be 0). This
+results in a division by zero, on the other hand, if we decided before,
+that for this customer a new table is sampled and a new dish is sampled
+for this new table, the probability, that the current customer is
+assigned the new dish should be equal to one.
+In spite of that, we found the proposal to just generate a sample and
+work with that(see [1] p. 17 above (32))
+What would be the recommended approach to this problem?
+[1] Hierarchical Dirichlet Processes
+http://www.gatsby.ucl.ac.uk/~ywteh/research/npbayes/jasa2006.pdf
+[2] Hierarchical Bayesian Nonparametric Models with Applications .
+http://www.gatsby.ucl.ac.uk/~ywteh/research/npbayes/TehJor2010a.pdf
+Thank you all

@@ -1,0 +1,10 @@
+Hi, all
+Does anybody know why the LDA-C code initialize beta randomly,
+I use a different approach like this (in matlab):
+beta = repmat(hist(word_vector, num_words), num_topics, 1);
+I think in this way the initial value is better but in fact my program
+always gives wrong results.
+regards,
+Yuanlong Shao
+State Key Lab of CAD&CG
+Zhejiang University

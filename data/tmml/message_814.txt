@@ -1,0 +1,2 @@
+Computational complexity aside, couldn't you build that into the model through statistical correlation against other tokens?
+Aaron

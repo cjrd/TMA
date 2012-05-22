@@ -1,0 +1,6 @@
+Hello,
+Hmm... two reasons come to mind, i) the values should be > 0 (solved
+by exponentiation) and b) the values should lie between 0 and 1 (which
+can be solved be normalisation). I'm not sure if there are deeper
+reasons in mind though...
+Cheers,

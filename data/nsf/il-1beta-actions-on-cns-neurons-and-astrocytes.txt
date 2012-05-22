@@ -1,0 +1,28 @@
+              0078210
+Friedman, W.
+
+Interleukin-1B (IL-1B) is a potent and pleiotropic
+              cytokine produced by glia in the brain which influences many different cell
+              types.  When IL-1B interacts with receptors on glia, it activates a specific
+              intracellular signaling cascade inducing production of many growth factors and
+              cytokines. Specific neuronal populations in the brain, in particular
+              hippocampal neurons, also have receptors for IL-1B, however neurons do not
+              produce cytokines and growth factors in response to IL-1B.  The distinct signal
+              transduction pathways activated by this cytokine determine the functional
+              response of different cell types.  In these studies, therefore, we will
+              elucidate the different signaling pathways that mediate the actions of IL-1B in
+              neurons compared to astrocytes.  In addition, one of the growth factors which
+              is induced by IL-1B in glia is nerve growth factor (NGF).  One of the NGF
+              receptors (p75) is also induced by IL-1B in glial cells, suggesting that NGF
+              has effects on glia distinct from its well-characteristic neurotrophic effects
+              on neurons. These studies will investigate the signaling pathways and
+              functional consequences of NGF on glial cells.
+Growth factors and cytokines
+              influence many different cell populations, but induce distinct responses which
+              are cell type-specific.  Elucidation of the signal transduction pathways
+              activated in neurons and glia by a pleiotropic cytokine such as IL-1B will
+              allow insight into how a single factor can activate different signaling events
+              and functional consequences in distinct cell types.
+
+
+

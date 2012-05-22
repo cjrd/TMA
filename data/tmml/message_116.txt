@@ -1,0 +1,2 @@
+Hi,
+I relatively new to LDA. I read LDA-paper.I want to experiment with the collaborative filtering in section 7.3. I have trouble in understanding the method given.Can anyone suggest how to go about with this approach .

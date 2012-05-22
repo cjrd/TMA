@@ -1,0 +1,57 @@
+              In recent years. new applications such as large area conformal displays,
+              multi-color organic displays. fault-tolerant terra-byte memories, large area
+              solar cells, conformal electronic sensors for biological applications etc. have
+              demanded that active electronic devices be grown on plastic films. With the
+              exception of organic LED's, almost all such devices use amorphous Si as the
+              active materiaL However, a-Si material suffers from low carricr mobilities, and
+              poor stability. Therefore, the ability to grow thin film electronic devices in
+              cri stalline Si-based materials on plastic substrates may provide both better
+              performance and greater stability in these applications. Such a development
+              would also allow one to grow c-Si devices on polyimide layers, which are widely
+              used as planarizing insulators in standard c-Si wafer-based device technology,
+              and thereby allow three dimensional device architecture. The development of
+              thin film crystalline devices would be very useful for efficient integration of
+              organic LED's with driver circuits on a polymer substrate. It is the objective
+              of this proposal to develop hi2h performance crystalline Si- based electronic
+              devices on plastic substrates.
+The proposed work is based on our recent
+              success, under a NSF SGER grant, in being able to deposit high quality c-Si
+              films on polyimide. and making proof-of-concept c-Si solar cells in them. We
+              plan a comprehensive research project to improve the electronic properties of
+              the film and to make novel TFT devices in thcse films. The project embraces the
+              following tasks:
+o	Control of crystallinity of the films by using reactive ion
+              beams of H, Cl and F during growth in a novel, well-controlled ECR
+              reactor.
+o	Systematic investigation of structural properties by using Raman,
+              TEM. SEM and x-ray diffraction.
+o	Systematic investigation of electronic
+              properties by using DLTS, Hall measurements and capacitance spectroscopy of
+              defect levels.
+o	Study of growth of stable field-oxides (gate insulators in
+              MOS devices) by controlled plasma-oxidation with F and 0 and study of
+              oxide/semiconductor interfaces, using capacitance and conductance
+              techniques.
+o	Fabrication of horizontal TFT devices.
+o	Measurement of
+              properties of these devices, including channel mobility and stability after
+              charge pumping and charge injection.
+o	Fabrication of novel proottof. concept
+              vertical TFT which may not be affected by grain boundaries.
+The effort relies
+              on using our past experience in material growth, material analysis, device
+              fabrication and device design and analysis. The facilities exist to carry out
+              this work.
+	A significant educational component is planned, including graduate
+              student and undergraduate student involvement. The undergraduate students will
+              be drawn from our on-going NSF-REU site program. A significant minority student
+              research experience is also planned. Women students, particularly at the high
+              school level, will also participate in the program. The program will lead to
+              development of new courses in this area, thereby integrating research and
+              education.
+	The project has a potentially significant impact on industry. We
+              have planned a strong collaboration with a company, Micron technologies, which
+              is expected to provide a cash grant for supporting additional graduate students
+              in this research area.
+
+

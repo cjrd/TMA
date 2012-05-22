@@ -1,0 +1,9 @@
+Hi David & Laura,
+Thanks for your responses, they're helpful. It sounds like stemming
+might be useful in situations where one doesn't care about subtle
+distinctions in inflections, but rather just the semantic distinctions
+themselves (i.e. just give me one "M. Varro citations" topic, rather
+than finding two different ones). For my purposes, I should probably
+give stemming a try.
+Thanks,
+Neal

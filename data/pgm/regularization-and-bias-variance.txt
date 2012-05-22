@@ -1,0 +1,258 @@
+
+You've seen how regularization can help
+prevent over fitting. But how does it
+affect the bias and variants of a learning
+algorithm? In this video, I'd like to go
+deeper into the issue of bias and
+variants, and talk about how it interacts
+with, and is affected by the
+regularization of your learning algorithm.
+Suppose we're fitting a high order
+polynomial, like that shown here. But to
+prevent over fitting, we're going to use
+regularization, by that shown here. So we
+have this regularization term to try to.
+The firm. The values of the firm are
+small. And as you show the verbalization
+sums from G equals one to M. Rather than
+J. Equals zero to M. Let's consider three
+cases. First is the case of a very large
+value of the regularization parameter
+[inaudible], such as if [inaudible] were
+equal to 10,000 it's a huge value. In this
+case, all of these parameters, theta one,
+theta two, theta three, and so on will be
+heavily penalized and so will end up. With
+most of these parameter values being close
+to zero and the hypothesis will be roughly
+H of X just equal or approximately equal
+to beta zero. So, we end up with a
+hypothesis that will more or less say
+that. More or less a fat constant straight
+line. And so, this hypothesis has high
+bias and the value under fits this data
+set. So, the horizontal straight line is
+just not a very good model for this data
+set. At the other extreme is if we had a
+very small value of launder. Such as if
+launder were equal to zero. In that case
+given that were fitting a high order
+polynomial, this a usual over-fitting
+setting. In that case, given that we're
+fitting a higher order [inaudible] of this
+[inaudible] or with very minimal
+[inaudible], with the usual high variance
+over [inaudible]. This space being
+logarithm zero, zero. We're just putting
+it with our regularization. So, that it
+over fits this hypothesis. And it's only
+if we have some intermediate value longer
+that is neither too large or too small.
+That we end up with that parameters data
+that gives us a reasonable fit to this
+data. So how can we automatically choose a
+good value for the regularization
+parameter Lambda? Just to reiterate, here
+is our model, and here is our learning
+algorithms objective. For the setting
+where we're using regularization, let me
+define J [inaudible] of theta to be
+something different, to be the
+optimization objective, but without the
+regularization term. Previously, in an
+earlier video when we were not using
+regularization, I defined j train of theta
+to be the same as j of theta, as a cost
+function. But when we're using
+regularization when there's extra lambda
+term, we're going to define j train, my
+training set error, to be just my sum of
+squared errors on the training set, or my
+average squared error on the training set,
+without taking into account that
+regularization term. And similarly I'm
+then also going to define the cross
+validation sets error and the test set
+error as before to be the average sum of
+squared errors on the cross validation and
+the test sets. So just to summarize, my
+definitions of Jtrain Jcv and Jtest are
+just the average squared error or one half
+of the average squared error on my
+training, validation, and test sets
+without the extra regularization term. So
+this how we can automatically chose the
+regularization parameter lambda. What I
+usually do is maybe have some range of
+values of longer [inaudible] trials. So I
+might be considering not using
+regularization. Well, here are a few
+values I might try. I might be considering
+[inaudible] equals over [inaudible] and so
+on. And, you know, I usually step these up
+in multiples of two. Until some, some,
+maybe larger value. If I were doing this
+in multiples of two, I usually end up
+with, 10.24, it's, ten exactly. But, you
+know, this is close enough. And, the, the
+third and fourth decimal places won't,
+won't affect your result that much. So.
+This gives me maybe, twelve different
+models that I'm trying to select amongst,
+corresponding to twelve different values
+of the regularization parameters along
+there. And of course you can also go to
+some values less then 0.01 or values
+larger then ten, but I've just truncated
+here for convenience. During each of these
+twelve models what we can do is then the
+following. We can take this first model
+with [inaudible] equals zero, and minimize
+my cost [inaudible], data and this would
+give me some [inaudible] of active data.
+And some. After the [inaudible] video, let
+me just denote this as theta superscript
+one. Then I can take my second model with
+lambda set to 0.01 and minimize the cos
+function, now using lambda equals 0.01 of
+course. If we get some different parameter
+of vector theta, then we denote that theta
+two. After that I end up with theta three,
+so if this is for my third model, and so
+on. And so for my final model with lambda
+is set to ten [inaudible] ten or 10.24 and
+put this theta. Twelve. Next, I can take
+all of these hypotheses, all of these
+parameters, and use my cross validation
+set to validate them. So I can look at my,
+first model, my second model, fits with
+these different values of the
+regularization parameter. And you validate
+them on a cross validation set, based to
+measure the average squared error of each
+of these parameter vector's data on my
+cross validation set. And, I would then
+pick whichever one of these twelve models
+gives me the lowest error on the. Cross
+validation set. And let's say for the sake
+of this example that I end up picking beta
+five. The fifth ordered polynomial because
+that has the lowest cross validation
+error. Having done that. Finally, what I
+would do if I want to report the test set
+error is to take the parameter beta five.
+That, that I've selected and look at how
+well it does on my test set. Once again
+here is as if it fits this parameter beta
+to my cross validation set. Which is why
+I'm saving. And assign a separate test set
+that I'm going to use to get a better
+estimate of how well my parameter vector
+beta will generalize two previous unseen
+examples. So, that's model selection
+applied to selecting the regularization
+parameter [inaudible]. The last thing I'll
+like to do on this video is get a better
+understanding of how cross validation and
+training error vary as we vary the
+regularization parameter [inaudible]. And
+so, just a reminder, right, that was our
+original cost of JH data but for this
+purpose we're going. Is to define training
+error without using regularization
+parameter and cross validation error
+without using the regularization
+parameter. And what I like to do is plot
+this Jtrain and plot this Jcv, meaning
+just how well does my hypothesis do for on
+the training set and how well does my
+hypothesis do on the cross validation set
+as I vary my regularization parameter
+lambda. So as we saw earlier if lambda is
+small, then we're not using much
+regularization and we run the marginal
+risk of over fitting whereas if lambda is
+large that is if we were on the right part
+of this horizontal axis then with a large
+value of lambda we run a higher risk of
+having a bias problem. So if you plug what
+j train and jcv what you find is that for
+small values of lambda you are. You can
+fit the training set relatively well
+because you're not regularizing, so for
+small values of lambda the regularization
+term basically goes away and you're just
+minimizing pretty much [inaudible] error.
+So when lambda is small you end up with a
+small value for Jtrain, whereas if lambda
+is large then you have a high bias problem
+and you might not fit your training set
+well so you end up with a value up there.
+So, Jtrain of theta will tend to increase
+when lambda increases because a large
+value of lambda corresponds. A high bias,
+where you might not even fit your training
+set well. Whereas a small value of lambda
+corresponds to, if you take, you know,
+really fit a very high degree of
+polynomial to a data, let's say. As for
+the cross validation error, we end up with
+a theta like this. Where, where over here
+on the right, if we have a large value of
+lambda, we may end up under fitting. And
+so this is the bias regime. Whereas, and,
+and so the, cross validation error would
+be high, just leave all that. [inaudible]
+JFC BF data because with high bias we
+won't be fitting, we won't be doing well
+with the cross validation set. Whereas
+here on the left this is the high variance
+regime. Where if we have too small of
+value of launder then we may be over
+fitting the data. And so if we are over
+fitting the data then the cross validation
+error will also be high. And so this is
+what the, the cross validation error and
+what the training error may look like on a
+training set as we vary the
+regularization. That's a launder. And, so,
+once again, it will often be some
+intermediate value of launder that, you
+know, [inaudible] works best in terms of
+having a small consolidation area or a
+small test etc. And, where the rest of the
+crows I've drawn here are somewhat
+cartoonish and somewhat idealized, so, on
+a real data set, the crows you get may
+just end up looking a little bit more
+messy and just a little bit more noisy
+than this. For some data sets, you will
+really see these four sort of trends and
+by looking at the plot of the whole dot
+cross validation. You can either manually
+or automatically try to select a point
+that minimizes the [inaudible] the cross
+validation error in select the value of
+lambda corresponding to low cross
+validation error. When I'm trying to pick
+the regularization parameter lambda for
+learning algorithm often I find that
+plotting a figure like this one shown here
+helps me understand better what's going on
+and helps me verify that I am indeed
+picking a good value for the
+regularization parameter lambda. So
+hopefully that gives you more insight.
+[inaudible] Who regularization. And it's
+effects on the bias and gaining of the
+learning algorithm. By now, you've seen
+bias and data veins from a lot of
+different perspectives. And one way to do
+it in the next video is to think of all
+the insights that we've gone through and
+build on them, to put together a
+diagnostic that's called learning curves,
+which is a tool that I often use to try to
+diagnose with the learning algorithm.
+Maybe something from a bias problem or
+variance problem or a little bit of both.

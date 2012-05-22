@@ -1,0 +1,6 @@
+Do any of the several LDA implementations available online (Dave Blei has
+put up a nice list here:
+http://www.cs.princeton.edu/~blei/topicmodeling.html) allow for setting an
+asymmetric prior?
+Regards,
+Suhas

@@ -1,0 +1,6 @@
+Hi all;
+I want to calculate the perplexity of a model with a ParallelTopicModel
+Object from Mallet.
+I have a log-likelihood about -63222. It is possible ?
+Thanks !
+:D

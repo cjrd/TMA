@@ -1,0 +1,42 @@
+              The physical, chemical and biological properties of matter undergo transitions
+              over critical length scales in the range of 1-50 nanometers, leading to a
+              diversity of new functionality. The investigation of fundamentally new
+              phenomena is coupled with commercial interest in the development of devices
+              based on nanostructured materials.  This research project will investigate a
+              novel technique for the controlled synthesis of mono-disperse, nanograined
+              materials.  Chemical and physical processing of materials on the nanoscale will
+              be combined for the growth of coatings with columnar nanocrystalline grains of
+              uniform size and distribution, which will be tuned on the nanometer scale.  The
+              formation of ordered, mono-disperse, dimensionally-controlled nanotemplates by
+              chemical self-assembly will be followed by selective pulsed laser heating of
+              the nanotemplates in synchronization with a pulsed dual-laser ablation growth
+              process.  This technique will be extended to commercially viable large-area
+              deposition by substituting a pulsed, hollow-cathode plasma deposition process
+              in lieu of the dual-laser ablation process.  Our prior discoveries in pulsed
+              laser ablation and plasma deposition will provide the basis for the growth
+              processes.  Au and TiO2 nanoparticles will be used as the template material
+              while the hard coatings will be made using TiN and SiC, as representative
+              examples. Morphological, structural and mechanical properties of the
+              nanostructured material will be investigated for varying nanograin size and
+              separation.  The mechanical functionality of the nanograined coatings will be
+              assessed by studying film properties such as hardness, ductility and wear
+              resistance, yielding fundamental insight into the correlation of elastic
+              properties with the nanocrystalline grain dimensions.  Such studies have not
+              been possible in the past because of poly-dispersity in grain sizes.
+    
+The
+              project will involve the hands-on training of graduate and undergraduate
+              students in the exciting area of nanomanufacturing that is of national
+              importance, and lead to curricular enhancements at both the graduate and
+              undergraduate level.  Pre-college outreach through annual summer workshops for
+              high school teachers and research opportunities for high school students,
+              particularly women and minorities, will permit the early introduction of
+              suitable aspects of this emerging area to promote future careers in
+              nanomanufacturing. If successful, the impact of the research project will be
+              the development of a new hybrid manufacturing process combining chemical and
+              physical processing on the nanoscale with nano-micro-meso scale integration.
+              Potential applications include not only the investigation of new physical
+              phenomena at the nanometer scale but also a manufacturing process with changes
+              in functionality leading to improvements in mechanical properties of hard
+              coatings.  
+

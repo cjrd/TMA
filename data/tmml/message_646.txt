@@ -1,0 +1,2 @@
+When we model a document, using a topic model  how dow we decide on the *
+number* of Topics ?

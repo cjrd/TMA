@@ -1,0 +1,9 @@
+I provide this answer ccording to my short experience. Topic list, kindly
+correct me if it is incorrect.
+First, I found the technical note under
+http://www.arbylon.net/publications/text-est.pdf very useful. The topic
+distribution over words is learned from running the model over your data. In
+order to calsulate the probability of a test document, you need to run the
+model ( few iterations only) for each test document in order to get its
+distribution over topics which is required to compute the perplexity.
+Loulou

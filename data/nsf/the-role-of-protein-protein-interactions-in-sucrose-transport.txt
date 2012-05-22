@@ -1,0 +1,51 @@
+              
+One defining feature of plant organisms is the photosynthetic production of
+              sucrose.  Essentially, carbon from the atmosphere is assimilated into sucrose
+              which is then transported throughout the plant where it is used as an energy
+              source.  The productivity, or yield, of plants directly depends on the net
+              assimilation of carbon into sucrose and ultimately how much of this sucrose is
+              transported to the harvestable components of plants, such as the seed. 
+              Understanding how sucrose is transported through the plant and how this
+              transport is regulated is critical for both for understanding fundamental plant
+              biology and optimization of plant productivity.
+The sucrose transport protein
+              from soybean cotyledons appears to interact with another protein in the cytosol
+              of plant cells.  This interacting protein contains at least three ankyrin
+              repeat motifs which often are involved in linking membrane transport proteins
+              to the cellular cytoskeleton.  Since the sucrose transporter interacts with
+              other proteins, it may be that this interaction is important in the assembly of
+              sucrose transporters on the cell surface or in the formation/disassembly of
+              protein complexes that both import sucrose and metabolize it further.  Thus,
+              sucrose transport may be regulated in part by the nature of interactions
+              between the transporter and this interacting partner.
+This research will
+              attempt to elucidate the functional significance of this protein-protein
+              interaction in sucrose transport.  The three primary objectives are as
+              follows.
+Objective #1.  Identify proteins that interact with the ankyrin-like
+              protein.  To understand the nature of this interaction, it is important to
+              determine if other proteins might also be brought into contact with the plant
+              sucrose transporter.  For instance, if sucrose metabolizing enzymes are part of
+              a complex with the sucrose transporter, then sucrose import may be directly
+              linked to its subsequent metabolism.  These experiments will address this
+              possibility.
+Objective #2.  Assess the role of protein-protein interaction on
+              sucrose uptake.  If the interaction of the sucrose transporter with the
+              ankyrin-like protein has an impact on sucrose uptake in the plant, then
+              disruption of the ankyrin-like protein function should disrupt sucrose
+              transport in distinct ways.  The ankyrin-like protein function will be
+              disrupted using gene-silencing technology and sucrose uptake parameters
+              assessed.
+Objective #3.  Examine the subcellular localization of the sucrose
+              transporter and the ankyrin-like protein.  Several important questions are
+              addressed by characterizing the nature of the sucrose transporter:ankyrin-like
+              protein (ST:ALP) interaction in the cell.  Does the ST:ALP complex change
+              during cotyledon development?  When does the ST:ALP complex form relative to
+              synthesis of the sucrose transporter and the ankryin-like protein?  Our mRNA
+              analysis suggests that the ankyrin-like protein accumulates earlier in
+              cotyledon development than does the sucrose transporter and this raises the
+              question as to whether sucrose transporter is bound to the ankyrin-like protein
+              as it is translated.  Immunocytochemical analysis of the sucrose transporter,
+              the ankyrin-like protein, and other potential interacting proteins confocal and
+              electron microscopy will address these issues.
+

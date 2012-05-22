@@ -1,0 +1,14 @@
+indeed, the prior on the topics affects their sparsity.  if your
+model prefers sparser topics, then you'll end up with more of them in
+the posterior to explain the data.
+one option is to try empirical bayes estimates of that parameter.
+that is, you could use MCEM or variational EM to fit it.
+as aaron said, in some cases you can simply set it to induce the kind
+of topics that you are after.  depending on your goals, you can set
+the sparsity parameter to induce fewer diffuse topics or more sparse
+topics.
+as a third alternative, if you are using the model for some kind of
+prediction or other measurable task, then you can set it by cross
+validation.
+best,
+dave

@@ -1,0 +1,20 @@
+              
+This Small Business Innovation Research (SBIR) Phase I project will lead to
+              the development of compact, low cost gas sensors and analyzers based on cavity
+              ringdown spectroscopy using near-infrared lasers manufactured for fiber optic
+              communications. Although conventional cavity ringdown spectroscopy can achieve
+              part per trillion detection limits for many gases (water vapor, carbon dioxide,
+              ammonia), few commercial applications require such extraordinary sensitivity.
+              Instead, price and reliability are controlling factors for the sensors and
+              analyzers market. That is why we propose a modified form of ringdown
+              spectroscopy that should lead to low cost, compact, and rugged instruments. The
+              Phase I effort is designed to demonstrate the effectiveness of our proposed
+              technique which will lead to the development of a prototype instrument in Phase
+              II.
+
+Commercial applications include industrial process analysis and control,
+              bioreactor monitoring, and worker safety. Ideally, the sensors and analyzers
+              will be low power (possibly battery operated), self-calibrating and
+              self-checking devices that will be sufficiently rugged to allow in situ
+              installation.
+

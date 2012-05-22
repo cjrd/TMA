@@ -1,0 +1,5 @@
+Dear all,
+As the graphical models have been applying to several fields, people began to  design the specific graphical models for the particular applications. Therefore, I have two questions, i.e., How to design the graphical models? And how to estimate the parameters for the designed graphical models?
+Can anybody help me and recommand some papers?
+Best regards,
+Wang Luo

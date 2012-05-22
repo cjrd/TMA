@@ -1,0 +1,23 @@
+              In recent years, there has been an explosive growth of new process technologies,
+              new device concepts, and new markets for integrated sensors and actuators, also
+              referred to as micro-electro-mechanical systems (MEMS). This growth has led to
+              new challenges for computer-aided-design (CAD) of MEMS, with the ultimate goals
+              being accurate, easy-to-use behavioral models that capture all the essential
+              behavior, and permit predictable design modifications and optimization. This
+              research investigates the lack of design guidelines for reliability with regard
+              to dynamic (shock) loading. Such loading can occur either by choice (for
+              example, MEMS launched on satellites), or by accidental drops onto hard
+              surfaces. There is evidence that the small moveable parts of MEMS devices, such
+              as suspended proof masses in accelerometers, experience fracture from dynamic
+              loading levels which the devices are expected to withstand based on
+              quasi-static loading models. It is hypothesized that the inertia of a packaged
+              MEMS, when subject to even modest acceleration, provides a reservoir of kinetic
+              energy which can then be transferred to the mechanical elements as acoustic
+              waves, and cause fracture due to stress wave loading. This project examines the
+              validity of this hypothesis by using numerical analyses to establish expected
+              behavior. For confirmation, experimental studies of subjecting Si
+              microstructures to stress-wave loading are being made. Modeling procedures to
+              anticipate such failures, and by proper design, prevent them are being
+              developed.
+
+

@@ -1,0 +1,18 @@
+              Mathieu, Robert 
+"Putting Pre-Main-Sequence Stellar Evolution to the Test:
+              Interiors and Angular Momentum"
+AST-0098417
+
+During the course of this award
+              the physical characteristics of young, recently formed stars will be studied by
+              detecting and modeling those stars that form eclipsing binary systems. Through
+              the distribution of rotational velocities among stars in two star clusters of
+              different ages, an attempt will be made to understand the angular momentum loss
+              mechanisms which are effective in the early evolution of single and binary
+              stars. The two star clusters to be studies in detail are the Orion Nebula
+              cluster, with age about 1 million years and the 100 million year old cluster
+              NGC 2516. The main objective of this research is to investigate whether the
+              presently understood mechanisms of stellar angular momentum evolution can
+              change the rotation period distribution within the younger cluster into that
+              observed in the older cluster.
+***

@@ -1,0 +1,4 @@
+Dear ALL:
+I'm trying to calculate a measure on LDA and used the LDA implementation of MALLET package. I noticed that the training results are different in different runs even when the random seeds are fixed. Is this because the random values in MCMC code? I also compared the matlab code at http://psiexp.ss.uci.edu/research/programs_data/toolbox.htm, the results could be the same when random seeds are fixed. Any one have met with similar problem. Is it possible that I missused the MALLET package?
+Best
+sonfon

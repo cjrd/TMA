@@ -1,0 +1,207 @@
+
+Having defined the Bayesian network, let's
+look at some of the reasoning patterns
+that allow models to perform. So lets go
+back to our good old student network
+with the following CPDs. We have already
+seen those, so I'm not gonna dwell on it,
+and lets look at some of the probabilities
+that one would get if you took the
+Bayesian network and produced the joint
+distribution using the chain rule for
+a Bayesian network and now we've computed and saved
+the values of different marginal
+probabilities. So, for example now we are
+asking what is the probability of getting
+a strong letter, and we're not going to go
+through the calculation, because it's
+going to be tedious to sum up all these
+numbers, and I can just tell you that the
+probability of the of l1 is 0.5. But we
+can do more interesting queries, so we can
+now condition on one variable, remember we
+talked about conditioning and probability
+distribution, and ask how that
+changes this probability. So, for example,
+if we're going to condition on low
+intelligence, we're going to use red to
+denote the "false" value.
+And it's going to affect the good letter's
+probability, it turns out the probability, not
+surprisingly, goes down. It goes down to
+0.39, because if the intelligence goes down,
+the probability of getting a good grade
+goes down and so does the probability of
+getting a strong letter. So, this is an example
+of causal reasoning because intuitively,
+the reasoning goes in the causal direction, from
+top to bottom. We could also make things
+more interesting. So we can ask what
+happens if we make the difficulty of the
+course low. And in this case, we have the
+probability of l1 given i0 and d0,
+and what you expect the
+probability to do, well, if it's an easy
+course, one would expect the grade to go
+up. And sure enough, the probability goes
+back up, and we're back to 50/50, more or
+less. Okay, so this is another example of
+causal reasoning, in this case,
+with a little bit more evidence. You can
+also do evidential reasoning, evidential
+goes from the bottom up. So we can, in this
+case, condition on the grade and ask what
+happens to the probability of variables
+that are parents or in general,
+ancestors of the grade. So let's just
+imagine, let's suppose if a student takes
+the class and he gets a C, initially the
+probability that the class was difficult is
+0.4 and the probability if the student was
+intelligent is 0.3 but now with this
+additional evidence, again this is not
+surprising, the probability that the student is
+intelligent goes down by a fair amount.
+The other, alternative, hypothesis that the
+class is difficult, also the probability of
+that goes up as well. So. Now,
+however, there is an interesting type of
+reasoning that is not quite as standard,
+and that is reasoning that is called
+intercausal because effectively, it is
+flow of information between two causes of
+a single effect. So, remember, we have
+the -- we're going to continue with the
+scenario before where our poor student
+gets a C. It's now going to tell you: wait
+a minute, this class really is difficult.
+So I'm going to condition on d1. And
+notice that the probability of the student, his
+intelligence has gone up. It went up from
+0.08 to 0.11. So that's not a huge
+increase. And as you'll see when you play
+around with Bayesian Networks, often the
+changes in probability are somewhat
+subtle. And the reason is that you have to --
+I mean, even in a hard class, if you go back
+and look at the CPD, it's kinda hard to
+get a C according to this model. Which is
+that the student gets a B. And so now, we
+have that the probability of high intelligence
+still goes down, it goes down from 0.3 to
+0.175, but now, if I tell you the class is
+hard, the probability goes up. In fact, it
+goes up even higher than this, okay? So
+this is an illustration where this 
+intercausal reasoning can actually
+make a fairly significant difference in
+the probabilities. So intercausal
+reasoning is a little hard to understand,
+I mean, it seems a little bit mysterious,
+because, after all,
+you look at these, you look at difficulties, you
+look at intelligence, there is no edge
+between them. How would one cause affect another?
+So let's drill down
+into a concrete scenario, which is this one,
+and just, to sort of really understand the
+mechanism. So this is the most, sort of
+purest form, of intercausal reasoning.
+Here we have two random variables, X1 and
+X2. We're going to assume that they're
+distributed uniformly, so each of them is
+one with probability of 50% and
+zero with probability of 50%, and we have
+one effect, one joined effect, which is
+simply the deterministic or of those two
+parents. And in general, when we have the
+deterministic variable, we're going to
+denote it with these double
+lines. So, in this case there's only four
+assignments that have non-zero
+probability, because the value of Y is
+completely determined by the values of
+X1 and X2. And so, we have these
+four distributions over here, and now I'm
+going to condition on the evidence Y=1.
+Now, let's look at what happened. Before I
+conditioned on this evidence, [X1 and X2]
+were independent of each other, right? I
+mean, look at this, they're independent of
+each other. What happens when I condition
+on Y=1? Well, we talked about
+conditioning. This one goes away, and we
+have 0.33, 0.33, 0.33,  or rather one-third,
+one-third, one-third. Okay, in this
+probability distribution X1 and X2 are no
+longer independent of each other. Okay?
+Why is that? Because if I now condition on,
+say X1=0,  then -- okay, so,
+actually before we do that, so the, in
+this probabilty distribution the
+probability of X1=1 is equal to
+2/3, and the probabilty of X2=1
+is also equal to 2/3. And now if I
+condition on X1=1... so now we're
+going to condition on condition X1=1,
+so that means we're going to remove this
+line and then, all of a sudden, the probability
+of X2=1 given X1=1 is back to
+being 50%. So it was 50% before. It
+went up to two-thirds, and then, if we
+condition on X1 = 1, it goes back to
+50%. And the reason for this is the
+following, if you think about it
+intuitively: If I know that Y is equal to
+one there's two possible things that could
+have made Y equal to one. Either X1 was
+one or X2 was one. If I've told you that
+X1=1, I've completely explained away
+the evidence that Y = 1, I've given you
+a complete explanation of what happened
+and so now it's going back to being the
+way it was before because there is no
+longer anything to suggest that it should
+be anything other than 50/50. So, this
+particular type of intercausal reasoning, because
+it's so common, it's called "explaining
+away". And it's where one cause
+explains away the reason that made me
+suspect a different cause. And if you
+think about it, it's something that people
+do all the time when they are reasoning about,
+for example, on a medical setting, you,
+you're very sick, you think, you're very
+worried, you don't know if
+you have the swine flu. You go to the
+doctor, the doctor says "oh, don't worry
+it's just a common cold". You don't know
+that you don't have the swine flu, but because
+you've explained away your symptoms you're
+not worried as much any more. Finally,
+let's look, lets go back to our example and
+look at an interesting reasoning pattern
+that is not -- that involves even longer sort
+of paths in the graph, so let's imagine
+that we have this student the student got
+a C, but now we have this additional piece
+of information that the student actually
+aced the SAT, so hopefully what happens
+there. Remember that when we just had the
+evidence regarding the grade, we had the
+probability of the student being
+intelligent was only 0.08. But now we have
+this additional conflicting piece of
+evidence. And all of a sudden, the
+probability went up very dramatically to
+0.58. Okay. What do you think is going to
+happen to difficulty?
+So now, it's explaining away in action, going in a
+different direction, right? Because if
+it's not the fact that the student -- I mean,
+if the student didn't get a C because he
+wasn't very bright, probably the reason is
+that the class is very difficult. And so
+that probability goes up and so we have
+effectively, and we're gonna talk about
+this, an inference that flows like that.

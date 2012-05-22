@@ -1,0 +1,4 @@
+Dear Topic Modelers,
+I am doing some related works on correlated topic models. Anyone has some idea about how to calculate the perplexity of the?remaining?words after observing a portion of the document, i.e. how to calculate the conditional probability p(w(i) | Phi, w(1:p))?
+Thanks a lot!
+Regards,Darren

@@ -1,0 +1,35 @@
+              0131532
+L'Hernault
+
+During development, cells that are destined to interact
+              with one another are frequently born in different locations.  Such cells must
+              locate and move towards the site where the interactions with their
+              partner(s)occur.  Fertilization in the nematode Caenorhabditis elegans is an
+              attractive model in which to study the genetic control of these phenomena.  The
+              superior genetic and cell biological tools that either we developed or were
+              previously available make C. elegans an experimental system where it is
+              feasible to approach these phenomena comprehensively.  Several mutants (spe-9,
+              spe-13 and fer-14) produce cytologically normal spermatozoa that are motile,
+              but they cannot fertilize when they collide with an oocyte.  The spe-9 gene
+              encodes an epidermal growth factor (EGF) domain containing integral membrane
+              protein, and such EGF cell surface proteins are known from much prior work to
+              play critical roles in cell-cell interactions.  Therefore, spe-9 mutants are
+              likely defective in either sperm-oocyte recognition, adhesion or fusion. EGF
+              repeat containing proteins, like spe-9, are known to work with numerous other
+              components.  spe-13 and fer-14 phenocopy all examined aspects of the spe-9
+              phenotype and their study should help clarify the genetic hierarchy that
+              operates during fertilization.  The phenotypic, genetic and molecular analysis
+              of the fer-14 gene will be completed.  fer-14 will be positionally cloned by
+              SNP mapping, deficiency end point mapping, a candidate gene approach and/or
+              transgenic rescue.  Gamete interactions and motility in wild type spe-9, fer-14
+              and other mutants will continue to be followed in vivo by nontoxic methods we
+              have developed to fluorescently label sperm and allow real time observations
+              with new high resolution methods.  New Spe mutants that produce spermatozoa
+              with no obvious cytological defects will be identified and further
+              investigated.  Those that fulfill a set of six criteria based on the known
+              phenotypic features of spe-9, spe-13 and fer-14 will be subjected to detailed
+              cell biological, genetic, and molecular analyses.  These studies should reveal
+              novel information about gamete recognition and cell surface phenomena that are
+              important prior to and during fertilization.  Equivalent mutants affecting
+              gamete interactions have not been described in any other metazoan.
+

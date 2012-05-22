@@ -1,0 +1,42 @@
+              Ensembles of distributed communication, computation, and storage resources, also
+              known as "Computational Grids", are emerging as a critical platform for
+              high-performance computing. Grids are used effectively to support runs of
+              distributed applications at a large enough scale to provide new disciplinary
+              results to their developers. Researchers in almost every field of science and
+              engineering are particularly interested in a class of applications particularly
+              well suited to the Grid, scientific simulations where many parameterized
+              instances of a give computation are performed. The development of accessible,
+              efficient, fault-tolerant Grid-enabled versions of simulation software will
+              enable disciplinary scientists to investigate wide-ranging scenarios and to
+              obtain new results orders of magnitude faster than is currently
+              possible.
+
+Many scientists would like to view large-scale simulations as
+              software instruments that support some level of user interaction. This would be
+              effective only if simulations can be deployed easily and controlled
+              dynamically, i.e. if the computation can be steered. A traditional scenario is
+              for the user to steer the simulation based on partial results that evolve
+              continuously during execution. The partial results provide an increasingly
+              refined indicator of the final results of the simulation and can be used to
+              identify mid-execution which parameter sets are most promising. Given the
+              potential of wide-area, federated Grid environments to deliver the aggregate
+              computational power, data storage and dissemination facilities for large-scale
+              simulations, and the need for scientists to steer such computations, it is
+              increasingly important to develop performance-efficient and steerable software
+              instruments that target the Grid. This project will address the significant
+              computer science problems that arise from the need to support steerable
+              scientific simulations in large-scale Grid environments.
+
+The project will
+              design, develop, and prototype a virtual software instrument as a vehicle for
+              designing and prototyping scalable, steerable scientific simulations for the
+              Grid. It will use a Monte Carlo simulation program, MCell, as a prototype
+              application for development and testing of the virtual instrument. The virtual
+              instrument itself will consist of a set of software modules, libraries,
+              interfaces, and steering-sensitive scheduling algorithms. The project will have
+              impact on both the computer science and disciplinary science communities. It
+              will foster new research in computer science through the development of event
+              models, performance models, data management strategies, and adaptive scheduling
+              and steering algorithms. It will also enable domain scientists to obtain new
+              results in neuroscience.
+

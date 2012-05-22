@@ -1,0 +1,24 @@
+              0226945
+Haus
+
+This U.S.-Mexico award will support Prof. Joseph Haus of the
+              University of Dayton (UD) in a research collaboration with Dr. Evgeni Kuzin of
+              the Instituto Nacional de Astrofisica Optica y Electronica (INAOE) in Puebla,
+              Mexico.  The researchers intend to work on experimental and theoretical
+              approaches to develop fiber devices and characterization techniques. The
+              project will also explore potential applications for the optical communications
+              industry and medical imaging technology. 
+
+The researchers at UD aim to carry
+              out a theoretical investigation of Raman amplifiers in birefringent optical
+              fibers while the researchers at INAOE will construct a Raman logic gate using
+              the modelocked fiber laser developed through previous joint research.  The
+              theoretical investigation will elucidate characteristics of the logic gate and
+              its potential use with solitons. The modeling will support measurements of
+              Raman amplification for a fiber span consisting of standard, zero dispersion
+              and non-zero dispersion shifted fiber to determine the optimal interaction
+              length between pump pulses and signal pulses. The Office of International
+              Science and Engineering and the Division of Electrical and Communication
+              Systems of NSF will contribute funds for this collaboration.
+
+

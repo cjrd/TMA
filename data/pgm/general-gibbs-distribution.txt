@@ -1,0 +1,280 @@
+
+So we previously seen the notion of
+pairwise markov networks. But now
+we're going to define a much general
+notion that is considerably more
+expressive than the pairwise case.
+And that definition is called
+the Gibbs distribution. So in oder to
+motivate the notion of a Gibbs
+distribution, let's look at, the most
+expressive Markov network that we could
+possibly define in the context of, pairwise
+ interactions. So here we have four
+random variables, A, B, C, D. And I've
+introduced all of the possible, pairwise
+edges, between them. And so the question
+is, that we'd like to ask ourselves, is,
+is this good enough? So, is this fully
+expressive? Or, in other words, can it
+represent any probability distribution
+over four random variables? So one way to,
+convince ourselves of, of whether it can
+or can't, is to go and do the general
+case, and just look at, a little bit of
+asymptotics. So, consider a fully
+connected pairwise Markov network over N
+random variables. And let's assume that
+each variable Xi has D values. How many
+parameters does the network have? And for
+the moment, let's just focus on pairwise
+interactions. Sorry, just the pairwise,
+potentials. Let's ignore the, the
+potentials associated with singles and
+nodes. And also, let's do a little bit of
+analysis. If we have, N variables, how
+many edges are there in the network? How
+many parameters for edge. Now, the total
+number of parameters in a fully connected pairwise markov network is O(n^2d^2)
+Great. Can we represent any
+probability distribution, using, O(n^2d^2) parameters
+How many parameters are there, in a general,
+probability distribution over N random
+variables, where each has D values? How
+many free parameters do we have? Well,
+this is much, much bigger than that. Which
+means that if we just even think about it
+intuitively without getting into formal
+arguments. Pairwise markov network is not sufficiently
+expressive to have all probability
+distributions. How do we increase the, the
+coverage of this undirected
+representation. We need to move away from
+pairwise edges. So in order to parametrize what
+we call a general Gibb's Distribution,
+we're going to parametrize it using
+general factors Each of which has a scope
+that might contain more than two
+variables. So whereas, before, we just had
+factors over pairs, now we have
+factors over triplets, quadruplets, and
+anything else. Can we now represent every
+probability distribution? Well, sure,
+because we can have a factor over all N
+variables together. And by, you know, and
+that immediately defines, allows to define
+the general probability distribution. In
+fact, we even said that a probability
+distribution is a factor whose scope is
+the exponential of X of n. So in order to
+define those general framework more,
+formally it gives distribution that is
+parameterized by a set of factors phi.
+And we're going to define this
+distribution in two steps, three steps
+even. The first thing we're going to do,
+just like in the case of pairwise
+Markov networks, we're going to pick
+all of the factors, so here we have K
+factors, and we're going to multiply them.
+And this is just the familiar operation of
+factor product, which we've seen in
+multiple contexts before. Now this is
+perfectly fine but the problem is that
+this is not necessarily a probability
+distribution, in fact it almost never will
+be a probability distribution, because we
+have put no constraints on the factors and
+so, and so that's why we have this tilda
+here that highlights the fact that this is
+what we called previously an unnormalized
+measure. And so if we want to turn the
+unnormalized measure into a probability
+distribution, just like in the Pair Wise
+case, we're going to define what's called
+a Partition Function. Which is just a
+normalizing constant. Which we get by
+summing up, over all possible assignments,
+the variable X1 to Xn, that
+partition function can then be used to
+divide all of the entries in the
+un-normalized measure to give us... Oops,
+something that shouldn't have tilda
+on it. But rather is a probability
+distribution P sub phi of X1 up to Xn.
+Now that was just the definition of the
+distribution in terms of the set of the
+parameters where's the markov network in
+all of these. So, let's think about what
+is the markov network that we would like
+to have for a Gibbs distrubution of the
+certain set of factors, phi. So, in order
+to get the intuition let's look at a
+distribution that involves two factors.
+phi_1 whose scope is A, B and C and
+phi_2 whose scope is B, C and D. And,
+so I'm gonna use a different color for
+phi_2. So, what, edges should the
+markov network have when we wanted to
+encode the fact that a, b and c all get to
+interact with each other together. And
+intuitively, what we then like to have, is
+in the network that has an edge between a and b
+and edge between b and c and an edge between a
+and c. Because that captures the fact that
+there is direct probabilistic relationships
+between all of them. What about the other
+one. Here we have, between B and C
+C and D and, B and D. And this is the
+induced markov network in this
+particular case. More generally, if we
+have a set of factors phi, each of which
+is, where each phi_ihas a
+particular scope Di. The induced
+markov network, which we're going to
+call H of phi, has an energy between a
+pair of variables Xi and Xj whenever there
+exists. a factor phi_i., inside. Such that
+Oops, phi_m belongs to phi, such that Xi, Xj are both
+in the scope of the factor phi
+That is two variable are connected to the
+other, they appear together in the same
+scope. Now we can go ahead and turn this
+around. And define the notion, just like
+we have for Bayesian network, of when a
+probability distribution P factorizes
+over the graph H. That is, at what point
+can I can I represent p over a particular
+graph H. And this basically asks the
+question of, is there a set of parameters
+phi, that are going to let me represent the
+probability P. So, this is just a
+straighforward going through the
+defintition that we had before. Does there
+exist a phi, such that P is equal to P of
+phi, where P of phi is defined as I, we
+defined previously. As a normalized
+product of factors. And such that H is the
+induced graph for the set of factors phi.
+So P factorize over H, if there exists a
+set of factors phi. Such that I can
+represent P using those factors, and H is
+the induced graph for that set of factors.
+So that's when I can encode the
+distribution P over graph H. So, now let's
+ask ourselves the question. If you give me
+a graph H, can I tell you what the
+factorization of distribution p over that
+graph would be? That is, which, which of
+the representation of the distribution
+that I had in mind when I drew this graph.
+So, here we have this graph, over A, B, C,
+and D. And, which gives distribution would
+induce the graph H? Well, let's look at'em
+one at a, one at a time. So here we have
+phi one of, ABD, and phi two of BCD. And we
+see that there's an edge. Indeed between
+A. And B., B. And D. And A and D, and
+conversely between B. And C., B. And D.,
+and C. And D. So, the answer here is yes.
+This distribution would induce, this, this
+set of factors would induce this graph.
+Okay, what about, the next one.
+this, and ask yourself the same
+question. Well, if I wanted AB, would
+induce this edge  BC, yup. CD, yup,
+AD, and BD. Well, huh, here's another
+distribution with a different set of
+factors that induces the exact same graph.
+The third one, is the same
+principle, we have, the edges ABD. ADB, and
+AB, and, then we have, BC and CD. So, here
+is another distribution, that induces
+the exact same graph. What that tells us
+is that we cannot, and this is important,
+cannot read. The factorization. From a
+graph. That is we have different
+factorizations that are quite different
+than their expressive power. All of which
+induce the exact same graph. And we've
+already seen an example of that when we
+had the fully connected pairwise markov network
+We had one parameterization that
+had all N squared D squared parameters. We
+had another parameterization that had a
+fully, full factor over all n variables.
+So it had d to the n parameters. And
+these are two very different
+representations, with very different
+expressive power that never the less
+induce the exact same graph. Which brings
+us to the question of why then is the
+graph the same. What does the graph really
+tell us, given that given that it's not
+telling us the structure of the
+factorization? So, here is the, here is
+this going back to the example on the
+previous slide. We have these two
+factorization, one of them used triplets
+factors and the second one uses pairwise
+factors. And let's think about, what is
+the flow of influence in these factors? So
+when can one variable influence another?
+And we can see, when we think about this
+intuitively, when can B influence D? Is
+this, is this different in the two graphs,
+in the two distributions? And the answer
+is, well not really. I mean, once we have
+a factor. Here in this case it's phi_1. In this case it's phi_5. that ties B and D directly
+Then the fact is that B can influence D. What about, can, B, can
+A influence C? Well, so let's, so can A
+influence C? A can influence C via D, by
+going through, in this case, the A, B, D
+factor. And then, subsequenly, u-,
+utilizing the dependencies within the BCD
+factor. And in this case, it can use the
+AB factor. And then the CD factor. And so
+the point is, although the
+parameterization of the two distributions
+are different, the path in the graph, the
+trails in the graph through which
+influence can flow, is the same regardless
+of this finer grain structure of the
+factorization. Which is why the graphs in
+those two cases, are the same. So, let's
+formalize this, definition, we're going to
+define a notion, of an active trail, in,
+in a markov network, and, this is
+actually a very simple definition, it
+much simpler than the analysis definition
+in the context in Bayesian network, we have
+given a trail, going from
+X1 up to Xn, is active,
+given. A a set of observed variables
+Z, if basically, no Xi along the
+trail is in Z, because an active
+trail, has to only flow through variables
+that are unobserved. Once we observe a
+variable along the trail, influence kind
+of stops, because that variable is now
+set, so, you can't really influence it, and if you can't influence
+it, you can't influence anything,
+subsequently along that along that path.
+For example, the trail from B to D is
+active. So this is active. But not. If A
+is observed. So once I observe A., I can
+no longer influence, B. Can no longer
+influence D., by A. So, to summarize we
+define the notion of  Gibbs distribution
+which represents the distribution P as a
+normalized product factors. We connected
+that to a graph structure which is the
+induced markov network, which connects
+every pair of nodes. That are in the same
+factor. And the motivation, and although
+we noted that the Markov network structure
+doesn't fully specify the factorization of
+P. The justfication for why the graphs for
+different factorizations are the same.
+Because the active trails in a graph
+depend only on the graph structure.

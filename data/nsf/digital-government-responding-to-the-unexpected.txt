@@ -1,0 +1,15 @@
+              EIA-0215588
+Paul Rosenbloom
+University of Southern California
+
+Digital
+              Government:  Responding to the Unexpected
+
+This workshop will explore the
+              technical and social research issues associated with unexpected events.  These
+              are occurerences, man-made or natural, for which prior planning has not been
+              done, and formal response processes have not been agreed upon or established. 
+              In such cases, virtual temporary organizations must be created quickly, to
+              share and coordinate data, people, and resources.  Attendees will include
+              engineers, emergenccy response experts, computer and information scientists,
+              and social/organizational science researchers.

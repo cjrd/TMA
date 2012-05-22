@@ -1,0 +1,20 @@
+              The investigators will study major heliospheric pickup ion sources in the solar
+              wind, their propagation and acceleration.  Pickup ions are generated from
+              neutral atoms when they become ionized and begin to gyrate in a plasma's
+              magnetic field.  In the case of the solar wind, pickup ions born from slowly
+              moving neutrals acquire an initial speed nearly equal to the solar wind speed
+              as they are transported out with the solar wind's magnetic field.  The pickup
+              process thereby creates a more energetic and therefore more easily observed
+              population of ions that may be used to infer properties of the neutral
+              environment from which they were created.  In the heliosphere, there are three
+              main populations of pickup ions: interstellar pickup ions from interstellar
+              neutrals, inner source pickup ions created by interactions between
+              interplanetary dust and the solar wind, and discrete source pickup ions from
+              comets, planets, and other discrete sources.  The investigators will
+              characterize near-solar pickup ion sources by modeling distribution functions
+              and hydrodynamic properties of pickup ions produced from near-solar and
+              interstellar sources.  They will also study the relative significance of
+              near-solar source pickup ions, interstellar source pickup ions, and solar wind
+              particles as seed populations for energetic particles and anomalous cosmic
+              rays.
+

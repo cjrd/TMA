@@ -1,0 +1,8 @@
+You might look at a text on Bayesian mixture models, such as chapter 18 of
+Bayesian Data Analysis by Gelman et al., or chapter six of Bayesian Core.
+LDA is a mixture model in which the component distributions f_m(y_i |
+theta_m) are multinomials, while in the GMM they are Gaussians. BDA
+describes the Gaussian case, but not the multinomial case, so you'd still
+have to formally describe LDA as a mixture model, but that shouldn't be
+too hard.
+-David

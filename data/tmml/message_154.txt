@@ -1,0 +1,9 @@
+hi antonio,
+the beta file contains the learned topics.  each row is the log of
+the distribution over terms.  (if you exponentiate each term and
+compute the sums of the rows, you will see that they sum to one.)
+the gamma file are the (approximate) posterior dirichlet parameters
+for the topic proportions of each document.
+i hope this helps.  good luck!
+best,
+dave

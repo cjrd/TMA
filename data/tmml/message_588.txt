@@ -1,0 +1,11 @@
+Hi, all,
+I have a question about smoothed LDA which puts a prior on the $\beta$.
+The LDA paper says the update rules Eq.(6) and (7) will be the same for
+the smoothed LDA and unsmoothed LDA. But I also think that the variational
+parameters for the $\beta$ will contribute to the Eq. (6) since there is a
+coupling between the variational parameters of the latent variables $z$
+and the variational parameters of the $\beta$ in the lower bound the
+log-likelihood.
+Anyone has the same thoughts as me?
+Thanks,
+Zhen

@@ -1,0 +1,5 @@
+LingPipe has an implementation of LDA:
+http://alias-i.com/lingpipe/demos/tutorial/cluster/read-me.html
+and LingPipe integrates well with Lucene.
+Cheers,
+Jordan

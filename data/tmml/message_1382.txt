@@ -1,0 +1,2 @@
+I've been playing around with the topic-modeling in Mallet and as far as I can tell I must specify the number of topics and my entire corpus is pidgin holed into the number I specify. Is there a way to have Mallet (or perhaps another program) determine the appropriate number of topics based on an analysis of the body of documents and report the number of topics, the documents in each topic, and the strength of their relationship to the topic? Thank you.
+-Matt Kokidko

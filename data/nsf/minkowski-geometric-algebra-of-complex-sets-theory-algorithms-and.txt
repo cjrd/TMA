@@ -1,0 +1,30 @@
+              ABSTRACT
+0202179
+Rida Farouki
+U of Calif Berkeley
+
+Minkowski geometric
+              algebra is concerned with the complex sets populated by the sums and products
+              of all pairs of complex numbers drawn from given complex Cset operands.Whereas
+              the Minkowski sum under vector addition in R n has been thoroughly studied,from
+              both the theoretical and computational
+perspective,the Minkowski product in R
+              2 induced by the multiplication rule for complex numbers is a relatively
+              unexplored oncept.
+Conceptually, Minkowski geometric algebra is the natural
+              generalization of real interval arithmetic to complex Cnumber sets.With the
+              transition from real to complex,however,the trivial geometry of real intervals
+              and their consequent closure under addition and multiplication is relinquished.
+               The
+two Cdimensional haracter of Minkowski geometric algebra endows it with a
+              rich geometrical ontent,in which simple operands (e.g.,circular disks) yield
+              subtle results described by analytic curves such as the Cartesian oval ovals of
+              Cassini and their higher Corder generalizations,while sophisticated algorithms
+              are required to approximate Minkowski combinations for general sets.Apart from
+              being a basic tool to monitor the propagation of uncertainty in complex
+              Cvariable computations,the algebra o .ers a versatile language for
+two
+              Cdimensional shape operators and the description of (direct or inverse)
+              wavefront re .ection/refraction problems in optics.It is also fundamental to
+              the stability analysis of systems with uncertain parameters,in the context of
+              the Routh CHurwitz criterion and the Kharitonov robustness theorem. 

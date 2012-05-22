@@ -1,0 +1,12 @@
+Hi wluo,
+* In the derivation, y_d is treated as an observed variable and
+hence does not need to be updated.
+* a and b are treated as fix parameters
+and also do not need to be updated in the inference step (they can be
+estimated using linear regression in the M-step, this is the implementation
+used in the slda.em of the R-package).
+* z_d is updated in the Gibbs
+sampling step by sampling with probability proportional to
+D.24.
+Cheers,
+Jonathan

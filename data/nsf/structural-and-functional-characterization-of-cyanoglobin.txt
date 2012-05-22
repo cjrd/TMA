@@ -1,0 +1,40 @@
+              Lecomte, Juliette
+0091182
+
+Cyanobacteria are oxygenic prokaryotes now known
+              to produce a hemoglobin (Hb) related to certain bacterial and protozoan
+              hemoglobins.  Although in nitrogen-fixing cyanobacteria, hemoglobin appears to
+              protect the nitrogenase complex from oxidative damage, in non-nitrogen-fixing
+              cyanobacteria, such as Synechocystis sp. PCC 6803, the role of hemoglobin
+              remains a mystery.  The immediate goal of this project is to study the
+              relationship between structure and reactivity in the hemoglobin of
+              Synechocystis.
+
+Biophysical methods (NMR spectroscopy, optical spectroscopy,
+              centrifugation, redox potential measurements) and biochemical methods (genetic
+              manipulations, immunostaining techniques, phenotypic characterization,
+              site-directed mutagenesis) will be applied to 1) investigate Synechocystis Hb
+              in vivo; 2) determine its three-dimensional structure in solution; and 3)
+              analyze the molecular determinants of its heme coordination and electrochemical
+              properties.  Comparison will be made to other hemoglobins to develop an atomic
+              level understanding of heme reactivity in cyanobacterial globins and situate
+              these proteins in their evolutionary context.
+
+The globin family of proteins
+              has representatives in practically all kingdoms of organisms.  In vertebrates,
+              hemoglobins and myoglobins are responsible for the transport and storage of
+              oxygen but in primitive organisms, the functional roles of globins include
+              oxygen scavenging, delivery, sensing, and detoxification, and management of
+              nitrosative stress.  Cyanobacteria such as Synechocystis can be manipulated
+              experimentally like other prokaryotes and subjected to genetic methods.  Thus
+              they are ideally suited for studies of ancient hemoglobins.  A description of
+              the function of cyanobacterial hemoglobins is expected to provide fundamental
+              insight in the biochemistry of organisms essential in the global cycling of
+              carbon and nitrogen.
+
+The project will serve as a support in teaching
+              activities such as a biological chemistry course and an NMR course.  It will
+              provide excellent opportunities for undergraduate and graduate student training
+              in biophysical and biochemical methods and foster multidisciplinary
+              interactions.
+

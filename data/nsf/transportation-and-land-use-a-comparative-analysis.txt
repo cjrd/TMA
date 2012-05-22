@@ -1,0 +1,41 @@
+              Contemporary U.S. metropolitan areas are characterized by decentralized or
+              dispersed patterns of land use, have generally low average densities, and are
+              dominated by private vehicle travel.  Explanations for these trends in the U.S.
+              include an array of policy decisions that have promoted decentralization and
+              made the private vehicle easily accessible.  Increasing rates of car ownership
+              and use is a world-wide phenomenon, however, suggesting that per capita income
+              growth and basic economic and social trends may be key explanatory factors. 
+              This research project will investigate the relationship between mobility and
+              urban form using international comparative analysis.  The project will develop
+              and estimate models of individual travel behavior and will test hypotheses
+              regarding the extent to which land use characteristics explain travel patterns.
+               Using person-level travel survey data from the U.S., Great Britain and the
+              Netherlands, individual mobility patterns will be examined.  The following
+              questions will be addressed:  To what extent to differences in metropolitan
+              spatial form explain differences in mobility?  What local spatial
+              characteristics affect mobility, and do these differ across countries?  To what
+              extent do differences in transportation supply characteristics explain
+              differences in mobility?  How important are these factors relative to
+              demographics and socioeconomic factors?  Do relationships differ by travel
+              purpose?  International comparative analysis will permit examination across a
+              wide variety of spatial forms and transportation system characteristics as well
+              as across very different policy environments.  This broader approach should
+              lead to greater understanding of the underlying processes that lead to observed
+              travel outcomes.
+
+Mobility generates great benefits to individuals and
+              society, but it also generates significant costs.  Many critics argue that
+              current trends are not sustainable and that coordinated policies must be
+              developed to reverse current land use and transportation patterns.  Policies to
+              increase the density and mix of activities are proposed as effective strategies
+              for achieving sustainability goals, as increased accessibility should reduce
+              private vehicle use and increase use of transit and non-motorized modes.  
+              However, rising per capita incomes, economic restructuring and globalization,
+              and changing demographics may make restrictive policies either less effective
+              or less acceptable.  Thus it is not clear that efforts to change land use
+              patterns would lead to significantly different travel patterns.  This project
+              will provide a careful and comprehensive empirical analysis that is necessary
+              for understanding the role of spatial form in travel behavior, thereby
+              broadening fundamental understandings of these interrelationships and helping
+              to guide future policy development.
+

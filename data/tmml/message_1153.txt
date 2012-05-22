@@ -1,0 +1,6 @@
+I don't think so, although various approximations (e.g. the
+multivariate delta method) are possible. Expectations of log-sums are
+typically not available in closed form. Which is too bad, otherwise
+inference in logistic regression would be a lot easier!
+Best,
+Matt

@@ -1,0 +1,6 @@
+This Haskell library is a pretty good executable reference for the how
+and why of this:
+http://hackage.haskell.org/cgi-bin/hackage-scripts/package/logfloat
+Also:
+http://nlp.cs.byu.edu/mediawiki/index.php/Log_Domain_Computations
+2008/10/31 David Hall <dlwh at stanford.edu>:

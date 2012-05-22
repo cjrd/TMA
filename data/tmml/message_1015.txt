@@ -1,0 +1,11 @@
+This is getting off-topic, but since it took me a while to figure this
+out, it might help others too:
+Actually, under Ubuntu (debian), you need to make sure you
+installed libatlas3gf-sse2 instead (or in addition to) libatlas3gf-base
+(which is the non-optimised slow x86 code installed by default). Other
+distributions might also have this split between generic and
+processor-specific versions.
+Once these are installed under /usr/lib, numpy picks them up
+automatically. This is probably independent of distribution.
+HTH
+Luis

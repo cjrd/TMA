@@ -1,0 +1,14 @@
+Dr. Blei,
+Actually I am aware of this code and was instead looking for the actual
+variational EM implementation that the paper adopted. Jonathan Chang told me
+that only the gibbs sampling version is out in public because of its
+effectiveness. But it would be cool if I can get hold of the actual
+optimization wrt the scaling and smoothing parameters for different link
+functions that was attempted in the paper. I need that for my own research
+and want to see how nicely that part scales and how accurately it performs.
+Thanks,
+Ayan Acharya
+(Graduate Student,
+Electrical and Computer Engineering,
+University of Texas at Austin, USA
+Webpage: http://www.ideal.ece.utexas.edu/~ayan/)

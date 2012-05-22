@@ -1,0 +1,31 @@
+              Abstract: Macdonald polynomials, diagonal harmonics, and the geometry
+of
+              Hilbert schemes.
+
+Professor Haiman is working to complete the proof of a
+              series of conjectures involving Macdonald polynomials, the so-called
+              "n-factorial" conjecture, and the character formula for diagonal harmonics. 
+              The methods involve a detailed algebraic geometrical study of the Hilbert
+              scheme of points in the plane and related algebraic varieties.  In earlier work
+              Professor Haiman showed that certain hypotheses on the singularities and sheaf
+              cohomology of these varieties would imply the desired algebraic results (and
+              with Garsia, showed that the latter imply related combinatorial results).  The
+              current work is to establish these geometric hypotheses.
+
+Macdonald
+              polynomials are a new family of symmetric functions.  Their discovery by
+              Macdonald in 1988 was a surprising development in the theory of symmetric
+              functions, which is a fundamental and classical part of mathematics with roots
+              in the work of Euler, Jacobi, and Cauchy over a century ago.  Macdonald
+              polynomials have since been found to have important applications in a wide
+              range of areas including geometry, representation theory, and even theoretical
+              physics.  At the time of their discovery, Macdonald conjectured that certain
+              coefficients associated with his polynomials should be positive integers, the
+              proof of which remains the most important unsolved problem in this area.  The
+              successful completion of this project will solve this problem, proving the
+              "Macdonald positivity conjecture," along with a related
+              representation-theoretic conjecture of Garsia and the investigator known as the
+              "n-factorial" conjecture, some related combinatorial conjectures, and strong
+              new geometric properties of Hilbert schemes, which are likely to have further
+              applications in geometry and representation theory.
+

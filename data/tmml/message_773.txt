@@ -1,0 +1,21 @@
+Hello,
+Thanks for your help.
+I also read the same concern in CTM model but later found the same paper by
+David Mimno. I think the blocked Gibbs sampling is doable for the non
+conjugancy issue, and we may not have to rely on the variational methods.
+Sincerely,
+Jiafeng
+???: Tanmoy [mailto:mukherjee.tanmoy at gmail.com]
+????: 2010?12?27? 13:48
+???: Arun Chaganty
+??: Jiafeng Guo; topic-models at lists.cs.princeton.edu
+??: Re: [Topic-models] Correlated Topic Model
+Hi,
+I did also read the similar concern in DTM moidels. But then have a look
+at this "Gibbs Sampling for Logistic Normal Topic Models with Graph-Based
+Priors" by David Mimno which has non conjugancy issues due to logistic
+normal and multinomial but still uses a sampling based method. I do not know
+if it is always good to use variational methods if we have non conjugancy
+issues. Hope some one else can talk about this in details.
+Sincerely
+Tanmoy

@@ -1,0 +1,18 @@
+Dear all,
+Unfortunately, nobody has answered to my previous message. Here are
+again some questions of mine related to topic modeling:
+1) What about the calculation of the topic model complexity? The time
+goes by and the models seem to become more complex. The task of
+estimating is more difficult because the number of parameters to
+estimate grows up. This complexity could be confronted to the quality
+of prediction (for instance, using the perplexity measure) and to
+machine runtime.
+2) The hyperparameters Alpha and Beta are often set to some constants,
+even if they can be estimated too. If they're considered constant, how
+restricted is the kind of topics we can learn? The relation between
+Beta and the number k of topics doesn't seem to me as clear as stated
+in some papers.
+3) Do you know some work using topic models with additional knowledge,
+such as WordNet, to improve the results we get?
+Thank you to give me (if any) answers.
+Julien

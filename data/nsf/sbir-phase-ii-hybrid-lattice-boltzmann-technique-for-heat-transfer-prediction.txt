@@ -1,0 +1,22 @@
+              This Small Business Innovation Research (SBIR) Phase II project will produce a
+              unique computational tool for heat transport prediction in industrial devices
+              by hybridizing our Digital Physics technology based on Lattice Boltzmann
+              Methods (LBM) for hydrodynamics with efficient partial differential equation
+              (PDE) solution for heat transfer. The project will start with the development
+              and implementation of a wide range of physical features including variable
+              thermodynamic and kinetic molecular properties as well as flow dependent
+              turbulent/transitional Prandtl number, followed by introducing algorithms that
+              ensure stable, accurate, and noiseless performance of the full-physics LBM/PDE
+              algorithm. Upon algorithm optimization and benchmarking, we will focus on full
+              thermal studies of industrial devices provided by our commercial customers.
+              These beta tests will be followed by Phase III commercialization.
+ 
+The
+              hybrid thermal transport prediction tool for development in this Phase II SBIR
+              project will open major new commercial markets for our current PowerFLOW
+              product, especially at the engineering design level, as well as open important
+              new markets for novel technologies in various industrial problems ranging from
+              classical macroscopic flows to microscopic flows like those in MEMS devices.
+              This new technology should also establish new markets for computer aided
+              engineering (CAE), especially in manufacturing industries. 
+

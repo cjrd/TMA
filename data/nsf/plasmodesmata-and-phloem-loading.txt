@@ -1,0 +1,23 @@
+              This project supports studies on the identification of phloem loading mechanisms
+              in leaves.  Sugars manufactured by photosynthesis are loaded into the phloem of
+              minor veins for export to growing organs.  There are two known phloem loading
+              mechanisms.  Apoplastic loading involves trans-membrane transport while
+              symplastic loading takes place entirely through the plasmodesmata-connected
+              cytoplasm.  It is important to be able to distinguish between these mechanisms
+              because they are inhibited by environmental stress, presumably in different
+              ways.  According to the current paradigm, apoplastic- and symplastic-loading
+              species can be identified reliably by plasmodesmatal counts.  An alternative
+              hypothesis to be tested in this investigation is that apoplastic loading is
+              universal, except for those species that translocate stachyose, or other
+              carbohydrates of similar size, and load by polymer trapping.  Phloem loading
+              studies, based primarily on the specific inhibition of trans-membrane transport
+              by p-chloromercuribenzenesulfonic acid, will be conducted on five species that
+              translocate sucrose but have been putatively identified as symplastic loaders
+              on the basis of plasmodesmatal counts.  The prediction is that these plants
+              load via the apoplast.  Further studies will be conducted to test the
+              hypothesis that plasmodesmatal frequencies in minor vein phloem reflect overall
+              plasmodesmatal numbers in leaves, depending on plant growth habit, and are not
+              necessarily related to phloem physiology.
+
+
+

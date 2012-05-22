@@ -1,0 +1,17 @@
+Hi,
+Two general questions:
+(1) To what extent is document size a factor in model performance? For
+instance, what if you have a large number of extremely short
+documents, or a very small number of very long ones? This might be
+addressed in one of the LDA papers and I just overlooked it.
+(2) Is there a natural way of exploiting known structure in the corpus
+when doing topic modeling? Dynamic topic models do one thing like
+this. What can you do if you know some hierarchical structure in the
+data, like if you have a bunch of books that are already categorized
+by genre or author, or patents categorized by patent classification
+(which is already hierarchical), etc? More generally, for documents
+that come with lots of metadata, how do you get the model to use all
+that additional information to help infer topics?
+Any ideas or references would be appreciated.
+Thanks,
+Neal

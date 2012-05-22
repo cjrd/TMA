@@ -1,0 +1,20 @@
+Dickson,
+frankly, I don't think you learn how topic modes work from looking at
+the source code.
+Furthermore, I found the topic model implementation based on
+mean-field-approximation used by David Blei (I guess this is the version
+you found) is much more complicated to get than the topic models with a
+gibbs sampling implementation (although mean field implementations are
+faster).
+A good introductory article on topic models with gibbs sampling can be
+found here
+http://psiexp.ss.uci.edu/research/papers/SteyversGriffithsLSABookFormatted.pdf
+For details on how to derive a sampler from the generative model
+description I recommend this:
+http://www.arbylon.net/publications/text-est.pdf but I can also give you
+my notes on this.
+For advanced reading on variational methods for graphical models see
+here
+http://luthuli.cs.uiuc.edu/~daf/courses/Learning/Variational/fulltext.pdf
+Hope this helps,
+Laura

@@ -1,0 +1,8 @@
+Hi, all
+I am new to LDA and this maillist. I am trying to use LDA in an application,
+but I got a problem with it, could you please help me?
+By giving topic number to LDA the word-topic assignments can be obtained,
+but in fact I have the topic description in hand, such as "architecture"
+"history". How can I know which is the correspondent topic descrition for
+the number or label I got?
+Thanks a lot!

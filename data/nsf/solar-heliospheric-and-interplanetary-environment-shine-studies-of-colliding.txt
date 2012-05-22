@@ -1,0 +1,11 @@
+              The principal goal of this effort is to identify and understand colliding
+              Coronal Mass Ejections (CMEs) preceding complex interplanetary activity: solar
+              energetic particle (SEP) events, solar wind structure and composition
+              variations, interplanetary ejecta, radio bursts, and geomagnetic storms. 
+              Multiple data sources will be employed to (1) identify, list, and characterize
+              CME interactions, (2) investigate solar wind signatures 2-4 days following
+              colliding, Earth-directed, CMEs, (3) identify large SEP events which exhibit
+              mixed impulsive and gradual characteristics and determine their relation (if
+              any) to colliding CMEs, (4) classify types of interactions between CMEs, and
+              (5) determine if there are solar-cycle dependences of CME interaction
+              occurrences and characteristics.

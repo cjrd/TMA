@@ -1,0 +1,14 @@
+Folks,
+Thank you all for your awesome and detailed replies!
+I'm a developer and my math and statistics background is definitely
+subpar for LDA. I just ordered $500 worth of books from Amazon,
+though, on everything from linear algebra to statistics, advanced
+statistics, Bayesian networks and information retrieval. Hopefully I
+will catch up soon.
+The application I envision will automatically identify topics in,
+say, RSS and let topics that I'm interested in "bubble up" to the
+top. I'm looking to do this efficiently for hundreds of thousands of
+feeds.
+I'm working with the code at http://www.cs.princeton.edu/~blei/lda-c/
+which I'm looking to rewrite in Lisp, as well as optimize and scale.
+Thanks, Joel

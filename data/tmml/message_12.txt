@@ -1,0 +1,6 @@
+the log_gamma that was implemented in "utils.c" is not good one, I used this
+one in my windows machine
+http://www.google.com/codesearch?q=+double+x0,x2,xp,gl,gl0%3B+show:khArqyw2oaA:qKQCvVlIHw4:vqRQBBtUbNg&sa=N&cd=1&ct=rc&cs_p=http://packages.bic.mni.mcgill.ca/tgz/bicpl-1.4.3.tar.gz&cs_f=bicpl-1.4.3/Numerical/t_stat.c#a0
+You may check that.
+Thanks
+Chong

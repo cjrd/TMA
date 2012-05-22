@@ -1,0 +1,21 @@
+Hi,
+I consider the following variant of topic models:
+(1) We have K topics where K is known in advance.
+(2) We have multiple clusters of these topics, each of which contains
+the K topics from (1). The number of clusters is not known.
+For example, we might have a large corpus about sports. The topics may
+be football, basketball and baseball. In addition, we want to
+distinguish between articles describing sports events from different
+places but do not know the division in advance (i.e we want to cluster
+the articles but do not know to how many clusters).  Clustering might
+be made according to Europe vs. US (in which case we have two topic
+clusters, each of which with three topics - football, basketball and
+baseball), or Europe vs. US vs. Asia (3 clusters of 3 topics) and so
+on.
+The motivation is that we can assume that in different parts of the
+world the language model of each topic is somewhat different, but the
+same topics (at least approximately) hold.
+I wonder if this model has been addressed in the literature and if
+anyone is familiar with an algorithm/implementation of it.
+Thanks,
+Roi Reichart

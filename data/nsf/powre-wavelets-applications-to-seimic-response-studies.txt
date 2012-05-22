@@ -1,0 +1,43 @@
+              0075070 
+Todorovska
+Since first introduced in mid 1980s wavelet analysis has
+              been widely applied in many fields of science and engineering.  The wavelet
+              transform is particularly suitable for analysis of transient signals and time
+              varying systems, because it is localized both in time and frequency.  Its
+              widespread use is also due to the existence of orthogonal and bi-orthogonal
+              bases, the efficiency in representation of transient signals (data
+              compression), and the availability of fast and accurate computational
+              algorithms for signal/image transformation and reconstruction.  In spite of its
+              obvious suitability to earthquake related problems (transient by nature), the
+              wavelet analysis has been applied very little in Earthquake Engineering and
+              Engineering Seismology.  The objective of this project is to explore various
+              applications of wavelets to these two fields.  The focus of the study will be
+              on identification of nonlinear soil-structure systems from strong and weak
+              motion records in structures in presence of noise, and on representation and
+              analysis of strong ground motion.
+
+This research enhancement grant, made
+              under the Professional Opportunities for Women in Research and Education
+              (POWRE) program, will provide an opportunity for the Principal Investigator to
+              initiate independent research on the application of wavelets (and modern signal
+              processing and estimation theory, in general) to her professional field, and
+              will create opportunities for future funding from regular NSF and other
+              sources. This is expected to increase her chances for getting a regular tenure
+              track faculty appointment. The Principal Investigator is a mid career
+              researcher, with interdisciplinary education (in Physics, Civil Engineering,
+              Applied Mathematics and Electrical Engineering), career based in Earthquake
+              Engineering and Engineering Seismology, and with a non-tenure track faculty
+              appointment at the University of Southern California.  This grant will also
+              provide an opportunity for her continuing presence and visibility at her home
+              institution, where she has been the only female faculty in the Civil
+              Engineering Department. This project will involve cooperation across two
+              engineering disciplines (the Principal Investigator will cooperate on this
+              project with faculty from the Electrical Engineering Department of her home
+              institution), and participation of one graduate student (with Civil Engineering
+              background).  Finally, this project will lead to the introduction of new
+              methodologies for understanding and modeling earthquake strong ground motion
+              and response of structures, and consequently will contribute to the national
+              effort for Earthquake Risk Reduction.
+***
+
+

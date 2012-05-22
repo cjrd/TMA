@@ -1,0 +1,224 @@
+---------------------------
+Correlated Topic Model in C
+---------------------------
+
+David M. Blei and John D. Lafferty
+blei[at]cs.princeton.edu
+
+(C) Copyright 2007, David M. Blei and John D. Lafferty
+
+This file is part of CTM-C.
+
+CTM-C is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free
+Software Foundation; either version 2 of the License, or (at your
+option) any later version.
+
+CTM-C is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307
+USA
+
+----
+
+This is a C-implementation of the correlated topic model (CTM) from
+Blei and Lafferty (2007).  This code requires the GSL library.
+
+Any questions or comments about this code should be sent to the topic
+models mailing list, which is a forum for discussing topic models in
+general.  To join, go to http://lists.cs.princeton.edu and click on
+"topic-models."  DO NOT EMAIL EITHER OF THE AUTHORS WITH QUESTIONS
+ABOUT THIS CODE.  ALL QUESTIONS WILL BE ANSWERED ON THE MAILING LIST.
+
+------------------------------------------------------------------------
+
+TABLE OF CONTENTS
+
+A. COMPILING
+
+B. DATA FORMAT
+
+C. MODEL ESTIMATION
+
+D. MODEL EXAMINATION
+   1. output of estimation
+   2. viewing the topics with ctm-topics.py
+   3. using lasso-graph.r
+
+E. POSTERIOR INFERENCE ON NEW DOCUMENTS
+
+------------------------------------------------------------------------
+
+A. COMPILING
+
+Type "make" in a shell.  Note: the Makefule currently points to the
+(inefficient) GSL version of the BLAS.  You will probably want to
+point to the BLAS library on your machine.
+
+------------------------------------------------------------------------
+
+B. Data format
+
+Under the CTM, the words of each document are assumed exchangeable.
+Thus, each document is succinctly represented as a sparse vector of
+word counts. The data is a file where each line is of the form:
+
+     [M] [term_1]:[count_1] [term_2]:[count_2] ...  [term_N]:[count_3]
+
+* [M] is the number of unique terms in the document
+
+* [term_i] is an integer associated with the i-th term in the
+  vocabulary.
+
+* [count_i] is how many times the i-th term appeared in the document.
+
+------------------------------------------------------------------------
+
+C. Estimating a model
+
+The command to estimate a model is:
+
+./ctm est <dataset> <k> <rand/seed/model> <dir> <settings>
+
+For example:
+
+./ctm est my-training-data.dat 10 seed CTM10 settings.txt
+
+- <dataset> is the file described above in part B.
+
+- <# topics> is the desired number of topics into which to decompose
+  the documents
+
+- <rand/seed/model> indicates how to initialize EM: randomly, seeded,
+  or from a partially fit model.  If from a model, type the name of
+  the model into the command line, rather than the word "model."  For
+  example, if your model was in the directory "CTM100" and had the
+  prefix "010" then you'd type "CTM100/010" for the starting point of
+  EM.  (We recommend using "seed" to begin with.)
+
+- <dir> is the directory in which to place the files associated with
+  this run of variational EM.  (See part D below.)
+
+- <settings> is a settings file.  For example, the settings.txt file
+  is good for EM and looks like this:
+
+                  em max iter 1000
+                  var max iter 20
+                  cg max iter -1
+                  em convergence 1e-3
+                  var convergence 1e-6
+                  cg convergence 1e-6
+                  lag 10
+                  covariance estimate mle
+
+  The first item ("em max iter") is the maximum number of EM
+  iterations.
+
+  The second item ("var max iter") is the maximum number of variational iterations,
+  i.e., passes through each variational parameter (-1 indicates to
+  iterate until the convergence criterion is met.)
+
+  The third item ("cg max iter") is the maximum number of conjugate
+  gradient iterations in fitting the variational mean and variance per
+  document.
+
+  Items 4-6 are convergence criterions for EM, variational inference,
+  and conjugate gradient, respectively.
+
+  The 7th item ("lag") is the multiple of iterations of EM after which
+  to save a version of the model.  This is useful, for example, if you
+  want to monitor how the model changes from iteration to iteration.
+
+  The 8th item ("covariance estimate") is what technique to estimate
+  the covariance with.  The choices are "mle" or "shrinkage."
+  Additional R code is provided in this directory to implement L1
+  regularization of the topic covariance matrix as described in Blei
+  and Lafferty (2007).
+
+------------------------------------------------------------------------
+
+D. MODEL EXAMINATION
+
+1. Once EM has converged, the model directory will be populated with
+several files that can be used to examine the resulting model fit, for
+example to make topic graph figures or compute similarity between
+documents.
+
+All the files are stored in row major format.  They can be read into R
+with the command:
+
+     x <- matrix(scan(FILENAME), byrow=T, nrow=NR, ncol=NC),
+
+where FILENAME is the file, NR is the number of rows, and NC is the
+number of columns.
+
+Let K be the number of topics and V be the number of words in the
+vocabulary.  The files are as follows:
+
+    final-cov.dat, final-inv-cov.dat, final-log-det-inv-cov: These are
+    files corresponding to the (K-1) x (K-1) covariance matrix between
+    topics.  Note that this code implements the logistic normal where
+    a K-2 Gaussian is mapped to the K-1 simplex.  (This is slightly
+    different from the treatment in the paper, where the K-1 Gaussian
+    is mapped to the K-1 simplex.)
+
+    final-mu.dat: This is the K-1 mean vector of the logistic normal
+    over topic proportions.
+
+    final-log-beta.dat: This is a K X V topic matrix.  The ith row
+    contains the log probabilities of the words for the ith topic.
+    Combined with a vector of words in order, this can be used to
+    inspect the top N words from each topic.
+
+    final-lambda.dat and final-nu.dat: This is a D x K matrix of the
+    variational mean parameter for each document's topic proportions.
+
+    final-nu: This is the D x K matrix of the variational variance
+    parameter for each document in the collection.
+
+    likelihood.dat: This is a record of the likelihood bound at each
+    iteration of EM.  The columns are: likelihood bound, convergence
+    criterion, time in seconds of the iteration, average number of
+    variational iterations per document, the percentage of documents
+    that reached the variational convergence criterion.
+
+2. The script in ctm-topics.py lists the top N words from each topic.
+To use, you need the NumPy package installed.  Execute
+
+     python ctm-topics.py final-log-beta.dat vocab.dat 25
+
+where vocab.dat is a file with one word per line ordered according to
+the numbering in your data.  This will print out the top 25 words from
+each topic.
+
+3. Finally, the file lasso-graph.r provides R code to build graphs of
+topics using the lasso.  Details are in the file.
+
+------------------------------------------------------------------------
+
+E. POSTERIOR INFERENCE ON NEW DOCUMENTS
+
+To perform posterior inference on a set of documents with the same
+vocabulary, run the command
+
+./ctm inf <dataset> <model-prefix> <results-prefix> <settings>
+
+For example:
+
+./ctm inf holdout.dat CTM10/final CTM10/holdout inf-settings.txt
+
+This will result in a number of files with prefix "results-prefix."
+They are as follows:
+
+- inf-lambda.dat, inf-nu.dat: as above.
+
+- inf-ctm-lhood: the likelihood bound for each document
+
+- inf-phi-sums: A D x K matrix of the sum of the phi variables for
+  each document.  This gives an idea about how many words are
+  associated with each topic.

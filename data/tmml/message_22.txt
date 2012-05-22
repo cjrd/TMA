@@ -1,0 +1,24 @@
+Dear all,
+Sorry to bother you with such a trivial question, but ...
+I'm trying to calculate the perplexity of an LDA model for the documents
+contained in the collection used to estimate the model itself. I'm not
+trying to predict the predicting power of the model but rather to find,
+Steyver-style, the 'right' number of topics to use, i.e. compare the
+(perplexity, number of topics) pairs and keep the one with the lowest
+perplexity.
+The problem I'm facing, and my guess is that it's either an
+implementation issue or I'm not getting the concept altogether, is that
+I'm getting huge values of perplexity for any number of topics (Infinity
+values in Java).
+Generally speaking, I'm using as perplexity Perp(d|model) =
+exp( -log(P(d|model) / |d|) and the product of the perplexities for a
+collection D, i.e. Perp(D|model) = \prod_d Perp(d|model)
+Under LDA, Perp(d|model) would be approx. \prod_w phi[w][z] *
+theta[z][d]
+However, as I said, it seems to be that this product is approaching
+zero, therefore making the log infinity.
+I don't think the implementation of the sampler is wrong, although it
+might be a possibility.
+Can anyone tell me what am I doing wrong? I know I'll feel pretty stupid
+after I get an answer :)
+Thanks for your time,

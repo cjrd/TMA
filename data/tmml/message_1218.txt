@@ -1,0 +1,11 @@
+Hi,
+I'm still striving to dig the LDA code, but not able to figure out how to
+solve the puzzle I have so far. To be more specific, I'm working on problem
+where I need to predict the presence of a word in a given document. Even if
+my document doesn't have that specific word in it, I want to have a
+probability for that word to happen in my document. Hence, I'll be able to
+draw a conclusion, but I need to learn more.
+Does anyone have an idea how I can get this information from the code or the
+output files?
+Thank you for your help.
+Halil

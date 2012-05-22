@@ -1,0 +1,14 @@
+Dear Laura Dietz,
+You got my idea exactly. I've got the problem a) resolved with the help of
+Alexandre. As to problem b), I mean using the LDA model to do some
+classification(clustering) work. That's why I want to choose the highest
+likelihood(with labels in the paper it equals to arg max p(theta |w,alpha,
+beta)) of the k topics.
+I don't quite understand what you say " as a document may have more
+than one dominating topics. Even words may have more than one dominating
+topic.". Does the "dominating" mean high probability ? Then we can always
+choose the highest probability of the k topics?.
+Is anywhere wrong?
+Yours
+Qingshan Li
+2011/3/2 Laura Dietz <dietz at mpi-inf.mpg.de>

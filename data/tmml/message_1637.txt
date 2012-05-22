@@ -1,0 +1,8 @@
+dear siddarth
+to derive this form, begin with the data generating distribution
+x ~ N(\mu, 1/\sigma^2)
+and put it into the natural exponential family form. (note we parameterize with the precision rather than the variance.)
+exp(\eta^T t(x) - a(\eta)).
+then write down the conjugate prior (without its log normalizer) and note the form of the sufficient statistics.
+next, take the product of gamma & gaussian and put it into the natural exponential family form. this should have the same sufficient statistics as the derived conjugate prior above.
+best, dave

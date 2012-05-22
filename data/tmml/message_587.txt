@@ -1,0 +1,9 @@
+hi, all
+i just released the code for supervised topic models for
+classification at http://www.cs.princeton.edu/~chongw/slda/index.html
+it still needs some polishing, such as the speed for E-step , hope i
+have time to do that in the near future.
+If you find any bugs, please kindly notify me.
+thanks and have a nice summer!
+best
+chong

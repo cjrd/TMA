@@ -1,0 +1,4 @@
+Dear Veena,
+\alpha is 1 x K, not M x K - it is common to all documents.
+Regards,
+Sinead

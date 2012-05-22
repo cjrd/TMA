@@ -1,0 +1,10 @@
+hi topic modeling list
+i am preparing a report about the broad impacts of topic modeling.  i
+know that many of you have worked on applications of topic modeling in
+industry or in applied research (that is, research where you developed
+a live system).  if you have a moment, can you write me a quick email
+about the project?  (please send me the email privately to
+blei at cs.princeton.edu.)
+thank you!
+best
+dave

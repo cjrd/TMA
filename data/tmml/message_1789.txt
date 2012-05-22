@@ -1,0 +1,91 @@
+*********************************************************************************
+International Workshop on Mining Social Network Dynamics (MSND)
+co-located with the
+21th International World Wide Web Conference (WWW)
+Lyon, France - 16 April, 2012
+http://eric.univ-lyon2.fr/msnd/
+*********************************************************************************
+CALL FOR PAPERS
+In the real-time Web, the latest evolution of the Web, information is
+generated very quickly, consumed by millions of users, and updated
+rapidly by others through commenting, replying, transferring, etc.
+This is practiced by people who differ in culture, knowledge,
+background, ideology. Moreover, information generally comes from
+several channels and is sent out to different ones. This is amplified
+by the social networking phenomenon -- the social Web, which is
+nowadays a well established set of technologies, based on which users
+and service providers can exchange messages through an interaction
+network, share information and collaborate, advertise a product,
+create communities and influence them, etc. Besides, there is an
+abundant literature regarding the different aspects of social networks
+be it their construction or the detection of nodes playing specific
+roles.
+However, there is currently no clear understanding of the laws
+governing these social networks, in particular how they evolve over
+time. Thus, it is difficult to draw a clear image linking the existing
+models of social networks and the real underlying social mechanisms.
+As a result, there is a big gap in concertizing and evaluating most of
+the research efforts in this area. Furthermore, due to the growing
+complexity of digital social networks and the huge quantity of new
+data available everyday, it becomes crucial for the researchers to
+provide a clear understanding of the dynamics of these networks. It
+also becomes important for the community to not only understand what
+is happening currently in the network but also to predict the next
+evolution and monitor the trends in the network. In order to be
+efficient in analyzing these networks, it is important to be able to
+predict the dynamics in its different forms: the content evolution
+(i.e., hot topics evolution), network structure (e.g., creation of new
+relations), information diffusion, influence evolution, etc.
+To address the above mentioned aspects of social network dynamics, we
+solicit the following topics (but not limited to):
+- Information diffusion in social networks;
+- Community extraction, analysis, and evolution;
+- Detection of (possibly evolving) roles;
+- Content evolution and tracking in social networks;
+- Social media recommendations;
+- Information quality and evolution in social content;
+- Security and privacy in rapidly evolving social networks;
+- Evaluation techniques and benchmarks;
+- New challenges in mining social networks;
+- Example studies and use cases of dynamics of social networks;
+Paper submission
+Submissions need to be formatted according to the ACM SIG Proceedings
+Template. Two types of submissions are welcome: long with a limit of 8
+pages or short with 4 pages length limit. We use the EasyChair system
+for managing submissions, and the link to submit your paper is here: http://eric.univ-lyon2.fr/msnd/
+.  Finally, the best papers will be invited to extend their proposal
+for a special issue of a journal. Further information will be
+communicated soon regarding this special issue.
+Key dates
+- Submission Deadline: 		February 5, 2012
+- Acceptance notification: 	March 1, 2012
+- Camera-ready submission:	March 15, 2012
+- Workshop date: 			April 16, 2012
+Workshop Co-Chairs
+- Hakim Hacid	Bell Labs, France
+- Shengbo Guo	Xerox Research Centre Europe
+- Julien Velcin	ERIC Lab, University of Lyon
+Program committee
+- Matthew Andrews	Bell Labs, USA
+- Julien Bourdaillet	Xerox, USA
+- Brahim Chaib-Draa	University of Laval, Canada
+- Boris Chidlovskii	Xerox Research Centre Europe, France
+- Samik Datta		Bell Labs, India
+- Ludovic Denoyer	University of Paris 6, France
+- Paul El Khoury	SAP, Germany
+- Patrick Gallinari	University of Paris 6, France
+- Eric Gaussier		IMAG, France
+- Makoto Haraguchi	Hokkaido University, Japan
+- Yannet Interian	Google, USA
+- Bertrand Jouve	University of Lyon 2, France
+- David Konopnicki	IBM Research, Israel
+- Yosi Mass			IBM Research, Israel
+- Stan Matwin		University of Ottawa, Canada
+- Richi Nayak		Queensland University of Technology, Australia
+- Kazumi Saito		University of Shizuoka, Japan
+- Anna Stavrianou	Xerox Research Centre Europe, France
+- Aixin Sun			Nanyang Technological University, Singapore
+- Athena Vakali		Aristotle University of Thessaloniki, Greece
+- Tetsuya Yoshida	Hokkaido University, Japan
+- Osmar Za?ane		University of Alberta, Canada
+Workshop Contact: msnd at eric.univ-lyon2.fr

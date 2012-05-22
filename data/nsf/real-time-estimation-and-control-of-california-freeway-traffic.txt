@@ -1,0 +1,25 @@
+              0085739
+The project will:
+* Estimate and predict travel times between any two
+              points and the corresponding shortest path;
+* Calibrate the PARAMICS and
+              possibly, CORSIM, micro-simulation models;
+* Develop and evaluate a ramp
+              metering policy based on the calibrate model.
+
+The primary sources of data
+              consist of data from Orange County and  Los Angeles County. The
+Communication
+              and database infrastructure for collecting, storing and processing data is in
+              place and operational.
+
+The simulation models will be calibrated with data
+              from the two counties. The ramp metering policies will be tested and evaluated
+              through simulation. The most promising strategies will be selected for field
+              implementation.
+
+This research effort will be devoted to network state
+              estimation and prediction algorithms, calibration of simulation models, and
+              design/evaluation of ramp-metering algorithms.
+ 
+

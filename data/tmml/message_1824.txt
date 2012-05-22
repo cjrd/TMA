@@ -1,0 +1,7 @@
+Dear Charong,
+We also have an implementation of JST. You can email Yohan (first author of
+ASUM) at zukjimote at gmail.com for the code.
+Best,
+Alice
+http://uilab.kaist.ac.kr
+2012/3/8 Trung Nguyen <trung.ngvan at gmail.com>

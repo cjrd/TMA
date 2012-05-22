@@ -1,0 +1,4 @@
+-0.6931471805599453
+-1.3862943611198906
+if there are more outcomes with similar probabilities,
+than perplexity goes up?

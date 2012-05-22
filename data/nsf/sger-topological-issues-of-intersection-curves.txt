@@ -1,0 +1,31 @@
+              ABSTRACT
+0231511
+Nicholas M. Pattrikalakis
+Mass Inst. of Tech
+
+We propose
+              to study the topology of the union of a finite collection of boxes that covers
+              an
+intersection curve in the plane and in 3D space. The representation of
+              curves that are the
+result of surface intersections is nearly never exact, and
+              thus certain approximations schemes are
+employed. The result is often a
+              piecewise linear approximation cl, which lies within a certain
+neighborhood N,
+              of the actual curve c. Much of the research in this area has been focused
+              on
+the approximation cl of c and how c and cl are/are not similar. We propose
+              to develop suficient
+conditions on the collection of the boxes and the
+              intersection curve, so that the resulting union
+of the collection is a
+              topological manifold homotopically equivalent to the given curve. In the
+case
+              where the curve has no self-intersections, this collection can serve as another
+              means of
+representing the curve, and thus this new representation can be used
+              in a variety of engineering
+applications. We believe this to be an innovative
+              exploratory study appropriate for SGER
+funding.

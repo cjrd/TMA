@@ -1,0 +1,8 @@
+Hi Sanjay,
+This recent paper describes and critiques a number of methods for estimating
+test set probability:
+Evaluation Methods for Topic Models* Hanna Wallach, Iain Murray, Ruslan
+Salakhutdinov and David Mimno. ICML, 2009
+http://www.cs.umass.edu/~mimno/papers/wallach09evaluation.pdf<http://www.cs.umass.edu/%7Emimno/papers/wallach09evaluation.pdf>
+I hope this helps,
+Sinead

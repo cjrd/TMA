@@ -1,0 +1,44 @@
+              In order to understand a sentence or discourse, readers and listeners must use
+              their implicit knowledge of the grammar of their language to put the meanings
+              of its words together.  A great deal has been learned about how this process
+              takes place during reading, but less is known about the aspects of the process
+              that are specific to listening.  This research will explore how a listener uses
+              the prosody of a sentence (informally speaking, its rhythmic and melodic
+              structure) to determine its message.  The specific goals of the research are to
+              work toward identifying precisely what aspects of the prosody of a sentence
+              affect a listener's comprehension and to examine the cognitive processes that
+              enable a listener to use prosody.  Broader goals include working toward the
+              development of a theory of spoken language comprehension that specifies how
+              prosodic descriptions are arrived at and how they interact with other sources
+              of information about language; this could potentially enable technological
+              improvements in communication, for instance in human-computer spoken
+              interaction.  The research will explore just which aspects of a sentence's
+              prosody listeners use in identifying its structure and meaning.  It will
+              evaluate the thesis that a listener constructs a global prosodic representation
+              of a sentence, rather than simply relying on local prosodic cues.  This thesis
+              makes it crucial to address the question of what in the global prosodic
+              representation is actually effective in guiding sentence comprehension.  Some
+              of the experiments will examine how ambiguous phrases can be attached to
+              different points in the phrases that precede them.  For instance, in a sentence
+              like "Sammy learned that Bill telephoned after John visited," the adjunct
+              phrase "after John visited" could modify either "learn" or "telephone."  Such a
+              phrase should be more likely to attach "high" (early in the sentence),
+              modifying the main clause verb "learn," if it is preceded by an intonational
+              boundary that is signaled by pitch movement and temporal changes.  The
+              experiments will investigate whether different types of intonational boundaries
+              have different effects and evaluate the claim that only an "informative"
+              boundary will affect interpretation.  They will evaluate a definition of
+              "informative" that claims a boundary is informative if it is phonologically
+              larger than certain structurally-defined earlier boundaries.  The experiments
+              will provide several different tests, using several different grammatical
+              constructions, of whether prosodic boundaries that are informative under this
+              definition encourage high attachment of ambiguous phrases.  Other experiments
+              will address the hypothesis that listeners take unusual ("marked") prosody to
+              indicate an unusual interpretation of a sentence.  This "markedness strategy"
+              has been proposed a number of times, and several pieces of experimental
+              evidence seem to be consistent with it.  However, the markedness strategy may
+              be only a crude approximation to reality.  The experiments, which will study
+              the interpretation of pronouns, reflexives, and quantified noun phrases, will
+              attempt to determine whether the phenomena described by the markedness
+              hypothesis actually reflect simpler, more general prosodic principles of focus
+              and accent.

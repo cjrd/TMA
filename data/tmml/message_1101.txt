@@ -1,0 +1,8 @@
+Hello,
+Maybe this is a minor point, but I've been thinking about it.
+Is there any reason why the sLDA model has the class output depend on z bar
+instead of directly on ?? After all,
+E[z bar] = ?.
+And it seems cleaner to depend on the topic mixture for the document rather
+than the topics the actual words come from.
+Thank you,

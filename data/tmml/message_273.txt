@@ -1,0 +1,6 @@
+hi david,
+i'm not sure i understand the question.  for each iteration of gibbs
+sampling, what is it that you want to compute?  i typically monitor
+the log probability of the observed variables and hidden variables.
+best,
+dave

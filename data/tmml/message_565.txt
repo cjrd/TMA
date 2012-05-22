@@ -1,0 +1,7 @@
+Hi all,
+In the paper "Finding scientific topics" written by Thomas L.
+Griffiths & Mark Steyvers,P(W|T) is proposed to decide the number of topics,
+but this method is not introduced explicitly, So I wonder hwo to calculate
+P(W|T) in GibbsLda++ with parameter theta and phi,Could you please introduce
+the explicit process? Thanks a lot !
+wei chen

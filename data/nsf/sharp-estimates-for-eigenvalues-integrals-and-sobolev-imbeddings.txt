@@ -1,0 +1,49 @@
+              The author proposes to work on various extremal  problems
+for functionals which
+              are defined in terms of integrals
+or eigenvalues. These problems include:
+              Lieb-Thirring
+inequalities for the number bound states of Schrodinger
+              
+operators; sharp Moser-Trudinger and Sobolev inequalities
+for the CR sphere,
+              with applications to determinants of CR 
+invariant operators; sharp
+              inequalities for integrals
+involving cross-ratios, with applications to zeta
+              functions
+of Laplacians on the sphere; sharp inequalities of log-Sobolev
+type
+              on the disk, with applications to zeta functions of
+Dirichlet and Neumann
+              Laplacians on the disk; dimension
+-free Carleson measure inequalities. The
+              research will
+touch on important questions arising in differential
+geometry,
+              harmonic analysis, and mathematical physics.
+
+It is difficult to understate
+              the importance of eigenvalue
+estimates in both applied and theoretical 
+              sciences. It is
+very often the case that to given physical structures,
+              such
+as systems of particles, vibrating membranes, or strings,
+one can attach
+              certain characteristic numerical values,
+called "eigenvalues". These numbers
+              are important, as some
+relevant properties of a given structure can be often
+              coded
+into numerical functions of the eigenvalues, called
+"spectral
+              functionals". In an extremal  problem one tries
+to find out which structures
+              of the same type would
+yield the highest (or lowest) possible spectral
+              functionals; 
+very often,  they are the ones with exhibit the
+              most
+symmetrical geometry. 
+

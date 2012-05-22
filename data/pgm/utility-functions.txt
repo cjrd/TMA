@@ -1,0 +1,365 @@
+
+When we talked about influence diagram we
+included in the influence diagram nodes
+that represent the agents' utility
+function. And those utility functions we
+said indicate an agents' preferences
+regarding the state of the world or
+different aspects of the state of the
+world. What are these utility functions
+and where did they come from? So utility
+functions are necessary for our ability to
+compare, complex scenarios that involve
+uncertainty or risk. It's not difficult
+for a person to say, that they prefer an
+outcome where they get four million to one
+where they prefer three million. But it's
+not quite as easy to encode a more
+complicated, preference that allows us to
+compare the utility of these two
+lotteries, as they're called. Where the
+one on the left gives the agent probabil,
+gave the agent $four million with
+probability 0.2, and this, the one on the
+right gives the agent $three million with
+probability 0.25. Which of those lotteries
+do we prefer if we had to make that
+decision? It turns out that the way to
+formalize the decisions making process of
+an agent in this type of scenario is by
+ascribing a numerical utility to these
+different outcomes, to the outcome of four
+million. To the outcome 3,000,000 and to
+the outcome of $zero. And then we can use
+the principle of maximum expected utility
+to decide between these two different
+lotteries. Specifically we can then
+compare 0.2 times the utility of the
+outcome 4,000,000 plus. 0.8 to the
+authority of the up come zero dollars
+versus the converse which is 0.25 versus
+the authority, expected authority for the
+second lottery to 0.25 time to the
+authority of three million dollars plus
+0.075 and [inaudible] zero dollars. And if
+you compare this to expressions and this
+side weather we prefer the one in the
+right, the one in the left, the one in the
+right or, or there are equally budget in
+our view. Now. It might be natural to
+assume that utilities should be linear in
+the amount of pay off that we get, so that
+$five, is preferred about half as much as
+$ten. It turns out that that's not the
+case for most people and one example of
+that is this decision making situation
+over here, where on the left the agent has
+the option of getting four million dollars
+with probability of 0.8, and on the right
+they have the option of getting three
+million dollars with certainty. Most
+people tend to prefer the lottery on the
+right, but if one computes they expect
+payoff of. These two different lotteries.
+We can see that the expected payoff over
+here is, is zero, four million times. 0.8
+which is 3.2 million. Whereas, on the
+right, we have an unexpected payoff of
+3,000,000. So, the expected payoff on this
+side is higher and nevertheless, people
+prefer the lottery on the right. Another
+example, very famous example of this type
+of, of this type of preference is what
+called the Saint Peter's birth paradox.
+Saint Peter's birth paradox is, is an
+imaginary game that one can play, where a
+fair coin is tossed repeatedly until it
+comes up head for the first time and if it
+comes up head for the first time on the
+nth toss you get to [inaudible] nth
+dollars. So what's the expected pay off in
+this case. Well the probability that is
+comes up heads on the first toss is half
+and then you get $two. The probability
+that is comes up heads for the first as a
+quarter and. The payoff here is $four.
+Eight, third tosses eight times eight,
+times eight dollars and it's easy to see
+that the expected payoff over here is
+infinite. So in principle people might be
+willing to pay any amount to pay, play
+this game because they expect the payoff
+is bigger than any amount that they would
+be paying to play but the fact is that,
+for most people. The value of playing this
+game. Is approximately $two, which is a
+strong indication that their preferences
+are not linear in the amount of money that
+they earn. So, let's try and quantify that
+using this notion, which is called a
+utility curve. The utility curve, in this
+case, [inaudible] the X axis with the
+dollar amount that you get. And on the Y
+axis, the utility that an agent describes
+to that. And now, let's compare a few
+different scenarios here. So first, let's
+compare, let's look at the utility of
+getting $500. So if we go up from 500 to
+the utility car, we consider the utility
+of this outcome is going to fall over
+here. So, this is going to be the utility
+of $500. But now, let's look at, at the
+decision, at situation that involves some
+risk. So let's look at a set of lotteries
+where I get $zero with probability one
+minus p, and a $1,000 with probability p.
+Because of the linearity of expected
+utility, all of these lotteries are going
+to sit on this line over here where
+depending of the value of p I have a
+different weighted combination between
+getting the utility of $zero and the
+utility of $1000. So for high values of p
+close to one we would be sitting on this
+side of the curve and otherwise for
+example for low values of p we would be
+sitting close to here. Specifically what
+happens if we look at the probability p
+equals 0.5? Well, in that case, we would
+have this point on the curve, over here.
+Now the important thing to notice is that
+the utility of this point where I get
+$1,000 probability 50 percent and $zero
+probability 50%, that utility in this
+example is considerably lower than the
+utility of $500. So I prefer. To get the
+$500 for certain, which is what most
+people will take. Now if we look at. What
+the lottery is worth. That is the risky
+version. We can see that, that sits over
+here and might for example be
+corresponding to getting $400 with
+certainty. So that $400 is called the
+certain equivalent of this lottery over
+here. That is, it's the amount that you'd
+be willing to trade for this lottery in
+terms of getting that money for certain.
+The difference. Between. These two
+numbers, the expected reward and the
+utility of, of that lottery is called the
+insurance premium or the risk premium. And
+it's called that because that's where
+insurance companies make their money.
+Because of a person's willingness to take
+less money with certainty over a more
+risky proposition. So we can see that this
+kind of a curve that has this shape, this
+concave. Shape, is, is representing a risk
+profile which is risk averse. That is, a
+person is willing to pay for taking less
+risk. Other profiles would, of this, of
+this curve, would represent, different
+behaviors. So, for example, if the utility
+was linear in, in the reward, that would
+be a behavior that was called risk
+neutral. Conversely if we had a curve that
+looked like this, which is a convex
+function. That would be risk-seeking.
+[sound] And risk seeking behavior occurs
+for example in Las Vegas where one is
+willing, or in other gambling situations,
+where one is willing to actually take a
+lost in term of the expected reward for
+the small chance of getting a really high
+payoff. Now it turns out that people often
+have utility curve that looks like the
+[inaudible] so if the x axis is the amount
+of money that we get and we are
+[inaudible] play. It's the zero point over
+here, which is at one's current. State.
+And we ask, how much do you prefer to earn
+money, and how much do you prefer to lose
+money? What's your utility for these
+different, changes to one's state? We can
+see that, one's preferences for earning
+money typically exhibit a form of
+diminishing returns. [sound]. Which gives
+us the, this concave. Utility curve,
+which, suggests risk, averse behavior, in
+the sense that we would prefer a certain
+amount of, we would prefer to get money
+with certainty relative to the, expected,
+relative to the payoff equivalent,
+uncertain lottery. Now on the negative
+side of the spectrum many people exhibit
+some kind of behavior that is actually
+more risk seeking, which means that many
+people would prefer a small probability of
+a large loss. Relative to a small loss
+that you get with certainty, and, that's a
+that's a behavior that one often sees.
+More importantly in this region of the
+space which is close to one's current
+state the behavior is often risk neutral
+this is small. Small losses or small gains
+on the order of a small number of, of
+dollars. And of course, it depends on
+one's, one's baseline. Are often something
+that you don't really don't care about,
+having the uncertainty, and the expect-,
+expected payoff is often very close to
+the, to the utility of the, expected
+payoff. Now one final important
+observation regarding utility functions is
+that one?s utility often depends on many,
+many things not just on the monetary gain.
+So in all of the attributes that effects
+the preferences must be integrated into a
+single utility function. This is something
+that many people find very painful because
+it forces us to do things like put human
+life for the loss of human life on the
+same scale as, as monetary gain. The point
+is even if we don't do this explicitly,
+even if we decline to put human life for
+example on the same scale as monetary
+gain, the fact though our decisions are
+indicating that we're making those
+decisions. So for example, when an airline
+chooses not to run maintenance on the
+airplane every single. Time that the air
+plane lands that's a financial decision
+because that would be too costly but at
+the same time it also definitely increases
+the chance of loss of human life because
+of, because of an accident. Now, it's not
+just big companies that make these
+decisions. We make these decisions
+ourselves. So we don't change the tires on
+our cars every month, or every week.
+Because that would be too costly. But,
+clearly, having better tires is something
+that is likely to increase our chances of
+surviving an accident or a skid. So these
+tradeoffs are ones that we make all the
+time, whether we recognize it or not. And
+so it's important when we think about a
+decision making situation, to list, for
+ourselves, all of the different things
+that could affect our decision, money,
+time pleasure. And many, many other
+attributes and think about how we could
+bring them together into a single utility
+function. Specifically, in the context of
+human life, people have spent a lot of
+time thinking about how to bring in human
+life into one's utility function. And what
+turns out to be the wrong strategy, in
+terms of reflecting people's preferences,
+is to have a utility for the monolithic
+event of someone's death. And that turns
+out to be a very difficult thing to
+contemplate. What, what seems like a
+better strategy, in general is this notion
+of a micro [inaudible], which is a one in
+a million? Chance of death. And so one
+puts the risk explicitly into the utility
+function. And, and so, what is a one in a
+million chance of death worth? Well, back
+in 1980, so a while ago, people did, this,
+this study. And it turns out that a micro
+[inaudible] was worth approximately twenty
+of, $twenty in 1980 dollars. And. So of
+course you can account for inflation but
+it's not a huge amount of money. [sound].
+And that turns out to be a much better way
+of ranking people's utility for outcomes
+that involve risk to human life and asking
+about the utility of, of death. The
+second, way, that people use a medical
+decision, making situations specifically
+for accounting for human life, is this
+notion of [inaudible], or a quality
+adjusted life here. So, each quality
+adjusted life here, which is a year
+adjusted for one's quality of life, has a
+certain, utility associated with it, which
+allows it to be compared. With other
+aspects that affect our utility in a
+decision making situation. One example
+from a real world situation, is in this
+context of prenatal diagnosis. Where,
+researchers did extensive work in
+eliciting utility functions that involve
+prenatal testing. So the relevant
+variables in this scenario include, the,
+whether the, baby is going to end up with
+some kind of genetic disorder.
+Specifically, the one that they focused on
+was Down's syndrome. But at the same time,
+there's other aspects that affect one's
+utility. So For example, V. Pain of.
+Testing for down syndrome is one aspect.
+The comfort of knowledge that you know
+what, what you're going, what's going to
+happen is something that also turns out,
+out to contribute to one's utility
+function. Prenatal testing runs the risk
+of the loss of the fetus and that is also
+clearly a component of one's utility
+function. And at. At the same time, the
+potential for future pregnancy. That is
+whether there will be a future pregnancy
+or not, is another component of one's
+utility function. So if we think about the
+space here, the utility function depends
+in a complicated way of a large number On,
+on these five variables and this is fairly
+high dimensional space over which to
+illicit to illicit utilities. Fortunately
+it turns out that many people have a lot
+of structure in your utility function. And
+specifically they can breakdown the
+totality function as a sum of [inaudible],
+just as we had in the context of
+[inaudible] diagram. And for many people
+that the composition looks like the
+utility of the testing. The, a separate
+component for the utility of the peace of
+mind of knowledge. And then we have. These
+two pair wise utility terms, the first of
+which is a term that depends
+simultaneously on Down's syndrome, and on
+the loss of the fetus. And the second is,
+the utility that depends on the loss of
+the fetus, and the potential for future
+pregnancy. So people's utility function,
+for many people, decomposes in this way.
+Which it turns out we could actually.
+Think about it as a graphical model that
+has singleton terms as well as these pair
+wise terms over here. And, that allows us
+to considerably reduce the number of terms
+that we need to list in order to get a
+usable utility function. [sound] So to
+summarize our utility function is what we
+can use to determine preferences about
+decisions that involve risk or
+uncertainty. In order to define or elicit
+the utility function, we generally need to
+consider multiple factors all of which
+affect our utility. In most cases, the
+relationship between these different
+factors, the. Between say money and the
+utility or micromores and the utility.
+This relationship is usually a nonlinear
+one. And the shape of the utility curve
+determines one's attitudes towards risk.
+Finally the actual utility function is
+usually a multi-attribute utility that
+integrates all these different factors,
+and it often helps to decompose this
+utility function into tractable pieces,
+often as a sum of these pieces, which
+allows us to make this [inaudible] problem
+much more manageable.

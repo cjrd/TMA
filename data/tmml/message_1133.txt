@@ -1,0 +1,4 @@
+Or you can plot model log-likelihood on Y-axis and number of topics on
+X-axis to see where loglikelihood reaches a maximum value. Use the
+corresponding X-value as the no of topics. This will be easier than getting
+into nonparametrics.

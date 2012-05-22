@@ -1,0 +1,8 @@
+Hello everyone:
+I am studying topic model and non-parametric bayesian methods. I read the paper "The IPB Compound Dirichlet Process and its Application to Focused Topic Modeling", But  confused about some points of the paper, can some body help me?
+1) the author make assumption that the number of words of document is draw from the negative binomial distribution, with parameters(\sum_K(b_{mk} \phi_k), 1/2). While mostly we use poisson distrution to model the document length, or rather modeling not the length can make the whole model more simple. so why use negative binomial?
+2) in appedix section, when expanding \mathbb{E}[\theta_{mk} | z_{\neg mi}, \Psi ], the author skip some steps before the second \propto, can someone fill it?
+3) in the appendix the author calculate the expectation and variance, and said"If the number of documents, and therefore the expected total number of topics, is large, then the central limit theorem suggests that we can approximate ( + ) using a Gaussian distribution ...", while the X = \sum_{j:n_{j, \neg i}^{(m)} > 0}\phi_j, Y =  \sum_{j:n_{j,\neg i}^{(m)}=0}b_{mj}\phi_j, we see both X and Y is the sum of random variables which are not iid (b_{mj} is draw from IBP process, \phi_j is draw from gamma distribution). so the central limit theorem is not support?
+thanks
+2011-03-16
+bailu

@@ -1,0 +1,13 @@
+Hi Neal,
+You might be interested in this paper from JCDL 2007:
+Organizing the OCA: Learning faceted subjects from a library of digital
+books. David Mimno and Andrew McCallum.
+http://www.cs.umass.edu/~mimno/papers/f129-mimno.pdf
+We run topic models in parallel over books, each subdivided into pages,
+and then tie each of the book-specific models together with shared topic
+hyperparameters.
+Another similar approach with hierarchical Dirichlets is presented in
+Distributed Inference for Latent Dirichlet Allocation
+David Newman, Arthur Asuncion, Padhraic Smyth, Max Welling
+http://books.nips.cc/papers/files/nips20/NIPS2007_0672.pdf
+-David

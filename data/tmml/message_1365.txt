@@ -1,0 +1,14 @@
+Hi Clint,
+I am not an expert for short documents, but I guess having only few
+terms might be problematic for topic models in general.
+The smarts of topic models come from combinations of words that occur
+across many documents. As documents get shorter, the informative word
+combinations get less likely  and random combinations of (domain
+specific) stop words take over.
+You may also want to watch out for association chains that don't form a
+topic as a whole, e.g., like ship - sea, sea - lake, lake - hike, hike -
+shoes.
+If you think of  informative word combinations are the "gasoline" of
+standard LDA, the fancier models (HDP-LDA, etc) will need more gas.
+Cheers,
+Laura

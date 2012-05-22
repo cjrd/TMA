@@ -1,0 +1,13 @@
+Dear topic-modelers:
+Are there any special considerations above and beyond the 'usual'
+advice given for 'flat' LDA models when it comes to selecting the
+number of topics as well as prior specification in the (discrete)
+dynamic topic model?  I understand from the helpful comments and
+references posted on this list that priors can matter a lot for LDA
+models, but is there any concrete advice for selecting priors for the
+dynamic topic model?
+In addition, is it advisable to use held-out perplexity (as in flat
+LDA models) as a basis for selecting the number of topics to use?
+Any pointers would be appreciated.
+With thanks,
+Scott

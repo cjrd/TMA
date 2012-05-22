@@ -1,0 +1,6 @@
+Thanks for the feedbacks. Any comment on any other tools like FACTORIE, R or
+OPENBUGS? I am mostly concerned with the re-usability. I have worked with
+OPENBUGS where I can very easily specify the model and perform Gibbs
+sampling. But I am concerned with scalability of OPENBUGS.
+Thanks,
+Ayan Acharya

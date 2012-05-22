@@ -1,0 +1,18 @@
+              In the twenty years since researchers at IBM Zurich introduced the scanning
+              tunneling microscope (STM) to the world, scanning probe microscopy (SPM) has
+              become one of the most valuable tools available to physicists, chemists,
+              electrical engineers, materials scientists, biologists, and others seeking to
+              understand the nanoscale features of surfaces. The rich history of SPMs, rooted
+              in the technologies of postwar surface science, has become steadily more
+              diverse as an alphabet soup of instruments and techniques, beginning with the
+              atomic force microscope (AFM) and the scanning capacitance microscope (SCaM),
+              has arisen for measuring and picturing a wide variety of material properties at
+              very high resolution. This dissertation research project seeks to record the
+              history of the development of these laboratory artifacts, and the practices
+              surrounding them, as well as to contribute an ethnographic understanding of how
+              SPMs are used in the ordinary conduct of laboratory life. The project therefore
+              has two parts: an historical component, involving documentary research and
+              interviews with most of the principals in the development of SPMs; and an
+              ethnographic component, involving participant-observation with groups of
+              materials scientists who currently use various SPMs. Each component will shed
+              light on, and raise questions for, the other.

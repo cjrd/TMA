@@ -1,0 +1,9 @@
+Hi,
+There are so many corpus now. I think, many models (the distributions of
+topics and words) trained by every big corpus could be shared and
+issued. That will save much more time for all the researchers. Have
+anyone done this ?  I hope I haven't offended anyone. If someone has
+done this, where can i get useful inormation?
+Another question are that: the dataset has 10 millions docs, i want to
+train its topic model using LDA In Parallel ,and find it extremely slow.
+What i need to finish this task in acceptable time.

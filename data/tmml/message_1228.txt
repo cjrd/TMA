@@ -1,0 +1,16 @@
+Hi Alta,
+As Dave pointed, the Yahoo! LDA code is publicly available now. A more
+recent version describing the work will appear in WSDM 2011 (a pre-print is
+here http://www.cs.cmu.edu/~amahmed/papers/Latent_WSDMD12.pdf).
+You might be interested also in the tutorial that I gave with Alex
+yesterday at NIPS where we discusses several techniques for handling
+large-scale topic models in batch and online settings. The slides are
+available here:
+http://blog.smola.org/post/14117021513/slides-for-the-nips-2011-tutorial .
+For online settings, in addition to the excellent paper point to by Matt,
+we have also looked at this problem (see above tutorial) using sampling
+techniques where we can handle both new documents, and continuations
+of existing documents (
+http://www.cs.cmu.edu/~amahmed/papers/UserModeling_KDD11.pdf).
+Thanks,
+Amr

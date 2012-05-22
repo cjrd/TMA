@@ -1,0 +1,5 @@
+The directory ~/Desktop/lda is not in your path, so the command prompt
+cannot find the lda executable to run it.  You have to explicitly specify
+the path like:
+./lda est 0.1 550 ./settings.txt ./data.txt random
+/home/pius/Desktop/lda/lda_out

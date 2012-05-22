@@ -1,0 +1,7 @@
+Haiyang,
+Your description assessment is correct.  Going beyond a pipeline of LDA
+followed by clustering (in the reduced feature space), you can construct a
+joint co-clustering model that clusters both terms and documents.  Shafiei &
+Milios have proposed one such model, and Wallach's dissertation suggests
+another possibility.
+Regards,

@@ -1,0 +1,5 @@
+Hi,
+Is there implementation of LDA using Gibbs sampling?
+Are there some usefull links about Gibbs sampling in general and in LDA?
+Thanks,
+Vasiliy

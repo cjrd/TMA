@@ -1,0 +1,7 @@
+Hi,
+Is there any code available for experimenting with supervised LDA models
+that the "response variable" is? real number?
+Thanks
+___________________________________________________________
+?????????????????
+http://card.mail.cn.yahoo.com/

@@ -1,0 +1,7 @@
+Do you have unused terms in your .voc file?  If there are terms at the
+end of the .voc file that do not appear in the corpus, then ldac will
+not output probabilities for these terms and thus the python program
+won't find those probabilities when it tries to sort the vocabulary
+terms in the .voc file.
+Cheers,
+Jordan

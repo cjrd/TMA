@@ -1,0 +1,23 @@
+Hello,
+I am a student at Rutgers University am am currently trying to
+understand topic models in computer vision applications.
+I am reading the paper - A Bayesian Hierarchical Model for Learning Natural
+Scene Categories, Fei Fei et al, CVPR 2005.
+I am a bit confused about the parameters in Theme model 1 vis-a-vis the
+usual LDA. It seems that the parameter I need to estimate here is not theta,
+the topic mixing vector, but the Dirichlet prior alpha, a category X topic
+matrix (referred to as pi and theta in the paper, respectively). If so, I am
+unable to derive the collapsed Gibbs sampling equations to compute alpha.
+I think I am currently using Theme model 2, which as I understand, trains
+each category separately from the rest, essentially learning category
+specific topics. However, sharing common topics across all categories (as in
+Theme model 1) seems to be more meaningful.
+The paper mentions that detailed derivations have been published in a
+separate technical report, but I couldn't find any online.
+It would be of great help if someone would clarify my misunderstandings
+about this problem (estimating alpha instead of theta ?). Additionally, I am
+also curious about this labeled lda model wrt to the other supervised topic
+models.
+Thanks so much.
+Regards,
+-Ishani.

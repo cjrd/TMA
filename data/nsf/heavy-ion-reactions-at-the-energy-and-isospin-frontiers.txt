@@ -1,0 +1,24 @@
+              0070818
+Pratt
+	Two important experimental nuclear physics facilities are
+              becoming operational in the next two years. The Relativistic Heavy Ion Collider
+              (RHIC) at Brookhaven National Laboratory will collide heavy nuclei at extremely
+              high energy. Within the reaction volume, conditions should exist to temporarily
+              alter the structure of matter, liberating quarks from their usual confinement
+              within hadrons and
+melting the non-perturbative structure of the QCD vacuum.
+              The second facility is the Coupled Cyclotron Project (CCP) at the National
+              Superconducting Cyclotron Laboratory. The CCP upgrade will provide beams of
+              nuclei with exceptionally high neutron-to-proton ratios, which can be used to
+              perform experiments before the nuclei undergo beta decay to the usual isotopes.
+              By colliding such nuclei and observing the outgoing nuclear fragments, we hope
+              to infer information about the equation of state of neutron-rich matter and
+              to
+better understand the process of nuclear fragmentation. The principal aim
+              of our work is to provide theoretical interpretations of the measurements in
+              these facilities. Since the questions regarding bulk-matter properties are
+              addressed only indirectly through detailed analyses of such experiments, theory
+              plays an especially integral role in the analyses of such experimental
+              results.
+
+

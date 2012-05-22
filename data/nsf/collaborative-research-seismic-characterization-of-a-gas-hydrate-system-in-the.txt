@@ -1,0 +1,14 @@
+              In a joint project USGS, University of Mississippi and the DOE gathered
+              single-channel seismic and ocean bottom seismometer data from the Gulf of
+              Mexico gas hydrate environment. Initial results show free gas beneath a
+              hydrate-bearing mud diapir but lacks a bottom-simulating reflector (BSR). The
+              PIs propose to further develop an existing seismic tomography code to handle
+              reflecting interfaces and converted shear waves in a self-consistent way. The
+              code will be initially applied to an interesting gas hydrate problem from the
+              Mississippi Canyon area in the Gulf of Mexico. The new technique will be used
+              to learn: 1) how far does the shallow hydrates extend beneath the seafloor?, 2)
+              does free gas exist beneath shallow hydrates and if so, what traps it?, 3) why
+              is there no BSR present. The existing 3D data will be optimized and a method
+              will be developed for 3D PS-NMO based on tomographic inversion. 
+
+

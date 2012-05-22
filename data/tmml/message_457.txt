@@ -1,0 +1,9 @@
+I've had some good initial experiences applying sequential Monte Carlo
+inference techniques to make LDA scale better.  (See
+https://lists.cs.princeton.edu/pipermail/topic-models/2008-May/000246.html
+- formalizes in a useful way the idea of training on a subset and
+folding in the rest.)  I'm shooting for a slightly bigger problem than
+you mention.  It's part of a commercial project, so I can't go into
+much detail, but I hope to be able to put out a technical report
+later.
+Anthony

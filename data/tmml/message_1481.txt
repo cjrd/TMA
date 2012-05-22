@@ -1,0 +1,8 @@
+You might want to use this version, which fixes the bug and adds a few
+"debugging comments":
+Download:
+http://lda-c.googlecode.com/files/lda-c.tgz
+lda-estimage.c diff:
+http://code.google.com/p/lda-c/source/diff?spec=svn3&r=3&format=side&path=/trunk/lda-estimate.c
+Best,
+Sean

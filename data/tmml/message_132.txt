@@ -1,0 +1,8 @@
+hi topic models list,
+has anyone had experience or know of interesting examples of using
+the low dimensional representations that topic models provide as
+features for the prediction of something else associated with the
+document?  for example, fei-fei li uses topic models features to
+predict the objects in images.
+best,
+dave

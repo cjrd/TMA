@@ -1,0 +1,20 @@
+It is well-known that there is a close relationship between matrix
+factorization methods such as latent semantic analysis (LSA) and topic
+models such as LDA. Matrix factorization methods have been extended to
+use side information and to be probabilistic, so they are useful
+alternatives to sophisticated topic models such as the one mentioned
+below by David, due to him and Chong Wang. A big advantage of the
+extended matrix factorization methods is that they are easy and fast
+to train and apply. Training an LFL model requires only stochastic
+gradient descent (SGD). More time-consuming algorithms like
+variational EM or Gibbs sampling are not needed. There are three main
+papers on LFL:
+Predicting labels for dyadic data
+http://escholarship.org/uc/item/8zp3n947
+http://www.springerlink.com/content/115p058437104h7k/
+A log-linear model with latent features for dyadic prediction
+http://cseweb.ucsd.edu/~akmenon/LFL-ICDM10.pdf
+Link prediction via matrix factorization
+http://cseweb.ucsd.edu/~elkan/ECML2011LinkPrediction.pdf
+http://www.springerlink.com/content/h1041601305807n0/
+Charles

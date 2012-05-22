@@ -1,0 +1,11 @@
+Yes there is. P(w_i|z_p = 1) is in general different from P(w_i|z_q = 1). In English: The word "belongs the most" to the topic that gives it the highest probablity to occur. This probability is different for topics p,q,...
+Yes. And estimation with GibbsLDA (http://gibbslda.sourceforge.net/) gives me all the other variables too. I think inference computes \theta too.
+BTW you cannot infer without estimated parameters.
+No. I found it confusing too. Anyone knows why?
+I do not now the source. I didn't do much with lda-c
+Regards,
+Felix
+P.S: Sorry for messing up the subject-line before.
+_______________________________________________________________________
+Jetzt neu! Sch?tzen Sie Ihren PC mit McAfee und WEB.DE. 30 Tage
+kostenlos testen. http://www.pc-sicherheit.web.de/startseite/?mc=022220

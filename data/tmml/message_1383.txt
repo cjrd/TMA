@@ -1,0 +1,5 @@
+Hi Matt,
+The best way is to experiment and examine the log-likelihood fit of the produced model.
+If your corpus is not too large you can try a larger number of topics to begin with, and use the hyperparemter optimization scheme (useless topics get very low density).
+Raphael
+Date: Mon, 11 Jul 2011 12:06:55 -0700

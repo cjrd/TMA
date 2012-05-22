@@ -1,0 +1,21 @@
+              Most investigations of molecular evolution examine single genes, without respect
+              to their interactions with other genes.  However, most genes do not act in
+              isolation, but interact with many other genes, which are likely to influence
+              each other's evolution.  One goal of this project is to determine whether and
+              how such interactions actually cause predictable variation among genes in their
+              rates of evolution.  Specifically, genes of the anthocyanin pigment pathway in
+              morning glories (genus Ipomoea) will be examined to determine whether observed
+              evolutionary rate variation is due to differences in selective constraint (i.e.
+              whether genes downstream in the pathway are less subject to purifying natural
+              selection because they influence fewer characters).  A second goal of this
+              project is to begin examining the relative importance of regulatory and
+              structural genes in adaptive divergence between species by determining the
+              molecular basis of phenotypic divergence. The long-term goal of this project is
+              to examine a large number of species whose color pattern has diverged from the
+              presumed ancestral type of cyanidin-based blue/purple pigmentation throughout
+              the corolla limb and throat.  For each species the relative contribution of
+              structural and regulatory genes to divergence will be determined.   However,
+              the current objective is more limited: to characterize the genetic changes that
+              have resulted in the production of white flowers by two species, I. alba and I.
+              igualensis.  Initially, investigation will concentrate on these two species to
+              demonstrate the feasibility of the proposed approach.

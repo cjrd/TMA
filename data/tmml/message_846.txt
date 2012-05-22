@@ -1,0 +1,8 @@
+Dear all,
+I am again running David's LDA C code on a different dataset and was following the helpful advice I was given earlier
+https://lists.cs.princeton.edu/pipermail/topic-models/2010-February/000705.html
+on how to compute the probabilities of each document belonging to the different topics. However, I just noticed that with this second dataset some lines of the resulting theta file have multiple negative values for the probabilities and then a value larger than 1. Eg, the first line from the thetas file (using a model with 14 topics):
+-0.000104890502391142 -0.000104890502391142 -0.000104890502391142 -0.000104890502391142 -0.000104890502391142 1.00136357122330 -0.000104885194608265 -0.000104890502391142 -0.000104890502391142 -0.000104890502391142 -0.000104890502391142 -0.000104890502391142 -0.000104890502391142 -0.000104890502391142
+Is this a sign that I messed up at some point? Or just that this document very much belongs to the sixth topic? : )
+many thanks for any insight,
+lara

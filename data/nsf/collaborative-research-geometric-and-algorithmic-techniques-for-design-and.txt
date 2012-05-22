@@ -1,0 +1,48 @@
+              Frazzoli - Branicky Abstract
+
+This project is aimed at the development of new
+              tools and techniques for the design and analysis of high-confidence software
+              for complex, distributed, reconfigurable aerospace embedded systems, and to
+              transfer these methods to undergraduate and graduate students, other
+              researchers, and industry. 
+Problems of direct interest include those arising
+              in the control and coordination of multiple autonomous air and space vehicles,
+              and in the detection and resolution of conflicts in Air Traffic Control. The
+              techniques developed in this project are also applicable to other systems which
+              require similar levels of reliability and performance, such as highway traffic
+              automation systems, health care systems, power networks, and
+financial
+              services.
+
+The primary goal of this project is a better understanding of the
+              interactions between real-time software and dynamical systems.  This will lead
+              to new and powerful tools and techniques for the design and analysis of
+              embedded systems, as well as an improved approach to the requirement
+              specification for real-time systems.
+The core of the research is aimed at
+              dramatically reducing the complexity of embedded and hybrid systems design and
+              verification by exploiting the geometric structure of the underlying physical
+              system in the modelling effort, and by preserving this structure in the design
+              of control laws and algorithms. This will make feasible the analysis of the
+              complete system (including its physical and software components) by otherwise
+              poorly scalable techniques such as abstract interpretation and model checking,
+              and will provide
+the means for the effective use of techniques based on
+              compositional reasoning.  For example, group symmetries in vehicle dynamics
+              give rise to families of equivalent controlled trajectories: such sets are
+              called motion primitives for single vehicles, and motion coordination
+              primitives for groups of vehicles. A maneuver automaton is a collection of a
+              finite number of motion primitives. It provides a discrete model of the vehicle
+              dynamics, which leads to a dramatic reduction of the complexity of describing
+              and controlling the vehicle behavior, by providing a high level of abstraction,
+              and at the same time providing invariants which ensure that the physical state
+              remains within some known bounds.
+
+The educational part of the project is
+              implemented through new course and curriculum development, and student
+              mentoring. The main educational objective is to provide both undergraduate and
+              graduate students with the knowledge and the skills to understand the key
+              issues and to ensure technical leadership in the current and future aerospace
+              information technology arenas.  Finally, an interactive web site is being
+              developed, where it is possible to access information and software developed in
+              the research project and for the courses.

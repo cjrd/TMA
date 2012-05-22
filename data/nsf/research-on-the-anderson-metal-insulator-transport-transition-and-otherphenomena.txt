@@ -1,0 +1,57 @@
+              The subject of this research proposal is the Anderson metal-insulator transport
+              
+transition and other phenomena in disordered systems. A new approach to the
+              Anderson 
+metal-insulator transition based on transport instead of spectral
+              properties will be 
+investigated.  In addition, several related topics will be
+              investigated. Constructive 
+criteria for localization in random media will be
+              developed; an application is planned 
+for the Landau Hamiltonian with a random
+              potential. Local Poisson statistics for the 
+strong insulator spectrum of
+              Anderson-type Hamiltonians in the continuum will be 
+studied.  The spectrum of
+              the Anderson model on the Bethe lattice will be studied. 
+Localization at low
+              disorder in one or two dimensions will be investigated.
+
+Fortysome years have
+              passed since P. Anderson's seminal article on localization of 
+electrons in
+              random media, but our mathematical understanding of the metal-insulator
+              
+transition is still very unsatisfactory.  In three or more dimensions a
+              transition is 
+believed to occur from an insulator regime, characterized by
+              localized states, to a 
+very different metallic regime characterized by
+              extended states. The energy at which 
+this metal insulator transition occurs
+              is called the mobility edge. The standard 
+mathematical interpretation of this
+              picture is that there should be a transition in the 
+spectrum of the random
+              SchrAdinger from pure point spectrum (localized states) to 
+absolutely
+              continuous spectrum (extended states). But up to now there are no
+              
+mathematical results on the existence of continuous spectrum and a
+              metal-insulator 
+transition (except for the special case of the Anderson model
+              on the Bethe lattice).  A 
+new approach to the Anderson metal-insulator
+              transition is proposed based on transport 
+instead of spectral properties. It
+              is motivated by the fact that the intuitive physical 
+notion of localization
+              has a dynamical interpretation: an initially localized wave 
+packet should
+              remain localized under time evolution, and delocalization may be 
+interpreted
+              as nontrivial transport.  The main goal of this proposal is to show the
+              
+existence of such a transport transition.  
+
+

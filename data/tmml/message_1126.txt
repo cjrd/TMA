@@ -1,0 +1,9 @@
+Could you give a little more information about your setup? What
+hyperparameters are you using? What kind of image features are you
+using? How many "words" are there per image? What kinds of images are
+in your database?
+It's possible that the ideal number of topics is less than 20, or that
+the variational lower bound is loose, but I suspect something else is
+going on.
+Best,
+Matt

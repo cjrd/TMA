@@ -1,0 +1,28 @@
+              0074841
+Lebron
+
+This project addresses the problem of quantifying the
+              influence of solution composition on soil hydraulic properties.  The knowledge
+              of these properties is necessary to assess transport of contaminants in soil
+              and subsequent remediation, to predict release and sequestration of CO2, and to
+              interpret and improve the use of remotely sensed soil data such as
+              determination of salinity from electrical resistivity data and determination of
+              water content from satellite information.  Flow and transport of water and
+              solutes in soils are controlled by size, geometry and characteristics of the
+              soil porosity.  Most of the characteristics of the soil pores are microscopic,
+              such as roughness and circularity.  Conventional models of liquid distribution,
+              flow and solute transport rely solely on cylindrical pores, while ignoring the
+              role of surface area, angularity, and connectivity.  Neural networks have been
+              used to predict water retention properties in soils using macro and microscopic
+              parameters.  These models have tremendous potential to derive pedotransfer
+              functions (PTFs) to predict hydraulic parameters.  However the PTFs available
+              in the literature do not consider the chemical composition of the soil solution
+              nor data considering the mineralogy of the clay minerals in the soil.  Clay
+              mineral and chemical composition are known to be critical determinants of the
+              hydraulic properties in soils with swelling clays, especially if they are
+              affected by sodicity.  The main objective of this project is to quantify the
+              influence of salinity, sodicity and pH on the geometry, size, and distribution
+              of the soil pore space.  This quantification will provide the information for
+              developing PTFs using neural network and bootstrap methodology and is intended
+              to improve our capability to predict soil hydraulic properties.
+

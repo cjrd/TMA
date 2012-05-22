@@ -1,0 +1,32 @@
+hi list, anthony, and greg,
+thanks for the interesting discussion.  i want to throw in my 2c.
+please forgive me if i missed a detail and these points were made.
+first, i don't think that it's possible to sample the path of the
+tree without conditioning on the topic level assignments.  (it wasn't
+clear to me from the emails whether this you are doing this.)
+without those level assignments, one has to marginalize out all the
+possible configurations in computing the probability of each path.
+second, sampling the topic level assignments iteratively as a block
+is not technically correct.  the first assignment depends each of the
+others through their words.  to do this correctly, again, you'd have
+to marginalize out the remaining possible topic assignments
+(exponentially many) in sampling the first level assignment.  note,
+they can be sampled as a block if you sample \theta first,
+conditioned on the previous assignments.  conventional wisdom says,
+however, that this converges slower than collapsing theta.
+all this said, as you pointed out, it makes intuitive sense to have a
+"fresh start" when the path of a document changes and i believe this
+may really improve convergence.   something i've thought worth trying
+is to sample the topic assignments as a block in the "wrong" way, and
+then use some kind of metropolis hastings step to accept or reject
+the resulting ensemble of assignments.  in fact, this could be tried
+in the vanilla LDA model as well.
+finally, someone mentioned randomizing the term order.  i tend to do
+this for documents and words in hLDA.  at some point i had the nice
+opportunity to chat with andrew gelman.  he said (more eloquently
+that i can) that randomly permuting the RV's in gibbs sampling
+typically helps matters because some orderings are better than
+others.  of course, you pay a computational cost to perform the
+shuffle.  i typically do this every 10 iterations or so.
+best,
+dave

@@ -1,0 +1,7 @@
+Hi Mohamed,
+I'm assuming you're using the "bin/mallet evaluate-topics" command. If
+so, the number you get is the marginal log probability of the words in
+a document. -63222 is a reasonable number for a longer document. If
+you divide the log probability by the number of tokens, for a good
+model it should be between -6 and -10.
+-David

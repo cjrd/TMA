@@ -1,0 +1,39 @@
+              Subduction of active oceanic spreading ridges has been an important process in
+              Cenozoic tectonics of the Pacific Basin.  The Chile Ridge, the divergent
+              Nazca-Antarctic plate boundary, is currently subducting beneath continental
+              South America along the Chile Trench at ~46.5S, forming a plate triple junction
+              in the vicinity of the Taitao Peninsula.  Chile Ridge spreading rate and
+              morphology, and the history of ridge subduction, are well-known: at least three
+              southern Chile Ridge segments have subducted beneath South America 14, 6 and 3
+              m.y. ago.  The current seismicity of the southern portion of subducting Nazca
+              lithosphere defines the dip of the Nazca slab north of the
+              Nazca-Antarctica-South America triple junction, albeit poorly.  However, south
+              of the triple junction seismicity diminishes markedly and Antarctic plate slab
+              dip is not known.  Nonetheless, given spreading and convergence histories, and
+              knowledge of the motion of South America with respect to the deep mantle, the
+              morphology of the subducted Nazca and Antarctic labs and their associated
+              spreading ridge can be predicted. Thus, the loci and expected shapes of gaps
+              formed between actively spreading subducted portions of the Nazca and Antarctic
+              slabs - slab windows can be determined.
+
+Implicit in the slab window idea is
+              the assumption that spreading between the two sides of the subducted ridge
+              continues after subduction, but that no new lithosphere is formed after
+              subduction, leading to formation of a progressively widening gap and
+              asthenospheric mantle flow between the two edges of the former ridge. 
+              Preliminary results from studies of shear wave splitting and seismic
+              attenuation in the Chile Ridge subduction region indicate that the upper mantle
+              flow field beneath South America may be highly variable. Deployment of some 50
+              passive-source seismic stations in the Chile Margin triple junction area offers
+              the prospect of direct observation of a slab window and the possibility that
+              the form and function of the mantle flow field in this geodynamically unique
+              tectonic regime can be determined.  Studies of crust and upper mantle
+              structure, mantle anisotropy, seismic attenuation, and tectonics of the
+              Nazca-Antarctica-South America triple junction region are designed to yield the
+              structure of slab gaps and mantle flow through those gaps.  Targeted tests of
+              mantle responses to the ridge subduction include establishment of the presence
+              and thickness of mantle asthenosphere beneath the study region, determination
+              of potentially heterogeneous crustal and lithospheric structure due to slab
+              window magmatic processes and enhanced tectonic erosion, observations of mantle
+              flow directions in the vicinity of the gaps, and estimation of seismic
+              attenuation and associated inferences concerning mantle temperature fields.

@@ -1,0 +1,23 @@
+hey YW,
+i hope all is well in london.
+actually, i meant assuming a fully factorized variational
+distribution on theta and z, optimizing with respect to the
+variational parameters of theta, and then folding those updates into
+the bound.  i.e.,
+1. q(z, \theta) = q(z) q(\theta) where q(z) is factorized and q
+(\theta) is a dirichlet
+2. optimize the uncollapsed bound w/r/t to q(\theta)
+3. fold that optimization into the bound and optimize w/r/t q(z) as i
+laid out earlier.
+rather than
+q(z, \theta) = q(z) q(\theta | z)
+as you assume to get CVI.
+that's very interesting.  i'd think that the second term (with the
+variance) would bring the approximation down too, but i guess not if
+the variance is small.
+i meant the uncollapsed variational bound evaluated at the CVI
+solution versus the same bound evaluated at a VB solution.  i suspect
+that it is better and, as you suggested, that CVI gets us to a better
+local minimum.  (i'll try this out...)
+best,
+dave

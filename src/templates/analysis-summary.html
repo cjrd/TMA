@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>                                     
+	<title>TMA S</title>
+	<script type="text/javascript" src="{{ STATIC_URL }}js/d3.js"></script>                
+	<script type="text/javascript"> var like_data = {{like_data}} </script>
+	<script type="text/javascript"> var doc_data = {% if doc_data %} {{doc_data|safe}} {% else %} {} {% endif %} </script>
+	<script type="text/javascript"> var term_data = {% if term_data %} {{term_data|safe}} {% else %} {} {% endif %} </script> 
+	<script type='text/javascript' src='{{ STATIC_URL }}js/prototype.js'></script>   
+	<script type="text/javascript" src="{{ STATIC_URL }}js/scriptaculous.js?load=effects"></script>
+	<script type='text/javascript' src='{{ STATIC_URL }}js/lightwindow.js'></script>    
+		<link rel="stylesheet" href="{{ STATIC_URL }}css/lightwindow.css" type="text/css" media="screen" />  
+
+	<style type="text/css">
+	path {
+		stroke: #15317E;
+		stroke-width: 2; 
+		stroke-opacity: 0.6	; 
+		fill: none;
+	} 
+
+	circle{
+		fill: #15317E;
+		fill-opacity: 1.0	; 
+	}
+
+	line {
+		stroke: black;
+	}
+
+	text {
+		font-family: Arial;
+		font-size: 9pt;
+	} 
+
+	body {
+		margin:40px; 
+		padding:40px;
+		text-align:center;
+	}
+	</style>    
+
+	<style type="text/css">  
+	circle.node {
+		stroke: #222222;
+		stroke-opacity: 0.9;
+		stroke-width: 1.2px;
+	}
+	line.link {
+		stroke: #999999;
+		stroke-opacity: 0.6;
+	}
+	button {
+		-moz-border-bottom-colors: none;
+		-moz-border-image: none;
+		-moz-border-left-colors: none;
+		-moz-border-right-colors: none;
+		-moz-border-top-colors: none;
+		background-color: #222222;
+		background-image: -moz-linear-gradient(center top , rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.11));
+		border-color: -moz-use-text-color -moz-use-text-color #222222;
+		border-radius: 0 0 0 0;
+		border-style: none none solid;
+		border-width: 0 0 1px;
+		box-shadow: 0 1px 3px #999999;
+		color: #FFFFFF;
+		font: 14px Helvetica Neue;
+		margin: 0;
+		padding: 6px 10px;
+		text-rendering: optimizelegibility;
+		text-shadow: 0 -1px 1px #222222;
+	}
+	button.first {
+		border-bottom-left-radius: 5px;
+		border-top-left-radius: 5px;
+	}
+	button.last {
+		border-bottom-right-radius: 5px;
+		border-top-right-radius: 5px;
+	}
+	button.active {
+		background-color: #416685;
+	}
+	button:hover {
+		background-color: steelblue;
+	}
+	</style>
+
+</head>     
+<body>   
+
+<a href="relationships/open.html" params="lightwindow_type=external"  class="lightwindow" title="Colorado's title" caption="Colorado's caption.">Link Name</a>
+<div id="chart">  
+	<button id="doc-button" class="first active"> Documents </button>
+	<button id="terms-button" class="last"> Terms </button>	 
+	<div id="fgraph">
+	</div>
+</div>
+
+
+<script type="text/javascript">
+
+
+d3.select("#doc-button").on("click", function() {            
+	gload(doc_data);
+	d3.select("#doc-button").classed("active", true);
+	d3.select("#terms-button").classed("active", false);
+}); 
+d3.select("#terms-button").on("click", function() {
+	gload(term_data);
+	d3.select("#doc-button").classed("active", false);
+	d3.select("#terms-button").classed("active", true);
+});
+
+var gload = function(jdata){ 	
+	var w = 1500,
+	h = 800,
+	fill = d3.scale.category20();
+	d3.selectAll("line.link").remove();  
+	d3.selectAll("circle.node").remove();   
+	d3.select("#fgraph").remove()
+	var vis = d3.select("#chart").append("div")
+		.attr("id", "fgraph")        
+		.append("svg:svg")
+		.attr("width", w)
+		.attr("height", h)             
+		.attr("pointer-events", "all")
+		.append('svg:g')
+		.call(d3.behavior.zoom().on("zoom", redraw))     
+		.append('svg:g');       
+
+	vis.append('svg:rect')
+	    .attr('width', w)
+	    .attr('height', h)
+	    .attr('fill', 'white')      
+                                
+	function redraw() {
+ 	   console.log("here", d3.event.translate, d3.event.scale);
+		vis.attr("transform",
+		"translate(" + d3.event.translate + ")"
+		+ " scale(" + d3.event.scale + ")");   
+	}
+         
+	var force = d3.layout.force()
+		.charge(-120)
+		.linkDistance(15)
+		.theta(1)
+		.nodes(jdata.nodes)
+		.links(jdata.links)
+		.size([w, h])
+		.start();    
+
+	var link = vis.selectAll("line.link")
+		.data(jdata.links)
+		.enter().append("line")
+		.attr("class", "link")
+		.style("stroke-width", function(d) { return 1; })   // Math.sqrt(d.value)
+		.attr("x1", function(d) { return d.source.x; })
+		.attr("y1", function(d) { return d.source.y; })
+		.attr("x2", function(d) { return d.target.x; })
+		.attr("y2", function(d) { return d.target.y; }); 
+
+	var node = vis.selectAll("circle.node")
+		.data(jdata.nodes)
+		.enter().append("circle")
+		.attr("class", "node")
+		.attr("cx", function(d) { return d.x; })
+		.attr("cy", function(d) { return d.y; })
+		.attr("r", 5)
+		.style("fill", function(d) { return fill(d.group); })
+		.call(force.drag);    
+	node.append("title")
+		.text(function(d) { return d.name; });     
+
+	force.on("tick", function() {
+		link.attr("x1", function(d) { return d.source.x; })
+		.attr("y1", function(d) { return d.source.y; })
+		.attr("x2", function(d) { return d.target.x; })
+		.attr("y2", function(d) { return d.target.y; });
+		node.attr("cx", function(d) { return d.x; })
+		.attr("cy", function(d) { return d.y; });            
+	});  
+}
+gload(doc_data)
+</script>
+<script type="text/javascript">   
+var w = 500,
+h = 300,
+margin = 50,
+y = d3.scale.linear().domain([d3.min(like_data), d3.max(like_data)]).range([0 + margin, h - margin]),
+x = d3.scale.linear().domain([0, like_data.length]).range([0	 + margin + 40, w - margin]),
+nticks = 10
+
+var vis = d3.select("body")
+.append("svg:svg")
+.attr("width", w)
+.attr("height", h)
+
+var g = vis.append("svg:g")
+.attr("transform", "translate(0," + (h+20) + ")") 
+
+var line = d3.svg.line()
+.x(function(d,i) { return x(i+1); })
+.y(function(d) { return -1 * y(d); })
+
+g.append("svg:path").attr("d", line(like_data));  
+
+var miny = y(d3.min(like_data))
+g.append("svg:line")      // x-axis
+	.attr("x1", x(0))
+	.attr("y1", -1 * miny )
+	.attr("x2", x(like_data.length))
+	.attr("y2", -1 * miny)  
+
+g.append("svg:text")  // x label
+	.attr("x", w/2) 
+	.attr("y", -1*miny + 30)
+	.text("iteration")     
+
+g.append("svg:line")
+	.attr("x1", x(0))
+	.attr("y1", -1 * miny)
+	.attr("x2", x(0))
+	.attr("y2", -1 * y(d3.max(like_data)))   
+
+g.append("svg:text")  // y label
+	.attr("x", 28) 
+	.attr("y", -h/2)
+	.text("log(likelihood)")
+	.attr("transform","rotate(-90, 28," + (-h/2) + ")")        
+
+g.selectAll(".xLabel")
+	.data(x.ticks(nticks))
+	.enter().append("svg:text")
+	.attr("class", "xLabel")
+	.text(String)
+	.attr("x", function(d) { return x(d) })
+	.attr("y", -1*miny + 15)
+	.attr("text-anchor", "middle")   
+
+g.selectAll(".yLabel")
+	.data(y.ticks(nticks))
+	.enter().append("svg:text")
+	.attr("class", "yLabel")
+	.text(String)
+	.attr("x", x(0) - 50)
+	.attr("y", function(d) { return -1 * y(d) })
+	.attr("text-anchor", "right")
+	.attr("dy", 4)
+	.attr("dx", 0)  
+
+
+g.selectAll(".xTicks")
+	.data(x.ticks(nticks))
+	.enter().append("svg:line")
+	.attr("class", "xTicks")
+	.attr("x1", function(d) { return x(d); })
+	.attr("y1", -1*	miny)
+	.attr("x2", function(d) { return x(d); })
+	.attr("y2", -1*	miny+4)  
+
+g.selectAll(".yTicks")
+	.data(y.ticks(nticks))
+	.enter().append("svg:line")
+	.attr("class", "yTicks")
+	.attr("y1", function(d) { return -1 * y(d); })
+	.attr("x1", x(0) - 4)
+	.attr("y2", function(d) { return -1 * y(d); })
+	.attr("x2", x(0))     
+
+g.selectAll("circle.line") 
+	.data(like_data)  
+	.enter().append("circle")
+	.attr("class", "line")
+	.attr("cx", function(d,i) { return x(i+1); })
+	.attr("cy", function(d) { return -1 * y(d); })
+	.attr("r", 2.5);  
+
+
+</script>
+</body>  
+</html>

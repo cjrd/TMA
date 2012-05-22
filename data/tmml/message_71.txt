@@ -1,0 +1,7 @@
+Hi Dave, all is well in london, a bit too busy :)  And you?
+I see what you mean now.  Hhmm.. would this be different than the
+following: update all theta, update one z_i, update all theta, update
+another z_i, and repeat?
+Ok.  Unless it is a local minima issue, I would think not, since the
+VB solution is by definition a local minimum of the VB bound?  Perhaps
+there's other better ways to get to better local minima?

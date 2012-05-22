@@ -1,0 +1,37 @@
+              There has been an increasing trend to conduct scientific research using
+              numerical simulations on modern high performance computers in recent years. 
+              Considerable progress has been made in the area of computational material
+              sciences. Computational tools have been used in the design of new materials as
+              well as in the study of their properties. The central objectives of this
+              project are: 1) to develop or refine certain mesoscale and macroscale models,
+              so to enlarge the range of physical problems for which such  models are valid;
+              2) to analyze these models in order to gain further understanding of their
+              properties and solutions; 3) to develop, analyze, and implement algorithms, in
+              particular, parallel and adaptive algorithms, for the numerical simulation of
+              these models; and 4) to use our algorithms and codes to study some interesting
+              phenomena in material sciences.
+
+In the proposed work, the principal
+              investigator will study models and develop numerical algorithms for some
+              interesting  material sciences problems that involve multiscale (mesoscale and
+              macroscale) and stochastic effects,  such as problems related to vortices and
+              other defects in superconductivity and magnetism. A major part of the project
+              is aimed at increasing the range of applications for the mesoscale codes and
+              allow more comparative studies between the mesoscale and macroscopic models
+              through the use of domain and scale decomposition/integration and adaptive
+              computation techniques. The codes for mesoscale models can be of use in gaining
+              information and insight about the physical behavior and interaction of the fine
+              structures (such as vortices) with, for example, boundaries, interfaces,
+              impurities, currents, and thermal fluctuations. They can be of indirect use to
+              device designers, in particular, when connections with macroscopic properties
+              can be identified. Models based on the stochastic partial differential
+              equations and their numerical simulations will also be given emphasis, so as to
+              gain insight to the macroscopic effect of thermal fluctuations and impurities
+              in the materials like superconductors and liquid crystals. The work will be
+              aimed at making the computational codes robust, efficient, flexible, accurate,
+              scalable and user-friendly. It is hoped that these codes can be used by
+              physicists, material scientists, and engineers in laboratories, universities,
+              and industrial organizations as a tool for studying some specific material
+              properties and also a tool in designing devices.  
+
+

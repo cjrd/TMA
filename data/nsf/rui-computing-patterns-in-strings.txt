@@ -1,0 +1,85 @@
+              The problem of computing patterns in sequences or strings of characters
+from a
+              finite alphabet has important applications in numerous areas of
+computer
+              science, notably in data compression, information theory, and
+pattern
+              matching. This problem has also important applications in biology.
+The
+              stimulus for such recent works is the study of biological sequences
+such as
+              DNA and protein that play a central role in molecular biology. DNA
+sequences
+              can be viewed as quite long but finite strings of nucleotides of
+4 different
+              types, while protein sequences can be viewed as finite strings
+of amino acids
+              of 20 possible types. Patterns such as periodicities and
+repetitions make up a
+              significant fraction of both DNA and protein
+sequences. Although the functions
+              of these patterns are not well
+understood, they appear important for
+              understanding the expression,
+regulation and evolution of a biological
+              sequence. These patterns can be
+used to identify the sequence among other
+              sequences, an application that
+plays a role in genetic fingerprinting.
+              Repetitions in biological
+sequences have been associated with human genetic
+              diseases. They also
+complicate multiple sequence alignment because matches may
+              be present in
+numerous places.
+
+The literature has generally considered
+              problems in which a period u of a
+repetition is invariant. It has been
+              required that occurrences of u match
+each other exactly. Due to the action of
+              evolutionary mutation, patterns
+in biological strings are seldom exact but
+              rather approximate. It
+therefore becomes necessary to recognize u' as an
+              occurrence of u if the
+distance between u' and u is bounded by a certain
+              threshold. Several
+definitions of distance have been proposed like the Hamming
+              distance which
+counts the minimum number of character substitutions required
+              to transform
+u' into u, and the edit distance which counts the minimum number
+              of
+substitutions, insertions, and deletions of characters required
+              to
+transform u' into u. Although there is an enormous literature dealing
+              with
+approximate pattern matching according to these and other definitions
+              of
+distance, very little is known on approximate repetitions, a version
+              of
+repetitions where errors are allowed, and much remains to be done.
+              Given
+the importance of patterns in biological strings and the
+              exponential
+growth in the DNA database, it is important to develop
+              efficient
+algorithms for detecting these patterns. The investigators study
+              patterns
+such as periodicities, repetitions, covers, and seeds and
+              their
+approximate versions built upon various commonly used distance
+              measures.
+Techniques include recent combinatorial techniques related to
+              partial
+strings which are strings where a number of gap characters are
+              allowed.
+They also include the cover array, the highest scoring paths in
+              weighted
+grid graphs, the probabilistic models that have been proposed
+              for
+repetitions, and the subtree max gap problem which is a poweful tool
+              in
+parallel algorithm design.
+

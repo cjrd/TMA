@@ -1,0 +1,9 @@
+Hi Veena,
+This is a common misunderstanding. Gamma is the parameter to a
+Dirichlet distribution that approximates the posterior over the
+probability simplex for the document; gamma is not the probability
+simplex itself. Gamma does not have to (and generally will not) sum to
+1; you can get the expected value of the probability simplex by
+normalizing gamma so that it sums to one.
+Best,
+Matt

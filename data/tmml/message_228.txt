@@ -1,0 +1,4 @@
+Typo correction:
+E{\vec\theta_m} = E{Dir(\vec\theta|\vec\gamma_m)} =>
+E{\theta_mk} = \gamma_mk / \sum_k \gamma_mk.
+g.

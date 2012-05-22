@@ -1,0 +1,4 @@
+I think that's standard variational Bayes derivation, see e.g. Matthew
+Beal's thesis
+http://www.cse.buffalo.edu/faculty/mbeal/papers.html
+-yw

@@ -1,0 +1,24 @@
+Hello.  I'm a graduate student in computer science at UT Austin,
+focusing on natural language processing.  I'm doing a project where
+I'm planning on implementing a supervised LDA model and comparing
+it to an existing paper where a standard, unsupervised LDA model is
+used, to see how much gain comes in this case from using data labels
+when they're available.  The thing is, however, that the "response variable"
+(the data label) is categorical (multi-category) rather than being a real number
+or numerical scale or anything like that.  Section 2.3 of Blei and
+McAuliffe's "Supervised Topic Models" paper says that this can be done
+using generalized linear models -- in this case, presumably using logistic
+regression instead of linear regression.  However, it isn't described
+exactly how to do this, and I'm not familiar enough with variational
+methods to be able to figure this out on my own without a fair amount
+of difficulty.
+Could anyone out there help me with this?
+The most basic thing I need help with is some info (update equations and
+such) on how to modify the variational E and M steps when the response
+variable is a multi-value categorical variable rather than a real number.
+However, if this ends up being too hard, the appropriate equations for a
+binary response variable / logistic link function would be useful, too.
+Also super great would be any code that anyone has that implements
+supervised LDA, even if it's in rough shape.
+Thanks!
+Ben Wing

@@ -1,0 +1,6 @@
+Wouldn't it be possible to put something like HBC on top of FACTORIE,
+as a kind of higher-level interface which would compile the user's
+distribution definitions into the appropriate Scala code?  If the user
+wanted to do something beyond the capabilities of this high-level
+interface, he'd just drop down to the regular Scala level.
+Dave

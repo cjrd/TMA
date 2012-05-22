@@ -1,0 +1,37 @@
+              This collaborative project examines the impact of judicial review on
+              distributive choices by legislatures. More specifically, it examines the
+              ability of a judiciary composed solely of narrowly partisan judges to protect
+              minority interests in the legislative process. The project is expected to show
+              that, contrary to conventional wisdom, judicial review can still work well to
+              protect minority interests even when judges are narrowly partisan. The
+              principal investigators' research strategy begins by assuming a "worst-case"
+              context for judicial review. First, the investigators assume that judges seek
+              singularly to advance the narrow interests of the respective group, or
+              "faction," to which they belong. Secondly, the behavior of legislators and
+              judges is considered in the context most likely to invite nakedly partisan
+              outcomes - the purely distributive context of a constant-sum game in which
+              resources allocated to one faction are necessarily taken away from the other
+              factions. To study the impact of judicial review on distributive outcomes, the
+              principal investigators develop an infinite-horizon game of
+              judicial-legislative interaction in which a legislature distributes a given sum
+              of revenue across legislative factions, subject to judicial review. The
+              investigators extend the extant model of legislative bargaining by adding a
+              judicial review stage in which a judge, who belongs to one of the factions and
+              seeks only its interests, reviews allocations enacted by the legislature. With
+              the baseline provided by the extant model, differences in legislative outcomes
+              between the models can be attributed directly to the impact of judicial review
+              on legislative behavior. The investigators expect that the model will show,
+              even under these "worst-case" conditions, that judicial review still "works" in
+              two important ways. First, they expect to show that distributive legislation is
+              more equitably distributed in a system with judicial review than without it,
+              even when judges are narrowly partisan. Secondly, they expect to show in the
+              remaining cases - when the legislative allocation excludes some minority groups
+              from receiving a share - that judicial review reduces the amount of the
+              inequitable legislation that is actually implemented. The expected significance
+              of the proposed project is threefold. First, the results of the project will
+              have implications for the on-going international interest in constitutional
+              design, specifically regarding the inclusion of judicial review in
+              constitutional systems. Secondly, the project will have implications for
+              evaluating judicial selection procedures in American states. Finally, the model
+              is expected to generate hypotheses capable of being empirically tested in
+              subsequent work. 

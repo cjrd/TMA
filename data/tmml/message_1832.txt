@@ -1,0 +1,5 @@
+Hi All,
+I am a student working with LDA for video analysis using David Blei's implementation in C language. We estimate the alpha. The problem is that, the hyperparamer alpha becomes a very large number (> 2000) after trained. Is there anyone can tell me what will cause this problem and how to solve it?
+Thanks.
+Best wishes.
+Jingxin

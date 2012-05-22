@@ -1,0 +1,7 @@
+Hi Tanmoy,
+The link you suggested is about Correlated Topic Models, while I'm looking
+for Correspondence LDA for modeling annotated data, based on the following
+paper: http://www.cs.princeton.edu/~blei/papers/BleiJordan2003.pdf
+Any information about this implementation?
+<http://www.cs.princeton.edu/~blei/papers/BleiJordan2003.pdf>Thanks,
+Mustafa

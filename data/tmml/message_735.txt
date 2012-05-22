@@ -1,0 +1,15 @@
+Dear list experts --
+short question on the HDP: When formulating its test set likelihood,
+would it be an acceptable simplification to interpret the current HDP
+state as an LDA model of dimension K corresponding to the components
+just known? This would streamline computation considerably.
+Considering the augmented and direct assignment representations of the
+HDP described in the JASA HDP paper, such an approach would approximate
+the stick-breaking prior on topic weights (representing G_0) as a size-K
+Dirichlet, from which the likelihood of the test data under phi and
+theta (topic-specific word multinomials and document-specific topic
+weights / G_j) can be directly derived as in LDA.
+Question then is how to include hyperparameters then: Just adding their
+likelihood under their (gamma etc.) priors?
+Thanks
+gregor

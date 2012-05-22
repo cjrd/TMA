@@ -1,0 +1,7 @@
+Hi
+Does anybody know of an implementation of Collective LDA or anything
+similar that is using a form of transfer learning? The algorithm was
+published in this paper:
+http://lcs.ios.ac.cn/~ydshen/ICDM08.pdf
+Many Thanks
+Aneesha

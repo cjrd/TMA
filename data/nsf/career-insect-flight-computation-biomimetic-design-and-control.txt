@@ -1,0 +1,15 @@
+              Abstract
+CTS-0093792
+Z. J. Wang, Cornell University
+
+The proposed research
+              is a computational study of insect flight, a problem which has been studied
+              mostly by experimental means heretofore. Unlike aerodynamics of conventional
+              wings, the present problem deals with flow over flexible wings at low Reynolds
+              numbers.  It is always unsteady, involves simultaneous generation of lift and
+              thrust by the wing, and strong interactions between the large vortices shed
+              from the leading edge and the rest of the wing.  The PI proposes to carry out
+              the simulation by using the Submerged Boundary Method and vortex dynamics
+              models.  Successful methods developed for biomimetics will be useful for
+              simulating aerodynamics of micro air vehicles.
+

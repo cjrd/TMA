@@ -1,0 +1,9 @@
+Hi all,
+I am trying to deal with short document using LDA?and there are two
+questions:
+1. I just want to know which tool is better between Gibbs LDA and
+varational LDA for dealing with short document,  and why?
+2. Is there any method by LDA inference from the perspective of semantic
+view to evaluate if one recognized result in form of text is wrong because
+of some misrecognized words after recognition is completed? and How?
+Thanks in advance!

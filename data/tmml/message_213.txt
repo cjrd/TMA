@@ -1,0 +1,16 @@
+Neal,
+Neal Parikh wrote:
+I know only few current Machine Learning Papers that involve stemming.
+Some analyses (e.g. [1] Chapter 6.3) revealed, that depending on your
+corpus, stemming may be a good or a bad thing to do.
+Stemming is one approach to reduce dimensionality. LDA is another.
+Although I didn't study LDA with or without stemming, I guess that you
+benefit from LDA+stemming mostly for very short texts. In that case, I
+would use a concatenation of unstemmed features and stemmed features, so
+that LDA can be guided by the stemmed features, but may reveal subtle
+semantics on the unstemmed ones.
+[1] T. Joachims (2002). Learning to Classify Text Using Support Vector
+Machines: Methods, Theory and Algorithms. Kluwer Academic Publishers,
+Norwell, MA, USA.
+Hope this helps,
+Laura

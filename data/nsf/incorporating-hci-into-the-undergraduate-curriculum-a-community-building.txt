@@ -1,0 +1,13 @@
+              This project presents a workshop for approximately 40 CS educators interested in
+              incorporating Human-computer Interaction (HCI) into undergraduate CS curricula.
+              The workshop is a four-day event with follow-up reflection meetings at SIGCSE
+              2004 and 2005.
+
+This workshop (a) exposes a representative group of CS
+              educators to significant HCI issues, educational approaches, and classroom
+              experiences; (b) disseminates implementations of the HCI core requirements in
+              the ACM/IEEE Computing Curricula 2001; (c) facilitates opportunities for
+              networking and team-building among CS educators; and (d) begins to address the
+              weak HCI preparation among CS graduates in the US. The follow-up meetings will
+              help strengthen connections among members of this community by reflecting on
+              new issues, approaches, experiences, what has worked, and what hasn't.

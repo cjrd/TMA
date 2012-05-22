@@ -1,0 +1,3 @@
+"we store the particles as a collection of directed trees of hashtables"
+A good idea.  I gave up on storing those sparsely after noticing
+difference coding from the mean wouldn't work.

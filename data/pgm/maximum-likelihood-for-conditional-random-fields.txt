@@ -1,0 +1,274 @@
+
+We previously talked about maximum
+likelihood estimation for Markov random
+fields. Then when we first defined Markov
+random fields, we also defined a, an
+extension on MRFs called conditional
+random fields, or CRFs. So, now let's
+think about how the ideas that we
+developed in the context of MRFs, can be
+utilized for the maximum likelihood
+destination of a conditional random field.
+So as a reminder, the point of the CRF was
+to compute the probability of a particular
+set of target variables, Y, given in a set
+of observed variables, X. And the. Idea
+behind this was that although, the
+unnormalize density, P-tilda of x, y was
+defined in exactly the same kind of
+parameterization whether it's a product of
+factors, or as logginer model. As in the
+MRF case, the difference here, is that we
+have a, an X specific partition function
+that guarantees that what we have is a
+normalize distribution over the Y
+variables given a particular x. So, this
+partition function is the sum of over all
+y's of the. A normalized measure
+[inaudible] theta of x, y. So it
+normalizes only over they y's and not the
+x's. When learning [inaudible], our data
+is now a set of pairs. It's a set of input
+variables or observed features x and a set
+of target variables y. And in the training
+data both these are observed. And we like
+to use these to learn conditional
+distribution of y given x. So the right
+objective function that we're going to
+apply in this context, is the, what's
+often called the conditional log
+likelihood, but really should be called
+the log conditional likelihood, because
+the conditioning is inside the log. And
+what we have in terms of this of this
+objective is the sum over all data
+instances and of the log of the
+conditional probability of Y and X. So if
+we look at the conditional [inaudible] we
+basically open it up. We end up with a, an
+expression that looks very similar to what
+we saw in the case of MRF's. We have a sum
+over I of. And this is for the case of a
+log linear model. We have a sum over I of
+the parameter theta I, multiplied by the
+value of the feature FI. This is for a
+particular instance XY. So it's theta I,
+FI of XM, YM. And over here, we have a
+negative minus a log of the partition
+function for X of M. And this uses the
+exact same derivation that we had for the
+case of an MRF. And so now we can, sum up
+over multiple data instances M, and
+compute the derivative relative to a
+particular parameter, theta I of the, one
+over M of the log conditional likelihood,
+or, And then, what we end up with is a,
+again, an average of, in this case, the
+sum over two expectations. So what we have
+in the, we have a summation over M, and
+the first term is the value of the feature
+function, FI, XM, YM. And the second term
+is the expected. Expectation of that
+feature phi relative to XM and why? Now
+its important to look carefully at this
+second expression over here, E theta of
+fI, XM, Y, and note that here the XM is
+fixed and the expectation is taken only
+over the variables Y, and this is in
+contrast to the case of MRF when we were
+taking the expectation relative to the
+entire set of variable. Let's see how this
+pans out in the context of a particular
+example. So we're going to look a really
+brain dead notion, model for image
+segmentation, where we just have two
+features, F one and F2. The first feature,
+F1, is a single tone feature. And it.
+Takes the value of, the average green
+value for pixels and the super pixels S.
+This is my super pixel S. We average out
+all of the green super pixels but we only
+put them into that feature in cases where
+that pixel is labeled with G for graph.
+So, and notice that this feature is
+repeated across all super pixels S in the
+image. So this is a model with shared
+parameters. The second feature, F2, is a
+pairwise feature. And here we get a one,
+four cases where two adjacent super
+pixels, S and T, are labeled the same
+values. Say, both grass or both cow. And
+this allows the model to learn how likely
+it is for super pixels that are adjacent
+to each other to have the same class
+label. Notice that this model too
+[inaudible], this feature too is shared
+both across pairs of super pixels, but
+also across different classes. That is, we
+have the same parameter for cow, cow, as
+we do for grass, grass, or sky, sky. So
+let's plug in these two features into the,
+a model for the gradient that we had on
+the previous slide. So this is the general
+equation, and let's see what happens for
+theta one. So the partial derivative,
+relative to the parameter, theta one, has
+the difference of two expectations. Again,
+an empirical expectation and a, And a
+model expectation. So, this is for a
+particular, instance M. So we're not
+currently averaging across multiple
+training images. We have a single image,
+M, that we're working over. So here,
+because the model has shared parameters,
+we're selling over all possible super
+pixels S in the image. And the empirical
+expectation sums up the product of this
+indicator function for the super pixel S,
+multiplied by the, this average greenness
+of the super pixel. And that's the
+empirical expectation. The model-based
+expectation has exactly the same form.
+We're also summing up over all super
+pixels S. And we similarly have a product
+of two terms, only here, because we don't
+know whether, in, because in this model
+based expectation, we don't have the Y
+labels. We're computing the probability
+over the Y label taking the value
+[inaudible]. That is, for each super pixel
+S, we can compute the probability that YS
+takes the value green, given, But we know
+about the image, that is, the v, values x
+sub m, and that gets multiplied with the
+average greenness again. So that's the
+gradient for the first parameter. The
+gradient for the second parameter is very
+similar in spirit. So here, we're looking
+at the sum over all pairs of adjacent
+super pixels S and T. And the empirical
+expectation just sums back over all of
+those pairs, with an indicator function of
+YS is equal to YT. So we get one if YS is
+the same as YT. Say they're both labeled
+grass or they're both labeled cow, and
+zero otherwise. And in the, in the
+model-based expectation term, we have the
+probability of that event, that is the
+probability that YS is equal to YT given
+the image, and once again that sums up
+overall pairs of adjacent super-pixels S
+and T. So again, a difference of two
+expectations in both cases, an empirical
+expectation and a model-based expectation.
+Taking that and thinking about this, let's
+compare the computational cost of two of
+two models, of two training [inaudible].
+One is the MRF training, and the second is
+the CRF training. So in the MRF training,
+remember that our gradient relative to a
+parameter theta I, was the difference of
+two expectations. And we've already
+pointed out that the computation of the
+second expectation, the model based
+expectation, requires that we run
+inference at each gradient step. And we
+thought that was pretty expensive, or it
+could be. But now, let's see what happens
+for CRFs. Let's look at that gradient one
+more time, for the case of CRFs. And here,
+notice that we don't really have, That,
+that we have summation over m. That is the
+summation over all the data instances of
+the difference of two terms. The second is
+the feature value in that particular
+instance and the second is the expected
+feature value in that particular instance,
+x of m. So. The important observation to
+come out of this, is that this
+expectation, this second expectation,
+relative to theta, is an expectation that
+is different for each of our input
+instances. So that means that we need to
+rerun this inference for each and every
+one of our XM's at each gradient step. So
+whereas, MRS requires one inference. At
+each radiance step. This requires M in for
+instance at each radiance step, where M is
+the number of training instances. And so
+here the inference required to do learning
+is considerably more extensive. However
+one needs to weigh the balance all over
+the factors that contribute to
+computational cost. So when we're doing
+inference of the conditional probability P
+of Y given X, we only need to worry about
+the Y variables, so the Xs are all fixed,
+their values are instantiated and so our
+factors in the resulting model are factors
+only over the variables one. If we were to
+once use mrf training because say we
+decided that crf training is too expensive
+because of the additional cost of
+imprints. We would need to compute the
+joint probability p of y x which. Might be
+much more complicated. And that might be
+much more complicated not only because of
+the fact that we have more variables now
+in the model. Both the Y's and the X's.
+But, also because in many cases where we
+would like to apply a CRF, the
+distribution that we might have over the
+X's, becomes quite unmanageable if we want
+to actually compute a distribution over
+them. So, to understand that, let's go
+back to the previous example, and consider
+this a very simple image segmentation
+model. And, here notice that the X. But
+the variable X. And S. Implies this, This
+average [inaudible] of the super pixel,
+now in the context of [inaudible] we don't
+need to compute the distribution over
+average [inaudible] because we're
+[inaudible] of the X on S and so G of S is
+now fix that's instantiating and we're
+only competing the probability
+distribution over the Y's but if we wanted
+to train this model as MRF, we would need
+to somehow maintain a distribution over
+this average [inaudible] and since that's
+a continuous quantity it actually requires
+that we think about parametric forms and
+[inaudible] or, or mixture of. Celsius and
+it becomes quite hairy to manage. And so.
+Although, they're, the CRF based training
+in this case, might have additional costs,
+it can also reduce the cost in terms of
+any particular inference. Stop, as well as
+avoid a bunch of phony issues regarding
+parameterization of the distribution over
+the various features. [sound]. So to
+summarize, serious learning, in terms of
+the mathematical formulation is very
+similar to [inaudible] learning. The
+likelihood function has the same form.
+It's called cave. It's similarly optimized
+using gradient [inaudible] usually the
+same lbsgs algorithm. However the gradient
+computation is now much more expensive
+because it requires inference, not only
+once per gradient stuff, but also once per
+gradient stuff and beta instance. And as a
+comparison, once per gradient step in the
+context of MRFs. But as we already, as we
+just said, the conditional model is often
+much simpler. So the inference calls for a
+CRF, and the MRF is not the same. So we're
+not really comparing apples and oranges.
+And so in the context of any given
+[inaudible], one really needs to think
+about which of these models is more
+appropriate. And not only based on the
+computational costs of training, but also
+in terms of the overall performance and
+generalization. [sound]. [sound].

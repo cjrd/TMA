@@ -1,0 +1,28 @@
+              This project focuses on the physical layer of digital communication
+system
+              design - in particular on the design of graph-based error
+control coding
+              techniques for noisy, fading channels, such as those
+encountered in wireless
+              communication systems.  The research
+addresses those issues that have made
+              practical implementation of
+graph-based coding techniques problematic.  Those
+              issues include:
+
+The development of LDPC and turbo codes with algebraic
+              structure,
+suitable for high speed implementation.
+The development of LDPC
+              and turbo codes with moderate block length,
+suitable for practical real-time
+              applications.
+The design of bandwidth efficient coded modulation
+              schemes
+incorporating these new code constructions in order to "fatten
+              the
+bit pipe" in high data rate applications.
+The adaptation of these new
+              coding schemes for use in the fading
+environment that characterizes wireless
+              channels.

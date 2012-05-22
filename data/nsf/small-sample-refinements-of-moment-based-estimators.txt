@@ -1,0 +1,23 @@
+              Moment based estimators such as Generalized Method of Moment estimators (GMM)
+              are routinely used in estimation of economic models. This project analyzes the
+              small sample properties of such estimators. Approximate formulas for small
+              sample bias and variance are sued to evaluate different estimation methods.
+              Bias corrections based on these formulas are obtained to improve the small
+              sample behavior of existing procedures.
+
+Typically, economic models imply an
+              infinite number of moment conditions. A selection rule has to be adopted to
+              decide which moments to match. An early literature on efficient GMM estimation
+              established that in prinicple all available moments should be matched
+              asymptotically in order to achieve the most efficient use of the information
+              contained in the data. More recent research on the other hand, has found that
+              inclusion of more and more moment conditions usually is associated with bad
+              small sample performance.
+
+The research will include extensive simulation
+              experiments that will shed light on the quality of higher order approximations
+              and the performance of different refinements in small samples. Ultimately this
+              line of research is intended to give applied researchers guidance in choosing
+              the most appropriate statistical tools for a given modeling situation.
+
+

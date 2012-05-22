@@ -1,0 +1,16 @@
+*International Workshop on Mining Social Network Dynamics (MSND)*
+*co-located with the *
+*21th International World Wide Web Conference
+(WWW)<http://www2012.wwwconference.org/>
+*Lyon, France - April 16, 2012*
+*http://eric.univ-lyon2.fr/msnd/*
+*The deadline of the workshop has been extended to February 12, 2012.*
+CALL FOR PAPERS
+In the real-time Web, the latest evolution of the Web, information is
+generated very quickly, consumed by millions of users, and updated rapidly
+by others through commenting, replying, transferring, etc. This is
+practiced by people who differ in culture, knowledge, background, ideology.
+Moreover, information generally comes from several channels and is sent out
+to different ones. This is amplified by the social networking phenomenon --
+the social Web, which is nowadays a well established set of
+technologies, based on which users and service providers can exchange

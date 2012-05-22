@@ -1,0 +1,26 @@
+Hello
+I'm first-year graduate student from Indiana University Bloomington. I'm new
+to topic models ;) and I'm very interested in graphical models
+I read Blei's paper, but there is some details that I do not quite
+understand, specifically:
+In section 3, it seems the author made the following assumption:
+"Given the parameters alpha and beta, the joint distribution of a topic
+mixture theta, a set of N topics x, and a set of N words w is given by...."
+Here the number of topics is assumed to be N. But to my understanding, the
+number of topics should be the dimension of theta. So why do they want to
+make such an assumption?
+Another question is, I noticed there are several approximate inference
+algorithms that can be applied to LDA. Could someone give a general
+comparison of the following algorithms?
+1. Laplace Approximation
+2. variational inference
+3. Gibbs sampler
+4. Expectation-Propagation
+I think variational inference is not that accurate because it change the
+structure of the original graphical model. Some dependencies are dropped in
+order to approximate the lower bounds. Gibbs Sampling is good, but may
+require a lot of running time. I'm not familiar with
+Expectation-Propagation. Could someone recommend good tutorials on EP?
+Actually I have tried to implement Belief Propagation method to solve stereo
+problem in computer vision, but I do not know if BP can be applied here.
+Many many thanks!

@@ -1,0 +1,44 @@
+              NSF Award Abstract - DMS-0102554
+Mathematical Sciences: Enhancement and
+              Quenching of Combustion by Fluid Flow
+
+Abstract
+
+0102554  Kiselev
+
+
+It
+              is known that in many combustion phenomena the turbulent advection of the
+              underlying fluid plays an important role.  Depending on the setting, it can
+              lead to a significant speed up of combustion or to the quenching of the flame. 
+              The main goal of this project is to improve fundamental understanding of this
+              important phenomenon.  In particular, this work explores analytically how the
+              geometry, scaling, and intensity of the velocity field determine the effect
+              advection has on combustion.  A primary goal is to determine the optimal
+              geometry for the fastest extinction of the flame, or for the most effective
+              speed up.  The models to be studied include passive reaction-diffusion
+              equations with physically-motivated reaction terms, systems of
+              reaction-diffusion equations, and active scalar models with feedback of
+              temperature and concentration on fluid velocity.  The methods of analysis
+              include maximum-principle-based techniques, estimates on solutions of partial
+              differential equations, and functional inequalities, as well as some methods of
+              harmonic and spectral analysis. 
+
+The influence of strong fluid advection on
+              combustion plays a crucial role in many important combustion processes in
+              technology and in nature.  Strong fluid advection may drastically enhance the
+              rate of burning, leading to higher efficiency, or, in some situations,
+              extinguish the flame. This question has been extensively studied by engineers,
+              physicists, and mathematicians alike. However, until very recent work of
+              several research groups, there were few rigorous results on the topic. Building
+              on the technique developed in earlier works, the project seeks to deepen the
+              understanding of this phenomenon, in particular relating the geometric
+              characteristics of the fluid flow with the effect it has on combustion. The
+              potential impact of the project is an improved knowledge of combustion
+              processes in settings as diverse as internal combustion  engines and stars. The
+              research may lead to direct suggestions on the most efficient ways of flame
+              suppression or enhancement.  In addition, the techniques developed for tackling
+              this problem may prove useful in analyzing other partial differential
+              equations.  
+
+

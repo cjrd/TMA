@@ -1,0 +1,18 @@
+              Liquid composite molding (LCM) is an important method of producing fiber
+              reinforced composite materials. In LCM processing, resin flow induced defects
+              are recognized as the largest cause of quality and reproducibility problems.
+              The resin flow pattern is highly related to the fiber preform permeability and
+              its variations in the entire area of the model. In order to characterize the
+              fiber preform permeability accurately for downstream applications, this Small
+              Grant for Exploratory Research (SGER) will investigate a means of conducting
+              on-line permeability measurements that can detect local permeability
+              variations. The feasibility of this requires the demonstration that a
+              measurable pressure drop can be determined over the length scales appropriate
+              for this process, and the demonstration that resin permeability can be
+              adequately related to the gas permeability proposed for this on-line
+              measurement technique.
+
+The problem being addressed is a significant one to
+              the fiber composite industry, and this project, if successful, would have a
+              tremendous impact upon the production of high performance composite products
+              via an environmentally clean mold-filling characterization methodology.

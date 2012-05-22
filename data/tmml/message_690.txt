@@ -1,0 +1,6 @@
+For the basics about LDA:
+http://www.cs.princeton.edu/~blei/papers/BleiNgJordan2003.pdf
+Cheers,
+Julien
+Le 11 avr. 10 ? 18:00, topic-models-request at lists.cs.princeton.edu a
+?crit :

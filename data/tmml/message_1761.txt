@@ -1,0 +1,24 @@
+Dear Topic Modelers list,
+I would like to point you to a new publication in the IEEE Signal
+Processing Magazine that draws heavily on LDA and the Author-Topic model
+for real-world applications.
+All best,
+David
+Studying Group Behaviors: A tutorial on text and network analysis
+methods<http://mit.academia.edu/DavidBroniatowski/Papers/1450052/Studying_Group_Behaviors_A_tutorial_on_text_and_network_analysis_methods>
+Abstract
+Many important technical and policy decisions are made by small groups,
+especially by deliberative committees of technical experts. Such committees
+are charged with fairly combining information from multiple perspectives to
+reach a decision that one person could not make alone. Committees are
+social entities and are therefore affected by any number of mechanisms
+recorded in the social sciences. Our challenge is to determine which of
+these mechanisms are likely to be encountered in the deliberative process
+and to evaluate how they might impact upon decision outcomes. In
+particular, we examine the role of committee deliberations on the U.S. Food
+and Drug Administration's (FDA's) advisory panels.
+PDF at:
+http://ieeexplore.ieee.org/Xplore/login.jsp?url=http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=%26arnumber=6153145&authDecision=-203
+David A. Broniatowski, Ph.D.
+Chief Scientist, Synexxus, Inc.
+Research Affiliate, MIT Engineering Systems Division

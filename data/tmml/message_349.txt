@@ -1,0 +1,19 @@
+Dear Friends:
+I am working on HDP for text processing.
+I make such model (In fact, it is Dirichlet Process Mixture Model)
+H = Dirichlet(b/W,.., b/W)
+G ~ DP(\alpha;H)
+\theta_i ~ G
+xi ~ Multinomial(ni ; \theta_i )
+1) each paper (xi) in document is represented as a vector of size W (W is
+number of words in vocabulary)
+each element in this vector is number of occurrence of corresponding word
+2) each paper (vector xi) is drawn from multinomial distribution with
+parameter (\theta_i)
+3) prior distribution of \theta_i is symmetric Dirichlet H
+I have some problems:
+How to construct a HDP model (instead of DPM) for text processing from DPM?
+What is the corresponding concept to tables, restraunt, \theta in HDP
+paper(Yee 2006) to our text processing domain?
+Can you recommend some reference to me?
+Thank you very much for your kind help and look forward to your reply!

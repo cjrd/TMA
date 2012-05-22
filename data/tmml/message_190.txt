@@ -1,0 +1,9 @@
+dear jiacheng,
+unfortunately, the longer version of the paper is not yet ready for
+distribution.  when it is, i will certainly announce it to this list.
+in the past, i have used conjugate gradient for optimizing the
+variational parameters for which there are no closed form solutions in
+the coordinate ascent algorithm.  the gnu scientific library (GSL) has
+a good implementation.
+best,
+dave

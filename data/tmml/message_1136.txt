@@ -1,0 +1,1 @@
+You?d better use holdout data for measuring the likelihood. Otherwise, you will overfit the training data.

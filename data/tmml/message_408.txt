@@ -1,0 +1,6 @@
+Hi,All:
+When I read the paper "Topic Over Time", I find some question puzzled me. May someone can explain for me? Thanks a lot.
+1 I think the meaning of the TOT is adding temporal information to the word as a tag, so we could drug the result from LDA and sort by temporal information, is it?
+2 Why the author choose Beta distribution to generate temporal information? If not, how to choose the distribution, I mean what conditions should be satisfied by the distribution.
+I didn't find the answers from the paper, so anyone can help me ?
+KeMing

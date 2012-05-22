@@ -1,0 +1,26 @@
+              Casey and Phillips
+EAR-0101246
+
+The main goal of this project is to determine
+              rate laws for exchange of individual oxygens between structural sites in large
+              clay-like aluminum complexes and water.  The aluminum nanoclusters are chosen
+              to have structural elements in common with soil mineral surfaces and a similar
+              surface charge density of protons.  Unlike bulk studies of mineral reactions
+              with fluid, our experiments yield information about rate laws for exchange of
+              individual oxygens with the bulk solution at a scale that is suitable for
+              computer simulation.  This molecular-scale research requires reconsideration of
+              much current thinking about mechanisms for mineral reaction in water.  For
+              example: 1) The important oxygens for mineral dissolution are apparently highly
+              coordinated oxygens deeper in the molecule.  2) Proton transfer to the bridging
+              hydroxyls, which precedes exchange of the oxygens, commonly takes place
+              internally and not by proton uptake from the solution.  3) Dissociation of a
+              surface-bound water molecule controls the rates of many adsorption reactions,
+              yet the rates at individual sites are largely unknown.  We find that these
+              solvolysis rates for large polyoxocations fall into the same range as dissolved
+              aluminum monomers, suggesting that the rates for edges of clays and protonated
+              aluminum hydroxide minerals are similar.  4) The rates of oxygen exchange are
+              highly sensitive to metal substitutions, in ways that could not have been
+              anticipated from bulk studies or by changes in from bond lengths determined by
+              X-ray crystallography. 
+
+

@@ -1,0 +1,21 @@
+              Most multicellular organisms, like humans, form from a single cell.  By
+              contrast, the social amoeba forms a multicellular body by aggregating
+              individual cells from a small area.  This difference allows the investigators
+              to evaluate genetic conflicts within an organism more easily than if they had
+              to find new mutations.  The investigators will characterize the genetic
+              variation in cells in a natural habitat, and will then investigate how these
+              cells interact when they come together in a  multicellular individual.  They
+              will evaluate how often some cell lines dominate over other cell lines, forcing
+              them to die.
+
+How cells interact with each other is an important question
+              that bears on many fundamental problems in biology.  For example, cells that
+              escape the control of other cells and continue to divide characterize cancer. 
+              Programmed cell death is an important mechanism for ridding an organism of
+              cells in the wrong place or that have certain kinds of defects.  When the
+              social amoeba forms a fruiting body, some cells die while others live.
+              Understanding the process whereby some cells escape the process of programmed
+              cell death, and perhaps force other cells to die is of potential relevance to
+              mechanisms for understanding cancer, and human developmental diseases. 
+
+

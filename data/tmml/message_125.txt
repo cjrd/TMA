@@ -1,0 +1,26 @@
+Topic Modelers,
+For those looking for interesting stories of latent topic models, we have
+a new paper at ECML using them for program debugging.  There are two main
+ideas:
+1. By inserting probes into software code, we log the execution trace of
+the software by the activation counts of all probes.  In this way, a
+single execution of the software is a "document" in a bag-of-word
+representation, where the word-types are the distinct probes, and each
+word-token is an activation of a probe.  By sending the instrumented
+software to a large number of users, we collect a corpus of such
+documents.  We know which documents succeeded and which failed (crashed).
+2. We model failed documents with a mixture of 'bug topics' and 'usage
+topics' -- the latter capture how people use the software (open a file,
+print a page, etc.).  We model successful documents with only the usage
+topics.  This joint modeling forces the bug topics to explain the
+differences between successful and failed documents.  It allows us to
+capture subtle bugs, which tend to be weak and otherwise would be
+overwhelmed by the usage counts.
+A preprint can be found using the link below:
+Statistical Debugging using Latent Topic Models
+David Andrzejewski, Anne Mulhern, Ben Liblit, and Xiaojin Zhu
+ECML 2007
+http://pages.cs.wisc.edu/~jerryzhu/pub/rlda.pdf
+Comments are welcome.
+Best,
+Xiaojin Zhu

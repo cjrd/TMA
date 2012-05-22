@@ -1,0 +1,3 @@
+the no of topics before running LDA.
+thanks
+/antony

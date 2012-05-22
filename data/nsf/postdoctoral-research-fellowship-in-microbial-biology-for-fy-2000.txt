@@ -1,0 +1,15 @@
+              This action funds an NSF Postdoctoral Research Fellowship in Microbial Biology
+              for 2000.
+
+The research and training plan is in the area of Microbial
+              Genetics and is entitled "Mechanism of Homologous Recombination in Archaea". 
+              This research examines general recombination mechanisms in the
+              hyperthermophilic archaeal microbe Solfolobus solfataricus.  Functional
+              homologues to eukaryotic recombination proteins are being heterologously
+              produced and are used to reconstitute archaeal recombination in-vitro.  In-vivo
+              gene disruption and mutant rescue studies will complement the in-vitro data and
+              demonstrate functional homology of proteins produced by S. solfataricus to
+              those produced in yeasts. Homologous recombination is a universal process in
+              which genetic information is exchanged between separate strands of DNA,
+              introducing new linkages and genetic sequences.  
+

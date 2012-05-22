@@ -1,0 +1,15 @@
+Hi list,
+I'm trying to evaluate a trained HDP for the heldout dataset. The HDP is in
+direct assignment scheme(Teh 2005). To calculate the empirical
+likelihood ,we need to sample n document according to HDP generating
+process. I have two question about this process
+1. How to tackle G_0(the top DP)? integrate out G_0 is not possible, I'm
+thinking of estimated it by the mean : \beta_i=m_{. i}/m{..} (the number of
+table assigned to ith class over the total number of table, all in Teh's
+notation)
+2. Does sampling new class allowed ? If so how to sample and use them in
+the n sample documents. If not , we only consider the HDP as a finite
+mixtures.
+I've seen HDP empirical likelihood evaluation in Wei Li's Nonparametric
+Bayes Pachinko Allocation . Anyone know how to calculate it ?
+Thanks in advance

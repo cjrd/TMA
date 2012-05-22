@@ -1,0 +1,5 @@
+The HDP-LDA essentially duplicates the effect of an assymetric prior
+over the document-topic distributions, and this assymetry leads to
+this phenomenon you noticed. For more information, see Rethinking LDA:
+Why Priors Matter, by Wallach, Mimno, and Mccallum
+http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.149.185&rep=rep1&type=pdf

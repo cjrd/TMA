@@ -1,0 +1,22 @@
+Hi Azeem,
+As Ramesh points out, it would help to be more specific about what you
+expected to happen and what actually happened, but it sounds like
+you want to infer labels for new documents. One thing to point out
+is that there are two general classes of topic models that handle labeled
+documents: conditional models and generative models. You can tell by
+looking at the graphical structure. If the label appears in a node that
+points to the topic distribution for the document ("upstream"), it's
+conditional. The model is trying to learn how to predict topics *given*
+labels. If the label appears in a node that can be reached from the topic
+distribution ("downstream") the model is generative, and it is trying to
+learn how to predict labels given topics. The author-topic model,
+Dirichlet-multinomial regression, and Labeled LDA are general conditional
+models, sLDA and DiscLDA are generative.
+What's important is that if the model is conditionally trained, it's
+possible to infer topics for unlabeled documents and then get a density
+over labels, but there's no guarantee that the model will be good at that
+task. For example, let's say your labels are ICML and NIPS. sLDA will try
+to find topics that distinguish the two conferences, where DMR and labeled
+LDA will say that they share almost all the same topics, which is true but
+not useful for distinguishing them.
+-David

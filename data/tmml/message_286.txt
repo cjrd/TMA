@@ -1,0 +1,5 @@
+dear all
+i recommend the work of ben marlin for good examples of applying topic
+models to collaborative filtering.
+best,
+dave

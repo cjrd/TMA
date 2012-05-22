@@ -1,0 +1,5 @@
+Topical n-grams might also be a good starting point for that.
+http://portal.acm.org/citation.cfm?id=1442141
+If I understand you correctly and remember correctly, there should be a
+hyperparameter for that in the model. But I'm not sure about biasing
+consecutive words to different topics.

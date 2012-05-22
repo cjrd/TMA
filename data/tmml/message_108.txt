@@ -1,0 +1,10 @@
+dear david,
+your intuition is correct.  i'm sorry that it was confusing in the
+paper.
+the z's are *level* assignments.  suppose a document has half it's
+words assigned to the root and half assigned to level 1.  sampling
+the path for that document amounts to considering the different
+possible paths with the level assignments set per the current values
+of the z variables.
+best,
+dave

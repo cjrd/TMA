@@ -1,0 +1,5 @@
+LDA treats each document as a bag of words, ignoring the ordering of words.
+Have there been topic models / probabilistic graphical models in literature
+in which the order of words  is taken into account?
+Regards,
+Suhas

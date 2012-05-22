@@ -1,0 +1,16 @@
+There was also a paper by Mimno and McCallum (in the same session at JCDL)
+on using topic modeling to learn faceted subject headings for a large
+collection of digital books.
+There is definitely an increasing interest among library scientists and
+humanists in the potential
+applicability of topic modeling.
+http://doi.acm.org/10.1145/1255175.1255249
+author = {David Mimno and Andrew McCallum},
+title = {Organizing the OCA: learning faceted subjects from a library of digital books},
+booktitle = {JCDL '07: Proceedings of the 2007 conference on Digital libraries},
+year = {2007},
+isbn = {978-1-59593-644-8},
+pages = {376--385},
+location = {Vancouver, BC, Canada},
+doi = {http://doi.acm.org/10.1145/1255175.1255249},
+Laura Dietz wrote:

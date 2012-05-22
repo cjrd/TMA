@@ -1,0 +1,11 @@
+hi authors,
+i see.  thanks for the clarification.
+as a practical matter, i suppose that one can compute the norm of the
+(approximate) derivative w/r/t phi to assess convergence.  then, use
+the taylor approximation at the end if interested in the likelihood
+bound.
+BTW, why is it a "gaussian" approximation?  to my eyes, you find a
+taylor approximation and then take expectations.  the means and
+variances are exact.
+best,
+dave

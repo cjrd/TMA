@@ -1,0 +1,6 @@
+Regarding some recent messages:
+Hanna Wallach's thesis [1] has chapters about learning topic model
+hyperparameters with alternating Gibbs sampling and EM and applying such
+models for topic-based language modeling.
+-David
+[1] http://www.cs.umass.edu/~wallach/theses/wallach_phd_thesis.pdf

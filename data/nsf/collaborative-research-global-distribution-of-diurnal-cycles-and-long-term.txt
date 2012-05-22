@@ -1,0 +1,21 @@
+              This project will result in a catalogue of clouds compiled from data sets
+              gathered from weather stations, both land (from 1971 onward) and ocean (from
+              1952 onward). The basic ocean data set to be used is readily available from
+              COADS (the Comprehensive Ocean Atmosphere Data Set jointly archived by the
+              National Center for Atmospheric Research and the National Oceanic and
+              Atmospheric Administration).
+
+The atlas will be compiled with special
+              emphasis on diurnal cycles, interannual variability and long-term trends useful
+              for climate studies. Information on total cloud cover, low cloud amount, cloud
+              types at three levels (stratus, stratocumulus and fog), types altostratus and
+              altocumulus,  and present weather conditions at the time of observation (e.g.,
+              precipitation, fog), and cloud base height will be provided. Day and night-time
+              observations will be separated. Satellite-based data sets will be used to
+              supplement the catalogue with optical properties associated with
+              morphologically defined types of cloud.
+
+The cloud catalogue arising from
+              this project is expected to prove highly useful to the scientific community for
+              climate change studies; for example, in improving estimates of the Earth's
+              radiation budget.

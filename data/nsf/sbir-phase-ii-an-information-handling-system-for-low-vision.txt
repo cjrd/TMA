@@ -1,0 +1,25 @@
+                   This Small Business Innovation Research Phase II project will develop
+              software and hardware products that assist people with low vision to
+              efficiently read and process information from many sources.  These products
+              will combine optical character recognition (OCR), speech synthesis and
+              recognition technologies, together with customizable displays based on the
+              latest vision research to accommodate a variety of visual impairments.  These
+              products will incorporate a 'Pick and Click' user interface, developed in Phase
+              I, which does not require viewing the screen, yet presents visual displays
+              useful to a low vision person, and is intuitive to fully sighted teachers
+              experienced with graphical user interfaces (GUIs).  Included in the products
+              will be functions particular to the low vision market, such as reading text
+              optimally, enlarging pictures, and using a video camera for magnification while
+              handwriting and viewing 3D objects.  In addition, 'Pick and Click' interfaces
+              to the most common computer applications programs, such as word processing,
+              e-mail, Internet browser, spreadsheet, and financial accounting will be
+              included.
+     Low vision users will benefit from a low cost interface that
+              provides a clean and less cluttered presentation of information on the screen. 
+              JBliss Imaging's proffered new technology has potential to improve access to
+              and capability of manipulating information for the low vision population..  The
+              technology also has potential to serve individuals with other disabilities,
+              such as dyslexia and other forms of challenges to learning and reading
+              abilities.  Commercial applications are in schools, libraries, businesses, and
+              homes.
+

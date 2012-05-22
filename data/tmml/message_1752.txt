@@ -1,0 +1,6 @@
+Hi,
+Is there a standard supervised LDA code with regression (instead of
+classification - I did a google search and did found Chong Wang's
+classification code)?
+Thanks,
+Yangqing

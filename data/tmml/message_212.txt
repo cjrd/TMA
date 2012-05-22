@@ -1,0 +1,6 @@
+Hi,
+I've noticed that in the papers I've read on topic modeling, people
+tend not to stem words before running the model. Is there any reason
+for this?
+Thanks,
+Neal

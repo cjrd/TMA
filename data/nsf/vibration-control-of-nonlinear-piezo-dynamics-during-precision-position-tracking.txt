@@ -1,0 +1,23 @@
+              9813080  Devasia  This research project addresses the vibrational problem that 
+              limits the band-width of piezo-based ultra-high resolution  positioning stages
+              like Inchworms and Flexural-frames - the  problem of transient errors which are
+              caused by induced  structural-vibrations during high-speed positioning 
+              maneuvers.  The goal is to improve speed and thereby to  increase throughput by
+              developing the theoretical and  experimental expertise needed for high-speed
+              positioning  stages.  The proposed paradigm uses nonlinear-inversion of 
+              piezo-positioning-stage dynamics for finding inputs that  compensate for
+              structural vibrations.  This approach will  lead to precision tracking of the
+              desired maneuvers.  The  key techniques to be used include: (i) modeling of the
+               nonlinear dynamics of the piezo-based positioning-stages via  the Finite
+              Element Methods; Balanced-Realization-based model  order reduction;
+              incorporating nonlinear hysteresis effects;  and online parameter estimation;
+              (ii) development of  nonlinear inverse of the piezo-dynamics; and (iii) an 
+              experimental evaluation using an Inchworm piezo-stage and a  Flexural
+              piezo-stage.  Piezo-based high-resolution  positioners are key enabling tools
+              with applications in  advanced-technology areas like opto-electronics, 
+              semiconductors, and smart-structures.  By achieving high  speeds in piezo-based
+              positioning-systems, the research aims  to increase throughputs of systems
+              which employ these  positioners.  This work also impacts other high-tech 
+              industries from transportation to medical technology by  making rapid progress
+              based on the ever-increasing cost  effectiveness of micro-electronics
+              technologies.  ***

@@ -1,0 +1,11 @@
+              This project involves characterizing the structure and function of tropical rain
+              forest canopies to assess their carbon budgets and annual carbon fluxes.  A
+              variety of methods will be used at a variety of scales, ranging from scaled-up
+              estimates of total canopy photosynthesis and ecosystem respiration from the
+              forest floor to the canopy together with top-down approaches including eddy
+              covariance and remote sensing.  The project will take place at La Selva Field
+              Station in Costa Rica.  The measurements and modeling results will lead to an
+              understanding of the causes of interannual variability in tree growth and net
+              carbon exchange, will test models of carbon cycle in the tropical rain forest. 
+              This work contributes to concerns about the effects of global climate change on
+              the carbon dynamics of tropical forest ecosystems.

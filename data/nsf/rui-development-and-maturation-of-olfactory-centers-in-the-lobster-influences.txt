@@ -1,0 +1,44 @@
+              Beltz
+0091092
+
+The primary goals of these studies are to understand how
+              serotonin, nitric oxide and life-long neurogenesis contribute to the
+              development and maintenance of the olfactory pathway, using in vivo and in
+              vitro methods.  The lobster Homarus americanus is used as the experimental
+              system because of the presence of giant serotonergic neurons that innervate the
+              olfactory areas from early embryonic development, and because neurogenesis in
+              the olfactory pathway persists throughout the animal's life. Prior studies have
+              shown that serotonin influences the proliferation of newborn olfactory
+              interneurons and promotes the branching of olfactory projection neurons.
+              Additionally, newborn projection neurons transiently take up serotonin within
+              the first few hours after their birth. There are 4 specific aims of our current
+              studies:  1. The functions that are mediated by the transient serotonin uptake
+              into newborn olfactory projection neurons will be defined using pharmacological
+              agents that block the serotonin transporter, while testing for effects on
+              proliferation and outgrowth of the olfactory interneurons.  2. Preliminary
+              studies in the lobster suggest that nitric oxide (NO) also may be important in
+              the development and maintenance of the olfactory pathway.  The NO system will
+              be defined by examining the temporal and spatial regulation of NOS in the brain
+              using immunocytochemical methods.  Further, NO levels will be altered
+              experimentally in order to test for effects on the rate of neurogenesis among
+              olfactory interneurons.  3. An  in vitro system  will be established to test
+              hypotheses emerging from our in vivo studies.  The goal of this effort is to
+              successfully culture olfactory interneurons in order to perform three major
+              experiments: to co-culture olfactory projection neurons with the serotonergic
+              dorsal giant neuron, to introduce serotonin into cultures of projection neurons
+              in order to visualize effects on branching, and to have the potential to
+              directly manipulate the NO/cGMP pathway and observe whether cultured projection
+              neurons are NO sensitive.  4.  One test for our hypotheses regarding the
+              importance of neurogenesis in the development and maintenance of olfactory
+              centers, is to look at these issues in crustacean species that have determinate
+              growth and a defined lifespan.  We will therefore ask whether there is
+              persistent proliferation in the olfactory areas of these species before, and
+              then after, a terminal molt.  
+
+These studies are relevant to developmental
+              mechanisms in higher organisms because there are many parallels between the
+              organization of olfactory pathways and processing even in phylogenetically
+              distant species.  In addition, these studies are exploring basic mechanisms
+              involved in the development and maintenance of neural circuits, which may be
+              applicable in a spectrum of other systems.
+

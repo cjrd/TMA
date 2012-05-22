@@ -1,0 +1,15 @@
+              0002066
+Miller
+
+	This award provides partial funding support for the
+              operation and maintenance of the Pacific Northwest Geodetic Array (PANGA), a
+              network of continuously recording geodetic quality Global Positioning System
+              (GPS) station distributed in the Pacific Northwest. Each station of the network
+              is capable of measuring its position to better than several millimeters and the
+              network is capable of detecting relative motion down to several millimeters per
+              year. Data gathered by the PANGA network will form the basis for interpreting
+              the tectonic framework of the Pacific Northwest, with its active volcanism,
+              subduction of the Juan de Fuca plate under the North American plate, as well as
+              the region's earthquake potential.
+***
+

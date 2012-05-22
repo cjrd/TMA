@@ -1,0 +1,7 @@
+Hi Tianbing,
+The experiments section of the HDP paper by Teh et al. (JASA) describe how
+to use HDP for text modeling. In particular, in the Chinese restaurant
+franchise representation, restaurant corresponds to a document, table
+corresponds to a cluster which shares the global menu.
+HTH,
+Shuiwang

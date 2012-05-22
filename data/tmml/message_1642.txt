@@ -1,0 +1,9 @@
+Dear all,
+During developing a topic model, I encountered a problem:
+there is a parent node and n sub nodes. For each of sub nodes, we have known
+its times that occurred, let them be t_1, t_2, ..., t_n.
+We assume that we first choose a multinomial distribution for the parent
+node: \theta ~ p(\theta| \alpha_1, ..., \alpha_n),
+then we choose a sub node by this multinomial distribution \theta.
+Now, I can not estimate the \alpha parameter, anybody can give me some clue?
+Thanks!

@@ -1,0 +1,16 @@
+              A three-year program of comprehensive studies of ionospheric E- and F-region
+              electrodynamics and of related aeronomic issues surrounding meteor-derived
+              metals in the upper atmosphere is proposed.  The proposed studies are based on
+              an extensive ongoing observing program at Arecibo Observatory (AO) that
+              involves incoherent scatter radar (ISR) and meteor-mode radar as well as
+              proposed associated metal (Ca/Ca+, Fe, K, Na) lidar observations.  AO is
+              uniquely suited for these proposed studies with the new dual-beam capability
+              yielding the first true 3-D observations, extreme sensitivity and directivity
+              in both ISR and meteor-modes, and the common-volume lidar capabilities.  The
+              proposed observational and theoretical studies are intended to comprehensively
+              test and extend the hypotheses and conclusions concerning the origin and scale
+              of the apparently "new" electrodynamic processes resulting plasma-sheets and
+              related phenomena including true sporadic-E and in firmly tying micrometeoroid
+              atmospheric-entry processes to the aeronomy of metals in the upper atmosphere
+              and to provide whole-earth micrometeoroid mass fluxes of unprecedented
+              accuracy.

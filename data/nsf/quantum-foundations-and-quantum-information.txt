@@ -1,0 +1,111 @@
+              0139974
+Griffiths
+ Much of modern technology, including computers, lasers, and
+              magnetic
+resonance imaging, utilizes the principles of quantum mechanics,
+              the
+physicist's most fundamental theory of nature, and would not be possible
+              if
+this theory had never been invented.  Given this success, one might
+              suppose
+that quantum mechanics would by now be as well understood as other
+              foundation
+stones of modern science, such as thermodynamics and relativity
+              theory.  On the
+contrary, as Richard Feynman, one of the great physicists of
+              the 20th century,
+once put it, "Nobody understands quantum mechanics."  The
+              lack of a clear
+understanding, to which Feynman was referring, has not,
+              obviously, prevented
+quantum mechanics from being applied to a vast range of
+              technological devices.
+But students are frustrated when they try and learn the
+              subject from teachers
+and textbooks whose lack of clarity illustrates the
+              truth of Feynman's remark.
+Clearing up the conceptual mess in its foundations
+              would certainly not detract
+from, and might even assist in, the technological
+              applications of quantum
+mechanics, and could well prove important for future
+              developments in areas such
+as quantum computation and quantum cryptography,
+              where impressive advances are
+accompanied by equally spectacular gaps in our
+              current understanding.
+
+        This research project, as indicated in the
+              title, has a double focus.
+One is the use of quantum histories - a promising
+              approach developed by various
+people including Murray Gell-Mann, a Nobel
+              laureate who at one time was
+Feynman's colleague at Cal Tech - for addressing
+              and clearing up the conceptual
+difficulties in the foundations of quantum
+              theory.  Several major paradoxes,
+including the famous double slit, have been
+              resolved using the histories
+approach, and this method gets rid of mysterious
+              long-range influences that are
+present in some older interpretations of
+              quantum mechanics, and which are hard
+to reconcile with relativity theory. 
+              However, up till now these new
+developments have been confined to the
+              technical literature, and they need to
+be moved into classrooms and textbooks
+              if they are to make the subject more
+accessible to the next generation of
+              scientists.  There is plenty of work to be
+done, both in making abstract
+              mathematical formulations more understandable
+through simple physical
+              examples, and in convincing teachers and textbook
+writers that students
+              deserve something better than the traditional
+("Copenhagen") approach, the one
+              Feynman could not understand.
+
+        The second focus of this research is
+              quantum information theory, the
+fundamental science behind both quantum
+              computing and quantum cryptography.
+Classical information theory was developed
+              half a century ago by Claude
+Shannon, and plays an important role in the
+              modern theory of communication, as
+in the efficient use of weak radio signals
+              to transmit information from distant
+space probes to the earth.  Quantum
+              information theory generalizes Shannon's
+ideas to situations where quantum
+              effects are important, and while it has had
+some notable successes, it has
+              also run into the following difficulty:
+Shannon's formulation is based on the
+              use of probabilities, but incorporating
+probabilities into quantum mechanics
+              in a consistent way is the source of many
+of the conceptual difficulties that
+              troubled Feynman.  The histories approach
+resolves the problem of quantum
+              probabilities in a consistent manner that
+allows an immediate extension of
+              many of Shannon's ideas into the quantum
+domain.  Whether this provides a
+              satisfactory foundation for quantum
+information theory remains to be seen, but
+              it looks promising.  If it succeeds,
+there will be a double benefit: a clearer
+              understanding of what quantum
+computing and cryptography can and cannot do,
+              and a new way to think about
+quantum mechanical processes in terms of the
+              generation and transmission of
+information. 
+
+
+
+

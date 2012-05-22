@@ -1,0 +1,4 @@
+Dear all,
+Is there any detailed inference derivation about Hierarchical LDA?
+Thanks.
+During derivation, I encounter some problems and cannot continue. Thanks.

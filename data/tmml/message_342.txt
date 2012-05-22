@@ -1,0 +1,4 @@
+log(a+b) = log a + log(1 + exp(log b - log a))
+is exact, not approximate. it just might not fix the underflow problem.
+(but if it doesn't, log b and log a have vastly different exponents, and
+you have problems bigger than getting log(a+b).)

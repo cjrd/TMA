@@ -1,0 +1,35 @@
+Hi Matt,
+This is an interesting question. Unless you have pretty long
+"documents," I'm not at all sure you can do it without sacrificing a
+fair amount of accuracy. But if you do have lots and lots of words per
+document, then you could do the following (for each document):
+We are given the topic distributions beta, where beta_{kw} is the
+probability of word w under topic k.
+Define a step size schedule, for example, rho_t = (1 + t)^{-1}.
+Initialize the topic weight parameter theta_k = 1/K.
+FOR t \in 1:T,
+we observe a word w_t \in {1,...,W};
+set phi_tk proportional to theta_k*beta_{k, w_t}, normalizing phi_t
+to sum to 1;
+update theta_k <- (1-rho_t)*theta_k + rho_t*(phi_tk);
+END FOR.
+This algorithm uses stochastic optimization to try to find the
+maximum-likelihood setting of theta for your document, holding beta
+fixed. If you use a step size schedule (like the above) for which
+\sum_{t=1}^{infinity} rho_t = infinity
+\sum_{t=1}^{infinity} rho_t^2 < infinity
+and you get to see an infinite number of words (or the same set of
+words over and over again), then you're guaranteed to converge to the
+maximum-likelihood solution. But if you stop it short, then who knows
+how far you'll be from the optimum.
+The basic idea is similar to the NIPS 2010 paper by myself, David
+Blei, and Francis Bach, which you can download at
+http://www.cs.princeton.edu/~blei/papers/HoffmanBleiBach2010b.pdf if
+you're interested. We were using stochastic optimization to find a
+good approximation to the posterior over topic distributions
+efficiently for a large corpus, but the same basic idea is applicable
+in your setting. If you're looking for an efficient way to fit the
+topic distributions themselves, you might try playing around with the
+Python code at http://www.cs.princeton.edu/~mdhoffma/code/onlineldavb.tar
+Best,
+Matt

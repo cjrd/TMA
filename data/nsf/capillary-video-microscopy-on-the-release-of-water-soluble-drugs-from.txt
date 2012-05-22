@@ -1,0 +1,72 @@
+              ABSTRACT
+CTS-0075712
+K. Papadopoulos
+Tulane University
+
+This is an
+              exploratory grant for which the hypotheses is that Capillary Video-microscopy
+              can uniquely reveal key aspects of the release mechanisms of water-soluble
+              drugs from double-emulsion globules and their transport into neighboring giant
+              liposomes that mimic biological cells.  The goal is to elucidate the phenomena
+              which govern these mechanisms and the control of which will ultimately decide
+              the successful application of soluble emulsions as drug-delivery
+              systems.
+
+Ephedrine hydrochloride (EPH HCI) will be used as the model
+              water-soluble drug, encapsulated in the W1 compartment of a W1/0/W2 globule,
+              and the oil membrane will be paraffin oil.  Oil-soluble, nonionic surfactant
+              Span-80 (sorbitan monooleate) and water-soluble, non-ionic surfactant Tween-80
+              will be studied as factors of both globule stability and drug release.  The
+              osmotic pressure gradients in the double-emulsion globules will be adjusted
+              through NaCl.
+
+Microcapillaries (~200 um i.d.,  10 200 um) will be fabricated
+              from melting point tubes (1.1-1.2 mm i.d. x 100 mm) by pulling them in the
+              middle using a Narishige PB-7 micropipette puller (see Picture 2).  Injection
+              and micromanipulation pipettes with fine tip will be shaped by pulling
+              microtubes (Microcapes. 0.688 mm i.d. X 78 mm) from one of their ends so as to
+              produce a tip of outside diameter 10-15 um.  Micropipettes will be future
+              fashioned with a microgorge (Narishige MF-9, see picture 3), thus allowing us
+              to polish the end of the pipette or to bend it to a desired shape.
+
+To
+              prepare a W1/0/W2 globule, a microcapillary will be filled with pure water or a
+              saline solution at first.  A micropipette filled with oil (containing
+              oil-soluble surfactants) will then be inserted and will inject a large oil
+              drop.  Subsequently, and internal ephedrine-hydrochloride-solution droplet will
+              be formed into the oil via the same procedure as the one that produces the oil
+              drop.  This globule preparation procedure will lead to an osmotic pressure
+              gradient between W1 and W2 phases, which will cause the release of the
+              water-soluble drug.  A single globule will be used in each experiment and the
+              complete transport process in this globule will be observed microscopically. 
+              In those experiments that will monitor the transfer of EPH HCI to a vessel, a
+              giant vesicle will first be prepared with
+              1-palmitoyl-2oleoyl-sn-glycero-3-phosphocholine through electroformation.
+
+By
+              using different salinities in W1 and W2  and EOPH HCI concentrations in W1 we
+              will know under their conditions the water-soluble is delivered by a
+              "swelling-breakdown" mechanism.  The time needed before rupture will be used as
+              a measure of the drug release rate.  An obvious geometrical factor that will
+              effect the time of rupture is the size of the W1 droplets.  Since smaller W1
+              droplets will take longer to burst, polydisperity in such droplets should lead
+              to prolonged release, and thus will be studied as a tool to control
+              delivery.
+
+Under those salinity conditions that will not produce swelling and
+              breakdown, water will transport from W1 and W2 via some diffusion-facilitating
+              mechanisms, such as reverse micellization, spontaneous emulsification,
+              hydrated-surfactant or lamellar-facilitated transport.  We will determine the
+              kinetics of such drug release as effected by various surfactant combinations
+              and formulations that will favor certain mechanisms over others under different
+              conditions.
+
+To visualize the transport of the released material from the
+              W1/0/W2 globule to the neighboring giant vesicle, aqueous fluorescent dye
+              (N-Methylhdroxy-quinolinium iodide)  will be added to ephedrine hydrochloride
+              solution.  In order to simulate possible release situations in the body, both
+              contact and non-contact a configuration of a double-emulsion globule and a
+              giant vesicle will be studied.  To study drug transfer under globule-vesicle
+              contact, the giant vesicle will be pushed gently so as to visually touch the
+              W1/0/W2 globule.
+

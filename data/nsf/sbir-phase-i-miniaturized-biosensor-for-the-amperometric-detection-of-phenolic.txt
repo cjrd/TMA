@@ -1,0 +1,20 @@
+              This Small Business Innovation Research (SBIR) Phase I project will develop a
+              small, portable, low-power amperometric biosensor to detect phenol in
+              wastewater.  A renewable, robust biosensor integrated into a microfluidic
+              system is proposed and will be designed to specifically detect phenol in
+              aqueous solutions based on an enzyme-based biosensor.  This method will allow
+              analysis of phenol without significant dilution or reduction in the sensitivity
+              of the detected species.  The microfluidic biosensor will use sol-gel modified,
+              screen printed microband electrodes which will enhance the sensitivity and
+              limit of detection of the device compared to electrodes of conventional size. 
+              The device will also use a simple pump and valve system for both electrolyte
+              and analyte introduction into the sensor and proven electrochemical
+              instrumentation for phenol detection.  The proposed sensor will be applicable
+              to real time, on-site monitoring of phenol concentrations in
+              wastewater.
+
+
+The commercial application of this project will be in
+              industries such as pulp and paper, petroleum refining and plastic resins that
+              need a cost effective and robust device to detect phenol in wastewater.
+

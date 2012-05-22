@@ -1,0 +1,16 @@
+hi all,
+allison chaney has created the "topic model visualization engine," which can
+be used to create browsers of document collections based on a topic model.
+i think this will become a very useful tool for us.  the code is on google
+code:
+http://code.google.com/p/tmve/
+as an example, here is a browser built from a 50-topic model fit to 100K
+articles from wikipedia:
+http://www.sccs.swarthmore.edu/users/08/ajb/tmve/wiki100k/browse/topic-list.html
+allison describes how she built the browser in the README for her code:
+http://code.google.com/p/tmve/wiki/TMVE01
+finally, to check out the code and build your own browser, see here:
+http://code.google.com/p/tmve/source/checkout
+enjoy!
+best
+dave

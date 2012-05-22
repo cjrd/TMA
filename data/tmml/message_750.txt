@@ -1,0 +1,3 @@
+Regarding CRF, you may want to look into unsupervised and semi-supervised
+crf, if that helps. There have been some work along these lines.
+Shibamouli

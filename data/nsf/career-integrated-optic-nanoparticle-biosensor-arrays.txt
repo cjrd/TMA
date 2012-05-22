@@ -1,0 +1,32 @@
+              Research world-wide on biosensing is motivated by numerous applications in
+              environmental and food testing and clinical diagnostics, for example.  However,
+              the important problem of detecting in parallel a large number of molecular
+              species from the very small samples typical of most collection procedures
+              remains an elusive goal. This CAREER research plan focuses on solving this
+              problem by merging the science of nanophotonics with waveguide biosensors and
+              microfluidics for the development of a new class of molecular detection
+              array.
+
+The immobilization of metallic nanoparticles onto discrete zones of
+              an optical waveguide surface makes the parallel detection of a large number of
+              molecular species feasible.  In each zone, capture molecules tethered to the
+              nanoparticles preferentially bind to a particular molecular species through an
+              affinity interaction.  Strong localization of light about each nanoparticle
+              allows for dramatic improvement in optical signal transduction, thereby
+              facilitating the detection of small numbers of molecules bound within each
+              zone.
+Microfluidics will be used to deliver small sample volumes to each
+              sensing zone and passive mixing structures will be studied in order to increase
+              the molecular binding probability within each zone.
+
+The education plan
+              focuses on the creation of a summer optics workshop for secondary school
+              physics and science teachers.  As more demands are placed on teachers, and as
+              technology continues to advance at a rapid pace, teachers need a way in which
+              to further their knowledge of science and hands-on teaching methods.  Detailed
+              lesson plans and laboratory exercises will be developed for deployment in the
+              classroom, with the goal of improving student understanding of and instruction
+              in optics and the sciences, and encouraging students to pursue careers in
+              engineering and science.  Participation of teachers from Hispanic and Native
+              American schools will be strongly encouraged.
+

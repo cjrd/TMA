@@ -1,0 +1,7 @@
+Hi William --
+I've also had this behaviour, esp. for the NIPS corpus included. My guess is a
+bug or numerical instability in the hyperparameter or tau estimators. Sorry,
+haven't gotten to take a closer look at this. Planned, but this is a Sunday
+project...
+Best regards
+gregor

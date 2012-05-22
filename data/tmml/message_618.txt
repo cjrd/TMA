@@ -1,0 +1,14 @@
+Hi,
+I agree with Aaron in that there might be some ambiguity here. I think it
+stems from the fact that each word can be mapped to a topic. Now, if there
+are N words, each word is mapped to one of K topics, and you should always
+have K < N. Think of it as dimensionality reduction. You're mapping from
+word space to topic space.
+1) It should always be K < N. Unless there's an application of LDA I'm not
+thinking of.
+2) Let's say that a document length is N (N words non-unique drawn from a
+vocabulary V). Each word is assigned to one of K topics where typically K <
+V < N. So even though you map each one of N words to a topic, you are always
+dealing with a permutation of K topics over N words.
+Hope this makes sense,
+Adnan

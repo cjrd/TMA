@@ -1,0 +1,10 @@
+http://videolectures.net/mlss09uk_blei_tm/
+In this video presentation, Dave Blei at 5:36, he talks about how you can
+model the connections between topics.
+He doesn't really go into detail as to how that it done.  What measure or
+method may he be using in order to model the connections or similarity &
+groupings between the topics?  If one has thousands of topics, for example,
+is it common to cluster them?  I assume then topics may be clustered, and if
+so what distance measure is used to determine the similarity between the
+topics?
+Thanks, Ian

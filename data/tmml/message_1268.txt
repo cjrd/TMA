@@ -1,0 +1,14 @@
+Dear All:
+I am very sorry for this rather remedial post, but I have a question
+about how to compare two latent-class models via cross-validation.
+For example, lets say I fit two topic models, model A and model B each
+on a randomly selected 80% of my total data. ?Once the models are fit,
+I see how I could calculate the likelihood of the held out data for
+each model. ?But is it proper to compare liklihoods across models?
+Ideally, I suppose one would like the *probability* ?the held-out data
+was generated via model A and model B and then compare those. ?But
+without priors on the space of models, i dont' see how to do this.
+In short: how does one go about generating something like figure 3
+(left panel) of the Blie and Lafferty Correlated Topic Modles paper?
+Again, many thanks.
+Scott

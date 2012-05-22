@@ -1,0 +1,12 @@
+Thanks Sinead and Jiacheng Guo for clarifying my previous doubt on LDA.
+Now I have doubt as to my understanding of the CORR-LDA model as for as the
+number of parameters to be estimated.
+1. We will have to estimate K number of mean vectors, where each of the
+vector is d-dimensional assuming that the feature vector is d-dimensional.
+2. Similarly K number of Covariances
+3. K number of alphas
+4. Coming to beta, is it K number of betas where each beta in turn is V
+dimensioal, I mean KxV? Or beta to be estimated is MxV in number?
+Please tell me is there any wrong understanding which I have done.
+regards
+veena

@@ -1,0 +1,12 @@
+              This SGER will explore the development of algorithms that abstract biological
+              information processes into software.  The algorithms will work on different
+              computer systems using CORBA middleware technology and agents.  The abstraction
+              of biological complexity will enable the modeling of high level objects.  The
+              original focus will be on developing graphical interfaces and modeling genomic
+              objects and computational models of emotion. The choice of the model systems
+              was determined by considering how many different areas of science might have
+              input and get something out of the tools that are developed. The results will
+              feed into learning issues at both the computational and pedagogical levels, as
+              well as how biological objects interact from a computer science perspective. 
+              This in turn will enable research into gene regulatory networks, functional
+              genomics and signal encoding in ensembles of neurons.

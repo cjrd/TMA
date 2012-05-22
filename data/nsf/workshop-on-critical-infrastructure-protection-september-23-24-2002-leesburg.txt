@@ -1,0 +1,33 @@
+              Abstract
+CCR0 0239511
+
+This award supports a workshop on information for
+              Critical Infrastructure Protection, organized by the University of California
+              at Berkeley, in cooperation with Vanderbilt University and the University of
+              Virginia.  The NSF Workshop on Information Technology Research for Critical
+              Infrastructure Protection, to be held in cooperation with OSTP, September
+              19-24, 2002 in Leesburg VA.  The purpose is to evaluate status and identify
+              research needs for information technology embedded in critical infrastructures.
+               This workshop addresses research gaps in secure, networked, embedded systems
+              for critical infrastructures; Supervisory Control and Data Acquisition (SCADA)
+              systems; and infrastructure interdependencies.  The first session is a two-day,
+              in-depth exploration of research needs.  This session brings together the
+              academic research community, industry, and federal participants.  The objective
+              is the identification of challenge areas and development of a research agenda
+              for software and information technology to support secure, networked, embedded
+              systems.  The goal is a new software and systems research strategy that can
+              underpin next-generation embedded systems, provide research infrastructure, and
+              ultimately improve the nation's critical infrastructure.  Next is a one-day
+              session, organized and co-funded by the Computing Research Association, to
+              discuss academic perspectives on challenges in Critical Infrastructure
+              Protection.  Concluding the workshop is a two-day session jointly sponsored by
+              NSF, the Department of State, and OSTP to promote global progress on these
+              issues and to promote international collaboration between researchers in the US
+              and the EU.   The product of the workshop is a report, made available to the
+              research community, to OSTP for strategic planning and to NSF and other Federal
+              program managers for planning and coordination of research investments.  
+
+ 
+              
+
+

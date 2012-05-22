@@ -1,0 +1,22 @@
+Good day, I am interested in opinions or references to literature on the following problem:
+Suppose you've already processed (in batch) a corpus of "documents" and performed a topic analysis on them & their words (e.g. LDA),
+and saved the estimated parameters describing the topic-word mapping.
+Given words from a new document streaming in (starting from nothing), I am interested in efficient methods to sequentially estimate the current document's topic distribution (soft, not hard cluster) given the time series of successive words.
+My setting & desired properties:
+(a)     the previously observed words are *not* available, only the new word (possibly the immediately preceding one), and some stored state of the currently estimated topic distribution (or from which one can extract the topic distribution deterministically)
+(b)   the running state must be fairly small, e.g. dimensionality of O(k) with k the number of topics (e.g. 10) and not the dictionary size (thousands)
+(c)    good computational efficiency per incoming word
+(d)   it is not necessary to ever update topic <-> word associations, these can be assumed to be previously estimated in batch
+(e)   my words/topics are not derived from natural language texts.
+I have some na?ve ideas how to proceed, but am interested in any work on this subject.
+Further questions:
+?         Given a sequential estimation method, what does it lose compared to a 'real' topic assignment algorithm?
+?         What are appropriate metrics for evaluating the quality of a proposed sequential method?
+much thanks in advance,
+Matt
+Matthew B. Kennel, PhD
+Senior Scientist, FICO
+matthewkennel at fico.com
+This email and any files transmitted with it are confidential, proprietary
+and intended solely for the individual or entity to whom they are addressed.
+If you have received this email in error please delete it immediately.

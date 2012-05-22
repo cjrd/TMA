@@ -1,0 +1,16 @@
+That's pretty much right?the basic idea is to take a random subsample
+of the corpus and pretend that the rest of the corpus you didn't
+sample looks like a repeated version of your sample. To get a
+guarantee of convergence to a (local) optimum, you have to take an
+exponentially decaying moving average of the standard parameter update
+and your previous parameter settings. In the paper we show why this
+works by deriving the algorithm as a type of stochastic natural
+gradient algorithm.
+It can save a fair amount of memory too! The speed improvement is most
+dramatic in interpreted languages like Matlab, R, Python, etc., where
+expressing computation in terms of matrix multiplies is a big big
+performance win. Those interested should definitely check out Lee &
+Seung's classic 2001 paper on NMF?their multiplicative updates
+algorithm uses more or less exactly the same trick.
+Best,
+Matt

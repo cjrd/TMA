@@ -1,0 +1,27 @@
+              ABSTRACT
+
+OCE-0220892
+
+The accumulation rates of Mo, Re and U in marine
+              sediments can be useful proxies for reconstructing past redox conditions. 
+              While an increase in accumulation rates of authigenic Mo, Re and U is often a
+              clear indication of more reducing conditions in sediments, it is more difficult
+              to deduce whether the change is due to a decrease in bottom water oxygen
+              content or an increase in organic carbon flux.  Three scientist from Woods Hole
+              Oceanographic Institution plan to develop a means of distinguishing between
+              these two potential causes utilizing porewater samples obtained from the
+              Washington margin and seasonally from sediments in Buzzards Bay (coastal site).
+               The PIs will acquire these samples using benthic flux chambers, centrifugation
+              and in-situ polyacrylamide gel probes.  The porewater and solid phase samples
+              will be analyzed for U, Re and Mo as well as the necessary supporting
+              parameters.  Results from the profiles obtained at Buzzards Bay will serve to
+              document the seasonal evolution of porewater concentrations and benthic fluxes
+              as a function of bioturbation, bioirrigation and non-steady state O2
+              penetration into the sediments.  Samples from the Washington margin region will
+              be used to assess the influence of water depth, carbon flux and O2 bottom water
+              concentrations on the burial of these redox sensitive metals.  Results from
+              this study will be incorporated into a steady-state sediment-pore water model
+              to use the derived parameters to obtain realistic solid phase metal profiles. 
+              
+
+

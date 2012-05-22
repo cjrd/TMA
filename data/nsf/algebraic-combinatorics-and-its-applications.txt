@@ -1,0 +1,56 @@
+              The proposed research project is concerned with three classes 
+of problems of
+              algebraic combinatorics.   They are related to 
+several aspects of Schubert
+              calculus and its links with 
+representation theory, inverse boundary problems,
+              algebraic 
+geometry, and physics.  The first part is devoted to the
+              inverse
+boundary problem for certain class of networks.  This problem
+              
+emerged in an attempt to explain, generalize, and simplify 
+algebraic and
+              combinatorial constructions related to 
+representation theory of general
+              linear groups and canonical 
+bases.  It is directly linked to the study of
+              total positivity on
+Grassmann manifolds.  The second part focuses on
+              combinatorial 
+and algebraic problems came up in quantum Schubert calculus,
+              which 
+deals with quantum cohomology of complex flag manifolds and
+              
+corresponding Gromov-Witten invariants.  The third part is devoted 
+to a new
+              approach to smoothness of Schubert varieties.  The 
+investigator and his
+              colleague suggest how to extend the notion 
+of pattern avoidance in a general
+              context of root systems. 
+
+The main goal of the proposed research project is
+              to investigate 
+several problems that originally came from various areas, such
+              as 
+geometry and physics, and all share a discrete nature.  The 
+investigator
+              suggests an approach to the problem of identification 
+of networks by boundary
+              measurements.  These networks present a 
+simple model for computer microchips.
+               The problem can be rephrased
+as follows: "How to identify a microchip by
+              external examination?"  
+Another problem is related to certain geometric
+              invariants that play 
+a role in mathematical physics and algebraic geometry. 
+              These 
+invariants are usually extremely hard to calculate.  The 
+investigator
+              and his colleagues suggest a new efficient technique 
+for computing invariants
+              of this kind.   The last part concerns 
+with a new approach to the classical
+              problem of smoothness.

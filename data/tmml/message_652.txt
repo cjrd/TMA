@@ -1,0 +1,11 @@
+I find this subject very interesting and directly relevant to some of my
+work.I feel like we need a better definition of what constitutes a "correct"
+fit -- after all, a topic is a cognitive construct and it's very easy to
+assign a meaning post-hoc. Lacking this, we can only talk about whether a
+model gives us what we want to see, which is something of a subjective
+criterion. Doesn't the number of topics depend on who is looking? For
+example, an expert in a certain body of literature will certainly recognize
+more topics than a novice (e.g., "computer science" vs. AI, Machine
+Learning, etc.).
+Has any empirical work been done comparing topic model selection algorithm
+output to human evaluators?

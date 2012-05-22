@@ -1,0 +1,8 @@
+Hello,
+I've been trying to implement hLDA as described in the 2003 paper. My
+question is as follows:
+Does one hLDA iteration consist of one LDA iteration followed by one nCRP
+iteration? Or do more LDA iterations need to happen first such that the LDA
+Markov chain converges?
+Thanks!
+David

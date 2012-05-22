@@ -1,0 +1,26 @@
+Hi everyone,
+Does anyone who read this paper before understand the reason why AS
+results in superior performance over AA, SA and SS analyzed by the
+authors at the discussion section? The content is as follows.
+"The primary assumption underlying topic modeling is that a topic
+should capture semantically-related word co-occurrences. Topics must
+also be distinct in order to convey information: knowing only a few
+co-occurring words should be sufficient to resolve semantic
+ambiguities. A priori, we therefore do not expect that a particular
+topic's distribution over words will be like that of any other topic.
+An asymmetric prior over phi is therefore a bad idea: the base measure
+will reflect corpus-wide word usage statistics, and a priori, all
+topics will exhibit those statistics too. A symmetric prior over phi
+only makes a prior statement about whether topics will have more sparse
+or more uniform distributions over words, so the topics are free to be
+as distinct and specialized as is necessary. However, it is still
+necessary to account for power-law word usage. A natural way of doing
+this is to expect that certain groups of words will occur more
+frequently than others in every document in a given corpus."
+"an asymmetric Dirichlet prior over theta that serves to share
+commonalities across documents and a symmetric Dirichlet prior over
+phi that serves to avoid conflicts between topics."
+I also do not quite understand what is a base measure m and u, which
+are employed to the prior beta and alpha, respectively.
+Regards,
+Peng

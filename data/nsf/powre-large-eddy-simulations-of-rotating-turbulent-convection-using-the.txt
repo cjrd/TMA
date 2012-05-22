@@ -1,0 +1,15 @@
+              Abstract
+CTS-0075076
+Kimmel, Lehigh University
+
+
+Rotating convection, in
+              which buoyant and non-inertial forces govern the resulting motion, are of
+              importance in geophysical as well as some technological flows.  The
+              computational description of these flows represents a significant challenge and
+              the developing techniques of Large Eddy Simulation (LES) provide a logical
+              method of approach.  The PI will use one of the advanced subgrid models: the
+              "estimation model", to attack this complex fluid dynamics problem.  The
+              success/failure of these computations will be instructive in evaluating the
+              efficacy of the estimation model.
+

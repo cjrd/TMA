@@ -1,0 +1,339 @@
+
+We defined the notion of a general Markov
+chain. We talked about how certain
+conditions guaranteed that if we sample
+from the chain, we achieve convergence to
+a stationary distribution. We then
+described how, if we then generate samples
+from the Markov chain, we can use that to
+estimate properties of that stationary
+distribution, like various statistics that
+we might care about. But the question of
+where the Markov chain might come from was
+left very vague. It turns out that for
+graphical models people have constructed a
+general purpose [inaudible] that can be
+used to sample from any graphical model in
+that class of changes called the
+[inaudible] change. So now let?s talk
+about [inaudible] change and how it is
+used in the context of graphical models.
+So, here our target distribution, the one
+from which we would like to sample, is the
+good old Gibbs distribution p of phi of x
+one up to x n. And just as a reminder that
+P of Phi can equally well represent a, a
+Gibbs distribution that we got from just a
+product of undirected factors, a Markov
+net style distribution. Or it could as
+well represent a set of factors that we
+bought from a Bayesian network reduced by
+evidence. So that is the factor
+[inaudible]. Everything that I'm gonna say
+from now on is agnostic to where those,
+factors Phi came from. If it came from a
+directed or undirected model. So now our
+Markov chain states space. Is a set of
+complete assignments, little x to the set
+of variables, big x. So we're sampling
+over, note, an exponentially large state
+space. The space of all possible
+assignments of the random variables in our
+graphical model. So those little circles
+that we saw when we were talking about
+Markov chains, and we were going from one
+state to the other. Each of these is now a
+complete assignment, [inaudible]. So, it
+turns out that the Gibbs chain is actually
+a very simple and, easy to understand
+Markof chain. And here is what it does.
+Assume that I have a starting state,
+little x. What I'm going to do, is I'm
+going to take each variable in its turn
+using some arbitrate ordering and I'm
+going to sample. A new value for that
+variable given values for all of the rest.
+So let me introduce this notation this is
+an assignment. Who all. X one up to x n,
+except x i. So, for example, if we had
+three random variables, X1, X2, and X3, we
+would sample X1, given X2 and X3; X2,
+given X1 and X3; and, X3, given X1 and X2.
+Right? So, one at a time. Okay. So, let
+me, let me draw that out because in order
+to make that clear. So, here we would
+have, here is my current assignment. Let's
+say here's x-1, x-2, x-3, and let's say
+that we have 000 as my initial assignment.
+So, I'm going to start by. Sampling x1
+from the probability of x1 given, x to
+equal zero. And X3 equals zero. And let's
+say I end up with one, the other two
+haven't changed yet. I now sample from P
+of X two, given X1 equals the new value
+one and X three equals zero. And say that
+stays zero. It could. And then I sample X3
+from X, the probability of X3 given X1
+equals one and X2 equals zero and say that
+changes to the value one and so now this
+is my new assignment 101 which gets
+[inaudible] in X file. That is the single
+step of the Gibbs chain. It goes and
+perpetually modifies, it has to modify
+because you might end up staying in a same
+assignment. We sampled every single
+variable in its turn and when all of them
+are done, that's my new state. So let's do
+this example in the context of a real
+graphical model. So here is the good old
+student Bayesian network and I'm assuming
+that I have observed two of the values,
+values for two of the variables. I've
+observed L equals L zero and S equals S
+one. And so now I have a product of
+reduced factors that represent the
+evidence that I've received. And only
+three variables are now getting sampled,
+because the other two are fixed to their
+observed values. So now, I'm sampling from
+P of P [inaudible] of phi. I mean, I'd
+like to sample from P [inaudible] phi of
+DI [inaudible], given little s1 and L0.
+And so what I'm going to do in the
+sampling process is I'm going to start out
+with some arbitrary assignment to these
+three variables, d, I, and g. So for
+example, since it's arbitrary, d zero, I
+zero, g zero. And now I'm going to go
+ahead and sample each of these in turn.
+And so I'm going to initially sample d
+from. Of the given. I've. Zero. G zero.
+Sl0 and S1. Kay. And, we'll talk about how
+that?s done in just a moment, and that
+might give me, D-1, I-0, G-0 and now I
+continue and I might sample I, so I'm
+going to sample I, from probability of, I
+given D-1. B. Zero, L. Zero, S. One, and,
+I end up with I. One. Finally I sample G
+and it couldn't be G zero, I apologize cuz
+G only goes 1,2,3 so let's say it was G
+one and now I sample G from the
+probability of G. Okay so this was you on
+here too. And this is the probability of
+now sampling G from the probability of G
+given, D1, I1, cause that's where I am
+right now, L0, and S1 And that was G3. So
+my new assignment. Is this one. D1, i1,
+t3. So how do I do this in a tractable
+way? So here is the trick that, I mean,
+you might say well you're doing this
+intractable distribution. I mean you just
+moved the problem from the original
+problem that we had to computing these
+conditional probabilities. Why is that any
+easier? Well, turns out it is. So let's
+look at the sampling step over here. Where
+I sample XI from this conditional
+distribution, and let's break that down
+into these into its constituent
+definitions. So this distribution, this
+conditional distribution, is a ratio.
+Between the joint distribution of the
+value xi and the stuff on the right hand
+side of the conditioning bar divided by
+the stuff on the right hand side of the
+conditioning bar. Now importantly, because
+each of these is the, is an un-normalized
+measure divided by the partition function,
+the partition function cancels. And so I
+end up, since I had a one over Z here. The
+one over z canceled, then I end up with
+the ratio to unnormalized measures. So,
+and the point being, now, that this. In a
+complete assignment. And therefore is a
+product of factors. So let's look at that
+in the context of a concrete example and
+see how that might help us. So now we're
+doing an example that's a Markov network,
+in order to demonstrate that this is
+equally applicable to both. So this is our
+good old misconception network, where we
+have these four factors, PHI1, PHI2, PHI3
+and PHI4. And let's imagine that we're
+trying to do P-PHI of A, given B, C, and
+D. And we can see that we have here is P
+[inaudible] PHI of A, B, C, D. Divided by
+the sum over A prime, and I'm using the A
+prime to distinguish it from this a over
+here just to avoid ambiguity. P tilda phi,
+sum over a prime, p tilda phi, of A prime
+bcd. And now I'm going to, since each of
+these [inaudible] is a product of factors,
+I'm going to inject that product of
+factors into each of the numerator and
+denominators separately. And so, over
+here, I end up with phi of AB times
+phi2-BC, phi3-CD, phi4-AD. And similarly,
+end up with exactly the same form of
+expression as the denominator, except that
+I sum out over A prime. And what do we?
+Determine by looking at this expression.
+Well, some things are immediately jump to
+one's eye. Which is that 5-2BC appears in
+the numerator and in the denominator and
+therefore, I can cancel it. And similarly
+with 5-3 of CD. And so what I end up with
+here is a product of just two factors, phi
+one of AD and phi four of AD. Which are
+the two factors. That involved a.
+[inaudible] that's for the numerator. What
+about the denominator? Well the
+denominator is just a good old normalizing
+constant. So really, what we have here, is
+that this is proportional to FI1 of A
+little b, times FI4 of A little d. So this
+is a factor over A that I can compute by
+multiplying two singleton factors in this
+case over A. Multiply them together, and
+renormalize, and get a distribution over
+eight, from which we can sample. And we
+already talked about this sample from this
+week?s [inaudible]. So what is the
+computational cost now of this algorithm?
+The sampling step 4XI given all of the
+others is simply this expression over
+here, which is proportional to a product
+of factors, and not just any old product
+of factors but just the factors. That
+involve xi. Involve. Just the factors that
+have XI in its scope. Which means that I
+only care about XI and its neighbors in
+the graph. Which for a large graph with
+tens of thousands of notes can be a
+considerable savings. [inaudible]. So,
+only XI and its neighbors. So, do we like
+the gives chain? We've certainly defined
+it. Does it have the properties that we
+would like it to have? Well, the answer
+is, unfortunately, not always. So let's
+look at, and specifically is a regular
+chain, do we have guaranteed convergence
+to a unique stationary distribution? So
+the answer is unfortunately not and to
+that we're going to return to our old
+enemy, the exclusive or network which, as
+I said, in other examples, is the counter
+example to pretty much anything, is the
+exclusive or. So let's look at the
+exclusive or network, so here we have Y
+which is the exclusive or of X1 and X2.
+And let's imagine that I observe. Y equals
+one. And so these two disappear. And now
+I'm going to try and sample. X1 x2 which I
+should be both, you know if, if, if I were
+so lucky I would get that each of two as
+possible states for x1 and x2 occurs the
+probability pass. Towards imagine that I
+turn out on this one, and I'm going to now
+sample x1 given x2 and y. So I have, my
+initial state is zero one for x1 and x2.
+And of course y equals one is my evidence
+and I'm going to sample. I'm going to
+sample x1 given x2 and y. And that is a
+deterministic dependence, and the only
+possible value that I get is zero for x1.
+Well, am I gonna have any better luck with
+x2? Nope. I'm going to end up with exactly
+the same 01 that I started out with and I
+can do the exact same thing again and you
+know what? It will work the same way every
+single time and I will always end up with
+01. Conversely, if I started out with ten,
+I will never leave ten. This is a
+classical example of a non-mixing chain.
+On the other hand if all factors are
+positive, that is if there are no zero
+entries in any of the factors than you can
+show that the Gibbs chain is regular. Now,
+however, it's important to realize that
+regular doesn't mean good. So I can make
+this chain regular by adding a tiny
+probability epsilon, of having Y not be
+the exact, exclusive orb X1 and X2. So
+now, the chain is regular, because all
+possibilities have probability non zero.
+And it's still going to mix extremely
+slowly for values of epsilon that are
+small. So, regularity, remember, is a very
+weak condition. It says if you sample long
+enough, we will eventually converge. But
+it doesn't mean it'll happen in a
+reasonable time frame. And one such
+example, of a very slow to mix chain
+absolutely occurs in tractable
+application. So here is one example. Here
+is an example in our image segmentation
+domain. And imagine that we're trying to
+re sample say the class. Of let me use a
+different color. Of this superpixel here,
+and, that we have some fairly strong
+potentials that tell me that the class of
+this superpixel should be very highly
+correlated with the class of its adjacent
+superpixels, because of the appearance
+being, very similar to each other. 'Cause
+I have some, 'cause I have a pair wise
+Markov network with some very strong
+potentials that try and enforce
+consistency between adjacent superpixels.
+So if it turns out that for whatever
+reason my initial assignment was
+absolutely wrong so for example what is
+often an error mode for sub segmentation
+models, is that is that road is often
+labeled water or sky because the
+appearance is actually kind of a similar
+grayish kind of appearance. So say that
+for example if I happened to label all of
+these super pixels as say, water and now
+I'm going to use [inaudible] sampling.
+None of them are likely to move away from
+their current assignment, because each of
+the superpixels is really constrained by
+strong pair wise potentials [inaudible]
+neighbors. And so this notion of slow to
+mix Markov chains is not just a
+theoretical construct that occurs with
+exclusive or, it actually happens in
+practice a fair amount. Now to summarize
+what [inaudible] sampling does is it takes
+a challenging problem of inferencing a
+[inaudible] distribution and converts it
+to a sequence of sampling stuff where each
+sampling stuff samples one variable given
+all of the others. This method has the
+advantage that it's probably the simplest
+mark up change for probabilistic graphical
+models, and it's very efficient to compute
+each of the different steps the cons are
+that it is actually very slow to mix when
+the probabilities are peaked and variables
+are very highly correlated. And it's only
+applicable in cases where we can sample
+from a product of factors. Now, we could
+always do that in a discrete graphical
+model, if our factors aren't too large.
+But if our samples are, but if we have,
+for example, either a very densely
+connected say, Markov network. Or, we have
+one with continuous distributions, where
+the product of factors isn't something
+that has a nice parametric form that we
+can sample, [inaudible] sampling might not
+actually be applicable. And so, there is
+non trivial limitations to the
+applicability of gift sampling. And even
+when it applies it is actually very slow
+to mix and we often want to do something
+more clever. And we'll talk about more
+clever algorithms later on.

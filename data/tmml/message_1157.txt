@@ -1,0 +1,15 @@
+hi dave
+i realize the statute of limitations has probably kicked in on this
+question, but i'll try to answer it anyway.
+there isn't a separate unigram model and bigram model.  rather think
+of the distribution of words in general, with the chain rule,
+p(w1, w2, w3) = p(w1) p(w2 | w1) p (w3 | w2, w1)
+the idea is that some of these terms have special structure, where for
+some values of w2, p(w2 | w1) = C and for others we have a real
+conditional distribution.
+another way to put it is that the full conditional distribution is
+represented, but has structure that enforces some independencies,
+e.g., if a term is modeled by its unigram probability.
+hope this helps, if it's even a question anymore :-)
+best
+dave

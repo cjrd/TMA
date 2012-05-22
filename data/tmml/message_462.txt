@@ -1,0 +1,9 @@
+Hello,
+I am trying to use the lda-c code for learning the topics in the dataset
+and and inference.
+The inference method outputs a gamma.dat file and a likelihood.dat file.
+How am I supposed to use this to derive the P(Z_k/D_m) (ie) how can get
+the topic distribution over documents from the gamma and likelihood files.
+Could some please help me by explaining this.
+Thank you
+Jagan

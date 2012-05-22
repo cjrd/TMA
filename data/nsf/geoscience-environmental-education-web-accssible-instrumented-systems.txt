@@ -1,0 +1,50 @@
+              0002993
+Torgersen
+
+Educational research supports the critical importance of
+              creating a realistic context in the classroom that is engaging to students. 
+              Theories of situated learning, instructional approaches such as anchored
+              instruction, and successful high school, UG geoscience efforts, all recommend
+              that students be engaged in a "macro-context" that situates learning in the
+              authentic practices of scientists, politicians, and/or citizens.  This
+              increases the probability that students will detect the usefulness of
+              geoscience knowledge as a tool for solving problems in their own real world;
+              that is, they will detect the information's raison d'etre and be able to
+              transfer learning from the classroom to their own lives.  In order to 1)
+              provide opportunities to learn, 2) provide the tools to extrapolate from
+              personal experience (the best learning tool) 3) appreciate the
+              scientific/economic couplings and feedback loops that affect their daily lives
+              and 4) appreciate the temporal response of coupled systems, and 5) mindfully
+              engage both undergraduate and high school students in construction of
+              understanding concerning coupled dynamic environments across multiple scales
+              (lab water, pond water, and the waters of Long Island Sound), the PIs will
+              acquire and install an Instrumented Environmental Laboratory (InEnLab) at the
+              University of Connecticut.  Commercially available environmental probes will be
+              installed in campus ponds that clearly demonstrate (on a daily timescale) the
+              coupled interactions of chem./bio/phys within these small, commonplace ponds. 
+              The data streams (T, cond., O2, pH, etc., every 15 minutes) from these in situ
+              probes will be directly connected to the Internet and available in real time
+              through (e.g., www.myPond.uconn.edu) modeled after an existing
+              www.mySound.uconn.edu .  An anchored problem involving water issues in and
+              around the University community will serve as a context for students to
+              develop, identify and quantify the dynamics of this coupled system.  This
+              web-accessible data stream (with scientist diary comments) will then serve as a
+              context for UG and HS classroom problems/examples, demonstrations of coupled
+              system dynamics and independent inquiry as well as create unique opportunities
+              for undergraduate honors theses.  Such experiences will afford students an
+              opportunity to inter-relate these experiences with observations they make
+              during controlled laboratory experiments that quantify discrete processes and
+              lead to an appreciation of the magnitude and temporal response of environmental
+              systems over larger time scales and larger space scales.  Transfer of knowledge
+              will be stimulated by comparison of the processes and time scales in Mirror
+              Pond to Bridgeport Harbor and Long Island Sound using streamed data from
+              www.mySound.uconn.edu.  Project management will take a management-by-objectives
+              approach.  Formative evaluation dependent measures will include completion of
+              objectives and timelines, online website statistics, instructor variables
+              (implementation fidelity) and student variables (knowledge, attitudes, and
+              behaviors including interest, self-efficacy, and geoscience content
+              achievement).  Formative evaluation methods will include teacher and student
+              surveys, artifacts of student problem solving on the scenario, course grades,
+              teacher interviews and student interviews.  The formative evaluation will be
+              conducted by project team members and the summative by an external evaluator.
+

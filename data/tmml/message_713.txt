@@ -1,0 +1,22 @@
+Hi all,
+I'm using Blei's C implementation of the Correlated Topic Model (CTM)
+to model some music data in which we use a fixed number of K = 24
+topics that correspond to musical keys. Naturally, I'm interested in
+analyzing the correlations between these keys (topics). However, I'm
+confused as to why the dimension of the learnt covariance matrix from
+this code is (K-1) x (K-1) and not K x K.
+I've pasted the excerpt from the README
+(http://www.cs.princeton.edu/~blei/ctm-c/README) below for easier
+reference:
+"final-cov.dat, final-inv-cov.dat, final-log-det-inv-cov: These are
+files corresponding to the (K-1) x (K-1) covariance matrix between
+topics.  Note that this code implements the logistic normal where a
+K-2 Gaussian is mapped to the K-1 simplex.  (This is slightly
+different from the treatment in the paper, where the K-1 Gaussian is
+mapped to the K-1 simplex.)"
+Could someone explain why the output covariance matrix is not K x K,
+and furthermore, how I can obtain information about correlations for
+the Kth topic? Also, what is the significance in using a K-2 Gaussian?
+(And how is it possible to do this without losing information?)
+Thanks in advance,
+Diane

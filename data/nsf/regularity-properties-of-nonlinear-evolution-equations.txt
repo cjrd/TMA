@@ -1,0 +1,28 @@
+              ABSTRACT
+
+The main goal of the proposal is to develop new analytic methods to
+              deal with the fundamental issue of global regularity for Nonlinear Wave
+              Equations such as Wave Maps, Yang-Mills and the Einstein Vacuum Equations. We
+              propose two specific problems to investigate. The first concerns the critical
+              global well-posedness for Wave Maps and the second is to establish local well
+              posedness in $H^2$ for the Einstein Vacuum equations.
+
+
+Nonlinear Wave
+              equations are at the heart of some of our basic physical theory such as General
+              Relativity, Electrodynamics, Elasticity etc. Despite a lot of progress made
+              throughout last century our knowledge of nonlinear waves remains rudimentary.
+              The proposal outlines some directions in which we expect to make considerable
+              progress. The main one concerns the Einstein field equations. It is well known
+              that these equations can develop black holes and singularities. This fact makes
+              it imperative to develop a theory  for rough solutions for these equations. 
+              The Wave Maps equations can be viewed  as a simplified model problem  for the
+              Einstein equations. We hope that a better understanding of rough solutions of
+              these equations will help us make progress in connection to the former
+              equations also. 
+ 
+ 
+ 
+
+
+

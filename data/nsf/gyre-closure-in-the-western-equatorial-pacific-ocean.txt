@@ -1,0 +1,17 @@
+              0137728/Wajsowicz
+
+This project seeks to untangle the complex pathways taken
+              by water from different sources as they meet in the western tropical Pacific. 
+              One particular premise that will be tested is the idea that the location and
+              strength of the Mindanao and Halmahera Eddies and of the Mindanao Dome may
+              exert a strong influence on the relative mixture of water masses entering the
+              North Equatorial Countercurrent, the Equatorial Undercurrent (EUC) and the
+              Indonesian Throughflow (ITF).   In part, this study is motivated by differences
+              between the relative mixture of water of North and South Pacific origin in the
+              EUC and ITF seen in data and the proportions seen in numerical general
+              circulation models.   The approach involves the dynamical study of two process
+              models.  One is a multi-layer diagnostic model, the second is a high-resolution
+              version of the multi-layer POSEIDON model.  In addition, the variability of the
+              tropical gyre closure in the output from a GFDL data assimilation run.
+
+

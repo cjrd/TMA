@@ -1,0 +1,23 @@
+Hi List,
+I've been lurking here for over a week since I watched
+David Blei's talk at Google.  I am interested in using
+topic models to do feature engineering for music,
+theatre, and other local events.
+I'm looking to hire a consultant to help with
+programming and model development this fall.
+Ideal: someone that knows and loves C, topic
+modeling and thinks setting up ACML-GPU with
+a Radeon 4870x2 to run ctm on tens of thousands
+of documents would be a fun two-day hack.
+Two to three months full-time; telecommute is fine;
+Boston, Hartford or Albany area is ideal.  It's NSF-
+funded, so the work must be done in the U.S.
+This list (as well as David Blei's documentation
+and code) has already been very helpful; I'd love
+to be able to spend our money in a way that helps
+someone in this community.
+I think off-list responses are most appropriate,
+considering this sequence of symbols is non-
+technical noise fouling up the clear signal that
+normally flows from this message source.
+Thanks,

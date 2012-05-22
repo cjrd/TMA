@@ -1,0 +1,93 @@
+              Collaborative Research: An Integrated Interior Infill System for Mass Customized
+              Housing
+Abstract
+In the future, homes will contain the most complex
+              activities of any building type. With the aging of the
+baby boomers, homes
+              must become centers for proactive healthcare, distributed energy production,
+              work,
+commerce, learning, etc. Homes must become agile environments that
+              accommodate rapidly changing
+needs, activities, and technologies. They must
+              respond to demands of sophisticated, affluent baby
+boomer generation who want
+              choice and tailored solutions that closely reflect their values and needs.
+              But
+places of living are poorly prepared for this future. Most new apartments
+              are generic, low-grade, low-tech,
+inflexible, disruptive to upgrade, high
+              maintenance, and ill-designed. Architects and engineers play no
+significant
+              role in the creation of places of living, except at the very high end of the
+              market. Most housing
+research is focused on cost reduction - not on preparing
+              places of living to meet new requirements in the
+future.
+The objective of
+              this research project is to conceptualize and assess the viability of a new
+              approach that that may result in high-value, customized, reconfigurable,
+              adaptable, multifamily housing. The  three coordinated thrusts are as
+              follows.
+1) The development of design concepts for the use of prefabricated,
+              volumetric module ioshellslc of a
+dimension that can be efficiently and
+              affordable shipped to the jobsite, combined with the application
+of a mass
+              customized cabinetry-like integrated interior infill (I 3 ) system for
+              apartment fit-out. Modular
+construction is the fastest growing segment of the
+              housing market, but its potential is limited by a
+narrow range of design
+              possibilities, its failure to take advantage of modern
+              manufacturing
+technologies, and the labor intensive operations required to
+              connect modules at the site. This
+research will employ modular construction
+              for what it is most suited for - structural shells with building
+services that
+              can be rapidly assembled. 
+2) The development of concepts for automated,
+              web-based, consumer design tools based on
+parametrically defined I 3
+              components. This effort will take advantage of prior work developed at MIT
+and
+              in industry for user customization of apartment design and cabinetry.
+3) The
+              development and testing of an I 3 production methodology. The following issues
+              will be
+investigated: Can an I 3 system allow mass-customized components to be
+              manufactured efficiently and
+with the same quality as identical mass-produced
+              units? Can the controlled and precise fabrication of
+integrated components
+              allow new materials such as advanced polymers, composites, and
+              special-
+purpose metals to find their way into the home? Can delicate
+              electronics and devices be more easily
+integrated into I 3 components than
+              with conventional construction? Can parallel manufacturing of the
+modular
+              shell and interior components reduce production cycle time?
+In summary, this
+              research will give the homebuilding supply chain, suppliers, factory producers,
+              and
+builders a vision of the future - and an approach to the design tools and
+              lean production systems that can
+make that vision a reality. The research will
+              attempt to leap beyond incremental improvements in the
+conventional process,
+              to an agile and adaptable system of mass-customization using
+              technologies
+processes that could be put into effect in the near term. The
+              research will also have important academic
+impacts. It will provide two
+              Masters thesis topics and multi-disciplinary research experiences for
+              two
+undergraduate research assistants. The class project in EIN 3314 Work
+              Measurement and Design,
+involving lean manufacturing in local industry, will
+              provide valuable, team-based, real world learning
+experiences for about 30
+              undergraduate engineering students.
+
+

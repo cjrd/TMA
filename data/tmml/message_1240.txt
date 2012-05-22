@@ -1,0 +1,30 @@
+Hi David,
+I ask this question simply because I want to know whether these priors
+especially /alpha really affect the result of model estimation
+dramatically.
+I actually tend to take advantage of LDA to discern whether a new
+document will have a close relationship with a corpus. The setting is
+as follows. We firstly estimate a LDA model for the corpus. For a new
+document, we use this LDA model to infer the topic distribution
+/theta_d. Then through the inferred topic priors /alpha, /beta and the
+topic distribution /theta_d, I have two ideas:
+(1) One is that we can calculate the probability p(/theta_d | /alpha).
+(2) The other is that we calculate p(/phi_k | /beta) for each topic k
+to obtain their weight in the dirichlet distribution firstly and
+combine them to obtain the topic distribution say /theta_c of the whole
+corpus. Then we use either KL divergence or other distance functions to
+calculate the similarity between the corpus and the new document, say
+D_{kl}(/theta_c || /theta_d).
+Do you think these two values are meaningful to represent the
+relationship between a corpus and a new document. The intuition is that
+if we have a set of new documents (i.e., another corpus), can we use
+one of them to know which documents in the new corpus have a close
+relationship with the original corpus according to these values? For
+example, if the original corpus includes all the papers of a
+topic-model workshop and the new corpus is all the papers of NIPS2011,
+then can we find out which papers in NIPS2011 are closely related to
+the whole topic-model workshop papers? (Assume that their feature
+spaces (i.e., vocabulary) are the same.)
+Thanks for reading. Anticipate for your help.
+Regards,
+Peng

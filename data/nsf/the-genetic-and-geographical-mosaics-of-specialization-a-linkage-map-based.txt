@@ -1,0 +1,28 @@
+              
+The process of speciation requires the evolution of characters that act as
+              barriers to gene flow.  The barriers themselves are well studied but the
+              genetic details of how they evolve and persist remain surprisingly obscure. 
+              Recent results from genetic linkage mapping reveal that races of pea aphids
+              specialized on different crop plants differ at relatively few key genomic
+              regions, with much of the genome remaining quite similar between these
+              incipient species.  This project concerns whether the same genetic markers
+              linked to genomic regions controlling divergent host plant use in one
+              geographical population of pea aphid (New York) are also associated with
+              divergence between specialized pea aphid races in other locations (Iowa and
+              Maryland).  This will be accomplished by genotyping 200 aphids from each
+              location.  Finding that the same markers tag divergent genomic regions in
+              different specialist populations will improve our understanding of the genetic
+              processes involved in the evolution of divergent populations and demonstrate
+              the utility of these mapped markers in further analyses of the evolution of
+              specialization and speciation in pea aphids.  
+
+This project will form the
+              basis of a novel approach to the study of the genetic mechanisms of ecological
+              specialization and speciation.  It will also serve as a training ground in
+              multidisciplinary approaches to speciation for undergraduates and graduate
+              students.  Moreover, this investigation of the genetics of crop pests will
+              inform and influence future work in agricultural entomology.  Both PIs are
+              actively involved in outreach activities designed to further understanding of
+              basic evolutionary principles among agriculturalists, conservation biologists,
+              religious leaders and the general public. 
+

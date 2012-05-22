@@ -1,0 +1,6 @@
+Hi Jerry,
+This isn't quite what you were asking for, but it does require the resulting
+word clusters to be different.
+http://aclweb.org/aclwiki/index.php?title=CBC
+Cheers,
+Jordan Boyd-Graber

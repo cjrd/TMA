@@ -1,0 +1,3 @@
+Hello Friends
+Can anybody tell me after inferring test data how to evaluate that with how
+many number of topics and iterations inference result is good,bad or avg???

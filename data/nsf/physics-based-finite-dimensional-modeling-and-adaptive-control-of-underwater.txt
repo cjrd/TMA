@@ -1,0 +1,35 @@
+              This research program will develop finite-dimensional nonlinear dynamical models
+              for underwater robot vehicles, and  incorporate these models in the development
+              of provably stable nonlinear controllers for dynamic maneuvering of underwater
+              vehicles. This research will directly address the following two problems:
+
+1.
+              Nonlinear Finite Dimensional Dynamical Modeling: We are developing unsteady
+              dissipative hydrodynamical models and numerical simulations for marine
+              vehicles, and experimentally verifying these analytical models under the
+              low-speed operating conditions typical for dynamically positioned vehicles
+              engaged in survey, sampling, docking, and maneuvering operations.
+
+2. Stable
+              Model-Based Nonlinear Adaptive Control: We are developing 6-DOF model-based
+              adaptive tracking controllers, and experimentally evaluating both the new and
+              previously reported techniques in full-scale experimental trials. 
+
+The goal
+              is to enable marine vehicles to perform missions presently considered either
+              infeasible or impractical with existing manned and unmanned systems.  The
+              intellectual merit of the activity is the analytical development and
+              experimental validation of finite-dimensional plant models with explicit
+              dissipative structure, and the development and experimental validation of a new
+              class of model-based adaptive identifiers and tracking controllers for
+              underwater vehicles.  The broader impacts of the activity include: Development
+              and web-based dissemination of "Dynamics and Control of Marine Vehicles," a new
+              course at JHU. Advances developed under the proposed research will be
+              transitioned to the vehicles of the NSF supported National Deep Submergence
+              Facility to improve their operational capabilities for U.S. oceanographic
+              science.
+
+
+
+
+

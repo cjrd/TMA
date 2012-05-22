@@ -1,0 +1,4 @@
+Hi ilias,
+Typically, I initialize the tree to a straight line with n levels -- for
+example, if I want a 3 level tree, I initialize my tree to 3 nodes, one
+below the other.

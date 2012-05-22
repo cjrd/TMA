@@ -1,0 +1,6 @@
+Given the combined unix / windows environment under which you are working, I
+would check the newline format of the file you are trying to process, and
+try changing it to see if another format works.  (See
+http://en.wikipedia.org/wiki/Newline if you don't know what I'm talking
+about.)
+2006/10/5, Matteo Dimai <webmaster at diman.it>:

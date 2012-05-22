@@ -1,0 +1,2 @@
+Yes, absolutely, it would be possible to write a HBC-like-language front-end on FACTORIE. (Although I'm not likely to be the one to do this.)
+There already exist in FACTORIE analogues for this in other contexts, e.g. first-order logic for defining CRF factor templates.

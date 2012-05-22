@@ -1,0 +1,5 @@
+Check out Tom Minka's tech report on maximum-likelihood fitting of the
+Dirichlet distribution (and accompanying code):
+http://research.microsoft.com/en-us/um/people/minka/papers/dirichlet/
+Best,
+Matt

@@ -1,0 +1,41 @@
+              
+Abstract
+Oikhberg
+
+The PI plans to continue his work on several aspects of
+              geometry of operator spaces. One line of work deals with separable extension
+              properties. Here the most intriguing problem is whether K (the space of compact
+              operators on a separable Hilbert space) is complemented in every separable
+              operator space containing it (this is a "non-commutative" version of a
+              classical result of Sobczyk).  A related issue is giving a complete description
+              of separable locally reflexive operator spaces which are completely
+              complemented in every separable locally reflexive operator superspace (an
+              operator space counterpart of Zippin's characterization of the space of
+              convergent sequences). Another direction of research is the study of maximal
+              operator spaces (quotients of duals of commutative C*-algebras). The PI plans
+              to determine the cardinality of the set of n-dimensional subspaces of maximal
+              spaces, as well as the structure of n-dimensional subspaces of the dual of a
+              2n-dimensional commutative C*-algebra (in the spirit of Kashin's work).
+              Possible applications of the proposed research include better understanding of
+              the structure of function spaces, of the space of operators on a Hilbert space,
+              and Banach space geometry in general (extensions of local reflexivity).
+
+One
+              of the key mathematical tools of quantum mechanics is replacing scalars
+              (numbers) by operators on a Hilbert space (they can be thought of as infinite
+              matrices). Further exploration in this direction led to the development of the
+              theory of C*-algebras, and, later, to the introduction of the notion of
+              operator space (also called "non-commutative" or "quantized Banach space"). 
+              One can view an operator space as a Banach space with additional structure,
+              induced by its embedding into the C*-algebra B(H) of bounded linear operators
+              on a Hilbert space H. The investigation of operator spaces  has advanced very
+              rapidly over the last ten years, combining ideas and techniques from Banach
+              space theory and the theory of C*-algebras. It has already produced answers to
+              some long-standing problems of Operator Theory. The proposed research deals
+              with two themes: the existence of non-commutative analogs of classical Banach
+              space results; and the use of Banach space methods in the operator space case.
+              If successful, this research will advance our understanding of connections
+              between Banach and operator spaces, and potentially, enhance our knowledge of
+              physical phenomena.
+
+

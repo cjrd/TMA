@@ -1,0 +1,5 @@
+I started estimation with alpha = 1.0 and 100 EM iterations over
+2,200 documents.
+Alpha is 0.01191 at iteration 34.
+Does this imply that the documents cover a narrow set of topics?
+Thanks, Joel

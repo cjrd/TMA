@@ -1,0 +1,22 @@
+I'm a little confused about this as well. After flipping back and forth
+between the old and new versions of the paper, I've currently settled on
+the following interpretation which is derived mainly from the old version:
+For each level <= max(z_d):
+- compute p(z_{d,n} = level | z_{-(d,n)}, ...) as shown
+- compute p(w_{d,n} | z, ...) again as shown
+Compute p(z_{d,n} > max(z_d)|...) as one minus the sum of the
+p(z_{d,n}|...) above.
+Now the trick is to compute p(w_{d,n} | ...) for this new deeper level. I
+do this by first finding what that level should be (using the repeated
+Bernoulli trials) and then computing p(w_{d,n} | ...) at that level only.
+If by chance the path variables for the current document c_d haven't been
+assigned that deep, I use the standard conditional path assigment
+computation (c_d) to "flesh out" d's existing path down to the new level.
+Keep in mind that determining the new level and fleshing out the path both
+happen /before/ I actualy sample the new level assignment z_{d,n}, so
+there is a big chance that all this work was for nothing.
+All of this basically hinges off the assumption that the differences in
+the old and new version of the sampling procedure are strictly cosmetic,
+which does not really appear to be the case... :)
+Anyway I'm not at all confident about this interpretation, so I'd
+definitely welcome any insight.

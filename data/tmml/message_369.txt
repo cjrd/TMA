@@ -1,0 +1,6 @@
+Hi all,
+I would like to use CTM to evaluate the relatedness between two terms. My first instinct is to take the KxV beta matrix and select two columns -- one for each term. Thus, each term has a K vector of topics, and these vectors can be compared by euclidean distance (or perhaps the cosine). However, I am not sure if this approach is valid mathematically. The vectors certainly are not a distribution of anything, and I worry that a more rigorous approach would provide different answers.
+My other thought was to treat each word as a 'document' and run an inference on this document. I can then compare the lambdas of the two one-word documents. However, I believe this method will be drastically slower than the one mentioned above.
+I appreciate any thoughts on this. Apologies if this was already asked on the list; I couldn't find a way to search the archives.
+Thank you for your time,
+- Mike

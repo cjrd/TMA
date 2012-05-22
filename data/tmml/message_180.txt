@@ -1,0 +1,21 @@
+Hi all,
+And Thank you David for all these explanations. It also helps me a lot.
+But i still have some questions :-) . About the "word-assignment.dat"
+file, I think that it assigns each (unique) term in each *training
+*document to its most likely posterior topic. But is there a way to get
+such a file for the *testing* documents?
+My second question is about the number of topics. I'm doing a scene
+classification with /n/ classes. So for each class, I use the perplexity
+to determine the suitable number of topics for its model (learned using
+the LDA-c code). But i would like to work differently by estimating the
+number of topics for the whole data (for the /n/ classes together) like
+in the article of Fei-fei and Perona (A Bayesian hierarchical model for
+learning natural scene categories). This would be interesting in order
+to compare the topics of different models. Suppose that a suitable
+number of topics is K=40 for the whole dataset. I wonder how to know if
+the topic number 12 (for example) in the model 1 is the same than the
+topic number 12 in model 2 (the order of topics in different models). Is
+there another way to compare the distribution of topics of two different
+models.
+Marie
+David Blei wrote:

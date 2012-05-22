@@ -1,0 +1,23 @@
+              
+ This Small Business Innovation Research Phase I project investigates the
+              opportunities inherent in long-distance learning alternatives fashioned around
+              the telnet internet protocol.  To date, virtually all long-distance learning
+              trials have been designed to operate using the procedures of the world-wide web
+              (HTTP, CGI, Java, etc.), but these web-based solutions have a number of obvious
+              intrinsic problems.  Such solutions tend to be quite slow, and they are capable
+              of only moderate interactivity, often quite fragile, and rapidly become
+              surprisingly complex.  In contrast, the telnet protocol, when used with a more
+              or less standard terminal emulator, tends to be very responsive over the
+              internet, especially when the protocol is very slightly modified, and very
+              simple to program against.  The creation of a freely distributed player and
+              accompanying inexpensive authoring tool built around a standard terminal
+              interface could be of importance to areas with underdeveloped communications
+              infrastructures, thus making the internet accessible to those who can afford
+              only low-bandwidth internet.  
+ The distributed player and authoring tool
+              proffered by Aics Inc has the potential to have an important impact on the
+              nature and methods of the distribution of information opportunities for
+              secondary education through graduate and continuing professional education, and
+              they could serve in technical commercial sales and training and in more
+              generally in crossing the digital divide.
+

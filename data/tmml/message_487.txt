@@ -1,0 +1,8 @@
+Hi sonfon,
+Thanks for the bug report! There was a problem in the command line
+interface for the MALLET parallel topic model sampler. It's now fixed in
+the public mercurial repository (see http://mallet.cs.umass.edu for
+details).
+MALLET support questions can also go to mallet-dev at cs.umass.edu, but we
+don't mind the publicity for our topic modeling package!
+-David

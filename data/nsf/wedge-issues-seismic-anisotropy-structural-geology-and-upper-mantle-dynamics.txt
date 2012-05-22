@@ -1,0 +1,35 @@
+              Park Jeffrey J.
+EAR-0106867
+
+Abstract for proposal EAR0106867 (PH #
+              33x)
+
+Title: Wedge Issues: Seismic Anisotropy, Structural Geology and
+              Upper-Mantle Dynamics in Subduction Zones
+
+PI's: Jeffrey Park and Vadim
+              Levin, Yale University
+
+Plate tectonics is driven largely by the sinking of
+              oceanic plates at the deep-ocean trenches of subduction zones, the most common
+              type of convergent boundary between distinct plates. The mantle "wedge" lies
+              between the overriding and the sinking plates at a subduction zone, a buried
+              strip of olivine-rich rock typically 100-200-km thick and 100-400-km wide. The
+              chemistry and dynamics of the mantle wedge determine arc volcanism, a major
+              "product" of the plate-tectonics heat engine. The mantle wedge also influences
+              the accretion of continents, which can grow by the successive accumulation of
+              volcanic arcs. Geologists can track the descending plate in a subduction zone
+              by the locations of deep-focus earthquakes, but have had less success tracking
+              the motion of the mantle "wedge." Theoretical models for wedge flow differ
+              between (1) a 2-D "corner flow" driven by shear-coupling to the descending
+              plate, (2) a stagnant wedge that is already transforming to a stable
+              "continental" plate, (3) trench-parallel flow induced by 3-D geometric effects,
+              such as the rollback of the sinking oceanic plate. This project will detect
+              sheared rock in the mantle wedge, deformed by its flow, by using seismic
+              indicators of elastic anisotropy in the sheared rock. These seismic indicators
+              include shear-wave birefringence, and the partial conversion of P waves
+              (compressional) to S waves (shear) in seismograms from distant earthquakes.
+              Preliminary results suggest that strong trench-parallel shear can develop at
+              the top of the subducting plate, and that changes in rock fabric exist and are
+              detectable within the mantle wedge itself.
+

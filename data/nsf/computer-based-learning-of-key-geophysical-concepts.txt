@@ -1,0 +1,42 @@
+              0085458
+Jiracek
+
+This project will develop computer-based learning tools to
+              teach the concepts of: 1) digital signal analysis, and 2) wave characteristics,
+              in geophysical context.  This will be done in a unique way by using temporal
+              and spatial data collected at SAGE (Summer of Applied Geophysical Experience). 
+              During the 18 years that SAGE has operated, the faculty have recognized a major
+              lack of understanding of important fundamental geophysical concepts after
+              courses at home campuses and after completion of the SAGE program.  This is
+              despite special efforts with extra lectures and demonstrations in these topics
+              at SAGE.  Topics such as the consequences of digitizing (aliasing, truncation,
+              Fourier analysis, filtering, etc.) and wave phenomena such as scattering, phase
+              and group velocity, and dispersion are simply not appreciated by most students
+              (especially undergraduates).  In today's increasingly digital world these
+              concepts must be fully understood for basic competency in geophysics.  The two
+              topics chosen are critical to understanding many fundamental relations in
+              several geophysical methods.  The goal is to insure that those geophysics
+              students completing SAGE, and at campuses elsewhere, understand how digital
+              analysis is used in seismology, electromagnetics, and potential methods
+              (gravity and magnetics).  And, that they know the principles of wave
+              propagation in low-loss, low frequency electromagnetic waves.  The
+              computer-based aids are expected to sharply increase a student's fundamental
+              grasp of modern geophysics.  The two learning modules will be integrated and
+              hyper linked and will utilize the latest in computer simulations,
+              visualizations, and interactive self-discovery to teach basic ideas. 
+              Advantages to tying the proposed effort to SAGE include using past, co-located
+              SAGE data collected with different geophysical methods and to provide a unique
+              assessment environment.  The topics will be reinforced at SAGE as the students
+              complete their own field work and apply their understanding first-hand to the
+              collection, analysis, and interpretation of the new results.  The tools will be
+              incorporated back at the home campuses of SAGE students and faculty (including
+              one community college) and they will be disseminated to other campuses via
+              Internet access.  Success of the modules will be determined by appropriate
+              testing especially with SAGE REU (Research Experiences for Undergraduates)
+              students since they return six months after SAGE for a winter workshop.  To
+              insure proper testing the PIs have enlisted the assistance of the Center for
+              Research in Math and Science Education at San Diego State University (SDSU). 
+              Development of computer graphics, animation, and visualization will be done by
+              SDSU's Instructional Technology Services under the technical direction of SAGE
+              faculty.
+

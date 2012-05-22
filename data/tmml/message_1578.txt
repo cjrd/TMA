@@ -1,0 +1,10 @@
+hi topic modelers,
+i'm new to graphical topic models, but familiar w/ matrix
+factorization methods like nmf
+i found, and really enjoyed, this thread comparing lda w/ nmf:
+https://lists.cs.princeton.edu/pipermail/topic-models/2009-February/000484.html
+i have a related question
+is there an lda equivalent to a loss function that measures how well
+the topic + topic assignments approximate the original matrix??
+the closest thing i found was perplexity -- but i'm not sure it's the
+same thing?

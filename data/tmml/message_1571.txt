@@ -1,0 +1,16 @@
+Dear List members,
+i started to play around with the Topic Significance Ranking of Loulwah
+AlSumaith [1]
+Now i just need some understanding of the results and if they fit into
+my research requirements.
+The ranking strategy in this work strongly weighs topics far away from
+uniform and corpus word distribution. If i have a corpus with a huge
+amount of information about one topic like in a news corpus after an
+event this ranking does not represent the media agenda. I guess it ranks
+the unique character of a topic. So the more documents for a specific
+event exist the less semantic unique it is because more words are added
+to this topic.
+What do you think? My first guess is that this ranking isn't really
+useful for relevance of news topics since important news bias a corpus.
+Thank you
+[1] http://www.cs.gmu.edu/~carlotta/publications/ECML09_AlSumaitetal.pdf

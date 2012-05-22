@@ -1,0 +1,8 @@
+dear yuanlong,
+E[log \theta] has two terms (see eq. 8).  the second term is constant
+relative to the topic index.
+when computing a vector proportional to phi (step 6 of figure 6), we
+exponentiate E[log \theta].  thus, the second term is not needed.
+i hope this clears things up.
+best,
+dave

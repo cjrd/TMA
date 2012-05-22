@@ -1,0 +1,8 @@
+In my Gibbs sampler code, I did the following:
+Given corpus partitioned into two groups of documents,
+I. Train model on group 1.
+II. Sample group 2 while leaving group 1 fixed.
+IIa. For just one iteration.
+IIb. For several iterations.
+III. Sample both groups together on each iteration.
+2006/10/5, Joel Reymont <joelr1 at gmail.com>:

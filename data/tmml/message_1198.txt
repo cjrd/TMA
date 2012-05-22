@@ -1,0 +1,19 @@
+hi topic models list
+for those of you at KDD (in san diego), i'll be giving a tutorial
+tomorrow about topic modeling.  it is from 1:30 - 5:00pm.
+i will discuss
+- latent dirichlet allocation
+- correlated topic models
+- dynamic topic models and measuring scholarly impact
+- supervised topic models
+- relational topic models
+- ideal point topic models
+- bayesian nonparametric topic models
+- gibbs sampling
+- variational inference (including online variational inference)
+- open questions in topic modeling
+the KDD website is
+http://www.kdd.org/kdd2011/
+i hope to see you there.
+best
+dave

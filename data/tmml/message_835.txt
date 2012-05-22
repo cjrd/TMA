@@ -1,0 +1,40 @@
+Hi All,
+I am a newbie to LDA and topic models in general.
+I am using an edited version of GibbsLDA++ implementation on Optical Flow Primitives of a video dataset. (http://gibbslda.sourceforge.net)(http://www.nada.kth.se/cvap/actions/)
+It seems that the Gibbs Sampler doesn?t converge. I implemented P(w|z) like stated below. Here are some results:
+Iteration      1 	P(w|z)= -608832,716678634
+Iteration   100 	P(w|z)= -551763,726
+Iteration 500	P(w|z)= -553661,39
+Iteration 800	P(w|z)= -553839,027
+Iteration 900	P(w|z)= -554579,768
+Iteration 1000 P(w|z)= -553741,209
+According do David Blei and Jon Mcauliffe (http://www.cs.princeton.edu/~blei/papers/BleiMcAuliffe2007.pdf)
+The relative change between the iteration steps should be less than 0.01%. In my case the change is in general less the 0,15 %. Which would not meet the requirement of convergence. For another parameter setting the change in 100 steps is even 0,8% after 100.000 iterations! What could be the reason for this? Is it possible that the small dataset caused this?
+The dataset consists of 150 videos. 25 Persons do 6 different activities. (http://www.nada.kth.se/cvap/actions/) These videos were transformed in documents of Optical flow primitives. With my knowledge of the dataset (the order of files) I can tell which activity is most likely for each of my 6 topics after the training with 144 documents. Then I do Inference with 6 test documents ( one for each activity) and compute a confusion matrix. As a final result I compute the recognition rate.(sum of the values on the diagonal / total sum of all values in the confusion matrix)
+The Problem is that the Recogniton-Rate varies for the same alpha, beta and number of iterations. I repeated the calculation ten times with 1000 iterations each and the Recogniton-Rate goes from 0.686667 to 0.746667. Increasing the number of iterations up to 50000 didn?t improve the situation. The best Recognition Rate was 0,76.
+Is this normal??? I thought that the results should be the same after the burn in period was reached.
+What could be the reason? Please help.
+Best Regards
+Lucas
+//Hong, Liangjie hongliangjie at gmail.com
+Sat Mar 27 21:02:13 EDT 2010
+//In order to give more information to the problem, here is the equation I
+//used ( Equation 2 in "Finding scientific topics") in pseudo Latex code:
+//
+//P(w|z) = (\Gamma(W * beta) / \Gamma(beta)^(W) )^(T) * \prod_{j=0}^{T}
+//(\prod_{w} \Gamma (n_{j}^{w} + beta)) / (\Gamma(n_{j}^{*}) + W * beta )
+//
+//Here is the C code I write for the calculation where lgamma is the log gamma
+//function, n_t_k is the number of times term t in topic k and n_k is the
+//total number of terms in topic k:
+//-------------------------------------------------------------------------------
+// for (int k=0; k<TOPIC_NUM; k++){
+//          training_likelihood  = training_likelihood + (lgamma(TERM_NUM *
+//beta) - TERM_NUM * lgamma(beta));
+//          for (int i=0; i<TERM_NUM;i++){
+//            training_likelihood = training_likelihood + lgamma(n_t_k[i][k] +
+//beta);
+//          }
+//  training_likelihood = training_likelihood - lgamma(n_k[k] + TERM_NUM *
+//beta);
+// }

@@ -1,0 +1,12 @@
+Gregor Heinrich wrote:
+I'm pretty sure the distribution of these is log-concave so you can use
+adaptive rejection sampling methods.
+We take an entirely different approach, however for this when a full
+Dirichlet is used, so for non-symmetric alpha.   You can replace the
+Dirichlet by a Dirichlet Process or Pitman-Yor Process and then use an
+efficient collapsed Gibbs
+sampler.  Lan Du (ANU&NICTA) gets great results using this
+(at another spot on the LDA) and its published in ECML-PKDD 2010, this year.
+This collapsed Gibbs sampler is about 20 times faster than previous methods
+for sampling with a DP or PYP.
+Wray Buntine

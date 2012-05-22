@@ -1,0 +1,26 @@
+              Non Technical Summary (200 words)
+ "Collaborative Research: Testing the Role of
+              Resource Heterogeneity and Clonal Integration on Plant Diversity in
+              Grasslands"
+PIs:  KL Gross, GG Mittelbach, HL Reynolds (NSF proposal
+              #0235699)
+
+What determines the number of coexisting species in a local area
+              is a long-standing question for ecologists. This is particularly challenging
+              for plant communities because plants require similar resources and so we would
+              expect the number of coexisting species to be strongly limited by competition. 
+              One important, but rarely tested, hypothesis to explain the high diversity of
+              plant communities is that variation in resource levels across different patches
+              (i.e., spatial resource heterogeneity) may regulate species diversity. We are
+              currently testing this hypothesis in a large-scale field experiment in Michigan
+              grassland by experimentally increasing soil resource levels through
+              fertilization in either a homogeneous or heterogeneous fashion.  This
+              manipulation is combined with a species (seed) addition treatment to test if
+              the ability of species to invade these grassland communities changes under
+              different nutrient regimes. In this renewal, we will continue to follow changes
+              in plant species diversity in response to our treatments of nutrient patchiness
+              and potential species invasion.  We also will establish a new experiment in
+              which we will determine whether the presence of clonal plants - species that
+              grow by producing vegetative shoots - influences the ability of non-clonal
+              species to respond to heterogeneity in soil resources. 
+

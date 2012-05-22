@@ -1,0 +1,6 @@
+dear boby
+if memory serves, we optimized alpha in log space in order to enforce the
+positivity constraint.  alpha must be positive, but log alpha is
+unconstrained.
+best
+dave

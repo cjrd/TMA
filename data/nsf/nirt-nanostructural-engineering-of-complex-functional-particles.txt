@@ -1,0 +1,17 @@
+              This four-year Nanoscale Interdisciplinary Research Team (NIRT) project at the
+              University of New Mexico, with Professor Timothy Ward as principal
+              investigator, will investigate the potential to spatially engineer the
+              structure and composition of porous composite nanoparticles with
+              functionalities not previously achieved.  The research will focus on particles
+              whose basic scaffolding is a precisely organized inorganic (oxide)
+              nanostructure created by self-assembly of amphiphilic molecules and hydrophilic
+              precursors.  The synthesis of silica/surfactant self-assembly will rely on
+              evaporation-induced self-assembly (EISA) within confined environment of an
+              evaporating droplet as opposed to nucleated self-assembly conducted in bulk
+              solution.   Using the EISA technique, four general classes of particle
+              architecture, some containing functional components positioned within or at the
+              surfaces of particles, will be investigated.  The resultant functionalized
+              nanoparticles and composites could provide a reservoir for sensing or
+              therapeutic agents whose action or delivery is coupled to molecular recognition
+              functionality at the particle surface and is mediated by controlled transfer
+              through nanoporous channels.        

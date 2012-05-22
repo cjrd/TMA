@@ -1,0 +1,2 @@
+Since this seems to come up all the time it might be useful to have a Wiki
+somewhere with applications/impact, papers, software, etc.

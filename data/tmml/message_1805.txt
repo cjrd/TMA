@@ -1,0 +1,10 @@
+hi chris
+i am plotting the discrepancy measure that we developed in "bayesian
+checking of topic models."  (it is a mutual information between the
+document index and word index, restricted to words assigned to the
+topic.)  the paper is here:
+http://www.cs.princeton.edu/~blei/papers/MimnoBlei2011.pdf
+i'll cite it in the next revision of the introductory paper.  thanks
+for pointing this out.
+best
+dave

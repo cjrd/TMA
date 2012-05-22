@@ -1,0 +1,21 @@
+              The abundance of water vapor in the upper troposphere and lower stratosphere is
+              an important determinant of the chemical and climatic state of the earth's
+              atmosphere.  The ability to predict water vapor at these high altitudes remains
+              one of the most important challenges in general circulation models.  The PI
+              will investigate this using the National Center for Atmosphere Research (NCAR)
+              Whole Atmosphere Community Climate Model (WACCM).  He will introduce two stable
+              isotopes of water, HDO and H218O, and the associated physics, into the model. 
+              In addition, medium-lived tracers, such as ozone and carbon monoxide, that do
+              not condense will be analyzed.  The research will be focused in the "tropical
+              tropopause layer", a transition region between the troposphere and the
+              stratosphere.  Model integrations for several years will be compared with
+              measurements using traces such as ozone, carbon monoxide, and the isotopes of
+              water.  The results should provide new understanding of the pathways by which
+              air reaches the stratosphere and of the mechanisms that control the
+              stratospheric water vapor concentration. 
+
+The research work will be done in
+              collaborating with the WACCM team at NCAR.  The isotopic modules developed will
+              be made available to the general community and, possibly, be included in the
+              standard version of the WACCM.  The research will also provide good
+              opportunities for graduate studies.

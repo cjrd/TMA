@@ -1,0 +1,218 @@
+
+So we previously presented the variable
+elimination algorithm, now let's think
+about what is the computational complexity
+of this algorithm. So let's first look at
+the basic operations that are used when we
+when we do an elimination step and there
+are these two basic operations. There is a
+factor product. And the actual
+marginalization. And so what we're going
+to do now, is we're going to count the
+operations used by each of them. So let's
+start with a factor of product. And first
+let's remind ourselves that what factor of
+product is doing. So factor of product is
+taking in this case, for example a factor
+who's scope is ab. And one's who scope is
+bc and producing a factor who's scope is
+abc. Now, let's think about how each of
+the numbers in this result is produced. So
+each of these is a product, in this case
+it's two numbers, one that comes from this
+table and one that comes from that table.
+>> So we've to produce every one of the
+rows in this new table, this new factor.
+So let's call Nk the number of the rows in
+this new table. And how many operations
+are there that we need to produce each
+such row. Well, if we need to multiply in,
+in this case mk, different factors so for
+each row. We have mk minus 1 products.
+And so total we get mk -1 times Nk
+multiplications. Now let's look at the
+factor marginalization. So here we have a
+factor whose scope was Xk, we summed out
+Z, and we end up with a factor whose scope
+is one less. So again, let's remind
+ourselves this is a marginalization in
+this case over B. So marginalize B. And we
+see that each of the rows in our output is
+produced in this case by a summation, of
+two of the rows in the original, in the
+original factor. But if we turn this on
+it's head we also see that each row Though
+each number in this factor, is used
+exactly once. Each one gets added to only
+one of the rows in the new factor. And so
+a simple upper bound on the amount of
+additions that we need to do is simply the
+size of this factor N k. So now let's
+total up the computational complexity of
+variable elimination. So let's assume that
+we start with m factors. For Bayesian
+networks, m is really effectively N
+because we have one factor. For every
+variable. Which is the CPD. And the reason
+I wrote less than or equal is because of
+the reduction by evidence. Now for Markov
+networks it's gonna actually be larger. So
+if you think of a grid Markov network or a
+fully connected Markov network, the number
+of factors might be so fully connected
+pairwise Markov network number of factors
+can actually be larger than number of
+variables. So that's why we have the
+complexity in terms of m as opposed to in
+terms of n. Now, so that's the set of
+factors that we start out with and then
+what happens as we do an elimination step.
+An elimination step takes some of those
+factors, and generates another factor. But
+each elimination step generates exactly
+one factor. How many elimination steps do
+we have? Well, each elimination step
+corresponds to elimination of one
+variable, so we have at most n elimination
+steps. So the total number of factors that
+we ever produce is which we're gonna call
+M star is going to be equal to at most m
+which is the set of initial factors plus
+the newly generated factors which is at
+most n and so all together M star is less
+than or equal to m plus n. So now that we
+figured that out let's look at what
+the complexity of the algorithm is in
+terms of various key quantities. So N is
+the size of the largest factor that I ever
+create which is the max of these
+different Nk's that I have. So
+now how many product operations do we
+have. Well, remember that we had the sum
+over the different elimination steps so
+sum over k and this was the number of
+product operations that we have. But now
+here's the critical observation. Each
+factor. Is multiplied in at most once.
+Because as soon as we multiply it in. As
+soon as we multiply it in, it goes away.
+Which means that the sum over K, mk -1, is,
+is at most the total number of factors. And so said otherwise we can write that this is less than or equal to
+N times the sum over k, mk - 1.
+This is less than or equal to m star. Because this is at most the total number of factors in my universe of factors.
+What about the number of
+summation operations? Well here, this is
+less than or equal to, the sum over k,  Nk which when you, which is n times less
+than or equal to N times the number of
+elimination stats. Which is simply less than or
+equal to N times n. But altogether between
+these two steps, over here we have N times
+m star over here we have N times n which
+tells us that the total work that we have
+is linear in N and in m star.
+Great, linear time, aren't we lucky. Well
+not quite. Because the Nk which is
+the contribution to this quantity N is the
+total number of values in a factor. And so
+if we were, if we say for example just for
+simplicity, all variable have d values in their scope. So that, for example all
+variables are binary, that would be equal
+to two, for example. Then the number of
+values in the factor is exponential. Where
+the base of the exponent is d and the
+exponent is the cardinality of the scope
+of the kth factor. That is the number of
+variables. In the kth factor. And so this
+is, over here, our big source of
+exponential blow up. So, let's understand
+how this complexity manifests to the
+context of a real example. So, this is the
+run of variable elimination that we did
+that we did before. I've just written it
+out all in one in one slide. And so now
+let's see what the complexity of this is.
+When we see that we have produced several
+factors here and let's write down how many
+variables are in the scope of each of
+these factors, this one has two. This one
+has three, G, I, and D. This one has,
+three, S, G, and I. This one has three, H,
+G, and J. This one has four, L, G, S, and
+J. And this one has three, J, L, and S.
+And so the size of the largest factor is,
+it is, this one, that has four variables
+in it. And that is, what's going to, in
+general, drive the complexity of the
+algorithm. Not in an example as simple as
+this, but in more realistic examples. So,
+now let's understand how elimination
+ordering plays into this. We've previously
+said that variables can be eliminated in
+any order, so long as we're, careful about
+multiplying things in at the appropriate
+time. But now, let's see how elimination
+order might affect the complexity. So
+assume that in this example, I'm going to
+make a not very judicious decision. And
+I'm going to start by eliminating G. So
+which factors do I need to multiply in
+order to eliminate G. Well phi L of L and G,
+phi G of G, I and D and phi H of H, G and J. And
+so if I multiply all these together, it
+turns out that I now end up with a vari-,
+with a factor, whose scope is let's see,
+L. G, I, D, H and J. So total of six variables
+whereas before the largest factor that we
+ever generated had four variables. So
+that's maybe, you might say, six versus
+four, not a big deal. I mean, how much
+does, how much difference does it make? So
+let's convince ourselves that in other
+graphs it might make a bigger difference.
+So here's a graph that has it's simple
+pairwise mark of network with A and C and
+then bunch of variables in the middle B1
+up to Bk and imagine that I start by
+eliminating A first. What are the factors
+that involve A? [sound] Well we have a
+factor AB1, AB2, AB3, up to ABk and the
+total scope of the factors are is of this
+factor that we generate is going to be A,
+B1 up to Bk, So it's going to be
+exponential in k, so the size of the
+factor. Is exponential. In k. Maybe this
+is inevitable. Well no! So let's imagine
+that instead we're going to eliminate the
+Bi's first, so let's think for example
+that we're going to start by eliminating
+B1, well B1 is in a factor with A and in a
+factor with C, so we're going to end up
+with a product of say phi1, phiA1 of A, B1
+times phi C1 of C, B1 and that's going to
+give me a factor whose scope is A, B1 and C
+And the result of summing out B1 is
+going to be a factor tau 1 of A and
+C. We're going to get the exact same
+behavior when we now eliminate B2 and
+that's going to give me a factor
+tau 2 of A and C and so on and so
+forth until at the very end I'm going to
+have a bunch of factors tau i, of A and C
+that are all multiplied together. And I've
+done this without ever generating a factor
+whose size is bigger than three. So to
+summarize, the complexity of variable
+elimination is linear in the size of the
+model, the number of factors and number of
+variables. And, more importantly, in the
+size of the largest factor generated
+during the course of variable elimination.
+And unfortunately that size is exponential
+in it's scope. And that is the thing that
+drives the complexity of variable
+elimination. And we've also seen that
+this, the size of this factor is something
+that depends heavily on the elimination
+ordering. Which means the choosing of
+judicious elimination ordering is
+important.

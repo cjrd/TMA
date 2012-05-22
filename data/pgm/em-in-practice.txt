@@ -1,0 +1,265 @@
+
+One simple yet extraordinarily useful
+class of probabilistic temporal models is
+the class of hidden [inaudible] models.
+Although these models can be viewed as a
+subclass of [inaudible] networks, we'll
+see that they have their own type of
+structure that makes them particularly
+useful for a broad range of applications.
+So, a hidden mark up model in its simplest
+form can be viewed as a probabilistic
+model that has a single state variable S
+and a single observation variable O. And
+so the model really has only two
+probabilistic pieces, there is the
+transition model. That tells us the
+transition from one state to the next over
+time, and then there is the observation
+model, that tells us, in a given state,
+how likely we are to see different
+observations. Now, you can unroll this
+simple 2TBMs. So if this is our 2TBM, you
+can unroll that to produce an unrolled
+network, which has the same repeated
+structure of, you started this state at
+time zero, move to the state of time one,
+and so on. And in each state, we make an
+appropriate observation. But what's
+interesting about hidden Markov models is
+that they often have a lot of internal
+structure that manifests most notably here
+in the transition model. But sometimes
+also in the observation model. So here is
+an example of what the, of what a
+structure transition model would look
+like. And this entire model is actually an
+un-, is peering into the CPD of the
+probability of. The state at time of the
+next state given the current state. So
+each of these nodes in here is not a
+random variable rather it is particular
+assignment to the state variable
+[inaudible], the state that the model
+might be in and what you see here is the
+structure of transition matrix that tells
+us that from S1 for example the model is
+likely to transition to S2 with
+probability 0.7 or stay in S1 with
+probability 0.3. And so the. These two
+outgoing probabilities have to sum to one,
+because it's a probability distribution
+over the next state, given that, in the
+current time point, the model is in state
+S1. And we similarly have that for all
+other states. So here, from S4, for
+example, there is a probability of 0.9 of
+going to S2, and 0.1 of staying at S4. So
+here the structure is actually a sparsity
+in the transition model as opposed to
+something that manifests at the level of
+the two TDN structure which is actually
+fairly simple. [sound] It turns out that
+this kind of structure is useful for a
+broad range of applications. Robot
+localization, speech recognition, where
+[inaudible] are really the method of
+choice for all current speech recognition
+systems, biological sequence analysis,
+[inaudible], for example, annotating in
+DNA sequence with elements that are
+functionally important and other elements
+that are not of importance, and similarly
+annotating a text sequence with a
+particular, annotating words with the role
+in the sentence, for example. All of these
+are methods where hidden Markov models
+have been used with. Great success. So
+let's look for example what the HMM would
+look like for robot localization. This
+might not look exactly like an HM to begin
+with because it has some additional
+variables. So, let's talk about what each
+of these variables means. Here what we
+have here is a state variable that
+represents the robot pose, that is the
+position and potential orientation of the
+robot within a map at each point in time.
+We also have an external control signal,
+you, which is the guidance that the robot
+is told to move left, move right, turn
+around. Since these variables are.
+Observed and externally imposed, they're
+not really [inaudible] random variables.
+They're just, inputs to the system, if you
+will. And then we have, in addition, the
+observation variables, which is what the
+robot observes at each point in the
+process. Which depends on both their
+position and, of course, on. The math.
+Position, so that the robot's observations
+depend on the overall architecture of the
+space that they're in and the state of the
+building. Now since, in many of the
+applications that we'll be considering the
+map is observed, which is why I just
+graded out then you can effectively think
+of this as something where the basic
+structure. Over which where reasoning is
+just the set of variables that represent
+the s's and the o's which is why this is
+really a slight elaboration of the
+standard h m model. And here also we're
+going to have sparsity in the transition
+wall because the robot can jump around
+from one state to the other within a
+single step and so there's only going to
+be a limited set of positions at time
+tables one given where the robot is
+[inaudible]. Speech recognition, as I
+mentioned, is perhaps the prototypical
+HMM, success story, because it's so, it's
+so much in common use. The speech
+recognition problem is to take a sentence,
+such as Dorothy lived in, whatever. And
+imagine somebody is saying that. And what
+is given is input to the probabilistic
+reasoning system, is this very noisy
+acoustic signal that represents the, the
+values of the different, frequencies of
+speech in a different fre-, acoustic
+frequencies at each point in time. And
+what we would like to do is we would like
+to Take that input, and put it into a
+decoder, that, is going to evaluate
+different possible sentences, and
+hopefully guess what the source sentence
+is, and maybe able to predict it with
+reasonable accuracy. So how does speech
+recognition work. So this is what an
+acoustic signal looks like. We can see
+that over here, where at each point and
+time we have these frequencies and we can
+convert that to the frequency spectrum. By
+using Fourier transforms. And what we
+would like to do is we would like to break
+up this continuous signal into. These
+pieces that correspond to words and
+recognize for each piece that, which word
+it corresponds to. So this is a two-fold
+problem because in general in continuous
+speech we have to build, identify the
+boundaries between words as we are also
+trying to identify the words. And it turns
+out that the way to do this is not to
+think about words as the basic units but
+rather think about the smaller entities
+that are called phones or phonemes as the
+basic units from which words are comprised
+and then as we recognize phones we can.
+Put them together to figure out what the
+words mean. So here is a phonetic alphabet
+one of several that break the is used to
+define how words are broken up into these
+little pieces. And so you can see that
+these don't line up exactly with, with
+characters in the alphabet. Because the
+same character can actually be pronounced
+in different way, giving rise to different
+phones and vice versa. Sometimes the same
+phones can come from different letters.
+And so what we see here are the, for
+example, the phone called. Er we call it
+ur and is pronounced in the same way as
+the ur in hurt. And so this is a phonetic
+alphabet, and as I said there is many of
+those that one can consider. [sound] So,
+Once we have the phonetic alphabet, we can
+look at a word, in this case this is the.
+Phonetic alphabet for the phonetic
+breakdown of the word nine. N-, Nine. And,
+so you can see that this is an HMM
+structure. This is not the DBN, this is
+the HMM of, that tells us, at each point
+in time, whether you're within the phone
+N, I, or [noise]. And so there is a
+self-transition loop, because you can stay
+in the same phone for more than time unit.
+And then eventually, you transition to the
+next phone and the next phone. And this is
+a typical HMM for a word. Now within a
+phone, a phone also lasts a certain unit
+of time, and so what we have here is the,
+within the phone for a given, within a
+given phone, there is a transition model.
+In this case the aa phone and it has. In
+this case, three states. The beginning, B,
+the middle and the final. And this is a
+fairly standard breakdown for most phones
+that have the beginning of the phone, the
+middle and the end. And each of these,
+typically corresponds to a different
+distribution over the acoustic signal that
+you see at that stage in the phone.
+[sound] So if you put all these together
+if you're trying to do speech recognition
+then, and this is for the moment speech
+recognition for isolated words, so there
+is a start state. And then there is a
+transition model from the start state,
+that tells us how likely we are, in the
+current state to go into one of many
+words, and that would be a language model
+that tells us how likely different words
+are to occur, at this point, and then
+assuming, and then given that the model
+has transitioned to say the one. Word, the
+word one. And we can see that we now have,
+across different points in time, that the
+model transitions to the [inaudible], and
+then ultimately to the [inaudible]. And
+then, finally to the [inaudible]. And
+then, at the end of it, it transitions to
+the end of the word, at which point, the
+process circles back, and we move on to
+the next word. And the self, and the
+transition back to the start is what
+allows us to do continued speech
+recognition. So this is a probabilistic
+model that tells us how speech might be
+constructed of first words, then phones
+within words and then finally pieces,
+little bits of the phone, that we see in
+this, in the phone HMM that we saw
+previously. And this is a generative model
+of speech but what happens is that as you
+feed in evidence about the observed
+acoustic signal over here and you run
+publicist inference over this model what
+you get out is the most likely set of
+words that gave rise to the observed
+speech signal. So, to summarize. Hmms in
+some simplistic way can be viewed as a
+subclass of the framework from [inaudible]
+Bayesian networks. And while they seem
+unstructured when we observe them at that
+level. When we think of structure at the
+level of random variable, there is a lot
+of structure that manifests in the
+sparsity structure of the, of the
+conditional probabilities and also in
+terms of repeated elements as we saw in
+the previous slides, the phoning, the
+phone model can occur in multiple words
+and we re, replicate that structure across
+the different places where the same.
+[inaudible] can be used in, in the
+language. And so that gives a lot of
+structure in the transition model that
+really doesn't manifest in any way at the
+level of random variables. And we've seen
+that HMMs are used in a wide variety of
+applications for sequence modeling and
+they're probably one of the most used
+forms of probabilistic graphical models
+out there.

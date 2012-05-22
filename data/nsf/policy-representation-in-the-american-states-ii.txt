@@ -1,0 +1,53 @@
+              This renewal project continues work on developing new data and a new approach to
+              the study of representation. It uses the legislatures of the states and the US
+              Congress as 101 representative systems through which we can study the linkages
+              between constituency, party and roll call voting.  This comparative perspective
+              provides substantial advantages over previous work by taking the research
+              designs beyond the limitations of a case study of a single institution and by
+              providing enough variation in institutional rules and procedures, electoral
+              settings and constituency preferences to achieve deeper understanding of the
+              factors that enhance or retard governmental responsiveness to citizen
+              preferences.   The greatest obstacle to this approach in the past has been a
+              simple lack of data.  Roll call records are used to gauge legislators' policy
+              positions within the legislatures, but, except for the U.S. Congress, these are
+              not compiled in any easily available format for scientific analyses.  This
+              project has addressed that shortcoming with the development of a methodology of
+              computer-assisted extraction of roll call data from the variety of sources and
+              formats in which this information is found in the states.  This approach to
+              data generation is dramatically more efficient and less error-prone than
+              traditional methods of hand coding and manual data entry.  The methodology has
+              been well-developed during the initial grant period and virtually a full set of
+              roll calls and matching presidential vote totals for legislative districts have
+              been compiled for the 1999-2000 sessions.  Initial analyses point to the
+              central importance of parties in the electorate and in the legislatures for
+              policy representation and electoral accountability, and the researchers have
+              found that parties take on a variety of roles, both in elections and in the
+              legislatures. 
+This project continues that work on four fronts. First,
+              analysis of the completed data sets permits verification and expansion on the
+              initial findings concerning the role of party and constituency in legislators'
+              roll call voting.  Second, the approximately fifty thousand roll call votes
+              that have been compiled are coded to facilitate analyses by policy area or
+              types of bills.  Third, information on legislative electoral returns and the
+              socio-political backgrounds of legislators is added to the data collection to
+              increase substantially the analytic leverage of the roll call and constituency
+              information.  Fourth, a longitudinal component to the data collection is
+              undertaken to permit analyses of change and stability in representation and
+              legislative policy making.  One aspect of this is the replication of the
+              1999-2000 data compilation with a full post-reapportionment roll call record of
+              the 101 legislative chambers.  This adds significantly to the investigators'
+              ability to establish the temporal stability of legislative coalitions and the
+              ideological positioning of legislators over time as well as to assess
+              institutional changes like redistricting and term limits. The second aspect of
+              this is the collection of the full time series of roll calls for the
+              approximately half of the legislative chambers for which roll calls are
+              web-accessible.  This is possible by building on the expertise developed in the
+              initial grant period, so that for a relatively modest investment, the project
+              will produce for the research community a quantum increase in the data
+              resources for comparative study of legislative policy making in the U.S.  
+              Besides greatly expanding the data resources for research on representation and
+              policy making in the American legislatures, the project contributes to our
+              understanding of how political contexts, institutional configurations and
+              diversity influence the effectiveness of elections and political parties as
+              mechanisms of citizen control of government.   
+

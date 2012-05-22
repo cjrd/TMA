@@ -1,0 +1,5 @@
+Hi Guys,
+You may like it or not but I did fix it as below.
+I made some modification malloc()'s however it should be done with
+realloc (in the cycle) rather than using malloc/free pairs repeatedly.
+grep -A3 -B3 -n alloc_arr lda-estimate.c

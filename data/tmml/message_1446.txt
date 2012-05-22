@@ -1,0 +1,4 @@
+@Roi:
+See this:
+http://www.google.com/search?client=ubuntu&channel=fs&q=n+gram+lda&ie=utf-8&oe=utf-8
+(please note the 7th result .. it's a ppt ..)

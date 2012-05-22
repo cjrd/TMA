@@ -1,0 +1,22 @@
+Perplexity isn't quite right, since that's a measure of model fit to
+held-out data. I think what you want is something like the (expected)
+log probability that the fit model assigns to the observed word count
+matrix:
+\sum_d \sum_w n_{dw} E[log(\sum_k ?_{dk}?_{kw})],
+where n_{dw} is the number of times word w appears in document d. the
+expectation is either with respect to the empirical distribution over
+? and ? defined by the samples you've collected via Gibbs sampling or
+the variational distribution q you've fit using variational inference.
+(The equivalent cost function for collapsed Gibbs is a little more
+complicated, but not much.)
+If you want a cost function that's 0 when you've reconstructed the
+empirical distribution perfectly, then you can use the appropriate
+Bregman divergence, which is just the negative of the thing above plus
+\sum_d \sum_w n_{dw} log(n_{dw}/n_d),
+where n_d is the total number of words in document d. (Cf. the
+generalized KL divergence cost function for NMF, replace W and H with
+? and ?.)
+That said, the work David mentioned gets more to the point of what
+people usually care about than simple matrix divergences do.
+Best,
+Matt

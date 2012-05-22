@@ -1,0 +1,5 @@
+Hi Daniele, Tim,
+I was wondering if you had any observations and results on imbalanced
+datasets, in which the amount of training data varies greatly from one
+label to the other.
+Em.

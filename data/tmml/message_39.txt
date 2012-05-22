@@ -1,0 +1,8 @@
+Hi Everybody,
+I'm thinking of using Gibbs sampling to do inference of the GM-LDA. There
+are two different types of observations (image features and words), and both
+the two posteriors p(z|R) and p(V|R) are of interest. Then what is the
+update equation for the hidden variables? And how to update with two types
+of observations?
+Thanks!
+Sue

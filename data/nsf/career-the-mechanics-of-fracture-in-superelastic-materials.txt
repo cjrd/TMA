@@ -1,0 +1,59 @@
+              CAREER:  The Mechanics of Fracture in Superelastic Materials
+ 
+              ABSTRACT
+
+Wendy C. Crone, Assistant Professor
+Engineering Mechanics Program,
+              Department of Engineering Physics
+University of Wisconsin - Madison
+
+Shape
+              memory alloys (SMA) constitute a unique class of materials that have
+already
+              proven to have wide-ranging applications in the biomedical,
+aerospace,
+              microelectronics, and automotive industries. These materials
+have a
+              crystallographic structure that can change reversibly and
+reproducibly,
+              allowing the material to display dramatic stress-induced
+              and
+temperature-induced recoverable deformations.  One key hurdle to their
+              use
+is the development of reliable SMA materials and structures, in which
+              the
+material's microstructure is well understood and its resistance to
+              fatigue
+and fracture can be reliably predicted.  Critical topics to be
+              investigated
+in this research involve:  determining the effect of
+              process-induced
+microstructure on fracture and fatigue behavior; exploring the
+              effect of
+grain refinement on the fracture behavior for grain sizes ranging
+              between
+the micron and nanometer scale; and developing experimentally-based
+              models
+that delineate the mechanisms influencing fracture and fatigue in NiTi
+              and
+Cu-based SMAs.  In conjunction with this research, education
+              initiatives
+will be undertaken to develop widespread training at the
+              undergraduate and
+graduate levels in superelastic behavior and shape memory
+              materials, via
+new course material in the areas of nanomaterials,
+              micromechanics and
+fracture mechanics. Not only will the expanded course
+              material provide
+students with an introduction to topics where mechanics has
+              been developing
+influence and making critical contributions to new
+              technologies, it will
+also have international impact via Smart Materials
+              Exemplar of the
+Worldwide Universities Network, an international network
+              of
+researchers/educators. 
+
+

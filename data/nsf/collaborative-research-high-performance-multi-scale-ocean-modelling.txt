@@ -1,0 +1,15 @@
+              This project will develop and implement new algorithms for high performance,
+              highly parallel computers to enhance the Spectral Element Ocean Model developed
+              at Rutgers University. As a testbed for this algorithmic development, the code
+              produced will be applied to multi-scale global oceanic simulations which will
+              focus on the Northeast Pacific continental shelves, including the Western Coast
+              of the United States and the Coastal Gulf of Alaska.  These regions are at the
+              center of an investigative program aimed at understanding how physical
+              processes, with multiple temporal and spatial scales, influence marine
+              ecosystems.  The new algorithms developed will address the computational
+              difficulties associates with the long and multi-scale global oceanic
+              simulations.  The research will focus on robust two-and three-dimensional
+              elliptic iterative solvers, optimization of the code on cache-based processors,
+              and scalable parallel performance on unstructured grids.  In particular it will
+              exploit a new treatment for fast eaves that avoids splitting the barotropic
+              mode and, thus, eliminates the shallow water equations from the model.

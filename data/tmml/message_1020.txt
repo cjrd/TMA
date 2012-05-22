@@ -1,0 +1,7 @@
+Hi,
+Possibly the RART1 model seems to be something which might help you. The
+paper by Xuerei talks about it.  (In RART authors. roles and message
+contents are modeled simultaneously)
+BTW Xuerui would you be having the implementation of RART models ?
+Sincerely
+Tanmoy Mukherjee

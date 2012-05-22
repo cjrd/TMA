@@ -1,0 +1,6 @@
+Hanna Wallach and I have an updated and cleaned corpus, but it's
+missing the most recent few years. Note that the "extended" data set
+(13-17) has a large number of irregularities due to inconsistent PS
+and PDF to text extraction, mostly in ligatures.
+We will try to release a full data set soon.
+-David

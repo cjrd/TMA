@@ -1,0 +1,6 @@
+*Gibbs Sampling for Logistic Normal Topic Models with Graph-Based
+Priors* David Mimno, Hanna Wallach and Andrew McCallum. NIPS Workshop on
+Analyzing Graphs, 2008, Whistler, BC. (one of five out of 22 papers
+selected for oral presentation)
+should take you some way there.
+Am 07.04.2010 10:08, schrieb WangPing:

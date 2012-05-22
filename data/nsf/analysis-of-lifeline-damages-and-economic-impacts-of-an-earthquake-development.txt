@@ -1,0 +1,44 @@
+              Proposal: CMS - 0099724
+PI: Geoffrey Hewings
+Institution: University of
+              Illinois at Urbana-Champaign
+Date: May 25, 2001
+
+
+ABSTRACT CMS0099724 
+              "Analysis of Lifeline Damages and Economic Impacts of an Earthquake: 
+              Development of an Integrated Economic-Engineering Assessment Model
+
+Research
+              will be carried out by the colleagues in the U.S. (University of Illinois/SUNY
+              @ Buffalo) and Japan (Central Research Institute of Electric Power Industry),
+              who have been collaborating on the development of regional and interregional
+              economic impact and forecasting models for both countries for over three
+              years.
+
+An integrated economic-engineering model will be cdonstructed to
+              estimate the indirect impacts of an earthquake and to simulate recovery
+              activities and its system-wide effects.  The project will build on a set of
+              recently completed models, including an engineering model for assessing the
+              lifeline damages in an urban area and economic models for estimating the
+              indirect impacts and effects of an earthquake in urban, regional, and
+              interregional contexts.  Attention is directed to the integration of the
+              engineering model and economic models, systematically connecting time, space,
+              and the damages between two different modeling schem3s.
+
+Once completed,
+              analysis will focus on the following policy implications: a) evaluation of
+              retrofit strategies on lifeline systems; b) sensitivity analysis of emergency
+              management plans; and c) life cycle assessment of lifeline facilities aganist
+              earthquakes.  The constructed integrated model will also provide the
+              information on the propagation paths of the economic impacts in an
+              interregional context, the relationshop between physical damages and economic
+              impacts, and the time series analysis of the economics impacts focusing on
+              production chronologies.  The interregional focus derives from urban areas;
+              increasing dependence on external markets
+for sources of inputs and as
+              destinations for the consumption of goods and services produced in the urban
+              area.  The major contributions will lie in the way in which different
+              engineering and economic modeling paradigms are integrated, the perspectives
+              that can be learned from experience in other countries and the identification
+              of crwitical linkages that needs to be explored to assist in recovery efforts.

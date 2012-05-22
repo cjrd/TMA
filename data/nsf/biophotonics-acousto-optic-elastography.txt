@@ -1,0 +1,36 @@
+              0086719
+Kirkpatrick
+It is well known that the mechanical properties of
+              pathological tissues vary from that of healthy tissue.  For example, many
+              disease processes such as tumors of the breast and prostate manifest themselves
+              as stiff, hard nodules relative to the surrounding tissue.  Subsurface skin
+              tumors present themselves as objects with distinct mechanical properties
+              relative to the surrounding normal tissue.  The displacement of fibrillar
+              papillary dermis by the softer, cellular mass of a growing melanoma is one such
+              example of this.  This feature frequently allows their detection through manual
+              palpation.  However, standard soft tissue palpation is not only qualitative,
+              but also highly subjective.  Furthermore, it provides information on a rather
+              large spatial scale, thus the ability to detect small tumors by palpation is
+              limited.  Acousto-optic elastrography (AOE) offers the potential for increased
+              spatial resolution (i.e. smaller lesions may be detected) and better strain
+              resolution (low-contrast elastic modulus distributions may be visualized) than
+              other elastographic methods.  However, this increased spatial and strain
+              resolution is gained a the cost of decreased probing depth, as optical methods
+              are limited to the outer few millimeters of tissue.  Furthermore, optical
+              elastography is limited in that only relatively small areas or volumes of
+              tissues may be probed at any one time.  Never the less, optical methods can
+              still be useful in the early detection of neoplastic changes because many of
+              these early changes occur in the mucosa and submucosa of the affected organs. 
+              In this proposal, the investigators aim to implement a novel, acousto-optical
+              method for evaluation tissue mechanical properties.  The method, incorporating
+              a novel fiber-coupled laser speckle strain gauge, provides high resolution
+              strain and strain rate measurements in tissues undergoing loading or undergoing
+              creep recovery following loading.  These data can be used to quantify tissue
+              regions with differential stiffness for both diagnostic purposes and for basic
+              tissue mechanics research.  Using image and signal processing techniques,
+              tissue regions which display differential tissue stiffnesses can be delineated
+              from these images.  The end goal is that these images can provide the clinician
+              direct information regarding the pathological state of the tissue under
+              examination.
+
+

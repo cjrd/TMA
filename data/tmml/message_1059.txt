@@ -1,0 +1,5 @@
+Hi Claudia,
+We have a sample implementation in C at http://www.cs.umass.edu/~xuerui/external/art.tgz
+Please let us know if you have any question. Thanks a lot.
+Best,
+Xuerui

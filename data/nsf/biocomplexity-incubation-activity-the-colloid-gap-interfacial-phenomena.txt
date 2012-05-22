@@ -1,0 +1,34 @@
+              This project focuses on the intricate combination of biological and
+              physicochemical processes by which dissolved organic matter (DOM) is formed and
+              cycled in the ocean. The interlinked biological and physical processes by which
+              bioactive elements are cycled in the ocean represent one of the most
+              complicated and critical systems on earth. Although living organisms are the
+              ultimate source and sink of the organic matter in which these elements
+              primarily cycle, the major currency for both their active transfer and
+              long?term storage in the ocean is as small, nonliving organic molecules. This
+              "molecular prerogative" results because the biomacromolecules composing
+              organisms and tissues must be broken down to inert subunits to pass bacterial
+              cell walls prior to complete intracellular respiration. In the ocean, much of
+              this molecular dismantling is accomplished by bacterial exoenzymes operating on
+              organic substrates. Nutrient elements carried through this "bacterial loop"
+              become available for conversion back to living particulate form either through
+              photosynthesis or via transfer of bacterial production up food webs through
+              protists and zooplankton. Such biologically mediated cycling between dissolved
+              and particulate organic forms is critical on a larger scale to the transfer and
+              fate of nutrients because only particles can sink to selectively transport
+              bioactive elements from the lighted surface ocean into deep storage below the
+              thermocline (i.e., the biological pump). Recent evidence for spontaneous
+              assembly of colloidal marine molecules into microscopic polymer gels has
+              fundamentally changed the way that oceanographers think about processes linking
+              the microbial loop and biological pump to the rest of the biosphere and the
+              geosphere. The key observation was that colloidal?size organic molecules found
+              in surface seawater can coalesce spontaneously. The resulting particles
+              (microgels) are sufficiently large to sink and might undergo other processes
+              such as catastrophically collapsing to dense forms after passing sharp
+              thresholds of temperature, pressure or pH. Our group has also recently found
+              that these microgels are degraded approximately an order of magnitude faster by
+              marine bacteria than the dispersed molecules from which they are formed,
+              apparently by providing an effective means for abiotically concentrating
+              substrate for efficient exoenzymatic dismantling. This project is an
+              interdisciplinary focus on the role of these microgel particles in carbon
+              cycling processes.

@@ -1,0 +1,14 @@
+Sofon,
+If you have topic labels for parts of some documents, you can include
+them in the count matrixes (denoted C^{WT} and C^{DT} in Griffiths' and
+Steyver's paper on probabilistic topic models) without updating them.
+If your prior knowledge is given as terms, you can adapt the prior on
+p(w|t) (denoted \beta in the paper, it is just a simple step from a
+symmetric to an asymetric prior)
+But be warned: if your notion of topics does not fit LDA's modelling
+assumption, your prior data may be overruled (i.e. treated as noise). So
+there is no guarantee that you will learn the topics you wanted to have.
+If you want to be sure to learn "your" topics, and you have lots of
+prior knowledge, you should consider using a text classifier instead of LDA.
+Cheers,
+Laura

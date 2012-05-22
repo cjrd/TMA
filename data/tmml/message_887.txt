@@ -1,0 +1,4 @@
+Check out Mallet from UMass,
+http://mallet.cs.umass.edu/
+They have an LDA implementation in Java.
+Justin Becker

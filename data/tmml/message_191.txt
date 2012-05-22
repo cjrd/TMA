@@ -1,0 +1,1 @@
+Thanks for the reply. But won't it be computational costly to use conjugate gradient for phi, considering phi are N*K matrix?

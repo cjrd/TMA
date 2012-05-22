@@ -1,0 +1,23 @@
+Hi,
+I was trying to run the DTM code over some documents; however, the code
+quickly consumes all available RAM after the initial LDA fit. Does someone
+know the reasonable limitations for the size of problems? I was hoping it
+might not be too much trouble to replace some of the code that relies on GSL
+with a sparse matrix library or keep it from holding so much in memory. The
+last message I receive before I have to quickly kill the process is
+[...]
+writing 27934 x 35 matrix to dim_out//initial-lda.beta
+writing 35 vector to dim_out//initial-lda.alpha
+writing 27934 x 35 matrix to dim_out//initial-lda-ss.dat
+fitting..
+### FITTING DYNAMIC TOPIC MODEL ###
+reading corpus from tmp/dynamic_lda_data-mult.dat
+read corpus (ndocs = 19201; nterms = 27934; nwords = 163890836)
+Reading corpus sequence tmp/dynamic_lda_data-seq.dat.
+read corpus of length 321
+Median: 16.00
+Then I have to kill it. It looks like that double matrices allocated in
+new_lda_seq are quickly too big given the above. Am I reading this right? Is
+it strictly necessary to fit all of these dense matrices into memory?
+Thanks,
+Skipper

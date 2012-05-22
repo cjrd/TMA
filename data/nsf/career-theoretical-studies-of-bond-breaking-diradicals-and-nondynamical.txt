@@ -1,0 +1,19 @@
+              C. David Sherrill of Georgia Tech is supported by a CAREER grant from the
+              Theoretical and Computational Chemistry Program to develop electronic structure
+              algorithms that will be applicable to diradical-forming reactions such as
+              Bergman and Diels-Alder reactions.  These new methods will allow study of the
+              competition between concerted and stepwise mechanisms in prototype organic
+              reactions.  As part of his education plan, Sherrill will enhance the
+              presentation of quantum mechanics in various courses through diverse learning
+              environments, emphasizing visual and interactive components as well as
+              web-based resources.
+
+Despite the enormous success of electronic structure
+              theory in providing accurate structures and molecular properties for large
+              molecules, many crucial areas of chemistry remain beyond the reach of these
+              methods.  In particular, the theoretical description of bond-breaking processes
+              remains a challenge, and this research program will address this inadequacy.
+              Although quantum mechanics is often considered esoteric and difficult, its
+              growing importance in areas such as molecular-scale materials design and
+              electronic devices requires that this subject be made more readily accessible
+              to students.

@@ -1,0 +1,9 @@
+Hi Chaney,
+One more question,
+How can I filter out non-important words such as 'I', 'the', 'to' etc. when
+using lda to estimate the topics? I try to edit the vocabulary.txt file
+directly. It works when generating topics, but later when I try to
+visualize it using TMVE, seems the model is corrupted. Any ideas here?
+Saying ArrayIndexOutOfBounds
+Spark
+? 2012?3?10? ??8:22?yu shen <shenyu.sh at gmail.com>???

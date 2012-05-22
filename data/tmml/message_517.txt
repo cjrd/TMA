@@ -1,0 +1,6 @@
+When I used raw counts, LDA and the several different factorization techniques (including NMF) I tried all were disposed to give highest weights on most topics to the most frequent terms in the corpus.  This is why an excellent and corpus-tuned stop list is so critical for LDA.
+The tf-idf weighting ameliorated this frequent-term tendency but did not entirely eliminate it.  I also tried applying a factor analysis with a promax rotation to all three data sets.  This did eliminate this tendency to give highest weights to very frequent terms.   It also resulted in the best correlations for the artificial data.  It was also roughly equal to NMF applied with a tf-idf weighting for the two "real-world" data sets, but could not beat the "best" factorization technique with a tf-idf weighting on those two data sets.
+James A. Cox, Ph.D.
+Text Mining Software Development Manager
+SAS Institute, Inc.
+The Power to Know

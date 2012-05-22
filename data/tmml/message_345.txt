@@ -1,0 +1,6 @@
+hi ben, rachit, and all,
+since the 2003 paper, we have extended this model to an infinite-depth
+tree.  the pre-print is here:
+http://arxiv.org/abs/0710.0845
+best,
+dave

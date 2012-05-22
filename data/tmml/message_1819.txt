@@ -1,0 +1,12 @@
+There is no detailed user guide, but I'm happy to answer any questions.
+For long titles or documents without titles, you may want to consider
+editing relations.py: make the get_safe_title function in the Document
+class return the document id instead of a modification of the title.
+For the wiki demo, none of the wiki titles are very long, so this
+wasn't an issue.  The content of the articles was fed in through the
+get_doc_display function in the template python file
+(BasicBrowser.py).  If your documents don't have titles, you shouldn't
+make the title the entire contents of the document; make up some kind
+of abbreviation instead: an id number, first 100 characters, etc..
+Does that answer your questions?
+ajbc

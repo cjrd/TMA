@@ -1,0 +1,6 @@
+Apologies if this has been talked about in the past (btw, I couldn't find a
+straightforward way to search the archives of this mailing list).
+Does anyone know if there is topic model dataset for wikipedia articles,
+that is freely available for others to download?
+Regards,
+Suhas

@@ -1,0 +1,9 @@
+I am curious as to whether empirically one can count on finding a maximum
+likelihood this way. It seems like for different enough document-term
+distributions, number of topics = number of documents would give the maximum
+likelihood, especially if one is learning asymmetric priors, which seems
+like it risks undermining the smoothing effect enough that this degeneracy
+could become common.
+Has anyone ever seen this method fail in a practical case to yield a maximum
+likelihood for a number of topics much less than the number of documents,
+and if so what were the circumstances? (I.e. what's "different enough"?)

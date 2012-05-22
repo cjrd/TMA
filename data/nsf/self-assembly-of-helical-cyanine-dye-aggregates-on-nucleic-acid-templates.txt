@@ -1,0 +1,19 @@
+              This project will explore the controlled aggregation of cyanine dyes on nucleic
+              acid nanotemplates.  The end result is the spontaneous assembly of chiral,
+              helical aggregates of cyanine dimers.  The dimensions of the aggregate are
+              controlled by varying the length of the DNA.  The properties of the aggregates
+              will be studied using a variety of spectroscopic techniques, including UV-vis
+              absorption, circular dichroism and fluorescence methods, and by stopped flow
+              spectroscopy.  Collaborative efforts will explore the possibilities of X-ray
+              crystallographic studies of these aggregates, as well as a theoretical
+              treatment of the electronic interactions among the cyanine dyes.
+
+With this
+              award, the Organic and Macromolecular Chemistry Program's Organic Synthesis
+              Program supports the research of Professor Bruce A. Armitage of Carnegie Mellon
+              University.  Professor Armitage will investigate the properties of certain dye
+              molecules to assemble on a template consisting of the DNA helix.  Thus
+              assembled, these aggregates can themselves serve as the template for the
+              generation of complex structures that retain some of the characteristics
+              initially imparted by the DNA.  The properties of these assemblies will be
+              studied as will the dynamics of their formation.

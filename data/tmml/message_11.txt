@@ -1,0 +1,7 @@
+Hello,
+I am fairly new to this business and I wondered whether the alpha could be more than 1.
+You see, I ran the example that David Blei posted (Associated Press ) on my machine, but somehow the result doesn't converge ( I began with alpha = 0.2)
+The alpha of the result is more than 1 (actually around 12) - and all topics are actually the same distribution. How could this happen?
+I actually use the code on a windows machine, which is why my "lgamma" function, is the "log_gamma" that was implemented in "utils.c" and not the one of "math.h". Perhaps it's not accurate enough..?
+Thank you,
+Efrat.

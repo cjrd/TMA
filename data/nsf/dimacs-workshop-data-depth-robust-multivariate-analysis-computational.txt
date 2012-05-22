@@ -1,0 +1,14 @@
+              Support is provided for the DIMACS workshop "Data depth: Robust multivariate
+              analysis, computational geometry and applications" at Rutgers University. The
+              workshop brings together theoretical and applied statisticians and computer
+              scientists to promote and further the use and development of depth functions in
+              nonparametric multivariate analysis. Data depth has applications in and
+              connections with a number of different research areas, such as aviation safety,
+              data compression, image analysis, data mining and analysis of genetic
+              data.
+
+The workshop addresses significant open conceptual issues and
+              establishes perspective on applications. It also sets primary directions for
+              further research, emphasizing the role of computational geometry in
+              understanding concepts of and developing algorithms for data depth.
+

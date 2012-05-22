@@ -1,0 +1,12 @@
+Hi Neal,
+The most common similarity measure between two distributions that I have
+known is the KL divergence. The other technique is the query likelihood
+approach.
+In the following document
+"Notes on the KL-divergence retrieval formula and
+Dirichlet prior smoothing"
+you will find why is one same as the other.
+and b, where each sequence adds up to 1, its easy to treat them as 1-d
+distribution and compute using the KL divergence formula
+Hope this helps,
+Shivani

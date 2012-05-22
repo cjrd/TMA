@@ -1,0 +1,72 @@
+              It is now widely recognized that multiple antennas will figure prominently
+in
+              future wireless communications systems, since they can significantly
+boost the
+              channel capacity, as well as lower the probability of error, of a
+wireless
+              communications link. However, before the above promise can be
+realized in a
+              practical communications system, there are several key
+research challenges
+              that must be addressed. This research studies several of
+the
+              information-theoretic, coding-theoretic, and signal processing
+challenges
+              encountered, as well as the impact of integrating their solutions
+into a
+              multi-user wireless network. A common thread encountered throughout
+is that
+              the tools developed, as well as the results obtained, have
+implications well
+              beyond multi-antenna communications--both in terms of the
+introduction of new
+              mathematical methods, as well as in terms of their
+applicability to more
+              general communication problems.
+
+The first research challenge addressed is
+              information-theoretic: the actual
+channel capacity of a multi-antenna wireless
+              link is known only under
+certain idealized conditions. For most realistic
+              conditions, the channel
+capacity is unknown and it is not clear how it depends
+              on the speed of the
+fading, the number of antennas, and the SNR. Nor is it
+              clear what the
+optimal transmission strategies should be and what the
+              performance of
+training-based schemes are. This research will focus on these
+              problems for
+continuously- and block-fading channels, where the analysis
+              appears to be
+tractable and where the theory of random matrices plays a major
+              role. The
+second challenge is that of designing space-time codes that deliver
+              on the
+high data rates promised by theory, have good error performance, and
+              that
+lend themselves to efficient encoding and decoding. Compared to
+              conventional
+codes, the added spatial dimension adds a whole new twist to the
+              code design
+problem, and a variety of information-theoretic, linear-algebraic,
+              and
+group-theoretic ideas play a prominent role. The signal processing
+              research
+challenge is to devise algorithms that are efficient, so that all the
+              processing can be done
+in real time. Recent work by the researcher has
+              analytically demonstrated
+that, for a wide range of rates and SNRs,
+              polynomial-time maximum-likelihood
+decoding of several classes of space-time
+              codes is possible. This research
+will fully pursue the implications of this
+              result, both in terms of the
+design of new algorithms and codes, as well as in
+              terms of understanding the
+tradeoffs between maximum-likelihood performance
+              and computational
+complexity.
+

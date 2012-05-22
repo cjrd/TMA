@@ -1,0 +1,3 @@
+hi all,
+Is there any tutorial that explain LDA in detailed? I mean simplified version. I read some papers but the background math is so heavy that I didn't get alot. can anybody introduce me some good tutorials?
+Best regards

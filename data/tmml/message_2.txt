@@ -1,0 +1,5 @@
+Matteo --
+Mark Steyvers has some Matlab code for LDA Gibbs sampling at:
+http://psiexp.ss.uci.edu/research/programs_data/toolbox.htm
+There are references there too.
+Dave Newman

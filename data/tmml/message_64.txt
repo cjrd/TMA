@@ -1,0 +1,9 @@
+It turns out that we did the exact computation (rather than the
+Gaussian approximation) to compute the free energy.  At convergence,
+the Gaussian approximation is very accurate, but on the trajectory it
+is not accurate all the way so the approximate free energy goes up and
+down.  We computed the exact free energy using the convolution trick
+as outlined in the appendix, which scales quadratically in the number
+of data points.  This can be reduced to scaling linearly (but with a
+large constant) by sparsifying the v_jk's by setting entries which are
+very small to zero.

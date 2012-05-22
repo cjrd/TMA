@@ -1,0 +1,6 @@
+it might a bug of numerical computing: such as log(0) and exp(a huge value).
+If it is not a bug of the program, the input value should be checked for
+log(x), when x can be zero. for e.g. if (x>0) return log(x); else return
+-1000;
+best
+chong

@@ -1,0 +1,9 @@
+Hello everyone,
+I have a rather silly question, but it bothers me, so I decided to ask..
+I am using David Blei's implementation of LDA which outputs a "betha file" (the topic/word probabilities file).
+For some reason all values in it are negative.
+My conception of probabilities is that they are always positive and that's why I don't understand why is that so.
+I know my results are correct since I ran the example David posted on his site and it turned out right.
+Any insights?
+Thank you,
+Efrat Safanov.

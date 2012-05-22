@@ -1,0 +1,11 @@
+Dear modellers,
+I was wondering about structured text. As you know, plenty abound and
+perhaps structure could be exploited (at least for specific
+applications).
+One example of this is Mimno's approach by modelling book chapters
+independently from each other and then merging them together.
+Is there a model that integrates structure as well as text? Does it make
+sense to have one? How would such model behave on short texts, i.e.
+papers structured as {intro, background, proposal, experiment,
+conclusions} and only 8 pages?
+Cheers,

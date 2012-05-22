@@ -1,0 +1,11 @@
+Hi Everybody,
+I have a model which is similar to standard LDA, except that the
+observations are not words. The observations are triples. In other words, I
+substitute each word with a triple, and I generate each member of a triple
+independently. Assume one triple is represented by (w', w'', w'''), and the
+vocabulary sizes for each member of it are |V1|, |V2|, and |V3|. If |V1| <<
+|V2| and |V1| << |V3|, when I sample z using collapsed gibbs sampling, will
+the conditional probability of p(current z | others) be dominated by any of
+these p(w'|z), p(w'',z), and p(w'''|z)? If it is biased, what should I do to
+circumvent this?
+Thanks a lot!

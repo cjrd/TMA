@@ -1,0 +1,9 @@
+              This project will compare and contrast the magnetospheres of the Earth, Jupiter
+              and its satellite, Ganymede.  The study will provide a theoretical framework
+              for understanding the roles that are played by the different sizes and rotation
+              rates of the three objects.  The project will involve analytic theory, data
+              analysis and numerical simulations using a magnetohydrodynamic (MHD) code.  One
+              of the important issues to be addressed is the role of magnetic flux tube
+              interchange, which has been observed in Jupiter's magnetosphere but may or may
+              not play a role in the Earth's magnetosphere.
+

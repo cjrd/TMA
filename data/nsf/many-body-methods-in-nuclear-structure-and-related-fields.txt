@@ -1,0 +1,51 @@
+              The central theme of this proposal is the development of 
+new methods for
+              approximately solving the Schroedinger
+equation for atomic nuclei and their
+              application to problems of
+contemporary importance in nuclear structure
+              physics. Methods 
+having their parentage in the nuclear shell model and in
+              
+mean-field theory will be considered, with the goal of developing
+              
+algorithms that significantly expand their ranges of applicability. 
+
+A
+              principal focus will be on the development of the
+Density Matrix
+              Renormalization Group (DMRG), a method 
+first introduced in the context of
+              quantum spin lattices. 
+Here we will focus on a new DMRG methodology that is
+              tailored 
+to such finite fermi systems as the atomic nucleus. We will also
+              
+consider its application to an important non-nuclear problem, the
+              
+two-dimensional Hubbard model, which is of relevance to systems 
+that
+              undergo transitions to superconductivity at high critical 
+temperatures. 
+
+A
+              second focus will be on the properties of
+weakly-bound nuclei far from
+              stability. A method recently 
+proposed for reliably solving the Hartree Fock
+              Bogolyubov 
+mean-field equations for very weakly-bound nuclei will be
+              
+developed further, so as to make it computationally more viable, 
+and will
+              then be applied systematically to both spherical and 
+axially-deformed nuclei
+              throughout the periodic table. Other 
+methods for solving the Hartree Fock
+              Bogolyubov equations in 
+weakly-bound systems will also be considered, to make
+              sure 
+that the spatial properties of such systems are being reliably
+              
+treated.
+

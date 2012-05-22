@@ -1,0 +1,19 @@
+              Abstract
+CTS-0089938
+P.-K. Yeung, Georgia Tech
+
+
+Fundamental insights into
+              the governing mechanisms for turbulent flows have typically been obtained using
+              advanced experimental methods.  More recently, "Direct Numerical Simulations
+              (DNS)" of the Navier-Stokes equations permit such insights to be derived from
+              computations.  The fundamental limitation for the latter is the number of grid
+              nodes that can be utilized.  This limitation effects the Reynolds number in
+              terms of the ratio of the largest to the smallest scales of the motion.
+
+The
+              PI will exploit, along with his student, a unique opportunity to carry out DNS
+              computations at significantly larger R-values than those previously available. 
+              It is expected that significant insights into scaling effects, Lagrangian
+              transport and scalar mixing will result.
+

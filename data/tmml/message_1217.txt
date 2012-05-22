@@ -1,0 +1,4 @@
+hi,
+how can I access to "Appendix A" of "Latent Dirichlet Allocation"? I need to
+understand the detailed parameter estimation proofs.
+thanks

@@ -1,0 +1,38 @@
+              P.I. Rognstad, Mark                           	                                 
+                                        Proposal: 0222468
+       Bowen, Andrew              
+                                                                                             
+                            0222432
+
+The PIs propose to upgrade the DSL-120 sonar mapping
+              system and resolve problems related to the integration of DSL-120A sensors and
+              capabilities. Primary tasks to be completed as part of this work are: 1)
+              Improvement of the signal to noise ratio of the system to enhance the ability
+              to extract useful phase-bathymetry data from the basic sonar system. 2) The PIs
+              will resolve the acoustic interference between the sidescan sonar and the
+              Doppler velocity log (DVL), which has prevented the simultaneous operation of
+              both systems. The inability to use the DVL results in sonar surveys with
+              degraded navigation data, particularly for surveys covering areas too large for
+              continuous transponder navigation. Attempts to synchronize the two sonars
+              during the upgrade were unsuccessful, due to long and variable length latency
+              in the response of the DVL to external triggering. 3) Bathymetric sonar
+              capabilities of the DSL-120A system will be improved to enhance resolution of
+              small-scale features closer to the resolving capabilities of the backscatter
+              imagery. Phase bathymetric sonars like the DSL-120A cannot distinguish acoustic
+              reflections from different parts of the seafloor that arrive at the sonar
+              transducers at the same time - that is, that are the same distance from the tow
+              vehicle. Over a flat bottom, this will be the case for that part of the
+              seafloor closest to the vehicle; in areas with high relief, this can happen in
+              any part of the mapped swath. Multibeam sonar, which combines signals from
+              dozens of hydrophones, can synthesize narrow beams that reject adjacent
+              reflections, giving greatly improved bathymetry in these situations. The
+              capability to operate the SM2000 with the DSL-120A sonar system will be added.
+              The multi-beam system will be synchronized with both DVL and sidescan/swath
+              bathymetry sonars, so all three acoustic sensors may be used simultaneously.
+              The proposed improvements will complete the full integration of all the
+              requisite sensors and capabilities of the DSL-120A sonar system. These
+              improvements will improve signal quality of the backscatter and
+              phase-bathymetric sonar, improve navigation through the use of the DVL, and
+              offer the potential for collection of SM2000 near-bottom multibeam data to
+              improve the quality of bathymetric data acquired using the DSL-120A sonar.
+

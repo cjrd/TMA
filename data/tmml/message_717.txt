@@ -1,0 +1,7 @@
+Dear List,
+has somebody a detailed description (description of the iteration loop)
+of a Gibbs sampler for HDP-LDA. For some reason i miss (or hardly
+understand) the K_new step. I do not know how to implement the test/step
+for testing if we sample from a new topic (remaining "free" probability
+value to assign).
+Thank you all

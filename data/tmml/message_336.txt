@@ -1,0 +1,5 @@
+I've done this. It's in my thesis (forthcoming; any day now...). For
+now, I've put a pdf containing the relevant details here:
+http://www.srcf.ucam.org/~hmw26/incremental_evaluation.pdf
+(I'm using it to approximate P(w^test | w^train), but the algorithm
+can easily be modified to output topics as it goes...)

@@ -1,0 +1,8 @@
+You get K as a byproduct. Ultimately, you are just interested in finding
+a bunch of useful topics, where you do not really care if you get 20
+topics or 21.
+Nevertheless, you should be aware that although you do not fix k, you
+have to tell HDP how coarse the topics are you want to get. So there
+still is some sort of hyperparameter....
+Dave, thanks for the clarification!
+Laura

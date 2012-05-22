@@ -1,0 +1,7 @@
+Hi,
+I am using corpus(named corpus), vocab(named vocabf) and settings(named
+settings-d4.txt) as parameters in command "./main gibbs corpus settings
+out" but it iis given segmentation fault.Can anyone tell how to rectify
+this?
+Above files are found in attachment.
+Thank you

@@ -1,0 +1,11 @@
+Ayan,
+Well, "instantly" seems like a pretty tall order. ;)    However, have
+you seen Hal Daume's Hierarchical Bayes Compiler?  It takes
+Latex-formatted probability distribution specifications as input, and
+outputs C code that you can then compile and run:
+http://www.cs.utah.edu/~hal/HBC/
+I haven't had immediate success with it myself, but then I didn't put
+much time into it.    I think it's definitely worth a look.
+Has anybody else tried it?  It seems like a concept that would just be
+incredible if it worked.
+Dave

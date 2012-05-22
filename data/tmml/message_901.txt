@@ -1,0 +1,10 @@
+Hi Liangjie,
+You should use the test set for topic fitting and not the training set
+(in conjunction with cross-validation). For the training set, you could
+get the lowest perplexity when number of topics equals the number of
+words in the vocabulary - a way of the model saying "hey! I have a
+perfect understanding of the training data, but I can't say much about
+the unseen data." This is a case of over-fitting in which case, the
+inference on test data will be very very poor.
+Pradipto
+Hong, Liangjie wrote:

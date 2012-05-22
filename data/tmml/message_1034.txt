@@ -1,0 +1,9 @@
+Hello everyone,
+I would kindly like to ask for your help regarding implementations of the Latent Dirichlet Allocation algorithm.
+I translated David Blei's LDA-C code to a streamed version (documents come sequentially as a stream, no random indexing, though multiple passes over the stream are allowed). It operates in constant memory w.r.t. the number of input documents. This algo is a part of the gensim library*, but there are no users really using it (only a few complaining), because it is so damn slow :-)
+Now this is not entirely the fault of NumPy (the code is only about 5x slower than the original LDA-C), but I need to implement a faster version, for LDA in gensim to be competitive with other approaches. For comparison, my streamed Latent Semantic Analysis (online SVD) implementation takes 2.5h on the English Wikipedia (3.2m documents), on a laptop.
+I had a look around and found tons of LDA implementations, but didn't find any documentation re. streaming, number of required passes over the dataset, memory requirements, divide-and-conquer parallelization etc. To not spend a month sifting through the programs and articles, can you please point me to some resources that discuss these practical issues? Do you know of a fast, streamed implementation that operates in constant memory in #training documents? How about coarse-grained parallel LDA? I ask for an implementation because I am not an expert in Bayesian modelling and understanding what it does from code is easier than understanding from articles for me.
+My goal is not necessarily to have a super fast state-of-the-art LDA, something that scales nicely and is easy to use for my users is more important.
+Thank you very much,
+Radim
+*gensim package: http://nlp.fi.muni.cz/projekty/gensim/

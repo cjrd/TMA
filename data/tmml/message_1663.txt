@@ -1,0 +1,16 @@
+distribution...
+order to describe what I >  want to achieve with Dirichet Distribution
+with a fixed number of dimensions... In
+Actually, the DP is the only somewhat conjugate way I know of handling
+a Dirichlet.  By that I mean, if the base distribution H is discrete and
+finite,
+then basically the DP and the Dirichlet are the same thing:
+DP(H,g) \equiv Dirichlet(gH)
+The parameter $g$ is called a "concentration" parameter for both
+because its basically an inverse variance.
+So use standard HDP methods to address hierarchical Dirichlets.
+We've done this for a few years in topic modelling,
+e.g.,   our papers in ECML-PKDD 2009, ECML-PKDD 2011
+The 2011 paper gives a better sampler for the HDP.
+Wray Buntine
+The information in this e-mail may be confidential and subject to legal professional privilege and/or copyright. National ICT Australia Limited accepts no liability for any damage caused by this email or its attachments.

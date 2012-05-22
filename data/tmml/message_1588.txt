@@ -1,0 +1,11 @@
+lda-c by itself doesn't deal with any input other than integers and
+colons, which are identical in basic Latin1 and UTF-8, so there
+shouldn't be any changes necessary. You'll need to be aware of
+character encodings when you create the input file. Any modern
+programming language should have no problem with unicode. No tricks or
+hacks should be necessary.
+In Mallet, you can import UTF-8 characters by specifying a regular
+expression that defines a token. This one works for most languages
+that break on whitespace:
+?bin/mallet import-file ... --token-regex '[\p{L}\p{M}]+' ...
+-David

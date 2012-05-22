@@ -1,0 +1,32 @@
+              The project deals with the study of ex-post efficient multi-object auctions when
+              there are a finite number of possibly heterogeneous goods and agents' values
+              are interdependent. The recent spurt of interest in the study of ex-post
+              efficient, multiple-object auctions is largely the result of large-scale
+              privatization of socially held assets by governments. In light of the influence
+              economic theory has had on the recent design of a number of these privatization
+              auctions, it is of some importance to understand which of the results from the
+              one-dimensional symmetric auction literature, on which economists base most of
+              their intuition, are sensitive to dimensionality, heterogeneity, and
+              interdependency. This is especially germane since the multi-object,
+              multi-dimensional case is by far the more common.
+
+Recent work by the PI in
+              collaboration with another researcher extended Vickrey's ex-post efficient
+              multiunit auction to environments with interdependent values.  (As a by-product
+              of this analysis they also established the ex-post efficiency of the recently
+              designed FCC auction.)  However, while the modified version of Vickrey's
+              auction is simple to play in principle, it requires the bidders to submit many
+              bids to the auctioneer. This is rather onerous from a practical point of view. 
+              An ascending version of the above auction that allowed simpler equilibrium
+              bidding behavior would be a significant practical advantage. The first project
+              described in the proposal outlines plans to explore this possibility.
+
+The
+              second part of the proposal outlines plans to further generalize the auction
+              environment.  As in Vickrey, the researcher's modified auction has so far been
+              one in which goods are homogeneous and bidders' demands are downward sloping. 
+              However, these assumptions are often too restrictive to describe some of the
+              more common environments.  The proposal describes plans to extend the modified
+              Vickrey auction to the case of heterogeneous goods and interdependent
+              valuations.
+

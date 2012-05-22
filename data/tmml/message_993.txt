@@ -1,0 +1,12 @@
+Hi Benyah
+It would be interesting to compare/integrate results to obtain cleaner data.
+Totals so far:
+number of internal citations: 1287
+documents with internal citations: 815
+documents cited internally: 591
+I've also added corpus documents citing non-NIPS papers of NIPS authors as
+additional data, which is another >20k relations between papers and people. But
+it all needs some further checks because of the amount of OCR noise contained in
+the raw texts.
+Best
+gregor

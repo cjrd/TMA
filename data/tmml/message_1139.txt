@@ -1,0 +1,12 @@
+I completely agree with David's comment, and can give some context.  I
+do a lot of topic modeling work of (e.g. NSF) grant proposals.  Even
+if I'm modeling a collection of 100,000 grants, a "useful" number
+of topics will be different for different users.
+For, say, the head of NSF, ~100 topics may be useful to understand
+broadly what is being funded.
+For, say, a researcher in microRNA, maybe ~1000 topics will be useful
+to tease apart the different facets of research related to microRNA.
+If you're not directly interested in topics themselves (and using them
+for some downstream task) you can certainly go ahead and learn the
+number of topics to optimize task performance.
+Dave

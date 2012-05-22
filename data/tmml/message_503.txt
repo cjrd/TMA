@@ -1,0 +1,13 @@
+Hi list,
+I'm trying to use the hlda-c code on Prof. Blei's page. But there are some
+strange experimental results. Is anybody here using the implementation and
+facing the similar problems?
+1. If using the MH_update method to update the hypermeter eta, no matter
+which value was set initially, it would be changed to the same value around
+0.5 at the highest-level and around 1.5 at other levels after a few
+iterations.
+The same thing happened on updating the GEM_MEAN, which was changed to
+around 0.27.
+2. The leaf-nodes always contain no terms.
+thank a lot
+dongyuan

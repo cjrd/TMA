@@ -1,0 +1,16 @@
+hi rahul,
+if you have other observations about the items (like text or sound
+features) then you may be able to adapt chong wang's algorithm in
+"collaborative topic modeling for recommending scientific articles."
+his algorithm works like matrix factorization when many users have
+rated an item; it relies more on the other observations (text, in our
+application) with sparsely rated items.
+the paper is here:
+http://www.cs.princeton.edu/~chongw/papers/WangBlei2011.pdf
+a demo and code are here:
+http://www.cs.princeton.edu/~chongw/citeulike
+(i realize you originally asked about the user rating profile model.
+however, i thought that you'd be interested in learning about this
+algorithm and code.)
+best
+dave

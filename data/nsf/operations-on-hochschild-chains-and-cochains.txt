@@ -1,0 +1,19 @@
+              The investigator and his colleagues are going to study operations on deformation
+              
+complexes of various algebraic structures: in particular, operations on
+              Hochschild 
+cochains and chains of an associative algebra, and the deformation
+              complex of 
+d-algebras. 
+
+The knowledge of operations on Hochschild (co)
+              chains should be useful for 
+Index theory on a (degenerate) Poisson manifold,
+              which is of great importance 
+for Poisson geometry. Also, the investigator is
+              trying to find a general simple 
+construction of an operad acting on a
+              deformation complex of a general algebraic 
+structure. This can be helpful in
+              studying deformations of such objects as 
+Hopf algebras.

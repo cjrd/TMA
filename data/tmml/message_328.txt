@@ -1,0 +1,9 @@
+Hi Min,
+I have this problem on an older Intel machine running Ubuntu Gutsy.
+Unfortunately I have not been able to solve it, but believe it does
+have to do with GSL. I have a newer Intel machine running Ubuntu Gutsy
+as well and have no problems running the CTM code on it. Both
+computers have identical GSL package installations. What is your
+setup? Does anyone know if this could somehow be hardware related?
+Best,
+-Corey

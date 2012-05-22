@@ -1,0 +1,287 @@
+
+We describe to believe propagation
+algorithm as passing message over cluster
+graph. But we left unspecified how that
+cluster graph would be constructed, and
+what properties it needs to satisfy to
+support reasonable message passing. So,
+let's remind ourselves what cluster graphs
+are. A cluster graph is an undirected
+graph whose nodes are clusters that
+involves subset of variables and edges
+involve a sepset Sij. Which is a
+subset of the, two clusters on the two end
+points. What are some properties that the
+cluster graph has to satisfy? The first
+property is one called family
+preservation, an obvious value. Where,
+remember that we need, given the set of
+factors Phi, we need to be able to assign
+each phi k to some cluster. C alpha k such
+that the fact such as the cluster can
+accommodate. The scope so it can
+accommodate Phi K, oops, accommodate.
+Well, in order for the cluster graph to
+allow this to be done, we need to have an
+appropriate cluster in the cluster graph.
+So this imposes a constraint on the
+cluster graph that says that for every
+factor phi k in my set of factors Phi, there
+exists some cluster, Ci, that, such that
+Ci accommodates phi k, which means that
+you can put phi k inside this cluster.
+That's the family preservation property.
+The second property's a little bit
+trickier to understand, it's called the
+running intersection property. The running
+intersection property, let's first read
+the definition and then understand what it
+says. It says that, let's assume that we
+have a pair of clusters, Ci and Cj, and a
+variable X that belongs to both of them.
+So, for example, we might have the
+variable X sitting here in C 7 and
+the variable X sitting here in C 5.
+This property says that there exists a,
+exists a unique path between Ci and Cj,
+for which all clusters and steps that's
+along the path contain X. What does that
+mean? It means that for example, should I
+choose this to be my unique path. It means
+that X needs to sit here, here and here.
+So there is a connecting path that
+involves X, and that path is along the
+entire route, and it involves, and that
+path is unique. So let's try and
+understand the intuition between both
+sides of this definition, the existence
+and the uniqueness. Imagine that I let's
+do the existence first, and imagine that
+for whatever reason I decide that there is
+not going to be a path over here. So there
+is no way for C7 to communicate to C3
+about the variable X. Well that means that
+we now have these two separate isolated
+communities each of which have some
+information about X and they can never
+talk to each other about X so they're never
+going to get agree about X there's never
+going to be any information transfer of
+these two, pieces of information. Well
+so that's not very good which is why we need
+that path to exist. This left the exist
+part. What about the unique part? The
+unique part is a little bit trickier to
+understand but let's but let's try and,
+and, provide some intuition for it. Let's
+imagine that I have two paths. That
+involve X. Well, so now we have to think
+about this message passing algorithm. So
+C3 can send a message to C5,
+with information about X. For example, I
+think X is taking the value one. I have a,
+I have a factor that suggests that X takes
+the value one. Well, C5, you know,
+integrates that with its own information,
+and sends it on to C2. Which sends it back
+to C3. And now C3 hears from C2 that,
+ew, X needs to take the value one. Huh,
+that reinforces it's beliefs that X needs
+to take the value one and so the
+probability goes up. It now goes back and
+sends that information on to C5 which
+sends it on to C2 which sends it back to
+C3 and then once probability in X taking
+the value one goes up. And so we have this
+sort of self reinforcing loop that's going
+to give rise to very extreme and very skewed
+probabilities in many examples. And so, a
+way of avoiding that, is to, or at least
+reducing that risk, is to, is to prevent
+These kinds of feedback loops. Now it's
+important to realize that by preventing
+these loops that only reduces as opposed
+to eliminates the problem. And
+specifically this is kind of a little bit
+of a digression but it's important to know,
+is that imagine, for example, we have X
+and Y that are very strongly correlated.
+So here we have, for example, X and Y. And
+here we have a path. That involves Y. Mm.
+So now, what's going to happen is that C3
+sends information to C5 about X. C5
+translates that to information about Y. Y
+should take the value one. That
+information about Y goes back to C3 and
+increases the probability of X taking the
+value one. Now, this is a little bit of a
+forward looking hint about some of the
+issues that we'll see with belief
+propagation later on. Which is that belief
+propagation does very poorly when we have
+strong correlations. And that's because of
+these feedback loops. So, the more
+skewed the probabilities in your graphical
+model, the harder time belief propagation
+has, in terms of the results that it gets.
+So with that digression, aside, let's go
+back to the running intersection property.
+And let's provide an alternative
+definition of the running intersection
+property, just to give ourselves some
+additional intuition. The running
+intersection property is equivalent to
+saying that, for any X. The set of
+clusters and sepsets that contain X form a
+tree. So for example if we have X here,
+here, here, here, here, and here We can
+see, that the set of a cluster is a subset
+that contain X form a tree. It has to be
+connected because of the existence of the
+path and it can't be a, a nontree because,
+because that will give us two different
+paths. So that's a different view of this.
+As you can think of each, variable
+inducing it's own little tree across which
+information about that variable flows in
+the graph. So now let's go back with that
+definition and consider some cluster
+graphs that we might adopt for this
+example that we've seen before. So here we
+have our five clusters, and let's check
+whether it satisfies the running
+intersection property. We've already done
+family preservation for a particular set
+of factors, so let's consider for example
+the variable B. And we can see that we
+have B here, here, here. Here. Here.
+Here. And Here. And we can see that that's
+a tree. Here's my tree. Note very
+carefully that B isn't here. If B were
+here, that wouldn't satisfy the running
+intersection property. That would be an
+illegal cluster graph. [inaudible] on a
+subsequent slide. Here is an illegal
+cluster graph. It violates the running
+intersection property. Why? Because here
+is B, and here is a bunch of other B's.
+And there's no way to connect cluster two
+to any of the others so this one violates
+the existence. This one which we just
+talked about violates the uniqueness.
+Because, here we have. The, all of the
+clusters and sepsets that involve B, and
+there's this nice little loop over here,
+that has, two paths between say, cluster
+one and cluster four. If we wanted to take
+the cluster graph, and still allow
+communication between B and C. So we want
+to have, for example, we want cluster one
+and cluster two to be able to, transmit to
+each other, information about how B and C
+are correlated with each other, which they
+can't do, in this graph over here. So, one
+way to do that, is to, have, we have
+eliminated in this case, this edge that we
+had over here that involved B, and now
+once again we have B. Seeing a tree in the
+graph. Now focused on B here but it's not
+difficult to convince yourselves that
+other that other nodes also satisfy, that
+we satisfy the running intersection
+property also with respect to other
+variables. So just as an example, here is
+the set of clusters and sepsets involved
+in D, and that too is a tree and, here is
+the one's involving E, and that too is a
+tree and so on. So and running
+intersection property needs to hold for
+every, for every one of the variables. How
+do we construct a cluster graph that has,
+has a desired properties? One very simple,
+And, in some ways, degenerate. But still,
+because of its simplicity, very often
+used, is a cluster graph called the bethe
+cluster graph. And that's a term from
+statistical physics, where people use this
+kind of approximation to energy functions,
+in, in some, in some calculations, in, in
+statistical physics. So, here we have, in
+the bethe cluster graph, we have two types
+of clusters. We have big clusters and
+little clusters. The big clusters, these
+are the big clusters. Correspond to
+factors. In Phi. So for each phi k we have
+a cluster factor cluster whose scope is
+exactly the scope of phi k. That's the big
+clusters. The little clusters correspond
+to individual variables. So for each Xi we
+have a cluster who's scope is just the
+single variable Xi itself. Now, we're
+going to connect Ck to Xi, exactly when Xi
+is a subset of Ck, is a member of Ck. So
+if we consider the set of factors that we
+had before, we can now produce a different
+cluster graph than the one that we had
+previously, this is a bethe cluster graph.
+Notice that we have these big clusters
+this are these four, sorry these five. And
+we have these little clusters
+corresponding to A, B, C, D, E and F. And
+we can see that we have an edge for
+example between the ABC cluster and the A
+cluster, the B cluster and the C cluster.
+And that's how messages are passed and you
+can see that this graph is degenerate in
+the sense that it only allows information
+about singletons to be passed and it
+loses, in every message passing step, any
+information about the correlation between
+variables. But nevertheless, it's simple
+to construct and it's guaranteed to
+satisfy the running intersection property.
+Why is that? So let's consider for
+example, all of the factors that involve
+the variable D. So here is, what are the
+clusters that involve the variable D?
+Well, there's this one. And then there's
+this that, that, those are where we have
+the sepsets, which I didn't mark and then
+these ones. And notice that it's a tree by
+definition because D doesn't appear on any
+other sepsets except these ones. And so,
+the tree is a start. It's the variable
+cluster plus the big factors that contain
+the variable. So v is, in this case, the
+three clusters that contain it. So to
+summarize. We have, we kno-, we, looked at
+the properties of the cluster graph, and
+we see that's there's two of them that it
+needs to satisfy. The first is family
+preservation, which allows the set of
+factors to be encoded. And the second is
+the running intersection property, which
+serves two purposes. The first is to
+connect all information about any single
+variable, so that it can all be
+transmitted through the graph. But without
+creating tight feedback loops that are
+going to give rise to the self
+reinforcement and highly inaccurate
+answers. Is the bethe cluster graph is
+often the first default that people use
+because it's easy. So the final is
+guaranteed to be correct. But richer
+cluster graph structures of the type that
+we talked about can offer very different
+and sometimes significantly better trade
+offs with respect to on the one hand the
+computational cost, and on the other hand
+which of course is you start is increasing
+the amount of the sizes of the messages
+that are passed that can grow more
+expensive but at the same time, allow us
+to improve. The preservation of the
+dependencies as messages are passed in the
+graph so that more information is actually
+kept and not lost in this message passing

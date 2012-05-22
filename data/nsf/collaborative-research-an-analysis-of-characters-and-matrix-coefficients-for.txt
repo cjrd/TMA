@@ -1,0 +1,16 @@
+              Abstract
+Przebinda
+
+The aim of this project is to study the characters and
+              matrix coefficients of the representations of the classical groups from the
+              view point of the theory of reductive dual pairs. In particular of interest are
+              formulas for the characters in terms of the natural moment maps, and the wave
+              front sets. Regarding the matrix coefficients, the central question is to
+              decide which absolutely integrable positive definite matrix coefficients have
+              positive integral, and corollaries regarding the preservation of unitarity
+              under Howe's correspondence.
+We shall apply the ideas sketched above to signal
+              processing. Specifically we are interested in the information compression and
+              denoising of signals which are well balanced in the time-frequency domain. 
+
+

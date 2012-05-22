@@ -1,0 +1,7 @@
+You might find the slides from some recent tutorials helpful:
+http://learning.eng.cam.ac.uk/zoubin/talks/uai05tutorial-b.pdf
+http://www.cs.berkeley.edu/~jordan/nips-tutorial05.ps
+http://videolectures.net/mlss07_teh_dp/
+Regards,
+Erik
+lykm wrote:

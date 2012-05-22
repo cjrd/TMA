@@ -1,0 +1,7 @@
+hi jake
+our goal was to infer a single tree that describes the collection.
+that is why the root node is fixed.  an alternative model, and one
+that is totally reasonable, is one where there are multiple root
+nodes.
+best
+dave

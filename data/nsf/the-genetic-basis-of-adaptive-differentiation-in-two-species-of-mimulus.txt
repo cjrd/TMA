@@ -1,0 +1,26 @@
+              0075660
+Bradshaw
+
+The genetic mechanism of plant adaptation to increasing
+              elevation, from sea level to 10,000 feet in the Sierra Nevada mountains, will
+              be studied using a combination of laboratory and field experiments.  Mimulus
+              cardinalis, a plant species adapted to long, hot summers at low elevation, has
+              been crossed with Mimulus lewisii, a closely-related species adapted to the
+              short, cool growing season found in high-elevation alpine meadows.  More than
+              50 years of research has shown that the offspring of crosses between these two
+              species differ in their ability to survive and grow at low, middle, and high
+              elevations.  This study will use DNA-based genetic maps of the Mimulus
+              chromosomes to identify the number of genes controlling survival, growth, and
+              reproduction at three historically important field stations (Stanford, Mather,
+              and Timberline) in central California.
+
+The gene pools of many closely
+              related species are kept separate by the geographic isolation resulting from
+              adaptation to different environments.  Adaptation is believed to be the
+              principal means by which biological diversity is created and maintained.  The
+              pace of adaptive evolution depends upon the number of genes that govern
+              adaptive traits such as tolerance of extreme temperatures or number of flowers
+              produced during the growing season.  With modern methods of molecular biology
+              and genome mapping, it is possible for the first time to estimate the number of
+              genes required for organisms to adapt to different natural environments.
+

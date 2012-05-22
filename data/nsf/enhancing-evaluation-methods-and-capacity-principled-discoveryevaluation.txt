@@ -1,0 +1,10 @@
+              This proposal outlines three lines of work to build evaluation capacity. The
+              first line of work involves applying the techniques of  "principled discovery"
+              to determine the complexities of contingent intervention effects using selected
+              EHR/STEM data sets. The second line of work is the design of a strategy for
+              evaluation portfolio management. The expected result is a guide for the
+              allocation of evaluation resources to different types of evaluation studies.
+              The third line of work is the development and institutionalization of effective
+              ways to report and disseminate key evaluation findings to the press at AEA
+              meetings. Collectively these three activities should contribute not only to
+              evaluation capacity, but also to research and evaluation in general.

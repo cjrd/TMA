@@ -1,0 +1,69 @@
+Ng, thanks for sending this around. Although at first glance it seems
+that the paper solves the inverse problem, they are actually guessing
+labels and see which of them matches the topics best. So it is sensible
+to have a closer look at this paper.
+The pointwise mutual criterion PMI(w,l|C) (see
+http://en.wikipedia.org/wiki/Pointwise_mutual_information) basically
+measures if the likelihood of w and l occuring together is higher than
+chance (please correct me if I am wrong with my intuition here)
+The PMI(w,l|C) builds on p(w,l|C).
+According to the product rule it is
+p(w,l|C)
+= p(w|l,C) * p(l|C)
+= p(w|l,C) 1/different labels  (*)
+~ number of times w occurs in l
+(where ~ is the proportional to sign)
+(*) Assuming that all labels are equally likely.
+I have to admit that I did not get the idea of the context collection C.
+The paper says: "One way to estimate a distribution p(w|l) is to include
+a context collection C to substitute p(w|l). This approximation is
+reasonable: Consider the scenario when a person is unfamiliar with the
+meaning of a phrase, he/she would look at the context of the phrase
+first, and then decide whether the phase is good to label a topic". I'd
+appreciate if someone would shed some light on this.
+If you ignore this context collection C, you are done after the first
+equation in sect 3.2.3, which is basically the KL divergence between the
+learned topic theta and the label of the topic l.
+The problem we discussed was about how to identify the learned topic
+theta_t that matches the human topic l=u_0 u_1 ... u_m  (given a a bag
+of keywords) best. For the KL divergence you can use a smoothed variant
+(e.g. symmetric Dirichlet smoothing) of
+p(w|l) ~ number of times w occurs in l + alpha
+where ~ is the proportional to sign, and alpha is a scalar representing
+the prior of the dirichlet distribution (e.g. alpha=1 or 0.1)
+So normalize it to sum to one to obtain the distribution ready to plug
+it into the KL.
+Note that p(w|l) is never 0 because of the smoothing, so everything is
+defined.
+Attention:
+This is a reasonable approach, if you want to penalize for all words
+that are not in the label, but have a high likelihood in the topic. To
+put it another way: if you want exactly the keywords of your ground
+truth to occur in the topic, but not any other words, this is the way to go.
+If you actually want new words to occur in your topic as well, I
+recommend to just check which topic generates your label l best. This
+works like this:
+If you want to know which of the unsupervisedly learned topics matches
+one of your predefined topics best. Assuming your predefined human
+topics are a collection of terms, or document parts, you want to check
+which of the learned topics has the highest likelihood of generating
+this term collection/set of document parts.
+Using the bag or words assumption that underlies LDA (**) that is
+p(topic | l) ~ \prod_{u in l} ( p(u| topic) * p(u) / p(word))
+where p(topic) can be estimated as 1/number of topics and
+p(word) is the empirical distribution of that word i.e.
+p(word) = number of occurrences of the word / all words in the corpus
+again, ~ refers to "is proportional to". Thus if you normalize p(topic |
+collection) to sum to one, you have a multinomial distribution of topics
+that match your keyword collection.
+Note, that words that do not occur in the label l, do not have an
+influence here.
+(**) if you have a different topic model, i.e. topical bigrams, you
+should adapt this equation according to the model
+If you are out of luck, and LDA learns topics that are orthorgonal to
+the topics you were looking for, you will see that p(topic | l) is
+nearly uniform. If you are lucky, the distribution will be 1.0 for
+exactly one topic, that is the one you are looking for.
+Cheers,
+Laura
+Ng Vinny wrote:

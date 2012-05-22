@@ -1,0 +1,9 @@
+Hello All,
+I joined this list today after reading David Blei's paper on Topic models.
+I want to apply this concept to video, for modelling different types of human activity.
+I have been able to extract spatio-temporal features in terms of 'visual words' which represents each video clip?as a distribution over these code words.
+Now I want to apply HDP to this dataset to build a generative model that captures the structure in each class of activity.
+My goal is for the model to be able to corectly classify an unseen data into one of the identified classes, and to detect an abnormal activity.
+Does anyone have suggestions on how I can go about this?
+I will be grateful.
+Toyin

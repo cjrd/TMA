@@ -1,0 +1,37 @@
+              In the establishment of infection, many mammalian and plant bacterial pathogens
+              produce effector molecules that are delivered to host cells.  Transport of
+              these effectors is accomplished through several different mechanisms.  For
+              example, bacterial Type III secretion systems channel effectors directly into
+              the host cell whereas bacterial Type I systems secrete effectors into the
+              extracellular environment. In many plant/pathogen interactions, host resistance
+              responses are initiated via intracellular receptors encoded by plant disease
+              resistance genes that recognize Type III secreted effector molecules encoded by
+              bacterial avirulence (avr) genes.  In contrast, the mechanisms by which plant
+              cell surface receptors respond to extracellular effectors are unknown. 
+Xa21
+              is a rice resistance gene encoding a presumed receptor kinase that confers
+              resistance to Xanthomonas oryzae pv. oryzae (Xoo) Philippine race 6, the causal
+              agent  of bacterial leaf blight, the most destructive bacterial disease of rice
+              in Asia and Africa. Dr. Ronald has shown that the presumed extracellular
+              leucine rich repeat domain of XA21 is responsible for specific recognition of
+              the avirulent strain Xoo Philippine race 6. Dr. Ronald has identified 6 Xoo
+              genes from this strain that are required for the avirulence function. Three of
+              these genes (xooA, xooB, xooC) encode proteins that share similarity with
+              components of Type I secretion systems of gram negative bacteria. 
+The
+              long-term goal of this proposal is to elucidate the relationship and function
+              of these six Xoo avirulence determinants, identify and characterize the
+              effector molecule and analyze the interaction between the effector and rice
+              receptor kinase XA21. 
+The Xa21/Xoo interaction is particularly advantageous
+              for these studies for several reasons. Xa21 is the only disease resistance gene
+              encoding a receptor kinase so far identified and likely recognizes an
+              extracellular effector. Xoo is genetically tractable and the genes encoding
+              Type I secretion systems are characterized. Finally, rice is a model for
+              studies of all cereals and therefore the expected results will have a broad
+              impact on understanding and controlling bacterial diseases of cereals.
+              Accomplishment of the proposed objectives is expected to lead to the first
+              detailed understanding of the roles of Type 1 secretion systems and sulfation
+              in determining host specificity of phytopathogenic bacteria. 
+ 
+

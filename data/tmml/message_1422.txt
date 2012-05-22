@@ -1,0 +1,7 @@
+Dear all,
+Recently, I read of a paper about Author-topic model: "Learning author-topic models from text corpora". In this paper, the algorithm of Markov chain Monte Carlo (MCMC) is used to learn the topic-word  and author-topic distributions from training data. With the topic-word (\Phi) and author-topic (\Theta) distributions of the training data, we can estimate the author and topic of the testing data. Now, I write down the following formulation to express the estimated author.
+author* = argmax P(\Theta,\Phi, W | author )
+W represents the words of the testing data.
+Is that right?
+Any help will be greatly appreciated.
+Wang Luo

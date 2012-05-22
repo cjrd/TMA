@@ -1,0 +1,9 @@
+Hi, can anyone tell me how to run the LDA program ? I am getting
+segmentation default. I was trying to run the LDA sample code using the
+example code.
+./lda est fixed 10 /usr/local/lda-c-dist/settings.txt /usr/local/ap/ap.dat
+seeded /usr/local/ap/
+I am getting error segmentation default. I am running this on sample dataset
+given by the site.
+Regards,
+Prasanna.

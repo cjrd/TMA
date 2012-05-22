@@ -1,0 +1,13 @@
+Dear Neal,
+Neal Parikh wrote:
+imposing an (absolute) ordering on topics seems not generally viable
+(such as by size (counts n_k) or by looking at high probabilities of
+specific terms (parameters phi_kt)). It may work under specific
+conditions for specific data sets, however.
+After measuring the dynamics of the latent variables z in several Gibbs
+sampling experiments on LDA and similar models, I can confirm Laura's
+experience that "label switching" never occured even before the Gibbs
+sampler has reached its target distribution (speaking of text corpora
+with W=10^5..10^7 words and "reasonable" initial parametrisations).
+To verify that topic indices remain unpermuted between samples, why not
+compare the topic-term distributions (phi_k = p(w|z=k)) between samples

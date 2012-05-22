@@ -1,0 +1,15 @@
+Hello Everyone,
+I'd like to understand how to estimate hyper-parameters \alpha, \beta if I
+use collapsed Gibbs sampler to do the LDA inference.
+For the variational inference, step 1:  a lower bound of the marginal
+distribution of a document p( \vec{w} | \alpha, \beta) is maximized to find
+the optimized \gamma and \phi;  step 2:  then fix \gamma and \phi with the
+optimized value, the same lower bound is maximized to find the optimized
+\alpha and \beta. Is my understanding correct?
+If I use Gibbs sampling for inference, I can plug in my estimation of the
+real \theta and \phi values of the LDA model into the  lower bound, and in
+step 2, do the same thing as in variational inference to find optimized
+\alpha, \beta. Is that correct? Or is there any other way to do the
+hyper-parameter estimation?
+Thanks,
+Sue

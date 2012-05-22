@@ -1,0 +1,8 @@
+You might be interested in these:
+Chun-Hou Zheng, De-Shuang Huang, Zhan-Li Sun, Michael R. Lyu, Tat-Ming
+Lok. Nonnegative independent component analysis based on minimizing
+mutual information technique. Neurocomputing 69 (2006) 878-883.
+J?rgen Schmidhuber, LEARNING FACTORIAL CODES BY PREDICTABILITY
+MINIMIZATION, Neural Computation, 4(6):863-879, 1992,
+http://www.idsia.ch/~juergen/factorial/ncfactorialrev.html
+2007/3/9, jerryzhu at cs.wisc.edu <jerryzhu at cs.wisc.edu>:

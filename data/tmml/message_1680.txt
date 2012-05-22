@@ -1,0 +1,12 @@
+Hi topic modelers,
+?We have packaged up the code for dynamic topic models and the
+document influence model, and it is available for download here:
+http://code.google.com/p/princeton-statistical-learning/downloads/detail?name=dtm_release.tar.gz&can=2&q=#makechanges
+The relevant citations for this software are:
+D. Blei and J. Lafferty. Dynamic topic models. In Proceedings of the
+23rd International Conference on Machine Learning, 2006.
+S. Gerrish and D. Blei.    A language-based approach to measuring
+scholarly impact. International Conference on Machine Learning, 2010.
+Looking forward to seeing applications of this package!
+Best regards,
+Sean Gerrish

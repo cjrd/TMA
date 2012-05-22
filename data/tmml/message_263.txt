@@ -1,0 +1,10 @@
+Hi David,
+That has been my experience with setting eta values as well, (in terms of
+number of branches). If such is the case, are you, or anyone else on this
+list, aware of a method of initializing the tree that might avoid the "giant
+branch" (tree trunk) scenario? It seems, from a reading of the original
+paper, that this outcome is not to be expected.
+Cheers,
+David
+PS I am also looking for an implementation of PAM that I could play around
+with -- is there one available?

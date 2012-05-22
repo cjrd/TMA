@@ -1,0 +1,391 @@
+
+We have previously shown that a graph
+structure encodes a set of independencies
+and that, that set of independencies then
+necessarily holds for every distribution
+that can be encoded as a Bayesian network
+over that graph. What we're going to talk
+about now is the question of how to take a
+distribution that has a certain set of
+independencies that, that it satisfies, and
+encode it within a graph structure. How
+well can we take that distribution and
+capture its independencies in the context
+of the graphical model. So first, let's
+understand what the independencies of a
+distribution are. So we're going to the
+finest notion of I(P) for distribution P,
+as the set of all independence statements.
+X is independent of Y, given Z. That
+hold for the distribution P. So one
+can write down, potentially, an
+exponentially large set of independencies.
+[inaudible], each of those is going to be
+either true in a given distribution P,
+or not. And what we're going to do is
+we're going to define I(P) to be the ones
+that are true in that distribution. Ok, so this
+is our independencies that hold in P. 
+And we've already seen that if P
+factorizes over a particular graph
+G, then, G is an I map for P, which means
+that every independence that holds in G,
+that is, is implied by the D separation
+statements, or the D separation properties in
+G, every such independence also holds in P.
+But that doesn't mean that the converse
+holds. That is, there can be
+independencies in the I(P) that are not
+members of I(G) . But are not
+encoded by the graph structure. So. Why
+does that matter? Because, if we have a
+graph that doesn't capture, some of the
+Independencies in P, then, it's
+unnecessarily complicated. And conversely
+the sparser the graph the more
+independencies it encodes than the sparser
+it is and therefore it has fewer
+parameters that we need to elicit or
+learn fewer edges also means that
+inference is more efficient and finally it
+means that the graph is intrinsically more
+informative about the properties of P. So
+when we write graph that capture as much
+of the properties, independence properties
+of B as possible. So what do we want in
+terms of sparsity? Something that is
+fairly basic that we might choose to
+require is what's called the a minimal
+IMAP. That is, we want an IMAP for the
+distribution P that at least doesn't have
+redundant edges. So for example, if we
+have a graph x. Y, where Y really doesn't
+depend on X in the sense that P of Y
+given, say, X zero in the CPD is equal to
+P of Y given X one, then we could remove
+this edge and still have something that
+was an iMAP for this distribution. And so
+this edge is now redundant, and so from
+our definition that would mean that this
+iMAP is not minimal because you can have
+an iMAP from which edges can be removed.
+But that might seem to be a reasonable
+strategy but it turns out that it's not
+sufficient in terms of insuring that out
+graph is as parse as it might be. So to
+understand why that's the case let's look
+at a distribution such as the corresponds
+to the example that we've seen before were
+the students grade G depends on these two
+variables I and V. So that in fact is a
+minimal iMAP for a distribution where d
+and I are independent and g depends on
+both of them. But it's [inaudible] this is
+not the only minimal iMAP for
+distribution. A different minimal iMAP is
+this one. Where we have and edge that goes
+from D to I, from D to G, and from G to I.
+Let's convince ourselves that in fact this
+is a minimal iMAP. Let's try and remove
+any one of those edges and see if we still
+get an iMAP for the original distribution.
+So if for example we try and remove this
+edge that would, that would correspond to
+a statement that D is independent of G
+which is certainly not the case in our
+original distribution. So that one doesn't
+work. What about the second one. If we try
+and remove the second edge from G to I
+that would correspond to a statement that
+D. [inaudible] that G is independent of I,
+given V, which is also not the case in our
+original distribution. What about the
+final edge, the one that doesn't
+correspond to an edge in our original
+network. This one. Invariable [inaudible]
+and that one seems most promising of the
+lot but if you remove that one it would
+correspond to the assumption that D is
+independent of I. [inaudible]. And that is
+exactly the dependence that is induced by
+inter-causal reasoning that we've seen
+before. So in fact, this is a minimal I
+Map. None of the edges can be reduced.
+There is a better minimal I Map, but this
+is a minimal I Map. So minimal I Maps are
+not necessarily the best tool for
+capturing structure in the distribution.
+What we'd really like is a perfect map. A
+perfect map is one where the independent
+season G exactly corresponds to the
+independent season P. So the G perfectly
+captures the independent season P. And
+sure enough if we could get that, that
+would be ideal. Unfortunately perfect maps
+are often hard to come by. So here's an
+example of one scenario that doesn't have
+a perfect map. This is of distribution p
+that is actually represented by the
+[inaudible] choice amount of network that
+we've seen before. So, one where we have
+[inaudible] interactions ab bc cd and ad.
+So we know that this. This distribution
+satisfies certain independencies, because
+of the Markov network property.
+Specifically we know that, a is
+independent of c, given b and d, because b
+and d separate a and c in the graph, and
+at the same time we know that b is
+independent of d, given a and c. So now
+that we, let's imagine that we have a
+distribution P that satisfies these
+independencies, so P satisfies. This
+theory of independencies and, and now
+let's try and quote those independencies
+using the Bayesian network as a perfect
+match. Let's try. One possible attempt
+would be to just rearrange the edges say
+this way. Is that an iMap for this
+distribution? Well, among other things one
+of the independencies implied by this
+graph would be that B is independent of D
+given A. And that's certainly not
+supported by the original distribution. So
+this in fact is not an iMap. So try a
+different way of organizing the edges.
+Though, for example. Here we have sure
+enough and this is, this is good that b
+and d. Are independent given [inaudible].
+And that's one of our independencies that
+we had before so it captures correctly
+that one. But, if, but, not all, but, it
+doesn't capture the but it also makes
+other independent assumptions that are not
+truly original distribution. For example,
+this A and C, are marginally independent.
+And, that's certainly not true in the
+original distribution. So once again, this
+is not, an I. Map. What is an iMAP for
+this distribution as a directed graph.
+Well, one possible iMAP for this
+distribution as directed graph. Here's
+several. Do this one. And, you can confirm
+that this distribution satisfies, that
+this graph implies that A is independent
+of C. Given B and D. And that's it in
+terms of independencies. And so this in
+fact is an iMap for the distribution
+because in this case I of D is a subset of
+I of P, which is this set over here. But
+it doesn't capture all of the
+independencies. It only captures one out
+of the two. So this is the distribution
+that does have a perfect map as a basing
+network. Let's come up, let's provide
+another example of an imperfect map. And
+in fact this is a this is a distribution
+that doesn't have an imperfect map as
+either a [inaudible] network or a
+[inaudible] network. And this is the
+famous example of the [inaudible] which is
+as we see a counter example to many, many
+things. Here we have two random variable
+x1 and x2 which were assuming are binary
+values and say... Each of them takes the
+value 01 with probability 50, 50. Y on the
+other hand is the exclusive or of. X1 and
+X2 which means that Y is equal to one.
+It's an only is, exactly one. Of x1 or x2,
+is equal to one. Okay, so let's talk
+about, this probability distribution p,
+looks like, here it is, we have that,
+others, four possible configurations, that
+have none zero probability, and, each of
+them, has equal probability of 0.25, so
+x1, x2, can be, either, zero, or, one,
+with probability 50, 50, and, here is the
+value of [inaudible] over here. But now
+let's think about other, so let's see some
+independent statements are true for this
+distributions. So most obviously looking
+at this graph we see that X1is marginally
+independent of X2. But as you close your
+eyes, on this part of this, of this, of
+the image. And just look at the right hand
+side. You'll see that really x one x two
+and y are really symmetrical in terms of
+their structure. So it's not difficult to
+verify that we also have the x one. In
+fact, some independents of y and x two is
+independent of y. And all three of these
+pair wise independencies hold in this
+distribution. And, so this is not in fact
+the, the, the graph on the left is not a
+perfect map for this distribution because
+their independency's the whole [inaudible]
+that are not visible in the graph. And in
+fact you can organize the nodes in this
+graph any which way and, but you cannot
+get all three of these independencies
+captured at the same time. Because the
+only way to do that would be to have X1,
+X2, and Y be separate variables. And of
+course that wouldn't be an IMAP for the
+distribution. How about basement says a
+perfect math? What about Marco is not work
+says a perfect math? Definition here is
+the same except that we've replaced G by
+eight, so a marco not work eight to a
+perfect math if the independency is
+incurred by H-R-I and exactly corresponds
+to the independencies in P, and we capture
+all possible distributions in terms of
+marco networks in perfect plan so share
+your all expecting, expecting your answer
+to be no, and sure hope that's true so
+here is the sample of the distribution
+that has. Because a perfect map in this
+case is a daisy. And that work [inaudible]
+is a markup network. So this is the famous
+V structure example in [inaudible]
+difficulty intelligence, great
+re-structure and let's think about what in
+the, what we need to encode as in terms of
+edges. For, cap, for being, an, an I. Map
+of this distribution. So clearly we need
+to introduce an edge between D and G and
+between I and G. Because it's certainly
+not the case that we can make D or G
+independent given I or vice versa. And so
+this would be the obvious I map for this
+distribution but this example if we choose
+this as, as a candidate I map it would
+imply among other things that D is
+independent of I given G. And that of
+course is exactly wrong because we know
+that when we condition on G, B is
+independent, D and I become de pendent and
+so the only iMAP. For this distribution is
+one that has all three edges, and that
+loses the independence we had over here,
+which is [inaudible] independents of I. So
+once again, there's no perfect map for
+this distribution as Markov network. The
+final question that we might ask ourselves
+is, the extent to which as, representation
+of a distribution is, in fact, unique. And
+so say that we could represent the
+distribution using some graphs, say, as a
+perfect map. Is that a unique
+representation? So, to understand that
+let's look first at the simplest example.
+One where we have two variables x and y.
+And here we have one graph that captures
+in this case no independent assumptions so
+I of G is equal to the empty set. G1 and
+here's G2. It looks the same except that
+the edges are inverted, the one edge is
+inverted. And, once again, this is a
+different graph that has exactly the same
+vacuous set of independencies. So we can
+see that here we have two distinct graphs
+that have the exact same of independent
+assumptions and because of that they can
+represent the exact. The exactly the same
+set. On distributions. Which in this case
+is all distributions over the variable X,
+Y. Now, [inaudible] general example,
+because, it's a fully connected graphs,
+but, it turns out to be not the case,
+there are many other situations, where,
+two distinct graphs, with edges going in
+different directions, represents, the
+exact set, same, same set of independent
+assumptions, so, for example, when we look
+at graphs, over three random variables, it
+turns out, that, of these four scenarios,
+one of those, is, represents the different
+set of independent assumptions, and all
+the others, but, all the others are the
+same. So, which is the odd man out? Which
+of these following graphs does not encode
+the same independence assumptions as the
+others? As I'm sure most of you realize,
+the answer here is the V-structure, which
+is one that we've seen before. So this one
+has the independence assumption X is
+independence of Z. Marginally, whereas
+these other three. Have the independent
+assumption that X. Is independent then Z.,
+then Y. So these three graphs. Again,
+represent the same set of independence
+assumptions, which is the set over here.
+And the [inaudible], they also can take
+any probability distribution that can be
+represented by one of these graphs, can
+also be represented by another, by the
+other. So the formal notion for this, the
+formal term for this notion is what's
+called I equivalence. Where two graphs of
+G1 and G2 over the same space are said to
+be I equivalent. If they make the exact
+same set of independence assumptions. And
+in the previous example we saw for example
+that x, y, z is I equivalent to say. Y
+being a parent of both X and Z, and. This
+third one over here, whereas the
+[inaudible] structure is not I equivalent.
+Now, why is I equivalence an important
+notion? It's important because it tells us
+that there are certain aspects of the
+graphical model that are unidentifiable.
+Which means that if we end up, for
+whatever reason, thinking that, say, this
+is the graph that represents our
+probability distribution, it could just as
+easily be this one, or that one. So
+without prior knowledge of some kind or
+another, for example that we prefer x to
+be apparent of y, there's no way for us to
+select among these, these different
+choices. And it turns out that this is not
+an exception, rather it's the rule. Most
+graphs have a large number of I
+equivalent, I equivalent variants. And
+that turns out to be a, a complicating
+factor, especially when we get to learning
+models from data. So in summary, we prefer
+to have graphs that capture as much of the
+structure in IFP as possible, because they
+are more compact. Therefore easier to
+learn and easier to inference with, and
+also provide us with more insight about
+the distribution. We talked about minimum
+and that's one option first [inaudible]
+graphs and we showed that, that's not a
+particularly good option because of my
+[inaudible] of capture, structure even if
+its present in the distribution and even
+if it is re-presentable, as a business, as
+a graphical. A better notion is a perfect
+knot which is great but there are many
+cases where perfect knot might not exist.
+And we've also seen that when we take a
+distribution that was naturally
+represented as a [inaudible], and tried to
+represent it as a Markov net, as a, we
+generally do not get a perfect map, we
+lose independencies and vice versa.
+Something that was naturally represented
+as a Markov net, you try to encode it as a
+[inaudible] net once again, you lose
+independencies. Specifically, when we go
+from a [inaudible] net to a Markov
+network, we lose the independencies in
+these structures. And when you go from a
+Markov network to a Bayesian network, we
+need to add edges that inside looks like
+the, A, B, C, D. Look, we had to add this
+edge in the middle. An edge typically
+called the triangling edge, because it
+turns the loop into a pair of triangles.

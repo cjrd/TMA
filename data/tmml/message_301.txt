@@ -1,0 +1,21 @@
+Dear list,
+I have a question about David Blei's implementation of LDA variational
+inference in lda-c. The code seems different from the algorithm in the
+LDA paper (Blei et al. 2003).
+According to the algorithm described in paper's Figure 6, the
+Dirichlet update is:
+\gamma^{t+1} = \alpha + \sum_{n=1}^N {\phi_n^{t+1}}.
+but in the lda-c, the procedure is coded like this (function lda_inference):
+for n = 1 to doc_length
+for i = 1 to topic_num
+update \phi_{ni} ...
+\gamma_i^{t+1} = \gamma_i^t + count[w_n] *
+(\phi_{ni} - \phi_{ni})
+This means the update of \gamma is:
+\gamma_i^{t+1} - \gamma_i^t = \sum_n {count-of-word_n *
+\phi_{ni}^{t+1} - \phi_{ni}^t}
+It is very different from the update in the paper. What is the reason
+of using this rather than the one in the paper, and how can this be
+correct?
+Thanks in advance and best regards,
+Chao

@@ -1,0 +1,22 @@
+No worries ,I should be pulling it from Subversion anyways if I want to play
+with it.  Thank you for reminding me.
+Somebody mentioned HBC.  It sounds awesome on paper and so I tried it out,
+learned enough Haskell to make it compile, and ran some examples, but it was
+difficult for me to map the solution (HBC) to the specific problem I care
+about (tissue*condition deconvolution with a hierarchical DP or additive
+logratio prior) so I gave up on that.  (This is also the reason I signed up
+for the mailing list)  In the process of building toy models in R, I
+stumbled on Whit Armstrong's CppBugs package, which some people on this list
+might also find interesting:
+https://github.com/armstrtw/CppBugs/
+One of the examples in Dirk's recent
+Rcpp<http://dirk.eddelbuettel.com/papers/googleOct2010.pdf> talk
+at Google was CppBugs, as here:
+http://www.mail-archive.com/rcpp-devel at lists.r-forge.r-project.org/msg00825.html
+I noticed that you were using Rcpp for the rtm package, and thought you
+might find this interesting.  So if it's new to anyone else, I can say with
+confidence that CppBugs works for me :-) and with the appropriate Boost &
+Armadillo libraries, it's pretty fast, too.  (I haven't verified that I'm
+linking everything to GotoBLAS2 all the time, but linking R against it
+helped speed up R matrix operations by about 10x)
+Thanks for your reply, I will pull from SVN next time before hacking on it!

@@ -1,0 +1,18 @@
+Dear all,
+I have some questions about the role of the parameters used in the settings file of Blei's implementation of hlda. This is my current knowledge (and lack of it!):
+DEPTH 4
+// The number of levels in the tree being learned
+ETA 1.0 0.5 0.25 0.125
+// I am not entirely sure, but I suspect this to be a prior on the distribution of words on a path through the tree. In this instance, for example, more words would be expected to be assigned to the root than to all the other nodes in the tree combined.
+GAM 0.5 0.5 0.5
+// This is the gamma used in the CRP; one value of gamma for each level in the tree. As I understand it, a small gamma for a level encourages fewer new branches at each node, while a large gamma encourages many branches (roughly speaking).
+GEM_MEAN 0.35
+GEM_SCALE 100
+SCALING_SHAPE 1.0
+SCALING_SCALE 0.5
+SAMPLE_ETA 0
+SAMPLE_GEM 0
+// These final 6 parameters I am more unsure about. By empirically adjusting the SCALING_* values, my tree seemed to become 'noisier' and 'cleaner', but it was hard to determine the exact effect they were having.
+Does anyone have any further knowledge of these parameters, or a reference they could point me to? In my application, I have a strong prior on the shape of tree I expect to see (e.g. a roughly symmetric tree, with ~4 nodes on level 1, and the nodes on level 2 evenly distributed between level 1 nodes), but I am unsure if I can translate these into the settings.txt options.
+Thanks,
+Michael

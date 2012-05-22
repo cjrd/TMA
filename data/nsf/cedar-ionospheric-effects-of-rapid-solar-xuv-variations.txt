@@ -1,0 +1,11 @@
+              The investigators will study the ionospheric response to short-term variations
+              in the solar spectrum; particularly those associated with solar flares.  Solar
+              radiation in the soft X-ray and extreme ultraviolet spectral regions is the
+              source of the non-auroral ionosphere.  Variations in the solar flux may perturb
+              the ionospheric morphology and behavior.  The study use theoretical models and
+              incoherent scatter radar measurements to investigate the effects on electron
+              density, ion composition, minor species concentrations, and airglow.  The
+              investigators will also use Faraday rotation measurements of very high
+              frequency signals from geostationary satellites to compare with models of the
+              seasonal and latitudinal asymmetries in total electron content during
+              ionospheric disturbances.

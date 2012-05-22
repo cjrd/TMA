@@ -1,0 +1,51 @@
+              ABSTRACT
+
+PI: Angelo Lucia 
+Institution: University of Rhode Island
+Proposal
+              Number: 0113091
+
+The aim of this research is to find all relevant solutions
+              and singular points to physical models by dynamically uncovering the essential
+              features of the terrain of the least-squares function.  The central idea comes
+              from finding intelligent ways of moving both up and down the landscape of the
+              least-squares function.  The foundation of the research rests on following
+              fundamental observations:
+Stationary points are smoothly connected under twice
+              continuous differentiability;
+Valleys, ridges, ledges, etc., provide a natural
+              and useful characterization of this 
+connectedness;
+Valleys, ridges, etc.,
+              can be characterized as a collection of constrained minima over a set of level
+              curves; and
+The natural flow of Newton-like vector fields tends to be along
+              these distinct features of the landscape.
+These observations and conjectures
+              are illustrated using both chemical engineering models and mathematical
+              benchmarks.
+
+The methodology based on exploiting these observations results
+              in algorithms called Global Terrain Algorithms (GTA) and consist of successive
+              sequences of downhill (i.e., equation-solving computations) and uphill
+              movements (i.e., predictor-corrector calculations).  Downhill movement to
+              either a singular point or solution is established using reliable,
+              norm-reducing (complex domain) trust region methods.  Uphill movement, on the
+              other hand, is necessarily to a singular point and uses uphill Newton-like
+              predictor steps combined with intermittent corrector steps defined in terms of
+              neighboring extrema in the gradient norm on the current level set for the
+              least-squares function.  Initial starting points are arbitrary while starting
+              points for subsequent subproblems defining movement from one stationary point
+              to another are along appropriately determined eigenvectors.  These eigenvectors
+              are calculated or approximated, provide knowledge about valleys, ridges,
+              ledges, etc., give good initiations for further downhill or uphill movement,
+              and can be considered a generalization of the eigendecomposition (or saddle
+              point theory) of Sridhar and Lucia.  Collisions with boundaries of the feasible
+              region and severed valleys and ridges are also considered.  As the
+              connectedness of stationary points unfolds during problem-solving, limited
+              connectedness is revealed and used to define the termination criterion for the
+              GTA.  Similar ideas are applicable to chemical process optimization be
+              replacing the least-squares function with some other objective function.
+
+
+

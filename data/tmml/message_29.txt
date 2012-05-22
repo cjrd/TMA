@@ -1,0 +1,32 @@
+Hello,
+I'm having trouble running lda-c, I'm trying under MinGW and MSys, data
+can't be read properly as the fscanf function doesn't work properly,
+resulting in an infinite loop.
+It looks like it can read the first integer on the first line of the
+file, the number of different words in the document (say, 723), but then
+it can't read any of the "word_id:word_count" structures. Then, it
+doesn't go to the next line, reading the first integer (723) again. Any
+suggestions on how could I fix this problem? Is it specific of MinGW,
+perhaps?
+I also have another question. I'm trying to do some inference - in fact,
+clustering and ordering for relevance to a user query - on a number of
+relatively short strings (6-20 different words each). Using the lda
+package from Daichi Mochihashi I was able to estimate a model with only
+18 topics, while I'm sure there are more in the data (the likelihood
+would converge early with more topics).
+In my opinion, these strings are clearly too short to estimate a model
+of their own from them. Before I considered LDA, I analyzed them using
+LSA, using a set of related - and much larger - documents to estimate
+the loadings matrix for the PCA. In fact, the short strings are
+descriptions of administrative procedures and the training documents are
+the laws on which these procedures are based. The vocabulary is some
+90-95% the same and results for LSA, though clearly not optimal, were
+quite good.
+Do you think that a similar procedure would be feasible with LDA? I'm
+going to estimate a model with 128 topics on the laws and then calculate
+gammas of the strings using that model: then, I'll try to cluster them.
+Any suggestions? I'm going to need a distance function for this.
+I know it's a lot of reading, especially for a first time poster, but I
+don't know where else could I ask. :)
+Best regards,
+Matteo Dimai

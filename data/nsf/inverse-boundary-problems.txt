@@ -1,0 +1,64 @@
+              The proposer plans to continue his work on inverse boundary problems. For
+the
+              case of Electrical Impedance Tomography (EIT) he plans to consider the
+problem
+              in which one makes electrical measurements only on part of the
+boundary. In
+              EIT he also plans to consider the case of conductivities
+having jump type
+              singularities as well as the identifiability problem for
+anisotropic
+              conductors. Another inverse boundary problem that the proposer
+plans to
+              consider is whether the geodesic distance (travel times) between
+points on the
+              boundary of a domain or Riemannian manifold with boundary,
+satisfying certain
+              conditions, determines uniquely the metric in the
+interior up to an isometry
+              which is the identity on the boundary. The
+third inverse problem is the
+              problem of Reflection Seismology. In
+particular the proposer plans to consider
+              the problem of seismic migration
+when caustics are present and the case in
+              which the Earth is modeled as an
+anisotropic elastic medium instead of an
+              acoustic medium.
+
+
+
+Inverse boundary problems are a class of problems in
+              which one seeks to
+determine the internal properties of a medium by performing
+              measurements
+along the boundary of the medium. These inverse problems arise in
+              many
+important physical situations, ranging from geophysics to medical
+              imaging
+to the non-destructive evaluation of materials. The proposer plans
+              to
+consider the case of Electrical Impedance Tomography (EIT).
+              The
+measurements in this case are voltage and current measurements from
+              which
+one attempts to infer the internal conductivity of the medium. EIT
+              has
+been proposed as a diagnostic tool in medicine since organs and
+              tissues
+have quite different conductivities. Another important inverse
+              boundary
+value problem arising in geophysics that the proposer plans to
+              consider is
+Reflection Seismology. In this case one attempts to determine
+              the
+substructure of the Earth by measuring the response at the
+              surface
+produced by impulses located also on the surface. One of the
+              main
+applications of this inverse problem is in locating
+              hydrocarbons.Other
+potential applications are to improving ultrasound and
+              sonar.
+
+

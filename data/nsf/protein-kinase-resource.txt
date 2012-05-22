@@ -1,0 +1,22 @@
+              The majority of biological databases today are broad, but shallow, covering
+              large amounts of material but in a relatively cursory way.  These are essential
+              resources as scientists use molecular biological techniques to develop a
+              catalog of the molecules founds in living cell.  Now, it is time to move beyond
+              simply cataloguing the molecules of  a cell toward the time for understanding
+              the dynamic interactions between molecules within a cell.  This level of
+              understanding requires a different kind of database, one that links together
+              sequence, genetics, structure and function to create a deeper resource.  The
+              existing Protein Kinase Resource (PKR, http://pkr.sdsc.edu) will be extended to
+              create a resource from which both novices and experts can learn about protein
+              kinases, an important family of enzymes that play roles in processes as diverse
+              as human disease and crop production.  From a technical standpoint, the
+              resource will integrate data from a variety of existing resources in ways not
+              previously achieved.  The integration at UCSD provides a location for
+              developing detailed and well defined application program interfaces (APIs) that
+              will allow these resources to interoperate.  It will deliver both content and
+              technological advances in the field of biological databases.  All data,
+              software and specifications will be publicly available.  Beyond students
+              involved in the research, workshops will provide instruction in community
+              annotation of kinases using the PKR and ways to adapt the database for other
+              uses.  Modules of the database and APIs will enable the utilization of this
+              work by other groups interested in other enzyme families.

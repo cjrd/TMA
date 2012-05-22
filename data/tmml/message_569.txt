@@ -1,0 +1,17 @@
+Hi.
+?? wrote:
+In short, phi is the probability that a given unique document-word pair
+is assigned topic k, i.e., phi is discrete with dimension K for every
+such pair. Gamma is the parameter of a the variational Dirichet
+distribution assumed for theta. The rule is that E{log theta_k} =
+digamma(gamma_k) - digamma(sum_k gamma_k) as described in the LDA paper
+where E is the expectation under Dirichlet(theta | gamma). Consequently
+you get theta by exp(E{log theta}).
+A good resource for this is Tom Minka's paper on estimating Dirichlet
+distributions. For the collapsed Gibbs sampler, this would be Eqs. 55
+for vector alpha (derivation in Appendix B) and Eq. 83 for the scalar
+case (you need to divide by K additionally). You run the update equation
+until values don't change any more. I'll update a primer on LDA on this
+shortly and can send it...
+try Hierarchical Dirichlet Processes...
+gregor

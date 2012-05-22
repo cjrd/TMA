@@ -1,0 +1,3 @@
+If it helps, there are some papers from Andrew McCallum's group that I
+found useful as examples of the use of domain-specific metrics for
+evaluating topic models. For example, "Joint Group and Topic Discovery

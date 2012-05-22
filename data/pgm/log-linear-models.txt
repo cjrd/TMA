@@ -1,0 +1,299 @@
+
+Local structure that doesn’t require full table representations
+is important in both directed and undirected models.
+How do we incorporate local structure into undirected models?
+The framework for that is called “log-linear models” for reasons that will be clear in just a moment.
+So
+Whereas, in the original representation of the unnormalized density
+we defined P tilde as the product of factors φi(Di),
+each [of] which is potentially a full table.
+Now we're going to shift that representation
+to something that uses a linear form
+(So here's a linear form)
+that is subsequently exponentiated,
+and that's why it's called log-linear—
+because the logarithm is a linear function.
+So what is this form over here?
+It's a linear function that has these things that are called “coefficients”
+and these things that are called “features”.
+Features, like factors, each have a scope which is a set of variables on which the feature depends.
+But different features can have the same scope.
+You can have multiple features all of which are over the same set of variables.
+Notice that each feature has just a single parameter wj that multiplies it.
+So, what does this give rise to?
+I mean if we have a log-linear model,
+we can push in the exponent through the summation,
+and that gives us something that is a product of exponential functions.
+You can think of each of these as effectively a little factor,
+but it’s a factor that only has a single parameter wj.
+Since this is a little bit abstract, so let’s look at an example.
+Specifically lets look at how we might represent a simple table factor as a log linear model.
+So here’s a param, here’s a factor φ, over two binary random variables X1 and X2.
+And so a full table factor would have four parameters: a00, a01, a10, and a11.
+So we can capture this model using a log linear model,
+using a set of such of features,
+using a set of these guys, which are indicator functions.
+So this is an indicator function.
+It takes one if X1 is zero and X2 is zero,
+and it takes zero otherwise.
+So this the general notion of an indicator function.
+It looks at the event—or constraint—inside the curly braces,
+and it returns a value of 0 or 1, depending on
+whether that event is true or not.
+And so, if we wanted to represent this factor as a log-linear model,
+We can see that we can simply sum up over all the four values of k and ℓ,
+which are either 0 or 1, each of them.
+So were summing up over all four entries here.
+And we have a parameter—or coefficient—w_kℓ which multiplies this feature.
+And so, we would have a summation of w_kℓ:
+of w00 only in the case where X1 is zero and X2 is zero.
+So we would have exp of negative w00 when X1=0 and X2=0,
+and we would have exp of negative w01 when
+X1=0 and X2=1, and so on and so forth.
+And it’s not difficult to convince ourselves that
+if we define w_kℓ to be the negative log of the corresponding entries in this table,
+then that gives us right back the factor that
+we defined to begin with.
+So this shows that this is a general representation,
+in the sense that we can take any factor
+and represent it as a log-linear model
+simply by including all of the appropriate features.
+But we don’t generally want to do that.
+Generally we want a much finer grain set of features.
+So let’s look at some of the examples of features that people use in practice.
+So here are the features used in a language model.
+This is a language model that we that we discussed previously.
+And here we have features that relate:
+First of all, let’s just remind ourselves [that] we have two sets of variables.
+We have the variables Y which represent the annotations for each word
+in the sequence corresponding to what category that corresponds to.
+So this is a person.
+This is the beginning of a person name.
+This is the continuation of a person name.
+The beginning of a location.
+The continuation of a location, and so on.
+As well as a bunch of words that are not:
+[i.e.,] none of person, location, organization.
+And they’re all labeled “other”.
+And so the value Y tells us for each word what
+category it belongs to,
+so that we’re trying to identify people, locations, and
+organizations in the sentence.
+We have another set of variables X,
+which are the actual words in the sentence.
+Now we can go ahead and define…
+We can use a full table representation that
+basically tries to relate each and every Y that has a feature,
+that has a full factor that looks at every possible word in the English language;
+but those are going to be very, very, expensive,
+and a very large number of parameters.
+And so we're going to define a feature that looks, for example, at f of
+say a particular Y_i, which is the label for the i’th word in the sentence,
+and X_i, being that i’th word.
+And that feature says, for example: Y_i equals person.
+It’s the indicator function for “Y_i = person and X_i is capitalized”.
+And so that feature doesn’t look at the individual words.
+It just looks at whether that word is capitalized.
+Now we have just the single parameter that looks just at capitalization,
+and parameterizes how important is capitalization for recognizing that something's a person.
+We could also have another feature.
+This is an alternative:
+This a different feature that can and could be part of the same model
+that says: Y_i is equal to location,
+Or, actually, I was little bit imprecise here—
+This might be beginning of person. This might be beginning of location.
+And X_i appears in some atlas.
+Now there is other things that appear in the atlas than locations,
+but if a word appears in the atlas,
+there is a much higher probability presumably that it’s actually a location
+and so we might have, again, [a] weight for this feature
+that indicates that maybe increases the probability in Y_i being labeled in this way.
+And so you can imagine that constructing a very rich set of features,
+all of which look at certain aspects of the word,
+and rather than enumerating all the possible words
+and giving a parameter to each and one of them.
+Let’s look at some other examples of feature-based models.
+So this is an example from statistical physics.
+It’s called the Ising model.
+And the Ising model is something that looks at pairs
+of variables.
+It’s a pairwise Markov network.
+And [it] looks the pairs of adjacent variables,
+and basically gives us a coefficient for their products.
+So now, this is a case where variables are in the end are binary,
+but not in the space {0, 1} but rather
+negative one and positive one.
+And so now, we have a model that's parametrized
+as features that are just the product of the values of the adjacent variables.
+Where might this come up?
+It comes up in the context, for example, of modeling the spins of electrons in a grid.
+So here you have a case where the electrons can rotate
+either along one direction or in the other direction
+so here is a bunch of the atoms that are marked with a blue arrow.
+You have one rotational axis,
+and the red arrow[s] are rotating in the opposite direction.
+And this basically says we have a term that
+[whose] probability distribution over the joint set of spins.
+(So this is the joint spins.)
+And the model, depends on whether adjacent
+atoms have the same spin or opposite spin.
+So notice that one times one is the same as negative one times negative one.
+So this really just looks at whether they have the same spin
+or different spins.
+And there is a parameter that looks at, you know, same or
+different.
+That's what this feature represents.
+And, depending on the value of this parameter over here,
+if the parameter goes one way,
+we're going to favor systems
+where the atoms spin in the same direction.
+And if it’s going in the opposite direction, you’re going to favor atoms that spin in the different direction.
+And those are called ferromagnetic and anti-ferromagnetic.
+Furthermore, you can define in these systems the notion of a temperature.
+So the temperature here says how strong is this connection.
+So notice that as T grows—as the temperature grows—the w_ij’s get divided by T.
+And they all kind of go towards zero,
+which means that the strength of the connection between
+adjacent atoms, effectively becomes almost moot,
+and they become almost decoupled from each other.
+On the other hand, as the temperature decreases,
+Then the effect of the interaction between the atoms becomes much more significant
+and they’re going to impose much stronger constraints on each other.
+And this is actually a model of a real physical system.
+I mean, this is real temperature, and real atoms, and so on.
+And sure enough, if you look at what happens to these models as a function of temperature,
+what we see over here is high temperature.
+This is high temperature
+and you can see that there is a lot of mixing between the two types of spin
+and this is low temperature
+and you can see that there is much stronger
+constraints in this configuration
+about the spins of adjacent atoms.
+Another kind of feature that's used very much in lots of practical applications
+is the notion of a metric, of a metric feature, an M.R.F.
+So what's a metric feature?
+This is something that comes up, mostly in cases
+where you have a bunch of random variables X_i that all take values in some joint label space of V.
+So, for example, they might all be binary.
+They all might take values one, two, three, four.
+And what we'd like to do is
+we have X_i and X_j that are connected to each other by an edge.
+We want X_ and X_j to take “similar” values.
+So in order to enforce the fact that X_i and X_j should take similar values
+we need a notion of similarity.
+And we're going to encode that using the distance function µ that takes two values, one for X_i and one for X_j’s,
+[that] says how close are they to each other.
+So what does the distance function need to be?
+Well, the distance function needs to satisfy the standard condition on a distance function or a metric.
+So first is reflexivity,
+which means that if the two variables take on the same value,
+then that distance better be zero.
+Oh I forgot to say that this. Sorry, this needs to be a non-negative function.
+Symmetry means that the distances are symetrical.
+So the distance between two values v1 and v2 are the same as the distance between v2 and v1.
+And finally is the triangle inequality, which says that the distance between v1 and v2
+(So here is v1)
+(Here is v2)
+and the distance between v1 and v2 is less than the distance between v1 and v3
+and then going to v2. So the standard triangle inequality.
+if a distance just satisfies these two conditions, it's called a semi metric.
+Otherwise, if it satisfies all three, it's called a metric.
+And both are actually used in practical applications.
+But how do we take this distance feature and put it in the context of an MRF?
+We have a feature that looks at two variables, X_i and X_j.
+And that feature is the distance between X_i and X_j.
+And now, we put it together by multiplying that with a coefficient, w_ij,
+such that w_ij has to be greater than zero.
+So that we want the metric MRF
+[to have] the effect  that
+the lower the distance, the higher this is,
+because of the negative coefficient, which means that higher the probability. Okay?
+So, the more pairs you have that are close to each other
+and the closer they are to each other the higher
+the probability of the overall configuration.
+Which is exactly what we wanted to have happen.
+So, conversely, if you have values that are far from
+each other in the distance metric
+the lower the probability in the model.
+So, here are some examples of metric MRF’s.
+So one: The simplest possible metric MRF
+is one that gives [a] distance of zero when the two classes are equal to each other
+and [a] distance of one everywhere else.
+So now, you know, this is just like a step function.
+And, this gives rise to a potential that looks like this.
+So we have 0’s on the diagonal.
+So we get a bump in the probability when the two adjacent variables take on the same label
+and otherwise we get a reduction in the probability.
+But it doesn’t matter what particular value they take.
+That’s one example of a simple metric.
+A somewhat more expressive example might come up when the values V are actually numerical values.
+In which case you can look at maybe the difference between the miracle values.
+So, v_k minus v_l.
+And you want, and when v_k is equal to v_l, the distance is zero,
+and then you have a linear function that increases the
+distance as the distance between v_k and v_l grows.
+So, this is the absolute value of v_k minus v_l.
+A more interesting notion that comes up a lot in
+practice is:
+we don’t want to penalize arbitrarily things that are far way from each other in label space.
+So this is what is called a truncated linear penalty.
+And you can see that beyond a certain threshold,
+the penalty just becomes constant, so it plateaus.
+So that there is a penalty, but it doesn’t keep increasing over as the labels get further from each other
+One example where metric MRF’s are used is when we’re doing image segmentation.
+And here we tend to favor segmentations where adjacent superpixels…
+(These are adjacent superpixels.)
+And we want them to take the same class.
+And so here we have no penalty when the superpixels take the same class
+and we have some penalty when they take different classes.
+And this is actually a very common, albeit simple, model for
+image segmentation.
+Let’s look at a different MRF, also in the context of
+computer vision.
+This is an MRF that’s used for image denoising.
+So here we have a noisy version of a real image that looks like this.
+So this is, you can see this kind of, white noise overlayed on top of the image.
+And what we’d like to do, is we’d like to get a cleaned-up version of the image.
+So here we have, a set of variables, X, that correspond to the noisy pixels.
+And we have a set of variables, Y, that corresponds to the cleaned pixels.
+And we'd like to have a probabilistic model that relates X and Y.
+And what we’re going to do is we’d like, so, intuiti—, I mean,
+so you’d like to have two effects on the pixels Y:
+First, you'd like Y_i to be close to X_i.
+But if you just do that, then you're just going to stick with
+the original image.
+So what is the main constraint that we can employ on the image in order to clean it up
+is the fact that adjacent pixels tend to have the same value.
+So in this case what we’re going to do is we’re going to model, we’re going to constrain the image
+so that we’re going to constrain the Y_i’s to try and make Y_i close to its neighbors.
+And the further away it is, the bigger the penalty.
+And that's a metric MRF.
+Now we could use just a linear penalty,
+but that’s going to be a very fragile model,
+because, now obviously the right answer isn't the model
+where all pixels are equal to each other
+in their actual intensity value because that would be just a single, you know, grayish-looking image.
+So what you like is that you would like to let one pixel depart from its adjacent pixel
+if it’s getting close in a different direction either by its own observation or by other adjacent pixels.
+And so the right model to use here is actually the truncated linear model
+and that one is [the] one that’s commonly used
+and is very successful for doing image denoising.
+Interesting, almost exactly the same idea is used in the context of stereo reconstruction.
+There, the values that you’d like to infer, the Y_i’s,
+are the depth disparity for a given pixel in the image—how deep it is.
+And here also we have spacial continuity.
+We like the depth of one pixel to be close to the depth of an adjacent pixel.
+But once again we don’t want to enforce this too strongly
+because you do have depth disparity in the image
+and so eventually you'd like things to be allowed to break away from each other.
+And so once again, one typically uses some kind of truncated linear model
+for doing this stereo construction,
+often augmented by other little tricks.
+So, for example, here we have the actual pixel appearance,
+for example, the color and texture.
+And if the color and texture are very similar to each other,
+you might want to have the stronger constraint on similarity.
+Versus: if the color and texture of the adjacent pixels are
+very different from each other,
+they may be more likely to belong to different objects
+and you don’t want to enforce quite as strong of a similarity constraint.

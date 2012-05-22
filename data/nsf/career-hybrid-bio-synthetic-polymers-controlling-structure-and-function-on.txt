@@ -1,0 +1,42 @@
+              Controlling and manipulating molecular building blocks on a nanometer scale is
+              the central challenge of the emerging field of nanotechnology.  Nature
+              accomplishes this task by synthesizing numerous exact copies of high molecular
+              weight protein molecules, with folding and function on nanometer scale encoded
+              in the primary sequence of their amino acid monomers.  Thus, the cellular
+              apparatus of protein synthesis is uniquely suited for making giant molecules
+              with properties controlled on a nanometer scales.  However, natural materials
+              also have many shortcomings, both in terms of the available chemical building
+              blocks, as well as the limited flexibility of the linear, step-wise protein
+              biosynthesis.  Thus, combination of the precise natural biosynthetic process
+              with favorable attributes of diverse unnatural synthetic blocks could be used
+              to create materials with properties impossible to obtain with purely synthetic
+              or natural synthons.  The PI propses a research program aimed at exploring the
+              synthesis and applications of novel materials consisting of genetically
+              engineered polypeptides (protein polymers) conjugated with synthetic
+              macromolecular building blocks: dendrons and/or conventional polymers.  Two
+              specific aims will be addressed in the proposed research: (1) development of a
+              synthetic route towards monodisperse cylindrical molecules with nanometer-scale
+              length and diameter, and controlled distribution of polar and apolar surface
+              chemistries, that can be used as building blocks for thin films and monolayers
+              with nanoscale molecular ordering; (2) synthesis and processing of composites
+              consisting of ordered, nanometer-sized polypeptide blocks dispersed in a
+              synthetic polymer matrix, that will have high mechanical strength and toughness
+              comparable to or better than those of the natural dragline spider silk
+              fibers.
+%%%
+The PI will complement his interdisciplinary research effort with
+              a teaching program designed to integrate the biology and materials science
+              education.  The PI's ultimate aim is to educate the next generation of
+              sscientists and engeineers capable of working at the interface between the two
+              disciplines.  This will be realized by designing research projects at the
+              interface between biology and polymers science and suitable for both
+              undergraduate and graduate research.  Furthermore, the PI will develop three
+              new undergraduate materials science classes that will introduce concepts and
+              techniques of life sciences to engineering students in the context of
+              biomaterials.  Ultimately, the proposed research and training program will
+              facilitate the flow of ideas and techniques between the two disciplines.  This
+              will then lead to the discovery of new methods for synthesis of materials with
+              diversity of functional properties approaching those of natural biopolymers,
+              and having stability and processing characteristics suitable for application in
+              many areas of nanoscale science and engineering.
+

@@ -1,0 +1,4 @@
+Here is the url:
+http://clair.si.umich.edu/clair/anthology/index.cgi
+The downloadable version is here:
+http://clair.si.umich.edu/clair/aan/downloads.cgi?package=aanrelease2009.tar.gz

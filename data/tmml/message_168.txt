@@ -1,0 +1,14 @@
+dear yangqiu,
+thanks for your question.
+the complexity of mean-field variational inference is actually
+O(NKV).  the reason is that, in a document, we need not compute
+posterior multinomials for each instance of each term but only once
+for each unique term in that document.  in the LDA paper, we did not
+write things down that way to make the math simpler.  (though, we
+should have mentioned this speed-up.)
+if you'll look at the LDA-C code, which is on my web-site, you'll see
+that we only need to iterate through the unique terms of each document
+for each iteration of variational inference.
+i hope that this helps.
+best,
+dave

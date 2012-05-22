@@ -1,0 +1,39 @@
+              Professor Frantisek Turecek, of the Department of Chemistry at the University of
+              Washington, is supported by the Organic and Macromolecular Chemistry Program
+              for his research on transient intermediates of chemical reactions in the gas
+              phase. The objectives of the proposed research are to (1) generate in the gas
+              phase elusive and highly reactive radicals relevant to the high-energy
+              chemistry of peptides, nucleic acids, and organometallic compounds, (2)
+              investigate the stabilities, dissociation kinetics, and photoexcitation of the
+              transient species, and (3) use high-level quantum chemistry calculations
+              combined with RRKM theory to obtain relative, dissociation, and activation
+              energies for the transient intermediates and gauge the dissociation kinetics.
+              The basic experimental method is neutralization-reionization mass spectrometry
+              (NRMS), using a "non-chemical" means to generate transient species. In NRMS the
+              short interaction time between ion and target results in maintaining both bond
+              connectivity and geometry in the nascent neutral species generated. New methods
+              are proposed to extend the NRMS methodologies to study transient intermediates
+              from polar compounds and allow for measurements of fast dissociations. The
+              potential impact of these studies is in providing new insights into the complex
+              chemistries of highly reactive polyatomic species that are formed transiently
+              by high-energy processes. These studies, complemented by computational
+              analyses, address the stabilities and reactivity of these transient
+              intermediates, shedding light on the fundamental events that occur during
+              high-energy processes.
+
+The reaction of atmospheric oxygen with molecules
+              containing sulfur occurs on a scale of one million tons per year globally
+              making it of considerable environmental importance. With the support of the
+              Organic and Macromolecular Chemistry Program Professor Frantisek Turecek will
+              generate and study in the laboratory the many products from these and related
+              reactions. In addition to studying these smaller molecules that are of great
+              significance to the environment and sustaining life on this planet, Professor
+              Turecek's research focuses on larger molecular systems relevant to nucleic
+              bases. Radicals derived from nucleic bases are presumed to occur as short
+              lifetime species that can cause the modification of RNA and DNA, especially in
+              radiation damage caused by exposure to sunlight, background radiation, or other
+              high-energy processes. Characterization of transient intermediates represents a
+              formidable challenge to the experimental and theoretical methods of chemistry.
+              This inquiry into the processes and dynamics of transient intermediates has the
+              potential for practical usefulness in peptide sequencing.
+

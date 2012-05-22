@@ -1,0 +1,17 @@
+Hi,
+In general, the variational EM to LDA, which is an "EM" algorithm, is a
+solution to Maximum Likelihood problem.
+Gibbs sampling to LDA, is a typical MCMC method for bayesian inference.
+The following paper talks about some advatanges of using sampling vs EM on
+page 3.
+T. Griffiths and M. Steyvers. A probabilistic approach to semantic
+representation. In Proceedings of the 24th Annual Conference of the
+Cognitive Science Society, 2002.
+Additionally, with Gibss sampling, we can approximate the posterior
+probability as tight as we want, if we have the time.
+The vEM algorithm can be relative fast to converge, and easy to monitor the
+converge (It has a loss function, Maximum likelihood).
+There are also some other disadvantages of EM algorithm, you can refer to
+some EM papers.
+Best
+Chong

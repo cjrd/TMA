@@ -1,0 +1,13 @@
+Hi, guys,
+I have two questions for your help in the routine of lda_inference() in
+Prof Blei's LDA c codes.
+(1) In this routine, there is a sentence: var_gamma[k] =var_gamma[k] +
+doc->counts[n]*(phi[n][k] - oldphi[k]);
+Does it correspond to line (8) in Figure 6 or Equation (8)? Can
+anyone give me some explanation on this C sentence?
+(2) Which equation in Blei's JMLR paper is related to the routine
+"compute_likelihood()" in the LDA c codes?
+Thanks in advance.
+Regards
+Miaolong
+Institute for Infocomm Research disclaimer:  "This email is confidential and may be privileged. If you are not the intended recipient, please delete it and notify us immediately. Please do not copy or use it for any purpose, or disclose its contents to any other person. Thank you."

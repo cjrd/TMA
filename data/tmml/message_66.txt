@@ -1,0 +1,37 @@
+hi topic models list,
+i think that collapsed variational inference (CVI) is almost
+equivalent to uncollapsed variational inference, with the updates for
+the dirichlet parameters built into the objective function and
+optimized with respect to the per-word multinomials (which i call
+\phi_i).
+take equation 15 from the appendix of "latent dirichlet
+allocation" (JMLR) and set
+\gamma = \alpha + \sum \phi.
+this really simplifies things.  now, approximate the log gamma
+function with a first-order taylor approximation around alpha + \sum_
+{j \neq i} phi_{j} and take derivatives w/r/t \phi_i.  you'll obtain
+an update for \phi_i that looks like this:
+\phi_i \propto \exp { \Psi(\alpha + \sum_{j \neq i} \phi_j) + \log
+\beta_{w_i} }
+the difference between this optimization and CVI is that this update
+for \phi_i involves the digamma function (\Psi) rather than the log
+minus the variance (as in the teh et al. paper).
+but, notice the relationship between digamma and log.  log is an
+upper bound on the digamma function that gets tighter and tighter as
+x goes to infinity.  (see the attached plots.)  teh et al's equation
+17 looks like an approximation to the digamma function that gets
+closer to log as its argument gets bigger.
+practically, it may be that computing logs and variances is faster
+than digamma functions.  and, i think that non-collapsed variational
+inference will still be faster because the digamma function only
+needs to be computed at the end of each iteration through words.
+but, as the CVI paper clearly shows, this comes at an accuracy cost.
+some remaining questions:
+1. is the uncollapsed variational bound evaluated at the CVI solution
+better?  i suspect that it is.
+2. how do teh et al get from eq 14 to 15 using the gamma identity?
+(i'm sure i'm missing something easy...)  i still believe eq 15
+because of eq 8 and the usual arguments about variational inference
+in exponential families.
+best,
+dave

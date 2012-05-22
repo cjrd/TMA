@@ -1,0 +1,3 @@
+Dear topic-model experimenters,
+when applying perplexity to evaluate topics of LDA or similar topic
+models, there seems a bias towards large topic counts.

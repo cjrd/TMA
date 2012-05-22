@@ -1,0 +1,13 @@
+Maybe I'm not the most suitable to reply to this email but here goes
+nothing.
+The alpha parameter determines how dominant a topic is going to be in
+the document. A low value of alpha (i.e. 0.05) will make a topic (or
+two) more predominant in the document whereas a larger value will give
+power to more topics. This is due to the fact that a Dir(.) with a low
+value results in a very spiky multinomial (please someone correct me).
+As for the value of k (the number of topics), a large value will result
+in very 'specific' topics (or picking up just strange combinations of
+terms) whereas a low value will results in too broad topics (the most
+common terms in general being at the top of each topic).
+Now, to answer your question: it depends on what your problem is :)
+I hope it help,

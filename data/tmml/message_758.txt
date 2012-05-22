@@ -1,0 +1,10 @@
+My solution of choice has been Inkscape http://inkscape.org/
+Pros:
+-free!
+-vector graphics
+-textext plugin that lets you embed LaTeX snippets in the diagram
+Cons (?):
+-I don?t know if you can (easily) manipulate plots programmatically
+Example output (converted to *.png):
+http://pages.cs.wisc.edu/~andrzeje/research/lda.png
+-Dave

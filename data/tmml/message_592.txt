@@ -1,0 +1,11 @@
+I would like to get pointers to papers/references/tech reports, that address
+comparison of various language models for IR purposes
+The comparison is in terms of
+Training - Time and Space
+Storage - To store parameters
+Inference - for an unseen document - Time and Space
+Scalability - Time taken for incremental update
+I thank everyone in advance for your help.
+Regards,
+Shivani Rao
+Graduate Student Purdue University

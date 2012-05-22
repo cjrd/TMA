@@ -1,0 +1,11 @@
+in the continuing story of naming issues and topic modeling,
+hierarchical latent dirichlet allocation and the hierarchical
+dirichlet process are different models (though related).
+hierarchical LDA uses "hierarchical" to indicate a tree of topics at
+different levels of abstraction; the hierarchical DP uses
+"hierarchical" to indicate multiple levels of random variables in a
+bayesian hierarchical model.
+laura was (correctly) pointing you to the HDP.  i think you'll want to
+use yee whye's code.
+best
+dave

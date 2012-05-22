@@ -1,0 +1,23 @@
+              This project is addressing the need to improve the mathematics learning
+              environment in two-year colleges by generating increased student enthusiasm in
+              the exploration and applications of mathematics and by attracting more students
+              to science, mathematics, engineering, and technology (SMET) fields of study.
+              The overall project goal is to provide faculty with a complete package of
+              information and materials for establishing and conducting an interdisciplinary
+              course for the study of mathematics. The package includes (a) ten laboratory
+              exercises, each having a technology problem, a bibliotechnology research
+              exercise, a method to develop the mathematics tools required to solve the
+              problem, a model portfolio, and a thesis defense; (b) initiation of a marketing
+              plan; and (c) initiation of a management plan. Means to accomplish the project
+              objectives involve in-kind support from the American Mathematical Association
+              of Two-Year Colleges (AMATYC), Texas Instruments, and Capital Community
+              College. Twenty AMATYC faculty members have been selected to produce the ten
+              laboratories.
+
+Project outcomes include a laboratory, marketing, and
+              management plan, all of which are being compiled into The Math Works Resource
+              Book, to be published in hard copy and via the Internet. This project is
+              offering a multitude of professional enhancement opportunities to those who
+              develop or use the products developed through this project.
+	 
+

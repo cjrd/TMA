@@ -1,0 +1,4 @@
+David MacKay's book, "Information Theory, Inference and Learning
+Algorithms," is also pretty useful and has the advantage of being
+freely available online:
+http://www.inference.phy.cam.ac.uk/mackay/itila/

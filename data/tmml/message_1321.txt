@@ -1,0 +1,20 @@
+I found this strange error in R-lda package, while doing query inference.
+For a given LDAmodel (on the corpus), dicitonary of words = myDict,  I
+extract the following
+topics <- LDAmodel$topics * 1000000
+storage.mode(topics) <-"integer"   # done to ensure that the matrix is an
+integer matrix
+topic_sums <- LDAmodel$topicsums  *1000000
+storage.mode(topic_sums) <-"integer" # done to ensure that the matrix is an
+integer matrix
+then run the LD model, for the queries docs_test
+Querymodel <-
+lda.collapsed.gibbs.sampler(docs_test,K,myDict,num_iter,alpha,beta,compute.log.likelihood=TRUE,initial
+= list(topics = topics,topic_sums = topic_sums))
+I get the following error
+Error in structure(.Call("collapsedGibbsSampler", documents, as.integer(K),
+Counts became negative for word (241): (4, -2147482775, 2)
+n storage.mode(topics) <- "integer" : NAs introduced by coercion
+Any clue as to why this is happening?
+Regards,
+Shivani

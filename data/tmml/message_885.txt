@@ -1,0 +1,25 @@
+Dear list members,
+I'm a new comer in the field, even if I've done some marginal work on
+topic extraction from texts. I've some questions about the paper
+"Learning Author-Topic Models from Text Corpora" by Rosen-Zvi et al
+(2009). To sum up, this paper deals with a new model for extracting
+information about both authors and topics from collections such as
+scientific articles. The proposed model is compared with LDA and a
+simple author model (i.e.: an author is associated to a multinomial
+distribution over words) created by McCallum in 1999.
+Here are my questions:
+1) They assume that the hyperparameters alpha and beta are fixed and
+their algorithm learns "only" the (classical) parameters phi and
+theta. However, I wonder how this assumption is a limitation in the
+kind of solution they can reach. This question is not limited to this
+work and seems appropriate for the other hierarchical probabilistic
+models as well. In other word: if we want to get the optimal solution,
+is the optimization of alpha and beta an obligation?
+2) I don't understand why the perplexity value from 10 individual MCM
+chains is greater than the average (see p.15).
+3) What about the assessment of the discovered optimum? Can Gibbs
+sampling get rid off the problem of local optima?
+4) Do you know any work that mixes the AT model with opinion mining
+measures? It could be an interesting field of further investigations.
+Thank you very much for your help,
+Julien

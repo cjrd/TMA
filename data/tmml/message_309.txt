@@ -1,0 +1,11 @@
+dear marie,
+this seems like a very reasonable approach.
+there are others:
+1. fit a classifier using the latent topic proportions as features
+(e.g., to an SVM).  admittedly, this is pretty ad-hoc.
+2. take the approach of fei-fei and perona (2005).
+3. adapt supervised topic modeling to classification.  (see the paper
+by jon mcauliffe and me from last years NIPS.)
+good luck!
+best,
+dave

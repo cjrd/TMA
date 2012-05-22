@@ -1,0 +1,8 @@
+dear sebastian
+each z_n is an indicator vector.  it has K components, one of which is
+equal to 1.
+for example, z = <0, 0, 0, 1, 0, 0, 0> selects the fourth topic out of
+seven possible topics.
+with this definition, z-bar is a K-vector.
+best
+dave

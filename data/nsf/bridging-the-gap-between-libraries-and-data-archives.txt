@@ -1,0 +1,22 @@
+              An oceanography collection providing access to nearly 50 years of shipboard
+              data, integrating historical documents, samples, research publications, and
+              maps from global databases is being developed into a searchable digital
+              library. This project uses modern technologies to bridge the gap between
+              content-related, but disparate holdings within libraries, data archives, and
+              historical archives to create a digital library that facilitates both research
+              and learning. The digital library is being presented to the user as an in Ocean
+              Exploration Center supporting inquiry into the history of ocean exploration as
+              well as oceanographic databases. From a global map of approximately 3000
+              oceanographic cruises, users are able to identify
+and retrieve relevant
+              materials appropriate to their interest and educational level, from photographs
+              and
+diaries to scientific papers and data. The maps and archival images
+              provide K-12 and college educators with content and tools to communicate the
+              excitement of oceanographic discovery. At the same time, students and
+              researchers are able to use the site to locate and download data for further
+              analysis and research.
+The project is serving as a model for other fields by
+              merging materials previously segregated and
+accessible only to specialists and
+              making them available to a broad audience.

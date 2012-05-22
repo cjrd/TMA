@@ -1,0 +1,330 @@
+
+One of the reasons for the increasing
+popularity of map inference, is that there
+is a large subclass of map problems that
+actually allow tractable inference. Now,
+we've already seen one class of map
+problems that allows tractable inference,
+which is graphical models that have
+little tree width, for which you can apply
+variable elimination or clique trees. But
+it turns out that, besides that, there is
+actually a rich set of other subclasses
+that can be solved using efficient
+algorithms, often based on ideas from
+computer science theory. So let's look at
+some of these examples, and see how we
+might go about solving them. One such
+important class of problems is that of
+correspondence, or data association
+problems. Here, we have two classes of
+objects. In this case, the, red objects on
+the one side, and the blue objects on the
+other. And we'd like to find a
+correspondence, or matching between them.
+And the fact that it's a
+matching means that each, that the
+assignment has to be one to one. So you
+can't have a single red dot match more
+than one blue dot, or vice versa. So here,
+for example, is one. Such matching. And we
+may, in addition, require that all the red
+dots be matched, or that all the blue dots
+be matched, which can't be done in this
+case. So what is the quality of a
+matching, given the, the set of possible
+matchings? So how do we select between
+them? So, we have in the model, a notion
+of the quality of the match between I and
+J, which we denote, in this case, as the
+parameter theta IJ. And so our goal in
+this, in this problem, is to find the
+highest scoring matching, where the score
+is defined as. The sum of. The matches
+multiplied by the quality of their score.
+And we constrain the variables, X, I, J,
+these binary variables indicate whether I
+is mapped to J, via the mutual exclusion
+constraint. That, that we discussed
+earlier. Now, this type of problem is
+easily solved using bipartite matching
+problems developed in computer science
+theory. And it turns out that, in the
+context of graphical models, or
+probabilistic inference, this type of
+problem has numerous applications. So, for
+example, we might have, on the one hand,
+say, the, the red side, a set of sensor
+readings from a number of, say, airplanes
+that we're trying to keep track of. And on
+the blue side, we might have a sen, a set
+of airplanes or objects that we've
+previously detected. And we'd like to
+figure out which sensor reading
+corresponds to which object. Or we might
+have features in two unrelated images. And
+we'd like to figure out, which feature in
+image one matches which feature in Image
+two. Or if we're trying to do doing some
+kind of text analysis, we might have a set
+of entities, say people, or organizations
+that we're trying to reason about, or
+learn something about. And we're trying to
+match mentions in the text to those
+entities, subject to the constraint that
+each mention corresponds to exactly one
+entity. So let's look at one example
+application of this which corresponds to
+one of the examples that we showed on the,
+mentioned on the previous slide which is
+that of 3-D cell reconstruction. In this
+case we have over here a, a cell that we
+are trying to assess the 3-D structure of.
+And we're looking at various slices
+through that cell taken from different
+angles by a microscope. And so these are
+various two dimensional projections of the
+3-D object, and we're trying to figure out
+from that three dimensional structure. Now
+within the cell, we might have these
+little tiny gold beads that are that were
+put into the cell so that we can somehow
+register the different images of the cell
+to each other. So, here, these are
+examples of two such real images, and
+these are the little gold beads, you can
+see them in, in the little circles, and
+what we'd like to do, is we'd like to.
+Decide that this bead over here is the same
+as that bead over there. And once we have
+that correspondence, we can then; compute
+the 3D re-construction using some
+volumetric reconstruction algorithms. And in
+this case, the matching weights, those
+theta IJs that we saw on the previous
+slide, c-, represent the similarity
+between this position, between this dot
+and this dot, in terms of the location in
+the image. And in terms of the
+neighborhood appearance in, in the
+vicinity of that point. A very different
+application for what is effectively the
+same kind of idea is this we have, say a 3D
+mesh scan of a, of an object, such as a
+human being and we'd like to figure out
+how point on this mesh match up to points
+on a somewhat related but different mesh
+whether it's different pose or different
+shape. So here we would like to realize
+that this point over here matches to this
+point over here or that this point on this
+mesh maps to this point on this mesh.
+And once again these matching weights the
+theta ij represent exactly the similarity of
+both location and again the local
+neighborhood appearance. Another very commonly
+used class of tractable map sub problems
+are those that involve what are called
+associative potentials. Associate, also
+called regular in some cases or
+attractive, are cases where the variables
+that are connected to each other like to
+take the same values. So let's consider
+this example in the context of binary
+valued random variables where we have
+variable XI. And the variable xj that are
+connected to each other and we have the on
+diagonal potentials. The 0,0 and the 1,1.
+Which are the cases where assign XJ take
+the same value and we have the off
+diagonal potentials 0,1 1,0. Where the
+variables take on different values. And
+what we would like in the associated model
+is for the 0,0 and 1,1 cases to be
+preferred over the off diagonal cases. And
+that can be formulated using the following
+constraint in which we have that A. Plus
+d, which are the on-diagonal entries, are
+at, in sum, greater than or equal to B +
+C, so that in aggregate, we prefer the
+on-diagonal to the off-diagonal entries.
+It turns out that. If you have even an
+arbitrary network, in terms of fully dense
+connectivity, over binary variables, that
+use only the singleton potentials, and
+these pair wise potentials that are
+associative. They're also called super
+modular, which is a term that comes from
+mathematics. If the pair wise potential
+satisfied this constraint that we saw over
+here, then you can find an exact solution,
+regardless of the network connectivity.
+And that can be done using algorithms from
+combinatorial optimization from computer
+science theory for finding minimum cuts in
+graphs. For non-binary valued random
+variables exact solutions are no longer
+possible but it turns out that very simple
+heuristics can get very, very high quality
+answers very efficiently. And so many
+related variants that are not necessarily
+binary admit either exact or approximate
+solutions and specifically we talked
+before about the class of metric MRFs
+which occur a lot in computer vision as
+well as other applications, and it turns
+out that for metric MRFs even over
+non-binary variables, you can, you can use
+these very efficient algorithms. So one
+such example is in the context of depth
+reconstruction. Where we have two views of
+the same object taken from slight
+disparities, say, using an a, using a
+stereo camera. So here is view one and
+view two in the same scene, and you can
+see that they're slightly different from
+each other. And, and if we can and we now
+have, for a given er, we're trying to infer
+the following image that tells us for each
+pixel in the image what is the actual
+depth. That is the Z dimension. And, one
+of the constraints that we'd like to
+enforce is that the because of smoothness
+in the image, the z value for a pixel is
+similar to the z value of an adjacent
+pixel. And that allows us to clean up a
+lot of noise that might arise if we just
+try to infer the depth of individual
+pixels by themselves. And there are many other such
+examples in computer vision that are used
+quite commonly and use this kind of
+associative potentials. Examples include,
+for example, denoising of images
+infilling of missing regions, and a whole
+variety of other tasks, including
+foreground and background segmentation and
+so on. Another kind of factor that admits
+efficient solutions is the cardinality
+factor and this is a factor that in
+general can involve arbitrarily many
+binary variables x1 of the xk. But we are
+going to require that this, that it's
+sparsely representable in the sense that
+the score for an assignment the x1 of the
+xk is a function of how many x I's are
+turned on. So the taken example, here is a
+factor like this over A, B, C and D, and
+you can see that we have only five
+different values for entries in this
+factor, we have this pink entry over here
+when the sum of the XI is zero, we have
+this blue entry over here, that occurs
+when the sum of the entries is one. For
+these four entries. You have the purple
+one that occurs when we have two
+Xi's on; the green occurs when we
+have three and dark blue appears when we
+have four. Okay, so there's only five
+different possible values here even though
+there's potentially two to the four
+different possible combination. And it
+turns out that this actually occurs in
+quite a number of different applications.
+When we talked about parity constraints,
+for example, in message decoding. Parity
+constraints are something that only looks
+at the number of XIs that are on. If you
+want to have digital image segmentation,
+and you want to have some kinds of prior
+on the number of pixels in a given
+category. You want to say that, in this
+image, we expect the number of pixels to
+be between, you know, that are labeled sky
+to be between 30 and 70%. This is
+potentially a factor over all pixels in
+the image. But it, but it only counts the
+total number of pixels. And so again,
+turns out to be efficient. [inaudible] And
+there's many other examples as well. A
+different one that also turns out to be
+very useful in practice is the notion of
+sparse of sparse patterns. So, here again
+you can have an arbitrary number of
+variables x-1 up to x-k. But you only
+specify a score for some small number of
+assignments. So, here for example is a
+factor again over a, b, c, and d. And I
+have now only three factors, only three
+entries in that factor that get some
+value. They don't have to get the same
+value but only they get some value. And
+all of the ones that are white are all
+have exactly the same score. Generally
+zero. And. This is actually surprisingly
+useful in practice because it's very
+useful to give a higher score to
+combinations that occur in real data. So
+for example, if we were doing a spelling
+problem you want to give a higher
+probability to whatever letter
+combinations occur in a dictionary. And
+that's a finite number. It's bounded by
+the size of the dictionary and now you
+have all the combinatorially many letter
+combinations that don't occur in the
+dictionary. You don't need to give them
+all a separate weight and now it turns out
+to be, again, a sparse factor. The same
+thing actually occurs in an, in image
+analysis problems, where for example, you
+can look all the five by five image
+patches that actually occur in natural
+images that actually surprisingly small
+set of patches relative to all possible 25
+pixels combinations. And so once again,
+this is very commonly used factor over.
+That, that arises in practice. A different
+factor that has tractable properties is a
+convexity factor. Here we have
+[inaudible]. One of the XK that are
+denoted by these blue dots over here. And,
+and, but now they're ordered. So this is
+X1, X2 and XK. And the convexity
+constraint says, you can assign these
+vale, values, these variables one or zero,
+but you have to assign them in a way that.
+Only a convex set, is assigned the value
+one. So, for example, you can have this
+set be one and everything else be zero or
+you can have this set be one and
+everything else be zero but you cannot
+sort of have a scattered set of 1's that
+are interspersed with the 0's. And again,
+this occurs in a surprising number of
+applications. You can look at parts in an
+image segmentation problem and say that
+the parts should be convex. You can
+think about word labeling in texts, and
+say that the words labeled with a certain,
+part of speech, or a certain, a certain
+segment that corresponds to a part in the
+parse tree, for example, need to be
+contiguous in the sequence. If you're
+trying to label a video with a bunch of
+sub-activities, you can say that each
+sub-activity needs to have a, a coherent
+span, with a beginning and end, for
+example. So to summarize, there's many
+specialized models that admit a map
+solution using tractable algorithm and a
+surprising number of those do not actually
+have tractable algorithms for computing
+marginals. And these specialized models
+are useful, in many cases, on their own,
+like the matching problem that I showed.
+But also, as, we'll see in the, in, as
+we'll see as a component in a larger model
+with other types of factors. And the fact
+that this, as a sub-model, has a tractable
+solution, will turn out to be very useful
+as well.

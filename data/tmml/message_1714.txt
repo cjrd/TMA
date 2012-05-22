@@ -1,0 +1,12 @@
+Hi,
+I am running mallet hlda code and getting following output. Can anyone tell
+me how to interpret this result?
+Output:
+251/5 year years people today day ago verse history thought million
+290/5 boy school police teacher students shot thurston classroom killed
+gun
+261/3 mrs liberace police bloomberg museum back jewelry man door gunman
+283/2 peres rappaport offer israel bechtel official oil memo made
+pipeline
+Thanks
+Shriti Bharani

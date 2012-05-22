@@ -1,0 +1,16 @@
+Hi, Dave
+Thank you. Indeed the paper on IDF and LDA has several flaws. My main
+reserve is with the use of IDF, a global weight that, to some extent, was
+a fair starting point in IR models. Today it is well known that IDF is an
+RSJ weight in the absence of relevance information
+(http://www.miislita.com/information-retrieval-tutorial/information-retrieval-probabilistic-model-tutorial.pdf).
+So when we add IDF to the mix we are back to square one and to the term
+independence assumption.
+My main concern with IDF itself is that it presumes that the
+discriminatory power of a term (term specificity) is unique and
+independent from other terms in the same query or in a collection. A model
+that uses IDF is incorporating these assumptions.
+At the 2009 SIDIM XXIV conference,
+http://sidim.uprh.edu/libroSIDIM2009.pdf, we presented a model for
+conditional specificity (conditional IDF). Slides can be provided.
+Edel

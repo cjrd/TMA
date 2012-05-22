@@ -1,0 +1,9 @@
+Can anybody comment on the text data they use when working with the
+Pang and Lee movie reviews dataset?  There are two possible sources
+for the text data in that corpus, one is only lightly pre-processed
+and contains the entire text of the reviews.  The other data has been
+heavily pre-processed and consists of just the "subjective" portions
+of the reviews which have been automatically identified and extracted.
+Does anyone know, for example, which of these two text sources was
+used for the evaluations in the sLDA paper?
+Thanks in advance.

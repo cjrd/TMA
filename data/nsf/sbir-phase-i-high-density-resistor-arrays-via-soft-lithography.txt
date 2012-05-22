@@ -1,0 +1,19 @@
+              This Small Business Innovation Research (SBIR) Phase I project will research
+              passive components in electronic circuits increases, new interconnect
+              technologies, such as embedded passives, are under development to optimize
+              utilization of board real estate. For embedded passives, dimensional accuracy
+              translates into control over component values, and so there is a need for
+              high-precision fabrication processes. TPL has developed soft lithography
+              micro-contact printing, an additive process that can fabricate near-net-shape
+              structures with features between 100 microns and the sub-micron scale. The
+              innovation exploits the compositional flexibility of sol-gel chemistry to
+              synthesize powder-free inks with a wide range of materials properties that can
+              be patterned with high resolution using the novel micro-contact printing
+              technology. 
+
+Potential commercial applications effort will demonstrate the
+              feasibility of micro-contact printing for application to high-density
+              interconnects solutions, and could be an enabling technology for high-precision
+              embedded passives. The PI has pioneered the use of micro-contact printing as a
+              novel interconnect technology while TPL has extensive experience in developing
+              packaging solutions for the electronics industry.

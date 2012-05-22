@@ -1,0 +1,42 @@
+               
+West Virginia has developed a strong academic base on which to support larger
+              scale competitive programs and technology transfer in the areas of
+              Identification Science and Technology (Id S&T) and High Performance Computing
+              (HPC) and deems them important to the future economic development for the
+              state.   This project builds infrastructure at West Virginia University and
+              Marshall University to strengthen physical and intellectual capability in these
+              scientific areas. 
+
+Identification Science and Technology is based on the
+              growing synergy between molecular science and engineering applications.  It
+              reflects the multidisciplinary research in areas defined by the interfaces of
+              molecular/life sciences, micro/nano science and information science and
+              technology. Research in the molecular/life sciences will develop scientific
+              understanding of life signatures at the most fundamental level by focusing on
+              biochemical complexity and the hierarchy of organization.  Research in the
+              micro/nano sciences and engineering will focus on design and use of new devices
+              to acquire biometric information.  Research in information science and
+              engineering will develop data analysis and interpretation of large volumes of
+              spacial and temporal biometric information.  
+
+The High Performance Computing
+              research area will enhance the infrastructure for computational science and
+              human/computer interfaces that support the numerical and data analysis
+              necessary to complement the physical research.  The HPC effort will: 1) link
+              the EPSCoR HPC plan to the broader academic research computing and information
+              science and engineering infrastructure plan; 2) find new ways to assist users
+              interacting with computers and assist researchers in various disciples; and 3)
+              provide a resource for student research and education at various levels
+              including high school.  The HPC effort includes use of an established Virtual
+              Environment Laboratory for a variety of innovative research and educational
+              activities.
+
+In addition to work in the research areas, the project will
+              integrate the NSF EPSCoR activities with on-going educational and outreach
+              initiatives in the state, create new initiatives, and increase the
+              participation of underrepresented groups in science, mathematics, engineering,
+              and technology.
+
+
+
+

@@ -1,0 +1,6 @@
+Hi,
+Please take a look at Gensim (http://nlp.fi.muni.cz/projekty/gensim),
+I think it is capable of doing both things together, i.e., it has an
+online version of the LDA algorithm and can also be parallelized.
+Best regards,
+Tiago

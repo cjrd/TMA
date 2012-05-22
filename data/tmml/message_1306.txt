@@ -1,0 +1,9 @@
+Hi all,
+Just a reminder that the deadline for paper submission for the Joint
+Conference on Digital Libraries 2011 is coming up soon, Jan 23. The
+full call for papers is here:
+http://jcdl2011.org/ExtendedCallForPapers
+JCDL is a great venue for text mining, particularly work with a focus
+on real applications and user needs. This year the conference will be
+held in Ottawa.
+-David

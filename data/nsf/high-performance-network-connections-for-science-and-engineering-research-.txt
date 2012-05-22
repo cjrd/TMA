@@ -1,0 +1,6 @@
+              The proposal plans to connect SUNY-A to vBNS and Abilene via the NYSERNet
+              Network for the following research and educational purposes:  electronic
+              government funded by the NSF PACI program;  northeast regional climate
+              modeling; interactive real-time regional air quality forecast and management
+              system; real-time transmission of meteorological data; mesocale model and
+              global analysis; network-based visualization of large-scale databases.

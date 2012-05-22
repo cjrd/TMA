@@ -1,0 +1,4 @@
+Hello Brad,
+thanks for the implementation! It's always good to see some practical, polished code. Also the math package looks juicy :)
+Best,
+Radim

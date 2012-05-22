@@ -1,0 +1,50 @@
+              EIA-0224417
+Aravind K. Joshi
+Mark Liberman
+University of Pennsylvania
+
+CISE
+              RR: Discourse Penn Trebank and Multimodal FORM: Development of Two Richly
+              Annotated Corpora
+
+This project, providing critical resources for research
+              discourse modeling and conversational interaction, aims at developing new
+              technologies and systems for information retrieval and human computer
+              interaction.  Centering on the construction of annotated corpora, two
+              large-scale resources, one in the discourse domain and one in the dialog domain
+              will be built:
+
+1.	Discourse Penn Treebank (DPTB) and
+2.	MultiFORM:
+              Augmenting the FORM corpus with body movements, speech, and intonation.
+
+The
+              former project develops a large scale and reliably annotated corpus that will
+              encode coherence relations associated with discourse connectives, including
+              their argument structure and anaphoric links, thus exposing a clearly defined
+              level of discourse structure and supporting the extraction of a range of
+              inferences associated with discourse connectives.  This annotation will be "on
+              top of" the Penn Treebank (PTB) annotations as well as the predicate-argument
+              annotations of PTB (called the Proposition Bank or Prop Bank).  The latter
+              involves a corpus of gesture-annotated videos, FORM that was designed to be
+              extensible in order to eventually represent the entire multimodal experience of
+              conversational interaction.  This multimodal FORM , MultiFORM, will be created
+              by adding body movement, speech and syntactic structure, and intonation. 
+              Large-scale annotated corpora have played a critical role in speech and natural
+              language research by enabling large-scale integration of statistical knowledge
+              (derived from the corpora) with linguistic knowledge (as represented in
+              annotations) leading to scientific and technological advances.  Representative
+              examples constitute robust parsing and automatic extraction of relations and
+              coreferences and their applications to information extraction, question
+              answering, summarization, and machine translation.  PTB, a resource developed a
+              decade ago, represents an example of such a resource that impacts natural
+              language processing worldwide.  PTB deals with corpora at the sentence level
+              warranting a new large scale and reliable discourse and dialog structure
+              annotated corpora.  Although intellectual and practical connections exist
+              between studies of the structures of discourse and dialog, the initial
+              requirements for resources to study these areas diverge while overlapping in
+              conception.  On the discourse side, we need for corpora that deals with the
+              kinds of structures found in composed text such as journalistic articles.  The
+              dialog side needs to focus on interactions among people and on extemporized
+              rather than pre-composed material.
+

@@ -1,0 +1,30 @@
+Hi Timmy,
+I'm not seeing approx_bound() in the gensim code. But in my Python
+code, it does basically the same thing as bound(), except that it
+approximates the output of the loop over all documents in the corpus
+with the (rescaled) output of a loop over a minibatch of documents. If
+the minibatch is large, this should be a reasonable approximation, if
+it's not, it'll be noisy.
+The bound() function computes the variational lower bound on the
+marginal log probability of the data. This can be written as
+log p(data)
+- E_q[KL(q(z)||p(z|?))]
+- KL(q(?)||p(?))
+- KL(q(?)||p(?)).
+After one has optimized over q(z), the first two terms can be written as
+\sum_{d,w} n_{d,w} log(\sum_k e^E_q[log?_{d,k}] e^E_q[log?_{k,w}]),
+where n_{d,w} is the number of times word w appears in document d. You
+can see this as a lower bound on a (negative) divergence between n and
+the matrix ??, where we've replaced ? and ? with e^E_q[log?] and
+e^E_q[log?].
+The last two terms penalize deviation from the prior. If you're just
+interested in how well you're (over?)fitting the data, you can ignore
+them, and replace the exp^E[log] business with simple expectations.
+The reason to use the variational bound instead of the raw divergence
+is that it doesn't necessarily give you more points for fitting more
+parameters--see Blei, Ng, and Jordan (2003) for a more fleshed-out
+version of this argument.
+Hope that helped at least a little.
+Best,
+Matt
+2011/11/4 Timmy Wilson <timmyt at smarttypes.org>:

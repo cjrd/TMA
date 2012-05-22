@@ -1,0 +1,9 @@
+              The project will modify an existing catchment-based Land Surface Model to
+              include the effects of snow and freeze-thaw dynamics on Arctic tundra
+              hydrology.  The development of this model will fill a gap in currently
+              available models that do not incorporate the combined effects of snow physics,
+              permafrost dynamics and topography on tundra hydrology.  The current deficiency
+              has severely limited efforts aimed at understanding and predicting the effects
+              of climate change on arctic ecosystems.  By addressing this problem this
+              project will have a major impact on our understanding of the responsiveness of
+              the Arctic to climate change.

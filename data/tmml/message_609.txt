@@ -1,0 +1,8 @@
+Hi Maojin,
+Take a look at these papers:
+- Supervised LDA (SLDA) Blei & McAuliffe, 2007
+- A Joint Model of Text and Aspect Ratings for Sentiment
+Summarization. Ivan Titov, Ryan McDonald, ACL 08
+- Modeling Online Reviews with Multi-Grain Topic Models. Ivan Titov,
+Ryan McDonald. WWW 08
+Mark

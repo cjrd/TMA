@@ -1,0 +1,4 @@
+I can store a fixed dense matrix from topics <-> words estimated  in batch.
+I only require that the running (variable) state have small dimensionality per document.
+Matthew Kennel,
+Senior Scientist, FICO Transaction Analytics

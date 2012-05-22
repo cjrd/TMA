@@ -1,0 +1,9 @@
+Hi Tom,
+We looked at a similar problem in our KDD paper last year:
+Scalable Distributed Inference of Dynamic User Interests for Behavioral
+Targeting
+http://www.cs.cmu.edu/~amahmed/papers/UserModeling_KDD11.pdf
+In our setup, you can observe a new document or an addition to (some)
+existing document(s) at any time point (a document in our setup is a user).
+Thanks,
+Amr

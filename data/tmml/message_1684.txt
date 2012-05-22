@@ -1,0 +1,19 @@
+Hi everyone,
+I understand that LDA has been successful in modeling problems of the type
+where the data is 'bipartite' in nature, i.e. the data encodes interactions
+between two types of entities. For example, interactions between: (1) users
+and (2) movies/productions, or (1) words and (2) documents, and so on. In
+each such problem, the number of unique entities of type 1 may be much
+larger than the number of unique entities of type 2 (or vice versa). For
+example, in the paper by Hoffman et al.. that studies Online LDA on the
+Wikipedia corpus, the number of documents is of the order of millions, while
+the vocabulary is in thousands.
+Are there any insights as to whether it is better (in terms of (a) model
+fitting, and (b) computational complexity), to have a larger number of
+documents than words in LDA's generative model? Unless I am missing
+something, it seems possible to flip the problem by treating words as
+documents, and vice-versa -- that is, define a word as a list of all the
+documents it appears in, and a topic as a multinomial distribution over all
+documents.
+Regards,
+Suhas

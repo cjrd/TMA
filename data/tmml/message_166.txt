@@ -1,0 +1,13 @@
+hi avare,
+these are \gamma_{d,k} from our JMLR paper about LDA.  these are the
+sum of the dirichlet prior \alpha and expected counts of words for
+each topic in each document.  to obtain mean topic proportions for
+each document, renormalize each row to sum to one.
+again using the notation from our JMLR paper, the word assignments are
+\arg \max_{i} \phi_{n,i}
+in other words, they assign each (unique) term in each document to its
+most likely posterior topic.  these are useful when you'd like to
+partition the terms of a document into the topics.
+i hope this helps.
+best,
+dave

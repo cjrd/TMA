@@ -1,0 +1,26 @@
+I just started to read this paper and got confused by the generative
+process of LDA.
+1. Choose \theta = Dir(\alpha)
+This might be the only part I understand. \theta is a length-K
+vector(distribution) if there are K predefined topics. Please
+correct me if I'm wrong
+2. for each of the N words w_n:
+(a)choose a topic z_n = mult(\theta)
+What does this mean? The probability of word w_n to
+topic z_n? If it is a multinomial distribution, there should
+be a count x_k besides P(x_k) = \theta_k. Otherwise,
+how can I calculate this multinomial probability?
+(b) choose a word w_n from p(w_n|z_n,\beta)
+This is the most confusing part. Since the Step 2 is "for each word
+w_n",  why are we "choose a word w_n" here again? I cannot understand this.
+Or is this the conditional probability of w_n given z_n and parameters?
+I'm confused by the generative process, how do you actually "generate"
+words in real application, aren't they contained in the document? For
+example, if given the following training set
+w_1  w_2   w_3   w_4
+d1      1     0        3       5
+d2      0     3        1       2
+.............................................
+what does the generative process look like? Anyone can help give a
+walkthrough example?
+Great thanks.

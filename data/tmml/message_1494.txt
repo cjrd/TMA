@@ -1,0 +1,9 @@
+Hello,
+i tested the paper implementation with those two settings as well.
+1. Jenson Shannon delivers more reliable distances
+2. The transition from 1. chunk to the second chunk will be very
+unsimilar because the topics will averaging until the window size is reached
+3. if you raise the window size you will get little changes in distances
+Bye
+Andreas
+Am 02.03.2011 08:23, schrieb chi yuan:

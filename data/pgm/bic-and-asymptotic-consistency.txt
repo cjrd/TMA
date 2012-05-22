@@ -1,0 +1,236 @@
+
+We talked about Bayes net structure
+learning as the task of optimizing a score
+over a space of network structures. And,
+one of the big design choices that we have
+to make in this context is which scoring
+function to use. Our first attempt at that
+was to use the likelihood score. But as
+we've already seen, the likelihood score
+is very susceptible to over fitting, and
+will invariably learn the most complicated
+network that it can, given the constraints
+that we impose on our space. We now
+consider a different approach in which,
+rather than constraining the space, or
+maybe in addition to constraining the
+space, we're also going. And to impose a
+penalty on the complexity of the
+structure that we learned so as to force
+the model to trade [inaudible] force the
+learning algorithm to trade off model
+complexity with the fit to the data. And
+specifically the model the, the,
+specifically the score that we're going to
+look at right now is something called the
+BIC score. So, let's look at one way of
+penalizing complexity which is the one
+that the B-I-C score uses. The B-I-C score
+has two terms in it, the first is just the
+likelihood of the Graph and its maximum
+likelihood parameters, relative to the
+data. This is a familiar term, this is the
+term that represents the, the same thing
+as the likelihood score. So this term is
+just score L, of G relative to D. And were
+we to use this in isolation we would get
+the same over fitting behavior. But we add
+to this a penalty term, this is the second
+term here on the right. And that term is,
+is. Subtract log of M over two, times the
+dimension of G. So, let's understand what
+these different pieces are. M is the
+number of training instances. And the
+dimension of G is the number of
+independent parameters. In the network. So
+we talked about the concept of independent
+parameters in the context of multinomial
+networks and as a reminder, a multinomial
+distribution has one fewer independent
+parameters than the number of entries in
+the multinomial. And from that, we can
+compute the number of independent
+parameters for any multinomial network. So
+this basically counts the number of, of
+degrees of freedom that we have in the
+network in terms of estimating independent
+parameters in it. And so these two terms
+balance each other out. We've already seen
+that the term on the left, the log
+likelihood, tries to push towards a better
+fit to the training data. Whereas the term
+on the right, the law, the, the penalty
+term is going to try and keep the number
+of independent parameters. And therefore,
+the network complexity down. And, so, this
+score provides us with some kind of
+tradeoff between fit to data and model
+complexity. Now this is one choice in
+terms of this tradeoff. And in fact there
+are other scores that use a different
+tradeoff between those two terms, but this
+one is one that is very commonly used in
+practice and has several distinct
+motivations, some, one, some of which
+we'll talk about and others and others
+not. One comment that's worth making,
+though, is the negation of this, of this
+course, is we negate this entire term.
+That is often called. The MDL criterion
+where MDL stands for minimum. Description.
+[sound], length. And so in fact this
+notion of minimum description length is an
+information theoretic justification for
+this and the other justification for this
+is one that's derived from a more Bayesian
+criterion which is why BIC actually stands
+for Bayesian. Information criterion. Let's
+look at the asymptotic behavior of this
+penalized score. We've already seen that
+in the context of the likelihood score, it
+really doesn't matter how much training
+data we have, we will almost always pick
+the most densely connected network that
+our assumptions allow. But. This is no
+longer the case when we have this
+penalized score. So let's, to understand
+that, let's break down the first of these
+two terms, which is the likelihood score,
+and remind ourselves that at least in the
+context of multinomial networks, the
+likelihood score Can be, re-written as in
+the following way, so this is the
+breakdown of the likelihood score and it
+has, these two terms. The first is, the
+number of data instances M, times the sum
+over the variables X-I, of the mutual
+information between X-I and its parents,
+in, the network. And that mutual
+information is relative to the empirical
+distribution, P hat. The second term in
+the likelihood score is a term, which is
+also M times the sum over the variables of
+the entropy of the variable, again, in the
+empirical distribution. And as we've
+already discussed before, this term is
+independent of G. And so, doesn't affect
+the choice of which structure is selected
+because it's the same for all structures.
+And so, we have these two terms that are
+playing off against each other. We have,
+the term over here. The, the true, which
+is m times the sum of a mutual
+information. And we have the second term,
+the blue term which is the log of M over
+two times the number of independent
+parameters in G. Now, if we consider these
+two terms, we see that, the mutual
+information term grows linearly with m,
+whereas the complexity term grows
+logarithmically with m. And so as we get
+more and more data instances, we put more
+emphasis, on the fit to data and less
+emphasis on the model complexity, so
+intuitively we would infer that we would,
+as we have more data instances, we would
+be more amenable to learning more
+complicated structures So that property
+gives rise to a very important result that
+we can state regarding the BIC score and
+that is the result called consistency.
+Consistency tells us what behavior we
+would get, what network we would learn as
+the number of samples grows to infinity.
+And so here we're going to assume that the
+data is actually generated from a
+particular true structure G star, so there
+is a G star because otherwise result
+doesn't really make can't really be
+stated. And what the consistency property
+says is that as M grows to infinity, the
+true structure G star  is going to be
+the one that maximizes the score. Now that
+by itself is not quite right as, as we can
+see because the true structure g star
+might have several other structures that
+are I-equivalent to it and we have already
+seen that the likelihood score and, and in
+fact it also turns out to be case that
+the, The penalty term are the same for I
+equivalent networks. And so, it's not just
+the true structure alone that will
+maximize the score. It's the true
+structure or any other structure which is
+I equivalent to it. But as far as we're
+concerned that's fine because we've
+effectively learned the correct
+representation of the probability
+distribution. So to understand why this
+result is true, we're going to give just a
+very high level intuitive argument. We're
+not going to prove theorem, it's a little
+bit tricky to prove completely formally.
+So let's first consider the case of why
+this is not going to over fit. That is why
+we're not going to have spurious edges
+learned in maximizing the score as the
+number of instances grows to infinity. So
+here we go, we go back to un, we go back
+and look at this formula over here and we
+see that as M grows into infinity P hat is
+going to approach P star, where P star is
+my true underlying distribution. And so
+what were going to have in this first term
+over here is effectively the mutual
+information relative to P star between X-I
+and its parents. And in that P star, the
+mutual information between Xi and its
+parents is you don't get any benefit from
+adding additional parents, spurious
+parents. That is the mutual information in
+P star for a spurious parent is not
+going to grow because in the true
+underlying distribution P star the, their,
+the There is no Additional independence.
+There's no additional correlation that we
+have. And so at that point we're going to
+have that, the more complicated structure
+is about the same as G* in terms of this
+first term, but the spurious edges are
+going to cost us. In terms of the number
+of parameters in the blue term. And so,
+these spurious edges will not contribute
+to the late, to the data likelihood term,
+but will be penalized more, and so we will
+choose the sparser network that
+corresponds with G star. Conversely,
+why do we not under fit, that is, why do
+we eventually learn all correct edges? And
+that is because the data likelihood term,
+tells us the edges that are required. That
+is, edges, that, are in G*, for example,
+or in the I equivalent network. Will, if
+we don't have them there, this mutual
+information term will be lower than it
+could be. And so we will have a higher
+score by including those, terms in the
+model. And because this mutual information
+term. Grows with m linearly versus the
+penalty term which grows logarithmically.
+Then eventually the first term will
+dominate and we'll have a and it will
+beneficial for the learning algorithm to
+add that edge. The, the required
+edge in G star. So this is a high-level,
+very hand-wavy argument, but at least it
+gives an intuition as to why consistency
+holds. So to summarize, the BIC score is a
+very simple score that trades off, model
+complexity with, the fit to data. And
+therefore, has the important property of
+asymptotic consistency. Which means that
+if the data were actually generated by a
+network G*, for, which is a perfect map
+for the distribution. Then either G* or
+networks I equivalent will have the high
+score as M goes to infinity.

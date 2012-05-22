@@ -1,0 +1,8 @@
+Hi Fengjiao,
+Try the implementation below. It's blei's code, with a bit of extra
+logging to help diagnose some of those errors. (There are also some
+other implementations of LDA on Google code, by other research
+groups).
+http://code.google.com/p/lda-c/downloads/list
+Best,
+Sean

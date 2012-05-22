@@ -1,0 +1,12 @@
+Dear list members,
+I'm currently working with a student on a formal framework for
+evaluating topic models using WordNet. For validation purpose, we need
+some nice candidates to help us judging hundreds of word sets,
+similarly to the evaluation used in the paper "Reading tea leaves: how
+humans interpret topic models" (http://www.umiacs.umd.edu/~jbg/docs/nips2009-rtl.pdf
+). There will be at least two datasets: one on very general subjects,
+and the second on specific subjects in economics.
+If you're interested, please contact me as soon as possible. Contrary
+to the paper of Chang et al., the job is not paid :(. Consider that
+this is for science's sake :-).
+Julien

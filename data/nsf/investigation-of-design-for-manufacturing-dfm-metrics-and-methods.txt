@@ -1,0 +1,27 @@
+              In this joint project between Arizona State University and University of
+              California at Berkeley,  a set of metrics and methods will be developed to
+              evaluate and optimize design for manufacturing through all phases of product
+              development.  The first phase of the project will involve investigation of
+              Design-for-Manufacturing (DfM) metrics and methods using several criteria, such
+              as theoretical soundness and computational complexity.  A novel DfM approach
+              based on Benefit/Cost analysis will be developed to consider trade-offs between
+              the quality of a design and its manufacturing cost, while taking into account
+              market factors and a Company's strategic goals.  Key performance or utility
+              factors of each design alternative or competing product will be used for
+              computing a Design Benefit Rating, and similarly relevant manufacturing factors
+              will be used for computing a Manufacturability Rating.  Then techniques of
+              value engineering will be used to explore design changes to improve the overall
+              value of the design and/or to choose between alternatives. In the final year of
+              the project, a DfM Shell will be implemented to serve as a domain independent
+              testbed to verify, refine, and compare DN methodologies.  Domain-specific
+              design and manufacturing agents will be linked to the testbed.  The particular
+              focus will be on three processes:  CNC machining, injection molding, and fuse
+              deposition.  Six industrial partners will provide the part designs and process
+              knowledge for several manufacturability case studies.
+
+The primary benefits
+              from the project are:  (1) tools for manufacturing companies to improve rapidly
+              the quality of their products to meet changing market conditions; (2) sound
+              theoretical foundations for manufacturability analysis; and (3) a framework to
+              evaluate the reliability of current and future commercial software for DfM.
+

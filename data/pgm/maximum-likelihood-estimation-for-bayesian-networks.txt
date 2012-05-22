@@ -1,0 +1,290 @@
+
+Having defined the principal of Maximum
+Likelihood Estimation for a single,
+parameter, we can now consider the more
+complicated scenario where we're
+interested in doing Maximum Likelihood
+Estimation for the full ensemble of
+parameters for a given Bayesian network
+structure. So let's look at the more
+general case where now we have a general
+Bayesian network, not necessarily
+binary valued. And our parameters now
+consist of a set of parameters theta x for
+all possible values of the variable x and
+the set of parameters theta y given x for
+all values of the parent x and the child y
+and that's the parameterization of this
+Bayesian network in this general case of
+table CPDs. Now let's think about the
+likelihood of, the parameters, the set of
+parameters, theta, What does the
+likelihood function look like? Well, the
+likelihood function, remember, is the
+probability of the data given the
+parameters which decomposes because the
+parameters are iid as the product of all
+data instances Xm and Ym, relative to
+the parameterization theta. Well so
+we're going to break that probability up
+using the chain rule for Bayesian
+networks. And that's going to give me a
+decomposition of this joint [inaudible]
+probability. As a product of the
+probability of, the parent x times, the
+conditional probability of y given x,
+which is, just again the [inaudible]
+application of the chain rule in this very
+simple example. And now I'm going to,
+Basically break this up first into two
+separate products. So I'm going to move
+this product here, so I have one product
+over just the first set of terms, and then
+a second product over the y given x terms.
+And then I'm going to observe that the
+first set of terms, the probability of x m
+only depends on the parameters theta x.
+And the probability y m given x m only
+depends on theta y given x. And so now
+we've broken up the likelihood function
+into a product of two, what are called local
+likelihoods. Where a local likelihood is a
+likelihood of just the variable X or just
+the variable Y given its parents in
+this case, X. So more generally, I
+can do this exact same process in a somewhat
+more general case where if we have a set
+of variables x one up to x m then we can
+once again look at the product over all
+theta instances break this up using the
+chain rule for Bayesian networks, as for each
+instance the product of xi given its
+parents where assuming that UI are the
+parents, xi. Switch the order of the
+products, so that's instead of doing, so I
+switch it here, so instead of doing m.
+First I do the, first the product over
+variables, then the product over data
+cases. And that gives me once again. A
+product of terms which I'm going to call Li
+Of the CPD for XI. And if we're willing
+to assume that variables, that the
+different CPDs don't share. Any parameter
+so each CPD is effectively an
+independent entity that can be estimated
+separately then I can now, estimate, now
+optimize theta of the ith variable
+separately from all other variables by
+optimizing this local likelihood term. If we
+have table CPDs, it turns out we can
+further decompose. So remember that we
+started out with the probability now we
+are looking at the local likelihood for
+variable x given its parents U,
+and as it depends on the CPD
+for x given U. And what we are going to
+do now is we are going to break up the
+data cases into separate buckets so
+for every value little x of X and
+every value little u of the parent U,
+we're going to multiply separately all the
+instances M for which the Mth instance
+takes that value little x and that value
+little u. And so what I have basically
+done is that I have divided all the instances
+into these disjoint buckets. Now the
+point is we know what this is, the
+probability that xm takes the value of
+little x. And given that Um takes the
+value little u. Is simply the appropriate
+CPD entry, theta X given U. And so this
+turns into this expression over here. And
+so now the question is how many
+occurrences. Of theta x given u do I get?
+Well, the answer is how many times I
+multiply it in. The number of times that
+little u, x occurs in the data. And so
+this turns out to be simply a product over
+all possible values of the child X and the
+parent U. Of the appropriate CPD entry,
+P of little x given u to the power of the
+number of occurrences. Of little x comma
+u. And if we now. Consider maximum likelihood
+estimation. It's turns out the maximum
+likelihood estimate of X of theta X given U, is
+simply as one would expect, the fraction.
+Of X = x among cases. Where U equals the
+little u. So what happens with maximum
+likelihood estimation when we have a model with
+shared parameters. Let's consider that
+question in the context of a hidden Markov
+model where initially we are actually just going to look
+at a Markov chain, that is a case where we
+have just a single state variable. S and
+we transition from one state to the other.
+So let's look at the likelihood function
+in this context before we consider what
+maximum likelihood estimation would look like.
+So the likelihood function of the
+parameter vector theta, which dictates the
+transition model, given a set of
+observations of the states between time
+zero and time T decomposes using the
+Markov assumption as a product of t from
+one to T of the probability of the state
+at time t given the state at time t+1. Now
+we can further reformulate this product by
+looking at how it decomposes across
+specific pairs of states S i and S j so we can first multiply over
+all possible pairs of states i and j and
+then consider all the time points
+in which we transition from s i to s j And
+then we have the probability of that
+transition of Si to Sj. Now the critical
+observation is that this probability is the
+same regardless of the time point. This is
+indicative of the time invariance assumption
+that we have in these models. And so the
+parameters specifically that we will be
+multiplying in this context is simply the
+transition parameter theta Si to Sj. Now
+if we look at this expression, which has
+all these products in it. The product of
+IEJ, and then the product of the time
+points, consistent with the transition, or
+in which the transition from I to J took
+place. We end up with the product over
+here, which multiplies, over all IJ of the
+parameter associated with that transition,
+exponentiated by the sufficient
+statistics. Msi to SJ, which is simply the
+number of times in which the, in the data
+stream that we saw, we had a transition
+between those two states. Now if we now
+consider what maximum likelihood estimation
+would look like for this parameter,
+theta.hat, sorry for the parameter theta
+Si to Sj. The maximum likelihood estimate
+theta.hat Si to Sj would be exactly what
+we would expect. The number of transitions
+in which, Si transitions to Sj, divided by
+the number of total, occurrences, of the
+state Si within the time sequenced. Let's
+now elaborate this to the context of the
+hidden Markov model just to see what
+it would look like so here we have in
+addition to the first component of the
+likelihood function which is the same one
+we had before just the transition
+probabilities of the state sequence
+we also have an additional component that
+looks at every state from one to
+big T of the probability of the
+particular observation O of t given
+state s of t. So we can just do the exact
+same process of reformulating the
+likelihood function. We've already seen
+what the first term looks like, it's
+exactly the same as the one we had on the
+previous slide. Theta SI to SJ
+exponentiated with sufficient statistics.
+And we have. [inaudible] a very analogous
+term that looks for over pairs of
+[inaudible] of states i and
+observations k the parameter that
+corresponds to the kth observation in
+state i exponentiated for the
+sufficient statistics which is the number
+of times that we saw in the same state in
+the same time point the observation k and
+the state i And so, adding now to our set
+of sufficient statistics, in addition to
+the counts of going from SI to SJ. We also
+have sufficient statistics that count the
+number of times, time points in which we
+had the state SI and the observation O k.
+[sound]. So to summarize maximum likelihood
+estimation in the case of discreet. Graph
+of Bayesian networks
+that has disjoint sets of parameters in
+the CPD. That is where each c p d has its
+own set of parameters the likelihood
+function decomposes as a product of local
+likelihood functions and this is important
+because we're going to use that later on,
+one per variable. So the likelihood
+function is a product of small likelihoods
+or local likelihoods one per variable Now,
+when we have table CPD, we get a further
+decomposition. Specifically, even the
+local likelihood now decomposes as a
+product of. Likelihoods for specific
+multinomials one for each combination of
+the parents. And so now we get a further
+decomposition that is basically going to
+allow us to estimate each of those
+multinomials separately via the same
+maximum likelihood estimation that we had in the
+original case estimating parameters for
+single multinomials [inaudible] product of
+these likelihood functions each of them
+can be optimized separately. Finally, in the
+very common case of networks that have
+shared CPDs so this is the case
+unlike the first bullet where we had
+dis-joined sets of parameters here we have
+shared CPDs we simply accumulate
+the sufficient statistics over all
+occurrences or uses of that CPD and then
+once we do that, maximum likelihood estimation can be done in effectively the same way. Now
+one important observation that arises from
+the maximum likelihood estimation is worth
+remembering and, and thinking about when
+one uses this, so let's look at the form of
+the, of the maximum likelihood estimate
+for, for parameter theta x given u. And as
+we have seen that is a ratio between m
+between the number of counts of the
+instantiation little x and the parent assignment u
+divided by the sum of all. M X prime, U
+for different values of X prime. Or
+written otherwise is MXU divided by MU.
+Now what are the consequences of this
+expression when the number of parents
+grows large. When the number of parents
+grows larger, the number of buckets, that
+is, the number of different possible
+assignments, little U, increases
+exponentially with the number of parents.
+If you have two parents it's it grows
+exponentially with 2 the number of
+different buckets u but if you have
+fifteen or twenty parents then the number
+of buckets into which we need to partition
+the data increases very quickly and that
+means that most buckets, that is most
+assignments little u will have very few
+instances assigned to them which means
+that effectively most of these estimates
+which divide m of x u divided by m of u
+will be done with Few or even zero
+instances and review, at which point any
+estimate is just totally bogus. And
+specifically the that means that the
+parameter estimate that we're going to get
+in most of the multinomial parameters once
+U gets large are going to be very poor. So this concept is called
+fragmentation of the data. And, it has
+following important consequence. If the
+amount of data is limited. Relative to the
+model dimensionality we can often get
+better estimates of the parameters with
+simpler structures even when these
+structures are actually wrong. That is even
+if we make incorrect independence
+assumptions, that are Making, that a
+removing edges that really ought to be
+there. We can sometimes get better
+generalization in terms of say log likelihood
+of test data. Than when using
+the much more complicated correct structure.

@@ -1,0 +1,18 @@
+There is an implementation of a PYP topic model that's part of a
+machine translation package (long story...) called cdec. It was
+designed for another purpose than topic modeling, so some of the names
+in the code are a bit nonstandard ("contexts" instead of "terms",
+"rules" instead of "documents"), but it's really just a topic model,
+albeit with some extensions for supporting various hierarchical models
+of topic-term distributions.
+The relevant bits are here:
+https://github.com/redpony/cdec/tree/master/gi/pyp-topics/src
+Note: the implementation is of the HPYP inference procedure is
+basically identical to what's described in:
+A Note on the Implementation of Hierarchical Dirichlet Processes. Phil
+Blunsom, Trevor Cohn, Sharon Goldwater and Mark Johnson. ACL-IJCNLP
+2009.
+There's also a slice sampler implementation (originating with Mark
+Johnson) that is used to do inference of the hyperparameter values.
+Looking through the code might be helpful to you.
+-C

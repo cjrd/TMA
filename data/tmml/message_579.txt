@@ -1,0 +1,17 @@
+Hi all:
+Thanks for your detailed reply to my previous questions.
+Recently, I am reading the paper "evaluation methods for Topic models".
+Because of my poor English and basic skills there are some parts that I cannot
+understand:
+what's the rule of the transition operator T ? Is it the same in AIS and
+Chib-style estimation, can T(z^(s)<-z^(s-1)) for each s be computed from equation
+(24)?
+One step further, how to compute the equation(19)? Since z^'is not known.
+How to compute P_s(z)? Can we compute it by the equation (3)in the paper of
+Giffs 2004"Finding scientific topics"?
+Anthor question is about the gamma function in C++, its value often
+overflow(even after log ),for example if I compute log( gamma(1000)) it will
+returns 1.#INF00, have you ever encountered such problem and what's your solution
+Thanks for your attention and best regards!
+Wan shi ru yi!
+Liu Qi

@@ -1,0 +1,8 @@
+I am interested in topic modelling for call center data. For example,
+operator notes taken during a conversation.
+I find the articles on topic modelling for short documents very useful
+and it is a good start to explore, but I want to know if there are
+literature on call center data specifically.
+Thanks
+Alta de Waal
+Human Language Technology Research Group, CSIR, South Africa

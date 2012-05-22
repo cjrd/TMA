@@ -1,0 +1,20 @@
+Dear All,
+I am currently using the ilda implementation of HDP (courtesy of
+http://www.arbylon.net/resources.html ) to estimate the number of topics in
+a corpa (a set of corpa, actually).  I have noticed a something strange that
+I wanted to ask about:  with the NIPS data set, the number of estimated
+topics is on the order of about 20 or so.  However, using the same settings
+on a corpus of legislative speech (less than, but on the order of 10000
+documents by 10000 words), the algorithm seems to run crazy through the
+parameter-space: the estimated number of topics is something like 1800+,
+which seems a bit odd to me.
+I like the ilda implementation as I find it pretty straightforward and
+reasonably fast, but am puzzled why the number of topics seems to grow and
+grow the longer I run the Gibbs sampler (ie more iterations).
+To be precise, I am hoping to estimate both the number, and content, of
+topics in a given corpus with approximately 10000 documents and 10000 words
+in the vocabulary.  Given my reading of the non-parametric (and specifically
+HDP)  literature in topic modes, this seems like a feasible goal, no?
+Any pointers, suggestions, comments, advice would be most appreciated.
+With thanks,
+Scott

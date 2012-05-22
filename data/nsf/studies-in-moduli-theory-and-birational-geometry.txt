@@ -1,0 +1,44 @@
+              The investigator and his colleagues study problems in moduli theory
+              and
+birational geometry.  In moduli theory they study questions related to
+              the
+moduli stacks of twisted stable maps into a tame Deligne-Mumford
+stack. 
+              Questions addressed include constructions towards Gromov-Witten
+invariants of
+              stacks, generalizations of twisted stable maps to higher
+dimensions and to
+              wild stacks, and applications to the theory of admissible
+covers, level
+              structures, spin structures and higher dimensional varieties.
+The investigator
+              and colleagues will also study problems in birational
+geometry: the strong
+              factorization conjecture, which says that a birational map of smooth projective
+              varieties should factor as a sequence of smooth blowings up followed by a
+              sequence of smooth blowings down; and the toroidalization conjecture, which
+              says that, given a surjective morphism of complex projective manifolds, there
+              is a way to blow up both source and target along smooth centers so that the
+              resulting map is a toroidal morphism.
+
+The area of study of this project lies
+              within algebraic geometry, the branch of mathematics devoted to geometric
+              shapes called algebraic varieties, defined by polynomial equations. While
+              algebraic geometry has contributed applications in coding, industrial control,
+              and computation, the topics of this project are more closely related to
+              applications in theoretical physics, where physicists consider algebraic
+              varieties as components of the fine structure of our universe. This is
+              especially true with the first topic, moduli theory. This theory studies a
+              remarkable phenomenon in which the collection of all algebraic varieties of the
+              same type is often manifested as an algebraic variety, called a moduli space,
+              in its own right. Thus in algebraic geometry, the metaphor of thinking about a
+              community of "organisms" as itself being an "organism" is not a just a metaphor
+              but a rigorous and quite useful fact. Sometimes a collection of algebraic
+              varieties manifests itself as a slightly more general object, called a stack,
+              rather than a variety. Such stacks are a central object of study of this
+              project. The other topic studied in this project is birational geometry, which
+              is devoted to a certain abstract relationship, called birational equivalence,
+              among algebraic varieties, which lies at the foundation of algebraic geometry.
+              A goal of this project is to understand the connection between this abstract
+              notion, and a much more concrete relationship given by an algebraic "surgery"
+              procedure called "blowing up".

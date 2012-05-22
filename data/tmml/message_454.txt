@@ -1,0 +1,16 @@
+yep, but even with a scalar alpha, different choices of initial alpha yields
+different value of converged likelihood,
+does anyone met the same problem?
+Shao
+???: Jiacheng Guo (MSR Student-Person Consulting)
+[mailto:v-jiag at microsoft.com]
+????: 2008?9?20? 16:01
+???: ???
+??: topic-models at lists.cs.princeton.edu
+??: RE: [Topic-models] Problem about LDA
+I also encounter the optimization problem. I don?t know how others deals
+with it. In the lda-c implementation, the alpha is treated as scalar rather
+than vector to avoid the problem.  I use a low bound of the probability, try
+to optimize the low bound instead and iteratively solve the alpha. For
+details, please look at Estimating a Dirichlet distribution of Thomas P.
+Minka 2003.

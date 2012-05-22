@@ -1,0 +1,13 @@
+hi topic models list,
+last month i emailed about allison chaney's topic modeling browser.
+we're working on improving it and were hoping for your help.
+if you are inclined, can you spend 15m browsing on allison's wikipedia
+browser?  it can be found here:
+http://www.sccs.swarthmore.edu/users/08/ajb/tmve/wiki100k/browse/topic-list.html
+and please email her (cc'ed) your thoughts.  we are particularly interested in:
+(a) what did you learn about the model fit from browsing?
+(b) what did you learn about wikipedia from browsing?
+(c) what kinds of issues / problems did you see?
+thanks!
+best
+dave

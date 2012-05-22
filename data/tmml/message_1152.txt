@@ -1,0 +1,13 @@
+I have been trying to find the expectation of (log of) linear
+transformations of a dirichlet distributed random variable. Does anyone
+have any pointers on how to go about it?
+More precisely suppose,
+\pi = {\pi_1, \pi_2, ..., \pi_K} ~ Dir(\alpha)
+I know E[\pi_i] = {\alpha_i}/{\alpha_0}
+(where \alpha_0 = \sum \alpha_i)
+and E[\ln (\pi_i)] = \psi(\alpha_i) - \psi( \alpha_0)
+(where \psi is the digamma function.)
+Is there a way to compute the value of E[\ln (\sum_i (a_i * \pi_i)]
+where a_i's are some positive constants.
+Regards,
+Nikhil

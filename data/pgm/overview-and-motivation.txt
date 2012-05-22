@@ -1,0 +1,431 @@
+
+Hello and welcome to the class in
+Probabilistic Graphical Models.
+Probabilistic Graphical Models are a bit
+of a mouthful, so before we define them,
+let's first figure out what they might be
+used for. So, one example application,
+which in fact is the one with
+Probabilistic Graphical Models, or PGMs
+as they're called, first made its way into
+computer science and artificial
+intelligence, is that of medical
+diagnosis. Consider a doctor who is faced
+with a patient. The doctor has a fair
+amount of information at her disposal when
+she looks at the patient. Predisposing
+factors, symptoms, the results of various
+tests. And, from that, she's supposed to
+figure out what diseases the patient
+might have, and what the response to
+different treatment might be. A very
+different application where PGMs have
+also been used is that of image
+segmentation. Here, we might have an
+image, such as this, that has thousands,
+or even hundreds of thousands, of pixels.
+And, what we'd like to do is, we'd like to
+figure out what each pixel corresponds to.
+For example, if we break up the image into
+these, fairly larger regions that have
+less stuff to reason about, we want to,
+figure out which of these corresponds to
+grass, sky, cow, or horse. What do these
+two problems have in common? First, they
+have a very large number of variables,
+that we have to reason about. In the context
+of the doctor it's all these predisposing
+factors, test results, possible diseases
+and so on. And in the context of the image
+segmentation, it's the labels for different
+pixels or these larger regions called
+superpixels. The second thing these applications have in
+common is that fundamentally there is going to be
+significant uncertainty about the right
+answer, no matter how clever the
+algorithms that we design. So
+Probabilistic Graphical Models are a
+framework for dealing with this kind of
+application. So let's first
+understand what each of these words mean
+in the context of this framework. So,
+first, let's consider the word "models". So,
+what is a model? A model is a declarative
+representation of our understanding of the
+world. So, it is a representation, within
+the computer, that captures our
+understanding of what these variables are,
+and how they interact with each other.
+And the fact that it's declarative means
+that the representation stands on its own,
+which means that we can look into it and
+make sense of it, aside from any algorithm
+that we might choose to apply on it. So
+why is that important? It's important
+because that same representation, that
+same model, can then be used in the
+context of one algorithm that answers
+maybe one kind of question, or other
+algorithms that might answer different
+kinds of questions, or the same question
+in more efficient ways, or that make
+different trade-offs between accuracy and
+computational costs. The other advantage
+of having a stand-alone model is that we
+can separate out the construction of the
+model from the algorithms that are used to
+reason over it. So, we can construct
+methodologies that elicit these models
+from a human expert, or ones that learn it
+from historical data using statistical
+machine-learning techniques, or a
+combination of the two. And once again,
+the separation between the algorithm
+and the model, and the learning and the
+model, allows us to tackle each of these
+problems separately. So that was the word
+"model". What about "probabilistic"? The word
+"probabilistic" is in there because these
+models are designed to help us deal with
+large amounts of uncertainty. So,
+uncertainty comes in many forms and
+for many different reasons. So
+first it comes because we just have
+partial knowledge of the thing below. For
+example, the doctor doesn't get to measure
+every symptom or every test result, and
+she's certainly uncertain about the diseases
+that the patient has. Uncertainty comes
+because of noisy observation. So, even
+when we get to observe certain things,
+like blood pressure, those observations
+are often subject to significant amounts
+of noise. Their uncertainty also comes in
+because of modeling limitations. So we're
+going to have phenomena that are just not
+covered by our model. All sorts of
+different, obscure diseases, for example,
+that might cause the same set of symptoms.
+It's impossible for us to write down the
+model that is so detailed that it includes
+every possible contingency and every
+possible factor. And so you're going to
+have uncertainty and variability that is
+simply due to modeling limitations. And
+finally, some people would argue that the
+world is inherently stochastic. Certainly,
+if you go down to the quantum level,
+that's true. But even at a higher level,
+the modeling limitations of complicated
+systems are such that, one might as well
+view the world as inherently stochastic.
+Probability theory is a framework that
+allows us to deal with uncertainty in ways
+that are principled and that bring to
+bear important and valuable tools. So,
+first, probabilistic models provide us,
+again, this word "declarative". A
+declarative representation that is
+stand-alone, where you could look at a
+probability distribution, and it has clear
+semantics, that represent our uncertainty
+about different states that the world
+might be in. It also provides us, with a,
+a toolbox comprising powerful reasoning
+patterns that include, for example,
+conditioning on new forms of evidence. Or
+decision making under uncertainty.
+And because of the intricate connection
+between probability theory and statistics,
+we can bring to bear a range of
+powerful learning methodologies from
+statistical learning to allow us to learn
+these models effectively from historical
+data. Avoiding the need for a human to
+elicit, to, to specify every single aspect
+of the model by hand. Finally the word
+"graphical". The word "graphical" is here from
+the perspective of computer science,
+because Probabilistic Graphical Models are a
+synthesis between ideas from probability
+theory and statistics and ideas from computer
+science. And the idea here is to use techniques
+from computer science, specifically
+that of graphs. To allow us to represent
+systems that are very complicated, that
+involve large numbers of variables. And
+we've already seen those large number of
+variables in both of the applications that
+we used as driving examples. Both in
+the medical example as well as in the
+image segmentation example. And so, in order to
+capture probability distributions over
+spaces involving such a large number of
+factors, we need to have probability
+distributions over what are called random
+variables. And so the focus of this
+class, and what we'll do for most of
+it, is to think about the world as
+represented by a set of random variables,
+X1 up to Xn, each of which captures some
+facet of the world. So, one symptom that
+may be present or absent. Or a test
+result that might have a continuous set of
+possible values. Or a pixel that might
+have one of several labels. So each of
+these is a random variable and our goal is
+to capture our uncertainty about the
+possible states of the world in terms of
+the probability distribution or what's
+called a joint distribution over the
+possible assignments to the set of random
+variables. Now the important thing to
+realize when looking at this is that,
+even in the simplest case where each of
+these is a binary value, which is not
+often the case, but say, just for the sake
+of argument, if you have n binary-valued
+variables, then this is a distribution
+over 2 to the n possible states of the
+world, one for each possible assignment
+of the n variables. And so we have to deal with
+objects that are intrinsically
+exponentially large. And our only way to do
+that is by exploiting data structures that
+encode, that use ideas from computer
+science in this case, to exploit the
+structure in distribution and
+represent and manipulate it in an effective
+way. So what are graphical models? Let's
+look at a couple of very simple examples. So
+here's a toy Bayesian network, one that will
+accompany us through much of the first
+part of this course. A Bayesian network
+is one of the two main classes of
+probabilistic graphical models, and it
+uses a directed graph as the intrinsic
+representation here. In this case,
+remember we had a set of random variables
+X1 up to Xn. The random
+variables are represented by nodes in
+the graph. So to take a look at this
+very simple example which we'll discuss
+again later, here we have a situation
+where we have a student who takes a course
+and gets a grade in the course. And, so
+that's one of our random variables. We
+have other random variables that are also
+related to that. For example, the
+intelligence of the students in the
+course, the difficulty of the course, and
+others that might also be of
+interest. For example, the quality of the
+recommendation letter that the student
+gets in the course, which is dependent on
+perhaps the student's grade, and the
+score that the student might have received
+at the, on the SAT. So, this is a
+representation of a probability
+distribution, in this case over these five
+random variables. And the edges in this
+graph represent the probabilistic
+connections between those random variables
+in a way that is very formal, as we'll
+define later on. The other main class of
+probabilistic graphical models is what's called a
+Markov network, and that uses an
+undirected graph. And in this case, we
+have an undirected graph over four random
+variables A, B, C, and D. And we'll give
+an example of this type of network maybe a
+little bit later on. So these were toy
+examples. Here are some real examples of
+the same type of framework. So, this is a
+real Bayesian network. It's a network
+that's actually called CPCS. It's a real
+medical diagnosis network. It was designed
+at Stanford University for the purpose of
+diagnosis of internal diseases. And it
+has 480-some nodes, and a little bit over
+900 edges. And it was used for diagnosing
+internal diseases by physicians here.
+Another real graphical model, in this
+case on the Markov network side, is
+one that's used for the image segmentation
+task that we talked about before. Here, the
+random variables represent the labels of
+pixels or superpixels. So one per each
+superpixel, say. And the edges
+represent again probabilistic
+relationships between the label of a pixel
+and the label of an adjacent pixel,
+since these are likely to be related to
+each other. So to summarize: the graphical
+representation gives us an intuitive and
+compact data structure for capturing these
+high-dimensional probability distributions. It
+provides us at the same time, as we'll see
+later in the course, a suite of methods
+for efficient reasoning using general
+purpose algorithms that exploit the
+graphical structure. And because of the
+way in which the graph structure encodes
+the parametrization of the probability
+distribution, we can represent these
+high-dimensional probability
+distributions efficiently using a very
+small number of parameters, which allows
+us both feasible elicitation by hand from
+an expert, as well as automatically
+learning from data. And, in both
+cases, a reduction in the number of
+parameters is very valuable. This
+framework is a very general one and has
+been applied to a very broad range of
+applications. And I'm not going to list
+all of the ones on this slide, and
+there is many others that I could have put
+on the slide had there been more space.
+Let me just very briefly mention a few of
+them on subsequent slides. So, we've
+already discussed the image segmentation.
+So, just to, motivate the benefits of a,
+of the PGM framework in this context,
+let's look at these two images as an
+example. Here is the original images. This
+is the division of these images into what
+I mentioned were called superpixels,
+which are these sort of slightly larger
+coherent regions. And this is what you
+get if you apply a state-of-the-art
+machine-learning framework to individual
+superpixels separately. So just trying
+to classify each superpixel separately.
+And you can see that you get, especially
+in the case of the cow, a total mess, with
+different superpixels having drastically
+different labels. You can't even see the
+cow in this segmented image. Whereas, if
+you construct a probabilistic graphical
+model that captures the global structure of
+the scene and the correlations, the probabilistic
+relationships between these superpixels,
+you end up with a much more coherent
+segmentation that captures the structure
+of the scene beautifully. We've already
+discussed medical diagnosis as an example.
+So, here is a real-world application. This
+was something that was fielded on the
+Microsoft network for helping parents
+figure out what was wrong with a sick
+child. The site was called
+"On Parenting", and, parents could enter the
+primary complaint, and then were led
+through a series of questions that allowed
+the system to provide a probability
+distribution over the most likely
+diagnosis of what was ailing the child.
+A very different application is one of textual
+information extraction where we might have
+an article from say, a newspaper, and we'd
+like to take this unstructured data and
+convert it into a structured form where we
+have some representation of the people,
+and the sentences, locations,
+organizations, and perhaps relationships.
+So one such task might be to take this
+kind of sentence and recognize that these
+two words together form a person. Which
+might not be that hard, given the presence
+of the word "Mrs." But this is a little
+bit harder because "Green" is also a word
+and yet, we want to identify it as a person.
+We might want to, then, infer that
+this is a location. And perhaps, that
+this is an organization. It turns out
+that the state-of-the-art methodology
+for solving this problem is as a
+probabilistic graphical model, where we
+have a variable for each word that encodes
+the label for that word. For example, here
+we have the beginning of a person unit,
+and an intermediate label for the person
+unit. And here is another person unit.
+Whereas here, in this variable, we
+would like to label it as a location, but
+we would like to capture importantly the
+correlations between both adjacent words
+as well as between nonadjacent words. By
+using this occurrence of the word "Green" to
+infer that this occurrence of the word
+"Green" is also a name. A very different
+example altogether is one that
+integrates data from multiple sensors.
+This occurs in many applications. One such
+is for integrating data related to traffic
+from both sensors that we might have in
+the road, or on the top of bridges, or
+weather information, incident reports that
+we might get in some form, we'd like to
+take all this together and use a model
+that, as it happens, was learned from
+data. And that model is then used to
+predict both current and future road
+speed, including not only on roads where
+we have sensors that measure traffic, but
+even more interestingly, on roads where
+traffic wasn't measured. And it turns out
+that this was a very successful
+application that was fielded on, in
+several large cities, and with very good
+results. From a totally different
+application domain, probabilistic
+graphical models have been used very
+successfully for discovering new knowledge
+that we didn't have before. In this case,
+the application was biological network
+reconstruction, where a biologist
+measured protein levels of a diverse set
+of proteins in different conditions,
+under different perturbations, and from
+that, they learned the relationships
+between those proteins and discovered 
+interactions between those proteins
+where one was controlling another
+including the ones that were not known
+before. So, let's conclude this
+introduction with an overview of what
+we'll learn in the class. So we'll cover
+three main pieces related to probabilistic
+graphical models.  We'll cover
+representations of PGMs including both
+directed and undirected representations.
+We'll also talk about higher level
+structures that allow us to encode more
+complicated scenarios including ones that
+involve temporal structure as well as
+ones that involve repeated or relational
+structure, specifically a class of models
+called plate models. We'll talk
+about inference or reasoning using these
+models, covering both exact reasoning where
+exact probabilities are the output, as well as
+approximate methods that provide a
+different tradeoff regarding accuracy in
+computation, and we'll also talk about how
+this class of models can be used for
+decision making under uncertainty. And
+finally, we'll talk about how you might
+learn these models from historical
+statistical data.  We'll talk about learning
+both parameters as well as structure of
+these models automatically, and dealing
+with both the somewhat simpler scenario
+where we have complete data, that is, all
+the variables are always observed, as well as
+the more difficult case where some of the
+variables might not be observed all the
+time, or perhaps not at all. And that
+introduces an interesting set of
+complications, but also a wealth of
+very exciting applications, as we'll see.

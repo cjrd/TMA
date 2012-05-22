@@ -1,0 +1,39 @@
+              
+Telomeres, the protein-DNA structures present at the ends of eukaryotic
+              chromosomes, serve functions necessary for maintaining chromosome integrity. 
+              These functions include a) a mode of replication that solves a problem with the
+              replication of ends, b) the capping of the chromosomal DNA to prevent terminal
+              degradation and instability, and c) the ability of telomeres to quiet gene
+              expression from genes near the ends of the chromosomes.  The long-term goal of
+              this project is to understand the mechanism and inheritance of telomeric
+              silencing using the yeast Saccharomyces cerevisiae.  Three specific aims
+              include: First, continuation of previous work aimed at understanding the
+              function of one of the central regulators of silencing, Sir3p.  Several key
+              steps of silencing require Sir3p.  These include a) the initiation of
+              silencing, b) subtelomeric/telomeric associations, c) the propagation (or
+              spreading) of silencing, and d) the ability to interact with key silencing
+              factors.  Sir3p may represent a functional paradigm for silencing regulators. 
+              Specific Aim 1 involves defining the functionally critical amino acids in the
+              Sir3p C-terminal domain (CTD) minimal silencer, the proteins that interact with
+              the CTD, and the sir3p domains involved in events downstream of the initiation
+              events.  Cellular memory, the ability of a cell to perpetuate a specific
+              transcription state through multiple generations, is a central characteristic
+              of position effect, of variegation and of differentiation in most eukaryotes. 
+              Specific Aim 2 centers specifically on the relationship between telomeric
+              chromatin state and heritability  The telomeric chromatin state will be
+              determined by the degree of accessibility of artificially introduced telomeric
+              restriction sites to exogenous probes.  Specific Aim 3 investigates the
+              relationship between heritability and subtelomeric structure using the
+              chromatin immunoprecipitation assay system.  This technique permits the mapping
+              of specific chromatin factors that are in close proximity to defined segments
+              of subtelomeric DNA. Several issues are being explored, including the
+              relationship between a)telomeric length and the formation of unique
+              subtelomeric chromatin structures, b) heritability and formation of specific
+              subtelomeric structures, and c)telomeric and subtelomeric states.  In addition
+              the unique role of yeast chromatin factor-1 in the propagation of silencing at
+              the structural level is being examined.  Understanding how chromatin structure
+              can regulate gene expression is very important as this type of regulation takes
+              place in imprinting and during development.  It is also a major issue in the
+              generation of transgenic organisms.  Yeast is the most tractable system in
+              which to study this phenomenon.
+

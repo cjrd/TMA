@@ -1,0 +1,23 @@
+              This Small Business Innovation Research (SBIR) Phase I project will develop an 
+              anticounterfeiting technology, which is the magnetic  analog  of 
+              thermo-luminescence. This technology makes  use  of  a  series  of ternary
+              alloys  that  exhibit  a  unique  first  order  transition  and is  based  on 
+              the  iron-rhodium classical antiferromagnetic (AF) to ferromagnetic (F)
+              behavior.  Additional alloying elements such as Rhenium, Platinum and Palladium
+              by varying their concentration, enable this transition to be precisely varied
+              in temperature. This material, will be synthesized in  perfectly spherical
+              particles ranging in size from 2-10 microns and will be  suitable for use  in 
+              an  ink  pigment.  This  capability  enables  standard  ink  jet printing  to 
+              be  used,  to  print  a  series  of  complex  three  dimensional  bar  codes, 
+              two  spatial  and  one  in temperature. The bar code will be non magnetic at
+              ambient temperature. In the proposed program the ability  of  the processing 
+              technology  to  yield  compositions and  particle sizes  which  are  uniform 
+              and  small  enough  to flow in a ink jet printer, will be explored.
+
+From a
+              commercial point of view, the  cost  to  the US  economy of counterfeiting is 
+              conservatively  estimated  at  $200B/year.  It is estimated  that
+              implementation of this technology would save between 1 to 10% of this figure or
+              up to about $20B/year.  
+
+

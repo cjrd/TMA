@@ -1,0 +1,80 @@
+              This project will develop an explicit formal system for the learning of
+              phonologies, capable of inferring
+lexical representations, deducing
+              constituency and other nonovert structure from overt observables,
+              and
+constructing the mapping between lexical forms and the grammar's
+              output.
+
+The primary formal problem to be attacked is the mutual entanglement
+              of constituent structure,
+phonological mappings and phonological lexical
+              representations. A language learner has direct access to
+none of these; they
+              must be inferred from positive overt data. However, the three are tightly
+              interrelated.
+The correct phonological mapping depends upon the structural
+              analysis assigned to overt forms by the
+target grammar as well as on the
+              lexical representations taken to underlie the overt forms. Assigning
+              the
+correct structural analysis to an ambiguous overt form requires some grasp
+              of what the correct phonological
+mapping is like, as does the induction of
+              underlying forms. In the face of these entanglements, a successful
+solution to
+              the full learning problem must work on all three simultaneously, using progress
+              on one to
+achieve further progress on the others, ultimately arriving at the
+              correct conclusion for each.
+
+The research will build on existing work
+              solving important subproblems within phonological learning
+under Optimality
+              Theory (OT). In prior work, learning algorithms have been developed for OT
+              systems in
+which there are mutual entanglements between constituent structural
+              analysis and phonological mapping,
+but in which lexical representations need
+              not be learned. The new research proposed here will extend and
+generalize
+              these approaches so that they may apply to systems which require non-trivial
+              learning of lexical
+representations. This requires the addition of significant
+              further structure to the learning and processing
+algorithms: a lexicon must be
+              constructed and maintained, the parsing algorithms which assign analyses
+              to
+overt data must be expanded to make use of the lexical representations, and
+              the learner must have
+procedures for hypothesizing and adjusting lexical
+              representations. The basic algorithms for learning
+mappings will also be
+              modified to ensure learning of phonotactic distributions as a preliminary to
+              the
+analysis of lexical relations.
+
+The investigations will begin with
+              metrical stress grammars, including those with rich morphophonemic
+relations
+              dependent on underlying contrasts in stress and quantity. An important part of
+              the project will be
+the construction, as targets for learning, of constraint
+              systems that plausibly capture phenomena requiring
+the nontrivial interaction
+              between lexical representations and phonological mappings. Extensive
+              survey
+and analysis of the targeted linguistic generalizations will be
+              required to establish the empirical basis of the
+learner's goals.
+
+The
+              proposed learning algorithms will be tested and evaluated via both formal
+              analysis and computer
+simulations. Given that the property of mutual
+              entanglement of analysis and mapping is not particular to
+phonology, but is
+              endemic to the problem of learning from observable data in all linguistic
+              domains, the
+results of this research are expected to provide insight into how
+              language learning must proceed in general.

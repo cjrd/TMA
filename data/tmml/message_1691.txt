@@ -1,0 +1,14 @@
+Dear all,
+I am reading the code of Correlated Topic Models (D. Blei and J. Lafferty,
+NIPS 2006). In the code, mean parameter of logistic normal distribution
+theta is used to calculate the log probability of the document rather than
+the natural parameter eta.
+The paper only mentioned this with equation 3:
+eta_i = log theta_i / theta_K
+and with the word "Notice that this is not the minimal exponential family
+representation of the multinomial because multiple values of eta can yield
+the same mean parameter."
+I am still confused about this, could anyone elaborate on this? What is the
+difference using natural parameter and the mean parameter when calculating
+the log probability of the document?
+Thank you very much!

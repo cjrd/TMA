@@ -1,0 +1,31 @@
+              This project applies adaptive optics and laser interferometry to the sensing of
+              bound analytes on an optical compact disk. The compact disk contains spots of
+              antibodies (for immunological and proteomic biosensors) or complementary DNA
+              (for genomic biosensors) arranged in concentric tracks. After exposure to a
+              sample containing multiple analytes, the laser scans a single track at a time
+              with sampling speeds up to one megasample per second. Bound analytes on the
+              spinning disk modulate the phase of the reflected laser light up to a
+              Megahertz. This phase is measured using homodyne detection in an adaptive
+              interferometer. The key element to the interferometer is an adaptive
+              holographic grating (a semi-insulating GaAs heterostructure) that mixes the
+              signal (carrying the phase modulation) with a reference beam (local
+              oscillator). The adaptive mixer is insensitive to the problems of laser speckle
+              and mechanical vibrations that have previously prevented the use of sensitive
+              interferometry in this application.
+
+The disk will be fabricated using soft
+              lithography and ink-pad stamping. An important goal of the research is to study
+              multi-analyte up-scaling from a few up to thousands of different analyzer
+              tracks on the disk. The long-range goal of this research would be to ultimately
+              assay almost every blood protein in a single 10 p1 sample without the need for
+              analyte amplification.
+
+For the same reason that shot-noise-limited
+              interferometers can detect sub-picometer surface displacements, this Biosensor
+              CD can detect approximately 300 bound analyte molecules per spot per track.
+              Such sensitivity can only be achieved by combining the high sampling rate of
+              the spinning disk with the high sensitivity of adaptive interferometry. The
+              experimental program presented here, if successful, would represent a
+              significant improvement in the ability of biosensors to detect many
+              low-concentration analytes.
+

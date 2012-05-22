@@ -1,0 +1,18 @@
+              Biological Sciences (61)
+In this project we are taking advantage of recent
+              advances in video and computer technology to improve student experiences in our
+              undergraduate Biology curriculum. We are introducing four digital microscopy
+              workstations into our cell biology, microbiology, and plant physiology courses.
+              These workstations permit us to offer laboratory exercises that expose students
+              to techniques and phenomena normally confined to the research laboratory. We
+              are adapting research techniques from the contemporary science literature and
+              building upon the efforts of several other project supported by NSF that
+              incorporate digital microscopy workstations into the undergraduate curriculum
+              (e.g., DUE-0088185, 9952672 and 0088412). For example, phase and fluorescence
+              microscopy is being used in experiments to examine the various cell
+              compartments and dynamic processes such as organelle transport and cell
+              migration. Students have the capability to make digital records, including
+              time-lapse movies, of their phase and fluorescence observations. It is our
+              experience that experiments that include fluorescence and video microscopy
+              generate the greatest excitement among our students.
+

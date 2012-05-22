@@ -1,0 +1,19 @@
+dear kong and all
+we sampled from the variational distribution to approximate these posterior
+expectations.  the snippet of R code is below my signature.
+best
+dave
+hellinger.terms <- function(lambda, nu, m)
+term.1 <- matrix(0, nrow=dim(lambda)[1], ncol=dim(lambda)[2]+1);
+term.2 <- matrix(0, nrow=dim(lambda)[1], ncol=dim(lambda)[2]+1);
+for (i in 1:dim(lambda)[1])
+cat(i,"\n");
+samples <- rln(m, lambda[i,], diag(nu[i,]));
+term.1[i,] <- colMeans(sqrt(samples));
+term.2[i,] <- colMeans(samples/sqrt(samples));
+return(list(term.1=term.1, term.2=term.2));
+hellinger <- function(term.1, term.2, i)
+results <- sapply(1:dim(term.1)[1],
+function (j)
+return(2 - 2 * sum(term.1[i,] * term.2[j,])));
+return(results);

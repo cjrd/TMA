@@ -1,0 +1,5 @@
+Folks,
+Where can I read on the differences between variational EM (used in
+the original Blei paper) and Gibbs sampling as applied to LDA?
+What are the advantages of using sampling vs EM?
+Thanks, Joel

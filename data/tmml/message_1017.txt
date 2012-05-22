@@ -1,0 +1,5 @@
+Hi Claudia,
+If you meant sampling an entity from a combined author/recipient sets without distinction, then it is exactly the author-topic (AT) model. We did conduct experiments comparing ART and AT and others in http://www.cs.umass.edu/~xuerui/papers/art_jair.pdf
+If you think of having a distribution to guide how probable a word comes from the author, a recipient, or an author-recipient pair, we didn't pursue in that direction. It could be interesting.
+Best,
+Xuerui

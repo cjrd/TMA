@@ -1,0 +1,9 @@
+The Dirichlet distribution is typically parameterized with a single
+parameter vector \theta, but one can also parameterize it with a normalized
+base measure m and a concentration parameter \alpha such that \theta = m *
+\alpha.  In that case, one can use a Dirichlet prior over the base measure
+m, and a Gamma prior over \alpha, and things work out quite nicely.
+A good paper to look at for an example of this is Hannah Wallach, et al.'s
+"Rethinking LDA: Why Priors Matter":
+http://www.cs.umass.edu/~wallach/publications/wallach09rethinking.pdf
+I hope that helps.

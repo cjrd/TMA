@@ -1,0 +1,294 @@
+
+We've shown that the clique tree algorithm
+has some pretty cool properties, that it
+guarantees that we achieve the correct
+marginal, at every single clique, and
+therefore that these marginals necessarily
+agree with each other. We have also seen
+that these marginals can be computed
+using a single upward and downward pass
+over the clique tree. So fairly efficient
+computation. But we also know that the
+problem of inference and the problem is
+the graphical models is an NP hard
+problem, and so somewhere over there,
+there must be a catch. That is there must
+be a computational cost that occurs, at least
+in certain cases when we run the clique
+tree algorithm. And what we're going to
+do now, is we're going to try and
+understand where that hidden cost might
+lie. So while what we are going to do. So
+in order to analyze the computational
+complexity of a clique tree, we are going
+to define a little bit of notation. So
+let's consider an edge i,j, in the clique
+tree, T, and let's assign a little bit of
+notation. We are going to divide the
+variables into three groups. There is this
+group, so here what we have is a clique
+tree; here is Ci, and Cj. They are
+adjacent cliques and they are connected to
+each other via sepset Sij. And then
+there's this whole clique tree, whole
+bunch of cliques on the left side and
+whole bunch of cliques on the right side.
+We are going to divide these variables
+into these three groups. W, less, W that's
+on the i side of the i,j edge. Are the
+variables that are just. In this group
+here not counting the sepset which is
+going to appear in both types. W that's on
+the J side is over there. And Sij is the
+stuff in the middle. So these are three
+mutually exclusive and exhaustive groups,
+that partition all the variables in the
+tree. And now here is a, an interesting and
+quite enlightening theorem, that says the
+clique tree T satisfies the running
+intersection property, if and only if, for
+every sepset ij, we have that the
+variables on the left side of the edge are
+independent of the variables on the right
+side of the edge given the variables on
+the middle of the edge. That is, these
+variables, the sepset, separate. The left
+side from the right side. Now remember
+that the running intersection property was
+the critical property that we used to
+prove correctness, of the clique tree
+algorithm. So this is a, coming up with
+this condition that tells us exactly when
+running intersection holds is important
+because this is the defining property for
+all of those nice behaviors that we talked
+about earlier in terms of the clique tree
+algorithm. So let's try and convince
+ourselves of this by looking at a concrete
+example first. Let's look at the
+clique tree that we have over here and
+let's for example focus on this sepset
+which has the variables G and S. And
+variables on the left side of that sepset
+excluding variables G and S are I. D and C.
+On the other hand, the variables on the
+right side of this sepset, again excluding
+G and S, are H, J, and L. So now let's
+look at where these variables place
+themselves on the graph structure over
+here, which is the induced graph
+corresponding to the Markov network which
+we derived from the factors in this
+Bayesian network. So Bayesian network CPDs
+produce factors. The factors give us this
+induced Markov network. So, where are the
+sepset variables G and S? Those are over
+here. Where are the variables on the left
+hand side? These are the blue variables C,
+I, D and they're sitting over there. And,
+the green variables H, J and L, are
+sitting over here. And, a simple
+inspection can show us that are no paths
+or trails, between the blue variables and
+the green variables that do not go through
+the red variables. So that we conclude
+from that, that the variables C, I, D
+are separated. From. H. L. And J given, G
+and S. And from the connection between the
+graph structure and independence in Markov
+networks, we can conclude from that, that
+this independence property. Holes that is
+C, I and D are independent of H, J and L given G and S,
+Which is exactly what we wanted to show
+that the sepset separates the variables on
+the left. The blue variables, from the
+variables from on the right, green
+variables. Let's try and give a slightly
+more, general argument for this, one that
+isn't just demonstrating it in the context
+of a particular example. So let's ignore
+for a moment the concrete letters inside
+this example and just think about what
+would, why this is going to be true. So
+let's imagine that this is now a generic.
+sepset and this is it over here and we'd
+like to prove that all the variables on
+the green side are independent of all the
+variables on the blue side. So let's
+assume otherwise. This is going to be a
+proof by contradiction. If this were not
+the case, then that means that in this
+induced Markov network, there needs to be
+some. So there's needs to be, though assume
+otherwise. Which means there needs to be a
+path. In the induced Markov network. Between.
+The blue side and the green side, so
+between W less than IJ. And W less than
+JI. But if there exists a path that goes
+from one side of this graph to the other
+it means that there eventually has to be
+an edge where one node is on one side and
+one node's on the other. So there, that
+means there needs to be some edge that
+goes from the blue side to the green side.
+Now notice, as I forgot to say, this path
+that exists in the induced Markov
+network doesn't. That doesn't go through.
+The sepset. Because otherwise the sepset
+was separated, so doesn't go through S I
+j. So there needs to be an edge, that goes
+for example, from here to there. Or, it
+doesn't matter which node I pick, which
+pair of nodes I pick. There needs to be
+some node on the green side and some node
+on the blue side. This is the green side,
+and this is the blue side. And an edge that
+goes between though it doesn't go through
+the sepset. But now that implies that
+there needs to be some factor,
+phi, that involves those two
+variables, so in this case, C comma H. But
+now because of family preservation, that
+factor must sit in some. One of the
+cliques in this clique tree. And that
+clique is either on the green side or on
+the blue side. It has to be somewhere. So
+let's assume that we put that clique
+without loss of generality on.
+the green side, but now what happens? We have
+an H that's sitting here, remember that H
+is a blue variable, and H is also sitting
+here because it's in the blue side. And
+now we have an H in one clique and an H in
+the other, and running the intersection
+property tells us that H needs to be
+everywhere in between, and specifically.
+It needs to be in the sepset which is a
+violation of the assumption either of the
+running intersection property or of the
+assumption that the, the variable H is not
+in the sepset. And so that's sort of a
+somewhat formal proof outline that can,
+with a little bit of extra effort and
+notation, be made into a rigorous proof
+of why running intersection property
+implies this independence assumption. And
+I didn't prove the other direction because
+this is actually the direction that we
+care about more. So we start out this
+whole discussion by saying th, these
+properties have computational implications
+th, where are these computational
+implications? What can we conclude from
+the fact that the sepset needs to separate
+the graph into conditionally independent pieces? Well,
+it turns out that in many graphs that
+implies a certain minimal complexity that
+can sometimes be quite large. So let's do
+this [inaudible], let's look at this in
+the context of two quite simple but very
+commonly used examples. So here is an
+example of a. It's what's called a, a
+complete bipartite graph. Where we have
+two sets of variables. That have no edges
+between each of the sets separately but
+where all of the cross edges are present.
+This is a structure that is, that we've
+actually seen before. We saw it in the
+context of the, plate model for student.
+For course difficulty. And students
+intelligence, where we had a bunch of
+difficulty variables, a bunch of
+intelligence variables, and there were no
+edges between the difficulties or between
+the intelligences. But for very difficulty
+and intelligence pair there was an edge
+that wasn't used by the V structure
+corresponding to an observed student grade
+between the course difficulty,
+corresponding course difficulty and that
+student's intelligence. What is the
+smallest sepset that we could possibly
+construct for this graph, can we for
+example look at just say these two A's and
+separate out the graph into two
+conditionally independent pieces? Well, no
+not really because for example if we now
+look at these two B's we can see you can
+connect them via any one of the other A's
+that I didn't include in the sepset and so
+this doesn't decouple the graph at all.
+With a little bit of extra thought it's
+not difficult to convince oneself that the
+smallest sepset that we could construct,
+that actually breaks up the graph into
+meaningful pieces, is either all the
+variables on the one side or all of the
+variable on the other which means that the
+smallest sepset. Where the small in any
+kind of meaningful clique tree has size.
+Greater than or equal to min of k
+comma m where k is the number of
+variables on the one side and m on the
+other. A slightly less obvious example but
+one that is also imposes some very
+significant lower boundaries in the
+context of the grid, such as we
+encountered in the Izing model or when
+doing image analysis, where the variables
+correspond to pixels. And now let's try
+and think about how we might break up this
+graph into separate conditionally
+independent pieces. Now, we can construct
+clique trees to have smaller sepsets, small
+sepset. For example, here's a sepset.
+Breaks away A 1,1 from everything
+else. But notice that, that still leaves
+me a very large everything else. But if we
+try, for example, to break up the graph so
+that A 1,1 appears on the one side,
+and A 4,4 appears on the other, any
+clique tree that you give me that will
+have this separation with A 1,1 on
+the one side and A 4,4 on the
+other, any such clique tree has to have. A
+sepset. Of size. Greater than or equal to
+N, where this is an N by N gri-, grid.
+Which means that if you try and break up
+the N by N grid in a way that puts one
+corner on one side and one corner on the
+other, then you're going to have a sepset
+that's at least the dimension of the grid.
+And breaking it up in other ways doesn't
+make it any better. So here are two cases
+where we can place a lower bound on the
+size of the sepset that is required for
+running clique tree inference. And that is where we
+pay the, exponential blowup. That is, in
+some sense, required by the fact that,
+that the problem is intrinsically a
+NP hard problem. So, to summarize,
+We've shown previously that the
+correctness of the clique tree inference
+algorithms relies on having the running
+intersection property. And we have now
+shown in turn that the running
+intersection property implies certain
+separation properties on the original
+distribution. These separation properties
+in turn can be used to analyze the
+complexity of inference in different
+graphs and provide certain minimal bounds
+on the complexity that would have to be
+incurred by the best possible clique tree
+on graphs. And we have already seen the
+notion of minimal complexity which is the
+minimal induced width of the graph; this
+notion is a little bit different because
+it talks about sepsets. Whereas being used
+with really talks more about tweaks but
+these are both ways of analyzing the
+complexity certain minimal complexity that
+has been incurred by exact inference which
+again is related with again is related to
+the NP hardness of problem.

@@ -1,0 +1,24 @@
+(forwarding to topic-models mailing list)
+Hi Shivani,
+In theory the cost could be that bad, but in practice due to sparsity
+(i.e. most documents using only a small number of unique words
+relative to the vocabulary size) it can be less with a clever
+implementation such as the one in Vowpal Wabbit
+(http://hunch.net/~vw/). Letting U be the average number of unique
+words per document and d be the mini-batch size, the costs are
+batch:
+O(no_iterations \times D \times U \times K)
+online:
+O(no_iterations \times d \times U \times K)
+But with a naive implementation, such as the python code on my
+website, it's more like
+batch:
+O(no_iterations (\times D \times U \times K + K \times V))
+online:
+O(no_iterations (\times d \times U \times K + K \times V))
+In batch mode, the KV term is usually small relative to DUK, but when
+using small mini-batches it can be significant.
+As to your second question, yes, we used a fixed vocabulary. There are
+ways of relaxing this requirement, but it's more involved.
+Best,
+Matt

@@ -1,0 +1,10 @@
+hi -- there's nothing nearly as easy as fast+easy as Ipe:
+http://tclab.kaist.ac.kr/ipe/
+Before that, I tried powerpoint, latex + pstricks and jPicEdt. Don't expect a
+fully-featured vector graphics package like Inkscape, but for schematics it's
+all there. What I also liked about it is that Ipe uses PDF metadata to store
+sources in PDFs that you may directly use with \includegraphics{}. And you can
+express almost everything in Ipe's text boxes using most of your favourite latex
+packages.
+Best
+gregor

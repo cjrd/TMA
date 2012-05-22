@@ -1,0 +1,6 @@
+I meant to mention this in my email as well?if by "running state" you
+mean anything in memory, then you can't use the (K-by-W) topic
+distribution matrix at all and you're in pretty serious trouble. But
+if "running state" doesn't include read-only memory then you're fine.
+Best,
+Matt

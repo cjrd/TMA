@@ -1,0 +1,5 @@
+Dear all,
+We know that LDA stands for Latent Dirichlet Allocation model. I am curious
+to know why is the name given like this? What is the allocation refers to?
+regards
+veena

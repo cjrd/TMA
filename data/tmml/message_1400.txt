@@ -1,0 +1,5 @@
+Hello,
+I a beginner with LDA, and I want to know how to use the LDA resulting
+distributions such as \theta and \phi to make document classification.
+Thank you very much,
+Belkacem

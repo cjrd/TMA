@@ -1,0 +1,9 @@
+LDA has been applied to a wide variety of problems ranging from image
+recognition to microarray experimental data. As long as the generative
+story makes some sense for your data it seems like a reasonable thing
+to try. My favorite use of it has to be this paper by David Mimno:
+Reconstructing Pompeian Households David Mimno. Applications of Topic
+Models Workshop, NIPS 2009, Whistler, BC.
+http://www.cs.umass.edu/~mimno/papers/pompeii.pdf
+In this paper he looks at artifact data from the ruins of Pompeii,
+treating rooms as 'documents' and artifacts as 'words'.

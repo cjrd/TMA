@@ -1,0 +1,50 @@
+              
+
+Proposal:  DMS-0072342
+
+PI: Greg Kuperberg
+
+The purpose of the project
+              is to study the properties and applications of
+quantum groups, the Yang-Baxter
+              equation, graph homology, and similar
+constructions in algebra with geometric
+              formalism.  In particular the role of
+these constructions will be considered
+              in two areas:  In 3-dimensional
+topology, they arise in the guise of of
+              perturbative and non-perturbative
+invariants of Chern-Simons field theory. 
+              There is a good chance that such
+invariants are related to the Thurston
+              Geometrization Program, at least for
+hyperbolic manifolds.  In quantum
+              computation, the same non-perturbative
+Chern-Simons field theory produces an
+              interesting method for fault tolerance,
+one which needs to be developed
+              further.
+
+The purpose of the project is to develop and apply certain areas of
+              algebra in
+which formulas have a geometric structure.  Two famous examples of
+              this are a
+linear algebra, in which matrices have some geometry, and Feynman
+              diagrams,
+whose geometry is physically meaningful. Geometrization of algebraic
+              formulas
+has been influential in enumerative combinatorics, in non-commutative
+              algebra,
+and in geometric topology in the last 15 years.  One of the first and
+              most
+important representatives of this recent trend is the Jones polynomial,
+              an
+invariant of knots.  Although the Jones polynomial arose in algebra
+              and
+mathematical, it and its generalization are at least as important in
+              topology,
+and recently also in quantum computation.  These applications of the
+              new trend
+in algebra will be investigated.
+
+

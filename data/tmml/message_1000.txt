@@ -1,0 +1,13 @@
+Hello Donn,
+thanks for your quick reply and the patch!
+It seems the patch is no executable, so I consider it to be guideline
+for the changes which I ought to apply to the original source files, is
+that right!?
+One more question. As far as I know, C/C++ often use pointer
+arithmetics, i.e. data from the memory is accessed by locating a
+starting address and using the byte-size of the variables to read out
+consecutive blocks from the memory to access arrays or matrices. Are you
+confident that the modifications do not interfer on that level? Or in
+other words, does the modified code work well for you?
+Best regards,
+Sebastian

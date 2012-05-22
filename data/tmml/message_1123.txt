@@ -1,0 +1,3 @@
+Greetings,
+I highly recommend the following paper by Jonathan Chang and friends:  ?Reading Tea Leaves: How Humans Interpret Topic Models?:
+http://www.umiacs.umd.edu/~jbg/docs/nips2009-rtl-pres.pdf

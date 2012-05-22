@@ -1,0 +1,112 @@
+
+Hello everyone, and welcome to the class on probabilistic graphical models.
+My name is Daphne Koller and I’m a professor at Stanford University.
+We here at Stanford are really excited
+to be able to offer this graduate level Stanford class
+to anyone, anywhere around the world for free.
+So what are probabilistic graphical models?
+Well, it’s a bit complicated to explain
+and we’re going to talk about that in an upcoming video
+but also throughout the entire class.
+In this video, I’d like to tell you a little bit about the format of this class.
+The course is going to be offered over ten weeks worth of material
+plus a final examination at the end.
+The content is going to be conveyed via a set of videos,
+augmented with quizzes to reinforce understanding.
+In addition, there is going to be a weekly problem set
+where the problem sets altogether are going to be worth 25% of the score
+for a total of the nine problem sets for the nine weeks worth of content.
+The problem sets are designed to allow for multiple submissions,
+so that each version of the problem set is going to be a little bit different
+so that you can resubmit the same problem set [a] couple of times
+to make sure that you really mastered the material.
+In addition, there’s going to be a weekly programming assignment,
+and those programming assignments were selected
+to reinforce specific concepts that we’re studying in the course,
+but at the same time to reveal the range of applications
+to which the framework of probabilistic graphical models can be successfully applied.
+So we’re going to have, for example,
+a problem set on how you use probabilistic graphical models
+to understand the inheritance of genetically inherited diseases.
+We’re going to have one that shows
+how you can look at a set of handwritten characters
+and read what’s written there.
+And we’re going to have one that allows you
+to look at a stream of output from a Kinect sensor
+that gives you both video and range data
+and recognize human activities.
+These nine programming assignments are each going to be worth 7% of the score
+for a total of 63%,
+which gives us 12% left for the final exam.
+What background do you need for this class?
+Well, it’s going to be really hard to do this class,
+without some understanding of basic probability theory.
+This doesn’t have to be very advanced stuff.
+We’re talking about things like independence and Bayes' rule
+And just basics of discrete distributions.
+And we also have a few introductory modules
+to refresh your memory about these basic concepts.
+The programming assignments will require
+that you’ve had some experience programming before
+because this is not a programming class.
+We don’t teach you how to program.
+And because this class merges ideas from both probability theory and computer science,
+it’s really important you have some background in algorithms and data structures.
+Recommended, but not strictly necessary—
+and we certainly don’t require it,
+and we give you the background as we go—
+is a little bit of experience, perhaps, in machine learning,
+maybe some simple optimization like gradient descent,
+nothing very sophisticated.
+And it would be helpful to have some experience programming in Matlab or Octave,
+although, here also, we have some introductory modules
+that help you learn this programming language if you haven’t played around with it before.
+A few other issues that are worth noting:
+This class has an honor code.
+This is the norm also for our local Stanford students when they’re taking a Stanford class.
+The honor code here says that you’re allowed to discuss the material,
+in fact even encouraged to discuss the material with your fellow classmates.
+You can even ask clarifying questions about the problems sets and the programming assignments.
+But what you turn in has to be your own work.
+Furthermore, we request that you do not post either the programming assignments
+or their solutions anywhere on the web,
+so that future generations of students can do
+the problems sets and the programming assignments independently as well.
+A second issue to keep in mind is that of time management.
+This is a graduate-level Stanford class
+and it’s considered a difficult one even at Stanford.
+A typical Stanford student can easily spend
+ten to fifteen hours a week on this class,
+and so we would suggest that you budget
+at least that amount of time for your own efforts on this class
+if you don’t want to find yourself running out of time
+when a submission deadline comes around.
+We’ve built in a little slack into the submission deadline,
+so if you don’t manage to submit by the original deadline,
+you have a week’s worth of grace period.
+But then that obviously starts to impinge on the next week’s problem set.
+So we advise that you don’t just keep
+a backlog of assignments throughout the course,
+because it will all end up coming back to bite you in the end.
+Finally, part of the experience of this class
+is interacting with your fellow students,
+so for that purpose we have the discussion forum
+which has proven in other classes
+to be an invaluable resource for interacting with other students,
+asking questions and obtaining a deeper understanding of the material.
+We’re also encouraging you to form study groups—
+these can be physical study groups with people in the same geographical region,
+or online study groups where you can just discuss the material with each other.
+We believe that doing this
+will give you a much better understanding of the material
+and will make the course considerably more fun as well.
+So, to summarize,
+through all these different pieces of the content and the exercises,
+we think that you’ll learn fundamental methods
+in this area of probabilistic graphical models.
+You’ll also get to see and play around with
+a range of real-world applications for which these methods have been applied
+and hopefully you will leave this class with an understanding
+of how to take these ideas and use them in your own work
+in problems that you care about.
+We look forward to seeing you in this class.

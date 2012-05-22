@@ -1,0 +1,14 @@
+Hi David,
+Just to point out that the hierarchical dirichlet process basically
+does what you suggested: there is a higher level DP whose (random)
+weights tell you the prior probability of each topic.  Then we take
+the number of topics to be (very) large.
+We have found that the model is less sensitive to the hyperparameters
+than LDA is to the number of topics, but still, it is sensitive to the
+choice of hyperparameters.  We just placed a hyperprior over these
+hyperparameters and sampled over them as well, and that seems to work
+quite well.
+It's nice that you can get a "stopwordy" type of topic, I have always
+removed the stopwords so never saw this.
+cheers,
+yw

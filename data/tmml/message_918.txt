@@ -1,0 +1,5 @@
+Hi LiuQi
+you may want to see the following paper by M. Welling et al.
+http://www.siam.org/proceedings/datamining/2008/dm08_18_Welling.pdf
+Hope this help.
+TQK

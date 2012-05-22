@@ -1,0 +1,8 @@
+Hi,
+I am running hlda-c code and I need to find list of topics generated and
+probability of each topic in document. How can I find that?
+Thanks,
+Shriti Bharani
+Mtech, Computer Technology
+Dept. of Electrical Engineering
+Indian Institute of Technology, Delhi

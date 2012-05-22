@@ -1,0 +1,19 @@
+              Shaul Mukamel of the University of Rochester and Rudy Marcus of Caltech are
+              supported by the Theoretical and Computational Chemistry Program for a
+              prototype summer school for graduate students and post-doctoral fellows,
+              administered through the Gordon Research Conferences office.  The summer school
+              runs 11 days and consists of 3-4 lectures per day morning and evening, with
+              afternoons open for discussion.  Lecturers are in residence for at least 7 of
+              the 11 days, to allow time for interaction with students.  The focus of this
+              summer school, a pilot program, is on teaching analytic techniques relevant to
+              rate processes in the condensed phase.  It is envisioned that future summer
+              schools will focus on other areas of theoretical chemistry.
+
+The purpose of
+              this summer school is to provide a basic survey of current theoretical
+              techniques to chemistry graduate students, postdoctoral fellows, and advanced
+              senior undergraduate students.  The lectures will emphasize and illustrate
+              specific analytical techniques as well as physically motivated approximations
+              and the connection with current experiments.  Lecturers will discuss what
+              aspects of their work are transferable to other quite different problems in
+              various fields of theory.

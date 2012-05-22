@@ -1,0 +1,4 @@
+Dear all,
+I use Gibbs sampling to estimate the parameters of topic model. My question is:for a specific word (say, the tenth word in document 1) in the corpus, ?the topic assigned to it will become stable after some iterations? If so, what factors will influence the speed of becoming stable ?
+Thanks for your help.
+Best RegardsDarren

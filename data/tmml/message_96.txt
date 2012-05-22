@@ -1,0 +1,4 @@
+This is the art of machine learning.  Typically you use your prior
+domain knowledge in estimating the parameters, which can be also
+gained through trial and error.
+Aaron

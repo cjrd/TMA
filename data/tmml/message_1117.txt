@@ -1,0 +1,14 @@
+Hi Vikas,
+Increase the number of lantent topics do not necessary indicates a that
+perplexity is decreasing.
+Perplexity is an indicator of how good your model infers unseen data. So, if
+your results are correctly
+obtained, it seems that 20 latent topics provides a better model of your
+observed data.
+Try also with k=10 and/or k=15. It is also a good practice to average perp
+results over several executions of lda inference.
+btw, just for curiosity, which kind of images are you using?, are there all
+related to the same meaning?
+bests,
+Federico Castanedo
+2011/4/8 cs09m062 at cse.iitm.ac.in <vikasv at cse.iitm.ac.in>

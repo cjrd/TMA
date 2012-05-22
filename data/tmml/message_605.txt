@@ -1,0 +1,7 @@
+Dear topic model list,
+Please excuse me if this is a very basic question, but I'm wondering if
+there is a principled Bayesian way to measure the variance of a corpus.
+Ultimately, I'm trying to figure out how many topics to choose in order to
+fit a topic model to a corpus.
+Thanks,
+David

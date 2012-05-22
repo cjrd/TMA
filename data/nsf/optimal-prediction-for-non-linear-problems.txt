@@ -1,0 +1,33 @@
+              The method of optimal prediction has been developed recently.
+It gives the best
+              approximation to non-linear equations
+assuming that the higher modes are
+              random.
+It is suited for computing complicated flows, when
+the information
+              about the initial data is incomplete.
+The proposer will study the convergence
+              of the optimal prediction method
+applied to the cubic Schrodinger
+              equation.
+Such equations occur in quantum mechanics.
+In addition the method
+              will be used to study the flow
+of incompressible and inviscid fluids in three
+              dimensions.
+The complicated behavior of such fluids is part of the
+problem of
+              turbulence.
+
+Turbulent flows typically consist of a slow, large scale
+              motion,
+and a lot of small, but fast, eddies. Instead of computing the
+              flow
+by a single numerical algorithm, the investigator will treat
+the small
+              scale motion as a random component, and incorporate
+its influence on the large
+              scale motion approximately. The goal
+is to develope faster and more robust
+              computational schemes
+for turbulent flows.

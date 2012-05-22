@@ -1,0 +1,1 @@
+I think the problem is the initial beta distribution is identical for each topic. So the model is regressed to a more simple model.

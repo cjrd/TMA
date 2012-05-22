@@ -1,0 +1,5 @@
+Hello,
+I ran the example that David Blei posted (Associated Press ) on my machine, but somehow the result doesn't converge. The alpha of the result is more than 1 - and all topics are actually the same distribution.. How could this happen?
+I actually use the code on a windows machine, which is why my "lgamma" function, is the "log_gamma" that was implemented in utils.C and not the one of "math.h".
+Thanks in advance,
+Efrat.

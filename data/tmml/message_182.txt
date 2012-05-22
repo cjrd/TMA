@@ -1,0 +1,10 @@
+Dear All,
+I am using topic models for image categorization problems in which an image
+is represented as a bag of "visual words". For my problem, the number of
+"words" contained in each image varies greatly. This is equivalent to
+document modeling where the length of documents varies. My questions is: do
+I need to do some normalization before applying topic models? If yes, then
+the normalized document-term frequency may not even be an integer and I am
+not sure if this still makes sense for topic models?
+Thank you,
+Shuiwang

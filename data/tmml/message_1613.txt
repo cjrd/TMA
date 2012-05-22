@@ -1,0 +1,10 @@
+Hi Xueliang,
+You can check out Project Apache Mahout. It builds on top of hadoop and
+it is a scalable machine learning library. It has latent dirichlet
+allocation implemented although it was a student project and I am not
+100% sure of its performance but you should still check it out. You
+should also check out Yahoo's implementation of LDA which many claim is
+much better than what's available in Mahout.
+http://blog.smola.org/post/6359713161/speeding-up-latent-dirichlet-allocation
+Best,
+Ehtsham

@@ -1,0 +1,238 @@
+* Apologies for cross-posting *
+#####################################################################
+IEEE/WIC/ACM Intelligent Agent Technology 2011
+CALL FOR PAPERS
+#####################################################################
+2011 IEEE/WIC/ACM International Conference on
+Intelligent Agent Technology (IAT-11)
+August 22 - 27, 2011, Lyon, France
+http://wi-iat-2011.org
+Sponsored By
+IEEE Computer Society
+Web Intelligence Consortium (WIC)
+Association for Computing Machinery (ACM)
+##################################################################
+Full Papers submission (WI and IAT):
+- Electronic abstracts submission (WI and IAT): March 4, 2011
+- Electronic submission of full papers (WI and IAT): March 11, 2011
+Notification of paper acceptance (WI and IAT): May 23, 2011
+Workshop paper submissions: March 21, 2011
+Notification of Workshop paper acceptance: June 1, 2011
+Camera-ready copies of accepted papers: June 10, 2011
+Workshops and Industry track: August 22, 2011
+Conference: August 23-25, 2011
+Summer School: August 26-27, 2011
+##################################################################
+IAT 2011 provides a leading international forum to bring together researchers and practitioners from diverse fields, such as computer science, information technology, business, education, systems engineering, and robotics, to (1) examine the design principles and performance characteristics of various approaches in intelligent agent technology, and (2) increase the cross-fertilization of ideas on the development of autonomous agents and multi-agent systems among different domains. By encouraging idea-sharing and discussions on the underlying logical, cognitive, physical, and sociological foundations as well as the enabling technologies of intelligent agents, IAT 2011 will foster the development of novel paradigms and advanced solutions in agent and multi-agent based computing.
+IAT 2011 will be jointly held with the 2011 IEEE/WIC/ACM International Conference on Web Intelligence (WI 2011).
+The two conferences will have a joint opening, keynotes, reception, and banquet.
+WI-IAT 2011 will include a summer school providing in-depth background on subjects that are of broad interest to Web intelligence and Intelligent Agent Technology communities. It will also include workshops and an industry day. The workshop and the industry day programs will focus on new research challenges, initiatives and applications.
+All papers accepted for workshops and industry day will be included in the Workshop and industry day Proceedings published by the IEEE Computer Society Press and will be available on site.
++++++++++++++++++++
+Topics of Interest
++++++++++++++++++++
+We invite submissions in all IAT related areas. Papers exploring new directions or areas will receive a careful and supportive review. Areas of interest include, but are not limited to:
+* Autonomy-Oriented Computing (AOC)
+- Autonomy-Oriented Modeling and Computing Methods
+- Complex Behavior Characterization
+- Complex Systems Modeling and Simulation
+- Emergent Behavior
+- Hard Computational Problem Solving
+- Nature-Inspired Computing
+- Regularities and Models of AOC
+- Self-Organization in Multi-Agent Systems
+- Self-Organized Complex Networks
+- Swarm or Collective Intelligence
+- Unconventional, Self-Organized Computing Paradigms
+* Agent and Multi-Agent Systems Modeling
+- Complex Agent Behavior Modeling
+- Cognitive Architectures
+- Cognitive Modeling of Agents
+- Emotional Modeling
+- Neuroeconomics
+- Peer-to-Peer Models for Multi-Agent Systems
+* Agent and Multi-Agent Systems Engineering
+- Agent Oriented Sofware Engineering
+- Multi-Agent Oriented Software Engineering
+- Multi-Agent Programming Languages
+- Formal Framework for Multi-Agent Systems
+- Testing, Debugging of Multi-Agent Systems
+- Evaluation of Multi-Agent Systems
+- Efficiency and Complexity Issues
+- Scalability
+- Tools and Standards
+- Fault-Tolerance in Multi-Agent Systems
+- Mobile Agent Languages and Protocols
+- Multi-Agent Autonomic Architectures
+* Coordination
+- Multi-Agent Planning
+- Social Interactions in Multi-Agent Systems
+- Information Exchanges in Multi-Agent Systems
+- Learning and Self-Adaptation in Multi-Agent Systems
+- Agent Interaction Protocols
+- Social and organisational structures, institutions
+- Norms and normative behaviour
+- Trust, reputation
+- Privacy, safety, security
+* Autonomous Auctions and Negotiation
+- Agent-Based Marketplaces
+- Auction Markets
+- Combinatorial Auctions
+- Hybrid Negotiation
+- Integrative Negotiation
+- Mediating Agents
+- Pricing Agents
+- Trading Agents
+* Autonomous Knowledge and Information Agents
+- Agent-Based Knowledge Discovery and Sharing
+- Autonomous Information Services
+- Distributed Knowledge Systems
+- Evolution of Topics, Trends, Knowledge Networks and Communities
+- Human-Agent Interaction
+- Information Filtering Agents
+- Agent-Based Knowledge Aggregation
+- Ontology-Based Services
+- Recommender Agent-Based Systems
+- Agent Mining
+* Distributed Problem Solving
+- Agent Networks in Distributed Problem Solving
+- Collective Group Behavior
+- Coordination and Cooperation
+- Distributed Intelligence
+- Distributed Search
+- Dynamics of Agent Groups and Populations
+- Market-Based Computing
+- Problem-Solving in Dynamic Environments
+* Applications
+- Agent-Based Cloud Computing
+- Agent-Based Assistants
+- Agent-Based Virtual Enterprise
+- Software and Pervasive Agents
+- Perceptive Animated Interfaces
+- Embodied Agents
+- Interface Agents
+- Virtual Humans
+- Games
+- Knowledge and Data Intensive Systems
+- Large-Scale Systems Applications (e.g., Social, Policy, Sustainability, Brain Informatics (BI), and Web Intelligence (WI) Applications)
+- Social Simulation (e.g., Social Behavior, Social Inference, Social Networks, and Social Norms)
+- Ubiquitous Systems and e-Technology Agents
+++++++++++++++++++++++++++++++++++++
+On-Line Submissions and Publication
+++++++++++++++++++++++++++++++++++++
+High-quality papers in all IAT related areas are solicited.
+Paper submissions should be limited to a maximum of 8 pages in the IEEE 2-column format.
+The same format will be used for final camera-ready papers (see the Author Guidelines at http://www.computer.org/portal/web/cscps/formatting)
+All submitted papers will be reviewed by the Program Committee on the basis of technical quality, relevance, significance, and clarity.
+Note that IAT 2011 will accept ONLY on-line submissions in PDF format. Please use the Submission Form on the WI-IAT 2011 website to submit your paper. Accepted papers will be published in the conference proceedings by the IEEE Computer Society Press that is indexed by EI.
+Submissions accepted as regular papers will be allocated 8 pages in the proceedings and accorded oral presentation times in the main conference.
+Submissions accepted as short papers will be allocated 4 pages in the proceedings and will have a shorter presentation time at
+the conference than regular papers.
+All co-authors will be notified at all time, for the submission, notification, and confirmation on the attendance. Submitting a paper to the conference and workshops means that, if the paper is accepted, at least one author should attend the conference to present the paper. The acceptance list and no-show list will be openly published on-line. For no-show authors, their affiliations will receive a notification.
+Authors of a selected number of IAT 2011 accepted papers will be invited to submit extended and revised versions of their papers for condideration for inclusion in Web Intelligence and Agent Systems: An International Journal (http://wi-consortium.org/journal.html) and other related journals.
+The best paper awards will be conferred at the conference on the authors of (1) the best research paper and (2) the best application paper. Application-oriented submissions will be considered for the best application paper award.
+More detailed instructions and the On-Line Submission Form will be found on the IAT 2011 homepage:
+http://wi-iat-2011.org
+++++++++++
+Workshops
+++++++++++
+An important part of the conference is the workshop program which will focus on new research challenges and initiatives. All papers accepted for workshops will be included in the Workshop Proceedings published by the IEEE Computer Society Press that are indexed by EI, and will be available at the workshops.
+Detailed information is available at the conference homepage.
+++++++++++
+Summer school
+++++++++++
+IAT 2011 also welcomes Tutorial proposals for the summer school taking place after the main conference. IAT 2011 will include tutorials providing in-depth background on subjects that are of broad interest to the Web intelligence and Intelligent agent technology community. Both short (2 hours) and long (half day) tutorials will be considered.
+Detailed information is available at the conference homepage.
+++++++++++++++++++++
+Demo-Track
+++++++++++++++++++++
+We solicit Demo-Track papers. More detailed instructions available at the conference homepage.
+++++++++++++++++
+Important Dates
+++++++++++++++++
+Workshop proposals submission: December 17, 2010 (Notification of acceptance: January 7, 2011)
+Full Papers submission (WI and IAT):
+- Electronic abstracts submission (WI and IAT): March 4, 2011
+- Electronic submission of full papers (WI and IAT): March 11, 2011
+Notification of paper acceptance (WI and IAT): May 23, 2011
+Workshop paper submissions: March 21, 2011
+Notification of Workshop paper acceptance: June 1, 2011
+Camera-ready copies of accepted papers: June 10, 2011
+Workshops and Industry track: August 22, 2011
+Conference: August 23-25, 2011
+Summer School: August 26-27, 2011
+++++++++++++++++++++++++
+Conference Organization
+++++++++++++++++++++++++
+Conference General Chair:
+* Mohand-Sa?d Hacid, University Claude Bernard Lyon 1, France
+Program Chair:
+* Olivier Boissier, ENS Mines Saint-Etienne, France
+IAT Program Co-Chairs:
+* Jeffrey Bradshaw, UWF/Institute for Human and Machine Cognition, USA
+* Longbing Cao, University of Technology, Sydney, Australia
+* Klaus Fischer, DFKI GmBH, Saarbruecken, Germany
+WI Program Co-Chairs:
+* Boualem Benatallah, University New South Wales, Sydney, Australia
+* Mike Papazoglou, University of Tilburg, Netherlands
+* Zbigniew Ras, University North Carolina at Charlotte, USA
+Organizing Co-Chairs:
+* J?r?me Gensel, University Mend?s-France, Grenoble, France
+* Robert Laurini, INSA Lyon, France
+* Pierre Maret, University Jean Monnet, Saint-Etienne, France
+Workshop Co-Chairs:
+* Jomi F. Hubner, UFRSC, Florianopolis, Brazil
+* Jean Marc Petit, INSA Lyon, France
+* Einoshin Suzuki, Kyushu University, Japan
+Panel Co-Chairs:
+* Valentina Tamma, University of Liverpool, UK
+* Laurent Vercouter, ENS Mines Saint-Etienne, France
+Demos Co-Chairs:
+* Daniel Florian, University of Trento, Italy
+* Gauthier Picard, ENS Mines Saint-Etienne, France
+Industry Day Co-Chairs:
+* Catherine Garbay, LIG-CNRS, Grenoble, France
+* Hamid Motahari, HP Labs, Palo Alto, USA
+* Michel Occello, University Pierre Mend?s France, Grenoble, France
+Summer School Co-Chairs:
+* C?cile Favre, ERIC, University Lyon 2, France
+* Jose-Norberto Mazon, University of Alicante, Spain
+Ten Years Most Influencial Paper Award
+* Gabriella Pasi, Universit? degli Studi di Milano Bicocca, Milano, Italy
+Publicity Co-Chairs:
+* Adnene Guabtni, UNSW, Sydney, Australia
+* Christine Largeron, University Jean Monnet, Saint-Etienne, France
+* Ansaf Salleb-Aouissi, Columbia University, New York, USA
+IEEE-CS-TCII Chair:
+* Jiming Liu, Hong Kong Baptist University, Hong Kong
+ACM-SIGART Chair
+* Maria Gini, University of Minnesota, USA
+WIC Co-Chairs/Directors:
+* Ning Zhong, Maebashi Institute of Technology, Japan
+* Jiming Liu, Hong Kong Baptist University, Hong Kong
+WIC Advisory Board:
+* Edward A. Feigenbaum, Stanford University, USA
+* Setsuo Ohsuga, University of Tokyo, Japan
+* Benjamin Wah, University of Illinois, Urbana-Champaign, USA
+* Philip Yu, University of Illinois, Chicago, USA
+* L.A. Zadeh, University of California, Berkeley, USA
+WIC Tech. Committee & WI/IAT Steering Committee:
+* Jeffrey Bradshaw, UWF/Institute for Human and Machine Cognition, USA
+* Nick Cercone, York University, Canada
+* Dieter Fensel, University of Innsbruck, Austria
+* Georg Gottlob, Oxford University, UK
+* Lakhmi Jain, University of South Australia, Australia
+* Jianchang Mao, Yahoo! Inc., USA
+* Pierre Morizet-Mahoudeaux, Compiegne University of Technology, France
+* Hiroshi Motoda, Osaka University, Japan
+* Toyoaki Nishida, Kyoto University, Japan
+* Andrzej Skowron, Warsaw University, Poland
+* Jinglong Wu, Okayama University, Japan
+* Xindong Wu, University of Vermont, USA
+* Yiyu Yao, University of Regina, Canada
+Webmaster:
+* Jean-Paul Jamont, Pierre Mend?s France University, Valence, France
+*** Contact Information ***
+Email: wi-iat11 at liris.cnrs.fr
+The WIC Office
+Email: wi10 at wi-consortium.org

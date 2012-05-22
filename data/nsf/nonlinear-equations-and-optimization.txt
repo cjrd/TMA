@@ -1,0 +1,66 @@
+              DMS 0070641
+ABSTRACT.
+
+The principal investigator will continue his research
+              program in the numerical
+solution of large systems of nonlinear equations and
+              noisy optimization 
+problems. In the area of nonlinear equations the PI will
+              continue his 
+research program on pseudo-transient continuation methods for
+              nonlinear 
+equations to the partial differential algebraic equation (PDAE)
+              setting
+and design and analyze multilevel methods for fully iterative
+              algorithms 
+for parameter-dependent families of compact fixed point
+              problems.
+In the area of optimization, the principal investigator will
+              
+extend his work on sampling methods to problems with ``hidden constraints'',
+              
+i.e. constraints whose violation can only be detected by failure of the
+              
+objective function to return a value, continue his development of the
+              implicit
+filtering with the design of a Levenberg-Marquardt form of the
+              algorithm, 
+and investigate the performance of the DIRECT method both from the
+              
+theoretical viewpoint and as a way to identify hidden constraints. 
+This
+              aspect of the PI's research involves undergraduates in a significant
+              way.
+
+Many processes and models in engineering and science are expressed as
+              nonlinear
+equations. Numerical simulation of these processes requires the
+              rapid and 
+accurate solution of these equations and a clear understanding of
+              the methods
+and their limitations. With a high-quality simulator in hand,
+              optimization
+can be used in design.  The optimization problems that arise in
+              
+industrial design are often noisy because of measurement or simulation error.
+              
+The principal investigator will continue his work on the computational
+              
+solution of nonlinear equations and optimization problems. The work 
+will
+              consist of study of algorithms, needed to ensure robustness and 
+reliability
+              of simulations, implementation on distributed memory computers,
+which is
+              important for for rapid turnaround, and applying the methods
+in collaborations
+              with scientists and engineers in industry, national 
+laboratories, and
+              academia. The work will be used in (a) environmental 
+modeling, measurement,
+              and remediation, (b) simulation, optimal design, 
+and control in the aerospace
+              industry, and in (c) optimization of 
+gas pipeline networks.
+
+

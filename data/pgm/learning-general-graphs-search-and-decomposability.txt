@@ -1,0 +1,328 @@
+
+We talked about how the problem of
+learning a general base net structure can
+be viewed as a common coil optimization
+problem in which we are trying to find a
+high scoring network structure. And how
+that's problem, that problem is usually
+solved by some kind of heuristic search
+over a space of base net structures. Let's
+talk now about the computational cost of
+this algorithm and how we can use the
+property of decomposability, which we also
+previously used in the context of tree
+learning to considerably reduce the
+computational cost of this of this
+algorithm. So as a reminder, the
+[inaudible] search procedure that we
+discussed, iteratively moves over the
+space of networks. And so if this is the
+network that we're currently at, we need
+to evaluate several different moves away
+from that network. That's [inaudible]
+usually local ways by adding the leading
+or reversing an arc. We then score each of
+these subsequent networks. And see which
+of those has the highest score. And take
+that move. And one can also have other
+algorithms that evaluate the, the, the
+[inaudible] that make the greedy move at
+each point. But the basic idea is the
+same. So what is the computational cost of
+this algorithm? Let's do the naive
+computational analysis. What we would get
+if we were to do the naive implementation
+of this. So, how many operators are there
+in each search step that we need to
+evaluate? So, in a Bayesian network with,
+N nodes, we have, N times N - one,
+different possible edges. One now each of
+those edges is either present in the
+graph, or not present in the graph. If the
+edge is present in the graph, we can
+either delete it. Or reverse it. And if
+it's absent. We can add it. Which means
+that effectively we have either two or one
+possibilities for each of those N times N
+-one possible edges and so we have O of N
+squared possible operators that we need to
+evaluate at each point in this step. Each,
+each step in the algorithm. What is the
+cost of evaluating each of the candidate
+successors that we would get by taking one
+of these operators? So reminding ourselves
+that there are multiple components in this
+score, one for each variable in the
+network because of the decomposability
+property, so we have n. Different
+components. And for each of those we have
+to look at this efficient statistics and
+compute the resulting entry in the score
+corresponding to a variable. Computing
+efficient statistics requires a traversal
+over the training data. And so that
+something would takes o of m time, where m
+is the number training existence. So
+altogether, this stat requires o and times
+m. Now, we haven't talked about this, but
+one also needs to make sure that the
+resulting graph from this operator is in
+fact acyclic. And, so we need to do an
+acyclicity check. This is something that
+in general requires O of little M time
+where M is the number of edges in the
+graph. So altogether, if we sum up all of
+these different pieces of the cost, we end
+up with, a computational cost, which is O
+of N squared times MN+little m. Where, by
+and large, little m is usually dwarfed by,
+M, by big M times N. And that is the cost
+per [inaudible] up. Now if you think of
+that work, it?s not even the [inaudible]
+that large something that has fifty or
+hundred variables so that ends fifty to
+hundred and the number of training
+instances is ten thousand this can get
+really-really large and generally
+impractical to do in a lot of situations.
+So how to improve on this. Let's see how
+we can exploit the decomposability
+property to get a significant
+computational savings in the search
+process. Let's first look at a single
+small operator, such as the one where we
+have an edge between B and D. To this
+network where such an edge did not exist
+before. And let's consider the score that
+we had for the original network which, in
+this case is because of decomposability
+property, is the sum of family scores for
+the individual variables. So we have a
+component that lists a score of A relative
+to its empty set of parents, the score of
+B relative to the empty set, C relative to
+its parents A and B and D relative to its
+parents C. Let's compare that to the score
+of the network following the move. And we
+can see that this score for the new
+network is actually very similar to the
+score of the original network, because.
+For the same decomposability property, we
+can break up the score into these little
+components. And since most families
+haven't changed that component, then the
+score's going to be the same.
+Specifically, we're going to have the
+exact same score for A, relative to its
+empty parent set. The same score for B,
+the same score for C. And only this, only
+this last score for D is now going to be
+different, because of. The fact that we've
+modified the family for D. But that
+immediately suggest that we don't really
+need to recompute these earlier components
+of the score because they haven't changed.
+We only need to compute the last component
+corresponding to D. In fact we can do
+better than that by, instead of
+considering the absolute square. Instead
+we are going to compute what's called the
+delta square, which is the difference
+between the square of the network
+following the change, this network, and
+the square of the original network. And
+we're going to compute the difference
+between those two squares, which as we can
+see, is just the difference between the
+squares of the two families for D the BC
+family in the following, in the new
+network versus the C family in the
+original network. And that delta score is
+going to be something that we can compute
+just looking at a single family. It can
+ruin the rest of the network. The same
+thing happens for other local operators.
+So, for example, if we consider now, the
+deletion operator, that deletes an edge
+between B and C. The, and we look at the
+delta score, that delta score only cares
+about the, the family C, because that's
+the only family to have changed. And
+that's going to be, again the difference
+between the score of C with a single, with
+a single edge A, minus the score of C,
+with a family AD. So again, only one
+family gets affected by this change. For
+an edge reversal, the situation's a little
+bit more complicated because we can see
+that by flipping the edge from B to C and
+making it go from C to B, there's actually
+two families that are affected, the B
+family and the C family. But that's still
+just two as opposed to the entire network.
+And so, we can see that, that delta score
+is going to have two components. One is
+the delta score for the C family, and the
+second is the delta score for the B
+family. But in either case, we only end up
+affecting either one. Family, in the case
+of edge addition, or in that case, a case
+of edge deletion, or utmost, two families
+in the case of edge reversal. And so that
+means that we only have to consider a much
+smaller fraction of the net worth when
+computing the delta square. A second use
+of this possibility property comes up when
+we consider multiple consecutive steps of
+the search algorithm. So let's imagine
+that in the previous step, we decided to
+take that steps that added the edge for
+[inaudible] and now we have to consider
+the next step in the search. But what are
+the operators that are conceivable in this
+next step of the search. For example, one
+such operator is to delete the edge from
+[inaudible]. This one, and notice that,
+that edge deletion operation is in fact
+operator that we considered in previous
+step of the search before we decided to
+add the edge from B to D. Now not only is
+this operator the same. Notice that the
+family of C hasn't changed between those,
+between those two cases. And both of
+these, cases, when we're considering the
+move, C has the parents of A and B. And so
+the delta score for that particular move
+is not going to change either.
+Specifically, if in this case, the delta
+score was, the score of C, given family A,
+minus the score of C, given the family AV.
+We have exactly that same score. The same
+delta score in, in the previous step. That
+is, these two delta scores in the previous
+step and the new step are exactly the
+same. And so there's really no point to
+recompute it. So which scores do we need
+to recompute? The only scores that we need
+to recompute are the ones that were
+affected by the step that we currently,
+that we just took. So specifically if we
+took a step that modified the family of D,
+then any step that involves an additional
+change to the family of D will have a
+different delta score because the family
+is now different in doing the comparison.
+However, families that were not affected
+by the move don't need to be recomputed.
+So to summarize, we only need to re-score
+Delta moves, Delta scores, for families
+that changed in the last move. So let's
+summarizes the computational cost of this
+procedure. What's the cost per move?
+Having decided to take a move we have only
+one or two families that were affected by
+that move. That means that. Only O and
+delta scores need to be computed because
+for a given family there is only N
+possible edges that impends on that
+family. So only O and delta scores need to
+be computed and for each of those we need
+to compute sufficient statistics, which
+takes OM time. So all together we have O
+of little m times m as the cost of doing
+this stuff which is actually two orders of
+magnitude better than old n cube times m
+that we had for the original naive
+computation. Now this tells us the cost
+after we pick a move. What about the cost
+of picking the [inaudible]? Now, naively
+we might say that there's N squared
+possible operators that we can consider
+any given move so we need to evaluate each
+of them and pick the best one, or consider
+each of them and pick the best one, but in
+fact we can do considerably better by the
+use of clever data structure, specifically
+we can maintain a priority queue of
+operators sorted by their delta scores.
+Now when we re-score those O-event
+operators. In this step over here. We need
+to modify the score of those operators,
+and reinsert them into the priority cue in
+their appropriate place. But that's a
+computation that requires [inaudible] and
+login time, because there's only N of
+them. And once we have done that, the best
+operator will be at the top of the list.
+Which we can then, take, identify and take
+in constant time. And so this priority
+queue saves us complexity by taking us
+from old S square time for picking this
+for traversing the set of operators to
+something that requires [inaudible] log
+in. And so altogether we've actually saved
+a considerable cost in both of these
+steps. It turns out that one can, get an
+even higher level of computational
+efficiency, based on a different
+observation. So, it's a fact that, in most
+network learning algorithms, the plausible
+families, the ones that have some chance
+of being selected, are variations on a
+theme. That is, for a given variable A,
+there might be some number of variables.
+You know, B1, B2. Up to DK for a very
+small K. That are reasonable parents to be
+selected as parents for A. And so. How do
+we exploit that property in computational,
+to get computational savings? Turns out
+there's two different, ways that one can
+utilize this. The first is the fact that,
+because we have the same set of variables
+being constantly considered as being
+candidate families. It means that we can
+use sufficient statistics that we computed
+in one step, and reuse them in a different
+step if we cache them. Because the,
+because we're likely to encounter the same
+family more than once. We might encounter
+B as a parent of A. And A as a pair, as a
+possible pairing for B and for both of
+these we have the sufficient statistics. A
+B that are going to be utilized for both
+of them. And so, if we compute this once
+and then cache it, these sufficient
+statistics we don't have to recompute them
+again. That turns out to be a huge
+difference in terms of the computational
+cost of this algorithm. The second way
+which this could be used is that if we can
+identify in advance the set of B1 up to BK
+that are reasonable parents to consider
+for A. We can restrict in advance. That
+set, and not consider other parents at
+all, which reduces our complexity from o
+of n to o of k, where k is some bound on
+the number of plausible parents that we're
+willing to consider. Now this, now is a
+heuristic in the sense that this is a
+restriction that could actually change the
+outcome of our algorithm. It's not just a
+way of reducing the cost, but it turns out
+to be a very good approximation and
+practice. To summarize, it turns out that
+even the fairly simple heuristic structure
+search that we employ in, in, such as
+greedy hill climbing, can get expensive
+when N is large. Because the, naive
+implementation has the cubic dependence on
+N. But we can exploit the decomposability
+property, that we also exploit in the
+context of tree learning, to get several
+orders of magnitude reduction in the cost
+of this search. We can also exploit the
+recurrence of plausible families at
+multiple steps in the search algorithm to
+get further computational savings and also
+restrict the search space to, to get
+better, better computational property

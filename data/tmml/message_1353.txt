@@ -1,0 +1,6 @@
+Hi, Nima.
+I recommend the 2004 PNAS paper by Griffiths and Steyvers as well as their
+2007 book chapter:
+http://www.pnas.org/cgi/reprint/0307752101v1.pdf
+http://cocosci.berkeley.edu/tom/papers/SteyversGriffiths.pdf
+Regards,

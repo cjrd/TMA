@@ -1,0 +1,9 @@
+Dear all,
+I am now trying to apply a LDA training on a very large data set. It becomes impossible to train the whole set. A random sampling seems to be a reasonable way to tackle it. I just wonder whether anyone here is aware of any literature that discussed the random sampling issues of topic model, such as how large the sample size would be representative enough, how the sample size affects some performance measures such as perplexity.
+It seems that the sampling issues itself is a topic of interest if applying LDA to a large data set.
+Thanks in advance for any comments.
+Best,
+Kun Lu
+Ph.D Candidate
+School of Information Studies
+University of Wisconsin-Milwaukee

@@ -1,0 +1,24 @@
+              SES-0140345
+Principal Investigator: J. Craig Jenkins
+Institution: Ohio State
+              University
+
+This Small Grant  for Exploratory Research (SGER) provides funds
+              to supplement the existing standard sources of international events data
+              (primarily computerized content analyses of Reuters Business Briefs) with a
+              field reporting system based on observers in seven Central and South Asian
+              countries (Afghanistan, Kazakhstan, Tajikistan, Uzbekistan, Turkmenistan,
+              Kyrgzstan and Pakistan).  The field reporters are trained in a systematic event
+              reporting format that captures many more conflict events than are reported in
+              the Reuters sources and provides more comprehensive data for subsequent
+              analyses.  The grant would support the training of the field reporters, improve
+              their infrastructure, and enlarge the geographic coverage of the reporting
+              system.  In addition, the PI will refine the computerized coding of the
+              standard news reports to improve their reliability. Comparisons between the two
+              sources will be made.  The project will expand the systematic data collection
+              of  conflict events in an area of the world that has been under-reported in
+              past conflict data files but has become an increasing area of internal and
+              international conflict.  The resulting publicly available data will increase
+              our ability to test and refine theories of conflict, especially the
+              relationships between internal and international conflict.
+

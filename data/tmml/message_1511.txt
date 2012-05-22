@@ -1,0 +1,7 @@
+Dear all,
+An update on my issue with deep trees. It turns out that the program was not compiling correctly on my machine, hence the inference wasn't begin performed properly.
+In short: On my machine (OSX 10.6.5) the hlda-c Makefile was causing the wrong 'time.h' to be included in the compilation, meaning that init_random_number_generator() wasn't being initialised properly.
+To solve this problem, I removed '-I/usr/include/sys/' from line 9 of the Makefile, and it now compiles fine and learns deep trees. I was able to repeat this problem on another OSX machine, so I suspect the issue is a generic Macintosh one.
+Thanks,
+Michael
+Begin forwarded message:

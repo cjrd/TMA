@@ -1,0 +1,95 @@
+              Egerstedt, Magnus
+CCR-0207411
+
+Communications in Embedded Control Systems -
+              Project Summary
+This project investigates how different embedded software and
+              hardware
+components should communicate with each other in order for the
+              overall, global
+system to behave in a satisfactory way. The main area of
+              investigation is the
+information theoretic content of the transmitted signals,
+              i.e. a study of how
+many bits of information need to be transmitted between
+              the different components
+in order to make the physical system meet its
+              specifications. For instance,
+autonomous robotic systems are normally relaying
+              on a variety of heterogeneous
+sensors, and the question then becomes, which of
+              the sensors are needed? And
+furthermore, is it possible to compress the data
+              in a systematic way, e.g. using
+virtual sensors, so that information that is
+              not essential to the current task,
+or mode of operation, can be
+              discarded?
+
+Since the sensory data needed for accomplishing a certain task
+              depends both on
+the control law, the dynamics of the system, and the
+              complexity of the task,
+information theory provides a tool for treating
+              questions concerning sensor and
+actuator selection and control mode design in
+              a unified way. This project is
+focused on the following two enabling areas of
+              research:
+1. Modeling of the information theoretic content of the symbolic,
+              computer
+generated inputs used for controlling continuous, mechanical
+              devices.
+2. Selection of embedded sensors and actuators for a multi-agent,
+              robotic
+system. This selection is done so that the control system meets
+              its
+specifications in the presence of bandwidth constraints, i.e. so the
+              robots
+maintain formation while avoiding obstacles in the environment.
+
+In
+              this project computer generated, or linguistic control commands are modeled
+as
+              strings of mode descriptions that can be read by trigger based hybrid
+systems.
+              In other words, models for software based control of physical,
+continuous
+              devices are developed in such a way that the actual control signals
+have a
+              clear information theoretic content in terms of code lengths, thus
+connecting
+              the field of multi-modal control with that of information theory.
+This model
+              enables the investigation of component integration issues. Since each
+sensor
+              or actuator contributes to the total number of bits needed for coding
+              the
+control signals, by minimizing the code lengths subject to the constraint
+              that
+the system should behave in a satisfactory way, a natural measure of
+              what
+components are needed in the current mode of operation is derived.
+              Furthermore,
+the explicit focus on code lengths has immediate implication on
+              coding theory,
+i.e. a theory for how the information shared between different
+              embedded
+components should be represented is a direct consequence of this
+              research.
+
+The information theoretic approach to control theory under
+              investigation in this
+project has a number of potential applications outside
+              the field of embedded
+control. For instance, in teleoperated robotics the
+              control signals are
+transmitted over communication channels in which the
+              presence of channel noise
+makes it preferable to transmit instructions that
+              are as short as possible. A
+related problem arises in the area of minimum
+              attention control, where an
+attention functional is defined as a measure of
+              the control variability.
+

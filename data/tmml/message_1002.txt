@@ -1,0 +1,9 @@
+Hi Donn!
+Thank you so much, right now the Gibbs Sampler is running :-)
+Actually, there was still a problem. But this was caused by the fact
+that the source toolbox's source code files have MsDos-format. The
+patch-tool could not handle the 'carriage return' characters at the end
+of lines.
+Well, now it works! Great!
+Best regards,
+Sebastian

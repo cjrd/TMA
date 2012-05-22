@@ -1,0 +1,24 @@
+              This US-Hungarian collaborative project between Lajos Horvath and Piotr Kokoszka
+              of the University of Utah and their Hungarian partners, Istvan Berkes and Endre
+              Csaki of the A. Renyi Institute of Mathematics in Budapest, examines several
+              statistical and probabilistic problems concerned with the detection and
+              analysis of nonstationarities of various types of stochastic processes.
+              Emphasis is on careful analysis of the rates of convergence of the statistics
+              of interest and on the properties of the associated permutation and bootstrap
+              procedures.  Junior researchers from the University of Utah also
+              participate.
+
+The joint research plan includes an investigation of change
+              point procedures and the properties of unit root tests, that are to be
+              developed based on resampling and subsampling methods.  These are fundamental
+              questions associated with the detection of time series.  Results may have
+              practical applications in economics and the financial sector by leading to
+              useful derivations of properties of CUSUM procedures and GARCH models.  For
+              example, findings may improve models for stock returns that can be refined to
+              accommodate infinite error variance. 
+
+This statistics research project
+              fulfills the program objective of advancing scientific knowledge by enabling
+              experts in the United States and Central Europe to combine complementary
+              talents and share research resources in areas of strong mutual interest and
+              competence. 

@@ -1,0 +1,27 @@
+              At the heart of the grant is a cutting stock problem - this is a classical
+              problem familiar to most researchers in operations research and has
+              applications in a number of continuous production applications including metals
+              such as steel or aluminum, paper, textiles, fiber-optic and electrical cable,
+              and glass, to name a few.  However, the version around which the proposed
+              research is built is fundamentally different.  The grant address the case where
+              a company has geographically distributed distribution points that it can stock
+              with standard sizes from its plants, and the customer demand for smaller sizes
+              comes from other geographically distributed points on a continuing basis. 
+              Second, this demand is stochastic in nature.  Third, it addresses a sustainable
+              manufacturing environment where the trim is not considered waste, but rather
+              gets recycled and has an inherent value associated with it.  Fourth, the
+              problem is not a static one where a one-time decision has to be made.  Rather,
+              decisions need to be made on an ongoing basis, and decisions made at one point
+              in time have a significant impact on decisions at later points in time.  The
+              overall objective is to find long-run rates of replenishment for the standard
+              sizes as well as long-run policies for cutting these into smaller pieces so as
+              to satisfy customer demand. The grant will extend this basic model to consider
+              supply chain design problems and the analogous case for two-dimensional
+              products.
+
+Supply chain problems are critical for most industries. While
+              there has been much research into optimizing supply chains, most research
+              considers only a small part of the supply chain. This grant is unique in that
+              it provides optimal policies for the design and operations of a supply chain
+              under uncertainty. Since it addresses one-dimensional and two-dimensional
+              products it will have applications to many industrial problems.

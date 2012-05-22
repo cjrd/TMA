@@ -1,0 +1,20 @@
+I am interested in Dirichlet compound multinomial hypothesis testing (rather
+than a numerical approach).
+Such as for a Polya Urn Representation, where by I want to conclude that a
+sequences of draws was from generated from one set of alpha parameters
+rather than another with a certain rankable probability.  In a corpus terms
+I want calculate the probability that one set of words or query was
+distinctly drawn from one of two documents.  The only way I can see to do
+this is to calculate the overlap in the two distributions of a dirichlet
+compound multinomial.  I have no reason to believe that the two
+distributions are the same, but they could be.
+I keep trying to solve for the overlap of the two distributions, however on
+the simplex this is quite difficult especially since the integrals involve
+absolute values.  The dirichlet multinomial integral has been integrated
+before, and I can integrate simple variations of this equation.
+I wonder if there have been any efforts to integrate dirichlet multinomial
+type distributions, and or any hypothesis testing over such integrals.
+Is there any calculus theory for which I can read and learn to integrate
+these types of integrals
+Thanks,
+Robin Kramer

@@ -1,0 +1,7 @@
+hi, Ayan
+i put a dataset online http://www.cs.princeton.edu/~chongw/data/6conf.tgz
+this dataset contains research abstracts from 6 conferences. it might
+be useful for you.
+thanks!
+best
+chong

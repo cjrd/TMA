@@ -1,0 +1,32 @@
+              
+The production of surface nanofeatures has many important applications in
+              critical emerging technology fields, including the heterogeneous integration of
+              nanoscale components and devices in microelectronics, information storage and
+              optoelectronic systems. The ultra-fast temporal scale of femtosecond pulsed
+              laser radiation will be combined with the high spatial resolution of near-field
+              optical microscope for nanomachining. This hybrid single-step experimental
+              methodology offers superior flexibility and control over the nanofabrication
+              process. The project will encompass both basic investigation of the extremely
+              rapid transport phenomena in nanometer length scales as well as the design and
+              demonstration of novel practical processes for nanomachining and
+              nanofabrication. The main objectives of the proposed research are given
+              below:
+
+1)	Development of experimental procedures for nanomachining by
+              coupling femtosecond laser radiation with near-field optical
+              microscopes.
+2)	Detailed study of the fundamental mechanisms of the ultra-fast
+              laser energy deposition and the ensuing nanoscale phase transformations by
+              in-situ time-resolved optical spectroscopy.
+3)	Investigation of the ultra-fast
+              transport phenomena in the machining, cutting and joining of
+              nanostructures.
+
+In addition to the impact of the work in many nanotechnology
+              applications, fundamental insight will be gained into the complex
+              thermophysical phenomena in ultra-fast laser-induced nanoscale surface
+              modification processes.  Funding is being provided by the Thermal Transport and
+              Thermal Processing Program of the Chemical and Transport Systems Division and
+              by the Nanomanufacturing Program of the Design, Manufacturing and Industrial
+              Innovation Division.
+

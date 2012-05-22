@@ -1,0 +1,6 @@
+Dear List,
+Is anyone aware of available code for Dynamic Topic Models? As well, is it
+possible that DTMs could be implemented using Gibbs Sampling despite the
+non-conjugacy?
+Thanks!
+David

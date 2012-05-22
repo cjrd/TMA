@@ -1,0 +1,6 @@
+Hi, all
+Latent topic's distribution can be obtained over words in LDA,  but is there
+any paper or result which can prove the topic has the semantic sense
+although we often consider LDA can extract the latent semantic topic? Thanks
+a lot!
+wei chen

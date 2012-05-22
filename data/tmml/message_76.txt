@@ -1,0 +1,18 @@
+Hi there,
+I have tried to test LDA stuff with the given data( ap.dat) using the lda-c
+code
+(from the website www.cs.princeton.edu/~blei/lda-c/)
+After I compiled the code and extracted the data under linux (fedora core),
+I used the following command:
+./lda est 0.5 100 settings.txt ap.dat random
+and
+./lda est 0.5 100 settings.txt ap.dat
+but the result are both like:
+reading data from ap.dat
+number of docs    : 2246
+number of terms   : 10473
+Segmentation fault
+The bash always indicated that there is a Segmentation fault !
+Has anyone met the same problem?
+or has anyone could tell what I should do with it?
+thanks in advance

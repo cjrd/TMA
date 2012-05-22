@@ -1,0 +1,30 @@
+              This Small Business Innovation Research (SBIR) Phase I project addresses the
+              construction of a cross-lingual retrieval system based on deep linguistic
+              analysis intended to deliver efficiencies and cost savings and reduce
+              communication barriers worldwide.  By 2003, 70 percent of the estimated 1.3
+              billion users of the Internet will be non-English speaking.  Thus the need to
+              enable automated, reliable accessibility to information in more than one
+              language is clear.  Most existing information retrieval systems are either
+              monolingual or cross-language with limited success and no translation
+              capabilities.  The investigator's Cross-Language Information Retrieval System
+              (CLIR) will produce significant performance increases in the recall and
+              precision of a cross-language sear.  The investigative team will encapsulate
+              cutting edge natural language processing (NLP) technology developed on a
+              consistent theoretical foundation into a modular and scalable
+              application-programming interface. The system will incorporate an extraction
+              component for the matching of relevant lexemes based on their syntactic
+              context, and a probabilistic module, which will disambiguate multiple
+              interpretation based on expectation.  The firm has secured an exclusive license
+              from Russian Academy of Sciences for the use of complex NLP algorithms that
+              will be integrated into the CLIR technology, creating a state-of-the-art
+              linguistic kernel.
+
+Universal Dialog proffered technology will provide any
+              person, business, organization or government, as well as any software that
+              integrates their Cross-Language Information Retrieval, a faster, less costly
+              solution for the retrieval of multilingual information, with a higher degree of
+              precision, recall and scalability that CLIR methods currently available.  The
+              firm plans to integrate the technology to be developed in this project into its
+              Cross-Language Communication Platform (CLCP).  CLCP will enable users to
+              retrieve, summarize, and fully translate retrieved data.
+

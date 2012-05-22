@@ -1,0 +1,5 @@
+Hello,
+I have downloaded the LDA-C code from Prof Blei's web site. But I am unable
+understand the significance of considering the phi in log space in that
+code. Can any one explain this to me?
+regards

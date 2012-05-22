@@ -1,0 +1,13 @@
+Hi Christopher,
+You can find more information about this type of plot in a paper Dave
+and I wrote last year:
+http://www.cs.princeton.edu/~mimno/papers/mimno-ppcs-emnlp.pdf
+Here's the short version. Consider all the instances of some word that
+are assigned to a particular topic. The x-axis in that plot measures
+how evenly distributed that word is among the documents, relative to
+how evenly distributed the topic as a whole is. For example, in a
+topic about taxes, the word "tax" occurs in almost all of the articles
+that contain that topic, but the word "property" (representing a
+subset of taxes, property taxes) occurs in only a subset of those same
+documents. The word "property" is thus more specific than "tax".
+-David

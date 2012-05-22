@@ -1,0 +1,10 @@
+Hi Laura,
+Which comes back to this paper i guess:
+Blei et. al. (2004). Hierarchical
+topic models and the nested Chinese restaurant process.
+So i will use this LDA Version to estimate K while the sampling process
+is running.
+Thank you
+Andreas
+Email: aniekler at fbm.htwk-leipzig.de
+http://www.fbm.htwk-leipzig.de

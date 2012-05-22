@@ -1,0 +1,19 @@
+Thanks for sharing.
+What you found seems to make sense. Weighting scheme usu. improves
+quality of raw data. As a result, NMF (or other factorization
+techniques) sure benefits from that to uncover more accurate correlation
+among words. In contrast, as a generative model to generate words (or
+other things), LDA works naturally on raw counts.
+BTW, this kind of comparison seems also missing from other
+topic-modeling papers. That's why I am curious, except that I didn't
+find time to do the similar interesting experiments. Maybe you could
+share with us a short list of your results here. Eager to see that.
+Also curious about these:
+- Is there a theoretical connection between NMF and LDA?
+- What about NMF in discrimination? Eg. from training data, it gives us
+a space whose bases are linear combination of words/terms. Then, given a
+new document as a vector of the same words (treatment of unseen words is
+another issue), its location in this new space can be derived. Then
+based on this location, its label can be obtained by similarity measure
+(like LSI in IR) or by learned classifier.
+Thanks!

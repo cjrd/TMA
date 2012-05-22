@@ -1,0 +1,36 @@
+              Abstract
+
+
+Corden
+As nascent pre-mRNAs emerge from elongating RNA polymerase
+              II (pol II), their post-synthetic fate is determined by a large number of
+              RNA-binding proteins. Primary among these proteins are the heterogeneous
+              nuclear ribonucleoproteins (hnRNPs) which have been shown to play multiple
+              roles in mRNA processing and transport. The broad objective of this project is
+              to understand how a subset of yeast hnRNPs interact with the transcription
+              machinery to regulate specific gene expression. The central hypothesis of this
+              project  is that a subset of hnRNPs and processing factors form a complex that
+              binds specific cis-acting sites in some nascent pol II transcripts. The
+              formation of such hnRNP-RNA complexes is proposed to lead to transcription
+              pausing, arrest, or termination through interaction with the pol II C-terminal
+              domain (CTD). CTD kinase I (CTDK-I) may regulate this process by
+              phosphorylating the CTD and changing the nature of the interaction with the
+              hnRNP complex.  This hypothesis will be tested in the yeast Saccharomyces
+              cerevisiae. The first objective is to determine whether interaction between the
+              Nrd1p/Nab3p hnRNP complex and the CTD is regulated by phosphorylation and, if
+              so, whether CTDK-I carries out this phosphorylation. In vitro binding
+              experiments will test the role of CTD phosphorylation in regulating this
+              interaction. Genetic experiments will be used to test the role of CTDK-I. A
+              second objective is to identify cis-acting RNA elements in genes that are
+              regulated by Nrd1p and/or Nab3p. Both genetic and biochemical approaches will
+              be used to characterize an autoregulatory element in the NRD1transcript.
+              Similar elements will be sought in other genes that are regulated by NRD1 and
+              NAB3. The final objective is to determine the stage in the transcription cycle
+              regulated by Nrd1p and Nab3p. The autoregulation of NRD1 expression will be
+              studied in vivo and in vitro to determine the mechanism of NRD1 function.
+              Reaching these objectives will help to define a novel regulatory pathway in
+              yeast. While RNA-binding proteins have been shown to regulate transcription in
+              procaryotes and in HIV infection, no similar regulatory mechanism has been
+              described in yeast. This project draws together the areas of hnRNP function and
+              transcription regulation in an organism amenable to both genetic and 
+

@@ -1,0 +1,4 @@
+Dear list,
+i will have to topic-model a number of documents encoded in UTF-8 soon.  Does anyone know of a package that does this, or suggest patches to lda-c?
+Thanks,
+Stephan

@@ -1,0 +1,22 @@
+Hi all,
+I'm a newbie to LDA and find this a very interesting tool for text mining.
+My question is related to training set likelihood. What I am trying is to
+calculate the log likelihood (e.g., log P(w|z) ) during the Gibbs Sampling
+process and to see the convergence. I calculated it as Equation (2) in
+Griffiths and Steyvers' "Finding scientific topics". It indeed converges
+during the process. However, when I want to recover the model selection
+process of what they did in the same paper, where the topic number was
+determined by varying the number of topics T and see where the optimum value
+of log P(z|w) appears, the log likelihood, in my case, is ALWAYS smaller
+than T gets smaller. For example, in my experiments, log P(w|z) for 50
+topics is always larger than 100 topics.
+Is log P(w|z) getting smaller since T getting larger in general? Can we use
+log P(w|z) to determine the number of topics, like what Griffiths et al. did
+in the paper?
+In order to give more information to the problem, here is the equation I
+used ( Equation 2 in "Finding scientific topics") in pseudo Latex code:
+P(w|z) = (\Gamma(W * beta) / \Gamma(beta)^(W) )^(T) * \prod_{j=0}^{T}
+(\prod_{w} \Gamma (n_{j}^{w} + beta)) / (\Gamma(n_{j}^{*}) + W * beta )
+Here is the C code I write for the calculation where lgamma is the log gamma
+function, n_t_k is the number of times term t in topic k and n_k is the
+total number of terms in topic k:

@@ -1,0 +1,18 @@
+Hi, all:
+I am trying to understand the HMM-LDA model by Griffiths in the paper
+'Integrating Topics and Syntax'.
+I don't understand how to derive the Gibbs sampling equation for class
+variable c_i, in this paper:
+P(c_i|c_{-i}) = (n_{ci} + r)(n_{ci+1} +
+I(c_{i-1}=c_{i})*I(c_{i}=c{i+1})+r)/n{.}+I(c_{i-1}=c_{i})+Cr;
+other Gibbs sampling equantions can be computed directly by exploiting the
+fact that the Dirichlet distribution is conjugate to the multinomial, but in
+this eq. , how to introduce the  indicator function I( .)?
+I found that some papers such as "Semi-Supervised Sequence Modeling
+with Syntactic Topic Models"  and  "A Markov Clustering Topic Model for
+Mining Behaviour in Video"    also use this sampling equation, but there is
+no more details about the derivation.
+Could anyone please help me on the issue?   I really appreciate your
+help.
+Many Thanks & All the Best.
+Jia Liu

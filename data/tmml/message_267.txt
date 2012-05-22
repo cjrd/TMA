@@ -1,0 +1,12 @@
+Dear topic model experts,
+has anyone experience got with real-world data on a mean-field approach
+to models with dependent latent variables? I think of models like
+pachinko allocation or the author-topic model that, in a Gibbs setting,
+would require blocked sampling.
+I am wondering whether it is viable to "consequently" follow the mean
+field approach and drop dependencies in the variational distribution
+between latent variables (the z's etc.) as well as between the
+associated parameters (the theta's etc.) and train them implicitly in
+the variational bound.
+Thanks in advance for hints and opinions
+gregor

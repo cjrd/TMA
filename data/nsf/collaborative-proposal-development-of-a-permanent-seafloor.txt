@@ -1,0 +1,16 @@
+              This ocean science technology development project involves the design,
+              construction, testing, and installation of a seafloor geomagnetic observatory
+              at the Hawaii-2 Observatory (H2O) site located midway between California and
+              Hawaii in 5000 m of water. The geomagnetic instrumentation to be installed
+              meets INTERMAGNET standards for data accuracy and timing. It will consist of a
+              delta Idelta D magnetometer, a gyrocompass for absolute direction measurement,
+              a set of suspended magnet variometers, auxiliary environmental sensors, and a
+              separate geoelectric observatory utilizing electrode chopping techniques. Power
+              will be supplied by H2O and real-time, two-way communications will allow both
+              control of the observatory from land and transmission of data to the user. The
+              data from this site will be made freely available to the scientific community
+              through INTERMAGNET. The geomagnetic observatory will also be a prototype for
+              future installations at other sites.
+
+
+

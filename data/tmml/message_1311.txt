@@ -1,0 +1,7 @@
+Dear all:
+Recently I read some papers about topic
+models, and I want to study the temporal evolution of
+the topic, but I can't how to do it,  and I don't
+know where to begin? If I want to add a sentiment
+factor about the topic, and how ? can anyone help me
+and give me some advices? thank you very much.

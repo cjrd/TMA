@@ -1,0 +1,40 @@
+All
+Here's a great conference for topic modeling papers.
+Wray
+CALL FOR PAPERS
+======================================================================
+The 4th Asian Conference on Machine Learning (ACML2012)
+Singapore, November 4-6, 2012
+http://acml12.comp.nus.edu.sg/
+======================================================================
+The 4th Asian Conference on Machine Learning (ACML2012) will be held
+on November 4-6, 2012, at the Singapore Management University,
+Singapore. The conference aims at providing a leading international
+forum for researchers in machine learning and related fields to share
+their new ideas and achievements. Submissions from other than the
+Asia-Pacific regions are also highly encouraged.
+The conference program consist of tutorials, workshops, invited
+keynote talks by distinguished researchers as well as single track
+sessions of research paper presentations. The invited keynote speakers
+for ACML 2012 are James Rehg (Georgia Tech), Dale Schuurmans
+(University of Alberta), and Bob Williamson (Australian National
+University and NICTA).
+The proceedings will be published as a volume of Journal of Machine
+Learning Research (JMLR): Workshop and Conference Proceedings. Authors
+of selected papers will be invited to submit a significantly extended
+version of their paper to a post-conference special issue of the
+Machine Learning journal. The BEST STUDENT PAPER will receive an award
+sponsored by the Machine Learning journal.
+This year ACML will have a new feature: TWO submission deadlines. The
+late deadline has the usual "accept" or "reject" outcomes. In addition
+to the two outcomes, the early deadline also has "conditional accept
+subject to required revisions", and "resubmit" with notification in
+time for them to make the final deadline. The authors of a submission
+with a "conditional accept" decision are strongly encouraged to
+carefully address the review comments in their revision. The revision
+without addressing the review comments properly might be rejected. The
+submission of "resubmit" decision must be significantly improved and
+revised before it can be re-submitted in the late deadline. Fresh
+submissions that have not caught up with the early deadline are also
+welcome for the late deadline.
+Important dates:

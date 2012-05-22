@@ -1,0 +1,2 @@
+you can run the exe file, then it will show the parameters it needs.
+Some parameter file has existed in the program fold.

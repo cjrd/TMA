@@ -1,0 +1,7 @@
+Hi,
+To have the distribution, you should divide each value on the sum of all
+values in the same row. For example:
+the probability of topic 1 in the first row is:
+0.2/ (0.2 + 0.2+0.4+0.6+2+9+1.8+2.2+7.4+0.2+4.8+1.6+0.8+1.4)
+In the same way you compute all probabilities that sum to 1.
+Belkacem

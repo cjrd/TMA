@@ -1,0 +1,50 @@
+              
+This award is made under the Exploratory Research on Engineering the Transport
+              Industries (ETI) program solicitation. Bulk power systems form one of the
+              largest and most complex inter-connect transportation networks ever built.
+              These net-works throughout the world consist of large numbers of energy sources
+              operating in near synchronism coupled through a high-voltage AC transmission
+              system. As power systems have evolved, the dominant bulk power system has been
+              formed as large groups of closely coupled machines connected by one or more
+              transmission links. This situation has devel-oped as a consequence of growth in
+              interconnections among regional power systems. With increasingly heavier power
+              transfers, such systems become vulnerable to cascading failure as dynamics can
+              couple throughout the system in unpredictable ways, Cascading failures may be
+              brought on by naturally occurring events, or may be induced through
+              terrorist-type activities. Examples of naturally occurring cascading failures
+              include the infamous New York blackout in 1965 and more recently, the two
+              California blackouts of July and August 1996.
+
+Control of the power network
+              has traditionally been decentralized due to geographic and regulatory
+              constraints. The nodes (called "buses") in a power system are often
+              geographically remote from one another with little or no systematic
+              communication between them, making coordinated control difficult. Also,
+              different regions of the national power grid may be owned by independent
+              private or public entities whose operating venues differ. This, too, poses
+              difficulties in coordinated control.
+
+One of the most promising decentralized
+              network controllers is the family of power electronics-based controllers, known
+              as "flexible AC transmission system" (FACTS) devices. These devices locally
+              modify the topology of the system by rapid switching. By the choice of
+              switching patterns, these devices can achieve a variety of power system
+              objectives, such as voltage support, oscillation damping, and stability
+              improvement. This ability can be used for not only reliability objectives such
+              as increasing the maximum throughput power, but can also be used to adjust
+              power flow for economic reasons. In the power system restructured environment,
+              it is foreseeable that power flows will be adjusted throughout the system to
+              maximize economic objectives. These devices, however, are relatively new and
+              few are cur-rently beyond the prototype stage, therefore their wide-spread
+              impact on the transmission network has not yet been thoroughly
+              analyzed.
+
+While these devices offer increased network power flow
+              controllability, the decentralized nature of their actions may cause
+              deleterious interactions between them. In this project, we propose to utilize
+              flexible topology FACTS devices in developing distributed control strategies to
+              i) detect and mitigate intentional or unintentional cascading failures, ii,)
+              develop operating strategies that can automatically adjust to changing economic
+              and physical environments, and iii) develop interaction policies to mitigate
+              counterproductive actions.
+

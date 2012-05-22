@@ -1,0 +1,38 @@
+              9906552
+Somerville
+
+The goal of this proposal is to illuminate experimentally
+              the physics of burnout and on-state breakdown in InAlAs/InGaAs high electron
+              mobility transistors (HEMTs).  These devices are extremely attractive for a
+              growing number of high frequency applications, including collision avoidance
+              radar systems, wireless LANS, and ultra high speed switching networks.  Many of
+              the applications require high breakdown voltage; as a result, great effort has
+              been devoted to understanding and improving off-state breakdown in
+              InAlAs/InGaAs HEMTs.  However, as off-state breakdown has improved, it has
+              become clear that the bottleneck is the problem of on-state breakdown and
+              associated burnout.  Relatively little work has been done in this area.  It is
+              thought that impact ionization is involved, but the details of the mechanism
+              are unknown, as are the impact of various device design parameters.  By
+              investigating the physics of on-state breakdown and burnout, the proposed
+              research program will identify promising design directions for InAlAs/InGaAs
+              HEMTs to help alleviate the problem.
+
+
+The research program involves
+              development of a customized measurement system to allow visible and NIR
+              spectroscopy of on-state breakdown in InAlAs/InGaAs HEMTs under a variety of
+              thermal and bias conditions; the use of the system for extensive measurements
+              on a large sample set of state-of-the-art devices; and extensive data reduction
+              and model development.  The project is designed with student participation in
+              mind; much of the work will be done by undergraduate researchers under the
+              supervision of the PI.  Thus, in addition to enhancing understanding of the
+              problem of on-state breakdown, the proposed research program will introduce
+              undergraduate students to modern research techniques and instrumentation in the
+              area of device physics, and will afford these students the opportunity to do
+              real research on a critical technology.
+***
+
+
+
+
+

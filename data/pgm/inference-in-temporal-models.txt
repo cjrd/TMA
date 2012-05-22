@@ -1,0 +1,429 @@
+
+So over the course of the last few
+lectures we've talked about a number about
+different inference strategies and how
+they might be applied to a range of different
+graphical models. One question that comes
+up is whether the same strategies can be
+used for the kinds of template based
+models that we defined earlier in the
+course. Models that are defined by a, say,
+dynamic Bayesian networks, or via plate
+models, or one of the other
+representations that uses repeated
+structure. So as we'll see, the answer to
+that is both yes and no. That is, the same
+strategies can be applied, but they're
+also some interestingly new challenges
+that arise from this. So, first let's
+remind ourselves of how for example a
+dynamic Bayes net is specified, so
+as a reminder, dynamic Bayes net is
+specified using a, initial time. Zero
+distribution, which is usually a Bayesian
+network, as well as the 2TBN that tells us
+the transition model. And it's certainly
+the case that one can take those two
+pieces, and construct an unrolled or
+ground Bayesian network. And once we've
+done that, that ground Bayesian network is
+a Bayesian network, just like any other.
+And so whatever inference techniques we
+have developed for answering queries for
+any Bayesian network, can be used in this
+context as well. So specifically, once we
+unroll the DBN for a given trajectory
+length, we can run your favorite
+inference algorithm over the ground
+network to answer questions such as what
+is the location of the car at time two
+given whatever evidence we might be
+willing to give it. So. Observations, up
+to time two or observations for the entire
+duration of the sequence. The same thing
+happens when we look at plate models. If
+this is the simple plate model that we
+have done for our university example,
+where we have students and courses and
+grades, then we can unroll that network to
+produce a ground network over a subset of
+students, in this case, this very simple
+example, two courses and two
+students. And that unrolled network is
+once again a Bayesian networks just like
+any other, and so we can run inference
+over that network to answer questions
+about what is our predicted distribution
+over the intelligence of the given
+student. >> Given some information about
+grades for example. >> Mm-hm. What are
+some of the challenges though. So, part of
+the, Difficulty or new dimensions that are
+offered by some of these models, is the
+fact that they establish new problems,
+which is particularly true in the context
+of temporal models, where we might often
+be interested in what you might call
+belief state tracking. That is, keeping
+track over the state of the system as it
+evolves. Now, in some ways, this is just a
+traditional probabilistic inference task,
+because it corresponds to asking, what is
+our probability distribution over the
+state of time T, given. The observations
+that the agent has had access to, up. To
+time t. So this is, over here, what we see
+is 01: t is just a shorthand for 01.
+Comma, O two up to O T. And so this is an
+inference task that can be answered using
+standard, probabilistic inference
+techniques over the unrolled network.
+But there is a challenge that needs to be
+addressed, if we want to keep track of this
+probability distribution over the course
+of a long trajectory, without having a
+potentially unboundedly large network that
+we have to keep running inference over. So
+it turns out, fortunately, that one can do
+this in a dynamic way, without. Keeping
+track of the huge unrolled network at
+all points in time. And this comes
+directly out of the consequence of the
+Markov properties of the graphical model.
+So specifically we're going to do this as
+a two stage process, where the first thing
+we're going to compute is this Sigma dot
+T+1 and the position of the dot indicates
+that, although it's a distribution over
+the state at T+1, it's a distribution that
+doesn't take into account the T+1
+observation. And so this is defined to be,
+as written here, the probability of this
+state at time T+1, given the observations up
+to time T. And so now we can do fairly
+straightforward manipulations of this
+probabilistic expression. So the first
+thing is, we inject S of T into the right
+hand side of the conditioning bar, and sum
+out over it. So this is now a probability
+of ST+1, given ST and observations up to
+time T times the probability of ST, given
+the observations up to time T. And now we
+can apply independencies that arise
+from the structure of the graphical model
+and specifically the fact that the state
+at time T plus one. Is independent of
+everything that occurred before, given the
+state at time T, which is going to allow us
+to use conditional independence to
+basically simplify the expression as
+follows, just the probability of ST plus
+one, given SFT which is just our
+transition model. [sound]. And
+ahe second term which is probability of s
+of t given o one to t. This is just a
+previously computed belief state as
+it's called, the sigma t that we are
+trying to keep track of. And so this
+allows us to keep sigma t and produce
+sigma dot t plus one. The second step is
+now to account for the observation model, at
+time t+1. So lets look at what that
+would involve. So now we have sigma dot of
+T+1 which we defined on the previous slide
+and so now we want to condition that on
+the new piece of observation or the
+observation of time t+1 and this is defined so
+just and from that to derive the belief
+state sigma T+1 and so here we are just
+going to take that definition probability
+of S(t+1) give it all of the observation the
+ones the one with T and the new one. And
+we're going to apply Bayes' rule to define
+this and to, to reformulate this and that
+gives us probability of OT+1 given ST+1
+and the previous observations times the
+probability of ST+1 given zero of one
+through T divided by the probability of
+OT+1 given OT. This is a straightforward
+application of, of Bayes' rule and, once
+again, we can now examine each of the
+terms in this expression and see what it
+corresponds to and looking first at this.
+The first term on, in the, in the
+numerator, we can see that this is the
+probability of the observation at time t
+given the state at time t and a bunch of
+things that happened in the past. And once
+again conditional independence tells us
+that the stuff that happened in the past
+is not aff-, is, is irrelevant and can be
+removed because of condition
+independencies. The second term. Which is
+this one is the we just computed. Its
+[inaudible]. And that gives us this
+expression over here which is they're easy
+to, to deal with because each term in
+numerators either something that is part
+of our model, the observation model. In
+this case or. Something that we've
+computed here, sigma dot equals one. Now
+you might wonder about how we get this
+somewhat scary looking denominator. But
+the important thing to remember is, as in
+previous examples that we've seen, this
+denominator is simply a normalizing
+constant. [sound]. [sound] Which can be
+derived by computing the numerator. And
+then normalizing. And so it's not really
+scary at all. So going back to an example
+that we've seen before, let's look at the
+example of robot localization. This is a
+model that we've already discussed, so
+we're not going to talk about it anymore.
+But now let's see how we might, how this
+might manifest in the context of an actual
+belief state tracking problem. So here is a
+situation where this model might be
+applied. So let's first, explain what
+we're seeing before we see a demo. What
+you see is the green circle is the robot
+true position which is not known. To the
+robot because, the robot's trying to
+localize itself. These blue lines are the
+observed. Sonar readings but the robot.
+Gets at each point in the, in the process.
+So, you can see that the returned length
+of the sonar readings correspond roughly
+to the distance of the robot from the
+wall, that there is some noise here. So
+for example, sometimes for whatever reason
+the sonar appears to go through the wall,
+even though it should have been giving,
+giving us a reading that is considerably
+closer because it should have been
+reflected from the surface. So this is,
+sonars are quite noisy and the
+visualization that we see reflects that.
+The red dots that you see is a
+visualization of the robots beliefs over
+where it is and the initial stage this is
+a uniformed probability distribution and,
+and because the robot doesn't know where
+it is. And, as we'll see, this gets
+clumpier and clumpier over time as the
+robot's belief state over where it's
+likely to be becomes more and more
+definitive. So let's look at. This and
+what this looks like overtime. So what we
+are gonna see is the Robot Lewis as it
+gets more modulations. We can see, that
+the distribution becomes clumpier and
+clumpier, and pretty sure the robot's sure
+that it?s in the hallway, but because of
+symmetries its not sure which side of the
+hallway it is, so we have these two
+clumps. Representing these two modes of
+the distribution. But now the robot's
+going to walk into this room and notice
+that this room over here is different from
+the room at the bottom. So right now the
+robot has localized itself with certainty
+or close to certainty because only one
+position is consistent with it?s with the
+observations that it's received over the
+course of its trajectory. The second
+challenge associated with these complete
+base models are computational issues. Sure
+we can produce and unroll Bayesian network
+and compute a posterior over any subset of
+the variables using standard inference
+techniques. But one of the consequence of
+being able to produce these very large
+probabilistic graphical models from a
+fairly small template is that we can
+produce very large probabilistic graphical
+models from a very small template. And
+probabil-, large probabilistic graphical
+models can pose new inference challenges
+in terms of the s-, the ability to scale
+inference to models of that size. So
+specifically if we look at the unrolled
+model that arises from an unrolled DBN and
+thinking back to some of the analysis that
+we did regarding the complexity of
+probabilistic inference for a particular
+probabilistic graphical model. We
+remember, for example, that if we want to
+run inference, say the exact inference,
+say a click tree, over this unrolled
+network, then For example if we want to
+s-, to have a clique tree where say the
+time zero variables are in one part of the
+model and the time t variables for some
+future t are on some other in some other
+clique in the model so they're not all together in
+one big clique, then the minimal subset
+needs to separate these variables over
+here, let's say the blue variables, the
+time zero variables from. The green
+variable. So the subset must separate
+them. And if you think about what
+separation imposes on us in this setting
+we can see that the only way to separate.
+The For example these variables, the blue
+variables over here from the green
+variables over here, is to put in the
+subset at least the persistent variables.
+That is, the ones where. There is an edge
+from the variable of time T to its
+incarnation of time T plus one. And so the
+minimum subset in this context, the
+smallest subset that we can construct that
+would allow us to have different cleats
+for say, time zero and time two, is
+something that involves all of these
+variables in the middle. And so. That can
+potentially involve a significant
+computational cost for exact inference,
+especially when we have a large number of
+persistent variables. A different way of
+understanding this is via the concept of
+entanglement if we're thinking of belief
+state tracking. So [sound] if our goal is
+to maintain a belief state over say the
+variables time three and we are trying to
+think about how can we maintain this
+probability distribution the sigma of time
+three in a way that doesn't involve of
+maintaining a full explicit joint
+distribution over the variables time
+three, we quickly realize that really we
+have no choice because there are no
+conditional dependencies within time
+three. Now you might say, how's that, this
+is a nicely structured model, why wouldn't
+there be conditional independencies. Well
+look at what's going on here, can we say
+that weather is a times three
+conditionally independent of failure times
+three. Well, in locally, they're not
+connected to each other within the time
+slice, but there's certainly an active
+trail between them, that goes for example,
+like this From weather time three, weather
+time two, weather time one, failure time
+two, to failure time three. And so this is
+an active trail between these two
+variables, which means that they are, when
+you consider only the variables at times
+three, not conditionally independent of
+each other, given any of the other
+variables at times three. And so this
+entanglement process occurs very rapidly
+over the course of, tracking a belief
+state in a dynamic daisy network, which
+eventually means that the belief state, if
+you want to maintain the exact belief
+state is just. [sound]. Fully correlated,
+in most cases. And so this is a
+computational consequence of the fact that
+we have a very large Bayesian network. And
+if you wanna think about just how large it
+can get, we can go back to the real,
+Vehicle tracking example that we talked
+about in a previous lecture and note that
+all of these variables over here. All
+persistent variables and so [inaudible]
+say tracking will have to maintain if we
+were to be done exactly. If full joint
+distribution over all these variables
+which is why could be intractable.
+Certainly if you want real time
+performance and problem not even [sound]
+without that constraint. And so, there has
+been a lot of work on approximate method
+in the context of a temporal models
+because of the computational issues that
+they raise. Computational issues like that
+also occur in plate models so here is the
+plate model unrolled for our student
+example with the difficulty over here. And
+the intelligence. Alright and the grades
+in the middle are all observed, have not
+put in the actual variables to, because of
+which [inaudible] things up. And we have
+talked about computational complexity of
+this bipartite. Mrf, which is what we
+really have here where you have the
+variables on the left are connected to the
+variables on the right. And, in general,
+seeming that the grades are fairly dense,
+we mentioned before that the. For exact
+inference the lowest, cost that we can
+expect is, if you have M variables on the
+left and N variables on the right, its the
+minimum, of M and N. So the minimum of the
+number of courses and the number of
+students, and again this is you, you could
+come up, cases where this is going to be
+lower than that, but in general, for a
+bipartite MRF like this that?s what you're
+what?s, that?s what you're going to get
+and assuming that the University has a
+reasonably high number of courses and
+presumably even more students, this can
+become intractable very quickly, giving
+rise to the need for approximate inference
+methods. That said, approximate inference
+methods can be very successful. So, let's
+just conclude this with one more example.
+So, here is an example from, in this case,
+an undirected, template model, where we
+have repeated structure. So here the task
+is to classify web pages into categories
+where you want to categorize web pages.
+This is a project called, web KB, That was
+[sound] constructed by Tom Mitchell and
+his group at Carnegie Mellon University.
+And what we see hers is that you like to
+categorize web pages as corresponding to
+students faculty courses and so on. And
+while one can use standard machine
+learning techniques to categorize web
+pages individually, say by the words that
+they contain, it turns out one can get
+significant improvement in performance by.
+Considering the connections between the
+web pages, so specifically by considering
+edges. Between in this case, undirected
+edges between the category of pages that
+are linked to each other. So for example,
+we see and this is a model that was
+learned from data that students are quite
+likely to point to faculty and faculty are
+somewhat less likely to point to students.
+And faculty are even less likely to point
+to other faculty. And so that gives us
+some information about the correlations
+between labels of web pages that are
+linked to each other and gives rise to.
+Improvement in performance that one gets
+better actually quite, quite considerable.
+So for example a reduction in error from
+eighteen percent to a little bit over
+twelve%. To summarize. Our inference in
+template of, on template models. Can be
+done in principal [inaudible] by using
+standard inference methods. However,
+template models specifically weighs new
+inference tasks. Such as real [inaudible]
+tracking which requires certain adaptation
+in our methods. And. Furthermore, a second
+source of complexity here is that the
+[inaudible] that we get by unrolling these
+models is often very large and sometimes
+quite densely connected, requiring careful
+design of algorithmic methods and use of
+approximate methods that can allow us to
+deal with the increase in [inaudible]

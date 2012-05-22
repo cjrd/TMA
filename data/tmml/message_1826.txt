@@ -1,0 +1,8 @@
+Dear All,
+Could anyone advice how to run script under Topic Modeling Toolbox from
+http://nlp.stanford.edu/software/tmt/tmt-0.4/  from DOS( Windows)
+command  line.
+I need to run script example-2-lda-learn.scala from bat-file without
+human interaction.
+Thanks in advance.
+Wen

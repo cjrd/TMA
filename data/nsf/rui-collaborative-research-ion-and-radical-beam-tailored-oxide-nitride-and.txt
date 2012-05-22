@@ -1,0 +1,51 @@
+              This is an RUI collaborative research project among three physics programs at
+              neighboring state universities: Angelo State University, Tarleton State
+              University, and Southwest Texas State Uni-versity. The project focuses on three
+              main topics: (1) correlation between electrical and optical properties and
+              stress in ZnO and nitrogen-doped ZnO fabricated at reduced temperatures using
+              radical atomic beam processing, (2) feasibility of fabricating predicted ZnO-Mn
+              and Zn-Co room temperature transparent magnetic semiconductors, and (3)
+              dielectric properties of select amor-phous or potentially epitaxial insulator
+              oxide alloys consisting of Pr-Al-O, Gd-Ga-O, Hf-Al-O, Pr-Zr-O and La- Hf-O
+              (most with possible oxynitridation and alloy-dependent band gap variabil-ity)
+              relevant for magnetic spin tunneling structures and next-generation CMOS gate
+              applications. A study towards the stabilization and characterization of
+              metastable Ni-incorporated Cu-Ge and Co- Ge thin film crystalline phases will
+              also be included. Thin film materials fabrication will be conducted using ion
+              beam sputter processing strategies. The approach is to implement mono-energetic
+              Ar + or Xe + ions (<1 keV) to control incident film adatom energy (between ~ 6
+              eV to ~ 20 eV), and vary the substrate angle of incidence to promote kinetic
+              film growth at reduced temperatures with and without reflected energetic Ar/Xe
+              atom bombardment. Low energy (<100 eV) reactive (O2 + /N2 + ) assist ion beams
+              will be compared with neutral thermal atomic radi-cals to promote optimal
+              oxidation (and dopant nitridation) at reduced substrate temperatures. The
+              implementation of in-situ low energy and/or neutral atomic radical species to
+              promote reactive sputtering is relatively unique for ion beam sputtering and is
+              not possible with magnetron sput-tering due to its higher operating pressure
+              regime. The group also has the capability of processing sputtered films with
+              rapid thermal annealing and high-energy (< 1 MeV) inert ion mixing to study
+              germanide formation in amorphous deposited metal-Ge films. 
+%%% 
+The project
+              addresses fundamental research issues in a topical area of materials science
+              having technological relevance. An important feature of the project is the
+              strong emphasis on education, and the integration of research and education.
+              Undergraduates from all three universities will be involved in multiple phases
+              of the research, with strong participation from underrepresented groups. In
+              addition to ion beam sputtering, students will be involved with rapid thermal
+              process-ing, electrical transport studies, ion beam analysis, scanning electron
+              microscopy with EDS, ad-vanced x-ray diffraction and fluorescence analysis,
+              magnetometry, and optical characterization (reflectivity, FTIR,
+              photoluminescence). In addition, students will have a chance to
+              collabora-tively interact with Central Texas microelectronics industry
+              scientists and doctoral institution re-search teams interested in the project.
+              All three collaborating universities are close enough to permit an active
+              degree of inter-university group visits and student exchanges to support the
+              re-search. The research will encourage students to consider pursuing research
+              at various materials-related doctoral programs, or consider further education
+              in a professional masters program. In addition, the broad thin film materials
+              experience gained from the project will be useful prepara-tion for student
+              internships in the microelectronics industry and strengthening the workforce
+              pool of educated BS/MS graduates for this critical industry.
+***  
+

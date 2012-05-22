@@ -1,0 +1,43 @@
+              Object-oriented programming languages, notably Java, are gaining broad
+              use
+because of their benefits, which come largely from their flexibility.
+              But
+this same flexibility makes Java programs more difficult to optimize
+              in
+advance. One sample collection of programs, optimized in advance,
+              spent
+40-95% of their time on an aggressive processor waiting for the memory
+              to
+provide data, illustrating the need to improve memory behavior.
+              Future
+processors will only make the problem worse.
+
+The project makes an
+              integrated attack on this problem, incorporating new
+program analyses and
+              optimizations, profile feedback, run-time techniques
+including adaptive
+              garbage collection algorithms, and ways of communicating
+high-level
+              predictions and observations of program behavior to the
+hardware.
+
+The
+              project aims to design and build a compiler, run-time system, and
+enhanced
+              architectural and operating system features that react quickly and
+gracefully
+              to compiler predictions and actual run-time behavior to achieve
+high
+              performance. The goal is synergy via cooperation between the system
+components
+              versus solving each problem within an individual component.
+
+While the
+              research focuses on improving memory performance, the project's
+envisioned
+              framework is suited to a wide range of performance optimization
+techniques, so
+              the expected research results and software products have
+broader impact.
+

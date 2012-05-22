@@ -1,0 +1,3 @@
+Some time ago, Charles Sutton, Andrew McCallum and I had some thought on a co-author topic model: a word in a document could come from an author alone (composition) or a pair of authors (collaboration). We expanded the author set to a co-author set by n-choose-2. I did some preliminary experiments, and found something interesting, but nothing particularly exciting.
+Best,
+Xuerui

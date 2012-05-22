@@ -1,0 +1,17 @@
+              This research examines deviation from the principle of stare decisis, or
+              following precedent, by appellate courts in the federal system.  Deviation can
+              take subtle forms, including distinguishing, limiting, or avoiding precedents. 
+              The goal of the research is to determine why lower courts defy (or comply with)
+              higher courts. The research plan is to: (1) generate a random sample of U.S.
+              Supreme Court decisions; (2) track the responses of lower courts to these
+              decisions (the dependent variable for all the hypotheses); (3) collect data
+              necessary to animate the independent variables; and (4) implement statistical
+              models, testing for the influence of theoretically-critical variables. Data
+              come from a variety of sources, including biographical materials, NSF-supported
+              databases, judicial decisions, and periodical guides-with the final data base
+              archived on the PI web site and with the ICPSR.  The empirical findings
+              generated here will show how specific features of the design of the federal
+              judiciary advance or retard vertical stare decisis, revealing, at least
+              partially, the institutional foundations of the rule of law in American courts
+              and showing the effect of various structural incentives created by the design
+              and operation of organizations.

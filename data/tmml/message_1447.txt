@@ -1,0 +1,5 @@
+@Anthony:
+The paper says "Mir inference completes in roughly 5 minutes on the full HDG
+corpus, consuming less than 5 GB memory."   This should be pretty fast
+actually ..
+Shibamouli

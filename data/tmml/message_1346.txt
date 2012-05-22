@@ -1,0 +1,6 @@
+hi shang -- you may either regularise your calculation by adding epsilon =
+1.e-12; or just set the summands with p = 0 to zero, following the limit of the
+entropy term lim_{p \rightarrow 0} p \log p = 0, or in plain words "an
+impossible event has no information".
+best regards
+gregor

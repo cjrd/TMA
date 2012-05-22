@@ -1,0 +1,43 @@
+              This low-temperature condensed matter physics research is focused on fundamental
+              quantum properties of matter that can be probed using the simple and
+              well-characterized system of electrons confined to a two-dimensional geometry. 
+              Two- and lower-dimensional electron systems manifest some of the most
+              fundamental many-body quantum physics of strongly correlated electrons,
+              including the integer and fractional quantum Hall effects and the associated
+              one-dimensional chiral edge states, and the single particle tunneling phenomena
+              in zero-dimensional quantum dots and antidots.  The quantum-coherent properties
+              of the collective ground states of two-dimensional electrons and the
+              size-quantized systems of few electrons, their excitations, chiral edge state
+              dynamics, and the quantum phase transitions will be studied experimentally via
+              techniques of tunneling and resonant single-particle tunneling.  The results
+              are of great interest in the formulation and confirmation of advanced quantum
+              theory.  The experimental techniques developed in the study of the
+              semiconductor nanostructured samples can have an impact on technology via
+              realization of new electronic devices whose fabrication and operation is based
+              on similar materials and techniques.  This research includes collaborations
+              with materials scientists and electrical engineers in sample preparation and
+              with theorists in analysis of experimental results.  This cutting-edge research
+              involves training of undergraduate, graduate and postdoctoral students, who
+              will be excellently trained to enter positions in industry, government and
+              education.
+
+This work is focused on fundamental quantum properties of the
+              simple and well-characterized systems of interacting electrons in fabricated
+              semiconductor structures.  Two- and lower-dimensional electron systems manifest
+              some of the most fundamental quantum physics such as the integer and fractional
+              quantum Hall effects and the associated one-dimensional edge channels, the
+              single particle tunneling phenomena in zero-dimensional quantum dots and
+              antidots.  The quantum-coherent properties of the low-dimensional electrons and
+              the size-quantized systems of few electrons will be studied experimentally at
+              very low temperatures and very high magnetic fields. The results are of great
+              interest in the formulation and confirmation of advanced quantum theory.  In
+              addition, this study can have impact on technology via realization of new
+              electronic semiconductor nanostructured devices whose fabrication and operation
+              is based on similar materials and techniques.  The quantum antidot physics may
+              form a basis of novel quantum computing devices.  This research involves
+              collaborations with materials scientists and electrical engineers in sample
+              preparation and with theorists in analysis of experimental results.  Students
+              in this program are excellently trained to enter positions in industry,
+              government and education. The PI teaches undergraduate classes, his research
+              activity is vital in bringing real-world science and modern technology into
+              classroom.

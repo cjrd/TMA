@@ -1,0 +1,5 @@
+In Appendix A of the classic Blei et al 2003, I don't understand the using
+of Jensen's inequality in Eq. (12).
+Thanks a lot for any suggestion.
+Best regards,
+Zhou Yun

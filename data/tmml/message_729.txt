@@ -1,0 +1,10 @@
+Dear list experts --
+I was wondering whether someone has used or published a Monte-Carlo
+approach for the parameter of the exchangeable Dirichlet distribution
+(LDA's scalar alpha).
+I am especially interested in auxiliary-variable variants of the method
+of Escobar and West (1995), instead of for instance adaptive rejection
+sampling (for performance reasons).
+Has anybody used such an approach yet, actually?
+Thanks and best regards
+gregor

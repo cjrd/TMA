@@ -1,0 +1,67 @@
+              0079278
+Archer
+
+This grant provides for the acquisition of a Rheometrics
+              Scientific Melt Elongational
+Rheometer (RME) and a Rheometrics Scientific
+              Advanced Rheological
+Expansion System (ARES). Both instruments are needed for
+              investigating complex
+Fluid dynamics in bulk liquids and near solid surfaces.
+              The RME is the only
+commercial rheometer available for studying extensional
+              flow behavior of polymer melts, while the ARES rheometer is the only
+              research-grade commercial instrument that allows simultaneous, time-dependent
+              measurements of shear and normal stresses in polymer liquids. The proposed
+              instruments will be the first of their kind at Texas A&M University, and will
+              be used in four research projects and for class room demonstrations in two
+              graduate-level polymer engineering courses.  In one project (DMR-9816105), the
+              RME and ARES rheometers will be used to determine the fundamental origin of
+              strain hardening and apparent extension thickening behavior of branched
+              polymers and their blends with chemically identical linear polymers. This
+              research will be facilitated by a series of novel An-A-An and An-A(A)m-An
+              multi-arm polybutadienes synthesized by the principal Investigator and a
+              collaborator. These polymers are believed, on theoretical grounds, to capture
+              the essence of commercially important branched polyolefins and will shed new
+              light on the effect of polymer architecture on relaxation dynamics and
+              rheological behavior in extensional and shearing flows. In another research
+              project (CMS-9713372), the ARES rheometer will be used to perfect a new
+              superimposed step/steady shear flow technique recently developed by the
+              principal investigator and his students for isolating dynamics of polymer
+              contour length stretch in shear flows. In the third project (CTS-9624254), a
+              two-step grafting procedure will be used to sequentially graft polymers and low
+              molecular weight chlorosilanes to the ARES rheometer platens. The surface
+              modified rheometer platens will then be used in standard shear rheological
+              testing of bulk, chemically identical polymers to investigate momentum
+              transport, frictional drag, wall slip, and relaxation dynamics of polymers near
+              surfaces. Results from this study will provide the first rigorous test of a
+              scaling theory developed by the principal investigator and his students for
+              quantifying polymer friction, slip, and dynamics near solid
+              surfaces.
+%%%
+This grant provides for the purchase of  a Rheometrics
+              Scientific Melt Elongational
+Rheometer (RME) and a Rheometrics Scientific
+              Advanced Rheological
+Expansion System (ARES). Both instruments are needed for
+              investigating polymer
+properties  in bulk liquids and near solid surfaces. The
+              RME is the only
+commercial rheometer available for studying extensional flow
+              properties of
+polymer melts, while the ARES rheometer is the only
+              research-grade commercial instrument that allows  measurements of multiple
+              components of stress in  polymer liquids. The proposed instruments will be the
+              first of their kind at Texas A&M University, and will be used in four research
+              projects and for class room demonstrations in two graduate-level polymer
+              engineering courses. Three of the four projects are National Science Foundation
+              sponsored activities related to development of structure-processing
+              relationships in plastic materials and for polymer surface coatings. The
+              polymer engineering courses introduce students to polymer physics and polymer
+              rheology.
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+Hello,
+This regarding the LDA model for document corpus.
+I have read the paper and found that at the end of learning, we have to
+estimate two parametrs:
+1. beta
+2. alpha
+in addition to the variational parameters.
+If I am correct,
+1)we have to estimate KxV number of (beta) parameters where K corresponds to
+the number of factors and V corresponds to the cardinality of the
+multinomial variable (w)m.
+2) We have to estimate MxK number of (alpha) parameters where M corresponds
+to the number of documents considered.
+Please tell me whether my understanding about the number of paremeters to be
+estimated is correct or not?
+regards
+veena

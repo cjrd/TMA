@@ -1,0 +1,36 @@
+I try to install LDA software on my system:  redhat linux AS 2.1 . But afer
+I type make , below  is the output
+================
+gcc -O3 -Wall -g   -c -o lda-estimate.o lda-estimate.c
+lda-estimate.c: In function `doc_e_step':
+lda-estimate.c:39: parse error before `double'
+lda-estimate.c:42: `gamma_sum' undeclared (first use in this function)
+lda-estimate.c:42: (Each undeclared identifier is reported only once
+lda-estimate.c:42: for each function it appears in.)
+lda-estimate.c: In function `run_em':
+lda-estimate.c:124: parse error before `int'
+lda-estimate.c:125: `max_length' undeclared (first use in this function)
+lda-estimate.c:131: parse error before `char'
+lda-estimate.c:137: `ss' undeclared (first use in this function)
+lda-estimate.c:156: `filename' undeclared (first use in this function)
+lda-estimate.c:161: parse error before `int'
+lda-estimate.c:164: parse error before `*'
+lda-estimate.c:166: `converged' undeclared (first use in this function)
+lda-estimate.c:166: `i' undeclared (first use in this function)
+lda-estimate.c:169: `likelihood' undeclared (first use in this function)
+lda-estimate.c:190: `likelihood_old' undeclared (first use in this function)
+lda-estimate.c:196: `likelihood_file' undeclared (first use in this
+function)
+lda-estimate.c:217: parse error before `*'
+lda-estimate.c:222: `w_asgn_file' undeclared (first use in this function)
+make: *** [lda-estimate.o] Error 1
+=================
+my gcc   version  is :   gcc version 2.96 20000731 (Red Hat Linux 7.2
+2.96-118.7.2)
+my glibc  version is :
+glibc-common-2.2.4-32.3
+glibc-devel-2.2.4-32.3
+glibc-profile-2.2.4-32.3
+glibc-2.2.4-32.3
+glibc-kernheaders-2.4-7.16
+I will be very appreciate if anyone can give me some suggestion.

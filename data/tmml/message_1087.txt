@@ -1,0 +1,29 @@
+Hello,
+I spent quite some time now to get the "Topic Modeling Toolbox"
+(http://psiexp.ss.uci.edu/research/programs_data/toolbox.htm) running on
+our 64-bit Debian machines, but unfortunately it doesn't work.
+When I try to execute the GibbsSamplerLDACOL function, I receive an
+error message:
+I am new to Matlab, but after some search in the web I think I figured
+out what seems to cause this problem. It seems that the source code of
+the Toolbox is out-of-date and does not comply with latest 64-bit
+versions of the Matlab distribution.
+The actual source code of the Toolbox is written in C++ and gets
+converted into executable Matlab files (*.m). The tool that is used for
+this compilation step is called "mex". I also tested it with using the
+"-largeArrayDims" option for mex, but this didn't help either.
+Using a current version of Matlab (R2010a), I observed that the
+compilation step does succeed, but executing the resulting Matlab files
+produces the aforementioned error message. Hence, the error occurs at
+running time.
+I think the Toolbox functions attempt to pass variables of a
+non-compatible 32-bit type to library functions of the Matlab code that
+expect to get 64-bit variables. Normally, 64-bit code should be able to
+handle 32-bit variables, but apparently in this case it's not.
+Unfortunately, I am more used to Java and not familiar with such details
+of C code.
+Can anyone help me with this problem? Are there other implementations of
+the LDACOL and Author-Topic-LDA model? As it seems, maintenance of the
+Toolbox has stopped some time ago.
+Best regards,
+Sebastian

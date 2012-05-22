@@ -1,0 +1,15 @@
+Please forgive the newbie question...
+Can anyone point me to research on learning topic models where the topics
+are explicitly encouraged to be disjoint?  That is, words would be
+encouraged to belong to only one topic model.  I'm also interested in
+hierarchical variants of this in which a group of words is clustered, and
+then a topic model mixture is learned over those words; another group of
+words is modeled by another topic model mixture, etc.  I know that to some
+extent, the hierarchical topic models achieve this, but I was wondering if
+anyone has tried to explicitly give the models a factored structure so that
+a document is the product over a set of topic models where each model is a
+mixture of individual topics.
+Thomas G. Dietterich              Voice: 541-737-5559
+School of EECS                    FAX:   541-737-1300
+1148 Kelley Engineering Center    URL:   http://eecs.oregonstate.edu/~tgd
+Oregon State University, Corvallis, OR 97331-5501

@@ -1,0 +1,27 @@
+              This Small Business Innovation Research (SBIR) Phase I project proposes to
+              demonstrate the feasibility of a miniaturized MEMS-based, reagent-less
+              biological agent detector, capable of performing rapid
+assays for tens (or
+              even hundreds) of analytes simultaneously, for detection of whole  bacteria (or
+              spores) with single bacteria/spore resolution. National defense against
+              biological warfare agents and naturally occurring pathogens, such as drug
+              resistant tuberculosis or food and water contaminates, requires low cost,
+              robust, and easy to use technologies for rapid detection and identification of
+              biological agents. Rapid detection is needed to provide early warning to
+              minimize the numbers of exposed personnel, and to provide timely and effective
+              medical treatment of those exposed. Current identification technologies depend
+              on time-consuming amplification, which also adds appreciably to the cost,
+              complexity, power requirements and size of the detector as it must perform
+              multiple sample treatment steps and provide the necessary reagents. In this
+              Phase I Project, Boston MicroSystems, with the assistance of the US Naval
+              Research Laboratory, will quantify the performance of the proposed biological
+              agent detector by fabricating prototype single channel detectors, immobilizing
+              antibodies for bacillus globigii onto the detectors, expose them to samples of
+              bacillus globigii, and quantify the response and detection limits.
+
+The 
+              prinicipal commercial application of this project is in homeland defense.
+              However, the proposed biological agent detector may have significant additional
+              applications in the areas of medical diagnostics, agribusiness, and
+              environmental monitoring.
+

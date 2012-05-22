@@ -1,0 +1,32 @@
+Hi all,
+Generally I am offering my suggestions in hopes that the results
+might be useful for some application rather than as examples of
+procedures I believe to be correct in any other sense.  I wrote my
+code while working at a search startup that hoped to present the
+results of these techniques to end-users, so I tried many things that
+seemed promising just to see what would happen in hopes of stumbling
+on something that would minimize the appearance of rough edges
+(changes that in general went far beyond the choice of sampling
+scheme).  I do not any longer have access to the code I wrote, so if
+my descriptions are anywhere inconsistent or lacking, I apologize.
+Since David's questions touch on ways that may be the case, I will use
+them to clarify, and I hope this also addresses the questions you sent
+separately, Gregor.
+Also, rereading my posts, I the way I described not block sampling
+seems incorrect or at least misleading - I didn't remove all the
+tokens and then reintegrate them one by one, I removed and resampled
+each one in turn.
+2006/11/7, David Blei <blei at cs.princeton.edu>:
+I agree - I should not have written the level sampling and topic
+sampling as being interleaved as I did in my first post in this
+thread; this was carelessness.
+I didn't sample hyperparameters at all.  My intent or way of
+interpreting what I was doing in block sampling tokens in a document
+was to sample from a slightly old distribution to avoid the order
+asymmetry - to treat every token as if it were the first in the
+document (and unintentionally lose the alpha term's contribution as
+discussed previously).
+What sorts of 'wrong' ways?
+I did this only for terms, and did it each iteration.  My computation
+time was dominated by gamma function calls so I didn't worry about
+permuting.

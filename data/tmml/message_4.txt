@@ -1,0 +1,8 @@
+Hello,
+Thanks. I downloaded the BUGS script for LDA from that site, but it was
+intended for fixed-length documents and therefore useless.
+This Java code seems very promising though. Any version in a faster
+language, C perhaps? I'm working in Python, so something in that
+language would also work well.
+Best regards,
+Matteo Dimai

@@ -1,0 +1,15 @@
+Dear Topic modelers,
+Is there any work on how specific an estimated topic is?  I can imagine a
+situation in which two speakers both use the same topic, but do so with
+differing levels of vagueness, for example a blog post along the lines of
+''the movie 'Batman' was good'' versus ''I enjoyed the movie Batman 'Dark
+Knight' (2008), staring Christian Beil and directed by Chris Nolan;
+the cinematography was well done, and the plot compelling.''  Or, in a
+political context, are there suitable topic models for distinguishing
+between phrases such as ''we need tax cuts'' (without specifying which
+taxes or how this would be accomplished)  and ''we need to reduce income
+tax on people earning less than XXX '' (providing more details) ?
+I have considered hLDA, but I don't think this exactly captures the issue
+of 'ambiguous vs specific' topics.  Has anyone worked on this?
+With thanks,
+Scott

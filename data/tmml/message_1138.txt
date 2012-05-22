@@ -1,0 +1,15 @@
+I'm skeptical of any automated method that decides the correct number
+of topics for a corpus. Held-out likelihood often seems either to drop
+off too quickly, recommending numbers of topics that seem too small to
+be useful (eg 15), or to improve continually even with very large
+numbers of topics (eg close to the number of documents).
+Non-parametric methods are an alternative, but the setting of the
+Dirichlet prior on the topic-word distributions still has a strong
+effect on the number of topics actually used. You're still determining
+the number of topics with a parameter, even if you don't realize it.
+Documents are not written by sampling from a mixed-membership model.
+"Topics" are a mathematical convenience. The important question is
+therefore not "what is the correct number of topics?" but rather "what
+is the model for?" How specific do the topics need to be in order to
+be useful?
+-David

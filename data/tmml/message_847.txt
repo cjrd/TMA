@@ -1,0 +1,50 @@
+Dear all,
+I am running supervised topic model in using the R-project package "lda".
+The file 1.dat contains documents and their response.
+/*********************** 1.dat *****************************/
+doc : response
+85 86 34 24 52 80 : 0.512
+85 86 34 90 67 60 : 0.552
+85 86 34 90 39 53 67 76 60 : 0.528
+85 52 55 : 0.556
+85 86 34 90 36 39 59 63 67 76 2 93 52 23 55 : 0.512
+85 34 90 52 55 : 0.520
+85 34 52 55 : 0.538
+85 86 34 36 39 52 55 : 0.530
+85 86 36 39 52 55 : 0.548
+85 86 34 90 36 24 53 110 1 94 38 58 102 48 31 : 0.576
+85 86 34 90 36 24 53 110 1 94 38 58 102 48 32 : 0.576
+85 86 34 90 36 39 59 63 53 2 93 56 28 23 116 68 : 0.576
+85 86 34 90 36 39 59 63 53 2 93 56 28 23 116 78 : 0.576
+85 86 34 39 28 52 91 : 0.600
+85 86 34 39 2 28 52 102 91 : 0.528
+/****************************************************/
+Then I fit the supervised topic model:
+/*********************** in R *****************************/
+library("lda")
+dataset<-read.table("1.dat", header=TRUE, sep=":")
+corpus<-lexicalize(t(dataset [1]), lower=TRUE)
+to.keep <- corpus$vocab[word.counts(corpus$documents, corpus$vocab) >= 2]
+corpus$documents <- lexicalize(t(dataset [1]), lower=TRUE, vocab=to.keep)
+num.topics <- 3
+params <- sample(c(-1, 1), num.topics, replace=TRUE)
+result <- slda.em(corpus$documents,
+K=num.topics,
+vocab=corpus$vocab,
+num.e.iterations=10,
+num.m.iterations=4,
+alpha=1.0, eta=0.1,
+t(dataset [2]),
+params,
+variance=0.25,
+lambda=1.0,
+logistic=FALSE,
+method="sLDA")
+/****************************************************/
+I met the following error:
+Error in model.frame.default(formula = annotations ~ z.bar. + 0,
+drop.unused.levels = TRUE) :
+variable lengths differ (found for 'z.bar.')
+I'm a newbie to R. Could anyone help me figure out the problem? Thanks a
+lot.
+Charles

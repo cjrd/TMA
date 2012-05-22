@@ -1,0 +1,10 @@
+Hello
+Does anyone know of implementations of LDA that can take in streaming data
+(i.e. an 'online' version of LDA, which doesn't get to see all the data at
+once), AND can be parallelized over multiple machines to speed up the
+running time?
+the web, I have come across code that does each of these two things
+separately, but unless I am missing something, I haven't yet come across
+implementations that allow for both.
+Thanks,
+Suhas

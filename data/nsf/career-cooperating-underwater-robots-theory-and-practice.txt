@@ -1,0 +1,24 @@
+              Cooperating underwater robots must coordinate their actions despite severe
+              communication bandwidth limits that exist underwater.  This proposed research
+              addresses the coordination of underwater robots through the development of
+              theoretically justified decentralized control laws that enable a platoon of
+              autonomous underwater vehicles to cooperatively achieve a common goal while
+              requiring minimal communication.  Fully realistic field trials are a crucial
+              adjunct to our analytic activities.  In a collaborative effort with biologists
+              and marine scientists, platoons of small, inexpensive, autonomous underwater
+              vehicles will be deployed in a large coastal estuary to rapidly and adaptively
+              map bio-active chemicals.  Education and outreach will be integrated with the
+              proposed research through both the development of a new course on the dynamics
+              and control of underwater robots, and the creation of a new autonomous
+              underwater vehicle contest for middle school and high school students in
+              collaboration with colleagues at MIT and the Association of Unmanned Vehicle
+              Systems International.  The intellectual merits of the proposed research
+              include the development of an improved toolbox of distributed control laws and
+              an improved understanding of communication requirements for platoons of
+              autonomous vehicles in unstructured, real-world environments.  The broader
+              impacts of this research effort include: the development of affordable
+              technology that will enable ocean and marine scientists to conduct scientific
+              investigations that are not otherwise possible; the development of curriculum,
+              course materials, and laboratory projects for underwater robotics; and the
+              creation of an autonomous underwater vehicle contest that is accessible to
+              middle school and high school students. 

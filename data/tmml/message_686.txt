@@ -1,0 +1,14 @@
+Hi, Experts
+some good answers about finding the optimal K were given to me. Laura
+Dietz and David Blei pointed to the use of Hierarchical Direchlet
+Processes. I studied the papers and the software for this type of
+inference. So far so confused... My Problem with the described gibbs
+samplers is that i miss some description about the update/iteration
+algorithm provided in some papers about LDA.
+Can someone point me to a paper where an implementation schema or the
+conrete algorithm is listed. Main Problem is that i do not understand
+when to update / alter K in the sampling process. Since i'm new to that
+field its difficult for me to derive an algorithm from the papers at
+this page (+ that i have to use the model in Java and need to implement it):
+http://www.gatsby.ucl.ac.uk/~ywteh/research/projects.html
+Thank you all

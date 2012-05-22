@@ -1,0 +1,13 @@
+Dear list --
+as a complement to existing HDP implementations, I've implemented Yeh Whye Teh's
+direct assignment scheme in a simple Java class
+(http://www.arbylon.net/projects/IldaGibbs.java).
+It was intended to (1) address the "lower" end of complexity (code is << 1000
+lines) and to (2) retain as much as possible of the finite LDA model. This is
+why it's called "Infinite LDA".
+Some explanations and introduction are found in a note on
+http://www.arbylon.net/publications/ilda.pdf.
+I post it because it may be useful to streamline understanding of the DP and HDP.
+Comments welcome...
+Best regards
+gregor

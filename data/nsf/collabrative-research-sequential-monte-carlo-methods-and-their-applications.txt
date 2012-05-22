@@ -1,0 +1,68 @@
+              Collaborative Research: Sequential Monte Carlo Methods and Their
+              Applications
+
+Jun Liu, Harvard University 
+Rong Chen, Univ. Illinois at
+              Chicago
+Xiaodong Wang, Texas A&M University
+
+Abstract
+              (Technical):
+Sequential Monte Carlo (SMC) methodology recently emerged in
+              statistics and engineering fields promises to solve a wide class of nonlinear
+              filtering and optimization problems, opening up new frontiers for
+              cross-fertilization between statistics and many areas of applications. A
+              distinctive feature of SMC is its ability to adapt to the dynamics of the
+              underlying stochastic systems via recursive simulation of the variables
+              involved.  Although special forms of SMC date back to 1950s, the general use of
+              the method appeared only recently and its many key properties have yet been
+              well understood.  This research group will focus on three major theoretical
+              issues regarding the design of effective SMC-based computational tools and
+              three important application areas, namely, wireless communications,
+              computational biology, and business data analysis.  In the theory part, they
+              will study approaches of generating better Monte Carlo samples for tracking
+              system dynamics; investigate roles of resampling which is critical to the
+              effectiveness of SMC; and propose system reconfiguration strategies for more
+              efficient SMC algorithms.  In the application part, they plan to design novel
+              signal processing and network control algorithms for wireless multimedia
+              communications; develop better multiple sequence alignment models and SMC-based
+              optimization method for protein structures; and build SMC-based modeling and
+              analysis tools for business data. It is anticipated that the proposed research
+              will culminate in the formulation of novel SMC methodologies and will bring the
+              promise of the SMC paradigm into the practical arena of many emerging
+              applications.
+
+Stochastic dynamic systems are routinely used in many
+              application fields such as automatic control, engineering, and finance.  The
+              statistical analyses of these systems are crucial.  However, except for a few
+              special cases, quantitative analyses of these systems still present major
+              challenges to researchers.  Sequential Monte Carlo (SMC) technique recently
+              emerged in the field of statistics and engineering shows a great promise on
+              solving a wide class of nonlinear filtering, prediction, and optimization
+              problems, providing us with many exciting new research opportunities.  The name
+              "Monte Carlo" was coined in 1940s by scientists involved in designing atomic
+              bombs and it refers to a technique in which computer is used to simulate and
+              study a complex stochastic system. The technique was named after the famed
+              gambling resort because its procedures incorporate the element of chance. A
+              distinctive feature of SMC is its ability to sequentially simulate the system
+              by considering one variable at a time.  The general use of SMC appeared
+              recently and its invasion into many fields of science and engineering has just
+              begun. Researchers including people in this research group have demonstrated
+              that SMC can be successfully adapted to solve chemistry, engineering, and
+              statistical problems. Understanding its theoretical properties and extending
+              the use of SMC to other fields are the main focuses of this project. More
+              specifically, this research group will focuse on three major theoretical issues
+              regarding the design of effective SMC-based computational tools and three
+              important application areas including wireless communications, computational
+              biology, and business data analysis. These applications are not only important
+              by their own merits, but also essential as the test ground for the new theories
+              being developed and as the sources of stimulation for new research directions
+              for SMC.  It is anticipated that this research will culminate in the
+              formulation of novel SMC methodologies and will bring the promise of the SMC
+              paradigm into the  practical arena of many emerging applications.  In
+              particular, this research will bear fruits in the following areas: novel
+              designs of signal processing and network control algorithms for wireless
+              multimedia communications; developments of better algorithms analyzing
+              biological sequence and structure data; and a SMC-based tool for business data
+              analysis and prediction.
+

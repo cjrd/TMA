@@ -1,0 +1,6 @@
+Hi -- as hyperparameters influence the "natural" number of topics K, you
+need to train them as well to be "objective" about K. Holding them
+constant will give you an optimum K given the chosen hyperparameters.
+Best regards
+gregor
+Aaron Zinman wrote:

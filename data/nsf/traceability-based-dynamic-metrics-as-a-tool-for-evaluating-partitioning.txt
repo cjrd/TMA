@@ -1,0 +1,43 @@
+              This research investigates a new method of assessing predicted
+              performance
+characteristics of Object-Oriented software architectures. As
+              scenarios
+represent the anticipated runtime behavior of a system, they can be
+              used at
+a very early stage in the design to quantitatively predict aspects of
+              that
+behavior. The proposed approach can be applied earlier than other
+              existing
+methods such as simulations and executable designs, and does not
+              require
+special analytical skills.  Early assessment is an important risk
+              mitigation
+technique, that can contribute significantly to the task of
+              building a
+distributed system with a greater degree of confidence in its
+              ability to
+perform as required.
+
+The research involves formally defining a
+              set of scenario-based metrics and
+a corresponding system-wide dynamic metrics
+              model.  A strongly typed
+traceability scheme is defined to support the
+              definition and automated
+querying of relationships between performance
+              requirements, scenarios, and
+architectural components.  Scenario invocation
+              rates are specified within
+the context of typical usage patterns, and the
+              relationship between
+scenarios is investigated to determine when performance
+              requirements should
+be propagated from one scenario to another.  A supporting
+              tool is developed
+and used to capture metrics and validate them against
+              runtime and simulation
+measurements taken from a variety of distributed
+              systems.
+
+
+

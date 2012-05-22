@@ -1,0 +1,17 @@
+dear michael
+sorry for the delayed reply.
+yes.
+that's right---these are the parameters to the distribution on topics
+at each level of the tree.
+that's right.
+these refer to the GEM distribution on topic proportions.  see this paper:
+http://www.cs.princeton.edu/~blei/papers/BleiGriffithsJordan2009a.pdf
+this is used in the generative process (on page 7:11) in step 2b.  we
+review the GEM distribution in section 2.3.
+these control whether we sample the hyperparameters described above:
+the GEM parameters and the dirichlet hyperparameter for the topics.
+with SAMPLE_ETA and SAMPLE_GEM both set to 0, hyperparameter sampling
+is turned off.  it makes sense that it was hard to determine this
+effect :-)
+best
+dave

@@ -1,0 +1,58 @@
+              T. Healey and P. Rosakis plan to study various problems from solid
+              continuum
+mechanics governed by nonlinear partial differential equations.  A
+              major
+thrust of the proposed work will be on the static morphology and
+              dynamic
+evolution of microstructure due to phase transitions in
+              two-dimensional
+models of shape-memory alloys.  In contrast to well-known
+              absolute,
+minimum-energy approaches to the statics problem, we plan to employ
+              modern
+techniques of symmetry-breaking, bifurcation theory.  The latter
+              enables
+systematic determination of metastable states, which we believe our
+              ensuing
+dynamical studies will show to be associated with hysteresis. 
+              Another
+aspect of the work will involve applications of a generalized
+              topological degree
+(developed previously by Healey & Simpson) to global
+              bifurcation problems
+of nonlinear elasticity - these will be the first such
+              results in
+three-dimensional elasticity.  The overall goals of the work are to
+              detect
+new nonlinear phenomena, obtain constitutive restrictions that are
+              both
+physically and mathematically reasonable for general classes of
+              materials,
+and to develop new tools/approaches to such nonlinear problems -
+              both
+analytical and computational.  The proposed approach comprises a blend
+              of
+solid continuum mechanics, materials science, nonlinear analysis,
+              symmetry
+and group-theoretic methods and computation.
+
+The analysis of
+              models of nonlinear materials at a very general level is fundamental 
+to the
+              understanding of shape-memory effects in certain advanced engineering
+alloys
+              as well as more traditional engineering materials/structures.  The
+proposed
+              investigation is strongly interdisciplinary, combining models and
+techniques
+              from mechanics, materials science and modern mathematics.
+Broadly speaking the
+              work will provide new mathematical approaches to
+difficult nonlinear problems
+              arising in structural/mechanical engineering
+and materials sciences.  This has
+              the potentia of leading to a better understanding of
+material behavior and
+              design - including the design of "smart" structures.
+
+

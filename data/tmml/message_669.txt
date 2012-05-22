@@ -1,0 +1,9 @@
+hi all
+there is an ICML workshop on topic modeling, organized by michal
+rosen-zvi, amit gruber, and richard zemel.  (ICML is in haifa,
+israel.)
+the call for papers is here
+http://www.cs.toronto.edu/~amitg/cfp.html
+the deadline is april 26.
+best
+dave

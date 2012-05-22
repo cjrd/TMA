@@ -1,0 +1,3 @@
+Hi all?
+??? In calculating perplexity of the topic model, I can't understand the meaning of the parameter P(wd) and Nd. can anyone tell me? thanks!
+Chaorong Wu

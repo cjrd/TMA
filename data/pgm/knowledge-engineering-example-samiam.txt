@@ -1,0 +1,288 @@
+
+So, now, let’s look at an example in [an] actual network,
+and try to see what the CPD’s look like,
+what behavior we get,
+and how we might augment the network
+to include additional things.
+Now, let me warn you right upfront
+that this is a baby network;
+it’s not a real network,
+but it’s compact enough to look at, but
+still interesting enough to get some non-trivial behaviors.
+So, to explore the network,
+we’re going to use a system called SAMIAM.
+It was produced by Adnan Darwiche and his group at UCLA,
+and it’s nice
+because it actually works on all sorts of different platforms,
+so it’s usable by pretty much everyone.
+So let’s look at a particular problem:
+Imagine that we’re an insurance company
+and we’re trying to decide
+for a person who comes into the door
+whether to give them insurance or not.
+So the operative aspect of making that decision
+is how much the policy is going to cost us,
+that is, how much we’re going to have to pay
+over the course of a year to insure this person.
+So there is a variable called Cost.
+Let’s click on that to see what properties that variable have.
+And we can see that in this case,
+we’ve decided to only give two values to the Cost variable,
+Low and High.
+This is clearly a very coarse-grained approximation
+and not one that we will use in practice.
+In reality we would probably
+have this be a continuous variable
+whose mean depends on various aspects of the model.
+But for the purposes of our illustration,
+we’re going to use this discrete distribution
+that only has values Low and High.
+Okay.
+So now, let’s build up this network using the technique of
+“expanding the conversation” that we’ve discussed before.
+And so what is most important determining factor
+as to the cost of the insurance company has to pay?
+Well, probably whether the person has accidents
+and how severe they are.
+So here we have a network that has two variables:
+One is Accident and one is Cost.
+And in this case we decided to select
+three possible values for the accident variable,
+None, Mild, and Severe,
+and with the probabilities that you see listed.
+And what you see down below is the Cost variable.
+And let’s open the CPD
+of the Cost variable given the Accident variable.
+And we can see that, in this case,
+we have a conditional probability table
+of Cost given Accident.
+Note that this is actually inverted
+from the notation that we have used in the class before,
+because here the conditioning cases are columns,
+whereas in the examples that we’ve given
+[they] have been rows.
+But that’s okay, it’s the same thing, just inverted.
+And so we see, for example,
+that if the person has no accidents,
+the costs are very likely to be very low;
+mild accidents incur different distributions over cost;
+and severe accidents have
+a probability of 0.9 of having high cost
+and 0.1 of having low cost.
+So now, let’s continue extending the conversation
+and ask what Accident depends on.
+And it seems that one of the obvious factors
+is whether the person is a good driver or not.
+And so we would expect driver quality
+to be a parent of Accident.
+But there is other things
+that also affect not just the presence of an accident,
+but also the severity of the accident.
+So for example, vehicle size would affect
+both the severity of an accident
+because if you are driving a large SUV, then chances are
+you are not likely to be in an accident as severe
+but it might also perhaps increase
+the chance of having an accident overall
+because maybe driving a large car is harder to handle.
+And then vehicle year might affect the chances of an accident
+because of the presence or absence of certain safety features
+like anti-lock brakes and airbags.
+So let’s open the CPD of Accident
+and see what that looks like
+now that we have all these parents for it.
+And we can see here that we have these,
+in this case, eight conditioning cases,
+correspond[ing] to three variables, two values each.
+And so here just to look at one of the samples,
+just as an example, distribution for example.
+So, if this is a fairly new vehicle—after 2000—
+and it’s an SUV,
+the probability of having a severe accident is quite low.
+and the probability of having a mild accident is moderate
+and the probability of having of no accidents is 0.85
+whereas if you compare that to corresponding entry
+when we keep everything fixed except that now it’s a compact car,
+we see that the probability of having a mild accident is lower,
+but the probability of having no accidents is higher,
+representing different driving patterns, for example.
+Okay, so with this network,
+we can now start asking simple questions.
+So to do some example of causal inference,
+let’s instantiate, for example, driving quality to be good.
+And bad.
+And we can see that for bad driver
+the probability of low cost is 81%.
+And for a good driver the probability of low cost is 87%.
+If we look at the accidents
+we can see that for a good driver
+there is a probability of 87.5 percent of no accidents
+and ten percent of mild accident.
+And the probability of no accident goes down for a bad driver,
+and mild accident goes up
+and severe accidents also goes way up.
+Now note that many of these differences are quite subtle.
+There’s a difference of a couple percent one way or the other.
+And you might think,
+if you were designing a network,
+that you’d like these really extreme probability changes
+when you instantiate values.
+But in many cases that’s not actually true,
+and these subtle differences
+are actually quite significant for an insurance company
+that insures hundreds of thousands of people—
+a couple of percentage points in the probability of an accident
+can make a very big difference to one’s profitability.
+So now let’s think about
+how we would expand this network even further.
+Vehicle size and vehicle year are things
+that we’re likely to observe in the insurance forum.
+But driver quality is something that’s very difficult to observe.
+You can’t go ask somebody, “Oh, are you a good driver?”
+Because everyone’s going to say,
+“Sure, I’m the best driver ever!”
+And so that’s not going to be a very useful question.
+So what evidence do we have that we can observe
+that might indicate to us the value of the driver quality?
+One obvious one is the person’s driving record.
+That is, whether they’ve had previous accidents
+or previous moving violations.
+So let’s think about adding a variable
+that represents driving history.
+And so let’s go ahead and introduce that variable.
+So we can click on this button
+that allows us to create a node.
+The node is now called variable1
+so we’d have to give it a name.
+So for example we’re going to call it DrivingHistory.
+And that’s its identifier,
+and we also have the name of the variable,
+which is usually the same.
+And let’s make that two values,
+say PreviousAccident and NoPreviousAccident.
+Now where will we place this variable in the network?
+One might initially think that the right thing to do
+is to place DrivingHistory as a parent of Driver_quality
+because driving history can influence
+our beliefs about driver quality.
+Now it’s true that observing driving history
+changes our probability within driver quality,
+but if you think about the actual causal structure of this scenario,
+what we actually have is that driver quality is a causal factor
+of both a previous accident
+as well as a subsequent accident.
+And so if we want to maintain
+the intuitive causal structure of the domain,
+a more appropriate thing is to add DrivingHistory as a child
+rather than parent of Driver_quality.
+[You] might question why it matters
+and in this very simple example
+the two models are in some sense equivalent
+and we could have placed it either way
+except that the CPD for driver quality given driving history
+might be a little bit less intuitive.
+But if we had other indicators of driver quality,
+for example a previous moving violation,
+then it actually makes a lot more sense
+to have all of these be children of driver quality
+as opposed to parents of driver quality.
+Okay.
+So that shows us how we would add a variable into the network.
+And now let’s go and open up a much larger network
+that includes these variables as well as others.
+So let’s look now at this larger network.
+And we can see
+that we’ve added several different variables to the network.
+We’ve added attributes of the vehicle,
+for example whether the vehicle had antilock brakes and an airbag,
+which is going to allow us to give
+more informative probabilities regarding the accident.
+We’ve also introduced aspects of the driver,
+for example, whether they’ve had extra-track training,
+which is going to increase driving quality,
+whether they’re young or old,
+where the presumption is
+that younger people tend to be more reckless drivers,
+and whether the driver is focused or more easily distracted,
+which again is going to affect driving quality.
+Now since personality type is hard to observe,
+we added another variable which is Good_student
+which might indicate one’s personality type.
+So let’s open [the] CPD for that one.
+And so we can see here that, for example,
+if you are a focused person who is young,
+you’re much more likely to be a good student,
+much more so than if you are not a focused person who is young.
+If you’re old, you’re just not very likely to be a student,
+and so this probability basically says that if you’re old,
+you’re just not very likely to be a student,
+and therefore not likely to be a good student.
+So, now that we’ve added all these variables to the network,
+let’s go ahead and run a few queries to see what happens.
+And let’s start by looking at the prior probability of Accident
+before we observe anything.
+So we can see that the probability of no accident is about 79.5%.
+The probability of severe accident is about 3%.
+Now let’s go ahead and tell the system
+that we have a good student at hand.
+So we’re going to observe
+that the student is a good student,
+and let’s see what happens.
+We can see, surprisingly,
+that even though we observe
+that somebody is a good student,
+the probability of no accidents
+went down from 79.5% to 78%,
+and the probability of severe accidents
+went up to 3.5 to 3.67 percent.
+You might say,
+“Well, but I *told* you that it’s a good student.
+Shouldn’t the probability of accidents go down?”
+So let’s look at some active trails in this graph.
+One active trail goes from Good_student to Focused,
+to Driver_quality,
+to Accident.
+And sure enough, if we consider that trail in isolation,
+it’s probably going to make the probability of no accident be higher.
+But, we have another active trail.
+We have the active trail that goes from good student up to age,
+and then back down, through [to] driver quality.
+So, to see that, let’s unclick on good student
+and see what happens.
+Note that the probability initially that the driver is young was 25%,
+but when I observed a good student,
+it went up to close to 95%.
+And that was enough to counteract the influence
+along this more obvious active trail.
+So, to demonstrate that this is indeed what’s going on,
+let’s click on the fact
+and instantiate the fact that the student is young,
+and we can see that the probability of severe accident went up to 3.7%
+and no accident went down to a little bit shy of 77%.
+And now let’s observe good student and see what happens.
+So now we observed good student,
+and the probability of no accidents went down to 78%,
+as opposed to before when it was 77%.
+And the reason for that
+is that we’ve now blocked this trail
+that goes from good student, through age, to driver quality
+by observing this variable which blocks the trail.
+So we can see the reasoning patterns
+in a Bayesian network are sometimes subtle.
+And there are different trails that can affect things
+and interact with each other in different ways.
+And so it’s useful to take the model
+and play around with different queries
+and different combinations of evidence
+to understand the behavior of a network.
+And especially if you’re designing
+such a network for a particular application,
+it’s useful to try out these different queries
+and see if the behavior that you get
+is the behavior that you want to get.
+And if not, then you need to thing about
+how do I modify this network to get behavior
+that’s more analogous to the desired behavior.
+This network is available for you to play with
+and you can try out different things
+and see what behaviors you get.

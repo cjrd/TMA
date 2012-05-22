@@ -1,0 +1,307 @@
+
+We previously used the variable
+elimination algorithm as a way of proving
+the correctness of the clique tree
+algorithm. It turns out that this
+relationship can also be used to answer
+another fundamental question regarding
+clique trees. Which is the question of
+where clique trees come from. Or rather,
+how we might construct a little clique
+tree. In order to do that, what we're
+going to do is we're going to look at a
+run of variable elimination, and we're
+going to see how we might reinterpret it
+as a clique tree, as a clique tree
+run. In order to do that, let's
+look at the variable elimination
+algorithm, and try and take a clique tree
+view of what it's doing. So the variable
+elimination algorithm, as a reminder,
+starts by, take a series of steps, where in
+each step, it creates a large factor,
+which, for the purposes of this
+discussion, we're going to call lambda I.
+And what it does, and it does that by
+taking a bunch of factors, and multiplying
+them together. When that is done, we
+eliminate a variable from lambda I, and
+that gives us a new smaller scope factor,
+which we're going to call Tau I. And Tau I
+is put into the pool of factors that we
+have available to us. Which means that, at
+some point, we're going to use it in the
+context of computing another large factor,
+Lambda J, when we multiply a bunch of,
+factors together. So now let's think about
+this process in terms of passing messages
+in, in in-between computational entities
+in the same way that we had when we were
+doing message passing algorithms. So we're
+going to look at these intermediate
+factors lambda I as the clique in a clique
+tree. And the tau I's that are used, that
+are produced in the context of one clique.
+And utilized by a different clique, we're
+going to consider that to be a message. So
+these little factors that are produced by
+one lambda and consumed by another lambda
+can be viewed as a message that's passed
+from the clique that corresponds to the
+first lambda, and received by the second
+lambda. So, summarizing, the variable
+elimination algorithm defines the graph.
+You're going to have a cluster CI for
+every factor lambda. We're going to draw
+an edge between CI and CJ if the factor
+that was generated in a computation in
+which I multiply together all the factors
+to produce lambda I is used in the
+computation of lambda J. And so we can
+think of it as CI. Which corresponds to
+Lambda I, passing a message to CJ, which
+corresponds to Lambda J, and that message
+is the Tau I that was produced by, by the
+Lambda I computation. So now let's look at
+this in the context of an example. We're
+going to go through the variable
+elimination process that we had for our
+network that we had earlier, the enhanced
+student network. And so the first variable
+elimination step multiplies together the C
+factor and CD factor. And that gives us,
+this is my Lambda one. And lambda one
+produces a clique whose scope is CD, and so that
+this clique over here. The next step
+eliminates D and the way in which it does
+that it takes tau one and then it
+multiplied it, multiplies that my one of
+my original factors phi G. And so now we have
+a, a lambda two. This is my lambda two. And
+that gives me a clique whose scope is GIB,
+and since GIB used tau one. Then we have
+an edge from CD to GID, whose scope is the
+variable D. The next step in the analysis
+that we did before, eliminated the variable
+I and again used two of the original
+factors, phi I and phi F. And it also used
+tau two. And so now we have a factor,
+lambda three, whose scope is G, S and I
+because those are the variables in this
+scope over here. And the message, GI, is,
+that we see here, this edge between GID
+and GSI corresponds to this tau-two that
+was produced by lambda two and consumed by
+lambda three. The next elimination step
+didn't use any of the, pro- factors
+produced by the other, by other
+cliques. It just used one of the
+original cliques, so just used phi H.
+And so note that it's currently not
+connected to anything, just sitting all
+there by its lonesome. And the next step
+now gets to use a, gets to use factors
+that were produced in two separate
+computations, so notice. But this,
+computation for tal, for tal, for lambda
+5, which is this guy. Used both,
+tau three. And tau 4. Which is why we have both
+an edge from cluster three and an edge
+from cluster four. The next step that we
+took. Marginalize out, s is multiplied in
+tau five. And one of the original
+factors JLS and so now we have a message
+here. That's passed between cluster five
+and cluster six. And finally there was the
+marginalization of l and so we have a jl
+cluster. Now if you look at this. Graph,
+this clique tree, you'll notice that it's
+bigger than the clique tree that we had
+for this network to begin with. And one of
+the, and the reason for that is that we
+actually have three adjacent cliques where
+one is a subset of the other. So JL is a
+subset. Of JSL which in turn is a subset
+of GJSL. Now if you think about it,
+there's really no point to including three
+cliques where one is a subset of the other
+because you might as well do all of the
+computation in the first clique to begin
+with. There's no value to sort of breaking
+it out into separate data structures. And
+so a typical post-processing step is to
+then go ahead and remove redundant
+cliques. And just basically collapse, them
+and their factors into, into the one, the
+biggest clique that subsumes them. So, in
+this case, since, we had PHI JLS, which
+originally was utilized in Tau six. We're
+now going to move that, and put that
+instead, in, sorry, it was used in lambda
+six. We're now going to stick that into
+clique five. And so we've seen how we can
+take a variable elimination process, a run
+of variable elimination, and use that to
+produce what looks like a clique tree. But
+is it a clique tree? So what properties
+can we prove about this output from a
+variable elimination run? Well, first is
+the fact that it is in fact a tree. We
+want it to be a clique tree it better be a
+tree. Why is it a tree? Because in
+variable elimination, every intermediate
+factor tau, once you produce it, it gets
+consumed exactly once. Once it gets
+consumed, remember, in the Variable
+Elimination Algorithm, it gets taken out
+of the set of factors. And then it
+disappears, because it gets multiplied in.
+And so, if you think about this as a
+directed tree, it starts out, and it
+produces factors, and each factor speeds
+up into only a single other parent. And
+so, as a directed tree it means that every
+cluster has. Exact- has at most one parent.
+And in fact every cluster except the last
+one has exactly one parent, because
+eventually everything has to be consumed
+because everything is multiplied together.
+And so the variable elimination process
+induces a directed tree where we
+subsequently forget about the
+directionality of the edges. The second
+property that is again not difficult to
+show is of that the tree is family
+preserving. And that is because each of
+the original factors was in my original
+factor set. These are my original factors,
+phi, in my original factor set, big phi,
+was somewhere in the variable elimination
+process. And that means it must have been
+used at some point, because eventually I'm
+multiplying all factors together. And
+therefore it must be contained in the
+scope of one of the, sorry this should be,
+lambda I. And that lambda I by force has a
+scope. That contains. The scope. Of phi,
+which is what we need for the family
+preservation property. The final property
+that we had that we would like to show
+hold, is that the tree, respects or obeys the
+running intersection property. And so, as
+a reminder, that property says that if you
+have two clusters, CI and CJ, with a
+variable X that is present in both. Then X
+needs to be in each cluster and each
+sepset in the unique path between CI and
+CJ. First of all, let's convince ourselves
+that, that running intersection property
+holds here and we have already seen that
+because this is actually the familiar
+clique tree that we have for this example.
+In fact, we've produce that clique tree by
+variable elimination using exactly the
+process that I've shown you before.
+[sound]. Now let's show that however more
+generally, so we want to prove to
+ourselves that if P is a tree of clusters
+that was induced by a run of variable
+elimination, then P obeys the running
+intersection property. And so now remember
+that this tree came from a directed run.
+And so what I'm showing you here is
+actually a directed tree, where we see how
+the clusters communicate. But this is not
+the same tree that we had in our example.
+It's a more complicated one to illustrate
+the, sort of to make the theorem a little
+bit more interesting to show. So, in one
+of those sepsets, and in exactly one of
+those sepsets, the variable X is
+eliminated, because this is a run of
+variable elimination. Every variable is
+eliminated exactly once. So let's imagine
+that x is eliminated, here. So this clique
+over here. >> Is the last to see X, where, so
+C4 has X in it. X is in C4 and x is not in C6.
+Now let's take any other Cluster that
+contains x. So, for example, assume that
+cluster seven contains x. Well, if cluster
+seven contains X, and X wasn't eliminated
+on this edge, because it's eliminated
+exactly once, it means that it needs to be
+in the sepset, which means it was in the
+message tau that C seven produced, so it's
+in tau seven. X is in the scope of tau
+seven. Which means that x also needs to be
+in the scope of C3 because it was
+multiplied in. If it was multiplied in,
+then it has to be in that scope. And so,
+by continuing this in exactly the same
+inductive argument, we know that since X
+has to be in C3. It also needs to be in
+this sepset, and so on. And so we've shown
+that X needs to be on the path from C7 to
+C4. And now, let's take a different
+cluster that contains C5, contains X, for
+example, C5. We can similarly show that X
+needs to be on every step along the path.
+And since this is a tree. Means it needs
+to be on the path between c7 and c5. And
+so that argument shows that for any pair
+of clusters, or cliques, that contain X, X
+has to be on every step of the path
+between them. So to summarize. A run of
+variable elimination implicitly defines a
+correct clique tree. Which means, that you
+can, if you want to get a clique tree
+that has the required properties. Family
+preservation and running intersection, we
+can simply simulate a run of variable
+elimination. What does it means to
+stimulate? It doesn't mean that we run the
+variable elimination because that would be
+an expensive process. We just figure out
+what factors that would multiply and what
+scopes they would have and therefore at
+what factor get used where and that gives
+me the cliques. And the connections
+between them. And this is the exact
+process that we did in the simple example
+that we had. And. That clique tree has a
+computational cost which is essentially
+equivalent to the cost of running the
+variable elimination algorithm. Because,
+if you think about the sizes of the
+cliques that are produced, they correspond
+exactly to the sizes of the factors
+produced by variable elimination. So these
+costs are directly comparable to each
+other. Except as we showed before, the
+clique tree used dynamic programming or
+storing or caching of the messages so we
+don't need to recompute the same message
+more than once. And that allows us to
+produce marginals over all of the
+variables in the network at only twice
+the cost of running variable elimination.
+So taking yet one other step backward,
+what that means is if you care to get the
+values of the marginals for. Even not,
+not necessarily even all variable but
+multiple variables, one efficient way of
+doing that is to take variable
+elimination, do this simulation to figure
+out what clique tree we want to build or
+how to build a clique tree and then use
+that clique tree to compute all of the
+marginal by appropriate massage passing,
+and. We talked about variable elimination
+and how to construct to use heuristic
+solutions to construct a good variable
+elimination ordering one that gives us
+relatively small factor [inaudible] along
+the way and that exact same set of
+heuristics is also useful for constructing
+a small efficient clique tree to the
+extent that's possible given a graph.

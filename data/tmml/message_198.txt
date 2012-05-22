@@ -1,0 +1,13 @@
+We are trying to apply topic models as a density estimator to identify and
+reject documents that are significantly different from the training set.
+Na?ve application of LDA results in longer documents having lower
+probability, because we have the product of the probability of generating
+each word in the document.  We have tried several things to address this,
+such as learning a distribution over the lengths of documents, but this
+doesn't seem to work well.  Another idea we have had is to take the
+geometric mean of the predicted probabilities of the individual words (i.e.,
+the mean value of log w_ij over all words i in document j).  This seems like
+a hack, but it does seem to work.
+What are some of the other ways people know of to address this problem?  Is
+there a principled approach?
+Thanks,

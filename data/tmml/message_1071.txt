@@ -1,0 +1,5 @@
+Hello,
+Hmm... I'm not very clear with it yet, but maybe the Nested Chinese
+Restaurant Process is what you're looking for:
+http://www.cs.princeton.edu/~blei/papers/BleiGriffithsJordanTenenbaum2003.pdf?
+Cheers,

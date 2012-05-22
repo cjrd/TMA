@@ -1,0 +1,4 @@
+Yangqing,
+I posted my implementation at http://code.google.com/p/maximum-margin-lda/downloads/list
+cheers,
+Jun

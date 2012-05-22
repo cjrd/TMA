@@ -1,0 +1,29 @@
+              The objectives of the proposed research focus on the design, discovery and
+              characterization of new solid-state reactions.  First, expansion of an initial
+              set of target molecules to include groups with terminal double bonds as well as
+              cationic metal complexes with neutral unsaturated ligands will both (a) promote
+              the discovery of new processes, and (b) aid in the efficient selection of those
+              materials likely to produce stereoregular products.  Crystallographic studies,
+              as well as full product characterization, will develop understanding of the
+              geometrical and chemical mechanism associated with each process.  Second, when
+              single crystals are not available, structures will be determined by powder
+              diffraction techniques.  In addition to studies of new materials, powder X-ray
+              structure determination of extant solid-state polymerization systems, such as
+              potassium acrylate, will provide significant new information for a
+              structure-reactivity database.  Third, analysis of the diffuse X-ray scattering
+              observed during the course of a solid-state reaction will provide new
+              information on the disorder observed to occur at intermediate stages of
+              solid-state reactions.  Fourth, a series of molecular solids ranging from
+              cinnamic acids to metal complexes will be irradiated in the low-energy "tail"
+              of the absorption band of the corresponding chromophore.  This avenue of
+              research promises to produce single crystals of dimers, oligomers and polymers.
+               Finally, newly-synthesized metal salts of acetylenedicarboxylic acid promise
+              to be excellent prospects for new applications involving radiation
+              dosimetry.
+%%%
+Solid state reactions offer exceptional opportunities for
+              chemospecific and stereo specific synthesis leading to the production of new
+              oligomers and polymers, and the discovery of novel applications for new
+              materials in technological areas such as dosimetry and solid phase peptide
+              synthesis are viewed as high priorities in industry.
+

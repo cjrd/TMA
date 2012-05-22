@@ -1,0 +1,194 @@
+
+When developing learning algorithms. Very
+often, a few simple plots can give you a
+better sense of what the algorithm is
+doing, and just sanity check that
+everything's going okay, and the
+algorithm's doing what it's supposed to.
+For example, in an earlier video, I talked
+about how plotting the cause function, J
+of theta, can help you make sure that
+[inaudible] the sense is converging.
+Often, plots of the data, or of the
+learning algorithm outputs will also give
+you ideas for how to improve your learning
+algorithm, Fortunately, Octave has, very
+simple tools to generate lots of different
+plots. And when I use learning.
+Algorithms. I find that plotting the data,
+plotting the linear algorithm. And so on
+are often. An important part of how I get
+ideas for improving the algorithms. And,
+in this video, I'd like to show you some
+of these [inaudible] tools for plotting
+and visualizing your data. Here's my
+[inaudible] window. Let's quickly generate
+some data. First the plots. I'm gonna set
+T to be equal to, you know, this array of
+numbers. Here's T, set of numbers going
+from zero up to.98. Let's say Y1 equals
+sine of two pi 4T. And if I want to plot.
+The side function is very easy I just type
+plot T, Y one, and hit enter. And up comes
+this part where the horizontal axis is the
+T variable and the vertical axis is Y one
+which is this sort of [inaudible] sort of
+function that we just computed. Let's say
+Y two is to be equal to. The co-sign of
+two pie four T like so and [cough] if I
+plot. T, Y2 what octave will do is it will
+take my [inaudible] plot and it will
+replace it with this cosign function that
+you know cosign of X start at one, right,
+now what if I want to have, have both the
+sign and the cosign plots on top of each
+other what I'm going to do is I'm going to
+type, plot T, Y1 so here's my sign
+function and then I'm going to use the
+function, hold on. And what hold on does
+is it causes Octave to now plot new
+figures on top of the old one and let me
+now plot T Y two I'm plot the cosign
+function in a different color so when we
+put in R in quotation marks there and
+instead of replacing current figure of
+plot the cosign function on top and the R
+indicates the [inaudible] color and. Here
+are additional commands it's labeled times
+to label the X axis or horizontal axis and
+Y labeled values [inaudible] to label the
+vertical axis value and I can also.
+[cough] And I can also label my two lines
+with this command legend, sign, cosign,
+and, this plus this legend, up on the
+upper right showing what the two lines
+are. And finally title my plot, put a
+title at the top of this figure. Lastly if
+you want to save this figure, you type
+print, [inaudible] d, p and g. My plot
+PNG. So, PNG is a graphics file format.
+And if you do this, this will actually
+save this as a file. If I do that, let me
+ch-, change directory to Let's see. Put
+that. And then I will print that out. So,
+this will take a while. Depending on how
+your Octave conversions set up. This may
+take a few seconds. But change the
+directory to my desktop. And Octave is now
+taking a few seconds to save this. If I
+now go to my desktop. [cough] Let's hide
+these windows [inaudible] that's the
+figure saved as a PNG file also can save
+in other formats as well so you can type
+help plot if you want to see the other
+file formats rather than PNG that we can
+save figures in and lastly if you want to
+get rid of the plot, the close command
+[sound]. Causes a figure to go away so
+there's a figure I type close you know
+that figure just disappeared from my, just
+disappeared from my desktop. Altiv also
+lets you specify a figure of numbers you
+type figure one + T one, one. That starts
+up a first figure and that helps TY1 and
+then if you want a second figure you
+specify different figure numbers so figure
+two plot T Y two like so and now on my
+desktop I actually have two figures figure
+one and figure two there's one plotting
+the sign function one plotting the cosign
+function. Here's one other neat command
+that often use which is the sub plot
+command so we're going to use sub plot one
+two one what this does is it divides, sub
+divides the plot, into A 1x2 grid that's
+what the first two parameters are and it
+starts to access the first element, that's
+what the final parameter of one is right
+so just divide my figure into 1x2 grid and
+I want to access the first element right
+now and so if I type that in this product
+this figure is on the left and if I plot
+T. Y1, it now fills up this, you know,
+first element. And if I now do subplot
+122, I'm gonna start to acess a second
+element, and plot TY2. We'll throw in Y2
+in the right hand side or in the second
+element. And last command, you can also
+change the access scales, and change
+accesses to 1.51 minus 1.1. And this sets
+the X range and Y range for the figure on
+the right. And completely assess the
+horizontal major values in figure on the
+right that range to 0.5 to one and
+vertical axis values that range from -one
+to one. And you know you don't need to
+memorize all these command and if you ever
+need to change the axis all you need to
+know is that there's axis command and you
+can really get the details from the usual
+[inaudible] help command. Finally just a
+[inaudible] CLF here's the figure. And his
+one, one matrix less than A is equal to a
+five by five matrix square [inaudible] say
+so A is now this five by five matrix.
+Doesn't we trick lesson as used to
+visualize a matrix which I can use image
+as c Of A, and what this will do is this
+will plot a five by five, matrix. So I'll
+take my matrix and plot this as a five by
+five grid of colors, where the different
+colors correspond to the different values
+in the A matrix. So, [inaudible], I can
+also do color bar, let me use a more
+sophisticated command, [inaudible] color
+bar, color. Map gray. This is actually
+running three commands at a time. We're
+running image sc, then we're running color
+bar and we're running colormap gray. And
+what this does is it sets the color for
+map to gray colormap and on the right it
+also puts in this color bar. And so this
+color bar shows what the different shades
+of color correspond to. Concretely, the
+upper left element of the a matrix is
+seventeen and so, yeah, that corresponds
+to kind of a knit shade of gray. Where as
+in contrast the second element of A sort
+of the one two element of A is 24 where it
+says A one two is 24 so that response to
+this graph here which is a nearly a shade
+of white. And the small values say A, what
+is that, A four five It's about a three
+over here that response you can see on my
+color bar, that response much darker of
+shade in this image. So, here's an example
+I can plot it larger [inaudible] magic
+fifteen. That gives me fifteen by fifteen
+matrix square and this gives me a plot of
+a what my fifteen by fifteen matrix values
+look like. And finally to wrap up this
+video. What you see me do here is use a
+comma chaining of function calls. Here's
+how you actually do this. If I type A
+equals one, B equals two, C equals three
+And hit enter then this, this is actually
+carrying out three commands at the same
+time or really carrying out three commands
+one after another and it prints out all
+three results and this is a lot like =one
+B=2 C=3 except that if I use semicolons
+instead of a comma it doesn't print out
+anything, so this you know this thing here
+we call comma chaining of commands so
+comma chaining of function calls and it's
+just another convenient way in octave to
+put multiple commands like image. See
+color bar, color map to put muti commands
+on the same line. So that's it. You now
+know how to plot different figures in
+[inaudible]. And, in, Nick's video, the,
+the [inaudible] I wanna tell you about is,
+how to write control statements. Like
+if/while/for statements in [inaudible], as
+well as how to define and use functions.

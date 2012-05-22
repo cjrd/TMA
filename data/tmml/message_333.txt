@@ -1,0 +1,14 @@
+Dear list,
+I am interested in applying LDA to a conversational dialog application, in which the "document" is
+dialog, composed of a sequence of utterances.  The application is "online", meaning that we want to
+apply inference and find topics in the current utterance, considering only it and the previous
+utterances of that dialog.  Crucially, we can't look at future utterances, because they haven't
+happened yet!  So we never see the whole "document" until the dialog is over, just successively
+longer prefixes of it.
+An obvious thing to do is to apply inference repeatedly to the document/dialog as seen so far.  This
+would redo computation of course, and once we got far enough into the dialog, the gammas would
+probably be pretty stable.  Any thoughts on this technique, or on the whole enterprise in general?
+Does it make sense?  Has it been done before?  I've not been able to find anything in the literature
+on it.
+(Thanks for answering my previous query re topic tagging, btw.)
+Dave

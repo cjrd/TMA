@@ -1,0 +1,7 @@
+hi shivani
+gamma will be the posterior dirichlet for the document in question.
+its K components are associated with the topics that were fit to the
+training data.
+see wei and croft's excellent 2006 paper for LDA used in an IR system.
+best,
+dave

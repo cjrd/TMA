@@ -1,0 +1,13 @@
+hi, Radim
+Thanks for the email. That is a little strange. (it could be a bug.) I
+have been trying on
+some new york times data and it does seem to produce reasonable
+results, like
+http://www.cs.princeton.edu/~chongw/nyt-topics.txt
+But if you look at the tail topics, you might see some junk, since
+they are either shrinked by the model or not well converged. You can
+take a look at the final.topics to see why that topic is actually on
+or not.
+thanks
+best
+Chong

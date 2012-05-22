@@ -1,0 +1,25 @@
+              This is a US-Bulgarian workshop on the use of information technologies in
+              modeling the Bulgarian firm in transition from a planned to a free market
+              economy.  The workshop will be held in Bulgaria.  The co-organizers of the
+              workshop are Drs. Madeline Johnson and Richard Alo from the University of
+              Houston-Downtown and Dr. Nikola Yankov from the Tsenov Academy of Economics in
+              Bulgaria.
+
+The goal of the workshop is to bring together faculty, students
+              and other experts from the U.S. and Bulgaria to discuss and develop joint
+              research toward the development of a strategic and tactical decision-making
+              simulation of a Bulgarian firm in transition from operating in a planned
+              economy to a free market economy.  The simulation will support research,
+              training and education on the strategic and tactical processes that will speed
+              the transformation required to operate successfully in a free market economy. 
+              The objectives of the workshop are (a) the identification of the constructs to
+              be modeled in the simulation and (b) the identification of the relationships
+              among the constructs to be modeled in the simulation.  The outcomes of the
+              workshop will include data collection, model building, and software engineering
+              to explicate the simulation.  
+
+This workshop in economics fulfills the
+              program objectives of bringing together leading experts in the U.S. and
+              Central/Eastern Europe to combine complementary efforts and capabilities in
+              areas of strong mutual interest and competence on the basis of equality,
+              reciprocity, and mutuality of benefit.

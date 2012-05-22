@@ -1,0 +1,30 @@
+              Loper
+
+Description:  This award is for support of a joint research project by
+              Dr. David Loper, Director, Geophysical Fluid Dynamics Institute, Florida State
+              University, Tallahassee, Florida and an Omani team led by Dr. Ibrahim Eltayeb,
+              Department of Mathematics and Statistics, College of Science, Sultan Qaboos
+              University, Al-Khodh, Muscat, Sultanate of Oman.  The purpose of the research
+              teams is to develop conceptual, mathematical, and laboratory models of
+              transport in karstic aquifers such as found in Florida and Oman.  In Florida
+              and Oman fluid flow and containment transport is dominated by the presence of
+              correlated inhomogenities such as karstic conduits and fractures.  In Florida
+              conduits predominate, while in Oman both types of inhomogeniety are present. 
+              In this project it is intended to extend the Floridan-conduit model to include
+              fractures.  While the precise structure of the heterogeneities in the
+              subsurface cannot be known with certitude, and thus an accurate or true
+              "prediction" is impractical, improvement can be made in risk estimates in a
+              statistical sense. 
+
+Scope:  The research area of flow and transport in a
+              heterogeneous medium is an important topic with societal impact related to
+              toxic waste from agriculture and industry.  The problem of analysis and
+              prediction of groundwater flows is important to the study of both water
+              resources and water quality.  Good mathematical models of such flows are
+              extremely important to those studies.  Both the Florida State University and
+              Omani groups are capable of obtaining useful and important results, and for
+              both Florida and Oman, the issues of water resources and water quality are
+              quite important.  This proposal meets the INT objective of supporting
+              internatinal scientific collaboration in areas of mutual benefit.  Funding for
+              this project is provided by the Division of International Programs and the
+              Division of Earth Sciences.

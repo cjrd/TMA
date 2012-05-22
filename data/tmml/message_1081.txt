@@ -1,0 +1,13 @@
+Quoting David Blei <blei at CS.Princeton.EDU>:
+Anybody on this list doing this sort of thing with Twitter data? I saw
+a few papers go by early in the year on Twitter topic models, but
+nothing has showed up recently, which leads me to believe that it's
+happening in non-academic non-open-source environments. ;-)
+I ran a few preliminary Mallet topic models a couple of months ago on
+Twitter data, but got thrown by Mallet's insistence on believing that
+'http://meb.tw/aTWKnS' consists of four words, none of which are
+English. ;-) The problem with that is that links, hashtags and
+usernames - known as "entities" in Twitter - are "terms" in their own
+right and should contribute to the definitions of topics. So I don't
+want to do the obvious thing and strip them out with regular
+expressions.

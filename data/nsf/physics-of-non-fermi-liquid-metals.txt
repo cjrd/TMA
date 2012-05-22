@@ -1,0 +1,28 @@
+              0090071
+Si
+This award supports theoretical research focused on: (1) how
+              electron-electron interactions, possibly acting in concert with disorder, give
+              rise to low-energy excitations that are distinctly non-Fermi liquid in
+              character in high temperature superconductors, heavy fermion materials, dilute
+              two-dimensional electron gases in Si-MOSFETs, and in other mesoscopic
+              structures, and (2) elucidating the elementary excitations in real materials
+              where non-Fermi liquid behavior has apparently been observed.  Four specific
+              projects are proposed involving quantum critical behavior in heavy fermions,
+              interacting electrons in disordered two-dimensional systems, probing
+              spin-charge separation in the high temperature superconductors, and non-Fermi
+              liquid behavior in mesoscopic systems. 
+%%%
+The investigator will perform
+              theoretical research that seeks to understand the nature of unusual low-energy
+              electronic excitations observed in experiments on a variety of (usually low
+              dimensional) materials. These excitations are not like those of ordinary metals
+              and thus do not fit the standard textbook inspired expectation of a Fermi
+              liquid. The mechanisms that can produce these kinds of excitations are poorly
+              understood. Part of this proposal seeks to manipulate quantum dots to produce
+              novel non-Fermi liquid states predicted by theory and may have bearing on
+              developing electronic devices for a future technology.  This research lies at
+              the frontiers of condensed matter theory and will contribute to the development
+              of new theoretical techniques and to the training of the next generation of
+              scientists in state-of-the-art methods for materials with strong electronic
+              correlations and disorder.
+

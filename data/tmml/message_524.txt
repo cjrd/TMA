@@ -1,0 +1,13 @@
+My impression was that appropriately chosen hyperparameters could
+effectively combat this effect of frequent words showing up in all the
+topics -- as long as the prior over topics indicates that some topics
+occur much more frequently than others, shouldn't the most frequently
+used words clump together in those? A similar kind of thing happens in
+hierarchical models, where stopwords and more generic words tend to
+wind up in the root node.
+Are you saying that in your experiments, this doesn't happen, or that
+it's not as good as simply filtering out the words? Do you have an
+automated procedure for picking "most frequent words" or do you do it
+roughly on a case by case basis? For example, if you run LDA on, say,
+Annals of Statistics, do you manually strip out the word "statistics"?
+- Neal

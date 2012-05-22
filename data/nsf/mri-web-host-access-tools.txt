@@ -1,0 +1,18 @@
+              EIA-0079770
+Cassel, Lillian N.
+Villanova University
+
+MRI:  Web Host Access
+              Tools
+
+This is a cooperative effort among computing faculty at Villanova
+              University and the College of New Jersey and the objective is the acquisition
+              of web host access tools.  The combined research activities address important
+              questions in artificial intelligence, information gathering, human-computer
+              interface and networking all in the context of a common problem. The problem
+              that joins these topics is assisting a user retrieving and using information
+              obtained from the World Wide Web. The actives involve an integration of
+              research and education with an explicit goal to introduce students to a
+              significant research project while advancing the state of the art in enhanced
+              web resource access.  
+

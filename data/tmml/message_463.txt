@@ -1,0 +1,11 @@
+I'm using HEAD off the repo right now (updated/recompiled today), and when I
+try to run a standard LDA topic model, its stopping after 300 iterations
+despite my request for more.  No error message, it just stops.  I know it
+doesn't think this is the max because it doesn't output state.gz, only
+state.{0,50,100,150,200,250,300}.gz.  I'm using 1-thread with 100 iterations
+of hyperparameter optimization.
+Anyone have a similar experience?
+Unrelated, n-grams is complaining it can't serialize its own class to output
+the model.  I suspect PAM will have the same problem since it too doesn't
+implement serialization.
+Aaron

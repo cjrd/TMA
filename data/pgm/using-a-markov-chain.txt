@@ -1,0 +1,309 @@
+
+We previously defined the notion of a
+Markov chain that allows us to generate
+samples from an intractable distribution,
+but we left unanswered the question of,
+assuming we have a Markov chain that has
+the desired stationary distribution, how
+do we go about using it, in the context of
+concrete algorithmic procedure? Well let's
+imagine that somebody has provided us a
+Markov chain. For a, a distribution.
+Sorry. Imagine that our goal is to compute
+some probability relative to a
+distribution P. But, for whatever reason,
+P is to hard to sample from directly. And
+so how do I, use the Markov chain to get
+around that? First we construct the Markov
+chain P, whose unique stationary
+distribution is P, so, so it needs to be a
+regular Markov chain usually. And then
+we're going to generate samples from this
+distribution. So we're going to start off
+by sampling my initial state from some
+arbitrary distribution p0. P0 is not the
+same as p. So obviously I can't use the
+zero sample as a way of estimating an
+event relative to p. And so what I do now,
+start walking along the chain starting
+sampling x(t+1) from the transition
+model. And because the chain convergence
+to stationary distribution, eventually
+I'll have a sample that is very close to,
+to the to being sample from the
+distribution p that I care about. So now
+here's the sticky issue, and this is
+really a sticky issue. When have we walked
+long enough that we could actually use our
+samples? Because we don't want these
+samples at the beginning because they're
+far from P, and so we need to walk around
+long enough for the chain to get close to
+its stationary distribution. And that
+state is called mixing. So mix is when P
+of P is close enough [to] Pi. So that your
+time t distribution is close enough to the
+stationary. That's the point where I can
+say, good enough, I can start collecting
+samples. So how do we know if a chain has
+mixed or not? And the short answer is, you
+don't. And so this is, as I said, the
+sticky part of a Markov chain method. So,
+in general, you can never really prove
+that a chain has mixed. But, in some
+cases, you can show that is hasn't mixed.
+And then, if you run lots and lots of
+tests, and none of them have convinced you
+that the chain hasn't mixed, then you sort
+of resign yourself to assuming that it
+has, in fact, mixed. But how do you
+convince yourself that a chain hasn't
+mixed? You compute chain statistics, and
+we'll show some examples of that in a
+moment, in different windows within a
+single run of the chain. So, for example,
+here I have a single run of the chain. And
+they run for a while. And than I look at
+little windows, usually they won?t be this
+small and I compare this window. To this
+window, computing various statistics. For
+example, what is the probability of
+hitting a particular state? And I say, is
+the probability of that in this window,
+close to the probability of that in this
+window? And if it is, then maybe I've
+reached this, at least some kind of
+convergence point. In terms of where the
+chain is reached. Now this of course is
+not a sufficiently good answer because it
+could also be derived in a chain that has
+these sort of two very high probability
+regions. That are very hard to get from
+each other. And if the chain is kind of
+ambling along in this part of the space
+and never hitting the other part of the
+space, then you're still going to get very
+similar probabilities across a window of a
+single run of the chain because all of the
+samples are taken from this part and none
+of them are ever taken from that part and
+so we don't know that we haven't mixed.
+So, a more reliable statistic, is to take
+these statis-, a more reliable evaluation
+criterion is to take these statistics
+across different runs that are initialized
+in different parts of the space. And then
+you might hope that one chain is
+traversing, one run of the chain is
+traversing this region. And another run of
+the chain is traversing this region. And
+so now, if the statistics, so now the
+statistics would show a difference, and
+indicate that mixing hasn't taken place.
+So, what statistics might, So how, what
+might we do it, more concretely. So let's
+look at two examples. Here is, two example
+runs of a chain that we'll describe a
+little bit later. And what we measure
+here, and this is the first statistic to
+measure in Markov chains, is the log
+probability. Of, of a sample. So you
+compute The log probability of sample.
+Now, you can't always compute the log
+probability directly, might compute an
+un-normalized log probability as we'll
+talk about, as we'll talk about later. But
+basically, you compute the log
+probability, or some constant factor
+thereof. And now you can compare two runs.
+And this is a run that's initialized from
+an arbitrary state. And this is one that's
+initialized from a high probability state.
+And you look at those and you say, has it
+mixed relative to this criterion, the
+answer is maybe. It looks okay but you're
+not entirely sure. But we can look at
+other statistics. Oh, sorry. Let's look at
+another example. What about this one? Here
+is again, again an example of two runs,
+one of which is initialized from an
+arbitrary state, and initialized from a
+high probability state. And you can see
+that the log probability values are
+nowhere close to each other. And so the
+next case, the answer is definitely not.
+These are two runs of the chain, and
+really neither is mixed. And so you need
+to run for a lot longer, which, you know,
+this comes up, goes, this goes up to
+600,000, so kind of indicates to you how,
+much time this might take. A different
+statistic, a different way of looking at
+this, is for a different kind of
+statistic. So now we have, for example,
+the probability relative to a window that
+we compute in the chain. So remember, all
+of this is relative to a window in the
+chain. After we hope that mixing has taken
+place. And now we compute the probability
+that, within states of this region, what
+is the probability of, that. The states
+are in subsets. So, for example, the set
+of states where. X3 is equal to two. And
+now we compute, that statistic, using the
+two initializations of the chains. So this
+is chain one, or run one, and this is
+run two. And now, we do a scatter-plot,
+for, for different statistics. So each of
+these points. This is the probability,
+say, of X3=, X3=value two. This might be
+the probability that X1 is=to zero. This
+might be some other probability that, you
+know, X5 is=to seven. And so each of these
+is a statistic. And what you see here is a
+scatter plot. One is the estimate that
+they get from the one chain and from the
+other. And looking at this. It should be
+obvious that this first chain has not,
+the, we have not gotten mixing on the
+left-hand side. Because you can see that
+there are all these points here. But have
+high probability in one of the two runs
+and a probability zero in the other. And
+vise versa. Where here most of the
+estimates are clustered around the
+diagonal, so you're getting similar
+estimates from the two chains. And so
+again, this one is a, the first one is a
+clear no and the second one is, maybe. And
+if I do a lot of these statistics and they
+all come up with maybe then I'm willing to
+trust the answers and assume that mixing
+is taking place. So now that I've started
+to collecting samples, how do I use these
+samples? Well, one important observation
+to keep in mind is that once the chain is
+mixed. All of my samples are from a
+stationary distribution, that is this X(t)
+is from Pi, so is X(t+one), T+2, T+3, and so on and so forth
+[sound], and so, we can. Use every single
+one of those samples, because they are
+from the correct distribution. So once I
+determine that a, that a sample is long
+enough for mixing or believed that a
+sample are long enough for mixing, we
+should collect and use all the samples.
+And in fact, there are you might need some
+papers and say I am going to collect every
+hundredth sample. There are actually
+papers that prove that using every single
+sample is better than collecting every
+hundredth sample. But then you might ask,
+well why would those papers tell me that I
+should only collect every 100 samples,
+opposed to collecting all the samples if
+they're all from the correct distribution.
+Because and this is undoubtedly true,
+adjacent samples, ones that are nearby to
+each other in time are correlated with
+each other. Because how even if X(t) is from
+the right distribution pie and so is X(t+1)
+one, X(t+1) is still gonna be close to
+T, close to X(t), and so you are not really
+getting two different sample, you are
+getting two that are very close relatives
+to each other. Now, as I said, it's
+important to recognize that phenomenon,
+because it's important to realize that
+just because you've reached mixing and
+collected 1000 samples, doesn't mean you
+have 1000 samples worth of information. So
+you shouldn't go back and apply the, apply
+the, you know, one of the bounds that we
+saw in, assuming you have IID samples. The
+samples are not. I, I d. So, but that
+doesn't mean you shouldn't use them. Using
+them is still better than not. Now this is
+where you get bitten twice by the same
+phenomenon. The worse a chain is to mix,
+so the longer you need to wait for the
+initial, for the initial samples to be
+good enough, the more correlated the
+samples are because the slower you moving
+around in space in general. And so, if the
+chain is bad it's bad in two different
+ways. It's bad because you took longer to
+mix and it's bad because the samples
+you're collecting are not as useful
+because of the correlation structure
+between the samples. So to summarize,
+first the algorithm and then the
+implications. Here's how we would actually
+end up using a Markov chain. So first of
+all, I'm running C chains in parallel and
+I'm going to sample an initial state from
+each of them. And then I'm going to repeat
+until a reach some determination that
+mixing has taken place. And, what I do is
+I forward march each of the chains using a
+random walk process, where I generate the
+P plus the first sample from the peak
+sample for that corresponding chain. Then
+I compare windows statistics of the type
+that we showed earlier in the different
+chains to try and determine whether mixing
+has taken place. And then I repeat until I
+am co-, confident in the mixing
+properties. With that, I now repeat, until
+there is sufficient samples to collect
+data. So I start out with an empty sample
+set, and then for each of my chains, I
+generate, a sample. And I put it in my
+sample set. And I repeat until I have
+enough, enough samples. And then finally,
+when I've collected enough samples. I can
+go ahead, and compute the expectation, in
+anything that I care about. Whether it's
+an indicator function or a more
+complicated function. Summarizing the
+implications. Markov chains are a very
+general-purpose class of methods for doing
+approximate inference in a, in general
+probabilistic models. Not even necessarily
+probabilistic graphical models. They're
+often very easy to implement, because the
+local sampling that we're doing is often
+quite straightforward to execute. And it
+has good theoretical properties as we
+sample, as we generate enough samples that
+are, sufficiently far away from our
+starting distribution. Unfortunately these
+theoretical guarantees are. Very
+theoretical, in many cases. And so this
+method also has some significant cons.
+First, it has a very large number of
+tunable parameters and design choices.
+What's my mixing time? Which statistics do
+I measure? How close are the statistics to
+each other, in order for me to declare
+that mixing has taken place? How many
+samples do I collect? Do I, what window
+size do I use to evaluate mixing? All of
+these are design choices, they all make a
+difference. And so there's a lot of
+finicky tuning that needs to be done when
+running an MCMC method in practice. The
+second is that depending on the design of
+the chain this can be quite slow to
+converge because it's very difficult to
+design chains that have good mixing
+properties. And finally it's very hard to
+tell whether a chain is working. That is,
+it's not straightforward to determine
+whether the chain has mixed and how,
+whether my samples are sufficiently
+uncorrelated with each other that I'm
+getting a reliable estimate of whatever it
+is that I'm trying to figure out. So, a
+lot of advantages, but also some
+significant disadvantages.

@@ -1,0 +1,5 @@
+Hi,
+I'm familiar with LSA, but not LDA.  In LSA, it's common to use a cosine
+measure for word & document similarity, etc.  Is the same used for LDA?  Or
+are there other measures of similarity that also work well with LDA?
+Thanks, Ian

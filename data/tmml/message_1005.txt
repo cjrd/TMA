@@ -1,0 +1,8 @@
+Hi Veena,
+The count is there because all the occurrences of the same word in a
+document get the same value of phi in the variational inference. So it's
+just an efficient data organization to compute phi's only for the unique
+words and then sum over all its occurrences rather than maintaining a phi
+for each occurrence of a word.
+Thanks
+-Ramesh

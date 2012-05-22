@@ -1,0 +1,540 @@
+
+But we've learned a lot of little bits and
+pieces of representation that are used to
+put together a graphical model.
+And now lets try and take a big step back
+and figure out how you might put these
+back together if you actually wanted to
+build a graphical model that for some
+application that you care about.
+Now, let me start by saying that this
+really not a, a science.
+Just like any other design it's much
+closer to an art or even a black magic
+than a scientific endeavor.
+And so the only thing that one can do here
+is to provide, hints about how might go
+about doing this.
+So lets first identify some important
+distinctions and then we'll go concrete
+about particular examples.
+There's at least three main classes of
+design choices that one needs to make.
+The first if whether you have a template
+based model.
+Versus a very specific model for concrete
+fix set uo random variables.
+Whether the model is directed or
+undirected and whether it's generative
+versus discriminative.
+These are all terms that we've seen before
+and we'll talk about them in just a
+moment.
+But before we go into the sort of trade
+offs between each of these, let me
+emphasize this last point, which is
+probably the most critical thing to
+remember.
+It's often not the case that you just go
+in one direction or the other.
+That is, in many models you're going to
+have, for example, template-based pieces
+as well as some stuff that isn't at the
+template level.
+You might have directed as well undirected
+components and so on.
+So these are not a sharp boundary and it's
+useful to keep that in mind that you don't
+have to go only one direction versus the
+other in real problem.
+So, the first important distinction is
+template-based versus specific.
+And, the, so what are some examples of
+specific models?
+So for example, medical diagnosis is
+usually a specific model.
+That is you have a particular set of
+symptoms, diseases and so on that you want to
+encode in your model so that's one
+example.
+On the other side, on the template based side,
+you have, things like image segmentation.
+Where you really are going to want to deal
+with drastically different images within
+the same model and that's going to be
+template based.
+There all sorts of applications that sit
+in between those two.
+And you can go either way or incorporate
+elements of both.
+So for example, fault diagnosis all
+diagnosis has, you can think of it as a
+specific model, that is you can think
+about writing a diagnostic model for this
+particular type of printer.
+But really if you're inside a company this
+writing a diagnostic tool for your line of
+fifteen different printers, they are going
+to have shared components.
+And if you have a component inside printer
+one that also appears inside printer two,
+chances are that this is going to have the
+same fault model.
+And so you are going to have elements that
+are unique and elements that are shared.
+And so once again, it is something that's
+going to sit at the intersection between
+the two.
+That said, once you decided where on this
+spectrum you sit, it kind of really
+changes the way in which you tackle the
+knowledge engineering problem.
+Because template-based models are usually,
+not always but usually, have a fairly
+small Number of variable types, so, for
+example in our image segmentation setting
+you have the class label.
+That is, one variable type.
+Nevertheless we manage to construct very
+richly expressive models about this
+because of interesting interactions
+between multiple class labels for
+different pixels in the image, but it's a
+very small number of variable types and
+most of the effort goes into figuring out
+things like which features are most
+predictive.
+So it's really a lot about feature
+engineering.
+As opposed to, sort of, complicated model
+design.
+Not always, I mean, certainly not entirely
+but the features turn out to play a very
+big role.
+On the specific model side, you have a
+usually a large number because unless you
+build small models, each variable is going
+to be unique.
+So large number of unique variables.
+Each of which requires its own model.
+And so it's a lot more on the model design
+deciding on the dependency and the
+parameters for each variable separately.
+A second important distinction is between
+generative and discriminative.
+So on the discriminative side you really
+should consider that when you have a
+particular task in mind, a particular
+prediction task.
+And, when that prediction task, is then
+often better solved by having richly
+expressive features, richly discriminative
+features, and then modeling this as a
+discriminative model allows me to avoid,
+avoid dealing with correlations.
+Between them.
+And so that gives me usually high
+performance.
+A higher performance model.
+So you might wonder, so when well when
+would I use a generative model?
+I mean if you get such high performance
+using richly expressive features and
+there's multiple answers to that.
+And one answer is that when I don't have a
+predetermined task, the task shifts so,
+for example, when I have a medical
+diagnosis task, every patients present,
+every patient presents differently.
+In each patient's case I have a different
+subset of things that I happen to know
+about that patient: the symptoms that they
+present with, and the tests that I happen
+to perform.
+And so I don't want to train a
+discriminative model that uses a
+predetermined set of variables as inputs
+and a predetermined set of diseases as
+outputs.
+Rather I want something that gives me
+flexibility to measure, different
+variables and predict others.
+The second reason for using a generative
+model is, and this is looking way forward
+in the class, is that it turns out that
+generative models Are easier [sound] The
+train in certain regimes.
+And specifically just to sort of make
+sure, just to sort of say it out loud, in
+the case where the data is not fully
+labeled, it's, it turns out that
+generative model, that, that sometimes you
+can't train a discriminative model but you
+can train a generative model.
+So we'll definitely see that, when we get
+to that part of the course.
+Okay.
+So, having talked about these different,
+these different regimes, now let's, think
+about what are the key decisions that we
+have to make in the context of designing a
+graphical model.
+So, first of all, what variables are we
+going to include in the model?
+And regardless of whether we have a fixed
+we're varying task in hand.
+We have usually a set of variables that
+are the target variables.
+These are the ones that we care about.
+So even in the medical diagnosis setting,
+you have a set of disease variable, which
+are the ones we care to predict.
+You may not care to predict all of them
+but they are usually the targets.
+We have the set of observed variables,
+again they might not always be observed
+but you won't really necessarily care
+about predicting them, so these might be
+in the medical setting, things like
+symptoms and test results.
+And then the third category might be a
+little bit surprising so we might have
+variables that are latent or hidden.
+And these are variables that we don't nor
+do we necessarily care about predicting.
+They're just there.
+Why would we ask for a model variables
+that you neither observe nor care to ever
+look at.
+So let's look at an example.
+Let's consider, imagine that I asked all
+of you in this class what time does your
+watch show?
+Okay.
+So each of these WI's is the watch, the,
+the time on the watch of each of you in
+the class.
+We have W1 up to WK.
+Now, these variables are all correlated
+with each other, but really they're not
+correlated with each other unless we all
+had like a watch-setting party just before
+class.
+Really, what they're all correlated with
+is Greenwich Mean Time.
+So you have a model, in this case it's a
+naive Bayes model, where you have
+Greenwich Mean Time influencing a bunch of
+random variables that are conditionally
+independent given that.
+Now Greenwich Mean Time is latent unless
+we actually end up calling Greenwich to
+find out what the current time is right
+now in Greenwich, which I don't think any
+of us really care about, but why would we
+want to include Greenwich Mean Time in our
+model?
+Because if we don't include Greenwich Mean
+Time, so if we basically eliminate
+Greenwich Mean Time from our model what
+happens to the dependency structure of our
+model?
+[sound].
+We end up with a model that is fully
+connected.
+And so sometimes latent variables can
+simplify our structure.
+And so they are useful to include, even in
+cases where we don't really care about
+them because not including them gives us
+much more complicated models.
+Which brings us to the topic of structure.
+When we think about the Bayesian that
+works specifically, the concept that comes
+to mind, the question that comes to mind
+is do the arrows given that they are
+directed, do they correspond to causality?
+That is, is an arrow from X to Y
+indicative of having a causal
+connection to X and Y.
+So the answer to that is yes and no.
+[inaudible] very satisfactory.
+So what does no mean in this case?
+Well, we've, we've seen and we consider a
+model where we have X pointing to y,
+[inaudible] you know do the two variable
+cases.
+Well any distribution that I can model on
+this graphical model where X is a parent
+of y, I can equally well model in a model,
+in the Bayes net where I invert that
+edge, it has a y pointing to X.
+So in this example, as well as in many
+others I can reverse the edges and have a
+model that's equally expressive.
+And, in fact I can do this in general.
+That is, you give me any ordering that you
+want on the random variables and I can
+build you a graphical model that can
+represent this, any distribution that has
+that ordering on the variables.
+So you want X1 to come before X2 to come
+before X3 and you want to represent the
+distribution P?
+That's fine, no problem, I can have a
+graphical model that will do that.
+But.
+That model might be very nasty.
+And we've already seen an example of that
+when we had, a case where X1 and X2 were
+both parents of Y and it was, you know, a
+simple model that looks like this.
+And if I want to invert, the
+directionality of the edges and put Y as a
+parent of say X2, Then I have to, if I
+want to capture the distribution that I
+started out with, that-, for this was the
+graph Then I end up having a direct edge
+between X1 and X2.
+And so what happens is that causal
+directionalities are often simpler so to
+drive this home even further, let's go
+back to our Greenwich mean time example,
+where we have the Greenwich mean time is
+somehow the cause or the parent of these
+watch time that we see in different
+individuals.
+And lets imagine that I force you to
+invert the edges, what's it going to look
+like?
+Well.
+So now I'm going to force Greenwich Mean
+Time to be the child of all of these.
+And now what, is this the correct model?
+No, because this says that all of the
+watch time is independent which we know is
+not the case and so what we end with as
+the model as the same horrific model that
+I showed before where everything is
+connected to everything to else.
+And so causal ordering although is
+not more correct than a non caual
+ordering, it's sparser.
+So generally sparser as well as more
+intuitive, so more intuitive.
+As well as easier to parameterize.
+For a human.
+So, again you're not forced to use it and
+sometimes there are good reasons not to do
+it.
+But.
+It's generally good, tip to follow.
+So how does one actually construct a
+graphical model?
+Do we have in our minds some monolithic p
+of some set of variables X1 up to XN and
+we just need to figure out how to encode
+that using a graph?
+Well maybe implicitly but certainly not in
+any explicit form.
+The way one typically constructs a
+graphical model in practice is by having
+some variable or sometimes set of
+variables that we wish to reason about.
+So for example, we might care about the
+variable, cancer.
+Or maybe even lung cancer.
+Well, what influences whether we have
+cancer, whether somebody's going to get
+lung cancer?
+If we go and ask a doctor, what is the
+probability for someone to get lung
+cancer?
+The Doctor is going to say, well you know
+that depends.
+And you might say, well what does that
+depend on?
+And the doctor will say well whether they
+smoke for example.
+At which point you're likely to add the
+variable smoking as a parent of the lung
+cancer variable.
+The doctor might say, well that's not the
+only thing.
+It might, the probability of cancer also
+depends, for example, on whet-, on the
+kind of work that you do.
+Because some kinds of work involve more
+dust, particles getting into your lungs.
+Again so here's another variable on which,
+which you that as apparent.
+And you would go and ask either a Doctor
+or expert in a different domain, what is the
+probability that somebody smokes?
+And if they think about it, they are
+likely to say, well that depends.
+And what does that depend on?
+Well, maybe their age.
+Gender Maybe the-, the country that they
+live in because certainly different
+countries have different smoking
+frequencies.
+So once again, we're going to extend the
+conversation backward to include more
+variables.
+Up to the point that we can stop because
+if we now ask example, what is the
+probability of gender being male versus
+female?
+Well anyone can answer that one.
+And at that point, one can stop because
+there's no way to extend the conversation
+backward.
+Is that enough?
+Usually not, because we also need to
+consider, for example, factors that might
+help us, might indicate to us whether
+somebody is going to have can-, somebody
+has cancer or not.
+And so we might go and ask the doctor what
+are some pieces of evidence that might, be
+indicative here, and we would, the doctor
+would tell us, for example, coughing.
+Or, maybe bloody sputum.
+And various other things that would be,
+potential indicators.
+And at that point one would say, well,
+okay, what is the probability of coughing
+given lung cancer.
+And again, one would now extend the
+conversation backwards and say other
+things might cause coughing, for example,
+having allergies.
+And so once again we would go from here
+and extend backward to construct a
+graphical model that captured all the
+relevant factors for answering queries
+that we here about.
+So that's the structure of a graphical
+model.
+So now let's talk a little bit about
+parameters the values around these
+parameters and what makes a difference
+here.
+So here's certain things that really do
+make a difference to parameters.
+Zeros make a big difference.
+And, when we talked about diagnosis, we
+saw that many of the mistakes that were
+made in early medical expert systems were
+derived from the fact that people gave
+zeros to things that were unlikely but not
+actually impossible.
+And so zeros are something to be very,
+very careful about because you should only
+use something, you should only give
+probability zero to something that is
+impossible, perhaps because it's
+definitional.
+Otherwise things shouldn't really have
+probability zero.
+Other things that make a difference are
+sort of weaker versions.
+So for example, orders of magnitude, order
+of magnitude differences.
+The difference between the probability of
+one over ten or ten versus one over 100,
+that makes a difference.
+It makes a much bigger, whereas small
+differences like 0.54 versus 0.57 are
+unlikely to make a difference to most
+queries.
+Finally, it turns out the relative values
+between conditional probabilities make a
+much bigger difference to the answer than
+the absolute probabilities.
+That is, the comparing different entries
+in the same CPD relative to each other is
+a very useful way of evaluating the
+graphical model and seeing whether the
+values that you use for those relative
+ratios really make sense.
+Finally, Conditional probability tables
+are actually quite rare except in small
+applications.
+In most cases one would use structured
+CPDs of the forms that we've discussed as
+well as a variety of other forms.
+So let's talk a little bit about
+structured CPDs because those actually
+quite important and we can break up the
+types of CPD's that we've talked about
+along two axes, one is whether they're
+intended to deal primarily with discrete
+or with continuous variables.
+And, the other side is whether the type of
+structure that they encode is
+context-specific, where a variable might
+make a difference in some circumstances
+and not in others versus aggregating.
+Of multiple weak influences.
+And so lets give an example of each of
+these categories so for discrete and
+context specific we had tree CPD as an
+example.
+For discrete and aggregating we had
+sigmoid.
+Cpd's as well as noisy or, or noisy max or
+any one of those, that family.
+For continuous CPD's we didn't actually
+talk about context-specific,
+representations but one can take the,
+continuous of a tree CPD called a
+regression tree where one breaks, up the
+context based on some thresholds on the
+continuous variables.
+And that is a context-specific version of
+a continuous CPD.
+And finally the aggregating version of a
+continuous CPD, the Gaussian or
+conditional linear Gaussian is a is an
+example of that.
+By the way, note that the conditional
+linear Gaussian that we've talked about is context specific on
+the discrete variables.
+Finally, it's important to realize that a
+model is rarely done the first time you
+write it.
+And just like any code design, model
+design is an iterative process where one
+starts out somewhere tests it, and then
+improves it over time.
+So, importantly, once one constructs a
+model, the first thing to do is to test
+the model, ask it queries and see whether
+the answers that come out are reasonable.
+There is also a suite of tools that do
+what's called sensitivity analysis, which
+means that one can do, for, one can look
+at a given query and ask which parameters
+have the biggest difference on the value
+of the query and that means those are
+probably the ones that we should fine tune
+in order to get the best results to the
+queries that we care about.
+Finally, any, iterative refinement process
+usually depends extensively on a process
+of error analysis where once we have
+identified the errors that our model makes
+we go back and try and see which
+improvements to the model are going to
+make those errors go away.
+It could be for example, adding features
+for example in some of the image
+segmentation work that we did there's,
+features that might help eliminate certain
+errors that we see in our segmentation
+results.
+Or maybe adding dependencies to the model
+that can capture kind, the kind of
+structure that's in it.

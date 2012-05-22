@@ -1,0 +1,34 @@
+Hi,
+I just applied the Gibbs version of the LDA to a makeshift validation
+document of effective vocabulary size of 8 terms where the training
+corpus had an effective vocabulary size of 5001 terms with one term
+index set aside for unknown term counts. The likelihoods I obtained were
+as follows:
+Iteration =       1 .. log likelihood =        -35.54384
+Iteration = 1000 .. log likelihood =        -37.37719
+Iteration = 1050 .. log likelihood =        -36.79558
+Iteration = 1100 .. log likelihood =        -36.28646
+Iteration = 1150 .. log likelihood =        -37.44227
+Iteration = 1200 .. log likelihood =        -36.79558
+Iteration = 1250 .. log likelihood =        -35.21748 (lowest here)
+Iteration = 1300 .. log likelihood =        -36.79558
+The likelihoods obtained for a proper validation document with effective
+vocabulary size of 264 terms validated against the same training model
+were as follows:
+Iteration =       1 .. log likelihood =      -1503.10589
+Iteration = 1000 .. log likelihood =      -1489.32855
+Iteration = 1050 .. log likelihood =      -1490.20348
+Iteration = 1100 .. log likelihood =      -1488.42243
+Iteration = 1150 .. log likelihood =      -1485.67440 (lowest here)
+Iteration = 1200 .. log likelihood =      -1488.52858
+Iteration = 1250 .. log likelihood =      -1488.75523
+Iteration = 1300 .. log likelihood =      -1487.77407
+Although for both documents, the term topic assignments and the document
+topics were correctly inferred, it seems the likelihood values for the
+Gibbs iterations are harder to assess for very short documents. I guess
+for very short documents, the posterior distribution for topics after
+very few burn-in iterations is "close enough" to the true posterior. I
+have to see what happens with VB though. Can you confirm if you are also
+getting similar values for likelihoods?
+Pradipto.
+alfredxn wrote:

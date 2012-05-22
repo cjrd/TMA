@@ -1,0 +1,26 @@
+Dear topic-models list members,
+has anybody got experience with the hierarchical LDA model (Blei et al.
+2004) ? I am not sure whether I'm on the right track with respect to
+implementation and efficiency.
+In the paper, the authors mention they've implemented a collapsed Gibbs
+sampler, i.e., integrating out beta and theta when simulating the
+distribution p(z|w) for each word in the corpus. They further partition
+the sampling procedure into an LDA and an NCRP sub-procedure. The former
+works on a word-level, i.e., associates a topic z to each word w, and
+the latter works on a document-level, i.e., associates a tree branch to
+each document. Collapsed Gibbs sampling for LDA is straight-forward.
+However, the NCRP  step seems to be a bit more problematic with a
+collapsed Gibbs sampler.
+I'd be grateful to get some hints on two related questions:
+(1) If a new branch is sampled during the NCRP step, how are its new
+topic/node distributions sampled when only the collapsed state (i.e.,
+the z for each w) and its corresponding counts exist? Usually, with DP
+priors the posterior given the generating observation (=document) and
+the base distribution (=Dirichlet) is used, see Neal (1998). Thus: Is it
+necessary to temporarily calculate the full state of the Markov chain,
+i.e., beta and theta_m (m = branch-generating document)?
+(2) How can the association of words in the document to the new topic(s)
+be determined? By resampling it with the temporary full state, i.e., z,
+beta, theta_m?
+Thanks and regards,
+gregor

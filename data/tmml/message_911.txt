@@ -1,0 +1,5 @@
+Hi all:
+Text documents are high dimensional and very sparse data. I wonder how
+the topic models are dealing with  these two problems.
+Regards
+Jeffrey

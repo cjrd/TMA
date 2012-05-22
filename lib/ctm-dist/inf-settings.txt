@@ -1,0 +1,8 @@
+em max iter 1000
+var max iter -1
+cg max iter -1
+em convergence 1e-5
+var convergence 1e-6
+cg convergence 1e-6
+lag 1
+covariance estimate mle

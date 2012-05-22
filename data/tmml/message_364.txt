@@ -1,0 +1,9 @@
+Dear Topic model list,
+I've managed to get the CTM C code working on a linux machine, but now I'm
+having problems with the R code for the lasso. In particular, I'm getting
+this error message:
+".Error in l1ce(y ~ X, data = data, sweep.out = ~1, bound = lambda) :
+you cannot sweep out all the variables"
+I'm not quite sure where to go from here  and would appreciate some advice.
+Thanks!
+David

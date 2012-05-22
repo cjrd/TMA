@@ -1,0 +1,5 @@
+Hi, wen,
+About format, I don't know whether there are some tools. In my opinion,
+the format is very simple, you can write some script to obtain it.
+About Vocab file, you have to statistic over the whole collection, and
+delete what you don't want, such as stop words. Thanks.

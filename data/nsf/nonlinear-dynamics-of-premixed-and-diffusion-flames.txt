@@ -1,0 +1,71 @@
+              0072588
+Matalon
+
+The objective of the proposed work is to derive and analyze
+              mathematical 
+models that describe the dynamics of flames. The models will be
+              derived 
+systematically from the conservation laws of mass, momentum and
+              energy 
+by means of asymptotic methods and analyzed using analytical and
+              
+numerical methods. It is proposed to identify mathematical models that
+              
+contain enough details of the real combustion systems and analyze these
+              
+models in order to gain basic understanding on how the physical and
+              
+chemical processes interact in the simpler circumstances. Comparison 
+with
+              the experimental record will be performed in order to test the models 
+and
+              their predictions. The mathematical problems involve nonlinear 
+evolution
+              equations and nonlinear aspects of flame instabilities.
+
+The objective of the
+              proposed work is to gain fundamental understanding 
+in the complex processes
+              occurring in combustion problems, problems that 
+are encountered in various
+              engineering applications. Improving our 
+fundamental understanding of
+              combustion phenomena could suggest new 
+directions for applied research and
+              lead to a better design of combustion 
+systems. The problems that will be
+              investigated are related to phenomena 
+that have been observed in the
+              laboratory but are not yet completely 
+understood. The proposed work will
+              address three classes of problems: 
+The first class is concerned with the
+              evolution of premixed flames in open 
+space and in confined environments,
+              where the coupled effects between 
+the flame and the hydrodynamic field is of
+              primary interest. Studies of 
+premixed flames have significant technological
+              importance and are 
+directly applicable to internal combustion engines
+              processes. The second 
+class of problems is concerned with instabilities in
+              non-premixed 
+combustion, or diffusion flames, for which theoretical studies
+              are only 
+now emerging. Non-premixed conditions are favored in furnaces for
+              safety 
+reasons and in diesel engines here the liquid fuel evaporates in the
+              
+combustion chamber providing the necessary fuel vapor that burns with 
+air.
+              The third class of problems is concerned with flame spread over 
+flammable
+              liquids, where the combined behaviors in the liquid and gas 
+phases determine
+              the flame dynamics. Flame spread over an accidental 
+spillage of a flammable
+              liquid, or a "running liquid fire" encountered in 
+petrochemical industries,
+              can become a fire hazard.
+

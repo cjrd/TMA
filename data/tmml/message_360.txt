@@ -1,0 +1,46 @@
+1. \alpha parameters are not known and are used only conceptually in
+the generative process. They are to be estimated ?
+both \alpha and \beta are to be estimated in order to maximize the likelihood of
+the observed variables, these correspond to the parameters in the EM algorithm,
+and \theta \z correspond to the hidden random variables in EM, for which only the
+expectation of them are considered.
+2. \beta parameters (word probabilities, i.e. p(w^j = 1 | z^i = 1) are
+not known in advance and are to be estimated ? \beta is in fact a
+matrix of conditional probabilities?
+\beta is the parameter of the \z th multinomial distribution for \w.
+which is also to be estimated.
+3. Whenever we choose \theta from the Dirichlet(\alpha) distribution
+we effectively get all but one (as N is assumed to be fixed)
+parameters for the Multinomial distribution used later on ?
+Sorry, I don't understand the question.
+4. Why is p(z_n | \theta) given by \theta_i for the unique i such that
+z_n^i = 1 ?
+This is because of the expression of z, you can think of z_n as an integer i from 1 to k,
+instead of a vector with only the i'th entry has the value of 1, in this way,
+since z_n is generated from the multinomial distribution with one trial,
+p(z_n | \theta) = \theta_(z_n) = \theta_i
+5. What is the definition of a variational parameter? What are they?
+(I'm completely new to variational methods)
+In the E step of EM, we need to compute the posterior prob distribution of the hidden variables,
+p(\theta) and p(z), they are all functions on \theta and \z, but if we consider them as a parameterized distribution,
+like p(\theta | \gamma) and p(z|\phi), then the problem becomes to find the best \gamma and \phi,
+this is done by minimizing the KL-divergence between like p(\theta) and p(\theta|\gamma), which is described clearly in the LDA paper.
+6. What is the high level overview of the LDA algorithm?
+As in other techniques using generative model, it is to make hypothesis of the model
+generating the observed data, which is most often expressed in a graphical model,
+then the joint probability of the observed variables are maximized in contrast to the
+parameters of the model. LDA is from on pLSI, which is suitable for describing the relationship
+between two kinds of discrete data, LDA uses a Dirichlet prior to describe the distribution
+of the multinomial parameters as suggested by the de Finetti's theorem, which gives much better
+performance, as pLSI suffers from overfitting problems, and has no generative model for new documents.
+What steps do we make in order to make the LDA work correctly?
+Estimate parameters and then do inference, or the other way around? I
+think this is missing in the paper.
+7. Is the LDA-C a 1-1 implementation of what is published in the
+paper? I was trying to read the code but for the first few passes over
+the code I don't see any direct mapping to most of the equations
+published in the paper.
+LDA-C does correspond to the LDA paper except that \alpha is constant for all the \k
+Yuanlong Shao
+State Key Lab of CAD&CG
+Zhejiang University

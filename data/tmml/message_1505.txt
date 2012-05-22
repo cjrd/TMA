@@ -1,0 +1,6 @@
+Lda may find that two topics have an equal share in a document. Say theta(t1)=0.5 and theta(t2)=0.5  How would you pick the largest then?
+Even if theta(t1)=0.51 and theta(t2)=0.49 would you really want the document to be associated only with the cluster of t1?
+Lda rather gives you a soft clustering.
+And I think that is a good thing.
+You may rethink whether lda is the right model for your purposes. Maybe you would like to learn a different model that associates each document with only a single topic rather than a mixture over topics.
+Laura

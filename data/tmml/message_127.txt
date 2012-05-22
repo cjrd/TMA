@@ -1,0 +1,17 @@
+I can comment on the suitability of these techniques for
+commercialization based on my experience building a text search
+application.
+I was working at a startup last year that was trying to apply
+techniques in the LDA family to clustering in fairly
+narrowly-specified web / email corpora.  I was responsible for
+implementing, testing, and applying the statistical code.  One of
+these corpora was  different from those commonly used in the
+literature in that the types of prose, subject matter, and style
+varied more widely, (you could call it a more sparse set,) while the
+other was quite standard.  We tried many model variations and pre /
+post processing techniques, but these problems remained as barriers to
+use in a product:
+- While the best subjectively-evaluated-for-coherence topics often
+had a fairly clear semantic theme, these topics were only about 5-10%
+of the total number of topics.  Another 5-10% were totally useless,
+and the middle 80-90% gave some sense of coherence but often suffered

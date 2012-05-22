@@ -1,0 +1,7 @@
+Folks,
+Suppose I put together a large document corpus and ran estimation on
+it to create the model. I understand that I can now run inference on
+new documents but is there a way to use new documents to "refresh"
+the model? Is re-estimating the original corpus plus new documents
+the only way to go?
+Thanks, Joel

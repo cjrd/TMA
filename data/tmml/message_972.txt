@@ -1,0 +1,14 @@
+I found that open bugs is not meant for large scale inference issues.
+But maybe it improved in the past few years.
+I havent tried the Jonathan's R package. I feel that if you want
+something that scales, you should go with a native compiled language. I
+don't know whether it is a pure R or a native implementation.
+I tried Hal's HBC. I guess it is well tested for LDA and compiles to
+native C, which is a big plus. However, for some topic model extensions,
+I found that the generated code does sometimes not compile, so I needed
+to fix it manually.
+One might also consider using Infer.NET, which scales okay for LDA, but
+may need hacking for more complicated models. (I heard they are working
+on a new release, in which many scalability issues are addressed.)
+Cheers,
+Laura

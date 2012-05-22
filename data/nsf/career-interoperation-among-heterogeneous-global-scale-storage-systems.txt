@@ -1,0 +1,33 @@
+              The common theme of promoting storage systems as a discipline distinct from
+              databases, operating systems, and distributed systems unites the research and
+              educational goals of this project.  As its own discipline, storage systems will
+              attain prominence in academia commensurate with storage's importance to
+              computing.  Storage limits the performance of most applications, holds
+              enterprises' most valuable assets, and consumes the majority of IT dollars
+              spent.  Training storage specialists to serve the IT community and creating
+              software to increase the manageability and performance of storage is
+              imperative.
+
+The research component of this project addresses the inability
+              of large-scale storage systems to share persistent data.  Each global-scale
+              system owns data and isolates that data from unaffiliated computers.  This
+              project will develop a syndication protocol that allows storage systems to
+              migrate, share, and replicate data interactively.  Syndication is not an access
+              protocol; it does not provide data to users and applications.  Rather,
+              syndication enables storage servers and data stores to transfer and share the
+              management of persistent data. 
+Syndication decouples data from software
+              systems, which breaks down the boundaries between access to data on a global
+              scale and access to data anywhere on the globe.
+
+The educational component of
+              this project develops a curriculum to train storage systems specialists within
+              an eight course Master's degree.  The sequence of courses organizes knowledge
+              specific to the management of persistent data, culling it out of many other
+              disciplines.   The curriculum integrates classwork with Internet-based
+              educational software systems that support mobile, ad-hoc, and resource limited
+              classrooms.
+
+
+
+

@@ -1,0 +1,37 @@
+              The service sector is the largest and a fast growing sector of the US economy
+              accounting for 80% of the Gross Domestic Product (GDP).  Specifically, warranty
+              and repair services form a major component of the manufacturing and retail
+              industry and there has been a rising trend to outsourcing the warranty
+              services. This provides an opportunity for the original equipment manufacturer
+              (OEM) to improve turnaround times by using the core competencies of the vendors
+              specializing in repairs and maintenance. However, it also poses downward risks
+              in terms of customer satisfaction, particularly in cases where poor experience
+              in repair services may translate into future lost sales.  The investigators 
+              plan to explore the following main issues faced by the OEMs.  (1) Contract:  
+              The original manufacturer's contract with the service provider could be based
+              on a fixed or variable fee per repair, or a lump sum amount of money per
+              customer for the duration of the contract or other combinations. The contracts
+              could have quality of service requirements associated with it. The OEM also has
+              to determine how many service providers to contract with and whether or not to
+              treat all of them in an identical fashion. Furthermore, the vendors of warranty
+              services typically compete among themselves for the outsourcing business from
+              the OEM.  The OEM needs to understand the implication of this competition while
+              designing contracts.  (2) Allocation:  How should the OEM allocate its
+              customers to the different service providers? One commonly used approach is to
+              perform static allocation of customers based on costs, proximity, etc.  Another
+              approach is to route the customer (in need of service) to an appropriate
+              service provider based on the current workload of all providers. A third option
+              is to differentiate the customers based on priorities and treat them
+              accordingly. While performing the allocation the manufacturer needs to balance
+              the cost benefits of allocating more jobs to less expensive service provider
+              with the service delays customers may experience when there is congestion at a
+              service provider.
+
+Motivated by  interaction with the PC industry,  the
+              investigators plan to model and optimize the contracts and allocations.  The
+              investigators strongly believe that this research will provide novel
+              qualitative insights on effectively outsourcing warranty and repair services. 
+              In addition, the investigators plan to develop fast solution methods that can
+              handle industry size problems and can provide a real-time decision support for
+              managers.
+

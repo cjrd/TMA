@@ -1,0 +1,6 @@
+Gammas are the parameters of the variational posterior distribution, which
+is a Dirichlet distribution, hence they can be greater than 1. The
+normalized values of gammas will give you the expected value of \thetas with
+respect to the posterior, so you could probably normalize them to get
+expected distribution over topics for each document.
+-Ramesh

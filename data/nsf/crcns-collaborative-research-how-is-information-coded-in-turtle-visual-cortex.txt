@@ -1,0 +1,32 @@
+              EIA-0218479
+Ulinski, Philip S
+Univ. of  Chicago
+
+CRCNS: Collaborative
+              Research :  How is Information Coded in Turtle Visual Cortex ?
+
+Visual
+              stimuli evoke a propagating wave of activity in the visual cortex of freshwater
+              turtles.  Preliminary work suggested that information about the position of
+              stimuli in visual space is coded in the spatiotemporal dynamics of these waves.
+               Effectively, there may be a map of visual space to the dynamics of the visual
+              cortex.  This hypothesis is being examined in a collaborative effort involving
+              three laboratories.  David Senseman in San Antonio is using voltage sensitive
+              dye methods to record the waves produced by presenting spots of light at 35
+              spots on the retina.  These studies will characterize the features of the map
+              based on repeated presentations of stimuli at 35 loci.  Philip Ulinski in
+              Chicago is developing a  large-scale model of the visual pathway of turtles. 
+              Models of individual retinal ganglion cells that combine both classic
+              filter-based approaches to modeling ganglion cells, with  compartmental
+              modeling of ganglion cells are being constructed.  They are being used to
+              construct 35 patches of a model retina that match the 35 loci.  Physiological
+              studies of the biophysics of neurons in the lateral geniculate complex of
+              turtles are being carried out.  They are used to develop a model of the lateral
+              geniculate complex, which is the last step in modeling the
+              retino-geniculate-cortical pathway.  Bijoy Ghosh in St. Louis is developing
+              refined estimation techniques that allow the position of a visual stimulus to
+              be estimated from the dynamics of the cortical waves.  This work is providing
+              the mathematical framework needed to characterize a potential map of visual
+              space to the dynamics of the wave.  This work is significant because it is
+              characterizing a novel method of coding information in visual cortex that may
+              apply to higher order cortical areas in mammals, as well as turtles.

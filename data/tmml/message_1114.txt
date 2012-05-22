@@ -1,0 +1,8 @@
+hi everyone,
+i am interested in the indian buffet process, and read the paper
+"stick-breaking construction for the Indian Buffet Process". i find the
+inference is difficult. Does anyone has the code for IBP's
+stick-breaking construction?
+thanks!
+Kind regards
+bailu

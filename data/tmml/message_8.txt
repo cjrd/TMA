@@ -1,0 +1,14 @@
+Hi Anthony and list,
+thanks, this looks very much like what I've been looking for!
+Anthony Di Franco wrote:
+I understand the last step to be :
+p( z_i=k | z_{i,-m}, w_i=t )
+\propto (n_{k,t,-m} + \eta) (n_{m,k,-m} + \alpha)
+\propto n_{k,t,-m} + \eta ,
+where z_{-m} is the topic vector excluding the current document and thus
+the second term can be omitted because all observations of the new
+document were excluded. This means that p( z_i = k_new | z_{i,-m}, w_i=t
+) \propto \eta , i.e., ``lives'' by just the smoothing influence, right?
+Is there citable literature on such blocked Gibbs draws ?
+Cheers,
+gregor

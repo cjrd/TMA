@@ -1,0 +1,2 @@
+To be clear, you want to estimate the document-topic proportions for a new set
+of documents given a trained model?

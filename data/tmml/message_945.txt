@@ -1,0 +1,7 @@
+I guess I was not clear enough. Can anyone guide me to find a dataset that
+has documents gathered from multiple groups of corpus? I need something like
+what was used for experimentation in dynamic topic model. If such dataset
+does not exist, can anyone suggest me a way to somehow crawl this kind of
+data?
+Thanks,
+Ayan

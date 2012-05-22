@@ -1,0 +1,7 @@
+Hi everyone,
+There was a request earlier to post the details about the applications of topic models... I am sorry, if the below sounds like spam, but I hope not - and that it would be interesting for people working on topic models to see their application to some real data.
+We apply topic models (with some extra hacks) to analysing the news. Our idea is to automatically generate magazine-like representation of news. That could be useful for people who do not follow the news all the time, and want to review the most important events that happened in the recent past. The main benefit could be that with time (and perfection of the algorithms) we could potentially approach the quality of the real paper magazines in representing the stories running through time, and showing different points of view. However, for now, our implementation remains quite rudimentary (we are working hard to improve it).
+The project is called "Readrz News" and the website is http://www.readrz.com (it is already live, with magazines being refreshed every 6 hours, for now). We are open to future cooperation on designing advanced topic models to detect specific things that we want to detect in the news. We are also looking for potential links/introduction to people who might help with raising funds for future development.
+Thanks in advance for any feedback, ideas, etc.
+With best regards,
+Andrey Kuzmenko

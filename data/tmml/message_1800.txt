@@ -1,0 +1,8 @@
+Hi, Abhay
+Thanks a lot for your interest in the paper!
+You can find the code and data at
+http://www.cs.princeton.edu/~chongw/citeulike/ ( and also some other
+code that I wrote at
+http://www.cs.princeton.edu/~chongw/resource.html)
+Cheers
+Chong

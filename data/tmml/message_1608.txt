@@ -1,0 +1,9 @@
+dear kun
+with stochastic variational inference, you can repeatedly sample from
+the large data set.  see the paper by matt hoffman, francis bach, and
+me from NIPS 2010.
+http://www.cs.princeton.edu/~blei/papers/HoffmanBleiBach2010b.pdf
+matt also has python code that implements this algorithm
+http://www.cs.princeton.edu/~blei/downloads/onlineldavb.tar
+best
+dave

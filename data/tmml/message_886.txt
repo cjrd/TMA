@@ -1,0 +1,5 @@
+Hi All,
+It will be nice if some one can provide some pointer to java implementation
+of author-topic model.
+thanks
+Nasir

@@ -1,0 +1,5 @@
+I am interested in using the python module on turbo topics. Can anyone
+please give me an example on how to call the script? Where do I need to
+specify the input and output files? Also, examples of other input values.
+Regards
+Alta de Waal

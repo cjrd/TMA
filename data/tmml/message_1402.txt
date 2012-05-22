@@ -1,0 +1,4 @@
+Hi Scott,
+There has been an interesting talk by Jurgen Van Gael (Microsoft/Bing) in a workshop of IJCAI. He explained that they use generative graphical models for their new prototype named Emporia: https://www.projectemporia.com. Basically, it's a recommendation system.
+Hope this helps.
+Julien

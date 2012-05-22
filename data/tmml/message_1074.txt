@@ -1,0 +1,21 @@
+Hello!
+Is there a publicly available implementation of the TNG (topical
+n-grams) model?
+See:
+http://www.google.de/url?sa=t&source=web&cd=1&ved=0CBYQFjAA&url=http%3A%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fdownload%3Fdoi%3D10.1.1.87.7775%26rep%3Drep1%26type%3Dpdf&rct=j&q=tng%20implementation%20mccallum&ei=MqGcTP7lM8aSswak3t3mDg&usg=AFQjCNGaxqrg5WVZBbKOl1EBjCp7GMLsTQ&cad=rja
+Background of my question:
+To my knowledge, TNG has been shown to be superior over the LDA
+collocation model (LDACOL). The authors of TNG claim that their model is
+a 'more powerful generalization of LDACOL' and that 'TNG not only is a
+new framework for distilling n-gram phrases depending on nearby context,
+but also a more sensible topic model than the ones using word
+co-occurrences alone'.
+Part of this magic seems to be that with the TNG model consecutive words
+such as 'white house' may either be recognized as a bi-gram phrase or be
+treated as individual words, depending on the document context. In
+contrast to this, LDACOL seems to globally decide whether or not two
+words are forming a bi-gram.
+So, that's why I hope to get better performance with the TNG model. But
+so far I could not find an implementation of TNG.
+Best regards,
+Sebastian

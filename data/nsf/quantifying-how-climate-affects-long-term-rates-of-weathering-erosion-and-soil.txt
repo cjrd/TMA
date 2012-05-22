@@ -1,0 +1,42 @@
+              
+James W. Kirchner
+EAR-0000999
+
+	Physical erosion and chemical weathering
+              are interdependent processes that sculpt mountainous landscapes, regulate the
+              composition of soils, deliver sediment and solutes to aquatic habitats, and,
+              over long timescales, help regulate global climate.  Until recently, long-term
+              rates of erosion and chemical weathering have been difficult to measure.  As a
+              result there is presently no clear consensus about how erosion and weathering
+              affect the evolution of landscapes, soils, aquatic habitats, and climate. 
+              
+	Recent advances now permit long-term average rates of physical erosion and
+              chemical weathering to be inferred from the chemical composition of eroding
+              sediment in watersheds.  The concentrations of cosmogenic nuclides (26Al and
+              10Be) can be used to measure long-term rates of erosion.  Chemical weathering
+              rates can be inferred from erosion rates by comparing the concentrations of
+              insoluble elements (such as Zr and Nb) in rocks and soils, which reflect the
+              fraction of erosion that is accounted for by chemical weathering.
+	This
+              project will measure how chemical weathering rates vary with climate and
+              physical erosion rates.  Preliminary results show that climatic effects on
+              weathering rates are small compared to erosional effects.  However, the
+              climatic effects are measurable, when the effects of erosion are explicitly
+              accounted for.  To expand on these results, six sites have been selected that
+              span a wide range of climates (4 to 24 C in temperature; 10 to 420 cm/yr in
+              precipitation).  To minimize effects of variations in bedrock weathering
+              susceptibility, this study will focus exclusively on granitic bedrock.  At each
+              of the six sites, 5 small watersheds will be selected, and samples of stream
+              sediment, bedrock, and hillslope soils will be collected for analysis. 
+              Cosmogenic nuclide concentrations in the stream sediment will be used to
+              measure long-term erosion rates.  The fraction of erosion that is accounted for
+              by chemical weathering than will be inferred by comparing the bulk chemical
+              composition of soil and bedrock.  This project will quantify how long-term
+              rates of weathering and erosion vary with climate while, for the first time,
+              explicitly measuring how chemical weathering and physical erosion interrelate. 
+              These results should contribute to better models of nutrient cycles and
+              long-term climatic evolution, more accurate assessments of sediment and solute
+              delivery to aquatic ecosystems, and a more quantitative understanding of soil
+              development and landform evolution.
+
+

@@ -1,0 +1,148 @@
+
+A critical building block in a lot of what
+we'll do, both in terms of the finding
+probability distributions and in terms of
+manipulating them for inference, is the
+notion of a factor. So let's define what a
+factor is and the kinds of operations that
+you can do on factors. So a factor really
+is a function or a table. It takes a bunch
+of arguments, in this case, a set of
+random variables X1 up to Xk. And just like
+any function, it gives us a value for
+every assignment to those random
+variables. So it takes all possible
+assignments in the cross-product space of
+X1 up to Xk, that is all possible
+combinations of assignments, and in this
+case it gives me a real value for each
+such combination. And the set of
+variables X1 up to XK is called the scope
+of the factor, that is, it's a set of
+arguments that the factor takes.
+Let's look at some examples of factors.
+We've already seen a joint distribution.
+A joint distribution is a factor. For every
+combination, for example here of the
+variables I, D and G, it gives me a number.
+As it happens this number is a
+probability, and it happens it sums to one.
+But that doesn't matter, what's 
+important is that for every value of I, D
+and G, a combination of values, I get a
+number. That's why it's a factor. Here is
+a different factor: an unnormalized
+measure is a factor also. In this case, we
+have a factor such as the probability of
+I, D comma g1, and notice that in this case, the
+scope of a factor is actually I and D, because
+there is no dependence of the factor on
+the value of the variable G, because the
+variable G in this case is constant. So
+this is a factor whose scope is I and D.
+Finally: a type of factor that we will use
+extensively is what's called a Conditional
+Probability Distribution, typically
+abbreviated CPD. This, as it happens, is a
+CPD that's written as a table, although
+that's not necessarily the case, and this
+is a CPD that gives us the conditional
+probability of the variable G given I
+and D. So what does that mean? It means
+that for every combination of values to
+the variables I and D, we have a
+probability distribution over G. So, for
+example, if I have an intelligent
+student in a difficult class, which is
+this last line over here, this tells us
+that the probability of getting an A is
+0.5, a B, 0.3, and a C is 0.2. And as we
+can see, these numbers sum to one, as they
+should, because this is a probability
+distribution over G for this particular
+conditioning context. And you can easily
+verify that this is this is true for all
+of the other lines in this table. So this
+is again a particular type of factor: one
+that satisfies certain constraints, in this
+case, that each row sums to one. Now
+this is--, these are--, the factors that we're
+dealing with will not always correspond to
+probability. So here is an example of a
+general factor that really doesn't
+map in any way to probability. Because the
+numbers aren't even in the range 0...1. As
+we'll see, these kinds of
+factors are nonetheless useful. This is a
+factor whose scope is the set of variables
+A comma B, and it's probably using a real-valued
+number for each of those, for each
+assignment to A and B. Some operations that
+we're going to do on factors: One of
+the most common operations is what's
+called factor product. It's taking two
+factors, say phi1 and phi2, and
+multiplying them together. So, let's think
+what that means. Here we have a factor phi1.
+It has a scope of A, B. phi2 has a
+scope of B, C. And what we're doing is, we're
+kind of like multiplying a function.
+f of x y times g of y z: you're going to get a
+function that is of all three arguments
+x, y, z. So in this case we have a factor
+whose scope is A, B and C. And if we want
+to figure out, (oops, that didn't come out
+good). If we wanna figure out, for example,
+value of the row a1, b1, c1, it's going to
+come by taking the a1, b1 row from here,
+the b1, c1 row from here, and multiplying
+them together. So we're gonna get 0.25. So
+this is effectively taking the functions
+or the tables, and just multiplying them
+together. Another important operation is
+factor marginalization. Factor
+marginalization is, is oh, is very similar
+to, in fact identical to the
+marginalization of probability
+distributions. So here we have, except
+that it doesn't have to be a probability
+distribution, so for example, if we have a
+factor here who's scope is A, B, and C.
+And we want to marginalize out B, to get a
+factor whose scope is A, C: what we're going
+to be doing is, again, taking both possible
+values of B, in this case there's on-
+because B is binary there's only two
+values, and we add them up, in order to get
+the entry for a1, c1: so 0.25 plus 0.08.
+And the same all the other rows in
+this table are acquired, are computed in
+exactly the same way from the
+corresponding rows in the original larger
+factor. Finally, factor reduction. Again
+very similar to the context of probability
+distributions. You want to reduce, for
+example, to the context c1. So we're
+going to only focus on the rows that have
+the value C=c1. And that's going to give
+us the reduced factor which only has C1.
+And once again, the scope of this factor is
+A, B, because there is no longer any
+dependence on C. So that's basically the
+final operation. Now, why factors? It
+turns out that factors are the fundamental
+building block in defining these
+distributions in high-dimensional spaces.
+That is, the way in which we're going to
+define an exponentially large probability
+distribution over n random variables,
+is by taking a bunch of little pieces and
+putting them together by multiplying
+factors, in order to define this
+high-dimensional probability distribution.
+It turns out, also, that the same set of
+basic operations that we use to define the
+probability distributions in these
+high-dimensional spaces are also what we use
+for manipulating them, in order to give us
+a set of basic inference algorithms.

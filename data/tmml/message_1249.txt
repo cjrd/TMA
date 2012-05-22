@@ -1,0 +1,8 @@
+Hi,
+I'm working on a variational inference on HDP. Is there any open
+source implementation on collapsed variational inference of HDP
+available that I can use for reference? Or any suggestion about how to
+estame E_q[In\Gamma(\alpha*x)] under a beta distribution with a scale
+parameter \alpha?
+Thanks,
+Jiacheng Guo

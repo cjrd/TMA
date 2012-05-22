@@ -1,0 +1,13 @@
+There's a ton of work on Twitter coming out in various forums this year,
+some of it uses topic model style approaches.
+For instance, this work is in NAACL 2010:
+"Unsupervised Modeling of Twitter Conversations"
+Alan Ritter, Colin Cherry, Bill Dolan
+To appear in proceedings of HLT-NAACL 2010
+http://www.cs.washington.edu/homes/aritter/twitter_chat.pdf
+And I'll be presenting this at ICWSM next month:
+"Characterizing Microblogs with Topic Models"
+Daniel Ramage, Susan Dumais, Dan Liebling
+http://www.stanford.edu/~dramage/papers/twitter-icwsm10.pdf
+dan
+zhenggq at SJTU wrote:

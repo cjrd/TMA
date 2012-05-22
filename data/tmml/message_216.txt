@@ -1,0 +1,3 @@
+Hi all,
+I'm studying using Gibbs Sampling for LDA. My question is how to deal with multi-sample? I have seen two ways of dealing the multiple samples. One way is to add all the samples up, and get the total topic distributions, then calculate the model parameters like \beta. Another is for each sample, calculating model parameters, then calculate the mean. I see the first method is less affected by often empirical prior parameter, and treat additional samples as if there are more data observed. Considering multiple samples are generated  according to p(z|W,\alpha,\eta), the second method, is to calculate the expectation of model parameters under distribution p(z|W,\alpha,\eta). Which method do you use in practice? And from your experience, which one is better?
+-guojc

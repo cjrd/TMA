@@ -1,0 +1,65 @@
+              In order for insects to grow and undergo metamorphosis, they must shed their
+              restrictive outer skin (exoskeleton). They have used this process very
+              efficiently over hundreds of millions of years in order to grow at times when
+              predators and other endangering environmental factors are less threatening.
+              Many of the structural, physiological, biochemical and molecular events that
+              occur during the molting process are elicited by the principle molting hormone
+              of insects, a polyhydroxylated steroid hormone 20-hydroxyecdysone, which is
+              synthesized in many tissues of the insect from another steroid, ecdysone.
+              Ecdysone is synthesized in special glands in the insect, the prothoracic
+              glands. The stimulus to synthesize this very important molecule is a peptide,
+              prothoracicotropic hormone, secreted by four specialized neurosecretory cells
+              in the insect's brain. 
+
+About 40 years ago, ecdysone was extracted and
+              characterized from two tons of commercial silkworm, but during the past four
+              decades there has been little progress in elucidating the individual
+              biochemical steps in ecdysone synthesis. Understanding the synthetic steps is
+              important not only to further our basic knowledge of this very important group
+              of animals that intimately affects human welfare, but also because if one is
+              able to characterize the individual steps in the ecdysone biosynthetic pathway,
+              and clone the genes for the enzymes that mediate each of these steps, there is
+              the possibility of introducing this sequence of genes (transfection) into
+              agriculturally important plants. They would then synthesize this steroid
+              hormone, which is a natural deterrent to insect pests. Thus, when the hormone
+              is ingested by an insect consuming such transfected plants, it will molt out of
+              synchrony and will not be viable. Ecdysone is nontoxic to higher organisms, so
+              that this possibility of introducing the necessary genes into host plants is a
+              reasonable goal. 
+
+Little progress had been made using classical biochemical
+              techniques to elucidate the pathway of ecdysone biosynthesis because the
+              intermediate compounds are in very low quantity and are extremely unstable.
+              Almost all laboratories that have attempted this feat have given up after years
+              of negative results. In collaboration with the O'Connor laboratory at the
+              University of Minnesota, the principal investigator has made critical progress
+              in elucidating the biosynthetic pathway between cholesterol and ecdysone. For
+              these studies, the fruitfly Drosophila melanogaster has been employed because
+              its genetics are better known than any other animal, and its short life cycle
+              makes both the molecular genetics and biochemistry more feasible. This combined
+              use of molecular genetics and biochemical analysis has resulted in the
+              identification, cloning, and functional genomic studies of two enzymes in the
+              ecdysone biosynthetic pathway, and has provided insights into experimental
+              approaches for elucidating the remaining enzymes in that pathway. By cloning
+              and sequencing certain genes (Halloween genes) from Drosophila embryos that
+              have less than the normal amount of ecdysone, the principal investigator and
+              his colleagues learned that mutations in these genes cause lethality in the
+              embryo. Transfection of these genes into a Drosophila cell line and use of
+              biochemical technology has shown that two of these mutants, disembodied and
+              shadow, code for mitochondrial ecdysterol 22- and 2-hydroxylases, respectively.
+              The purpose of continued work over the next several years will be to fully
+              identify these two enzymes through more sophisticated analyses (mass
+              spectrometry) and identify as many of the remaining (5) enzymes (P450 enzymes)
+              in this biosynthetic pathway. Expression of these genes will be examined during
+              Drosophila development, and a search will be conducted for counterparts in
+              other insect model systems, such as the tobacco hornworm. Not only will these
+              experiments result in a complete knowledge of how ecdysone is biosynthesized,
+              but they will also provide the genes for transfection into plants of
+              agricultural importance. In addition, the data should provide a clear
+              understanding of the rate-limiting control mechanisms that modulate ecdysone
+              biosynthesis, and perhaps will permit identification of the specific
+              biosynthetic reactions that are controlled by the brain neuropeptide,
+              prothoracicotropic hormone. This new paradigm of combining molecular genetics
+              with biochemical analysis can be used in the future for studying biosynthetic
+              pathways in a variety of organisms, including pathogens. 
+

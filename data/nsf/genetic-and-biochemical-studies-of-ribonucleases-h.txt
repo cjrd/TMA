@@ -1,0 +1,16 @@
+              Ribonuclease H (RNase H) genes and/or their activities have been identified in
+              all systems studied to date ranging from archaebacteria to man.  This suggests
+              that they may be one of a limited number of activities required for minimal
+              biological life.  Multiple RNase H isoforms exist in prokaryotes and eukaryotes
+              and all known for their ability to degrade the RNA strands of RNA:DNA
+              heteroduplexes.  This simple function implicates the enzymes in regulating
+              RNA:DNA duplex formation during DNA replication, RNA transcription, chromatin
+              ultrastructure and viral and cellular reverse transcription.  The existence of
+              multiple RNase H isoforms also suggest that what is learned of isoforms in one
+              system may relate to our understanding of isoform structure and function
+              elsewhere.  The studies described here are broadly significant in scope,
+              impacting conserved and novel roles for ribonucleases H in all biological
+              systems.  Furthermore,they exploit the genetics of Trypanosoma brucei, a system
+              that has been the prototype for unmasking unusual nucleic acid metabolic events
+              such as RNA editing and RNA trans-splicing.
+

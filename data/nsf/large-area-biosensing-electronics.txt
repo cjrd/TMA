@@ -1,0 +1,20 @@
+              0088520
+Greve
+
+The goal of this project is the development of low-cost
+              sensing systems capable of multiple simultaneous analyses of biological
+              systems.  These sensing systems will be applied to the electronic detection of
+              cell motion and/or cell division which are key indicators of the cell function
+              and thus the effect of drugs, cytokines, etc.  Information obtained
+              electronically will be used directly or in combination with microscopic
+              techniques.  Sensing is based on the use of large-area microelectronic
+              fabrication techniques, which will ensure low cost, disposability, redundancy,
+              accuracy, and high speed data collection.  A direct interface with digital
+              electronics will facilitate rapid analysis and throughput at least an order of
+              magnitude higher than existing techniques, leading to improved productivity in
+              pharmaceutical and biological research.
+
+
+
+
+

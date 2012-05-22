@@ -1,0 +1,9 @@
+Hi,
+Parameters estimations for LDA like models take into account words
+occurences so the conditional probability Pr(w|z) for rare words is usually
+small.
+Imagine we know informative rare words. Can we use this knowledge in
+parameters estimation in LDA to increase Pr(w|z) for such words?
+Can we use for this purpose assymmetric Dirichlet prior for words
+distribution?
+Thanks in advance, Vasiliy.

@@ -1,0 +1,14 @@
+{% for error in field.errors %}
+    <span class="error">{{ error|escape }}</span>
+{% endfor %}
+<div class="single-field">
+    <label> {{ field.label }} :</label>
+    {{ field }}
+    {% if field.help_text %}
+        <span class="help-ptr" onclick="showhelp('{{field.auto_id}}')"> </span>
+    {% endif %}
+</div>
+{% if field.help_text %}
+        <div class="help-text" id="ht-{{ field.auto_id }}"> {{ field.help_text|safe }} </div>
+{% endif %}
+

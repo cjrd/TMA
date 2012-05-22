@@ -1,0 +1,13 @@
+Hi all,
+I am a PhD Student from Milano-Bicocca university - Computer Science department.
+I am currently working on Topic Extraction models and i sometimes i have difficulties to recover the data used in the experiments.
+So, i have published a web page containing references to the corpora used in some of the topic extraction literature.
+The list is not complete nor perfect but i think can be useful to replicates experiments and developing some ideas.
+I will be very grateful, if someone wants to send me additional information and data to extends the list.
+I can also offer some storage space to store public dataset like the ones downloaded from citeseer or US senate Thomas DB.
+I hope that the list can help me to create a useful resource to everyone :)
+The page is here:
+http://www.mad.disco.unimib.it/doku.php/research/corpora
+Please feel free to contact me!
+Thank you in advance!
+Davide Magatti

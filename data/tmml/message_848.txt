@@ -1,0 +1,5 @@
+I don't think dataset[2] does what you think it does.  If you want the
+second column of the data frame as a vector, you should use either
+dataset[,2] or dataset$response.
+Cheers,
+Jonathan

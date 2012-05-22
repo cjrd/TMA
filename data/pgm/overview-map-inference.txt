@@ -1,0 +1,193 @@
+
+[sound] As we said, there's many different
+kinds of queries that one can use a
+graphical model to answer. Conditional
+probability queries are m-, very commonly
+used, but another commonly used type of
+inference is what's called MAP inference.
+So what is MAP inference? Map stands as a
+shorthand for what's c-, for
+Maximum a Posteriori and it's defined as follows,
+here we have a set of evidence o-,
+observations, little e over some variables
+E. And we have a query Y, and it turns out
+that for computational reasons that we're
+not going to discuss for the moment, it's
+important that the set of Ys is
+everything, all of the variables other
+than e. So now, our task is to compute
+what's called the map assignment, which is
+the Y, the assignment little Y to the
+variables Y that maximizes the conditional
+probability of, the variables Y given the
+evidence. Now, so for those of you who
+haven't seen the notation argmax,
+argmax is the Y. That provides the maximal
+value to this expression over here. Now,
+note that, in some cases, this maximizing
+value might not be unique. That is, there
+might be several different assignments.
+Say one, Y1 and Y2 that give the exact
+same probability. And so the map is not
+necessarily a unique, assignment. This has
+many applications, some of which we've
+discussed before. So in the context of
+message decoding, for example, where we
+have a set of noisy bits that are passed
+over the channel, over noisy communication
+channel, what we often want to get is the
+most likely message that was transmitted,
+that is as assignment to the transmitted
+bits that is the most likely given our
+evidence. In the context of image
+segmentation, we would like to take the
+pixels and figure out the most likely
+assignment of pixels to, to semantic
+category. So both of these can be
+viewed as map assignment problems. Now, an
+important thing to understand about map,
+is it really is a different problem than
+conditional probability queries. So
+understand that, let's look at the
+following very simple example over just
+two random variables. So here we have, a
+Bayesian network over the variables A and
+B. And if you multiply the two CPDs, it's,
+you get the joint distribution shown over
+here. And it's not, and it's fairly
+immediate to see that the map assignment
+is this one, because it has the highest
+probability. Can we get at the map
+assignment by looking separately at the
+variable A and at the variable B? So if we
+look at that we see that if we look
+separately at the variable A the most
+likely assignment to the variable A is A-1
+as opposed to, in the map assignment, the
+variable A took the value A0. And so, we
+can't look separately at the marginal over
+A and over B and use that to infer the map
+assignment. And the reason is that we're
+looking for a single assignment over all
+of the variables, that together has, has
+the highest probability. Unfortunately,
+just like the conditional probability
+inference, however, this problem, too, is
+NP hard. So, again, let's formalize what,
+exact problem is at the heart of this
+context. And it, and so here is, again,
+one example of an NP hard problem in
+the context of map, which is just to find
+the joint assignment with the highest
+probability. It's not the only NP hard
+problem. Here is another one. Figuring out
+what for given probabilistic graphical
+model and some threshold little P, whether
+there exists an assignment little X whose
+probability is great than P. That problem,
+too, is NP Hard. So, should we give up?
+Well, just like in the context of
+conditional probability queries the answer
+is no. And, there is algorithms that can
+solve this problem very efficiently and
+fast in an even broader set of problems
+than for conditional probability queries.
+So let's again look deeper into this
+problem, and understand the foundations of
+what might make it tractable. So. Going
+back to our example of a Bayesian network.
+Once again we are going to view CPDs as
+factors so here P of C again translates into
+a factor over C just like before and whereas
+in the case of conditional probability
+queries, we wanted to sum out some of the
+variables, marginalize them. Now we're
+going to, to, what to find the argmax
+which is the assignment of these variables
+which maximizes the product. So here we
+have the max. Of a product which is why
+this is often called a max product
+problem. Let's break down the max product
+problem. So imagine that we in more
+general have. In more general case have a
+probability over y. Given E equal little e.
+And [inaudible] remind ourselves that y is
+a. Is the set of all variables. Other than
+the ones in e. And so by the definition of
+conditional probability. We have this
+ratio. Who's what we're trying to find is
+the maximal y. The maximize to this
+ratio. And notice that the denominator. Is
+constant relative to y. Sorry, yes, with
+respect to y. Which means that, for the
+purpose of finding the maximum y, we don't
+really care about the denominator, only
+the numerator, which is the probability of
+y comma e equals little e, the
+unnormalized, an unnormalized measure. The
+probabil-, this numerator, in the general
+case, is a product of factors normalized
+by the partition function, where the
+factors here are the reduced factors.
+Reduced relative to the evidence. [sound].
+Once again we notice, that, this, is the
+partition function, and it's constant.
+Relative to y. Which means that we can
+ignore it. And, so, once again we have
+this, the expression is now proportional
+to a product of the same reduced factors.
+And so what we're trying to do is we're
+trying to maximize a product of factors in
+this more general case as well. Which
+gives us the following as the optimization
+problem. There's many algorithms that can
+solve the map problem. The first is
+analogous to algorithms for sum product.
+These algorithms take the maximization
+operation, and pushes that into the factor
+product. Giving rise to a max product
+variable elimination algorithm. We
+also have message passing algorithms,
+which, again, are a direct analog to
+algorithms for sum product. And they give
+rise to a class of algorithms called
+max product belief propagation.
+However, because the map problem is
+intrinsically an optimization problem.
+One can also call in techniques that are
+specific to optimization. And the class of
+such methods include methods that are based
+on integer programming. Which is a general
+class of optimization over discreet
+spaces. It turns out that this class of 
+methods that build on integer programming
+techniques is one of the most popular
+methods in the last few years. And has
+given rise to a whole new range of map algorithms that are considerably better
+than in any of the previous algorithms developed up to that point so
+especially for the approximate case.
+[sound] It also turns out that, for
+certain types of networks, that, some of
+which we'll discuss, there are specific
+algorithms that are very efficient for
+that particular class of, of graphical
+model. And one of those, perhaps the most
+commonly used, but not the only one, is,
+methods based on, a class of algorithms
+called graph cuts. And. And finally,
+because it's a optimization problem one
+can also use standard search techniques
+over combinatorial search spaces. And
+there are problems for which this is also
+a very useful and successful solution. So
+to summarize, the map problem aims to
+find a single coherent assignment of the
+highest probability, and that means that
+it is not the same as maximizing
+individual marginal probabilities as we
+saw in the example. One can reformulate
+this problem as one of finding the max
+over a factor product. And this is a
+communitorial optimization problem which
+admits a whole range of different
+solutions on which are exact and others approximate.

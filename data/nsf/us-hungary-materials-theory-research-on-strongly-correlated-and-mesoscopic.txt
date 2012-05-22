@@ -1,0 +1,26 @@
+              This U.S.-Hungarian research project involves two teams led by Piers Coleman of
+              Rutgers University, New Brunswick, and his partner Alfred Zawadowski of the
+              Physics Institute at the Technical University, Budapest.  Their collaboration
+              features examination of strongly correlated systems with an emphasis on quantum
+              criticality and superconductivity in heavy fermion systems and electronic
+              correlation effects in mesoscopic devices.  These researchers found motivation
+              in recent experiments performed at the magnetic quantum critical point of a
+              heavy fermion metal and in nano-science developments that enable measurements
+              and observations of strongly correlated states in single electron
+              devices.
+
+The project's research plan features study of: 1) magnetic quantum
+              critical point in the Kondo lattice; 2) superconducting order in heavy fermion
+              compounds and 3) dynamical and out-of equilibrium properties of quantum dots. 
+              Various numerical and analytical methods will be employed including slave
+              particle methods and large N expansions; perturbative renormalization group
+              techniques and e-expansions; and dynamical mean field theory calculations
+              combined with numerical renormalization group methods.  If successful, findings
+              should contribute to our knowledge of new phenomena on a nanometer scale that
+              may be applicable in specially fabricated materials. 
+
+This international
+              research project in materials theory fulfills the program objective of
+              advancing scientific knowledge by enabling experts in the Untied States and
+              Central Europe to combine complementary talents and share research resources in
+              areas of strong mutual interest and competence. 

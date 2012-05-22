@@ -1,0 +1,11 @@
+I'm not sure how far this ended up going, but there was an interesting
+project along these lines at the JHU workshop in 2010.  They were trying to
+learn syntactic categories for SMT without the need of parsed data, and they
+used word contexts and LDA to do it.  Each "document" was a list of contexts
+that a word appeared in (one word on either side), and so "words"
+corresponded to individual contexts.  Very similar to what you suggested at
+the end of your post.  A little more detail (though not much - I couldn't
+find any other writeup of it) can be found here:
+http://www.clsp.jhu.edu/workshops/ws10/groups/msgismt/
+The first session slides contain a description of what they did, starting on
+page 72 of the pdf.

@@ -1,0 +1,33 @@
+Hi topic list,
+I am a undergrad student and a newcomer to the LDA and this list as
+well. I'd like to ask a lot of questions which I guess are of a very
+basic nature to you, guys, but to me most of this stuff is really
+unknown so I am tackling multiple new things/techniques/ideas all at
+once.
+After reading LDA paper (Blei et al 2003) a couple of times my grasp
+of the concepts is somewhat better but I still need some
+clarifications.
+1. \alpha parameters are not known and are used only conceptually in
+the generative process. They are to be estimated ?
+2. \beta parameters (word probabilities, i.e. p(w^j = 1 | z^i = 1) are
+not known in advance and are to be estimated ? \beta is in fact a
+matrix of conditional probabilities?
+3. Whenever we choose \theta from the Dirichlet(\alpha) distribution
+we effectively get all but one (as N is assumed to be fixed)
+parameters for the Multinomial distribution used later on ?
+4. Why is p(z_n | \theta) given by \theta_i for the unique i such that
+z_n^i = 1 ?
+5. What is the definition of a variational parameter? What are they?
+(I'm completely new to variational methods)
+6. What is the high level overview of the LDA algorithm?
+What steps do we make in order to make the LDA work correctly?
+Estimate parameters and then do inference, or the other way around? I
+think this is missing in the paper.
+7. Is the LDA-C a 1-1 implementation of what is published in the
+paper? I was trying to read the code but for the first few passes over
+the code I don't see any direct mapping to most of the equations
+published in the paper.
+I'd appreciate even the most concise answers (but not too much as this
+can result in another question to the answer ;) ).
+best regards,
+Mateusz Berezecki

@@ -1,0 +1,4 @@
+Hi,
+How do you implement parallel EM for LDA? Do you have any pointer on this?
+Thanks,
+-Som

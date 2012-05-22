@@ -1,0 +1,5 @@
+Hi, all:
+I recently read the sLDA paper by Dr. Blei. Do you know where I
+download the Digg dataset used in the paper?
+Thanks,
+Wanhong

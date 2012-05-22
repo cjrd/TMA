@@ -1,0 +1,51 @@
+              Haptic perception refers to the perception one has of one's body, and of
+              attachments to it, by means of the body.  The term incorporates what is
+              commonly meant by "touch," and more besides.  For example, without benefit of
+              vision, one is obviously aware of the directions of one's limbs and one can be
+              aware of the spatial properties of objects that are wielded and hefted.  These
+              perceptual abilities are expressions of a form of haptic perception referred to
+              as dynamic touch.  It is so called because of its basis in the deformation of
+              muscles and tendons, and the consequent activation of their receptors, by
+              forces.  The forces arise from either the muscles or the environment or both.
+              Because of the ways in which limbs move around joints, the forces are largely
+              rotational.
+
+This research will address the perceptual achievements of
+              dynamic touch and their relation to the rotational dynamics of limb movements. 
+              The focus will be on the relation of these achievements to mechanical and
+              rotational quantities, in particular the inertia tensor and attitude spinor. 
+              The tensor quantifies an object's resistance to being rotated.  The spinor
+              quantifies an object's orientation relative to some reference frame (for
+              example, the hand) in a manner consistent with the special physical rules for
+              combining three-dimensional rotations.  A major thesis is that, in the
+              nonvisible perception of an object's spatial dimensions by wielding or hefting,
+              the hand-related haptic subsystem behaves as a smart instrument.  It cleverly
+              capitalizes on physical laws and on physical quantities that do not change as
+              an object is wielded and hefted. 
+
+In some of the basic methodologies, the
+              participants will wield an unseen object to perceive its weight, length, width,
+              or shape.  Participants will respond by assigning numbers relative to a
+              standard object or by adjusting (visible) movable surfaces or pointers to
+              quantify the perceived properties.  Often, the unseen object will be a
+              configuration of rods that can be manipulated through the precise placement of
+              attached metal rings to produce any desired inertia tensor.  In other basic
+              methodologies, the participants will attempt to orient a nonvisible upper limb
+              or limb segment to another nonvisible limb.  Most methodologies will involve,
+              additionally, the acquisition of motion data on the wielded objects and limb
+              movements and analysis by nonlinear phase-space reconstruction procedures.  The
+              major objectives will be the determination of (1) the dynamical variables
+              governing the perception of heaviness; (2) the achievements and limits of shape
+              perception without vision; (3) the tuning of dynamic touch, overtly and
+              covertly, by specific experience; and (4) the basis for perceived constancy of
+              postures. 
+
+Understanding the principles governing dynamic touch should
+              enrich our appreciation of the physical constraints that must be respected in
+              computational and neural modeling of perceptual systems.  It will provide a
+              source of new hypotheses about somatosensory disorders and about designs for
+              prosthetic and robot limbs.  Such understanding might also be expected to
+              motivate more intensive study of the physical principles formative of
+              biological perception-action systems and of the cognitive and neural
+              constraints that exploit them.
+

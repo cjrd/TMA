@@ -1,0 +1,22 @@
+hi Sinead,
+thanks a lot for your explaination and attachment. when i expand the  \mathbb{V}[Y\dagger|\alpha, \gamma], i got a different answer from yours. i have download the matlab code you provided, and i use the taylor to expand \mathbb{E}[\frac{1}{2^{X+Y}(n_{.,\neg i}^{(m)}+X+Y)}], but the answer is not same as yours. attachment is my derivation. maybe i miss something.
+kind regard
+2011-03-29
+bailu
+???? topic-models-request
+????? 2011-03-19  03:52:17
+???? topic-models
+???
+??? Topic-models Digest, Vol 56, Issue 14
+Send Topic-models mailing list submissions to
+topic-models at lists.cs.princeton.edu
+To subscribe or unsubscribe via the World Wide Web, visit
+https://lists.cs.princeton.edu/mailman/listinfo/topic-models
+or, via email, send a message with subject or body 'help' to
+topic-models-request at lists.cs.princeton.edu
+You can reach the person managing the list at
+topic-models-owner at lists.cs.princeton.edu
+When replying, please edit your Subject line so it is more specific
+than "Re: Contents of Topic-models digest..."
+Today's Topics:
+1. Re: about IBP compound dirichlet process (Sinead Williamson)

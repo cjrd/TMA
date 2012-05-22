@@ -1,0 +1,35 @@
+              This award by the Inorganic, Bioinorganic and Organometallic Chemistry program
+              supports research by Professor Stephen J. Lippard at MIT to use
+              carboxylate-bridged dimetallic complexes, mononuclear analogs and other
+              transition metal complexes to develop water-soluble sensors for nitric oxide in
+              neurochemical applications.  Nitric oxide (NO) is an important
+              neurotransmitter, the generation and disposition of which are difficult to
+              track in neuronal cells.  Dinuclear tetracarboxalato bridged complexes
+              containing Fe, Co and other metals ions, and N-donor ligands bearing
+              fluorescent dansyl or fluorescein-type units, will be used as NO sensors.  The
+              ligands, the bright fluorescence of which is quenched when bound to the
+              transition metal complexes, afford a sensitive method for NO detection when
+              released upon NO coordination to the metal.  Water-soluble versions will be
+              prepared for applications in neuroscience.  Mono- and dinuclear iron(II)
+              complexes bearing N-methyliminodiacetate (mida) units tethered to fluorophores
+              will also be synthesized for monitoring reversible NO binding. These complexes
+              will be used to study early steps in dioxygen activation, which NO can imitate.
+              Additional transition metal analogs will be studied in order to optimize the
+              quenching of the bound fluorophore and to achieve reversibility. Carboxylates
+              bearing coordinating fluorophores on tethers will help accomplish the latter
+              goal.
+
+Attaining the scientific goals will facilitate the measurement of a
+              key signaling molecule in the brain.  Graduate and postdoctoral researchers are
+              mentors to undergraduate research opportunity participants (UROPs) at MIT.  The
+              infrastructure of research and education is enhanced by collaborations with
+              scientists at other institutions and disciplines.  A diverse set of co-workers
+              will participate and will be trained to communicate their work and assume key
+              positions in academic or industrial organizations, as indicated by this
+              research group's web site http://methane.lms.mit.edu:8001/group/.  
+
+Sensors
+              for nitric oxide, a key molecule in the brain involved in neuronal signaling,
+              development and disease, will be designed and synthesized.  Workers will be
+              trained broadly across the fields of inorganic chemistry and neuroscience
+

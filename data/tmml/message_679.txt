@@ -1,0 +1,9 @@
+Liviu,
+as the largest word index influences the dimensionality of your
+multinomial vector, you want to keep the word indices as low as
+possible. Thus, you build up the word dictionary yourself. Go through
+the text and hash the words, then replace you documents by a sequence of
+indices.
+Hope this helps,
+Laura
+Liviu Vladutu wrote:

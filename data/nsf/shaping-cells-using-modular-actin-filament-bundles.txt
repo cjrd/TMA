@@ -1,0 +1,48 @@
+              Actin is one of the key cytoskeletal elements in eukaryotic cells.  Actin
+              protein molecules (monomers) reversibly polymerize to form actin
+              microfilaments, which can further assemble into bundles with the assistance of
+              actin-associated bundling proteins.  Microfilaments are dynamic in the living
+              cell, and can shorten and elongate in a manner that is strictly regulated by a
+              variety of other actin-associated proteins.  Microfilaments serve many critical
+              roles in the life of the cell, either as structural elements for cell shape or
+              resiliency or as tracks along which the actin-based motor, myosin,
+              translocates.  This research is aimed at understanding how actin bundles are
+              formed and maintained using the Drosophila bristle cell as a model.
+              Cross-linked bundles of unipolar (parallel) actin filaments are common in
+              eukaryotic cells and provide the scaffolding that maintains cell shape.
+              Familiar examples include the brush border (microvilli) of intestinal
+              epithelial cells and the stereocilia of the inner ear. In these and other
+              systems there is an array of actin-binding proteins that serve to control the
+              dynamics of actin polymerization, assemble actin filaments into bundles, and
+              regulate bundle maintenance.
+
+The Drosophila bristle cell develops a gigantic
+              cellular extension hundreds of microns long over a period of 16 hours and is an
+              excellent example of how a cell uses its cytoskeleton to change and maintain
+              its shape. This cellular extension is supported by a scaffold of long actin
+              bundles constructed by the end-to-end assembly of short modules composed of
+              actin filaments bundled together with cross-linkers. This system offers
+              important experimental advantages for the study of actin dynamics, by allowing
+              the application of genetic and molecular approaches to a fundamental cell
+              biological feature that can be analyzed in the living cell by light microscopy
+              and at high resolution by electron microscopy.
+
+Drs. Guild and Tilney plan to
+              determine how the modular components of actin bundles are formed, maintained,
+              and eventually removed from the cytoplasm. They plan to use elongating bristle
+              cells as in vivo test tubes and to employ genetic and transgenic tools to
+              perturb and modify bundle assembly. The cytoskeletal consequences of these
+              changes will be assessed by examining the actin cytoskeleton in the context of
+              living cells by confocal microscopy and by examining the detailed structure of
+              the cytoskeleton by electron microscopy. The project has two aims. First, the
+              investigators will determine whether actin-capping proteins play a role in
+              module length regulation and, if so, they will test whether they can engineer
+              module length with different capping proteins. Second, they will determine how
+              modules break down and whether actin capping proteins play a role in this
+              process. In addition, they will test whether retrograde flow of actin modules
+              plays a role in cell extension and in bundle breakdown and whether myosin
+              motors drive this flow.  Modules of actin bundles are used in many specialized
+              cells to support cellular extensions and in all cases module length is an
+              issue. Thus, the principles that are uncovered in the Drosophila system should
+              be generally applicable to many other systems.
+

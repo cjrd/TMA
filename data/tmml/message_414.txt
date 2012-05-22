@@ -1,0 +1,26 @@
+Hi list,
+I'd like to know (with possibly every analytical step and an
+explanation of it) how do I get from equation 2 to equation 3 in the
+LDA paper.
+My reasoning was as follows
+p(\theta,z,w|\alpha,\beta) = p(\theta|\alpha)\prod_{n=1}^N
+p(z_n|\theta)p(w_n|z_n,\beta) [1]
+to get but in order to get p(w | \alpha, \beta) which is a marginal
+distribution I have to get rid of z and w variables.
+Proceeding in that manner we first get
+p(w|\alpha,\beta) = \int\sum_{z} p(\theta, z, w|\alpha,\beta) d\theta
+Rewriting the right side using [1] we get
+\int\sum_{z} p(\theta, z, w|\alpha,\beta) d\theta =
+\int\sum_{z}p(\theta|\alpha)\prod_{n=1}^N
+p(z_n|\theta)p(w_n|z_n,\beta)d\theta
+And the right hand side is equal to
+\int p(\theta|\alpha)\sum_{z}\prod_{n=1}^N p(z_n|\theta)p(w_n|z_n,\beta)d\theta
+because of moving the p(\theta | \alpha) term out of the sum. But this
+is still different from:
+\int p(\theta|\alpha)\prod_{n=1}^N\sum_{z_n}
+p(z_n|\theta)p(w_n|z_n,\beta)d\theta
+How do I get the product of the sums under the integral from equation
+2 instead of getting the sum of the products?
+I think I am missing something...
+best,
+Mateusz

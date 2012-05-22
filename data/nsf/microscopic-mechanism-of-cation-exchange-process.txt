@@ -1,0 +1,37 @@
+              This project addresses the microscopic mechanism of a cation-exchange process
+              for synthesis of highly volatile compounds, such as Hg-based high-Tc
+              superconductors. These materials have desirable features for superconducting
+              device technologies: Tc~130K and large current-carrying capability at
+              temperatures above 77 K. Their highly volatile nature, however, limits the
+              conven-tional thermal-reaction process since a delicate control of phase
+              equilibrium required for synthesis of high-purity samples is difficult to
+              achieve. The approach employs a cation-exchange proc-ess in an unconventional
+              growth mechanism. A less-volatile precursor matrix is selected with a related
+              crystalline structure and chemical composition to a desired volatile compound.
+              Volatile compounds can then be formed by perturbing one or more cations on the
+              precursor matrix and replacing them with volatile cations. Although the cation
+              exchange process has been applied suc-cessfully to synthesis of high- quality
+              Hg-HTS films and bulks, the mechanism of cation exchange is barely understood
+              at the microscopic level. Understanding this mechanism is a central goal of
+              this research as it is crucial not only to the ability to develop Hg-HTS
+              electronic/electrical devices, but also to generalization of the process for
+              synthesizing other technological important materials that may not be achievable
+              in conventional processes. The effect of growth defects, grain boundaries, and
+              chemical doping on the cation exchange behavior at the microscopic level will
+              be studied so as to achieve a thorough understanding of the macroscopic
+              behavior of the ca-tion exchange as a function of processing parameters.
+              Theoretical modeling of the cation ex-change process will also be carried out
+              to gain a more thorough understanding of the fundamental physics involved.
+              
+%%% 
+The project addresses fundamental synthesis and processing research
+              issues in a topical area of materials science having technological relevance.
+              The project is collaborative with interactions among researchers at U. Kansas,
+              U. WI, Stanford U., U. IL at Chicago, several government labo-ratories (AFRL,
+              ORNL, Sandia, LANL, and ANL), and an industrial organization, Supercon-ducting
+              Technologies, Inc. Graduate and undergraduate students play a primary role in
+              the project and are exposed to research opportunities across several
+              disciplines with access to a broad range of research equipment and
+              facilities.
+***  
+

@@ -1,0 +1,4 @@
+Dear all,
+Is there any paper that?discusses?the reason of the default hyperparameter setting, say , alpha=N/50 and beta=0.01?
+Best Regards
+Darren

@@ -1,0 +1,228 @@
+
+We previously defined '''em or expectation
+axionization algorithm, which as it
+happens is one of the algorithms that's
+most commonly used in practice, because of
+its simplicity, and because its so
+effective in dealing with missing
+variables, missing values. But we didn't
+give much justification for why the
+algorithm works. So what we are going to
+do now is were are going to give at least
+a little bit of theoretical intuition as
+to how the formulas that we are using in
+the ML algorithm are arrived at. So let?s
+start with providing a little more of a
+formal intuition. So in some sense, '''em
+is also like gradient assent, a local
+gradient procedure. But unlike gradient
+ascent it uses a less local approximation
+to the likelihood function. So
+specifically, if this is our likelihood
+function, as we had before, or rather the
+log likelihood really in practice. What we
+are going do is we are going to
+approximate the, we are going to take the
+current point that we are at because
+remember this is a local iterative search.
+We are going to take that point and we are
+going to approximate the function at that
+point using this blue line Over here. Now
+gradient descent approximated the function
+at this point using straight-line
+approximation. '''em of approximation at
+this point using this nice curvy function,
+as it turns out is, as we'll see, a log
+likelihood itself. Is in fact the log
+likelihood with complete data. And having
+constructed this approximation, it now
+jumps. To the maximum of this function.
+Which because this is a log like with the
+complete data, can be maximized in closed
+form using maximum likely destination. So
+this is the intuition behind the M. Let's
+see, if we can formalize that a little
+bit. For some notation, B is the observed
+data, in a given instance, and we are
+gonna do one instance for the moment. H is
+the hidden variable in that instance, and
+we are going to assume for some how
+somewhere we have a distribution over the
+values of the hidden variables, within
+that instance. So there's no distribution
+over the values, I mean we are not gonna
+impose distribution over DV is observed,
+but for the hidden variables we have some
+distribution over the values that they
+might take. So now let's remind ourselves
+what the log likelihood function looks
+like when we have complete data. So the
+log likelihood function for the parameters
+theta give a now paired v comma h. Where h
+is an assignment to big H. The hidden
+variables. Is simply by, by the definition
+of the log likelihood, and, the
+decomposition of the likelihood, over the
+chain rule for Bayesian networks. It is a
+sum over the variables in the network. The
+sum over all possible, assignments to node
+and its parents of an indicator function.
+That says in this particular A pair, D, H.
+Does, do the variables XI and EY take on
+this particular values little XI and
+little EY. And if so, we're going to
+multiply in the log of the parameter.
+Corresponding to that entry in the CPD.
+Now this is a really complicated way you
+might think to write what is effectively
+the sum of the log of theta of a node
+given its parents in these [inaudible].
+But there is a reason we are going to
+write it this way, and we, which will
+become clear in a moment. So, now, let's
+imagine that what we have is the
+distribution over q, there's [inaudible] q
+over h. And, now, we're going to look at
+the expectation of this [inaudible]
+function relative to the distribution over
+h. So now, rather than h being given we
+have a distribution over h and we're going
+to look at the average or expectation of
+the [inaudible] likelihood relative to the
+distribution, q sub h. Now, importantly,
+because of the linearity of expectation,
+that expectation is going to push its way
+past the first summation, the sum over I.
+Past the second summation, which is the
+sum over assignments little xy and little
+ey. And we're gonna end up with the
+following equation, which, meas, which is
+the expectation relative to q of this
+indicator function. What we had on the
+previous line. And notice that we can also
+take log of theta x I've given you, I, out
+of the expectation because that's fixed
+relative, relative to h, which is exactly
+why we wrote the formula in this
+complicated form. [sound] So the one final
+step of this derivation is now to simplify
+this expectation over here. The
+expectation relative to Q. And this
+expectation when you are taking an
+expectation of an indicator function,
+which is simply an event. In this case, it
+is the indicator function of the event Xi
+equals xi, and UI equals little UI. That
+expectation of an indicator function is
+simply the probability. So this turns out,
+this entire expectation turns out to be
+equal to the probability of little xi,
+little UI under the distribution queue.
+And so we have now converted, this
+expected log likely hood into this
+summation that utilizes, our probabilities
+relative to the distribution queue. So,
+working forward from this formula, now
+lets consider the case where have multiple
+data instances. So, now we have a set of
+distributions one for each data instance
+and, that also depends on the current
+parameter setting Theda T. So, now, we're
+in the midst of an '''em iteration. And,
+we're going to use the current parameter
+setting Theda T to define the probability
+distribution over the hidden variables.
+And, that's going to be defined as the
+probability of the hidden variables given
+the observed variables, and given the
+current setting of the parameters, Theda
+T. We now look at the sum of these
+expected log likelihoods, so the sum of,
+over all data instances, little M equals
+one to big M, of the expectation of the
+hidden variables relative to, relative to
+this distribution that we just defined, Q
+T sub M, of this log likelihood. We can
+now plug in the equation that we have up
+here, but substituting for P the def,
+definition of Q for, for what we see here
+the P of H given. P of H given D and
+theta, and that gives us this equation
+over here, the sum over I, sum over little
+xi comma little UI, all possible
+assignments to the family, sum over the
+data instances. The probability of xi
+comma UI given the data instances, and the
+current parameters, times the log of the
+current parameter value. Taking this one
+step further specifically looking at this
+summation over M as a separate entity you
+can see that this is really the expected
+sufficient statistic That we define in the
+context of the [inaudible] algorithm. So
+we now have that are log, that this
+expected log likelihood function is the
+sum over I, the sum over little xi UI, the
+expected decision statistics for xi, UI,
+times the log parameter value. And the
+important point here is that this is just
+like a log likelihood function. For
+complete data. Using the expected
+physician statistics. So the function that
+we're optimizing is the suspected log
+likelihood and just a simple mathematical
+derivation tells us that is the same as
+optimizing a log likelihood function,
+using these expected sufficient
+statistics. And we know exactly what that
+optimum looks like because it's the same
+as the standard maximum likely destination
+problem. And so, going back to the diagram
+that we started out with, the functions,
+blue function that we're using here is an
+approximation is this expected. Long
+likelihood. And this optimization that
+we're doing here basically uses the
+expected sufficient statistics to do
+maximum accurate estimation, which is
+exactly the M step. So the E step
+constructs this function by computing the
+expected sufficient statistics, and the M
+step. Gives us this maximum for which we
+now proceed to the next iteration. Using
+this kind of, intuition we can actually
+prove two very important results regarding
+the expectation maximization algorithm.
+The first is that the log, is that the
+likelihood function, or the log likelihood
+function, improves at every iteration.
+That is, the log likelihood at, iteration,
+say theta T + one is greater than or equal
+to the log likelihood at iteration theta T
+or commensurately for the likelihood. The
+second result that we can prove is that at
+convergence, that is at the point where
+70+1 is not change relative to data T,
+then we can be guaranteed that data T is a
+stationary point of the likelihood
+function. What does the stationary point
+means? It means a point where the gradient
+point is zero. Which in principle. Can be
+either. A local minimum, a local maximum
+or saddle point. But it's very difficult
+when you're doing hill climbing to
+actually land exactly at a local minimum
+because that's the only time that we will
+that we will be converged to local minimum
+is if we step up '''em So here's the
+function. It's very difficult to imagine
+having an '''em step that lands us exactly
+at this local minimum because that's the
+only point at which we won't continue to
+make progress. And so the fact though when
+we're doing this kind of climbing and we
+achieve convergence it means we have
+achieved a local maximum of a likelihood
+function. Which is the same guarantee on
+satisfying as it might be, that we have
+gradient descent.

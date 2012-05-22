@@ -1,0 +1,22 @@
+Professor Hanna Wallach (Computer Science, UMass Amherst) is seeking a
+postdoctoral researcher for an new exciting project at the
+intersection of machine learning and computational social science. The
+project involves developing new statistical methods for characterizing
+and predicting scientific and technological emergence.
+The ideal candidate must be proficient in a subset of the following:
+* Bayesian statistics
+* topic modeling
+* social network analysis
+* analyzing massive text corpora
+* scientometics
+* information visualization
+He or she will be an active participant in Hanna Wallach's research
+group, collaborating not only with her and her graduate students, but
+also Andrew McCallum, David Jensen, Ben Marlin, and other faculty.
+This is a one year (renewable) position.
+A Ph.D. in Computer Science, Statistics, or related fields is required.
+Applications should include a cover letter, a CV, one or two
+representative publications, and two letters of recommendation. To
+apply, please email application materials to wallach at cs.umass.edu.
+UMass Amherst is an Affirmative Action/Equal Opportunity Employer.
+Women and members of minority groups are encouraged to apply.

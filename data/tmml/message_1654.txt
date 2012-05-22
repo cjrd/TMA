@@ -1,0 +1,22 @@
+Hi Skipper,
+Thanks for the note.  It's possible that there's a memory leak, but I
+also would try cutting down on the size of the vocabulary first.
+Another possibility is that one of the input files is somehow
+incorrect. I know that I've had issues reading a *-mult.dat file which
+was improperly formatted (e.g., the number of terms listed at the
+beginning of a row was incorrect).  Since the code seems to run the
+LDA stage fine, I'm guessing this may not be the case (thought it's
+still worth checking).
+So, in this order, I'd propose:
+- make sure your *-mult.dat file and *-seq.dat files have the correct format.
+- cutting your vocab size to 10k for now, and try running like that.
+- compiling a debug binary and watching what the model does as it
+reads in the data.
+If you decide to represent matrices with a sparse matrix library,
+please do let me know -- I'm happy to review changes or additional
+code that you submit.  Note, however, that many matrices are "nearly"
+sparse but not quite -- they often have entries very close to 0.0 --
+using a sparse matrix library and assuming some of these values are
+zero could increase the risk of numerical errors.
+Best,
+Sean

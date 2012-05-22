@@ -1,0 +1,5 @@
+Try this:
+Yik-Cheung Tam and Tanja Schultz. Bilingual LSA-based Translation
+Lexicon Adaptation for Spoken Language Translation. Interspeech 2007.
+Regards,
+Tanel

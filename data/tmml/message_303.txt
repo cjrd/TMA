@@ -1,0 +1,13 @@
+dear chao,
+in the LDA paper, we treat each instance of a word as a separate
+variable.  however, the phi updates for words that correspond to the
+same term---e.g., a document that contains 5 instances of the word
+"peanut"---will be the same.  so, we need only compute the phi update
+for "peanut" once.
+the subsequent gamma update, which is a sum of all the phis, becomes a
+sum of the phis for each unique term multiplied by their counts.
+\gamma = \sum_{unique terms} \phi_i * n_i
+where n_i is the number of times we saw the ith term.
+i hope this clears things up.
+best,
+dave

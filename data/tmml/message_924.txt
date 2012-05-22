@@ -1,0 +1,5 @@
+Hi,
+Can someone point me to some good work done in dynamic topic models where
+the number of topics is not fixed but found while building the topic model?
+Thanks
+Subrahmanya

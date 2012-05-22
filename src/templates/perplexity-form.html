@@ -1,0 +1,52 @@
+<div id="perplexity_data">
+    {% csrf_token %}
+    {{ form.non_field_errors }}
+
+    {% for error in form.param.errors %}
+        <span class="error">{{ error|escape }}</span>
+    {% endfor %}
+    <div class="single-field">
+        <label for="parameter"> {{ form.param.label }} :</label>
+        {{ form.param }}
+    </div>
+    <div class="help-text"> {{ form.param.help_text }} </div>
+
+    {% for error in form.start.errors %}
+        <span class="error">{{ error|escape }}</span>
+    {% endfor %}
+    {% for error in form.stop.errors %}
+        <span class="error">{{ error|escape }}</span>
+    {% endfor %}
+    {% for error in form.step.errors %}
+        <span class="error">{{ error|escape }}</span>
+    {% endfor %}
+    <div class="single-field">
+        <label for="startval"> {{  form.start.label }}:</label>
+        {{ form.start }} : {{ form.step }} : {{ form.stop }}
+        </div>
+    <div class="help-text"> {{ form.start.help_text }} </div>
+
+
+    {% for error in form.folds.errors %}
+        <span class="error">{{ error|escape }}</span>
+    {% endfor %}
+    <div class="single-field">
+        <label for="nfolds"> {{ form.folds.label }}:</label>
+    {{ form.folds }}
+    </div>
+    <div class="help-text"> {{ form.folds.help_text }} </div>
+
+    {% for error in form.pertest.errors %}
+        <span class="error">{{ error|escape }}</span>
+    {% endfor %}
+    <div class="single-field">
+        <label for="pertest"> {{ form.pertest.label }}:</label>
+        {{ form.pertest }}
+    </div>
+    <div class="help-text"> {{ form.pertest.help_text }} </div>
+    {{ form.current_step.as_hidden }}
+    {{ form.current_fold.as_hidden }}
+
+    <p id="sendwrapper" style="text-align: right; margin:  15px;"><input type="submit" value="Analyze"
+                                                                         id="sendbutton"/></p>
+</div>

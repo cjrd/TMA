@@ -1,0 +1,16 @@
+Hi Govind,
+The format of the links is a list, one-element per document in
+your corpus.  The list item associated with a document is an integer vector of
+the indices of the documents this document is linked to.  The entries should
+be 0-indexed, that is, the first document is 0.  See 'cora.cites', included in
+the package for an example.
+To read this from a file, you can just do
+something like:
+lines <- readLines("your file")
+links <-
+lapply(strsplit(lines, " ", fixed = T), as.integer)
+Although this depends
+on the specifics of the format of your file (the above should work if the data
+in the file is also 0-indexed and delimited by spaces).
+Cheers,
+Jonathan

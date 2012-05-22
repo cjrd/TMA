@@ -1,0 +1,6 @@
+ohhkay...I see
+So there are N words, each of them is drawn from a topic, so there are N
+corresponding topics, right? But each of N topics can be of value 1-k,
+right?
+Thanks all!
+There aare N words

@@ -1,0 +1,337 @@
+
+We previously defined the map inference
+problem, which is that of finding the,
+highest probability assignment to a
+graphical model. And we talked about
+particular classes of models for which the
+map problem was tractable. One was a class
+that, of models that had sufficiently low
+tree width. So that one could use
+techniques such as variable elimination or
+clique tree methods. And then we also
+talked about a variety of other special
+purpose classes where one could do
+tractable inference. We are going to talk
+about now is a general purpose algorithm
+that can be used to solve any MAP
+problem, keeping in mind of course that
+the MAP problem is an NP-hard
+problem, so you're not going to get a
+fully polynomial time algorithm that, that
+one can utilizes in the context of any
+problem. So the class of methods that
+we're going to talk about is in, is called
+Dual Decomposition. And it's derived from
+the increasingly prevalent view of the MAP
+inference problem as an optimization
+problem and building on techniques from
+the field of optimization theory. Let's go
+ahead and first reformulate the problem in
+a way that makes it amenable to this kind
+of analysis and this is just a convenience
+so here we are going to assume that the
+MAP problem that we are trying to optimize
+remember we've reformulated this
+as a max sum as opposed to a max product
+which is a convenient reformulation and we
+are going to assume that the data that we
+are trying to optimize is comprised of a sum
+of two different kinds of factors. The
+first is singleton factors. Which are over
+the scope of single variable XI and the
+second are larger factors that are over
+the scope of multiple variables.
+And clearly one can fold in the singleton
+factors into some larger factor that
+contains a variable in its scope but it
+turns out to be convenient to keep them in
+the model for reasons that will become
+clear in a minute. So now our goal is to
+find the value for the moment. We're going
+to talk about how to find an actual
+assignment in a little bit, but imagine
+that our goal is to just figure out what
+is the value of the highest probability
+assignment X. And so we're trying to find
+the X that maximizes this total summation.
+One thing that we could do, which would be
+wrong, but we could do it, is to say,
+well, let's forget about the fact that
+we're trying to do a single joint
+assignment. Rather, we're going to think
+about each problem with blinders on. So
+we're going to think about, each theta I,
+XI, by itself. And we're going to find the
+XI that optimizes that, factor. And we're
+going to do the same for the larger
+factors. Now, that of course is going to
+be a very poor solution because the XI
+that going to optimize one data I, Is going to be
+completely inconsistent with the Xi that is selected by 
+one of the larger factors that contains XI.
+So, you're going to get a completely incoherent joint
+assignment. It's not going to be a joint assignment.
+It's going to be a bunch of different assignments
+that don't that don't agree with each
+other. So, what dual decomposition does is
+it's going to try and do the same kind of
+divide and conquer, but it's going to do
+it in a way that tries to force these
+local decision-making problems to agree
+with each other. And so how are we going
+to do that. We are going to do that by
+introducing a set of costs. And the costs
+are going to be things that are going to
+drive each of these local problems to
+hopefully, eventually agree with the
+decisions made in other local problems. So
+going back to this, what we're going to
+do, and now this is actually an equality.
+Is, we're going to do the following. For
+the variable I, we have its own local
+potential, theta I. And then we have a
+bunch of costs. And these are the costs
+that are derived from the [inaudible], and
+we have a cost for each factor F that
+contains I in its scope. And that cost is
+going to try and pull the little I,
+decision maker, which is called the slave,
+by the way. Each of these decision
+problems is called a slave. So this is the
+I slave. And here is a little term that's
+suppose to pull the i slave, to agree
+with the decision made in factor f.
+Similarly, we have an F slave. And what
+we're trying to do, is we're trying to get
+the F slave to agree with the i slaves.
+For the variable Xi and its scope. Now, as
+written over here, let's convince
+ourselves that this expression is, in
+fact, equal to the first line. And then
+reason is that, here, I add a term, lambda
+FI of XI, for I in the scope of F. And
+here, I subtract that same expression over
+here. So each of these expressions, lambda
+FI gets added in at I, and subtracted out
+at F. And so they cancel out. So far, I've
+had equality. But now, I'm going to really
+let each agent make their own decision. So
+now, before, there was still the
+maximization on the outside. Now I'm going
+to let each agent look at its little set
+of factors, that, it owns. Including the
+sort of penalty terms that it has in, in
+order to agree with the other slaves. And
+each one is going to make its separate
+optimization with all of those terms
+together. So, you can think of these,
+these penalty terms as messages from, or
+between, F and I. Their, their way to
+communicate. For F to communicate to I
+what it thinks ought to be done and for I
+to communicate with F at the same time.
+Now one important point that we'll come
+back to, in a little bit, is that this,
+function here which is called L of Lambda,
+notice that this is a function of Lambda.
+And only a function of lambda because it's
+no longer a function of x because of
+maximize over the x. So you're going to
+get a different value of this function
+depending on the choices of the penalty
+parameters. This function is an upper
+bound on max theta for any value of
+lambda. Now let's understand why that is.
+It's, we've seen in this line over here
+that this is actually equal to that.
+Anyways, we've shown that everything
+cancels here. And what I've done here is,
+over here, I'm forcing a single X to
+maximize this entire expression together.
+And here, I'm letting each term be
+optimized separately. And that give me
+more degrees of freedom, because here I
+have to pick the same x across the board,
+and here this one gets to pick one x and
+this one get to pick another value of x.
+And so since, the assignment where they
+all agree is a, is one of the assignments
+that can be consider in this optimization
+problem over here. The overall value that
+can be gained is only higher than if I had
+to force them all to agree which is a more
+constrained optimization problem. In
+general, the more constraints I have on
+the space that I'm optimizing the lower
+the value that I, the lower the value that
+I can get. So introducing some notation
+which we'll use in a little, which we'll
+use in the rest of this presentation,
+we're going to call the function that the
+I slave is optimizing, theta I lambda. And
+the function that is being optimized by
+the F slave, theta F lambda. So let's take
+an example to make this a little bit more
+concrete because this was a little bit
+abstract. So let's go back to our to, to
+our example of a four way loop where we
+have X1, X2, X3, and X4 and we're going to
+have these four pairwise potentials
+which we're going to denote with letters
+this time to disambiguate indices a little
+bit. So we have theta F of X1, X2, theta G
+of X2, X3, theta H, and theta K. So, now
+how is this decomposition going to work
+here? Let's assume for the moment that
+we're going to decompose this over edges.
+So our factors are going to be, for
+example, the edge X1, X2. So now what is
+the optimization problem that this factor
+chooses? Well it has its own potential,
+say the f x1, x2, and then it's going to
+have these little costs that are going to
+try and get it to agree with x1 on the,
+with the one slave on x1 and the two slave
+on x2. We're similarly going to have, for
+x1x4, this is the k, so this is the f
+slave. This is the k slave. And it's going
+to have its own potential, theta K. And
+two penalty terms that are going to try to
+make, to make it agree with the one slave
+on X1, and the four slaves on X4. And we
+similarly have exactly the same form for
+the other two, slaves, the G slave and the
+H slave. In addition, we have slaves for
+the individual variables, the one, two,
+three, four slaves. So here is the one
+slave. And notice that the one slave has
+its own potential theta one, X1. And at
+the same time, it has these two terms that
+are trying to make it agree on the one
+side with F, which is over here. So this
+is because of this. And on the other side
+with K, because of that. And the same
+thing applies to the other slaves, so the
+two slave for example, is going to agree
+with F. And is going to try to be, is
+going to be [inaudible] with F and with G,
+so it has a lambda F2 and a lambda G2. Now
+I've done this in the context of a very
+simple scenario where I've broken up my
+model into the factors that existed in the
+original specification. So, for example I
+had factors that were pair wise
+potentials. I had a slave for each such
+factor. But that doesn't have to be the
+case. [cough] In fact, the only constraint
+that I need to satisfy is that I need the
+sl, to define a slave to be defined as a
+subset of factors that admit a tractable
+solution. So that each one can be
+optimized. Efficiently, when considered in
+isolation. So, for example if we can, if
+we'll return to this network, say one
+thing we could do is, we can introduce two
+larger slaves, instead of the four smaller
+FGKH slaves, which one is corresponding to
+F and G together so this is the FG slave.
+And the other one, representing the k, the
+KH slave. And, in this case, if we think
+about the agreement, we still have the
+one, two, three, four slaves that
+represent the individual variables. And so
+now we're going to have to require that
+theta F agrees with X1, with the one slave
+on X1, with a two slave on X2, and with a
+three slave on X3. And so we have this
+expression, which has a lambda term for
+each of those three variables. And we have
+a similar term for a similar expression
+for the KH slave, where in this case, the
+KH slave has to agree with the one slave
+on X1, the four slave on X4, and the three
+slave on X3. If we now think about the
+singleton slaves, for example X1, we see
+that X1 has to agree with the FG slave, so
+there's a term to encourage that, and with
+the KH slave because it's present in both.
+On the other hand, the X2 variable only
+occurs in the first slave and so it only
+has a single agreement term with the FG
+slave. And similarly for x3 and x4. So,
+how do we then construct the slaves? In
+pair wise networks, what we typically do
+is we divide the factors into a set of
+disjoint trees. And this is in fact what I
+showed in the previous slide. We divided
+it into one tree that went through the
+first wedges, and a second one that went
+through the second wedges. And then, and
+these, and they are destroying such means
+as every edge is assigned to exactly one
+tree. And because they're trees we know
+how to optimize in efficiency using
+[inaudible], [inaudible], [inaudible]
+variation or [inaudible] tree. But we also
+discuss that there is other classes of
+factors that are, that offer tractable
+inference. So for example, we talked about
+matching, or models that are
+associative, or regular, or super modular,
+or whatever we call them. And all of these
+are tractable classes we can take a whole
+bunch of factors that satis, that, that
+fit into one of these tractable categories
+and optimize them together in one svelte
+swoop. We don't need to divide into
+separate edges. So let's look at an
+example of this. Remember a while ago, we
+talked about the problem of 3D cell
+reconstruction, where we have a, a cell
+over here that we're imaging. And we're
+taking various images that are slices, two
+dimensional slices through that cell. And
+we'd like to reconstruct three dimensional
+structure. So here as, as we discussed, we
+have the slices and we would like to
+correspond the beads, that we see, this
+little gold beads that we see and these
+different images to each other. So try to
+figure out that this bead corresponds to
+the bead over there. And from that we can,
+then subsequently. Obtain the 3D
+reconstruction. Now when we last talked
+about this we described this as a matching
+problem, where the matching waits between
+a point here and the point here. Are
+derived from the similarity of both the
+location and the 2D slice, and the
+appearance of the local neighborhood. But
+it turns out that neither of these is
+sufficiently distinctive in order to
+really make that determination robustly
+that one point in an image matches another
+point in the other image. And so in order
+to do this with a reasonable success we
+need to have another set of potentials
+which are pair wise potentials. Which
+basically preserved distances of these
+marker positions. So tell us that if we
+had, if we want to correspond this point
+over here to this point, and this point to
+that point, then the distances between
+them. Should also roughly be preserved.
+Now, this set of potentials is relatively
+sparse and therefore can be solved usually
+using exact difference, this set of
+potentials is not complicated on its own,
+cause it's a matching problem. If you put
+them together it turns out to be a
+difficult problem to solve. In fact you
+could show that a joint set of potentials
+like this, with these two different
+categories is in general [inaudible] but
+using dual decomposition we can solve each
+of these separately. And then communicate
+information between them. So each of these
+would form a tractable slave.

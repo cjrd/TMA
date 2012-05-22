@@ -1,0 +1,44 @@
+              
+This research involves two applications of graph algorithms; the
+              first
+regards communication in networks, the second involves solving
+              flow
+problems in structured networks.  The investigators study algorithms
+for
+              finding paths connecting many communicating parties in a network.
+The goal is
+              that the paths do not overutilize any particular link in
+the network.   The
+              second item the investigators will study  is
+the famous problem of routing the
+              maximum amount of flow through
+a network. This problem is itself interesting
+              and has numerous
+applications in fields as diverse as transportation and
+              computer vision.
+
+
+More specifically, the investigaters study low congestion
+              routing in
+networks.  This problem is easy in a relaxed fractional setting
+              but
+notoriously difficult in an integral setting.  Recent work
+              has
+established relationships between a cut based upper bound and
+              the
+fractional lower bound on this problem.  These results will lead
+              to
+better understanding of the integral version of this problem.
+Research on
+              this problem has made use of techniques from linear
+programming, randomized
+              rounding, combinatorial graph theory, as well
+as geometric embeddings of graph
+              metrics. For the maximum flow
+problem, the investigaters study ideas in a
+              recent maximum flow
+algorithm in order to extend them to the minimum cost flow
+              problem.
+The investigators also study the maximum flow problems on planar
+              and
+other restricted classes of graphs.

@@ -1,0 +1,5 @@
+I've done a bit of this on the level of inter-topic distance rather than
+inter-document distance, and found that there was no clear winner
+empirically, but in general that jensen-shannon and bhattacharyya performed
+the best in determining the most similar topics.
+Aaron

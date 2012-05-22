@@ -1,0 +1,6 @@
+Hi all:
+Are there any papers about the comparison between topic models(LDA or PLSA) and other dimensionality reduction methods(SVD, PCA...)?
+Wishing for your help!
+Thank you very much!
+2010-05-06
+LiuQi

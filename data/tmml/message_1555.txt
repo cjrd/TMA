@@ -1,0 +1,6 @@
+Hi Jonathan,
+Thanks for replying me so quickly. Your responses to my questions helps me to comprehend the Gibbs sampling for unsupervised LDA better. I really appreciate that. And I have an another question:
+If y_d is treated as an observed variable, how to obtain the value of y_d? Take the text analysis for example, given a new document for testing, for each document, y_d is an annotation (i.e., category of document) which will be predicted, so how could we obtain the value of y_d before prediction?
+Thanks for taking your time to answer my questions. I really appreciate that.
+Best regards,
+wluo

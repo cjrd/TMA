@@ -1,0 +1,11 @@
+Hello,
+They're logarithms as far as I know.
+And of course a logarithm of a number between 0 and 1 is negative.
+But I have another question: can the \theta be produced from lda-c? I've
+been using normalized \gammas as an approximation, but I don't think
+it's the right way.
+Best regards,
+Matteo Dimai
+file" (the topic/word probabilities file).
+that's why I don't understand why is that so.
+his site and it turned out right.

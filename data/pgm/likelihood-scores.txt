@@ -1,0 +1,327 @@
+
+[sound] So we talked about the fact that
+we can view Bayes net structure learning
+as two pieces. One is, defining a scoring
+function, allowed us, allows us to
+evaluate different networks. And the
+second is, as a search procedure, an
+optimization procedure that allows us to
+select among the networks, the one that
+has the highest score. We're going to
+first talk about scoring functions. And
+initially, we're going to talk about what
+is perhaps the simplest score that we can
+consider, which is the likelihood score.
+So we've talked about likelihood as a way
+of evaluating the quality of a different,
+of, of a given network. And so here the
+likelihood score can be defined as the
+graph and the parameters, that maximize
+the likelihood, or in this case, the log
+likelihood of the data. So the score, or
+the likelihood score of a graph. Is the
+log likelihood of the graph accompanied by
+the parameter setting, theta hat, which
+is the maximum likelihood estimate of the
+parameters. Given the graph G and data D.
+So first, so for any graph we figure out
+what are the best possible parameters to
+use for that graph and then we use that as
+a way of evaluating the quality of the
+graph that we learned. So let's look at
+some of the... Let's look at a simple
+example to see what the what the
+likelihood score looks like. So here we
+have a distribution over two, random
+variables X and Y and lets consider two
+graphs G0 on the left has no edge between
+X and Y and G1 on the right has an edge
+from X to Y and the Y to X case would be
+symmetrical, so we're just gonna look at
+these two graphs. [sound] The likelihood
+score of, a graph, of this graph, relative
+to, to D, by the decomposition of the
+likelihood function that we've already
+seen. Is the sum over all instances M, of
+the log of the parameter for, the value of
+X in the mth data instance. Plus the log of
+the parameter for Y in the M, for the Y
+value in the mth data instance. So this is just
+the, the decomposition of the log likelihood
+that we used when we talked about
+parameter estimation. Conversely when we
+look at G1, we have a very similar formula
+where again we sum over all instances. And
+for the X that has no parents, we have log
+of theta hat XM, where again XM is the
+value of X in the Mth data instance. And
+for the Y value we have log of theta hat
+of YM given XM. And in both cases, theta
+hat are the maximum likelihood parameters
+in the respective graphs. So on the left
+it's theta hat, it. For the graph G zero
+and on the right it's the maximum
+likelihood, theta hat for the graph G
+one. Now let's refine this analysis a
+little bit more by converting into a
+somewhat different notation. First we're
+going to look at the difference between
+these two likelihood scores. So we're
+going to see, we're going to look at the
+score for G1, and subtract away the score
+for G0. And then we're going to see
+whether that score is positive or
+negative. That is, whether we prefer G1 to
+G0 or not. So notice that the term over
+here, the first term. The X term is the
+same. In both of these graphs, and so it
+cancels out, and so what we have left over
+is the sum over M of log of Theta Hat YM
+given XM, minus log of Theta Hat of YM.
+Now. We can, reformulate this, by looking
+at the sufficient statistics and,
+specifically we're going to have, the term
+Theta Hat, YM given X-M occur
+[inaudible]. Recur every time we have a
+particular value Y and a particular value
+X. So we're going to sum up over all
+values little X and little Y, and the
+parameter log of theta hat Y given X is
+going to occur M of X Y times. Where M of
+X Y is the sufficient statistics for the
+counts for that particular configuration
+of events, in the data set D. The second
+term, the, the one that we're subtracting,
+is a sum over Y of M of Y. Log of theta,
+hat of Y. Where, again, M of Y is
+sufficient statistics. Now we're going to
+rewrite this in terms of this,
+distribution over here called P hat. P hat
+is what's called the empirical
+distribution. It's what happens when we
+look at our data set D and just look at
+the frequencies of different events. So M
+of XY. Is simply the number of data
+instances M times P hat, of XY. Because
+this is the frequency of the event and
+this is the total number of data instances
+and, so, M of XY is just the product of
+those two. So we can write the first term
+as M times sum of XY P hat of XY. And
+interestingly, we can also rewrite the,
+the maximum likelihood estimation
+parameters in terms of p hat as well,
+because theta hat of y given x is simply
+the, the fraction of the y-cases among all
+the x-cases, which is exactly the same as
+p hat of y given x. Similarly, the second
+term turns into m times p hat times the
+sum over y, p hat of y, log of p hat of y.
+So, that now converted all of the
+expressions, the Ms and the, M thetas into
+a single vocabulary, which are these,
+empirical distributions p-hat. So now
+let's take the M out of the equation. And,
+furthermore, look at the sum over Y as the
+sum over pairs XY. So we've artificially
+introduced a variable X into the second
+summation, sum over Y, P hat of Y. And now
+we're going to rewrite that as sum over
+XY, P hat of XY. And because X doesn't
+appear in the expression log, P hat of Y,
+we can, we can do that because sum over X,
+P hat of XY is equal to P hat of Y. So,
+looking at these two expressions together,
+we can now move around some things by use,
+utilizing properties of the logarithm and
+derive that the follow, that this is
+equivalent to the following equation. This
+is M times the sum over XY, p-hat of XY
+log p-hat of XY divided by p-hat of X,
+p-hat of Y. And the reason why that's the
+case is that p-hat of Y given X is equal
+to p-hat of Y, X divided by p-hat of Y,
+the, sorry, divided by p-hat of X. And
+now, by moving around the logarithms, we
+get exactly this expression. Now
+importantly, this expression here, inside.
+Listen. This summation over here, has a
+name. And that summation is called the
+mutual information. And is usually denoted
+as I sub p hat, in this case the
+distribution p hat between x and y. So,
+why, why is this called mutual information
+because it measures, if you, if you look
+at this the distance. On average between
+the joint distribution x and y, p hat of
+xy in numerator relative to the
+distribution of we would get if, if we, if
+the distribution was a product of
+marginals. So p hat x times p hat of y. So
+you can think of this term inside the log
+as a relative error, if you will, a
+distance between the joint distribution
+and the product of the marginals. And now
+we're taking the average of the log of
+this expression averaged by how frequent
+the different cases xy are. And so that's
+so you can think of it as an average
+distance between the joint distribution
+and the one that we would get if this was
+a product of marginals. So this is an
+information theoretic property which as I
+said is called the mutual information. And
+so if we now generalize this analysis to
+an arbitrary network, it turns out that
+the likelihood score for any graph can be
+viewed as the can be rewritten as the
+number of data instances m, times the sum
+over all variables I, of the mutual
+information again between a node. And its
+parents in the graph. Minus a constant
+term that is constant relative to the
+graph structure. The second term is M
+times the sum of the entropies of the
+individual variables and this term doesn't
+depend on G. [inaudible]. Now why is this
+a significant result? It's significant
+because it tells us that the value of a
+network, the score of the network if you
+use the likelihood score, is higher, so
+score is higher. If X I is correlated with
+his parents. Which is a very intuitive
+property. The more a variable is
+correlated with a parent the better the
+network structure which means we would
+want to put as a parent of a variable a
+parent that is highly correlated with it
+which is kind of exactly the behavior that
+you would intuitively hope for. So this is
+a good result because it tells us that the
+parents that we pick for a variable are
+the ones that are, ha, have, have the
+highest correlation with it, the ones that
+have the highest mutual information, and
+that?s a very satisfying result. However,
+as we now show this mutual information
+result also has some negative
+consequences. So to understand that, let's
+go back to our simple example. And let's
+look at the difference between the scores
+of the two graphs. The graph G1 on the
+left that has the edge, and the graph G
+zero on the right that doesn't. And let's
+look at the difference between those two
+scores. That difference, if it's positive,
+suggests that we should pick the graph G1,
+and if it's negative, tells us that, the
+maximum likelihood score will pick the graph G zero.
+And that difference is M, the number of
+samples times the mutual information
+between the variables X and Y, in the
+empirical distribution P hat. Now a
+well-known result from information theory
+is that the mutual information, this, this
+quantity over here is always non-negative.
+For any distribution P. Furthermore, this
+mutual information is equal to zero. That
+is, this inequality turns into an equality
+if and only if X and Y are actually
+independent. In the distribution relative
+to which we're computing the mutual
+information. Which, in this case, is the
+distribution, P hat. Now even if X and Y
+were actually independent in the original
+distribution, the one the generated the
+training instances, it is still very
+unlikely that we will achieve exact and
+perfect independence in the empirical
+distribution, just because of statistical
+fluctuations in the set of samples
+that are generated. And so, even if X and
+Y are independent it is almost never the
+case that they are independent in p hat
+which means that in almost all cases. This
+mutual information between X and Y is
+going to be greater than zero, almost
+always. Which tells us that adding this edge
+can never hurt and almost always helps and
+that's true not just in the simple example
+but in other cases as well. That is, it's
+almost always as better in terms of the
+likelihood score to have more edges rather
+than fewer edges, that will always
+increase the likelihood score. Which means
+that in general, except for very unusual
+circumstances, the likelihood score will
+be maximized for the fully connected
+network. So that gives rise to a very
+significant over fitting effect, because
+as we have already seen we now, the more
+edges we have more difficult it is to fit
+the parameters because we have
+fragmentation of our data set into these
+tiny little buckets each of which have a
+very small number of instances in it. So
+how do we avoid over fitting? It turns out
+that there are several different
+strategies that, that are typically
+employed. The first is to restrict the
+hypothesis space, to basically prevent the
+algorithm from over fitting. And we can do
+that by, restricting the number of parents
+that we allow per node. Or some kind of
+restriction on number of parameters. This
+is usually easier to enforce, and so
+that's a more common strategy. A second
+more flexible strategy is to use a scoring
+function that makes a better set of
+tradeoffs. That is, where there is a
+penalty on the complexity of the model at
+the same time that we're trying to get a
+good fit to the training data. And that's
+a more flexible strategy than a hard
+constraint on the model complexity, because
+if there is a very strong signal for some
+correlation between a pair of variables
+that can eventually outweigh the
+complexity penalty and allow that edge to
+be added in, whereas. If we have a hard
+constraint we might never be able to learn
+a model that is the appropriate one simply
+because it's, it's never going to be is,
+is not going to fit into the restricted
+hypothesis space. These
+complexity-penalizing scores generally
+fall into two categories. There is ones
+that explicitly penalize complexity. And
+then there is the class of models called
+the Bayesian, a class of scores called the
+Bayesian scores which as we'll see average
+over all possible parameter values
+following the Bayesian paradigm that says
+that anything we have uncertainty over we
+should have a distribution over. And as
+we'll see that gives rise naturally to a
+score that avoids over fitting. [sound] To
+summarize the likelihood score, is a score
+that evaluates a model G by looking at the
+log likelihood of the data, relative to G,
+using the MLE parameters, for G. And that
+set of parameters was optimized to
+maximize the likelihood of D. And
+therefore, is very, very well geared to
+trying to capture the exact
+characteristics of the data, for better
+and for worse. So, for better, it gives us
+a very nice information theoretic
+interpretation of, the set of edges that
+are chosen, the set of parent that are
+chosen for a given variable, in terms of
+the dependencies that, That we encode in
+the graph G. Conversely, that same
+characterization also shows us that we're
+guaranteed to over fit the model to the
+training data unless we somehow
+impose constraints or otherwise penalize
+model complexity. [sound]

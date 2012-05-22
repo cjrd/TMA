@@ -1,0 +1,4 @@
+Others on the list can correct me if I'm wrong, but I believe it was this paper:
+Griffiths T, Steyvers M. Finding scientific topics. Proceedings of the
+National Academy of Sciences. 2004. Available at:
+http://www.pnas.org/content/101/suppl.1/5228.full

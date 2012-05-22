@@ -1,0 +1,8 @@
+I am wondering if somebody can recommend a good basic intro to LDA that
+is not too heavy on notation from the beginning. Specifically am
+looking for a prose explanation of:
+1. \theta | \alpha ~ Dirichlet(\alpha, ..., \alpha)
+2. for each word n = {1, ..., N}:
+a. Z_n | \theta ~ Mult(\theta)
+b. W_n | z_n, \beta ~ Mult(\beta_{z_n})
+Best regards

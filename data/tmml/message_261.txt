@@ -1,0 +1,15 @@
+Dear topic modelers,
+I have implemented hLDA although I seem to be getting rather strange
+results. In one case, a 4 level MAP tree was generated wherein the top three
+levels had one node each. For some reason, all of the function words
+congregated in the lowest of these three nodes (rather than the highest).
+There were four children of the third node, two of which were empty of
+words. I ran the code for 10,000 iterations.
+In another case, I had a 3-level tree where many of the nodes on the bottom
+level were empty. Most paths had very few documents (10 or less, with most
+having only one), with the exception of one path that had the vast majority
+of documents. Could this be due to my hyperparameter settings? (they were
+all set to 1).
+I'd appreciate any insight into why this might be happening.
+Thanks!
+David

@@ -1,0 +1,16 @@
+Hi all,
+<shamelessplug>
+I've just released version 1.1 of my LDA package for R.  It uses a
+collapsed gibbs sampler to implement many models including LDA, sLDA, MMSB,
+RTM, NUBBI.  I'm hoping the community will find this useful and let me know
+how I can further improve it.
+There are some pretty pictures on my blog that demonstrate the ease with
+which one can do lots of analyses using the package in conjunction with
+ggplot2:
+http://pleasescoopme.com/2009/10/01/lda-1-1-is-now-on-cran/
+http://pleasescoopme.com/2009/08/19/lda-for-the-masses-who-use-r/
+And it's on CRAN so you can just install it by running
+install.packages("lda").
+</shamelessplug>
+Cheers,
+Jonathan

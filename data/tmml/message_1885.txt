@@ -1,0 +1,9 @@
+Hi,
+Thank you very much for you answer. I received another answer, that might
+not made it to the mailing list. So I will just quote it here:
+Here are some brief answers:****
+That cleared a few things up for me. Also, I looked into gensim, a Python
+library that implements different topic based algorithms (
+http://radimrehurek.com/gensim/index.html). It uses cosine similarity.
+the best to you,
+Karsten

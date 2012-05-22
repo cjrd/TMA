@@ -1,0 +1,42 @@
+              This CAREER award will fund a project whose goal is the development of a better
+              understanding of the fundamental mechanism of self-organizing behavior at
+              surfaces and the significance of interfacial stress, through direct dynamic
+              measurements of the driving forces of self-assembly using scanning tunneling
+              microscopy (STM). Two-dimensional nano-arrays in thermal equilibrium of
+              large-scale order and size uniformity will be grown on strained interfaces
+              between a bimetallic atomic layer and a dissimilar substrate in ultrahigh
+              vacuum. Combining the structural information (from unique real-time
+              variable-temperature STM measurements) with quantum-size effects in the
+              electronic structure (from high-resolution UV photoemission) will guide the
+              development of new dynamic models to describe the evolution and properties of
+              nanoscale structures on surfaces. This research will form an integral part of
+              the proposed educational outreach program. The newly designed course entitled
+              "Modern Aspects of Materials Physics for High School Teachers" and the proposed
+              "Summer Materials Science Institute for High School Students" will address the
+              need to improve the science achievement for students by enriching science
+              teaching in the high school classroom.  In addition the graduate and
+              undergraduate students involved in this research will receive training in state
+              of the art techniques, providing them with a sound basis for their future
+              scientific careers.
+
+Spontaneous formation of organized nanoscale structures
+              on surfaces has been observed in many systems. They are thought to arise
+              because of a delicate balance between long-range strain field interactions and
+              short-range chemical forces that stabilizes these structures. A detailed
+              understanding of the driving forces, however, does not exist. The goal of this
+              CAREER project is to identify and control these interactions that have the
+              potential to surpass standard patterning technologies and thus, to lead the way
+              to higher density magnetic storage, more selective catalytic materials, higher
+              sensitivity chemical sensors, and perhaps, quantum computers. Unique real-time
+              measurements of the dynamics of individual atoms self-ordering into nano-arrays
+              will be performed on a home-built (scanning tunneling) microscope. The results
+              will guide the development of new dynamic models to describe the evolution of
+              nanoscale structures on surfaces. This research will form an integral part of
+              the proposed educational outreach program. The newly designed course entitled
+              "Modern Aspects of Materials Physics for High School Teachers" and the proposed
+              "Summer Materials Science Institute for High School Students" will address the
+              need to improve the science achievement for students by enriching science
+              teaching in the high school classroom.  In addition the graduate and
+              undergraduate students involved in this research will receive training in state
+              of the art techniques, providing them with a sound basis for their future
+              scientific careers.

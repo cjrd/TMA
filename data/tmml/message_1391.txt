@@ -1,0 +1,8 @@
+hi topic-models,
+does anyone have links to descriptions or summaries of industrial
+applications of topic models?  i've seen a number of seo examples and some
+arguments that search engines are applying them in some way, but aside from
+grouping wikipedia into topics, are there known cases where topic models
+have been applied?
+thanks,
+scott

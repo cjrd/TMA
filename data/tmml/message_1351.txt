@@ -1,0 +1,2 @@
+See the Wikipedia page on Latent Dirichlet Allocation and the tutorial on
+Gibbs Sampling by Hinrich.

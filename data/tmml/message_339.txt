@@ -1,0 +1,8 @@
+hi kevin,
+typically, asserts don't indicate problems.  they are used to find and
+diagnose them.  if the likelihood ever is NaN then i want the program
+to stop running because there is something seriously wrong.
+i'm not sure what your problem might be, but the likelihood should not
+be NaN.
+best,
+dave

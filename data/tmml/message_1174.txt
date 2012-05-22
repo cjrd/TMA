@@ -1,0 +1,16 @@
+This isn't quite true, for two reasons. First, in most situations it's
+not practical to implement slice sampling by sampling uniformly from
+the slice, and so some less aggressive update has to be used that
+merely leaves the uniform distribution invariant (that you can do this
+is the big idea in Neal's 2003 paper on the subject). Second, even if
+you can compute the boundaries of the slice analytically slice
+sampling still usually needs a few iterations to fully mix over the
+range of possible densities. For example, if you start in a region of
+very high density it's unlikely that a single iteration of slice
+sampling will take you to a region of low density, even if that region
+is enormous and has a ton of mass (e.g. if you're working with a
+heavy-tailed distribution).
+That said, in many cases replacing a Gibbs update with a single slice
+sampling iteration works great, and this could totally be one of them.
+Best,
+Matt

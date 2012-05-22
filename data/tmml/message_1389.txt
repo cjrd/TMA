@@ -1,0 +1,23 @@
+Just to add a touch more to what Sean has already pointed out.  Like
+others, for some problems I've found a useful plan is to run some flavor
+of topic analysis, followed by a characterization of the topic similarity.
+Dendrograms and heatmaps are convenient for presenting the results.
+problem.  On problems where the information is not coded as words and the
+'documents' are short (2-10 tokens), I've found Hellinger to perform very
+well. The additional 'clustering' provides great additional insight into
+the problem.  For text and large average document size (10^{2-4}), I
+recall that Jensen-Shannon was best (closely followed by Hellinger).  I
+ran through a number of different distant measures for my type of data and
+found Hellinger returned 'truth' significantly better than any other
+method, YMMV.
+FWIW - I worked with a colleague involved with topological mapping to try
+to understand why certain measures performed better with different
+problems and, the last time I was looked, there didn't seem to be a
+consistent rule of thumb. My intuition is that Hellinger is a type of
+spherical distance measure that 'pulls' points from the simplex onto the
+unit sphere and that seems to help provide some additional fidelity.
+Finally, the archives (2/27/11) contain a snippet of R code for Hellinger
+posted by David Blei in response to a question regarding paper (1) in
+Sean's note.
+Happy Trails,
+=Dave

@@ -1,0 +1,90 @@
+
+We previously showed a clique tree
+algorithm for performing max sum message
+passing. But, we didn't talk about how one
+can take the output of that algorithm and
+construct an actual map assignment. We
+just showed how we can get max
+marginals. So how do we compute a map
+assignment? Well it turns out this task is
+easy as our examples already indicated, if
+the map assignment is unique. Because at
+that point we have a single maximizing
+assignment at each clique. And we've
+already seen, that the value of that
+maximizing assignment is the theta value
+of the map assignment. So in our example
+that we showed before we had the A1B1C1
+assigned as the map assignment and we saw
+that the A1B1 was the maximizing
+assignment in clique1 and B1C1 was the
+maximizing assignment at clique2 and we
+also saw that due to the calibration
+property the choices of all of these
+cliques must agree which means it doesn't
+really matter whether we picked the value
+of B from this clique or that clique
+because they are going to give us exactly
+the same answer. So that's all well and
+good, but what happens is life is not as
+kind to us? So if the Map assignment is
+not unique then we might have multiple
+choices at some, of the cliques and we
+might have to make a decision. So for
+example, imagine that, at calibration, at
+convergence of the some part of algorithm,
+we have these two cliques over here and we
+can see that in this clique over here, we
+have two assignments, A1-B1 and A2-B2,
+both of which have the value two. And at
+this clique over here, once again we
+have two maximizing assignments. And the
+problem is we can't now look separately at
+each of those cliques and pick an assignment
+because at that point we might pick,
+say, this assignment in this clique and
+this assignment in that clique and now we
+have a conflict in regarding the value of
+the variable B. And it's not just a matter
+of saying, well, okay let's forget, for
+example, the fact that we picked the value
+B2 in this clique over here because what
+you, because we also picked the value C2
+and intuitively we can see that C2 goes
+with B2 and not with B1. So the value A1
+B1, the assignment A1, B1, C2 is not a
+good map assignment. So what we need to do
+is we need to pick. Not this one, but
+rather B1C1 in the second clique in order
+to agree with the first clique. And so,
+what we see that arbitrary tie breaking may
+not produce and actual map assignment. So,
+how do we actually address this problem?
+It turns out there's two main choices in
+terms of the solution. The first is to
+tweak the problem a little bit so as to
+make the map assignment unique so, for
+example if you add a tiny random
+perturbation to all of our factors, then
+with probability that's effectively one there's
+going to be a unique map assignment at
+which point we can go ahead and use the
+solution that we had if the map
+assignment was unique. [sound] The second
+is to use a procedure that picks
+assignments one at a time, building a map
+assignment clique by clique. So, we start
+out with the AB clique, we pick A1 B1. And
+then, when we go down to the next clique
+down line, we remember that we picked B1
+and we only are allowed to now pick an
+assignment that's consistent with B1. And,
+that turns out to be an alternative
+algorithm that whose complexity is
+effectively the same as that of
+calibrating the clique tree to
+begin with. And, so it's not more
+expensive. Each of these options is a very
+reasonable option. And both are used in
+practice for decoding the map assignment
+from a calibrated er clique tree.

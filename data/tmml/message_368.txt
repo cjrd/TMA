@@ -1,0 +1,8 @@
+Hi all,
+I understand that CORR-LDA can be used for modeling a corpus of images where
+each image is being represented by 2 entities (*r,w*). Now suppose I have
+one more entity to represent the images so that I have 3 pieces of
+information. Can the same model be extended to this case?
+Is there any such work reported?
+regards
+veena

@@ -1,0 +1,42 @@
+              Farley and Asimow
+EAR-0125784
+
+Despite the ubiquitous use of noble gases as
+              tracers of Earth processes and as chronometers, many fundamental aspects of
+              their geochemical behavior are, surprisingly, poorly understood. Among the
+              uncertain characteristics are the siting of noble gases in rocks and minerals,
+              mineral/melt partitioning behavior, solubility and diffusivity in important and
+              commonly analyzed minerals, and transport mechanism and rate through wet and
+              dry rocks. This proposal seeks to address a particularly critical
+              characteristic of noble gas geochemistry, about which neither data nor
+              theoretical understanding exist: at equilibrium, how do noble gases partition
+              between grain boundaries and crystals? Unlike all other elements, the noble
+              gases are uncharged and rather large atoms that do not fit in any obvious way
+              within most crystal lattices.  Thus it is not unreasonable to propose that
+              noble gases will partition into the defect-rich region between grains. This
+              possibility is not commonly considered, yet if true, would have profound
+              implications for several important fields of geochemistry, most notably
+              including studies of mantle evolution and noble-gas-based geochronology.  The
+              proposed research project seeks to investigate in a quantitative and
+              thermodynamically rigorous way the partitioning behavior of noble gases between
+              mineral interiors and grain boundaries in rocks. The conceptually simple
+              experimental technique relies on reactor-produced isotopes to eliminate the
+              concerns regarding atmospheric adsorption and contamination that plague studies
+              based on natural isotopes. In addition to producing otherwise rare isotopes,
+              neutron irradiation provides an initial condition closely analogous to in-situ
+              radiogenic noble gas production relevant in nature. Although isotopes of all
+              noble gases can be produced in many different substrates in this way, this
+              pilot study will focus on just one model system: the partitioning of 4He and
+              37Ar in polycrystalline aggregates of diopside, equilibrated after irradiation
+              at elevated temperature and pressure in the piston-cylinder device. Along with
+              partitioning measurements, samples will be characterized texturally and
+              chemically with the electron microprobe, SEM, and transmission electron
+              microscope to directly assess the physical nature, width, and chemistry of the
+              grain boundary region.
+The proposed work will develop and explore the
+              techniques necessary for establishing the role of grain boundaries in noble gas
+              behavior through study of this one simple system. If the irradiation technique
+              works for assessing He and Ar partitioning in diopside, it should be generally
+              applicable for other noble gases and other materials, and as such has potential
+              well beyond the initial pilot study.
+

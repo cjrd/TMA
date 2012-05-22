@@ -1,0 +1,8 @@
+Hi Dave,
+Yes, thank you very much for answering my question. Although you did
+misread my question initially, I kind of got the answer from your
+first reply.
+I have another question here. Does all documents have paths of the
+same length, where path is the number of nodes between root and leaf
+node.
+-Jake

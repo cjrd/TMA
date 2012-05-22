@@ -1,0 +1,4 @@
+Hi Qi,
+you can find Xuerui Wang's C++ implementation of the ART model here:
+http://www.cs.umass.edu/~xuerui/external/art.tgz
+Best Clauda.

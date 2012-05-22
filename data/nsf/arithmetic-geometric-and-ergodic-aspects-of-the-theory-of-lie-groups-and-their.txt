@@ -1,0 +1,21 @@
+              Abstract
+Margulis
+
+The problems to be investigated are in the area of the
+              theory of Lie groups and their discrete subgroups.  One of the main objectives
+              is to continue the program of establishing a homogeneous space approach as a
+              powerful tool in number theory.   Special attention will be given to the
+              problem of "effectivization" in Oppenheim conjecture and its quantitative
+              generalizations.  It is also proposed to continue to study recurrence
+              properties of random walks on Lie groups and their discrete subgroups on
+              homogeneous spaces, manifolds and general metric spaces.
+
+The theory of Lie
+              groups and their discrete subgroups is one of the central fields in
+              mathematics.  During the last few decades, it was realized that some aspects of
+              the theory can be applied to solve certain problems in number theory and
+              related topics, which could not be tackled by other methods.  This proposal is
+              related to rigidity theory that studies phenomena when rather weak data about
+              geometric and mathematical objects determines completely or almost completely
+              the structure of those objects.
+

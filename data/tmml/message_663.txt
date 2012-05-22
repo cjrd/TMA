@@ -1,0 +1,6 @@
+Hi --
+this is a nice trick to avoid re-summing the counts all the time. It
+allows differential updates to gamma.
+cheers
+gregor
+Yuan Miaolong wrote:

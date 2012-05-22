@@ -1,0 +1,29 @@
+LDA and similar models have been mostly studied and applied to modeling
+topics. With more texts that are rich-in subjectivity available on the
+Internet, we are facing new challenges to opinion/sentiment or
+subjectivity analysis, which may find their applications in product
+recommendation, reputation track and analysis, automatic e-rule making,
+etc. So, in this regard, LDA and the like may be used to model topic and
+sentiment simultaneously. A possible hidden variable to be modeled
+governs a series of strong association between topics and sentiments.
+These bindings of topics and sentiments may reveal purchase preference
+of buyers (e.g. prefer new features to new look or on the contrary when
+people buy new mobile phones); or they reveal underlying ideology that
+governs people's political orientation (e.g. prefer free market or
+prefer more government control).
+Existing LDA-based topic models see no difference among words in terms
+of semantics. So, several basic and preliminary tasks need to be solved,
+including topic detection, sentiment extraction and association of
+topics and sentiments, among other things. But some simplified treatment
+may be made for these tasks to facilitate the application of graphical
+models to topic-sentiment analysis.
+Want to know if there is previous or ongoing work of applying LDA or
+similar models (generative or discriminative) to applications such as
+business intelligence, review analysis, political orientation
+categorization and customer behavior categorization, to name a few.
+For those who might be interest in this topic, there is now a relevant
+event to submit interesting work or results in this regard. TSA'09 is a
+CIKM workshop on topic-sentiment analysis. CFP is now available on its
+website here:
+http://sites.google.com/site/tsa2009workshop
+Thanks!

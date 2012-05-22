@@ -1,0 +1,11 @@
+              Research focussed on quantitative investigations of the strong nuclear forces
+              will be performed.  The study of the strong forces among elementary particles
+              using quantum chromodynamics, the theory of the strong force, is of critical
+              importance in interpreting the results of experiments using high energy
+              accelerators and in testing the validity of quantum chromodynamics as a central
+              component of the "Standard Model" of elementary particles.  The planned
+              research, which will approximate space by a discrete lattice of points and use
+              computers extensively, will also contribute to the important national goal of
+              extending the capabilities of massively parallel supercomputers and of building
+              a pool of mathematical physicists skilled in state of the art of computational
+              physics.

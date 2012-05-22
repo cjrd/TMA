@@ -1,0 +1,12 @@
+              The primary topic is the interaction of two-electron atoms with intense laser
+              fields, which leads to detachment of the electrons.  An important mechanism is
+              recollision, in which one electron is removed from the atom and then oscillates
+              in the laser field, recolliding with the residual atom one or more times.  It
+              is found that double collisions can be more effective than single collisions in
+              removing the remaining electron.  The plan is to use models of the two electron
+              atom in analytic and numerical studies of these mechanisms of double
+              ionization.  It is also planned to study photorecombination, in which electrons
+              recombine with atomic ions in the presence of the intense laser fields. 
+              Undergraduate students will contribute to the project in computer programming
+              and analysis, but also in explaining the physics of the double-ionization
+              process.

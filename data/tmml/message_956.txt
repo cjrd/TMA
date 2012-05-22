@@ -1,0 +1,7 @@
+I should add that as I understand it, compute_ngrams.py should not be used
+to create the vocab file.  That script is meant to just find ngrams in a
+corpus using their permutation method independent of a topic model (I
+haven't ever actually used it, that's just what I understood from their
+paper and from looking at the code).  The vocab needs to be unigrams as you
+would have passed a vocab file to lda-c in order to infer the topic model.
+Matt

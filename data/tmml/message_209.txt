@@ -1,0 +1,8 @@
+hi laura, thank you for the clarification.
+here is the pointer i shared with you, in case others find it useful.
+Markov Chain Monte Carlo Methods and the Label Switching Problem in
+Bayesian Mixture Modelling
+A. Jasra, C. Holmes and D. Stephens
+http://www.stats.ox.ac.uk/~cholmes/Reports/
+mcmc_label_switching_holmes.pdf
+edo

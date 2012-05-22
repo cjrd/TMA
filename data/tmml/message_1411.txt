@@ -1,0 +1,5 @@
+Hi all,
+Does anybody know where can I find the code of Dependent Dirichlet
+Process? Please let me know, thanks a lot!
+Best,
+Christine

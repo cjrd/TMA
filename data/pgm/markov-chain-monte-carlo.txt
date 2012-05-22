@@ -1,0 +1,295 @@
+
+One of the most generally useful class of
+sampling methods is one that's very
+commonly used in practice, is the class of
+Markov chain Monte-Carlo methods. And those are
+methods that allow us to design an
+iterative sampling process that, through a
+sequence of steps, allows us to generate a
+sample from a desired target distribution
+that might be intractable to sample from
+directly. So what are these Markov chains,
+and how do you how do you use them? So. A
+Markov chain is a, is a method for sampling
+from a distribution P That is intractable
+to sample from. And so we've seen one
+example such a distribution P. If you'd
+like to sample from a distri-, from a,
+say, a Bayesian network, where we have
+some evidence we don't really know-how to
+sample from that. If you'd like to sample
+from a Markov network, we don't really
+know how to sample from that either, in
+general. And so, here we have examples of
+distributions P, and we'd like to come up
+with a way of generating even one example
+from the distribution P. So markup chain
+gives us a general mechanism for doing
+that. And what the markup chain does is,
+it defines an iterative process by which
+the first sample that you generate is not
+going to be from a distribution p, but
+ultimately as you move along. You are
+going to get closer and closer to
+generating a sample from p so. So let's
+understand what that Mm-hm, what that
+means. Hm, so we have a mark up chain and
+the mark up chain is defined over a state
+space which we are going to use X's to
+denote. And so here's an example of such a
+state space. This is a very simple state
+space. It starts with the zero point over
+here, and you could imagine it has four
+negative numbers to the left and four
+positive numbers to the right. And a markov
+ chain defines a probabilistic transition model,
+which given that I'm at a given state x, tells me
+how likely I am to transition to a different state x prime. 
+And that is the probability distribution
+as indicated in this formula here, so that's for any x, the
+probability, the sum over the probability
+of states to which you can transition is
+exactly one. So, for example, if, in this
+case, we have our little grass,
+grasshopper who starts out at state zero,
+we can see that it has a probability of
+0.25 of transitioning to the right. A
+probability of 0.25 of transitioning to
+the left. And a probability of 0.5 of not
+making any progress, and staying exactly
+where it is. And, in fact, that
+same general probability distribution is
+actually, in this example, replicated
+across the different states in the chain,
+with the exception of the states at the
+end, where, if the poor grasshopper tries
+to go to the left when it's at - four,
+it's going to hit the wall, and it's going
+to end up staying where it is, regardless.
+And so the probability in this case of
+staying is actually 0.75 corresponding to
+the two different cases that we just
+talked about. But anyway, this is a
+Markov chain, and it's, and you can
+imagine. Simulating a random process by
+which a grasshopper traverses the chain.
+And so initially it starts out with, let's
+say state zero and then, and then what
+happens as it moves, it selects to move
+left with probability a quarter, right
+with probability a quarter and, and stay
+the same place with probability 0.5. Once
+the [inaudible] moves it the left, it now
+does exactly the same thing. So let's
+think about the temporal dynamics of this
+type of process. We can ask what is the
+probability that a time, that a step P
+plus one, this is a step. What is the
+probability that at that time step, the
+state at time T plus one is equal to some
+value X prime? So we can get that by a
+recurrence relationship that looks at the
+state of time T. So if we had previously
+computed the probability distribution over
+where the grasshopper might be at time T.
+We can sum up over all possible states
+where X, where the grasshopper might be
+and asked if it was at, at state X at time
+T, what is the probability that it ends up
+with being, that it ends up going to X
+prime. So this, together gives me a
+distributional repairs. X comma X prime.
+Where this, which, which measure the
+probability that at the time T the
+grasshopper is at state X and the T+1 is
+at X prime. And since I'm only interested
+now in asking about T+1, I sum up or
+marginalize the time key step state X. So
+to go back to our grasshopper example, we
+can simulate this process and here is the
+first three steps of this. So, at time
+zero, the grasshopper is at state zero
+with probability one. At time one, it's
+going to be if -one with probability a
+quarter and if it's +one with probability
+a quarter, probability half it's stuck. At
+the same state. And now we can simulate
+the next step. So it's, at the next time
+step the probability that it moves,
+manages to move all the way to negative
+two is.25 squared because it considers two
+successful moves to the left. Here you
+have two successful moves to the right. >>
+At state zero you have e.g. A sum of
+different events which is the probability
+that it stayed in the same state twice,
+so.5 squared plus the two events that
+correspond to moving to left one and back
+to the right, one moving to the right and
+that the left each of which happens would
+probability.25 squared. So this is the
+example how you do this. Now it turns out
+that for many of these chains, and we'll
+describe conditions in a moment
+ultimately as the process evolves, the
+probability distribution kinda equalizes,
+which means that the probability that at
+time t, here at state x prime, is
+almost the same as the probability that at
+time t plus one here at x prime. So,
+sorta a kind of distribution over where
+you might be past the equalize. And, and
+so we can then consider what's called the
+limiting process, the limiting
+distribution you would get as you simulate
+the process for more and more steps. And
+that is typically denoted by pi, which is
+called the stationary distribution. It
+also has a bunch of other names but
+stationary is the most common. And if you
+plug in. You see basically take out this
+approximate equality and you can see that
+what we have is a condition on pie, is
+that the distribution at one
+time step is needs to be the, the
+probability of x prime and the stationary
+distribution needs to be equal to the
+summation over here, where pie now appears
+both in the left-hand side and within the
+summation on the right-hand side. Now it
+turns out that this concept of a
+stationary distribution is actually at the
+heart of Google's PageRank algorithm. So
+what they're actually computing, at least
+in the original PageRank, is the
+probability that if you take a random walk
+on the web that you end up at a particular
+website. So this notion of a stationary
+distribution is actually quite powerful,
+as we've seen. So lets take a simple
+example which is this three state
+markup chain shown here. So for example note
+that from state one there's a probability
+of 0.75 we are going to state two and 0.25
+we're going to stay in the same state. And
+we can now write down a set of equations
+that represent, what the fixed, what
+properties the fixed-point distribution
+needs to satisfy. And if you do that
+you're going to get the following
+equations. So, for example it tells me
+that pi of X1 Has to be equal to 0.25
+times 5x1 because soft transition here
+plus oops zero. Yes, sorry pi of x1 is
+equal to 0.25 times pi of X1 + 0.5 times
+pi of X3. Because there, if you were to pi
+that you can end up in X one in one of two
+ways. Either by starting on X one and
+staying there, or by starting out at X
+three and moving to X one which happens
+with probability 0.5. Similarly, at Pi(x2)
+you can end up either by being at X2
+and staying there, which is this
+transition. Or, by being at X3 and moving
+to X2, which happens with probability 0.5.
+And, so, this is a set of three
+simultaneous equations and three
+variables. This by itself is an under
+determined system because you can multiply
+all of the Pi's by a factor of a 100 and
+it would still, be a solution, but we can
+add to that the one constraint that says
+that all of the Pi's have to be, equal.
+The sum of all the Pi's has to be one,
+which, is because of the probability
+distribution and once you do that, you end
+up with a unique solution, to the system
+of linear equations and its not difficult
+to plug those Pi's into the system and
+confirm that indeed this is the stationary
+distribution, that satisfies these
+equations. By the way, through the
+grasshopper example that we showed on the
+previous slide the stationary distribution
+is the uniform distribution, so this has
+to be one of the dumbest ways of
+generating a sample from the uniform
+distribution. But, it does in fact
+generate eventually a sample from
+something that is very close to uniform
+distribution. So, when does a Markov chain
+converge to a stationary distribution? I
+said, many of them do but, it turns out
+that not all of them. And, so, a condition
+that guarantees convergence to a
+stationary distribution is something
+called regularity. So, a Markov chain is
+regular. If the following condition holds,
+and notice the order of the quantifiers.
+If there exists some number K, integer K,
+such that, for every pair of states. So
+this is the universal quantifier. The
+probability of getting from X to X prime
+in exactly K steps is greater than 0.
+Now notice what that means. It means that
+you pick the k first. And, and only and,
+and so you can't have a different k for
+different pairs of states. You can pick k
+to be 1,000 or a million, it doesn't
+matter for this purpose. But you need to
+pick it first and then there needs to be a
+way of getting from x to x prime in
+exactly that number of steps with
+probability greater than zero. It turns
+out that, that is a sufficient, not a
+necessary but a sufficient condition to
+guarantee that the Markov Chain converges
+to a unique stationary distribution
+regardless of its start state. So it
+converges and it converges to a single
+stationary distribution that's
+characterized by the equation that we saw
+on the previous slide. Now, what are some
+sufficient conditions for regularity
+because this one is a little bit hard to
+check and so one sufficient condition for
+regularity that people often use in
+practice, is first that every pair of
+states X and X prime need to be connected
+with a path of probability greater than
+one, sorry with probability greater than
+zero. And, for every state there is a
+self-transition. So you can always
+transition from a state to itself. So if
+you think about that, that means that if
+you take K to be, the diameter of this
+graph, so if you set K to be, the, the
+distance, between the furthest. Pair of
+states. Then, you can get between every
+pair of states using exactly k steps
+because you can take less than k and then
+just stick around for a while until you
+hit k, because of self-transitions. So
+this is a way of guaranteeing, that, that
+for this value K, you can get from every
+state, every state. And that's what
+people typically do, they typically add
+these self transitions to guarantee
+regularity. So to summarize we've
+defined the notion of a Markov chain,
+which defines a general dynamical system,
+or an iterative sampling process from
+which we can sample trajectories that
+traverse the space of the chain. Under
+certain conditions, such as the regularity
+condition that we defined, which is
+sufficient, although not necessary. This
+iterative sampling process is guaranteed
+to converge to a stationary distribution
+at, at the limit. That is, after we
+generate enough samples. And so this
+provides us with a general approach to
+sample from a distribution indirectly.
+Which means that if we have a distribution
+from which it's intractable to sample,
+this provides us with an alternative.

@@ -1,0 +1,7 @@
+Hi, All,
+Did anyone compile the sLDA in MATLAB? I tried this, but it cannot work.
+I don't know what's wrong. I just directly use the command "mex *.cpp".
+Could you give me any suggestions? If you can do this on your computer,
+could you send me your .dll or .mex file?
+Thanks,
+Lan

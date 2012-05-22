@@ -1,0 +1,17 @@
+In response to David Mimno's questions:
+Well, one needs to develop the mean field approximation.
+Other than using Ghahramani and Beal's elegant formulation
+("Propagation Algorithms for Variational {B}ayesian Learning", 2000),
+which makes mean-field simple, I cannot really say much.
+We've adopted the "left-to-right sequential sampler" for some
+other topic models, but not the mean-field importance
+sampler.  I expect the mean-field importance sampler could
+have more general uses.
+Well, the standard variational method for LDA looks at the
+distribution of the document proportions.  This instead looks at
+the distribution of word topics.  The standard variational method
+has a nice solution, whereas the one of Eq. 4 is an approximation.
+But, in our case, for importance sampling of the word topics,
+Eq 4 is sampling what we need.  The standard LDA variational approach
+doesn't help here, it is sampling the wrong variables.
+Not sure I've helped here ;-)

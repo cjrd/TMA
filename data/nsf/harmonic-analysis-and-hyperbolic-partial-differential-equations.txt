@@ -1,0 +1,55 @@
+              PI: Hart Smith, University of Washington
+DMS -
+              0140499
+
+
+Abstract:
+--------------------------------------------------------
+
+The investigator's research focuses on the behavior of solutions to
+hyperbolic equations in the setting of metrics of low regularity.
+The key tool is the construction, through wave packet techniques, of
+approximate solutions for linear wave equations with minimally regular
+metrics, which are then used to establish Strichartz and related estimates
+for exact solutions. One application of this work is to well-posedness
+for quasi-linear hyperbolic equations with initial data of low Sobolev
+regularity. In joint work the investigator has established a best possible
+result for general quasi-linear equations with quadratic growth in the
+inhomogeneity; proposed work investigates relaxing the regularity assumption
+in special cases such as the Einstein vacuum equation, where a null condition
+indicates that better results should hold. Wave packet techniques are
+also being used to establish norm estimates for eigenfunctions on
+Riemannian manifolds with metrics of limited differentiability.
+The proposed research includes establishing best possible bounds
+for compact manifolds with Lp pinched curvature. The investigator
+is also adapting the above methods to establish norm estimates
+on solutions to mixed-type wave equations with Dirichlet conditions on a
+convex obstacle. This is carried out by reflecting the metric across the
+boundary to obtain a Lipschitz metric on an open set. The geometry of
+the resulting geodesic flow suggests that wave packet techniques can be
+used to establish the same norm estimates on solutions as hold in the
+non-obstacle case.
+
+The proposed research involves the study of waves traveling in rough media;
+a rough medium being one where the physics which governs the speed of waves
+changes abruptly from point to point. By studying the properties of a
+special family of localized solitary waves, the investigator is able to
+answer questions about the possible concentration of energy that can occur
+for general waves traveling in such media. This work has important
+applications in the study of nonlinear wave equations; that is, situations
+where the wave can be considered to interact with itself. One such example
+is the gravitational field equation arising from Einstein's general theory
+of relativity, where the geometry of space itself is the object of the
+equation. Rough solutions, and thus a rough media, necessarily arise when
+considering what kind of singularities the theory can lead to. The research
+also has implications for investigating the fundamental vibrational modes
+in rough media. It is known that refraction in such media can lead to high
+concentrations of energy that can be detected by examining these modes.
+Work is being done to relate the possible degree of concentration of energy
+to the roughness of the underlying media. The research finds applications
+as well in studying the reflection of waves off obstacles. The techniques
+developed to study rough media are being used to show that waves reflecting
+off of convex obstacles must diffuse to the same degree as do waves
+traveling without reflection.
+
+

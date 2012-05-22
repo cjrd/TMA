@@ -1,0 +1,7 @@
+Using EM to learn alpha and beta values is an idea that works.  Gibbs
+sampling can be used for the E step within EM.  For some details see the
+ICML 2009 paper "Accounting for Word Burstiness in Topic Models" by Doyle
+and Elkan, available at http://cseweb.ucsd.edu/~elkan/TopicBurstiness.pdf
+Other earlier papers with similar EM/Gibbs methods do exist.  Perhaps
+their authors can provide pointers.
+Best wishes, Charles Elkan

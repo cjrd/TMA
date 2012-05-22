@@ -1,0 +1,24 @@
+              Li Isotopic Investigations of the Crust and Mantle
+
+EAR-0208012
+PIs: Rudnick,
+              McDonough, Tomascak
+
+
+Lithium, the lightest lithophile element, is fluid
+              mobile.  The large mass difference between its two isotopes makes measurement
+              of the Li isotopic ratio a powerful tool for tracing fluid processes in the
+              Earth. This project will complete Li isotope investigations of peridotite and
+              eclogite xenoliths from the mantle and sedimentary and granitic rocks from the
+              continents.  The goal is to understand the role that fluid processes play in
+              the growth of the continental lithosphere and to evaluate the inventory of Li
+              isotopes in major solid Earth reservoirs in order to constrain Li isotope mass
+              balance in the Earth system. The Li isotopic measurements will be performed
+              using MC-ICP-MS methodology on solutions of rocks and minerals. The PIs have
+              established this technique at Maryland and are routinely able to measure 40 ng
+              or smaller Li fractions to plus or minus1 per mil precision (2 sigma). The
+              newly acquired data sets will provide insights into the processes that control
+              the Li isotopic composition of the crust and mantle, define the d7Li of
+              potential contributors to subduction zone magmas and, ultimately, the influence
+              of crustal recycling on d7Li of the mantle over time.
+

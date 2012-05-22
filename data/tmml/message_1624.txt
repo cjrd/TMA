@@ -1,0 +1,19 @@
+(Forwarding to topic-models mailing list)
+Hi Eva,
+Thanks for writing. The answers to your questions are:
+1. This is one possibility, but it's more common in practice to use
+E[beta] instead of e^{E[log beta]}. You can get E[beta] by normalizing
+the rows of lambda so that they sum to 1.
+2. Likewise, it's more common to use E[theta] instead of e^{E[log
+theta]}. As in (1), you can get this by normalizing the rows of gamma
+so that they sum to 1.
+Gamma and lambda are free variational parameters, and lambda can be
+interpreted as the "output" of the algorithm insofar as any quantity
+of interest about the variational posterior over beta can be computed
+given lambda. Sorry for any confusion arising from referring to lambda
+as "the topics," it would be more correct (but much more awkward) to
+write "the free parameters lambda controlling the variational
+distribution q(beta)" everywhere.
+Hope that helps!
+Best,
+Matt

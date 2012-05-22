@@ -1,0 +1,1 @@
+Have you looked at the acl anthology network project at Michigan? We have a manually curated version of the acl anthology, with citation and some topic annotations.

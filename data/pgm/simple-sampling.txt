@@ -1,0 +1,453 @@
+
+A very different paradigm to
+inference and graphic model, is the use of
+whats called sampling or particle based
+methods, in those methods rather than
+trying to manipulate the exponentially,
+even infinitely large probability
+distribution as a whole we randomly
+sample, instan-, instances from that
+distributions and then use those instances
+as a sparse representation we can use
+those instances then to estimate various
+quantities that we care about regarding
+the statistics of the overall
+distribution, before we show how this is
+use in the context of graphical models, let's 
+go ahead and see how it's
+applied in a simple setting. So first of
+all, how do we use samples for estimating
+quantities that we care about? So, imagine
+that. Somehow and we're gonna talk about
+how that might happen. Somebody gives us
+or we manage to construct a dataset D
+which consists of a bunch of samples from
+a distribution P. And for the moment we're
+going to assume that these samples are
+what's called iid, which stands for
+independent, and identically distributed.
+So that's where the "i.i.d" comes from. And
+now let's imagine that we're trying to
+compute or estimate and this is all going
+to be approximate, approximate some-, a
+quantity of the, of the distribution P.
+And so for the moment let's focus on
+really simple case where we trying to
+figure out where these are binary valued
+random variables so the distribution P
+that were sampling from is. One where the
+probability that one equals one is P, and
+so think of this as tossing a coin. Now
+what is a reasonable estimator for this
+parameter, P? That we're trying to
+estimate. The probability that X falls
+heads. Well this is fairly a intuitive
+answer here. This estimator which we are
+going to call T -sub- D, Is simply
+obtained by looking at all of these
+samples that we got and counting the
+fraction of one. And if you think about
+it, that's a perfectly reasonable
+approximation, hm? Now more generally, for
+any distribution P, and any function F
+whose statistics we're trying to estimate,
+we can approximate the expectation of the
+function F relative to the distribution P,
+in terms of this weighted average of the
+value F. On the sample. And this is often
+called the empirical expectation. So this
+is how we might have, if we had some way,
+which we have not yet talked about of
+constructing or sampling from
+distribution, how we might use those
+samples for approximating various
+properties, relative to the distribution
+p, whether it's a probability of an event
+or the expectation of a function and know
+by the way that the expectation of the
+function subsumes the probability of an
+even because you can also take the
+expectation for example an indicator
+function, and that correspond directly.
+With probability. So for example this
+probability can be viewed as the
+expectation relative to P of the indicator
+function representing X equals one. The
+function that takes one, when x equals one
+and zero otherwise. So, let's think for a
+moment, just to be concrete about how one
+might go about sampling from a discrete
+distribution. So imagine that we have a
+discrete random variable X that takes
+on K values, X1 up to XK, and let's assume
+that each of these has the XI occurs with
+probability theta I. And so we have theta
+one up to theta K. How might we go about
+using computational tools to generate
+samples from this distribution? Well, most
+computers give us a random-number
+generator function that generates samples
+uniformly. In the interval zero one. And
+so if we wanted to convert that into
+something that samples from this discrete
+distribution. The simplest way of doing
+that is to basically split up the range
+and make this point say theta one, this
+point theta one plus two. theta-1, plus
+theta-2, plus theta-3, and let's leave it
+at that. So four values of the random
+variable. And now we toss, we use the
+random number function to sample from this
+space, so let's say it comes out here and
+we basically say okay, this was the range
+that corresponds to X1, X2, this is X3 and
+this is X4 and so since the point fell
+here, I'm going to declare that my random
+number, that my random value is X3. I
+sample again, and I sample in this, this
+point over here. I'm gonna say oh, okay,
+excellent. So that's how you would use a
+random number generator to sample from a
+discrete distribution, something that
+we're gonna end up using a lot later in
+this lecture. [sound]. So, now that we
+know how to sample. Let's think about how
+you might. What are some properties of
+sampling based estimation? And it turns
+out that sampling based estimation is, has
+some, what appear to be initially some
+very compelling performance guarantees.
+So, the first that I'll show is something
+that is called the Hoeffding bound. And
+let's parse this horribly complicated
+statement that we see over here. So, first
+of all let's go in, let's work from the
+inside out. This says my estimator, which
+is Td, remember this is my estimator for
+p. And this says. Is, epsilon away, is
+more than epsilon away, from P. So this
+has, I am badly wrong, my estimator is not
+close to the true value which is p. Okay. I
+am at least Epsilon away in one side or
+the other. Now notice that this is a
+property, of the data set. The, the set of
+samples that I generated. One set of
+samples is gonna give me one estimate, and
+different set of samples is going to give
+me a different estimate. So that brings us
+to the next layer out, which is, this data
+set is not a fixed quantity. It's sampled
+randomly from the distribution. And so, I
+might get good data sets. Data sets where
+the estimator is close to P. And I might
+get data sets where the estimator is far
+from P. So this says, what is the
+probability. Of a bad data set. For a
+sample set. Okay. So what, so that parses
+the left hand side. The right hand side is
+a bound on this probability of getting a
+bad dataset, a dataset where the resulting
+estimator is highly inaccurate. So we can
+see that, that probability grows
+exponentially, shrinks rather
+exponentially, in the number of samples M.
+On the other hand, it also shrinks with
+epsilon. So the higher, the lower the
+tolerance that we have for errors, the
+higher the probability of making an error
+of that magnitude. So if we need really,
+really tight bounds, then that we're not
+going to get that with very high
+probability. Nevertheless, something a
+probability that shrinks exponentially
+with a number of samples looks really
+good, right? The second bound that has a
+very similar form is the Chernoff bound.
+And the Chernoff bound has exactly that
+same composition. So here is our estimator
+again. And, here this is epsilon-away from
+p. But whereas this was an additive. This
+is an additive distance. This is a
+multiplicative distance. So this is p
+times one minus epsilon and is the lower
+bound and p times one plus epsilon is the
+upper bound. And once again this is the
+probability of getting a sample that, a
+bad sample set. And once again, we have an
+exponential, we have an, a bound on the
+error, which is written over here. And
+once again, the number of samples appears
+in the exponent, that makes us happy. We
+have the same type of epsilon squared
+term, that shows the, the dependence on
+the tolerance that's required. But here we
+have this one other term over here, which
+is. The actual value P to which we're
+trying, that we're trying to estimate. So,
+if we can give you a bound on the error
+that you get. The, this bound on, on how
+far away you are for P. A bound on the
+tolerance epsilon, and that also
+bound on the probability with which we get
+a bad sample set. We can now say, for
+given tolerance that we want. I'm sorry,
+for given error probability that we want.
+That is, How, if we want to guarantee that
+we're within epsilon with probability
+that's greater than one minus delta we
+need this many samples. And that's fairly
+straightforward algebra. You simply say,
+this is less than or delta, and then you
+just take logs and move things around, and
+it all comes out to be exactly this. And
+for the Chernoff bound, we have a similar
+expression. And, that gives us exactly
+that same kind of bound on M as a function
+of epsilon and delta. And in this case, P
+as well. So that looks great, right? We
+can give you, you give me an epsilon,
+which is your error tolerance and a delta
+which is the probability with which you're
+willing to take being wrong and I can say
+if you can only sample these many samples
+m then I can give you those probabilistic
+guarantee. They're not deterministic but
+they're a bit, pretty solid. Why is this
+not a perfect solution to our inference
+problems?'Cause each of these has
+significant limitations. So, let's think
+about the first, which is our additive
+bound. And let's imagine that you're going
+into a doctor, and you're saying, you
+know. What is the probability that I have
+some horrible disease? Well, that
+probability, hopefully for you, is still
+pretty low. So maybe, if you're unlucky,
+it's, I don't know, it's 1%, 2%. Well
+an additive error Epsilon on 1%. The
+[inaudible], the Epsilon that you need, to
+get something that's meaningfully bounded
+when the true probability P is 1%. That
+case really, really small. You can't do x1
+equals 0.01 because that could move you up
+from 1% to 2%. And that's the
+factor of two increase in your probability
+and that something that people really care
+about the difference between one percent
+and 2%. So you need something more like
+0.0001, or may be 00001 depending on you
+know, how confident you wanted to feel.
+And now this epsilon squared. Over here
+we're beginning to look pretty, pretty
+scary, in terms of the number of samples
+that are required in order to get a
+reasonable bound. So you might come and
+say well fine, let's use the Chernoff bound,
+because that gives me relative errors on
+epsilon. Right? so now if epsilon is
+sorry, sorry p. So if now p is small then
+by all means I can go ahead and just you
+know have a it's a multiplicative factor
+of p so I can say p plus or minus one
+percent of p. Well, unfortunately there's
+no free lunch because if p is small notice
+that it appears here in the denominator
+and so once again we need a number of
+samples that could potentially be quite
+large when we're dealing with small
+probabilities. So the main message from
+this, is that sampling-based estimation is a
+reasonable thing to do when P is not too
+small? When P's not too small, this works
+fine. When P begins to get smaller. We,
+this, the, the tractability of this is
+more in doubt. Now that we understand when
+we might expect this to work, let's think
+about how we might apply it in the context
+of Bayesian networks. So here is our
+little baby network that we've used for
+the student example. And what we'd like to
+do is we'd like to generate samples from
+this distribution. So this a distribution
+of, remember, P of D, I, G, S, L. And we'd
+like to sample from this high dimensional
+distribution. Not that high, but still. And
+the way in which this is done, is actually
+very natural. When you think about the
+sort of causal intuitions or forward flow
+of a Bayesian network. We start out say,
+by sampling the difficulty variable. And,
+the difficulty variable sampled from this
+distribution over here which is 0.6 versus
+0.4. And so, we use the trick we showed a
+couple of slides ago. And say it comes out
+d0. We then write d0 over here.
+Now, I'm going to sample I, and I'm going
+to toss a coin with probability 0.7-0.3,
+and say it comes out, i1. Now I get the
+sample grade. And because I previously
+sampled difficulty and intelligence I know
+exactly what distribution grade needs to
+be sampled from. It's the distribution i1
+d0. And, so, I now sample one of the three
+values of grade from the distribution in
+this row that I've picked out in the cpd
+and say it comes out g1. And I proceed to
+do the same so S is sampled from this
+distribution. And say it comes out say,
+s0. And G is, sorry, L is sampled from
+this distribution and say it comes out L1.
+And that's a sample. And I can do the
+whole thing all over again. And, so I can
+go ahead and. Erase all of the decision
+that I made before, and I can do the exact
+same thing so the blue sample might end up
+for example, where d1, i1 or I'll use this
+distribution and I'm going to end up say
+up g2 and I'm using this distribution,
+take this one, and I use this distribution
+and I get i0. And I can use this
+procedure to generate, as many samples as
+I want, using a very efficient forward
+sampling process where I sample, in what's
+called topological order. Topological
+means that I start from the roots and I go
+down. And I always sample parents before
+their children. And so if I want to use
+this process, which is very naturally
+called forward sampling. Where we say,
+want to compute, to estimate the
+probability of some assignment, little y,
+to some set of query variables Y. Then
+what we're going to do is we're going to
+generate a bunch of samples from that
+bayes net. As many as we think is, is
+adequate. And then, if I'm interested in
+some particular event, then I simply
+compute the fraction of my samples,
+fraction of samples. Where Y equals Y. And
+I can use that same procedure for
+computing other expectations. So whenever,
+if, if I have any other function of the
+sample, I can compute the sample, function
+on that sample and then average it out in
+exactly the same way that we showed on the
+first slide. And now we can go ahead and
+apply the bounds that we showed before. So
+for an additive bound we have this many
+samples that we need. And for a
+multiplicative bound we have this many
+samples that we need. And these are just
+copying over the two bounds that we showed
+before. So, that's great. But that notice
+gave me queries without evidence. And what
+do we do if we want to now ask a question,
+not just about but the probability of Y
+but the probability of Y given some
+evidence E = e? Well so now, it's not that
+easy to sample from a Bayesian network, if
+I have evidence that's not at the root. If
+I have evidence to the roots, then that's
+fine I know the value of that variable and
+I just stick that in and ignore it. You
+know everything else. But if I have a
+variable where that I observed someone in
+the middle, on the bottom of the network.
+Then what happens when I get there? Do I
+sample it, do I ignore it? I mean it seems
+a bit unclear. And so the simple solution
+that, and we'll talk about others, is an
+algorithm that's called rejection
+sampling. And what it does, is it does the
+most naive thing that you could possibly
+imagine. I generate samples from a Bayes
+net, and then if they don't agree with my
+evidence I throw'em out. And that course.
+The remaining samples. So the remaining
+sample after I throw out. All of the ones
+that are inconsistent with my evidence are
+actually sampled from the conditional
+distribution. Because this is the same as
+basically, reducing the distribution to
+sort of ignore the parts that are not
+consistent with my evidence. So that's
+great, because now I have samples from the
+right distribution. And once I have
+samples from the right distribution, I can
+go ahead and compute the fraction where
+Y=little y, or, for that matter, any other
+expectation that I care about. Good!
+What's the problem with this? Think about
+how likely I am to keep a sample. A sample
+is going to be consistent with the
+evidence with the probability which is the
+probability of the evidence. [inaudible]
+that's sort of the definition. So the expected
+number, the expected fraction of samples
+that I keep is exactly P(e). So now let's
+go back to, for example, a medical
+diagnosis setting, or, or, for that
+matter, the, the, the message decoding
+example that we talked about previously.
+How likely is your average evidence? So
+let's think about medical diagnosis. A
+person comes in, and they have their age,
+and their weight, and their gender, and,
+you know, 32 symptoms, and ten test
+results. And, you know, the fact that they
+were, they went on a trip to Europe last
+week. And all of these are pieces of
+evidence, and the question is
+how likely is that configuration of
+evidence? And the answer is vanishingly
+small. How likely is your random person
+off the street to exhibit this exact
+combination? Almost none. And similarly with
+a message example. How likely is, are you
+to get a particular configuration of noisy
+bits? Well, exponentially small also. So,
+the number of samples needed grows
+(supposed to be grows) exponentially with
+the number of observed variables. The more
+numbers you observe the lower the
+probability of the evidence. And this is
+an exponential decay. And so that means
+that, if you observe more than a couple of
+variables basically this is not a good
+algorithm. So to summarize, algorithm
+produces very simple procedure. It's very
+easy to generate samples for a Bayesian
+network and we showed how all these pieces
+fit together. And once you've done
+that there's really elegant and
+theoretically compelling epsilon-delta
+bounds as we've shown before. But their
+usefulness, unfortunately is limited. The
+additive bounds tend to be useless for low
+probability events. The multiplicative,
+multiplicative bounds are not good either
+because the number of samples grows. As a
+function of one over the probability of
+the event that we're trying to estimate.
+And all this is completely irrelevant as
+soon as you have evidence because as soon
+as you have evidence the number of
+required samples grows exponentially with
+the number of observed variables. Which
+means this is not a feasible solution for
+most practical settings. And one final
+note that's worth highlighting, this is
+the only case in, I think this, the entire
+section on inference where I talked about
+Bayesian networks specifically and that is
+because, because forward sampling unlike
+any of the other inference algorithms that
+we are going to talk about is just not
+feasible for Markov networks because
+there's no, you know, there is no notion
+of starting at the root. There is no root.
+There is no sort of any variable that you
+would naturally start with whose
+probability you actually know. And so we
+don't apply forward sampling to Markov
+networks.

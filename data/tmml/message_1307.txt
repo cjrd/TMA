@@ -1,0 +1,14 @@
+Hi all,
+I had built a multi-threaded extension of Prof. David Blei's LDA-C code more
+than 3 years ago, and I recently used it on a corpus of half-a-million
+documents with 150 topics on an 8 core machine with 24G memory, and it
+finished in less than a day's time. I remember a discussion thread about
+scalable implementations of LDA a while ago in this list, and I thought
+people on this list might find this implementation useful. You may download
+the code from https://sites.google.com/site/rameshnallapati/software. The
+tar bundle contains a README file that contains usage instructions, that are
+pretty much like Prof. Blei's LDA code except for an extra parameter that
+lets you specify the number of threads to run.
+I welcome any feedback, comments and suggestions on the implementation.
+Thanks
+-Ramesh

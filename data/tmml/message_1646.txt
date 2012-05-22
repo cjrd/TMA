@@ -1,0 +1,3 @@
+Hi all?
+??? Does anyone know the? difference between the variational inference and the Gibbs sampling used in the LDA? Does the method of variational inference only output the word-topic distribution? Or are there any difference? Thanks all!
+Chaorong Wu

@@ -1,0 +1,101 @@
+              Smith
+0071937
+     The investigator studies the mechanisms responsible for
+              the
+generation of slow, large-scale motions from fast, small-scale
+motions in
+              stratified turbulence and rotating, stratified
+turbulence.  Because the
+              earth's atmosphere and oceans are
+stratified fluids in a rotating frame, the
+              work is highly
+relevant to geophysical applications.  Many aspects
+              of
+wave-turbulence interactions are yet to be understood.  For
+example, it is
+              not clear if, when and how small-scale 3D
+turbulence in the presence of waves
+              can organize into large-scale
+coherent structures (as in 2D flows).  In purely
+              rotating flow,
+the investigator previously showed that white-noise forcing
+              at
+small scales leads to the generation of slow, large-scale,
+cyclonic
+              vortical columns, if the Rossby number is below a
+critical value of order one.
+               This is surprising because recent
+work using multiple scales analysis shows,
+              at first order,
+decoupling between fast, small-scale motions and
+              slow,
+large-scale motions for a variety of wave-turbulence systems
+including
+              rotating flow.  Several second-order mechanisms may be
+responsible for the
+              upscale energy transfer to slow modes in
+rotating turbulence.  This project
+              goes a step further towards
+understanding the large-scale dynamics in
+              geophysical flows, by
+investigation of upscale energy transfer in 3D
+              stratified and
+rotating, stratified turbulence.  The investigator explores
+              the
+necessary conditions leading to such upscale transfer and seeks
+to
+              identify the underlying mechanisms.  Simplified systems of
+dispersive wave
+              turbulence are used to test understanding and for
+the development of
+              statistical models.  To complement numerical
+simulations and analysis, she has
+              also planned laboratory
+experiments in a rotating tank, where the turbulence
+              is driven by
+differentially-rotating, rough top and bottom plates.
+     Over
+              relatively short time periods in rotating and/or
+stratified flows, there is
+              both experimental evidence and
+mathematical support for the decoupling of
+              slow, large-scale
+motions from fast, small-scale motions.  This means that, on
+              time
+scales of perhaps days in the atmosphere and weeks in the
+              oceans,
+large-scale eddies and currents evolve independently from
+small-scale
+              turbulence.  Another implication is that short-term
+climate change is
+              independent from rapid fluctuations of the
+conditions in the atmosphere and
+              oceans.  Our numerical
+simulations for longer times, however, show the
+              generation of
+large-scale, coherent structures from small-scale turbulence,
+              and
+this coupling may be important for long-term weather prediction,
+ocean
+              circulaton and climate change.  In the context of the
+atmosphere, one might
+              ask, can small-scale cumulus convection at
+length scales of about ten
+              kilometers generate large-scale eddies
+of several thousand kilometers in
+              extent?  The transfer of energy
+from fast, small-scale motions to slow,
+              large-scale motions in
+three-dimensional, wave-turbulence systems such as
+              rotating and
+stratified flows has only recently been discovered, even
+              though
+such transfer has been studied for decades in two-dimensional
+flows. 
+              The present study involves numerical simulations, modeling
+and analysis, and
+              laboratory experiments in a rotating tank.  The
+goals are to deepen our
+              understanding and improve our capability
+to predict geophysical phenomena.
+

@@ -1,0 +1,22 @@
+Dear David,
+Thank you for the recommendation of our paper.  I hope the following
+answers your questions:
+CVB has the same computational cost as VB per iteration.  Both scale
+as O(number of unique document-word pairs * number of topics).  Gibbs
+scales as O(number of total words in corpus * number of topics), which
+in big-O notation is larger than VB or CVB.  However, the constant
+involved in gibbs is smaller, and the memory footprint is generally
+smaller too, since for each word you only need to store which topic it
+currently belongs to rather than a distribution over topics.
+In normal VB, you have a central server to update the topics, then
+once this is updated, the updates for each document can be
+parallelized.  In CVB, you have a central server to collect
+expectations and variances in eq.(16) (summed over all ij) instead,
+which can then be used in updating each document in parallel.  You can
+think of this as updating the distributions over topics (q(z_ij)'s) in
+parallel rather than in series.  As with other variational algorithms,
+updating in parallel can, in rare occasions, cause oscillations, but
+this can be easily dealt with by damping the updates.
+Hope the above helps.  See you at nips!
+cheers,
+yw

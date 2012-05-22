@@ -1,0 +1,9 @@
+Hello List Members,
+Could someone pls help me with a suggestion on the format for input data for the LDA and HDP codes.
+-I am processing video data but using the topic modeling concept for word documents.
+Each video clip (document) is represented as a histogram of word frequencies.
+Each row m(i) represents a document, and each column n(j) represent the different words.
+Each cell (i,j) contains the frequency of occurrence of word j in document i.
+I then tried to use this in the topic discovery mode HDP.
+~\hdp\README SAYS:
+Data format

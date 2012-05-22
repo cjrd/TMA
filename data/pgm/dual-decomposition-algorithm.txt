@@ -1,0 +1,321 @@
+
+We previously defined the intuition for
+the dual decomposition algorithm, which
+takes an optimization objective, and
+decomposes it into a bunch of different
+slaves. And uses communication between the
+slaves, to try and get them to agree with
+each other about the overall, map
+assignment. So now, let's take this
+intuition, and convert it into an actual
+algorithm. So what we have here is, each
+slave gets its own pet objective function.
+So here is the objective function for the
+I slave, for the slave corresponding to
+the variable XI. And here is the objective
+function that the slave corresponding to
+the larger set S, is, trying to optimize.
+Now each of these initially has as a
+component its own local objective function
+that is assigned to it. But in addition
+we're going to introduce for each of those
+a set of terms. These terms that modify
+it's objective function, so as to try and
+get it to agree with, with the other
+slaves. Specifically, we're going to try
+and get the X, the I slave, to agree with
+the factors F. In which I appears, and
+conversely we're going to try and get, the
+F slave to agree with the slaves of
+the variable in it's scope. So let's see
+how that gets done. We are going to
+initialize all of these incentive terms,
+all of these lambdas. To be zero.
+Initially, each slave makes its decision
+based purely on its own local piece of the
+objective. But then, as the algorithm
+evolves, these incentives start to change.
+So how does that happen? At each iteration
+t, Each slave optimizes it's current
+objective. So, the I slave optimizes Theta
+I hat Lamda. Where Lamda is the current
+set of penalties, the current. Set a
+penalty and that gives us an assignment
+which we're going to call xi star. The f
+slave does the exact same thing. It
+optimizes it's own local objective which
+is [inaudible] f also, also using the same
+set of lambda and that gives it x half,
+sorry, x star of f. Which is this guy over
+here. Now let's see what happens if
+there's a disagreement between a large
+slave F and a variable I in it's
+scope. What we would like to do, is we
+would like to incentive them to agree with
+each other and so what we do is that's for
+all F. And all variables I and f, if they
+disagree. That is, it's the chosen
+variable for xi in. The assignment chosen
+by the factor F is different from the
+assignment I chosen by the I slave,
+then we need to change their incentive
+functions and we do that. By basically
+changing the, the, the lambdas. And so,
+specifically we see that, here when we
+look at the penalty for the pair FI, which
+is over here, we decrease. Alpha t would
+decrease by a factor alpha t which is
+greater than zero. The preference of XI
+star. Which is the value chosen by, by the
+I slave. And if we see that, if we look at
+that, we see that that's going to, dis-,
+disincentivize the I slave from picking
+the value that it's picked. Conversely, we
+increase the preference for the v-, for
+the value chosen by the F slave, which is
+this value over here. By the same amount,
+alpha P. Now, that changes the preference
+of the I slave, but it also changes the
+preference of the F slave by the exact
+same amounts, but in the opposite
+direction. Because notice that here, we
+have a negative sign. Whereas here, we
+have a positive sign. So it makes both the
+I slave and the F slave move, in the same
+direction, move in opposite directions, so
+as to agree with each other. So what
+happens as we continue doing these
+iterations over time? Well, one can show
+that under fairly weak conditions on these
+on these parameters alpha t, the lambdas
+are guaranteed to converge. What are these
+conditions? The alphas need to be big
+enough. So that they make a difference. So
+that if we sum all of the alpha-T's for
+alt-T, we end up with a diverging sequence
+that sums to infinity. On the other hand
+they need to be small enough so that we
+eventually achieve convergence, and that
+is obtained by the second condition on
+the, on the summation over here. Now, in
+fact, one can also show that not only do
+we get convergence we get convergence to
+unique global optimum, regardless of the
+initialization. So, the lambdas
+always converge. Now, the question is
+whether the implications that, of the
+convergence of the lambdas, and what
+happens at convergence. At convergence you
+that there's no more change. So at that
+point each of our slaves. Has its own
+locally optimal solution over its own
+variables, the ones that are in its scope.
+So, is that good enough? Unfortunately not
+always. That is even though we have
+achieved convergence, the solutions of
+different slaves may or may not agree on
+the variables that are shared between
+them. However if they do agree, if we can
+get all of the slaves to agree with each
+other, we can, we have, we can show that
+the shared solution is a guaranteed MAP
+assignment. So if the slaves agree, we
+have effectively solved our initial
+optimization problem, which is that
+assigning a MAP assignment. If that
+doesn't happen, that is, if the slaves
+have not agreed on their shared variables,
+then we need to solve what is called the
+decoding problem, where, where we need to
+somehow put together these different
+solutions that the different slaves have
+converged to, and come up with a single
+joint assignment. So how do we do that?
+How do we solve this so-called decoding
+problem? It turns out that people who
+constructed a range of different solutions
+for this, none of which have particular
+strong performance guarantees, but they
+often work quite well in practice. So for
+example, if we use a decomposition of the
+of the original problem into spanning
+thrill. Then each of the standing trees
+covers all of the variables, so we can
+take the map solution of any individual
+tree and say that is an assignment to all
+of the variables. So that's one approach.
+A second approach, that is not a
+one-winner takes all, is to have each of
+our slaves, vote on the XI's that our in
+it's scope, and then for each XI you just
+do the majority voting. So that's another
+approach. A different approach uses some
+kind of weighted averaging of the sequence
+of messages that are sent, regarding each
+x I through the course of the iterations
+of the algorithm. So each of these works
+reasonably well but what, it turns out
+that the right solution is to simply use
+multiple solutions and then pick the best
+one. And the critical observation here is
+that the scoring function feta for any
+assignment. Is something that we can
+easily evaluate, so why not do all of
+these? And use multiple trees and nd
+generate a whole collections of Xs and
+then evaluate theta X for each of those
+solutions and then pick the best one. And
+it turns out when you do that, you
+generally get solutions that are better,
+in terms of their overall score, than any
+fixed strategy. Now, the other nice
+aspect of this analysis. Comes back to a
+point we made earlier. In this in this
+module. With, which is for every
+lambda, this function that we define
+as l of Lambda. Is an upper bound on the
+value of the true MAP assignment. Now
+what does that imply. It means that if you
+give me any x that you think is a
+reasonable candidate. So this is a
+candidate. There's a MAP assignment. Now
+by definition it is either equal to the
+map or it's worse than the map. So,
+whatever the score is theta x is going to
+be less than or equal to the value of the
+map assignment because it certainly can't
+be any better than the maximum, true
+maximum. And that in turn is less than or
+equal to L of lambda. Now the point is,
+that this is a mystery. We don't know the
+value of the true MAP assignment but we
+can compute this and we can compute that.
+And that gives me a bound on how bad my
+current assignment is. Because I can com-,
+because I know that the difference between
+the true map assignment, and the score of
+my assignment is no worse than the value
+of L lambda minus the score of my
+assignment. Which mean that I can look at
+the difference between my assignment
+score, and L of lambda. And if it's small
+enough, so that this is small enough. I'm
+happy. Even though I might not have the
+true map assignment because I know that
+I'm close enough to the point that I don't
+care anymore. And so that's a really nice
+guarantee because it allows me to sort of
+stop and say, good enough. I don't know if
+I'm at the optimum but where I am I'm
+happy. So what are some of the important
+design choices in implementing dual
+decomposition. First there is the division
+of the problem into slaves In general not
+surprisingly larger slaves that
+incorporate more factors are more
+expensive to optimize. Because you're
+solving a more complicated optimization
+problem within each slave. But on the
+other hand they can be shown to improve
+conversion and often get you closer to the
+true MAP assignment. A second design
+choice is how to select the locally
+optimal solution for the slaves. In many
+cases, a slave might have more than one
+optimizing assignment, and some of them
+might be more in agreement with other
+slaves than, than some. And so, how do you
+pick within the set of equally good slave
+assignments, the one that's going to get
+you to convergence faster? The third,
+which we've briefly mentioned before, is
+how do you adjust the step size Alpha T so
+as to move things towards convergence
+fast, but still slow enough to generate
+convergence? There's some hard and fast
+rules that guarantee convergence but
+they're often quite slow. There's cleverer
+rules that still guarantee convergence and
+tend to work better in practice and this
+is an active area of research, that's
+ongoing right now. And then finally we've
+talked about the decoding problem, and the
+fact that there is many heuristic choices
+there, and so that's another design choice
+that one needs to make when implementing
+dual decomposition. So let's summarize
+different aspects of what we've talked
+about. First of all somewhere is the
+algorithm. Dual composition is a
+general-purpose algorithm for MAP
+inference, that works by dividing them all
+into fractable components, that could be
+potentially multi, multiple factors in a
+single component, or slave. Solves each
+slave locally. And then passes these
+lambda messages between them to try and
+get them to agree. It, a, and, we've
+talked before about the presence of
+tractable map subclasses. Any tractable
+mub sa, map subclass can be used in the
+setting as a slave. Allows slaves to
+be large and richly structured as opposed
+to just little tiny factors that aren't
+going to be only making very myopic
+decisions based on minimal information.
+One of the nice things about the
+dual composition algorithm, Is
+that it has a lot of theoretical backing
+to support it. So formally, and we're not
+going to go into the details of what this
+means, but just mention what this is
+actually doing from a formal perspective,
+this is a sub gradient, which is kind of
+like a gradient optimization, but not
+exactly. A sub gradient optimization
+algorithm on a problem that is a dual
+problem, this is MAP problem, and if you
+didn't understand that, that's okay. This
+is just sort of a pointer for those of you
+who might've seen some optimization before
+to kind of fit this into that world. But
+this view does provide some important
+guarantees, some of which I've mentioned
+in this presentation. First it gives us an
+upper bound on the distance to the between
+where we are in the true MAP assignment.
+And it provides us with conditions such as
+agreement among all of the slaves have
+guarantee a condition under which we have
+actually found a true exact map solution.
+And there's even some interesting analysis
+which I'm not going to present that tells
+us when one decomposition of the model it
+displays is better than a different
+decomposition of the model it displays.
+Now in practice, this algorithm has some
+significant pros and cons. On the pros it
+is very general purpose. You could really
+use it for any model if you just, if
+you're willing for example to decompose
+this slaves fine enough. Of the
+algorithms that are currently out there,
+it provides some of the best theoretical
+guarantees, in terms of convergence
+properties. And because of the way that
+its structured, it can use these very fast
+specialized map subroutines for solving
+large model components, like matching
+problems, for example, or modular, or, or
+subsets of edges that are, that are sub
+modular associative. On the other hand,
+it's really not the fastest algorithm out
+there. That is, there are algorithms that,
+when they work, work considerably faster
+than, than the dual decomposition
+algorithm. And more so than most, it has a
+lot of tunable parameters and design
+choices, which make it a somewhat finicky
+algorithm to apply in practice because one
+has to play around quite a bit in order to
+get the performance.

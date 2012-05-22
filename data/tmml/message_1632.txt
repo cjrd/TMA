@@ -1,0 +1,18 @@
+[Note that the question about "smoothing" is closely related to this
+question about hyperparameters. See also Asuncion et al, "On Smoothing
+and Inference in Topic Models"]
+There's an important issue with regard to hyperparameters that isn't
+covered in our paper (Wallach et al, 2009):
+One of the benefits of using an asymmetric Dirichlet over doc-topic
+proportions is that it encourages some topics to become prominent in
+every document, and thus helps to "absorb" very common words into a
+small number of these "large" topics.
+The other side of that behavior, however, is that using an asymmetric
+prior allows other topics to become very small, in terms of the number
+of tokens assigned to the topic. There is a very strong empirical
+relationship between relatively low token-count topics and topics that
+appear non-sensical to human users.
+The trade-off is therefore like this: Using asymmetric hyperpriors
+will avoid the "all my topics are identical and boring" problem, but
+may cause more "this topic looks like random words" problems.
+-David

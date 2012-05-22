@@ -1,0 +1,15 @@
+              0216176
+Bonner
+Texas A&M University-Corpus Christi, in collaboration with the
+              University of Texas at El Paso and CODAR Ocean Sensors, proposes to extend High
+              Frequency (HF) Radar data processing and hardware to improve the measurement of
+              surface currents and wave conditions, and to incorporate directly into radar
+              data output both transport and water quality model coefficients. The
+              collaboration between these Minority Institutions and Industry partner will
+              extend HF-Radar applications to predict the origins and fates of oil spills,
+              water quality, thermal and contaminant plume tracking, study coastal processes,
+              and develop improved techniques of real-time management, display and
+              distribution of HF-Radar data. In addition, the extended HF-Radar system will
+              improve navigational safety for Texas ports and waterways, which involve
+              complicated hydrodynamic systems with shallow enclosed, embayment features. 
+

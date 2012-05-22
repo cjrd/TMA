@@ -1,0 +1,6 @@
+The numpy package for Python (which I used in the online LDA code)
+includes support for the standard BLAS/LAPACK matrix operations. I'm
+pretty sure that if you build your own numpy from source then you can
+have it call your ATLAS-tuned libraries.
+Best,
+Matt

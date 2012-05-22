@@ -1,0 +1,45 @@
+              In the past decade the world has seen an explosion in Internet activity and with
+              it has come increased expectations for its performance.  Internet users now
+              demand faster and higher-quality service for applications ranging from
+              audio/video-on-demand to Internet telephony.  At the heart of these information
+              exchanges is the Transmission Control Protocol (TCP) and active queue
+              management (AQM) schemes which work together with the goal of preventing
+              network congestion and improving end-to-end performance.  However, it is
+              becoming increasingly evident that the present form of these schemes may not be
+              able to cope with the growing demands on the Internet.  It is well documented
+              that congestion-avoidance schemes relying on Drop-Tail routers are prone to
+              high-loss rates while AQM routers deploying random early detection (RED) are
+              difficult to tune.
+
+Motivated by this situation, this proposal is concerned
+              with the design of advanced AQM schemes.  This projects approach departs from
+              the prevailing techniques by explicitly relying on dynamic network models and
+              feedback control principles.  Central to the approach is the recognition that
+              AQM schemes are feedback control systems and that feedback control principles
+              provide essential tools for the analysis and design of AQM strategies.  The
+              absence of feedback control principles from the design scene so far is
+              apparently due to a lack of an analytical model of TCP.  Fortunately, this
+              roadblock has been recently removed by one of the PIs through the introduction
+              of a fluid-flow model that expresses TCP in a language that allows network
+              control engineers to analyze and design AQM schemes.  Indeed, in several recent
+              papers the PIs have accomplished just that by: 1) relating key network
+              parameters to the performance of AQM networks, 2) analyzing RED and suggesting
+              parameter settings for stable queue management, and 3) introducing a new AQM
+              scheme, the PI controller, that compares favorably with RED.
+
+The proposed
+              research builds on these recent results and has two objectives.  First, to
+              study the interaction of heterogeneous fluid-flows with AQM routers and
+              secondly, to investigate the scalability of PI controllers.  The first
+              objective is aimed at the recently developed TCP/AQM movel which assumes only
+              long-lived flows and ignores short-lived flows.  This research will develop
+              models of heterogeneous flows and explore their impact on the AQM analysis and
+              design.  In the second objective the PI controller is considered which was
+              originally designed and analyzed for a TCP connection encountering only a
+              single bottleneck router.  The scalability for the PI controller will be
+              explored where complex network topologies, consisting of many routers each
+              under local PI control, will be considered.  Unlike the development of the
+              original PI controller, this research will necessarily use, multivariable
+              feedback control techniques to establish network stability, performance and
+              robustness to network parameter variations.
+

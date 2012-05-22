@@ -1,0 +1,20 @@
+              ABSTRACT
+
+Proposal Number 	CTS-0211553
+Principal Investigator	Niels
+              Jensen
+Affiliation	U. of California, Davis
+Title	International Conference on
+              Computational Nanoscience (ICCN)
+
+
+Computational analysis of the nanoscale
+              structures, systems, and processes play a critical role to provide insight into
+              different approaches in nano science and engineering.  However, this field is
+              in the early stages of development.  The Computational Nanoscience Conference
+              will provide a forum for broad discussion of methods and ideas that will
+              otherwise be limited to a relatively small group of investigators.  It will
+              furthermore encourage the participation of students and faculty early in their
+              career to engage in this important field.  The international participation will
+              allow the most advanced methods and ideas to be discussed and evaluated.
+

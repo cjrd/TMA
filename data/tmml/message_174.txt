@@ -1,0 +1,6 @@
+hi avare,
+the mean value of the dirichlet is obtained by *not* subtracting alpha.
+E[\theta | \gamma_d] = \gamma_d / 1^T \gamma_d
+each row in the gamma file is one such gamma vector.
+best,
+dave

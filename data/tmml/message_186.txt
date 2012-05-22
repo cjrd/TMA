@@ -1,0 +1,7 @@
+dear pew,
+thanks for sending this along.  it's possible that you require more
+samples to estimate the likelihood.  if you find this property across
+many data sets and documents, it might also be a problem with the
+importance sampler.
+best,
+dave

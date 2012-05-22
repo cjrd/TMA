@@ -1,0 +1,22 @@
+dear cao juan,
+the code works using the minimal representation of the logistic
+normal (LN).  the idea is to parameterize the random multinomial with
+its minimal exponential family representation (i.e., K-1
+parameters).  those parameters are then drawn from a K-1 dimensional
+multivariate gaussian.
+more specifically,
+draw x_{1:(K-1)} from a K-1 dimensional gaussian
+set x_K = 0
+p(z|x) \propto exp{x}
+with this LN, every possible value of x is associated with exactly
+one point on the simplex.  the alternative, where X is drawn from a K
+dimensional gaussian, has the property that different values of X
+lead to the same point on the simplex.
+the variational posterior is also a minimal LN.  so, the Kth
+component of lambda is fixed at 0.
+that said, the program should not be assigning all the words to the
+Kth topic.  i know that several others from this list have gotten the
+code to work successfully, and i have too.  i'm not sure what that
+problem could be.
+all the best,
+dave

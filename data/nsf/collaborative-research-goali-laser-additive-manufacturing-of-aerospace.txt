@@ -1,0 +1,28 @@
+                   The objective of this project is to advance the fundamental understanding
+              of the Laser Additive Manufacturing processes that is necessary for the
+              industrial implementation of LAM in a wide range of aerospace applications. LAM
+              combines characteristics of conventional laser welding with the ability to
+              automatically produce complex geometries.  One goal of LAM is to reduce the
+              cost of manufacturing new aerospace components with complex features.  In
+              conventional manufacturing methods, complex features must be incorporated into
+              a casting or forging process, at substantial cost.  Cost savings can be
+              realized by using LAM to add complex features to easy-to-produce, generic
+              manufactured components.  Other applications of LAM include the repair of worn
+              or cracked components by selective material addition, which is substantially
+              more economical than part replacement.  In this project, the relationship
+              between deposition process variables and the three key deposit characteristics
+              critical to aerospace applications: melt pool size, residual stress and
+              microstructure will be developed. This understanding will be demonstrated
+              through model results presented in the form of process maps, which "map out"
+              the dependence of deposit characteristics on process variables such as laser
+              power and laser velocity.  Process maps will be of direct use to industry
+              researchers working to advance LAM processes.  
+     This research establishes
+              a strong collaborative team including academic researchers from three
+              universities, government researchers from two national labs, and several
+              industry partners.  The results of this work are expected to have a significant
+              impact on the widespread industrial implementation of LAM processes.  This
+              project will also expose graduate, undergraduate and high school students to
+              research integrating aerospace applications and manufacturing constraints with
+              the fundamentals of solid mechanics, heat transfer and materials science.  
+

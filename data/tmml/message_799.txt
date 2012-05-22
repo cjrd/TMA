@@ -1,0 +1,10 @@
+Hello Laura,
+Thanks for your email. I am aware of the perplexity measure to estimate the
+"goodness of fit" on the cross validation set.
+But from a representation perspective, is it not intuitive to expect that
+the LDA model is only a smoothed model of the Unigram representation.
+at least for those words that occur in the document, the ML estimate from
+the LDA should not contradict this evidence.
+Your inputs are greatly appreciated.
+Regards,
+Shivani

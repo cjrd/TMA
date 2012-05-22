@@ -1,0 +1,10 @@
+Hello list-members:
+I was looking for an implementation of discrete-time dynamic topic models
+(dDTM). I could find implementations of LDA, sLDA, cLDA, and more complex
+modifications of LDA. However, I could not find if the also implemented dDTM
+(I read the README files mostly).
+I am sure there must be an implementation of dDTM. Could you please point to
+the right place? (sincere apologies if it is included in lda-c or ctm-dist)
+Thanks in advance for your help.
+Best Regards,
+S.

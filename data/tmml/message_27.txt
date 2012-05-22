@@ -1,0 +1,15 @@
+Greetings,
+After reading the Latent Dirichlet Allocation paper, I wanted to
+experiment with the collaborative filtering example in section 7.3
+using lda-c.
+The equation is
+p(w|d) = Int(  Sum_z  ( p(w|z) * p(z|\theta) * p(\theta|d) )  d\theta )
+(where d is a vector of words ... d = (w_1, w_2, w3, ...) )
+If I understand correctly, p(w|z) is given by in the .beta file and
+p(theta|d_obs) is the .gamma output after using variational inference
+with d as an input.
+My question is:  is there any way to calculate/estimate the missing
+term p(z|\theta) given the output from lda-c?
+Sorry if my question seems a little dumb but I have trouble figuring this out.
+Thanks,
+alex.r.

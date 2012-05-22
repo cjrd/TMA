@@ -1,0 +1,22 @@
+hi scott and all
+figure 3 of our ICML paper was computed by the following process.
+(a) divide the data into ten folds
+(b) for each fold and each model,
+(i) fit the model to the data that are not in fold i
+(ii) use that model to compute the probability of the data in fold i
+(c) plot the per-fold average held out probability as a function of
+the number of topics in the model.
+the idea is that a better model will assign higher probability to the
+held out data.
+a better way to do this would be to compute each document's held out
+probability (as above) and then plot various statistics of all D held
+out probabilities.  (D is the number of documents.)  for example, you
+could plot average per-word held out probability or average
+per-document held-out probability.  (in contrast, the "error bars" in
+the figure in the paper have more to do with folds.  they aren't too
+helpful.)
+i hope this helps.  i also recommend wallach et al., "evaluation
+methods for topic models" and asuncion et al. "on smoothing and
+inference for topic models" for guidance about evaluation methods.
+best
+dave

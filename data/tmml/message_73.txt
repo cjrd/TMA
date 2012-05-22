@@ -1,0 +1,17 @@
+Hello Everyone,
+I'd like to understand how to move from a single value
+hyper-parameter \alpha (\beta) to a vector-valued \Alpha (\Beta) for the
+topic model Gibbs sampler. All the references I found so far construct the
+sampler based on a symmetric Dirichlet distribution with single
+hyper-parameters ( e.g refer to equation 2 in "Newman, Smyth, and Steyvers
+(2006). Scalable Parallel Topic Models. In *JICRD*" or the LDA saurce code)
+- How would the posterior estimate of the token's topic ( p(z_i =j
+|z_{-i},w_i,d_i,.) ) be computed if we have a vector of hyper-parameters
+\Alpha? Does it just involve substituting \Alpha_{j} & \Beta_{i} instead of
+\alpha & \beta, respectively, or it is more complicated?
+- How about the "W*\beta" in the denominator..
+I'd really appreciate the help as I lack the statistical experience to
+figure it out myself.
+Cheers,
+Loulou Sumait
+George Mason University

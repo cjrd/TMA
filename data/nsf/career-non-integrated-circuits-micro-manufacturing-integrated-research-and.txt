@@ -1,0 +1,12 @@
+              9703426  Zhang   Microelectromechanical System (MEMS) presents a challenge in
+              fabrication of truly three-dimensional (3D) and  high aspect ration
+              microstructures. Conventional IC-based approaches can not deliver a feasible
+              solution to this challenge due to its planar nature.  This research project
+              studies a novel non-IC laser-based technology for 3D high aspect ration
+              microstructures through micromachining.  A novel doping technique to achieve
+              ultra-shallow micromachining of 10-20nm in depth for CD-ROM will be
+              investigated.  The outcomes of the research could generate an array of
+              opportunities in the areas of optical data storage and bio-medical engineering.
+                 The research activities will be balanced by an education plan to improve the
+              quality of graduate and undergraduate education at the Pennsylvania State
+              University.

@@ -1,0 +1,28 @@
+              EAR-0125883
+Hofmeister
+
+A one-year investigation of thermal conductivity (k)
+              of crustal minerals using spectroscopic measurements and modeling is proposed.
+              The data will be supplemented with new measurements of the thermal diffusivity
+              of a plagioclase feldspar using a laser-flash apparatus. These measurements
+              will provide a benchmark of the PI's model for the lattice contribution against
+              available reliable data on thermal conductivity below room temperature for
+              quartz and feldspar, and against the laser flash measurements at high T. The
+              calibrated model will provide high T data appropriate for diffusion of heat in
+              the Earth, and will constrain pressure dependencies through the equation of
+              state. The purpose is to try and understand why the most recent heat flow data
+              from the continents is lower than that from the oceans (Pollack et al. 1993),
+              contrary to the expected correlation of high heat flow with high radioactive
+              contents, and to the partitioning of almost all of Earth's radioactive elements
+              into the crust The imbalance suggests that virtually no heat from the mantle
+              escapes through the crust. From the determination of k(T,P) for quartz and
+              feldspars, the continental crust can be approximated by a conductive cooling
+              model that incorporates internal heating. Requiring that the surface heat flux
+              and temperature be matched will give solutions relating the basal temperature
+              to the radioactive contents. Comparison of results with previous independent
+              estimates of radioactive contents (based on chemical inventory) and of
+              temperatures (based on phase relations) will set limits on these interrelated
+              quantities, and thus on the basal heat flow from the mantle. This result should
+              provide a constraint for convection models of the mantle.
+
+

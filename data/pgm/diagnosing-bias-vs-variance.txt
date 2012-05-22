@@ -1,0 +1,182 @@
+
+If you run a learning algorithm and it
+doesn't do as well as you are hoping,
+almost all the time it'll be because you
+have either a high finance problem or a
+high variance problem. In other words,
+either an under fitting problem or an over
+fitting problem. And in this case it's
+very important to figure out which of
+these two problems, is it high or variance
+or a bit of both that you actually have
+because knowing which of these two things
+is happening will give a strong indicator
+for whether their useful and how much they
+[inaudible] in trying to improve your
+algorithm. In this video, I'd like to
+delve more deeply into this bias. Various
+issues and understand them better. Let's
+what take around how to knock the learning
+algorithm and evaluate or diagnose whether
+we might have a bias problem or variance
+problem since this will be critical to
+figuring out how to improve the
+performance of the learning algorithm that
+you may implement. So you've already seen
+this figure a few times where if you fit
+too simple hypothesis that gives a
+straight line that under-fits the data
+complex. If you fit a too complex
+hypothesis then that might fit the
+training set perfectly but over-fit the
+data and this may be. Hypothesis of some
+intermediate level of complexities of some
+two polynomials of not too low and not
+high degree that's just right that gives
+you the best generalization for these
+options. Now that we're arms with the
+notion of train, training and validation
+the test says we can understand the
+concepts that bios and theories a little
+bit better. Concretely lets, let our
+training error and cross validation error
+be defined as in the previous videos just
+say the square error the average square
+error as mentioned. On the training sets
+all has measured on the cross validation
+set. Now let's plot the following figure.
+On the horizontal axis, I'm going to plot
+the degree of polynomial. So as it goes to
+the right, I'm going to, I'm going to be
+fitting higher and higher order
+polynomials. So will the left of this
+figure, where maybe D equals one, we're
+going to be fitting very simple figures.
+Whereas way here on the right of the
+horizontal axis, have much larger values
+of D. So a much higher degree of
+polynomial. And so here that's going to
+correspond to fitting. Much more complex
+functions to your training set. Let's look
+at the training error and the cross
+validation error and plot them on this
+figure. Let's start with the training
+error. As we increase the degree of the
+polynomial, we're going to be able to fit
+our training set better and better. And
+so, if D=1 then it's a relatively high
+training error. If we have a very high
+degree polynomial our training error is
+going to be really low maybe even zero
+because we'll fit the training set really
+well. And so as we increase the degree of
+polynomial, we find typically that the
+training error decreases. So, I'm going to
+write J. Subscript three of data there.
+Because our training error tends to
+decrease with the degree of polynomial
+that we fit to the data. Next let's look
+at the cross validation error. Or for that
+matter, if we look at the test set error
+we'll get a pretty similar result as if we
+were to plot the cross validation error.
+So, we know that if D=1. We're fitting a
+very simple function. And so we may be
+under fitting the training set. And so
+we're going to have a very high cross
+validation error. If we fit, you know, an
+intermediate degree polynomial, there's,
+we have a D equals two in our example on
+the previous slide, we're going to have a
+much lower cross validation error, because
+we're just fitting, finding a much better
+fit to the data. And conversely, if D were
+too high, so if D took on, say, a value of
+four, then we're getting over fitting, and
+so we ended with a high value for cross
+validation error. So, if you were to. Very
+[inaudible] and plot the curve. You might
+end up with a curve like that. Where,
+that's J.C.V. Of staza. Indicating that
+you plot J. Tesla's data, you get
+something very similar. And so, this sort
+of plot also helps us to better understand
+the notions of bias and variance.
+Concretely, suppose you've applied a
+learning algorithm, and it's not
+performing as well as you were hoping. So,
+so if your cross-validation set error, or
+your test set error is high. How can we
+figure out if the learning algorithm is
+suffering from high bias or if it's suffer
+from high variance? So the setting of the
+cause validation error being high,
+corresponds to either this regime or this
+regime. So this regime on the left
+corresponds to a high bias problem. That
+is, if you're fitting a overly low order
+polynomial, such as a D=1. When we really
+needed a higher order polynomial to fit
+the data. Whereas in contrast, this regime
+corresponds to a high variance problem.
+That is, if D, the degree of polynomial
+was too large for the data set that we
+have. And this figure just has a clue for
+how to distinguish between these two
+cases. Concretely for the high bias case.
+That is the case of [inaudible]. What we
+find is that both the cross validation
+error and the trading error are going to
+be high. So if your algorithm is suffering
+from a bias problem. The training set
+error, will be high. And you might find
+that the cross validation error will also
+be high. It might be a close. Maybe just
+slightly higher than a training error. And
+so, if you see this combination that's a
+sign your algorithm may be suffering from
+high bias. In contrast if your algorithm
+is suffering from high variance then if
+you look here. We'll notice that J-train
+that is the training error is going to be
+low. That is your fitting the training set
+very well. Where as your, cross validation
+error. Assuming that this is say the
+squared era. Which we're trying to
+minimize [inaudible]. Where as in
+contrast, your arrow on the cross
+validation set or your cos function in the
+cross validation set will be much bigger.
+Then your training set error. So, there's
+a double greater than sign. That's the
+math symbol for much greater than, denoted
+by two greater than signs. And so, if you
+see this combination of values then that
+might give you, that's a clue that your
+learning algorithm maybe suffering from
+high variance. And might be over
+emphasizing. And the key that
+distinguishes these two cases is if you
+have a high bias problem your training set
+error will also be high. Your hypothesis
+is just not fitting the training set well.
+And if you have a high variance problem.
+Your training set error will usually be
+low. That is much lower than your cross
+allegation error. So hopefully that gives
+you a somewhat better understanding of the
+two problems of bias and variants. I still
+have a lot more to say about bias and
+variants in the next few videos. But what
+we'll see later is that by diagnosing
+whether a learning algorithm may be
+suffering from high bias or high variance,
+we'll show you even more details of how to
+do that in later videos. We'll see that by
+figuring out whether a learning algorithm
+may be suffering from high bias or high
+variance, or a combination of both, that,
+that would give us much better guidance
+for what might be [inaudible]. Things to
+try in order to improve the performance of
+a learning algorithm.

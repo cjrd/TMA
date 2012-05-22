@@ -1,0 +1,5 @@
+To build intuition, one can also look at expected entropy. Suppose X ~ Dirichlet(alpha), and let H(X) be the entropy. Then one can calculate E_alpha[H(X)], which is the expected entropy under a given alpha. Plotting this shows expected entropy is increasing in alpha; that is, the larger is alpha, the more documents are "spread out" across topics. I find this useful because it allows thinking about how many effective topics (2^EH) are used out of the maximum possible k.
+I did it a while back for symmetric alpha, and (if memory serves) remember getting a closed form expression.
+Best,
+Dan
+________________________________

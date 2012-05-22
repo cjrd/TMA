@@ -1,0 +1,37 @@
+              	The aim of this project is to study mathematical problems associated with the
+              control and performance analysis of stochastic networks. The network models
+              being considered are heterogeneous, may have complex feedback mechanisms, and
+              allow for stochastic variability in arrivals, service times and routing.
+              Buffers in the network enable jobs to be stored that cannot be served
+              immediately. In addition, the models with control allow for dynamic sequencing
+              and alternate routing of jobs. Since the complexity of these network models
+              usually precludes exact analysis, the focus is on approximate models. Two
+              levels of approximation are being considered, namely fluid models (first order
+              approximations) and diffusion models (second order approximations).
+              Investigating the interplay between these models is an important feature of the
+              research. The two main topics are (i) dynamic control through sequencing and
+              alternate routing, and (ii) performance analysis for processor sharing
+              networks. With regard to topic (i), some authors have successfully used
+              diffusion control problems as formal tools for generating good control policies
+              for some specific network models. However, there are few rigorous analyses of
+              the performance of such policies. The PI is developing a systematic approach to
+              finding and interpreting solutions of diffusion control problems and to
+              analyzing the performance of the policies generated in this manner. Regarding
+              topic (ii), the processor sharing discipline is an example of a service
+              discipline for which a natural state descriptor involves a measure-valued
+              process (to keep track of the residual service times of all jobs in the
+              network). The PI is studying fluid and diffusion approximations of processor
+              sharing networks with the aims of understanding the dynamics of such networks,
+              obtaining measures of performance, and developing general tools for studying
+              measure-valued processes associated with network models. 
+	Stochastic networks
+              are used as models for complex manufacturing, telecommunications and computer
+              systems. A challenging problem for such networks is to design controls that are
+              simple to implement and yet are near optimal in an appropriate sense. Motivated
+              by such problems, a number of mathematical questions associated with
+              controlling and analyzing the performance of stochastic networks are being
+              studied under this grant. Since the complexity of stochastic network models
+              usually precludes exact analysis, the focus is on approximate models with a
+              hierarchical structure. As with recent work on the performance analysis of some
+              networks, the interplay between the levels in this hierarchy is an important
+              feature of the research.

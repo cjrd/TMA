@@ -1,0 +1,72 @@
+                   The explosive growth of computer networks, combined with rapid and
+              unpredictable developments in ap-plications and workloads, has rendered network
+              service inference and performance prediction increasingly de-manding and
+              intractable tasks. Nonetheless, end-systems must have knowledge of internal
+              network traffic con-ditions and servicing in order to validate, predict, or
+              enhance performance capabilities required by demanding applications. Network
+              service providers also have a great need for gauging the performance of their
+              own sub-systems without recourse to global strategies. Without special-purpose
+              network support, the only alternative is to indirectly infer dynamic network
+              characteristics using edge-based network traffic processing.
+     The INCITE
+              (InterNet Control and Inference Tools at the Edge) Project focuses experts from
+              the fields of
+networking, digital signal processing, and applied mathematics
+              towards the goal of characterizing network ser-vice based solely on edge-based
+              measurement at hosts and/or edge routers. This project blends recent work in
+              multifractal traffic modeling, quality of service (QoS) measurement, and
+              network tomography to develop a unique and innovative framework for network
+              service inference. The INCITE Project will develop new al-gorithms and
+              implementations using the latest in DSP-driven network processor technology,
+              providing a vital step towards better managing and understanding of Internet
+              performance. Our effort consists of three closely inter-related research
+              thrusts:
+1. Multifractal Traffic and Path Modeling: We will develop new,
+              highly accurate tools for analyzing,
+modeling, and measuring the dynamics of
+              network connections and end-to-end paths from the edge. Our
+approach to
+              inferring the competing cross-traffic load on a path utilizes an innovative
+              exponentially spaced
+probing sequence that is inspired by the theory of
+              multifractal random processes. These probing packet
+chirps balance the
+              trade-off between overwhelming the network with probes and obtaining statistics
+              rich
+enough for accurate estimates.
+2. Multiclass Service Inference: We will
+              develop a framework for clients to assess a network's core QoS
+functionalities
+              based on external and passive observations. Using the theory of traffic
+              envelopes, maximum
+likelihood estimation, and hypothesis testing, clients will
+              be able to assess a broad set of the network's
+multi-class control mechanisms
+              such as the service disciplines, link sharing rules and parameters,
+              and
+policing parameters.
+3. Unicast Network Tomography: We will develop a
+              novel methodology for network tomography that pro-vides
+link-level performance
+              characterization of networks of arbitrary topologies based on unicast
+              traffic
+measurements at a the network edge. A new network modeling framework
+              based on factor graphs will
+enable the statistical inference of link-level
+              service parameters (e.g., losses, delays, and service strate-gies).  A key
+              strength of our envisioned methodology is that it will enable scalable,
+              real-time tomography algorithms deployable on hosts and/or edge routers.
+    
+              The INCITE Project will develop the theoretical underpinnings of network
+              multifractal traffic processing,
+service inference, and link-level
+              characterization for complex, large-scale networks, and lead to
+              computation-ally efficient and scalable service inference algorithms based only
+              on traffic measurement at the network edge.  Moreover, in collaboration with a
+              leading provider of broadband Internet bandwidth (Enron) and an innovator in
+              networked signal processing hardware (Texas Instruments), we will build a
+              complete prototype implementation of the proposed algorithms, including modules
+              for multifractal traffic and path modeling, service inference, and network
+              tomography. This reference implementation will provide a first-of-its-kind
+              platform for obtaining a deep understanding of large networks and enable
+              principled designs of future network architectures, algorithms, and models.

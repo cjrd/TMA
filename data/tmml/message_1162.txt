@@ -1,0 +1,13 @@
+Hi,all
+Can anyone please to tell me how can I make the classification after getting
+alpha and beta?
+I mean I?ve already got V*K topic matrix and K alpha parameters, but not had
+a class model.
+For example, a document has a proportion of hidden topic like this:  30%
+software \ 30% coding language \ 40% algorithm
+How can I decide which field (Computer? Medicine? Economics?)  this document
+is?
+Any help would be most welcome!
+Thanks,
+JR
+jerrionnjr at gmail.com

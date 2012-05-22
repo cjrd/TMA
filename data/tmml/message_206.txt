@@ -1,0 +1,10 @@
+Laura,
+I agree with your hypothesis and analysis, and this was borne out in Walker
+& Ringger's 2008 KDD paper referenced earlier in the thread for the mixture
+of multinomial model. They ran an experiment to test for label switching
+which did NOT occur, for the reasons you mentioned. Interestingly, and both
+"averaging samples" (using the posterior marginal distributions of the
+individual latent variables) and taking the MAP/highest likelihood sample
+usually worked best. It would be interesting to see a similar analysis for
+LDA.
+Robbie

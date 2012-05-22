@@ -1,0 +1,9 @@
+              This project will utilize magnetohydrodynamic (MHD) simulations of the
+              magnetosphere-ionosphere system to examine the sensitivity of MHD simulations
+              to variability of the solar wind driver.  The work will compare the variability
+              induced by intrinsic, internal magnetospheric dynamics with the variability
+              caused by both temporal and spatial variability in the solar wind.  Case
+              studies will be done with real events to allow for comparisons of the
+              simulations with realistic conditions.  This work will provide a mechanism for
+              determining the accuracy with which MHD models might in the future be able to
+              predict space weather conditions.

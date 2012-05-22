@@ -1,0 +1,81 @@
+              DMS-0124201
+Robin Forman
+
+In recent years ideas from geometry have driven
+              some of the 
+most exciting developments in combinatorics such as Gromov
+              
+hyperbolic groups and CAT(0) spaces, combinatorial Morse theory,
+              combinatorial Ricci curvature, combinatorial differential 
+manifolds and
+              matroid bundles. The central unifying notion 
+in geometry is that of
+              curvature. Now, through these diverse
+geometric and combinatorial theories,
+              curvature is emerging 
+as a powerful tool and fundamental unifying concept in
+              
+combinatorics as well.  This Focused Research Group will 
+explore some of
+              the specific notions of combinatorial
+curvature driving current combinatorial
+              work, and also the 
+role of curvature as the basis for a coherent geometric
+              
+vision of combinatorics itself.
+
+The notion of curvature has been one of
+              the grand unifying 
+concepts in geometry and physics for well over a century. 
+              
+For example, Gauss, the originator of our modern understanding 
+of
+              curvature, showed that Euclidean geometry was distinguished 
+from other
+              geometries as being the geometry of a space with 
+zero curvature. As an
+              application he showed that it is
+precisely the curvature of the surface of the
+              Earth which makes 
+it impossible to draw a map of the Earth's surface (on a
+              flat 
+piece of paper) that accurately portrays all lengths and
+              angles.
+Riemann generalized Gauss's work to smooth spaces of higher
+              
+dimensions, and Einstein observed that Riemannian geometry
+was precisely the
+              right setting in which to describe his 
+theory of general relativity (in which
+              the curvature of the 
+universe is the result of gravitational forces). Partly
+              as a 
+result of Einstein's work, the last century saw an intensive
+              investigation into the curvature of smooth spaces.
+Combinatorics, roughly
+              defined, is the study of objects which 
+can be described by a finite amount of
+              information.  This is 
+precisely the mathematics that computers can do.  This
+              type of mathematics seems far removed from the geometric investigations 
+of
+              Gauss, Riemann and countless others.  However, there is a 
+growing collection
+              of  combinatorial phenomena which can best 
+be viewed as being finite
+              analogues of facts about the curvature 
+of smooth spaces.  The goal of this
+              proposal is to come to a
+coherent understanding of curvature as a
+              combinatorial notion. 
+In addition, bringing together researchers from a
+              variety of mathematical disciplines, we wish to bridge the chasms between
+              geometry, combinatorics, algebra and topology, using curvature 
+as the
+              unifying theme.
+
+
+ 
+  
+
+

@@ -1,0 +1,22 @@
+Hi David,
+Thanks for explanation -- it was very informative. However, according to
+your description, DiscLDA appears to me to be a conditional model for labels
+as well, since the label appears to be "upstream" to the  topic
+assignments, according to its generative process. Hence only sLDA appears to
+be truly generative for labels. Please correct me if I am wrong.
+Another important point I would like to point out is that only Labeled LDA
+(and perhaps the DMR model in less obvious ways) models multiple labels per
+document explicitly. To the best of my understanding, both Supervised LDA
+and DiscLDA assume a single label for each document, at least as published.
+Azeem seemed to be more interested in this scenario of multiple labels per
+documents, for which I believe Labeled LDA is quite appropriate,
+notwithstanding the theoretical differences between conditional and
+generative models. Besides in our experiments, we found that Labeled-LDA is
+quite competitive with multiple one-vs-rest SVMs trained on word-TF-IDF
+features. Hence, as a debugging step, I would run the SVMs first and see if
+the Labeled-LDA performance differs markedly from them. One clear advantage
+of Labeled LDA compared with the SVM classifiers is that the former can tell
+what passages of the document are assigned to what topics, while the latter
+does not model it explicitly.
+Thanks
+-Ramesh

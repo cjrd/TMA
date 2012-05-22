@@ -1,0 +1,8 @@
+I have thought it might be this, but I'm having the same problem with
+the ap.dat data from Blei's site.
+I'll try with fgetc instead of fscanf, I'll have to alter the data
+format, but since the file is produced by a Python script, it
+*shouldn't* be difficult.
+Best regards,
+Matteo Dimai
+working, I

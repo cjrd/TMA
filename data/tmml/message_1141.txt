@@ -1,0 +1,7 @@
+Also, does anyone know how number of topics tends to influence convergence
+rate of Gibbs sampling or other iterative inference methods, all else equal?
+Is there a soundly-established reason to believe that the likelihood of a
+model with set number of inference iterations done is directly comparable to
+the likelihood of another one with a different number of topics but run for
+the same number of iterations? Or is there a way of relating the two
+likelihoods?

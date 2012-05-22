@@ -1,0 +1,4 @@
+Dear all,
+When I perform estimating of LDA with commond ?./lda est 0,8 2 settings.txt ap.txt random output/", there is a error "3 [main] lda 12040 D:\cygwin\home\mycode\LDA\lda-c-dist\lda.exe: *** fatal error - cmalloc would have returned NULL". What is wrong with my code?
+Best regards.
+Luo

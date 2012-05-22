@@ -1,0 +1,1 @@
+I've successfully trained models with millions of documents in mallet. Are you simply running out of ram?

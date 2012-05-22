@@ -1,0 +1,15 @@
+              This research program will test current theories and models of the radiation
+              belts by comparing the theoretical and model results with observational data
+              obtained from the NASA Polar satellite and the GPS satellites.  It will develop
+              statistical descriptions of the particle pitch angle distributions for
+              different L-shells and different local times as a function of the phase of a
+              magnetic storm.  This will make it possible to distinguish among competing
+              theories for the transport and loss of relativistic electrons.  It will also
+              determine which mechanisms dominate the transport and loss processes under
+              different conditions.  In addition, the project will develop time-dependent
+              phase space density profiles for the events selected for study in the Geospace
+              Environment Modeling campaign on the inner magnetosphere and magnetic storms. 
+              These profiles will be made available to the space physics community to help
+              establish an understanding of when and where relativistic electron acceleration
+              is occurring.  The profiles will also be useful in constraining the theoretical
+              work currently being done.

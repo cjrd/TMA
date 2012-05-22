@@ -1,0 +1,5 @@
+Yes, even I am facing the sam eproblem. Say when I have some K number of
+\phi values, according to theory they should add upto one. They are no doubt
+addiing upto one. However, as you said, only one of the K values are
+becoming one and rest all are zero. Even I am worried with this problem.
+Anyone else has an answer for this?

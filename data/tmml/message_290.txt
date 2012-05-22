@@ -1,0 +1,10 @@
+dear wim,
+you are correct.  z and w are indicator vectors with a single 1 in them.
+z_n does not appear because it has been marginalized out.  its
+probability is p(z) = \theta_i.  we supress the usual \prod_i
+(blah)^{z^i} notation there since we are guaranteed that each
+(blah)^{z^i} will appear exactly once.  (you can marginalize z
+yourself from equation 2 to confirm this.)
+this is correct.
+best,
+dave

@@ -1,0 +1,37 @@
+              0070879
+Littlejohn
+	Quantum mechanics is the fundamental theory which
+              describes the behavior of atoms, molecules and nuclei.  This work concerns
+              relatively simple, or ``few-body,'' systems. In some cases it is possible to
+              use quantum theory and computer calculations to predict the outcome of
+              molecular reactions (one example of an application) which are difficult or
+              impossible to test in the laboratory, with ultimately an important impact on
+              biology, medicine and environmental sciences, among other fields.  The
+              application of quantum theory involves finding certain wave functions, which in
+              practice are expressed in terms of more elementary waves (the basis wave
+              functions).  The problem of finding an optimal basis is an old one in quantum
+              theory, but in recent years there has arisen a host of new ideas relevant to
+              this question from a variety of fields, including pure and applied mathematics,
+              physics, chemistry and engineering.  The object of this work is to integrate
+              these new developments, to search for and exploit fundamental, unifying
+              principles, and to apply them to basis set selection in few-body quantum
+              physics.
+	The new ideas include the following.  The first is wavelets,
+              a
+relatively recent development in applied mathematics, which has already had
+              an important impact on the processing, transmission and storage of signals and
+              data.  A second concerns phase space or semiclassical methods, which are called
+              ``microlocal analysis'' in the mathematics literature.  These methods are
+              characterized by a consideration of position and momentum together, an unusual
+              and relatively unfamiliar point of view in quantum mechanics where the
+              Heisenberg uncertainly principle limits the simultaneous knowledge of these
+              quantities.  A third concerns the mathematics of abstract, higher dimensional
+              spaces in few-body quantum problems, the so-called ``geometrical'' methods. 
+              Such methods have been a very active area of mathematics in recent years and
+              are well known in certain areas of physics.  They have not, however, been
+              exploited much in few-body quantum mechanics, although they are vital for
+              understanding the nature of the ``internal'' spaces of few-body problems. 
+              Finally, this work will take the corpus of methods which are in current use in
+              atomic, molecular and nuclear physics for basis set selection, compare them,
+              integrate them, search for generalizations and improvements, and apply them.
+

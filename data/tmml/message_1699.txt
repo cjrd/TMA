@@ -1,0 +1,15 @@
+Hi, folks,
+I am new for this group and the LDA topic model. We plan to use LDA as an
+dimension reduction tool for similarity computation.
+I had read related paper by Blei, but I found it was still difficult for a
+newbie to overcome the details. And I have a specific problem right now.
+We had gotten the *.gamma file by lda-c inference mode, and we know it is
+the variational Dirichlet parameters for each document;
+But in order to compute the Hellinger distance, we need to know the exact
+topic proportions by their possibilities.
+So my question is how can I get the exact possibilities of each topic for a
+document? (I am using lda-c)
+Any clues or comments for solving this problem are welcomed.
+Thanks in advance.
+Regards,
+Mingli

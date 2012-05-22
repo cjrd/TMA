@@ -1,0 +1,43 @@
+              This CAREER project at CUNY City College will experimentally explore the region
+              of applicability of kinetic theory applied to idealized and industrially
+              relevant granular materials.  Granular systems are collections of particles
+              that typically dissipate energy in collisions. A fundamental understanding of
+              these materials, comparable to our current understanding of fluids and solids,
+              does not exist today but would have far reaching impacts across many
+              industries, such as energy production, food processing, and pharmaceuticals. 
+              The assumptions used to derive granular continuum equations for mass, momentum,
+              and energy balance, by analogy to normal fluids but including energy
+              dissipation, are clearly violated for some of these granular systems.  The goal
+              of the experiments is to determine the conditions under which these equations
+              produce quantitatively accurate results and to modify the assumptions to
+              encompass a broader range of situations. The simple visual nature of these
+              experiments creates an ideal opportunity to incorporate research into the
+              undergraduate and graduate science curriculum through a combination of
+              individual focused research opportunities, an advanced research methods course,
+              and a granular materials course.  The students and post-docs involved in the
+              project will receive training in cutting edge research methods and will be well
+              prepared for careers in academe, industry and government
+
+This CAREER
+              development at CUNY City College project will experimentally determine the
+              region of applicability of competing theories of granular materials for both
+              idealized and industrially relevant systems and will incorporate this research
+              experience into the science curriculum.  Granular materials are collections of
+              small particles, such sand in an hourglass or grains in a silo.  A fundamental
+              understanding of granular systems, comparable to our current understanding of
+              fluids and solids, does not exist today but would have far reaching impacts
+              across many industries, such as energy production, food processing, and
+              pharmaceuticals.  The basic assumptions used to derive current theories of
+              granular flow are similar to those of normal fluids but are clearly violated
+              for some granular systems.  The goal of these experiments is to determine the
+              conditions under which these theories can be used to calculate accurate results
+              and to extend the theories to encompass a broader range of situations. The
+              simple visual nature of these experiments creates an ideal opportunity to
+              incorporate research into the undergraduate and graduate science curriculum
+              through a combination of individual focused research opportunities, an advanced
+              research methods course, and a granular materials course.  The students and
+              post-docs involved in the project will receive training in cutting edge
+              research methods and will be well prepared for careers in academe, industry and
+              government
+
+

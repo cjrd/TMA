@@ -1,0 +1,39 @@
+              0092487
+Stock
+
+It has been hypothesized that a key feature contributing to
+              the capacity of organisms to evolve is the organization of their overall
+              morphology into independently varying units, or modules, that develop under the
+              control of independent genetic pathways. The proposed research uses the
+              vertebrate dentition to examine whether such modular organization applies to
+              meristic systems, i.e. those composed of multiple similarly-constructed parts.
+              The specific hypothesis to be tested is that regions of the dentition of fishes
+              known to evolve independently develop under the control of different sets of
+              genes. Developmental genetic analyses of the dentition will be carried out in
+              two species, the zebrafish (Danio rerio), and the Mexican tetra (Astyanax
+              mexicanus). The former species, a popular model system for developmental
+              genetic studies, possesses teeth only in the pharyngeal region, while the
+              latter possesses both pharyngeal teeth and teeth lining the margins of the oral
+              cavity. The objectives of the project are to determine the extent of modularity
+              in the genetic control of tooth development in oral and pharyngeal regions, and
+              to characterize the mechanism(s) by which the zebrafish lineage has lost oral
+              teeth while retaining pharyngeal teeth. The genes to be examined are members of
+              the Fgf (fibroblast growth factor), Hh (hedgehog), and Bmp (bone morphogenetic
+              protein) signaling pathways known to be involved in the development of the
+              mammalian dentition. Modular genetic control of the the dentition will be
+              investigated by comparisons of oral and pharyngeal regions within both species.
+              These comparisons will include gene expression patterns, the effects of
+              pharmacological inhibition of Fgf and Hh signaling, and (in the zebrafish) the
+              consequences for morphology and gene expression of mutations in components of
+              each signaling pathway. Potential outcomes include the use of identical genetic
+              pathways triggered by separate initiation signals in the two types of teeth
+              versus the existence of extensive differences throughout the pathways.Further
+              insight on modularity in the dentition can be gained by an understanding of the
+              mechanisms of region-specific tooth loss. Evolutionary loss of oral teeth in
+              the zebrafish lineage will be investigated by comparison of gene expression
+              patterns between the oral regions of both species. Genes exhibiting differences
+              in oral expression are likely to have been involved in the independent
+              evolution of oral and pharyngeal teeth. The data to be collected in the
+              proposed research will suggest mechanisms for the development and evolution of
+              members of other meristic systems such as scales and limbs.
+

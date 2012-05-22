@@ -1,0 +1,10 @@
+Hi Yohan,
+I believe, you can compute this using the standard relation
+E[X_i*X_j] = CoVar(X_i,X_j) + E[X_i]*E[x_j].  (1)
+(Please refer to http://en.wikipedia.org/wiki/Covariance for more details).
+Now CoVar(X_i,X_j) = -a_i*a_j/(a_0^2*(a_0+1)) where a_0 = \sum_k a_k and
+E[X_i] =a_i/a_0  (please see
+http://en.wikipedia.org/wiki/Dirichlet_distribution)
+Substituting these two in (1), you get your answer.
+Thanks
+-Ramesh

@@ -1,0 +1,6 @@
+Hi, All
+Did anyone use the published sLDA code? Could we discuss about how to use
+it? I would like to run the sLDA?codes under VC++ or Matlabe on Windows
+OS, but I met some difficulties. Could you give me any suggestions?
+Thanks,
+Lan

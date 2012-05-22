@@ -1,0 +1,11 @@
+Hi Song, just noticed this again going back over things.  I
+implemented a collapsed Gibbs / particle-filter version of LDA that
+had this as one of the goals available at code.google.com/p/lda1pfs .
+It doesn't store the theta (doc-topic) matrix directly but rather
+resamples it on demand from the given data and the phi (topic-word)
+matrix and can also subtract out a given row from the model.  The
+vocabulary size is still monotonously increasing, though, and it
+doesn't internally check to make sure you're subtracting out a row
+that was already put in, which could lead to weirdness if you're not
+careful.
+Anthony

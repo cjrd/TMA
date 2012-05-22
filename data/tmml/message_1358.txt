@@ -1,0 +1,11 @@
+Hello All,
+I have a problem about the distribution of \theta in LDA model. In Dr
+Blei's paper, it says that \theta is a Dirichlet variable. However, in
+"Topics over Time: A Non-Markov Continuous-Time Model of Topical Trends",
+Xuerui Wang takes it as an the multinomial distribution of topics(table 1.
+"?_d: the multinomial distribution of topics speci?c to the document d").
+In my understanding, "?" is the distribution of documents over topics,
+and it should be multinomial distribution. I wonder why it is sampled from
+Dirichlet distribution in LDA model.
+Thanks a lot.
+xueliang

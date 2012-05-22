@@ -1,0 +1,13 @@
+Hi Lui Qui,
+If you just want to use LDA-style models without digging deeper into
+theory, you might want to have a look at the hierarchical bayes compiler
+http://www.cs.utah.edu/~hal/HBC/
+It generates source code for gibbs samplers from a model specification
+(*.hier file).
+AFAIK it supports learning dirichlet hyperparameters (alpha/beta) [1]
+and it supports the chinese restaurant process (refered to as
+Pitman-Yor) you may need for estimating K [2].
+Cheers,
+Laura
+[1] http://www.cs.utah.edu/~hal/HBC/LDA.hier
+[2] http://www.cs.utah.edu/~hal/HBC/mix_mult_py.hier

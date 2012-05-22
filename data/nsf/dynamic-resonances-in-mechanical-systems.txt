@@ -1,0 +1,20 @@
+              PI/Institution: Donald Dane Quinn university of Akron
+Proposal Number:
+              0084162
+Title: Dynamic Resonances in Mechanical Systems
+
+
+This Small Grant
+              for Exploratory Research (SGER) project will be used to develop an experimental
+              multi-component structure which exhibits resonances that depend on the state of
+              the system due to coupling of the dynamics associated with the various
+              components.  The proposed coupled system will slowly move in and out of a state
+              of resonance as time evolves, a phenomenon that for example is encountered in
+              multi-bladed turbine disks.  Successful completion of this facility will enable
+              investigations on the development of tools for implementation of reduced-order
+              models and equations that capture the pertinent coupled dynamics these complex
+              systems.  If successful, the proposed project will also enable advances that
+              can lead to the development of tools for capture of alternative models of
+              complex dynamic coupling, such as those introduced by intermittent contact and
+              friction. 
+

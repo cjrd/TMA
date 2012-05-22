@@ -1,0 +1,405 @@
+
+One very important variance of Markov
+networks that is probably at this point
+more commonly used than other kinds than
+anything that's not this type is called a
+conditional random field. So conditional
+random field you can think of it as a
+something that looks very much like a
+Markov network but for a somewhat
+different purpose. So let's think about
+what you're trying to do here. This class
+of model is intended to deal with what we
+call task specific prediction. That is,
+where we have a set of input variables. Or
+observed variables, X. And we have a set
+of target variables. That we're trying to
+predict Y. And the classic model is
+intended to, is designed for those cases
+where we always have the same types of
+variables as the input variables and the
+same types of variables as the targets.
+And we're always trying to solve what is
+essentially the exact same problem. Or the
+exact same type of problem. So let's think
+about that as, let's think about two
+examples along these lines. So now going
+back to the example of image segmentation,
+here we have the input is always a set of
+pixels. With their values, pixel values,
+which we can process to produce more
+expressive features, like histograms of
+colors and textures but this is sort of
+not relevant at this point, but it will be
+in a minute. So my input X is pixel values
+and a processed features [inaudible] And
+my target variable's Y is a class. For
+every pixel. So for example, where by
+class I mean, you know, grass, sky, cow,
+water, and so on. And we're always trying
+to, we design the model so as to solve
+this problem of going from X to Y. And we
+want to solve that problem. In some of the
+text processing and NLT problems that
+we've discussed, the, the pixel, the input
+X are the words in a sentence. And the
+output that we're trying to derive is, for
+example, the labels. Of the words, where
+again, the labels might be in this case
+things like person, location, organization
+and so on. And once again, this is always
+their input, the words and the output is
+always the labels. So Why, what is the
+problem? So fine, so we want to solve
+this, this kind of a prediction problem.
+Why not use just a regular old graphical
+model in the same way we've done so far.
+So let's think about what some of the
+issues might be with that. So imagine that
+we are trying to predict, in this case CI,
+which is the label of a particular
+super-pixel in this case, I. And we're
+going to go ahead and process our features
+of that super pixel to provide a range of
+different color and texture histograms
+that represent different ways of measuring
+the appearance of the super pixel. So, in
+this case that's my Y, just as in the
+location of previous slide, this is my
+target Y and these guys down here are my
+Xs. So what's the problem with this? The
+problem with this is that these features
+that are often much more informative
+about, about these about the classes of
+pixel are very correlated with each other.
+So, for example, the, the texture
+histograms which tell us sort of the
+directions in which lines go in a
+particular super pixel, they're very
+redundant in terms of the kinds of
+structure, the kinds of textures that they
+measure. And so if you have features here
+that are very correlated with each other,
+so where two variables or two features
+have a lot of redundant information. If we
+represent this in a [inaudible] model, as
+I drew here, where the features are
+independent. Given the label. Then, I'm
+effectively ignoring that correlation
+structure. Now why is that bad? It's bad
+because it allows me to count the same
+feature again and again and again and
+again and again. So it's I have five
+copies of a feature or five very
+correlated, related features that
+effectively measure the same thing. I
+count it five times which means I get
+really confident because of this one
+feature. If I have a hundred copies of
+that feature I count that a hundred times
+so it, and again it pushes me towards very
+skewed probability distributions that
+don't really, that are not really good
+reflections of, of my true beliefs because
+they make incorrect independence
+assumptions. Well, fine, so let's make
+correct, independent assumptions. Let's
+add a bunch of edges To capture the
+correlations. Well, that turns out to be
+really hard, because once you start doing
+things that are not trivial features,
+figuring out how they're correlated, and
+furthermore even trying to put in these
+correlations gives rise to ... So first of
+all this is hard to figure out. And it
+gives rise to densely connected models. If
+I start putting in all these edges between
+these features. So a completely different
+solution to this problem, basically says,
+well, I don't care about the image
+features. I don't want to predict the
+probability distributions over pixels. I
+want, I don't care to predict, you know
+I'm not trying to do image synthesis. I
+don't care about the probability of
+having, you know, green pixel next to
+another green pixel next to a brown pixel.
+I'm trying to use a [inaudible] given to
+me, something that is already given which
+is the features X and the only thing I
+really care about is to model the
+distribution over Y. So I've reformulated
+my problem, instead of modeling. The
+joined distribution of X and Y together.
+So instead of doing this, I'm going to
+model a conditional distribution of Y
+given X. Where I'm not trying to capture
+the distribution over X. Now if I'm not
+trying to capture the distribution over X,
+then I don't really care about the
+correlations between them, and we'll see
+that a little bit more clearly when we
+look at an example in a little bit. But
+before we do that, let's first give
+ourselves the formal definition of this
+thing which is called a, a CRF which
+stands for Conditional Random. Field. And
+a conditional random field at first glance
+looks just like a Gibbs distribution. So
+just like a Gibbs Distribution, we have a
+set of factors. Each with their scope. And
+just like the [inaudible] distribution I
+multiply The factors I get an unnormalized
+measure. And In order, and now, so far
+it's exactly the same except that I have
+an X and Y on, in the, as the arguments of
+a normalized measure rather than just a
+set of random variables. This is where the
+difference comes in, if I want to model a
+conditional distribution of Y given X, I'm
+going to have to put X on the right-hand
+side of the conditioning bar, which means
+I'm going to have a separate normalization
+constant, a partition function, that is a
+function of X. [inaudible] and so what
+does that mean? It means that for any
+given X, I sum over Y The change that's
+for any given X I'm going to have the sum
+of all the Y's that correspond to that X,
+and then I'm going to construct the
+conditional distribution by normalizing by
+I'm going to start a visual distribution
+for Y over Y for any given X. This
+shouldn't have a tilda. By dividing by
+this X specific partition function. So to
+be a little bit more concrete, let's
+imagine I have a table here And I'm going
+to make life simple for our selves, for my
+self and this is my [inaudible] for X1 Y
+X0Y0 X0Y1 X1Y0 and X1Y1 and for any given
+X in this case this for example these two
+entries here I'm going to sum them up.
+That's going to give me the normalizing
+constant for these two entries together,
+and I'm going to divide by that zed of X0.
+And that guarantees that these two entries
+now sum to one because I've just basically
+divided by their appropriate normalizing
+constant. And similarly, [cough] I'm going
+to add these over here, and I'm going to
+divide this entry by [inaudible]. And so
+now define a family of conditional
+distributions. So this is a family Of
+conditional distributions. Which varies by
+X. Now it turns out that CRF's are highly
+related to a model that we have previously
+seen, in, in many machine learning classes
+and also comes up as a CPD representation
+in, in Bayesian Network which is the
+logistic function, or the logistic model.
+So in order to, understand that connection
+let's look at a very, very simple case
+where we have both X's and Y's are binary
+random variables so they take on values in
+the space 01. And we're going to use in
+out log linear model a simple
+representation of my log linear features
+which is just the indicator function. So
+we have one, my indicator function is one
+when both XI and Y, when XI and Y are both
+one. And zero otherwise. And that's going
+to have a parameter YI. Now let's actually
+plug that into the CRF representation and
+see what happens. So let's look at
+[inaudible] of XI and Y equals one. Well,
+if you look at that in this case Y is
+always one and now we have two choices.
+Either XI is one, in this case the
+indicator function is one or XI is zero in
+which case the indicator function is zero.
+So you can rewrite this as WI times XI X,
+sorry, X. Wixi. Right? Because if XI's
+zero, then you get X of WI times zero and
+if XI's one you get X of WI. Hmm. On the
+other hand, if I make Y equal zero, then
+my indicator function is zero, because if
+Y is zero than the indicator function is
+zero and at that point I get exponential
+zero which is equal to one. So these are
+my two cases. I have what is the value of
+this factor for Y=1 and what is the value
+of this factor for Y=0. And now I can go
+ahead and compute my unnormalized density.
+And my un-normalized density has the
+following again I'm going to do two
+different cases. There is the case where Y
+equals zero and the case where y equals
+one and my un-normalized density in the
+case Y equals one is just multiplying all
+of these guys up here. So multiplying all
+of these guys which gives rise to this
+exponential over here just because the
+product of the [inaudible] 'Kay? So, that
+is in this case and here clearly the
+product of a bunch of ones is one, so
+that's pretty straightforward. And, so
+now, putting this all together to produce
+a normalized density, remember? My goal is
+to produce a normalized density which is
+the P of Y, my binary value Y, given all
+of the features X. And if you just stick
+this together this is, when you just
+rewrite this, this is the probability of
+Y. Equals one, X. And this is divided by
+the probability of Y=1, X. Plus the
+probability of Y=0, X, which is my
+normalizing constant. [inaudible] This is
+a very familiar shape. It's the sigma
+function it's E to the power of Z if we
+call this Z So it's E to the Z divided by
+one plus E to the Z, which is exactly
+[inaudible] similar function. So what we
+have, eh, concluded from this, is that the
+logistic model Is a very simple
+[inaudible] So, broadening from this, from
+this, particular mathematical derivation.
+What we have here is that if we were to
+think about the model where we had a joint
+density of Y and X together as a kind of a
+naive base model because we only have
+[inaudible] terms that relayed the Y and
+the X size. You can think of it as a
+bunch, if we , if we weren't doing this
+conditional normalization we would have a
+model that looks like this. We would have,
+you know, the Y and we would have a
+[inaudible] feature that relates Y to X1.
+Y2x2 Up to Y2XM And that would be
+effectively like a [inaudible] model
+because we don't have any features,
+paralyze features that connect the XI's to
+each other we would effectively have a
+model where the XI's are independent given
+Y. So if I weren't doing a conditional
+model, if I were to just use this set of
+potentials Represent the joint
+distribution of X and Y it would be
+effectively like a [inaudible] model and
+it would make very strong independence
+assumptions. But because I'm modeling this
+as a conditional distribution like this.
+This is a conditional distribution. I've
+effectively removed from this analysis any
+notion of the correlations between the X's
+and I'm just modeling how the X's come
+together to affect the probability of Y.
+And so that's really the difference
+between a [inaudible] model and a logistic
+regression model, and that same intuition
+extends to much richer classes of models
+where I don't just have binary variables
+in a single Y, but rather a very rich set
+of Y's and X's and nevertheless this
+ability to sort of ignore the distribution
+over the features and focus only on the
+target variables allows me to, exploit,
+allows me to sort of ignore correlations
+between rich features and not worry about
+whether they're independent of each other
+or not. So for example going back to our
+notion of [inaudible] for image
+segmentation here we typically have very
+rich features of the variables so for
+example we think about individual
+[inaudible] potentials that relate the
+features XI to the class label YI, we
+don't worry about how correlated the
+features are. We can have color
+histograms, texture features, you can have
+discriminative patches like looking for
+the eye of the cow, for example. And all
+of these are going to be really correlated
+with each other, but I don't care. You can
+even look at features that are outside of
+the super pixels. You could say oh well if
+it's you know green underneath in a
+completely different super pixel. Maybe
+it's more like we could be a cow or a
+sheep, because they tend to be on grass
+that's [inaudible]. These are definitely
+correlated because your counting the same
+feature from my super pixel as well as for
+a different super pixel that's fine I
+don't care because I'm not worried about
+the correlation because of super pixels So
+the correlations don't matter. You can
+even, and this is very commonly done,
+train your favorite discriminative
+classifier - a support vector machine,
+boosting, random force - anything that you
+like. To predict the probability of YI
+given a whole bunch of image features X.
+And that's fine too. And in fact, that is
+how one achieves high performance on most
+of these tasks. By training very strong
+classifiers for, in most cases your node
+potentials, that is the predictors for
+individual variables. And then, adding on
+top of that, [inaudible] features or, or
+not just [inaudible] but a higher order.
+Features. Between, between the Y's. It's
+im-, heh one important point here that is
+useful to make is that the word features
+is overloaded in this framework. And that
+might be confusing and rightfully so.
+There are features in the context of image
+features, for example, like these guys
+over here. And that's one use of the word
+features. And the other use of the word
+features, which is this usage, is in terms
+of features in my log-linear model. And
+these [inaudible] that we use to define
+the log linear model and features are
+actually used for both which is an
+unfortunate thing but there it is. So,
+hopefully this will be clear from context.
+The same kind of idea applies when we do
+CRF's for language. Again, we usually have
+here features that are very highly
+correlated with each other. So, for
+example, whether the word is capitalized
+is correlated with whether the word is in
+some atlas or name list. Definitely
+correlated features. Correlated with
+whether the previous word is Mrs. Or Mr.
+All sorts of other features that are often
+very correlated with each other you can
+even see that the same, that this word is
+used as a feature for more than one word,
+that's fine it's not a problem because we
+don't try and model this distribution over
+the words in a sentence but rather the
+probability of the labels. Given the
+words. So to summarize, a CRF is
+deceptively like any other Gibbs
+Distribution. But a critical, a subtle but
+critical difference is that it's
+normalized differently. It's normalized so
+that you're, it's creating a conditional
+distribution on Y given X. And we've seen
+that as a special case it subsumes your
+standard logistic regression model, but
+has a lot of other, but has much richer
+expressive power. A key feature of it is
+that we can, we don't need to model the
+distribution over variables that we don't
+care about, only the ones that we actually
+care about predicting and that a critical
+utility of this is that you can design
+really, really expressive predictors of,
+of pieces of the model without worrying
+about incorrect between, between different
+variables which would be inevitable if you
+actually tried to model this distribution,
+joint distribution over these expressive
+features.

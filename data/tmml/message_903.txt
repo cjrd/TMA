@@ -1,0 +1,10 @@
+Strictly speaking, you should divide your data into 3 parts: train,
+validate, and test.  Fit the model using the training set; use the
+validation set to select the number of topics; use the test set to evaluate
+the model performance.  If you use the test set to choose the number of
+topics, you will obtain overly-optimistic results if you then also evaluate
+on the test set.
+Thomas G. Dietterich              Voice: 541-737-5559
+School of EECS                    FAX:   541-737-1300
+1148 Kelley Engineering Center    URL:   http://eecs.oregonstate.edu/~tgd
+Oregon State University, Corvallis, OR 97331-5501

@@ -1,0 +1,23 @@
+Hi all,
+I have some questions regarding parameter inference of hLDA model.
+1? In most Gibbs samplers (e.g. LDA package),  latent parameter of the
+state at the last iteration of Gibbs sampling is utilized.
+However, I exploited the code of hlda-c downloaded from  Blei's homepage(
+http://www.cs.princeton.edu/~blei/hlda-c.tgz) and find that instead of the
+last iteration, the Gibbs sampler saves the state at the 'best'
+iteration(certain iteration).
+My question for this is: how to choose between last iteration, certain
+'best' iteration or even average through all iterations?
+Moreover, does criterion for the 'best' here stands for a MAP?
+My preliminary understanding for these is that when the default iteration
+number is great such that Gibbs sampler surely converge to the 'stationary
+distribution', choice for last iteration or average is correct as well.
+While if the iteration number is relatively small, choosing the 'best'
+iteration which has a maximum posterior will be more proper.
+2? Regarding the slow training speed of hLDA, it's impractical to run
+large numbers of iteration in a slightly bigger-scale training samples. My
+question is while I choose the 'best' iteration as final result, is it
+equivalent to boot one-long-run as to several runs of shorter iterations and
+then choose among the best iterations of these shorter runs?
+I am confused over these points regarding training stage of hLDA and
+would be appreciated if someone could clear them.

@@ -1,0 +1,39 @@
+By reading the paper, my impression was that the variational bayesian
+algorithm for LDA proceeded by:
+- initializing the phi variational mean field for each word in the corpus
+- initializing the gamma variational pseudo-count for each document-topic pair
+- using equation 16 (appendix A.3.1) to update all phi given the
+values of all gamma and the actual word counts for the documents
+- using equation 17 (appendix A.3.2) to udpate all gamma given the
+values of all phi
+- looping these past two steps until convergence (and, if needed,
+updating the alpha and beta hyperparameters to improve even further
+the variational lower bound)
+However, looking at lda-c-dist, it seems like it does no such thing.
+I'm sure I'm not understanding some things, so:
+- why is inference used every time the document e step is computed
+(ie, why does lda-estimate.c:doc_e_step call
+lda-inference.c:lda_inference?)
+- why in lda-inference.c:lda_inference is phi_nk updated as
+digamma(gamma_k) + log(Pk(w)) instead of Pk(w) exp(digamma(gamma_k) -
+digamma(sum(gamma))), as equation 16 from the paper would lead one to
+conclude? I see that it is computing log(phi_nk) instead of phi_nk,
+but there seems to be a missing digamma factor. Can he omit that
+because it disappears after sum-normalizing the phi variables?
+- lda-inference.c:lda_inference seems to do many passes until
+convergence. Why should it converge when you're just estimating the
+model? Don't these extra iterations screw up the estimations of phi
+and gamma?
+- phi seems to be reestimated using a default gamma (in
+lda-inference.c:lda_inference) equal to alpha*nwords/ntopics, and
+gamma seems to be reestimated after this (for which reason?) as
+this_value + count[w] * (phi_nk - oldphi_nk) (after normalizing phi),
+and this estimate is reupdated for each word in each document, during
+inference. Doesn't this mean that the phi for different words will see
+different values of the gamma? And why not following equation 17 from
+the paper?
+I posted this question on MetaOptimize (
+http://metaoptimize.com/qa/questions/1842/about-the-original-variational-lda-algorithm
+) as well, if anyone is interested (although there is nothing of
+substance there)
+Thanks in advance for any replies,

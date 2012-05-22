@@ -1,0 +1,8 @@
+Hi,
+I am wondering if the current ICML 2009 paper of Hanna Wallach
+(www.cs.mcgill.ca/~icml2009/papers/356.pdf) "Evaluation methods for topic
+models" will also influence the discussion about the choice of T ???
+If I understand the conclusion of the paper correctly, perplexity (section
+5 Document Completion) might be not that accurate ???
+best,
+markus

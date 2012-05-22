@@ -1,0 +1,50 @@
+Hi Peng,
+The parameters of a K-dimensional Dirichlet distribution are K real
+numbers that are positive but don't necessarily sum to one.
+Alternatively, you can write the same thing as a K-dimensional
+distribution (that does sum to one) multiplied by a non-negative real
+number (the "concentration parameter"). We used u as a shorthand for a
+uniform distribution and m as a shorthand for an arbitrary
+not-necessarily-uniform distribution. Thus, a symmetric Dirichlet
+distribution would have parameters \alpha u, meaning that the
+parameter for *every* dimension would be \alpha / K. An asymmetric
+Dirichlet would have parameters \alpha m, meaning that the parameter
+for dimension k would be \alpha m_k, and dimension k' would have a
+*different* parameter, \alpha m_k'.
+As Ivan points out, the magnitude of that concentration parameter
+controls whether draws from the Dirichlet are sparse or not. Small
+values mean that most probability will be concentrated on one
+dimension, regardless of the value of the base distribution (ie u or
+m). The difference between these two base distributions is whether or
+not you know which dimension will have high probability:
+If you use \alpha (0.25, 0.25, 0.25, 0.25), with a small \alpha,
+you're saying "one dimension will have high probability, but I don't
+know which". If you use \alpha (0.7, 0.1, 0.1, 0.1), you're saying
+"one dimension will have high probability, and it will usually be the
+first dimension".
+In topic modeling, we expect topics in documents and words in topics
+to be "bursty", either appearing a lot or not much at all, so we tend
+to use small concentration parameters. The first question, then, is if
+I give you a list of topics, are some of them more likely to "burst"
+than others?
+Topic 1: "the and of in on"
+Topic 2: "data algorithm learning model"
+Topic 3: "support vector kernel machine"
+...
+Stopwords are an extreme case, but they're a good example: you know
+that topic 1 is likely to occur prominently in every document. When
+topic 3 occurs, it's likely to have roughly the same number of words
+as topic 1, but it will occur in far fewer documents. In this case, a
+non-uniform base measure makes sense.
+The second question: is there any word that you expect to see
+prominently in every topic? Not really. In this case, a uniform base
+measure makes more sense.
+You're right, a topic that occurs in 75% of documents isn't very
+useful in itself, but if it has the effect of isolating very common
+words from the rest of the topics, it may make the remaining topics
+more focused on interesting mid-frequency words.
+One important caveat: using the AS schema vs. SS can lead to larger
+numbers of very small topics, which can be poorly estimated.
+[Shibamouli, the full hierarchical sampling code we used in this paper
+isn't really useful for practical work, but a fast iterative
+sampling/optimization step is implemented in Mallet, use the

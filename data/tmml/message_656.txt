@@ -1,0 +1,14 @@
+I completely concur with popular topics ending up in a large number of
+similar topics. While I only did some initial exploration, I
+hypothesize that similarity metrics could auto-collapse some of the
+topics. This is a bit like Mallet's hyperparameter optimization,
+except it would actually reduce K. I've had great success with
+distance metrics like Hellinger being able to find related topics,
+although that isn't necessarily the same thing as collapsing topics.
+What might prove useful to some is my answer to the technical portion
+of my general exams.  In it I had to surveyed published methods of
+evaluating topic models, in addition to coming up with some of my own
+(for specific problem domains).  It can be found here:
+http://web.media.mit.edu/~azinman/technical_24_exam.pdf
+While I did indeed pass, I cannot guarantee any of it is correct :)
+Aaron

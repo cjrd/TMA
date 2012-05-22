@@ -1,0 +1,70 @@
+              The main goal of this project is to describe equilibrium solutions to
+boundary
+              value problems for linear and nonlinear elliptic partial
+differential
+              equations.  The PI intends to prove existence and
+regularity theorems for
+              two-phase free boundary problems.  The PI will
+also describe level sets of
+              eigenfunctions, especially nodal sets,
+maxima, and minima, and find optimal
+              bounds on the shape of level sets
+for convex domains even if the domain
+              becomes long and thin.  Another
+goal is to solve a problem in mathematical
+              economics of finding all
+possible functional forms of a price-independent
+              social welfare
+function (using methods of exterior algebra and
+              overdetermined
+systems).  A third goal is to characterize the camera image of
+              a
+building using the Fourier transform, that is, to characterize
+              the
+distortion of the periodic pattern on the face of the building if
+              the
+building is not exactly parallel to the camera.
+
+
+The PI plans to
+              describe the equilibrium between two phases in several
+problems arising in
+              physics and engineering.  The focus will be on the
+boundary between two
+              materials such as ice and water.  Other examples
+include the boundary between
+              two liquids and the profile of the wake
+of a boat.  In another direction, the
+              PI will attempt to confirm a
+principle first proposed by J. Rauch that the
+              point of maximum
+temperature in an insulated room tends towards a wall as
+              time
+increases.  More generally, the PI will examine how the geometry of
+              a
+fixed boundary (as in the walls of a room) affects the shape of
+surfaces of
+              equal temperature at or near the equilibrium steady state
+temperature.  In a
+              third direction, the PI will try to find all
+possible price-independent social
+              welfare functions.  This is of
+current interest because such functions are
+              used to compare countries
+and to describe the trend towards greater income
+              inequality in the
+1990s in the U. S. as well as earlier trends in the
+              opposite
+direction. The problem is that prices cannot be held fixed in
+              such
+comparisons.  The PI expects that price independence puts serious
+limits
+              on the functional forms allowed, which in turn puts limits on
+the way
+              comparisons can be made.  Finally, the PI proposes a project
+intended to help
+              solve the problem in computer vision of recognizing
+the orientation of a
+              building from a photograph.
+
+

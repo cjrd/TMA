@@ -1,0 +1,25 @@
+Dave,
+there are two main ideas floating around:
+a) pick the sample that maximizes the likelihood / joint distribution of
+the model
+b) average over some samples, i.e. samples of iteration 100, 120, 140,
+... 1000 assuming a burn-in of 100, a sample lag of 20 and max
+iterations 1000.
+You discard samples 121 - 139 not because they are useless, but to save
+save space assuming that samples 120 and 140 tell you enough about this
+part of the chain.
+I usually do not sum all samples up, but average over them (this has a
+slightly different effect on the prior-pseudocounts).  See [1] for details.
+Theoretically, you could whittness the label switching problem. Although
+I felt that this was hardly the case in my experiments. Your suggestion
+using a FST may work around this.
+Saying all these things about b), I have a gut feeling that for LDA the
+method a) gives better results. I am curious if anyone had a closer look
+at this...
+Laura
+[1]
+General Methods for Monitoring Convergence of Iterative Simulations
+Stephen P. Brooks and Andrew Gelman
+Journal of Computational and Graphical Statistics, Vol. 7, No. 4 (Dec.,
+1998), pp. 434-455
+Dave Stallard wrote:

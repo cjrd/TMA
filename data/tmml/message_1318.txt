@@ -1,0 +1,19 @@
+Hi  ? ?,
+Regarding the evolution of topics, did you check out these papers?
+T. L. Griffiths & M. Steyvers (2004). `Mapping Knowledge Domains:
+Finding scientific topics'. Proceedings of the National Academy of
+Sciences of the United States of America (PNAS) 101(1):5228-5235.
+X. Wang & A. McCallum (2006). `Topics over time: a non-Markov
+continuous-time model of topical trends'. In Proceedings of the 12th ACM
+SIGKDD international conference on Knowledge discovery and data mining,
+KDD '06, pp. 424-433, New York, NY, USA. ACM.
+S. Gerrish & D. Blei (2010). `A Language-based Approach to Measuring
+Scholarly Impact'. In ICML '10: Proceedings of the 27th International
+Conference on Machine Learning.
+As you mentioned sentiments, maybe this paper gives you an idea:
+I. Titov & R. Mcdonald (2008). `A Joint Model of Text and Aspect Ratings
+for Sentiment Summarization'. In Proceedings of ACL-08: HLT, pp. 308-316.
+Cheers,
+Laura
+P.S. Let's hope that the revolution of topics does not turn into a
+rebellion of the topics :)

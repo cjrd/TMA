@@ -1,0 +1,6 @@
+Hi,
+I am new to this area. I want to use LDA C code on professor Blei's homepage to analyze some collections of documents, but I am not sure how to turn my documents into the data file format that is required according to the readme.txt of the code.
+Could anyone tell me how to do it? Or is there any code available to do it? I really appreciate it.
+Thank you very much!
+Sincerely,
+Ning Zheng

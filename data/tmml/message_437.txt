@@ -1,0 +1,18 @@
+Dear list,
+following up on an earlier message, I'd like to add a question: How
+exactly is Eq. 12 in the paper,
+F = E_q(z) { - log p(x,z) - H{q(z)} },
+optimised to obtain Eq. 14,
+q(z_ij=k) = 1/Z *  exp[ E_q(z_-ij){p(x,z_-ij; z_ij=k) }] ?
+It looks as if only the independence assumption "z_ij  indep  z_-ij"
+and the abstract formulation of the joint marginal likelihood in Eq. 12
+(but not its specific structure) is needed. Am I overseeing something
+obvious?
+Other than that: When implementing collapsed variational inference with
+the Gaussian approximation and just measuring the likelihood according
+to model parameters theta and phi, it seems that the algorithm is able
+to find an optimum (with better likelihood value than the corresponding
+collapsed Gibbs sampler) but then deviates to a less likely parameter
+set. Does anyone have a similar result?
+Best regards and thanks,
+gregor

@@ -1,0 +1,8 @@
+I came across the following comment recently,
+"LDA as well as pLSA are very popular in the literature, but all
+examples of their use on text, when carefully considered, are
+unsuccessful."
+Does anyone have an idea of how and/or why someone would reach such a
+conclusion? Are there real world applications, examples and/or studies
+that disprove the assertion?
+Saira

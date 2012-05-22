@@ -1,0 +1,24 @@
+              0092744
+Morozov
+
+This grant provides one fourth  support of the costs of
+              acquiring digital data sets for nine deep seismic sounding (DSS) profiles from
+              the Center GEON in Moscow.  The other 3/4 of the costs will be borne by the
+              Defense Threat Reduction Agency (DTRA).  The Russian DSS data sets are a truly
+              unique source of seismic data which image the upper mantle structure below a
+              large fraction of the Eurasian continent.  These data sets are unique in that
+              they were produced using well controlled and powerful seismic sources, i.e.
+              peaceful nuclear explosions (PNE) equivalent in size to M > 5 earthquakes and
+              chemical explosions.  Nine continental transects were produced using over 20
+              PNEs and 300 chemical explosions recorded at over 200 sites.  These data
+              contain structural information about the Earth's interior in the intermediate
+              depth range (0-3200 km) between what can be learned from earthquake seismology
+              and conventional controlled source seismology.  In addition, these are data
+              sets that are likely never to be reproduced.  The data sets will be digitized
+              and quality-controlled by Center GEON scientists in Moscow, transferred to
+              University of Wyoming scientists for further QC, and finally reformatted and
+              delivered to the IRIS Data Management Center where the data will be freely
+              accessible to all interested academics scientists.  The project should be
+              complete in four years.
+***
+

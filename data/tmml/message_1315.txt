@@ -1,0 +1,11 @@
+Sample dataset can be found at
+http://www.cs.princeton.edu/~blei/lda-c/ap.tgz.
+I already did this testing and verified that my implementation gave the same
+results as David Blei's except for small precision errors in the 6th decimal
+or so.
+It definitely helps to have additional testing. If you do intend to test it
+yourself, please make sure to either turn off the random initializations, or
+have the same random seed in both the implementations to ensure both models
+have the same starting points.
+Thanks
+-Ramesh

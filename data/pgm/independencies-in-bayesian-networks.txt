@@ -1,0 +1,397 @@
+
+One of the most elegant properties of
+problems to graphical models is the
+intricate connection between the
+factorization of distribution as a product
+of factors, and the independence
+properties that it needs to satisfy. Now
+we're going to talk about how that
+connection manifests in the context of
+directed graphical models or Bayesian
+networks. So let's first remind ourselves
+about why independence and factorization
+are related to each other. So, for
+example, the independence definition, that
+P of X comma Y is the, is the product of
+two factors. P of X and P of Y is the
+definition of independence. At the same
+time it's a factorization of the joint
+distribution of the product of the two
+factors. Similarily, one of the
+definitions that we gave for conditional
+independence, which is the joint
+distribution over X, Y, and Z is a factor
+over X and Z times a factor over Y and Z
+is the definition of conditional
+independence. So, once again, independence
+and factorization. So we see that
+factorization of the distribution
+corresponds to independencies that hold in
+that distribution and the question is if
+we have this, so if we know now that if a
+distribution P factorizes over G, the
+question is can we know something about
+the independencies that the distribution P
+must satisfy just by looking at the
+structure of the graph G. [sound] [cough]
+So what are independencies that need, that
+might hold in a probabilistic graphical
+model? So we talked about the notion of
+flow of influence in a probabilistic
+graphical model where we have, for
+example, the notion of an active trail
+that goes through S, up through I, down
+through G, and up through D. If, for
+example, we have the G is observed, that
+is, in Z. And that gave us an
+intuition about which -- when probabilistic
+influence might flow. We can now turn this
+notion on its head and ask the question
+well, what happens when we tell you that
+there are no active trails in the graph,
+that is, influence can't flow. So we're going
+to make that notion formal using the
+notion of d-separation. And we're going
+to say that X and Y are d-separated in a
+graph G, given a set of observations Z, if
+there is no an active trail between them. And
+the intuition that we'd like to
+demonstrate in this context, is that this
+notion of influence can't flow,
+corresponds much more formally to the
+rigorous notion of conditional
+independence in the graph. So let's
+actually prove that that's in fact the
+case so the theorem that we'd like to
+state that if P factorizes over the graph - if P factorizes over G -  and we have
+a d-separation property that holds on the graph
+so X and Y are d-separated in the graph
+there's no active trails between them, then
+P satisfies the conditional independence
+statement: X is independent of Y given Z.
+So d-separation implies independence - if
+the probability distribution factorizes
+over G. So we're now going to prove the
+theorem in its full glory. We're going to
+prove it by example, because that example
+really just ill-, really does illustrate
+the main points of the derivation. So, the
+assumption, so here is our graph G, and
+here is the factorization of the
+distribution. So, according to the chain
+rule of Bayesian networks. And this is the
+factorization that we have seen before.
+And so now we'd like to prove that a
+d-separation statement follows from this,
+from this assumption. And, and the
+d-separation statement that we'll like to
+prove follows as an independents is one
+that says that the D is independent of S.
+First [inaudible] D and S are in fact de
+separated in this graph and so we see
+there's only one possible trail between D
+and S in this graph. It goes. Like that
+and since G's not observed in this case
+and neither is L, we have the, the trail
+is not activated and so they, the, the two
+are, who knows? Are they separated? And
+we'd like to prove if this independence
+holds. So what is the prob- the joint
+probability distribution of D and S. Well,
+it's the sum over this joint distribution
+over here. Marginalizing out, the three
+variables that are not D and  S. So G, L, and
+I. So we have the sum over G, L, and I of
+this, big product that's assigned by the
+chain rule. And as we've previously seen
+when we have a summation like that, one of
+the things that we can do is we can push
+in summations into the product so long as
+we don't push them thru, terms that
+involve a variable. So here for example we
+have, we might have a summation over L.
+And we can push in that summation because
+the only term that involves L is
+probability of L given G. So if we push in
+summations in this way we end up with the
+following expression, and we see that we
+have this summation over L here a
+summation over G and then finally the
+summation over I at the very beginning. So
+what do we know about the summation over L
+of the P of L given G we know that this,
+that this is a probability distribution
+given over L and therefore. It's
+necessarily sums to one because we're
+summing up over all the possible values of
+zero. Once this term is one, we can look
+at the next term, which is this one, and
+we can ask ourselves well, one is I'll
+cancel that and so probability what is the
+one over g, and the probability
+[inaudible] which is this one and that two
+is one and by the time we're done we end
+up with the following expression and the
+important thing to notice about this
+expression is that this is Phi one of d
+and this is Phi two. Woops. Y2 of S and
+therefore because we partition this joint
+distribution as a product of two factors
+we end up with something that corresponds
+directly to the definition of marginal
+dependence therefore proving that P
+satisfies this independent statement. So
+having convinced ourselves that D
+separation is an interesting notion let's
+look at some other D separation statements
+that might hold in a graph, so one of the
+general statements that we can show, is
+that any node in the graph is
+d-separated. From its non-descendants
+given its parents, so let's look at the
+variable letter. And let's see what non
+descend [sound] non, non descendants this
+has that are not its parents. It only has
+two descendants let's mark those in blue
+that's this one and that one. And what are
+the non-descendants, so these are the
+descendants. What about the non
+descendants. Well, here's one non
+descendant, here's another, another, and
+another. So those are the four non
+descendants in the graph that are not parents.
+Now let's convince ourselves that
+Letter is d-separated from all of
+its non descendants given its parents, and
+lets take just an arbitrary one of those,
+let's take SAT, for example, and let's see
+if we can find and active trail from
+SAT to Letter that is active given
+parents, which in this case is just a
+variable grade. Way. What are, what's one
+potential trail? So we can go on this way.
+Up. And then back down through letter but
+is that trail active? No, it's not active,
+because grade, is observed and so blocks,
+it blocks the trail. As in fact, it will
+block any trail that comes in from the
+top. So, any trail inth the letter that
+comes in through it's parent grade, is
+going to be blocked by the fact the grade
+is observed. So that means we have to come
+in through the bottom. So let's look at
+that. Let's look at the trail through SAT
+through job. And up. Again through Letter.
+Well is that [inaudible] active? No. The
+reason it's not active is because only
+[inaudible] is observed and job since it's
+not, it can't be [inaudible] letter
+because it's [inaudible], is necessarily
+not observed so neither job nor
+[inaudible] observed so we, we cannot
+activate this [inaudible] over here cannot
+be activated. And so, so coming from the
+[inaudible] don't work either. And so we,
+if again this is approved by
+demonstration, but it shows again that,
+that. It shows the general property in a
+very simple way. So, that tells us, by the
+theorem that we proved on the previous
+slide, that if p factorizes. Over G, then
+we know that any variable is independent.
+Of its non-descendants, given its parents.
+Which is kind of a nice intuition when you
+think about it. Because when we motivated
+the structure of bayesian networks, we
+basically said that, what makes us pick
+the parents for a node is the set of
+variables that are the only ones that this
+variable depends on. So the parents of X
+are the variables on which X depends
+directly. And this gives a formal semantic
+to that intuition. That is, we now have
+that the variable is depending only on its
+parents. So now that we've defined a set
+of independencies that holds for any
+distribution that factorizes over a graph
+we're now going to find a general motion
+which is just a term for this, So we
+define these separation in a graph G and
+we show that when you have these
+separations property that satisfies the
+corresponding independent statement. And
+so now we can basically look at the
+independent C that are implied by the
+graph G. So I N G which is the set of
+independencies that are implicit in a
+graph key are all of the independence
+statements, X is independent of Y given Z
+correspond to B separation statements in
+the graph so this is the set of all
+independencies that are derived from these
+separation statements and those are the
+ones that the graph implies hold for
+distribution P as we just showed in a
+previous demo. So now we can give this a
+name. We're going to say that P if P
+satisfies all of the independencies in G
+then G is an imap of P and imap stands for
+independency map. And the reason it's in
+the [inaudible] is by looking at G it's
+the map of in-dependency that holding T
+that is it masks in-dependencies that we
+know to be true. So it's a good example an
+Eye Map so let's look at two, two
+distributions here's one distribution, T1.
+And here's a second distribution P2. Let's
+look at two possible graphs. One is G1
+that has V and I being separate variables
+and the other is G2 that has an edge
+between D and I, so what independencies
+does G1 imply, what's an I of G1? Well I
+of G1. Is, the independence it says D is
+independence of I because there's no edges
+between them. With the I of G two. Well I
+see two [inaudible] independencies because
+there are no, because D and I are
+connected by an edge and there's no other
+dependencies that can be implied and so
+[inaudible]. So what does that tell us?
+Let's look at the connection between these
+graphs and these two distributions. Is G1
+an I-Map of P1? Well if you look at P1 you
+can convince yourselves that P1 satisfies
+these independence of I. Z1 is an I-map.
+Of P1 what about G is [inaudible] an eye
+map of P2 well if we look at P2 we can
+again convince ourselves by examination
+that P2 doesn't satisfy. D is independant
+of I so the answer is no this G1 is not an
+imap for P2. What about the other
+direction? What about G2? Well G2 has no
+independence assumptions and so it
+satisfies and so both P1 and P2 satisfy
+the empty set of the independence
+assumptions, as it happens P1 also
+satisfies additional independence
+assumptions but the definition of I-Map
+doesn't require that, that G the graph
+exactly represents the independencies in,
+in a distribution only that any
+independence that's applied by the graph
+holds further distribution, and so we
+have. The G2 is actually an imap for both
+P1 and P2. So, now we can restate the
+theorem that we stated before. Before we
+talked about these separation properties.
+So now we can just give it, one concise
+statement. Because if P factorizes over G,
+that is, if it's re presentable as a
+[inaudible] network over G, then G is an
+[inaudible] for P, which means I can read
+from G. Independencies that's holding P.
+Regardless of the perimeters. Just by
+knowing that P factorizes over G.
+Interestingly, the converse of this
+theorem holds also. So this version of
+this theorem says that if G is an
+[inaudible] for P, then P [inaudible]
+rises over G. So what does that mean? It
+means that if the graph, if the
+distribution satisfies the independence
+assumptions that are implicit in the
+graph, then we can take that distribution,
+and represent it as a [inaudible] network
+over that graph. So once again, let's do
+proof by example. So now, here we have the
+little graph that we're going to use. And,
+and so now, what do we know? We're going
+to run down the probability of the joint
+distribution over these, these five random
+variables, using this expression, which is
+the chain rule for probabilities. Not the
+chain rule for [inaudible] networks,
+because. We don't know yet that this is
+representable as a bayesian network. We're
+going to write the [inaudible] of
+probabilities, and that has us, writing it
+as P of V times P of I given D. Which, if
+you multiply the two together using the
+definition of conditional probability,
+these two together give us probability of
+I [inaudible]. If you multiply that by g,
+given I and V, then we end up with the
+probability of g, I, V. And so long as we
+can construct this telescoping product,
+and, all together, we, by multiplying all
+these conditional probabilities, we have a
+we have the, we can construct the joint
+probability distribution. Great, now what?
+So we haven't used any notions of
+independence yet, so where do we use that?
+Well, we're going to look at each one of
+these terms, and we're going to see how we
+can simplify it. [inaudible] is already as
+simple as it gets. So now let's look at,
+the next term, which is the probability of
+I given D. And, let's look at this graph,
+and we can see that I and D are non
+[inaudible]. And we're not conditioning on
+any parents. And so we have put in this
+graph, as we've already shown this, that
+I's independent of d. And so we can using
+one of the definitions that we have on the
+conditions of the parents, we can erase
+this from the right hand side of the
+conditioning bar, and just get p f i. The
+next term is actually already in the form
+that we want it so we don't need to do
+anything with it. But now let's look at
+the probability of S given D I and G. So
+here we have the probability of a variable
+S given one of it's parent I and two non
+descendants D and G and we know that S is
+independent of it's non descendant given a
+non descendant given it's parent I and so
+we can erase both D and G and just, end up
+with probability of S given I. Finally, we
+have the last term probability of L given
+D, I, G, and S and here again we have the
+probabilty of a variable L given its
+parent G and a bunch of non-descendants.
+So we can again erase the non-descendants.
+And so, altogether, that gives us exactly
+the expression that we wanted. And so now,
+again, by example, we prove this, we prove
+this independent. We prove that some of
+these independent statements, we can,
+derive the fact that p factorizes using
+the product rule for [inaudible] that
+works. To summarize, we've provided two
+equivalent views of the graph structure.
+The first is the graph as the
+factorization as a data structure, that
+tells us how the distribution p can be
+broken up into pieces. So in this case,
+the fact that g allows p to be represented
+as a set of factors or c p ds over the
+network. The second is in imat view, the
+fact that the definition, the, the, the,
+the structure of g encoded in the
+[inaudible] doesn't necessarily hold in p.
+And what we've shown is that each of these
+actually implies the other. Which means
+if, that if we have a distribution P that
+we know is represented as a bayesian
+network over a certain graph, we can just
+look at the graph without even delving
+into the parameters. No certain
+independencies that have to hold in the
+distribution key. And independencies is a
+really valuable thing, because it'll, it
+tells you something about what influences
+what. And if I observe something, what
+else might change? And that helps a lot in
+understanding the structure of the
+distribution, and consequences of
+different types of observations.

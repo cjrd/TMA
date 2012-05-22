@@ -1,0 +1,6 @@
+Dear all,
+After the LDA paper by Blei et al. (2003), there comes "Author-Topic" model by Rosen-Zvi, Griffiths, Steyvers and Smyth (2004) and "Author-Conference-Topic" model By Tang, Jin and Zhang (2008).
+I am trying to understand the Author-Topic model here. It appears to me that the Author-Topic model is to split the probability of each word to each of the coauthors equally, as each author x is uniformly draw from a list of coauthors Ad.
+My question is that if we learn a LDA model (i.e. Blei et al. (2003)) with document*topic matrix as our output. Then we split each row of this matrix (i.e. topic distribution in a document), and give the equal share to each of the coauthors of the document, and then we accumulate the topic distribution of each coauthor in the corpus, we can come up with a author*topic matrix. Will this result be consistent with what Author-Topic model produces? My intuition is they will be equivalent. Anybody has the proof on this?
+Also, the similar method may apply to the Author-Conference-Topic model to accumulate topic distribution of each conference. Are they equivalent still?
+I appreciate the help from any knowledgeable people here.

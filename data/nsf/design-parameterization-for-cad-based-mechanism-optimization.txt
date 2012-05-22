@@ -1,0 +1,8 @@
+              	
+	The project "Design Parameterization for CHD-Based Mechanism Optimization",
+              is studying how product solid models can be parameterized following a
+              systematic approach to capture design intents in multiple CAD systems and
+              determine if an accurate and efficient design sensitivity analysis can be
+              developed that supports CAD-based mechanism optimization for industrial
+              applications.
+

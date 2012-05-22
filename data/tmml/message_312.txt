@@ -1,0 +1,2 @@
+i want to calculate  perplexity  of my model but problem is how should i
+calculate the probability of a test document .

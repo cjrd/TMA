@@ -1,0 +1,20 @@
+              0071658
+Benesh
+Determination of the distributions of quarks and gluons inside
+              of
+the proton and there hadronic particles is one  f  the central topics in
+              high energy nuclear and particle physics.  The form of these distributions
+              impacts not only our understanding of the structure of the proton, but  lso
+              affects the interpretation of experiments at higher energies which require
+              these distributions as input.  The primary focus of this proposal is the
+              calculation of the harge asymmetric contribution to the proton sea within a
+              variety of distinct models of the nucleon sea.  A secondary focus of this
+              proposal is the study of nuclear effects on quark distributions using
+              phenomenological descriptions of light nuclei.  Such  nuclei are sufficiently
+              tightly bound to exhibit significant nuclear modifications to their quark
+              distributions and yet are simple enough to be modeled  phenomenologically.  We
+              propose to apply models and methods that have previously been used to calculate
+              the quark distributions of single nucleons to light nuclei in order to test the
+              viability of these models as alternative explanations of the observed
+              modification of quark distributions in nuclei.
+

@@ -1,0 +1,4 @@
+Hello All,
+I am currently an REU intern at the University of Houston working with Dr. Rakesh Verma on Automatic Text Summarization. He (and I) are wondering how the Python Script which prints the LDA "keywords" can be altered to include the accompanying probability.
+Any help is greatly appreciated.
+Ryan Vincent

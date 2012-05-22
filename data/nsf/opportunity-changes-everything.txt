@@ -1,0 +1,14 @@
+              This program provides scholarships to talented, low-income students enrolled in
+              Computer Science, Engineering and Mathematics. The project brings faculty from
+              the three campuses of Miami-Dade Community College together to help implement
+              the program. Over a two-year period M-DCC seeks to award a total of forty
+              scholarships to these students. Besides the financial eligibility, the
+              scholarships recipients must also meet established academic criteria that will
+              enable them to obtain Associate in Arts degrees in computer science,
+              mathematics, and engineering. The students have the opportunity to get involved
+              in summer internships with local industries. Upon completion of the program,
+              the students may continue on to an upper division school or those who receive
+              training, may directly enter into the workforce. Faculty Mentors are assigned
+              to each scholarship recipient in order to improve the quality of their
+              educational experience and thereby improve the student's chances for academic
+              success.

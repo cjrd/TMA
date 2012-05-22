@@ -1,0 +1,6 @@
+The original paper on the Dirichlet compound multinomial (DCM) and burstiness is
+R. Madsen, D. Kauchak, and C. Elkan. Modeling Word Burstiness Using the Dirichlet Distribution . In Proceedings of the Twenty-Second International Conference on Machine Learning (ICML'05).
+http://cseweb.ucsd.edu/~elkan/icml2005.pdf
+There is a detailed explanation of the intuitions connecting the DCM and burstiness in this paper. If anyone has further questions or comments,
+they are very welcome.
+Charles Elkan

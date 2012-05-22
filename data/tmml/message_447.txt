@@ -1,0 +1,12 @@
+Shengwen --
+Yes, you can handle huge corpora.  For collapsed Gibbs sampled LDA, if you have:
+N total words
+D documents
+W unique words in vocabulary
+K topics
+you will need (3N+K(D+W))*sizeof(int) memory for a standard
+implementation.  If N or KD is very large (or beyond the memory
+available on one machine), you could split the computation across
+multiple processors.  We did this parallel collapsed Gibbs sampled LDA
+in our NIPS'07 paper: http://www.ics.uci.edu/~newman/NIPS2007.20070905.pdf
+Dave

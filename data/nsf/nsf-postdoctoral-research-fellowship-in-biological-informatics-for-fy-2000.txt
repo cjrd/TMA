@@ -1,0 +1,17 @@
+              This action funds an NSF Postdoctoral Research Fellowship in Biological
+              Informatics for FY-2000.
+
+The research and training plan are in the area of
+              evolution of development and is entitled "Evolutionary Rate and Pattern in
+              Developmentally-regulated Genes in Malaria and Related Parasites."  Malaria
+              parasites (Plasmodium) and some other members of their phylum, Apicomplexa,
+              have nuclear ribsomal DNA  with an unusual organization.  Unlike most other
+              eukaryotes, these protozoans have only a few, independently-evolving rDNA loci,
+              and at least in malaria, these genes may be expressed only at specific times in
+              the parasites' development.  The goal of this research is to identify when in
+              the evolutionary history of this phylum the peculiar organization of these
+              genes arose as well as to examine in detail the rate and pattern of the
+              evolution of these genes.  Evolutionary genomics, structural biology, and the
+              use of large databases of sequence data are among the bioinformatic approaches
+              being used.  
+

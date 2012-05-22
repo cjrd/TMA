@@ -1,0 +1,23 @@
+              
+ 
+This proposal was received in response to NSE, NSF-0019.  Carbon nanotubes
+              are of interest as electronic conductors because of their unique properties,
+              notably their behavior as 1-D conductors and their ballistic nature over
+              several microns at room temperature.  A general picture of electronic
+              conduction in nanotubes is being developed by researchers in the field. 
+              Although the transient response of current flow is expected to be quite rapid
+              (picosecond range), present experimental data for conduction properties of
+              nanotubes is primarily obtained at low frequencies or in static measurements. 
+              In order to shed light on the fundamental current transport processes in
+              nanotubes, an experimental and theoretical effort is proposed to develop
+              characterization techniques which would allow the measurement of the transient
+              current responses through nanotube conductors.  This work will address two
+              issues: i) the integration of nanotube conductors with appropriate high speed
+              photoconductor materials and ii) the development of characterization techniques
+              for nanoscale conductors based on pump/probe measurements using high speed
+              pulsed laser systems.  It is expected that the proposed work will shed light on
+              the conduction processes of these interesting electronic materials and provide
+              important capabilities for integration of these materials with other electronic
+              materials, including semiconductor device structures.
+
+

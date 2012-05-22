@@ -1,0 +1,9 @@
+              This Small Grant for Exploratory Research (SGER) project focuses on
+              computational and statistical methods to evaluate comparative genetic map data.
+              Two new statistical approaches, the colinearity test and the genome matrix,
+              will be explored and developed further. Both methods will be applied to an
+              existing biological problem that needs reassessment - the comparative map of
+              the grasses.  Both methods will be implemented in computer programs that will
+              be released to the scientific community. Eventually, these methods will prove
+              useful not only for interpreting comparative genetic map data but also for
+              interpreting physical map and comparative sequence data.

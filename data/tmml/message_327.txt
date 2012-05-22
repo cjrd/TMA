@@ -1,0 +1,3 @@
+Do you have your vocabulary properly indexed, either starting at 0 or
+1 (I forget which is correct), and all documents have more than 0 words?
+Aaron

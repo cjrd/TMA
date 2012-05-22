@@ -1,0 +1,13 @@
+              This award provides funding from the Directorate of Geoscience to develop
+              secondary school instructional  materials that teach ocean science using
+              Geographic Information System (GIS) data. The GIS-based instructional materials
+              will be called "Mapping an Ocean Sanctuary" and will consist of five modules
+              that will help the learner master GIS technology; employ GIS to study the
+              surface and underwater geography of (and bathymetric, ecological, and
+              geophysical data from) three national marine sanctuaries; collect geophysical
+              and ecological data during field studies at the sanctuaries and use GIS to map
+              and analyze the data; and share data and analyses with other students and
+              schools via the Internet. The work is a collaborative effort between the Center
+              for Image Processing in Education (CIPE) and the Sustainable Seas Expeditions
+              (SSE). It will use data collected in the Monterey Bay, Channel Islands, and
+              Florida Keys Marine Sanctuaries.

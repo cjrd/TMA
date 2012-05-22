@@ -1,0 +1,242 @@
+
+Having defined a set of structure scoring
+criteria, we now turn to the problem of
+trying to optimize that structure score
+over a set of possible candidate
+structures. And we're first going to
+consider the specific case of trees. So
+just as a reminder, we define a scoring
+function that evaluates how well a
+structure matches the data. So here is a
+set of different structures and here is a
+graphical depiction of our score and we
+would like to search for structure that
+maximizes the score. Now this is an
+optimization problem, and where the input
+is a tray, is a training set, a scoring
+function and is possible structures and
+the output is a network. Then it turns out
+that absolutely the key property, for, of
+computational efficiency is, the
+composability of the score, which is, the
+decomposition of the score as a sum of
+family scores, which we've seen before.
+So, the first problem that we're going to
+focus on is that of learning, either a
+tree or a forest. So what is, what is a
+forest. A forest is at most one parent per
+variable. So here for example, is.
+One-fourth, and notice that a fourth
+doesn't have to be connected. That is, it
+can be separate disconnected components. A
+tree, on the other hand, would require
+that the graph be connected, so we might
+have this edge, for example, as well. And
+notice that it's, a still [inaudible]
+tree. So why should we care about learning
+trees given trees are degenerate, so a,
+you know, they're so restricted in their
+expressive power. Well there are reasons,
+there are different types of reasons why
+we like trees. First of all it tunes out
+that the math is very elegant. Now that
+might not be a convincing reason, but that
+elegant math give rise to what turns out
+to be a very efficient optimization over
+the set of trees, that allows me to solve
+it extremely effectively, even for very
+high dimensional, problems. The, and then
+finally, the third reason is that trees
+are limited expressive power but that also
+implies that their parameterization is
+very sparse. And because their
+parameterization is sparse, it means
+they're less susceptible to over fitting.
+And therefore, at least in cases where M
+is small relative to the network
+complexity. [inaudible] To M. Then it
+turns out that it can provide better
+generalization, even though it doesn't
+capture the full expressive power that we
+would hope to have in our network. So,
+let's not talk about the problem of
+learning forth and we're going to define a
+little bit of notation. We're going to
+define P of I for variable I to be the
+parent of xi or zero in case xi has no
+parent. So note that each variable has at
+most one parent so this works. So, let's
+look at our decompo-, composable score,
+and again, this can be any of the three
+scores that we talked about because, they
+all have this property. So, the score is
+the sum of score of individual families XI
+and their parents. And, now, the parents
+are very simple because we have only most
+one parent per variable. So, we're going
+to divide this into two cases. The first
+case is nodes that have a parent and the
+second one is nodes that don't. And so for
+the nodes that have a parent, what we have
+is the score of XI given its one parent,
+and for the nodes that don't have parent,
+it?s just the score of XI as a stand-alone
+variable. And now we're gonna shuffle
+things around a little bit, and we're
+going to do the following. We're going to
+introduce into this expression a score of
+x I and then we're going to add it back
+in. Over here. So now we have a sum of all
+variables, so noted this is I equals one
+to N, of a score of XI in isolation. But
+for the XI's that have a parent I've
+subtracted that off in the first
+summation, and so I've compensated for
+them both sides. The important property of
+this expression is that this is the same
+for all trees. And so it doesn't affect
+the comparison between one tree and the
+other, and so the only the only expression
+that I need to consider when comparing,
+two trees, is this expression over here,
+which is the sum over I, of the score of
+X-I with its parents minus the score of
+X-I without its parents. So you can think
+of this as the score of the empty network
+and this the first, and the first
+expression the first tonation is the
+improvement that a tree gives me over the
+empty network. And so the square now
+turned into a sum of S square where each
+of these is a square of an edge from PI
+Why. Plus a constant that doesn't affect
+the selection of the net words. And that
+turns out to be the critical piece for
+doing the optimization efficiently. So,
+let's see how this all works out. So first
+of all we can define the weight of an edge
+from I to j to be the score of xj with
+it's parent xi minus the score of xj. This
+is exactly the term that we saw on the
+previous slide in the first of the two
+summations. Now, for the likelihood score,
+if we go back and plug in the likelihood
+score, we can see that this weight turns
+out to be M times the neutral information
+between I and J. The extent to which they
+are correlated with each other. And
+because mutual information is always
+non-negative, it means that all edge
+weights are always non-negative. And that
+means that the optimal structure is always
+a tree. That is there is always benefit,
+or at least there is no penalty, for
+including additional edges. For BIC or
+BDE, we know that there is a penalty
+score. So even if introducing an edge from
+XJ to XI, increases the likelihood we
+might end paying for it more in the
+penalty score than what we gain. And so
+the weight, this weight, can actually be
+negative. At which point, the optimal
+structure might actually be a forest. That
+is, it might be detrimental to our overall
+score, to make the graph full connected.
+[inaudible] mostly [inaudible] graph
+connected. That is, a tree rather than a
+forest. Okay. Now, a second observation. A
+score? Remember satisfied score equivalent
+is the property that define, we define
+before if I could structure have the same
+score. And all the score that we talk
+about are score equivalent. And turns out
+that, for score equivalent score we can
+show that the weight from I to j is equal
+to the weight from j to i. That is, you
+should compute this expression over here.
+For j to I or for I to j we're gonna get
+the exact same value. And you can see that
+in the likelihood score directly, because
+mutual information doesn't have any kind
+of directionality associated with it. The
+mutual information of x I to x j is the
+same as mutual information from x j to x
+i. So for likelihood score you could just
+see that. And it turns out that for the
+other cases, it's also it also follows.
+And so that means that we can define an
+undirected graph where it doesn't really
+matter whether I go from I to J or from J
+to I, and because the weight is the same
+for both. And so four score equivalent
+scores, we therefore get the following
+rhythm. We can define an undirected graph
+with nodes being the variables in my
+graphical model. And then I define a
+weight W, I, J to be the max of the score
+X, I between X, I and X, J and zero. And
+remember that it doesn't matter whether I
+do I, J, J, I here wouldn't get the exact
+same thing for score for that networks.
+The zero is going to be a way of
+eliminating negative edges so that I can
+optimize things efficiently without having
+to worry about negative edge costs. Now I
+can go ahead and find a forest or tree
+that has the maximal weight. And in, and
+the nice thing is it turns out that you
+could use any of the standard algorithms
+for maximal weight spanning trees in order
+to do this. So, for example, either Prim's
+or Kruskal's algorithm can be used to
+solve this. And we can in fact explain the
+solution in time that is O of n squared,
+which is an inevitable cost given that I'm
+considering all unsquared combinations in,
+in terms of pairs of edges. And then if I
+end up having edges of weight zero, that
+indicates that the edge there potentially
+contribute with the right from a negative
+component of the scores, I remove all of
+the edges whose weight is zero to produce
+a force and that is an [inaudible] and
+square time algorithm for finding the
+absolutely optimal tree relative to any of
+these three scores, [inaudible] scores
+that we've defined. So let's look an
+example. This is the ICU alarm network
+again. This is a picture of the original
+of the original network and if we apply
+this tree-learning algorithm, we end up
+with the following structure. Where the
+edges that have been marked in red are
+edges that existed in the original
+network, and the blue ones are edges that
+are [inaudible], that is they weren't in
+the original network. So this blue one
+over here, for example, isn't in the
+original network. And so we see that
+although many most even of the edges that
+we end up with are edges in original
+network. Some aren't, some are derived
+from correlation that went through
+indirect path in the original network. And
+the other thing that's important to see,
+looking at this, is that the inferred
+edges in the tree are intrinsically
+undirected. It doesn't mean that I can't
+force a direction on them. But the
+direction isn't determined by my
+optimization algorithm. And that means
+that I'm not able to determine what came
+before what in the original graph when I'm
+learning the tree. So to summarize,
+structured learning is an optimization
+problem over the inventorial set of, space
+of graphs. The decomposability property
+allows me to break that up as a sole term
+for the families and that allows me to
+optimize in the specific case of tree
+structured networks using standard maximal
+wave standing tree algorithm every
+efficiently in quadratic.

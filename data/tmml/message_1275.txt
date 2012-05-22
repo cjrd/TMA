@@ -1,0 +1,18 @@
+Dear All,
+Could anyone help me figure out Gibbs sampling for supervised LDA (sLDA)?
+Jonathan Chang's R package for LDA has such code for regression. To sample
+the topic assignment z for each word, the probability of topic k is
+multiplied by p(change | annotations[dd] + count*change, variance) for the
+sLDA (regression) part, which is a Gaussian distribution itself.
+The "change" itself is the coefficient of topic k in the linear regression
+model divided by the count of words in the current document.  It seems to me
+we should model it as p(change| annotations[dd]-\sum(z{-i})/(N-1)*\eta,
+variance), instead of the original one.
+Then my question is why we should model the probability of the regression
+part like that in the code.
+Another question is why the variance for the Gaussian distribution is fixed
+as 0.25 instead of computing the real variance in each iteration.
+Could anyone please help me on these two questions or please let me know if
+there is any reference on this?
+Many thanks,
+Bin Lu

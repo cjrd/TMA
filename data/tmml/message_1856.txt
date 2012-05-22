@@ -1,0 +1,7 @@
+You might want to try:
+./lda ...
+where, "." means "current directory"
+in UNIX speak. By default only programs
+in your $PATH directories can be called
+by name.
+Ivan

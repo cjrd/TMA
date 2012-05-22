@@ -1,0 +1,17 @@
+              Professor Carol Korzeniewski of Texas Tech University is funded by the
+              Analytical and Surface Chemistry Program to study oxidation pathways of
+              methanol and related small molecules on electrodes, which constitute
+              fundamental steps in fuel cells.  Bulk and graphite-supported nanoparticles
+              that contain platinum and platinum-group metals will serve as substrates.  The
+              reactions will be studied by vibrational spectroscopy, scanning force
+              microscopy and Monte Carlo simulations.  The objective is to identify steps
+              that limit current flow, an understanding of which can help to improve electric
+              power generation.  Different molecular behaviors are observed on bulk and
+              nanoparticle materials.  This research could lead to a molecular understanding
+              of this paradox.
+
+Fuel cells are an exciting growing technology based on an
+              electrochemical device that combines hydrogen fuel and oxygen from the air to
+              produce electricity, heat and water. Fuel cells operate without combustion, so
+              they are virtually pollution free.  Research is needed to overcome some of the
+              problems and to further develop this technology. 

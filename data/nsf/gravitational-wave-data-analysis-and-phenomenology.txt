@@ -1,0 +1,20 @@
+              This grant supports the development of gravitational wave source modeling and
+              signal processing techniques, and the implementation of a data analysis system
+              designed to detect gravitational radiation using the Laser Interferometric
+              Gravitational-wave Observatory (LIGO).  The award also supports the analysis of
+              LIGO data using both the LIGO Data Analysis System (LDAS) and the Grid Physics
+              Network (GriPhyN) in an effort to detect the four principal categories of
+              sources: gravitational-wave stochastic background, unmodeled burst sources,
+              inspiral signals from binary neutron stars and black holes, and slowly
+              modulated sinusoidal signals expected from rapidly rotating neutron
+              stars.
+
+LIGO is an ambitious project to detect gravitational waves from
+              astrophysical sources, which were predicted by Einstein almost a century ago
+              but have not yet been directly observed.   This work will make a significant
+              contribution to the overall success of the LIGO project, and may ultimately
+              lead to the first detection of gravitational waves.  This award also supports
+              research into the nature of highly energetic astrophysical sources of
+              gravitational radiation which will provide valuable insight into the nature of
+              Einstein's theory of gravity and will open a new field of astronomical
+              observation.

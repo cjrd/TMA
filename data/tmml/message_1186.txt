@@ -1,0 +1,13 @@
+Hi Pradipto,
+Thanks for the reply. I looked at the paper by the stanford guys. What I
+try to do is something similar to the work but I want to allow different
+strengths (say through some parameter $\alpha$ lying between 0 to 1) to the
+two different sets of observations (i.e. the user provided tags and the
+words in the documents). Is there a formal way to introduce and learn this
+parameter in such framework?
+Thanks,
+Ayan Acharya
+(Graduate Student,
+Electrical and Computer Engineering,
+University of Texas at Austin, USA
+Webpage: http://www.ideal.ece.utexas.edu/~ayan/)

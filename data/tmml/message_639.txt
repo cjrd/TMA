@@ -1,0 +1,6 @@
+I request members to send me a working copy of topic model (LDA)
+implementation in Lucene or pass me a link to its availability.
+Parag Dave,
+Senior Lecturer,
+DDIT,
+Nadiad

@@ -1,0 +1,13 @@
+hi tom and all,
+i wouldn't call these questions "newbie" :-)
+i don't know of any work where the topics are constrained to be
+disjoint.  (maybe someone else does?)  however, placing a dirichlet
+prior on the topic distributions with a very small parameter will
+encourage the resulting topics to be sparse.  with this sparsity, the
+model should prefer disjoint topics in order to explain the data.
+again, i don't know of any existing work.  here at princeton,
+however, we working on something along the lines of the factored
+product model that you describe.  i'd be happy to trade notes about
+this at some point.
+all the best,
+dave

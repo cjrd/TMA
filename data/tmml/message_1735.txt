@@ -1,0 +1,7 @@
+Topic Modelers,
+I am looking for papers, presentations, etc. that explore why LDA
+performance typically peaks at 40 topics (such as noted in Pachinko
+Allocation: DAG-Structured Mixture Models of Topic Correlations, Li and
+McCallum2006).
+Most grateful,
+Christopher

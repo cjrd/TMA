@@ -1,0 +1,18 @@
+Hi All,
+I'm understanding Dirichlet processes a lot better now, but this
+sentence has been bedeviling me for awhile: "Draws from a Dirichlet
+process are discrete with probability one"  I don't understand what it
+would mean for the draw to have some "probability" of being discrete -
+I would think it either was or wasn't.  How does a probability come
+into it, and  where's the "meta-distribution" that rules on that?  I
+also sometimes see statements like "stick-breaking priors are almost
+surely discrete".  Why not "probability one"?
+I also sometimes get confused about which is the "draw" and which is
+the "process".   Is the "draw" the infinite stick-breaking sequence of
+weighted point masses, and the "process" the distribution G(alpha,G0),
+OR is that infinite sequence the "process", and a given one of the
+point masses the "draw"?    Being infinite and iterated, the sequence
+seems like a "process" to me, but I've got a feeling this isn't
+right...
+thanks,
+Dave

@@ -1,0 +1,17 @@
+Hi All:
+We also have a paper
+<http://www.cc.gatech.edu/%7Esyang46/papers/UAI10.pdf>(to appear in
+this year's UAI) in a simplified version related to learning
+sparse topic models. Basically, we assume there are a large number of topics
+for the whole corpus, but each document is only relevant to a few of them.
+To encourage membership (\theta) sparsity, the Dirichlet prior is
+substituted by an exponential prior. The model essentially can be viewed as
+an integration of sparse coding and topic modeling, and enjoys the
+advantages of both--the interpretability of topic models and
+the extraordinary performance of sparse-coding.
+We also released a tutorial on "probabilistic modeling of ambiguous
+data<http://www.cc.gatech.edu/%7Esyang46/papers/Yang_ambiguous.pdf>",
+which tailors topic models to learning ambiguous data -- data produced by
+systems that are ambiguous in either *input*, *output*, or *both*.
+Cheers
+Shuang

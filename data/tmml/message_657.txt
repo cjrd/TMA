@@ -1,0 +1,2 @@
+I wonder whether BIC can be used in this case. by varying the topic number, and calculate the likelihood & bic of the train data with respect the learned model, then select the number whose bic is the minimus. the superiror is that it need not an extra dataset, like perplexity, for computing bic  .
+Jianping Zeng

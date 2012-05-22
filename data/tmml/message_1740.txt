@@ -1,0 +1,15 @@
+Dear colleagues -- a question on sampling from a Dirichlet--multinomial distribution with a sample-dependent window.
+Consider a discrete data set x_i \in [1, K] drawn from a multinomial:
+x_i ~ \theta
+\theta ~ Dirichlet(a)
+with the usual constraints.
+We additionally know that the samples are constrained to a sample-dependent window that is smaller than [1,K],
+w(i, k) : N x K -> {0, 1} ,
+Looking only at the data x_i, we could just use:
+x_i ~ \theta'_i,k
+\theta'_i,k \propto \theta_k * w(i, k)
+but then the Dirichlet prior is not valid any more.
+Is there some way to have a proper sampling scheme for \theta'_i,k and consequently determine the hyperparameter a ?
+Maybe that's somewhere in the statistics literature but what's it called again...
+Thanks
+gregor

@@ -1,0 +1,10 @@
+Hi,
+I am also trying to implement hLDA but I have not finished yet.
+Actually, I am not quite sure about the initialization of the path
+assignments that actually give the form of the tree at the end. What I am
+saying is that I am not sure if you have to follow a specific
+initialization. However, the paper says that the number of leaves is the
+union of existing paths and number of internal nodes. So, I guess you can
+initialize the tree this way.
+Cheers,
+ilias.

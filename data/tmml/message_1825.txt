@@ -1,0 +1,10 @@
+Dear All,
+This is my first post to this list. I am starting to learn topic modeling,
+and trying to run the lda-c package authored by Blei.  I have two questions
+with respect to the input format,
+1)      Given a large collection of plain text file, is there any existing
+utility/script to transfer these files into the required format of lda-c
+package?
+2)      How to generate the vocab file?
+Many thanks for the help.
+Wen

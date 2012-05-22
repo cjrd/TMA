@@ -1,0 +1,37 @@
+Dovi,
+I'll try to respond to this in an informal way---hopefully the intuition
+will be clear, and apologies if you're looking for something more formal.
+You say that after you run LDA in your example, you know that the n-th
+word comes from topic z_2 as opposed to z_1 or z_3. However, this is
+really a simplification: what Gibbs sampling gives you is a distribution
+over the three topics z_1, z_2 and z_3 for the word in question (since
+any word, in any document, *could* have come from any topic---it's just
+much more likely to have come from some than others). For the sake of
+interpretation it's often reported that the word came from z_2 because
+the probability of z_2 for that word is higher than that of any other z;
+but none will be zero.
+The Gibbs sampler works by sampling a new topic assignment (z) for each
+word given the current assignments for all other words, and iterating
+this many times. Averaging the topic assignments over the many
+iterations (and thus, hopefully, many allocations of topics for all the
+other words in the document) gives us an estimate of the distribution
+over topics for that word. Thus the sampler doesn't worry about the
+assignment for any particular iteration, just the picture obtained by
+averaging over iterations.
+Further to this, the same result should hopefully be obtained (provided
+the number of iterations is sufficiently large) on multiple runs with
+multiple different initialisations because after some period of time
+(the burn in), the Gibbs sampler should "settle down" into the posterior
+distribution and explore it reasonably well. Coming back to my earlier
+point about not caring what happens on any particular iteration so much
+as the average of them, the fact that it explores this space in a
+different sequence each time, and with a finite number of iterations the
+precise space will be different each restart, doesn't matter because we
+hope the average will be stable. The average over the samples is an
+estimate of the average over all possible assignments for all other
+topic indicators in the document. This isn't always the case, and there
+are reasons why Gibbs sampling can fail (you'll be able to find a whole
+lot about this if you're interested), but on the whole it's pretty
+useful for the LDA model.
+I hope that's of some use,
+Dovi P wrote:

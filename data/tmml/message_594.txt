@@ -1,0 +1,4 @@
+Kevin R. Canini, Lei Shi, and Thomas L. Griffiths, Online inference of
+topics with latent Dirichlet allocation, Proceedings of the 12th
+International Conference on Artificial Intelligence and Statistics
+(AISTATS), April 2009.

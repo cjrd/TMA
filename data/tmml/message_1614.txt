@@ -1,0 +1,16 @@
+Hi all,
+Does anyone know what is the latest and greatest on joint
+topic/sentiment analysis?   I know of the papers listed below, but I
+feel like I might be missing something...
+thanks,
+Dave
+"Topic Sentiment Mixture: Modeling Facets and Opinions in Weblogs", Mei
+et al.
+http://www2007.org/papers/paper680.pdf
+"Holistic Sentiment Analysis Across Languages:   Multilingual Supervised
+Latent Dirichlet Allocation", Graber and Resnick.
+http://www.umiacs.umd.edu/~jbg/docs/jbg-mlslda-2010.pdf
+"Joint Sentiment/Topic Model for Sentiment Analysis", Lin and He.
+"Aspect and sentiment unification model for online review analysis.", Jo
+and Oh.
+uilab.kaist.ac.kr/research/WSDM11/wsdm400-jo.pdf

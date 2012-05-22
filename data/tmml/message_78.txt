@@ -1,0 +1,9 @@
+Hi All,
+I am a newbie in LDA and I want to run it on my data collection. I have a directory names LDA and I untared it in the Ida-C-dist directory, so all the files are in here:
+LDA/Ida-C-dist/
+then I use the "make" command, so now I have object files. When I want to run the pachage for "topic estimation", I type in this command:
+Ida  est 0.5 100 settings.txt test.txt random, I get this error:
+" bash: lda: command not found"
+test.txt is my input file.
+I have one more question: I have a directory of files and I want to extract topics for each of them seperately. Would you please let me know if there any way to do it?
+Thanks in advance

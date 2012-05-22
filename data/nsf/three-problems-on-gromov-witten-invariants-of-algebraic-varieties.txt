@@ -1,0 +1,88 @@
+              DMS-0303614
+Ionut Ciocan-Fontanine
+
+ 
+The PI proposes to pursue a program
+              based on the
+theory of derived moduli spaces towards calculating higher
+              genus
+Gromov-Witten invariants of certain Calabi-Yau threefolds, such as
+              the
+quintic in projective 4-space. While computations of the genus
+              zero
+invariants have been quite successful, leading to proofs of
+              physicists'
+Mirror Symmetry - based predictions in that case, there has been
+              no
+progress so far in higher genus. The main obstacle has been a lack
+              of
+concrete understanding of the virtual fundamental classes of the
+              moduli
+spaces of higher genus stable maps. In recent work, the PI and
+              Kapranov
+have developed an approach to virtual classes via differential-graded
+              (dg)
+manifolds. Dg-manifolds appear as derived versions of
+              algebro-geometric
+moduli spaces. The PI and Kapranov constructed such a
+              structure on the
+moduli spaces of stable maps. The greater flexibility of the
+              dg-point
+of view restores some of the features that facilitated the genus
+              zero
+computations. The ultimate goal is to prove the higher genus
+              ``mirror
+theorem'', as predicted by the physicists Bershadsky, Cecotti,
+              Ooguri,
+and Vafa. A crucial part of the program involves a novel construction
+              of
+a virtual class in situations outside the reach of earlier
+              approaches.
+This is of great independent interest in algebraic geometry, as it
+              allows
+to extend the theory of virtual classes to all moduli spaces, as
+              opposed
+to just the (rather small) subset to which it currently
+              applies.
+Ciocan-Fontanine also proposes to establish a relationship between
+              the
+genus zero Gromov-Witten theory of a GIT quotient X//G by a
+              reductive
+algebraic group G, and that of the associated abelian quotient
+              X//T,
+where T is a maximal torus in G. Precise conjectures are made on what
+              the
+relationship is, inspired by results obtained recently by the PI and
+              his
+collaborators in the case when X is a complex vector space and G is
+              the
+general linear group. They are  consistent with expectations on how
+              the
+physical theories associated to X//G and X//T are related and will be
+              of
+interest to physicists, as well as to algebraic geometers.
+The third
+              problem proposed by the PI is to give a proof of a combinatorial
+formula for
+              the three-point, genus zero Gromov-Witten invariants of complex
+Grassmannians.
+              This is the only outstanding unsolved problem remaining in
+``Quantum Schubert
+              Calculus.''
+
+This is research in the field of algebraic geometry, which is
+              one of the
+oldest branches of modern mathematics. In recent years, the methods
+              and
+ideas of algebraic geometry, especially the study of moduli spaces,
+              have
+been employed in string theory, a very active part of theoretical
+              physics.
+Developments in string theory have  sparked a fruitful interaction
+              between
+the two communities of researchers and have led to the discovery and
+              study
+of many unexpected new phenomena. The theory of Gromov-Witten
+              invariants
+and Mirror Symmetry are particularly striking examples.
+

@@ -1,0 +1,10 @@
+Dear all,
+I am interested in the data used in Blei & Lafferty's Correlated Topic
+Model (2007), which is part of the JSTOR dataset.
+After browsing the relevant publications/Jstor I fear, that it is not
+publicly available.
+Is that true or does somebody have access to it?
+Apart from that corpus, are there some "benchmark" datasets, to evaluate
+different LDA variants?
+Kind regards,
+Anja Pilz

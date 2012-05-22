@@ -1,0 +1,28 @@
+Hello,
+I would like to reproduce the experiment on the provided ap corpus
+using lda-c with respect to the perplexity (Figure 9 in the paper).
+The (short) question is: which parameters/procedure has been exactly
+used to do this?
+Details follow:
+I've tried different things (always assuming 0<=alpha<=1):
+- setting different fixed alpha as K (#topics) increases ;
+- estimating alpha ;
+- alpha=constant/K ;
+- using the first/last 10% of the dataset as testing set ;
+- using cross-validation.
+Probably there is something wrong in my procedure:
+1) train the lda model using the training set; (i.e., option "est");
+2) use the trained model to infer (i.e., option "inf") on the testing
+set;
+3) from 2 I obtain the X-lda-lhood.dat file, from which I compute
+"sumlhood", the sum all the rows in the file;
+4) from the training set I count "nwords", the total number of word
+instances in every document.
+5) perplexity = exp{ (-1) * sumlhood / nwords } , that should be the
+formula in par. 7.1, page 1008 in the paper.
+In each of my test, I obtain a decreasing perplexity as K grows until a
+point, after which it suddenly increases!. I highlight that the values
+of perplexity are notably higher than those in Figure 9 when the curve
+decreases.
+Thank you,
+Savio

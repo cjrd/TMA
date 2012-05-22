@@ -1,0 +1,10 @@
+Hi, all
+I just started to read the paper "Latent Dirichlet Allocation",
+and I have a question about express of the eq.(2) in page 996.
+"the joint distribution of a topic mixture sita, a set of N topics z, and a set of N words w is given by eq.2"
+I noticed that the number N is used not noly for words but also for topics.
+Does it means that the number of topics equal to that of words?
+Thanks a lot.
+___________________________________________________________
+?????????????????
+http://card.mail.cn.yahoo.com/

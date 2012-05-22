@@ -1,0 +1,9 @@
+hi, Jonathan
+thanks a lot for your email! That's indeed a typo. it should be
+$\Delta_{s_t}$ as you guessed. In addition, i put the code (unpolished
+though) at http://www.cs.princeton.edu/~chongw/software/cdtm.tar.gz
+if you have any suggestions, please let me know.
+thanks a lot!
+best
+chong
+2010/11/22 Jonathan Halcrow <jonathan.halcrow at gmail.com>:

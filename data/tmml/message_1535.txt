@@ -1,0 +1,5 @@
+<topic-models at lists.cs.princeton.edu>Hi all,
+I am trying to  use LDA for large collection of images which consist of
+around 1,60,000 images.
+Can anyone give me a hint about what would be the appropriate value of
+iterations for variational inference and EM?

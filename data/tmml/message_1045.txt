@@ -1,0 +1,6 @@
+You could get ~(#of cores in CPU)X speedup if you are using a single
+machine with multiple cores and lots of memory. Lots of desktops and
+even laptops have such configurations now-a-days. A popular library to
+use for that purpose is MPI.
+Pradipto
+RadimRehurek wrote:

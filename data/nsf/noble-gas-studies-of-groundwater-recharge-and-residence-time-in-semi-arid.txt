@@ -1,0 +1,37 @@
+              0001133
+Hilton
+
+
+In this proposal, we will conduct a noble gas study of a
+              series of groundwaters from three well-studied semi-arid regions.  The aims are
+              twofold:  first, we plan to assess the potential of the 4He accumulation method
+              to accurately estimate groundwater residence times over a range of ages from
+              100s to >500,000 years.  The approach will involve inter-calibration with a
+              number of different groundwater dating techniques (tritium, 14C and 36Cl, and
+              integration of the total database into previouslydeveloped groundwater flow
+              models for the individual basins.  An important feature will be ascertaining
+              the nature of the 'crustal He flux' and its quantification in the three studied
+              areas, particularly as one, the West Mojave River Basin, is situated on
+              tectonically active crust while the other two, Central Australia and Botswanna,
+              lie on stable cratonic platforms.  We will concentrate on deriving long-term,
+              paleo-recharge rates for the three regions-a parameter of vital importance to
+              current resource management strategies-but other hydraulic quantities (e.g.,
+              aquifer permeability can be also assessed using the 4He technique.
+
+The
+              second aim is to utilize the noble gas abundances (concentrations of Ne, Ar, Kr
+              and Xe) to derive both temperatures and environmental conditions at the time of
+              recharge.  In each of the studied areas, we will select waters, dated by 4He
+              and other techniques, to focus on the last glacial period.  Through the
+              relationship between noble gases and stable isotopes  d18O and d2H, we plan to
+              determine (paleo) temperature variations and other localized effects (e.g.,
+              rising water tables) characteristic of past recharge regions.
+
+Through
+              collaboration with colleagues from the Geological Surveys of the respective
+              regions (U.S., Australia and Botswanna), we will have unprecedented access to a
+              wide range of geochemical and geophysical data on the regions of study,
+              logistical support for new sample collection, training opportunities on
+              state-of-the-art groundwater software, and localized expertise on real-world
+              resource and groundwater management issues.
+

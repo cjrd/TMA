@@ -1,0 +1,3 @@
+What about the ACL anthology corpus?  It's only ACL, but it's big and
+linked well...
+Gregor Heinrich wrote:

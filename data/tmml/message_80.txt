@@ -1,0 +1,7 @@
+David,
+nice work.  I had two questions:
+1. how did you train the baseline language model Dirichlet parameter?
+2. why didn't you compare to a pseudo-relevance feedback method like
+Lavrenko's "relevance models"?  This has the same vocabulary
+expansion effect, especially with the behavior of baseline language
+model performance you describe.

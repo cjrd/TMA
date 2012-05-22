@@ -1,0 +1,7 @@
+Dear Charles,
+Thanks for the input. The first link seems is beautifully written. I do realise that in my application the most important aspect would be the heuristic that I use to define ratings. The data I have is of the following format:
+<user_id>    <track_id>    <rating>    <#skips>    <#plays>
+So, right now I have defined a rating based on the number of skips and plays and then modelled the problem as a collaborative filtering one because I feel this captures the essence of the task completely. The goal is to produce a vector of songs for each user consisting of songs that he has not "rated" and arranged in decreasing order of preference.
+If, however, there is a better way to formulate this problem then I would be interested in knowing it.
+Thanks
+Rahul

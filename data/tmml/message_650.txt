@@ -1,0 +1,14 @@
+Personally, what I think recommends perplexity is that it fits easily
+into MDL-and-the-like approaches to regularization which I appreciate
+for religious reasons and because regularization in a setting of
+algorithmic information theory is a favorite topic of mine (I'm
+working on implementing such regularization for reinforcement learners
+with fairly large classes of models and one gets access to very strong
+results, like these: http://www.idsia.ch/~juergen/unilearn.html ).
+Speaking of which, a little googling turned this up, which seems to me
+like a step in an interesting and probably fruitful direction for
+topic models:
+"Unsupervised Selection of a Finite Dirichlet Mixture Model: An
+MML-Based Approach"
+http://www2.computer.org/portal/web/csdl/doi/10.1109/TKDE.2006.133
+Anthony

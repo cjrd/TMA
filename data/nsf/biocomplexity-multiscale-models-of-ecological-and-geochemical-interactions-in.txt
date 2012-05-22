@@ -1,0 +1,33 @@
+              The seafloor contains diverse assemblages of organisms, woven into complex
+              ecological systems where their activities, distributions and biological
+              interactions are intricately linked to the physical and chemical character of
+              the sedimentary environment. It is also an active site of elemental cycling,
+              and a critical long?term sink in the global cycles of major constituents,
+              including carbon, nitrogen and sulfur. Thus, the interplay between organisms
+              and sediment properties can strongly influence the geological/geochemical
+              record, clouding the understanding of past climate and paleoceanography, and
+              obscuring the ability to determine current rates of elemental cycling and
+              burial. There is considerable information about specific processes within
+              sedimentary environments but little is known of how to integrate them. Such
+              integration is critical to understanding the role of sediments in global
+              environmental processes, and the selective pressures affecting population
+              structure, community ecology and reproductive success of resident organisms. 
+              To understand and predict the interactions between the biology, chemistry and
+              physics of sediments, and their impacts on populations, communities, and
+              biogeochemical processes, models must be developed to permit the basic
+              geochemical and geophysical processes to respond to the activities of
+              organisms, and vice versa.
+
+A series of workshops will be held to bring
+              together ecologists and ecological modelers, physiologists and microbial
+              biologists, physical and geochemical modelers with numerical modeling
+              expertise, biogeochemists and applied mathematicians to attack this numerically
+              intensive and difficult problem. The goals are as follows: to discuss scales of
+              interactions, feedback loops, nonlinear processes and emergent properties, and
+              how they might be successfully included in existing modeling approaches; to
+              broaden models to achieve integration over multiple spatial and temporal
+              scales; to discuss novel mathematical approaches or combinations of models; to
+              summarize findings in a commentary piece, and finally to discuss 'next steps'. 
+              The research topic will most likely lend itself to one or more research
+              proposals, or perhaps, a new initiative in coastal sedimentary processes.
+

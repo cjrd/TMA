@@ -1,0 +1,10 @@
+Dear All:
+I am looking for a implementation of Wang, Blei and Heckerman's
+`Continuous time dynamic topic models' (P. UAI 2008).  Or barring
+that, would it be advisable to try and modify the existing dDTM
+(discrete-time dynamic topic model) code posted here:
+http://code.google.com/p/princeton-statistical-learning/downloads/detail?name=dtm_release.tgz&can=2&q=
+to implement the cDTM model?
+As always, many thanks for any tips, pointers, advice.
+Best,
+Scott Moser

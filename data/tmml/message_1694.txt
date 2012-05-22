@@ -1,0 +1,12 @@
+Hi Dan,
+I've been working with a JSTOR DFR corpus recently. (I've used LDA
+through the topicmodels R package, which calls GibbsLDA++.)
+I do have one idea about (part of) your problem. The LDA implementations
+you refer to are very different. MALLET uses Gibbs sampling and (I
+think) it uses an asymmetric prior specification described in
+"Rethinking LDA: Why Priors Matter" by Hanna Wallach et al. The original
+LDA C code doesn't use Gibbs. (And the software that does use Gibbs
+tends to use symmetric priors on the two Dirichlets.) I'm not surprised
+the results differ.
+Best,
+Allen

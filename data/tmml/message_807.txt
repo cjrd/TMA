@@ -1,0 +1,6 @@
+Anyone in this list using the "lda-ruby" software in a real-world project?
+I am looking for a basic introduction that might help with a
+proof-of-concept work at USDA.
+Goal:  1. A new proposal is submitted for funding (lots of text)
+2. Classify and check to see if the work has been done in a prior
+project (only 50,000 projects in the repository)

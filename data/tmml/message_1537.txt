@@ -1,0 +1,12 @@
+Hi Sebastian,
+To make it simple, we don't allow all the options in svmlight; instead we
+set many parameters at default values, including 'sparm->loss_function'.
+Please see the function
+void MedLDA::set_init_param(STRUCT_LEARN_PARM *struct_parm, LEARN_PARM
+*learn_parm,
+KERNEL_PARM *kernel_parm, int *alg_type)
+...
+The parameter is sparm->delta_ell set to have the same value as m_dDeltaEll.
+If you need more options, you can change the above function.
+Thanks,
+Jun

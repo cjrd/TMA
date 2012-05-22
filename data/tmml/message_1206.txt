@@ -1,0 +1,34 @@
+Topic Modelers,
+I want to perform document retrieval using LDA. I need to compute the
+similarity of a query and each document in the corpus. According to
+Wei and Croft 2006 (Equation 5), as well as Steyvers and Griffiths
+2007 (Equation 21.9), I should compute this conditional probability
+as:
+P(Q | D) = \prod_{q \in Q} P(q | D)
+Isn't this a bit harsh? Since this is a product, we are saying that if
+any one of the query's words gets a score of 0 (i.e., P(q | D) = 0 for
+some q), then the entire similarity score is 0. If the query had 10
+words, 9 of which were highly relevant and 1 of which was irrelevant,
+we would assign the query a score of 0? Am I understanding this
+correctly?
+Why isn't this a summation instead of a product? (We can normalize by
+query length.)
+Thanks in advance,
+Steve
+@inproceedings{wei2006lda,
+title={LDA-based document models for ad-hoc retrieval},
+author={Wei, X. and Croft, W.B.},
+booktitle={Proceedings of the 29th annual international ACM SIGIR
+conference on Research and development in information retrieval},
+pages={178--185},
+year={2006},
+organization={ACM}
+@article{steyvers2007probabilistic,
+title={Probabilistic topic models},
+author={Steyvers, M. and Griffiths, T.},
+journal={Handbook of latent semantic analysis},
+volume={427},
+number={7},
+pages={424--440},
+year={2007},
+publisher={Lawrence Erlbaum Associates}

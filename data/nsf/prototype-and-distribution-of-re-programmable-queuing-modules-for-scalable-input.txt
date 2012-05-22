@@ -1,0 +1,40 @@
+              The growing size of the Internet and the emergence of new applications that
+              require Quality of Service
+mandate radical changes in the way that network
+              switches buffer data.  This growing demand for bandwidth has pushed the
+              architectures of existing output-buffered and shared-buffer switches to their
+              maximum scalability limits.  Input-buffered architectures overcome scalability
+              limits by evenly distributing the queuing operations over all ports of the
+              switch.  Scaling the aggregate bandwidth of a switch, however, does
+not
+              necessarily guarantee that an individual application's traffic flow is serviced
+              fairly.  Switches that provide per-flow queuing fairly allocate bandwidth and
+              provide bounded delay.  Existing switches provide either scalability or
+              per-flow queuing, but none provide both.
+
+This research will implement a new
+              hardware module that enables a scalable switch to provide per-flow queuing. 
+              This new module, called the WU-iiQ, will add enhanced queuing features to the
+              highly scalable Washington University Gigabit Switch (WUGS).  The logic for
+              this card will be implemented with a Field Programmable Gate Array (FPGA)
+              device, enabling it to implement a variety of queuing algorithms.  The WU-iiQ
+              will contain high-capacity Synchronous Dynamic Random Access Memory (SDRAM) to
+              buffer ATM cells and Static Random Access Memory (SRAM) to store data
+              structures and pointers for algorithms that perform per-flow queuing.
+
+The
+              flexibility of the WU-iiQ has made the card of interest for several
+              applications at this and other academic institutions.  The reprogrammable logic
+              on the WU-iiQ enables it to implement a variety of per-flow functions,
+              including packet scheduling, traffic shaping, and congestion control.  While
+              all of these projects are different, they can all be implemented by using the
+              same hardware.
+
+This project proposes to implement the WU-iiQ hardware and
+              distribute it to research institutions that require such hardware to experiment
+              with per-flow queuing mechanisms.  Documentation for this WU-iiQ module will be
+              made available via the World Wide Web.  A library of commonly-needed hardware
+              functions, including those that implement per-flow queuing operations, will be
+              available for download.
+
+

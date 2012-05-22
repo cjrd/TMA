@@ -1,0 +1,4 @@
+Hi All:
+I am using Latent Dirichlet Allocation in string discrimination for my
+last year Master degree. Can I get some help for the foundation
+knowledge of LDA. Could someone explain the detail for me.

@@ -1,0 +1,8 @@
+Dear all,
+Dynamic topic model (DTM) is originally learned in an offline way, in other
+words, data in all the time epochs are used to infer the overall model. My
+question is that how could I infer DTM in an incremental meaner, namely
+infer parameters involved in  time epoch t by using just those in previous
+time epochs at the cost of losing some accuracy.
+Thanks,
+Dongsheng

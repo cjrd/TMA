@@ -1,0 +1,7 @@
+hi mateusz,
+TF are corpus-wide normalized per-term observation counts.  IDF are
+the negative logs of the corpus-wide normalized per-term document
+occurrence counts.  this is like standard TFIDF, but with the TF taken
+across the whole corpus.
+best,
+dave

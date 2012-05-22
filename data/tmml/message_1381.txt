@@ -1,0 +1,14 @@
+hi zy vxd (sorry, can't read mandarin) -- the derivation starts by observing
+that the parts of (73) correspond to the two quotients in (74) on the right.
+In footnote 20, it is stated that p(w) is omitted in the denominator. Note that
+then we have to put a proportional-to sign instead of equality.
+In (74), insert the terms terms of (73) into the corresponding parts of (74).
+This leaves us with the two quotients in (75) because only those terms are left
+that have token i excluded in the denominator in (74) right. Note that this
+corresponds to term w_i = t and current topic association z_i, which are both
+known at the time of sampling.
+Continuing from (75), you expand the multidimensional beta function, Delta(.),
+and will see that again all terms cancel except the ones given in (76).
+Ok?
+best regards
+gregor

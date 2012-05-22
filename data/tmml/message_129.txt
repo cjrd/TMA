@@ -1,0 +1,14 @@
+hey jerry,
+i assume you don't want to just use LSI and the SVD and get orthogonal
+elements in the topic space.. assuming that, i've heard that models based on
+a non-negative matrix factorization (NMF) using a least squares objective
+tend to produce fairly separated topics, though they don't force
+orthogonality.
+check out "*Document clustering based on non-negative matrix factorization"
+by Xu et al.*
+http://portal.acm.org/citation.cfm?id=860435.860485&dl=portal&dl=ACM&type=series&idx=860435&part=Proceedings&WantType=Proceedings&title=Annual%20ACM%20Conference%20on%20Research%20and%20Development%20in%20Information%20Retrieval
+john canny's GaP method follows up on the NMF work and describes a
+generative probabilistic model that leverages NMFs. see
+http://portal.acm.org/citation.cfm?id=1009016&dl=acm&coll=&CFID=15151515&CFTOKEN=6184618
+cheers
+omar

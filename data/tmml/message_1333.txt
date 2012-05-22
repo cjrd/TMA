@@ -1,0 +1,10 @@
+Hi everyone,
+If we have already learned a topic model, how can we know the topic
+distribution for the whole corpus?
+By the way, if we have new data, can we estimate a new model based on
+the parameters estimated by an old model as the topic prior and does
+the topics in the newly learned mode the same with the old model
+(assume that the data have the same vocabulary as feature space and the
+number of topics are the same)?
+Regards,
+Peng

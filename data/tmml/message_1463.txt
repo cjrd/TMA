@@ -1,0 +1,6 @@
+Hi Andrey,
+Although I'm not too sure on this, how about plotting log-likelihood of the
+model (on held-out data, of course) against beta, and then choosing an
+appropriate beta from the graph?
+Best,
+Shibamouli

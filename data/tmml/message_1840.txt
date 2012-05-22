@@ -1,0 +1,6 @@
+Are you using the vocab file to parse the documents into a data file?
+If so, you should be fine and I don't know what the problem could be.
+If not, you're editing a file that the LDA algorithm probably isn't
+looking at, and so the topics are still using the old vocab.
+ajbc
+2012/3/13 yu shen <shenyu.sh at gmail.com>:

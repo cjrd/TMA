@@ -1,0 +1,3 @@
+... yes, dividing the dirichlet-multinomial for all the words by the d-m
+for all the words in other documents.
+I'm still confused about the second part! :)

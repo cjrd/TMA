@@ -1,0 +1,6 @@
+Hi all,
+The inference code for using First-Order Logic with LDA is available at
+https://github.com/davidandrzej/LogicLDA
+Any feedback (comments, questions, bug reports) is much appreciated.
+-Dave
+jerryzhu at cs.wisc.edu wrote:

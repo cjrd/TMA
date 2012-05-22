@@ -1,0 +1,45 @@
+              Abstract
+Hu
+
+This proposed research addresses ergodic properties of "almost
+              hyperbolic" dynamical systems.
+Here "almost hyperbolic" systems means a smooth
+              dynamical systems that is hyperbolic everywhere except for a finite set of
+              points.  These systems include "almost Anosov" diffeomorphisms, "almost
+              hyperbolic" invariant sets, piecewise expanding maps on the unit interval with
+              indifferent fixed points, and invariant sets of expanding maps with indifferent
+              fixed points.  "Almost hyperbolic" systems lie on the boundary of the set of
+              uniformly hyperbolic systems in the space of smooth dynamical systems.  By the
+              results obtained from "almost Anosov" diffeomorphisms on the surface, the
+              ergodic properties of such systems may be quite different from that of
+              uniformly hyperbolic systems, though the topological properties are similar.  
+              For example, these systems may or may not admit SRB measures, and even when
+              they do, correlation decay may change from exponential to polynomial.
+This
+              project stresses existence and properties of SRB measures, rate of decay of
+              correlations, and stochastic stability under small perturbations for general
+              "almost hyperbolic" systems.
+
+Uniformly hyperbolic systems are the main
+              research subjects in smooth dynamical systems since late 60's.  These systems
+              display many types of complex dynamic behavior, and whose behavoir are often
+              regarded as chaotic.  Ergodic theory concerns understanding the long-term
+              behavior of systems.  Now ergodic properties for uniformly hyperbolic systems
+              are understood very well, and people are interested in such properties for
+              nonuniformly hyperbolic systems.  "Almost hyperbolic" means that hyperbolic
+              conditions fail at a finite set of points.  These systems lie on the boundary
+              of the set of uniformly hyperbolic systems, and are the simplest nonuniformly
+              hyperbolic systems.  Results obtained earlier for some particular systems,
+              "almost Anosov" systems in the two-dimensional torus, show that such systems
+              may-and sometimes do-exhibit totally different long term behavior.  In this
+              project we will study ergodic properties of more general "almost hyperbolic"
+              systems.  We are particular interested in orbit distrubitions, rate of mixing,
+              and stochastic stability under small perturbation for such systems.
+
+ 
+              
+
+
+
+
+

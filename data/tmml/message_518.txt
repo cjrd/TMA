@@ -1,0 +1,6 @@
+hi maojin
+there's some discussion of the connection between LDA and matrix
+factorization methods in griffiths and steyvers 2006 paper
+"probabilistic topic models."
+best,
+dave

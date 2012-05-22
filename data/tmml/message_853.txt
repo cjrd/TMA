@@ -1,0 +1,6 @@
+There is a paper about discriminative topic model.
+But the "discriminative" may be not exactly what you want:)
+Best
+Jie
+HP: http://keg.cs.tsinghua.edu.cn/persons/tj/
+http://arnetminer.org

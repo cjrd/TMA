@@ -1,0 +1,40 @@
+              Heat-shock proteins (Hsps) are types of general stress proteins produced by
+              virtually all organisms in response to most environmental and biological
+              stresses, and are thought to protect cells from damage during stress or
+              facilitate recovery.  The importance of variation in the cellular quantity or
+              biochemical efficiency of Hsps is unknown, particularly for plants and for the
+              category of Hsps referred to as the low-molecular-weight or "small" Hsps. 
+              Progress in understanding Hsps has been hampered by the lack of appropriate
+              biomolecular probes for specific Hsps and methods to experimentally manipulate
+              and assess the effect of variation in Hsps.  
+
+The PIs have developed
+              molecular probes specific to the small Hsps in chloroplasts, the cell
+              compartment where photosynthesis takes place in plants, as well as assays to
+              assess Hsp effectiveness.  Using these tools, they have shown that chloroplast
+              small Hsps protect photosynthesis during heat and other environmental stresses,
+              by protecting a key stress-sensitive step of photosynthesis (electron transport
+              in Photosystem II).  However, differences among plants in the ability of
+              chloroplast small Hsp to protect photosynthesis during stress, such as
+              predicted differences between heat-tolerant wild plants and heat-sensitive
+              crops, have not been examined.
+
+In this series of studies, the PIs will
+              examine chloroplast small Hsps in stress-sensitive vs. stress-tolerant wild
+              plants to determine how they differ in the cellular quantity and biochemical
+              efficiency of small Hsps and how this affects the protection of photosynthesis
+              during heat stress.  This would be the first such investigation for plant Hsps.
+               They will explore molecular and biochemical variation in small Hsps across a
+              range of species, they will examine correlations between small Hsp content and
+              plant performance, and they will carry out experiments in vitro, using Hsps
+              purified from a range of species, to determine how qualitative and quantitative
+              variation in chloroplast small Hsps affects their protective function.  These
+              results will contribute both to understanding factors that affect
+              stress-tolerance of plants in nature and to understanding factors that may be
+              useful in agricultural research. Given the importance of chloroplast small Hsps
+              in protecting photosynthesis during many stresses, the central role of
+              photosynthesis in plants, and the high sensitivity of photosynthesis to
+              environmental stress, the results should be especially useful for the
+              bioengineering and breeding of more stress-tolerant crops.
+
+

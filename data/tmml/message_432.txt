@@ -1,0 +1,15 @@
+Hi all,
+In LDA-C, there is a function log_sum, given log(a) and log(b), it returns
+log(a+b),
+and when it comes to finding the log of the sum of some numbers, the logic
+is like this:
+log_sum_a=log(a(0));
+for(int i=1;i<n;i++)
+log_sum_a=log_sum(log_sum_a,log(a(i)));
+return log_sum_a;
+but I wonder why it?s not like this, in a more straightforeward way:
+for(int i=0;i<n;i++){sum_a+=a(i);}
+return log(sum_a);
+Is there any numerical issue?
+Yuanlong Shao
+Zhejiang University

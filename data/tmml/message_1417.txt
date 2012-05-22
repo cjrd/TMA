@@ -1,0 +1,11 @@
+I think variational inference (VI) is derived from variational
+calculus (VC). In VI, the only assumption is
+a factorized distribution over hidden variables. There is no
+restriction on the functions of the factors.
+So optimization requires a search through the space of functions,
+which requires VC.
+However, it can be derived that the optimal function with respect to
+each factor can be obtained by
+minimizing the KL divergence, which makes the search process simple.
+The optimal function turns out to be the
+expectation(over all other factors) of the complete data log-likelihood.

@@ -1,0 +1,280 @@
+
+So previously we defined the clique tree
+algorithm which is just the belief propagation
+algorithm run over a graph that happens to
+be a tree. As it turns out, we can exploit
+the aspects of the tree to greatly improve
+the computational behavior of this
+algorithm, not just its correctness which
+is what we've showed before. So let's go back for [inaudible
+message passing in this very simple
+tree which has just these four clusters
+ab, bc, cd, de, and lets see what the
+messages do. So here is the message delta_1-2
+which is the message that is
+passed on this edge. And here's the
+message delta_2-3 and so on. And these are
+the six messages that we have. And now we
+can notice one very important property.
+Delta 1-2, once computed, never
+changes. So you get instant convergence of
+Delta 1-2. Once you compute it for
+the very first time, there's convergence.
+Now what about delta 2-3? Well, that
+depends on when delta 2-3 is passed. If
+delta 2-3 is passed first, before it gets,
+before cluster two gets a message from
+cluster one, then, once it gets that
+message, things might change. But if
+cluster two is clever, it's gonna wait.
+And it waits until that message is passed.
+And once that message is passed, it
+doesn't chance. Delta 2-3 doesn't change
+either, ever, if it's smart enough to
+wait. What about delta 3-4? Delta 3-4
+needs to wait a little bit longer, because
+it needs to wait for delta 2-3. But if it
+waits for both delta 1-2 to be passed to
+cluster two, and delta 2-3 to be passed to
+cluster three, then now it's, now that
+it's, now that it sends delta 3-4, delta
+3-4 doesn't change either. So delta 2-3,
+has to wait, for, delta 1-2. And
+delta 3-4 has to wait, for, delta 2-3
+but assuming it waits then
+convergence is achieved in a single
+message passing step. Now there is nothing
+magical about going left to right. If you
+go right to left you get the exact same
+behavior. So, here you have this one
+converges instantly. This one, you need to
+wait. For delta 4-3. And this one
+you need to wait. for delta 3-2. But again,
+once, assuming you wait, then the messages
+converge in a single step. And so we can
+compute all of the messages in this entire
+tree in one pass in either direction. One
+pass from left to right, and one pass from
+right to left. In the context of chain
+structures like this one, this is
+actually, this actually has its own name.
+So for chains, you might see this under the
+name forward backward algorithm. And is
+very commonly used in things like hidden
+Markov models and, and other similar chain
+structured representations. And so the
+point is, the total effort that we had to
+compute all of these messages is just one
+message passing step in each direction.
+One from left to right, and one from right
+to left. And. The result of that, remember
+that once all messages have been passed,
+we have beliefs that are correct beliefs
+that represent. That are marginals of
+P tilde Phi. And so we've computed all of
+the marginals, of all of the clusters in
+this graph in one, in, in sorry two,
+sweeps over this clus, over this clique
+tree. And so more generally as we said,
+once Ci received a final message from all
+of its neighbors except for Cj. It said,
+wait to send, if it waits to send the
+message to j until, until I receive the
+message from everybody else. Then that
+message delta ij is also final. So if
+these are final, this is also final. Can
+you always find a message passing order,
+that will achieve that goal? I mean, maybe
+you kind of, everybody ends up waiting for
+everybody else, and they all get stuck,
+and they never send anybody any messages.
+The point is that you could always start.
+Because the message from a leaf is always
+immediately final. And once the message
+from a leaf is finalized, then you can
+send the message from the parents of the
+leaf, and so on and so forth. And because
+this is a tree, it's guaranteed that you
+will be able to find a legal message
+passing order. And if we pass the messages
+in the right order, then we only need to
+pass 2K minus one messages, where K is the
+total number. Of clusters. And why is
+that? Because if you have a tree over k
+nodes, in this case k clusters, then
+there's k minus one edges and since each
+edge has a message in both directions so
+we have, we have k minus one messages,
+sorry, k minus one edges. And therefore
+two k minus one messages, one in each
+direction. [sound] Let's look at a couple
+of message-passing orders to see which
+ones are going to work and which ones
+aren't. So, we can start with any leaf.
+Any leaf works. So, say, we start with,
+oh, I don't know, C2. When C2 has
+passed this message. What other, what
+other clique can pass its message?
+C3 can't pass messages yet. Because
+it's still waiting for messages from all
+sorts of other guys. So we had to
+go to another leaf. For example C1.
+C1 can pass the message now. Neither C3
+nor C4 are, are candidates for message
+passing yet. Because each of them is still
+waiting for another message. But C6 can
+pass a message, and now we have the option
+of activating C4. C4 can now send a
+message to C3, because it's got everything
+except the message from, from C3 before.
+C7 can say, pass a message to C3 and you
+notice there is a lot of arbitrary
+decisions on how I ordered this. I could
+have used C5 next. And now C3 has the
+option of passing a message to C5. And notice
+at this point everyone has received all of
+the messages or all of the messages but
+one. And so now we can start passing in
+the other direction, so C5 can pass the
+message to C3. C3 can pass a message
+to any of C2, C7, or C4. And at this point
+C4 can pass every, any, can pass the
+message to both C6 and C1. What is an
+example of an illegal message passing
+order? So, for example, if C1 passes a
+message to C4, and C4 jumps the gun and
+says, yay, I'm gonna send the message to
+C3 next, that is an illegal message
+passing order, because C4 does not yet
+have all of the information that it needs
+to pass a message to C3. It's still
+waiting for a message from C6. So that's
+not a good ordering. Clique trees have
+other very elegant computational
+properties, that make them a useful data
+structure. So let's think about the kinds
+of queries that one can answer using,
+clique trees. And some of these are fairly
+obvious, but others are a little bit more
+subtle. So imagine that we wanted to
+answer a posterior distribution query on
+either a single variable or a set of
+variables that appear together in a
+clique. So in this case, you could take
+any clique that contains all of those
+variables. And sum out the variables that
+you don't care about from that clique, to
+get a posterior over just those variables.
+Now remember that, that posterior is P
+tilde Phi, it's an unnormalized
+measure. So in order to get the normalized
+measure, you actually need to renormalize.
+Now you could also do something a little
+bit more clever. You could, say you wanted
+to introduce new evidence regarding, oh,
+some variable and query another variable.
+So, this is a form of incremental inference.
+Where you've already calibrated the
+clique tree and now you say, 'Oh,
+wait a minute. I made another observation.
+Let's see what happens now.' So it turns
+out that clique trees are really good for that.
+And so we're going to divide this into two
+cases, the easy case and the slightly less
+easy case. So imagine that we want to
+query variable X that appears in the
+clique with my new evidence. So here is my
+clique and here is Z and here is X and I'm
+going to, and I want to figure out what
+the posterior of X would be if I further
+observe Z. Well, this is actually real
+easy. Cuz what I have here is
+P tilde phi. Let's assume for the moment to
+just Z and X that there's other variables
+there, it's not, it doesn't change
+anything cuz we can always just get rid of
+them. We can now condition or reduce the
+clique so this is a clique reduction. By
+just restricting attention to the entries
+that are consistent with my evidence Z.
+And then I end up with P tilde phi. Of
+little z, X. And in order to get a
+posterior, I can sum out the irrelevant
+variables and renormalize. That can be an
+incremental inference. That's the easy
+case if the two variable are together in a
+clique. What about a some of more
+elaborate case, where I introduce the new
+evidence and I query a variable that
+doesn't appear in the same variable, in
+the same clique as Z? So using an example,
+let's imagine what I did is observe
+evidence on A and I want to query
+say E [inaudible], actually let's look at
+different example let's imagine I want to
+query D. [inaudible] In this case, I
+can do the following. I can. Multiply wa-,
+this indicator function or what we call
+this reduction. Of the factor. Into a
+cluster that contains the evidence. In
+this case we're gonna multiply in the
+indicator function of A equals little a,
+which corresponds to removing all the
+entries in cluster one that are not
+consistent with, With a. Our [inaudible]
+multiplied into psi one, removing. All
+entries that are inconsistent with that.
+So now what happens when we change psi 1?
+Imagine what we're doing this entire
+computations from scratch, that is forget
+everything that we did before and think
+what would happen to this model in a
+hypothetical case that we were passing
+messages with the new psi 1 instead of
+the old psi 1. Yes some messages would
+change. Which messages would change?
+Delta 1-2 would change, because psi 1
+changed. Delta 2-3 would change because
+Delta 1-2 changed. Delta 3-4 would change
+but we don't care about Delta 3-4. We're
+interested in this belief over here.
+What about other messages?
+Delta 4-3 doesn't change. Neither does delta 3-2.
+Neither, neither does delta of 2-1.
+And so only assumption of the
+messages in the clique tree change as a
+result of this messages of this of this
+change, which means that we can review at
+least half the messages, if not more, in
+computing our beliefs about in this case
+cluster three. And the only messages that
+we need to recompute are the messages that
+are along the path to a clique that
+contains the variable X that we want to
+query. Which in this case is cluster
+three. So to summarize, if we have a
+clique tree with k cliques, and we pass
+messages in a careful order, which means
+that we start at the leaves and propagate
+inwards, then we can construct an ordering
+such that two k minus one messages suffice
+to compute all of the beliefs in, in the,
+in the clique tree which means we get a
+posterior over every single variable in
+the model. Contrast that with the
+computational cost of running variable
+elimination and times the computed
+posterior as end different variable. Here
+you get a considerable computational
+saving. In fact, computational savings of,
+order, order of the number of variables.
+And so what we can do is we can compute
+all of the marginal at only twice the
+cost of variable elimination as opposed to
+N times the cost of variable elimination.
+And we've also shown that by caching,
+restoring the messages, we can use
+inference for example in the context of
+incremental queries which provides us with
+a useful data structure to keep updating
+as we obtain additional edivence.

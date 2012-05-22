@@ -1,0 +1,6 @@
+Hi Sanmi,
+Infer.Net has is as an example. Copy & Paste and configure to use
+Variational Message Passing.
+http://research.microsoft.com/en-us/um/cambridge/projects/infernet/docs/Cloning%20ranges.aspx
+Cheers,
+Laura

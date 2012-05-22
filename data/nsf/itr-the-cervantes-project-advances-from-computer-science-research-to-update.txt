@@ -1,0 +1,19 @@
+              The project will construct a Virtual Variorum Edition (VVE) of Cervantes'
+              (1547-1616) influential "Don Quixote de la Mancha".  The VVE, based on
+              available-quality microfilmed images of the original editions published during
+              Cervantes' life, will contain the important editions of the work in image and
+              text; annotation of the variances present among the editions to enable
+              comparison; derivative editions, generated as the result of scholarly analysis
+              of the variances and bearing supporting reasoning; and commentary by experts
+              that illuminates elements of texts and of the comparisons among editions.  The
+              project's focus is on the digital representation, interlinking, and
+              dissemination of the many computer-based manifestations of the documents and
+              commentary.  It will prototype an end-to-end effort; from front-end acquisition
+              of materials through flexible back-end presentation to readers.  The VVE, even
+              in prototype form, will be an important artifact, with potential to become the
+              standard research tool used by Cervantes scholars.  It will, for the first
+              time, make the resource of multiple rare editions of the "Quixote" easily
+              available in primary-source form.  The project will have implications for
+              Digital Library projects involving the humanities, both as an demonstration of
+              what can be achieved today but also through development and validation of
+              techniques.

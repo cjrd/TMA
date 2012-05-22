@@ -1,0 +1,33 @@
+Hi, Gregor and All others,
+I'm now trying to follow the work on estimating hyper-parameter of
+LDA. As a beginner of LDA, I have read the turtorial "Parameter
+estimation for text analysis"
+written by Gregor Heinrich, and got some questions on it, following
+are these questions:
+1. Have anyone ever tried to using sampling method to estimate the
+hyper-parameters? Why not estimate asymmetric prior instead symmetric
+one, since asymmetric
+sounds more reasonable.
+2. Gregor has mentioned two sampling methods, adaptive rejection
+Metropolis sampling and adaptive rejection method, as we know that the
+latter one can skip the
+computationally expensive Metropolis step but with the limitation of
+requirement of (log f)'' <0 (log concave density), however, I cannot
+prove that the p(/alpha| z) in
+LDA is a log concave density. Does anyone ever give a prove of that?
+If it cannot be proved, is it means that this sampling work cannot be
+achieved by adaptive
+rejection sampling?
+3.In the section 6.3, Efficient estimation, Gregor talks about using
+results of Mink00, and said that the result cannot be used to estimate
+/beta, because of it on the condition
+of {M, E{N}}>20K, but I really cannot find where does this condition
+come from Mink's paper, and also I cannot figure out why /alpha meets
+this condition? Did I miss something?
+4.There're quite a few method in Mink's paper, why not use other's
+such as Newton-Raphson which don't have condition limitation
+aforementioned?
+anyone got any idea about any of these questions, please help me to
+figure it out, thank you very much!
+Best,
+Feng

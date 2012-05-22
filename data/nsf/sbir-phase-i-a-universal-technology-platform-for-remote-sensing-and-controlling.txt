@@ -1,0 +1,25 @@
+              This Small Business Innovation Research (SBIR) Phase I project aims at the
+              development of a universal technology platform for remote sensing and
+              controlling.  This technology development will be carried out with a focus on
+              affordability, ease of use, reliability, usage of and compatibility with
+              existing communication standards, computer platform independence,
+              modularity/reconfigurability, scalability and expandability.  One commercial
+              application using this Internet-based technology will foster the enhancement of
+              education through remotely accessible experimental devices, the availability of
+              which will provide significant relief to the strain on the spatial, temporal
+              and fiscal resources that traditional laboratories impose on educational
+              institutions.  The initial beneficiaries of the proposed technology will be
+              students at the undergraduate and graduate college levels.  Subsequently, the
+              propagation of the technology into the K-12, corporate training, and scientific
+              experimentation arenas as well as into industrial and consumer applications
+              appears to be both feasible and plausible.
+
+The enabling of remote access to
+              various experimental devices proffered by JDS Technologies will facilitate
+              improved student learning of scientific and technical principles.  The proposed
+              technology will promote independent and asynchronous learning patterns.  It
+              will also permit experimental demonstrations in lectures and allow
+              experimentation to be included in distance learning programs.  It thus provides
+              access to sophisticated and cost intensive experimentation for a much larger
+              student audience than would be possible in the absence of the remote-access
+              capabilities.

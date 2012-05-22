@@ -1,0 +1,21 @@
+                   This Small Business Innovation Research Phase I project is targeted to save
+              semiconductor wafers from being deeply scratched by unchecked large errant
+              agglomerates in chemical mechanical planarizing or polishing (CMP) slurries.
+              CMP has become the method of choice for restoring the surface trueness of
+              wafers at all stages of integrated circuit manufacture. No method currently
+              exists that can implement a CMP-safe slurry at the point of use. The proposed
+              novel technology of Acoustic Coaxing Induced Microcavitation (ACIM) is a means
+              to constructively control acoustic microcavitation and direct its high
+              intensity energy implosions at specific particle sites. ACIM will achieve both
+              the detection and destruction of the stray large particles and
+render the
+              entire slurry CMP-safe at the point of use.
+     A high-end wafer scratched at
+              the final stages of manufacturer results in a large direct loss. Using ACIM to
+              save post-CMP wafers is therefore a direct savings. The ACIM Wafer Saver, the
+              slurry monitor-comminuter, would be the first fully in-line, real-time, point
+              of use device for detecting stray large particles and agglomerates, and for
+              reducing them to a nano-fine state. The rapidly growing CMP industry presents a
+              well-developed market for this environmentally friendly ACIM tool.
+
+

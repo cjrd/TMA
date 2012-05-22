@@ -1,0 +1,4 @@
+Actually I think the original message was referring to measuring the
+performance of a model inferred by MCMC, eg via the Gibbs sampler.
+That would consist of some computing appropriate measure of model
+adequacy like held-out likelihood, perplexity, etc.

@@ -1,0 +1,10 @@
+              This project is collecting, organizing, and maintaining geoscience data sets
+              focusing on the Solid Earth component of the geosciences for a national digital
+              library for science, mathematics, engineering, and technology education.
+              Concurrent with this effort the project is developing advanced, dynamic
+              Java-based user tools to manipulate, map, model, analyze, and visualize the
+              collected data sets. The focus on the Solid Earth component is intended to
+              complement the work of groups in the oceanic and atmospheric sciences,
+              resulting in more complete geoscience data sets. 
+
+

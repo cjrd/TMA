@@ -1,0 +1,2 @@
+Would there be anything wrong with ranking the topics by looking at
+theta_z_d and then picking the top topic?

@@ -1,0 +1,9 @@
+Hi,
+I am trying to run hlda-c code. I got the executable main and run the
+command - "./main gibbs corpus settings out" and got a folder run000 as
+output which is attached in mail.
+After this, the next command to run is- "./main heldout train test settings
+out". I am using corpus1 as train, corpus2 as test but i dont know what to
+use as settings, please can anyone tell that whatever I am doing is right
+and what to use as settings. All documents are attached.
+Thank you

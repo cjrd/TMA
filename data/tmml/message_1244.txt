@@ -1,0 +1,16 @@
+Dear All,
+I realize there likely is not a 'clear-cut' answer to my query, but I was
+hoping to get some guidance on selecting the number of latent classes
+when fitting CTM/ LDA models.
+The trouble is: how would i know if the model 'fit' better using 2 topics
+or 20?  Since these are generative models, a fit model has an associated
+likelihood.  It seems like I should be able to essentially compare
+likelihoods of a model fit with 4 topics and one fit with 5 topics and make
+some type of (principled) comparison.  But so far the best suggestion I have
+heard is holding out data and cross-validating.  But this is
+computationally infeasible for my data.
+At any rate, if anyone has any thoughts or pointers on good ways of
+selecting the number of 'components' in these latent models, I would greatly
+appreciate it.
+With thanks,
+Scott Moser

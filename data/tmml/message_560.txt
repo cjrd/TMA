@@ -1,0 +1,15 @@
+I have to confess to a rather embarrassing confusion about the
+distinction between concentrations and base measures.  I understand
+that for a 3-dimensional Dirichlet, alphas of (9,9,9) give rise to a
+peak in the middle of a simplex, while alphas of (0.9,0.9,0.9) cause
+the probability mass to withdraw to the corners of the simplex.  I
+presume that in these cases, the base measure is (1,1,1) and the
+concentrations are 9 and 0.9, respectively.  But couldn't the 0.9 case
+be viewed as (9,9,9) with a concentration of 0.1?
+Suppose further that you had non-uniform alphas and suppose further
+that some of them were below 1 and others above 1 - say (0.2,5,7).
+What is the base measure and what is the concentration in such a case?
+Is it (2,50,70) with a concentration of 0.1?   Are the components of
+the base measure required to be integers?  Sorry if this is a dumb
+question.
+Dave

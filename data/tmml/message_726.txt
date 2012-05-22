@@ -1,0 +1,13 @@
+hi, all
+i just put a C++ version of two-level hierarchal Dirichlet process(hdp) implementation (with split-merge operations) for topic modeling at http://www.cs.princeton.edu/~chongw/software/hdp.tar.gz
+some features:
+1) it has a relatively user-friendly command-line interface.
+2) it uses LDA-C data format, so anyone who has used lda-c code should be able to use it immediately.
+3) it has many options for the sampling hyper-parameters to play with, but also with default values.
+4) it has a new split-merge operation of topics, although it's still preliminary.
+5) it has a good output organization, which is easier for post-analysis using R, e.g. monitoring the Markov chain.
+btw: it depends The GNU Scientific Library (GSL), which you should have installed from http://www.gnu.org/software/gsl/.
+for more information, please read the README file or simply run it!
+i hope it would be helpful if you want to run hdp for a quick analysis. welcome to try it out!
+all the best
+Chong

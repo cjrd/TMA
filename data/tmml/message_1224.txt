@@ -1,0 +1,12 @@
+Hi Yun Zhou,
+I remember a nice, short introduction to the Kalman filter in Russell and
+Norvig's "Artificial Intelligence: a Modern Approach".  Although I haven't
+looked too closely at Kalman's original paper, I didn't see a reference to
+the backward (smoothing) recursion, which is one thing the the dynamic
+topic models paper uses.
+The forward recursion can be used if you're only interested in p(x_i | y_0
+... y_i) as you observe each y_i in sequence (filtering).  Both the forward
+and backward recursions are needed if you want to know p(x_i | y_0 ... y_T)
+(smoothing).  I think Russell and Norvig described both..
+Cheers,
+Sean

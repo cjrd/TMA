@@ -1,0 +1,30 @@
+              00899807
+Glebov
+
+This three-year award for U.S.-France cooperative research
+              in optical materials for high-power lasers involves Leonid B. Glebov and Oleg
+              M. Efrimov of the University of Central Florida and Dr. Laurent Sarger of the
+              Unviersity of Bordeaux I and the Center for Molecular, Optical and Oscillation
+              Physics.  The proposal addresses problems related to the selffocusing of laser
+              beams that result in damage to the laser's optical components.  One of the most
+              important parameters of optical materials used in multi-channel laser systems
+              is the nonlinear refractive index (n2), which drives the selffocusing process. 
+              Materials, which have low n2 values, such as fused silica, may reduce damage
+              during
+laser beam transport and focusing. In this collaboration the
+              investigators will compare the nonlinear refractive index for samples of fused
+              silica fabricated with different technologies and the linear optical and
+              spectral properties of the samples. They will also determine the features of
+              linear and nonlinear optical properties fluctuations.  The project takes
+              advantage of US and French complementary expertise in the fields of linear and
+              nonlinear optical properties, laser-induced breakdown, structure, and
+              technology of silicate glasses.  The joint efforts will advance understanding
+              of the principle of high quality fused silica selection for optical components
+              in multi-channel high-power laser systems.
+ 
+This award represents the US
+              side of a joint proposal to the NSF and the French National Center for
+              Scientific Research (CNRS).  NSF will cover the expenses of visits of US
+              investigators. The CNRS will support the visits of French researchers to the
+              United States.
+

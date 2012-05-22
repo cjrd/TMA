@@ -1,0 +1,51 @@
+                                                      Rapid advances in biological technology
+              have radically changed  the  amount  and type of information available for the
+              location of  genes.  Statistical  methodology  needs to keep pace  with  the 
+              advances  in  molecular technology so that the information can be exploited to 
+              the  fullest  possible  extent. In this project,  we  propose  to  greatly 
+              expand  existing statistical methodology for the Iocation  of  binary  traits. 
+              Our  proposed methodology will be able to model evolutionary  situations
+              including: multiple genes, varying penetrance, and  simple  environmental
+              effects. Not only will we provide methods for analyzing  these  data,  but we
+              propose to provide a free computer program  that  will   make   these  methods 
+              accessible  to  the  larger  scientific  community.    We  are proposing to
+              develop methodology for traits that are binary  in  nature,  that is these
+              traits are either present or  absent.  For  example, resistance to disease or
+              resistance to pests is often scored  as  present  or absent. Understanding the
+              underlying genetic  factors  influencing  plant  and  animal natural 
+              resistance  to  disease  and  insects  is  critical  in the understanding of 
+              evolutionary  forces.  Natural  selection acts through survival and fitness,
+              and the fitness  of  individuals can be affected by resistance factors.  These 
+              binary  traits, while simple in their description, are not necessarily simple 
+              in  their  expression. The mechanisms underlying  resistance  may  be  complex,
+               involving multiple genes and varying levels of  penetrance.  Resistance  may
+              occur in certain combinations of alleles at  multiple  loci.  For example, it
+              has been demonstrated in Maize that there  are  many  genetic  factors 
+              affecting resistance to  Fusarium  stalk  rot  (McMullen  and  Simcox 1995). In
+              addition to complex genetic  factors  affecting   resistance,  environmental 
+              factors  may  also   play   a  significant  part  in the expression of
+              resistance.  For  examp le,  a  disease   may  attack  a  point  in  a  signal 
+              transduction  cascade  (Staskawicz,  Ausubel,  Baker, Ellis,  and  Jones 
+              1995).  There  are  several  gene  products involved in the cascade and a
+              change  in  the  gene  product  at  any point in the cascade may  affect  the 
+              outcome  (disease present or absent). In this model, an environmental trigger, 
+              the presence of a specific pathogen, is assumed (Staskawicz, Ausubel,  Baker,
+              Ellis, and Jones 1995). Without the ability to directly  model  these  complex
+              factors, the understanding of the influence  of  these  factors in the observed
+              phenotype will be limited. Thus, it is  clear  that  statistical methods must
+              exist that are capable  of  discerning  the  location and effect of multiple
+              genes for a single binary  trait  in  an environmental setting. In these
+              complex situations, particular  care  must  be taken in fitting the models. We
+              will be using  maximum  likelihood approaches to develop and fit the
+              statistical models.      The specific objectives of this grant are:    1.To 
+              develop a solid methodology for the analysis of binary traits       resulting 
+              from single gene and multigenic models  with  varying       levels of
+              penetrance.      2.To  develop  solid methodology for the analysis of binary 
+              traits       incorporating   environmental  factors  in   single   gene   and  
+                  multigenic models with varying levels of penetrance.      3.To  provide an
+              easy to use, free computer program to perform  the       analyses developed by
+              objectives 1 and 2.    References      McMullen, M. and K. Simcox (1995).
+              Genomic organization of disease    and insect resistance genes in    maize.
+              Molecular Plant-Microbe Interactions 8, 811-815.    Staskawicz, B., F. Ausubel,
+              B. Baker, J. Ellis, and J. Jones    (1995). Molecular genetics of plant disease
+                    resistance. Science 268, 661-667.

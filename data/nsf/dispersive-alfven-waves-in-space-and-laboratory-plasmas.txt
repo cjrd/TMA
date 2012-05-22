@@ -1,0 +1,19 @@
+              The investigators will study structural and dynamical features of small-scale,
+              dispersive Alfven waves in magnetized, strongly inhomogeneous, low-beta
+              laboratory and space plasmas.  Dispersive Alfven waves generated at the
+              equatorial plane of the magnetosphere may transport electromagnetic power into
+              the ionosphere and can be responsible for small-scale, intense electric fields
+              and currents in the topside auroral ionosphere and in discrete auroral arcs. 
+              The study will used a model based on the reduced two-fluid magnetohydrodynamic
+              (MHD) kinetic equations which incorporate effects of finite electron and ion
+              masses, temperatures, and kinetic effects of the finite ion Larmor radious in
+              the fluid description of ultra-low-frequency electromagnetic waves in a
+              magnetized plasma.  To understand the range of applicability of the reduced MHD
+              description of dispersive Alfven waves, the investigators will verify the
+              physical model and its numerical implementation on a large set of
+              well-controlled, comprehensive experimental data.  In particular, the effort
+              involves testing the results of theoretical models with laboratory plasma
+              experiments performed on the Large Plasma Device at UCLA.  Results of the study
+              will be applied to further the capability to interpret intense fields, currents
+              and particle fluxes measured in the auroral zone on rockets and satellites as
+              well as to advance understanding of laboratory plasma experiments.

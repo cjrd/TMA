@@ -1,0 +1,13 @@
+              The PI's propose to conduct an in-depth study of the learning of secondary
+              students engaged in making sense of complex system through participating in
+              classroom participatory simulations.  In particular, the PI's will study the
+              complimentarity of two forms of reasoning: object based and aggregate
+              reasoning.  These forms of reasoning will be used to as resources to in making
+              sense of complexity.  To do so, the PI's will extend the functionality of the
+              HubNet Participatory Simulations architecture by building an integrated
+              simulation and modeling environment (ISME).  This environment will be built to
+              couple the networked simulations with object based (NetLogo) and aggregate
+              Model-It) modeling tools.  Finally, the PI's will extend and refine the
+              Participatory Simulation Activities (PSA) and through iterative curriculum
+              design incorporate the PSA inot curricular units targeted for secondary
+              classrooms.

@@ -1,0 +1,42 @@
+              Laci Jalics, Delphi Research Labs
+Giorgio Rizzoni, The Ohio State
+              University
+Andrea Serrani, The Ohio State University
+Ahmed Soliman, The Ohio
+              State University
+
+Hierarchical, Modular Fault Diagnosis in Complex
+              Systems
+The objectives of this GOALI project program are: 1) to develop a
+              methodology that permits the design of modular, hierarchical, model-based
+              diagnostic algorithms that can result in re-usable software modules, and that
+              can be methodically organized into a complete, self-contained monitoring
+              system; and 2) to demonstrate the methodology in collaboration with an industry
+              partner.
+
+Fault tolerance is a critical element in complex automotive systems
+              because of the introduction of "by-wire" systems in vehicles. "by-wire" systems
+              generate electrical commands through driver input and transfer them to the
+              computer-controlled electro-mechanical actuators. With respect to traditional
+              systems, "by-wire" systems require complex control and diagnostic strategies to
+              guarantee proper vehicle behavior and to prevent system malfunctions.  A
+              significant roadblock for safety-critical by-wire systems is the realization of
+              a robust fault-diagnostic strategy that can be accomplished quickly and with
+              limited or no additional hardware.  
+
+This project addresses these issues in
+              three stages: 1) through the use of physically based system models to
+              understand interactions and dependencies among subsystems in a complex system;
+              2) with the design of residual generator units that can locally diagnose faults
+              in components, sensors and actuators; and 3) using a hierarchical structure
+              that links components, systems, and subsystems through the use of fault
+              propagation digraphs. The fault propagation digraph contains a hierarchical
+              representation of available knowledge about the characteristics of fault
+              propagation within the system. Each level in the hierarchy contains one or more
+              structures that together represent a view of the system under a particular
+              granularity. The granularity of view increases with levels. Thus as one
+              traverses down the levels of the model, the resolution of view increases. If a
+              high resolution of diagnosis is not required, failure analysis may be confined
+              to the upper levels of the hierarchy, thereby preventing a slowdown of the
+              diagnosis due to excessive detail. 
+

@@ -1,0 +1,16 @@
+Hi List,
+I have some questions regarding the branching of NCRP with reference
+to this earlier post by David Blei,
+https://lists.cs.princeton.edu/pipermail/topic-models/2006-October/000031.html
+quote:
+what are the possible paths that can be drawn?  first, there is one
+for each existing leaf in the tree.  then, there is a new one for
+each level---a new branch can be spawned at any level from the second
+down.  in total, this is the number of nodes in the currently
+populated tree.  for a particular path c, when one of the levels is a
+new restaurant, the quantity (C) above is 0.
+I want to ask regarding this sentence "a new branch can be spawned at
+any level from the second down"
+May I know why is it second down and not first down?
+That means we can start spawning new nodes off the root node.
+-Jake

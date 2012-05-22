@@ -1,0 +1,9 @@
+hi all,
+I work on a project and I want to use LDA in a specific part. I download
+Blei's implement on c.
+sample results are in this form:
+186 0:1 6144:1 3586:2 3:1 4:1 1541:1 8:1 10:1 3927:1 12:7
+174 68:1 512:1 514:2 3:1 4:1 517:1 6:3 7:1 9:1 10:2
+what does these numbers Interpretation? I don't understand them.
+Best regards
+Mehdi hoseini

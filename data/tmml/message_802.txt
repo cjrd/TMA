@@ -1,0 +1,28 @@
+Dear List,
+I hope someone can help me with this.
+I am working on a modified LDA that allows the number of topics to
+grow and shrink depending on the data. The model lies somewhere
+between HLDA and LDA.
+I need help regarding the hyperparameter tuning portion
+Formally, an infinite topic model is defined in this manner,
+topic, z ~ multinomial(\theta)
+\theta ~ Dirichlet ( \alpha / K )
+\alpha ~ Gamma(1,1)
+then using collapsed gibbs sampling
+we will sample z in this manner
+P(z_n = k | z_{-n}, ... ) = n(k) / (N - 1 + \alpha)
+P(z_n = new topic | z_{-n}, ... ) = \alpha / (N - 1 + \alpha)
+where n(k) is the number of words assigned to topic k
+after all of these,
+we will update \alpha depending on the number of total topics K now,
+So according to Carl Rasmussen Infinite Gaussian Mixture Model, he has
+this equation (14) which he said he derived it from equation (12)
+http://www.kyb.tuebingen.mpg.de/publications/pdfs/pdf2299.pdf
+P(n(1), n(2), .... n(K) | \alpha) = \alpha ^ K * \Gamma( \alpha ) / (
+\Gamma( N + \alpha) )
+Does anyone knows why is this so ??? I know the answer may lie in
+Charles Antoniak Mixtures of Dirichlet Process (1974) but the measure
+theoretic explanation is too much to bear for a non-statistics
+student.
+I am sure this post is highly relevant to nonparametric topic models.
+So someone please enlighten me.

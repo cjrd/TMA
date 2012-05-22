@@ -1,0 +1,5 @@
+Dear all,
+In hlda-c, is it possible to make a preliminary assignment of words to levels of the tree? Doing so is used in 'Unsupervised Discovery of Visual Object Class Hierarchies' (Sivic et. al), who seem to use hlda-c, but I have not been able to find a way to do this myself.
+Thanks for anything anyone knows about this.
+Yours,
+Michael

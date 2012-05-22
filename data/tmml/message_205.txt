@@ -1,0 +1,7 @@
+The PNAS paper (Griffiths & Stevyers, 2004) reported Gibbs was much faster
+(measured in FLOPs) than VB for the bars toy problem (Figure 1(b)).  They
+are using only one sample point to estimate the parameters.
+Thomas G. Dietterich              Voice: 541-737-5559
+School of EECS                    FAX:   541-737-1300
+1148 Kelley Engineering Center    URL:   http://eecs.oregonstate.edu/~tgd
+Oregon State University, Corvallis, OR 97331-5501

@@ -1,0 +1,15 @@
+              The objective of this effort is to provide a rigorous understanding of
+              atmospheric-pressure glow discharges (APGD).  This new class of plasmas can
+              produce large amounts of active chemical species near room temperature and
+              atmospheric pressure and has potential to revolutionize plasma-based processing
+              technologies.  The research activities have the following components:  (1) a
+              computationally fast, one-dimensional physical model for prediction of APGD
+              axial structure; (2) a two-dimensional model for investigating bulk flow/plasma
+              dynamics interactions; (3) analysis of the electron energy distribution
+              function using a homogeneous, time-dependent electron Boltzman solver; (4) a
+              bench-scale APGD experiment to assist in model validation and to explore the
+              discharge phenomena, including visual characterization of discharge modes to
+              establish stability boundaries as a function of discharge geometry and
+              operating parameters, and electrical characterization of the discharge; and (5)
+              investigation of a novel APGD-based silicon oxidation process with potential
+              application in ultrathin integrated circuit gate-oxide formation.

@@ -1,0 +1,26 @@
+Hi Dave,
+This is an interesting question. Based on one interpretation of your
+problem statement, I'd say this is not a problem that nonparametric
+(Bayesian) statistics can solve, since one definition of nonparametric
+statistics is that your model can become arbitrarily expressive to handle
+arbitrarily complex data distributions. If you might be working with
+arbitrarily complex data but you don't want your model to become
+arbitrarily complex, then you can't really use a nonparametric model.
+The root problem is that your likelihood model is almost certainly somehow
+wrong for your data. That is, any model you can build will not be able to
+capture all of the complexity in an arbitrarily large dataset using only a
+small number of components. So even if there are only a small number of
+prepositions in the world, your model will probably do a better job of
+fitting the data if it winds up splitting prepositions across multiple
+components, because it's capturing some finer details of the distribution
+of your data than it could using only as many components as there are
+prepositions. Eventually this will happen for any model that allows an
+arbitrary number of components, because the likelihood term will swamp any
+finite amount of prior regularization.
+An alternative approach might be to use a sort of pseudo-Bayesian model
+selection, where you try models with more and more components and stop once
+the improvement in model fit stops improving "significantly," whatever you
+decide that means. This is more expensive, but may work better.
+That's my 2 cents, anyway. I'm interested to hear other people's opinions.
+Best,
+Matt

@@ -1,0 +1,30 @@
+The sampled topic loses the contribution of the document overlap
+(alpha term) and gets mass from the word overlap (beta term) only.  If
+it is new, it has no overlap anyway, so it 'lives' by smoothing
+influence only no matter the sampling procedure.  If it is already
+populated, it still has a non-degenerate beta term contribution but
+loses a possibly non-degenerate alpha term contribution, thus what I
+described is no longer a correct implementation (thanks for alerting
+me to this). It still produced interpretable results for me though;
+the information ignored in the context of HLDA is how general or
+specific the whole document's vocabulary is, which evidently is not so
+important.
+To avoid losing the contribution of the alpha term, one could sample
+topics in this way:
+For each token in a document:
+- decrement the topic counts for the token
+- sample a new membership for the token and note it elsewhere
+- re-increment the topic counts according to the old topic membership
+of the token
+- remove the tokens from their old topics and add them to the
+newly-sampled topics as a block
+The effect being to fix the sampling distribution for each token to
+what it was at the beginning of the block.  You will still not fill in
+a newly-founded branch until the whole block has been sampled, though,
+but at least you will not have any order asymmetries or gross errors.
+I am left with the feeling that the most defensible thing to do is
+re-integrate the tokens individually in a random order (which is what
+I ended up going with in the end without having thought the issue out
+as much as I have now).
+Block sampling procedures can be found here and there but can't think
+of a good reference.  Maybe someone else can suggest?

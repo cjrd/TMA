@@ -1,0 +1,4 @@
+Hi Jieyue,
+I think you might want to check if ATLAS libraries are installed and also
+check if the path to the shared libraries are set.
+You can check out http://math-atlas.sourceforge.net/.

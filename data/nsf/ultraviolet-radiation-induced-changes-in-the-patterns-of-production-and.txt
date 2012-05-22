@@ -1,0 +1,31 @@
+              Goes
+0126150
+
+There is sufficient evidence to show that present levels of
+              incident ultraviolet radiation (UVR, 280-400nm) are impairing phytoplankton
+              productivity in the Southern Ocean. Yet, efforts at extrapolating these
+              findings to allow accurate and unambiguous predictions of the consequences of
+              UVR on the Antarctic marine food web and biogeochemical cycles in the sea have
+              been confounded with uncertainty. Estimated impacts to the Antarctic marine
+              ecosystem range from insignificant to catastrophic. This disparity has been
+              attributed to lack of information in key areas of UVR photobiology and
+              photochemistry. Generally, studies have been based on broadband UVR, and do not
+              take into account competing responses of phytoplankton at different wavelengths
+              across the UVR waveband. Such information is critical if we are to understand
+              the consequences of UVR enhancement on carbon assimilation by marine
+              phytoplankton and its consequences for the food web and biogeochemical cycles.
+              This is especially true in regions like the Antarctic where stratospheric ozone
+              concentrations can decrease by about 50% each spring altering the proportion of
+              UVB (280-320nm) and UVA (320-400nm) radiation that phytoplankton receive during
+              their growth season. This project will systematically investigate changes in
+              the production rates and composition of biochemical compounds within Antarctic
+              phytoplankton cells under spectrally defined conditions. Investigations of both
+              laboratory cultures and natural populations of Antarctic phytoplankton will be
+              undertaken to understand 1) how phytoplankton cellular biochemical processes
+              are impacted by the interplay between the different UVR wavelengths and visible
+              light, 2) how UVR sensitivity varies across taxonomic groups of phytoplankton
+              and 3) whether this difference in sensitivity is responsible for the dominance
+              of one species over the other. The effect of UVR exposure on nutrient uptake by
+              phytoplankton cells will also be studied. This information will help ascertain
+              the role of UVR in the phytoplankton dynamics of the Southern Ocean. 
+

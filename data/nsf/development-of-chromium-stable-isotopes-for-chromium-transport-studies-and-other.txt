@@ -1,0 +1,44 @@
+              0001153
+Johnson
+
+This project is a one-year exploratory study needed to
+              examine the feasibility of Cr isotope measurements as indicators of Cr(VI)
+              reduction and Cr contamination sources.  Cr is a common groundwater contaminant
+              because of its use in electroplating and other industrial processes.  The
+              complex redox chemistry of Cr determines its mobility and bioavailability, and
+              in most Cr-contaminanted sites, Cr(VI) reduction is an important natural
+              attenuation mechanism.  Cr is also of interest in oceanographic and
+              sedimentological studies, as both Cr(VI) and Cr(III) are present in ocean and
+              estuarine water, and Cr concentration and speciation data hold information
+              about redox conditions.
+
+Stable isotope ratios of nitrogen and sulfur have
+              proven useful in tracking reduction of nitrate and sulfate to lower oxidation
+              states, and in identifying sources of nitrate and sulfate in groundwater.  This
+              project is an initial step toward developing a similar capability for Cr
+              isotopes.  For nitrogen and sulfur, lighter isotopes are reduced
+              preferentially, and thus isotope ratio shifts in nature provide evidence that
+              reduction reactions are occurring, and indicate the degree of reduction.  It is
+              likely that in chromate reduction,  52Cr will be reduced preferentially
+              relative to 53Cr, and observed shifts in  53Cr/52Cr ratio of the Cr in
+              groundwater would indicate Cr(VI) reduction.  Cr isotopes are thus promising as
+              a new geochemical toll, but the isotopic fractionations must be observed in
+              controlled experiments before extensive research can be undertaken.
+
+The
+              proposed study will measure the size of this kinetic isotope effect and assess
+              the potential for Cr isotope applications.  Three experiments are planned, in
+              which Cr(VI) reduction will occur in simple solutions, on mineral surfaces, and
+              in sediment slurries.  Also, Cr isotope ratio variations in groundwater from
+              one field site will be examined in order to observe this kinetic isotope effect
+              in nature and establish the practical measurement precision.
+
+This research
+              has potential impacts in gaining an understanding of Cr isotope systematic that
+              may then be used in further studies applied to groundwater, surface water,
+              oceanographic, and sedimentological studies.  Cr isotopes may ultimately be a
+              practical tool for the use in understanding Cr sources and transport at
+              contaminanted sites.  This project is designed to be part of a Ph.D.
+              dissertation for a graduate student, to be combined with similar work on Se
+              isotopes that is in progress.
+

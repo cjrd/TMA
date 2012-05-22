@@ -1,0 +1,18 @@
+David,
+I'm not sure if this question has already been answered, but there are
+various heuristic initializations you can use to avoid the "thick
+branch" phenomenon in hLDA (assuming its not due to the hyperparameter
+setting). The most basic one is to build the tree incrementally, where
+each time you add a document you compute its conditional path
+assignment distribution from the previously added documents. This is
+basically just the same as the c_m update step, except you don't
+remove document m from the tree first. For me though, this still
+tended to bias towards trees with a single thick branch, so I opted
+for a heuristic initialization where x% of the documents generate
+entirely new branches and the the remaining 100-x% are assigned to
+some existing branch uniformly. This works nicely for the flat hLDA,
+but I haven't tried it in the GEM version.
+Anyway I'd be interested to hear people's thoughts on these
+initialization heuristics.
+Btw I have a vanilla PAM implementation using HBC, its not thoroughly
+tested, but email me if you're interested.

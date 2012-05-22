@@ -1,0 +1,7 @@
+Response to Question 2: We did some work on labeling of topic models and
+selection of the "best" word:
+Automatic Labelling of Topic Models
+www.aclweb.org/anthology/P/P11/P11-1154.pdf
+Best Topic Word Selection for Topic Labelling
+www.aclweb.org/anthology/C/C10/C10-2069.pdf
+Dave

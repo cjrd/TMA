@@ -1,0 +1,8 @@
+Hello everyone:
+I am doing some test via LDA and got some problems about it, you see it is
+totally unsupervised, right? However words in text is various, should you
+run it on various words or just narrow the words down into some specific
+ones? Will that be more secure as some "bad" words may exsits in your
+topics?
+More detail, you see, as ? is a matrix of [topic: word, word,....,word],
+right? how to choose the words? just to use the words as much as you get

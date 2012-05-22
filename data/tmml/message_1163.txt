@@ -1,0 +1,7 @@
+Hi JR,
+In my understanding, the idea of LDA is that you just end up with the mixtures of topics, which can be viewed as a sort of soft classifier. If you are looking for a hard classification into one of a fixed number of classes, you could try a different topic model.
+In your case, the single author-topic model [1] could be suitable. I have no experience in using it, but as I understand it each document is assumed to be written by a single author, and each author corresponds to a different multinomial distribution over topics.
+In your case, 'author' would correspond to 'supercategory', such as medicine or economics, and associated with each of these there would be a distribution over topics. So 'medicine' might have 30% pharmacology, 20% surgery, 10% virology etc., and associated with each of these topics would be a multinomial distribution over words (as in LDA). Each document would then be classified as just one single supercategory (author).
+Thanks,
+Michael
+[1] Rosen-Zvi, M., Griffiths, T. L., Steyvers, M., & Smyth, P. (2004) The author- topic model for authors and documents. In Uncertainty in Artificial Intelligence, pp. 487?494. 547. http://www.datalab.uci.edu/author-topic/398.pdf

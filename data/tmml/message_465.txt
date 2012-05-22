@@ -1,0 +1,8 @@
+Hi lykm,
+Please see the document
+http://www.cs.princeton.edu/~blei/papers/BleiLafferty2009.pdf
+section 3.2 subsection "Choosing the vocabulary". My question is
+related to the TFIDF used to get top V words. I can imagine doing that
+on a single document, but I don't see how can I get global top words.
+best,
+Mateusz

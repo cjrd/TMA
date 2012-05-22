@@ -1,0 +1,17 @@
+Hi,
+I've recently started experimenting with the supervised LDA [1] model and I
+have a couple of questions (I am trying to replicate the results in the
+paper):
+1) For the movie review data set, how was the vocabulary chosen? It says
+that there are 5000 terms chosen by tf-idf, but this is a per-document
+measure, so I don't understand how a term can have an overall corpus-level
+tf-idf weight. I could have a tf-idf "cutoff" for each document but this
+will not guarantee exactly 5000 terms.
+2) In the same section: "For both sets of response variables, we transformed
+to approximate normality by taking logs. This makes the data amenable to the
+continuous-response model..." Could someone please clarify this? When using
+the sLDA package, how do I transform the outcome classes to the continuous
+range described here?
+[1] D. M. Blei and J. D. Mcauliffe, "Supervised topic models," 2007.
+Thanks,
+Adnan

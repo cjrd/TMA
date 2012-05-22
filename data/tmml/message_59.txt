@@ -1,0 +1,23 @@
+Folks,
+All the theory behind topic modeling is foreign science to me given
+my single year of college. Are there particular books that you would
+recommend that would bring me up to par?
+I imagine I'll need a few college courses worth of books but learning
+is my greatest strength and I do have some money to spare. My biggest
+trouble is translating the math notation into code.
+I already bought a few books from Amazon, starting with the basics:
+Probability demistified: A self-teaching guide.
+http://tinyurl.com/pk4xu
+Linear Algebra: A Modern Introduction
+David Poole
+http://tinyurl.com/owg7w
+Learning Bayesian Networks
+Richard E. Neapolitan
+http://tinyurl.com/qmmho
+Foundations of Statistical Natural Language Processing
+Christopher D. Manning, Hinrich Schutze
+http://tinyurl.com/psarl
+Text Mining: Predictive Methods for Analyzing Unstructured Information
+Sholom M. Weiss, Nitin Indurkhya, Tong Zhang, Frederick Damerau
+http://tinyurl.com/ohtqf
+Thanks, Joel

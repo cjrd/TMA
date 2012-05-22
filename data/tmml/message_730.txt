@@ -1,0 +1,8 @@
+Hi Gregor,
+Auxiliary variable methods have been mentioned in several places (e.g. the
+HDP paper by Teh et al).  You might also want to take a look at the
+appendix of our distributed LDA paper which applies those methods to a
+variant of LDA:
+http://jmlr.csail.mit.edu/papers/volume10/newman09a/newman09a.pdf
+thanks,
+Arthur

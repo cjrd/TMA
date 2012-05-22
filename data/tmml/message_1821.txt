@@ -1,0 +1,6 @@
+Thanks Colorado.
+I have tried with small alphas (10/K, 1/K..) , but still get quite dense
+topic vector.
+I shall then play with R to see the impact of alpha.
+Best Regards,
+Yiliang

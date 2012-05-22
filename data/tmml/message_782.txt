@@ -1,0 +1,10 @@
+hi,
+I also came across the paper "Automatic Labeling of Multinomial Topic
+Models" by Mei et al. in which potential labels are scored again topic
+distributions.
+The score is partially based on calculating the pointwise mutual information
+between a label l and a word w given the context C:
+PMI(w,l|C) = lg( p(w,l|C) / [ p(w|C) * p(l|C) ] )
+I'm not exactly sure myself of how to calculate p(w,l|C). Any help is very
+much appreciated
+Ng

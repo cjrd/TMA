@@ -1,0 +1,10 @@
+In addition, I would like to add my joint work with Prof. William Cohen and
+Prof. John Lafferty that models evolution of topics at multiple resolutions
+of time scale, which was one of the best paper finalists at KDD 2007, titled
+"Multiscale Topic
+Tomography<http://sites.google.com/site/nmramesh77/research-papers/2007_kdd.pdf?attredirects=0>".
+The source code is also available at
+http://sites.google.com/site/rameshnallapati/software but is not well
+documented yet.
+Thanks
+-Ramesh

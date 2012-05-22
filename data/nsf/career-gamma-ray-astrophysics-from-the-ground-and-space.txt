@@ -1,0 +1,17 @@
+              9875387
+Dingus
+This proposal is to support the research program in gamma-ray
+              astronomy of Professor Brenda L. Dingus at the University of Utah.  The two
+              elements of the program are (1) a continuation of work on the Milagro
+              ground-based detector, and (2) to begin work on GLAST, which is a satellite
+              detector expected to be launched in 2005 that is designed to be 50 times as
+              sensitive as the previous EGRET detector.  The Milagro detector became
+              operational in October 1998.  The Cerenkov detector will be useful both to
+              calibrate the energy and angular resolution of Milagro and to measure the
+              cosmic-ray composition.  Dr. Dingus is also interested in planning and testing
+              the GLAST design, in particular regarding gamma-ray bursts which impact all
+              subsystems due to their extremely bright intensity, thus tightening the
+              requirements on instrument dead-time while reducing the requirements on
+              background rejection. 
+
+

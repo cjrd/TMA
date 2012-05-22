@@ -1,0 +1,7 @@
+Mallet has an implementation of LDA that is pretty easy to use. I would
+start with some introductory materials for LDA first before trying to run a
+library. This paper talks about sampling as it is done in Mallet:
+http://www.pnas.org/content/101/suppl.1/5228.abstract?ck=nck
+Mallet:
+http://mallet.cs.umass.edu/
+Mark

@@ -1,0 +1,31 @@
+              It is proposed to explore semiconductor nanocrystals such as quantum dots, rods
+              and tetrapods, as templates for self-assembled 3D architectures of  themselves
+              and of  core-shell nanocomposites . Multiscale simulations will be performed on
+              Cd-S, Cd-Se, Zn-S, Ga-As, and In-As and their core shell nanocomposites. The
+              relevant dimensional range in most cases will extend from the nanometer to the
+              continuum, or part of it. They will be accomplished by a seamless combination
+              of finite  element   continuum  theories, molecular dynamics, and quantum
+              mechanical calculations.  Successful   three-dimensional accounts of  the
+              resulting space distribution of atoms will yield a number of  property and
+              structural changes, at both bulk and atomistic levels. Among others, they will
+              bring out the effects of nanocrystal size and shape, of organic molecules
+              surface termination, and of nanoindentation testing on tetrapods and their
+              arrays. 
+     The multimillion-atom multiscale simulation will be displayed
+              and steered in an immersive and interactive visualization program, its
+              infrastructure being made available by  the State of Louisiana . The three PIs
+              have already accumulated an extensive practice with molecular dynamics
+              applications (~10 million atoms). In addition, the they have initiated a close
+              cooperative collaboration with  Dr. Alivisatos' experimental program at the
+              University of California- Berkeley. There are also plans to offer a number of
+              cross disciplinary courses, leading to a dual-degree program (
+              physical/biological and computer sciences), to web-based global courses and to
+              mentoring activities.
+     In summary, the PIs have accumulated an extensive
+              experience in the field of parallel multiscale simulation, and have proceeded
+              to obtain access to the corresponding high performance hardware and software.
+              This should give them now a chance to test the behavior of a number of
+              semiconductors, in a more diversified range of circumstances. To explore such a
+              promising possibility, it is recommended that a one-year SCER award of  $94,962
+              be granted, with a starting date of  September 1, 2001.
+

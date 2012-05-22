@@ -1,0 +1,4 @@
+name: john doe
+email: john-doe@somewhere.com
+django-secret-key: 0123456789!
+bing-api-key: 12345678901234567890123456789012345678901

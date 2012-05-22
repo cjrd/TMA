@@ -1,0 +1,28 @@
+              The electric utility industry is in the transition from operating in a
+              monopolistic environment to one that is regulated as a competitive marketplace.
+              At this point in time, over eight markets have failed. The objective of this
+              research is to analyze this new emerging electricity marketplace from the
+              viewpoint of including reliability as a product dffferentiator as solved by
+              adaptive agents. Reliability is a key feature of electric energy delivery and
+              has provided national economic growth for almost a century. This research is
+              interested in how a company would compete effectively for long term growth
+              potential and for continuous financial performance.
+
+This is a computer
+              simulation of the portfolio analysis of various electric contracts with various
+              levels of reliability. All players must use complex decision making to properly
+              bid and to make a positive profit. This effort proposes to use classical
+              optimization techniques in conjunction with decision analysis for the buyers
+              and sellers of electricity in such an electric marketplace. This project will
+              investigate the steady state results for the application of forecasting and
+              decision methods to determine if price discovery occurs using various learning
+              algorithms. Previous research by this author and others has lead to new
+              algorithms based on real option analysis.
+
+This effort proposes
+              computer-learning algorithms (Modified Roth-Erev, genetic algorithm, genetic
+              programming, and neural networks). Agents will be implemented with these
+              techniques to generate a sustainable profit from the various energy markets.
+              The long-term goal is to develop adaptive agents to assist humans who play the
+              electric marketplace.
+

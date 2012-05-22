@@ -1,0 +1,39 @@
+In modeling of texts, Multinomial distributions are often used. e.g.: to
+model P(Word|Topic) in PLSA or LDA.
+In some cases direct estimates of these Multinomial parameters are desired
+and one may use MAP-estimates.
+In some cases standard MAP-estimates become negative (see the example
+below).
+"Standard" means using a Dirichlet-prior for the Multinomial parameters.
+How to deal with that problem of negative MAP-estimates?
+Are MAP-estimates not in all circumstances reliable?
+Example:
+given: a 5-sided dice
+sufficient statistics of training data D: \vec n=(n_1,...,n_5)
+n_i: counts of how often side i was seen in training data
+model M: \vec\theta=(\theta_1,...,\theta_5)
+\theta_i = P(side=i)
+likelihood: P(D | M)=\prod_{k=1}^5 \theta_k^{n_k}
+Dirichlet-prior for \vec\theta: P(\vec\theta | \vec\alpha)= Dir(\vec\theta |
+\vec\alpha) \propto \prod_{k=1}^5 \theta_k^{\alpha_k -1}
+Posterior: P(M | D) \ propto P(D|M) * Dir (\vec\theta | \vec\alpha)
+well known MAP-estimates are: \hat\theta_i = (n_i + \alpha_i -1) /
+(\sum_{k=1}^5 n_k + \alpha_k -1)
+assuming \alpha_i=0.1 and n_i=0 gives:  \hat\theta_i = (0 + 0.1 -1) / (....)
+= -0.9 / (....)
+If the denominator > 0  ==> \hat\theta_i < 0 !
+Thats the problematic point.
+0 < \alpha_i < 1 is often used to "force" sparsity of P(Word | Topic) in
+topic models.
+If one uses EM to maximize the Posterior P(Mixture_Model | Data) it often
+happens that  0 < n_i < 1 since n_i are more or less sums: sum_{i}^I
+P(hidden variable = z_i | D, M) that may be < 1.
+The problem is that the Lagrangian constraint used to determine Multinomial
+parameters of M that maximize the posterior P(M | D) does not ensure that
+\theta_i>=0 for all 1<=i<=5 .
+Example of the example:
+\vec n=(0, 2, 2, 2, 2)
+\vec\alpha=(0.1, 0.1, 0.1, 0.1, 0.1)
+MAP-estimate: \hat\theta_1 = ( 0+0.1-1) / ( -0.9+4*1.1 ) = -0.9 / 3.5
+Thanks in advance for Your reply.
+Andr? Gohr

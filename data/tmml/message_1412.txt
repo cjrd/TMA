@@ -1,0 +1,5 @@
+R package by alejandro jara:
+http://www.mat.puc.cl/~ajara/Softwares.html
+never used it myself, not sure about scalability.
+cheers,
+-yw

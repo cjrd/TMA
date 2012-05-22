@@ -1,0 +1,16 @@
+If the two distributions are sparse, an alternative to clustering is
+to speed up computation of the distance metric itself. The approach I
+use for this problem is to rearrange the formula for the distance
+metric so that it is a function only of the dimensions that are
+non-zero in both the p distribution and the q distribution.
+For example, if p = {0.1, 0.9, 0, 0}, and q = {0, 0, 0.5, 0.5},
+there's no overlap between distributions. The L1 distance (sum_i
+abs(p_i - q_i)) is 2, and similarly for Hellinger, Jensen-Shannon,
+etc.
+If p = {0.1, 0.9, 0, 0}, and q = {0.2, 0, 0.3, 0.5}, we can start with
+the assumption that no terms are shared (ie L1 = 2) and then "fix up"
+the terms that are shared: L1 = 2 + (abs(0.1 - 0.2) - 0.1 - 0.2) = 2 +
+0.1 - 0.3 = 1.8.
+You can then compute all-pairs differences by starting with an index
+that lists the topics with non-zero values for each word type.
+-David

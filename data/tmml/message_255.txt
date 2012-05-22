@@ -1,0 +1,16 @@
+Hello List,
+I have a question regarding the computation of the perplexity. It does
+involve the computation of the probability of the test document under the
+model, p(w).
+- p(w) requires the the product of \phi_{i,k} (the probability of word i
+under topic k) and \alpha_{d,k} (the probability of topic k in document d).
+Right?
+- Since the data is not used in the training phase, which value should be
+substituted for \alpha_{d,k}, i.e. the probability of topic in the document?
+If I choose it to be the number of words assigned to the topic across all
+the documents, then the perplexity is effected only by the estimated word
+distribution since the probability of the topic in every document is assumed
+to be the same. Is this correct?
+- Is there any available code for computing the perplexity?
+Cheers,
+Loulou

@@ -1,0 +1,9 @@
+Hello,
+I've been trying to get the CTM code working within a Cygwin framework.
+Initially, I kept getting an error message saying that -latlas could not be
+found (although the Atlas library was installed as part of LAPACK). When I
+remove this flag, the code complies and I can run it, although it seems to
+get stuck in an infinite loop when I try to find more than 5 topics on my
+corpora.  Any help would be greatly appreciated!!
+Thanks,
+David

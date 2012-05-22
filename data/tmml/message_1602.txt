@@ -1,0 +1,16 @@
+Hi Andreas,
+Naively you can have a different beta vector for each topics, where you
+increase the count for words that you want to force into the topic. You
+can treat the entries here just like other assignment count -- therefore
+your approach 1) and 2) have the same effects (unless you have different
+lists where each represents one pseudo document). However, I remember
+that this approach did not quite work as I expected. For an alternative,
+I recommend having a look at this paper, which also comes with code.
+Incorporating Domain Knowledge into Topic Modeling via Dirichlet Forest
+Priors
+David Andrzejewski, Xiaojin Zhu and Mark Craven.
+Proceedings of the 26th International Conference on Machine Learning
+(ICML 2009)
+http://pages.cs.wisc.edu/~andrzeje/publications/icml-2009.pdf
+Cheers,
+Laura

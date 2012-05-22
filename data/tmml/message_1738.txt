@@ -1,0 +1,4 @@
+They seem to be very similar to slides presented at KDD
+http://www.cs.princeton.edu/~blei/kdd-tutorial.pdf .
+thanks,
+Surya

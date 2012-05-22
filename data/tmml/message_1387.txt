@@ -1,0 +1,13 @@
+Hi Ian,
+You could do this in a number of ways.  A couple of simple approaches are:
+1. Explicity model correlation between topics with a correlated topic
+model (D. Blei and J. Lafferty. *Correlated Topic Models*. * Neural
+Information Processing Systems*, 2006.
+[PDF<http://www.cs.princeton.edu/%7Eblei/papers/BleiLafferty2006.pdf>]
+[Long version<http://www.cs.princeton.edu/%7Eblei/papers/BleiLafferty2007.pdf>
+][Code <http://www.cs.princeton.edu/%7Eblei/ctm-c/>] )
+2. Run a topic model like LDA and then find similarity between topics
+using your favorite metric, e.g. Hellinger distance:
+http://en.wikipedia.org/wiki/Hellinger_distance .
+Cheers,
+Sean

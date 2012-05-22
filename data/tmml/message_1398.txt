@@ -1,0 +1,20 @@
+Yves:
+"Data Management Projects at Google" (Cafarella et al.) very, very
+briefly mentions a few, though my comments were based more on personal
+communication and experience.  Some experimental uses of pLSA, LSA,
+and LDA included ads and speech recognition, though I don't know
+whether the cases I knew of were used in production.  If you relax the
+definition of topic models to mean clusters of words, then models like
+that were used all over the place in search and ads.  For example, if
+you want to match ads to a Webpage, matching clusters of words to the
+page is a natural solution that was, at least at some point, used in
+production.
+Scott:
+Another datapoint -- Yahoo considered topic models relevant enough
+to industry that they released code for running it at large scale:
+"With a standardized Hadoop integration point, one can just download
+the Yahoo Latent Dirichlet Allocation code from Github and start
+datamining customer support emails."
+http://techcrunch.com/2011/07/17/hadoop-startups-where-open-source-meets-business-data/
+Best,
+Sean

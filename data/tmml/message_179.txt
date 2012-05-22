@@ -1,0 +1,4 @@
+thanks for the diff, stephan.
+i will update the lda-c code momentarily.
+best,
+dave

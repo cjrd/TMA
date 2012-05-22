@@ -1,0 +1,19 @@
+              Constraint Databases (CDBs) are an extension of relational databases that enrich
+              both the relational data model and the relational query primitives with
+              constraints. For data-intensive applications over non-traditional data, CDBs
+              hold the promise to combine the versatility of constraints with the commercial
+              success of the relational approach. This project focuses on the internal query
+              representation of CDBs queries, i.e., Constraint Query Algebra (CQA). CQA forms
+              the "middle layer" of CDBs, underneath the user interface layer and above the
+              disk access layer, providing a homogenous set of operators for expressing
+              queries over any data. The following challenges related to CQAs are addressed,
+              both from a theoretical and a practical perspective, leading to an
+              implementation of CQA: (1) efficient data representation and algebraic operator
+              implementation; (2) novel indexing and query optimization techniques; (3) safe
+              use of additional operators and; and (4) integration with front-end query
+              languages. This project involves collaboration with researchers in other
+              disciplines, such as Geography and Environmental Sciences, where the research
+              involves large quantities of spatio-temporal data. This research is expected to
+              revolutionize the spatio-temporal systems that will enable researchers and
+              practitioners in the areas of Geography and Environmental Sciences to store and
+              query their data more efficiently.

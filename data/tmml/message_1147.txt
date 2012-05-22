@@ -1,0 +1,11 @@
+Someone with information theory inclinations such as myself might say, ?A
+model which, given a certain choice of subset from or probability
+distribution over a finite, discrete set of things called topics, gives you
+back side information which allows significantly better compression of some
+subset of some given data than any other choice or no side information at
+all.?
+With that definition all the things you mentioned would count as topic
+models. The ones that give a relevant probability distribution back directly
+such as LDA would be easiest to use in the way suggested by the definition.
+Related things that aren't usually thought of as topic models, like vector
+quantization schemes, would also count.

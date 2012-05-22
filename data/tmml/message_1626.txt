@@ -1,0 +1,4 @@
+Hi Topic Molders,
+Is there any well-cited paper discussing how to tuning the parameter (hyperparameters and topic amount) of a topic model?
+Best Regards
+Darren?

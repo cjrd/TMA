@@ -1,0 +1,7 @@
+Hello all,
+I am a freshman tring to understand topic modeling. When reading the
+paper : Correlated Topic Models, one question arise in my brain:  the
+multivariate gaussian variable denoted by ? is the natural parameter of
+multinomial distribution, instead of the mean parameter of that.
+Thanks so much.
+Regards,

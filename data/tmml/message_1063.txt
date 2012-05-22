@@ -1,0 +1,16 @@
+dear michael
+there has been some additional work on hLDA.  in particular, chong wang has
+developed a variational inference algorithm.  see the paper here:
+http://www.cs.princeton.edu/~blei/papers/WangBlei2009d.pdf
+it combines ideas from split/merge samplers with variational inference.  (i
+think this is a promising direction for variational inference in general.)
+regarding choosing the number of topics, hLDA does choose the tree but it is
+limited in that each document lives on only one branch of it.  if you are
+happy with the LDA assumptions but want a method that selects the number of
+topics then i suggest chong wang's excellent implementation of the
+hierarchical dirichlet process
+http://www.cs.princeton.edu/~chongw/software/hdp.tar.gz
+this implementation takes a document collection in the same format as the
+LDA-C package.  (i'm not sure what format mallet uses.)
+best
+dave

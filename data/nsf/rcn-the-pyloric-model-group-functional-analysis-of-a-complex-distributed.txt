@@ -1,0 +1,28 @@
+                 Complex, distributed systems are those in which the components are highly
+              interconnected and individually non-linear in operation.  We have little
+              understanding of how such systems operate.   Nervous systems are highly complex
+              and non-linear, and this lack of understanding is an impediment to
+              understanding nervous system function, and to designing computational devices
+              that can mimic nervous system capabilities.  Experimental and computational
+              studies of advantageous animal models have led to some useful advances.  This
+              proposal describes such an approach using a small network of nerve cells
+              (neurons) called the pyloric neural network, part of a larger complex called
+              the stomatogastric ganglion, which generates rhythmic activity in the gut of
+              crustaceans.  This network generates a suite of behaviors and is small,
+              extremely well understood, and very amenable to experiment and computational
+              modeling.  These investigations have been done in many different laboratories,
+              with a far broader scope than any one or two labs could approach, and this
+              Research Coordination Network is established to coordinate their efforts.  The
+              Pyloric Model Group is set up to construct a computational model of the pyloric
+              network, to supervise a postdoctoral fellow who will help fill critical gaps
+              and construct the model, to sponsor annual meetings to share the knowledge of
+              the pool of labs that conduct stomatogastric ganglion research, and to share
+              the results of the collaboration with the broader scientific community by Web
+              and CD distribution.  
+     This project will have an impact on the
+              fundamental understanding of the neurobiological basis of behavior, will
+              provide insights into the function of complex distributed systems in general,
+              will promote cross-disciplinary collaborations including small colleges with
+              major universities, and will broaden the experience of students in a
+              cross-disciplinary environment.
+

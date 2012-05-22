@@ -1,0 +1,31 @@
+Hi list readers,
+The paper mentions the following step:
+The problematic coupling between \theta and \beta arises due to the
+edges between \theta, z, and w. By dropping these edges and the w
+nodes, and endowing the resulting simpli?ed graphical model with free
+variational parameters, we obtain a family of distributions on the
+latent variables.
+As I am not a native english speaker can someone please tell me what
+"endowing" means in this context? Also, why is it possible to remove
+the edges and nodes, and create some completely different model, yet
+the one approximating things the way we want? I expect this has
+something to do with the type of distribution ?
+The other question is related to EM algorithm. It was already pointed
+to me that parameter estimation should be done first, and then the
+inference, but the paper not only explains these in reversed order,
+but the EM algorithm outline is specified as follows:
+1. (E-step) For each document, ?nd the optimizing values of the
+variational parameters
+This is done as described in the previous section.
+2. (M-step) Maximize the resulting lower bound on the log likelihood
+with respect to the model parameters \alpha and \beta. This
+corresponds to ?nding maximum likelihood estimates with expected
+suf?cient statistics for each document under the approximate posterior
+which is computed in the E-step.
+So the first step of the algorithm explicitly relies on the inference
+phase being completed as the variational parameters are valid
+(optimized) only after inference phase (?).
+I'm kinda stuck on this one.
+I'd appreciate any hints in the right direction.
+best,
+Mateusz

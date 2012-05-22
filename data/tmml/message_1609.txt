@@ -1,0 +1,11 @@
+It is possible to do better than random sampling. See Larger Residuals,
+Less Work: Active Document Scheduling for Latent Dirichlet Allocation
+by Mirwaes Wahabzada, Kristian Kersting, ECML 2011:
+"... in each iteration, residual LDA actively selects documents that exert
+a disproportionately large influence on the current residual to compute the
+next update. On several real-world datasets, including 3M articles from
+Wikipedia, we demonstrate that residual LDA can handily analyze massive
+document collections and a nd topic models as good or better than those
+found with batch VB and randomly scheduled VB, and significantly faster."
+http://www-kd.iai.uni-bonn.de/pubattachments/508/wahabzada11ecml.pdf
+Best wishes, Charles Elkan

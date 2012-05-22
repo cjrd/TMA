@@ -1,0 +1,8 @@
+Hi, all
+Does anyone here has some tech reports or publications show their
+results of eastimating hyper parameter of LDA.
+Either using sampling methods or other methods, please share me the
+URLs or documents.
+Thanks,
+Feng
+2008/5/4 Laura Dietz <dietz at informatik.hu-berlin.de>:

@@ -1,0 +1,13 @@
+Hi,
+I guess that this file is a p(z|theta_d)  , where z is a sub-topic
+What mathematical procedure is hidden behind this file?
+You can find the variational inference algorithm on page 1005 Figure 6. of
+the Latent Dirichlet Allocation (Blei) paper. The intuition is that for each
+document you are trying to find the variational posteriors which tell you
+the topic "mixture" of each document. So, the final.gamma file is the output
+of the posterior Dirichlet topic mixture for all documents. You'll notice
+that the number of lines in the file is the number of documents.
+For inference, you get a similar file that you got for the estimation step,
+ie, variational Dirichlets for each document.
+Regards,
+Adnan

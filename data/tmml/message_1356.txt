@@ -1,0 +1,24 @@
+It has been discussed in details. Please try to search here before the
+inquiries.
+https://lists.cs.princeton.edu/pipermail/topic-models/
+It takes a while and hard work to learn about LDA even people with the
+related background. There are abundances of info out there (papers, wiki,
+videos and etc) as you acknowledged.
+K.
+LDA as well, I read part of the article you listed in your Email and I have
+some little questions.
+of all the random variables, which can be easily computed for any setting of
+the hidden variables." Can you give me an example about that?
+Variational Inference " for approximating the posterior distribution. I only
+tried solving the problem by the opensource code of Gibbs sampling. I am
+wondering given the same dataset, will the outcomes (Beta and Theta) be
+the same according to the two methods?
+http://cran.r-project.org/web/packages/lda/index.html"and found it mentioned
+corr-LDA code was included in it. However I downloaded the package and found
+the files' postfix was rd,rds etc. Without googling what it is, I have to
+ask what it means and what language it is ? I am looking forward to
+accessing the code of corr-LDA.
+As a new comer in LDA and not solid math background, some questions may
+be very easy and really appreciating your answer.
+BRs,
+Shuang

@@ -1,0 +1,5 @@
+I used to use visio (sorry I was raised on windows ;). For my thesis is switched to tikz which is a graphics package for LaTex.
+Eventually I started using a visual notation that is a hybrid between bayes nets (boiler plate diagrams) and factor graphs in order to distinguish intractable models from nested models: http://www.mpi-inf.mpg.de/~dietz/dirfactor-notation.pdf
+If you need macros for tikz or shapes fir visio, let me know!
+Cheers,
+Laura

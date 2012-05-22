@@ -1,0 +1,31 @@
+              Using in vivo molecular evolution the P.I. is studying how an organism mutates
+              an essential gene as a response to changes in its environment. The model
+              organism is a genetically modified strain of B. stearothermophilus (a
+              thermophile) that has had the wild type copy of the essential adenylate kinase
+              gene (adk) replaced by the mesophilic B. subtilis gene. The grant focuses on
+              two key attributes of molecular evolution; firstly, what are the
+              characteristics of bacterial populations as they adapt to environmental
+              extremes, and secondly, what are the physicochemical properties of the proteins
+              generated from these selections. The experiments follow populations of mutant
+              bacteria as they compete for survival and will use x-ray crystallography to
+              examine the stereochemical basis for increases in thermostability.
+
+Sequence
+              and structure based comparisons of mesophilic and thermophilic homologs have
+              suggested that numerous changes in amino acid sequence can increase
+              thermostability, whereas in vitro directed evolution has shown that a smaller
+              number of changes can frequently bring about the required changes in
+              activity/thermostability. One conclusion frequently drawn from these
+              observations is that many of the differences seen in sequence are the result of
+              evolutionary drift, rather than evolutionary necessity. To determine the
+              principles that guide evolution of a protein, the mutational path(s) taken by a
+              population of bacteria as they evolve an essential protein to higher
+              thermostability is being determined. Together with atomic analysis of the
+              protein intermediates along this path, the complex sequence surface that
+              constitutes the mutational path to thermostability for the model protein will
+              be explored. Altering conditions of the evolution experiment can also change
+              the "mutational path" used by the bacterial populations and allow further
+              insights into evolution. Thus the primary goal of the work is to elucidate the
+              pathway(s) used in vivo and to apply biophysical methods to understand the
+              physical basis for the elaborated mutational pathway(s).  
+

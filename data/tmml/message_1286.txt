@@ -1,0 +1,1 @@
+Even random initialization does not work for me. No matter wherever I start

@@ -1,0 +1,49 @@
+Dear Mateusz,
+when I worked through this paper, my conclusions were as follows:
+Mateusz Berezecki wrote:
+- In brief, "sufficient statistics" compress the information on a
+parameter (in this case, beta) to simplify its estimation (cf. Appendix
+A.1 in the paper, where the sufficient statistics have a specific
+meaning for each distribution). In our case, beta is a set of
+multinomials (K topic-specific distributions over V terms each), and a
+simple estimator for the parameters \vec\beta_k is the topic-specific
+ratio between how often a term is associated to one topic versus how
+often any term is associated to it (i.e., K ratios), averaged over all
+documents (therefore "expected"). These "how-often" counts are not
+integers, as during the E-step, only a _distribution_ over topic
+associations (the variational \gamma's) for each term (in each document)
+is estimated and only this can be used "for free", rather than
+"decisions" on z (as for instance in a Gibbs sampler).
+Regarding \alpha:
+- The estimation of _scalar_ alpha is not included in the paper. It
+can, however, be derived in way similar to the one given in A.4.2 in the
+LDA paper.
+- The term used as "sufficient statistic" for \alpha can be expressed
+as the sum of the expected sufficient statistic E_q{\log \theta_mk} of
+the document-specific topic distributions over all documents and topics.
+s_\alpha = \sum_{m=1:M} \sum_{k=1:K} E_q{\log \theta_mk}
+- The expectation E_q(.) is with respect to the variational
+distribution, a Dirichlet with vector parameter \vec\gamma_m. This term
+becomes E_q{log \theta_mk} = digamma(\gamma_mk) - sum_k(\gamma_mk) (cf.
+A.1 in the paper). So there's the connection to the rest of the algorithm.
+- In effect, the sufficient statistic "measures" the amount of
+"dispersion" of parameters \theta (expressed via the variational
+\gamma's) across the model. Remarkably, \alpha is only dependent on this
+scalar and the two constants M and K.
+Regarding \beta:
+- \sum_{m=1:M} phi_tk^(m) = E{n_kt},
+- \sum_{t=1:V} n_kt = E{n_k}
+- \beta_kt = E{n_kt} / E{n_k} \propto sum_{m=1:M} phi_kt^(m) n_mt
+with E{}  the expectation over m documents and the variables n_kt
+counting the occurrences of term t in topic k, n_k all occurrences of
+any term in k, and n_mt the term frequency of t in document m. Note that
+the phi is indexed in three dimensions while the implementation reuses a
+single 2D phi array for each document (here: .^(m)).
+Regarding \theta (for completeness): The \theta's can be obtained
+directly from the \gamma's via \vec\theta_m = E{Dir(\vec\gamma_m)} =
+\gamma_mk / \sum_k \gamma_mk.
+These are just the sufficient statistics for the parameter \beta:
+class_word = E{n_kt}, class_total = E{n_k}
+I hope this helps.
+Best regards
+gregor

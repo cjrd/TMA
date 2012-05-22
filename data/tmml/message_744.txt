@@ -1,0 +1,7 @@
+Hi all:
+I am working on a task which will use the author-recipient topic model(ART) proposed by professor Andrew Mccallum in the paper "Topic and role discovery in social networks". Since I am a freshman in topic model, I am wondering where can I find the code of this model? Could somebody share this code to me?
+Thanks a lot and I really appreciate that~
+All  the best!
+Qi
+2010-12-06
+feiniaol

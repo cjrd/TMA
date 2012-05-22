@@ -1,0 +1,9 @@
+Hi Rohit,
+If you haven't already, try the version here:
+http://code.google.com/p/lda-c/
+It has error messages which might help to find the problem (if nothing
+else, you'll know where to look in the code).
+Did your error occur at the beginning or while after having run for a
+while? Also, how large is your dataset?
+Best,
+Sean

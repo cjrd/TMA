@@ -1,0 +1,32 @@
+              This career development program combines innovative applications of
+              hyperpolarized (HP) noble gases with the development of a new track for
+              undergraduate physics majors, Physics of Modern Technology.  Enormous
+              non-equilibrium nuclear-spin polarizations (of order 10%) can be achieved in
+              He-3  and Xe-129 via spin-exchange optical pumping (SEOP), greatly enhancing
+              the NMR sensitivity of  these  nuclei. These hyperpolarized (HP) noble gases
+              are being applied to a broad range of problems in physics, chemistry, and
+              biomedicine. The recent strong push in applications of HP gases has created
+              tremendous cross-disciplinary excitement, but has left in its wake a number of
+              important and persistent problems in the physics that must be addressed to
+              realize the full potential of the various  applications.  This  research
+              program integrates the study of the basic physics of SEOP and several
+              applications.  Studies include the  use of highly polarized Xe-129 both for
+              polarization transfer to other nuclei of interest, and for the study of a
+              highly ordered lattice of spins, and a detailed analysis to determine the
+              relaxation mechanism of hyper-polarized gases at wall surfaces.  
+
+Physics of
+              Modern Technology:  The educational component of the program consists of
+              co-development of a new track for physics majors at the University of Utah,
+              Physics of Modern Technology (PMT).  The PMT program is aimed at highly
+              motivated students who will not be professional physicists but do need
+              preparation for careers and leadership positions in which it will be valuable
+              to have technical, quantitative and analytic strengths.  The  PMT  program
+              contains a number of innovative pedagogical features,  including a modular
+              structure in which important  physical  principles are explained  and
+              demonstrated in the context of real-world technical problems, and the
+              integration of theory, experiment, and computation in each module. PMT will be
+              excellent preparation for careers such as journalism, patent law, and medicine,
+              and it will stimulate creative teaching and interaction with the rapidly
+              changing and technically oriented industrial world. 
+

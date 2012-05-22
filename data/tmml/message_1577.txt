@@ -1,0 +1,13 @@
+Hi evergyone,
+In the EMNLP 2007 paper "Improving Word Sense Disambiguation Using Topic
+Features", there is conclusion that
+"The $\gamma$ parameter provides an approximation to the probability of
+selecting topic i in the document", which is
+the Eq. (1) in the paper, i.e. $p(z_i | \gamma)=frac{gamma_i}{sum_K \gamma
+_k}$.
+I don't understand Eq. (1) and its explanation, and the author gave no
+further answer.
+And I read the Blei et al 2003 again, I have not found any such conclusion.
+Any suggestion will be of appreciated.
+Best regards,
+Yun Zhou

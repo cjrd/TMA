@@ -1,0 +1,10 @@
+Hi all,
+I just added the LDA-C output format to JFreq, my own word counter. I'd appreciate any feedback, bug reports, etc.  Web link is below, followed by a short description.
+http://www.williamlowe.net/software/jfreq/
+JFreq, which runs on any OS* with a graphical or command line interface, takes text input in any encoding** segments according to locale*** optionally lowercases, removes currency, removes numbers, filters with a stop word list, stems**** and spits out the results asan  optionally gzipped CSV file, folder of LDA-C suitable files, or folder of Matrix Market sparse matrix format files. It will do basic content analysis too, though that's perhaps less relevant to topic modelers.
+* that Java runs on
+** that Java recognizes and can use with a word-level BreakIterator, so not Chinese, Thai etc.
+*** that Java recognizes as a Locale
+**** for 12 western languages, wrapping Lucene's Snowball stemmer
+Best,
+Will

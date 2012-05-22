@@ -1,0 +1,3 @@
+Indeed, that method is efficient enough in most cases. Nonpar priors are of
+theoretical interest though. Results between both are not always identical; the
+"gradient" d Lik / dK tends to be small and "noisy" near the optimum.

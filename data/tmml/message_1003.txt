@@ -1,0 +1,37 @@
+Dear All,
+im sorry if my question appears too trivial but i just crave your indulgence.
+I?placed an output folder 'lda_out' , and a data.txt file (in the LDA-C format) in?the unzipped lda folder. Then tried to?run the LDA code?on ubuntu linux?but there seems to still be some problem somewhere. I tried four ways but get errors.
+Kindly advise me on the right way to type the command for executing lda and hda in the command prompt on the linux platform.
+Thanks
+Popoola Oluwatoyin
+Pattern Recognition & Intelligence Systems
+HEU.
+TRIAL 1
+pius at ubuntu:~$ cd Desktop/lda
+pius at ubuntu:~/Desktop/lda$ lda est 0.1 550 ./settings.txt ./data.txt random /home/pius/Desktop/lda/lda_out
+No command 'lda' found, did you mean:
+?Command 'ldc' from package 'ldc' (universe)
+?Command 'cda' from package 'xmcd' (universe)
+? :
+??:
+?lda: command not found
+TRIAL 2
+pius at ubuntu:~/Desktop/lda$ lda estimate 0.1 550 ./settings.txt ./data.txt random /home/pius/Desktop/lda/lda_out
+No command 'lda' found, did you mean:
+?Command 'ldc' from package 'ldc' (universe)
+?Command 'cda' from package 'xmcd' (universe)
+? :
+??:
+?lda: command not found
+TRIAL 3
+pius at ubuntu:~/Desktop/lda$ g++ lda est 0.1 550 ./settings.txt ./data.txt random /home/pius/Desktop/lda/lda_out
+g++: est: No such file or directory
+g++: 0.1: No such file or directory
+g++: 550: No such file or directory
+g++: random: No such file or directory
+TRIAL 4
+pius at ubuntu:~/Desktop/lda$ g++ lda estimate 0.1 550 ./settings.txt ./data.txt random /home/pius/Desktop/lda/lda_out
+g++: estimate: No such file or directory
+g++: 0.1: No such file or directory
+g++: 550: No such file or directory
+g++: random: No such file or directory

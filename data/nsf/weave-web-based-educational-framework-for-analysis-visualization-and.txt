@@ -1,0 +1,28 @@
+              Engineering - Civil (54)
+Our team at the Pratt School of Engineering at Duke
+              University has previously developed and documented a prototype web-based
+              instructional system for solid mechanics. Our basic goal has been to promote an
+              inquiry-based style of modern engineering analysis, experimentation, and design
+              into undergraduate solid and fluid mechanics courses. A central effort of our
+              team's work has been the design and evaluation of a modular and portable
+              framework so that faculty can create a diverse set of experiments based on our
+              web- based model. To help guide faculty toward adoption of our model a workbook
+              and accompanying CD-ROM is being published.
+
+Through our project Web-based
+              Educational Framework for Analysis, Visualization, and Experimentation (WEAVE)
+              faculty will have the option of complimenting traditional labs with
+              module-based projects designed to encourage students to compare, contrast, and
+              improve models of actual physical experiments. An interactive web-based
+              tutorial for each module will be developed in conjunction with Shodor, a
+              non-profit educational research foundation based in Durham, N.C. The deployment
+              of WEAVE across the engineering curriculum enables students to follow
+              interactive tutorials, execute numerical simulations, and conduct physical
+              experiments. In these self-paced labs, students explore concepts of fluid and
+              solid mechanics through trial and error iterations by directly controlling and
+              modifying the physical experiments and their associated numerical simulation.
+              The dissemination of our materials and findings has been promoted on our
+              campus, and at the state and national levels through oral presentations,
+              publications in educational journals, and via the Internet. We also plan to
+              present at the Frontiers in Education in 2003.
+

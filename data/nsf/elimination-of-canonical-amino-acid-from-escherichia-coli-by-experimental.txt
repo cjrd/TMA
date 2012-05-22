@@ -1,0 +1,16 @@
+              
+In all the theories of the evolution of the genetic code, the number of amino
+              acids is hypothesized to have gradually increased from a few to the twenty that
+              now constitute the building-blocks of proteins in living cells. The objective
+              of this research is to recreate a possible evolutionary intermediate in which a
+              living organism contains 19 and not 20 amino acids. This objective would give
+              insight into how protein structures adapt to mutation and open possibilities in
+              terms of designing and selecting organisms adapted to a different chemical
+              composition.   Based on encouraging results from recent experiments, this
+              objective will be accomplished by placing a population under selective pressure
+              for the loss of a given amino acid. Two different strategies have been designed
+              to replace isoleucine by valine and threonine by serine in Escherichia coli.
+              These strategies combine selection strategies that exploit classical strain
+              constructions with the use of a continuous culture apparatus that allows
+              long-term experiments.
+

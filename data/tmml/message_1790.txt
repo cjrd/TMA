@@ -1,0 +1,6 @@
+Hi all,
+Does anyone have the source code for J. Paisley, C. Wang, and D. Blei.
+**"The discrete infinite logistic normal distribution for
+mixed-membership modeling"?
+Thanks,
+Konstantin Salomatin

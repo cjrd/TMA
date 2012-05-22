@@ -1,0 +1,19 @@
+              Brooks Pate of the University of Virginia is supported by a grant from the
+              Experimental Physical Chemistry Program to develop a new molecular beam
+              spectrometer and to use it to study gas phase isomerization initiated by
+              vibrational laser excitation.  Isomerization rates will be determined using
+              Fourier transform microwave spectroscopy.  These data will be used to test
+              dynamical theories.  The studies will be augmented by studies of isomerization
+              in solution using two-color, time-resolved vibrational spectroscopy and a
+              comparison will be made to distinguish solvent effects.  Isomerization will be
+              studied for a series of systems with two and three (epoxides) conformational
+              minima and for systems (terminal chloroalkynes and linear aldehydes) with
+              multiple isomerization coordinates.
+
+Isomerization, the change in structure
+              of an isolated molecule, greatly effects chemical reactivity, a feature that is
+              exploited by long chain molecules and in biological systems.  Isomerization is
+              to be studied by advanced spectroscopic techniques in both the gas and solution
+              phases to test theoretical models and to determine the influence of the solvent
+              on the reactivity.
+

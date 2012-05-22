@@ -1,0 +1,16 @@
+                   This Small Business Innovation Research Phase I project is aimed at
+              optimizing the mass-transport properties of the cathode electrode for high
+              temperature (120C), and dry air operation. The overall objective is to
+              fabricate complete catalyst coated membranes utilizing the newly engineered
+              cathode electrode layer, and test the improvements in a high temperature(120C)
+              fuel cell. A second objective is to understand the water and reactant transport
+              mechanisms occurring in the cathode electrode that are limiting the operating
+              temperature and requiring high levels of cathode humidification.  
+     Major
+              benefits could be realized if proton exchange membrane fuel cells could be
+              operated under hotter (> 90C) and drier conditions on the air electrode. Higher
+              operating temperatures allow for an easier system heat rejection and a greater
+              anode tolerance to CO contaminants typically found in reformed hydrocarbon fuel
+              streams. Similar benefits can also be realized in building co-gen applications
+              where a higher temperature. 
+

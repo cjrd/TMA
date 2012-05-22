@@ -1,0 +1,11 @@
+Hi list readers,
+I am curious about one thing mentioned in Topic Models by Blei and
+Lafferty [2009]. They mention TFIDF used as a weighting scheme for the
+whole corpus to pick up essential words which they later put into the
+vocabulary which is used in training the model. How exactly would
+TFIDF work for a corpus, as it's a document level weighting scheme
+rather than corpus wide one. I guess applying TFIDF for every document
+and then picking up most important words from the document and
+repeating the process for every document in the corpus wont do. So my
+question is : what exactly is TFIDF on a corpus level ?
+Mateusz Berezecki

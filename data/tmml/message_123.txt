@@ -1,0 +1,8 @@
+It is not that hard to pull the relevant code out of the Matlab
+toolbox at http://psiexp.ss.uci.edu/research/programs_data/toolbox.htm.
+I did it once myself a while ago, although it is quick to implement
+the same thing from scratch (100 lines or so, if that).  Just grab the
+function GibbsSamplerLDA out of the .cpp file of the same name and
+clean it up.
+Anthony
+2007/6/24, Hieu Xuan Phan <pxhieu at gmail.com>:

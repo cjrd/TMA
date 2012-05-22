@@ -1,0 +1,16 @@
+Hi all,
+I've compiled the beginnings of an annotated bibliography on topic
+modeling here:
+http://www.cs.princeton.edu/~mimno/topics.html
+Jun Zhu and Jordan Boyd-Graber contributed a significant portion of
+these records. If you would like to contribute, please take a look at
+the source XML file:
+http://www.cs.princeton.edu/~mimno/topicbib.xml
+Send me an <entry> element by email, and I will update the file,
+subject to editorial discretion. Please note whether you are updating
+an existing entry. If you would like to add a tag to several entries,
+please provide the tag name and a space-separated list of the entry
+IDs you'd like to apply it to, ideally in the order they appear.
+For those interested, the XSL stylesheet I used is here (patches
+welcome): http://www.cs.princeton.edu/~mimno/topics.xsl
+-David

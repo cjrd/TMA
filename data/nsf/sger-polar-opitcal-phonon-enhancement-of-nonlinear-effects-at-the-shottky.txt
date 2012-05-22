@@ -1,0 +1,79 @@
+              0096519
+Gelmont
+
+As high-frequency devices are extended farther into the
+              terahertz (THz) regime, the
+electron physics will, for the first time, be
+              impacted by polar optical phonon resonance
+(POP) that typically lies above 1
+              THz. In this frequency region, the dispersion of the
+permittivity in all
+              heteropolar materials can not be neglected. At the POP frequency,
+              the
+permittivity has a singularity that influences and perturbs all physical
+              processes within
+heterostructure barrier devices. Thus, the emerging area of
+              THz electronics requires the
+development of new physical theories for the
+              analysis of the heterojunction interface in
+the vicinity of the POP
+              frequencies.
+
+In the last two years, the new theory of POP effects within
+              depletion layers of GaAs
+barrier heterostructures has been proposed [1-2].
+              This physical phenomenon is based upon
+dramatic change in complex permittivity
+              of electronic material near the polar
+optical-phonon resonance frequency which
+              cause highly nonlinear behavior of depleted
+heterostructure modified by the
+              interaction between the lattice and the electric field.
+While this simplified
+              theory to date has considered only forward bias conditions and has
+ignored
+              neutral layer and external parasitic effects, it predicts a strong
+              POP
+influence. Specifically, it predicts that the POPs present within the
+              electron-depleted
+region influence the barrier charging dynamics near the
+              semiconductor resonant frequency, directly modify the potential barrier,
+              perturb the spatial dependence of the electric field within the
+              depletion-region and strongly alter the nonlinearity associated with the
+              heterostructure current. This strong and highly-localized frequency-space
+              phenomenon has broad implications to all polar-semiconductor-based
+              heterostructure devices that utilize nonlinear electron transport
+              effects.
+
+The goals of this exploratory research project is to develop a new
+              quantitative and
+physics-based model for investigating the high frequency
+              dynamics of semiconductor
+interfaces. In particular, a research investigation
+              is proposed to study the nonlinear
+behavior of forward and reversed bias
+              heterostructures. The physical model will be
+integrated with a
+              circuit-embedding algorithm to conduct computer simulation of dynamic
+behavior
+              of heterojunction based high frequency devices operating within
+              realistic
+situations. This work will also consider the physical operation of
+              interfaces that are
+constructed from novel materials systems which can be used
+              to release Schottky interfaces
+with good barriers heights and very low
+              resonance frequencies (~600 GHz).
+These particular scientific investigations
+              hold great promise for introducing new degrees
+of freedom into the
+              functionality and performance of semiconductor-based electronic
+devices. For
+              example, the possibility of enhancing the nonlinearity, and therefore
+              the
+innate harmonic generation capacity, of heterojunction structures would
+              have a profound
+impact on the search for high-efficiency harmonic multiplier
+              sources operating at THz
+frequencies.
+

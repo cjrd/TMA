@@ -1,0 +1,15 @@
+Hi all,
+I am interested in applying LDA for collaborative filtering.
+This means that given a movie dataset (which corresponds to the corpus
+of documents), I want to obtain, for each topic, the probability of a
+particular rating for each movie. This is a bit different then in the
+case of documents, because \beta in each topic, is not just a vector
+with probabilities of occurrences of words (like for documents), but a
+2-dim table (number_movies X number_rates).
+I did not understand exactly the way how LDA for documents, especially
+the C-code of LDA for topic modeling, can  be applied for collaborative
+filtering (Section 7.3 from LDA Blei, Ng, Jordan). And how can you
+obtain \beta_movies (an entry in \beta_movies corresponds to the
+probability of a rating for a movie) in this case?
+Thanks in advance,
+Adriana

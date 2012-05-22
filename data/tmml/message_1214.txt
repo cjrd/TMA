@@ -1,0 +1,5 @@
+Hi, I have a question about Dirichlet Process construction.
+When constructing a draw from a DP, we use a sequence of independent samples from the base distribution.
+The question is whether we use the same sequence for each draw from DP, or for every draw from DP the sequence of independent draws from the base measure is generated anew?
+Thanks on advance,
+Andrey

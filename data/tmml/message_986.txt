@@ -1,0 +1,4 @@
+Dear list -- the NIPS data appear still to be a good mid-size data set. Is there
+any effort going on extending them beyond NIPS 17? No need to re-invent the wheel...
+Best
+gregor

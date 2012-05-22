@@ -1,0 +1,54 @@
+              ABSTRACT
+
+Carbon enters ecosystems through a single process, photosynthesis,
+              and nearly all is returned to the atmosphere through respiration, some 50-80%
+              of which occurs below ground. Soil respiration integrates root metabolism and
+              the activity of decomposer organisms. While the major processes affecting plant
+              metabolic (autotrophic) respiration and decomposition rates (heterotrophic
+              respiration) are known, the ability to predict variations in soil respiration
+              in space and time is limited - a major uncertainty in the current and future
+              carbon cycle. 
+
+The work proposed here will combine new measurement and
+              modeling approaches for separating autotrophic and heterotrophic respiration,
+              and determining the age of C respired from soils. At field sites in the
+              Ameriflux network that span a range of North American biomes and climates,
+              these methods will include: (1) frequent, automated, measurements of soil
+              respiration and related factors; (2) isotope mass balance methods based on
+              measurements of stable isotopes and radiocarbon in respired CO2; and (3)
+              incubations to determine responses of heterotrophic respiration components to
+              changing soil conditions; and (4) at some sites, manipulation of soil moisture
+              content through rainfall exclusion. The data generated will be used to
+              partition soil respired C into autotrophic and heterotrophic components, to
+              determine the age of heterotrophically respired C and identify the components
+              of soil organic matter contributing to its production, and to determine how
+              these relationships chance with controlling variables
+(photosynthesis rate,
+              soil conditions, etc). The results will be used to parameterize a
+              new
+autotrophic respiration component of the CASA ecosystem model, and to test
+              how well the model predicts the balance of sources of heterotrophic respiration
+              on seasonal to interannual timescales. Predictions of the CASA model will be
+              further tested across regional gradients spanning (1) a climosequence and (2) a
+              suite of sites from tropical forest to tundra. We will use atmospheric records
+              of seasonal variation in C isotopes (13C at the global network sites and 14C in
+              atmospheric CO2 at Point Barrow, Alaska) as a global test of the CASA model's
+              ability to determine the seasonal to interannual exchange of C between northern
+              hemisphere terrestrial ecosystems and the atmosphere.
+
+Intellectual merit.
+              Separating the components of ecosystem respiration is one of the fundamentally
+              important research challenges in ecosystem science. This activity will use new
+              tools, in particular, innovative use of the radiocarbon tracer in measurements
+              and models, to develop process level understanding of C fluxes at selected
+              Ameriflux sites.
+
+Broader impacts. This work will advance fundamental
+              understanding of how terrestrial ecosystems influence the global carbon cycle,
+              and will improve projections of future atmospheric concentrations of carbon
+              dioxide by showing how heterotrophic respiration will respond to changes in
+              temperature and moisture. Our program to educate students through a short
+              course in radiocarbon at the W.M. Keck Carbon Cycle Accelerator Mass
+              Spectrometry facility will train the next generation of scientists in the
+              applications of radiocarbon to study land and ocean C cycling.
+

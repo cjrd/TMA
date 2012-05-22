@@ -1,0 +1,7 @@
+Sorry, I didn't ask clearly.
+What I mean is that most bigrams have only one topic, for example, AB only
+goes to topic 8, CD only goes to topic 10. I thought one bigram might be in
+different topics, for example, the count of (AB, topic 8) > 0, and (AB,
+topic 40) >0.
+Maybe it's because bigrams have more determined semantics than unigrams?
+Ying

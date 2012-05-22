@@ -1,0 +1,46 @@
+              0204390
+Krener
+
+This proposal is for research on several promising new
+              approaches to 
+designing an observer for a nonlinear control system, including
+              
+linearization of the state error dynamics, backstepping and multiple
+              
+extended Kalman filters.  In order to decide which type of observer is
+              
+appropriate for a given nonlinear system, one needs a classification of the
+              
+range of possibilities. Therefore a study of the normal forms of a nonlinear
+              
+system under a group action that is appropriate to observer design is also
+              
+proposed.
+
+A control system is a mathematical model of a real world
+              process.  It has 
+inputs and outputs which model the way the way the system
+              interacts with 
+the external world and has state variables, which describe the
+              internal 
+memory of the system.  The state evolves according to some dynamical
+              
+model driven by the inputs and the output is some function of the state and
+              
+possibly the input.  The fundamental problem of control systems is to 
+close
+              the loop in such a way as to achieve stability.  We wish to use 
+negative
+              feedback based on the current state to stabilize the system to 
+some desirable
+              operating regime.  But usually the current state is not 
+directly measurable
+              so we must design an observer to estimate it from the 
+past inputs and
+              outputs.  The development of nonlinear observer design 
+methodologies is a
+              paramount problem of systems theory and its 
+applications.  There is no
+              current approach that is effective for all 
+nonlinear systems.
+

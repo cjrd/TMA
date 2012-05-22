@@ -1,0 +1,10 @@
+Hello,
+I've fit a correlated topic model and I'd like to inspect the
+resulting covariance matrix between topics. How can I reconstruct the
+K by K covariance matrix given the K-1 by K-1 matrix in final-cov.dat?
+I noticed that the lasso-graph.r script attached does something
+completely different and ignores the covariance matrix while using the
+l1-regularized regression to predict topics given topic, to get nice
+binary edges in a graph, but I'd like to inspect the actual learned
+matrix.
+Any idea how to do this?

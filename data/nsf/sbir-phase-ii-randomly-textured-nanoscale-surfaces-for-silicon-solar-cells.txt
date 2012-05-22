@@ -1,0 +1,20 @@
+              
+This Small Business Innovation Research (SBIR) Phase II project will integrate
+               random, reactive ion etching (RIE) texturing techniques into low-cost,
+              multi-crystalline (mc) silicon (Si) solar cells.  RIE texturing techniques,
+              developed in Phase I, are distinguished by their low-reflection (1 percent),
+              large area (200 square centimeters) application, and the ability to control
+              etched profiles.  This texture control has been employed to increase near
+              infrared absorption in Si by enhanced oblique optical coupling into the
+              substrate.   RIE-texturing techniques have potential application in several
+              fields including low-cost substrates for surface enhanced Raman scattering and
+              field emission devices.  Phase II will be concerned with conformal emitter
+              formation techniques uniquely suited to RIE-textured surfaces.  These methods
+              will lead to solar cell manufacturing in a cluster environment with similar
+              chambers for texturing, emitter formation, and nitride films for surface
+              passivation.
+
+Potential industrial applications are expected in
+              high-efficiency, RIE-textured, mc-Si solar cells using processes suitable for
+              their respective manufacturing environments. 
+

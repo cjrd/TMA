@@ -1,0 +1,6 @@
+Hi, All
+I'm a beginner of topic modeling. Can someone tell me where can I get the
+derivation of gibbs sampling procedure for Corr-LDA model?
+Thanks!
+Best Regards
+Tracy Wang

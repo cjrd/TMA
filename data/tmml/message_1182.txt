@@ -1,0 +1,11 @@
+Suhas,
+regarding your intuition in Q1. I don't think this holds.  Depending on
+K, settings on priors and initialization you may end up with different
+topics. They might even be orthogonal. Think of it as organizing colored
+shapes. You may organize them by color, or alternatively by shape, you
+cant say which is the sub topic or super topic. .oO( unfortunately with
+unsupervised learning you may get half colored, half shaped topics)
+If the super-sub topic relationship is important to you, I would look at
+the Pachinko allocation papers.
+Cheers,
+Laura

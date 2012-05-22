@@ -1,0 +1,10 @@
+It's interesting to ask when a pure optimization method (i.e. no probability model) corresponds to a particular case of a probabilistic model.
+A couple well known examples:
+1. Linear regression: least squares is the MLE for normal errors
+2. K-means: this can be interpreted as a limiting case of a particular Gaussian mixture model
+3. PCA interpreted as a limiting case of factor analysis (Tipping & Bishop)
+Perhaps this is another way to frame your question: Does the optimal solution to NMF (depending on which cost function is minimized) have a connection to LDA (e.g., perhaps the MLE or MAP for a particular prior). It seems possible since, as you point out, they both produce low rank, non-negative matrix factors.
+If Professor Blei happens to be reading this, one thing I've always wondered about the original LDA paper is why they didn't want to make the analogy between LDA and factor analysis.
+If you find anything, I'd love to see it.
+Best,
+Dan

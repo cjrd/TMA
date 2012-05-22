@@ -1,0 +1,2 @@
+I've found Hellinger & Bhattacharyya to work well for topic-topic measurements.
+Aaron

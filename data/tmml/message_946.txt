@@ -1,0 +1,4 @@
+Hello,
+I've recently been playing with the HDP code by Wang and Blei and I have a question about why it works so well. When using traditional LDA without removing stopwords, I end up with poor topics where the top words are invariably 'the', 'of', 'and', etc. I understand why this is the case and why when using LDA stopwords should be removed a priori. But with HDP without removing stopwords, it groups all the stopwords into one topic and the remaining topics are quite coherent. From reading the Hierarchical Dirichlet Processes paper, I'm finding it difficult to understand why I'm seeing this (good) behavior. Could someone enlighten me?
+Thanks very much.
+Will Darling

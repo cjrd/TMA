@@ -1,0 +1,42 @@
+              This project investigates : (1) supercooled liquids and glasses and (2)
+              singularities appearing in fluid interfaces.  The work is motivated by the
+              possibility of an underlying similarity between the ways in which different
+              materials can become jammed, or rigid.  This work studies similarities between
+              a liquid undergoing a glass transition into an amorphous solid, with a yield
+              stress, and a macroscopic, athermal, system, such a granular material, which
+              becomes jammed into a configuration, also with a yield stress.  A "jamming
+              phase diagram", which unifies these two seemingly disjoint transitions, will be
+              explored using simulations and experiments on liquids to see if jamming
+              produced by lowering temperature is similar to jamming produced by lowering the
+              stress.  There will also be an investigation of force-chain formation.  Liquid
+              surface singularities will be probed via high-speed photography to examine the
+              singularity in the interface occurring when a drop splits into two separate
+              pieces.  The spout formation itself will be studied using the geometry of
+              selective withdrawal.  Possible applications for coating particles will be
+              explored.  The students involved in this research will receive excellent
+              training with novel instruments and measurements on highly interdisciplinary
+              scientific topics. 
+%%%
+Many different materials become jammed so that they
+              cannot move.  Such jamming can be observed in granular material flowing through
+              conduits and hoppers in a factory.  It can also be seen in the context of glass
+              formation when a molecular liquid is frozen into an amorphous state.  This
+              research is aimed at exploring the ways in which these two seemingly disparate
+              types of transitions may in fact be related to each other with similar
+              underlying physical mechanisms at work to cause the cessation of motion.  The
+              discovery of such an underlying cause would have important implications for a
+              variety of scientific and technological problems.  Both computer simulations
+              and experiments will be used to explore these jamming transitions. 
+              Singularities in fluid flow are important whenever a drop of liquid breaks off
+              from a larger body of fluid.  At such a point a simple mathematical description
+              of the object breaks down because of the singular nature of the flows. 
+              High-speed photographic studies will probe the nature such singularities. 
+              There will also be a study of the spout formation using the geometry of
+              selective withdrawal.  The use of this phenomenon for coating particles,
+              including cells for medical applications, will be explored.  The students
+              involved in this research will receive excellent training with novel
+              instruments and measurements on highly interdisciplinary scientific topics.
+              
+
+
+

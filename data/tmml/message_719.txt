@@ -1,0 +1,12 @@
+Hi all,
+I want to compile the ctm codes in /code/ctm-dist. But I got the error as
+follows:
+/code/ctm-dist> make
+gcc inference.o gsl-wrappers.o ctm.o estimate.o corpus.o params.o -o ctm
+-lm -lgsl -latlas -lgslcblas
+/usr/lib/gcc/i586-suse-linux/4.2.1/../../../../i586-suse-linux/bin/ld:
+cannot find -latlas
+collect2: ld returned 1 exit status
+make: *** [mac] Error 1
+Can anyone help me to fix this? Thanks a lot!
+Jieyue

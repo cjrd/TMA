@@ -1,0 +1,3 @@
+It's not exactly a topic model, but I believe Charles Elkan's EDCM mixture
+paper uses deterministic annealing.
+-David

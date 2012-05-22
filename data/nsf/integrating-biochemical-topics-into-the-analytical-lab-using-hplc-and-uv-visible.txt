@@ -1,0 +1,16 @@
+              The objectives of this project are (1) to integrate selected biochemical
+              concepts and methods and (2) to introduce project-oriented, student-designed
+              laboratories into the analytical course. An HPLC system and a UV-Visible
+              spectrophotometer are making this possible. Specific experiments and the
+              project laboratory approach are being adapted from the chemical education
+              literature, the primary chemistry literature, and application notes provided by
+              manufacturers. The proposed changes are correlated with a Departmental goal to
+              integrate biochemical concepts across the chemistry curriculum and toward a
+              college-wide effort for student-directed, individualized learning
+              opportunities. By incorporating biochemical concepts and group project
+              experiments into the analytical laboratory, student understanding of selected
+              biochemical topics, student ability to apply an analytical approach to
+              biochemical problems, and student capacity for working with other members of a
+              group toward the solution of a problem are being increased.
+
+

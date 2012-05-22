@@ -1,0 +1,10 @@
+Hello LDA experts,
+I am just starting to play with LDA -- Blei's C version. :)
+I have the following error msg.
+number of docs??? : 1506560
+number of terms?? : 11865685
+Segmentation fault
+Would you advise me if there is a limit in terms of the number of documents and/or the number of terms?
+FYI, the command line is
+$> lda est 0.2 500 ./inf-settings.txt myData.txt? random .
+Thank you so much in advance.

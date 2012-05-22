@@ -1,0 +1,12 @@
+Hey all,
+This seems like a good point to ask about stop words. I have seen
+different stop word lists at different places (e.g.
+http://dl.acm.org/citation.cfm?id=378888,
+http://www.lextek.com/manuals/onix/stopwords1.html,
+http://www.ranks.nl/resources/stopwords.html), but am curious about
+the lists that y'all rely on. (Our lab, for example, does a lot of
+custom list development for data sets, but has a few generic stop word
+lists that are used as bases.) Do you use a particular set as a base,
+a custom brew, what?
+Best,
+pml

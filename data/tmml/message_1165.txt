@@ -1,0 +1,16 @@
+Hi Anthony --
+such a thing is surely possible but not necessarily the most natural choice: The
+assumption that topic models and topic maps are related concepts or methods is a
+common misconception. Both methods have in common that they aim at simplifying
+access to content by adding some sort of meta-data that may then be used as a
+basis for navigation or retrieval.
+It's coincidence that I was drafting text on a related topic just the other
+day... So here's the gist:
+In a topic map, you want to relate given concepts to facilitate access, and
+there exists an abstract structure / data model. A topic in this context refers
+to a concept, in an ontology sense.
+Conversely, a topic model does not imply such an abstract structure. You rather
+assume a model that the observed data may be explained with. A topic in this
+context is a probability distribution over observable features (terms), and in
+many cases in such distributions, likely terms are semantically related. In the
+majority of topic models, the concepts are not known a priori and are learned

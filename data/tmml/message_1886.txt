@@ -1,0 +1,10 @@
+Hi Mike,
+(CC'ing topic-models mailing list)
+You have a few options. Probably the simplest option would be to set
+the vocabulary size W to something larger than the number of words
+you've seen so far, and then assign new words to previously unused
+indices. You could also take a more principled Bayesian nonparametric
+approach to the growing vocabulary problem, but that would be
+significantly more work.
+Best,
+Matt

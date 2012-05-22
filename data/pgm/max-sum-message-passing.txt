@@ -1,0 +1,384 @@
+
+A lot of our thinking so far as gone into
+constructing algorithms for the problem of
+computing marginals in a graphical model.
+But as we previously discussed, a very
+different type of inference problem, but
+one that has many applications in itself
+is that of finding a single coherent joint
+assignment that has the highest
+probability. And we. Showed already that,
+that doesn't have the same, that you can't
+just solve the marginals problem, and
+pick the highest probability assignment
+for each variable, and that gives you the
+map assignment. That's not what, that's
+not what happens. And so we need to have
+an alg-, a different set of algorithms for
+solving the map problem. And we're going
+to talk now about the first of these,
+which is, Effectively following the exact
+same lines that we did for exact inference
+for computing marginals only it turns out
+that one can re purpose them with a small
+change to computing the map assignment. So the
+first operation that going to do in order
+to get this to work, is that we are going to take
+products and turn them into summations.
+And we are going to be doing that by
+observing that p of the our distribution p
+of Phi is proportional as we know
+to a product of factors. And if we, if we
+are trying to find the argmax of that
+particular product. It can also be
+written, reformulated as the argmax of
+summation where each of these theta ks
+is the log. Of the potential phi of k. Which is
+basically the same as taking the table
+that represents the factor and converting
+each entry into its logarithm. And that
+gives you something that, rather than
+being a product of factors, is the sum of
+these log factors. And there's really good
+reasons for doing that. First, because
+summations are easier to handle than, than
+products. But also because, if you're
+multiplying a whole bunch of very small
+numbers, you're going to get numerical
+underflows. And converting this into
+summations is a much more robust algorithm
+numerically, in, in terms of a practical
+implementation. And so now we are going to
+consider the problem, of that we just
+wrote here which is the argmax of an
+expression that we are going to call theta
+of X1 up to Xn which is defined as the
+sum of factors over smaller scopes which
+are these theta ks. And this is the
+example that I meant to show a moment ago.
+So this is taking a factor over scope A
+and B, and converting it to its log
+factor, by taking log base two. And you'll
+notice that the numbers were carefully
+selected to give me nice, outputs. But
+that doesn't have to be the case. So now
+that we've reduced problem to one that
+we're taking the max over summation, we're
+going to now go back to our simple example
+of a chain and we're going to think about
+how we can do max sum variable elimination
+in chain. And this is going to look.
+Almost identical to the max, to the sum
+product algorithm that we had before. So
+let's understand what we are trying to do
+here. So we're trying, assuming what we
+are trying to do now is, forget the arg
+max, let's assume that we just want to
+find the max of this of this. Expression
+theta of A, B. C, D and E. And so just
+like in the sum product case, we can break
+up the maxes into a max over A and then a
+max over B and a max over C and a max over
+D. And while we might not be quite as used
+to doing this kind of operation that I'm
+about to show, it's equally valid to point
+out, that because none these guys, theta
+two, theta three or theta four depend on A
+we can. Add them up, the max over this
+guy, over theta one and AB, after
+completing the max. And so that's going to
+give me a factor here. Which, which looks
+like max over A, theta one of AB. And I'm
+going to call that Lambda one of B.
+Because notice that this is not a
+constant. It's a function that depends on
+B. For different values of B, you're gonna
+have different val-, different A's of
+maximize, and different values of the max
+expression. And so this Lambda one of B is
+simply the max over A of theta one, AB.
+And that process has effectively now
+eliminated A from this expression, and
+given me a maximization problem over one
+fewer variable, only B, C, D, and E. Just
+like in the context of sum product
+algorithms, we can view all of these
+operations as operations over factors,
+rather than just thinking about them in
+terms of expression. So whereas before we
+defined things like factor product and
+factor marginalization, we can now define
+analogous operations that correspond to
+factor summation and factor maximization.
+So factor summation's a very obvious
+operation, does exactly what we did here,
+so if we want to, in the case of factor
+product, if we want to define. In the row
+for A1, B1, C1, we're going to add up. The
+entry three from A1 B1. And the entry four
+from B1C1 and that is going to give me
+seven. And I can similarly define all of
+the other entries in the factor summation
+which we're showing here on the right.
+Factor maximization is same way that we
+could sum marginalize a factor. This is
+something that max marginalizes, is called
+the max marginalization. And what it does
+is, it looks, if I, so I'm trying to get
+rid of B. I have these two rows here. Say,
+for example, A1, B1, C1. And A1, B2, C1,
+that only differ on B. And my new entry
+here, A1, C1, is going to be the max of
+these two entries over here. Which, in
+this case, is going to be seven. And
+similarly for, say, A1-C2. I am going to
+end up with a max of 4.5 and two which is
+4.5. So this is another form of
+marginalization where I remove a variable
+B but using an operation other than
+summation. So now that we've defined these
+two operations, we can go back and define
+the max sum variable elimination in
+chains, as a set of factor operations.
+Where I eliminate A, then B, and so on and
+so forth. So, for example, having
+eliminated A as in the previous step, I
+can now do the exact same operation by
+noticing that the only factors that depend
+on B are theta two of B, and lambda one of
+B. So these other two. I can move outside
+of the maximization. And that's going to
+give me a max over B of a factor that is
+the sum of the two factors Theta 2BC and
+Lambda one of B that I got from the
+previous elimination step. And that's 
+going to give me a new factor lambda 2 of C
+and the process continues. In exactly the
+same way as variable elimination did for
+the case of sum product. And that's basically
+the algorithm. So now let's think about
+what we get at the end of this execution,
+for the final factor. What is Lambda four,
+having gone through Lambda two and Lambda
+three, and now we get Lambda four of e.
+What is Lambda four for a given value,
+little e? Lambda four of little e is what
+we got by maximizing. Over A, B, C and D
+of theta A, B, C and D. So this is, the
+best possible assignment. The best value.
+That I can get, that I can possibly get.
+If, we mandate that E equals little e.
+Okay. And so, this is a factor, and it
+gives me that value, for each one of the,
+value score, the, effectively, for each
+value little e of E. This is called a max
+marginal. In the same way that we took
+variable elimination for sum product and
+we used that to define a clique tree
+algorithm, we can do exactly the same
+thing for max product, for er, max sum,
+using the exact same type of data
+structure. So here we def, we're going to
+use the exact same clique tree, and we
+have cliques over AB, BC, CD, and DE. And
+we're going to as, as usual, assign the
+potentials. To the appropriate, cliques
+using. The family preservation property.
+And now let's go ahead and see how
+messages are passed, in this, clique tree
+architecture So initially, the AB clique
+is going to define the message lambda 1-2,
+which is obtained by maximizing out A over
+theta one. And the resulting message over
+B gets passed to clique two. Clique two
+can take that message; multiply it with
+its own, factor, theta two. And add that,
+this is max sum, remember? I'm going to
+add that to lambda 1-2, and that gives me
+the message lambda 2-3. And the same thing
+can happen when clique three passes a
+message to clique four in this case over
+the scope of E. So exactly the same
+message passing process except using max
+and sum instead of sum and product. We can
+equally well pass messages in the other
+direction. So four to three over scope D
+three to two and two to one. And all the
+properties that we said hold in the
+context of sum product clique trees hold
+here as well. First notice for example,
+that once this message lambda one two is
+sent, it never changes again. It's, it's
+defined once and for all. Lambda two
+three, once it receives the message lambda
+one two, it too has stabilized and will
+never change, and similarly for lambda
+three four. So we can do one pass. From
+left to right to compute all of the left
+to right messages. And a similar pass
+right to left to compute all of the right
+to left messages. And as soon as we do
+that, they've all converged. The second
+thing to notice is what is the value of
+this clique over here. So, if we look at
+this, we can see that when I've compute,
+when I finally get all of the messages
+from both sides, I have integrated in
+theta one. Theta two, theta three which is
+stored in the clique itself, and
+theta four coming in from the message on
+the right, and maximize out all of the
+variables A, B, and E so that what I have
+left is a factor over the clique three
+which is the max over A, B, and E of the
+sum of all of the factors in this network.
+So, just to summarize, once the clique I
+receives the final message from all of its
+neighbors except c j, then that message is
+also final, will never change, and the
+messages from all leaves are immediately
+final. And so what we have is an algorithm
+that at convergence, that converges after
+two passes and gives us correct max
+marginals at every single one of the
+cliques. So. Let's take a simple example
+just to convince ourselves that this is
+doing the right thing. So, I'm looking now
+at a much simpler [inaudible] that only
+has a, b, and c. So, there's is two
+factors one over theta one of ab and theta
+two of BC. And first we are going to
+construct the overall math theta which is
+the sum of theta one and theta two. So this
+is a factor summation [inaudible] this
+expression. And let's look at it and see
+what is the map assignment in this
+example. And if we just look at the
+numbers that we computed, we see that the
+map assignment is A1 B1 C1 with a value of
+seven. Now let's look at the message
+passings, process that you will have, on
+this, very simple clique tree with two
+cliques. So, this is theta one, it's
+assigned to clique one. Theta two is
+assigned to clique two. And let's look at
+the two messages that are passed. So, here
+was my a one so a b passes a message to b
+c, and that message is the max marginal.
+Max marginalization over the variable a.
+And so we can see here we have a max
+between three and, and -one so we get
+three, because this is the max over the
+two values of a that are consistent with b
+one. And for b two we have the max over
+zero and one so we get one. >> And exactly
+the same process gives us, for this
+message, where I'm max marginalizing C, I
+get this message. This path from left to
+right. Now each of these two cliques takes
+its message, and note this is, I've gotten
+immediate convergence here because there
+was only one message to pass in each
+direction. And, so what I get here is the
+sum of this factor plus the incoming
+message. I've added these two together and
+so I have for example, for the first row
+A1, for A1B1, I have three from here and
+four from here. So I get three + four
+which is equal to seven. For a1, b2, I get
+a zero from here, and a2 from there, zero
++ two = two. And I can do exactly the same
+operation to get this, to get this, set,
+to get this factor on the right. I get
+that by summing up this, with that, and I
+get this factor over here. And you'll
+notice that miraculously. The map, the map
+had each of these factors separately. Is
+a1 b1 on the left and b1 c1 on the right?
+So sure enough what I got here was the
+most likely assignment consistent with a1
+b1 and over here the most likely
+assignment consistent with b1c2. And
+you'll notice, if you go back and check,
+and I'm not going to do that right now.
+But if you go back and check this, big
+table over here, you can convince
+yourselves that this doesn't only hold
+true for A1-B1. If you look, for example,
+at A2-B1, you'll see that what you get
+here, the value three, is the value of the
+most likely assignments that are
+consistent, that is consistent with A2-B1.
+So actually, let's go back and check that.
+So here is A2-B1. We have two assignments
+consistent with A two B one, one is 0.5
+and one is three. Three is the best one,
+and sure enough the value that we get here
+is three. So, it all works. So what can we
+say about this algorithm once it
+converges? The important thing is that we
+can compute beliefs at each clique that
+represent exactly the max marginals of
+that clique. So how do we compute these
+beliefs? Analogously to what we had in the
+context of sum product, we look at the
+factor assigned to the clique, which is
+the theta I. And we add to it the incoming
+messages. Before you remember we had the
+factor assigned to the clique multiplied
+by the incoming message because we were
+doing products instead of summations. What
+does this belief, what does this belief
+encode? This belief the max marginal. So
+specifically, it, we can consider for any
+given assignment to the clique Ci we can
+look at the best possible, the score of
+the best possible completion to the clique
+Ci and that is the value of the belief at
+that clique. So it's the max over all of
+the variables, WI, that are not assigned
+to the clique. One important
+consequence of the fact that we have max
+marginals is that we get a, a calibration
+property here as well. So, f, the cliques
+must agree on the variables that they
+share. So to understand this let, let's
+look at these two cliques that we have in
+the simple 2-clique example. And here are
+the beliefs that we had for clique one,
+and for clique two. It's the sum of theta
+one plus the incoming message over here.
+And theta two plus nine over two. And,
+let's look at what the calibration
+property tells us. It tells us that, for
+example, if we look at. The implications
+of this clique regarding the variable b.
+We would have that, that the, this clique
+tells us that the best possible completion
+for b one has a score of seven, and the
+best possible completion for b two has a
+score of three. This clique, if we look at
+it, tells us that the best possible
+completion for b1 also has a score of
+seven, and the best possible completion
+for b two also has a score of three. So
+these two cliques agree regarding their
+regarding the variable in their
+shared scope, which is the variable
+B. So to summarize, we can apply, in the
+context of max sum, exactly the same
+clique tree algorithm used for sum
+product. Messages are passed in the same
+way. The clique trees is constructed in
+the same way. The only difference is that
+the message passing operations use max and
+sum as opposed to sum and product. At
+exactly, as in sum product, convergence is
+[inaudible], achieved after a single up
+and down pass. And the result of that is a
+set of beliefs that represent max
+marginals at each of those cliques.
+Where, as a reminder, the max marginals
+tells for each assignment, what is the
+score of the best possible completion to
+that assignment.

@@ -1,0 +1,23 @@
+              This research explores the preparation and study of new microstructures based on
+              stimuli-responsive hydrogels that are coated with a lipid membraned and
+              fabricated within a microfluidic channel.  The lipid coating provides a thin
+              permeability barrier and the hydrogel network serves as dynamic scaffolding. 
+              These soft microstructures can be used to regulate the flow of fluids in
+              microfluidic devices without external intervention, and they may serve as
+              models of cell and tissue surfaces.  Harnessing their potential requires the
+              development of new hydrogels as well as a deeper understanding of the assembly
+              of lipid coatings at the gel-liquid interface.  The major objectives of this
+              project are: (1) to develop methods for fabricating lipid-coated microgels, (2)
+              to characterize the structure and study the transport properties of the lipid
+              coating, and (3) to study changed in the permeability of the lipid membrane
+              induced by specific chemical or biological agents.  The main methods to be
+              employed are the design and synthesis of new monomers and reactive lipids,
+              microfabrication and photopolymerization, chemical modification of hydrogels,
+              and a variety of scanning confocal microscopy, and electrical
+              measurements.
+%%%
+The understanding gained from these studies will help to
+              lay the foundation for the long-term objective of fabricating artificial cells,
+              and the research undertaken will provide interdisciplinary training to students
+              and postdoctoral associates in polymer chemistry and materials science.
+

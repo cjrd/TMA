@@ -1,0 +1,52 @@
+              
+0102267
+Rubinstein
+This award supports theoretical and computational
+              research on charged polymer adsorption at surfaces and interfaces.  Research
+              will focus on hydrophilic and hydrophobic polyelectrolytes.   The PI will
+              develop an analytical model of adsorption of hydrophilic polyelectrolytes in
+              the presence of short-range and long-range interactions between polymers and
+              surfaces.  De Gennes' self-similar carpet model of short-range adsorption of
+              uncharged polymers will be combined with a model of long-range adsorption of
+              polyelectrolytes to oppositely charged surfaces. Another model will be
+              developed to study hydrophobic polyelectrolyte adsorption in the presence of
+              both short-range and long-range interactions.  The properties of hydrophobic
+              polyelectrolytes in solution will be studied in more detail to enable the
+              extension of adsorption models to hydrophobic polyelectrolytes. The interplay
+              of short-range attraction and long-range (electrostatic) repulsion leads to a
+              necklace conformation of hydrophobic polyelectrolytes. Computer simulations and
+              scattering experiments have recently confirmed the main features of the
+              necklace model of hydrophobic polyelectrolytes. The remaining open questions
+              important for the application of the model to the adsorption of hydrophobic
+              polyelectrolytes will be investigated using a combination of analytical
+              calculations and computer simulations. The resulting model of hydrophobic
+              polyelectrolyte solutions will be combined with the adsorption model of
+              hydrophilic polyelectrolytes into an adsorption model of hydrophobic
+              polyelectrolytes.
+The kinetic theory of polyelectrolyte adsorption at charged
+              surfaces will be developed using de Gennes' two-step approach in the framework
+              of Rouze-Zimm model for unentangled adsorbed layers and of tube models for
+              entangled layers.  A wide range of educational activities spanning K-12
+              outreach to the education of postdoctoral research associates are supported by
+              this grant. This award also provides partial support of the preparation of a
+              polymer physics textbook.
+%%%
+This award supports theoretical and
+              computational research that contributes toward the development of a complete
+              molecular picture of the adsorption of charged polymers on charged surfaces. 
+              Adsorption of charged polymers is one of the least understood areas of polymer
+              physics. The technological importance of charged polymers as rheology
+              modifiers, dispersing aids, stabilizers, and binders is due to their unique
+              properties both in solutions and near surfaces. An application in the area of
+              nanoscale science and engineering is multilayer formation via layer-by-layer
+              deposition of oppositely charged polyelectrolytes, leading to novel methods of
+              nanodevice fabrication.  A better understanding of charged polymers will also
+              impact molecular biophysics because many biopolymers, such as DNA and proteins,
+              are charged, and electrostatics plays a significant role in their properties
+              and function. The award will also support a wide range of educational
+              activities including K-12 outreach and education in polymer physics and
+              chemistry at the undergraduate, graduate, and postdoctoral levels. Some of the
+              research will be included in the Polymer Physical Chemistry course sequence at
+              UNC and in a textbook that is in preparation.
+***
+

@@ -1,0 +1,11 @@
+This confuses me as well, but it is the point of the list serve from what I
+understand, the issue of inducing the alpha using sampling, is for the case
+in which the priors are not discrete counts, ie rather sampling a dice
+manufacturer to see if it is fair, where you proceed by counting the
+outcomes of rolls from different dice, you are sampling a ruler manufacturer
+to see how precise the subdivisions of the ruler are, indeed there is a mean
+ratio, but the "precision" is the quantity which you are interested.  This
+can be obtained via an optimization algorithm, whereas the optimization is
+unnecessary in the discrete case.
+Please do correct me...
+-Robin Kramer

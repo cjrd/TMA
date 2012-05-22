@@ -1,0 +1,30 @@
+              ABSTRACT
+Synergistic Effects of Multiple Environments on Composite
+              Degradation
+
+This project employs an integrated approach to assess the
+              long-term durability of polymer matrix composites exposed to complex multiple
+              environments. Degradation conditions are simulated using several simultaneously
+              operating environments to closely parallel real-world conditions, and the
+              kinetics of main degradation mechanisms and their interrelations are identified
+              through an extensive multi-disciplinary analysis. Finally, comprehensive
+              experimental characterizations (mechanical, chemical and physical) of the
+              degradation mechanisms across multiple length scales (nano to macro) are
+              coupled with sophisticated analytical/numerical techniques to develop
+              predictive models of long-term reliability. By integrating life-prediction
+              methodologies and the appropriate kinetic descriptions of physicochemical
+              degradation, this project provides predictive capabilities for the service life
+              of composite materials in real-world, multiple environmental conditions, e.g.
+              composite material retrofit and replacement of structurally deficient bridges,
+              all-composite automobiles with enhanced fuel-efficiencies and deep-water
+              offshore oil drilling platforms.
+	This project involves active collaboration
+              with industrial partners (Cytec Engineered Materials, Inc. and Resolution
+              Performance Products, Inc.) and support from research/federal agencies
+              (Brookhaven National Labs and Army Research Labs at Aberdeen Proving Grounds).
+              An educational component provides for the significant enhancement of learning
+              for both undergraduate and graduate students by integration of research and
+              teaching. Specific activities also provide mentoring and outreach for
+              underrepresented minority students in collaboration with other programs at
+              Stony Brook.
+

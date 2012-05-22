@@ -1,0 +1,65 @@
+              In a one-year small grant for exploratory research (SGER) granted by the ECS
+              Division
+of NSF, we have explored new concepts for coherent quantum effects in
+              nanotechnology
+devices. We have conceived of several new solid-state devices
+              based on coupled coherent
+quantum phenomena that are potentially useful for
+              computing and communications, and
+investigated their practicality through
+              theoretical studies. With this initial success, we
+now propose to continue
+              these studies with a more extensive and precise analysis of the
+phenomena and
+              to initiate a coupled experimental program to show feasibility.
+
+The
+              nanotechnology structure that shows most promise for a quantum computer is
+              based
+on the spin of exchange coupled electrons trapped in an array of gated
+              quantum dots
+fabricated in either III-V or silicon. The proposed quantum
+              computer is capable of 10 5
+operations within the coherence time at a
+              two-qubit operation rate at 10 8 Hz. It is readily
+scalable to a large number
+              of elements, on the order of ~10 6 qubits, and electrically
+reconfigurable
+              utilizing a planar architecture. This device is unquestionably
+manufacturable
+              using technology enabled by the 70-nm technology node as specified in
+the
+              "International Technology Roadmap for Semiconductors, 1999 Edition". We
+              have
+established collaborations with industry that wish to take advantage of
+              this
+nanotechnology once we have shown feasibility.
+
+To fully examine the
+              potential of our concepts, we propose to conduct a comprehensive
+study by
+              analyzing the physical parameters of the devices to generate the desired
+              energy
+structure and coupling strength among neighboring device elements, by
+              investigating the
+limitations to coherence, and by simulating the operation of
+              the device to operate it as a
+quantum computer. We further propose to
+              undertake an experimental program to
+fabricate and test elementary prototypes
+              of these devices to demonstrate feasibility.
+Collaboration between the
+              theoretical and experimental studies should result in a nano-device
+structure
+              that is technically interesting and potentially important for
+              commercial
+use.
+
+This research will be coupled to an educational program
+              that provides interdisciplinary
+research for graduate students and for the
+              development of courses that introduce quantum
+information processes at the
+              graduate level within the Electrical and Computer
+Engineering Department at
+              North Carolina State University.

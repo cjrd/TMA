@@ -1,0 +1,25 @@
+Dear David,
+Thanks for your answer. I just have some other questions.
+-> I estimate the LL of the model with the left-to-right method by :
+yModel.getProbEstimator().evaluateLeftToRight(testingTexts, 10 , false,
+null);
+I have seen in your slides
+(http://mallet.cs.umass.edu/mallet-tutorial.pdf) that you choose 10 for
+the "numParticles". What is the role of this feature?
+-> The Log-L with this method and the perplexity of the model are the
+same things ?
+-> I don't obtained the same Log-L with the the left-to-right method and
+the "myModel.modelLogLikelihood()". Is it normal ?
+-> How can i obtaine the number of token to divide the Log-L and
+evaluate my model to see if this new score is between -6 and -10 ?
+-> Last question : In your paper "Topic Models Conditioned on Arbitrary
+Features with,,Dirichlet-multinomial Regression" , you compare in Figure
+4 the DMR and AT models. You use the EL and perplexity. Wich method did
+you used to estimate this two values? (left-to-right for the EL ?
+log-l/#tokens for the perplexity?)
+Sorry for this huge number of questions... :D
+PS : myModel is a cc.mallet.topics.ParallelTopicModel object.
+Regards .
+MM
+:D
+Le 24/04/2012 22:18, David Mimno a ?crit :

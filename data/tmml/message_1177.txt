@@ -1,0 +1,5 @@
+Certainly; I just wanted to put the problem into context since it's a
+little delicate. I would generally prefer multiple iterations as well,
+especially for hyperparameters where it can be a computationally cheap
+way to (somewhat) guard against autocorrelation.
+-Jared

@@ -1,0 +1,14 @@
+hi alfred and all,
+note that the paper here:
+http://www.cs.princeton.edu/~blei/papers/BleiGriffithsJordan2009.pdf
+presents the infinitely-deep extension of the 2003 paper, and contains many
+more details.  (there was no NIPS page length constraint.)  looking at all
+four of your questions, i think that they will be answered in the longer
+paper.
+many of you have asked for code for the nested CRP.  it can now be found
+here:
+http://www.cs.princeton.edu/~blei/hlda-c.tgz
+best,
+dave
+1. Eq (1) gives the distribution of CRP, but in the following Gibbs sampler,
+Does it mean that a word w_n is chosen from p(w_n|z_n,c_z,beta), a

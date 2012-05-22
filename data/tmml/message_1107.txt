@@ -1,0 +1,9 @@
+Dear list experts -- is there literature about the HDP using the YW Teh's
+"direct assignment" scheme for more complex models? (I guess the nonparametric
+Bayes pachinko model may be a candidate case for a three-level HDP but I wasn't
+able to locate any results beyond the publication yet...)
+I'd be especially interested in the hyperparameter samplers in such models,
+mainly for validation purposes.
+Any thoughts / hints?
+Best regards
+gregor

@@ -1,0 +1,7 @@
+Hello,
+no the window would be 1...n (my setting is 10)
+The weighted beta distribution is averaged to the whole window size if
+the n'th chunk arrived. So until this state there would be a high
+dissimilarity between chunks. This effect gets smaller until the window
+size is reached and stabilizes then.
+All the best

@@ -1,0 +1,11 @@
+Hello,
+Two papers I found interesting were:
+a) H. M. Wallach, I. Murray, R. Salakhutdinov, and D. Mimno,
+"Evaluation methods for topic models," in ICML, 2009. Talks about
+computing perplexity quite extensively.
+b) J. Chang, J. Boyd-Graber, S. Gerrish, C. Wang, and D. M. Blei,
+"Reading Tea Leaves : How Humans Interpret Topic Models," in NIPS,
+2009. Talks about correlating perplexity with human evaluation, and
+they find a negative correlation there, and propose a metric of their
+own.
+Cheers,

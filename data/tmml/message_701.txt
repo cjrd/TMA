@@ -1,0 +1,7 @@
+Hi all,
+I'm new to this mail list, and recently I was wondering if there are any
+work related to topic modeling on short text documents, such as queries
+or tweets, as I know these kind of short text suffer from sparsity and
+heavy noise.
+Anyone familiar with this topic please enlighten me.
+Many thanks!:)

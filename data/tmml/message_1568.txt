@@ -1,0 +1,8 @@
+Hi Jonathan,
+Indeed the image regions and annotations in my dataset are represented in a
+discrete space: image regions being composed of a visual 'vocabulary' of
+SIFT features quantized into clusters, and annotations as textual terms.
+Can you point me to some source (or some suggestions) so I can learn about
+this implementation in the lda R package?
+Thanks,
+Mustafa

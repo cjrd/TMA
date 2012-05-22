@@ -1,0 +1,35 @@
+              This research represents a joint initiative between the University of Colorado,
+              the National Center for Atmospheric Research (NCAR), and the Intermountain Fire
+              Sciences Laboratory of the U.S. Department of Agriculture Forest Service in
+              Missoula, Montana, to significantly improve existing capabilities to model
+              atmosphere-fire coupling as might occur during intense burning in wildland
+              fires.  Specific tasks will include: (1) Development of subgrid scale models
+              for turbulent combustion based on a description of the flame surface area. This
+              will enable a more accurate treatment of fluid dynamic-combustion interactions.
+              (2) Vertically and horizontally aligned vorticity can act as means of lofting
+              and ejecting burning material from the fire that could lead to spotting. 
+              Initially, using post-processed velocity fields from NCAR's existing
+              atmosphere-fire model, a Lagrangian treatment of lofting, aerodynamics and
+              settling of firebrands will be carried out.  Using this, a suitable Eulerian
+              model will be developed. (3) A simplified model to describe drying, pyrolysis,
+              and char oxidation from a solid fuel bed will be developed, based on basic
+              conservation principles. (4) Lastly, a simplified smoke model that will allow
+              quantification of carbon monoxide and particulate concentrations will be
+              developed.  This is an important component that will assist with model
+              evaluation and to test alternative smoke management scenarios.
+
+The
+              sub-models developed will be integrated into an existing three-dimensional,
+              mesoscale large eddy simulation that has been under development for twenty
+              years at NCAR, with recent collaboration with the Intermountain Fire Sciences
+              Laboratory.  Recently completed and ongoing field experiments will provide
+              observations on fires of opportunity ranging in scale from sub-meter to
+              kilometers using a digital infrared camera.  With available data these
+              experimental results will be used as a test bed for the fully integrated model.
+               
+
+Results are expected to assist forest management agencies to improve
+              fire-fighting strategies and for planning prescribed burns.  These advances
+              will have a fundamental impact on the scientific community working in the areas
+              of turbulent combustion and pollution modeling.
+

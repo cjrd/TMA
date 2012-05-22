@@ -1,0 +1,45 @@
+              EIA 0224369
+Pandey, Raju
+Aksoy, Demet; Devanbu, Premkimar T.; Olsson, Ronald
+              A.
+University of California - Davis 
+
+CISE RR: Infrastructure for Research
+              in Parallel and Distributed Computing 
+
+This proposal, supporting parallel
+              computing, distributed systems, ubiquitous (autonomous) systems, and satellite
+              communication, aims at establishing a parallel and distributed computing
+              laboratory within the center for software systems. The lab will include four
+              clusters, each connected through high speed network. The parallel computing
+              cluster will host several multiprocessor systems; the distributed system
+              cluster will include workstations and PCs, the ubiquitous systems cluster will
+              connect embedded devices (including handheld device sensors); and the satellite
+              cluster will host equipment for initiating the downlink communication for
+              disseminating the data. The sensor network will primarily be connected through
+              an ad hoc wireless network that will be routed to the main high-speed backbone.
+              The infrastructure will meet the needs of four research projects
+              in
+1.	Distributed Systems,
+2.	Parallel Computing,
+3.	Distributed Systems
+              Software Engineering, and
+4.	Wide Area Data Dissemination.
+The distributed
+              systems cluster will enable the distributed systems group to develop highly
+              efficient, scalable, robust, and secure distributed systems that adapt to
+              changes underlying systems conditions. Further, the ubiquitous systems cluster
+              will permit the group to develop new application-specific routing algorithms,
+              novel programming models customizable middleware that seamlessly integrate
+              sensor-based systems and scalable resource allocation, and conservation
+              algorithms for large sensor-based systems. The satellite communication cluster,
+              along with the distributed systems cluster, will enable the distributed data
+              dissemination group to develop highly scalable, robust, and secure
+              data-dissemination techniques with adaptable quality of service. The concurrent
+              programming group will use the parallel computing cluster to evaluate their
+              work on both concurrent programming languages and efficient runtime systems for
+              parallel systems. On the educational side, the infrastructure will be used as
+              experimental test-beds in several courses and will form the basis for providing
+              research students with development and analysis skills in parallel and
+              distributed systems.
+

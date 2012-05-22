@@ -1,0 +1,18 @@
+hi laura and all,
+along the same lines, i've had good luck with trimming terms that
+occur in many documents.  these are essentially stop words.
+a good method for selecting the vocabulary is to
+(a) remove terms occurring in fewer than 0.1% of all documents
+(b) remove terms occurring in more than 90% of all documents
+criterion (a)  will trim the vocabulary.
+criterion (b) will not, but if you are using gibbs sampling then it
+will save time during inference.  the reason is that a topic
+assignment must be sampled for each instance of each term and the
+terms trimmed in (b) tend to be very frequent.  there won't be as
+marked a difference if using variational methods because the within-
+document word count does not affect their complexity.
+there have been a number of recent papers on speeding up gibbs
+sampling for LDA, as others have pointed out.  variational methods are
+easy to parallelize.
+best,
+dave

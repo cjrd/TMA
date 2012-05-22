@@ -1,0 +1,21 @@
+              This proposal will investigate the structure of atomic nuclei at the extremes of
+              stability, angular momentum, and energy.  The studies will include nuclear
+              systems beyond the proton drip line and at the
+limits of stability to fission.
+              Techniques will be developed to study light-ion transfer reactions on nuclei
+              far from stability using radioactive ion beams.  This proposal also addresses,
+              via measurements of magnetic moments of excited states,  the the microscopic
+              description of nuclear wavefunctions as a function of energy and spin, the
+              study of residual nucleon-nucleon interactions, and the interplay of single
+              particle configurations with an underlying spherical or deformed core.  A new
+              technique, combining the traditional transient field method with the newly
+              developed approach involving Coulomb excitation of {\it beams} in inverse
+              kinematics, will be explored in order to measure magnetic moments of excited
+              states with
+subpicosecond lifetimes in nuclei close to shell closure.  The
+              structure of the proposed activities is designed to have great impact on the
+              education and training of graduate and undergraduate students, as well as
+              postdoctoral associates involved with these experimental research
+              activities.
+
+

@@ -1,0 +1,23 @@
+              
+	This project will combine animal physiology with biophysics and biochemistry
+              in order to examine oxygen transport and consumption from whole animal to
+              subcellular levels during the prolonged, spontaneous breath holds of elephant
+              seals during sleep. Unique adaptations in these animals include enhanced oxygen
+              storage and exquisite regulation of heart rate, blood flow and tissue metabolic
+              rates. The physiological processes and biochemical mechanisms underlying these
+              adaptations are relevant to the basic principles of oxygen transfer within
+              tissues as well as to the remarkable diving abilities of seals and whales. 
+	A
+              variety of minimally- and non-invasive techniques, including blood/tissue
+              sampling, blood flow measurements, and nuclear magnetic resonance
+              imaging/spectroscopy, will allow study of these seals while they sleep
+              undisturbed. This will allow: 1) examination of the regulation of heart rate,
+              cardiac output and muscle blood flow throughout the ten-minute breath holds of
+              these seals, 2) measurement of the rate of blood oxygen depletion throughout
+              the breath-hold, 3) examination of blood-to-muscle oxygen transfer as the blood
+              oxygen level decreases, 4) determination of the oxygen desaturation rate of
+              myoglobin - the oxygen storage protein in muscle, 5) examination of metabolic
+              regulation in muscle, as reflected in the depletion of the high-energy
+              phosphate, phosphocreatine, and the formation of lactate, and 6) examination of
+              the mobility of the myoglobin molecule within the muscle cell.
+

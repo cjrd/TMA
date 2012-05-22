@@ -1,0 +1,14 @@
+Hey list!
+I am trying to get a test run of nubbi.collapsed.gibbs.sampler running
+in R, but keep on getting crashes and the help is, well, not helping.
+I'm pretty sure that I'm just misinterpreting one of the input formats
+pretty dramatically. So, in a desperate bid for support, I am pinging
+the list.
+The basic error is:
+Error in structure(.Call("nubbi", c(contexts, pair.contexts), sources,  :
+source must be a(n) Integer.
+My sample texts, values passed to nubbi.collapsed.gibbs.sampler, and
+values created by nubbi.collapsed.gibbs.sampler are posted at
+http://pastebin.com/j4UXJQFp  Thanks for any & all assistance.
+Best,
+pml

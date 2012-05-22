@@ -1,0 +1,261 @@
+
+In this video I'd like to tell you how to
+write control statements for your
+[inaudible] programs. So for, [inaudible]
+or if statements and also how to define
+and use functions. Here's my [inaudible]
+window. Let me first show you how to use a
+for loop. We'll start by setting v to be a
+ten by one vector [inaudible] zero's. Now
+here's how I write the for loop for I
+equals one to ten that's for I equals
+colon ten and Let's see I am going to set
+D of I equals to, to power of I. And
+finally, and the way space doesn't matter
+so I'm putting the spaces just to make it
+look nicely indented, but the you know the
+spacing doesn't matter. But if I do this,
+then the result is that v gets set to, you
+know, to the power of one, to the power of
+two and so on. So this is [inaudible] one
+colon ten, that makes I loop through the,
+the, the values one through ten. And by
+the way, you can also do this, by setting
+your indicies equals one to ten and So the
+indices [inaudible] one to ten also rate
+for I = indices. And this is actually the
+same as if for I = one [sound] you know
+display I and this will do the same thing.
+So that is the [inaudible] if you are
+familiar with break and continue those
+break and continue statements you can also
+use those inside loops in Octave. But
+first let me show you how a YO loop works,
+so here's my vector V, let's run a YO
+loop, Y = one. While I is less than or
+equal to five. Let's set e I equals 100
+and increment I by one. And, so this has
+a. I start off equal to one, and then I'm
+going to set the I equals 100 and
+increment I by one until I is you know,
+greater than five. And as a result of
+that, whereas previously V versus powers
+of two vector. I now taken the first five
+elements of my vector and overwritten them
+with the value 100. So that's a syntax for
+a while loop. Lets do another example I
+equals one. While true. And here I want to
+show you how to use a break statement.
+Let's say VI close 999 and I goes I +one.
+If I equals six. Break. End. End. And this
+is also our first use of an F statement so
+I hope the logic of this makes sense as
+for I equals, I equals one and, you know,
+interloop. While repeatedly said the I =
+one and increment I by one and then once I
+gets up to six do a break which breaks you
+out of the wire loop so the effect of this
+should be to take the first five elements
+of this vector B and set them to 999 and
+yes indeed we've taken D and overwritten
+the first five elements with 999 so this
+is the syntax for if statement and for
+while statement and notice the end. The we
+have two ends here. This end here ends the
+S statement and the second end here ends
+the while statement. Now let me show you
+the more general syntax of how to use the
+F L statement so let's see D1 is equal to
+999 let's say D1 = to two for this
+example, so. Let me type if V1 equals one.
+Display the value as one. That's how you
+write in all statements. And [inaudible].
+B1 equals two, this is gonna be true in
+our example display the value is two.
+Else. Display evalue is not one or two
+okay. So that's a If L's if L's statement
+hit end and of course here we've just said
+U1 = two so hopefully yup displays the
+value as two and finally I don't think I
+talked about this earlier but if you ever
+need to exit Octave and type the exit
+command and hit enter that will cause
+Octave to quit or the Q quit command also
+works, finally let's talk about functions
+and how to define them and how to use
+them. Here's my desktop and I have
+predefines a. File I pre-saved on my
+desktop a file called squarethisnumber.m
+this is where you define functions in
+octave you create a file. [inaudible] you
+know, with your function name and then
+ending in dot m. And when Octive finds
+this file it knows that this is where it
+should look for definition of the
+functions square this number dot m. Let's
+open up this file. Notice that I'm using
+the Microsoft program WordPad to open up
+this file. I just want to encourage you if
+you're using Microsoft to Microsoft
+Windows, to use WordPad rather than
+Notepad to open up, these files. If you
+have a different text editor that's fine
+too but Notepad sometimes messes up the
+spacing. If you only have Notepad that
+should work. To that could work to but if
+you have a word pattern as well I would
+use I would rather use that or some other
+text editor if you have a different text
+editor for editing your functions. So
+here's how you define the function in
+Octave, we'll just zoom in a little bit.
+And this file has just three lines in it,
+the first line says function Y equals
+square this number X. This tells Octave
+that I'm going to return a value Y, and
+I'm going to return one value and that
+value be saved in the variable Y, and
+moreover it tells octave that this
+function has one argument which is the
+argument X and the way that the function
+body is defined is Y = X squared. So let's
+try to call this function square this
+number five and this actually isn't going
+to work and octave says square this number
+on the fine. That's because octave doesn't
+know where to find this five answers as
+usual PWB [inaudible] not in right
+directory so that's city users ANG slash.
+Desktop, that's where my desktop is Let's,
+little typo there, uses AG desktop, and if
+I now type spread is number five, it
+returns the onset 25. It's kind of an
+advanced feature. This is only for those
+of you that know what the term search path
+means. But so if you want to modify the
+octave search path and you, just think of
+this next part as advanced or optional
+material, only for those of you that are
+familiar with the concept of search paths
+and program languages. But you can use the
+term at path safety colon. Slash users.
+Slash AG slash Desktop [cough] to add that
+directory to the octave search path so
+that even if I you know go to some other
+directory I can still octave still knows
+to look in the user's ANG desktop
+directory for functions so that even
+though I'm in a different directory now it
+still knows where to find the square this
+number function okay but if you're not
+familiar with the concept of search path
+don't worry about it just make sure to use
+this CB command to go to the directory
+with your function before you run it and
+actually works just fine. One concept that
+octave has that many other programing
+languages don't is that it can also.
+Define, let's you define functions that
+return multiple. Values, [inaudible] are
+arguments. So here's a example of that.
+I've defined a function called square and
+cube this number x. And what this says is
+this, this function returns two values y1
+and y2. [inaudible] y1 is x square and y2
+is x cube. And what it does is this
+returns you know two numbers and also some
+of you depending on what language to use
+if you are familiar with you know, C, C++,
+Java. Often we think of a function as
+returning just one value. But [inaudible]
+syntax [inaudible] return multiple values.
+Now back in the active window if I type
+you know, AB equals square and cube this
+number. Five then A is now = 25 and B is =
+to the cube of five equal to 125. So this
+is often convenient if you need to define
+a function that returns multiple values.
+Finally I'm going to show you just one
+more sophisticated example of a function.
+Let's say I have a data set that looks
+like this with data points at (1,1),
+(2,2), (3,3) and what I'd like to do is to
+define an active function to compute the
+cost function J of theta for different
+values of theta. First let's put the data
+into Octave so it does not put semi design
+matrix to be eleven twelve thirteen so
+this is my design matrix X with X0 the
+first column being the intersect term and
+the second term being the you know my X
+values in my three training examples and
+then we set Y to be 123 as follows which
+are the Y axis values. So [cough] let's
+say Theta is equal to zero;1. Here on my
+desktop, I've predefined this cause
+function J. And, if I bring up the
+definition [inaudible] function, it looks
+as follows. So function J=cause function
+J. It was XY theta. Some comments
+specifying the inputs, and then
+[inaudible] few steps. Set M to be the
+number [inaudible] examples. That's the
+number of rows in X computed predictions.
+Predictions=X times theta. And oh this is
+a comment that's wrapped around. So this
+is for the preceding comment line computer
+script errors by. Taking the difference
+between predictions and the y values, and
+taking other [inaudible] y squaring and
+then finally computing the cost function
+j. And Octive knows that j is a value I
+want to return because j appeared here in
+the function definition. Feel free, by the
+way, to pause this video if you want to.
+Look at the function definition for longer
+and kind of make sure that you understand
+the different steps. But when I run it in
+octave I find J equals cost function J, X,
+Y, theta. It computes. Woops, made a type
+there. Should have been capital X. It
+confused J=zero, because if my data set
+was, you know one, two, three, one, two,
+three, then [inaudible], right? Theta
+zero=zero, theta one=1. This gives me
+exactly the 45 degree line that this
+[inaudible] set perfectly. Whereas in
+contrast if I said theta equals say 00.
+Then this hypothesis is predicting zeros
+on everything. [inaudible] theta zero
+equals zero, theta one equals zero and to
+compute the cost function then is
+[inaudible]. And that's actually equal to
+one squared. Which is my spread error on
+the first example plus two squared. Plus
+three squared, and then, divide it by 2M,
+which is two times number of training
+examples. Which is, oops, which is indeed
+2.33. And so that sanity checks that,
+dysfunction here is, you know, computing
+the correct cause function. At least in
+the couple examples you've tried out on,
+on our simple training example. And so
+that sanity checks that, the cause
+function J. As, as defined here, that it
+is indeed, you know, ceding to compute the
+correct cost function, at least on our
+simple training set. That we had here with
+X and Y being the, the simple training
+example that we saw. So now you know how
+the right control statements, like
+[inaudible] statements in Octave, as well
+as how to define and use functions. In the
+next video, we're going to, just very
+quickly, step you through the, logistics
+of working on and submitting problem
+problems sets, for this class. And, how to
+use our submission system. And finally,
+after that, in the final, Octave tutorial
+video, I wanna tell you about
+vectorization, which is an idea for how
+to, make your Octave programs run much

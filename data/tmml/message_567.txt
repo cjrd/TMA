@@ -1,0 +1,21 @@
+Hi all:
+I am a freshman in LDA and I want to use it in my work,but I met some trouble
+recently, espically about the parameters. I wish I could receive your help. Here
+are the problems:
+1. In variational EM, what is the relationship between the \gamma, \phi and
+\alpha, \beta. What's more, I run the LDA-c code recently(thanks for PAwan and
+Blei), but I don't know what the output means, espcially how can I get P(topic)(
+also can be named by \theta ) distribution?
+2. I also tried a Gibbs sampling based method to inference the model as shown by
+"Finding scientific topics". I have seen a few of Gibbs sampling based method for
+LDA in text mining area, unfortunately they all set the value of \alpha and \beta
+previouly, without a learning process. While if I use the LDA in other areas, the
+corresponding \alpha and \beta may be different from text area. Are there any
+methods that can be used to training the parameters (\alpha and \beta) in Gibbs
+sampling?
+3 If we have known the value of \alpha and \beta, is there any method to learn
+a right K (the number of topics)?
+These questions may be too naive,but I really have no idea about variational
+methods and Gibbs sampling.
+Thank you very much! All the best!
+Liu Qi

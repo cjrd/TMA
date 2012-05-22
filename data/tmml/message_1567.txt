@@ -1,0 +1,2 @@
+Although it is largely undocumented, the lda R package can model
+correspondence LDA so long as both the original data and the annotations come

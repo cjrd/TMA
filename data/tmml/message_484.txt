@@ -1,0 +1,3 @@
+I'm looking at implementing hLDA with the nested CRP using information from Blei, Griffiths & Jordan 2008.  It all makes sense except for one detail about topic/level allocation.
+In particular, I'm considering equation (3) on p. 18 of the paper which describes "the smoothed frequency of seeing word w_{d,n} allocated to THE TOPIC AT level z_{d,n} of the path c_d" (emphasis mine).
+For terminology's sake, consider an interior node A in the topic tree.  I'm trying to distinguish between the following two interpretations and need a shove in the right direction:

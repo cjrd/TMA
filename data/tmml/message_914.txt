@@ -1,0 +1,13 @@
+Hi all,
+I am a beginner in topic modeling. Currently I am applying
+topic-model(LDA) in image retrieval domain and have the following two
+questions.
+1. Since our vocabulary is very large,e.g 1M, it becomes infeasible if
+I want to train 200+ topics on 5000+ documents/images. I wonder is
+there any work addressing this computational complexity issue.
+2.Since topics are always learned based on a set of training images.
+However, for text/image retrieval, there are always documents/images
+cannot be described by any of these learned topics. I wonder whether
+or not there is any work addressing this problem.
+Thanks,
+Xin

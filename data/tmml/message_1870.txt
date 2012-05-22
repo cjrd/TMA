@@ -1,0 +1,8 @@
+Hey everyone,
+I too am facing the similar issue of "Segmentation fault" when I use the
+following command in the code of hlda-c - "./main gibbs data.txt
+settings.txt out.txt" I am using direct file paths as you can see and
+hence, I am not able to get the source of error.
+Do i need to change something in the settings file? The format of data file
+is correct and works with lda-c (simple lda)
+Pls help

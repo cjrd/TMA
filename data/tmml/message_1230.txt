@@ -1,0 +1,8 @@
+I'm a student studying the Correlated Topic Model. I've read the original
+paper for a few days but it seems too hard for me to understand the
+calculations used in the paper. Which algorithms, methods should I study in
+order to understand the paper (basically, I have no knowledge about EM
+algorithm or variational method). Can anyone shows me the relevant
+resources and in what order should I read those papers. Thank in advance!
+P.S. I'm not from an English speaking country so sorry if my English is not
+good.

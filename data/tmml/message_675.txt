@@ -1,0 +1,18 @@
+Hi Andreas,
+if you want to estimate the number of topics along with the data, you
+may use the non-parametric version of LDA "Hierarchical Dirichlet
+processes", which learns "k" (the number of topics) together with the
+other parameters.
+You can find papers and code on Yee Whye Teh's website
+http://www.gatsby.ucl.ac.uk/~ywteh/research/projects.html
+"Nonparametric Bayesian Mixture Models - release 2.1.
+Y.W. Teh. 2004. MATLAB and C code. Implements HDPs where you can have
+DPs arranged in any tree structure. Only for multinomials, and only on
+linux and Mac OS X.
+[readme] [tgz] "
+http://www.gatsby.ucl.ac.uk/~ywteh/research/npbayes/npbayes-r21.readme
+http://www.gatsby.ucl.ac.uk/~ywteh/research/npbayes/npbayes-r21.tgz
+You will find more info on hierarchical Dirichlet processes and
+alternative methods for estimating k in the archive of this mailing list.
+Laura
+Andreas Niekler wrote:

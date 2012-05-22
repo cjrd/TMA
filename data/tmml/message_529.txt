@@ -1,0 +1,8 @@
+Yes, you are right that appropriately choosing hyperparameters can have positive effects.  Please note that I am attempting to design an approach that can be applied to most problems without tuning, or substantial work on stop lists.  So for these three data sets:
+1) Stop lists were NOT used.
+2) The LDA program I used took one alpha and beta to be applied across all topics (or the baseline prior for each topic).  However, I did tune the particular alpha and beta applied to each data set.
+3) I did, however, try an approach to strip out all terms that occurred in 40% or more documents.  This improved LDA, but this LDA with weighted accounts still underperformed factorization techniques using tf-idf weighting.
+James A. Cox, Ph.D.
+Text Mining Software Development Manager
+SAS Institute, Inc.
+The Power to Know

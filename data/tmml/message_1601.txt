@@ -1,0 +1,21 @@
+Dear All,
+given a list of keywords for each topic k (in K) i want to force those
+keywords to be contained by the topics k i have defined. All other /
+unknown Words should align according to the optimal distribution after
+Gibbs Sampling as normal.
+topic 1: Word 1, Word 2
+topic n: ..., Word n
+Somehow i like to Bias the Gibbs Sampler by such a list. Does anyone has
+had expirience with such a problem.
+My guess is to either to
+1. Bias the sampler by aligning the ? parameters for each word. Bias it
+for the topic - word combination given by my definition. This still
+leaves the possibility that the sampler is aligning to the data and
+excludes defined words if they do not fit alright.
+or
+2. Just Force the gibbs sampler to align a topic by inserting the list
+into the sampler. In this case the sampler would just mix up the
+semantics of the topics if there where "stronger" more "discriminant"
+words for the different topics in the corpus.
+Any thougts and tipps are welcome
+Thanks

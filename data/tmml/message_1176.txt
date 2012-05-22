@@ -1,0 +1,6 @@
+I agree with all of this, I think. Sorry if my earlier comment gave
+the wrong impression?I only meant to point out that there can
+sometimes be some value in running the slice sampler for more than one
+iteration, not to argue that it's always worth doing.
+Best,
+Matt

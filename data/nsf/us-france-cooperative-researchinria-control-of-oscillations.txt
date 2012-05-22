@@ -1,0 +1,26 @@
+              0001522
+Nussbaum
+
+This two-year award for U.S.-France cooperative research in
+              computational mathematics and control theory involves Roger Nussbaum of Rutgers
+              University, Sophie Bismuth of Leonardo Da Vinci University in Paris, Marianne
+              Akian and Pierre-Alexandre Bliman of the French National Institute for Research
+              in Computer Science and Engineering (INRIA) in Rocquencourt, France. The
+              research collaboration is aimed at problems in control of oscillations.  
+              Certain nonlinear differential delay equations demonstrate oscillatory and even
+              periodic behavior.  Numerous examples of such systems may be found in biology,
+              chemistry and mechanics.  The investigators propose to consider problems
+              related to analysis and synthesis of multi-dimensional systems with delays and
+              relays.
+ 
+This award represents the U.S. side of a joint proposal to the NSF
+              and the French National Institute for Research in Computer Science and
+              Engineering (INRIA).  NSF will cover travel funds and living expenses of the
+              U.S. investigator.  INRIA will support the French researchers' visits to the
+              United States.  The US investigators are expert in differential delay
+              equations.  This is complemented by French expertise in nonlinear control
+              systems and behavior of systems with delays and period oscillations.  The
+              project will advance our understanding of the use of differential delay
+              equations in industrial applications, for example, in controlling fuel/air
+              ratios in internal combustion engines.
+

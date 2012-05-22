@@ -1,0 +1,4 @@
+Folks,
+What should I use as initial values for alpha and k when running LDA
+estimation with the lda-c code?
+Thanks, Joel

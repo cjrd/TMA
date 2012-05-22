@@ -1,0 +1,8 @@
+I have a related question.  Has anyone studied the online setting where the
+words in a document (like the tweets mentioned below) arrive over time?
+That is, suppose I observe the first 10 words of 1000 documents.  Then I
+observe the next 10 words of each of these documents, and so on.  For more
+generally, at each time t, I observe an additional word j from document k.
+I know about the online setting where at time t I observe the entire t-th
+document.
+Thanks for any pointers.

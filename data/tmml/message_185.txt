@@ -1,0 +1,14 @@
+Dear all:
+I tried calling the function sample_term() to compute the true
+log-likehood using the variational mean-field posterior as a proposal
+distribution for importance sampler (in Prof. David Blei's CTM C code
+downloaded from his website). However, I found that sometimes the true
+likelihood obtained by importance sampling is lower than the
+lower-bound of the log-likelihood (computed by lhood_bnd function).
+I'm wondering if this is the problem with importance sampler?
+Specifically, does this mean that the variational mean-field posterior
+is not a good proposal distribution for importance sampling of the
+true posterior distribution? If that's the case, how does one compute
+the true log-likelihood.
+thank you very much for your help.
+-Pew Putthividhya

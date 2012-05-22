@@ -1,0 +1,24 @@
+Dear All,
+In the last few days, there were some interesting posts on using
+auxiliary methods to Gibbs sample the hyper-parameters of the
+Dirichlet distribution in LDA and related models.
+These posts and the references therein seemed mostly to deal with the
+case of Dirichlet-Multinomial compound (aka multivariate Polya), which
+involves ratios of Gamma functions. Gibbs sampling the Dirichlet
+parameters in this case is very useful. However, I was also curious
+about Gibbs sampling in the simpler case of a standard Dirichlet
+distribution*. While the Dirichlet-Multinomial compound case is
+probably more interesting and important, especially in collapsed
+samplers, I can still think of cases where the simpler case might be
+important. Minka discusses MLE estimation for this problem. I am more
+interested in Bayesian inference. I already managed to hack together a
+ARS based sampler for this problem. However, it was less than ideal
+(in terms of implementation and performance) and so I was wondering
+about auxiliary based methods, or anything else that works well.
+many thanks,
+Mark
+* In case it is not clear what I am referring to, imagine we have a
+set of k-dimensional discrete/categorical probability arrays pi_1,
+pi_2 ... pi_n drawn from Dir(alpha), where alpha is unknown. Assuming
+some suitable prior on alpha, is there an auxiliary method to Gibbs
+sample from the posterior of alpha given pi_1, pi_2 ... pi_n.

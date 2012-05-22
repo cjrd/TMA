@@ -1,0 +1,12 @@
+Oh, I see. I guess in the code, the dirichlet prior H is stored in variable
+DistGlobals{}.eta... Thank you so much!
+Now, I guess my real question is how to compute the conditional density of
+x_{ij} (f_{k}^{x_{ji}}(x_{ij})). Since the prior of \phi_{k} is dirichlet prior
+which is conjugate to the multinomial distribution,
+f(x_{ij}|\phi_{k})h(\phi_{k}) is aslo dirichlet distribution of \phi_{k}. So
+the marginal likelihood can be computed using the updated dirichlet parameters.
+Is that right? It seems that code didn't compute the marginal likelihood
+explicitly in this way. It used a multinomial sturcture... It confused me.
+Xiaogang
+how
+in

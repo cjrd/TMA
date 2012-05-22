@@ -1,0 +1,5 @@
+The TwitterRank paper used LDA by grouping all tweets by user into a single
+document.  Of course, they are more interested in finding the topics a
+twitterer talks about rather than finding out the topics of any particular
+tweet.
+http://portal.acm.org/citation.cfm?id=1718520

@@ -1,0 +1,14 @@
+Dear All,
+While reading the JMLR version of the LDA paper, I have the following
+specific questions about the derivation in the Appendix. Can anybody help
+me?
+1. In Section A.3.2, do we need a summation like $\sum_{i=1}^k$ in the
+second term of the first equation in this section?
+2. In Section A.3.2, how did you get Eq. 17 from the equation above it by
+setting it to zero?
+3. In Section A.4.1 on the last page, how did you get the last equation
+about the second derivative from the equation above it? In particular, why
+the constant $M$ only appears in the first term while not in the second
+term?
+Thank you in advance!
+Shuiwang

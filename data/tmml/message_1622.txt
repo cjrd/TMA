@@ -1,0 +1,3 @@
+Hi all,
+??? Can someone tell me whether the topic model has used in the application of the text sentiment or not? Like the model PLSI, LDA, do they use in this field? If they had, can anyone recommend? me some papers about it? thank you very much.
+Chaorong Wu

@@ -1,0 +1,7 @@
+Saira,
+where did you come across this statement?
+I have to confess that I don't know of any wide spread applications
+based on LDA. So far I thought it might need some time before
+practitioners are aware of LDA/pLSA.
+Yours,
+Laura

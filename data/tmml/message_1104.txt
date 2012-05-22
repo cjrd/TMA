@@ -1,0 +1,122 @@
+***********************************************************************************************************
+Call For Papers: *International Workshop on **Social Web Mining*, co-located
+with IJCAI, Barcelona, Spain, 18 July 2011
+WWW: http://users.cecs.anu.edu.au/~sguo/swm.html
+***********************************************************************************************************
+*Introduction*:
+There is increasing interest in social web mining, as we can see from the
+ACM workshop on Social Web Search and Analysis. It is not until recently
+that great progresses have been made in mining social network for various
+applications, e.g., making personalized recommendations. This workshop
+focuses on the study of diverse aspects of social networks with their
+applications in domains including mobile recommendations, service providers,
+electronic commerce, etc.
+Social networks have actually played an important role in different domains
+for about a decade, particularly in recommender systems. In general,
+traditional collaborative filtering approaches can be considered as making
+personalized recommendations based on implicit social interaction, where
+social connections are defined by some similarity metrics on common rated
+items, e.g., movies for the Netflix Prize.
+With the recent development of Web 2.0, there emerges a number of globally
+deployed applications for explicit social interactions, such as Facebook,
+Flickr, LinkedIn, Twitter, etc. These applications have been exploited by
+academic institutions and industries to build modern recommender systems
+based on social networks, e.g., Microsoft's Project Emporia that recommends
+tweets to user based on their behaviors.
+In recent years, rapid progress has been made in the study of social
+networks for diverse applications. For instance, researchers have proposed
+various tensor factorization techniques to analyze user-item-tag data in
+Flickr for group recommendations. Also, researchers study Facebook to infer
+users' preferences.
+However, there exist many challenges in mining social web and its
+application in recommender systems. Some are:
+?      What is the topology of social networks for some specific application
+like LinkedIn?
+?      How could one build optimal models for social networks such as
+Facebook?
+?      How can one handle the privacy issue caused by utilizing social
+interactions for making recommendation?
+?      How could one model a user's preferences based on his/her social
+interactions?
+We hope to gather scientific researchers and industry in order to discuss
+the challenges, exchange ideas, and promote collaborations across different
+groups.
+*Topics*:
+The workshop will seek submissions that cover social networks, data mining,
+machine learning, and recommender systems. The workshop is especially
+interested in papers that focus on applied domains such as web mining,
+mobile recommender systems, social recommender systems, and privacy in
+social web mining. The following list provides examples of the types of
+areas in which we encourage submissions. The following comprises a sample,
+but not complete, listing of topics:
+?      Active learning
+?      Matchmaking
+?      Mobile recommender systems
+?      Multi-task learning
+?      Learning graph matching
+?      Learning to rank
+?      Online and contextual advertising
+?      Online learning
+?      Privacy in social networks
+?      Preference learning or elicitation
+?      Social network mining
+?      Social summarization
+?      Tag recommendation
+?      Transfer learning
+?      Web graph analysis
+*Program*:
+The workshop program consists of four invited talks, a number of oral
+presentations, a poster session, and a panel discussion session. Detailed
+information is given as follows:
+?      Invited Speakers
+o  *Ricardo Baeza-Yates *, Yahoo! Research Barcelona, Spain
+o  *Bhaskar Mehta *, Google Zurich, Switzerland
+o  *Jurgen Van Gael*, Microsoft Research Cambridge, UK
+o  *Qiang Yang*, Hong Kong University of Science and Technology, China
+?      Oral and Poster Presentation: details coming soon
+*Submission and Key Dates*:
+We use the EasyChair <https://www.easychair.org/conferences/?conf=swm2011> for
+paper submission. The paper format is the same as that of IJCAI 2011 (
+Click here <http://ijcai-11.iiia.csic.es/calls/call_for_papers> for details
+), and the maximum number of pages is 10. Please note that a selection of
+workshop papers will be invited to a special issue of ACM Transactions on
+Intelligent Systems and Technology.
+?      Submission deadline: 20 April 2011
+?      Author notification: 15 May 2011
+?      Camera ready: 25 May 2011
+?      Workshop date: 18 July 2011
+*Program Co-Chair*:
+?      Francesco Bonchi <http://www-kdd.isti.cnr.it/~bonchi/>, Yahoo!
+Research Barcelona, Spain
+?      Wray Buntine <http://www.nicta.com.au/people/buntinew>, NICTA - ANU,
+Australia
+?      Ricard Gavalda <http://www.lsi.upc.edu/~gavalda/>, Technical
+University of Catalonia, Spain
+?      Shengbo Guo <http://users.cecs.anu.edu.au/~sguo/>, Xerox Research
+Centre Europe, France
+*Program Committee*:
+?      Tiberio Caetano, NICTA - ANU, Australia
+?      Wei Chen, Microsoft Research Asia, China
+?      Peter Christen, Australian National University, Australia
+?      Nello Cristianini, University Of Bristol, UK
+?      Hakim Hacid, Alcatel-Lucent Bell Labs, France
+?      Jian Huang, Google Pittsburgh, USA
+?      Jure Leskovec, Stanford University, USA
+?      Ernesto William De Luca, Technical University of Berlin - DAI-Labor,
+Germany
+?      Sherif Sakr, NICTA - UNSW, Australia
+?      Scott Sanner, NICTA - ANU, Australia
+?      Markus Schedl, Johannes Kepler University Linz, Austria
+?      Fabrizio Silvestri, ISTI CNR, Italy
+?      Julia Stoyanovich, University of Pennsylvania, USA
+?      Aixin Sun, National University of Singapore, Singapore
+?      Antti Ukkonen, Yahoo! Research Barcelona, Spain
+?      Jie (Jessie) Yin, CSIRO, Australia
+?      Yi Zhang, University of California, Santa Cruz, USA
+*Workshop Contact*:
+Email: Shengbo *(dot*) Guo at xrce.xerox.com
++33 (0)4 76 61 50 47 (Phone)
++33 (0)4 76 61 50 99 (Fax)
+Mailing address: 6, chemin de Maupertuis, 38240 Meylan, France
+For further information, please visit our website:
+http://users.cecs.anu.edu.au/~sguo/swm.html

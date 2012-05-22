@@ -1,0 +1,14 @@
+I've been working with Twitter data for quite a while now. Here are
+some "tricks of the trade."
+1. If you can, get your Twitter data from the Streaming or REST APIs,
+not from the Search API. The Search API strips out a *lot* of metadata!
+2. Metadata is your friend! For example, in many API calls, you can
+request what Twitter calls "entities". These are separate fields
+within the tweet text, already parsed out for you. Entities are
+hashtags, mentions (screen names with an "@" in front), and links.
+These are part of the semantics of tweets as a language.
+3. Depending on what you're trying to do, it is sometimes useful to
+concatenate the text of multiple tweets by the same sender into a
+single "document" for analysis. There may be some people who have done
+"author-document-topic" models where each document is a single tweet,
+but I'm guessing that might be difficult.

@@ -1,0 +1,9 @@
+hi david,
+yes, the gibbs sampler for the model is conservative.  ideally, we
+could integrate out the z variables in sampling the c variables.
+however, that integral is intractable.
+you are essentially suggesting to approximate it with sampling.  i
+think that this is a very good idea, and it might really improve the
+algorithm.
+best,
+dave

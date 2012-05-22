@@ -1,0 +1,6 @@
+Hi, all,
+I am kind of new to topic models (in fact, to Machine Learning). I have some simple questions and hope some of you can help me to understand them.
+1. After I trained a topic model (say, LDA) using a corpus, how can it model new documents? My current understanding is that I can infer the topic mix using the hyper parameters (\alpha and \beta in LDA) that are already learned from the training data. However, what if the "topics" in the new documents are not present in the training data? Shouldn't the inferred topic mix be meaningless?
+2. I noticed the LDA paper (Blei et al., 2003) discussed smoothing, which seems to me that the definitions of each topic will be updated whenever new documents come in because the \beta matrix is re-estimated. While this makes sense to me because the new topics will be to some degree addressed, what I don't quite understand is why not just do LDA to the expanded corpus all over again, since the re-estimation of \beta for smoothing need to consider all documents any way. Is it because the smoothing is faster than re-running LDA again?
+I would appreciate it if somebody can clarify these questions to me.
+Thanks!

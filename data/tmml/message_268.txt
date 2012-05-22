@@ -1,0 +1,8 @@
+Hi all,
+I'm looking through the new hLDA paper (http://arxiv.org/abs/0710.0845),
+and I'm a bit confused about calculating the sampling weight assigned to
+path levels below the current maximum path depth.
+Specifically, on page 18 there's an expression for the probability of
+z_{d,n} being greater than max(z_{d,-n}) that involves a finite sum
+over the probability of a level given the other level assignments and the
+type of the current word. How do we get this probability?

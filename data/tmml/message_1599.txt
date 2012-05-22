@@ -1,0 +1,11 @@
+Dear all,
+I am reading David Blei's correlated topic model C code, and in the
+estimatic.c file line 103, there is a function called cov_shrinkage, which
+is used to calculated covariance estimation in m-step of parameter
+estimation stage.
+But in both paper about correlated topic model, i.e. "Correlated Topic
+Models" and "A correlated topic model of science", there is almost no
+content about this algorithm, could anyone point it out to me which
+shrinkage method is applied here or did I miss anything in the paper? Any
+other reference paper about covariance shrinkage is also welcomed.
+Thanks!

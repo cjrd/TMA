@@ -1,0 +1,1 @@
+I also encounter the optimization problem. I don?t know how others deals with it. In the lda-c implementation, the alpha is treated as scalar rather than vector to avoid the problem.  I use a low bound of the probability, try to optimize the low bound instead and iteratively solve the alpha. For details, please look at Estimating a Dirichlet distribution of Thomas P. Minka 2003.

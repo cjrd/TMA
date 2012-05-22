@@ -1,0 +1,209 @@
+
+One of the most, common applications of,
+Bayesian networks, or rather, one of
+the earliest ones that are still very much
+in use today, is for the purpose of
+diagnosis. And by diagnosis, I mean both
+medical as well as fault diagnosis.
+Now, this dates back into the early'90s,
+in, the PHD thesis of Heckermann, et al., won the
+ACM dissertation award. And a system
+called Pathfinder, which looked at, a
+range of different pieces of evidence in
+order to help a doctor diagnose, a set of
+diseases. And specifically, it was focused
+initially on lymph node pathologies, so 60
+different diseases, all sorts of different
+symptoms, and they tried out a bunch of
+different rules, methods for solving these
+problems. So the first one they actually
+tried, this way back in the early days of
+artificial intelligence, and they tried a
+rule based system. And, it didn't work
+really well. The second version of
+Pathfinder used the naive Bayes model,
+which assumes that all of the symptoms are
+independent given the disease. And even
+that really simple model got superior
+performance to the rule based system that
+they initially tried. Pathfinder three
+still used Naïve Bayes but it used Naïve
+Bayes with better knowledge engineering.
+That is they actually, they actually
+understood some of the issues behind what
+makes a system like this work well and
+what. Made and they've fixed it. So
+specifically one of the things that turns
+out to be really fundamental for the
+performance of any probabilistic modeling
+system is not to put in zero probabilities
+ever except for things that are
+definitions because once you put in a zero
+no matter how much evidence on the
+contrary you have you will never ever be
+able to get rid of it. Because anything
+times zero is still zero. And so here in
+the initial pathfinder tool they put in
+some incorrect zero probabilities for
+things that were very unlikely but not
+impossible and it turns out that, that
+gave rise about ten percent of
+incorrect diagnosis in the system. And also
+did better calibration of conditional
+probability which turns out to be
+important for knowledge engineering of the
+Bayesian network. So for example it turns
+out that it's a lot easier to compare for
+a physician, to compare the probability of
+a finding, a piece of evidence between two
+diseases as opposed to the probability of
+two different findings within a single
+disease. It's much, it's much easier to
+say "oh this is much more likely in this
+context than in that context" and it turns
+out that when they ask the physician to
+calibrate this way, they got much better
+estimate of the probabilities. Remind you
+this was way before they had learning so
+it was all hands constructed. And then,
+finally Pathfinder four was the full
+Bayesian network in all of its full
+glory. It no longer made incorrect
+assumptions about independencies between
+different, say, symptoms. I'll give them a
+disease. And that gave us an, both allowed
+them to make the model more correct and
+also it turns out as an unexpected side
+effect by allowing, say, a symptom
+variable to have more parents than just
+the single disease variable it actually
+gave rise to considerably more accurate
+estimation of the probabilities because
+the doctor could kind of think about
+different cases and didn't have to average
+them all out in his head. And this is one
+of the, I think, really compelling aspects
+of Bayesian network models which is that the
+Bayesian network model actually turned out
+to agree with the experts in an expert
+panel of physicians in 50 out of the 53
+cases. And these were hard cases. These
+were ones that you really needed the
+expert opinions on. It wasn't one that
+just an average doctor could necessarily
+diagnose correctly. And this is as
+compared to 47 out of 53 for the naive
+Bayes model. Also and significantly less
+than that for the rule-based system. Mind
+you, and this is an interesting and
+important. Aspect is that the Bayesian
+network actually outperformed the
+physicians who designed the model. And I
+mean it didn't outperform the expert panel
+but it outperformed the  physician who designed it
+Because it was better at putting together all
+these different numbers in a way that a
+doctor just can't fit all of these
+different findings into his or her brain
+at the same time. So we talked about, the
+CPCS network. It's, one of my, favorite
+networks, because it's kinda big and hairy,
+and sorta kinda scary to look at. But
+anyway, the actual number of variables in
+this network is about 500. And each of
+them has, on average, about four values.
+So the total number of parameters, if you
+were to specify a full joint distribution,
+is about 400-500, so that's about, it's
+about four to the 500, or two to the power
+of 1000, which is more than the number of
+atoms in the universe. So obviously,
+one couldn't specify this as a complete
+joint distribution. Not to mention that
+the probability of each and every one of
+these is about, is as close to zero as makes no
+difference. Because it's the probability
+of, you know, 500 different, I mean
+events involving 500
+variables. If you were to if you were to
+actually construct a CPD for each of these
+for each of these variables the number of parameters would be about 133 million.
+Which is fairly better than two to the
+1000 still much too large. And so it turns
+out that they made additional simplifying
+assumptions that we'll talk later on that
+allowed them to avoid a complete table
+representation of the CPD's and rather do
+a more compact one and that gave rise to
+about a thousand parameters. Which is
+still a lot but not but actually is
+tractable to deal with. So we already
+talked about the fact that these medical
+diagnosis systems have emerged from
+research and Microsoft built a medical
+diagnosis system. Various other people
+have built one as well. This has been a
+little bit slow on the uptake in the
+medical field because it doesn't fit
+naturally into a physicians, pipeline.
+Maybe now, with the advent of medical, of
+electronic health records, there will be
+more data entered into the computer so,
+these systems will be more common use.
+But, until very recently most doctors just
+wrote stuff down on paper and so there, it
+was very difficult to put this into the
+standard production pipeline for
+diagnoses. And then finally fault
+diagnosis has been a much, more direct
+application of these, of these systems,
+because here we don't have an issue, of,
+of how doctors typically do their
+diagnostic pipeline. So within the
+Window's operating system, there are
+thousands of these little troubleshooters
+that help you diagnose problems with your
+printer, with, with Excel, with your
+email, and each of these has a little
+Bayesian network inside that answers
+probability questions, given observations
+about what, What the system, the, the,
+about the, about the model involving, in
+this case, for example, the printer. And
+there's also a big website out there that
+does, car repair. And, you put in the make
+and model of, and year of the car. And
+what are the main problems within it.
+Figures it out and tells you what to look
+at, and what the most likely complaints
+is. And the reason behind the benefits of
+this, people don't use Bayesian networks
+are cool even though they are, they use
+this because it provides a very flexible
+user interface for the user. You
+instantiate the evidence of the Bayesian
+network out comes the probability, you
+don't want to answer the question right
+now, that's okay, you can answer it later.
+It's just means that it's an observation
+that you didn't get the condition on. And,
+and then for the designer this type of
+system is really easy to design and
+maintain. Because if for example something
+changes a little bit in your printer
+structure. If you were to design a
+standard menu-base system you'd have to go
+and rebuild the entire tree that asks you
+know wh, what is the besides what is the
+first question to ask, what is the second
+question to ask. What is the most likely
+diagnosis. Here in the Bayesian network, you change
+one probability, maybe add an edge, and
+everything just emerges from that in a
+very straight-forward way so it's much
+more modular and more maintainable than,
+than a hardwired menu-based system. And
+that's what the people who use these
+systems will you tell is that, why, that's
+why they chose this path as opposed to As
+opposed to the hard-wired methodology.

@@ -1,0 +1,52 @@
+              Abstract
+
+MEMS that interact with liquids are of great interest in the
+              biomedical, pharmaceutical, chemical, consumer product and defense industries.
+              MEMS operation in liquid environments is particularly challenging because (1)
+              significant driving forces are required to displace the potentially large
+              'added mass' of fluid and (2) liquid viscosities damp oscillatory motion. 
+              Also, chemical interaction between the liquid and MEMS materials may lead to
+              structural or electrical failure.  For MEMS immersed in flowing liquids,
+              particles and bubbles may alter the device performance.  Consistent and
+              predictable operation throughout the device lifetime (reliability) is critical
+              for commercializing MEMS.  
+The primary objective of the proposed study is to
+              investigate and understand the effects of liquids and particle- or bubble-laden
+              liquids on microdevice short- and long-term performance.  A second objective is
+              to demonstrate effective designs and design limitations for reliable
+              performance in liquids. To achieve these goals, the performance of oscillating
+              micro-cantilever beams will be studied in liquid-filled cavities and in flowing
+              liquids.  The beams will be constructed using typical MEMS structural film
+              materials and electrically insulating coatings. The devices will be oscillated
+              at their resonant frequency for up to 1010 cycles, and any changes in
+              performance will be noted. To isolate loss in performance caused by structural
+              failures from shorting failures, the effects of both nonconducting and
+              conducting liquid environments will be examined.
+The study will incorporate
+              experiments designed to quantify both structural and fluid motion.  In
+              transparent liquids, beam resonant frequency, quality factor, and displacement
+              will be measured by laser vibrometry.  Sensing elements integral to the beams
+              will be used to monitor resonant frequency in opaque, particle-laden or bubbly
+              liquids. The particle and bubble motion in flowing liquid environments will be
+              visualized through a microscope and recorded with a high-resolution digital
+              camera.  Image processing will be used to determine liquid velocity variations
+              as well as particle and bubble velocities.  Experimental results will be
+              compared with existing reliability studies in gaseous environments to determine
+              commonalities and differences in the factors affecting device performance. 
+              
+Intellectual merit:  This is the first known investigation of reliability for
+              MEMS devices operating in liquid environments.  Since such devices are
+              extremely desirable (and already under development) in a variety of industries,
+              the experimental data and analysis will be useful to engineers in many
+              applications. The results of this basic study can be generalized to practical
+              guidelines for MEMS structural materials and coatings to ensure reliable,
+              long-term operation in various liquid environments.  The proposed study will
+              draw on the interdisciplinary expertise of the P.I.'s to develop these
+              guidelines.   
+Broad impact:  The significance of the proposed work to
+              industry is described above.  Two Ph.D. students will be funded by this
+              project.  Also, undergraduate researchers and high school physics teachers will
+              perform and participate in short-term investigations during the summers.  The
+              teachers are expected to bring their experiences with cutting edge measurement
+              techniques and engineering applications back to the classroom.
+

@@ -1,0 +1,5 @@
+Steffen,
+Thanks. I wrote a short document deriving (30) for the case of multinomial
+distribution. Do you think it is correct?
+Xiaogang
+Quoting Steffen Bickel <bickel at informatik.hu-berlin.de>:

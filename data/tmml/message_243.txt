@@ -1,0 +1,16 @@
+dear gregor,
+thanks for sending this along.  it's very interesting.
+i'm a little surprised.  often the number of topics that are "found"
+by the algorithm has a lot to do with the hyperparameters alpha and
+beta.  a topic hyperparameter that prefers sparser topics will lead to
+a model that requires more of them.  (in your notation, that is beta
+near 0.)  if you were fitting or sampling the hyperparameters then the
+perplexity might continue to increase.  but, with fixed
+hyperparameters, i'd expect it to level out.
+do you see the same behavior when you change the size of the
+vocabulary?  i've wondered if V affects things in ways that we haven't
+explored.  my student---jonathan chang---has noticed that very rare
+words can induce partitions of the corpus that might get in the way of
+finding the co-occurrence patterns that we expect.
+all the best,
+dave

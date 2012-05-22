@@ -1,0 +1,5 @@
+Hi everyone,
+I had an idea but I'm not sure if its dumb or been tried before:
+In a small corpus, Zipf's law prevents worthwhile themes from emerging due to the few word co-occurence instances. Has anyone ever tried building a hybrid model that bootstraps word co-occurence prior probabilities using an existing n-gram (or really unigram for LDA) model, such as Google's?
+Thanks,
+Aaron

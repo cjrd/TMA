@@ -1,0 +1,4 @@
+Here is a patch for compiling for 64bit Matlab. You'll have to re-run
+compilescripts.m (this script is also one of those patched, adding
+-largeArrayDims to the compiler).
+Donn

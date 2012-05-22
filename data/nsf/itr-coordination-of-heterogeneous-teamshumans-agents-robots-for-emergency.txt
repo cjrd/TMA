@@ -1,0 +1,22 @@
+              Large-scale coordination tasks are becoming increasingly important in hazardous,
+              uncertain, and time-stressed environments such as rescue operations and
+              disaster response. In such environments, human rescuers must rapidly make
+              decisions while under stress and with incomplete and dynamic information, that
+              may save or put lives at risk. The proposed multidisciplinary research is
+              founded on three key advances/technical ideas. 1) Teams of Autonomous Agents:
+              Cyber Agents, Robots and People (CARPs) are hybrid teams that consist of large
+              number of these entities, distributed in space and time and varying in
+              capability and role. (2) A cooperative control paradigm facilitates the sharing
+              of a) common goals, b) initiatives for communication and action, c)
+              responsibilities for coherent group activity, d) information on the
+              environment, mission, and situation, and e) assistance to overcoming barriers
+              for various members of CARP groups whether human, robot or cyber-agent. (3) The
+              key challenges for team formation and coordination in large-scale, uncertain
+              coordination domains include ad hoc interoperability across different agents,
+              teams and organizations that are brought together "as is", and co-adaptation to
+              each other and to changing priorities and roles within the team. The impact of
+              having CARP technology successfully deployed will allow robots to advance
+              beyond niche roles in a handful of industries; instead they will be integrated
+              into the larger society of humans and information systems in the workplace. 
+              Emergency response teams are an early high-payoff test domain as robots can go
+              places normally dangerous to humans, thus saving rescuers' and victims' lives. 

@@ -1,0 +1,64 @@
+              Focused Research Collaboration Proposal: Differential Algebraic
+Inequalities
+              and their Applications to Engineering
+
+This focused research project proposes
+              a comprehensive investigation
+of Differential Algebraic Inequalities (DAIs)
+              and Dynamic
+Complementarity Problems (DCPs), with the goal of developing
+              an
+extensive theory, designing and analyzing efficient algorithms,
+              and
+applying the results to problems in engineering of practical
+importance. 
+              The two problem classes of DAIs and DCPs represent a
+significant extension of
+              an ordinary differential equation (ODE) and a
+differential algebraic equation
+              (DAE). The proposed study necessitates
+the use of state of the art
+              mathematical programming methods in
+conjunction with ODE and DAE methods to
+              deal effectively with the
+inequalities and complementarity conditions in a
+              DAI/DCP.  The latter
+are novel features that are absent in ODEs or DAEs. Since
+              the main
+methods for solving DCPs and DAIs in realistic situations
+              are
+numerical, the research will emphasize the interactions
+              among
+formulation, computation, and mathematical issues such as
+              convergence
+and approximation including numerical approximation and
+              sensitivity to
+parametric perturbations.
+
+DAIs and DCPs provide a powerful
+              mathematical framework for the
+comprehensive treatment of a host of important
+              complex system
+applications that have so far received only minimal attention
+              from
+applied and computational mathematicians.  The project will open a
+              new
+chapter in applied mathematics in which classical differential
+equation
+              theory is merged with contemporary mathematical programming
+methods. The
+              deliverables of the project will a set of broadly
+applicable mathematical and
+              computational tools that will have a
+direct impact in several distinct
+              engineering disciplines including:
+constrained mechanical systems with
+              frictional contact arising in
+robotics and manufacturing, conditional modeling
+              in chemical and
+hydraulic processes, and hybrid systems with
+              variable-structure
+control encountered in avionics, intelligent highway
+              systems, and
+automotive systems.
+

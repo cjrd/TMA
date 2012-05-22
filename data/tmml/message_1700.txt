@@ -1,0 +1,6 @@
+Hi, we just solved this problem.
+The answer is in the paper *Topic Models* by Blei and Laffery in 2009, the
+formula (12) in this paper.
+Thanks again.
+Regards,
+Mingli

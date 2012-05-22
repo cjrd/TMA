@@ -1,0 +1,25 @@
+Hi Jeffrey,
+Topic modeling or any latent factorization technique such as PLSA, LSA, PCA,
+NMF etc. are built precisely to address this problem of high dimensionality
+of data. Topic modeling solves this problem by mapping documents to a low
+dimensional simplex induced by the topics.
+As for sparsity, there are two kinds of sparsity in textual data:
+(i) Sparsity of features: only a small fraction of the total vocabulary
+occurs in each document
+(ii) Sparsity of representation: due to the inherent ambiguity of natural
+language, there are multiple ways to represent the same meaning, and
+typically we do not find all these representations in the same document,
+which makes matching documents on the same topics difficult.
+Of the two, topic modeling actually takes advantage of (i) above and models
+only the words that occur in the document, using a multinomial distribution
+(as opposed to older models that used the Bernoulli distribution to model
+occurrence as well as non-occurrence of all words in the vocabulary in each
+document).
+Topic modeling address (ii) by soft-grouping topical words into the same
+cluster in terms of a multinomial distribution over words. Since documents
+are now represented in terms of these topics, it becomes easier to match
+documents on the same topic.
+Hope this answers your question.
+Thanks
+-Ramesh
+Topic models model

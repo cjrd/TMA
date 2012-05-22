@@ -1,0 +1,13 @@
+Does anyone have a good definition of "topic model", as opposed to just "topic"?
+One possible definition is: "a model of the generative process by
+which documents are created." This sounds nice, and is very LDA-ish.
+But another possibility: "any technique that decomposes a
+term-document matrix into a document-topic matrix and a topic-term
+matrix." This describes more of the input/output behavior of LDA, as
+opposed to how LDA does it.
+I have never seen a clear definition, which has lead to some bar-room
+discussions in my group. For example, would LSI be considered a topic
+model? How about the Vector Space model? PLSI? Could we stretch the
+definition of topic models to even include Independent Component
+Analysis (if, say, the second definition above were used)?
+Steve

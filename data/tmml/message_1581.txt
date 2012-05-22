@@ -1,0 +1,22 @@
+Hello all,
+I'm posting for the first time. I'm keen to use the CTM
+algorithm, and need to understand the difference between the routine
+that's been coded and the algorithm set out in the paper (A CORRELATED
+TOPIC MODEL FOR SCIENCE, Blei and Lafferty, 2007). I've run the coded
+routine on some simulated data (100 documents, K = 5 topics); and I find
+that while the variational parameters $lamdda$ and $nu^2$ are
+effectively K-1 dimensional --- the K-th column of final-lambda.dat has
+all zeroes, and the K-th column of final-nu.dat likewise --- there seem
+to be K different topics.
+Since the topics derive from the variational
+parameters $phi$ in the paper, it's natural to suppose that, for each
+word $w_n$ in a document $,W_{1:N}$ now, a K-dimensional vector
+$phi_n =
+(phi_{n,1},phi_{n,2}, ... ,phi_{n,K}$
+is being estimated at the E-stage
+of each EM-step. So I'm wondering if a $lambda_K$ and $nu^2_K$ are being
+estimated as well: or is the K-th topic obtained at the very end,
+somehow, after the routine has estimated K-1 topics in the manner set
+out in the paper ?
+Thanks much,
+Hans Varghese Mathews

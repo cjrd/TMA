@@ -1,0 +1,12 @@
+David Mimno wrote:
+It's easy to show that LDA topics often do NOT have semantic meaning, and
+simply reflect statistical correlations. We've found, for example, that
+LDA is an excellent way to find subsets of a corpus that contain
+consistent OCR errors or broken PDF ligatures (eg "difficult" comes out
+as "di ffi cult").
+Recently I found a similar effect using LSI (i.e. SVD) on a large corpus of NY Times
+articles.  In particular, the most prominent topic consisted of documents that were
+actually in Spanish, even though the corpus was supposedly NY Times.
+Has anyone published a comparison of topics found by LSI and LDA?  By LDA
+using Gibbs sampling versus variational methods?
+Charles

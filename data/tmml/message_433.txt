@@ -1,0 +1,4 @@
+It's to prevent numerical errors. Especially small values and
+especially large values are likely to give incorrect results when
+added together. log_sum solves the problem by keeping all operations
+in log space.

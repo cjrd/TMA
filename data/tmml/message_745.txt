@@ -1,0 +1,78 @@
+* Apologies for cross-posting *
+This is sent on behalf or the 2011 edition of IEEE/WIC/ACM WI-IAT conference organizing committee.
+Please note the close deadline.
+==================================================================
+Call for workshop proposals
+The 2011 IEEE / WIC / ACM International Conferences on Web Intelligence and Intelligent Agent Technology
+22-27 August 2011, Lyon, France
+http://wi-iat-2011.org
+The Program Committees of the 2011 IEEE/WIC/ACM International Joint Conference on Web Intelligence and
+Intelligent Agent Technology (WI-IAT?11) invite proposals for Workshops. The Workshops will be held within the Conference,
+August, 22, 2011 at Lyon, France.
+The main goal of the WI-IAT?11 workshops is to stimulate and facilitate active exchange, interaction and comparison of approaches,
+methods and ideas related to specific topics, both theoretical and applied, in the general areas related to Web Intelligence and
+Intelligent Agent Technology. The workshops will provide an informal setting where participants will have the opportunity to
+discuss specific technical topics in an atmosphere that fosters the active exchange of ideas.
+The workshop organizers will be responsible for advertising the workshop, forming the program committees, reviewing and selecting
+the papers, and guaranteeing a high quality worthy of the prestige and range of the Conference. All papers accepted for workshops
+will be included in the Workshop Proceedings published by IEEE Computer Society Press and will be available at the workshops.
+The workshop organizers will also have the discretion of editing selected papers (after their expansion and revision) into books or
+special journal issues. Workshops may be full-day or half-day. A full-day workshop should select 10-14 regular papers, while a half-day
+workshop should select 5-7 regular papers, from a large number of submissions. Submissions accepted as workshop papers will be
+allocated 4 pages in the proceedings. The workshop organizers should ensure the presence of authors of accepted papers at the
+workshops. Optionally, the workshop may be started or concluded by a panel focusing on interesting aspects, controversial issues, or
+unsolved problems to stimulate lively, thoughtful, and thought-provoking debate; we expect the workshop organizers to actively
+engage the audience and help them gain a deeper understanding of the issues. The goal of a panel is to debate and thus panels
+should always reflect more than one point of view.
+Workshop Proposals Submission:
+Workshop organizers should submit their proposals (PDF) directly to the three Workshop Chairs
+via e-mail (see their email addresses below).
+Workshop proposals should include the following elements:
+- Title of the workshop
+- Names of workshop organizers, affiliation, mailing address and e-mail address
+- Short CV of organizers
+- A description of the topics of the workshop (not exceeding 200 words)
+- Type of the workshop (full-day or half-day)
+- A description of how the workshop will contribute to the field of Web Intelligence and/or Intelligent Agent Technology
+- A short description on how the workshop will be advertised so as to ensure a sufficiently wide range of authors and high quality papers
+- Information about previous offerings of the proposed workshop.
+Topics of Interest
+Each workshop subject will focus on new research challenges and initiatives in Web Intelligence (WI) and
+Intelligent Agent Technology (IAT). The workshops should provide an informal and vibrant forum for researchers
+and industry practitioners to share their research results and practical development experiences in
+these two fields. Suggested, workshop topics include, but are not limited to:
+- Intelligent e-Technology (including e-Science, e-Business, e-Things and e-Activities, e-Learning, e-Finance, e-Medicine, e-Government, e-Community)
+- Intelligent Human-Web Interaction
+- Intelligent Distributed Robots
+- Distributed Intelligence
+- Knowledge Grids and Grid Intelligence
+- Semantics and Ontology Engineering
+- Sensing Web and Smart World
+- Social Networks and Ubiquitous Intelligence
+- Ubiquitous Computing
+- Web Agents
+- Web Information Filtering and Retrieval
+- Web Mining and Farming
+- Web Data Management
+- Web Scale Commonsense Knowledge Processing
+- Web Security, Integrity, Privacy and Trust
+- Web Services and Grid Services
+- Web Support Systems
+- World Wide Wisdom Web (W4)
+- Convergence of email, instant messaging and social-network tools
+- Agent Systems Modeling and Methodology
+- Autonomous Knowledge and Information Agents
+- Autonomous Auctions and Negotiation
+- Autonomy-Oriented Computing (AOC)
+- Learning and Self-Adapting Agents
+Important Dates
+Workshop proposal submission: December 17, 2010
+Notification to workshop proposers: January 7, 2011
+Workshop paper submissions: March 21, 2011
+Notification of Workshop paper acceptance: June 1, 2011
+Workshops and Industry day: August 22, 2011
+Workshop Co-Chairs
+Jomi F. H?bner (Federal University of Santa Catarina, Brasil, jomi at das.ufsc.br)
+Jean-Marc Petit (INSA, France,jean-marc.petit at insa-lyon.fr)
+Einoshin Suzuki (Kyushu University, Japan,suzuki at inf.kyushu-u.ac.jp)
+==================================================================

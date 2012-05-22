@@ -1,0 +1,36 @@
+              EIA 02-24433
+Pearlman, William A
+Woods, John W.
+Rensselaer Polytechnic
+              Institution
+
+Title:  CISE RR: Processing and Display of Volume Images and
+              High Resolution Image Sequence 
+
+
+This proposal, acquiring resources for
+              real-time processing and display of large volume imagery and high resolution
+              image sequences, aims at supporting collaborative research projects in
+              compressing and analyzing extremely large-scale images and high-bandwidth
+              video. The infrastructure supports the collection and display of
+              high-resolution imagery as well as the image processing computations. Moreover,
+              it enables improved data transmission over gigabit network. Medicine, terahertz
+              radiation sensing, and hyperspectral imagery, and digital cinema constitute the
+              sources of the research. The equipment, to be placed in the Center for Image
+              Processing Research (CIPR), supports the following collaborative research
+              projects.
+Volume and Hyperspectral Image Compression,
+Terahertz Image
+              Processing,
+Multispectral Imaging in Electron Microscopy,
+Transparent
+              Migration of Complex Scientific Computing Software to Real-Time
+              Execution,
+Digital Cinema Compression,
+Remote Collaboration Environment, and
+              
+Human Fatigue Monitoring and Machine Parts Tolerancing.
+
+
+
+

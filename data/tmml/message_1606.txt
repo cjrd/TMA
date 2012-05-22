@@ -1,0 +1,9 @@
+You might want to look into the literature regarding Species Sampling
+Models (SSMs).  The PY and DP are both special cases of SSMs, but there are
+other classes of SSMs that use different predictive probability functions
+in order to change the behavior of the model with respect to the number of
+clusters it produces.  See this work by Jaeyong Lee, et al. for more
+details:
+http://odin.mdacc.tmc.edu/~pmueller/pap/LQMT08.pdf
+Of course, these models are still non-parametric and always give some
+probability to the creation of a new cluster/component.

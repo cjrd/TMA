@@ -1,0 +1,100 @@
+              DMS-0203976
+Yair Minsky
+
+In this project Minsky will study connections
+              between the geometric
+structure of hyperbolic 3-manifolds, and the
+              combinatorial structure
+of surfaces. The main focus of the project is a
+              program to solve
+Thurston's Ending Lamination Conjecture, which states that
+              a
+hyperbolic 3-manifold is uniquely determined by its topological type
+and a
+              list of invariants describing the asymptotic geometry of its
+ends. This
+              conjecture is central in the field and would settle a
+number of outstanding
+              questions about the structure of the deformation
+space of all hyperbolic
+              structures on a given manifold.  The principal
+tool in this approach is the
+              Complex of Curves, a combinatorial object
+which describes the set of all
+              essential homotopy classes of simple
+loops on a given surface.  Such a
+              complex, viewed as a metric space,
+is hyperbolic in the sense of Cannon and
+              Gromov, and the invariants
+which describe the geometry of a 3-manifold turn
+              out to be "points at
+infinity" for the complex. A study of geodesics within
+              the complex of
+curves then allows us to construct a model for the geometry of
+              the
+3-manifold which depends only on its end invariants.  Part of the
+program
+              is joint work with Brock and Canary.  The complex of curves is
+also
+              instrumental in studying the Teichmuller space of hyperbolic
+structures on a
+              surface, and its symmetry group, known as the Mapping
+Class Group.
+              Hyperbolicity of the complex implies a type of relative
+hyperbolicity property
+              for the Teichmuller space and the Mapping Class
+Group, and in collaboration
+              with Brock and Masur, Minsky hopes to
+apply this to study the geometric
+              properties of Teichmuller space, and
+to answer a number of group-theoretic and
+              algorithmic questions about
+the mapping class group.
+
+
+
+Topological spaces
+              appear in mathematics at varying levels of
+abstraction. The earth, for
+              example, can be thought of as a sphere,
+spinning around its axis. The set of
+              all positions of this sphere,
+perhaps as parameterized by the time of day in
+              New York, can itself be
+visualized as a circle.  The positions of the earth in
+              its orbit
+around the sun also make up a circle, and all this
+              information
+together can be described by a 2-dimensional surface, called a
+              torus,
+so that each point in the torus corresponds to exactly one position
+              of
+the earth-sun system, and our motion in space gives rise to a
+trajectory
+              winding around the torus.  Once a surface is being studied,
+we often give it
+              various structures: it can have a metric, which is a
+way of measuring distance
+              in it; it can also be filled up in different
+ways by loops. The set of all
+              possible metrics can itself be studied
+as a "space", where motion in this
+              space corresponds to changing
+shapes of the surface. The set of all loops in
+              the surface gives
+rise to another space, of a more combinatorial character. 
+              A
+fascinating phenomenon, not uncommon in mathematics, is the appearance
+of
+              analogies between these different levels of abstraction. For
+example, a
+              property of a single metric on a surface called "hyperbolicity"
+appears again,
+              in another guise, as a property of the space of all
+metrics on the surface and
+              the space of all loops. The interaction
+between these different levels yields
+              interesting phenomena and tools
+which can be applied to solve a number of
+              problems in
+

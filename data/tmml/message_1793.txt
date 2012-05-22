@@ -1,0 +1,6 @@
+Hi Konstantin,
+I've put C and Matlab code on my website. I've copied the links below:
+http://www.cs.berkeley.edu/~jpaisley/code/DILN_C.zip
+http://www.cs.berkeley.edu/~jpaisley/code/DILN_matlab.zip
+Thanks,
+John

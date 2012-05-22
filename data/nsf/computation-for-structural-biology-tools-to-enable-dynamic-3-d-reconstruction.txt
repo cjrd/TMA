@@ -1,0 +1,35 @@
+              Proposal #0098156
+Purdue Research Foundation
+Doerschuk, Peter C
+
+A key
+              challenge in computational structural biology is the determination of the 3-D
+              structure of a virus, and
+especially dynamical changes in 3-D structure which
+              are central to understanding the function of the virus.  This information is
+              central to rational design of drugs to combat viral infections and to the use
+              of viruses for other purposes, e.g., as vehicles for the targeted delivery of
+              drugs to specific organs.  Solving these problems involves the development,
+              analysis, implementation and use of new algorithms for two numerical
+              computation problems, global optimization and multidimensional
+              quadrature.
+
+The investigators compute a 3-D structure by locating the global
+              minimum of a cost which is a function of experimental data and of a predictor,
+              and which quantitates the difference between the data and the prediction of the
+              data.  The predictor, whose evaluation requires multidimensional quadrature, is
+              a function of parameters describing the 3-D structure of the virus and any
+              unknown aspects of the data collection process and the minimization is with
+              respect to these parameters.  Performance of the approach is limited by
+the
+              global optimization and quadrature tools and therefore these tools are the foci
+              of this research.  Key global
+optimization issues are exploiting the
+              multi-scale structure of the data and parameters in the cost due to the
+              presence of Fourier transforms and the tradeoff between accuracy and
+              computational expense in the evaluation of the cost due to embedded
+              quadratures.  Key multidimensional quadrature issues are the unusual integrands
+              and regions of integration, e.g., to integrate a function of three variables
+              with icosahedral symmetry over the three Euler angles that define a 3-D
+              rotation.
+

@@ -1,0 +1,48 @@
+              This project deals with questions from pluri-potential
+theory and dynamics in
+              several complex variables. 
+Pluri-potential theory is the higher dimensional
+              version
+of potential theory in the complex plane. The 
+investigator plans to
+              study certain classes of 
+pluricomplex Green functions for the complex
+              
+Monge-Ampere operator, from the point of view of their
+foliation structure
+              and also in relation to some questions
+from algebraic geometry. A second goal
+              of the project is 
+to consider polynomial estimates of Bernstein-Walsh
+              type
+related to graphs of entire transcendental functions.
+The investigator
+              plans to study certain properties of
+entire functions from this point of view.
+              Such properties
+are also of interest in transcendental number
+              theory.
+Finally, the investigator is concerned with studying the
+dynamics of
+              classes of polynomial automorphisms in
+higher dimensions.
+
+Complex analysis
+              in one and in higher dimensions has
+important connections with many fields of
+              pure and applied
+mathematics and, indeed, with other sciences. It is
+              often
+the case that one gains insight about concrete problems 
+once they are
+              formulated in the context of complex numbers.
+This is because of the powerful
+              methods and tools developed
+in the study of holomorphic functions in complex
+              analysis.
+Studying complex dynamical systems proved to be important
+for
+              understanding the behavior of more complicated real 
+dynamical systems arising
+              in mathematics as well as in 
+physics and biology.

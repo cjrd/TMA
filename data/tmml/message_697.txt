@@ -1,0 +1,19 @@
+Hi Noortje,
+Last term I worked on an LDA project in python, essentially calling
+Dave Newnan's code
+http://www.ics.uci.edu/~newman/code/topicmodel/  [text files, C, Gibbs
+sampling inference ]
+using subprocess.Popen() and some glue code...
+You can look at my project repository here:
+http://github.com/ivanistheone/arXivLDA         look in preprocessing/
+and project/
+I also played a bit with D. Andrezeje's code base, which
+is very clean (he wrote a python extension module using NumPy sturcts)
+http://pages.cs.wisc.edu/~andrzeje/research/cvb_lda.html  [NumPy
+arrays for data, python C extension, CVB0 inference ]
+I am going to be working on such a library this summer.
+Nothing fancy -- just automating and abstracting away all
+the tedious pre-processing tasks.
+Msg me in June if you want to see how far I have gotten.
+Peace,
+Ivan

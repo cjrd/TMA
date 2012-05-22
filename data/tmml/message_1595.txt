@@ -1,0 +1,9 @@
+Hi guys!
+I would like to use LDA in a setting, where I have a comprehensive
+vocabulary of 10.000-100.000 words and only a limited number of
+documents, i.e. 100-1.000. My intuition is that this will work badly and
+take a lot of time for the inference of the model, right!? Especially
+the limited amount of documents might be problematic. Do you still think
+that this might give some useful results?
+Best regards,
+Sebastian

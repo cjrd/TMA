@@ -1,0 +1,15 @@
+That could be accomplished by adding the new set of documents to the
+model and running inference as usual on just the new set, without
+reassigning the latent variables of the old set so that the old set is
+not influenced by the new set.  Another way that comes to mind is to
+also prevent the word-topic counts from changing for previously seen
+words so that the new documents cannot influence the emission
+probabilities of those words either, so that you are fitting the old
+model to the new data in a stronger sense.
+I remember discussing this previously on the list in a thread called
+"Refreshing the model" from Sept. - Oct. 2006, which you might want to
+look at (https://lists.cs.princeton.edu/pipermail/topic-models/).
+Also, let me refer your question back to the list, since my take on
+the question is very Gibbs-sampler-centric.
+Anthony
+2007/6/25, Hieu Xuan Phan <pxhieu at gmail.com>:

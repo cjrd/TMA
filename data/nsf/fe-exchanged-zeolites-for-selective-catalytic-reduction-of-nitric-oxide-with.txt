@@ -1,0 +1,20 @@
+              The objective of this proposal is to explore the effectiveness of iron-exchanged
+              zeolites as catalysts for the selective catalytic reduction (SCR) of nitrogen
+              oxide (Nox) species.  In preliminary work the PI has found that several
+              zeolites including ZSM-5 are much more active than the commercial vanadia
+              catalysts currently used in many stationary SCR systems.  Also, these new
+              catalysts are more resistant to deactivation by sulfur oxides and water.  A
+              series of iron-exchanged zeolites will be prepared using four different
+              methods: conventional solution ion-exchange, improved aqueous ion-exchange,
+              chemical vapor deposition, and solid-sate ion exchange.  Zeolites with small
+              pores and low Si/Al ratios were found to be most effective and will be used in
+              this project.  Rare earth cations and oxides will be studies as promoters. 
+              Catalysts will be characterized by neutron activation analysis and other
+              surface analysis techniques.  Steady-state kinetics and the mechanism for NO
+              reduction will be studies in parallel with ammonia oxidation.  Nitrogen oxides
+              resulting from combustion remain a major source of air pollution.  This study
+              will provide a fundamental understanding of the catalytic reaction mechanism
+              for NO reduction by ammonia on Fe-zeolites, leading to the development of
+              superior SCR catalysts.
+
+

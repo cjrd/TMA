@@ -1,0 +1,8 @@
+Hi,
+I think the fundamental differences are clear but, however, it doesn't
+directly imply the performance loss/gain in prediction tasks.
+It strongly depends on the corpus, hence I suggest to run tests on your data.
+I suspect RTextTools.com is a good starting point for generating this
+comparison
+( with many other methods too ) in a unified framework.
+Lev

@@ -1,0 +1,54 @@
+I just tried installing the 'rtm' package mentioned at R-forge and it did
+not go well... just as a point of reference for the new/shiny/C++ package.
+It's probably something trivial, but a few minutes of hacking didn't get it
+to compile for me.
+trying URL 'http://R-Forge.R-project.org/src/contrib/rtm_1.0.tar.gz'
+Content type 'application/x-gzip' length 4328 bytes
+opened URL
+==================================================
+downloaded 4328 bytes
+* installing *source* package ?rtm? ...
+** libs
+g++ -I/home/tim/r-build/include  -I/usr/local/include
+-I/home/tim/r-build/library/Rcpp/include -fpic  -g -O2 -c sparseLDA.cpp -o
+sparseLDA.o
+sparseLDA.cpp: In member function ?const Rcpp::Matrix<13>&
+SparseRTM::getTopics() const?:
+sparseLDA.cpp:409: warning: returning reference to temporary
+sparseLDA.cpp: In function ?void _rcpp_module_rtm_init()?:
+sparseLDA.cpp:437: error: ?loadR? is not a member of ?SparseRTM?
+make: *** [sparseLDA.o] Error 1
+ERROR: compilation failed for package ?rtm?
+* removing ?/home/tim/r-build/library/rtm?
+The downloaded packages are in
+?/tmp/RtmpJq7pmT/downloaded_packages?
+Warning message:
+In install.packages("rtm", repos = "http://R-Forge.R-project.org") :
+installation of package 'rtm' had non-zero exit status
+R version 2.13.0 Under development (unstable) (2010-09-23 r52986)
+Platform: x86_64-unknown-linux-gnu (64-bit)
+locale:
+[1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C
+[3] LC_TIME=en_US.UTF-8        LC_COLLATE=en_US.UTF-8
+[5] LC_MONETARY=C              LC_MESSAGES=en_US.UTF-8
+[7] LC_PAPER=en_US.UTF-8       LC_NAME=C
+[9] LC_ADDRESS=C               LC_TELEPHONE=C
+[11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C
+attached base packages:
+[1] grid      stats     graphics  grDevices datasets  utils     methods
+[8] base
+other attached packages:
+[1] xtable_1.5-6                         pgfSweave_1.0.9
+[3] getopt_1.15                          cacheSweave_0.4-4
+[5] tikzDevice_0.5.0                     stashR_0.3-3
+[7] filehash_2.1                         ggplot2_0.8.8
+[9] proto_0.3-8
+IlluminaHumanMethylation27k.db_1.2.0
+[11] org.Hs.eg.db_2.4.1                   RSQLite_0.9-2
+[13] DBI_0.2-5                            AnnotationDbi_1.13.0
+[15] methylumiCSV_1.12                    matrixStats_0.2.1
+[17] R.methodsS3_1.2.0                    methylumi_1.3.3
+[19] Biobase_2.9.2                        reshape_0.8.3
+[21] plyr_1.1
+loaded via a namespace (and not attached):
+[1] digest_0.4.2    lattice_0.19-11 tools_2.13.0

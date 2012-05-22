@@ -1,0 +1,26 @@
+              Certain orb-weaving spiders are known to recycle their webs, some as often as
+              every day. They accomplish this despite the fact that some web fibers, namely
+              major and minor ampullate silk, are highly resistant to common proteases.
+              Spider proteases that degrade these solid fibers are therefore expected to have
+              novel properties. Using digestive fluid from the orb-weaving spider Nephila
+              clavipes, major ampullate silk-degrading or "silkase" activity was identified.
+              The objective of this research is to determine protein sequences that
+              distinguish peptidase isoforms with and without major ampullate silk-degrading
+              activity. By examining enzymatic and sequence data from several spider species,
+              structural and functional features will be correlated. Enzymatic activities of
+              recombinant and native peptidases will be compared using synthetic or soluble
+              silk fibroins or native silk fibers. To test the hypothesis that certain
+              peptidase sequences are key determinants for the presence of major ampullate
+              silkase activity, altered recombinant peptidases will be analyzed.
+
+Broader
+              Impact: Characterization of a silkase with novel enzymatic features will
+              advance our understanding of enzymes that degrade protease-resistant solid
+              fibers and could lead to new biotechnological applications. Students involved
+              in this research will benefit greatly from the collaboration between research
+              groups interested in protein structure/function relationships from the
+              perspectives of the silk fibers and fiber-degrading peptidases. The research
+              will also provide a rich environment for hosting high school students from
+              underrepresented groups in a summer Student Research Apprenticeship Program and
+              undergraduates receiving NSF-EPSCOR summer research awards.
+

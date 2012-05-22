@@ -1,0 +1,28 @@
+Hi,
+In my master thesis I am working on a news recommendation system. Right now
+I am implementing a really basic version which is based on TF-IDF and
+centroid based classification.
+During my research I stumbled upon LDA again and again in different fields.
+However, one thing did not clear up for me and I hope you can help me. I am
+sure it was asked before but I just couldn't find the answer.
+So here is what I understood:
+LDA is learned on a document training set to generate topics. This is
+basically some kind of clustering.
+LDA can then be used to describe a new unknown document in terms of these
+topics.
+Now I am unsure about the following: Can I use this description as a
+feature vector and use it with common classifiers such as k-NN, SVM and
+Naive Bayes? Also: Can I just use the cosine metric to compare two
+documents?
+Additionally I think what brings up my confusion is that LDA can be used on
+many levels as I understood:
+- as a feature generator
+- as a classifier
+- for collaborative filtering
+Did I get this right? I am happy for every answer.
+Btw. I studied Philosophy with a focus on Speech Philosophy and found that
+the idea of topics relates pretty well to some speech concepts. I don't
+know if anybody did some research on that but it would be really useful to
+understand topic models on a different level.
+Anyways: thanks in advance,
+Karsten

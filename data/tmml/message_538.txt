@@ -1,0 +1,38 @@
+Hi,
+This question is not specific to topic modeling, but since at least
+the original LDA paper uses empirical Bayes a bit, perhaps it's
+permissible.
+My understanding is that if you have some prior with hyperparameter
+theta, then empirical Bayes will estimate theta from your data, while
+"full" Bayes will introduce a hyperprior p(theta) over theta and
+assume that p(theta)'s parameters (hyperhyperparameters) are fully
+known. Assuming this is correct, my questions are the following:
+(1) How is empirical Bayes not cheating by double counting data? It
+seems like if you use data both to estimate hyperparameters and in the
+likelihood, then the posterior will have inflated confidence, since
+you used the data twice and so overfitted the data in a way. Is there
+some way that empirical Bayes estimates regularize themselves to
+compensate for this effect?
+(2) It seems like unless you use some kind of noninformative
+hyperprior, which may be improper and cause issues, then you have to
+pick the parameters of p(theta) completely arbitrarily. On both
+philosophical and mathematical grounds, how does one argue in favor of
+that? Put differently, how can you justify using anything other than a
+noninformative prior, since this high up in the hierarchy, it is
+relatively unlikely you have domain knowledge about where theta is
+supposed to be? (And it doesn't seem wholly consistent to say that you
+can pick the parameters of p(theta) using domain knowledge while also
+saying that it doesn't matter much what you pick, since this high up,
+your parameter choices don't affect the posterior that much.)
+(3) Are there theorems that give guidance on which one is better to
+use in which situations, e.g. "in this situation, you are better off
+introducing a hyperprior and picking some random value, as long as
+p(theta) has sufficiently wide support"? Or does all this end up not
+mattering much, and the choice is more about computational convenience
+than anything else?
+I only know a little bit about these topics, so sorry if some of these
+don't make sense. Also, I am reading Carlin & Louis, but expect a book
+with "Bayes and Empirical Bayes Methods" in the title to potentially
+err on the side of being a little too positive about the methods. :)
+Thanks,
+Neal

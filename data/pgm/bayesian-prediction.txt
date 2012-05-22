@@ -1,0 +1,261 @@
+
+We previously defined the notion of
+Bayesian estimation in which we have a
+prior over the parameters and we continue
+to maintain a posterior over the parameters
+as we accumulate the data. What we haven't
+discussed though, is how one might use a
+model in which we have a distribution over
+the parameters. That is, how do we take
+such a model and use it to make
+predictions about new instances? [sound]
+So, now let's think about how we use a Dirichlet distribution, once we have it.
+So assume that we have a param-, a, a
+model, where our parameter Theta is
+distributed Dirichlet with some set of
+hyper-parameters. Now, if we're trying to
+make a prediction over the value of the
+variable x that depends on the parameter
+theta, well, we're just, this is just
+now a probabilistic inference problem, and
+so the probability of x. Is simply the
+probability of x given theta, marginaliz-
+times the prior over theta marginalizing in
+this case corresponding to an
+integration Over the value of the theta.
+And then give this integral over here. So
+if we plug through the integral, what
+we're going to get is the following form.
+And I'm not going to go through the
+integration by parts that's required to
+actually show this. But it's really a
+straightforward consequence of the
+properties of integrals of polynomials. In
+this case, we have that the probability
+that X takes a particular value XI, Is
+one, is one over Z times the integral over
+all the parameters theta of theta I
+which is the, the probability given the
+parameterization theta that X takes the
+value of little xi times this thing over here
+which is the prior. And we multiply the
+two together, integrate out over the
+parameter vector theta, which in
+this case K dimensional parameter vector,
+and it turns out that you end up with
+alpha I over the sum of all J's. Alpha J,
+a quantity typically known as little
+alpha. And so we end up with a case where,
+the prediction over the next instance
+represents the fraction of the instances
+that we've seen as represented in the
+hyper parameters of the Dirichlet. Where.
+We have X, little XI. But if alpha I
+represents the number of instances that
+we've seen where X, where the variable has
+the value little xi. The prediction
+very naturally represents, is, is, is
+simply the fractions of instances with
+that property. And so once again we see
+that there is a natural intuition for the
+hyper parameter as representing a notion
+of counts. Now let's put these two results
+together and think about Bayesian
+prediction as a function of, as the number
+of data instances that we have
+[inaudible]. So here we have a parameter
+theta, which initially was distributed as
+a Dirichlet, as some sort of a hyper
+parameter, and lets imagine that we've
+seen data instances X1 up to XM. And now
+we have the M plus first data
+instance and we want to make a prediction
+about that. So, the problem that we're
+trying to solve is now the probability of
+the m plus first data instance given the m
+first, the m instances that we've seen
+previously. And so we can once again plug
+that into a probabilistic inference
+equation. So this is going to be the
+probability of the m plus first data
+instance, given. Everything including
+theta. Times the probability of theta given
+x one up to x m. So we've introduced the
+variable theta into this probability. And
+we're marginalizing out over the variable
+theta. Well one thing that immediately
+follows is because of the structure of the
+probabilistic graphical model here, we have
+that x m + one is conditionally
+independent of all of these previous x's
+given theta. So we can cancel
+these from the right hand side of the
+conditioning bar, which gives us over here
+probability of x, M + one given
+theta and here we have the
+probability of theta Given X one
+up to X M. And so now let's think about the
+blue equation, the blue expression over
+here, which is just the posterior. Over
+theta, given D. Which are X1 up to XM. And we
+already seen what that looks like. That as
+we show just on the previous slide
+is simply a Dirichlet whose hyper parameter are
+alpha one plus M1 up to alpha K plus MK.
+And so now we're making a prediction of a
+single random variable from a Dirichlet
+that has a certain set of hyper
+parameters. And that was the thing we
+showed on the slide just before that,
+which is simply the fraction of the alp-,
+the fraction of the hyper parameter
+corresponding to the outcome xi as a
+fraction of all of, the sum of all the
+hyper parameters, where again just to
+introduce notation, alpha is equal to the
+sum of the alpha I and m to the sum of the
+M-Is. Now notice what happens here. This
+parameter alpha that we just defined,
+which is the sum over all of the alpha I's
+that I have . It?s a parameter known as
+the equivalent sample size. And this
+represents the number of, if you will
+imaginary samples that I would have seen
+prior to receiving the new data, X1 to Xn.
+Now look what happens if we multiply alpha
+by a constant. So say we double all of our
+alpha I's, then we have we're going to let
+the m I's affect our estimate a lot less
+than for smaller values of alpha. So the
+larger the alpha, the more confidence we
+have in our prior and the less we let our
+data move us away from that prior. Let's
+look at an example of the influence that
+this might have. So let's go back to
+binomial data or a Bernoulli random
+variable and let's take the simplest
+example where a prior is uniform for theta
+in zero, one and we've previously seen
+that corresponds to a Dirichlet with
+hyper parameters one, one. So this is our,
+so this is a general-purpose Dirichlet
+distribution. In this case the hyper
+parameters are one, one and let's imagine
+that we get a five data instances of which
+we have four ones. And one zero. And if
+you actually. Think about the differences
+between what the Bayesian estimate
+gives you for the sixth. Next coin toss.
+Relative in, in when doing maximum likelihood
+estimation versus the Bayesian estimation.
+For maximum likelihood estimation we have four
+heads, four tails maximum likelihood estimate
+is 4/5ths. So that's going to be the
+prediction for the sixth instance. The
+Bayesian prediction, on the other hand,
+remember is going to do the hyper
+parameter alpha one plus M1 divided by
+alpha plus M which in this case is going
+to be one plus four divided by two plus.
+Find a high enough score to give us five
+over seven. So let's look more
+qualitatively at the effects of these
+predictions on a next instance after
+seeing certain amounts of data. And for
+the moment we're going to assume that the
+ratio between the number of 1s and the
+number of 0s is fixed so that we have one.
+One for every four zero's and that's the
+data that we are getting. And now let's see
+what happens as the function of the sample
+size. So as we get more and more data all
+of which satisfies this, a particular
+ratio. So here we are playing around with
+a different strength, or equivalent sample
+size. But we're fixing the ratio of alpha
+one to alpha zero to represent, in this
+case, the 50 percent level. So our prior
+is a uniform prior but of greater and
+greater or changing strength. And so this
+little green line down at the bottom
+represents a low alpha. Because we can see
+that the data gets pulled, our, posterior,
+so sorry. The line is drawing the
+posterior over the parameter or rather
+equivalency, the prediction of the next
+data instance, over time. And you can see
+here that alpha is low and that means that
+for even for fairly small amounts of data,
+, say twenty data points, we're already
+very close to the data estimates. On the
+other hand, this bluish line over here, We
+can see that the alpha is high. And that
+means it takes more time for the data to
+pull us, to the empirical, fraction, of
+heads versus tails Now lets look at
+varying the other parameter, we're going
+to now fix the equivalent sample size. And
+we are just going to start out with priors
+and we can see that now we get pulled down
+to the 0.2 value that we see in the
+empirical data, and , the further away
+from it we start though it takes us a
+little bit longer to actually get pulled
+out the data estimate. But in all cases we
+eventually get convergence to the value in
+the actual data set. And from a pragmatic
+perspective it turns out that. Bayesian
+estimates provide us with a smoothness,
+where the random fluctuations in the data
+don't, Don't cause quite as much random
+jumping around as they do, for example,
+in maximum likelihood estimates. So, if what we have
+here is the actual value of the coin toss.
+At different points in the process you can
+see the blue line, this light blue line,
+that corresponds to maximize data
+estimation, basically bops around the
+[inaudible], especially in the low data
+regime. Where as the, where as the ones
+that use a prior, the estimates that use a
+prior, are considerably smoother, and less
+subject to random noise. In summary,
+Bayesian prediction combines, two types
+of, you might call them sufficient
+statistics. There's the sufficient
+statistics from the real data. But there's
+also sufficient statistics from the
+imaginary samples that contribute to the
+Dirichlet distribution, these alpha hyper
+parameters. And the Bayesian prediction
+effectively makes the prediction about the
+new data instance by combining both of
+these. Now, as the amount of data
+increases that is at the asymptotic limit of
+many data instances, the term that
+corresponds to the real data samples is
+going to dominate. And, therefore, the
+prior is going to become vanishingly small
+in terms of the contribution that it
+makes. So at the limit, the Bayesian
+prediction is the same as maximum
+likelihood estimation. But. Initially in
+the early stages of estimation before we
+have a lot of data that the priors
+actually make a fairly significant
+difference. And we've seen that
+Dirichlet hyper parameters basically
+determine both. Our prior beliefs
+initially before we have a lot of data as
+well as the strengths of these beliefs
+that is how long it takes for the data to
+outweigh the prior and move us towards
+what we see in the empirical distribution.
+But importantly even as we've see here in
+the very simple example [inaudible] see
+what's wrong when you talk about learning
+[inaudible] networks it turns out that
+this Bayesian learning paradigm is
+considerably more robust in the sparse
+data regime in terms of its
+generalization ability.

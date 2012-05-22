@@ -1,0 +1,37 @@
+              The objective of the research supported by this CAREER award is to investigate
+              the character of ligand binding sites on proteins using the novel multiple
+              solvent crystal structures method. The idea is to solve the crystal structures
+              of different proteins in a variety of organic solvents in order to map their
+              binding surfaces. The study will focus on five representative proteins that
+              interact with different types of ligands. The premise is that the solvent
+              molecules have characteristics in common with component parts of larger ligands
+              and bind primarily in areas that evolved as binding sites. At the same time,
+              changes in the properties of the bulk solvent relative to an aqueous solution
+              provide changes to the protein environment. Analysis of the protein crystal
+              structures in these multiple environments can be used to delineate structural
+              components that are able to adjust to the change. Are there common patterns of
+              hydration, plasticity and hydrophobic exposed surfaces that are independent of
+              vast differences in shape, dynamics, electrostatic and hydrophobic content of
+              the binding sites? To what extent does the type of ligand determine the surface
+              properties of proteins, and how do dynamics affect the binding site features?
+              Answers to these questions are critical to our basic understanding of
+              protein-protein and protein-ligand interactions and will ultimately help to
+              bridge the gap between what we observe experimentally and what we can predict
+              from first principles.
+
+Broader impact: Model building and refinement of the
+              crystal structures will be integrated into an undergraduate course on protein
+              structure and function and into a graduate course on macromolecular modeling.
+              The students taking these courses will work closely with the research team to
+              complete the refinement of the structures. Thus, the scientific objectives of
+              this project will be accomplished within an educational framework designed to
+              enhance the knowledge and research experience of individuals from several
+              stages of the academic ladder. This project aims to 1) decrease the gap between
+              teaching and research experiences of the students, 2) expose a large number of
+              students to the questions guiding cutting edge research while offering students
+              an illustration of the concepts discussed in class, 3) spark an interest in
+              undergraduates, particularly women and Latino students, that might never have
+              had the motivation to inquire about research outside of the classroom and 4)
+              develop a process by which post-docs and graduate students are motivated to be
+              excellent teachers.
+

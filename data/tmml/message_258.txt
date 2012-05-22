@@ -1,0 +1,8 @@
+The MAP estimates are actually:
+\theta_i proportional to (n_i + \alpha_i)
+There is no -1 term. Just double check your math (remember the -1 in
+the definition of the Dirichlet, and notice that  P(M | D) =
+Dirichlet( {n_k+ \alpha_k} )   ).
+There is no negativity problem.
+Cheers,
+Simon

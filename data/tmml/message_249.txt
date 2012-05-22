@@ -1,0 +1,10 @@
+Hi once again --
+I quickly verified that the Bayesian approach I suggested yesterday
+works. The remaining challenge is the parametrisation of the adaptive
+rejection sampler (Wally Gilks' implementation, and I've put a Java port
+online...) and the Gamma prior parameters. Sometimes for low alpha or
+too small data sizes, sampling fails and tiny values are sampled.
+Best,
+gregor
+ps -- Sorry for the wrong subject line in my posting yesterday [Re:
+Topic-models Digest, Vol 19, Issue 8]

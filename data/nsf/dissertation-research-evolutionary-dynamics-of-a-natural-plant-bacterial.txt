@@ -1,0 +1,26 @@
+              Abstract
+DISSERTATION RESEARCH: Evolutionary Dynamics of a Natural
+              Plant-bacterial Pathogen Interaction
+Bergelson
+DEB-0309028
+
+Ecological
+              processes and genetic variation are increasingly being integrated in
+              coevolutionary models of plant-pathogen interactions, yet little progress has
+              been made in relating this theoretical work to natural systems. This research
+              will characterize the dynamics of the interaction between the bacterial
+              pathogen Pseudomonas viridiflava and the plant Arabidopsis thaliana by
+              combining experimental and observational data with an evolutionary model. This
+              will be one of only a few studies of natural plant-pathogen interactions and
+              the first to study the dynamics of a bacterial pathogen in a wild plant
+              population. A. thaliana has been a highly productive model system for studying
+              plant resistance to pathogen infection in the laboratory and a growing amount
+              of molecular evolutionary data is available for genes in A.thaliana that confer
+              resistance to bacterial pathogens. By placing disease resistance in A. thaliana
+              in an ecological and evolutionary context, this study will contribute to a
+              greater understanding of recent molecular genetic results. A more complete
+              understanding of the evolutionary dynamics of resistance in plant populations
+              and virulence in pathogen populations, through studies such as this one, will
+              be a necessary step towards the achievement of durable disease resistance in
+              agricultural crops.
+

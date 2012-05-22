@@ -1,0 +1,51 @@
+              This research aims at developing empirically based dynamic general equi-librium
+              models for analyzing monetary policy based on evidence both from the U.S. and
+              from countries that have experienced currency crises. The research agenda can
+              be divided into two general topics: (i) understanding the link between monetary
+              policy and private sector outcomes in the US. and (ii) understanding the links
+              between government policy and currency crises in emerging markets.
+
+Projects
+              under the first topic involve constructing and estimating models that can
+              account quantitatively for the key facts about the US monetary transmission
+              mechanism. The models investigated have four key- characteristics. First. they
+              embody complementary sources of monetary non-neutrality steming from frictions
+              in good, labor and asset markets. Second. they embody modifications to the real
+              side of standard business cycle models. These modifications play a key role in
+              the analysis because they help render the models consistent with the fact that
+              marginal production costs are only mildly procyclical. Third, the models are
+              designed so that individual agents, taking as given economy-wide variables,
+              have only small incentives to overcome the nominal frictions in their
+              environment. Nevertheless nominal frictions have a first order effect on the
+              economy.  Fourth. the models are empirically tractable and can be formally
+              investigated using econometric methods.  Preliminary evidence from a simple
+              version of the model, embodying modest nominal rigidities, is capable of
+              generating persistent real effects from monetary shocks consistent with those
+              identified in the data. In addition. the model can account for the inertial
+              behavior of inflation and real wages. Much of this research is joint research
+              with Lawrence Christiano (Northwestern University) and Charles Evans (Federal
+              Reserve Bank of Chicago).
+
+The second topic consists of three projects aimed
+              at under-standing the causes and consequences of currency crises. The unifying
+              theme between the projects is the link between government policies, the
+              fragility of financial systems and currency crises. The first project explores
+              why governments with similar sized prospective deficits, stemming from failing
+              financial systems, experience exchange rate crises of different magnitudes and
+              different post-crises inflation rates. The key observation here is that
+              governments differ in the extent to which their lia-bilities are indexed to
+              inflation. The inflation that follows a currency devaluation acts like a
+              partial fiscal reform, effectively providing a government with a source of
+              revenue other than seignorage. Ex ante heterogeneity regarding non-indexed
+              liabilities leads to ex post heterogeneity with respect to monetary policy and
+              inflation. In addition, the research also explores why reported inflation is so
+              much lower than the rate of exchange rate devaluation in the wake of many
+              currency crises. The second project examines the relationship between
+              government guarantees, the sectoral composition of bank lending and banks'
+              hedging activities. It analyzes the impact of government guarantees on the
+              exposure of banking systems to real shocks and the corresponding fragility of
+              fixed exchange rate regimes. The third project investigates why governments
+              extend guarantees to banks' foreign creditors in developing countries. Much of
+              the research in this section of the proposal is joint with Sergio Rebelo
+              (Northwestern University) and Craig Burnside (World Bank).
+

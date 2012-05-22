@@ -1,0 +1,17 @@
+Dear All,
+I read the paper about CorrLDA (Modeling annotated data). I had some
+problems.
+Suppose that we can use Gibbs sampling to do inference, does sampling a
+topic for region have something to do with probabilistic distribution of
+topic and caption words?
+Actually region and word and be seen as different type of objects. We
+can change these objects in the model and choose different distributions to
+model topic and object. Suppose that we can model topic region with
+multinomial distribution, Gibbs sampling can be easily utilized. I do not
+know whether my understanding is right or not.
+What is the conditional probability of p(z|z-, r, w)?  Does it have
+three terms (with one more term about topic word distribution ) or two terms
+(like LDA)?
+Do I make myself clear?
+Thanks for your help.
+Limin

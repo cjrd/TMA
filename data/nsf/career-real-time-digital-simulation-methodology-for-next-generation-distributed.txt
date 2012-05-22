@@ -1,0 +1,24 @@
+              The Gas Research Institute predicts that by the year 2030 distributed
+              generation, including fuel cells, wind energy converters and micro turbines,
+              will capture about 30 % of the energy market. This will result in a
+              transformation from a centralized toward a distributed energy system
+              infrastructure. It is expected that the proposed research on real time
+              simulation methodology will be of significant value for the demonstration of
+              the feasibility of this transformation and for key tasks such as research,
+              design, analysis, testing of equipment, and protection of the next-generation
+              energy systems. The combination of efficient formulation of parallel and
+              sequential equation solving, automatic generation and adaptation of numerical
+              methods for the diverse characteristics of distributed energy systems, exact
+              tracking of power electronic switching, and modular modeling of energy systems
+              will constitute the core of the proposed simulation methodology. The critical
+              problems of today's electromagnetic transients simulators concerning the
+              simulation of diverse waveforms and discontinuities will be solved and dramatic
+              improvements of computational accuracy and speed are expected. The research
+              results will be integrated in a novel course. To achieve effective teaching and
+              learning, the proposer will start new initiatives: support of underrepresented
+              minority students, international experience of students, innovative
+              interdisciplinary bridging of curricula and communities, industry-guided course
+              delivery, and modular research activity decomposition for active undergraduate
+              involvement. The proposer expects to reignite student interest in the
+              fascinating field of energy systems and make student motivation a decisive
+              factor for the success of this project.

@@ -1,0 +1,7 @@
+              Improved understanding of the interaction of radiation with cold atomic vapors
+              and BEC's will be sought, using nonlinear spectroscopy (both continuous wave
+              and pulsed).  In cw spectroscopy collisional effects in cold vapors and mean
+              field shifts and scattering in BECs will be studied as a function of the
+              frequency difference between two fields.  The spectrum of recoil-induced
+              resonances will be calculated.  For pulsed field interactions both the impulse
+              and Bragg scattering limits will be studied.    

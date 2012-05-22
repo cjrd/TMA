@@ -1,0 +1,15 @@
+Hi,
+I am new to LDA. When I try to run the python program to obtain topics. I
+got the follow errors:
+Traceback (most recent call last):
+File "topics.py", line 41, in <module>
+print_topics(beta_file, vocab_file, nwords)
+File "topics.py", line 26, in print_topics
+indices.sort(lambda x,y: -cmp(topic[x], topic[y]))
+File "topics.py", line 26, in <lambda>
+indices.sort(lambda x,y: -cmp(topic[x], topic[y]))
+IndexError: list index out of range
+Does anyone have idea why this happens?
+Thanks,
+Xiaomo,
+Best

@@ -1,0 +1,16 @@
+Hello List,
+currently i'm trying to compare LDA Results between different corpora.
+For my experiments i have 2 corpora with the same documents and
+contents. My hypothesis is that i can somehow find similar topics by
+comparing the most probable words in between topics of the 2 corpora.
+First try is the dice coefficent. I only choose words with probability >
+0.002 and calculate the coefficent. What i get here is that the dice
+between 2 similar topics reaches a maximum of 60% due to the fact the
+the word probability ranks between 2 runs of a gibbs sampler vary so much.
+Can anyone contribute some information or thougts about this effect. My
+sampler runs with 500 iterations in the moment. Would it be better to
+make a 1000 iterations? Why are the ranks and the word assignments vary
+that much?
+Are there papers about comparing LDA results or matching topics between
+corpora?
+Thank you

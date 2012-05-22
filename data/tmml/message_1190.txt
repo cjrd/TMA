@@ -1,0 +1,8 @@
+I was looking something exactly like that..but how do you formalize a
+learned convex mixture in the topic model setting..any idea?
+Thanks,
+Ayan Acharya
+(Graduate Student,
+Electrical and Computer Engineering,
+University of Texas at Austin, USA
+Webpage: http://www.ideal.ece.utexas.edu/~ayan/)

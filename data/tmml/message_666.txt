@@ -1,0 +1,28 @@
+Hi all,
+I'm relatively new to LDA and topic modeling, so this may seem like a more
+simple question, but I am interested in learning how to evaluate the number
+of topics to use in my model.  I know that there was a thread of emails a
+couple of weeks ago in which people were debating the best way to do this,
+but my goal with this thread is slightly different.  I am hoping that
+someone can explain how an evaluation method, such as the perplexity measure
+mentioend in Blei 03 (p. 1008) and Rosen-Zvi 04 (p.492), might actually be
+implemented in practice.
+Assuming that the perplexity measure is the way to go (which I understand is
+a subject of debate), I am still unclear about how I would actually go about
+computing this.  In Rosen-Zvi, they appear to separate their documents into
+a training set D(train) and a test set D(test), and then taking a portion of
+each test document d(test) and adding it to the training data.  They then
+say "Each model then made predictions on the other words in each test
+document."
+I am having trouble finding an explanation of how to apply a model created
+with training data to a new set of test data.  In terms of implementation
+details, I am utilizing Mark Steyvers' topic toolbox to run the LDA topic
+modeling in MATLAB (
+http://psiexp.ss.uci.edu/research/programs_data/toolbox.htm) and running
+GibbsSamplerLDA; I see from the notes that it is possible to "run the
+sampler from starting state ZIN, where ZIN(k) contains the topic assignment
+for token k, saved from a previous sample."  Does anyone have any experience
+with using this?  In addition, if someone can provide a clear, simple
+explanation of the math, that would be much appreciated as well.
+Thanks!
+Sanjay

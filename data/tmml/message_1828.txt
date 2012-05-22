@@ -1,0 +1,5 @@
+Dear All,
+I need LDA as a component of my system which is involved in iterative
+processes. Where can I find such code? It it exist? If I have to write that
+what do you can recommend me?
+Ilya

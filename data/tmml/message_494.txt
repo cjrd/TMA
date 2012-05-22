@@ -1,0 +1,7 @@
+Good morning.
+Dan Walker and I address some of these issues for a collapsed Gibbs sampler
+on the mixture of multinomials model for document clustering.
+See our KDD 2008 paper here:
+http://portal.acm.org/citation.cfm?id=1401975&dl=GUIDE&coll=GUIDE&CFID=64475
+237&CFTOKEN=39195965
+Regards,

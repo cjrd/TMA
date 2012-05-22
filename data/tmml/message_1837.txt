@@ -1,0 +1,13 @@
+Hi Yiliang,
+It's hard to tell from the error what the ultimate cause is, but it
+looks like the beta hyperparameter has been set to not-a-number, which
+makes the log likelihood calculation fail with the "NaN after..."
+error.
+As an immediate fix, you can turn off hyperparameter optimization,
+either with --optimize-interval 0 on the command line or by setting
+the variable optimizeInterval = 0 in the ParallelTopicModel class if
+you are using the java api.
+As for why the parameter is becoming unstable, it's hard to say
+without looking at the data. I don't have good intuitions for bags of
+image features.
+-David

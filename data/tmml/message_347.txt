@@ -1,0 +1,5 @@
+Hello.
+I was trying to compile Correlated Topic Model in Windows with Cygwin. I have installed make,gcc,gsl etc while I was installing the Cygwin. But I got some error messages when I  typed "make" to compile the original codes.
+30 errors in total.
+such as:
+inference.c 56: parse error before ">" token.

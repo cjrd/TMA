@@ -1,0 +1,8 @@
+Hi everyone,
+I am reading the paper "Parameter estimation for text analysis" by Heinrich and have some questions about CGS (collapsed Gibbs sampling).
+1. From the view point of Graphical models, is CGS equal to trimming those nodes that are integrated out and forming a new model on which all following derivation is based?
+My question comes from p(w_i) in equation (76) in the paper, which I thought should be? p(w_i) = p(w_i | z_(-i)). Why is w_i independent from z_(-i)?
+2. Are there any rules about what kind of variables should be integrated in Gibbs sampling?
+It seems that Dirichlet variables can be integrated out.
+Thanks a lot and best regards,
+Kevin

@@ -1,0 +1,27 @@
+              This project is an investigation of some of the fundamental processes behind
+              interannual and decadal variability in the coupled ocean-atmosphere system of
+              the tropical Pacific.  One focus of the proposed research is whether there are
+              energetic coupled modes in different frequency bands: "fast" - on the order of
+              1 year; "intermediate" - the ENSO mode; "slow" - a decadal mode, and whether,
+              together these modes and their nonlinear interactions can produce some of the
+              complex time dependence seen in the tropical Pacific.  Several approaches will
+              be used to study the problem.  First, the linear modes of a hierarchy of
+              different linearized coupled models will be determined.  The most complex of
+              these models is a coupled MOM3 multi-level ocean and a multi-level spectral
+              atmospheric model, linearized around a steady state.  The response of the
+              linearized models to high-frequency stochastic forcing will also be examined. 
+              The upper-ocean energy budgets of these models will be diagnosed in order to
+              understand the dynamics responsible for each mode.  A modified version of the
+              Cane-Zebiak intermediate model will be used to examine nonlinear interactions
+              between the different modes.  It is anticipated that the fast coupled mode and
+              the ENSO mode will interact primarily through the effects of zonal advection on
+              temperature while the ENSO and decadal mode will interact through ocean
+              thermocline displacement.  The effects of using more general stochastic wind
+              stress and heat flux forcing (using observed spatial EOFs with amplitudes that
+              are white noise processes) will also be examined.  The process modeling
+              approach will be augmented with analysis of decadal variability in climate
+              model output through a collaboration with Dr. Kimoto of Tokyo University
+              (CCSR).  This research is important because it has the potential to improve the
+              physical understanding of the observed behavior of coupled ocean-atmosphere
+              climate phenomena in the tropical Pacific and, hence, projections of climate
+              phenomena such as El Nino.

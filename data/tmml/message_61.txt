@@ -1,0 +1,5 @@
+i also like gelman et al., "bayesian data analysis."  variational
+inference isn't covered, but the treatment of probabilistic modeling
+is excellent.
+best,
+dave

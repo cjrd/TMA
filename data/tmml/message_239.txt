@@ -1,0 +1,6 @@
+Hi all,
+I just started to study the LDA model, and i downloaded the LDA C program.
+I got the *.gamma, *.beta, and *.other files from the estimation. From inference, i also got the new gamma and the likelihood for each document from the testing set.
+I know somebody else had already asked this kind of question, but i didn't understand the answer clearly. Can anybody help me please?
+What is exactly the role of "word_assignment.dat" file?
+Thanks a lot

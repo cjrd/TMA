@@ -1,0 +1,43 @@
+              This project involves the application of solid state magnetic resonance
+              techniques to address current questions related to competing ground states in
+              selected correlated electron systems. The approach is based on the examination
+              of several materials where antiferromagnetism competes with a paramagnetic
+              Fermi Liquid phase (and possibly superconductivity) or a Spin-Peierls phase.
+              The materials under study are from two families: heavy fermion and organic
+              superconductors.  They are characterized by very different microscopic physics.
+               The goal of the project is to identify common trends in the physical
+              properties of these materials, as well as to explore the physical properties of
+              novel phases.  Particular attention is paid to the vicinity of discontinuous
+              and continuous quantum phase transitions, where the qualitative and
+              quantitative effects resulting from varying the amount of disorder is examined.
+               Pressure is the predominate means used to tune the ground state of the systems
+              in question.  The project trains two graduate students in the course of
+              measurement design and execution.  A course in magnetic resonance for the
+              graduate level is planned for the 2002-2003 academic year. Smaller technical
+              projects, both specific to particular experiments and for general laboratory
+              improvements, are assigned to undergraduates.
+
+In a number of materials of
+              current interest, the electrons behave in a correlated manner.  The electrical
+              behavior, or state, of the material depends upon which interaction involving
+              the electrons dominates.  Some of the materials in this class have properties
+              related to these interactions that are technologically useful, i.e. no
+              electrical resistance at relatively high temperatures or a large response in
+              the electrical resistance to magnetic fields.  Typically, the state that is
+              stabilized is controlled by external parameters such as charge doping, high
+              pressure, high magnetic fields, and so on.  In this project, a combination of
+              experimental techniques, though primarily solid state magnetic resonance, are
+              used to gain an increased understanding of the competing states in correlated
+              electron systems.  The emphasis is on the physical properties of novel phases,
+              and the effects of disorder on these materials. The systems investigated fall
+              into two classes: organic superconductors and heavy fermion materials. Tuning
+              is achieved with pressure and magnetic field; disorder is introduced through
+              chemical substitution.  The goal is to use controlled disorder in the efforts
+              to classify transitions, and also to understand the qualitative, and sometimes
+              dramatic, changes in the physical properties induced by the disorder.  The
+              project trains two graduate students in the course of measurement design and
+              execution. A course in magnetic resonance for the graduate level is planned for
+              the 2002-2003 academic year. Smaller technical projects, both specific to
+              particular experiments and for general laboratory improvements, are assigned to
+              undergraduates.
+

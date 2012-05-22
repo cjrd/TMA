@@ -1,0 +1,33 @@
+              
+Baculoviruses are a group of viruses that infect insects.  The effect of these
+              viruses on insects, however, appears to vary with the chemical composition of
+              the host plant that the insect consumes.  For example, baculoviruses are less
+              able to kill tobacco budworm (Heliothis virescens) when the insect feeds on
+              cotton, than when it feeds on its other host plants such as tomato or lettuce.
+              
+
+In this study, the PIs seek to determine the chemical interactions that
+              cause some host plants to render their insect herbivores more resistant to
+              infection by baculoviruses.  Preliminary studies have suggested that the
+              generation of reactive oxygen species (ROS) is a major cause of such disease
+              inhibition, but it is unclear how this occurs or what steps in the pathway of
+              infection are being altered by these reactive products.  Generation of ROS
+              occurs as a consequence of normal cellular processes but can be altered by
+              ingestion of dietary chemicals.  High levels of ROS lead to a condition known
+              as oxidative stress which can damage cellular substances and has been
+              associated with aging and cancer development.  ROS can also destroy many
+              microorganisms and appear to interfere with the ability of baculoviruses to
+              kill their host insects.  This study will examine whether diet-related ROS
+              interfere with viral infection of insects by damaging the virus or by altering
+              insect immune responses. 
+
+These investigations should have broad
+              implications for understanding the chemical basis of complex interactions among
+              multiple trophic levels.  Additionally, results will contribute to a general
+              understanding of the effects of oxidative stress on disease processes and
+              disease ecology.  Finally, because baculoviruses are currently being used as an
+              environmentally-friendly alternative to chemical pesticides, these results may
+              help improve biological control practices in agriculture. 
+
+
+

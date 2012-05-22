@@ -1,0 +1,66 @@
+                  The investigator and his colleague study ways to break
+intractability of
+              algorithms for high-dimensional problems.  They
+focus on high-dimensional
+              integration, explore  breaking
+intractability either by settling for a
+              stochastic assurance of
+small error or by using additional domain knowledge,
+              and further
+develop FinDer, a software package for
+              high-dimensional
+integration.
+     The computational complexity of an
+              algorithm is a measure of
+the amount of work the algorithm must perform to
+              produce a
+solution for given inputs.  Usually the complexity is measured
+              in
+the size of the problem being solved.  For example, finding the
+solution
+              of a linear matrix equation in N unknowns --- an
+N-dimsional problem ---
+              generally takes on the order of N times N
+times N arithmetic operations; the
+              computational complexity of
+such an algorithm is N cubed.  There is huge
+              interest in solving
+high-dimensional problems.  Many applications involve
+              functions
+of hundreds, thousands, and even an infinite number of
+              variables.
+Examples occur in physics, chemistry, mathematical science,
+              and
+economics.  These problems must usually be solved numerically and
+one has
+              to settle for an approximate numerical solution to within
+an error epsilon. 
+              If a worst case deterministic assurance of an
+epsilon approximation is
+              desired, then the computational
+complexity usually depends exponentially on
+              the number of
+variables; the problem is said to be intractible. 
+              The
+investigators study breaking intractability either by settling
+for a
+              stochastic assurance of small error or by using additional
+domain knowledge. 
+              The use of formalizing additional domain
+knowledge is a powerful new idea.  In
+              particular, the
+investigators study under what conditions a double win
+              is
+achievable for the important problem of high-dimensional
+integration: when
+              does an algorithm to compute the value of a
+high-dimensional integral both
+              converge faster than a Monte Carlo
+algorithm and do so with a worst case
+              deterministic assurance?
+They apply the theoretical results to improve the
+              FinDer software
+system for computing high-dimensional integrals.  This
+              new
+paradigm is applied to other problems of computational
+mathematics.

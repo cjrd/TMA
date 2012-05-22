@@ -1,0 +1,16 @@
+hi dave
+the connection between the CRP and the DP is as follows.
+suppose
+G ~ DP(a G0)
+x_i ~ G, i = 1...n
+now consider the joint distribution p(x_1, x_2, ..., x_n | a, G0).
+notice, we have marginalized out G, the distribution drawn from a DP.
+the joint distribution of the x's will exhibit a partition structure
+whereby sets of x's take on precisely the same value.  the unique
+values in the x's are independent draws from G0.  the distribution of
+the partition structure is given by the CRP.
+i hope this helps.  for a readable introduction to this circle of
+ideas, i recommend the early chapters of erik sudderth's phd
+dissertation.
+all the best
+dave

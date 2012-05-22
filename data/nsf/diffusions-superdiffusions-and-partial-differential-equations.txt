@@ -1,0 +1,15 @@
+              	A close relationship between linear elliptic and parabolic partial differential
+              equations and Markov diffusion processes played an important role in the
+              development of both fields during the last century. A new chapter in this
+              direction -- an interplay between a class of semilinear equations and
+              superdiffusions -- has evolved over the past 15 or so years. The theory has
+              reached a certain stage of maturity. However some key problems remain open (for
+              instance, the uniqueness of the solution with a given fine trace and the
+              structure of exit boundaries of superdiffusions). The work on these problems is
+              the subject of the proposal. 
+	Superdiffusions is a special class of branching
+              measure-valued processes also known as superprocesses. Outside of pure
+              mathematics, they play a significant role in population genetics and they
+              provide new tools for the study of complex physical systems with infinitely
+              many degrees of freedom. For about two decades these processes have attracted
+              the efforts of many investigators around the world.

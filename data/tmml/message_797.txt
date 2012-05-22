@@ -1,0 +1,7 @@
+Hello,
+This is more of a rhetorical question. I guess I am looking for
+confirmation from the members of this group.
+A good way to figure out whether the LDA model is "good" for a corpus is
+to compare the unigram representation of the document with the ML
+representation, obtained by the LDA model. Am I right?
+Shivani

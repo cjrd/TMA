@@ -1,0 +1,43 @@
+Dear Topic Modelers,
+I have tried out the "instantaneous mutual information" (IMI) which is
+given by David Mimno and David Blei in "Bayesian Checking for Topic
+Models", but run into a problem. I hope that you can help me.
+The IMI of a single word w which is assigned to a topic k regarding the
+set of documents D is defined as follows:
+IMI(w,D|k) = H(D|k) - H(D|W=w,k)
+I have calculated these two entropies using the following formulas:
+H(D|k) = - sum_(d in D) P(d|t) * log_2 P(d|t) = - sum_(d in D)
+(N_dk/N_k) * log_2(N_dk/N_k)
+H(D|W=w,k) = - sum_(d in D) P(d|w,t) * log_2 P(d|w,t) = - sum_(d in D)
+(N_dwk/N_wk) * log_2(N_dwk/N_wk)
+sum_(d in D) means the sum over all single documents d in the set of
+documents D
+N_k is the count how many words in the corpus have been assigned to the
+topic k
+N_dk is the count how many words in the document d have been assigned to
+the topic k
+N_wk is the number of times the word w has been assigned to the topic k
+inside the whole corpus
+N_dwk is the number of times the word w has been assigned to the topic k
+inside the document d
+My problem is, that for some examples the IMI is negative, because
+H(D|W=w,k) > H(D|k). But that shouldn't be possible, because the
+conditional entropy H(D|W=w,k) should fulfill the following property:
+0 <= H(D|W=w,k) <= H(D|k)
+I have a little example in which the IMI gets negativ:
+Our topic k has two words A and B which are assigned to this topic. We
+have two documents d1={A, A, A, B} and d2={A, B}. We can imagine that
+these two documents have much more words which are assigned to other
+topics than the topic k, but this is not interessting for the following
+calculation:
+N_k = 6
+N_dk -->  N_1k = 4, N_2k = 2
+N_wk -->  N_Ak = 4, N_Bk = 2
+N_dwk --> N_1Ak = 3, N_1Bk = 1, N_2Ak = 1, N_2Bk = 1
+H(D|k) = - ((4/6 * log_2 4/6) + (2/6 * log_2 2/6)) = 0.6365141682948128
+H(D|W=B,k) = -((1/2 * log 1/2) + (1/2 * log 1/2)) = 0.6931471805599453 >
+H(D|k)
+For this example the IMI of word B would be negativ and H(D|W=B,k) >
+H(D|k). Where did I made a mistake or what have I missunderstood?
+All the best
+Michael R?der

@@ -1,0 +1,12 @@
+Alexandre,
+Similar to the paper I cite below, thus far I am seeing a peak at 40 and
+am extremely curious as to the cause and conversely, what would make the
+number shift.
+David Blei and Daiv Mimno pointed me to
+http://www.cs.princeton.edu/~blei/papers/MimnoBlei2011.pdf
+<http://www.cs.princeton.edu/%7Eblei/papers/MimnoBlei2011.pdf> which
+cites posterior predictive checks for evaluating models which sheds some
+light on this issue . . . but only indirectly.
+I am still searching for additional papers and doing some prototyping to
+see if I can get a better handle on it.
+Christopher

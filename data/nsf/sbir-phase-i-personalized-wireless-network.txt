@@ -1,0 +1,26 @@
+              This Small Business Innovation Research (SBIR) Phase I project will research
+              high bandwidth individualized wireless network (IWN) which is personalized to
+              maximize flexibility and capability for individual users and minimize
+              interference, crosstalk and extraneous information. A wireless network will be
+              established which uses a standard protocol like IEEE 802.11b wireless Ethernet
+              standard or the Bluetooth standard. Talking Lights optical selection technology
+              will allow users to select among transmitted signals, personalize the
+              transmission for individual users, provide CART captions and permit assisted
+              conversations.
+The system will be developed in connection with experts on
+              education of deaf and hard of hearing students and will be evaluated and tested
+              in schools specializing in education of the handicapped to maximize user
+              friendliness and value. 
+
+Anticipated Results and Commercial Applications: As
+              a result of this project, a new technology for communication of information
+              will be developed which enhances the capability of wireless networks. A single
+              network will be able to carry a broad variety of information. Modified IWN
+              ballast transformers will be commercial products sold to replace current
+              ballast transformers and allow fluorescent lights to perform dual use as
+              locators. IWN optical will be commercial products sold to users. The software
+              used to enable optical control of the wireless network will be a commercial
+              product. Once installed, the modulated light sys-tem can also be used for
+              assistance to hearing impaired and visually impaired users, assisted audio,
+              direction finding, description of exhibits and many other applications
+

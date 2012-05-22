@@ -1,0 +1,12 @@
+Hello,
+"Model" is the directory of a model you trained using lda est, while
+"name" is the name of the files to be created (likelihood file and
+gamma file).
+You have to create the vocabulary file on your own when creating the
+feature matrix.
+1000 beta files?
+There's one beta file, but there are many words and many topics, so
+it's usually huge.
+Best regards,
+Matteo Dimai
+2007/8/16, Andra Isan <andra_isan at yahoo.com>:

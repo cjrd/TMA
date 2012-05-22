@@ -1,0 +1,10 @@
+Hello Kevin and List,
+I work on a MATLAB version of LDA and had the same problem when computing
+the log likelihood. You didn't mention how do you compute it, but, from my
+experience, working in the log space didn't prevent the numarical
+instability and the NaN problem remained . The solution that worked
+(provided thankfully to us by David Blei) was to use the approximation of
+log(a+b) from log(a) and log(b) instead of computing the exact log of sums.
+I hope this information is relevant and useful.
+Best,
+Loulou

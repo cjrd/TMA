@@ -1,0 +1,11 @@
+Eric, Thanks for the reply.
+Are the following two publications the ones you were referrring to
+Latent Dirichlet Co-Clustering (M. Mahdi Sha?ei and Evangelos E. Milios)
+Structured Topic Models for Language (Hanna M. Wallach)
+Moreover, in the Blei's 2003 paper (Latent Dirichlet Allocation), they used
+the posterior Dirichlet parameters (\gamma^*(w)) as the feature. This \gamma
+is variational parameter. I am very interesting to know their choice of
+\gamma rather than \theta. It seems to me that the estimated \theta(the
+probability proportions) have a more clear physical meanings.
+Thanks,
+Huaiyang

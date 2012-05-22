@@ -1,0 +1,19 @@
+Hi,
+In many applications of LDA, it's necessary to compute some kind of
+divergence between probability distributions (e.g. per-document topic
+mixtures). Most people seem to either use symmetrized KL or Hellinger
+distance, but there doesn't seem to be any discussion as to why these
+are appropriate or preferred over other metrics (or even over each
+other). What about Jensen-Shannon divergence, or some other f-
+divergence, or whatever else? Even something like a L_0 distance ("how
+many topics were used in only one of the two documents") seems like it
+could be motivated.
+Hellinger distance seems to have the benefit of being a true metric,
+unlike some of the others, but how do you interpret its definition? Is
+there an information-theoretic interpretation of what it's measuring?
+Why is it a good metric for probability distributions?
+Any thoughts people have on this would be appreciated. I assume this
+is talked about somewhere, and I just haven't been able to find the
+relevant references.
+Thanks,
+Neal

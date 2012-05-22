@@ -1,0 +1,9 @@
+Greetings List,
+I would like to use LDA to discover topics from among the collection of
+documents from time to time.
+With that said, I am new to whole lot of things including Models,
+Algorithms, Java (if talking about advanced levels).
+For persons with such requirements and novice background, is there a pointer
+to the document(s) using which such implementation can be achieved.
+Regards
+ydnrao

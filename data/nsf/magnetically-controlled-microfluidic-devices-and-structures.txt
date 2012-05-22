@@ -1,0 +1,26 @@
+              The goal of this Engineering Microsystems: "XYZ" on a Chip project is to
+              investigate magnetic colloidal particles and their use in several micro-fluid
+              mechanics applications.  The need to miniaturize and perform parallel chemical
+              and biochemical processes for efficient drug screening, chemical detection, and
+              combinatorial chemistry motivates interest in chemical processes on a
+              microscopic scale.  Most of the current state of the art relies on
+              pressure-driven and electrokinetic processes to transport analytes and products
+              around device.  In this work another control parameter, a magnetic field, is
+              added to the system.  The self-assembly of magnetic colloidal particles into
+              chains is the key process.  When tethered to surfaces in microscopic fluid flow
+              and suspended analytes.  The microscopic flow system, chemically patterning the
+              surfaces, and linking the magnetic chains to surfaces will be designed, and
+              then studying the resulting fluid mechanics and magnetic chain dynamics will be
+              investigated.  The fundamental issues to be addressed include: the dynamics and
+              mechanical properties of tethered and untethered chains of magnetic colloidal
+              particles; the microscopic fluid mechanics; the filtering and sieving
+              capabilities of magnetic bead arrays; and the micro-scale mixing performance of
+              actuated micromagnetic stirrers.  Examples are presented for separation
+              processes involving sieving or filtration of cells or particles, and the
+              converse issue of effective mixing in a microreactor.
+
+This project will be
+              conducted in collaboration with the Stanford Nanofabrication Facility, a part
+              of the NSF National Nanofabrication Users Network.
+
+

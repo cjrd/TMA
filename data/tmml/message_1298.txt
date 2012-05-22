@@ -1,0 +1,5 @@
+Dears,
+I want to know why gibbs sampling are no longer possible for CTM?
+Thanks
+Regards!
+charlie

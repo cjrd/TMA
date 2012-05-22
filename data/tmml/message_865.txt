@@ -1,0 +1,4 @@
+Hi Dave,
+I'm really sympathetic to the idea of incorporating term-weighting into LDA,
+but one thing that bugged me about this paper is that they don't explain
+what happens to the underlying generative model when they make the change

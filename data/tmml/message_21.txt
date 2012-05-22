@@ -1,0 +1,18 @@
+Dear list members,
+for a community matching task ("supply" against "interest"), I'd like to
+have some test data. Unfortunately I couldn't seem to locate any data
+set. The corpus should include:
+- textual or other features document content (ok, this is simple)
+- who wrote it (still available, NIPS, CiteSeer etc.)
+- who searched it, recommended it and/or was otherwise interested in
+it. (This seems to be the hard part).
+As an addition, it would be interesting to have an internal structure of
+the people (social network) and documents (document citation graph or
+hyperlink structure). A peer-to-peer community corpus with content
+features would certainly help. Text would be preferred, but if it's some
+other content features (Gaussian mixtures etc.), it would be nice, too.
+Has anybody an idea where to get such a corpus -- or by merging
+different sets -- synthesise one?
+'d be great.
+Best,
+gregor

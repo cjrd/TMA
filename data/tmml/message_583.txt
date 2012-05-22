@@ -1,0 +1,5 @@
+Hi Pawan,
+There's a SIGIR paper from 2006 on topic models for information retrieval
+by Xing Wei and Bruce Croft:
+http://ciir.cs.umass.edu/pubfiles/ir-464.pdf
+-David

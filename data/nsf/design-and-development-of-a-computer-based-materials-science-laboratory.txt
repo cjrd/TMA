@@ -1,0 +1,37 @@
+              
+The objective of this proof-of-concept project is to develop a software
+              virtual laboratory tool that is based on emerging learning theories and
+              effective pedagogy. The tool may be of use by engineering students in
+              engineering disciplines to enhance their understanding of engineering concepts,
+              analysis methods, and problem solving procedures that are used in material
+              science and engineering courses and laboratories. All of the normal laboratory
+              operations and functions such as following procedures, using equipment,
+              following safety rules, making measurements, and performing analysis of data
+              are performed in a virtual laboratory environment. The software development
+              approach is focused on the NSF theme of integrating technology into education
+              using existing software technology, digital video and still photography
+              techniques, simulation, and a logical and structured approach to the
+              presentation of materials laboratory tasks and objectives. A decision tree
+              approach is incorporated at various levels of the virtual experiments to allow
+              the user to make decisions (correct or incorrect), observe the results of the
+              decision, and perform the experiment in an iterative process. 
+
+The software
+              tool to serves as a virtual experience that may be used in conjunction with a
+              lecture course that does not have a laboratory element, or as a preparation
+              tool for an existing laboratory course. The main objective of the virtual
+              experience is to facilitate a self-paced discovery environment in which the
+              user can verify physical concepts and learn laboratory procedures through both
+              correct and incorrect decisions and answers. From previous work the
+              investigators have developed one virtual experiment on metallography techniques
+              that requires a memory space of approximately 200 Megabytes. In this project,
+              four additional virtual experiments will be developed based on important
+              concepts in materials science and engineering. (The storage requirements for
+              these experiments should also be about 200 Megabytes each.) The software tool
+              will be evaluated for its effectiveness in meeting learning objectives for a
+              diverse group of students including women and members of underrepresented
+              groups at Texas Tech University, Tuskegee University, and Drexel University. 
+              The software is to be disseminated in national and international markets, as an
+              educational supplement accompanying a materials science textbook through
+              McGraw-Hill publishing company.
+

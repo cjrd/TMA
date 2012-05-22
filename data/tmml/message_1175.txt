@@ -1,0 +1,37 @@
+The question of how long to run the slice sampler is really a question of
+whether it helps to update certain coordinates in a Gibbs sampler more often
+than others (the answer is yes, it can). Concretely you start with the
+target distribution p(a, b | y). Because p(a|b, y) (say) is difficult to
+sample from, you augment with a variable u so that p(a|u, b, y) and p(u|a,
+b, y) are easier to sample and \int p(a, b, u|y)du = p(a, b|y). So your new
+Gibbs sampler proceeds as
+1. u(t+1)\sim p(u|a(t), b(t), y)
+2. a(t+1)\sim p(a|u(t+1), b(t), y)
+3. b(t+1)\sim p(b|a(t+1), u(t+1), y) = p(b|a(t+1), y) (by design)
+(repeat)
+In the event that the slice is difficult to calculate (eg multimodality),
+Neal's paper proposes a number of ways to randomly pick an interval that
+leaves the target distribution invariant. Here, where we have a multi-stage
+Gibbs sampler, I believe his argument for the correctness of these methods
+extends immediately by considering the composition of the transition
+kernels. As such this doesn't necessarily imply that you must repeat steps 1
+and 2 more often than once. But if you can't compute the interval exactly,
+the autocorrelation in a(t) is more likely to be high.
+Now, in general, if one coordinate in your Gibbs sampler exhibits higher
+autocorrelation than the others it makes sense to update it more often. That
+is, it makes sense to update a more frequently - by updating (a, u)| b, y
+jointly (via the slice sampler, repeating steps 1,2) more often.
+This isn't quite right, I think. What you seem to be saying is that by
+running more iterations of the slice sampler you get draws of a which have a
+distribution closer to p(a|b(t), y) (which is true). However, this doesn't
+necessarily mean that your MCMC will perform better in any sense - don't
+forget that you've conditioned on b(t)! There is some discussion of the
+issue in Robert & Casella's book in the section on hybrid MCMC.
+So to recap, using one or multiple updates are both theoretically valid. The
+ideal number is difficult to determine a priori as it will depend at least
+to a degree on the particular dataset. Here, where you have a handful of
+hyperparameters to update, my inclination would be to use more iterations of
+the slice sampler (repeat steps 1, 2 more often) since these are probably
+relatively cheap.
+Best,
+Jared

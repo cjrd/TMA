@@ -1,0 +1,38 @@
+Hi Liu Qi,
+The transition operator T is closely related to Gibbs sampling. You might
+want to review sampling-based inference -- the Griffiths and Steyvers
+paper is a good place to start.
+The topic indicator variables z are not known, but if you have values for
+them, the Gibbs sampling update equation tells you how to resample each z
+given the values of the other z's. The transition operator T just means
+going through all the z's from beginning to end. It turns out that the
+reverse operator \tilde{T} just amounts to doing the same thing, but from
+the end to the beginning.
+That tells you how to move from one set of z's to another, but where do
+you start? The amazing (to me, at least) thing about Gibbs sampling is
+that you can start with random values, and they will eventually converge
+to samples from a posterior distribution defined by T.
+The gamma function is basically a factorial, so computing it and then
+taking a log will overflow very quickly. The trick is to calculate log
+gamma(x) directly. There are many methods for calculating quick, accurate
+approximations to this function. Here's the one I've found works best, as
+implemented in MALLET:
+/** Use a fifth order Stirling's approximation.
+*      @param z Note that Stirling's approximation is
+*      increasingly unstable as <code>z</code> approaches 0. If
+*      <code>z</code> is less than 2, we shift it up,
+*      calculate the approximation, and then shift the answer
+*      back down.
+*/
+public static double logGammaStirling(double z) {
+int shift = 0;
+while (z < 2) {
+z++;
+shift++;
+double result = HALF_LOG_TWO_PI + (z - 0.5) * Math.log(z) - z +
+1/(12 * z) - 1 / (360 * z * z * z) + 1 / (1260 * z * z * z * z * z);
+while (shift > 0) {
+shift--;
+z--;
+result -= Math.log(z);
+return result;

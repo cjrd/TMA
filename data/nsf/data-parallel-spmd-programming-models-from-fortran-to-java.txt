@@ -1,0 +1,41 @@
+              This project brings together several important research areas,
+              including
+parallel compilers, Single-Program Multiple-Data (SPMD) libraries,
+              and
+object-oriented programming models.  The project combines these ideas
+              to
+achieve high performance on parallel machines in a robust fashion over
+              a
+range of languages.
+
+Building on earlier research in the Parallel Compiler
+              Runtime Consortium
+(PCRC) project, this project will investigate a language
+              model that
+combines data-parallel features from High Performance Fortran (HPF)
+              with an
+explicitly parallel SPMD programming style.  This "HPspmd" model
+              allows
+direct calls to many established libraries for parallel programming
+              with
+distributed data. By relaxing HPF's single-threaded semantics and
+              having
+the programmer explicitly manage non-local references, the task of
+              the
+compiler is hugely simplified. However, good library bindings (e.g.
+              class
+libraries) supply the required expressiveness for programming. 
+              This
+project will develop and optimize a Java version of the language
+              model
+(HPJava); design and implement bindings to parallel libraries such
+              as
+CHAOS, DAGH, Global Arrays, MPI,and ScaLAPACK; and implement
+              large
+applications within the resulting framework.  The implementations
+              are
+expected to drive further refinement of the language model, especially
+              in
+support of irregular problems.
+
+ 

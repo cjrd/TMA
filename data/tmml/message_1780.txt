@@ -1,0 +1,7 @@
+The goal is to predict tracks that the user has not rated to but is likely to like. So, it seems URP is the right choice.
+I am looking at gibbs sampling right now. Once I implement the algorithm, I would analyse the results for different K (no. of latent topics) and compare the results.
+I will look into Marlin's thesis for further details.
+Could you please explain what you mean by "recall of recommendations"? I will take a look at Probabilistic matrix factorisation as well (don't know right now what it is about).
+Thanks for your time and willingness to share the code. It would be of great help to me.
+Thanks again
+Rahul

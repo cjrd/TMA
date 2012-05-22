@@ -1,0 +1,4 @@
+Yes, sorry, by "appropriately choosing hyperparameters" I was thinking
+more of optimizing them, not manually providing values by hand. I
+should have been more clear in the original email.
+- Neal

@@ -1,0 +1,29 @@
+              Chemistry (12)
+
+We are developing a complete Linked and Layered Resource for
+              Collaborative, Technology-Based Learning in Physical Chemistry. The resource,
+              Quantum States of Atoms and Molecules, is grounded in progressive pedagogical
+              methods, uses appropriate computer technology, and makes firm connections
+              between fundamental principles, physical reality, physical models, and
+              mathematical descriptions of reality and the models. The resource would be
+              unconventional in both form and structure. It is designed to engage students in
+              the process of learning and help them develop skills in information processing,
+              critical thinking and problem solving. It also takes advantage of existing
+              knowledge on how adults and young adults learn. The product would consist of
+              two parts: an inexpensive soft-cover text and a comprehensive multimedia CD.
+              The text would present the core concepts linked to spectroscopy in an easy to
+              understand prose style. The entire text would be on the CD with active
+              hyperlinks to web and computer-based activities that engage students in active
+              learning. Some hyperlinks would point to animations and simulations to provide
+              dramatic visualization of concepts, chemical processes, and molecular-level
+              phenomena. Other links would connect to concept and math supplements to provide
+              greater depth, detailed derivations, and review relevant math concepts within a
+              chemistry context. Such linking should make it easy for students to review
+              material on a need to know basis as they advance through the text without
+              having pages and sections that interrupt the narrative. A final set of links
+              would point to Mathcad symbolic math templates that will be used in both a
+              guided-discovery mode and as a resource for students in building their own
+              Mathcad documents for assigned problems and activities. An instructor's manual
+              and sets of numerical solutions to exercises and problems are also being
+              created for the project.
+

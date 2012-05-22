@@ -1,0 +1,5 @@
+Quoting Matt Hoffman <mdhoffma at cs.princeton.edu>:
+Thanks! I'm guessing all of this magic works out of the box on Debian
+Linux and Debian descendants like Ubuntu (anything that uses "apt-get"
+and has ".deb" packages). I run openSUSE, which is RPM-based. ATLAS is
+in the repositories but I don't know about integration.

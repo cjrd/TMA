@@ -1,0 +1,12 @@
+Hello everyone,
+since there have been several posts now about CTM not converging and getting
+stuck in an infinite loop, I thought I should post a little workaround that
+worked fine for me, meaning that I received reasonable results.
+In the file inference.c and the function opt_lambda(...), there is this
+do/while loop which is causing the problem. I noticed the commented line at
+the end of the loop, specifying a different termination criterion. When I
+use this instead of the original one, CTM doesn't get stuck anymore. I also
+told David about this and he said that it isn't the best solution but should
+work nevertheless and not influence the results.
+I hope this helps a little,
+Thomas

@@ -1,0 +1,18 @@
+Hi all,
+I have been looking at Blei & Lafferty's "Turbo Topics" paper (and
+released code - hooray!), but I am a bit stuck on the derivation of the
+likelihood ratio Eqn 4.
+In the text preceding Eqn 4, it is said that the newly proposed model
+(model "uv" as a bigram) has:
+-a new bigram parameter \pi_{v|u}^{new}
+-a different unigram parameter \pi_v^{new}
+-"all other parameters are identical in both models".
+But...if we model v with a new unigram parameter \pi_v^{new}, isn't
+normalization going to redistribute unigram probability to the other v
+\neq v' (thereby changing \pi_{v'})?
+However in the eqn (and the code), it looks like \pi_{v'} is *not*
+updated (except in the context immediately following u where it is
+scaled by an updated \gamma_u^{new} which makes sense).  Am I missing a
+cancellation somewhere or something?
+Thanks,
+Dave

@@ -1,0 +1,4 @@
+I think you can use plain LDA on n-grams to achieve the same goal. I have
+never used n-gram LDA myself, so cannot comment on # topics, stop word
+removal, efficiency, etc.  But you may want to give it a try.
+Shibamouli

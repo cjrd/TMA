@@ -1,0 +1,19 @@
+              This Small Business Innovation Research (SBIR) Phase I project, Efficient
+              Software Implementation of NPP Communications Processor, tests and analyses a
+              prototype of a software implementation of a New Peer-to-Peer (NPP) asynchronous
+              communication processor, which performs communications coordination in parallel
+              with computations.
+
+Three areas of commercial applications for NPP are;
+              Massively parallel High Performance Cluster Computing for real-time and
+              non-real-time computations, Self-scheduling Parallel Programming with data
+              distribution based on data availability, and Network-Oriented applications in
+              finance, health, education, business and manufacturing. Efficient software
+              implementation of NPP communications processor can dramatically decrease
+              asynchronous communication latencies by several orders of magnitude, provide
+              tools to dynamically debug and schedule portable parallel software systems, and
+              provide infrastructure to produce robust software systems that can evolve
+              dynamically. The size of this market opportunity is at least 1.2 trillion
+              dollars over the next 10 years. NPP communications processor deployed through
+              an API will dramatically impact this market.
+

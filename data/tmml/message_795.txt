@@ -1,0 +1,9 @@
+hi dave
+i think that this is a promising idea.  i'm not sure if these
+techniques have been used in a topic model.
+there are annealing methods used in MCMC sampling.  for example, see
+the discussion of "tempering" in robert and casella's book "monte
+carlo statistical methods."  (they reference others, like radford
+neal, who discusses annealing in his big MCMC tech report.)
+best
+dave

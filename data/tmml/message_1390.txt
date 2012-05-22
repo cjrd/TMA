@@ -1,0 +1,11 @@
+hi ian
+that figure (at 5:36) was made with the correlated topic model, which
+is described in the paper sean pointed you to.  the correlation refers
+to correlation between topic weights within documents.  for example,
+an article partly about "sports" is more likely to also be about
+"health" than "astronomy."
+for a cheap way of obtaining these kinds of connections, you can try
+to compute the correlation matrix of E[\theta_d], the expected topic
+proportions for each document.  (i'd take logs first.)
+best
+dave

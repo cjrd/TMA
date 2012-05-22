@@ -1,0 +1,38 @@
+              0208592
+Mickus
+
+The architecture of continental margins in terms of how they
+              are created is not well understood because most of the previous work has been
+              on successfully rifted margins after rifting is complete.  Both continental
+              (fault dominated) end-members and oceanic (magma dominated) rift end-members
+              are well studied, but the transitional stage is not understood.  This project
+              will document this critical transition from continental to oceanic rifting. 
+              The PIs will carry out seismic experiments, integrated with geochemical,
+              gravity and structural studies, to study lithospheric structure in one of the
+              rare areas where the transition from continental rifting to incipient spreading
+              is captured - the main Ethiopian Rift (MER).  In the MER the along-axis
+              transition to initial seafloor spreading provides a spatial proxy for temporal
+              variability.  Specific objectives are: 1) to determine detailed crust and
+              mantle structure across and along a transitional rift segment and 2) to
+              understand magmagenesis beneath and within the rift.  The PIs will obtain
+              crustal P-and S-velocity cross-sections that can be interpreted for lithology
+              across the Ethiopian rift at 10 deg. N where active magmatic centers first
+              appear, and along-strike to the north to study the transition into fully
+              magmatic rifting.  They will interpret existing and new gravity data in light
+              of their new seismic data, and use geochemical data to constrain the physical
+              state of the upper mantle and magmatic inputs to the crust.
+
+The project (US
+              - EAGLE) is fully integrated with the already funded UK - EAGLE initiative. 
+              Scientists at Leicester, Leeds and London, have been awarded UK funds to carry
+              out a single refraction profile across the Ethiopian rift in January 2003,
+              coupled with local seismicity studies and teleseismic recording.  The US -
+              EAGLE PIs will shoot and record a complementary orthogonal along-axis
+              wide-angle profile; and will shoot fan shots into these linear arrays and the
+              local seismic network to provide a measure of 3D coverage.  Together, these
+              seismological experiments form a nested, multi-scale seismic image of the
+              Ethiopian rift and plume.  The seismic studies will be coupled with geochemical
+              and petrological and gravity studies (US), and structural, thermochronological,
+              magnetotelluric and additional gravity studies (UK).
+***
+

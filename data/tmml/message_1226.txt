@@ -1,0 +1,11 @@
+Alta --
+See Alex Smola's Blog:
+the Mozilla Public License. It?s seriously fast and scales very well to
+1000 machines or more (don?t worry, it runs on a single machine, too). We
+believe that at present this is the fastest implementation you can find, in
+particular if you want to have a) 1000s of topics, b) a large dictionary,
+c) a large number of documents, and d) Gibbs sampling. It handles quite
+comfortably a billion documents. Shravan Narayanamurthy deserves all the
+credit for the code. The paper describing an earlier version of the system
+appeared in VLDB 2010<http://www.vldb.org/pvldb/vldb2010/pvldb_vol3/R63.pdf>.
+Dave

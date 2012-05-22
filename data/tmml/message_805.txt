@@ -1,0 +1,21 @@
+Hi list,
+I apologize for submitting the same problem again, because I think there
+might be something ambiguous in my last mail.
+I used HLDA-C code on Prof. Blei's page and the "nips02" folder in the NIPS
+corpus from http://www.cs.toronto.edu/~roweis/data.html to check whether I
+used the implementation correctly. (Thank ilias and Joe for informing me
+that.)
+In the appendix, "nips4c" is the input file for hlda-c, and "nips_vocab" is
+the vocabulary. "run000" is the result of "settings0".
+Now there are some strange experimental results, does anybody here encounter
+the similar problem? Or can anybody point out where is wrong?
+1. If using MH_update function to update the hyper-parameter between
+iterations, eta would  change to {0.3, 1.3, 1.4, 1.4}, GEM_MEAN would change
+to 0.3, and GEM_SCALING would change to 15 (which was set 100 initially), no
+matter which value they were set initially.
+2. Most of the words were assigned to the root-level, and few words
+(sometimes no words) were assigned to the leaf-levels.
+PS: I think scaling_shape*scaling_scale substituted for gamma. Is that
+correct?
+Best wishes
+dongyuan

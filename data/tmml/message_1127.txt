@@ -1,0 +1,30 @@
+Dear All,
+I would like to explore how and what is being discussed changes over time in
+a large corpus.  To be concrete, imagine I have a large corpus for every
+year from 1950-2000.  I would like to address the following two questions if
+possible
+1.  is the 'dimentionality' of the corpus changing over time?  That is,
+controlling for corpus size, can I ascertain if there are more topics in,
+say 1980 than in 1960?
+2. How does the content of the corpus change overtime? (ie, do topics change
+over time?)
+I read with great interest the Blei and Lafferty Dynamic TOpic models paper,
+which addresses question (2) exactly, and I have read the Teh, et al HDP
+paper, which seems most useful for estimating the number of topics in a
+variety of settings, but am wondering if it would be possible (or advisable)
+to combine the two approaches.  For example, in section 6.2 of the Teh et al
+paper, they experiment with  3-levels of DP to deal with multiple corpa.  If
+i treat each year as a separate corpa, I could use this strategy, but then I
+would be loosing the temporal aspect (ie i would break the 'link' across
+time of the Betas that the Blei and Lafferty paper address), I think.
+A simple approach might be to just perform an HDP for each year, and compare
+the posterior mode for number of topics?  But it seems that this would
+ignore an awful lot of information (or would it?).  Alternatively, I could
+estimate dynamic topics, but this would seem not to get at the
+'dimensionality' (ie scope) question.
+At any rate, if there is any advice/ pointers (or cautionary warnings!), I
+would be most greatful.
+Finally, this list rocks!  Thanks to all yous for the contributions and
+patience!
+With thanks,
+Scott Moser

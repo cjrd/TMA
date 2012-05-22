@@ -1,0 +1,31 @@
+              Many large, important scientific and commercial applications use very large data
+              sets that do not fit into available RAM. Such applications have to frequently
+              move portions of their data sets between main memory and secondary storage
+              (such as disks). Unfortunately, because disks are several orders of magnitude
+              slower than RAM, many large applications spend most of their running time on
+              disk I/Os, resulting in a significant performance degradation.
+
+A lot of
+              research has been carried out to address this problem. Generally, the previous
+              solutions include application-specific algorithms and libraries, compiler-based
+              techniques, and limited Operating System (OS) support. While these solutions
+              are effective, they also have some serious drawbacks. In this proposal, the PI
+              proposes careful OS and architecture co-designs of several novel methods that
+              can significantly improve the performance of large,
+              memory-intensive
+applications. The basic idea is to use hardware/software to
+              collect and analyze the runtime memory access patterns of applications. The
+              knowledge of these patterns is then used to guide prefetching and to improve
+              the page-replacement algorithms.
+
+Preliminary results from the proposed
+              systems show very promising improvements in performance. They can drastically
+              reduce the amount of
+page I/O traffic, and hide latencies of many page I/Os.
+              Simulation results based on NPB (NAS Parallel Benchmarks) benchmarks show that
+              pattern-guided prefetching and page-replacement can improve performance by up
+              to 100 times. The proposed methods are transparent to user applications. The
+              proposed studies, if successful, will have broad impacts on the field of high
+              performance computing.
+
+

@@ -1,0 +1,3 @@
+Hello, with respect to the problem that Prof. Blei noted on hLDA in that "each document lives on only one branch of the tree", does anyone know if someone's working on a similar model where documents are modeled as mixtures of paths or anything to that effect? Are there any obvious issues that would make such a model difficult to implement in terms of estimating the posterior distributions?
+Thanks.
+Will Darling

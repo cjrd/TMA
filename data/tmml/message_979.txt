@@ -1,0 +1,2 @@
+I have used Jonathan Chang's R package for LDA and successfully tried it on
+110,000 documents. On my modest desktop it took 30 mins to complete.

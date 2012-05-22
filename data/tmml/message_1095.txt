@@ -1,0 +1,1 @@
+Wouldn't normalization be desirable in real world text? My tokenizer can convert hahaha and hahah to haha, which is better for understanding laugh counts.

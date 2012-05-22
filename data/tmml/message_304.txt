@@ -1,0 +1,8 @@
+Dear list members,
+does anyone know work that uses variances in addition to the
+means/expectations of document-scope topic distributions in generative
+topic models ? All I could find into this direction are segment-scope
+topic distributions (Shafiei and Milios 2006) that can account for the
+variability of the topic across a document.
+Thanks for a hint
+gregor

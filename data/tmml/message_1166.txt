@@ -1,0 +1,25 @@
+Anthony,
+Sadly, topic maps are not particularly well suited to store results from
+topic models. In which setting do you intent to use LDA? Do you want to
+build topic maps from scratch or do you have a partially filled topic
+map, that you want to add to? Do you want to use it to connect entities
+(via their associated text) to topics? Or do you want to learn the
+relationship between topics (related or sub topic/ super topic)?
+Divergence between the word distributions,
+i.e. KL( p(word |topic 1) ||  p(word | topic 2) )
+You may also look into the correlated topic model [1] which explicitly
+looks out for correlations between topics.
+For super/sub topics you need a different model, for instance pachinko
+allocation [2].
+In any case you will always get a probability or score on the
+relatedness of your topics, where you need a yes/no decision for Topic
+Maps.
+It is also a bit tricky to derive an expressive but unique label for a
+topic.
+[1] Blei, D. M. and J. D. Lafferty (2005). Correlated topic models. In
+/In Advances in Neural Information Processing Systems 12 (NIPS) 18/.
+[2] Mimno, D., W. Li, and A. McCallum (2007). Mixtures of hierarchical
+topics with pachinko allocation. In /Proceedings of the 24th
+international conference on Machine learning/.
+Cheers,
+Laura

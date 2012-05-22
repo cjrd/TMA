@@ -1,0 +1,4 @@
+In the LDA paper, does anyone know why the updating rule of phi in (7) and
+(16)
+is different from the one in figure 6.
+Yuanlong Shao

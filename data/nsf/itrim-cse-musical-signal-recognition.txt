@@ -1,0 +1,17 @@
+              The World Wide Web contains a vast and ever-growing collection of music audio
+              files representing nearly every musical style, ensemble, genre, country,
+              culture, and time period.   However, with the exception of the information
+              conveyed in the title, the contents of such audio files can only be understood
+              by listening to the files.  Thus searches of audio files analogous to those
+              performed by text-based search engines are currently impossible.   In this
+              project the PI will study and implement solutions to the "Signal to Score"
+              problem in which an audio file is transcribed into a format capturing
+              information similar to that contained in a printed musical score.   The PI's
+              approach splits the task into two components: "Signal to Piano Roll" in which
+              the musical signal is transcribed into a MIDI-like representation, and
+              "Rhythmic Parsing" in which the piano roll representation is further
+              transcribed into a musical score or equivalent representation.  The goal is to
+              allow the generation of searchable data bases that contain high level music
+              descriptions, which could be used to algorithmically answer questions on
+              musical content such as "Is the audio file likely to be a blues song?" or "What
+              is the time signature of the music?"

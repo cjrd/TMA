@@ -1,0 +1,43 @@
+Hi Nasir,
+I am fairly new to using LDA myself, but hopefully I can provide some pointers.
+1) I used a perplexity measure to decide the hyper-parameters. This is
+described in a few of the LDA papers, but I still found it somewhat
+difficult to figure out. There are other methods occasionally
+discussed on the list, but I can't really say much regarding those.
+Essentially, you run the model on a training set, holding out some
+portion as a test set. Then you are basically calculating how
+"surprised" the model is when looking at the test data. I was using
+Mark Steyvers' Topic Modeling Toolbox for MATLAB, so I had to modify
+the mex file that does the gibbs sampling to finally do the perplexity
+calculations.
+I'm not sure if attaching a file works, but the attached photo was my
+starting point for the calculations, based off of Rosen-Zvi '04. If I
+got anything wrong there, I apologize, but as I mentioned, I am still
+just working this stuff out for myself.
+If you plot the perplexity against the number of topics T, you will
+see the value start to converge as T gets larger. The goal seems to be
+to find the value of T that minimizes the perplexity while keeping T
+low (to minimize computational effort), so you are sort of looking for
+where the graph "breaks". Again, if I have any of this wrong, somebody
+please correct me!
+2) I don't think that there is an objective way to measure the quality
+of the topics. I think that some people had experimented with using
+raters on Mechanical Turk or something to assess how coherent the
+topics are, but I don't know of any papers where this is done.
+3) I used KL-Divergence, and that seemed to work well for me, but I
+don't know of comparisons. Some of this is reported in a paper that I
+will try to post on my website soon:
+http://www.sanjaykairam.com/blog/papers/
+Hope some of that is helpful and best of luck!
+-Sanjay
+======
+Hi All,
+I want to use LDA as base model for web 2.0 content analysis.
+I am searching for some objective method to decide the values for hyper
+parameters (i.e. alpha & beta) and deciding the number of topics for the
+collection.
+Second thing is, if there is a way to decide objectively about the quality
+of topics discovered by LDA?
+My third question is related to compute the distance between topics, which
+one is a good measure for this, JS divergence or KL divergence ? or some
+other measure ...

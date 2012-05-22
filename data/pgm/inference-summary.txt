@@ -1,0 +1,286 @@
+
+Over the course of the last unit that we
+have covered in the class we discussed the
+range of different inference methods, some
+exact, some approximate. Sometimes solving
+the problem with marginals, sometimes for
+computing MAP assignment's, and the
+question is if we're faced with a
+particular task that we have to deal with
+and we have graphed a model, which
+algorithm should we use? What are some of
+the choices and what guidance can we
+offer about which of these methods we
+want to use. The first question we should
+answer for ourselves is Which task is more
+suitable for our problem? Are we trying to
+solve a problem with computing a MAP
+assignment, or are we trying to solve a
+problem with computing marginals? And
+these offer sometimes non-obvious
+tradeoffs, in terms of what's right for
+our application. So, computing marginals
+by and large is a less fragile way to go,
+because we don't pick just a single
+hypothesis. We compute a probability
+distribution over a range of different
+options, and we can see for example, is
+our top option a little bit more likely
+than the second best or a lot more likely
+than the second best, and that gives us
+some guidance as to how robust our
+inferences are. That also gives us some
+amount of confidence that we can provide
+in our answers and maybe give to the user
+in guidance of how much to trust. The
+answer is produced by the system. And as
+we've also seen computing probabilities is
+important for supporting the decision
+making once we need to integrate the
+utility model. On the other hand MAP is
+suitable in its own set of contexts. For
+example if we're trying to compute a
+coherent joint assignment for example in
+the context of a speech recognition
+problem or image problem and sometimes
+more important that we get something that
+makes sense as a whole then we get the
+best possible answer to individual pieces
+of the inference problem of individual
+pixels and phones in the way that it
+doesn't makes sense in the larger problem.
+So the notion of coherence is sometimes
+Important and is worth the trade off of
+reducing the robustness. We've also seen
+that from computational prospective MAP
+has a range of model classes that are more
+tractable then in the case of computing
+marginals so for computational reasons we
+might sometimes adopt the use of a MAP
+solution just for improved efficiency.
+We've also seen that especially when using
+approximate inference the MAP
+assignment often provides us with
+theoretical guarantees as to how close our
+answers are to the correct answers. For
+example in the context of dual competition
+we've seen that. Whereas It is difficult to get a
+similar level of confidence in terms of
+our, of the accuracy of approximate inference
+for computing marginals. So On the
+other hand, when running approximate
+inference there are, again different
+trade-offs for these two classes of
+problems. So in, when computing marginals,
+one often gets for approximate algorithm
+defective errors, just by being. Soft but
+just by having soft assignments errors are
+often kind of are attenuated. And the
+source of inaccuracy in one part of the
+inference often doesn't make its away
+significantly in other parts of the model.
+You often get more robust answers in
+approximate marginals. On the other hand
+On the MAP side, one can at least gauge
+in many cases at least in some algorithms
+such as Dual composition whether the
+algorithm is working or not by looking at
+the value of an assignment, that we get
+from the algorithm. So again, somewhat
+different trade offs. And in some
+applications people actually try both and
+see which one works better in terms of the
+performance in the downstream task that
+one cares about. So what are some
+algorithms that we have discussed for
+doing marginal inference. So first is just
+good old exact inference say [inaudible]
+and by large if problem is small enough
+that exact inference fits in memory. In
+terms of the sizes of the cliques and the
+subsets, it probably good to use exact
+inference. You run into less problems this
+way, and if it fits in memory it's
+probably going to be very fast. If one is
+not in this fortunate situation, we've
+discussed different types of algorithms
+that are approximate. There's the range of
+algorithms do message passing over the
+graph of which loopy message passing is
+one of the more common ones but not the
+only one. And then there is the class of
+sampling methods that sample from the
+distribution. And these are different
+categories of algorithms. And frankly it's
+often difficult to tell in advance which
+of them is going to work better for a
+given class of models. And you talk a
+little bit about factors that might favor
+one of these algorithms over another in a
+subsequent slide in a couple minutes. What
+about algorithms for MAP? Once again we
+have algorithms that perform in exact
+inference and in this case it?s a broader
+spectrum then in the case of completing
+marginals. So in addition to cases where
+we have low tree width which is category
+which marginal algorithms work, we've also
+seen other examples such as those with
+associative potentials And multiple, other
+cases. And, once again, if you can perform
+exact inference, that's really often the
+best way to go. You're gon-, it's, it's
+often going to give you the best
+performance if it's tractable. Then
+there's the class of methods that are
+based on optimization. And those can be
+exact methods which puts us in this
+category, but more often we're going to
+find ourselves in a case where we have to
+use some kind of approximate methods, such
+as a dually composition algorithm that
+we've talked about. And those methods
+often as we've said lend themselves to
+some kind of, at least, being able to
+estimate the performance of our algorithm
+relative to the optimal answer, even if we
+can't get to the optimal answer. Finally
+there is the range of algorithms that
+perform search over the space. And this
+can be simple hill climbing, search, which
+is a fairly straightforward application of
+standard search methodologies but also
+its. It is quite common to use some kind
+of sand plane, like the Marco [inaudible]
+Monte Carlo sand plane to explore a range
+of different assignments in the space and
+then select among those the ones that have
+the highest or the one that has the
+highest score, yes the one with the
+highest log probability. And that is a
+quite commonly used technique. It doesn't
+provide the same set of guarantees that
+you might get from the optimization
+that's, as good as often, very easy to
+implement, and, so is quite. Frequently
+use. So if we're resorting to the use of
+approximate inference what are some of the
+issues that might make our lives more
+complicated [inaudible] might favor one
+algorithm versus the other? So one
+complication has to do with the
+connectivity structure; just how densely
+connected. The model is. And, by and
+large, the more densely connected the
+model is, the worse it is for message
+passing algorithms. So message-passing
+algorithms don't like densely connected,
+models. Because the messages are
+propagated over, very short cycles, and
+that can cause both issues with
+convergence. As well as with ac, with lack
+of accuracy. So, lack of convergence and
+lack of accuracy. Sampling methods are
+less affected by the connectivity
+structure. The second, complicated factor
+is the strength of influence. That is the
+extent to which nodes that are connected
+to each other have tight coupling in terms
+of the preference of certain combinations
+of values. In general, the stronger the
+influence the harder it is for both
+categories of, of algorithms because it
+creates strong coupling. Between
+variables. Which can complicate both
+message passing algorithms, as well as
+sampling algorithms, because, for example,
+feeling about plain Gibb sampling, it
+makes it very difficult to move away from,
+the current configuration to a different
+one. Strength of influence becomes an even
+worse problem when the influences go in
+different directions. So for example, if
+you have loops where one path. For, it's
+intending to make these variables take on
+one configuration and a different path is
+trying to make them take on a different
+combination of configurations. So for
+example as we saw in this conception
+network, one path wants. A pair of
+variable to agree on their values and the
+other wants them to disagree on their
+values. That really does create
+significant problems for both classes of
+methods. And the reason for that, and this
+I think is at the heart of what makes
+approximate inference hard, is when you
+think about the shape of the likelihood
+function; if you have multiple peaks in
+the likelihood function that makes life
+difficult for most approximate algorithms.
+And the sharper these peaks. The more
+complicated things yet. And so that is
+and, and multiple peaks are generated by
+strong influences that go in opposite
+direction. And so that's really where a
+lot of the complexity in approximate
+inference comes from. Okay, so now what?
+Assuming you have a model that has these
+problematic these problematic issues.
+Well, so how do we address them? First is
+to look at the network, and identify the
+problem regions. That is, subsets of
+variables that are tightly coupled and
+maybe are subject to [inaudible] opposing
+influences. And then we try and think of
+how we might make the inference in these
+problem regions. More exact. So if here we
+have some tightly coupled region, with
+maybe opposing influences. How do we
+Prevent our approximate inference
+algorithm from. Falling into the trap, of,
+this particular area of being, giving
+imprecise answers or lack of convergence.
+So for example for doing cluster graph
+method we can put this entire problem
+region in the cluster. It costs us
+something on the computational side
+because we have to deal with larger
+clusters but it might be well worth it in
+terms of the improvement in performance.
+In sampling methods we might consider
+having proposal moves over multiple
+variables. So instead of sampling
+individual variables we can sample this
+entire block using again some of more
+expensive sampling procedure but again
+that might end up being well worthwhile in
+terms of the overall performance profile
+of the algorithm. And finally if we are
+thinking about this in the context of the
+[inaudible] problem, we can put this
+entire set of variable in a single slave,
+which again cost us something on
+computational site but can significantly
+improve the convergence profile of the
+algorithm. So really when we're faced with
+a problematic model, one that doesn't
+immediately succumb to traditional
+inference techniques, it turns out that
+the design of inference is often a, a bit
+an art. That is, we need to study our
+model and that, think about how to deal
+with different pieces of it and which
+inference method is best equipped to
+handle the different pieces. And we often
+find that Complicated models, you can get
+the best performance by a combination of
+different inference algorithms. Where some
+pieces are handled using exact inference,
+such as these larger blocks in the
+context, perhaps, of an approximate
+inference method such as sound playing or
+belief propagation. And, so, one needs to
+think creatively about the inference
+problem in the context of these more
+problematic models.

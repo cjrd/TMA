@@ -1,0 +1,7 @@
+Hi
+I am unable to execute lda inference. I am getting an error saying
+segmentation fault <core dump>.
+Also i would request to send the test dataset in same format as lda estimate
+(as given for  sample AP corpus) so that it will be easy to test.
+Thanks & Regards
+Rohit

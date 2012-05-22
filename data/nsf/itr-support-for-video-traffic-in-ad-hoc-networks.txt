@@ -1,0 +1,78 @@
+                   Ad-hoc networks are a new networking paradigm, in which the network nodes
+              create a network "on demand." There is a number of characteristic attributes
+              associated with the ad-hoc networking approach: highly dynamic network
+              architecture (nodes join and leave the network often and without warning),
+              totally distributed architecture, and multi-hop routing.
+     Due to the high
+              reconfiguration rate of the ad-hoc network architectures, many, if not most of
+              the conventional routing protocols do not perform well in this type of
+              environment. Consequently, a number of novel routing protocols, specifically
+              suited for the ad-hoc networks, were proposed. A new Internet Engineering Task
+              Force working group, the MANET Working Group, has been established to address
+              the issues of routing in ad-hoc networks.
+     One topic that has not been
+              adequately covered in the context of routing in ad-hoc networks is the issue of
+              QoS-routing for multimedia applications, in general, and the issue of routing
+              for real-time traffic, in particular. More specifically, an ad-hoc network may
+              undergo frequent and unpredictable changes in the network topology, which
+              results in relatively short lifetime of the network paths. Thus, paths become
+              frequently invalid, and, what is more of a problem, there may be little warning
+              of a path going down. Although this might not be a substantial problem for non
+              real-time applications, such frequent path invalidation will most often lead to
+              severe degradation of real-time communication. Thus, a mechanism is needed that
+              will compensate for this behavior of ad-hoc networks.  
+     A number of
+              approaches have been previously proposed in the technical literature. For
+              instance, maintaining a secondary route, so that when the primary route fails,
+              the system can fall back onto the secondary route as soon as the failure is
+              detected, has proven a good strategy. However, the secondary route mechanism is
+              insufficient in many cases, as the state of paths in the network is usually
+              highly correlated. Thus, failure of the primary path usually means that the
+              secondary path may not be available as well. Also, the change-over time may
+              last too long , so as to cause a perceptible degradation of the signal quality
+              during this period.
+     One characteristic of the ad-hoc networks is that
+              there are many paths between a source and a destination. Thus, a mechanism that
+              takes advantage of these multitude of paths is bound to perform better (i.e.,
+              in supporting QoS for real-time traffic) than the above two-path approach.
+              Moreover, rather than selecting a single path at any time to use for a specific
+              connection, a better scheme would be to always distribute the information among
+              multiple paths, possibly with some correlation between the information on the
+              various paths, so as to protect against failure of some subset of the paths.
+              The proposed mechanism thus consists of four steps: i) discovery of multiple
+              paths between the source and the destination nodes and evaluation of the
+              correlation in the paths' availability; ii) selection of a subset of the paths
+              into an Active Path Set (APS), based on some "goodness'' measures (such as the
+              expected availability of the path, the capacity of the path, the delay and
+              jitter of the path, etc), and a scheme that allows to evaluate these measures
+              for the network paths; iii) a method of coding and spreading the information
+              among the paths
+(including matching the paths with the specific requirements
+              of a traffic type); iv) a scheme to monitor the APS paths, estimate their QoS
+              parameters, and update the APS based on the state of the paths and their
+              correlation.
+     The above approach is general and can be applied to a
+              variety of real-time traffic types. However, to make the study more realistic,
+              the researchers chose video communication as the real-time test application.
+              Thus, the researchers intend to propose a specific set of algorithms/protocols
+              that addresses the four steps as outlined above, in the context of video
+              communication. For instance, they will determine what are the parameters
+              relevant to transmission of compressed video traffic over unstable paths and
+              propose schemes to code video source into multiple correlated descriptions that
+              can be spread over multiple paths.
+     The researchers intend to integrate
+              the above multi-path transport scheme for video traffic into a comprehensive
+              simulation of the ad-hoc networking environment, that will include a radio
+              propagation model, nodal mobility model, MAC protocol, and a routing algorithm
+              (to discover the network paths). The researchers will gather performance
+              measures from the simulation that will allow them to determine the quality of
+              video at the application level depending on the parameters of the models used.
+              The researchers expect to be able to answer questions, ranging from the very
+              basic issue of viability of supporting real-time traffic in an ad-hoc
+              networking environment to what type of routing protocol is most suitable for
+              real-time traffic.
+     The research will be performed through both analytical
+              and simulation tools. In particular, for the simulation, the researchers will
+              use advanced models for prediction of the radio propagation environment, the
+              user mobility model, and the traffic generation model.
+

@@ -1,0 +1,14 @@
+Hi everyone
+I have tried to test LDA stuff with the given sample data, 2246
+documents from the Associated Press (it can be found at http://
+www.cs.princeton.edu/~blei/lda-c/ )
+Eventually I have gotten 20 words from 100 topics, however, it is not
+exactly the same as the words given on the web sites
+I ran the following command
+./lda est 0.5 100 settings.txt ../ap/ap.dat
+afterwards, python topics.py final.beta ../ap/vocab.txt  20 > words.txt
+Has everyone managed to get the same result set?
+I am wondering how I can get the same result set
+Please help me out
+Thanks
+Kwangsu

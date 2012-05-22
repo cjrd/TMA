@@ -1,0 +1,13 @@
+Hi, I think it's a common misconception that generality has anything to do
+with frequency.  If I have a word "196295", it might have a frequency of 5,
+such that, it might be very specific.  However, instead it might occur in
+many different topics (and thus each use may be completely unrelated and
+entirely coincidental).
+I found some better examples:  "football" and "British" may have nearly
+identical frequency, but football may be more topically specific than
+British.
+The measure of generality I'm looking for, would not have any correlation
+with frequency.  Thereby, low-frequency words could just as easily be more
+general, and high-frequency words could be fairly specific.  "George Bush"
+might be high frequency but also quite specific.
+Ian

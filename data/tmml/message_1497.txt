@@ -1,0 +1,3 @@
+Dear Everyone,
+I have a little problem while running the code written by David. After the
+estimation stage of LDA, I run the inference progress with the data splitted

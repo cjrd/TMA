@@ -1,0 +1,8 @@
+Hi,
+I'm a newbie to hLDA, and would like to experiment with using it on some textual data (and ideally derive a hierarchy similar to Figure 5 in Blei et al. "Hierarchical Topic Models and NCRP" paper).
+I've downloaded the software from Yee Whye Teh website:
+http://www.gatsby.ucl.ac.uk/~ywteh/research/software.html
+but am not able to figure out how to use it. :(
+Could someone please give me a pointer on how I can get started with using an hLDA implementation on a collection of text?
+Thanks a lot!
+Kirill Kireyev

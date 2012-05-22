@@ -1,0 +1,13 @@
+Toyin,
+There's been some work in this area.  This paper by Wang, Ma, and Grimson
+proposes two models, based on LDA and HDP, respectively, to address activity
+modeling. I found it well written, informative, and thorough.
+http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.89.8788&rep=rep1&type=pdf
+And here's a more recent paper by Wang and Carin that proposes a temporally
+and spatially dependent topic model for activity perception (this is my
+work)
+http://umiacs.umd.edu/~jbg/nips_tm_workshop/10.pdf
+Both papers use quantized Lucas-Kanade optical flow fields to describe
+"visual words" that then are analyzed by the proposed topic models.
+Hope this helps.
+Eric

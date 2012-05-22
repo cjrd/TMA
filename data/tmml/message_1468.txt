@@ -1,0 +1,6 @@
+Hi..
+Many words, like 196295, don't have any ontological reference, so thereby an
+ontological process is likely not going to work.  I'm not looking for an
+ontological measure.  I'm looking for a measure/formula/process that may use
+LDA topics.
+Ian

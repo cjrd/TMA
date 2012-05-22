@@ -1,0 +1,26 @@
+              
+A sensor should be sensitive, selective, reversible, and inexpensive.  We have
+              demonstrated, for the first time, a highly sensitive, rapidly responding,
+              conductiometric device based upon the application of a stabilized porous
+              silicon interface.  This sensor, which operates at an extremely low bias
+              voltage, at room temperature, is now able to detect gaseous HCl, NH3, and NO
+              (L. Seals, et al,  J. Appl. Phys., 91, 2519 (2002)] at a level between 10 and
+              100 ppm (calibrated).  The sensor, which has not yet been optimized, is simple
+              in design, operates with a rapid response and is reversible.  It can be made
+              selective with surface coatings and can be integrated into arrays with
+              measurement electronics.  The key to the sensor response is a low resistance
+              contact made to the silicon through electroless metallization of a modified
+              porous silicon surface, resulting in contact resistances of less than 100O's,
+              rather than the 200 kO - MO resistances normally observed with porous silicon
+              devices. 
+
+We propose to investigate the sensor response as a function of
+              structure and interface variation and establish the sensing mechanism in order
+              to optimize sensor design and enhance sensitivity, selectivity, and response
+              time. As a means of increasing sensitivity, we will study the effect of surface
+              morphology, in a combined microporour/nanoporous structure, on response.  To
+              increase selectivity, surface coatings and selective membranes will be placed
+              in combination with the sensor.  Alternatively we will couple the sensor to a
+              micro-GC column as a detector or in a multiple array format within the column
+              itself.
+

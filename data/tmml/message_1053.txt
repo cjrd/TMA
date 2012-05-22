@@ -1,0 +1,6 @@
+Hello Toyin,
+I only understood half of what you said, but if you want to convert between different file formats for unsupervised learning (including LDA-C), have a look at:
+http://nlp.fi.muni.cz/projekty/gensim/tut1.html#corpus-formats
+That package also includes the TF-IDF transformation that you mentioned.
+Hope that helps,
+Radim

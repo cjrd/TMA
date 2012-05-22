@@ -1,0 +1,46 @@
+              The theory of automorphic forms is a wide and deep subject touching many areas
+              of mathematics, such as  number theory, harmonic analysis and geometry.
+              Langlands' program is an ambitious plan to develop the theory of automorphic
+              forms in a systematic way.  It opened a new frontier in Mathematics, and has
+              given new insights and techniques in solving old problems. In fact, the
+              solution of Fermat's last theorem by Andrew Wiles is one of the achievements of
+              the Langlands' program.
+There have been many exciting new developments in the
+              theory recently: the global Langlands correspondence for GL(n) over a functiona
+              field by L. Lafforgue, using the ideas of Drinfeld; the local Langlands
+              correspondence for GL(n) over a p-adic field by M. Harris and R. Taylor, using
+              Shimura varieties, and by G. Henniart, using L-functions; Langlands'
+              functoriality for symmetric cube of cusp form of GL(2) by H. Kim and F.
+              Shahidi, and symmetric fourth of cusp form of GL(2) by H. Kim, using The
+              Langlands-Shahidi method and the converse theorem of Cogdell-Piatetski-Shapiro.
+              
+It is an ideal time to have a special program in automorphic forms to review
+              these new developments. These have far-reaching applications in classical
+              number theory. Especially, Langlands' functoriality of symmetric cube and
+              symmetric fourth have direct applications to analytic number theory. In fact,
+              one of the goals of the program is to bring experts in automorphic forms and
+              analytic number theory to find applications of automorphic forms in analytic
+              number theory, vice versa. 
+
+One of the most important mathematical ideas of
+              the second half of  the 19th century is that an analytic formula often encodes
+              discrete information. For example, one might want to count the number of
+              solutions of a particular equation, but discover that the solutions are very
+              hard to find. On the other hand, one might want to count the number of
+              solutions to a sequence of equations and have the answers as a sequence.
+              Mathematicians call these kinds of problems 'discrete'. The functions that
+              appear in calculus, and for which calculus works so well, are not 'discrete',
+              but 'analytic.' Amazingly, the right kinds of  analytic functions often provide
+              the answers to the discrete problems. 
+An L-function is a type of generating
+              function formed out of data associated with either a geometric object that is
+              related to number theory or with a kind of 'analytic' function, called an
+              automorphic form, which are determined by groups of linear transformations. 
+              These L-functions provide the right kinds of analytic functions. In the past
+              thirty years, the study of these examples of L-functions has been systematized
+              into a branch of number theory. In recent years many people have found new ways
+              that L-functions encode discrete information, though there is still much to be
+              discovered. The chief purpose of this program is to bring together experts in
+              analytic number theory, automorphic forms, and geometry so that we may find
+              more of the ways that arithmetic information is encoded by L-functions.
+

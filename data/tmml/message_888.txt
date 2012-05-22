@@ -1,0 +1,4 @@
+Hi there
+My  question is related to compute the distance between topics, which
+one is a good measure for this, JS divergence or KL divergence ? or
+some other measure ...

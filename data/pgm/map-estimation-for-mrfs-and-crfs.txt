@@ -1,0 +1,217 @@
+
+So far we talked about a more of and
+[inaudible] of learning clearly in the
+context of maximum or clear destination.
+Where our goal is to optimize likely
+dis-function or the congetional
+dis-function. But as for Bayesian network
+maximum at your destination is not a
+particularly good regiment and its very
+susceptible to the over fining of the
+parameters to the specifics of the
+training data. So what we'd like to do, is
+we'd like to utilize some ideas that we
+exploited also in the context of Bayesian
+networks which are ideas such as parameter
+priors to smooth out our estimates of the
+parameters at least in initial phases
+before we have a lot of data to really
+drive us into the right region of the
+space. So, in the context of [inaudible]
+networks, that was all great, because we
+could have a conjugate prior on the
+parameters, such as a [inaudible] prior
+that we could then integrate with the
+likelihood to obtain a closed [inaudible]
+conjugate posterior, and it was all very
+computationally elegant. But in the
+context if MRF's and CRF's, even the
+likelihood itself is not computationaly
+elegant and can?t be maintained in closed
+form. And therefore the posterior, is also
+on something that's going to become
+computationaly elegant. And so the
+question is how do we then incorporate
+ideas such as priors into MRF and CRF
+learning, so as to get some of the benefit
+of regularization. So the idea here in
+this context, is to use what's called map
+estimation. Where we have a prior, but
+instead of maintaining a posterior in
+closed form, we're computing what's called
+the maximum posteriori estimate. The
+parameters. And this in fact is same
+notion of [inaudible] that we saw when we
+did math inferencing [inaudible] when we
+were computing single [inaudible]
+assignment, here continuing in the
+[inaudible] of [inaudible] learning as a
+[inaudible] difference, we're computing
+inference estimate of the parameters. So
+concretely, how is map inference
+implemented in the context of MRF or CRF
+learning? A very typical solution is to
+define a Gaussian distribution over each
+parameter theta I separately. And that is
+usually a zero mean. Uni-variant Kelsian.
+With some variants. Sigma squared. And the
+variants of sigma squared dictate how
+firmly we believe that the parameter is
+close to zero. So for small variances, we
+are very confident that the parameter is
+close to zero. And are going to be
+unlikely to be swayed by a limited amount
+of data. Whereas, sigma gets larger, we're
+going to be more inclined to belief,
+believe the data earlier on, and move the
+parameter away from zero. So, we have such
+a parameter prior over each data I
+sub-routines are multiplied together to
+give a joint parameter prior. So, the
+parameter prior over each is going to, of
+each parameter is going to look like this.
+This sigma squared. Is called a
+hyper-perameter. And it's exactly the same
+kind of beast as we had for [inaudible]
+hyper parameters and the context of
+learning [inaudible]. An alternative prior
+that's also in common use is what's called
+the Laplacian parameter prior. And the
+Laplacian parameter prior looks kind of
+similar to the Gaussian in that it has an
+exponential that increases as the
+parameter moves away from zero. But in
+this case the increase in the parameter
+depends on the absolute value of theta I
+and not on theta I squared, which is what,
+the behavior that we would have with the
+Gaussian. And so this. Function looks, l,
+looks as we see over here with a much
+sharper peak around zero that effectively
+corresponds to a discontinuity at theta I
+equals, equals zero. And we have again
+such a prior, a Laplacian prior theta I
+over each of the parameters of theta I
+which are multiplied together. Just like
+the Gaussian, this distribution has a
+hyper parameter, which in this case is
+often called beta. And the hyper
+parameter, just like the variance. In the
+Gaussian distribution, sigma squared
+dictates how tight this distribution is
+around zero where tighter distributions
+correspond to cases where the model is
+going to be less inclined to move away
+from zero based on limited amounts of
+data. So now, let's consider what map
+estimation would look like in the context
+of these two distributions. So here, we
+have these two parameter priors rewritten,
+the [inaudible] and the [inaudible]. And
+now, map estimation corresponds to the
+[inaudible] over theta of the joint
+distribution P of B comma theta. So we're
+trying to maximize, [inaudible], we're
+trying to find the, theta that maximizes
+this joint distribution. And by the simple
+rules of probability theory, this joint
+distribution is the product of the given
+data, which is our likelihood. Multiplied
+the prior PSA value. And because of the
+linearity of the [inaudible] not
+linearity, sorry, lognicity of the
+logarithm function. We have the, this is
+the same as doing our maps of theta, of
+our log likelihood function. Which is just
+the log of what we're doing. And the log
+of the parameter prior. So, now let's look
+at what these logarithms look like in the
+context of these two priors. And so this
+is, I'm actually drawing the negative log
+of T of theta. And the negative log of T
+of theta for a Gaussian distribution is
+simply a quadratic. And so we have a
+quadratic penalty that pushes the
+parameters towards zero and this is the
+same for those of you who have seen this
+in the machine learning class for example,
+as doing L1 regularization. Over the
+parameter thing I the distribution if we
+now do the same for the [inaudible]
+distribution, we're going to get. The a
+penalty that pushes the parameter towards
+zero in a way that depends on the absolute
+value of the parameter. And this is
+equivalent to L1 regularization, which
+again, some of you might have seen in a
+machine learning class. So this is a
+linear penalty. Now these penalties
+although hey both push the parameters
+towards zero. Am. Are actually quite
+different in terms of the behavior. So if
+we look at what L2 does, in, when the
+parameter is far away from zero, sort of
+towards the edges, the quadratic penalty's
+actually quite severe, and it pushes the
+parameter down dramatically. But as the
+parameter gets small, so closer to the
+case of theta I equals zero, the pressure
+to move down decreases. So, effectively
+you, it's quite legitimate for the model
+to have a lot of parameters that are close
+to zero but not quite zero. And there
+isn't a lot of push at that point to get
+the parameters to hit zero exactly. And so
+that means that models that use L2
+regularization are going to be dense. That
+is, a lot of the Theta I's are going to be
+non-zero. Conversely when you look at the
+one regularization you see that there is a
+consistent push towards zero regardless of
+where in the parameter space we are. And
+so it's in the interest of the model to
+continue pushing parameters that don't
+impact significantly the log likelihood
+component and push them towards zero. And
+so, for L1 regularization, we're going to
+get models that are sparse. And sparsity
+has its own value, because the sparser the
+model, the easier it is to do inference in
+it, in general. Because sparsity
+corresponds to in principle, removing
+edges or removing features from the
+graphical model, which in turn, can remove
+edges and make inference more efficient.
+And so, L1 regularization, or the
+corresponding Laplacian penalty, is often
+used to make the model both more
+comprehensible, as well as computationally
+more efficient. So to summarize, when
+we're doing learning in undirected models.
+The parameter coupling that we have in the
+likelihood function prevents us from dong
+Bayesian estimations efficiency that is
+maintaining a posture distribution over
+parameters. However we can still use the
+parameter in [inaudible] parameter priors
+to avoid the over fitting that we would
+get with maximum likely destination and
+specifically we're going to use map as a
+substitute for MLE. The most typical
+priors used in this context are L1 and L2,
+or Gaussian and McClaussian, and both of
+these drive the parameters toward zero,
+which has the effect of preventing the
+models from going wild and using very.
+Drastic parameter values that allow us to
+over fit the specific training data that
+we've seen. Now, while this behavior is
+shared among these two models, there's
+also a significant difference between them
+in that the L1 or [inaudible] distribution
+can be shown both empirically and provably
+to induce par solutions, and therefore it
+perform for us as forms of feature
+selection or equivalently structure
+learning in the context of MRF's and
+CRF's.

@@ -1,0 +1,19 @@
+Yes, we showed this in eq.10-12 in our paper, where "updates for
+dirichlet parameters
+built into the objective function" is made explicit and corresponds to
+modelling q(phi,theta|z) exactly.
+I think the log asymptotes to a value that is a constant larger than
+the digamma.  The difference between the two updates is indeed quite
+small, but we have found that the collapsed version is significantly
+more accurate.  I think this is a result of the different behaviours
+for small values of x.  For x < .5, the digamma goes to -inf much
+faster than the log.  This means that the uncollapsed version is more
+"conservative" when the counts are small.
+If what you meant is the uncollapsed variational bound evaluated at
+the CVI solution better than the uncollapsed bound evaluated at the VB
+solution, I think not, unless due to local minima.  If what you meant
+is the uncollapsed bound evalated at the CVI solution better than the
+collapsed bound evaluated at the CVI solution, then no: the converse
+is given in eq.13.
+Em... we expanded the gamma identity and cancelled all terms except
+the ones left on eq.15, that's about it...

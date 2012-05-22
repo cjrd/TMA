@@ -1,0 +1,6 @@
+Hi Rahul,
+I've implemented both a variational and a Gibbs Sampling version of the
+User Rating Profile model.
+For the comparison and implementation you can take a look to this paper
+http://unical.academia.edu/NicolaBarbieri/Papers/803076/Regularized_Gibbs_Sampling_for_User_Profiling_with_Soft_Constraints
+I can provide some source code if needed...

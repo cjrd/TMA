@@ -1,0 +1,54 @@
+              This project, which is supported by the Division of Materials Research and the
+              Office of Multidisciplinary Activities in the Directorate for Mathematical and
+              Physical Sciences, aims to investigate the life limiting thermal cycling, creep
+              and microstructural instability of lead-free solders for electronic packaging
+              with special reference to flip-chip (FC) and ball-grid array (BGA) packages.
+              The project is a highly leveraged collaborative program of research between
+              Naval Postgraduate School (NPS) and Intel (Chandler, AZ). The objectives of
+              this GOALI proposal are to (1) devise a methodology for rapid creep
+              characterization of FC and BGA solder balls with minimal sample preparation,
+              based on the impression creep approach; (2) develop a unified creep model
+              incorporating the effect of phase coarsening applicable to lead-free solders of
+              2 representative microstructural types; (3) generate comprehensive creep and
+              coarsening kinetics data for solder joints of 2 selected lead-free alloys
+              belonging to these microstructural types; and (4) provide fundamental
+              mechanistic insight into the roles of microstructural scale and compositional
+              artifacts (associated with attaching tiny volumes of solder to other materials)
+              on the evolution of creep behavior during thermo-mechanical cycling (TMC). A
+              major goal of the project is to directly measure the creep response of
+              individual solder balls joined to a substrate, in lieu of the standard tests on
+              bump arrays and bulk materials. The study will lead to an understanding of the
+              fundamental phenomenological dependence of creep kinetics on the (a)
+              microstructural scale, and (b) process-history dependent compositional
+              variations of the joints. These goals are achieved by a systematic variation of
+              material and process parameters. The work constitutes developing closed-form
+              unified creep laws including microstructural coarsening effects, which may be
+              incorporated into finite element models for solder-joint reliability
+              assessment. The impression creep of single solder bumps is a challenging
+              scientific effort and the successful completion of the project will have direct
+              impact on semiconductor electronic packaging technology in predictive
+              engineering processes. The work is multidisciplinary with impact on
+              experimental aspects in materials sciences and mechanics, as well as predictive
+              modeling efforts involving microstructural as well as finite element aspects.
+              The project takes advantage of the expertise and experimental facilities
+              available at the academic institution (NPS) as well as industrial counterpart
+              (Intel/Chandler). In addition, collaboration with experts at Motorola is
+              pursued. The unique aspect of this GOALI program includes the time spent by the
+              Intel PI at the academic institution.  The personnel (PI, post-doctoral fellow
+              and graduate students) from the academic institute (NPS) plan to perform
+              studies at the industrial laboratory (Intel/Chandler) while Intel supports the
+              post-doctoral fellow during that time. The educational and technological
+              impacts of the program are rated superior.
+
+The program is a close
+              collaboration between NPS and Intel with secondary interactions with personnel
+              at Motorola with implications to developing a thorough understanding of the
+              life-limiting aspects of lead-free solders in microelectronic packaging. The
+              project has practical importance to the microelectronic industry while
+              addresses basic scientific issues. The study will (a) develop testing
+              methodologies and models for improving current reliability engineering
+              practices, and (b) generate kinetics data for two lead-free solders of
+              strategic importance to the industry. The collaboration of the university
+              personnel with industrial counterparts provides a significant opportunity for
+              students.
+

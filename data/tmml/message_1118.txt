@@ -1,0 +1,11 @@
+There are many ways to compute perplexity, and some of them are better
+than others. It's possible that the larger perplexity numbers just
+indicate that, as the number of topics increases, the inference method
+is having a harder time finding a highly probable configuration of
+topics.
+See:
+Wallach et al. "Evaluation methods for topic models"
+http://www.cs.umass.edu/~mimno/papers/wallach09evaluation.pdf
+Buntine "Estimating likelihoods for topic models"
+http://www.nicta.com.au/__data/assets/pdf_file/0019/20746/sdca-0202.pdf
+-David

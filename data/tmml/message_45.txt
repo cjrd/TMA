@@ -1,0 +1,29 @@
+hi gregor,
+thanks for your good questions.
+in the gibbs sampler for the hLDA model, there are two sets of latent
+variables:
+* the z's are assignments of words to levels in the tree
+* the c's are assignments of documents to leaves (i.e., paths) in
+the tree
+when sampling c for a document, we do so conditioned on the z's; the
+partition of document words to levels in the path is fixed.
+when sampling the path c for a document, we first remove that
+assignment from the state.  this might mean trimming the tree, if the
+document in question is the only one associated with it's current c.
+then, we resample c.  the formula for the probability distribution is
+given on page 5 of the nCRP paper from NIPS (2003) and attached to
+this email for convenience.  this formula is in terms of:
+(A) the hyperparameter to the topic Dirichlet (\eta)
+(B) the number of terms in the vocabulary (W)
+(C) the number of words assigned to each level's topic in the path
+(D) the number of words assigned to each level in this document
+what are the possible paths that can be drawn?  first, there is one
+for each existing leaf in the tree.  then, there is a new one for
+each level---a new branch can be spawned at any level from the second
+down.  in total, this is the number of nodes in the currently
+populated tree.  for a particular path c, when one of the levels is a
+new restaurant, the quantity (C) above is 0.
+i hope this helps.  we hope to release our gibbs sampling code in the
+near future.
+best,
+dave

@@ -1,0 +1,16 @@
+dear limin,
+thanks for your question.  to do gibbs sampling in correspondence LDA,
+you'll need three terms in the conditional distribution of z.
+let r_{1:N} be the image and w_{1:M} be the words.  y_{1:M} are the
+assignments of words to image regions.  i assume you are trying to
+sample the topic assignment for the nth image region.  (i'll suppress
+the parameters.)
+p(z_n | z_{-n}, y_{1:M}, r_{1:N}, w_{1:M}) \propto p(z_n | z_{-n})
+p(r_n | z_n)  \prod_{m=1}^{M} p(w_m | y_m, z_{1:N})
+the first term is the expectation of a posterior dirichlet.  the
+second term is the probability of the nth image region given z_n.  the
+third term is the probability of the caption.  note that this will be
+constant across assignments of z_n except for those w_m such that y_m
+= n.
+best,
+dave

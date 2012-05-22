@@ -1,0 +1,5 @@
+I ran Author Recipient Topic models on Twitter data to find influential
+twitterers and diffusion of tweets. Trying to work on visualization as same
+as aaron. By the way you could try also Topic modelling toolbox and i moved
+it with ART model and it works fine.
+Tanmoy Mukherjee

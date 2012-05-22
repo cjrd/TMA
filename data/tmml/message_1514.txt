@@ -1,0 +1,18 @@
+Hello everyone,
+I am a green hand in topic model. I have two questions about LDA model.
+1\In "Finding scientific topics",  we have z_n|\theta--Multinomial(\theta).
+What does the  z_n|\theta mean?
+(1)\theta is the parameter of the distribution of z_n? or
+(2) the conditional probability of z_n given \theta?
+I think it means the first one. But in "Latent Dirichlet Allocation",
+we have have p(\theta,z,w|\alpha, \beta) according to formula (2),
+where \theta is on the left of '|'. It seems that (2) is also reasonable
+since \theta is a variable, too.
+The same question about w|z,\phi.
+2\ What is the Dirichlet posterior in LDA? Is it p(z|w),
+since  p(z|w)\varpropto p(w|z)p(z)?
+But p(z) is not a Dirichlet prior according to z_n--Multinomial(\theta) on page 996.
+It seems that p(\theta, z) is the posterior since \theta--Dirichlet(\alpha), z_n--Multinomial(\theta).
+I am deeply confused. Who can help me? Thank you very much!
+Best,
+Yanli

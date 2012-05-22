@@ -1,0 +1,6 @@
+Hello there!
+In the course of reading materials on topic models and the bayesian non-parametric approaches used to model and analyze data, there is always this concept of 'integrating out variables'....especially latent variables. I am yet to to fully grasp the 'why' , 'how', and 'when' of this concept and this seems to be a vital tool of the trade that is yet to be de-mystified for me.
+Can anyone suggest any book, paper, or video lecture that explains this thing in a step-by-step easy-to-understand way?
+Thanks
+Popoola O.P.
+HEU

@@ -1,0 +1,9 @@
+LDA isn't necessarily Bayesian (at least not the original variational
+algorithm -- it produces point estimates).  In my view, the dispute is
+really about those who want a probabilistic model (LDA) versus those that
+don't care (LSA).  Unfortunately, the probabilistic model produced by LDA
+is only of limited use, because it doesn't model the document length.  But
+it does have clear probabilistic semantics.
+My impression is that neither model is particularly better at handling
+polysemy and synonymy.  They both do ok if you have enough documents to
+train on.  But perhaps other members of the list can enlighten me.

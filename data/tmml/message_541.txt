@@ -1,0 +1,17 @@
+Best as indicated by my human eyes.  All topics were represented by their
+top words, and given topic *k* I would see how well the closest n=5 topics
+matched semantically.  It is pretty clear to human eyes when you get
+related, partially related, or unrelated topics as nearest neighbors.
+Don't you always verify your models by subjectivity?  I've found
+log-likelihood to be insufficient.  Just because a given model is more
+statistically likely than another according to an artificial model does not
+mean the resulting cluster can fit conceptually within a
+human-understandable category.  This is especially true when you remove the
+context of the actual documents.
+Notice I said distance not metric.  However, while JS divergence is not a
+metric, its square root is a metric.  In fact, I believe I was using that.
+Yet even without a square root, its still a symmetric measurement, so if you
+only care about the kNN relative to a data point then it works well.  I was
+not doing any unsupervised clustering, so triangle inequality was not an
+issue for me.
+Aaron

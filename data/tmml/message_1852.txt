@@ -1,0 +1,4 @@
+Hi all,
+??? I know lda can be used to the document classification, and can obtain a quite good result. So, does anyone use it to the sentence classification and what is the result?
+?? Thank you very much.
+By Chaorong Wu

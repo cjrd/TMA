@@ -1,0 +1,14 @@
+A sampling-based approach (like is already done during learning with
+Gibbs) would say, take each token, look up the probability distribution
+over topics for that token, and then sample from the distribution to
+make the single assignment.  Thus each run would potentially produce
+different results, but the hope would be over many runs you could
+converge towards the true distribution.
+Instead, is there anything wrong with summing up the probability
+distributions over topics for each token over topics and normalizing by
+document length?  Thus you'd have a total probability mass per topic
+that reflects the entropy of the document.  You could then use some
+combination of top-n topics/thresholding heuristics to give a more
+"user-friendly" answer.
+Aaron
+David Blei wrote:

@@ -1,0 +1,3 @@
+Some lecture notes of mine are available at http://cseweb.ucsd.edu/~elkan/250B/topicmodels.pdf
+They are close in spirit to the excellent tutorial report by Grigor Heinrichs.
+Charles

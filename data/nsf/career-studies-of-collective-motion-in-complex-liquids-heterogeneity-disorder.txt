@@ -1,0 +1,41 @@
+              In this project funded by the Theoretical and Computational Chemistry Program of
+              the Chemistry Division, Reichman will conduct a five-stage program to develop
+              computational and theoretical tools to gain a better microscopic understanding
+              of collective motion in molecular, supercooled, and polymeric liquids.  The
+              first stage involves a microscopic understanding of collective and
+              heterogeneous behavior in supercooled liquids near the glass transition
+              temperature using computer simulation.  The second stage develops new molecular
+              hydrodynamic approaches in order to understand collective motion in supercooled
+              liquids and polyelectrolyte solutions.  In the third stage the PI applies novel
+              field-theoretic techniques to study dynamics in random heteropolymers.  The
+              fourth stage centers on the application of a molecular hydrodynamic approach to
+              understand nonlinear Raman in liquids.  The final stage includes three
+              educational initiatives.  The first is a continuation and improvement of a
+              multi-institutional theoretical chemistry tutorial series for undergraduate,
+              graduate, and postdoctoral students in the Boston area.  The second centers on
+              a new computational chemistry course for undergraduate students that includes
+              seminars by outside speakers and student presentations on their computer
+              projects.  The third involves mentoring undergraduate student collaborators on
+              projects in the PI's laboratory.
+
+Much of the difficulty with theories used
+              to understand the behavior of supercooled liquids lies in the arbitrary
+              approximations that are commonly made to achieve tractable results.  While such
+              theories have been surprisingly successful in applications to supercooled
+              liquids, for example, there have also been many underlying doubts arising from
+              a perceived lack of rigor in the theory.  In this project Reichman is
+              developing a new formulation of Mode Coupling Theory (MCT) that restores a
+              considerable amount of rigor while making transparent the nature and
+              consequences of any approximations that are made.  He will also apply this
+              reformulated theory to a number of important condensed-phase problems involving
+              materials that have significant technological importance, such as glasses and
+              amorphous materials.  In the educational component of this project, Reichman is
+              expanding the undergraduate curriculum to include modern chemical physics
+              methods that will demonstrate to students the integral role played by the
+              computer in theoretical chemistry today.  In the collaborative pedagogical
+              seminar series that he has co-organized, he is taking advantage of the rich
+              physical chemistry environment that the Boston/Cambridge area presents, and is
+              an excellent educational tool.  This lecture series is especially appropriate
+              for the area because of the ease of public transportation and the large number
+              of research groups that might participate.
+

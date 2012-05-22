@@ -1,0 +1,6 @@
+Hello!
+When I run LDACOL two times in a row, with a few minutes in between, I
+receive exactly the same results on a dataset, i.e. all the topic
+distributions are exactly the same. Why is this the case?
+Best regards,
+Sebastian

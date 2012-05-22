@@ -1,0 +1,21 @@
+Hi,
+I am using LDA for information retrieval purposes. I have a question
+regarding inference using Blei's code for a new unseen document. I believe
+that for an unseen document, just the E-step of the variational EM is run,
+and that too for only that one file,
+so we basically implement the following, for any document q
+1) intialize \phi_qi and \gamma_q using \alphi_i
+2) for i = 1 to k
+a) update \phi_qi using \beta_iw_q and digamma(gamma_q)
+3) normalize \phi_q to sum to 1
+4) update \gamma_q using \phi_q
+We do not iterate till convergence, since this document is not a part of the
+database.
+However the obvious trouble with that is, the \phi_qi, becomes the
+topic-word distribution for that document,
+How can we use the \gamma_q to represent the unseen document in the topic
+space of the original corpus used to train the LDA?
+Am I thinking on the right track?
+Is my question clear enough?
+Regards,
+Shivani

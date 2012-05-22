@@ -1,0 +1,45 @@
+              9813449
+Greenwood
+The application of evolutionary computation (EC) techniques
+              to various optimization problems in molecular biology has become increasingly
+              common.  Of considerable interest is the prediction of side-chain conformations
+              in proteins [1, 2].  Because of the high density of side-chains in the protein
+              interior, side-chain conformations are determined by packing considerations,
+              which involve steric effects with other side-chains.  The solution is difficult
+              because of the large number of combinations possible.  Nevertheless, an
+              efficient solution to this problem is essential for most ab initio protein
+              structure prediction procedures.  It will also aid in determining permissible
+              mutation sites for increased protein stability and for a large scale protein
+              re-design.
+Each point in the search space of an optimization problem
+              represents a unique solution; optimization algorithms are therefore search
+              algorithms.  EC algorithms are probabilistic optimization algorithms which
+              conduct searchs using the principles of Darwinian evolution.  For the
+              side-chain packing problem (SCPP), each individual in a population represents a
+              distinct side-chain conformation.  During each generation (iteration of the EC
+              algorithm), stochastic reproduction operators perturb existing conformations to
+              produce new conformations.  The optimization problem provides a measure of the
+              solution's quality which is indicated by the individual's fitness. (In SCPP
+              high fitness may represent a minimal van der Waals interaction energy.) Highly
+              fit individuals will tend to survive and reproduce in future generations. 
+              Studies have shown that the EC algorithms are superior to Monte Carlo methods
+              in molecular biology optimization problems [2, 3, 4].
+Genetic Algorithms (GAs)
+              have been the predominant EC algorithm applied to SCPP (e.g., see [5]).  Yet,
+              there are certain aspects of CAs which suggests they may not be the best EC
+              algorithm for molecular biology problems [6, 7).  This work will use an ES to
+              find optimum packing arrangements for side-chains.' The ES algorithm has never
+              been used to find solutions to protein structure prediction problems. 
+              Nevertheless, the ES algorithm may well prove to be superior to the GA approach
+              if the results of previous work with atomic clusters are any indication
+              [7].
+For this work the Cc' positions of the protein backbone will be assumed
+              fixed, but the peptide groups of the backbone will be assumed rotatable and
+              their optimum orientations will be found as a part of the side-chain packing
+              optimization problem.  The bond lengths and angles will also be fixed so the EC
+              must only identify the peptide orientation angles and the side-chain torsion
+              angles.  The fitness will be determined using an energy function that includes
+              the van der Waals interaction, hydrogen bonding, and hydrophobic
+              effects.
+***
+

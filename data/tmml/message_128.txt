@@ -1,0 +1,8 @@
+Does anyone on this list know of work that encourages the topic
+distributions (e.g. the K multinomials in an LDA model with K topics) to
+be different from each other in some sense?  In standard LDA, the topics
+are not explicitly
+required to be distinct.  But in some applications it might be advantageous
+for them to be somewhat 'orthogonal'.  Any pointers will be appreciated.
+Thank you.
+Jerry Zhu

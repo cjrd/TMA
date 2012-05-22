@@ -1,0 +1,5 @@
+Hi all,
+Does anyone know of an available implementation of the methods described in Continuous Time Dynamic Topic Models. Wang et. al. 2008?
+Thanks much,
+Bryan
+bgibson at wisc.edu

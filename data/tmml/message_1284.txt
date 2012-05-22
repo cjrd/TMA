@@ -1,0 +1,8 @@
+Hi All,
+I am working with some topic model like framework (Bayesian Cluster
+Ensemble by Wang et al) and encountered a situation where the posterior of
+hidden variables corresponding to different data points comes out to be
+same. Is that possible and if it is a common problem with mean field
+approximations, is there a way out (other than Gibbs sampling of course)?
+Thanks,
+Ayan Acharya

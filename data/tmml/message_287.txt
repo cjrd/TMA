@@ -1,0 +1,10 @@
+Dear mailing list members,
+I am curious how to use Pachinko allocation to measure document similarity.
+Given LDA that assumes that topics are independent and learns a topic
+distribution for each document, we can measure the similarity/divergence
+between documents by Jensen Shannon divergence.  Whereas PA learns a
+hierarchy of topics, is it still reasonable to use Jensen Shannon
+divergence?
+Any hint is highly appreciated.
+Best,
+Yi Wang

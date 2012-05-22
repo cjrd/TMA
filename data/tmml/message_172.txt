@@ -1,0 +1,8 @@
+Hi,
+I have a question about Pachinko Allocation Method ( PAM )
+In the moment matching equations where we are estimating the components of
+alpha_x using the mean_x_y and var_x_y, I am sometimes getting the values of
+m_x_y negative, thus its log is undefined.
+I am unable to proceed any further, is it a problem with the data or is
+there a work-around in the model to handle such kind of cases
+Thanks

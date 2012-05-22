@@ -1,0 +1,25 @@
+              Our project is developing a suite of high-quality JAVA applets that visually
+              simulate a variety of astrophysical phenomena.  The simulations are designed
+              for instructional use in 100-level general education college astronomy courses,
+              but will be appropriate for 200-level college courses as well as advanced high
+              school classes.  The simulations make use of the JAVA SWING library, which
+              allows construction of superior graphical user interfaces enabling users to
+              conveniently and intuitively interact with simulations.    
+
+The simulations
+              are accompanied by extensive supporting materials including student guides,
+              instructor guides, background material, and concept tests for peer instruction.
+               These materials allow the simulations to be used in a variety of instructional
+              formats, including computerized laboratories, homework assignments, and
+              in-class demonstrations.  Each applet also includes student assessment in the
+              form of a pre-test and a post-test in the web-based assessment engine EDU
+              (marketed by Brownstone Learning).  This program allows applets to be
+              incorporated into questions so that assessment can take advantage of applet
+              capabilities.   Instructors can request accounts for their students in the EDU
+              system and download statistical reports of their student's assessment results. 
+              In addition to informing teachers and educating students, use of this built-in
+              assessment will gather considerable information on how students learn from and
+              interact with simulations.  This information can be used in developing future
+              web-based materials.  All project materials will be publicly available at no
+              cost on the web and also disseminated by McGraw-Hill Publishing on CD-ROM.   
+

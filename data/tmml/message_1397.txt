@@ -1,0 +1,9 @@
+Hi Sean,
+the content of documents
+I was wondering if you have specific references for this ? I've
+certainly seen a handful of papers on various usages of topic model from
+folks at Google Research (e.g. ?Modeling Online Reviews with Multi-Grain
+Topic Models?, which might be the one you're alluding to ?) but I'm also
+interested in hearing about systems that are effectively used in a
+production setting.
+-y

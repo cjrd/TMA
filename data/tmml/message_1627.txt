@@ -1,0 +1,13 @@
+Darren,
+I'd recommend  "Rethinking LDA: Why Priors Matter" by Hanna Wallach et al.
+www.cs.umass.edu/~wallach/publications/wallach09*rethinking*.pdf
+Her dissertation (cited within) also has good discussions of the issue.
+The takeaway points are:  asymmetrically optimizing the P(t|d)
+hyperparameter (alpha) is a win, because it allows you to model the
+corpus-wide probability of particular topics (useful for stop-words).
+Asymmetrically optimizing the P(w|t) hyperparameter (beta) is not -
+you're better off keeping it symmetric, and optimizing it as a
+scalar.    (I've confirmed this for myself:  the corpus unigram just
+blots out the distinctiveness of your topics.)    Optimizing works as
+well as as sampling, and is much more efficient.
+Dave

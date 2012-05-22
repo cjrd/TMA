@@ -1,0 +1,13 @@
+Dear All,
+Is there a PLSA or LDA implementation that can handle huge corpus? For
+example, 100,000 words x 1,000,000 documents.
+One possible way that I can think of is to sample a smaller set of documents
+and train a model, then to fold in other documents. Any suggestion or
+comment on this issue?
+By the way, if the background words are considered during training using
+PLSA(See section 4.1 of Lu and Zhai's paper,
+http://sifaka.cs.uiuc.edu/czhai/pub/www08-*opinion*.pdf<http://sifaka.cs.uiuc.edu/czhai/pub/www08-opinion.pdf>),
+should they also be considered when folding in new documents?
+Thanks!
+Best Regards,
+Shengwen

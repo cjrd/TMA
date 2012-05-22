@@ -1,0 +1,20 @@
+Hi Andreas,
+That is a great paper. I am surprised it didn't generate more attention.
+Yes.
+If you want to use the topics for "tagging" documents, then the most
+desirable topics learned would be very specific. The junk topics,
+therefore, are junk by virtue of being non-specific: if they are similar
+to the uniform distribution then they are useless for tagging.
+It might be interesting to distinguish between "junk" and "jargon" topics,
+with junk topics being common words in //any// corpus, whereas jargon
+topics are common themes to this corpus (ex political jargon).
+How to distinguish between junk and jargon?
+I actually see this anti-mainstream bias as a feature -- the common
+news topics will be  ranked as lower quality, while the niche news
+stories will be identified as high quality.
+I guess it depends on what you are looking for. If you are looking
+for the "big news" stories no, but if you want to use your LDA model
+to find hightly similar news documents, then your precision will
+improve if you "trust" the highly specific topics more than the
+common topics when calculating document similarities.
+Ivan

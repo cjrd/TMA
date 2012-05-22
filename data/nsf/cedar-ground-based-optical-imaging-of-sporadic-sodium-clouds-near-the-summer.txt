@@ -1,0 +1,19 @@
+              The investigators will develop a new method to obtain two-dimensional images of
+              sporadic clouds of mesospheric sodium.  These images will be constructed by
+              combining data from a sodium lidar and an optical spectrometer obtained during
+              arctic summer months.  The project involves minor modifications to existing
+              instruments at Poker Flat, Alaska, and the development of analysis and
+              calibration software to perform the two-dimensional imaging with high
+              reliability.  The mesopause region hosts persistent layers of neutral and
+              ionized metallic atoms that are replenished by the ablation of meteors.  These
+              metal layers can be used as tracers of the thermal, chemical, and dynamical
+              conditions near the mesopause.  Although the altitude distribution of these
+              layers have been studied using various techniques, the horizontal structure of
+              the layers remains unknown.  This investigation aims to observe the
+              two-dimensional structure of metallic layers using the sun to illuminate sodium
+              atoms, and sensitive instrumentation to detect the scattered sunlight.  The
+              simultaneous lidar measurements will provide information about the altitude
+              distribution of the layers.  Various models have shown that the temperature
+              structure in the mesopause may be a sensitive indicator of global change. 
+              Understanding the distribution of sporadic layers in the mesosphere is
+              important in studying processes that heat and cool the middle atmosphere.

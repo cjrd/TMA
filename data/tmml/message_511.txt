@@ -1,0 +1,19 @@
+Hi all,
+I have been trying to use Blei's LDA implementation in C. The format of the
+input file has one line per document and each line is a sequence of (wordid:
+count) tuple.
+The method that I am using, uses perl script and mysql databases to get
+counts and eliminate duplicate files.
+But this was working fine and in real-time when the corpus size was a few
+hundreds of documents.
+Dealing with the TREC corpus, the size of the corpus is 130000 documents. In
+such a scenario, the mysql statements take forever (meaning 10 minutes) to
+even extract duplicate words of the 70 million words in the vocabulary
+So I have the following questions
+1) I am very curious to find out how many of you are building this file.
+2) Does the online version of LDA, take into account the increasing
+vocabulary?
+3) Has anyone else used mysql query based methods to build this file.
+I thanks everyone in advance for your input and time
+Regards,
+Shivani Rao

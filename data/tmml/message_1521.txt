@@ -1,0 +1,8 @@
+hi all?
+???? From the paper, I know that the hdp can solve the
+question about the number of topic, but the process seems to difficult, I
+can not understand it better, Are there any simple materials about it?
+Or, does any one have realize it?
+???? thanks for all !
+???? And does any one has the paper 'Investigating Task Performance of Probabilistic Topic Models - An Empirical Study of PLSA and LDA,
+Information Retrieval, to appear' ? ? I will very grateful to you? for sending me it?

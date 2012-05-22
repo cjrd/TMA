@@ -1,0 +1,26 @@
+              This award describes a program of research aimed at applying single-molecule
+              spectroscopy to problems in tbe dynamics and rheology of polymer melts.  This
+              will be accomplished through a collaboration of three research groups: Waymouth
+              (synthesis), Moerner (single-molecule spectroscopy), and Fuller (rheology). 
+              The outcome of this research will provide direct measurements of orientation
+              and translation of single monomer units attached to polymer chains at strategic
+              locations.  Liner chains, tagged with fluorophores at the ends or at the
+              center, will be studied.  Star and H-shaped chains will also be considered to
+              understand the consequences of long chain branching.  These branched
+              architectures will either be tagged an the ends or arms, or at the branched
+              points.
+
+The dynamics of quiescent melts, or of melts subjected to either
+              simple shear flow or extensional flow will be measured.  These data will offer
+              the first direct measurements of orientation dynamics and translation of
+              individual polymer segments.  The ability to track orientation and
+              translational fluctuations of entangled segments is important to understanding
+              the process of tube renewal and constraint release.
+
+The high level of
+              multidisciplinary integration and collaboration in this project will provide a
+              valuable and stimulating educational environment for graduate students.  In
+              addition, this research program will provide new information about the
+              fundamental behavior of entangled polymer melts, which will be useful in the
+              broader contexts of melt flow processing and extrusion.
+

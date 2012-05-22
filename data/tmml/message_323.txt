@@ -1,0 +1,9 @@
+hi min
+i haven't had that problem.  (i run the CTM program on my mac.)
+someone else has also mentioned it, but i wasn't able to recreate his
+issue on my computer.  using his data, the models were fit without a
+problem.
+i have CC'ed the topic models mailing list (which i suggest you
+subscribe to) to see if anyone else has noticed this issue.
+best,
+dave

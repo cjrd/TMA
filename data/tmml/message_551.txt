@@ -1,0 +1,24 @@
+Hi all,
+I'm writing to ask for help on the question how to evaluate an LDA model
+trained with a Gibbs Sampler? How do I calculate the perplexity of
+unobserved documents in a test set, with doc-topic and topic-word matrices
+in hand? The definition of ppx is
+ppx = exp(-1/W * sum_m sum_n log (sum_k phi_k,w_mn * theta_m,k))
+where phi can be accessed with the topic-word matrix. but how about theta?
+Should I pick one or several documents from the train set, calculate the
+generative probability of test set with phi and theta from each of
+those train document, then calculate log of average probability? Or should I
+simply take the average phi and theta in train set as the theta in test set?
+Some papers say one should "train" on the test set, temporarily update
+doc-topic and topic-word matrices till convergence, then calculate
+perplexity with the new matrices, but I doubt it leads to information leak.*
+* Yes it's a silly question but I'm really confused after reading different
+methods in different papers.
+Thanks all. Best wishes.
+??? Huang Junming
+Institute of Computing Technology
+Chinese Academy of Sciences
+Beijing, 100081, P.R. China
+Mobile: (+86)138-1048-6516
+Email: huangjunming at gmail.com
+MSN: hjm at live.com

@@ -1,0 +1,5 @@
+Hi,
+I am facing a problem working with these models (PLSA, LDA). Consider that I have a set of documents and I have the evaluation data for each document (i.e., I know which documents has which topics). The topics I am talking about are like "Information Retrieval", " Web Search", "Bio informatics", ....
+When I use the topic model such as PLSA with prior information (I change the EM algorithm to incorporate the prior information and this prior information is exactly about the aforementioned topics). With prior information, I want to force the topics to be in the topic areas I mentioned. When I train the model based on these documents and prior information, I can see that the top words in each cluster are exactly the prior words but the problem I am facing is that I can not get the real topics of the?document ?based on the topic models. For example, if a document talks about " machine learning", " information retrieval" and "web search", I can not have high probability for these topic in a doucmnet?when I use PLSA.
+My question is that if this behavior is expected? if so, is there any way to solve this problem?
+Thanks,

@@ -1,0 +1,26 @@
+              HDCCSR Proposal 0234651
+  Improving test suites via generated behavioral
+              abstractions
+  Michael Ernst
+
+Testing is a key to detecting bugs and
+              increasing software reliability, but generating good test suites is difficult. 
+              This project investigates a novel technique for using behavioral differences to
+              improve test suites.  The technique compares dynamically generated behavioral
+              abstractions of executions and selects the more complete one -- that is, the
+              test suite that exercises more of the program's semantic behavior.  Whereas
+              previous automatic techniques compare dynamic (run-time) behavior to the static
+              structure and text of the program, this new technique considers behavior, which
+              complements structural techniques and is arguably more important.
+
+The
+              technique is applied to generating, augmenting, and minimizing test suites. 
+              Users provide the program to be tested and a technique for generating test
+              cases (via a grammar, random generation, traces collected from users, or
+              otherwise).  Users never need to provide a specification.  However, the
+              technique generates a behavioral abstraction that is syntactically identical to
+              a formal specification and that, after being checked and perhaps augmented by a
+              human, can be
+used as a specification.  The efficacy of these techniques is
+              investigated and improved, and they are applied in substantial case studies.
+

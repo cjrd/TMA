@@ -1,0 +1,79 @@
+              The overall objectives of this work are to develop a thorough 
+understanding of
+              three-dimensional water waves of finite amplitude, and 
+ultimately to develop
+              a practical model to describe these waves efficiently. 
+A model that is both
+              accurate and computationally efficient could have 
+many practical
+              applications. Specific problems to be addressed are: (1) the 
+existence and
+              stability of three-dimensional, doubly-periodic, traveling 
+water-wave
+              patterns, through the full range of depths; (2) the prevalence 
+of hexagonal,
+              rectangular or crescent-shaped waves (or other multiply 
+periodic wave
+              patterns) among ocean waves; (3) the long-wave and 
+modulational descriptions
+              of water waves, and the subsequent stability 
+analyses that are feasible in
+              these cases; (4) the design and implementation 
+of algorithms to make
+              practical use of exact solutions of asymptotic 
+models in shallow and deep
+              water; (5) the relation between the detailed 
+dynamics of three-dimensional,
+              nonlinear waves and some commonly 
+used ocean-wave transport models; and (6)
+              the impact of a detailed local 
+description of nonlinear wave dynamics on
+              these transport models, in the 
+presence of large amplitude nonlinear waves or
+              under conditions of 
+nonlinear wave focusing. These problems will be studied
+              using analysis, 
+computation, asymptotics, and algebraic geometry, involving
+              the full 
+equations and approximate models, all in conjunction with
+              state-of-the-art 
+physical experiments.
+
+The destructive force of
+              large-amplitude ocean waves is well known. 
+Large-scale ocean waves have a
+              major impact on the design of ocean-
+going ships, of off-shore oil platforms,
+              and of other structures in a coastal 
+environment.  These waves also impact
+              the scheduling and routing of 
+shipping patterns, and they strongly affect
+              air-sea transport processes. Yet 
+most theoretical models of ocean waves now
+              in use are based on waves of 
+small amplitude. In this investigation we focus
+              on developing a thorough 
+understanding of large-amplitude waves. The ultimate
+              goal is to develop a 
+practical, mathematical model that may be used
+              operationally in the 
+applications listed above. In particular, the
+              investigators plan to build on 
+their recent work in which they have observed
+              certain coherent patterns of 
+large-amplitude waves. They have observed these
+              patterns in laboratory 
+experiments, as solutions to the well-known equations
+              of water waves, and 
+as solutions to other equations that are (more)
+              approximate models of 
+water waves. Their work involves a variety of
+              mathematical and 
+computational tools as well as state-of-the-art laboratory
+              experiments. In 
+the present work the investigators will combine all of their
+              tools to 
+understand and describe these coherent patterns and to use them as
+              the 
+building blocks for a practical model of ocean waves.
+

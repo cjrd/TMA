@@ -1,0 +1,30 @@
+              0090286  Allison, David
+In what tissues are specific genes expressed? What
+              circumstances alter a gene's expression levels? Which genes "co-express" as
+              functional families? Microarrays can measure expression of thousands of genes
+              simultaneously in tissues of any organism, providing unprecedented power for
+              studying gene expression. However, many questions about microarray technology
+              and the resulting data remain unanswered. Questions surround sample size
+              requirements, measurement quality, testing for group differences in expression
+              levels in the face of vast multiple testing, and optimal grouping (clustering)
+              methods. Few scientists with theoretical/quantitative science expertise are
+              addressing these questions and those that are still struggle for answers.
+This
+              program offers an interdisciplinary inter-institutional Network of scientists
+              opportunities to work synergistically on such questions. Goals are: a)
+              Facilitate communication and brainstorming among interested scientists who may
+              be geographically or otherwise isolated; b) Stimulate methodological
+              developments in microarray analysis; c) Provide increased opportunities for
+              dissemination of developments to the scientific community; and d) Support entry
+              of new and established quantitative/theoretical scientists into this area. The
+              Network includes computer scientists, geneticists, statisticians,
+              bioinformaticists, measurement theorists, and microarray technology experts
+              plus microarray users. It has two primary activities: a) an annual retreat at a
+              secluded location; b) an inter-institution scholar exchange. Investigators with
+              varying backgrounds but common interests in microarrays will interact in
+              settings facilitating open and contemplative communication. Supplementary
+              activities will disseminate information to the broader scientific community.
+              This program can greatly enhance the practice of microarray analysis thereby
+              generating new basic biological knowledge impacting fields ranging from
+              forestry to agriculture to medicine.
+

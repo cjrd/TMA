@@ -1,0 +1,284 @@
+
+You now know a bunch about machine
+learning. In this video, I'd like to teach
+you a programming language, Octave, in
+which you will be able to very quickly,
+implement the learning algorithms we've
+seen already and the learning algorithms
+we'll see later in this course. In the
+past I've tried to teach machine learning
+using a, a large variety of different
+programming languages, including C plus,
+plus, Java, Python and Pi are. And also
+octave and what I've found is that
+students were able to learn the most
+productively learn the most quickly and
+prototype your albums most quickly using a
+relatively high level language by octave
+in fact What I often see in silicon valley
+is even if you need to build if you want
+to build a large scale deployment of a
+learning algorithm what people will often
+do is prototype in the language they
+Octave which is a great prototyping
+language so you can get your learning
+albums working quickly and then only if
+you need a very large scale deployment of
+it only then spend your time
+reimplementing the algorithms [inaudible]
+some other language like that because one
+of the lessons we've learned is that
+programmer time or developer time that is
+your time with the machine learning
+[inaudible] time is incredibly valuable.
+And if you can get your learning
+algorithms to work more quickly in octave
+then overall you have a huge time savings
+by first developing the algorithms in
+octave and then implementing [inaudible]
+only after we have the ideas working. The
+most common prototyping languages I see
+people use for machine learning are
+Octave. Mattlab-numpinr. Octave is nice
+this is free open source and Mat-Lab works
+well too but is expensive to many people
+but if you have access to copy Mat-Lab you
+can also use mat lab for this class if you
+know [inaudible] or if you know R I do see
+some people use it but what I see is that
+people usually end up developing somewhat
+more slowly in. You know more complete
+languages [inaudible] syntax it's just
+slightly [inaudible] clear than the octave
+syntax and so because of that and because
+we're releasing starter code in Octave I
+strongly recommend that you not try to do
+the pony exercises in this class in Empire
+R but that I do recommend that you instead
+do the pony exercises for this class in
+octave instead. Welcome to do this video
+is go through a list of commands very,
+very quickly and goes will quickly show
+you the range of commands and the range of
+things you can do in office. The course
+web site we have a transcripts of
+everything I do and so after watching this
+video you can refer to transcript person
+in the course web site when you want to
+find a command. Our feel free whatever
+recommend you do is fresh wash and after
+watching Now DDN then is [inaudible]
+octave on your computer and finally it
+goes to the course website download the
+transcripts of the things you see in this
+section and type in whatever commands seem
+interesting to you into octaves
+[inaudible] on your own computer so that
+you can see it for yourself. And, with
+that let's get started. Here's my Windows
+desktop, and I'm start in Octave. And I'm
+now in Octave and, and there's my Octave
+prompt. Let me first show you the
+elementary operations you can do in
+Octave. So, you can type in five plus six,
+that gives you the answer of eleven. Z
+minus two. Five times eight. One over two.
+Two to the power of six. Is 64. So that
+the [inaudible], elementary, math
+operations. You can also do logical
+operations. So one=2 of this evaluation
+that follows. The percent command here is,
+means a comment. So one=2, evaluates the
+[inaudible], which is represented by zero.
+One [inaudible]= to two. This is true, so
+that returns one. You know that a not
+equal sign is this. To their equals symbol
+and not bang equals which some of the
+[inaudible] languages use. The theological
+operations one and zero use a double
+ampersand sign to denote the logical and.
+That evaluates the false, one or zero, z
+or operation. And that evaluates the true.
+And I can x over one and zero, and that
+evaluates the one. This thing over on the
+left, this Octive 324 [inaudible] eleven,
+this is the default Octive prompt. It
+shows what version of Octive and so on. If
+you don't want that prompt, this is
+somewhat cryptic to come on. Quote
+particular then and so on that you can use
+to change the prop and I guess this quoted
+string in the middle you know quote
+greater than greater than state, that's
+what I prefer my octave prompt to look
+like, so if I hit enter, oh excuse me,
+like so, PS1 like so now my octave prompt
+has changed to the greater than greater
+than sign which you know looks quite a bit
+better. Next lets talk about octave
+variables. I can take the variable A and
+assign it to three and hit enter. And now
+A is equal to three. You want to sign a
+variable but you don't want to print out
+the result if you put a semicolon. The
+semicolon. Suppresses, the, print, the,
+the print output. So to do that enter, it
+doesn't print anything. Whereas A=3, you
+know, makes it printed out. Whereas A=3;
+doesn't print anything. I can do string
+assignment, B=high. If I just enter b, it
+prints out the variable b. So b is the
+string high. C equals three grade integral
+one. So now c evaluates the true. If you
+want to print out a display of your
+variable, here's how you go about it. Let
+me set a equals pi. And, if I wanna print
+A, I can just type A, like so, and it
+prints it out. For more complex printing,
+there's also the [inaudible] command,
+which, sends the displays. [inaudible]
+display A, it just prints out A like so.
+You can also display the strings, so
+[inaudible] F, two decimals. And percent
+0.2f, a like so. And this will print out
+the string two decimal colon 3.14. This is
+kind of a [inaudible] old style C-syntax.
+For those of you that have program C
+before this is [inaudible] syntax used to
+print strings. So sprintf generates a
+sprint, generates a string. Does this and
+two decimals 3.1 pulls the string this
+percent 0.2F means substitute A into here
+showing it with two digits after the
+decimal point and this takes the string
+this generated by the sprint F command S
+print f the sprint F command and this
+actually displays the string and to show
+you an example, sprint F six decimals. >>
+Percent 0.6F comma A. And this should
+print pi with six decimal, to, to, six
+decimal places. Finally, I'll explain A
+like so, look like this, there, there are
+useful shortcuts you take, formats long,
+it causes strings to, by default, be
+displayed to a lot more decimal places,
+and format short [inaudible] default of
+just printing a small number of digits. >>
+Okay. That's how you work with variables
+now lets look at vectors and [inaudible]
+let's say you want to assign A to matrix
+let me show you an example, twelve:34: .
+Five, six. This generates a three by three
+matrix A who's first row is 1,2, second
+row three, four, third row is five, six.
+What the semi colon does is essentially
+say go to the next row of the matrix.
+There are other ways to type this in. Type
+angles one, two semi colon. Three, four;
+five, six, like so. And that's another
+equivalent way of assigning A to be the
+values of, this, three by two matrix. Some
+[inaudible] assign factors. So V=1, two,
+three. This is actually a [inaudible]
+vector. Or this is a three by one vector,
+right? This is a [inaudible] Y vector,
+excuse me. Not, this is, a one by three
+matrix. Right not N by one if I want to
+assign this to a. Harden factor. What we
+do instead is B equals one semicolon, two
+semicolon, three and this will give me a.
+Three by one is one by three vector so
+this is a column vector. Here some more
+useful notations b equals one colon 0.1
+colon two. What this does is it sets b to
+the bunch of elements that start from one.
+And increments and, and steps of 0.1 until
+you get up to two. So if I do this, V is
+going to be this you know, low vector. Or
+this is what, one by eleven matrix really.
+That's 1.1, one, 1.1, 1.2, 1.3 and so on
+until we get up to two. Now and I can also
+say B = one:6 and that sets B to be these
+numbers one through six. Okay now here's
+some other way to generating matrices, 1's
+2x3 is a command that generates a matrix
+that is a 2x3 matrix that is the matrix of
+our 1's so if I set C = two x 1's 2x3 this
+generates a 2x3 matrix that is all 2's and
+this is you can think of this as a shorter
+way of writing this NC = 222 semicolon 222
+which will also give you the same result.
+Lets say W = 1's, 1x3 so this is going to
+be a row vector or a you know row of three
+1's and some of you, you can also say W =
+0's 1x3 this generates a matrix, 1x3
+matrix, of all 0's. Just a couple more
+ways to generate matrixes. There I do W
+equals rand one by three. This gives me a
+one by three matrix of all random numbers.
+If I do rand. Three by three excuse me a
+three by three matrix of all random
+numbers drawn from the uniform
+distribution which is 01. So every time I
+do this I get a different set of random
+numbers drawn uniformly between the zero
+and the one. For those of you who know
+what a Gaussian random variable is or for
+those who know what a Normal random
+variable is you can also say that W called
+rant N one-third. So these are going to be
+three values drawn from a Gaussian
+distribution which means zero and variance
+distribution is equal to one. And. Can set
+more complex things like W = -six plus
+square root ten. Times. Let say rand
+[inaudible] one by 10,000. [inaudible]
+semicolon at the end because I don't
+really want to [inaudible] it out. This is
+going to be a what. Well this is going to
+be a vector of 100,000 [inaudible] 10,000
+elements so. Well actually you know what
+let's print it up so this would generate a
+matrix like this Right? With 10,000
+elements so that's what W is. And if I now
+plot a histogram, W, with the hiss command
+I can now enter [inaudible]. Hiss command
+takes a couple seconds to bring these up
+but this is a histogram, my random
+variable for W that was minus six plus
+zero ten times this Gaussian random
+variable. And I can plot a histogram with
+more buckets, with more bins, with say 50
+bins and. This is my histogram of
+[inaudible] with mean - six because I have
+a -six t here plus [inaudible] ten times
+so the, the variants or this calcium is
+therefore ten on the standard deviation
+the square root of ten which is about what
+3.1. Finally one special command to
+generate a matrix which is the I command
+so. I stands for, this is maybe pun on the
+word identity. But so they set i4, this is
+the four by four identity matrix. And I,
+of course i4, this gives me a four by four
+identity matrix and I [inaudible] i5, i6,
+that gives me a six by six identity
+matrix, as i3 gives the three by three
+identity matrix. Lots of these are
+[inaudible] has one more useful command
+which is the help command. So you can type
+help I, and this brings up the help
+function for the identity matrix. Hit Q to
+quit and you can also type help rand
+brings up documentation for the rand or
+the random number generation function or
+even help, help which shows you help on
+the help function. So, those are the basic
+operations in octave and with this you
+should be able to generate a few matrices,
+multiply, add things, and, and use the
+basic operations in octave. In the next
+video, I'd like to start talking about
+more sophisticated commands and how to
+move data around and start to process data
+in octave.

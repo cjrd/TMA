@@ -1,0 +1,9 @@
+Hi dear all:
+I am learning about the hLDA model proposed by D. Blei(see reference[1]).
+When it comes to the approximate inference by Gibbs sampling, I cannot get
+the same results to Blei?s.
+My derivation is in the attachment, what wrong with it? Somebody can help
+me?
+thanks
+best regards
+Justin Cen

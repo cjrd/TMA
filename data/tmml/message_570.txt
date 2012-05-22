@@ -1,0 +1,9 @@
+hi topic models list,
+many of you have asked me about my and john lafferty's paper on "turbo topics."
+this paper is now available on the arxiv at
+http://arxiv.org/abs/0907.1013
+some python code that implements the procedure is on my web-page,
+http://www.cs.princeton.edu/~blei/topicmodeling.html
+(many thanks to david sontag and neha gupta for comments on the code!)
+best,
+dave

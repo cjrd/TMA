@@ -1,0 +1,22 @@
+Hello again,
+sorry i posted a link to a document you already know. The google doc
+browser wasn't working.
+But i have an opinion on that. Yes you are right that those priors give
+a higher probability to seen words. But if there are new words within
+the datastream they would be assigned to a topic. The probilility for
+the assignement is shurly not as high as for known words but in the "bag
+of words" assumption all other words in that document/Chunk give the
+probability for a word in a topic. For that reason it will be the case
+that new words cluster to the best topic (in sense of cooccurrence of
+words). This will lead to a change in that topic regarding the most
+probable words in that topic. In the paper they use this to make a KL
+distance out of two such distibutions to measure the difference of a
+topic from chunk to chunk. Maybe Jenson Shannon would be better but
+nevertheless this approch can measure changes in a topic over time. But
+still it is very complicated to have a sophisticated assuption for K
+without making "stop word" clusters since data chunks can be of
+different sizes and contents.
+So i have also a question on that. Can i just define a very large number
+for K and measure if a certain k has enough evidence in the dataset to
+discard topics with little evidence?
+Am 01.03.2011 13:08, schrieb Andreas Niekler:

@@ -1,0 +1,7 @@
+              This will support a special focus workshop at the Human Language Technology
+              Conference in the area of Language Processing of Biological Data.  The purpose
+              of this special focus within HLT 2002 context is to bring to the attention of a
+              wide audience of researchers across all aspects of human language technology
+              the research opportunites and recent research breakthroughs in this newly
+              emerging area.  This support is also  intended to further promote
+              cross-disciplinary approaches to the new field of bioinformatics.

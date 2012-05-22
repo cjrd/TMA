@@ -1,0 +1,19 @@
+Hi Harry,
+There has been some work on music tastes using topic modeling:
+Modeling Shared Tastes in Online Communitites
+Laura Dietz
+I am sure there is more -- i just did a quick search in my files...
+that is a cool correspondence !
+If you like Lil Wayne then I you are probably so far gone in the mainsteam
+crap, that you wouldn't appreciate the classiscs ;)
+LDA works on any data, so I don't see an obstacle for this working,
+just to be clear your mean this right:
+doc = user
+topic = set of artists = genre
+word = artist
+What will be the equivalent of your "word counts for doc" Nwd  ?
+Song play counts by a certain artist?
+Number of songs in library by certain artist?
+If you have data for couple of thousand users and a 50/100
+fav. artists for each user LDA should be able to find some very cool "genres".
+Ivan

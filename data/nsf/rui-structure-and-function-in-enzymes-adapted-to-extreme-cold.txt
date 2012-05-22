@@ -1,0 +1,45 @@
+              Enzymes exposed to novel thermal environments undergo selection to maintain
+              functional parameters, such as catalytic rate and substrate affinity, at
+              physiologically appropriate levels.  The amount of structural modification
+              necessary to produce these compensatory functional changes is unclear, but it
+              has been hypothesized that temperature adaptation in enzymes takes place via
+              changes in flexibility in or near structures that move during catalysis.  The
+              objective of the research is to test this hypothesis, focusing on the following
+              questions:  As the thermal environment changes, how much structural
+              modification is necessary to maintain optimal enzyme function?  Do orthologous
+              enzymes from different species adapted to the same thermal environment show
+              similar changes in catalytic function, and in underlying structure?  Do
+              unrelated enzymes show analogous changes in structure in response to
+              temperature change  - specifically, do temperature-adaptive changes occur in
+              areas associated with movement during catalysis?  To answer these questions,
+              three glycolytic enzymes will be examined - muscle-type lactate dehydrogenase,
+              pyruvate kinase and aldolase - from two unrelated groups of marine fishes
+              adapted to extreme cold - the Antarctic notothenioids and the Arctic and Polar
+              cods.  The project will be divided into four segments:  First, for each
+              ortholog, the kinetic parameters kcat (catalytic rate) and Km (substrate
+              affinity) will be determined across a range of temperatures.  Second, the
+              primary structure of each enzyme will be deduced from complementary DNA
+              sequences.  Third, computer models of the three-dimensional structures of each
+              of the polar orthologs will be created, in order to determine which amino acid
+              substitutions shared by the polar enzyme orthologs are most likely to affect
+              enzyme function in a temperature-adaptive manner.  Fourth, representative polar
+              orthologs will be modified through site-directed mutagenesis to confirm the
+              role of those residues important in cold adaptation.  Km and kcat values of the
+              mutants will be determined to test the hypothesis that temperature-adaptive
+              structural changes occur in areas undergoing catalytically important
+              conformational changes. 
+
+Organisms adapt to long-term changes in temperature
+              at a variety of levels, from alterations in body shape and size to
+              modifications in the functioning of biochemical pathways.  This project is
+              designed to determine how changes in the structure of enzymes - proteins that
+              act as catalysts in biochemical processes - lead to optimal enzyme function at
+              extremely cold temperatures.  Common metabolic enzymes from Antarctic and
+              Arctic fishes will be compared to discover whether the same types of functional
+              adaptation have occurred in these unrelated species. An important goal of this
+              research is to find those amino acid substitutions (changes in the basic
+              building blocks of the proteins) responsible for cold adaptation, and to
+              determine whether similar substitutions have occurred in the enzymes of the
+              different fish species.  The research will help clarify the rate and extent of
+              molecular evolution as organisms adapt to novel environments.
+

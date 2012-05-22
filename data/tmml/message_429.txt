@@ -1,0 +1,6 @@
+hi all,
+jon mcauliffe and i have released the data.  it can be found here:
+http://www.cs.princeton.edu/~blei/papers/digg-data.tgz
+it is linked from my web-site as well.
+best,
+dave

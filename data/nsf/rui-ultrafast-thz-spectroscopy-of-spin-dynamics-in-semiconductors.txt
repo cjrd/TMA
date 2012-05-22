@@ -1,0 +1,51 @@
+              This project will use ultrafast THz spectroscopy to study spin excitations in
+              narrow-gap semiconductor quantum wells. These systems exhibit a large
+              spin-orbit coupling, permitting the spin-state of carriers to be controlled
+              with an electric field such as that from a gate contact. These systems will be
+              investigated with a time-resolved spectroscopic probe tuned to the energy scale
+              of the spin-orbit interaction (1-5meV). The lifetimes and energy spectra of
+              spin excitations will be determined for a number of quantum well structures.
+              Such measurements are made possible by the spin-orbit interaction, which will
+              allow optical generation of carriers in a well-defined spin-state, and optical
+              probes of the evolution of spins.  Ultrafast THz spectroscopy will also be used
+              to perform pulsed-EPR measurements at terahertz frequencies on donor electrons
+              in InAs. The successful performance of these experiments will demonstrate the
+              applicability of this technique to a wide range of physical systems. Terahertz
+              frequency generation on patterned semiconductor surfaces will also be
+              investigated. It is expected that surface patterning will boost the efficiency
+              of generation of optically pumped THz pulses from semiconductor surfaces by
+              about one order of magnitude.   Lastly, carrier lifetimes will be investigated
+              in picosecond carrier-lifetime materials such as low-temperature grown GaAs and
+              radiation damaged semiconductors.  Undergraduate students will participate in
+              this research which will be performed at Macalester College and the University
+              of Minnesota. The project will also benefit from collaboration with an
+              industrial partner. The students will thus also acquire research experience in
+              a setting of a major research enterprise.  
+%%%
+As advances in technology
+              push the size of transistors towards atomic dimensions, their properties will
+              be increasingly influenced by quantum mechanics.  For this reason, scientists
+              are exploring devices that rely on quantum phenomena for their function. One
+              such promising area involves semiconductor devices in which an electron's spin,
+              rather than its charge, is used to control the flow of electric current. At the
+              present time the most promising systems for realizing such semiconductor
+              spin-transport devices are thin layers of materials such as indium arsenide and
+              indium antimonide. Realizing these new technologies requires, however, a
+              detailed understanding of the behavior of electron spins in these systems at
+              ultra-short time intervals.  This research is devoted to an experimental
+              investigation of the optical properties of indium arsenide and indium
+              antimonide by means of infrared spectroscopy at a time resolution of one
+              trillionth of a second. Such measurements will reveal how much energy is
+              required to change the direction of the spin in these systems, and how long the
+              spin remains in the newly oriented state. Additional experiments will be
+              performed to demonstrate the feasibility of pulsed magnetic resonance
+              spectroscopy at these ultra-short time scales.  This research will be conducted
+              at Macalester College as well as at the University of Minnesota. The project
+              will also benefit from the participation of an industrial collaborator. 
+              Undergraduate students will be engaged in this research.  They will thereby
+              acquire skills and knowledge in a forefront area of condensed matter physics
+              and materials science.  They will be prepared for advanced studies with an
+              appreciation for the needs of advanced technology and for entry into the
+              scientific/technological workforce.
+
+

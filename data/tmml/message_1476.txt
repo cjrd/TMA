@@ -1,0 +1,11 @@
+Hi Ian,
+Here is a really heuristic approach:
+1) you have P(w|z) for each topic
+2) calculate P(z|w) for each word (maybe assume P(z) uniform for simplicity)
+3) rank words by the entropy of this posterior over topics
+For example, if "hockey" is only ever used in Topic 6 then P(z|"hockey")
+will be sharply peaked on z=6 (low entropy posterior).  If "business"
+appears in many topics, P(z|"business") will be flatter (high entropy
+posterior).
+-Dave
+Ian Upright wrote:

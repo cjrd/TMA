@@ -1,0 +1,65 @@
+              
+CMS-0220309
+PI:		Amy Rechenmacher
+Institution:	Johns Hopkins
+              University
+Title:	"Enhancement of Experimental Imaging Capabilities for
+              Advanced Study of Shear Band Growth and Evolution"
+
+Abstract:
+
+An
+              experimental investigation is currently underway, involving plane strain
+              testing and digital image analysis of shear bands.  The objective is to
+              comprehensively evaluate the nature of the relationship between deposition void
+              ratio and critical state line (CSL) for sands.  The study has been motivated by
+              results of recent research in which experimental quantification of localized
+              deformations (shear bands), and thus critical states, in dilative sands has
+              indicated that CSL position in void ratio-effective stress space may not be
+              unique, but rather dependent on deposition void ratio.  Since critical state
+              concepts and the CSL are widely used in geotechnical analysis and design, the
+              impact of these findings is potentially significant.  The ultimate goal is to
+              derive from the results a quantitative description of the relationship between
+              deposition void ratio and CSL, and to develop recommendations for incorporating
+              the findings into current analysis procedures for liquefaction potential and
+              constitutive models that utilize the CSL in its current unique
+              form.
+
+Experiments are being conducted in an advanced plane strain testing
+              apparatus.  The apparatus is configured to promote unconstrained formation of
+              shear bands and to permit the localization process to be analyzed
+              photographically.  The technique of Digital Image Correlation (DIC) is used to
+              measure directly localized displacements in sand specimens to a high level of
+              accuracy.  The incorporation of a higher resolution digital camera than in
+              previous studies, combined with the synchronization of image acquisition with
+              data acquisition and control, will enable more accurate quantification of shear
+              band deformations, including displacement patterns associated with shear band
+              formation.  The highly developed photographic capabilities also will enable
+              quantitative study of deformation mechanisms associated with other localized
+              displacement phenomenon, such as temporary shear bands.
+
+The configuration of
+              the biaxial testing apparatus as described above offers one of the only
+              currently available experimental methods to quantify the evolution of localized
+              displacements in soils.  Unfortunately, however, in its current configuration
+              only one plane of the shear band is visualized, yielding question as to the
+              validity of the displacement quantification, in spite of its high accuracy.  In
+              addition, the potential occurrence of out-of-plane volumetric exchange within
+              the shear band cannot be addressed.
+
+This study aims to overcome the stated
+              limitations of the current experimental system by incorporating modifications
+              to allow imaging through both plane strain walls, while keeping in tact the
+              out-of-plane force measurement capabilities.  The modifications consist of the
+              addition of a second digital camera, and load wall redesign to accommodate
+              imaging.  These modifications shall affect several system improvements.  First,
+              quantification of local displacements on two planes through the depth of the
+              shear band will enable confirmation of locally derived critical state void
+              ratios.  Second, the real-time comparison among displacement fields at both
+              ends of the shear band and transducer measurements currently available at
+              midpoint of the specimen depth will provide the opportunity to make more
+              reliable observations about deformation uniformity through the depth of the
+              shear band.  Measurements of local deformations to such a level of detail
+              should contribute significantly to the understanding of granular soil
+              behavior.
+

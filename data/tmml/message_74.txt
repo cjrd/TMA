@@ -1,0 +1,4 @@
+Loulou --
+One approach is to compute MAP estimates for vector \Alpha and \Beta
+using the iterative schemes described by Minka in:
+http://research.microsoft.com/~minka/papers/dirichlet/

@@ -1,0 +1,7 @@
+At least for English, WordNet domains:
+http://wndomains.fbk.eu/
+Wiktionary topics (for a number of languages):
+http://en.wiktionary.org/wiki/Wiktionary:Topics
+I believe other dictionaries also have topic markers.
+Cheers,
+Jordan

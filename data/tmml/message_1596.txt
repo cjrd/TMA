@@ -1,0 +1,16 @@
+Dear All,
+Sorry for the bother.  I know the issue of 'choosing the number of
+topics' is an often asked (and kindly, patiently answered) question
+posted here but I have a potential 'twist' on the issue.  Do any
+special considerations arise when selecting the number of topics in a
+dynamic topic model?  Specifically, I would like to evaluate the
+performance of the Dynamic Topic Model and the Continuous Dynamic
+Topic Model each with varying number of topics.  To start with: are
+there specific guidelines for choosing hyper parameters in DTM and
+cDTM? ( I would like to compare 'well fit' models to each other, and
+presumably, hyper parameters might need to change depending on the
+number of topics).    I am aware of the useful suggestions and
+articles offered on this list for the general issue of 'choosing the
+number of topics' but wanted if the advise offered there ports
+directly to settings in which one is modeling the evolution of topics
+over time.

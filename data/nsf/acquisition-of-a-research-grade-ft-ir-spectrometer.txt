@@ -1,0 +1,20 @@
+              The objective of this project is to develop a thermal imaging system, including
+              both hardware and software, to detect mechanical damage in gas pipelines.  The
+              sensors will be in the form of a configurable array of infrared CCD cameras,
+              which will permit the complete imaging of the pipeline as the inspection
+              instrument travels its length.  The goal is to arrive at a minimal modification
+              of the current inspection tool design, making the system attractive to
+              pipeline-inspection vendors.  The addition of a thermal-imaging sensor to the
+              existing magnetic sensor offers the opportunity for fusing the two data sets in
+              order to improve the accuracy and sensitivity of the inspection tool.  Results
+              obtained from this initial study will be disseminated to the gas
+              pipeline-inspection industry and research community.
+
+The proposed project
+              addresses a critical problem in the inspection of gas pipelines - faults caused
+              by mechanical damage.  The instrument system being developed has the potential
+              for application as a general nondestructive evaluation tool that can be used
+              with any material in which a defect or damage introduces a variation in thermal
+              diffusivity from the bulk material.  This method may be applicable to detect,
+              for example, delamination in sandwiched composite materials.
+ 

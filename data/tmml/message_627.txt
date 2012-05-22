@@ -1,0 +1,37 @@
+Dear list,
+I recently implemented my first Gibbs sampler for LDA (it was
+surprisingly easy!), and I had some random questions and thoughts.
+First, it seems a common practice to devote the first N iterations of
+Gibbs sampling to burn-in, and to "discard" those samples.  Other
+people (e.g. http://www.stat.umn.edu/~charlie/mcmc/burn.html) say that
+burn-in is unnecessary, and that you can just run the sampler for a
+sufficiently long time such that the earlier low-quality samples are
+outnumbered by the later higher-quality ones.   I guess it depends on
+what the samples are for.  If you're using them to get counts to
+estimate P(z|d) and P(w|z), maybe you don't need burn-in. But if
+you're using them to optimize hyperparameters, it certainly seems wise
+to discard the early samples, as hyperparameter estimation on these
+samples will certainly affect the later values of the chain.
+If on the other hand, if all you care about is the final state of the
+chain, and aren't doing hyperparameter estimation, I don't see what it
+would mean to "discard samples" in any event, as you're in effect
+discarding all but the last one.  Surely people don't keep adding up
+counts from sample to sample?  Or do they?  That would seem to make
+the chain non-Markov.  Treatments I've seen show the counts for the
+current token being decremented, a new topic being sampled, and then
+counts for that new topic being incremented.  Each token thus
+contributes to the counts just once, not N times for each of N
+samples, and thus we have conservation of total counts.  But  I
+suppose you could accumulate them though...
+Another question is how we would detect that we have burn-in at all,
+namely whether we've reached an equilibrium state?  One obvious way
+would be to measure the fraction of tokens which change topic
+assignment at each iteration.   I've done this, and seen the fraction
+decrease more or less monotonically, down to a certain floor.
+Finally, I was thinking about how one could combine multiple samples.
+One idea I had was to treat each sample as a linear finite-state
+automaton, in which the word-tokens were states and topic assignments
+were labeled arcs.  The complete set of samples would be the union of
+those chains as a weighted FST, where the weights were counts.  One
+could determinize and minimize this WFST to get a compact lattice of
+topic assignments.  This might get around one objection I've heard

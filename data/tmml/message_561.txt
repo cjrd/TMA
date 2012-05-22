@@ -1,0 +1,7 @@
+hi dave,
+the base measure is assumed normalized.  it sums to one (or integrates
+to one in the dirichlet process setting).  it is the mean of the
+distribution.  alpha = (9,9,9) is equivalent to a base measure of
+(1/3, 1/3, 1/3) and a scaling parameter of 27.
+best,
+dave

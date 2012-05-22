@@ -1,0 +1,16 @@
+Hi --
+Thanks Arthur, the appendix to the distributed LDA paper is exactly what
+I've been looking for. No need to re-invent the wheel then...
+Thanks also for answers by Laura Dietz and Alexandre Passos. For this
+list as a record, here's a list of pointers:
+- Hanna Wallach's PhD thesis:
+http://www.cs.umass.edu/~wallach/theses/wallach_phd_thesis.pdf -->
+contains slice sampling (beside a thorough treatment of non-random
+estimation methods); Mallet  contains some implementations.
+- Arthur Asuncion et al.:
+http://www.ics.uci.edu/~asuncion/pubs/UAI_09.pdf --> notably the MAP
+version of Minka's ML estimator and a comparison of different methods.
+- Mark Johnson's work.
+Best regards
+gregor
+asuncion at ics.uci.edu wrote:

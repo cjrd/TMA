@@ -1,0 +1,9 @@
+Hello list,
+Suppose I have a document corpus and I want to use fixed
+p(topic|document) distribution that I know beforehand.
+Is there a way to use Gibbs sampling to estimate p(word|topic)
+distribution, given the document corpus and the fixed
+p(topic|document) distribution?
+Regards,
+Tanel Alumae
+Tallinn University of Technology

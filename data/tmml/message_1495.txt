@@ -1,0 +1,2 @@
+thanks for your comments.
+You are using window size=1, weight = [1] right? What do you by the following:

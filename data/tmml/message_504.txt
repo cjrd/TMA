@@ -1,0 +1,5 @@
+hi dongyuan
+that is strange behavior.  if you send me the data set that you are
+analyzing, and the settings file that you are using, i can take a look.
+best
+dave

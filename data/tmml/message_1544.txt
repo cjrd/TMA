@@ -1,0 +1,20 @@
+Hi Harry,
+I did some work in that direction in my PhD thesis. [1]
+The focus of my work was rather on understanding social interactions
+with respect to songs/items. However, some of the learned lessons might
+be useful for your work.
+See Subsection 5.5.2 in [1] on experimental results on data from the
+music domain. It talks about the relationship of topics of artists and
+studies the relations to genres.
+The summary is that topics found in an unsupervised manner correlate
+with genres. Sadly, using those topics as a recommendation prediction
+did not work super great (once you omit the artists the user already
+listened to in the past from the test data set).
+I'd love to discuss ideas on how to make this prediction better suited
+for song recommendation.
+For the numbers and plots see Subsection 5.5.2 in:
+[1] Laura Dietz, Exploiting Graph Structured Data in Generative
+Probabilistic Models, PhD Thesis.
+https://domino.mpi-sb.mpg.de/intranet/ag5/ag5publ.nsf/e127ff338913b2a3c12565f4005ef860/529f72eb032dbd41c125782b005898a7/$FILE/thesis_v1-1-published.pdf
+Cheers,
+Laura

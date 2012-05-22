@@ -1,0 +1,17 @@
+Hi Scott,
+? In addition to Chomp, which is doing really cool things, Jstor's
+research group is also using topic models for search.? Specifically,
+the discipline browser and their Data for Research Website use topics
+to restrict search results to certain categories (see
+http://dfr.jstor.org).? Google has used topic models for summarizing
+the content of documents, and researchers at Yahoo have studied LDA
+for matching items (webpages or ads) with users.  (search fLDA by
+Agarwal and Chen).
+ETS has studied topic models for automated essay grading (see
+"Comparison of Dimension Reduction Methods for Automated Essay
+Grading"), and Pearson is working on the same sorts of technology (see
+http://www.pearsonkt.com/ ) using topic models.  IMHO, it's slightly
+scary that students' essays might be graded by algorithms with the
+current limitations we have in NLP.
+Cheers,
+Sean

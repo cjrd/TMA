@@ -1,0 +1,6 @@
+Hi,
+I want to bias a topic model such that topics of consecutive words
+will be biased to be similar (or, equivalently to differ).
+Does anyone have an idea how to do that ?
+Thanks
+Roi Reichart

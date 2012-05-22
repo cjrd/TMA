@@ -1,0 +1,13 @@
+I believe all that needs to be done then is to
+a.) Map your documents int o a
+space which is the union of the visual words and annotations.   If your visual
+vocabulary is of size N and your annotation vocabulary is of size M, then you
+can do this by mapping vocabulary items 0:(N-1) to visual words and N:(M+N-1)
+to annotation words.   Each document is now just a bag of words from both
+vocabularies.
+b.) For the vocab parameter of lda.collapsed.gibbs.sampler,
+instead of passing a single vector of vocabulary terms, pass in a list of
+length two; the first should be the vocabulary vector for visual words and the
+second the vocabulary vector for annotation words.
+Cheers,
+Jonathan

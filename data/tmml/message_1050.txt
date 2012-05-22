@@ -1,0 +1,24 @@
+RadimRehurek wrote:
+Didn't realise this was a request for info. on distributed implementations.
+I vaguely recollect:
+We did a version using 4 threads on a multi-core machine in 2005 and
+ran 300 cycles on the Collapsed Gibbs algorithm on about 2Gb of the 2004
+Wikipedia (the full thing at the time) with 400 topics.  Took a week.
+The tricks were:
+Document switching: each thread grabs individual documents
+Text compression:  text was converted to bags and bit-packed to get
+better compression internally and faster unpacking than
+standard gzip
+Sloppy handling of the single topicXword matrix: not actually locking
+anything
+so it was efficient, but occasionally rebuilding it since
+counts would
+drift slightly due to non-locking
+Locking:  the only locking on the system was on handing out the next
+document
+index to a thread
+We also did a separate MPI version but found it wasn't really efficient
+when run on a standard cluster since the interprocess communication
+seemed to dominate.  So we just stuck with the multi-core version.
+However, good research groups have published otherwise ....
+Wray

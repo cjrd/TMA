@@ -1,0 +1,9 @@
+Hi all
+Could anyone help to offer available urls to download the Standford
+twitter dataset or other benchmarks for classified microblog
+Recently I feel interesting to do some testing on microblog, compared
+with normal text, so seeking for a benchmark is a must. Has any
+previous work be made on such a benchmark?
+Thanks
+Ethan
+2011/1/4 ??? <rendapeng007 at gmail.com>:

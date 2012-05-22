@@ -1,0 +1,4 @@
+I was going to suggest having a look at 1PFS:
+http://paul.rutgers.edu/~suhrid/code/1PFS/
+http://www.stat.rutgers.edu/~madigan/PAPERS/pfpaper-03-08-04.pdf
+Anthony

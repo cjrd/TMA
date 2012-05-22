@@ -1,0 +1,8 @@
+Hi all,
+For a directed acyclic graphical model, roots are usually more probable to
+be "parameters",
+and leaves are more probable to be "data instances" or "evidences", examples
+include GMM, LDA and mixture of experts,
+but are there any models where root nodes are "data instances"?
+Best Regards,
+Yuanlong Shao

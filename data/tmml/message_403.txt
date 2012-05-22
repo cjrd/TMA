@@ -1,0 +1,12 @@
+Thank you. But I still don't understand, normally, when max f(x,y), we
+compute partial derivatives
+for each variables and set them to 0, we get an equation set and solve them,
+but for this problem, since closed form solution does not exist, we are
+iteratively updating them,
+then how to ensure the convergence? I'm trying to figure whether I can apply
+the same method
+to similar problems.
+Best Regards,
+Yuanlong Shao
+State Key Lab of CAD&CG
+Zhejiang University

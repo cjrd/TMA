@@ -1,0 +1,242 @@
+
+When we discussed variable elimination, we
+said that variable elimination is correct
+no matter the elimination ordering that is
+used. But we also showed that the
+elimination ordering can make a very
+significant different to the computation
+complexity of the algorithm. So that begs
+the question of how we find a good
+elimination ordering. Fortunately, the
+computational analysis based on graphs
+that we recently did, gives us an
+intuition into on how to find, good
+elimination orderings. Because it turns
+out that the notion of an induced graph and
+it, the way in which it indicates the
+complexity of variable elimination can allow
+us to construct good methods for finding
+elimination orderings with good
+computational properties. How good of an
+elimination ordering can we construct? So,
+here is yet another example of the fact
+that any interesting problem is NP hard.
+So, the following problem is NP hard also. For graph "H", determining
+whether there exist any elimination
+ordering alpha, for which, the
+induced width is less than or equal to some
+fixed value "K", that problem is NP complete.
+So you might say to yourself
+well that's not surprising. I mean
+probalistic inference is NP complete so
+obviously finding a really good
+elimination ordering is going to be NP complete.
+Turns out that this is a separate NP hardness
+problem. That is, even if you
+could solve this problem, even if somebody
+gave you the best elimination ordering
+you're still going to have a graph for
+which the width is sufficiently large so
+that you can't actually solve the problem in
+polynomial time. So finding the best
+induced width for these or the elimination
+ordering that gives you the best induced
+width does not give you polynomial time
+performance in general. And so these are
+two different NP hard problems So how do
+you find a good elimination ordering?
+Fortunately, simple heuristics actually do
+pretty well. So one standard way of
+finding the elimination ordering is to
+simply do a greedy search. Eliminating one
+variable at a time where at each point in
+the elimination you've used some kind of
+heuristic cost function to decide which
+variable you are going to eliminate next.
+And there are some obvious cost functions
+to use and it turns out that they
+surprisingly work pretty well. So, for
+example, one cost function is what's
+called min neighbors. Which is to pick the
+node that has the minimal number of
+neighbors in the current graph. You want
+to pick the variable that connected to the fewest
+friends so that it has the smallest
+party or produces um the smallest factor.
+So this corresponds to the smallest factor
+with the one who's cardinality is
+smallest in terms of the number of variables.
+Min weight accounts for the fact
+that sometimes you have variables that
+have a hundred values and others that have
+two values, and if you just count
+variables you are going to ignore that
+distinction, so min weight
+computes the weight, or the total number
+of values in the factor form. So
+min weight is a way of capturing
+the fact that if you have two variables
+each of which has a hundred values you
+might prefer to never the less, pick a
+factor that has five variables each of
+which has only two values. So, these just
+look at the size of the factors form and
+they ignore the fact that some of these
+factors might be inevitable. So a
+different strategy is to look at how much
+extra work is caused by the elimination
+ordering. So min fill is a strategy
+that says if I eliminate this node, how
+many nodes that weren't friends before
+become friends due to this elimination
+stuff. So here, basically I'm counting
+added complexity above and beyond the
+complexity that I would have had from the
+edges that I previously generated. And
+finally, again you have a weighted version
+of the fill heuristic that takes into
+account not just the number of edges but
+also how heavy they are. That is, how big
+are the, how, what's the, what's the
+domain size of the variables that they
+connect. And it turns out that min-fill
+which is actually quite often used in
+practice is a pretty good heuristic. Now one
+important way of understanding, the issues
+of finding elimination orderings is by, is
+by looking at the following result. And
+the result tells us that the induced graph
+that is produced by variable elimination,
+regardless of the elimination ordering, is
+triangulated. Now what does triangulated
+mean? Triangulated means that you can not
+have a loop of size more than three that
+doesn't have a bridge, an edge that goes
+in one direction or another so that
+there's a way of crossing across that loop
+without going all the way around. Let's
+convince ourselves that this true. So
+here's, here's a simple proof. So once
+again, assume, so consider a set of
+variables that and assume by contradiction
+that, that there is a loop like this. So
+for example, assume that we have a loop of size greater than three. And, again one
+of these variables has to be first to be
+eliminated. So assume that C is the first
+to be eliminated. Well, once we eliminate
+C we end up introducing an edge between B
+and D. So there has to be an edge between
+those two neighbors of C. This is when C
+is eliminated, the C D edge must exist.
+The C B edge must exist. Because as we
+observed before you don't add any
+neighbors to C once you eliminate it. And
+so, at that point, fill, a fill edge must be
+added. So, it turns out that one way to
+find an elimination ordering, an
+alternative to the heuristic that I
+mentioned earlier is to find a low-width
+triangulation of the original graph. And
+there has been a lot of work in the graph
+theory literature on triangulating graphs
+which we are not going to talk about, but
+it turns out that you could use all of
+that literature for finding good low-width
+triangulation and then use that for
+constructing elimination ordering. So now
+let's convince ourselves that this can
+make a big difference. So let's consider a
+practical application and this is an
+application to robo-localization and
+mapping so what we are going to see here
+is a robot moving around and at each point
+in time it sees several landmarks and it
+knows which landmarks it sees and it can
+recognize them. And what it senses at each
+point is some kind of approximate distance
+to the closest landmark. So, let's write
+that down as a graphical model. The
+graphical model looks something like this,
+we have at each point in time, a robot
+pose. Which is the robot pose at times zero,
+one up to the end of the trajectory T. And
+we have a set of landmarks, whose positions
+are fixed, the landmarks don't move. So
+notice that these are not random variables
+that change over time, they are just,
+there and they're constant and what you see
+here in grey are the observations. So this
+for example, assumes that at time one
+Robots saw landmark one. And so what we
+have here is the observation: the observed
+distance is a function of the robot pose,
+and the landmark position. And here at
+time two, we have that the robot saw
+landmark two so we have this dependency
+over here. And at land... , at time three
+the robot also saw landmark two so we have
+two observations for the same landmark.
+And here I didn't draw the fact that
+you can actually see the same landmark, so
+you can see more than one landmark at any
+given point in time but that also is easy to add in. Eh, so now if we take the
+previous robot trajectory that we saw and
+we write down the, the Markov networks
+that represents the factors, we see that
+we have these light blue, little dots.
+That represents the robot pose at every
+point in time. We see that we have these
+temporal persistence edges that represent
+the fact that the robot pose at time T is
+correlated with its, position time T +
+one. And we have these dark blue, robot
+pose there able that ... Sorry, these dark
+blue landmark position variables where we
+see that a landmark is connected to all of
+the positions at which it was visible by the
+robot. And this is an edge that is induced
+by the V structure that we have over here.
+So this is an edge that's induced by this
+V structure. Umm, which we have because
+Z1's been observed. So does landmark, does
+elimination ordering matter? Oh boy, this
+is what you get when you eliminate the
+robot poses first, and then the landmark.
+And this, what you see here is the
+induced graph. And you can see that
+you get this huge spaghetti where most of
+the landmarks are connected, to every, to
+all other landmarks. Okay? What about a
+different elimination ordering? This was
+already better. This is what happens when
+you eliminate landmarks and then poses and
+you see the induced graph that you get
+over poses. And you can see that it's
+still pretty densely connected but it's
+not, nearly as bad as the spaghetti that
+we had before. And finally, let's look at
+the result of min-fill elimination. So this
+is what you're seeing is the fill edges
+being constructed. And you can see that
+it's actually very sparse. Let's look at
+it again. Very few fill edges are
+actually added over the course of the
+trajectory. So the elimination ordering
+makes a very big difference. In summary
+we've seen that finding the optimal
+elimination ordering is an NP hard problem
+and that is an NP hardness that is
+different from the intrinsic difficulty of
+inference in graphical models. However,
+we've also shown that the graph based view
+of variable elimination gives us a very
+simple and intuitive heuristics that allow
+us to construct good elimination orderings
+and those work by looking at the induced
+graph as it's constructed. In the course
+of variable elimination in trying to keep
+it small and sparse. These heuristics,
+although simple and certainly, potentially
+not providing not good performance in the
+worst case are often quite reasonable in
+practice and are very commonly used.

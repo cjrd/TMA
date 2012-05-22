@@ -1,0 +1,29 @@
+              This Small Business Innovation Research Phase II project addresses development
+              of economical membrane-based devices primarily suitable for: (a) purification
+              of sub-quality raw natural gas to pipeline quality and (b) carbon dioxide
+              recovery from enhanced oil recovery operations.  A large fraction of domestic
+              natural gas reserves are uneconomical for recovery based on current market
+              conditions because they contain significant amounts of non-methane gas. 
+              Membrane-based devices are currently commercially employed to purify
+              sub-quality natural gas, but membranes with improved productivity compared to
+              now state-of-the-art devices are required to allow economic use of currently
+              unrecoverable natural gas.  The overall objective of this program is to develop
+              an innovative fabrication approach to incorporate microporous silica membranes
+              within low-cost, highly compact modules.  Microporous silica membranes exhibit
+              combinations of carbon dioxide permeance and CO2/CH4 selectivity that are
+              unrivaled by conventional organic gas separation membranes, but have not yet
+              been incorporated in low-cost modules to allow their commercialization.
+              Commercial availability of such modules would greatly reduce costs associated
+              with upgrading sub-quality natural gas reserves.  In Phase I, the feasibility
+              of the novel module fabrication approach was demonstrated.  In Phase II, the
+              separation properties of very small modules will be improved through systematic
+              optimization of processing.  Modules with ca. 0.1 m2 membrane area will be
+              fabricated and tested for extended duration for separation of simulated raw
+              natural gas, and a detailed manufacturing scheme with related costs will be
+              developed in preparation for commercialization of the technology.
+
+The
+              devices to be developed in this program would significantly reduce costs
+              associated with purification of gas streams in the following applications:
+              natural gas upgrading, carbon dioxide recovery from enhanced oil recovery
+              operations, and biogas processing.

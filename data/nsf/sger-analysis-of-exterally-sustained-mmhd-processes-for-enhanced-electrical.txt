@@ -1,0 +1,36 @@
+              0120617
+Miles
+
+This research program will explore the potential of electron
+              beam sustained MHD power generation for enhancing the electrical efficiency of
+              advanced ground based coal fired power plants. In conventional MHD, the high
+              temperatures that are required (even with seeding) lead to significant oxides
+              of nitrogen production. The electron beam sustained MHD has the capability of
+              operating at relatively cool temperatures, without the need for seed material
+              to be added to the flow.  The lower temperature allows of a variety of new,
+              possibly high efficiency, low polluting approaches to be explored, the most
+              desirable of which would be the utilization of the high flame temperature to
+              drive a high velocity, low temperature supersonic flow with rapid quenching of
+              the formation of oxides of nitrogen through a supersonic expansion.  The active
+              control of the conductivity that electron beam sustained MHD affords also opens
+              the door to advanced methods of control for MHD processes, particularly to
+              suppress parasitic current paths and permit operation in dynamic modes that
+              might allow for improved performance. The electron beams enter the MHD channel
+              along magnetic field lines, and the conductivity is sustained by the secondary
+              electrons that are produced.  To suppress the electron loss rate, the channel
+              must be operated at low pressure. For ground based facilities, this means the
+              flow will need to be supersonic. Since the presence of coal slag along the
+              walls will cause difficulty with electron beam transmission into the MHD
+              channel, the main focus of the research will be to examine the coupling of the
+              electron beam MHD concept together with new membrane technology gasification
+              processes that convert coal to hydrogen and CO2.  MHD has the potential for
+              more efficient electrical conversion of hydrogen through combustion at a
+              temperature higher than is possible with turbine inlet temperature limits. This
+              research explores the possibility of e-beam sustained MHD for high efficiency
+              conversion by independently
+controlling the combustion temperature through
+              combustion in a supersonic nozzle, the formation of oxides of nitrogen through
+              kinetic rate differentials, and the optimization of the conductivity profiles.
+              Modeling indicates that the cost of the electron beams can be relatively small
+              if the electron loss rate is minimized.
+

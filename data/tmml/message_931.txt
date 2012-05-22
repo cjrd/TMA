@@ -1,0 +1,10 @@
+Here's the best one I've seen:
+Griffiths, T. L., M. Steyvers, and J. B. Tenenbaum. 2007. Topics in Semantic
+Representation. PSYCHOLOGICAL REVIEW-NEW YORK- 114, no. 2: 211.
+Best,
+David
+PS The Handbook of Latent Semantic Analysis also has a good chapter with
+very similar information:
+Landauer, Thomas K., Danielle S. McNamara, Simon Dennis, and Walter Kintsch.
+2007. Handbook of Latent Semantic Analysis. 1st ed. Lawrence Erlbaum,
+February 15.

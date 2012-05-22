@@ -1,0 +1,6 @@
+Oh, Mr. Chong himself -- I love the topic-models list :)
+But these topics look amazing.
+Jonathan says he tried both his adapted code (Python) and your original code, with equally strange results, on the NYT dataset. So the difference must lie in data preprocessing.
+Can you give more info on how to replicate your result? What particular dictionary did you use, what training parameters? I'd like to get to the bottom of this, so I can include HDP into gensim with clear conscience.
+Best,
+Radim

@@ -1,0 +1,22 @@
+              
+How does a computer determine that user requests are authentic? Currently,
+              users must prove their identity from time to time, and this authentication is
+              assumed to hold for all user requests until it is either explicitly or
+              implicitly revoked.  This model is poorly matched to mobile devices, which are
+              prone to loss or theft.  An adversary, holding the device of a trusted user,
+              has the full authority of that user for the remainder of the authentication
+              period.  Systems that require more frequent authentication are burdensome;
+              users disable or work around such safeguards, forfeiting their protection. This
+              problem is addressed by a technique called transient authentication.  Rather
+              than invest long-term authority with a mobile device---something easily set
+              down or stolen---it is retained within a small authentication token worn by the
+              user.  
+
+This research explores the implications of making authentication,
+              traditionally a persistent property, into a transient one.  Transient
+              authentication will be applied to process state and file system state.  An
+              application programming interface (API) will be designed, and a number of
+              applications and services ported to it.  The system will be evaluated through
+              controlled benchmarking, establishing the claims of performance and usability. 
+              The resulting system will provide strong protection against loss or theft
+              without inconveniencing authorized users.

@@ -1,0 +1,20 @@
+              Networked information technology has led to unprecedented opportunities for
+              exchanging information in a population of participants whose interests and
+              needs vary over time. In particular, this project concerns populations of 
+              consumers looking for information products, and producers who possess products
+              that others might be seeking. Substantial research has gone into studying how
+              producers and consumers can settle the terms of a transaction for a particular
+              good. However, there are many possible variations and combinations of
+              information products and their prices that can be offered. A critical and
+              poorly understood problem is how parties should position themselves in this
+              vast information product and price space to differentiate themselves from
+              competitors and attract those with whom they should transact. To address this
+              problem, the investigators will use economic analysis and computer simulation
+              to study how producers of information goods can learn to position themselves
+              based on criteria such as price schedules and information content, and can
+              adapt to changing consumer tastes where consumers might be making strategic
+              buying decisions to affect producer positioning. This project will extend
+              economic theory to account for these concerns, and create computational agents
+              that can make adaptive, strategic decisions about product positioning.
+
+

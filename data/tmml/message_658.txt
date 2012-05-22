@@ -1,0 +1,14 @@
+2009/9/15 David Andr? Broniatowski <david at mit.edu>:
+Since David has broken the ice by touting forthcoming NIPS papers,
+I'll follow suit. :)
+Jonathan Chang, Sean Gerrish, Chong Wang, David Blei, and I worked on
+a fun experiment (it'll be at NIPS under the title "Reading Tea
+Leaves: How Humans Interpret Topic Models") where we asked people on
+Amazon Mechanical Turk to rate how good they thought the topics
+discovered by various topic models were and how good the associations
+between documents and topics were.  Surprisingly, perplexity was *not*
+a good predictor of the human evaluations of quality (in fact, we saw
+some negative correlation, but it would probably be premature to read
+too much into that).
+Cheers,
+Jordan

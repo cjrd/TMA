@@ -1,0 +1,5 @@
+See also this thread
+https://lists.cs.princeton.edu/pipermail/topic-models/2011-July/001434.html
+and this one if you end up being interested in using some kind of
+metric-space-based vector classifier:
+https://lists.cs.princeton.edu/pipermail/topic-models/2011-July/001435.html

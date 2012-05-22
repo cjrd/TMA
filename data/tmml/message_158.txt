@@ -1,0 +1,12 @@
+Dear David,
+Thank you very much for your answer.
+Your equations make perfect sense indeed, and I have even verified
+them from my experimental results.
+Since your final equation gives an approximation to the original
+matrix, I suppose that even if K (the number of topics) is equal to
+the number of documents then there still won't be a perfect
+reconstruction of the original matrix (in standard LSI if we keep all
+the eigenvectors from the SVD decomposition we can get a perfect
+reconstruction).
+Best regards,
+Nicholas

@@ -1,0 +1,3 @@
+Hi am trying  Mallet topic model
+but I wish to know what do these hyper parameters
+in mallet for LDA

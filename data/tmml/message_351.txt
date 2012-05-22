@@ -1,0 +1,24 @@
+The summer conference season is coming up, and I know there are several
+interesting new topic model-related papers. I'd like to kick off a
+discussion of this new work by sharing some work we've done recently:
+Topic Models Conditioned on Arbitrary Features with Dirichlet-multinomial
+Regression, by David Mimno and Andrew McCallum (UAI, 2008).
+http://www.cs.umass.edu/~mimno/papers/dmr-uai.pdf
+Documents are often accompanied by non-textual metadata that contain
+information about topics. There have been many published models that
+account for one type of side information, such as authors or dates.  The
+Dirichlet-multinomial Regression (DMR) model uses a log-linear function to
+convert observed features into a custom Dirichlet prior over topics for
+each document. In this way, the model can learn topics conditioned on
+arbitrary discrete and continuous side information.
+As a result, complex topic models based on rich metadata can be
+constructed without any additional statistical modeling and without
+writing any code. We show in the paper how to construct features that
+emulate specific published topic models, achieving similar or improved
+performance in held-out likelihood.
+The approach is similar to sLDA (Blei and McAuliffe), but rather than
+generating side information from topics through a GLM, we condition on
+side information. DMR and sLDA can therefore be thought of as a
+discriminative/generative pair, analogous to maxent and naive Bayes
+classifiers, respectively.
+-David

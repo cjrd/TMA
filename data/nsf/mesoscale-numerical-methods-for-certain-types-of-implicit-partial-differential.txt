@@ -1,0 +1,41 @@
+              The investigator develops a comprehensive computational tool for modeling of the
+              kinetics of microstructural evolution under thermo-mechanical loading in
+              compound structures.  He approximates the microstructural kinetics using first
+              order implicit partial differential equations with a certain specific type of
+              Dirichlet boundary conditions, and using a novel subgrid projection method. He
+              applies this computational technique to provide an active control of vibrations
+              and noise reduction based on the martensitic phase transformation.  Implicit
+              partial differential equations represent a large class of ordinary and partial
+              differential equations and systems that are nonlinear in the highest
+              derivatives, such as the Eikonal or Hamilton-Jacobi equations.  They are
+              closely related to partial differential inclusions that play a crucial role in
+              the study of phase transitions.  Typically, the solutions of imlicit partial
+              differential equations are not smooth, they are not unique, and often they
+              incorporate enormous amount of competing scales.  These three distinctive
+              features present a definitive challenge to the design of suitable numerical
+              methods applicable to finding solutions of implicit partial differential
+              equations.  Recent work based on the Baire category argument shows that there
+              exist solutions of such equations that cannot be obtained by standard
+              analytical approaches.  The existence theory itself is not constructive, does
+              not yield any hint as to how to construct selection principles, and it does not
+              provide a notion of a generalized solution.
+
+In regular use, machinery is
+              subjected to periodic stresses.  This results in acoustic waves travelling
+              through the material. Since these waves are small in comparison to the
+              potential energy of the overall machine, conversion to heat is an effective
+              method of noise reduction.  Thus highly damping materials may be used either in
+              part or in full to accomplish this task.  Shape memory alloys exhibit such
+              significant damping properties.  These are special alloys that change their
+              microstructure from that of a stiff, rotationally symmetric phase to a ductile,
+              less symmetric phase when cooled or put under stress.  These desirable damping
+              properties are a result of movement within the twin boundaries in the
+              martensite phase, as well as the motion of the incoherent austenite-martensite
+              interface, and are significantly temperature dependent.  The investigator
+              undertakes computational modeling to understand and actively control the phase
+              transitions in shape memory alloys, based on implicit partial differential
+              equations.  The applications include such possibilities as controlled vibration
+              of a cutting edge in non-invasive surgery, ultrasonic wave detectors,
+              stabilization of platforms on various spacecraft as well as acoustic
+              suppression in cockpits. 
+

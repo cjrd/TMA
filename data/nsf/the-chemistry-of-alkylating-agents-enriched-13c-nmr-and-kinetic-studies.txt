@@ -1,0 +1,27 @@
+              With this renewal award the Organic and Macromolecular Chemistry Program
+              continues its support for the work of Dr. Edward. B. Skibo of the Department of
+              Chemistry at Arizona State University in Tempe, Arizona.   The research builds
+              on earlier work studying reactive intermediates such as quinone methides,
+              cyclopropyl quinone methides, activated aziridines, and iminium ions.   Methods
+              were developed to synthesize mitosenes labeled with 13C at the 1- and 10-
+              positions using single-carbon 13C starting materials.   These labeled mitosenes
+              and similarly labeled aziridines incorporated into other know aklylating agents
+              will be used to study the chemo and regioselectivity of reductive alkylation of
+              DNA.   13 C NMR will be used to determine the initial product distributions and
+              as a probe to follow product isolation.
+
+The majority of antitumor agents
+              function by the chemical modification of DNA, for example by the addition of
+              alkyl groups which interfere with replication of the rapidly growing cells.  
+              Very little is known about what factors control the sites of alkylation, in
+              part because of the difficulties of  isolating the identifying the many
+              possible products formed.   The use of 13C enriched alkylating agents, coupled
+              with 13C Nuclear Magnetic Resonance spectroscopy, should make it possible to
+              determine alkylation sites and product distributions in crude reaction mixtures
+              - giving fundamental insights which might assist the development of more
+              effective chemotherapy treatments.   This research is highly interdisciplinary,
+              cutting across physical organic chemistry, medicinal chemistry, and
+              biochemistry.
+
+
+

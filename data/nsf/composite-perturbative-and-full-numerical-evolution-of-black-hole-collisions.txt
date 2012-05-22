@@ -1,0 +1,11 @@
+              This project continues the development of an interface between 3D numerical
+              simulations of colliding black holes and an approximate description of the
+              merging black holes as a single distorted black hole (close limit
+              approximation).  The successful development of the interface would allow the
+              evolution of the black hole collision to continue through the plunge phase
+              through the final ringdown phase.
+The simulation of the two stages would allow
+              estimates of the waveform and radiated angular momentum and energy to be made. 
+              These estimates would represent a useful first step in producing information
+              useful to gravitational wave detectors and could be used to cross-check similar
+              studies using different 3D codes and interfaces.

@@ -1,0 +1,6 @@
+Jonathan,
+I noticed that in your document you give the complete conditional for
+sampling the topic assignments in sLDA, but I don't see anything about how
+you update the eta and sigma-squared parameters.
+Do you propose distributions for and sample those parameters as well, or do
+you compute point estimates for them?

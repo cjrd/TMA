@@ -1,0 +1,30 @@
+Hi to all
+I would  understand how the different weighting measure of terms, such as
+tf,  ifd*tf, entropy, could affect the multinomial mixture models like LDA.
+Could you suggest me any  papers, book or results?
+I use LDA with some data  filtering them with a stoplist (i think a good
+one),  but sometimes the term lists for each topic  are not really usefull ,
+i mean  in the first part of ranking i have very common terms and in
+particular i have verbs.
+I would  apply a POS filter in order to reject all adj and all verbs, or to
+reject the terms with high term-frequency, or to use only  nouns and special
+verbs  and to reject common verbs (but i need to build a kind of verb list
+and it is not easy to divide the verbs in that way), or to apply some
+disambiguation techniques on the final results.  What do you think? Do you
+know any papers that use that kind of filters on input data?
+The documents in the my data  are characterized by different lengths. I read
+something on this list.  Is there  any new research study about that?
+After obtaining a final.gamma result file from LDA,  i apply a linear
+normalization technique on the topic columns ( i use the min and max value
+for a  single select topic) in order to use the topic vector as feature for
+hierarchical clustering (euclidean distance,  *average group * linkage)
+I often obtain  orthogonal vector ,  i mean topic vectors with numeric value
+(different from 0)  for only one topic and 0 for the other topics (it is as
+a document is a probabilistic value of single topic rather then a
+distribution over the topics ).  What do you think about that ? Could be
+useful to use the min values of the topic vectors without applying
+normalization technique or it is the same?
+Thanks very much for your  help
+Best Regards
+Antonio Penta
+2008/12/16 David Mimno <mimno at cs.umass.edu>

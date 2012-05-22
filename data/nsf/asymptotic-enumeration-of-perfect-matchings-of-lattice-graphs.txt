@@ -1,0 +1,50 @@
+              This project is concerned with the asymptotic and exact enumeration of perfect
+              matchings of certain lattice graphs (or, in an equivalent language, enumeration
+              of tilings of the regions dual to these graphs) that turn out to be closely
+              related to several important problems in combinatorics (enumeration of spanning
+              trees, plane partitions, alternating sign matrices), and that appear in
+              statistical physics in the guise of the dimer model.  Specifically, motivated
+              by the monomer-monomer correlation introduced by Fisher and Stephenson, and
+              based on the exact enumeration found by the proposer of the tilings of certain
+              hexagonal regions with triangular holes along their symmetry axes (which
+              generalizes MacMahon's theorem on counting plane partitions), the proposer
+              pursues extending his work on the asymptotic enumeration of tilings in the
+              situation when the holes are not necessarily on the symmetry axis of the
+              region.  This should bring useful insight into an important conjecture of
+              Fisher and Stephenson concerning the rotational invariance of the
+              monomer-monomer correlation. Furthermore, the proposer studies three additional
+              problems.  First, the proposer pursues extending the arguments that allowed him
+              to prove directly one identity from a set of four similar identities he found
+              relating eight of the ten symmetry classes of plane partitions to the remaining
+              three identities.  This would help explaining the still mysterious fact that
+              all ten cases are enumerated by simple product formulas and would bring close
+              to completion the task of finding combinatorial proofs for all ten cases. 
+              Second, the proposer continues his work on the three dimensional dimer problem
+              by considering the question of improving the lower bound, employing extensions
+              to three dimensions of the Gessel-Viennot and Kasteleyn theorems that yield
+              signed enumerations.  And third, the proposer uses a generalization of his
+              complementation theorem for perfect matchings to classify the periodic
+              weightings of the Aztec diamond that lead to simple product enumeration
+              formulas, thus giving a unified perspective on several results of Elkies,
+              Kuperberg, Larsen and Propp, B. Y. Yang, Stanley and the proposer.
+
+This
+              research is in the general area of Combinatorics. One of the goals of
+              Combinatorics is to find efficient methods of studying how discrete collections
+              of objects can be arranged.  The behavior of discrete systems is extremely
+              important to modern communications.  For example, the design of large networks,
+              such as those occurring in telephone systems, and the design of algorithms in
+              computer science deal with discrete sets of objects, and this makes use of
+              combinatorial research.  The specific problems in this project are instances of
+              the dimer model of statistical physics.  A basic illustration of this is the
+              real-world process (relevant to the study of of lubricants) of adsorption of a
+              liquid, consisting of two-atom molecules --- the dimers in the model --- along
+              the surface of a crystal, whose fixed atoms form a lattice pattern, with any
+              two neighboring positions capable of holding one molecule, and any given
+              crystal atom being involved in the adsorption of at most one molecule.  The
+              main issue in this setting is the asymptotic behavior of the quantities that
+              are studied (specifically, the number of different ways the surface of the
+              crystal can be covered by molecules), but it turns out in the present context
+              that the usually more difficult problem of determining quantities exactly
+              allows progress in the asymptotic study.
+

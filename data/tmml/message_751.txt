@@ -1,0 +1,4 @@
+Dear Topic Modellers;
+what tools do you use to produce the plate notation graphs, for use in LaTeX articles? Plain Gimp? Something more specialized? Do you know of any automated graphical tools?
+Many thanks,
+Radim

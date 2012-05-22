@@ -1,0 +1,5 @@
+Hi Govind,
+There's a function called 'read.documents'. Please look at the
+included help for more details: ?read.documents
+Cheers,
+Jonathan

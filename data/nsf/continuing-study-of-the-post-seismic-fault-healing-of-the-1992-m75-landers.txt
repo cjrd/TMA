@@ -1,0 +1,39 @@
+              Abstract for proposal EAR0105508 (PH # 25x)
+
+Title: Continuing Study of the
+              Post-Seismic Fault Healing of the 1992 M7.5 Landers, California,
+              Earthquake
+
+PI's: Yong-Gang Li, University of Southern California, and John
+              E. Vidale, University of California, Los Angeles
+
+	We propose to continue our
+              study of the post-seismic healing process on Landers, California, rupture zone
+              using fault-zone seismic waves excited by explosions detonated within the
+              rupture zone. Repeated surveys in 1994, 1996, 1998, and 2000 have revealed that
+              the shear velocity of the fault zone rock increased by ~1.2% between 1994 and
+              1996, and increased further by ~0.7% between 1996 and 1998. This trend
+              indicates the Landers rupture zone has been healing by strengthening after the
+              mainshock, most likely due to the closure of cracks that opened during the 1992
+              earthquake. The observed velocity increase between 1994 and 1998 is consistent
+              with a decrease of ~0.03 in apparent crack density within the rupture zone. We
+              also found that cracks near the fault zone was partially water-filled and
+              became more wet with time. However, the data recorded in the most recent
+              experiment showed that wave velocities in the shallow rupture zone did not
+              increase further more but with a slight decrease for shear velocity between
+              1998 and 2000, inferring that the fault healing probably became invisible since
+              6 to 8 years after the 1992 earthquake. However, we speculate that the healing
+              process on Landers rupture zone might have been affected by the M7.1 Hector
+              Mine earthquake on October 25, 1999, occurring only ~25 km east of Landers. The
+              Hector Mine mainshock triggered slip on the neighboring faults as shown in the
+              InSAR data and could cause crack opening or coalescence in the shallow crust
+              due to strong shaking and change in the mean stress in the region. We shall
+              conduct a repeated experiment in 2001-2002. The new data will help us to
+              determine if the healing process on the Landers rupture zone was affected by
+              the Hector Mine earthquake or has become invisible. We shall compare the
+              healing process on the Landers rupture zone with that on the Hector Mine
+              rupture zone for which we are monitoring from November of 2000. We shall
+              develop a mechanical model based on crack dilatancy theory to interpret the
+              fault healing quantitatively.
+
+

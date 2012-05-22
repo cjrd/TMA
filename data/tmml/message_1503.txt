@@ -1,0 +1,3 @@
+hi chi yuan -- a denominator of akj would not be dependent on the sampling
+dimension k.
+gregor

@@ -1,0 +1,288 @@
+
+In this video, I'd like to tell you about
+the idea of vectorization. So whether
+you're using Octive, or a similar language
+like Mad Lab, or whether you're using
+[inaudible], Java, [cough]++, all of these
+languages have either built into them or
+have redily and easily accessible
+difference in numerical linear algebra
+libraries that will usually be very well
+written, highly optimized often so as
+developed by people that, you know, have
+PhDs in numerical computing, or they're
+really specialized in numerical computing.
+And when you're implementing machine
+learning algorithms, if you're able to
+take advantage of these linear algorithms.
+Picture of libraries or these numerical
+linearchal libraries and make some routine
+calls to them rather than sort of write
+code yourself to do things that these
+libraries could be doing if you do that
+then often you get code that is first more
+efficient so just run more quickly and
+take better advantage of any parallel
+hardware that your computer may have and
+so on and second it also means that you
+end up with less code that you need to
+write so the simpler implementation that
+it's therefore may be also more likely to
+be [inaudible] and as a concrete example
+Rather than writing code yourself to
+multiply matrices, if you let Otter do it
+by typing AxB, that will use a very
+efficient routine to multiply the two
+matrices. And there's a bunch of examples
+like these where if you use a [inaudible]
+implementations you get much simpler code
+and much more efficient code. Let's look
+at some examples. Here's our usual
+hypothesis of linear progression, and if
+you want to compute H of X notice this sum
+on the right and so one thing you could do
+is compute the sum from J=0 to J=N
+yourself. Another way to think of this is
+to think of [inaudible] as theta transpose
+X. And, what you can do is think of this
+as, you know, computing this inner product
+between two vectors, where, theta is, you
+know, your vector [inaudible] theta zero,
+theta one, theta two. If you have two
+features, if N=2. And if you think of X as
+is vector XO, X1, X2. And. These two views
+can give you two different
+implementations. Here's what I mean.
+Here's an unauthorized implementation for
+[inaudible]. And by unauthorized, I mean
+without vectorization. We might first
+initialize, you know, prediction,
+[inaudible] to be 0.0. This is going to
+eventually be, prediction's gonna
+eventually be, be [inaudible]. And then
+agree to have a [inaudible] for J=1
+through N=1, prediction gets incremented
+by theta J times XJ. So it's kind of this
+expression over here. By the way, I should
+mention. In D sectors like [inaudible]
+over here I have these vectors being zero
+index I have data zero data one data two
+but because mat lab is one index beta zero
+in that map we might end up representing
+as data one. And the second element ends
+up as theta two, and this third element
+might end up as theta three, just because,
+vectors and [inaudible] are indexed
+starting from one, even though, you know,
+I wrote theta a X here starting, indexing
+from zero. Which is why, here, I have a
+[inaudible]. J goes from one through N+1,
+rather than J goes through zero up to N.
+Right so this is an unvectorized
+implementation in that we have a full view
+of that you know summing up the N elements
+of the sum. In contrast here's how you
+would write a vectorized implementation.
+Which is that you would think of. X and
+eta as vectors, and you just set
+prediction equals theta [inaudible] times
+x. Just computing like so. So you, instead
+of [inaudible] all these line of code for
+you there just is one line of code and
+what this, what, what this code on the
+right will do is it will use octaves,
+highly atomized numerical [inaudible]
+routines to compute this inter-product
+routine the two vectors theta and x and
+not only is the vectorized implementation
+simpler it will also run much more
+efficiently. [sound] So that was octave
+like the issue of vectorization applies to
+other programming languages as well. Let's
+look at the example in C++ here's what an
+unvectorized implementation might look
+like, we again initialize. Your prediction
+to 0.0 and then we now have a full loop
+for J=0 up to n. Prediction plus = theta J
+times XJ where J you have this explicit
+folder that you write yourself. In
+contrast, using a good numerical linear
+algebra library in C++ you could use,
+write the function like or rather. [cough]
+In contrast, using a good numerical linear
+algebra [inaudible] in C++, you can,
+instead, write code that might look like
+this. So depending on the details of your
+numerical linear algebra [inaudible], you
+[inaudible] have an object. This is a C++
+object, which is vector theta, and the C++
+object, which is, in fact, an X. And you
+just take a theta [inaudible] transpose
+times X, [inaudible]. This times becomes a
+C++ to overload the operator so you can
+just multiply these two vectors in C++ and
+depending on you know the details of your
+numerical algebra library you might end up
+using a slightly different syntax but by
+relying on the library to do this in a
+product you can get a much more simpler
+piece of code and a much more efficient
+one. Let's now look at a more
+sophisticated example. Just to remind you,
+here's an update rule for [inaudible], for
+linear regression. And, so we updated
+theta J using this rule for all values of
+J=0, one, two, and so on. And [inaudible]
+write out. These equations data zero data
+one data two assuming we have two features
+so N=2 then these are the updates we
+perform to theta zero theta one theta two
+where you might remember my saying in an
+earlier video that these should be
+simultaneous updates, so let's see if we
+can come up with a vectorized
+implementation of this. Here my same three
+equations written in a slightly smaller
+form and you can imagine that one way to
+implement these three lines of code is to
+have a for-loop that says you know for J =
+zero one through two to update near the J
+or something like that but instead lets
+come up with a vectorized implementation
+and see [inaudible] we can have a simpler
+way to basically suppress these three
+lines of code or for-loop [inaudible]. You
+know the fact of the does these three sets
+one set at a time lets see if we can take
+these three sets and compress them into
+one line of a vectorized code. Here's the
+idea, what I'm going to do is I'm going to
+think of. Theta as a vector and I'm going
+to update theta as theta. Minus Alpha
+times some other vector, Delta. Where
+Delta is going to be equal to one over M,
+sum from I=1 through M. And then this
+term. Over on the right. Okay, so let me
+explain what's going on here. Here I'm
+going to treat theta as a vector so
+there's an n+1 dimensional vector. I'm
+saying that theta gets updated as that's a
+vector or n+1. Alpha is a real number and
+delta here. Is a vector. So this
+subtraction operation, that's a vector
+subtraction, okay? Cuz, Alpha times Delta
+is a vector, and so I'm saying theta,
+gets, you know, this vector, Alpha X Delta
+subtracted from it. So, what is the vector
+Delta? Well, this vector Delta. Looks like
+this. And what it's meant to be is really
+meant to be. This thing over here. Briefly
+delta would be a m plus one dimensional
+vector and the very first element of the
+vector delta was going to be hold you
+that. So if we have the delta you have to
+in taxiii from zero was delta zero, delta
+one, delta two. What I want is that delta
+zero. Is equal to you know this first box
+in green up above and in D you might be
+[inaudible] that Delta Zero is one of the
+N sum of you know H of X, X I - Y I. Times
+XIO. So, let's just make sure that, we're
+on the same page about how Delta really is
+computed. Delta is one over M times the
+sum over here. And, you know, what is this
+sum? Well, this term over here. That's her
+real number. And, the second term over
+here, XI. This term over there is a
+vector, right?'Cause XI, you know, may be
+a vector, that would be, say, XI0, XI1,
+XI2, right? And what is the summation?
+Well, what the summation's saying is that
+this term. That is this term over here, it
+is equal to H of X1. Minus y one times x
+one. Plus H of X2 minus Y2. Times x two.
+Plus. You know, and so on. Okay, because
+the summation of an i. So as I ranges from
+I equals one to m. These different terms,
+I'm summing up these terms here. And the
+meaning of each and these terms, this is a
+lot like, if you remember, from the
+earlier quiz right? You solved this
+equation we said that in order to
+[inaudible] this code. We said that u
+equals two times the factor v plus five
+times the factor w. This is the example of
+how to add different factors. The
+summation is the same thing. Saying that.
+This summation over here. Is just some
+rule number right that's kinda like the
+number two and some other number times the
+vector X1 this is kinda like you know two
+times V [inaudible] some other number
+times X1 and then plus instead of five
+times W we instead have some other rule
+number plus some other vector and then you
+add on other vectors you know plus dot,
+dot, dot, dot, dot, plus the other
+vectors, which is why overall. This thing
+over here that whole quantity that deltar
+is just some vector. And concretely the
+three elements of delta correspond if E =
+two. The three elements of delta
+correspond exactly to this thing. To the
+second thing and this third thing which is
+why when you update theta according to
+theta minus alpha delta we end up carrying
+exactly the same simultaneous updates as
+the update rules that we have up top. So I
+know that there was a lot that happens on
+the slides. But, again, [inaudible] to
+pause the video, and I'd, encourage you to
+sort of step through the difference. If
+you're not sure what just happened, I'd
+encourage you to, step through the slide
+to make sure you understand. Why is it
+that this update here with this definition
+of Delta, right? Why is it that that's
+equal to this update on top? And if still
+not clear, one, one, one insight is that,
+you know, this. Thing over here. That's
+exactly the vector X. And so we're just
+taking, you know, all three of these
+computations, and compressing them into
+one step, which is, vector delta, which is
+why we can come up with a vectorized
+implementation of this, of this step of
+the linear regression this way. So. I hope
+this, step makes sense. And, do, do look
+at the video, and make sure, and see if
+you can understand it. In case you don't
+understand quite the equivalance of this
+math, if you implement this, this turn out
+to be the right answer anyways. So even,
+even if you didn't quite understand the
+equivalence. If you just implement it this
+way, you, you, you'll be able to get
+linear regression to work. But, if you're,
+if you're able to figure out why these two
+steps are equivlant, then hopefully, that
+will give you a better understanding of
+vectorization as well. And finally. If,
+you. Are implementing linear regression
+using more than one or two features. So
+sometimes, we use linear regression with
+tens, or hundreds, or thousands of
+features. But if you use the vectorized
+implementation of linear regression,
+[inaudible] will run much faster than if
+you had, say, your old folder, that was,
+you know, updating theta zero, then theta
+one, then theta two yourself. So using a
+vectorized implementation, you should be
+able to get a much more efficient
+implementation of linear regression. And,
+when you vectorize later algorithms that
+we'll see in this class is a good trick.
+Whether an octave or some [inaudible]. C
+plus as driver for getting your code to
+run more efficiently.

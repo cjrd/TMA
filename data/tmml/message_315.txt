@@ -1,0 +1,6 @@
+a pointer:
+http://www.cs.cmu.edu/~nmramesh/NallapatiR_parallel_LDA.pdf
+somnath banerjee <cs_somnath at yahoo.com> wrote: Hi,
+How do you implement parallel EM for LDA? Do you have any pointer on this?
+Thanks,
+-Som

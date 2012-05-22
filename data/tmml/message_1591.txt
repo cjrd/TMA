@@ -1,0 +1,15 @@
+Hi topic modelers,
+Given the recent resurgence/success of neural nets, i'm curious how
+they'll do w/ topic modeling
+I did some exploring, and found Ruslan Salakhutdinov's -- 'Replicated
+Softmax: an Undirected Topic Model'
+Ruslan details a RBM based topic model, and tests it's performance
+using Annealed Importance Sampling
+I'm curious about two things:
+Is Annealed Importance Sampling the best method for general model
+assessment? I found this thread which seems to imply it's not --
+https://lists.cs.princeton.edu/pipermail/topic-models/2010-March/000758.html
+Has anyone else gone down this path (topic modeling w/ neural nets)?
+What are some of the hurdles to be aware of?
+Thanks,
+Timmy Wilson

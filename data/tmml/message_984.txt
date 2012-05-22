@@ -1,0 +1,11 @@
+Makes sense.
+The mini-Gibbs round that I pulled out of this context and implemented in my
+code in order to construct topic distributions for previously unseen
+documents from their contents should work for you:
+?         Istvan Biro, Jacint Szabo, and Andras Benczur. Latent Dirichlet
+Allocation in Web Spam
+Filtering<http://airweb.cse.lehigh.edu/2008/submissions/biro_2008_latent_dirichlet_allocation_spam.pdf>
+. *In Proc. of The Fourth International Workshop on Adversarial Information
+Retrieval on the Web, WWW 2008*, April 2008, Beijing, China.
+It may also be in http://jgibblda.sourceforge.net/ but I haven't used that
+or looked closely at it myself.

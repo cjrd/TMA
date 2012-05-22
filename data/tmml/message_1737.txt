@@ -1,0 +1,7 @@
+Hi,
+For one of my course projects, I applied LDA to detect mixtures of genres
+in a movie.
+I wrote a detailed guest post about it here: http://bit.ly/Acbtlr.
+I would love to hear some feedback!
+Thanks,
+Kripa

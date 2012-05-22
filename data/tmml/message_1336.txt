@@ -1,0 +1,9 @@
+Hi,
+For two corpora where each document in them employ the same vocabulary
+as the feature vector, how could we make the meaning of the learned
+topics consistent?
+If we estimate the parameters of one corpus first and employ these
+parameters as the prior for the estimation of next corpus, are the
+meaning of topics exactly same?
+Regards,
+Peng

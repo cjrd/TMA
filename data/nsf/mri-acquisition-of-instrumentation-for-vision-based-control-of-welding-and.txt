@@ -1,0 +1,26 @@
+              This Major Research Instrumentation (MRI) grant provides funds for the purchase
+              of high speed digital imaging systems and fast processing hardware along with a
+              droplet deposition platform, and a robotic Gas Metal Arc welder.  This
+              equipment will be used to build advanced vision based sensing capabilities that
+              can be applied to arc welding and droplet-based manufacturing processes. These
+              processes are intimately related, as they both involve the transfer of droplets
+              of molten material to a work piece, although the particular method of delivery
+              is different.
+
+This equipment will allow high-speed imaging of droplets and
+              weld pools, with the goal of tight control of the solidification process.
+              Because droplet processing can play a key role in advanced manufacturing
+              processes, including net-shape manufacturing and rapid prototyping, the sensing
+              and control of these processes will be critical. Several aspects of vision
+              based control will be explored.  For example, by extracting the dynamic
+              behavior of the droplet deposition process and utilizing models of droplet
+              transfer and solidification, control of the material micro-structure is
+              possible.  Similarly, dynamic imaging of the weld pool will enable the
+              determination, and thus control, of weld quality in real time.  Vision-based
+              control of welding and droplet manufacturing processes encompasses several
+              different theoretical areas, including  fluid dynamics, heat transfer, computer
+              vision, control systems, and robotics. This instrumentation will thus
+              strengthen the interdisciplinary connections within the Engineering Division at
+              the Colorado School of Mines, as well as across campus.
+
+

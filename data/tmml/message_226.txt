@@ -1,0 +1,15 @@
+Hello list,
+This is hopefully one of last questions as I started understanding the
+paper, but I still have some questions left unanswered. Some of the
+concerns I am having are
+1) what is the role of sufficient statistics and what does "maximum
+likelihood estimate with expected sufficient statistic" mean? Sorry if
+this sounds stupid but I am not a native speaker so this sounds sort
+of too condensed for me.
+2) what is the interpretation of \phi and \gamma variational
+parameters and how do they relate to \alpha and \beta parameters?
+3) in the lda-c implementation what is the meaning of lda_suffstats
+structure and class_word and class_total fields?
+4) what part of the paper is explaining the sufficient statistic part?
+Best,
+Mateusz Berezecki

@@ -1,0 +1,13 @@
+              Modern distributed applications have sparked a growth of interest in
+              "publish-subscribe" technologies, where the flow of information is determined
+              by interest on the part of the receiver rather than by explicit addressing.
+              While its rich communication model and dynamic addressing show great potential
+              as a platform for selective information dissemination, the security aspects of
+              publish-subscribe are not well understood. This work proposes to research and
+              develop a security architecture for publish-subscribe systems, particularly to
+              minimize the degree to which the publish-subscribe infrastructure must be
+              trusted.  The proposed research will also address the impact of security on
+              system scalability, a typical goal of pub-sub systems. In addition to the
+              design of a security architecture, this research will include a foundational
+              characterization of security goals for such systems and simulations of security
+              architectures that result from this study.

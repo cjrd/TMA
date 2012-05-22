@@ -1,0 +1,9 @@
+When I run (after placing ap.dat in same directory as lda.exe)
+./lda est 0.5 100 settings.txt ap.dat random data
+I get the following
+reading data from ap.dat
+??? ??  7 [sig] lda 2840 c:\lda-c-dist\lda\lda.exe: *** fatal error - called with threadlist_ix -1
+Hangup
+Does anyone have any idea what sort of problems would cause this error?
+Cheers!
+Fiona Skerman

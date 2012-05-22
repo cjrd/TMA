@@ -1,0 +1,10 @@
+hi topic models list
+many of you have asked for the slides from the tutorial at KDD.  i
+posted them on this page:
+http://www.cs.princeton.edu/~blei/topicmodeling.html
+the link to the PDF of the slides is
+http://www.cs.princeton.edu/~blei/kdd-tutorial.pdf
+if any of you have comments or suggestions, please email me.  i hope
+to use these slides again.
+best
+dave

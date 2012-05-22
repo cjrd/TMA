@@ -1,0 +1,19 @@
+              0001092 Tikoff
+0003007 McClelland
+Tectonic models for orogenic belts rely on
+              various kinematic indicators to determine such things as maximum and minimum
+              stress directions, "stretching directions" and sense of shear.  One fundamental
+              assumption has been that tectonic transport directions parallel mineral or
+              extension lineation directions, however three-dimensional numeric modeling of
+              shear zones indicates that this is not always a valid assumption.  This project
+              will address this issue using the western Idaho shear zone that marks the
+              accretion of allochthonous terranes to the west to the north American plate
+              during the Late Cretaceous.  The kinematic and geologic data have resulted in
+              several, disparate models for this accretion.  This study is an integrated
+              structural, microstructural and U/Pb geochronologic project designed to
+              determine the kinematic history of the late Cretaceous western Idaho shear zone
+              that will employ three-dimensional techniques to test the validity of the
+              assumption that tectonic transport is parallel to lineation.  Results should
+              help clarify the kinematics of this suture and evaluate one of the important
+              kinematic assumptions used in interpretations of many orogens elsewhere.
+

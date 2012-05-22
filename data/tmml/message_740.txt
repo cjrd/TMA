@@ -1,0 +1,6 @@
+Hi Jonathan,
+Thanks for the info. I am able to run the lda code. I am going through the
+relevant documentation. Can you please tell me, using the learnt model how
+can we do the inference.
+Thanks,
+Govind

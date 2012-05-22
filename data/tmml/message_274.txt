@@ -1,0 +1,6 @@
+hi topics list,
+in building browsers based on topic models, we would like to assign
+topics to documents.  (e.g., i know that rexa does this.)  what are
+some of the heuristics that you use to do this?
+best,
+dave

@@ -1,0 +1,193 @@
+
+One sub-class networks is the class called
+naive bayes or sometimes even more
+derogatory idiot bayes. As we will see naive bayes models are called
+that way because they make independence
+assumptions that indeed are very naive and
+overly simplistic and yet they provide an
+interesting point on the trade off curve,
+of model complexity that sometimes turns
+out to be surprisingly useful. So here is
+a naive bayes model. This model is typically
+used for classification, that is taking an
+instance where we have effectively
+observed a bunch of features and in most
+cases although not necessarily. We're
+assuming that all of these features are
+observed for each of the, for a given
+instance, and out goal is to infer to
+which class among the limited set of
+classes a particular instance belongs. So
+these are observed, these ones here
+observed. And this one in general is
+hidden. Now if you look at the assumptions
+made by this model, this model makes the
+assumption that every pair of features
+xi and xj are conditionaly independent
+given the class. So every xi and xj give
+us no information. One gives no
+information about the other once the class
+variable is observed. Which reduces this
+whole model into one where we only have to
+encode individual pair wise
+interactions between the class variable
+and single features. So if we look at the
+chain rule for bayesian networks as applied
+in this context, we see that we have a
+joint distribution P of C comma x1 up to xn which can
+be written using a product form as a prior
+over the class variable C and a product of
+the conditional probabilities of each
+feature given the class. To understand this
+model a little bit better it helps also to
+look at the ratio between the
+probabilities of two different classes
+given the particular observation that is a
+particular assignment x1 up to xn to
+the observed features So if we look at this
+ratio, we can see that it can be broken
+down as a product of two terms. The first
+is just the ratio of the prior
+probabilities of the two classes. So
+that's the green term here. And the second
+is this blue term, which is a product of
+odd ratios, as it's called. That is the
+probability of seeing a particular
+observation xi In the context of
+one class, relative to the context of the
+other class So let's look at an
+application of the naive bayes in one of
+the places where it is actually very
+commonly used which is the context of
+text classification. So imagine that we're
+trying to pick a document and figure out
+for that document to which category
+it belonged we have some set of categories
+in mind so for example is this a document
+about pets, is it about finance, is it
+about vacations? We have some set of
+categories and we like to assign a
+document to one of those. It turns out
+that one can use two different naive
+bayes models for tackling this problem.
+The first of those is called the
+bernouli naive bayes model for text, and it,
+it treats every word in a dictionary so you
+open your dictionary and there is several,
+maybe ten thousand words in that
+dictionary and so you have a random
+variable for every one of those words, or
+at least the ones that occur the kind of
+document that your interested in thinking
+about. And for each word in the dictionary
+we have a binary random variable which is
+one If the word appears in the document
+and zero otherwise If we have say 5000
+words that we're interested in reasoning about
+we would have 5000 of these binary variables. And
+so the probability associated, the
+CPD associated with each variable
+is in this case the probability that the
+word appears say the probability that the
+cat, the word cat appears given the label
+of the document. So for example if we had
+two categories that were looking at right
+now, say documents about finances vs
+documents about, document about pets. You
+would expect that in a document about pets
+the word cat is quite likely to appear and
+so I'm only showing the probability of cat
+appearing, the probability of cat not
+appearing will be 0.7, the probability
+that dog appears might be 0.4 and, and so
+on. Whereas for documents about finances
+we're much less likely to see the word
+cat. Dog a little bit more likely to have
+the words buy and sell, so the probability
+that by appears might be considerably
+higher in this case. So this is a bernouli naive bayes
+model because first, it the bernouli
+model because each of these is a binary
+variable with subject to a bernouli
+distribution. So this is Bernouli
+distribution. And it's naive Bayes because it makes
+very strong independence assumptions that
+the probability of one word appearing is
+independent of sorry the event of one word
+appearing is independent of the event of a
+different word appearing given that we
+know the class and obviously that assumption
+is Far too strong to be represented as a
+reality, but it turns out to be a not bad
+approximation in terms of actual
+performance. A second model for the
+same problem is what's called the
+multinomial naive Bayes model for text. In this
+case the variables that represent the
+features are not the words in the
+dictionary, but rather words in the
+documents. So here n is the
+length of the document. So if you have a
+document that has 737 words, your gonna
+have 737 random variables, and the value
+of each of these random variables is the
+actual word. That is in the first, second, up to the n'th position in the
+document. And so the, if we have say that
+same dictionary of 5000 possible words
+this is no longer binary random variable
+but rather one that has D values where
+this is the size of the dictionary.
+Say 5000 Now this might seem like
+a very complicated model because, the
+CPD now needs to specify the
+probability distribution over words in the
+dictionary for every possible word. For every
+possible position in the documents so we
+need to have a probability distribution
+over the words in position one, in
+position two, and in position n, but we're
+going to address that by assuming that
+these probability distributions are all
+the same and so the probability
+distribution for, over words in position
+one is the same as for words in positions
+two, three, and so on Now this is a
+Multinomial naive Bayes model because notice
+that the parametrisation for each of these
+words is a multinomial distribution
+so what we see here is not the same as
+what we saw in the previous slide, but he
+had a bunch of binary random variables,
+here this is a multi nomial Which
+means that all of these entries sum to one
+and it's a naive naive bayes model because
+it makes, again, a strong independence
+assumption. A different independence
+assumption. In this case it makes the
+assumption that the word in position one
+is independent of the word in position two
+given the class variable. And once again,
+if you think about, say, two-word phrases
+that are common, this assumption is
+clearly overly strong and yet it appears
+to be a good approximation. In a variety
+of practical applications and most notably
+in the case of natur-, of this kind of
+document classification where it's still
+quite commonly used. So to summarize,
+naive bayes actually provides us with a
+very simple approach for classification
+problems. It's computationally very
+efficient and the models are easy to
+construct, whether by hand or by machine
+learning techniques. It turns out to be a
+surprisingly effective method in domains
+that have a large number of weekly
+relevant features, such as the text
+domains that we talked about. On the other
+hand, the strong independence assumptions
+that we talked about, the conditional
+independence of different features given
+the class, reduce the performance of these
+models, especially in cases where we have
+multiple, highly correlated features.

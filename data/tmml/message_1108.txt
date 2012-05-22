@@ -1,0 +1,11 @@
+Hi, folks,
+I am curious that although there are numerous research work on Probabilistic Topic
+Models, few researcher has given a clear definition of topic. The most often seen
+interpretation is something like following.
+topics are multinomial  distributions over words, and assume that each document can
+be described as a mixture of these topics.
+This explanation is quite vividly tell what the topic is for, but I am still feeling
+it is lack of a clear definition.
+So, what do you folks think?
+Regards.
+Charly

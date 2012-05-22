@@ -1,0 +1,157 @@
+
+Shared structure and shared parameters
+comes up in directed models, but it comes
+up as much or perhaps even more in
+undirected models. And that is because for
+reasons we've already discussed and will
+continue to discuss, eliciting parameters
+in an undirected model is much more
+difficult because they don't represent
+[inaudible] probabilities or probabilities
+and so it's a lot easier to represent them
+as, sort of templates that, are comprised
+of smaller building blocks. So let's talk
+about log-linear models and how we, why
+and how we might share parameters in
+log-linear models. And it turns out to be
+quite easy once you think about life in
+terms of log-linear models. So, let's go
+to the, one of the simplest examples that
+we've discussed, which is that of icing
+models. So icing models, as you recall, is
+a model that was first invented in the
+context of statistical physics where we
+have a bunch of binary random variables,
+each, which in this case, in the original
+application, represent the spin of atoms
+in a certain grid. So here is, one here's
+a spin going one way and here's a spin
+going, the orang-, the pink one is a spin
+going in the opposite direction. And we
+have correlations between the spins of the
+adj-, of the electrons in the adjacent
+atoms. And what we have as our energy
+model in an icing model, is a sum over all
+of the edges in the icing model. So in
+this example the edges are organized in a
+grid of the weight. That represents the
+connection of the spin of the two adjacent
+atoms times this feature over here. So F
+of XIXJ, which is the product of XI and XJ
+and it just, as a reminder XI are all in
+the inter, are all either minus one or
+plus one. So the product is always either
+negative one or positive one. Negative if
+the two have different spin and positive
+one if they have the same spin. Now, this
+doesn't have any shared parameters because
+we have a separate parameter WIJ for every
+pair of atoms. I and J. But clearly we're
+not going to have, in general, a separate
+model for every, for every number of atoms
+in, of the material that we're trying to
+model. So usually, what's going to happen
+is that we're going to just have a single
+parameter W that represents the
+interconnectivity between or the, the
+extent of the influence. Extent and type
+of the influence of two adjacent atoms on
+each other. And so this is now a model
+that has the same feature And the same
+weight. So same feature. And same weight.
+Reused across different sets of, different
+pairs of random variables in the model.
+Okay? In, the natural language processing
+example that we have used previously, so
+we have, again, parameter sharing where we
+have in this case, these are the, just as
+a reminder we have these being the actual
+words. These being the labels for the
+words, this is the name that's a
+[inaudible] recognition problem. But the
+same thing happens in other examples. So
+here we have, we've talked previously
+about the kinds of features that
+represen-, that relate, for example, the
+label of the word and the word itself. For
+example if it's capitalized it's more
+likely to be a person, if the previous
+word is Mrs. It's more likely to be a
+person too. And so, And so here again we
+have features, which are the ones we just
+talked about, feature of for example, is
+why I a person An XI is capitalized. And
+we would have a term that uses this
+feature repeated for every position in the
+sequence. That is the same feature which
+talks about the connection between the
+label of the word and the word itself
+would recur in every position in the
+sequence. Because you wouldn't want that
+same, to represent different
+parameterizations for different positions
+in the sequence. And similarly, we have
+the same energy terms, for example, that
+relate adjacent words also being repeated
+across different pairs, in this case, of
+adjacent words. [inaudible] in, in this
+example. Once again we have no potentials
+that represent in this case the connection
+between the image features And the label
+And once again we're going to use the
+exact same potentials for all pixels and
+we're going to have a difference in this
+case sudden potentials that are going to
+be re-used for all [inaudible],
+[inaudible] pixels or super pixels. So how
+do we do this? It turns out to be really
+simple. What we basically need to specify
+for a given feature that we want to reuse,
+we're going to specify for it a set of
+scopes. That is a set of scopes for which
+we would like it to be applied. And, so if
+we have a set of scopes, and let's assume
+that DK is one of the scopes that to which
+we would like apply the feature K, so our
+energy function now is going to include a
+term WKFKDK in the energy function. So for
+example, if FK is We have we want to have
+SKB applied to Adjacent to adjacent
+super-pixels in the image. So the scopes
+of feature FK will be the label YIYJ such
+that I, J are adjacent. And that's going
+to be the set of scopes to which we apply
+that feature. And every time that we have
+that apply we're going to have a term that
+multiplies in the value of that feature
+times the weight which is shared. The
+weight depends on the feature, so WK
+depends on K [inaudible] So this is just a
+way of replicating the feature with its
+weight across different, different subsets
+of random variables in the image. Or in
+the, in the, in the model. So, said
+otherwise and I wrote all over this so
+let's see if I can erase this. Yes. We
+will have a term in the energy function.
+Which has W K times the sum of the
+features across all the scopes to which it
+applies. Which is just the way of
+aggregating like terms that all have W K
+in them. So to summarize, in log-linear
+models it's very common to use the exact
+same feature and weight for multiple
+subsets of variables. We've given multiple
+examples of that. And this allows us, just
+as in the other examples that we've seen
+in the direct case to provide a single
+template for multiple [inaudible]
+networks. Whether it's different, the
+[inaudible] network for different images
+or for different sentences. And, the
+parameter M structure are then allow-, are
+then reused both within and across Markov
+networks. And the only thing we need to do
+in order to apply this is to specify a set
+of scopes to which particular feature is
+it going to be applied.

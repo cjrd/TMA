@@ -1,0 +1,2 @@
+http://search.cpan.org/~tpederse/Text-NSP-1.21/
+maybe this would help

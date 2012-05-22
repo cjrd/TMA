@@ -1,0 +1,18 @@
+              Calmodulin (CaM) proteins function to transduce a chemical signal (increase in
+              cytosolic calcium) into a biochemical signal.  The ability of the CaM protein
+              to recognize and functionally interact with a target protein is essential in
+              this signal transduction process.  In many organisms, with the exception of
+              plants, there exist one or two CaM-type proteins.  In the model organism
+              Arabidopsis thaliana there are seven known CaM proteins and five additional
+              CaM-related proteins.  Further analysis of the Arabidopsis genome suggests that
+              there are at least an additional 13 potential CaM-related proteins.  In this
+              project, the biochemical and functional difference between three CaM-related
+              proteins will be addressed.  These proteins all possess conserved cysteine
+              residues, which are proposed to form a disulfide bond.  This PI will
+              investigate the role of the cysteine residues and potential disulfide bond
+              formation in calcium binding and in binding to a hydrophobic resin.  If
+              disulfide bond formation appears to influence the ability of the proteins to
+              bind calcium and to interact with hydrophobic surfaces, the cysteine residues
+              will be individually mutated.  The mutated protein will then be expressed and
+              purified to test the effect of elimination of specific cysteine residues on the
+              biochemical activity of these proteins

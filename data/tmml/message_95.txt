@@ -1,0 +1,8 @@
+I am using Dr. Teh's hdp code to analyze a corpus. It seems that the choice
+of topic prior, eta, really affects the number of topics a lot.
+If I use eta=0.01, the program outputs around 150 topics, but if eta=0.2,
+there are only 20 topics. For eat=0.5, only around 10 topics.
+My question is: how to decide the setting of eta in practice?
+Thanks a lot!
+Sincerely,
+Ning

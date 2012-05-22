@@ -1,0 +1,30 @@
+#header { 
+    padding: 10px;  
+    font:18pt helvetica, sans-serif;
+    text-align:center;
+}
+
+#paper {                          
+	text-align: justify;  
+	margin-left:auto;
+    margin-right:auto;
+    width:450px;
+    table-layout: fixed;
+	padding: 25px;
+	border: 50px solid transparent;
+  -o-border-image: url("/static/images/paper.png") 50;
+    -webkit-border-image: url("/static/images/paper.png") 50;
+    -moz-border-image: url("/static/images/paper.png") 50;
+    border-image: url("/static/images/paper.png") 50; /* border-image doesn't show on ie9 */
+}  
+
+#algo {
+float:left;
+width:500px;
+background:#9c9;
+}
+#data {
+float:left;
+width:500px;
+background:#9c9;
+}

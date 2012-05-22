@@ -1,0 +1,19 @@
+              The PI has previously developed several variants of a new statistical framework
+              based on the principle of maximum entropy (ME) for learning the joint
+              probability mass function associated with a discrete (possibly
+              high-dimensional) feature space.   Although excellent results which surpass
+              those attainable with competing approaches have been obtained, the PI is
+              currently limited to handling small-to-intermediate feature spaces (up to 30
+              dimensions), and has only considered artificial general inference problems. 
+              The main objective in this project is to develop a large-scale extension of the
+              new methods capable of handling hundreds, or even thousands, rather than tens
+              of features, and to then apply the approach to emerging domains such as
+              multiple topic retrieval from document databases and collaborative filtering.  
+               Applications to diagnosis and marketing will also be explored.    Successful
+              completion of this work will result in a practical set of ME tools that
+              outperform existing methods and thus have a significant impact on large-scale
+              inference tasks.   The work will also develop principled methods within the ME
+              framework for treating mixed continuous/categorical data and arbitrary patterns
+              of missing features.   By attacking large-scale problems, heterogeneous data,
+              and missing features, the work addresses some key challenges encountered in
+              machine learning in practice.

@@ -1,0 +1,4 @@
+Hi everyone!
+??? Does anyone ever read the paper "A probabilistic approach to spatiotemporal theme pattern mining on weblogs", written by Qiaozhu?Mei.?In?this paper I?have?some questions about the parameter which controls the modeling of spatiotemporal theme distributions,does it mean anyting else?
+?? By the way, in this field, there are many abbreviations, for example ,i.i.d, w.r.t...... what do they mean?
+? thank you !

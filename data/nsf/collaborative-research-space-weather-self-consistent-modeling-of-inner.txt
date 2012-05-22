@@ -1,0 +1,13 @@
+              This project will develop a self-consistent model of the near-Earth portion of
+              the plasma sheet.  It will specify the particle distributions, the effects of
+              the plasma sheet on the magnetic field, and the effects of the plasma sheet on
+              the formation of the ring current during magnetic storms.  The approach will be
+              to use test particle tracing techniques in conjunction with an MHD code.  The
+              technique will couple the particle tracing with the MHD modeling in a way that
+              will produce a self-consistent model without using the basic MHD approximations
+              that are invalid within the inner plasma sheet.  This approach has already been
+              used in modeling the quiet-time plasma sheet and the method will now be
+              extended to conditions of enhanced convection, including the growth phase of
+              substorms and convection bays (steady magnetospheric convection).  During the
+              later stages of the project the model will be extended beyond a 2-D plasma
+              sheet model to include field-aligned currents within the plasma sheet.

@@ -1,0 +1,11 @@
+Dear David Mimno,
+Thanks very much for your reply.
+Actually I made a mistake. I should not write on the order of the
+vocabulary size
+since the data is very sparse. As Prof. David Blei shown, the computational
+complexity of VEM LDA is O(NKVz) if we consider the sparsity of the
+co-occurrance.
+You give me a very smart way to speed up GS LDA if data are dense. I will study
+this. Thanks very much for your answer.
+Best regards,
+Yangqiu.

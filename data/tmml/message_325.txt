@@ -1,0 +1,7 @@
+Dear Topic Model mailing list,
+I am trying to code an LDA-type model with a Chinese Restaurant Process
+prior -- can you please provide me with a reference and/or sample code for
+how to implement the CRP part? I would ultimately like to be able to
+implement hLDA. Thanks in advance!!
+Best,
+David

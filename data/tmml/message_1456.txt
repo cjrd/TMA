@@ -1,0 +1,11 @@
+I am not sure about the HMM/LDA combination model you suggest, but
+there definitely is more related work on modeling the temporal trends
+in text data with topic models.  Perhaps  one of these papers could be
+helpful:
+* Zhang, J. and Song, Y. and Zhang, C. and Liu, S., Evolutionary
+hierarchical Dirichlet processes for multiple correlated time-varying
+corpora, 2010
+* Blei, D.M. and McAuliffe, J.D., Supervised topic models, 2010
+* Rao, V. and Teh, Y.W., Spatial normalized gamma processes, 2009
+* Mimno, D. and McCallum, A., Topic models conditioned on arbitrary
+features with dirichlet-multinomial regression, 2008

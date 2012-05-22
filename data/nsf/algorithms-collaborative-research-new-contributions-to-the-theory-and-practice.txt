@@ -1,0 +1,17 @@
+              
+While many of the insights are readily demonstrated for dense linear algebra
+              operations, there are natal extensions that impact sparse direct methods. It is
+              the goal of the proposed project to pursue a unified approach to all of these
+              insights in an effort to put software architectures of linear algebra libraries
+              for this domain of operations on a solid scientific footing.  We will undertake
+              a one year pilot project that will demonstrate the following: (1) The
+              systematic approach can be used to derive highly efficient kernels for
+              specialized dense linear algebra operations that are encountered in sparse
+              direct methods; (2) The abstract program interface that has been demonstrated
+              to allow high-performance implementation of dense linear algebra operations
+              will be extended to apply to sparse matrices that are viewed as hierarchical
+              matrices; (3) We will lay the foundation for a mathematical description of
+              sparse matrices as hierarchical matrices which we believe will allow the
+              derivation methods to be extended to operations on hierarchical matrices. 
+
+

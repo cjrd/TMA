@@ -1,0 +1,6 @@
+Not integrating \phi out is certainly one potential approach.  But in
+our distributed LDA method we get the advantages of collapsing, and it
+always worked well in practice despite no theoretical guarantees.
+Thousands of experiments showed that distributed LDA produced
+indistinguishable test data perplexity results as LDA.
+Dave

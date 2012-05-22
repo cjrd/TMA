@@ -1,0 +1,10 @@
+Yeah - I have one buried somewhere on Github that attempted to fix things like
+go seehttp://meb.tw.xxxx for details
+and
+htp:/bob.com
+and
+via at znmeb
+where people miss a space before the "@" or "#" and don't type the
+whole 'http://'. Twitter's parser doesn't fix this stuff, by the way.
+What they've published (in Ruby) is at
+http://github.com/mzsanford/twitter-text-rb

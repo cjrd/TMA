@@ -1,0 +1,9 @@
+Maojin Jiang wrote:
+In breaking down a corpus into topics, each of which is represented by a list of words ordered by their salience in that topic, non-negative matrix factorization (NMF/NTF) (or maybe other factorization/dimension reduction methods, though maybe less interpretable) seems to be on a par with LDA or other mixture models. Is there known comparison of these?
+I have done some comparision of NMF with LDA (and other methods) on three data sets with pre-assigned categories:  one with an  artificially created correlated category structure, the Reuters-10 (top ten categories of the standard Reuter's corpus) and the NHTSA auto warranty data.   The goal was to determine which techniques produced "topics" best correlated with the pre-assigned categories.
+For all three data sets, I found that LDA mostly outperformed NMF when both used the raw term counts, but the NMF with a tf-idf weighting did better than LDA with no weighting (and there is no obvious way to transform the counts utilized by LDA).
+I do plan on presenting these results, I am not yet sure where.
+James A. Cox, Ph.D.
+Text Mining Software Development Manager
+SAS Institute, Inc.
+The Power to Know

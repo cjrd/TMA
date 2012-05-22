@@ -1,0 +1,2 @@
+Mallet have an implementation of DMR, which can model any metadata
+including author information

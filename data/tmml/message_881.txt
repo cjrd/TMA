@@ -1,0 +1,17 @@
+Hi All:
+A probably naive idea to tailor LDA for ambiguous data analysis such as
+multi-label classification is to use topics directly as class labels, say, k
+= #classes,  theta = the class mixture, z = the per-word class assignment.
+We explored this idea in
+http://www.cc.gatech.edu/~syang46/papers/NIPS09.pdf
+<http://www.cc.gatech.edu/~syang46/papers/NIPS09.pdf>
+where similar to SLDA, a side variable Y = the label observation
+was augmented.
+This model is barely a different interpretation of SLDA, or alternatively
+could be viewed as Bayesian treatment to the multinomial-event-model-based
+naive Bayes classifier, yet it beats SVM on text classification (both normal
+text and short text such as web search queries) in our experiments -- the
+reported results use z as per-paragraph class assignment for normal texts,
+but we found using z as per-word class assignment gives similar performance.
+Any comment to this is greatly appreciated.
+Shang

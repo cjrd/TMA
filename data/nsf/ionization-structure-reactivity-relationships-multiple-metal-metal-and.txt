@@ -1,0 +1,21 @@
+              This award in the Inorganic, Bioinorganic, and Organometallic Chemistry Program
+              provides continued support for research on metal-metal interactions by Dr.
+              Dennis L. Lichtenberger of the Chemistry Department, University of Arizona. 
+              Systems under investigation contain quadruple and triple metal-metal bonds,
+              metal-metal configurations beyond occupation of the anti-bonding delta orbital,
+              and non-bonding and weakly-associated through-space and through-ligand
+              metal-metal interactions.  The metal-metal complexes contain a variety of
+              bridging and non-bridging ligands and represent a broad range of
+              electron-donating and electron-withdrawing effects associated with key
+              structural perturbations.  Complexes with both weak and strong ligands
+              coordinated to the axial position are also included.  High-resolution Hel/Hell
+              valence and high precision X-ray core photoelectron spectroscopy will be used
+              to study both gas phase and condensed species.  The project includes further
+              development of instrumental capabilities.  
+
+Metal-Metal interactions
+              contribute to the structure, stability, and reactivity of many species and
+              influence important chemical, catalytic, and materials processes.  Unique
+              instrumentation will be developed to provide detailed electronic structure
+              information on these interactions.
+

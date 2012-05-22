@@ -1,0 +1,16 @@
+Hi Tanmoy
+I didn't ask this..
+In this paper, N should be the number of words in a document, right? N is
+drawn from some distribution (e.g. poisson). But the author also makes an
+assumption that the number of topics is also N. You can find this in section
+3 of this paper. I think the number of topics should be k, which is the
+dimension of theta. Please note that \theta_1, \theta_2, ...., \theta_k
+determines a multinomial distribution from which topics are generated.
+I did know gibbs sampling..but I'm asking the differences and advantages of
+these approximate inference methods..Also, if you don't understand how
+variational methods use a simplified graph to approximate the original
+graphical model, you should read the section 4 of Blei's paper again. I
+think the basic idea is to introduce two "hidden" parameters \gamma and \phi
+in order to simplify the model. There are graphical representations which
+help you understand.
+Thanks for your advice!

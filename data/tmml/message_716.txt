@@ -1,0 +1,57 @@
+Gurav did a great job in explaining why we use (K-1)-dim Gaussian not K-dim
+Gaussian  to parametrize the distribution.
+I believe there are still two questions here.
+First note that  If  \theta  \sim LN(\mu, \Sigma)
+and \theta  is K-dim, then \mu is K-1 vector and \Sigma is K-1 by K-1
+covariance matrix. The question now is what does \mu and \Sigma encodes
+about \theta?
+If you review Aitchison't  original paper [1], you will know that  (where E
+is expectation):
+\mu_i = E[ log(  \frac{\theta_i}{\theta_K} ]
+and
+\sigma_{ij} = Cov (  log( \frac{\theta_i}{\theta_K})  , log(
+\frac{\theta_j}{\theta_K})  )
+Thus it doesn't come as a surprise that \mu_K is zero (since  E[log(
+\frac{\theta_K}{\theta_K}) ]=0)  and that \sigma_{Ki} = \sigma_{iK} is set
+to zero (the missing column and row in the \Sigma matrix).
+The question now, what if we want to normalize using a topic other than the
+Kth topic. I.e. if some one gives you the above \Sigma and \mu, could you
+compute what \mu and \Sigma would look like if you normalize with say topic
+m?  Aitchison answered yes (see section 2.3 in [1]) and gives a closed form
+solution for these quantities in terms of \mu and \Sigma defined with
+reference to the Kth topic. i.e., he showed how you can compute:
+E[ log(  \frac{\theta_i}{\theta_m} ]
+and
+Cov (  log( \frac{\theta_i}{\theta_m})  , log( \frac{\theta_j}{\theta_m})  )
+for any m.
+He also gives closed form expressions for the above quantities without the
+log.
+All what I want to say is that there is nothing special about topic K, it is
+just the standard way of expressing the LN distribution and you could use
+any  K-1 topics to parameterize \Sigma and \mu and covert back and fourth
+between them as shown above. Thus we can not attribute any special semantic
+to topic K per se.
+Now , could you compute Cov (\theta_i, \theta_j) directly, or could you
+compute any other moments of the form E[ \theta_i ^ a] for a >0, Aitchson
+said they exist but there is no closed form solution for that (i.e. you need
+numerical techniques or simulations).  Thus as Ramesh pointed out, if your
+goal is to compute  Cov (\theta_i, \theta_j) then just estimate  it from the
+means you get from the E-step.  Again, what you are getting here is not what
+the covariance matrix \Sigma encodes.
+Now to the second question. What do you want to do?
+I believe you want to get a topic network similar to the one represented in
+Blei and Lafferty paper [2], right?  For that you need to look at the
+PRECISION matrix ( the inverse of the covariance matrix) not the covariance
+matrix itself. Non-zeros elements of the precision matrix encodes edges in
+the network. If this is your goal, you can just use the method described in
+[2, Sec 3.3] for getting a topic network over the K topics (I believe Dave
+put his code for that online as well).  Implicitly and on a nutshell this
+method computes a regularized version of what Ramesh suggested (over the
+precision matrix).
+Hope this helps.
+Amr
+[1] J. Aitchison. The Statistical Analysis of Compositional Data. Chapman
+and Hall, London,
+1986
+[2] D. Blei and J. Lafferty. A correlated topic model of *Science*. Annals
+of Applied Statistics. 1:1 17?35, 2007.

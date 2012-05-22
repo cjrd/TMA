@@ -1,0 +1,138 @@
+
+We previously discussed the problem of
+learning the parameters of a Bayesian
+network whose structure was given to us.
+But that might not always be the case.
+It's not always the case that we have a
+domain expert, who understands the
+structure of the domain, of the
+relationship between the variables well
+enough to write down a network that we
+think is good enough. So what are some
+cases where this might happen? The first
+is, when we actually want to use a network
+for answering new queries of whatever
+kind, for example. New medical queries in
+a, in a medical domain, or, Before other
+settings. So in this case we might, it
+might still be the case that although
+there might be some domain expertise it
+might not be sufficient to come up with a
+model good enough to use and we might do
+better by taking data and actually
+learning the dependencies that the data
+tell us are the most significant. A second
+setting where this might happen is where
+we don't necessarily even care about using
+the network, we just want to discover the
+network. And, this kind of use model
+occurs for example in scientific or
+biological data sets for example. Where
+the goal is to discover the
+inter-relationships between the variables
+just so that we understand the domain
+better. So lets focus for a moment on the
+first of these two cases. Where our goal
+is to use, is to learn a network of the
+purpose of using it. And let's think about
+the kind of mistakes that might happen and
+how they affect the ability of the network
+to apply well to new instances. So let's
+imagine that the network, that the true
+network is this one over here. And now
+lets consider different kind of mistakes
+that a learning algorithm might make. So
+in one case for example the ler, the
+learning algorithm might learn a network
+that's missing an arc. On the other hand,
+it might learn, a network, to which we've
+added an arc, and now of course one can
+also have cases where we have a bit of
+each, but let's think about these two
+types of errors separately. If we're
+missing an arc. Effectively the
+independencies, that the network. That the
+learned network tells us is incorrect. That
+is relative to the ground truth network
+which is this one. Which if you remember,
+we call it g star. The network in, the
+network that we learn is making
+independence assumptions that are not
+correct relative to g star. Conversely, in
+this case, we have spurious dependencies,
+that is in when we have added an arc there
+is a spurious dependency, in this case
+between a and b. Now, what are the
+implications of this? If we're missing an
+arc, then the correct distributions p star
+cannot be learned. That is, there is no
+way in general if, if p star was
+associated with this network over here,
+that is g star is a perfect map. For P
+star. Then we can't learn P star using a
+network that's missing an edge. Now that
+might seem like a very bad idea and we
+would prefer perhaps the error model on
+the right which, even though it has these
+excess edges, it does allow us to
+correctly learn P star. That is, this
+additional edge over here between A and B,
+there is a setting of the parameters for
+which the correct distribution P star can
+still be Estimated on this network
+structure. So it might seem that this
+error model is actually, error mode is
+actually better than the one where we were
+missing an arc. But, empirically that
+actually turns out to be an oversimplified
+view. Specifically, the model where we
+have excess arcs gives rise to an increase
+in the number of parameters, and the more
+parameters we have to elicit the harder it
+is to elicit them correctly given the
+limited amount of data. We've already
+talked about this when we talked about
+fragmentation as the number of, of the
+data as the number of parents increases.
+And so, one of the important conclusions
+from this, is that this, as we've already
+seen, can give rise to worse
+generalization, which means worse
+performance on unseen instances. And so
+the fact is, that sometimes, having fewer
+edges could actually generalize better
+than having, more edges, even though the
+correct distribution cannot be encoded.
+And so the trade offs between missing arcs
+and extra arcs are subtle and it's not
+always clear which, which is the right,
+which is going to give us the best
+performance. So without introduction, what
+is the way in which we typically learn
+Bayesian network structure from data?
+The general paradigm which we will
+refine in subsequent parts of this of this
+segment of course is that we define the
+scoring function that evaluates for each
+structure how well that structure matches
+the data. So here we have a dataset D,
+and we have in this case, three example
+network structures and we're going to
+define a scoring functions that. That
+tells us for each of these network
+structures, how good. It is, relative to
+the data that we've seen. And then we have
+the goal of searching for a network
+structure that maximizes the score and so
+we have now turned the learning problem
+into an optimization problem. Is an
+optimization over combinatorial space,
+the space of network structures, and by
+defining a score that give us the
+objective that we are trying to optimize,
+and now we need to come up with an
+algorithm that optimizes that score. So,
+we've separated this out into the score
+component and the optimization component,
+and we talk separately about each of this
+in subsequent parts.

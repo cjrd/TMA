@@ -1,0 +1,7 @@
+I have not yet used MALLET before. One thing I wanted to clarify is that I
+am not concerned implementing LDA only but some other generative models
+which are related to LDA to some extent. Are the packages in MALLET flexible
+enough so that I can instantly make some new model by using/modifying some
+existing codes?
+Thanks,
+Ayan Acharya

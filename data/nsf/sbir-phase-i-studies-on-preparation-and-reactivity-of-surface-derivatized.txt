@@ -1,0 +1,23 @@
+              This Small Business Innovation Research (SBIR) Phase I project will develop new
+              surface derivatized reactive nanoparticles. These nanoparticles  are expected
+              to be highly active adsorbents and should be important in a number of
+              applications. In the project, attention will be focused on preparing
+              nanoparticles containing Lewis acid or base centers. The chemical modification
+              involves introducing Lewis acidic boron or Lewis basic alkoxy functionalities
+              on the surface of the nanoparticles. It is expected that introduction of such
+              sites should enhance the adsorptive capability and the destructive ability of
+              the nanoparticles appreciably. In particular, boron, by virtue of its affinity
+              for electronegative atoms (in nerve agents) and the thio group (in mustard
+              agent and nerve agent VX) should bind and help pull these agents quickly
+              through the nanoparticles. Lewis basic sites should enhance the chemical
+              reactivity of the nanoparticles thereby promoting destruction of agents by
+              reactions such as elimination and/or hydrolysis.
+
+
+Commercially, these
+              materials will find application in both civilian and military markets; for
+              example, in civilan markets as adsorbents in air filters for various industrial
+              toxic agents, scrubbing agents for raw natural gas and as novel catalysts.
+              Militarily, the new nanoparticles will provide  faster and more efficient
+              decontamination of chemical warfare agents and environmental toxins.
+

@@ -1,0 +1,6 @@
+Dear Dave and all,
+Thanks for the clarification and code. I guess a close form solution is
+not readily available for the expectation E_q{sqrt(theta_i)} for q the
+posterior Dirichlet.
+Best regards,
+Kong Aik

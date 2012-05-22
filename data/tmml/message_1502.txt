@@ -1,0 +1,14 @@
+Hi people,
+I read about  Fast Collapsed Gibbs Sampling For Latent Dirichlet Allocation by
+Ian Porteous. However, one thing that confuses me is that for his equation for
+collapsed gibbs sampling -
+p(zij = k|z?ij , x, ?, ?) = 1/Z * akj  * bwk
+whereby akj is Nkj + alpha , Nkj is number of times word in document k has been
+assigned to topic j,
+bwk = (Nwk/ Beta)/(Nk + W * Beta), Nwk is the number of times word w has been
+assigned to topic k
+My question is:
+Why does he normalized the akj part of the equation like what he did with bwk? I
+was referring this to the collapsed gibbs sampling equation I saw in 'Finding
+Scientific Topics' and realize this difference.
+Chi Yuan

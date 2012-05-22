@@ -1,0 +1,45 @@
+              Abstract
+Boas/Staube
+
+This project has two main scientific components. The
+              first goal is to advance the theory of the inhomogeneous Cauchy-Riemann
+              equations on pseudoconvex domains in multidimensional complex space. Although
+              global regularity of the d-bar Neumann problem holds on large classes of
+              domains, it fails on the so-called worm domains. Currently there is no general
+              theory that unifies the known positive results, much less one that also
+              accounts for the negative results on the worm domains. Likewise, necessary and
+              sufficient conditions for the stronger property of compactness of the d-bar
+              Neumann operator are not known. A basic question to be addressed is how to
+              unify Catlin's approach to global regularity (via compactness) with the
+              investigators' vector field method.  The investigators expect a new sufficient
+              condition for global regularity to emerge from this study. They also hope to
+              characterize compactness in the d-bar Neumann problem by some condition
+              slightly weaker than Catlin's so-called property P.  The second thrust of this
+              project is to develop a new area in multi-dimensional complex analysis: namely,
+              the study of how the theorems and estimates of the subject depend
+              asymptotically on the dimension of the space as the dimension tends to
+              infinity.  Two particular problems of interest are the recently developed
+              theory about extending Bohr's classical power series theorem to higher
+              dimensions and the question of quantifying how zeroes of the Bergman kernel
+              function depend on the dimension of the ambient complex space. During this
+              project, the investigators will train graduate students, and they will
+              supervise a young mathematician at the post-doctoral level (supported through a
+              VIGRE grant at Texas A&M University) in his study of the d-bar Neumann problem
+              on domains with corners.
+The study of analysis in several complex variables is
+              motivated both by the centrality of the subject within mathematics and by its
+              inherent usefulness. For example, one of the basic laws of nature, causality,
+              when transcribed by a mathematical device called the Fourier transform,
+              immediately gives rise to analytic functions of several (in this case four)
+              variables. The work in this project will impact not only the core areas of
+              several complex variables and partial differential equations, but also other
+              areas of science. For example, the Cauchy-Riemann equations form a model
+              problem for a subject central to physics and engineering; Bohr's classical
+              theorem has repercussions in operator theory; and the Bergman kernel function
+              provides a concrete model for Berezin's quantization scheme in mathematical
+              physics. In addition to advancing the frontiers of knowledge through basic
+              research, this project will contribute significantly to the development of
+              human resources through the scientific training of highly qualified
+              personnel.
+
+

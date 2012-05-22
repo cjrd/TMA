@@ -1,0 +1,19 @@
+Hi ,
+I have problem to deal with large corpus. The corpus contains 528112
+documents and 630136 terms. When I use topic number 50, the problem goes
+through and takes a couple of days to finish. When I use topic number 200,
+the problem seems to have a memory issue, and gives a segmentation error
+shown as below
+Program received signal SIGSEGV, Segmentation fault.
+new_lda_suffstats (model=0x86db018) at lda-model.c:75
+75                  ss->class_word[i][j] = 0;
+(gdb) backtrace
+#0  new_lda_suffstats (model=0x86db018) at lda-model.c:75
+#1  0x08048cbd in run_em (start=Variable "start" is not available.
+) at lda-estimate.c:145
+#2  0x080496af in main (argc=8, argv=0xbfe5c9a4) at lda-estimate.c:322
+Doe any one have experience to deal with large document set?
+Thanks
+Zuobing Xu
+Ph. D. Candidate,
+University of California, Santa Cruz

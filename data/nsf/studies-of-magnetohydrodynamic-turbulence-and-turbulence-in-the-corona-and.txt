@@ -1,0 +1,22 @@
+              The investigators will perform theoretical investigations of incompressible and
+              nearly incompressible magnetohydrodynamic turbulence and anisotropic linear
+              cascades in the corona and interplanetary medium.  Complex nonlinear dynamical
+              behavior, or turbulence, is observed in space plasmas over a wide range of
+              scales that may be described by a magnetohydrodynamic (MHD) model.  Many
+              phenomena in the extended solar corona, including the solar wind, in the
+              magnetosphere, and in the interstellar medium may involve turbulence. 
+              Turbulence is likely to have importance in coronal heating, the acceleration of
+              solar wind, and the acceleration and diffusion of energetic particles.  An
+              integrated approach will be adopted using MHD and fluid simulation techniques,
+              transport theory, analytic theory of turbulence and particle diffusion, and
+              related analysis and interpretation of spacecraft observations.  Work in basic
+              MHD theory will include development and refinement of phenomenologies for MHD
+              relaxation and decay processes, further characterization of the nature of MHD
+              spectral anisotropy, and information theory-based attempts to advance a
+              description of coherent structures in MHD turbulence.  Advances in
+              phenomenologies and transport models will be used to further develop scattering
+              and transport theories of cosmic rays.  Long-term goals are self-consistent
+              models of coronal heating and the acceleration and evolution of the solar
+              wind.
+
+

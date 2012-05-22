@@ -1,0 +1,15 @@
+              This CAREER educational and research project seeks to study the dynamical and
+              stochastic theories for damage evolution in phase space and to develop
+              prognostic capability for machinery and structural health monitoring systems.
+              The main goal of the research is to develop methods capable of tracking
+              simultaneously occurring multiple damage processes and accurately predicting
+              imminent failures in variable forcing conditions. Applications to complex
+              systems including composite structures will be investigated.
+
+The proposed
+              educational activities include the introduction of M&SHM related science &
+              technology content into the curriculum. Collaborative effort to outreach with
+              on-going programs at the Rhode Island University will be carried out. 
+
+
+

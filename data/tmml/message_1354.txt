@@ -1,0 +1,9 @@
+hi nima
+it may be too simple for your needs, but i've written an introduction to
+topic modeling for the CACM.  i've pasted the abstract below my signature.
+the full paper can be found here:
+http://www.cs.princeton.edu/~blei/papers/Blei2011.pdf
+this has not yet appeared in print.  if you (or anyone else) has feedback,
+i'd be happy to receive it.
+best
+dave

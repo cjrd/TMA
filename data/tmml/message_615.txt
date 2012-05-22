@@ -1,0 +1,8 @@
+Yes, it does. For a better explanation, see page 994:
+"Thus each word is generated from a single topic, and different words in a
+document may be generated from different topics. Each document is
+represented as a list of mixing proportions for these mixture components and
+thereby reduced to a probability distribution on a fixed set of topics. This
+distribution is the `reduced description' associated with the document."
+Sincerely,
+Saketh

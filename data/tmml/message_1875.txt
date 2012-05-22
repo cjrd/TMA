@@ -1,0 +1,8 @@
+Dear All,
+I'm a beginner with HDP. I'm wondering whether someone can give me a hint
+of how to regenerate the results for the Multiple corpora experiment with
+3 layer HDP as in
+the HDP paper (Teh et al., the npbayes-r21 package only has 2 layer version).
+Thank you very much!
+Sincerely,
+Jieyue

@@ -1,0 +1,18 @@
+I think the idea is as follows:
+1.) we have  E[log(x)]  with x=\sum_i=1^k exp(\eta_i)
+2.) Taylor-approximation of log(x) around \zeta until degree 1 gives:
+log(x) <= log(\zeta) + (x-\zeta) * zeta^{-1}
+3.) by intuition: "<=" holds because log(x) is concave and is approximated
+by a linear function which becomes a tangent of log(x) at \zeta; this
+tangent will always be "above" log(x)
+4.) substituting log(x) by its approximation gives:
+E[log(x)]_q <= E[ log(\zeta) + (x-\zeta) * zeta^{-1} ]_q
+5.) by intuition "<=" holds because of (3.) and the expectation is a "by q
+positive weighted" integral over its argument
+6.) because q is not defined over \zeta:
+E[ log(\zeta) + (x-\zeta) * zeta^{-1} ]_q = \zeta^{-1}E[x]_q -1 + log(\zeta)
+7.) \zeta becomes an additional variational parameter since we should adapt
+it for each value of x such that the upper bound is as close as possible to
+log(x) from above
+Best, andr?
+2008/12/1 Lei Tang <L.Tang at asu.edu>

@@ -1,0 +1,4 @@
+We had the same impression on the scaling of traditional MLN
+implementations on LDA-scale corpora (see table 2 in our paper).  Our
+model uses stochastic optimization (mirror descent) which worked well on
+the datasets we experimented on.

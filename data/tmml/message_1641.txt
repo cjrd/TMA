@@ -1,0 +1,5 @@
+Hi,
+I am wondering how can I get access to the implementation of the
+"Correspondence LDA" proposed in "Modeling Annotated Data (SIGIR'03)"?
+Thanks for your help,
+Samaneh

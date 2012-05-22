@@ -1,0 +1,14 @@
+Hi, All:
+II am confused by two questions about the perplexity of LDA.  First, we maximized the p(w,\alpha,\beta)
+on the training set. While we calculate the perplexity using  the formal estimated  \alpha and \beta,
+THERE am I right if I follow the below steps:
+1 Use the estimated \alpha and \beta to generate the test document dt
+a) we got \theta from Dir(\alpha), then use \theta and \phi to generate doc dt.
+2 then we got p(dt) by  summing the probability p(w| z ,\phi) according to Bayes Theorem.
+If the above is true, there will be another question. If one or more words of test document are out of
+the training set's vocabulary table, how to estimate the p(w|z)?
+Thanks very much for any hints.
+Look forward to your reply.
+Best Wishes.
+Yours
+KeMing

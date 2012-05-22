@@ -1,0 +1,6 @@
+You're right I believe.  Properly speaking, \beta in equation 6 should be
+replaced by \exp(\digamma(\lambda)).  For the record,
+\exp(\digamma(\lambda)) grows as \lambda when \lambda is sufficiently
+large;making that substitution would
+be equivalent to taking an unnormalized point estimate of \beta.
+Jonathan

@@ -1,0 +1,13 @@
+              The project will build on established activities exploring new modes and
+              mechanism for scholarly communication.  In particular, the project will draw on
+              existing efforts of the Networked Digital 
+Library of Theses and Dissertations
+              (NDLTD) and the Open Archives Initiative (OAI).  The NDLTD promotes student
+              production and submission of their own electronic theses and dissertations - in
+              many 
+different natural languages.  This project will pursue metadata
+              standards and tool building for searching the distributed, multilingual,
+              large-scale collection.  The collaboration with the University of Oldenburg
+              will focus on PhysNet, an existing service which collects physics papers and
+              scholarly materials from the Web 
+

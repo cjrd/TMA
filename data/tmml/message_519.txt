@@ -1,0 +1,7 @@
+These might also be interesting:
+Gaussier, Goutte (2005). "Relation between PLSA and NMF and
+Implications". SIGIR-05: 601-602.
+Ding, He, Simon (2005). "On the Equivalence of Nonnegative Matrix
+Factorization and Spectral Clustering". Proc. SIAM Int'l Conf. Data
+Mining: 606-610.
+Anthony

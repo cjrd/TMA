@@ -1,0 +1,10 @@
+Chi --
+There is some additional overhead with doing the FastLDA computation.
+But this overhead becomes small compared to the savings due to doing
+<< T loops inside the Gibbs sampler.  The savings will increase for
+increasing T and decreasing \alpha.  So you should eventually see a
+speedup (I'm not surprised you are not seeing a speedup for T=15).
+Code for FastLDA can be found here:
+http://www.ics.uci.edu/~iporteou/fastlda/fastldacode.tar.gz
+Best,
+Dave

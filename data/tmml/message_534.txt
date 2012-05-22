@@ -1,0 +1,12 @@
+Neal,
+I was just thinking about this yesterday.  Before I would have gasped at
+using KL since it is definitely not a metric due to its non-symmetry.  I
+think the term metric is a poor choice of terminology since in some
+disciplines a metric is very well defined.  Furthermore my Computer Vision
+and Artificial Intelligence professors did little to present why one would
+be inclined to believe that the an overlap in one distribution was more
+probable than another, however from a dirichlet perspective it does make
+some sense.   The key point is that the overlap of two documents is the
+same, but the content in the non overlapping was much larger in one document
+than the other; subtracting the smaller document from the larger document
+will have less of an effect on the distribution than subtracting the larger

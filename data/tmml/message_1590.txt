@@ -1,0 +1,12 @@
+Hi
+Recently, I have read Blei's paper and the C implementation of LDA, here are
+some questions I don?t understand.
+1?While reading the JMLR version of the LDA paper, I have a question that
+is, In the Eq. 7?the N >= document.length , Am I right?
+2?the routine of  lda_inference( )  in Prof Blei's LDA C codes
+If I initialize varGamma[k] = model.getAlpha()
+Then the update can be computed as follows
+varGamma[k] = varGamma[k] + doc.getCount(n) * phi[n][k]
+is that right, can anybody help me?
+Thanks
+Wujin Tao

@@ -1,0 +1,6 @@
+This might be useful to you as well:
+Arindam Banerjee, Sugato Basu.  Topic Models over Text Streams: A
+Study of Batch and Online Unsupervised Learning.
+http://www-users.cs.umn.edu/~banerjee/papers/07/sdm-topics-long.pdf
+See section 3.3.
+Anthony

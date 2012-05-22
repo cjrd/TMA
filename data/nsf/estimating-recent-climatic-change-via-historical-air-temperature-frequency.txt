@@ -1,0 +1,35 @@
+              Annual and monthly mean air temperatures are the standard parameters used to
+              estimate recent climatic change.  The traditional focus on mean air temperature
+              has ignored the additional probabilistic information that can be derived from
+              historical data on daily temperatures.  Recent climatic change can be manifest
+              in frequency distributions through a variety of changes to central tendency,
+              variance, and other shape measures.  This project will develop a comprehensive
+              procedure for the simultaneous detection of trends in all portions of
+              air-temperature frequency distributions.  The project will use spatially
+              extensive daily air-temperature data for 1,062 stations over the 48 contiguous
+              states to develop the use of time-varying percentiles and other parameters that
+              can estimate recent climatic change in innovative ways.  Flexible procedures
+              that estimate percentiles and parameters within moving windows will be
+              developed, and the robustness of these procedures will be evaluated.  Changes
+              detected in the temperature data will be related to simultaneous changes in
+              humidity and cloud cover as well as change in the shape of the diurnal cycle of
+              air temperature.  Monitoring these synergistic interactions will provide a
+              climate-change perspective that is a substantial extension of the traditional
+              focus on central tendency.
+
+This project will develop methods to detect
+              trends that are not apparent when one examines only mean temperatures.  For
+              example, trends in air temperature may show an increase in the mean while the
+              lower portion of the frequency distribution shows substantial warming and the
+              upper portion shows no change.  These changes would indicate not only a warming
+              climate but also one where there is reduced variability with little change in
+              extremely warm air temperatures.  As a general approach, this research will
+              develop new methods for detecting changes in frequency distributions that can
+              be applied to any environmental variable that is observed at relatively high
+              temporal resolution.  Considering that ecological, economic, and social systems
+              tend to be more sensitive to changes in variability and extreme environmental
+              events, this research has wide applicability.  The changes identified will be
+              of value for evaluating the economic, social, ecological dimensions of climate
+              change.  The examination of time-varying percentiles, in particular, provides a
+              flexible and robust approach for environmental change research.
+

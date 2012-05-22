@@ -1,0 +1,17 @@
+Hi Xuerui,
+Many thanks for sharing your implementation!
+In the ART model you sample for each word an author-recipient-pair and since you want to learn topic-distributions of communication-pairs this makes of course perfectly sense.
+However, I wondered if you ever tried to sample an authors OR a recipients instead of sampling pairs and if this made a difference?
+I am asking, because from my point of view it makes also sense that a word in a message is either generated because of an author's specific interest (i.e.,  the author's topic distribution) OR because of an recipient's specific interest (i.e., the recipient's topic distribution) and not necessarily because of both of them.
+One could than also learn the "level of dedication", i.e. how dedicated a message (or in this case all author's messages) are to a given recipient (in the same way as the Citation-Influence-Model [1] learns the influence of a cited publication on a citing publication).
+Best, Claudia.
+[1] http://www.mpi-inf.mpg.de/~dietz/citinf.html
+___________________________________
+Claudia WAGNER
+Intelligent Information Systems Group
+DIGITAL ? Institute of Information and Communication Technologies
+JOANNEUM RESEARCH Forschungsgesellschaft mbH
+Steyrergasse 17, A-8010 Graz, AUSTRIA
+phone: +43 316 876 2617   fax: +43 316 876 1403
+email: Claudia {dot} Wagner {at} joanneum {dot} at
+web: http://claudiawagner.info/

@@ -1,0 +1,30 @@
+Hi Dave,
+After thinking a bit and talking with Wei Li this afternoon, I think I can
+rephrase it as two questions:
+First, for a given path and level there's a multinomial (beta) drawn from
+a dirichlet (eta), and some number of word counts (split in the notation
+between n_{c_{m,l}, -m} and n_{c_{m,l}, m}) drawn from the multinomial. I
+get:
+Gamma(W eta)     prod_w(Gamma (eta + n^w_{-m} + n^w_{m}))
+prod_w(Gamma eta)      Gamma(W eta + n_{-m} + n_{m}))
+rather than the version in the paper, which includes the {-m} counts in
+the first term. Am I missing something?
+The second question may be a notational confusion. My understanding from
+the paper is that all the documents choose a path based on their current
+topic assignments. In other words, at the point where a document picks a
+new path, all of its words are assigned to topics on the path it chose in
+the previous iteration.
+When constructing the sampling distribution over paths, consider a path
+that diverges from the current path at the root. For all the levels on
+this path other than the root, n_{c_{m,l}, m} is 0 since all the words are
+assigned to levels on the current path. This raises two problems. First,
+as printed, the term for a level with no words assigned to it is 1, where
+for a level on the current path (where n_{m} > 0), it's somewhere around
+exp(-1000), so the current path will never be sampled. Second, it means
+that the sampling distribution for paths other than the current path
+doesn't really take into account the words in the document, since none of
+them will be assigned to any node in the tree off the current path.
+To take a really simple example, say the tree has two levels and there are
+10 paths from the root -- I'll call the nodes R and 1..10. The current
+document is assigned to path 1, so all of its words are either assigned to
+R or to 1. Now when I consider the path R->2, I can absorb any factors

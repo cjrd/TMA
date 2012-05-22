@@ -1,0 +1,19 @@
+Dear all,
+The problem is:
+Given a topic *T* and a large set of topics *TS, *and I want to select the
+top k topics that are similar to T in TS, i.e. top ranking topics in TS
+according to the KL divergence between T and a topic TS_k in TS,
+D(T||TS_k).
+If computing each pairs, the efficiency is not high.
+My solution is:
+1. Cluster the large set TS, and compute the centroids of clusters, C_k.
+2. Given a topic T, we first compute KL divergence D(T||C_k) for all
+centroids, and then choose the best cluster (C_b) to compute D(T||TS_s),
+where TS_s \in C_b
+3. After step 2, we can obtain a ranked list of topics, done.
+It's not an exact results because the better result may be in the neighbor
+clusters;
+my question is how to estimate the degree of approximation? is there a
+related paper to solve this problem?
+or other solutions?
+Thanks.

@@ -1,0 +1,29 @@
+              
+The principal investigator intends to explore common trends in representation
+              theory of reductive algebraic groups over local non-Archimedian fields and
+              representation theory of affine Kac-Moody algebras. In particular, he is
+              interested in finding a unified description of the Whittaker functionals in
+              these two representation theories using geometry.  Understanding the underlying
+              geometry of the Whittaker functions should provide new insights into the
+              Langlands correspondence over the field of rational functions on an algebraic
+              curve, either over a finite field or over the field of complex numbers.  A
+              closely related project is to prove the geometric Langlands conjecture using
+              the theory of ``Whittaker sheaves'' on the Drinfeld moduli spaces.  On the
+              other hand, the investigator intends to continue his study of deformed
+              W-algebras and their connections with representation theory of quantum affine
+              algebras.  It is expected that this study will lead to better understanding of
+              the nature of the Langlands duality.
+
+In summary, the main idea of the
+              proposed research is that seemingly disparate areas of mathematics, such as
+              representations theory and geometry contain various hidden common trends. 
+              Recently, several deep phenomena have been observed, such as the Langlands
+              duality.  The investigator believes that these phenomena are so fundamental
+              that they should manifest themselves in one way or another in many different
+              areas of mathematics.  The goal is to uncover them where they are still
+              unknown, and this way understand the precise nature of the phenomenon.  This
+              may also reveal new and unexpected connections between different fields,
+              through which new insights may be gained into fundamental problems of
+              mathematics.
+
+

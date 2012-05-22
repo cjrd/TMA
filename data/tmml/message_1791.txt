@@ -1,0 +1,13 @@
+Dear All,
+Can anyone point me to any text dataset which has both document labels
+and document tags? A document "label" is equivalent to what has been used
+as "supervised information" in supervised topic model (Blei and McAuliffe,
+2007) and document tag might be equivalent to what has been used as
+"supervised information" in labeled LDA (Ramage et al. *EMNLP 2009*). It
+would be better if the "tags" are shared across different "labels".
+Thanks,
+Ayan Acharya
+(Graduate Student,
+Electrical and Computer Engineering,
+University of Texas at Austin, USA
+Webpage: http://www.ideal.ece.utexas.edu/~ayan/)

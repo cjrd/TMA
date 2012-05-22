@@ -1,0 +1,17 @@
+Dear Rahul and others: Topic models are fascinating and important
+scientifically, but generally speaking, they are not the most accurate
+method for collaborative filtering, i.e. for predicting ratings in a
+scenario like the one you describe. Matrix factorization methods tend
+to be the most accurate, and much easier to implement. For practical
+applications, the original method of Simon Funk (now five years old!)
+is still an excellent place to start:
+http://sifter.org/~simon/journal/20061211.html
+For slightly higher accuracy, see for example
+http://cseweb.ucsd.edu/~akmenon/LFL-ICDM10.pdf
+http://hal.archives-ouvertes.fr/docs/00/48/27/47/PDF/immmf.pdf
+In your application, the most important influence on usefulness will
+be the heuristic that you use to define ratings, since these are
+pseudo ratings and not actual evaluations from users. It might be
+preferable to predict the number of plays and skips directly. The LFL
+method described in the first paper whose link is above can do this.
+Best wishes, Charles Elkan

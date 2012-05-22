@@ -1,0 +1,7 @@
+Also misleading was my loose use of 'block sampling' to mean anything
+that samples more than one token at a time instead of to refer to
+sampling from the joint distribution of several variables in the model
+at once (e.g. Griffiths / Steyvers Author-Topic model implementation,
+which samples from joint A-T assignments,
+http://www.datalab.uci.edu/author-topic/398.pdf), which seems to me
+now to be the correct meaning.

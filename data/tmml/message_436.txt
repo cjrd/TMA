@@ -1,0 +1,11 @@
+Is there any way of preventing label-switching by imposing some kind
+of arbitrary ordering on the topics? I've vaguely heard of people
+doing this sort of thing when using MCMC in other contexts, but don't
+know any details or whether it could apply here.
+Also, for averaging, are there standard diagnostics (e.g.
+autocorrelation statistics) that people tend to use in deciding
+whether to average all the samples after a burn-in period or to pick
+samples at some interval and just average those? Or do you just look
+at, say, time series of hyperparameters and average if they look like
+white noise?
+- Neal

@@ -1,0 +1,21 @@
+My first answer was misleading.
+You are right, the posterior p(\phi_{k}|x_{-ij},h(\phi_{k})) is Dirichlet
+distributed with updated counts. But in order to get the conditional
+density p(x_{ij}|x_{-ij},h(\phi_{k})) the parameters \phi_{k} need
+to be integrated out. This is done in Equation 30 of the Teh et al.
+paper.
+The Dirichlet distribution has the nice property that the result
+of Equation 30 is just (prior_count+data_count) normalized over all
+words. This is the multinomial structure that you found in the npbayes
+code.
+Let me know if you have more questions.
+Steffen
+At Saturday, 07 October 2006, you wrote:
+in variable
+density of
+parameters.
+me.
+===================================================================
+Mail was send from https://www2.informatik.hu-berlin.de/
+EASY and FREE access to your email anywhere: http://Mailreader.com/
+===================================================================

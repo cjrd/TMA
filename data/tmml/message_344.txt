@@ -1,0 +1,34 @@
+Hi Rachit.
+I assume you're referring to Blei et al. (2003), "Hierarchical Topic
+Models and the Nested Chinese Restaurant Process".
+It sounds like you're confusing the models described in the paper.
+They describe four models of increasing complexity:
+1) A model with K topics, and N documents, and each document has only
+one topic.  To generate a document, generate a topic for the document
+then generate words from this topic.
+2) LDA: Similar to above except that each *word* in a document is
+generated from a separate topic.  To generate a document, generate
+mixing weights over a fixed number of topics K, then generate each
+word as a mixture of the document's topics (i.e. pick a topic
+according to the mixing weights then use the topic to generate a
+word).
+3) A hierarchical LDA, but with a fixed tree.  It is assumed that each
+tree has uniform depth L, although I don't see why this is necessary.
+To generate a document, first pick a path from root to some leaf.  By
+assumption this path is of length L in its nodes, and each node has a
+topic associated with it.  Pick mixing weights of length L for the
+topics of the nodes in the path.  Then generate each word as a mixture
+of those L topics.
+4) A generalized hierarchical LDA with no fixed tree structure.  Again
+the depth is L, and in this case I *really* don't see the point of
+this.  But anyway, instead of a fixed number of children per node, use
+a CRP at each node controlling an indefinite number of children.
+Again to generate a document we first pick a path from root to leaf.
+But to do this, when we get to a node, we don't just randomly pick
+among the children.  Instead, we consult the CRP, and it picks the
+appropriate child and returns the associated topic -- periodically
+creating new children/topics on the fly.  Again, once you've got the
+path of length L, pick the mixing weights just as above and generate
+words as a mixture of L topics, again like above.
+You should rephrase your questions in terms of the above description
+and in terms of which model you're referring to.

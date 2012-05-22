@@ -1,0 +1,3 @@
+Hello everyone,
+I am using Mallet for topic modeling & inference using PAM. I am able to
+create the model. However, the inference file is not created when

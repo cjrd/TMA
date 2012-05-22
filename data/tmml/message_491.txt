@@ -1,0 +1,21 @@
+Hi,
+I'm by no means an expert but hopefully I can put you on the right track...
+1. I'm not sure exactly why the parameters appear explicitly in some
+graphical models and not others. I've read papers where they're made
+explicit and other papers where they're not.
+2. This depends on how you want to represent the distribution over topics
+for each document. For a Dirichlet distribution, if you parameterize it with
+with a vector of values >= 1, it will have a grater density somewhere in the
+middle of the simplex, but if you parameterize it with values 0 < x < 1, it
+will have most of its density in the corners of the simplex. If the alpha
+values are not the same, the density will be highest somewhere between the
+the center and the corners. In the case of LDA, the alpha values are the
+same, thus giving a uniform distribution of topics in each document and not
+favoring any particular topic *a priori*. So, the convention is if alpha1 =
+alpha2 = alpha3 = ... = alphak = alpha; so you only need one value.
+You can also let the program estimate alphas for you.
+3. There are M documents and each document has N words where N is a variable
+indicating the number of words for that particular document. So, you're
+right, you can write Ni where i is the document number.
+Hope this helps,
+Adnan

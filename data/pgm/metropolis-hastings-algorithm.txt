@@ -1,0 +1,560 @@
+
+We define the notion of [inaudible] chain
+Monte Carlo?s sampling as a general
+paradigm for generating samples from a
+distribution from which it is otherwise
+difficult or perhaps intractable to
+generate samples directly. Markov chain
+gives us a general way of, of approaching
+this problem. But they, but the framework
+leaves open the question of where the
+Markov chain comes from. That is, how do
+we design a Markov chain that has the
+desired stationary distribution? We talked
+about the Gibbs chain as a general
+solution to this problem in the context of
+graphical models. But we also mentioned
+that the Gibbs chain has limitations in
+terms of its convergence rates for certain
+types of graphical models. So what happens
+if we have a graphical model for which the
+Gibbs chain. And doesn't have good
+convergence properties. How do we design a
+market chain for that? Well, it turns out
+that there's a general class of, methods
+called Metropolis-Hastings. And the
+Metropolis-Hastings algorithm gives us a
+general approach for designing a Markov
+chain with a desired stationary
+distribution. In fact it, for a given
+stationary distribution, we can construct
+the whole family of different Markov
+chains that explore the space differently,
+and then try and select among those, or
+construct one among those, that has good
+convergence properties for our
+distribution. So the key insight behind
+the metropolis hastings method is the
+notion of a reversible chain. So what does
+it mean for a chain to be reversible?
+Imagine that we have a chain with a
+particular stationary distribution pi. And
+we're going to consider two different
+experiments. In the first experiment,
+we're going to pick a, a point in the
+space. We're gonna pick a point in the
+state space, according to the probability
+of distribution PI. So say we land on this
+one. And then we're going to pick a random
+edge emanating from the state that we
+picked, according to the transition model
+defined by the chain P. So say we pick
+this edge. That's the first experiment.
+The second experiment is exactly the same
+thing. We're going to basically do the
+this experiment twice. So now we are going
+to pick a. [inaudible] and once again
+we're going to pick an outgoing.
+Transition from that state. A chain is
+reversible if when I do this experiment,
+the probability of traversing this edge,
+this red edge over here is in this process
+is exactly the same as the probability of
+traversing this green edge in the other
+direction. That is, if picking I and then
+traversing to J occurs with the same
+probability as picking J and then
+traversing to I. So, written in,
+mathematical notation, this tells us that,
+PI of X, which is a red state, times the
+transition along the red edge, is equal to
+the probability of X prime. That was my
+green experiment. Times the probability of
+transitioning in the opposite direction.
+Now, it's very easy to construct Markov
+chains that are not reversible. So this is
+by no means, a universal property of
+Markov chains. But it turns out that
+reversible Markov chains have elegant
+properties that allow them to be
+constructed, so as to give rise to
+particular stationary distributions. And
+specifically, we can show and it's not a
+very difficult proof, we'll show it in a
+moment, that if this equation which is
+called the detailed balance equation. If
+this equation holds and T is a regular
+mark off chain. Then T has a unique
+stationary distribution which we know from
+the fact that it's regular but furthermore
+that stationary distribution is pie. Let's
+go ahead and prove it. And it turns out to
+be actually a very, a one line proof. So,
+here we have, we take the two sides of the
+detailed balance equation, and we put one
+of them on this side, and the other one on
+this side. And because the two sides are
+equal, if we sum up over X, then the two
+summations are also equal. And now we
+notice, by looking at the right hand side,
+that Pi of X prime doesn't depend on the
+[inaudible] X. Alright, on variable x
+since, so we can move [inaudible] out of
+destination. And so this can now be
+rewritten as pi of x prime time?s sum over
+x t of x prime. X. And this information
+over here because P is a probability
+distribution over it out going, over the
+edges that are out going from the X prime
+is necessarily equal to one, and so if we
+rewrite what we've just proved in this one
+line derivation, we just prove that the
+sum over X, [inaudible] of X, T of X to X
+prime is equal to [inaudible] of X prime
+which is exactly the definition. Of the
+stationary distribution. This is a one
+line proof that a reversible chain gives
+me sorry, a chain that is reversible
+relative to a particular distribution of
+pi necessarily has pi as its stationary
+distribution. Now, why is this a useful
+transition between the definition of the
+stationary distribution of pi in terms of
+this equation down at the bottom, versus
+this alternative definition of the
+stationary distribution of pi? Because
+this distribution, this definition down at
+the bottom involves the summation over
+what is in general an exponentially large
+space. Whereas this one is, as we'll see
+in a minute, much more constructive in
+that it allows us to construct P so as to
+match pi. And so, that is exactly the idea
+behind the Metropolis Hastings, the
+definition of a Metropolis Hastings chain.
+So how does a Metropolis Hastings chain
+work? It starts out by saying, well; we
+want to move around broadly in the state
+space. So we're going to have a
+distribution Q, which is kind of like a
+transition model. So this is my
+[inaudible], this is my distribution q,
+and q is going to, to roam freely over the
+state space. Unlike the Gibbs chain it's
+not going to necessarily take just little
+local steps from one state to a state
+that's very nearby it can look very far
+away and, and go into large into very
+distant parts of the state space. Now that
+by itself of course is just going to give
+me a stationary distribution that has
+absolutely no relationship to the
+stationary distribution pi that I care
+about and so what I'm going to have is a
+critic. The critic is the guy who says,
+whoa, wait a minute; you can't go there
+right now because it doesn't that's not
+going to give you the right stationary
+distribution. So what does the critic do?
+The critic listens to the proposal that
+was made by the proposal distribution
+queue. So it says, oh you want to go from
+X to X prime, well what is the probability
+with which I'm going to let you do that?
+That's the acceptance probability. And
+that's a binary random variable for each x
+and x prime. What is the probability that
+we accept that proposal? So that gives
+rise to the following process. I haven't
+told you how to pick Q or A or anything
+yet. But let's just understand the
+process. At each state X, we sample a
+potential successor state, X prime, from
+my proposal distribution Q. So X, and we
+sort of have a proposal to go to X prime.
+And I no-, denoted this using a dashed
+line. And now the [inaudible], the
+acceptor says, do I accept that? And if
+the proposal is accepted. Then, I actually
+make that transition and if the proposal
+is rejected, I just stay where I am. So
+what transition model does this give rise
+to, because ultimately this just gives us
+a transition model from x to x prime? So
+there's two cases. Case number one is if x
+is not is the same, x prime is not x, that
+is x prime is a state other than x. Well
+in this case, the only chance that I have
+of moving to X prime is if I proposed to
+move to X prime and if that proposal was
+accepted. So I need to multiply these two
+probabilities and that gives me the
+expression, this expression for the
+transition. What about transition from X
+to X? Well, there's two different cases.
+Either I propose a move to X, and it was
+accepted. Or, X also gets the benefit of
+all of the transitions that were rejected
+by, the, from other states that were
+proposed, but [inaudible], where the move
+wasn't accepted. And so what we have here
+is Q. Of x to x which we assume is always
+accepted. That's sort of a one with the
+exception of this model. And then we sum
+up over all possible other transitions of
+the probability that they were proposed
+times the probability that they were
+rejected which is one minus the
+probability that they were accepted.
+[inaudible] give rise to a transition
+model. So this is a general definition of
+a marcovchain but as stated, there's no
+reason to expect to have a particular
+stationary distribution. And so, now this
+is where we bring back the intuition from
+the detailed balance equation. And we're
+going to use the detail balance to
+construct an acceptance probability that
+has the property that we want. And so,
+here is a detailed balance equation
+rewritten. And now, let's write down, and
+we're going to assume in this, in this
+particular example, that X is not equal to
+X prime. And so, we're going to, because
+this is trivial for the case, X is= to X
+prime, this equality always holds. Pi of
+X, P of XX is= to PI of X, P of XX. And so
+let's look at the case, X is not equal to
+X prime. And our goal is to construct A.
+So the goal is to construct A such that.
+Such that detailed balance. Old. Or Q. I'm
+given Q; the setup is I'm given a proposal
+distribution Q. And now I'm going to pick
+A, so as to make detailed balance hold.
+And if detailed balance holds, for Q, Pi,
+then I'm going to, then that is going to
+guarantee that the process, overall, has
+the correct stationary distribution. So,
+this is the quality that we want to have
+happen. And now let's go ahead and just
+define this as a constraint on the
+acceptance probabilities, so we have
+acceptance probability A, occurring on
+both sides of the equation. So I'm going
+to divide, move both As to one side, move
+everything else to the other side and so I
+get a constraint on the ratios, between
+the acceptance probability from XX prime
+and the acceptance probability from X
+prime X and that has to be equal to this
+ratio over here. And so I'm going to
+assume, without loss of generality, that
+this ratio. Notice that this ra-, we have
+we can decide this in any way that we
+want. We can either consider the ratio
+from X to X prime is the numerator, or
+from X prime to X. I picked this one under
+the assumption that this is a, some value
+[inaudible], sorry. This is equal to
+[inaudible], which is less than one.
+[sound] And, so now if we. Kick a. So now
+we need to pick the values of the two
+acceptance probabilities x and x prime so
+as to make this equality hold. And one
+simple way to do that is to take the
+smaller of the two which we assume was the
+numerator and we make A of x to x prime
+equal of roll and we make A, x prime to x
+equal to one and that gives me immediately
+that this [inaudible] hold. Now of course,
+we could have picked these probabilities
+to be otherwise. We could have picked for
+example, AX to X prime to be half of
+[inaudible], and A of X prime to X to be
+equal to half. But notice what that would
+do. That would just reduce the probability
+that our proposals are accepted, which
+would just make the chain move half as
+quickly, because you end up staying at the
+same state twice as often as you would if
+the acceptance probability was higher. So
+these are in fact, the highest numbers
+that we could possibly pick, while still
+making this ratio constraint hold. And so,
+that gives me, when you actually put it
+together, as a general formula for the
+acceptance probability, it gives us this
+expression, which, if you look at it, you
+will see that it gives the right values
+for both XX find and for X find X. So
+that's how many how to pick a given q. And
+the question is what about q? How do I
+pick q? Well that turns out to be the
+$64,000,000 question. Picking q is an art
+and it's not an easy choice in many
+applications. But let's think about some
+conditions that Q must satisfy before we
+think about how to pick one. So one
+condition on Q is derived simply by
+looking at the formal expression for A.
+And we can see that this here involves a
+ratio. And if you have a ratio then one
+condition is that you better not have a
+denominator that's equal to zero. And so
+one of the cases that, one of the things
+that we must guarantee regarding Q in
+order for this to be a valid set of
+acceptance probabilities is that Q itself
+must be reversible in the following sense.
+That is, if the If the denominator, if, if
+the numerator is greater than zero, then
+the denominator is greater than zero, and
+vice versa. That is, if you can propose a
+step from X to X prime, you better be able
+to propose a step from X prime to X, with
+non zero probability, which guarantees
+that this ratio is always well defined.
+Now the problem with this constraint on Q,
+is that it actually, induces an tension in
+the design of Q. Now, on the one hand, we
+like you to be very broad. So if you're at
+this state over here, we like to, we like
+you to go really, really far away from the
+current state. Because the further away
+you can go, the faster you move around in
+the state space. You don't want to stay
+local, you don't want make the same
+mistakes that the Gibbs chain does by
+staying very near to the current
+assignment. You want to move around
+quickly and that improves mixing. On the
+hand, if you look at the implications that
+this formula has when the proposal
+distribution is very broad. And so that
+you have one state that for example has
+low pi and the other state has a very high
+value of pi. Which is what you get when
+you move around from a hilly part of the
+space to a low part of the space. You have
+very big differences in terms of height of
+the two stationeries. So what I'm drawing
+here is the height of pi, and this is my
+space, space X. And if I move around very
+far I'm liable to get into situations
+where pi of one state x might be
+considerably larger than pi of x prime and
+if you think about what that implies
+regarding the acceptance probability. The
+acceptance probability can get very, very
+low which in turn implies slow mixing
+again because you might not, you might be
+taking very global steps but you're taking
+very few of them. And so this is a real
+sort of tension in the design of
+distributions, of proposal distribution
+skill. Let's take an example of a Markov
+chain where proposal distributions can
+make a very big difference. And this is a
+problem that you wouldn't necessarily
+immediately think of as a graphical model
+but can be formulated as one and it's a
+matching problem and we'll see it other
+settings as well. So here we have a bunch
+of red dots as we see over here. And we
+have a bunch of blue dots. And we want. To
+match. The red dots to the blue dots. And
+there's some sort of preference function.
+So these edges over here are annotated.
+And I'm gonna mark them green, are
+annotated with some kind of weights that
+tell us how happy is the red, is this red
+dot to be matched with this blue dot? And
+this happens a lot, for example, in, in
+various correspondence problems where
+we're trying to match sensor readings to
+objects, for example, in a tracking
+application. It also happens in, in image
+problems where you wanna match features in
+one image to features in another. So it's
+a very common problem. So, one formulation
+of the matching problem as a graphical
+model is that we have a variable x I for
+each red dot, so the green, so the red
+dots are going to be the variables. The
+blue dots are going to represent values.
+And we're going to have that x I is equal.
+J. If I match the I to J. [cough] So that
+can now be written as a probability
+distribution over a space. And so we can
+consider the probability of an assignment
+of. Values to, the variables. And we're
+going to say that, first of all, has to be
+matching. So if we don't have that every
+X, every red dot is matched to a different
+blue dot, that's probably zero assignment.
+So this would be the case if you had two
+red dots that matched, to the same blue
+dot. And otherwise we're going to define
+some kind of weighted combination of,
+sorry, it's, it's going to be an
+exponential of the sum of the quality of
+the matches between the red dots and the
+blue dots. So we are summing up the
+quality of the edges that participate in
+matching. So for example if this is my
+matching over here. And notice that I
+didn't get to match all the red dots.
+That's, well, actually here. We're going
+to match all the red dots. So now we have
+a matching on, on the, for each red dot we
+assigned a blue dot as a value. And now
+the overall quality is the total sum of
+the, of the quality of the matching and
+that defines, and that can be
+exponentiated to different probability
+distribution. So and we're going to
+represent these qualities visually in this
+example as, as distances so that we're
+going to assume for example that this red
+dot prefers to be matched to this blue dot
+more then it prefers to be matched to this
+further away blue dot. So, one can imagine
+running a Gibbs sampling distribution on
+this model, by taking a variable and say
+one of the red dots and, picking a new
+value for it that is a new blue dot that
+it wasn't attached to. This is going to
+change things very, very slowly. Because
+most of the blue dots are going to be
+taken by the for red dot. And so, those
+assignments where a red dot is matched to
+a previously taken blue dot are going to
+have very well probability. Zero
+probability. Okay. And so those are going
+to be impossible. So the only thing I can
+do is I can make the red dot match
+different blue dot. Match one of the
+unmatched blue dots. And that?s going to
+take a very long time for things to
+change. Here is a different way of doing
+this, which is the Metropolis Hastings
+which is one way of constructing a
+proposal distribution and using Metropolis
+Hastings. And that's called an augmenting
+path proposal distribution. So what that
+does is, let's assume that this is my
+current match, and I'm going to define the
+following proposal. I'm going to pick one
+of the variables, XI, say this one. And
+I'm going to say, I'm going to pick.
+Another value for it pretending that
+everything is available. So I'm going to
+ignore the fact that this guy is already
+matched. I'm going to pick this one. I
+would, I'm, I'm thinking it's
+probabilistically, so I could have picked,
+a different one. I could have picked the
+same one that I was matched to before. I
+could pick a further away one. But say I
+pick this one. Well now, this guy, poor
+guy, this one is unmatched. Sorry, this
+red guy over here. So [inaudible] has to
+pick a new partner. And so, say it picks
+this one. This red guy is unmatched now.
+And so it might take one, and say fix this
+one. And that leaves me with this red guy
+and say; this red guy picks this one and
+notice that now I have a new legal
+matching. Every, I've closed the loop and
+I've defined what's called an 'alternating
+cycle' where basically I can switch all of
+the black edges to green edges and that
+gives me a new legal matching. And that's
+my proposal. And with a little bit of,
+numerical calculation, one can figure out
+the acceptance probability for this
+proposal distribution. And it turns out
+that it's actually a really good proposal
+distribution. So let me show you some
+examples on the next slide. So this is,
+the results on the chain. If I just apply
+Gibb sampling. And you can see over here,
+four chains. So the four colors represent
+the four chains. And what you see on, in
+the X axis, is numbered steps. And on the
+y axis there's some kind of statistic that
+I'm tracking in order to gauge whether the
+chain is mixing. As is happens it's the
+probability that the first red dot is
+matched to the first blue dot but it
+doesn't matter. Any statistic would've
+illustrated the point here. And you can
+see that there is a lot of long range
+fluctuations in this chain. That is the
+probabilities change over time. The
+probabilities by the way are computed over
+windows of size 500. From the samples in
+that window. And you can see that the
+chain takes, that the chain takes a long
+time to move from one region of the space
+to the other. The proposal distribution
+that I just showed you by contrast is
+totally different. You can see that the
+probabilities are almost totally flat. And
+that there is basically all four chains
+are the same, and there is, almost the
+same and there is very little change in
+windows overtime. And there is an even
+better proposal distribution that I didn't
+show you that modifies the augmenting path
+by just a little bit. And that gives you
+effectively perfect mixing across the
+entire time. If we look at the other
+metric that we define for evaluating
+mixing, we, we can compare the
+probabilities of these different statistic
+of, of, of different statistics across the
+two chains. So for example this might be
+just for example, the red chain. And this
+might be the green chain, and what we see
+here are the are the statistics that you
+get for different kinds of probabilities.
+For the probability that this variable is
+match, sorry, that this dot is match to
+that dot, for example. And you can see
+that the [inaudible] change the estimate
+that you get are very noisy, and the
+different chains give you divergent
+estimates. The second
+Metropolis\u2013Hasting, sorry the first
+of the Metropolis\u2013Hastings gives you,
+things that are almost on the diagonal,
+and here, things are effectively, exactly
+on a diagonal, perfect mixing. But to
+summarize, Metropolis-Hastings is a very
+general framework for building markup
+chains so that they are designed to have a
+particular stationary distribution. It
+requires that you come up with a proposal
+distribution. And that proposal
+distribution has, needs to have certain
+properties in order to be valid. But once
+you give me such a proposal distribution,
+the detail-balanced equation, which is
+this nice, simple equation, tells me how I
+can construct the acceptance distribution
+so as to, enforce the fact. That we get
+the right stationary distribution. So,
+this is great in some ways, because it
+gives us this huge flexibility in
+designing proposal distributions that
+explore the space quickly, and move around
+to faraway parts of the space. But as we
+saw, picking the proposal distribution is
+actually a, an important design point, and
+it makes a big difference to performance.
+And it's not, there isn't, like, a science
+of how you should do this, effectively.
+And so there are, and so this is something
+that is really an art and requires a non
+trivial amount of. Thought in engineering.

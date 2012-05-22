@@ -1,0 +1,11 @@
+Hello again,
+the response has been lukewarm so I'll just sum up what I found out, in case someone will bump into this thread later having the same questions:
+1) There is a strong bias not to mention hard time figures in the LDA literature; I found one timing in "Newman, Asuncion, Smyth, Welling: Distributed Algorithms for Topic Models, 2009." [1] where they mention "more than 300 days" for LDA, 2000 topics on a 0.7G non-zeros input matrix. Great article on distributed LDA.
+2) The software "Mallet" has optimized LDA [2]. I'll look into how they handle streaming and how much memory they require (seems not constant in #documents) and whether a streamed version can be hacked out of it. The authors have run Mallet on a subset of Wikipedia [3], time probably in days.
+3) Mr. Di Franco has a streamed, constant memory version of LDA based on Gibbs sampling [4]; I'll try to run that to compare speed with LDA-C.
+[1] www.ics.uci.edu/~asuncion/pubs/JMLR_09.pdf
+[2] http://www.cs.umass.edu/~mimno/slides/fast-sparse-sampling.pdf
+[3] http://christo.cs.umass.edu/wiki40/languages.html#lang7
+[4] http://code.google.com/p/lda1pfs/
+For now, I think I'll just implement a distributed version of variational EM, because that seems embarrassingly parallel and not much work (only one synchronization per iteration=per full corpus pass). It won't help people who want to try LDA on their home computer, but at least I can say "just throw more machines at it" when they complain about speed :-)
+Radim

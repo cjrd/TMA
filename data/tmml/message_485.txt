@@ -1,0 +1,3 @@
+iirc the former; otherwise, intuitively, your word distribution at the
+latent node is not "generalizing" over all documents inheriting from
+it.

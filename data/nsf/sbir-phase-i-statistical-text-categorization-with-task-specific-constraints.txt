@@ -1,0 +1,19 @@
+                   This Small Business Innovation Research Phase project will implement and
+              test the feasibility of a new algorithm for statistical text categorization. 
+              This algorithm combines the ease and effectiveness of learning from examples,
+              while incorporating task-specific constraints that currently require ad hoc
+              rules.  The project will evaluate the efficiency and effectiveness of these
+              algorithms.  Alternative optimization algorithms and alternative approximations
+              to intractable quantities will be benchmarked.  Categorization accuracy will be
+              evaluated on public text categorization data sets and on data from operational
+              text categorization users.
+     Ornarose, Inc. will develop and license
+              software libraries including this algorithm to software vendors in a variety of
+              industries.  Vendors for whom text categorization is not a core competency
+              increasingly wish to support categorization in software that works with text
+              data.  Market niches where text categorization under task-specific constraints
+              is compelling include knowledge management, news alerting, email/web filtering,
+              and data mining.  Discounted licenses will be provided for academic
+              institutions and scholarly publication of nonproprietary results on publicly
+              available text categorization data sets is planned. 
+

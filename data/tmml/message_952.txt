@@ -1,0 +1,2 @@
+Hi all,
+There might be a trival question in LDA inference. When given hiper-parameter alpha and beta using LDA_c code, how can I further compute the posterior distribution. Thanks for any help.

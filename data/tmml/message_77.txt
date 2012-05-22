@@ -1,0 +1,4 @@
+Hi Yansong,
+You need to specify an output directory for the model after 'random'.
+Thanks,
+alex.r.

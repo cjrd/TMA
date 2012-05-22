@@ -1,0 +1,12 @@
+hi topic models mailing list,
+many of you have asked for an implementation of the correlated topic
+model (CTM) from blei and lafferty (2006).  (a longer version of that
+paper will soon be published in the annals of applied statistics.)
+we have released our code for the CTM, which can be found here:
+http://www.cs.princeton.edu/~blei/ctm-c/index.html
+you may also be interested in the latent dirichlet allocation (LDA)
+code, which is here:
+http://www.cs.princeton.edu/~blei/lda-c/index.html
+i hope that many of you find this useful.  have fun!
+best,
+dave

@@ -1,0 +1,25 @@
+              0072204
+Wolfs
+	This grant provides operating funds for the relativistic
+              
+heavy-ion group at the Department of Physics and Astronomy at the
+              
+University of Rochester.  During the three years covered by this grant we
+              will complete the analysis of the data collected by E917 at the AGS and start
+              taking data using the PHOBOS detector at RHIC.
+	PHOBOS is one of the four
+              approved experiments ready to run at the turn-on of RHIC.  PHOBOS will have the
+              first look at the extreme energy densities that will be created when gold
+              nuclei collide at RHIC.  It is believed that a new state of matter, the
+              so-called quark-gluon plasma (QGP), will be formed in these collisions.  PHOBOS
+              will study this new state of matter, and its properties will provide important
+              and new information about the state of the very early universe (a few
+              microseconds after the Big Bang).  PHOBOS is designed to study as many
+              collisions as possible, in an unbiased way, and to search for significant
+              differences between p-p, p-A, and A-A collisions.  Due to its inherent
+              simplicity, PHOBOS has the potential of a major scientific discovery during the
+              initial running period of RHIC.  The time-of-flight array designed and
+              constructed by the Rochester group will significantly enhance the physics
+              capabilities of PHOBOS, by roughly doubling its acceptance.
+
+

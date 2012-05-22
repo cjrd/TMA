@@ -1,0 +1,21 @@
+Hello all,
+Suppose we want to model a "closed-class" set whose exact cardinality we
+do not know, but whose cardinality we don't want to grow indefinitely
+with the data.  An example would be the prepositions of a language:
+there are only a small number of them, and once we've seen a reasonable
+size sample of the language, we don't expect to see any more
+prepositions than those we've seen already.     In other words, this is
+like a Chinese Restaurant process where we have an unknown, but
+definitely  finite number of tables to bring out.    We might have some
+prior beliefs about the mean and variance of the number of tables, such
+that going much beyond the mean imposes an increasing probability
+penalty that prevents indefinite growth in the tables, no matter how
+much additional data is seen.
+Does anybody know of any work on a prior related to this problem?   It
+can't be a PY, because a PY robs probability mass from the cache to give
+to the base distribution - the exact opposite of what we want here.   A
+Gaussian penalty on the number of tables might do the trick, though the
+Gaussian would not seem to be a good prior for the positive integers,
+and it seems a bit kludgy to put on top of a CRP...
+thanks,
+Dave

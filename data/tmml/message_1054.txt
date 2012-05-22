@@ -1,0 +1,14 @@
+Hello,
+thanks everyone for your help, links and suggestions, both on this list and off. All duly noted and archived.
+So far, I only implemented the distributed version of online variational EM, with these results:
+Pros:
+* scales almost linearly with cluster size: 43min for 7 nodes (on 4 physical machines) vs. 265min for 1 node. [1]
+* results are exact (no approximation on the side of distribution)
+* only needs constant memory (independent of input size)
+* sequential access to training documents (=streamed)
+Cons:
+* LDA-C on the same input takes 144 minutes, Mallet 6.5 minutes(!). Mallet is really impressive. It is slightly ridiculous that gensim needs a cluster of 50 nodes to do the same amount of work Mallet can do on one. So on the performance front, gensim's LDA is still lacking---but at least it scales theoretically ;-)
+The resulting topics differ widely between LDA-C (=gensim) and Mallet, though both seem sensible at a glance. Also, in LDA-C (and therefore in gensim), the automatically tuned alpha parameter never seems to converge, it just gets smaller and smaller with each iteration. What is the explanation for this?
+Cheers,
+Radim
+[1] 50 topics on 1k documents, 100k features, total 1.2m tokens, 0.6m non-zeroes in the term-document count matrix.

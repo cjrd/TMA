@@ -1,0 +1,66 @@
+              Pervasive Information Communities Organization (PICO) is a framework to
+create
+              mission-oriented dynamic communities of software agents that perform tasks
+on
+              behalf of users and devices.  PICO provides automated continual services
+              to
+improve quality of life, and to utilize resources efficiently by
+              enhancing
+existing Internet services. PICO enabled Internet will be used
+              effectively
+in many dynamically changing time-critical applications that
+              demand
+proactive real-time collaborations among physical devices, software
+              agents,
+and personnel in heterogeneous environments.
+
+The main components of
+              PICO are software entities, called delegents
+(intelligent delegates) and
+              hardware entities, called camileuns (connected,
+adaptive, mobile, intelligent,
+              learned, efficient, ubiquitous nodes).
+
+The novel features of PICO include:
+              i) creation of mission-oriented dynamic
+communities of software agents, ii)
+              QoS management for just-in-time
+communication and proactive collaboration
+              among communities, and iii)
+adaptability to dynamic environments through
+              context- and
+location-awareness.
+
+As a pervasive computing paradigm, PICO
+              has applications in many domains
+such as telemedicine, the military, crisis
+              management, and many day-to-day
+activities. In this project the researchers
+              focus on the design and development of PICO,
+and investigate its applicability
+              as a platform for distributed
+collaborations.  Through telemedicine
+              applications, the researchers demonstrate the full
+potential of PICO as an
+              Internet enhancement framework that is not only
+unique, simple, and versatile,
+              but can also work with current and future
+hardware/software tools.
+              Specifically, the proposed tasks include: formal
+specifications, design, and
+              development of PICO architecture; requirements
+analysis for telemedicine
+              scenario; QoS and resource management; PICO
+prototype development; and
+              validation, performance evaluation and
+benchmarking. PICO-enabled pervasive
+              environments will revolutionize the way
+the Internet is being used, enhance
+              quality of life and promote user-centric
+applications. The PICO project will
+              result in the training of students in
+pervasive computing, high quality
+              masters and doctoral theses, and transfer
+of technology to health care
+              providers, professionals and other researchers.
+

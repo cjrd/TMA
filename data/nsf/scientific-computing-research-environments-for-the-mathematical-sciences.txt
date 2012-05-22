@@ -1,0 +1,32 @@
+              Proposal Number: DMS-0215485
+PIs: Duursma and Stein
+
+ABSTRACT
+
+
+
+The
+              Department of Mathematics at the University of
+Illinois at Urbana-Champaign
+              will purchase a cluster
+of 16 dual processor PCs connected by gigabit
+              network
+connections. The computer equipment will be dedicated
+as a powerful
+              distributed computing resource to the
+support of research in the mathematical
+              sciences. In
+particular, it will support the project Computational
+Aspects of
+              Secure Cryptosystems.
+
+Public-key cryptosystems occur in applications such
+              as
+digital signatures, message encryption, user authentication,
+online
+              payments, and others. The equipment provides an
+adequate and up-to-date
+              testing environment for
+implementing cryptosystems and for simulating
+              attacks.
+

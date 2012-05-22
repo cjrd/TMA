@@ -1,0 +1,64 @@
+              The complete genome of the nematode model organism, C. elegans, has recently
+              been published.  This represents the first elucidation of the complete genome
+              of a multicellular organism.  The availability of this information is expected
+              to open up vast new opportunities for discovery in biology.  This project
+              focuses on an essential cellular function, endocytosis, in C. elegans.  This is
+              an area of cell biology that in the past has been studied largely in yeast, in
+              vertebrate cells in culture, and in a limited number of other model systems. 
+              The study of endocytosis (and other cellular functions) in C. elegans will
+              ultimately allow the exploitation of not only the genomic information but also
+              the powerful genetic tools available for studies this organism and enable
+              important new discoveries about fundamental cellular processes and
+              functions.
+
+Endocytosis is the process by which cells internalize specific
+              materials (proteins, usually) from their environment.  In receptor-mediated
+              endocytosis, an extracellular ligand first binds to its receptor on the cell
+              surface; then, that portion of the cell membrane invaginates and ultimately
+              pinches off to form an intracellular membrane-enclosed compartment containing
+              the bound ligand.  
+
+A new DNAJ domain-containing gene, rme-8, was discovered
+              by using a novel genetic screen for C. elegans mutants defective in
+              receptor-mediated endocytosis (the rme mutants ).  Rme-8 is an essential gene
+              required for both receptor-mediated and fluid-phase endocytosis. Highly
+              conserved homologues of RME-8 are found in plants, flies and humans, but none
+              is present in the S. cerevisiae genome. The goal of this proposal is to study
+              the cellular and molecular functions of rme-8 in C. elegans.
+
+In an attempt
+              to identify the step where RME-8 functions in endocytosis, RME-8 will be
+              localized to an endocytic compartment by cytological co-localization with known
+              endocytic compartment-specific markers. These subcellular localization and
+              co-localization experiments will provide the first indication of RME-8's role
+              in a particular step of endocytosis. The role of RME-8 in endocytosis will be
+              also tested by examining mis-localization of known endocytic markers in rme-8
+              mutant strains.  
+
+In order to analyze the molecular function of RME-8,
+              RME-8's domain structures will be studied by creating deletions of RME-8 and
+              assaying their in vivo functions and localization. As RME-8 contains at least
+              one known protein-protein interaction domain, namely a DnaJ domain, proteins
+              that interact with RME-8 will be identified using the yeast two-hybrid system.
+              These experiments will establish the important functional domains in RME-8 and
+              identify the proteins that interact with these domains.  
+
+Rme-8 is an
+              essential gene whose function is required in multiple cells in C. elegans. In
+              particular, rme-8 mutants are defective in molting and in fluid-phase
+              endocytosis. The role of RME-8 in molting as well in fluid-phase endocytosis
+              will be studied by examining RME-8's subcellular localization in those cells
+              associated with these mutant phenotypes, namely hypodermal cells and
+              coelomocytes.  
+
+These experiments will define the step of endocytosis in
+              which RME-8 functions, establish RME-8's role in that specific step, and define
+              RME-8's possible involvement in a protein complex. RME-8 represents a
+              previously unidentified component in endocytosis. Therefore, the discovery of
+              RME-8's role in endocytosis might identify one of the many heretofore missing
+              links in the endocytosis pathway. Understanding RME-8 in C. elegans will
+              provide an important basis for understanding the functions of its close
+              homologues in other organisms.
+
+
+

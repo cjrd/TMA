@@ -1,0 +1,14 @@
+              This Small Business Technology Transfer Research (STTR) Phase II project will
+              develop a fully functional, cost-effective, prototype sensor for carbon
+              monoxide and volatile organic contaminants in air.  Phase I results suggest
+              that a sensor array based on catalyst-doped, nano-crystalline metal oxide films
+              will provide a marked improvement in detection of contaminants, such as
+              formaldehyde, and thereby upgrade control of indoor air quality.  Phase II will
+              develop this sensor technology with objectives of long-term use, low cost, high
+              sensitivity, and sufficient selectivity for commercial applications.
+
+These
+              applications include indoor air quality monitoring, environmental air
+              monitoring, oil refining, chemical manufacturing, automotive emission control
+              systems, and industrial process 
+

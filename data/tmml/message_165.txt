@@ -1,0 +1,22 @@
+Hi Pew,
+Here is roughly what happens.  Note that there is a typo in eq.14
+where the p(..) terms should have been log p(..) terms.
+Each of the three terms can be derived independently and we shall only
+consider the E[log(a+n_jk)] term (a=alpha).
+Start from eq.14, and plugging in eq.7, we have
+q(z_ij=k) = exp(E[sum_{k'} log Gamma(a+n_{jk'}^{-ij}+delta(k=k'))] + ...) /
+(sum_l exp(E[sum_{k'} log
+Gamma(a+n_{jk'}^{-ij}+delta(l=k'))] + ...) )
+where expectation is taken wrt q(z^{-ij}).  Using the identity
+Gamma(b+1)=Gamma(b), we have,
+sum_{k'} log Gamma(a+n_{jk'}^{-ij}+delta(k=k'))
+= log(a+n_{jk}^{-ij}) + sum_{k'} log Gamma(a+n_{jk}^{-ij})
+Now:
+q(z_ij=k) = exp(E[log(a+n_{jk}^{-ij})]) * exp(E[sum_{k'} log
+Gamma(a+n_{jk}^{-ij})]) * exp(...) /
+( sum_l exp(E[log(a+n_{jl}^{-ij})]) * exp(E[sum_{k'} log
+Gamma(a+n_{jk}^{-ij})]) * exp(...) )
+The sum_{k'} terms in numerator and denominator all cancel, and we are
+left with exp(E[log(a+n_{jk}^{-ij})]) in numerator.  denominator
+simply normalizes.
+-yw

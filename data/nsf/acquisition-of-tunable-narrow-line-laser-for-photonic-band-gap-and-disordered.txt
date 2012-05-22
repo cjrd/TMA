@@ -1,0 +1,32 @@
+              This is an instrument acquisition award from the Major Research Instrumentation
+              program and the Instrumentation for Materials Research program to the City
+              University of New York Queens College. The award will allow CUNY Queens College
+              to purchase a Coherent 899-29 Autoscan II single frequency scanning laser for
+              the study of the statistics of optical propagation in random and nearly
+              periodic materials and photonic devices. The instrument will allow the
+              principal investigators to extend the coherent technique developed in the
+              microwave region of the spectrum to visible and infrared frequencies. It will
+              allow them to characterize the statistics of transport using statistical
+              measures of the transmitted fields and intensity, and to use the variance of
+              intensity fluctuations as a sure test of phonon localization free of
+              ambiguities arising from absorption of microwave resonance.  Band edge and
+              localized modes in cholesteric liquid crystals will be characterized. The
+              objective is to clarify the conjunction of lasing and localization and guide
+              development of homogeneous cholesteric materials in which ultra-low lasing
+              threshold will be observed. The instrument will provide students preparing for
+              careers in physics with a sound mix of microwave and optical techniques as well
+              as exposure to industrial research laboratories engaged in forefront research. 
+              
+
+This is an instrument acquisition award from the Major Research
+              Instrumentation program and the Instrumentation for Materials Research program
+              to the City University of New York Queens College. The award will allow CUNY
+              Queens College to purchase a Coherent 899-29 Autoscan II single frequency
+              scanning laser for the study of the statistics of optical propagation in random
+              and nearly periodic materials and photonic devices. The instrument will allow
+              the principal investigators to extend the coherent technique developed in the
+              microwave region of the spectrum to visible and infrared frequencies. The
+              instrument will provide students preparing for careers in physics with a sound
+              mix of microwave and optical techniques as well as exposure to industrial
+              research laboratories engaged in forefront research.
+

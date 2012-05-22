@@ -1,0 +1,50 @@
+              In order to understand large vector fields, scientists typically attempt to
+              simplify and visualize the data. Broadly speaking, there are two methods for
+              visualizing vector field feature extraction techniques and general
+              visualization techniques, that  offer complementary advantages. 
+Feature based
+              techniques extract important features such as topology (critical point and
+              critical curves), attachment or separation lines, vortices, bifurcations or
+              shock waves, and attempt to present a simplified view of the vector
+              field.
+There are two main dificulties with this approach. First, too many
+              features may clutter the visualization. Therefore, there is a need to prune
+              spurious and insignificant features.
+Second, feature visualization alone may
+              fail to provide a comprehensive view of the data. This can be remedied by using
+              popular general visualization techniques such as streamlines, line integral
+              convolution (LIC), and stream surfaces.
+However, most attempts using this
+              approach destroy the underlying important features early in the
+simplification
+              or compression approach, as we have demonstrated in our preliminary work.
+              Therefore,
+there is a need to tie the feature simplification process with the
+              simplification of the underlying vector field in order to produce consistent
+              visualization.
+In this work, we propose to develop controlled feature
+              simplification and preservation algorithms
+for 2D vector fields that remove
+              insignificant  features and preserve important ones by removing noise and by
+              utilizing feature-driven similarity metrics to measure and control the
+              simplification
+process.
+The proposed algorithms will simplify the features
+              and the underlying vector field simulatneously
+in order to produce consistent
+              visualization. We will extend these algorithms to 3D and  ime-dependent vector
+              fields. Additional challenges include: (i) designing efficient algorithms and
+              structure-similarity metrics based on the properties of more complex 3D
+              features such as the 3D separation and attachement lines, vortices and shock
+              wave regions, and (ii) tracking simplied features over time as bifurcations may
+              take place. We will also quantify and visualize the uncertainty or loss due to
+              simplification in order to give a better sense to the scientist as to what is
+              lost or compromised during the simplification process.
+We will apply our
+              algorithms to computational fluid dynamics and environmental data. We expect
+              that the algorithms and techniques developed in this project will be applicable
+              to a wide variety of disciplines including aeronautics, meteorology,
+              oceanography, environmental sciences, astronomy, geographic information
+              sciences, computer graphics, and computer-aided geometric design.
+
+

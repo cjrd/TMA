@@ -1,0 +1,27 @@
+              The project is to develop two innovative nano-stereo lithography (nSL)
+              techniques: two-photon nSL and near-field nSL with the resolution down to 50nm.
+              Both methods promise 3D nanofabrications with computer-aided design/modeling
+              capabilities. Preliminary numerical simulations suggest that a spatial
+              resolution down to 60 nm can be achieved with near-field nSL. Techniques, such
+              as electrical force controlled nano stereo lithography, will be investigated
+              and employed to further enhance lithography resolutions. Through this project,
+              not only novel nSL processes will be developed, but intriguing fundamental
+              mechanisms of nano-stereo-lithography will also be studied to intensify our
+              understanding on fundamental science on molecular-scale photon-material
+              interactions, for instance self-focusing, radical diffusion, thermal transport
+              and viscous effects, and their influences on the resolution. Upon the success
+              of the development of proposed nSL techniques, a set of specific nano devices
+              will be designed and fabricated. 
+
+Viable three dimensional nanomanufacturing
+              technologies and its applications developed in this project will have important
+              impacts in human society from biomedical diagnostics to optical communications.
+              The research outcome will also benefit the emerging high technology industries
+              in United States in competition with foreign countries. Another important
+              aspect of this proposed project is the integration of research and edcuation
+              through summer undergraduate research. Armed with solid knowledgements,
+              state-of-art techniques and innovative ideas, students, especially minority and
+              women students will be ready to serve industry needs in the nanomanufacturing
+              arena. 
+
+

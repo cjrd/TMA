@@ -1,0 +1,5 @@
+Hi,
+Is there a method to estimate "quality" of documents clustering numericly?
+I have used LDA for NIPS corpus using different topic counts and different
+priors and I need to get some numerical comparions.
+Thanks, Vasiliy

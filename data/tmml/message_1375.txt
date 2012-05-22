@@ -1,0 +1,20 @@
+Dear All,
+Sorry for the bother (yet again), but I am writing to inquire about
+the feasibility and ease of extending existing HDP implementations to
+higher orders of ``hierarchy.''
+The way I understand HDP is that the base distribution (itself a DP)
+gives discrete priors over topics, which are then 'shared' by
+documents.  If I wanted to extend this hierarchy, for example so that
+multiple corpa shared a common base distribution, and the prior for
+each corpa was then drawn from an across-corpa DP, how easy would it
+be to impliment such a model?
+To be specific, lets say I have 100 seperate corpa, and I want to
+estimate the number and content of topics in each corpa.  Using an HDP
+for each corpus seperately would accomplish this, but (following a
+useful suggestion  I received on this board), I would like to include
+a common prior for all corpa.  Does anyone have any advice regarding
+implementations that would be `easy' to modify to add this extra layer
+of hierarchy?  Or is anyone aware of existing hierarchical DP
+implementations with more than 2 levels of hierarchy?
+Again, many thanks!
+Scott

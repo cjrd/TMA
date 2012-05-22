@@ -1,0 +1,13 @@
+Hi June,
+LDA is an unsupervised model. While the topics it finds will often be
+semantically interpretable as topics, there is no guarantee that the topics
+it finds will match up to the topics a human would find. So, while you can
+go through the topics by hand and label them with categories, you can't
+expect the categories to match a pre-defined list and match them to this
+list. (If you wanted to find whether there was a topic for history, say, you
+could find which topics assign high probability to words such as "history",
+"past", etc.)
+If you want your topics to match up with previously defined topics, and your
+documents are annotated in some way with their topics, you might want to
+look at Labeled LDA
+Sinead

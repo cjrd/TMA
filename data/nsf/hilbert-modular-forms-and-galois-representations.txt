@@ -1,0 +1,42 @@
+              A conjecture of Serre predicts that certain 2-dimensional mod p
+representations
+              of Galois groups over Q arise from modular forms,
+and it further predicts the
+              level and weight of the form.
+The principal investigator and his collaborators
+              are investigating
+a possible generalization of Serre's conjecture to the
+              context
+of Hilbert modular forms and Galois groups over totally real fields.
+              
+The prediction of the weights suggests interesting new phenomena, and
+the
+              immediate aims of the research are to investigate these phenomena
+and provide
+              numerical evidence for the generalization.
+
+Serre's conjecture and its
+              generalizations can be viewed as part of
+Langlands' program, which predicts a
+              deep correspondence between objects from
+algebraic geometry (solution sets of
+              polynomial equations, such as elliptic
+curves) and objects from representation
+              theory (functions with symmetry
+properties, such as modular forms).  While
+              there has been significant
+recent progress (for example, the investigator and
+              collaborators,
+building on Wiles' work on Fermat's Last Theorem, proved that
+              all
+rational elliptic curves arise from modular forms), Langlands'
+program
+              remains largely conjectural.  The links it provides between
+two seemingly
+              different branches of mathematics reveal properties 
+of the integers, which
+              can, in turn, have applications to cryptography.
+
+
+
+

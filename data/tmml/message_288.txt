@@ -1,0 +1,39 @@
+Dear all,
+Regarding the original LDA paper, I have several questions regarding the
+expansion of equation 14 to equation 15, in section A.3.
+The third term of equation 14, E_q[ log p(w|z, \beta) ] is expanded into
+\sum_{n=1}^N \sum_{i=1}^k \sum_{j=1}^V \phi_{ni} w_n^j log \beta_{ij}.
+Am I correct in assuming that if that is the log, then the original
+p(w|z? \beta) was \prod_{n=1}^N \prod_{i=1}^k \prod_{j=1}^V
+\beta_{ij}^{z_n^i * w_n^j}?
+My interpretation of this is then that the total probability of the N
+words w_n, given a topic z_n for each word w_n and global parameter\beta
+is calculated
+as the product of all \beta_{ij}, where the exponent [z_n^i * w_n^j]
+assures that only these \beta_{ij} are chosen which agree with w_n's
+topic (z_n^i = 1 for the
+current word topic, and = 0 for all other topics) and the current word
+(w_n^j = 1 if word w_n has vocabulary index = j, and 0 otherwise)?
+I ask this question because in the second equation of section 5.1 (no
+equation identifier), a sum is taken  over all possible i, whereas in
+equation 15, this seams to
+have been a product... I think the difference arises because of a
+conditional dependency on z in equation 14 (p(w|z,\beta)) , whereas z
+does not appear in the formula
+in section 5.1 (p(w|\alpha, \beta)). Please confirm or deny my
+suspicions in this :-).
+My last question regards the E_q formulas (eqs. 14 and 15). My
+statistical knowledge is not that advanced, so please correct me if the
+following statement is wrong:
+The expected value regarding the variational distribution q of the terms
+that appear in a sum is the same as the sum of the expected values, as
+this is a property
+of expected values. However, there also appear terms of products (e.g.
+in the third term). The expected values of the products is the product
+of the expected value of each
+term seperately, because by decoupling the variables in the variational
+distribution there is no more dependency between them.
+If someone could agree with me on my explanations, or refute them, I'd
+be very glad :-)
+Kind regards,
+Wim

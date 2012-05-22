@@ -1,0 +1,13 @@
+Dear Michael,
+Here http://www.mad.disco.unimib.it/doku.php/research/corpora  you can
+find a not updated list of some of the corpora used in papers
+regarding topic models.
+While doing my phd, I also created a corpus  composed by 50k documents
+randomly downloaded from the web. The documents have been found by
+submitting to Google several queries composed by terms available in
+the Google Directory (now dmoz).
+I think one of the difficulties in the topic models fields is to find
+a "baseline" dataset to use as a benchmark :)
+Best,
+Davide Magatti
+2011/12/15 Michael Gao <zjugaohaidong at gmail.com>:

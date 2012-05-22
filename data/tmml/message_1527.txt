@@ -1,0 +1,5 @@
+Hi -- there's a relatively simple explanation in
+http://arbylon.net/publications/ilda.pdf
+with pointers to the more in-depth material and an implementation.
+Best regards
+gregor

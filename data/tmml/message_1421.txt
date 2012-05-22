@@ -1,0 +1,6 @@
+Hi
+I've recently come across this paper:
+TopicNets: Visual Analysis of Large Text Corpora with Topic Modeling
+www.cs.ucsb.edu/~holl/pubs/Gretarsson-2011-ACMTIST.pdf
+Regards
+Aneesha

@@ -1,0 +1,12 @@
+Hi
+It seems that it is typical for people to use a symmetric
+hyperparameter for the word-topic prior in smoothed LDA models (that
+is, a symmetric value for \eta in the terminology of Blei, Ng, Jordan
+(2003)) (this is done in Griffiths, Steyvers (2009)).
+But, the i-th component of Dir(x,\eta) gives the likelihood that the
+probability of event i is x_i after having observed it \eta_i-1 times.
+So, it seems to me that one would have to choose something like
+\eta_t = n_t  + 1, where n_t is the total number of times term t was
+observed in the corpus.  Have I misunderstood something about this?
+Thanks,
+Jonathan Halcrow

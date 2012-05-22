@@ -1,0 +1,32 @@
+              Proposal: An Integrated Cyclostationary Signal Processing Framework for
+              Optimized and Robust Wireless Communications
+
+PI: Dr. Erchin
+              Serpedin
+
+ABSTRACT: 
+
+The successful evolution of the future high-speed
+              wireless communication networks requires significant advances in adaptive
+              signal processing algorithms that are currently employed for synchronization,
+              estimation and equalization of time-varying channels. This research involves
+              the development of a general and novel framework for designing robust and
+              optimal spectrally efficient channel estimation, synchronization, and
+              equalization algorithms. Key elements of the work include development of a
+              unified framework for designing and analyzing non-data aided joint carrier
+              frequency-offset/Doppler shift and symbol timing estimators in time-selective
+              and flat-fading channels, development of a robust non-data aided framework for
+              estimation and equalization of time- and frequency-selective fading channels,
+              and development of a robust non-data aided space-time signal processing
+              framework for synchronization and estimation of multipath signals arriving at
+              an antenna array. The proposed research offers a wealth of innovative
+              educational projects for course and laboratory instruction.
+
+Level of Effort
+              Statement:
+
+At the recommended level of support, the investigator will make
+              every attempt to meet the original scope and level of effort of the
+              project.
+
+

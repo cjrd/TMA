@@ -1,0 +1,23 @@
+Antonio,
+I don't have a good answer to all you questions, but I have the feeling
+that there is a slight misconception with the word lists (is that gamma
+file?).
+You should be aware that this list corresponts to the probability p(word |
+topic). Stopwords usually have a high p(word|topic) for many topics
+although they are not very specific for a particular topic.
+I guess you are interested in p(topic | word), that is for a given word,
+to which topic does it correspond to. In order to obtain those values you
+have to apply Bayes' rule
+p (topic | word) = p(word | topic) * p(topic) / p(word)
+where p(topic) is the likelihood for using a particular topic. As long as
+you do not have large topics and small topics you can assume that part to
+be set to a uniform distribution (i.e. set p(topic) = 1 / number of
+topics)
+p(word) is the global distribution of words, i.e. the word's popularity.
+Stopwords will have a higher p(word) than rare words. You should set
+p(word) to the (so called) empirical word distribution
+p(word) = occurrences of the word across all texts / sum of text lengths
+In order to see if LDA does a reasonable job in clustering the words it is
+definitely worth looking at p (topic | word) rather than p (word | topic)
+Cheers,
+Laura

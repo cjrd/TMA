@@ -1,0 +1,31 @@
+              The primary private vehicle for retirement saving in the United States is the
+              401(k)-type pension arrangement. With emphasis on elective contributions,
+              payroll deduction, employer matching, and personally-directed investment,
+              401(k)'s have been touted as an important public policy that raises household
+              saving and retirement income adequacy. A highly influential body of research
+              has indicated 401(k)'s have had substantial effects on saving: based on the
+              Surveys of Income and Program Participation (SIPP), saving in financial assets
+              increased at least one dollar for every dollar saved through a 401(k). However,
+              these findings have been debated hotly. In particular, the previous analyses
+              used no information on the two most important forms of retirement saving:
+              pensions and Social Security. This project improves on existing research in
+              this important area by using:
+(1) the superior respondent-reported and
+              firm-reported pension information and the Social Security Administration (SSA)
+              matched Social Security wealth in the Health and Retirement Study (HRS) to
+              measure the extent to which 401(k)'s have increased retirement saving, not just
+              financial asset saving;
+(2) the HRS Pension Provider Survey (PPS) to measure
+              401 (k) eligibility and pension entitlements precisely and evaluate the extent
+              of error in respondent-reported information on 401(k)'s, and transmit these
+              methodological findings to the research community; and
+(3) the HRS Pension
+              Provider Survey (PPS) to estimate the effect of employer matching on 401(k)
+              saving, precisely measuring match rates and explicitly accounting for kinked
+              budget sets and measurement error in contribution limits.
+This project also
+              improves the empirical methods used in this area and advances our understanding
+              of the role of federal tax and pension policy on retirement saving and income
+              adequacy.
+
+

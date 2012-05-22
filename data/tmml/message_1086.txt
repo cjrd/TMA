@@ -1,0 +1,27 @@
+[Not sure if this got through earlier, sorry if there's duplicates!]
+Thanks for pointing this out, Dave!
+Ed, you can specify a definition of a token in a command line option.
+Here's an example that picks out any combination of unicode letters
+and punctuation that ends with a letter:
+% cat url-test
+1	test	This is my punctuation test. I don't know if it works yet! I
+like http://www.blah.com/index.php.
+% bin/mallet import-file --input url-test --token-regex
+'[\p{L}\p{P}]*\p{L}' --keep-sequence --print-output
+name: 1
+target: test
+input: 0: this (0)
+1: is (1)
+2: my (2)
+3: punctuation (3)
+4: test (4)
+5: i (5)
+6: don't (6)
+7: know (7)
+8: if (8)
+9: it (9)
+10: works (10)
+11: yet (11)
+12: i (5)
+13: like (12)
+14: http://www.blah.com/index.php (13)

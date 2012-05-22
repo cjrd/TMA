@@ -1,0 +1,8 @@
+Hi
+You can use the twitter streaming api to capture a dataset yourself or
+use a twitter archival tool like TwapperKeeper
+(http://twapperkeeper.com/index.php) which can export to csv. Other
+twitter archival tools are also listed: here
+http://socialmediatoday.com/adamvincenzini/231259/11-twitter-social-media-tools-try-2011
+Regards
+Aneesha

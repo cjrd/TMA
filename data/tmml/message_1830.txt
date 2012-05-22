@@ -1,0 +1,30 @@
+Hi Ilya,
+I am parsing your questions in two different ways:
+(1) You want to run LDA multiple times (iteratively).
+(2) You have some other iterative algorithm, one step
+of which involves the LDA transform.
+To do (1) you need control of the inner workings of the
+algorithm, so you should probably write your own
+implementation. (LDA with Gibbs sampling = 3 for loops)
+I have been working on something along these lines,
+which I call IterativeLDA or ILDA [1].
+To do (2) you can use any of the LDA libraries out there.
+Some that I know to be good are:
+https://github.com/shravanmn/Yahoo_LDA
+https://github.com/JohnLangford/vowpal_wabbit/blob/master/vowpalwabbit/lda_core.cc
+I would be curious to hear what you are working on.
+Yours,
+Ivan
+______________
+[1] My work on IterativeLDA is motivated by the desire to
+better understand how random initialization works for
+the Gibbs sampling approach to LDA. The only ``state''
+in the algorithm is z_i, i=1...N the topic assignment variables
+for each of the N words in the corpus. Manually manipulating
+this state, allows us to start the Gibbs sampler from custom
+initial conditions.
+Usual approach:
+1. for all i, z_i =RandUnif[1...T]
+2. Gibbs sample
+https://github.com/ivanistheone/Latent-Dirichlet-Allocation/blob/master/liblda/LDAmodel.py#L552
+3. Generate ML estimates for \phi=p(w|t) and \theta=p(t|d)

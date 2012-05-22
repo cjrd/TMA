@@ -1,0 +1,48 @@
+              This research is devoted to problems in mathematical analysis
+arising from
+              questions in physics. There are six main areas: (1)
+The ultraviolet problem in
+              quantum electrodynamics, (2) analysis of the
+precise rate of approach to
+              equilibrium on models of Kac type for kinetic 
+theory, (3) problems of
+              interface motion arising from phase separation problems 
+in non-equilibrium
+              statistical mechanics, (4) sharp Lieb-Thirring 
+inequalities, and (5) the
+              search for patterns in minimizers of simple energy 
+functionals. Our proposed
+              research into these various problems in
+each case centers on a strategy in
+              which geometric and dynamical analysis 
+of problems in the calculus of
+              variations
+plays a key role. We expect, as in our past research, that this
+              strategy will
+lead us to discover new results and methods in pure analysis, as
+              well as to
+improve the understanding of the physical phenomena in
+              question.
+
+
+This research is devoted to problems in mathematical
+              analysis
+arising from questions in physics. There are five main research
+              areas
+concerning a range of problems from mathematically rigorous 
+quantum
+              electrodynamics to hydrodynamics. Our
+proposed strategies for researching 
+              these topics in
+each case centers on a  geometric and dynamical analysis
+of
+              problems in the calculus of variations.
+We expect, as in our past research,
+              that this strategy will
+lead us to discover useful new results and methods in
+              pure mathematical 
+analysis, as well as to
+improve the understanding of the
+              physical phenomena in question.
+
+

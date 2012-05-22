@@ -1,0 +1,14 @@
+              The overall goal of this project is to integrate quantitative analysis with
+              biology to provide a systems approach to understanding hepatocyte (liver)
+              metabolism in order to gain insights into Type II diabetes. The specific goals
+              of the project are to: (1) characterize a comprehensive set of metabolic
+              alterations in the hepatocytes induced by environmental factors with the aid of
+              metabolic flux analysis, (2) incorporate physiochemical information; namely,
+              kinetic binding data to provide a mechanistic insight into hepatic metabolism
+              beyond that obtained with metabolic flux analysis alone, and (3) develop a
+              phenomenological model using multivariate analysis to identify candidate
+              pathways or factors that contribute most to the diabetic phenotype.  The
+              objective is the development of a model capable of identifying the potential
+              for diabetes.  
+
+

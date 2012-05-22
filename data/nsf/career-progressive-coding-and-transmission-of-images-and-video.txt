@@ -1,0 +1,25 @@
+              Progressive coding and transmission of images and video
+
+
+In recent years, we
+              have witnessed explosive growth of digital video in communications, medicine,
+              education and entertainment. Examples are digital TV, DVD, Internet video, and
+              telemedicine. Major driving forces behind such growth have been the striding
+              advances made in digital technologies for image/video compression, storage,
+              computing, and transmission. 
+
+
+The objective of this project is to
+              integrate the PI's research on image/video compression with his teaching plan.
+              The research plan addresses the following three aspects in coding and
+              transmission of images and video: coding performance, coding functionality, and
+              progressive transmission. A diverse yet focused set of research 
+projects are
+              proposed with regard to these three areas, linked by a multiresolutional
+              wavelet transform thread. The teaching plan takes into account the unique
+              position of the University of Hawaii. It focuses on teaching our students both
+              technical and interactive skills that enable them to compete with others from
+              mainland schools.
+
+
+

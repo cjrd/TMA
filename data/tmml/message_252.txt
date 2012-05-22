@@ -1,0 +1,16 @@
+Hello everybody,
+I am currently working on topic models and just tried to estimate a model
+using the CTM implementation and our own data. Unfortunately the cg
+computation doesn't converge and I encounter an infinite loop. More
+precisely, the problem is that the function opt_lambda in inference.c never
+leaves the do-while loop and the converged variable stays 0.00. At first, I
+assumed that the problem was connected to our data file and additionally
+tried to use the provided sample data file from the LDA implementation, but
+with no success. I am using the default settings.txt file and the seed
+parameter for initializing EM. Of course, setting the cg max iter entry to
+some other value would do, but I still wonder why it won't converge with the
+default settings.
+Is anybody experiencing similar problems and can perhaps come up with a
+solution for this problem?
+Thanks in advance,
+Thomas

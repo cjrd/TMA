@@ -1,0 +1,11 @@
+Hey ...
+I am new to the topic modeling field. I have implemented EM to estimate
+the parameters for a mixture multinomial model assumption (as described in
+the attachment) on a synthetic data of 200 words (with the frequency of ith
+word being set to i%6 + 1 and 5 classes). The initial topic priors and word
+topic probabilities were initialized randomly. Suprisingly I haven't
+observed any changes in the parameter values after the second iteration.
+The output file is also attached. What explains this phenomenon? or is it
+a bug in my math or program?
+Thanks,
+Jags

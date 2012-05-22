@@ -1,0 +1,7 @@
+Hello,
+Can someone help me with the following questions:
+Here is a snippet from my gamma file for 30 topics:
+2/ I am not sure how to  determine the topic proportions for each
+document.  How can I do  so?
+3/ What do each of the entries in the "word-assignments.dat"  mean?
+Thanks ,

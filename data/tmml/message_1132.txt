@@ -1,0 +1,7 @@
+Hi,
+I guess you can consult this non-parametric Bayesian tutorial by Ghahramani
+for an intuition.
+Non-parametric Bayesian
+Methods<http://www.google.com/url?sa=t&source=web&cd=1&ved=0CBcQFjAA&url=http%3A%2F%2Flearning.eng.cam.ac.uk%2Fzoubin%2Ftalks%2Fuai05tutorial-b.pdf&ei=yxWlTb7fFcSZ0QH-iYWFCQ&usg=AFQjCNF7bc_SgaQRIvLTWfoiyKL_m5FjBA>
+Regards,
+Shibamouli

@@ -1,0 +1,23 @@
+All,
+There seem to be two main approaches to handling stopwords.  You can just
+throw them out, but that's not good for applications that want to associate
+each token with a topic.  Or one can can optimize hyperparameters, such that
+stopwords tend to wind up in special stopword topics.  But with this
+approach stopwords still tend to leak out as high probability-words for
+other topics.
+A more brute-force approach might be to deterministically assign stopwords
+to a distinguished topic, say Topic 0.   This can be done when initializing
+the Gibbs chain, and then during sampling, simply declining to resample for
+stopwords.   I've tried this, and it works, in that content topics become
+much purer-looking, while the designated stopwords stay in their designated
+topic.  Because I use hyperparameter optimization as well, the algorithm
+finds additional stopword-like topics related to the domain.
+Tokens of other words not designated as stopwords are also free to join the
+designated stopword topic, and do.  In particular, for T=30, quite a high
+number - about 14% - of non-stopword tokens are assigned to that topic.  For
+T=100, it's more reasonable, about 5%.  Most of them look reasonable as
+stopwords.
+Anyhow, just wondering what people thought of this.  It seems like something
+one could do with a hyperprior, but only by complicating the model...
+thanks,
+Dave

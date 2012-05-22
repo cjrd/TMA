@@ -1,0 +1,20 @@
+dear nicholas,
+you are asking to compute the distribution over words given by a
+document, i.e., the predictive distribution p(w | w_{1:N}).  i think
+that your computation is a reasonable approximation to this quantity.
+marginalizing out the topic assignment z and topic proportions
+\theta, this is
+p(w | w_{1:N}) =
+\int_{\theta} \sum_{i=1}^{K} \theta_i p(\theta | w_{1:N}) \beta_{i,w}
+p(\theta | w_{1:N})
+this can be simplified as follows:
+p(w|w_{1:N}) = \sum_{i=1}^{K} \beta_{i,w} E[\theta_i | w_{1:N}]
+the posterior expectation of \theta_i is approximated by its
+expectation under the variational distribution q, which is the
+normalized gamma variables:
+E[\theta_i | w_{1:N}] \approx E[\theta_i | \gamma] = \gamma_i / \sum_
+{j} \gamma_j
+so, the final approximation is
+p(w|w_{1:N}) \approx \sum_{i=1}^{K} \beta_{i,w} (\gamma_{i} / \sum_j
+\gamma_j)
+the first term comes from the ".beta" file.  the second term comes

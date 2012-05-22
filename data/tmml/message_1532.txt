@@ -1,0 +1,40 @@
+Hello,
+I am looking for someone who already worked with MedLDA ('Maximum
+Entropy Discrimination LDA'; Zhu, Ahmed, Xing, 2010) and who is able to
+share some experience about it. I am using the official implementation
+which is available at:
+http://www.cs.cmu.edu/~junzhu/medlda.htm
+This supervised topic model uses an integrated support vector machine
+approach. It can be used for regression or for classification on
+document labels and is similar to sLDA.
+I have some questions about this model:
+1.)
+As a baseline I have a simple topic model which I learned with
+unsupervised LDA from a collection of training documents. I refer to
+this as the baseline model. This baseline captures a set of
+well-conserved topics, which, however, are not the ones I am interested
+in with respect to a certain task.
+Now, I want to use side-information consisting of task-relevant document
+labels in order to learn more interesting topics. I think, this paradigm
+is at the heart of sLDA and MedLDA. However, I have doubts about the
+potential influence of supervision on the learned topic model: Should I
+expect merely a modified and slightly improved version of the baseline
+model, or can I truly expect a completely altered model that is unique
+to the task (at least in the ideal case)?
+Concerning this, in the MedLDA-paper it is said that the method is
+intended to deliver a topic model which has improved accuracy with
+respect to the task. Therefore, I would expect that the learned topics
+represent concepts that are relevant to the task. However, the authors
+also say that for complexity reasons this works better for regression
+than for classification tasks. Since I am interested in a classification
+task it thus seems to me that this model will not actually help me to
+learn a topic model that is a big improvement upon the baseline model.
+Does anyone can help me here with some experience from practice?
+2.)
+I am overwhelmed with the amount of parameters for the MedLDA
+implementation. Can anyone suggest me some good default values for a set
+of ~1000 documents and ~300 topics to start with? I would also like to
+know which parameters can be left as default values and which ones are
+the relevant ones that need extensive fine-tuning.
+Thanks a lot for your help in advance!
+Sebastian

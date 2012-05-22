@@ -1,0 +1,7 @@
+Hello,
+Thanks for your help.
+I doubt why the multivariate gaussian variable can not directly form the
+multinomial distribution.Is there something wrong if the multivariate
+gaussian variable  directly forms the multinomial distribution over topics.
+Best regards
+2010/12/26 Arun Chaganty <arunchaganty at gmail.com>

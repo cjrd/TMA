@@ -1,0 +1,33 @@
+              0090040
+Mahaffey
+
+Hox genes encode homeodomain-containing transcription
+              factors that specify body pattern during embryogenesis in all metazoans. In the
+              fruit fly, Drosophila melanogaster these genes are located in the Antennapedia-
+              and Bithorax-Complexes.  Each individual hox gene is expressed in a specific
+              anterior/posterior domain wherein the encoded protein specifies regional
+              identity through activation of a specific set of target genes. However, the DNA
+              binding properties of the different hox proteins are quite similar  This has
+              lead to the hypothesis that interactions with cofactors play an important role
+              in target gene selection by the hox proteins, though few cofactors are known.
+              Recent results from the Mahaffey lab indicate that regionally-expressed zinc
+              finger transcription factors are likely cofactors for the Deformed (Dfd) and
+              Sex combs reduced (Scr) hox proteins.  Loss of the two, redundant zinc finger
+              genes, disconnected (disco) and disco-related (disco-r) causes a phenotype
+              similar to loss of Dfd and Scr.  Dr. Mahaffey proposed that an interaction
+              between the hox and zinc finger proteins supplies the additional specificity
+              that is required for selection and activation of hox target genes.  Further, he
+              proposes that this may be a conserved mechanism that governs body plan
+              specification in other regions of the embryo and in other animals. This
+              hypothesis leads to several predictions that Dr. Mahaffey will test.  Dr.
+              Mahaffey will ectopically co-express Disco and Dfd in Drosophila to determine
+              whether both proteins will cause a broader transformation than that of Dfd
+              alone.  He will investigate the possibility of molecular interactions between
+              Disco and Dfd, including protein-protein and protein-DNA binding studies.  He
+              will also search for Disco/Disco-r response elements at known Dfd target genes,
+              and, if found, he will undertake molecular characterizations of these response
+              elements. To examine the possibility that this is a conserved mechanism, he
+              will use RNAi to eliminate the disco/disco-r function(s) from beetle Tribolium
+              to test whether this causes a homeotic transformation similar to that observed
+              due to loss of Tc-Dfd and Tc-Scr.
+

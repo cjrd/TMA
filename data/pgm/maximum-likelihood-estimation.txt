@@ -1,0 +1,262 @@
+
+We begin by discussing the simplest
+learning problem, which is that of
+estimating a set of parameters. And the
+key building block for parameter
+estimation is what's called maximum likelihood
+estimation, so we're first going to define
+that and build on that in the context of
+more interesting problems. So let's go back
+to the simplest possible learning problem
+where we are generating data from a biased coin,
+which is a Bernoulli distribution.
+And the probability that X takes the value
+of one is defined by some parameter, theta.
+And the probability that it takes the
+value of zero is therefore one minus theta.
+And let's imagine that we're given access to a
+dataset D, which is a bunch of instances,
+x1 up to xM, that are sampled IID from the
+distribution P. So let's remind ourselves
+what it means for, what the IID means. So
+first, the first I means that the tosses
+are independent of each other. And the ID
+means that they are identically
+distributed which means that they are all
+sampled from P. And our goal is to
+take D and reconstruct theta. So,
+let's think about this as a probabilistic
+graphical model. In the fact it's a
+probabilistic graphical model that we've
+seen before when we first talked about
+plate models. So, here we have a parameter
+theta and a bunch of replicates of the
+same experiment. Which are these x's over
+here. Which, are sampled from theta
+independently. And we can see that if you
+think about this as a graphical model as
+written over here. We can see that each XI
+depends on theta and that they're
+conditionally independent of each other
+once theta is known. So they're independent
+and identically distributed given theta.
+And, if you think about this as a
+graphical model we'll better have C.P.D's
+and so the C.P.D, for the Mth toss. Given
+theta is, the part, is that X takes the
+value of X1 with probability theta
+and the value X0 with probability one
+minus theta. And that is a completely
+legitimate CPD. It's a CPD whose
+parents is the value theta which is the
+parent of X variable. It is a continuous
+variable, but we've done those before. So now that
+we've specified this as a probabilistic
+graphical model, we can go back and think
+about how maximum likelihood estimation would
+work. And so the goal is to find the
+parameter, theta, which is in the
+interval zero one that predicts D well. So
+the quality of a particular parameter, theta, is how well it predicts D. Which
+can also be viewed as how plausible is D, given
+a particular value of theta. So let's try
+and figure out what that means. We can ask
+what is the probability of the D that we
+saw, given a particular value of theta.
+And since the, the tosses or the
+instantiations Xi are conditionally
+independent given, given theta, we can
+write this as a product over all of the M
+instances of the probability of the mth
+instance given theta. And, so now let's
+think about what that is in the context of
+a concrete example. Let's assume that we
+have tossed this coin five times and we
+have three heads and two tails, or three
+ones and, two zeroes. So, if we actually
+write down what this probably function
+looks like, we can see that that's going
+to be, the probability of getting a head given theta. Times the probability of
+getting tails given theta. Times the
+probability of the second tails. Times the
+probability of heads. Times another probability of heads. And the probability of
+the first head given theta is theta times one minus theta
+for the tail, and one minus theta, theta,
+theta or theta to the power of three, and
+one minus theta to the power of two. And
+that is exactly the function that's drawn
+over here. Now if we're looking for
+the theta that predicts D well, what we
+just define that as the theta that
+maximizes this function. If we draw a line
+from this maximum down to the bottom, we
+can see the function is maximized to the
+point 0.6, which not surprisingly is
+the same was the three heads that we saw
+over the five total tosses. So
+generalizing that. Let's assume that we
+have observed in this context MH heads and
+MT tails. And we want to find the theta
+that maximizes the likelihood. And just as
+in the simple, in the simple example that
+we had. This likelihood function. Is going
+to have, theta appearing MH times, and
+one minus theta appearing MT times, and, so
+that's going to give us the
+likelihood function that looks just like
+the likelihood function that we saw in the
+previous slide. And, if we think about how
+we can go about maximizing such a
+function, then, usually we take the
+following steps: first, it's convenient to
+think about not the likelihood, but rather
+what's called the log likelihood, denoted
+by a small l, which is simply the log. Of
+this expression over here, and that has
+the benefits of turning a product into a
+summation. And now that we, so that gives
+us a simpler optimization objective but one
+that has the exact same maximum. And, we
+can now go ahead and do the standard way
+of maximizing a function like this, which
+is differentiating the log likelihood, and
+solving for Theta. And, that's going to
+give us an optimum, which is exactly as we
+would expect. That is, it's the fraction
+of heads among the total number of coin
+tosses. And, that's the maximum of this
+log likelihood function. And, therefore,
+the likelihood as well. Now an important
+notion in the context of maximum likelihood
+estimation is also important in, in when
+we develop it further, is the notion of a
+sufficient statistic. So, when we computed
+theta in the coin toss example, we defined
+the likelihood function as an expression
+that has this form. And notice that this
+expression didn't care about the order in
+which the heads and the tails came up. It
+only cared about the number of heads, and
+the number of tails, and that was
+sufficient in order to define the
+likelihood function, therefore sufficient
+for maximizing the likelihood function.
+And so in this case MH and MT are what
+known as sufficient statistics for this
+particular estimation problem. They
+suffice in order to understand the likelihood
+function and therefore to optimize it. So
+more generally, a function of a dataset
+is a sufficient statistic if it's a
+function from instances to some vector in
+RK. Yes. Which has the following property,
+if this function S of D has the following
+property: for any two data sets D and D prime,
+and any possible parameter theta,
+we have that the following is true: If. S of D
+is equal to S of D prime. Then the
+likelihood function for those two data sets is
+the same. So, what is the S of D? S of D
+is the sum of the sufficient statistics
+for all of the instances in D. So let's
+make this a little bit more crisp. What
+we're trying to do is we're trying to look at
+a bunch of datasets. For example, all
+sequences of coin tosses, and we're trying
+to summarize. Data sets using a smaller,
+more compact notion, which is statistics,
+that throw out aspects of the data that
+are not necessary for, for reconstructing
+its likelihood function. So let's look at the
+multinomial example which is the
+generalization of the Bernoulli example
+that we had before. So assume that we have
+is a set of measurement of a variable x
+that takes on k possible values. Then in
+this case the sufficient statistics just like
+before where we had the number of heads
+and the number of tails. Here we the have
+the number of values, the number of times
+that each of the K values came up. So we
+have M1, M2 up to Mk. So for example if
+you're looking for sufficient statistic
+for a six sided die and you're going to
+have M1- M6 representing how many times
+the die came up to one and the number of
+times it comes up two, three, four, five
+and six. And so what is the sufficient
+statistic function in this case? Remember
+it is a tuple of dimension K, which are
+the different values of the variable and
+the sufficient statistic value of XI is
+one where We have a one only. In the I
+position and zero everywhere else. So as
+we sum up. S of X M. Over all instances in
+our data set. You are going to get a
+vector where you get only a one
+contribution when the instance, when the
+m, when the m data instance comes up that
+particular value and so that going to be
+m1, m2. And this is a sufficient statistic
+because the likelihood function can then
+be reconstructed as the product of theta
+I, MI, where this theta I here, is the
+parameter for. X equals X over XI. Let's
+look at different example. Let's look at
+the sufficient statistic for Gaussian
+distribution. So as a reminder, this is a
+one dimensional Gaussian distribution that
+has two parameters, mu which is the mean
+and sigma squared which is the variance
+and that's going to be written in the
+following form which you have seen before.
+And we can rewrite that exponent in, in
+the following way we can basically blow
+out the quadratic term in the exponent and
+you end up with the likelihood function
+that has minus x squared times a term plus
+x times the term minus a constant term.
+And the sufficient statistics. For
+Gaussian can now be seen to be x squared.
+X and one. Because when we multiply P of X
+for multiple occurrence of X we're going
+to end up adding up the X squared for the
+different data cases adding up to the X's
+in the different data cases. And then this
+is going to be the number of data cases.
+So the S of the data D is going to be the sum
+over M, X and M squared The sum over m.
+And this principle. And from that we can
+reconstruct the likely function. How do we
+now perform maximum likelihood estimation. So as we
+talked about we want to choose theta as to
+maximize the likelihood function and if we go
+ahead and optimize the function that we've
+seen on previous slide from multinomial
+that maximizes likelihood estimation turns
+out to be simply the fraction So for the
+value of XI what would be the fraction of
+XI in the data. Which again as a perfectly
+very natural estimation to use. For a
+Gaussian we end up with the following as
+the maximum likelihood estimation, the mean
+is the empirical mean In the distribution
+that is the average over all of the data
+cases and the standard deviation is the
+empirical standard deviation. So to
+summarize, maximum likelihood estimation is a
+very simple principle for selecting among
+a set of parameters given data set D. We
+can compute that, maximum likelihood
+estimation by summarizing a data set, in
+terms of sufficient statistics, which are
+typically considerably more concise than
+the original data set D. And so that
+provides us with a computationally
+efficient way of summarizing a data set,
+so as to do the estimation. And it turns out
+that, for many parametric distributions
+that we care about, the maximum likelihood
+estimation has an easy to compute closed
+form solution, given the sufficient
+statistics.

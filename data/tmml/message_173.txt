@@ -1,0 +1,5 @@
+Hi Rachit,
+You might try the moment matching estimator from Tom Minka's tech report
+"Estimating a Dirichlet", which is slightly different from the estimator
+in the PAM paper.
+-David

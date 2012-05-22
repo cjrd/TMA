@@ -1,0 +1,29 @@
+              The use of persistent RAM in consumer products has increased its capacity and
+              decreased its price. These trends suggest that typical computers could contain
+              large quantities of this kind of memory in the near future.  This project will
+              investigate how to change operating system design for workstation and server
+              machines to make best use of the availability of large quantities of persistent
+              RAM.  In particular, the project will investigate the use of persistent RAM for
+              a machine's primary stable storage, replacing hard disks.  The project will
+              perform a test design and implementation to demonstrate the feasibility of the
+              concept and to suggest possible advantages of the approach.  This
+              implementation will be performed on a Linux system augmented with 2 Gbytes or
+              more of RAM that will serve as its primary storage device, with a hard disk
+              used only for large files, such as video and audio data.  The project will
+              demonstrate advantages in speed and simplicity of the system.  It will also
+              point out interesting possibilities for improvements in operating system
+              services made possible by the use of persistent RAM. 
+              
+
+
+
+
+
+
+
+
+
+
+
+
+

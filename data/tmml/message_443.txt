@@ -1,0 +1,9 @@
+hi david,
+we do not yet have available an implementation of variational
+inference for dynamic topic models.
+the non-conjugacy between the chain of topics (logistic normal) and
+words (multinomial) precludes gibbs sampling.  the conditional
+distribution of topics given words is not computable in closed form.
+however, other forms of MCMC might be possible.
+best,
+dave

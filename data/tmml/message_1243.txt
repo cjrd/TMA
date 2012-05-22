@@ -1,0 +1,6 @@
+If you restrict to symmetric case you can assume that the dirichlet
+parameter is gamma distributed. There is some code of Yee Whye Teh that
+uses this approach for Gibbs sampling. However, it is not a conjugate
+prior....
+Cheers,
+Laura

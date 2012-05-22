@@ -1,0 +1,25 @@
+              This proposal is to fund a US-Korea Joint Workshop on Digital Libraries.  This
+              small planning workshop is the first with an Asian country.  The globalization
+              of the internet and associated information infrastructure now offers the
+              promise of creating international digital libraries whose resources are
+              distributed  and are capable of managing content originally created in 
+              multiple languages, formats, media, and social and organizational contexts.  
+              The barriers to achieving progress in worldwide development of digital
+              libraries are particularly difficult between nations with very different
+              languages and cultures.  To achieve this "next level" of knowledge
+              infrastructure requires collaborative efforts in research areas including: (1)
+              multi-lingual information systems, cross-language retrieval systems, language
+              translation, and language teaching software; (2) multi-national content
+              development including sound, data, image, ultimedia, and software; (3) 
+              interoperability and scalability technology to permit extremely large
+              world-wide collections; (4)  metadata techniques and tools
+The workshop has
+              three primary goals.  First, it will work to identify ways to reduce the
+              barriers to increased collaborative efforts between US and Korean researchers. 
+              Second it will explore technical advances and research environments needed to
+              facilitate US-Korea collaboration related to digital libraries research and
+              educational applications.  Third, it will attempt to produce generalizable
+              strategies and approaches for extending and employing digital libraries
+              technologies across radically different textual and cultural materials.
+
+

@@ -1,0 +1,10 @@
+hi all,
+another solution worth mentioning is full variational posterior
+inference on the topics as well as topic proportions and topic
+assignments.
+that is, rather than computing the MLE of the topic distributions
+over words, compute variational approximations to them under a
+dirichlet prior (as in the gibbs sampling set up).
+i've found that this helps matters, particularly with smaller corpora.
+best,
+dave

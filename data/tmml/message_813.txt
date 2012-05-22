@@ -1,0 +1,18 @@
+I also noticed similar things, where documents with tables of statistics for
+the 50 US states would produce a "states and random statistics" topic. This
+was to be expected, though, because such a token distribution wasn't
+remotely apparent in any other documents in the corpus, so there was a
+strong statistical regularity of just the kind the model models to model
+there.
+To me it was a sign of misuse of the model, and called either for excluding
+the offending part of the corpus beforehand or disregarding the resulting
+topics afterward.
+When it happens for less obvious reasons I've thought refining the notion of
+context in order to tend more to disambiguate the senses of words might
+help, e.g. by using a paragraph or sentence as a model "document" or using
+something broadly along the lines of topical n-grams, and conversely doing a
+better job of identifying semantically identical but superficially different
+tokens with each other, e.g. taking "di ffi cult" => "difficult" etc., but
+haven't tried those first two with that intent. A major conceptual
+limitation of heirarchical-mixture-distributions-of-tokens topic models is
+that they lack these kinds of side information about tokens.

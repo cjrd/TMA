@@ -1,0 +1,48 @@
+              This proposal is a comprehensive research plan for establishing a general
+              framework for measuring available statistical information in gene mapping
+              studies.  The key methodological challenge is to find a measure that (1) is a
+              reliable index of the relative information specific to the purpose of a study,
+              (2) conditions on particular data sets, (3) is robust in the sense of general
+              applicability, including to small data sets, (4) is easy to compute, and (5) is
+              subject to sensible combination axioms. Dealing with all these criteria
+              simultaneously requires a careful combination of Bayesian and frequentist
+              methods, especially for small samples. The PIs propose to investigate a
+              large-sample framework involving likelihood functions only, and a small-sample
+              framework from a robust Bayesian perspective. The robust Bayesian approach
+              takes full advantage of the Bayesian formulation in deriving information
+              measures with desirable coherence properties, and at the same time it seeks
+              measures that are robust to various specifications and thus are more generally
+              applicable. The PIs also propose to investigate several specific measures at
+              two levels. At the more general level, the PIs will study and compare these
+              measures in terms of their general behaviors and applicability, which are not
+              restricted to the genetic setting. At the more specific level, the PIs plan to
+              evaluate and apply these measures in specific genetic applications, including
+              allele-sharing methods, methods for fine-scale genetic mapping (e.g.,
+              haplotype-sharing methods), map comparisons (e.g., SNPs verses
+              microsatellites), gene-gene interaction and gene-environmental interaction
+              studies. 
+
+Due to the huge potential benefit to the public health,
+              geneticists and analytical researchers, including statisticians, have focused
+              their efforts on finding genes affecting susceptibility to common, complex
+              disorders such as diabetes, asthma, hypertension, cardiovascular and
+              psychiatric diseases. The transmission of these disorders is complex, the
+              etiologic complexity being increased by the action and interaction of multiple
+              genes and environmental factors. There are other complications such as sporadic
+              cases, incomplete penetrance (i.e., genetically predisposed individuals might
+              not exhibit the disorder) and late age of onset. All these factors increase the
+              difficulty of identifying the genetic components of the trait of interest. 
+              Genetic linkage studies are often the first step in finding and cloning a
+              disease gene. Their goal is to locate and, if possible, shorten regions on the
+              genome that are very likely to contain disease susceptibility genes. In many
+              studies, difficulty arises because most genetic data sets are incomplete and
+              investigators want to know how much information in the data is available for
+              the study relative to the amount of information that would have been available
+              if the data were complete.  This relative information directly guides the
+              investigator's follow-up strategies (e.g., using more genetic markers with
+              existing DNA samples versus collecting DNA samples from more families), and a
+              misleading measure can lead to a serious waste of human and financial resources
+              as well as a delay in the progress of the underlying genetic studies. The goal
+              of this proposal is to provide reliable measures of such relative information
+              by using the current start-of-the-art statistical techniques. 
+

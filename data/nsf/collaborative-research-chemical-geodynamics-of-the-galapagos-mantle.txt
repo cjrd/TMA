@@ -1,0 +1,16 @@
+              This is a collaborative study with German scientists from GEOMAR, as part of the
+              MEGAPRINT expedition that took place aboard the R/V Sonne during 2001. The
+              field program sampled critical, unmapped sections of the eastern Galapagos
+              Spreading Center (GSC) and portions of young seafloor between the archipelago
+              and the spreading center. Elements of the program included multi-beam seafloor
+              mapping, shipboard gravity and magnetic surveys, and sampling of lavas by
+              dredging at ~15 km spacing along the eastern GSC, and at numerous off-axis
+              seamounts and volcanic ridges. Guided by ~100 major element glass analyses
+              already completed, the PIs propose an analytical program that will determine
+              trace element contents, He, Pb, Nd, Sr and Hf isotope compositions, volatile
+              (CO2 ,H2O, Cl, F and S) contents and 40Ar-39Ar radiometric ages of a
+              representative suite of these submarine glasses and rocks. Geophysical data
+              from German colleagues will provide additional constraints on age, structure,
+              thickness and tectonics of the crust and lithosphere.
+
+

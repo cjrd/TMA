@@ -1,0 +1,8 @@
+Hi All,
+The n-gram model does not "bias" because it looks at n-gram order
+for extracting topics.  The paper fold all introduces FOL so it might be
+more towards the bias which you are looking for. You should also have a look
+at Dirichlet forest Priors (
+http://pages.cs.wisc.edu/~andrzeje/research/df_lda.html).
+Sincerely
+Tanmoy Mukherjee

@@ -1,0 +1,11 @@
+              This is a three-year research project to understand the role of convection in
+              forcing equatorial waves, and the effects of these waves on the dynamics of the
+              middle atmosphere.  The tool to be adopted for this investigation is the
+              National Center for Atmospheric Research's Whole Atmosphere Climate/Chemistry
+              Model (WACCM), a comprehensive numerical model spanning the range of altitude
+              from the Earth's surface to the lower thermosphere.  The focus of the project
+              are the equatorial waves, forced in the tropical troposphere by transient
+              convection heating, that propagate upward into the stratosphere, mesosphere,
+              and lower thermosphere.  It is expected that this project will have broad
+              impact on theoretical, numerical and observational aspects of wave propagation,
+              dynamics, and chemical composition of the middle atmosphere.

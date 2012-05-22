@@ -1,0 +1,15 @@
+hi, all
+I have found a confusing problem about alpha prediction. The iteration
+equation is
+alpha_new = alpha_old - H(alpha)^{-1}g(alpha)
+However, in blei's code, I saw:
+log_a = log_a - df/(d2f * a + df);
+df represent the first derivate of log likelihood function according to
+alpha
+d2f represent the second derivate of log likelihood function according to
+alpha
+Why blei use log(alpha) to replace alpha?
+Anyone can give me some explanation?
+Best regards,
+Sinerely,
+boby

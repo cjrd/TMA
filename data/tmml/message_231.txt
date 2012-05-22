@@ -1,0 +1,3 @@
+I am running LDA with some data and discover that undue weight is applied to frequenty occurring terms in the corpus.  Has anyone applied some kind of tf-idf weighting as a precursor to LDA?  I am concerned what effect that might have as LDA is based on a Poisson (count) distribution.
+Thanks for your help.
+Jim Cox

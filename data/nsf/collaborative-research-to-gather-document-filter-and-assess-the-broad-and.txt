@@ -1,0 +1,15 @@
+              This project is part of a collaboration that is building a broad and deep
+              collection of educational resources for Earth system education as part of the
+              Digital Library for Earth Systems Education (DLESE) project. First, existing
+              resources pertaining to Earth system education are being collected into a broad
+              "works in progress" collection. Second, metadata are associated with each
+              resource, to facilitate discovery by end users. Third, a "community review"
+              system is being created to evaluate resources for pedagogical effectiveness,
+              ease of use for faculty and students, and power to motivate and inspire
+              students. This step enables identification of the best of the collected
+              resources, which are then placed in a smaller high-quality "reviewed" area.
+              Finally, assessment of both the reviewed and unreviewed collections is taking
+              place, to ensure they are well-balanced and meet the needs of the user
+              community. Partners in the collaboration are the American Geological Institute,
+              Columbia University, Dartmouth College, and Foothill-DeAnza Community College.
+              This project has responsibility for the metatagging component.

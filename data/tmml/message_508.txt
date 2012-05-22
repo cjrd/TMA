@@ -1,0 +1,10 @@
+I have some problems about the CTM:
+1. Is there any simple ways to get the document-specific topic distribution? I have tested the log likelyhood using the importance sampling in the ctm-dist code, but the perplexity is larger than the one not using importane sampling of LDA, why? In LDA, the document-specific topic distribution p(z|d) is directly estimated by the Gibbs sampling approach.
+2. In function sample_term(), the following code will return a irregular number when the cov is zero for i = k, is it an error? Is there any solution to it?
+===================================================================
+for (i = 0; i < mod->k; i++)        t2 += log(gsl_ran_gaussian_pdf(eta[i] - vget(var->lambda,i), sqrt(vget(var->nu,i))));
+===================================================================
+Best Regards,--Huajie Zhang (???) Apex Data & Knowledge Management LabShanghai Jiaotong Universityhttp://apex.sjtu.edu.cn/apex_wiki/zhjay
+_________________________________________________________________
+????????????????????????????
+http://chunjie.live.com/?form=PANER01

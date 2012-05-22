@@ -1,0 +1,6 @@
+Dear All,
+I am using Blei's hLDA-c code for hierarchical classification. My problem is that I am struggling to learn a tree that is more than one level deep. This is both using 'real' data and artificial data created with a deep tree in mind.
+I take it that a small value for the hyperparameter eta would encourage a large tree?however, I have also tried across a range of values. I have set the 'depth' setting from 1 up to 300, and still the tree is always only one level deep.
+Is there anything I can do to try to force a deeper tree to be inferred? Alternatively, are there example data sets, with parameter settings, that are known to generate deep trees?
+Many thanks,
+Michael

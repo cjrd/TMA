@@ -1,0 +1,6 @@
+Hi Topic Modeling List,
+Is there an implementation of Dynamic Topic Models available? If so, where
+would I get it? As well, is it possible to implement DTMs using Gibbs
+Sampling?
+Thanks!
+David

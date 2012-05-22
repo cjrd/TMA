@@ -1,0 +1,3 @@
+              The proposal plans to connect ESU to the Abilene Network via KANREN and the
+              Great Plains Network for the purposes of low temperature astrophysics research,
+              geospatial analysis, and archeology at a brand new site just donated to ESU.  

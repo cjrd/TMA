@@ -1,0 +1,85 @@
+              0091754
+Meinke
+
+The titan (ttn) mutants of Arabidopsis exhibit dramatic
+              alterations in
+mitosis and cell cycle control during seed development.  The
+              common
+feature among these mutants is that endosperm nuclei become enlarged
+              and
+highly polyploid.  Mutant embryos differ in cell size, morphology,
+              and
+viability, depending on the locus involved.  Three titan mutants
+              with
+distinct phenotypes were first identified in the Meinke laboratory 4
+              years
+ago.  During the previous grant period, 10 additional titan mutants
+              were
+recovered and 5 TITAN genes cloned in collaboration with
+              Novartis
+(Syngenta).  Several of these genes encode condensin (SMC)
+              proteins
+required for chromosome condensation and dosage compensation. 
+              Another
+gene product is related to the ARF class of GTP binding
+              proteins
+associated with vesicle trafficking.  The remaining genes are
+              involved
+with other cellular processes.  What remains to be determined is how
+              these
+diverse proteins interact to influence nuclear division and cell
+              viability
+during seed development.    
+
+This project will make it possible
+              to continue the analysis of titan
+mutants and determine the relationship
+              between gene function, nuclear
+dynamics, and cell growth during seed
+              development.  Emphasis will be
+placed on the SMC class of titans because these
+              proteins appear to be most
+directly linked to the mutant phenotype.  Project
+              objectives are to
+identify the remaining SMC gene knockouts through reverse
+              genetics,
+characterize nuclear and cytoskeletal defects in more detail
+              through
+fluorescence and electron microscopy, analyze phenotypes of multiple
+              SMC
+knockouts, and determine how SMC functions in plants compare with
+              those
+established in other organisms.  The ARF class of titans will be
+              examined
+first by attempting to complement ttn1 with an ARF-GAP that maps to
+              the
+TTN1 region.  This should complete a map-based cloning effort
+              initiated
+during the last grant period.  The other class of titans will be
+              examined
+in part by analyzing more tagged endosperm mutants from the
+              Novartis
+collection, including those that have intermediate titan
+              phenotypes.
+These additional mutants will be compared with existing titans
+              to
+establish the complex network of genes that influence
+              endosperm
+development.  
+
+The titan phenotype demonstrates that Arabidopsis
+              endosperm tissue
+provides an ideal environment for proliferation of aberrant
+              nuclei
+defective in mitosis and cell cycle control.  Detailed analysis of
+              these
+mutants should provide valuable insights into novel features of
+              nuclear
+dynamics during endosperm development and evolution.  The long-term
+              goal
+is to understand the complex mechanisms that regulate endosperm
+              formation
+in angiosperms. 
+
+
+

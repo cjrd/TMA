@@ -1,0 +1,5 @@
+In correlated topic model paper,  the expectation of the log normalizer in
+eq(6) is upper bounded by eq (7).
+Maybe it's a silly question. How to derive eq(7) with a Taylor expansion?
+I really appreciate your help!
+-Lei

@@ -1,0 +1,48 @@
+              AST 0098676
+Kulkarni
+
+Cosmic gamma-ray bursts (GRBs) are among the most
+              spectacular, known phenomena in the universe.  They consist of short outbursts
+              (fractions of seconds to a few minutes) of high-energy radiation originating in
+              distant regions of the universe, There are a few such outbursts observed per
+              day.  These were first observed by the US Vela satellites in the early 1960's.
+              They have remained one of the major mysteries of astrophysics for the past 30
+              years. 
+
+In the late 1990's breakthrough discoveries found that the bursts
+              originated in faint galaxies, at typical distances of several billion light
+              years.  Measurements of distances to the bursts, using large, ground-based
+              telescopes, revealed that apparently some of them emit prodigious amounts of
+              energy; larger than the total amount of energy produced by our Sun over its
+              entire projected lifespan of about 10 billion years, but compressed into a few
+              seconds!  While theories abound, the ultimate cause of these amazing cosmic
+              explosions remains unknown.  However, it now seems likely that at least some
+              bursts represent "birth cries" of black holes, produced in the explosion of
+              massive stars ("hypernovas").  Current research suggests that the GRB
+              phenomenon is closely related to the history of star formation in the universe,
+              and that it can be used as a novel probe of early cosmic evolution.  It is also
+              likely that most GRBs produce highly collimated jets of very energetic
+              particles and radiation, effectively becoming giant accelerators
+in the sky. 
+              While a lot has been learned over the past few years, much more remains to be
+              found about the source and the ultimate physical mechanism behind these
+              remarkable cosmic explosions. 
+
+The keys to this further understanding lies
+              in (1) detailed observations of their afterglows seen at wavelengths ranging
+              from radio waves, through visible light and out to x-rays; (2) additional
+              measurements of the distances to these enigmatic events; and (3) a better
+              understanding of their environments and the distant galaxies in which they
+              originate.  This is the subject of the present
+project.  Using the worlds
+              largest optical/infrared telescopes (the 10-m Keck telescopes in Hawaii and the
+              large telescopes at Mt. Palomar in California), and the world's premier radio
+              telescopes (e.g., the Very Large Array in New Mexico) to observe GRBs when they
+              are first identified and to continue to observe them as they decline in
+              brightness, the goal is to construct a wide enough bank of data to permit
+              testing and winnowing of the scores of theoretical models presently under
+              study. Funding for this project was provided by the NSF program for
+              Extragalactic Astronomy & Cosmology (AST/EXC).
+***
+
+

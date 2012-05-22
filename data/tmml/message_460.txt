@@ -1,0 +1,15 @@
+Dear list members,
+given a model with two dependent multinomial/discrete variables in its
+Bayesian network, e.g.,
+y_i = j ~ Mult(theta)
+z_i = k| y_i ~ Mult(psi_j)
+u_i | z_i ~ Mult(phi_k)
+with Dirichlet priors, {theta, psi_j, phi_k} ~ Dir(...), the varational
+mean field approximation would assume q(z, y) = prod_i q_i(z_i, y_i) =
+prod_i q(z_i) q(y_i).
+My question is: Is there empirical work that investigates the effect of
+the independence assumption of the dependent discrete variables,
+q_i(z_i, y_i) = q(z_i) q(y_i), as opposed to modelling y_i and z_i in q
+jointly? (Beside Matthew Beal's general work).
+Thanks
+gregor

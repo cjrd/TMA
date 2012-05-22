@@ -1,0 +1,327 @@
+
+So we previously defined the notion of
+Bayesian estimation, and showed how it
+could be applied in the context of a
+single random variable say, a multinomial
+random variable. Now we're going to step
+back to the world of probabilistic
+graphical models and think about the
+application of these ideas to the problem
+of estimating parameters in a Bayesian
+network. So let's draw again the
+probabilistic graphical model that
+represents Bayesian estimation in a
+Bayesian network. So just as before in a
+single variable case we're going to inject
+into the model explicitly the parameters
+that characterize sorry, random variables
+that define the parameters. And so here we
+have two random variables theta X which
+represents the CPD of X. And theta Y given
+X, which represents the CPD p of Y given
+X. Notice that each of these actually
+vector valued because there's gonna be
+multiple actual numbers in each of these
+CPDs, but we're going to draw them as
+single circles. Now, once again, we can
+look at this network, and read out certain
+important conclusions. So the first
+important conclusion is that the
+instances, these XY pairs, are
+independent, given the parameters. And you
+can see that by noticing that if I
+condition on both theta X and theta Y,
+given X, then the, XY pairs become
+conditionally, become [inaudible]
+d-separated from each other. And so we have
+conditional independence, following as a
+consequence of the structure of the
+graphical model. We also have, and this is
+another explicit property that we can read
+from this diagram, is that Theta-X and
+Theta-Y given X, are marginally
+independent. So a priori we have that
+the parameter prior over all of the
+parameters, theta, can be written as the
+product over I, in this case random I is
+being the random variable in the network
+of the prior over the CPD for xi and so
+the prior is the product of little priors,
+one for each CPD. Now, it follows from
+this. From by just writing down the, the
+graphical model and looking at what the,
+the implications of the expressions are
+the, the posteriors of the theta are also
+independent given complete data. And the
+reason for that is that complete data
+d-seperates the parameters for the two
+CPDs. So if you look at this network over
+here and assume that we have all of these
+variables condition-, observed, then you
+can see that there's no active path
+between theta x and theta y given x.
+Because, for example, if we look at
+potentially this. Trail. We can see that
+X2 blocks the trail from theta X to theta
+Y, given X. And so, again, following
+directly from the structure of this
+network, we can see that the posterior
+distribution, theta X, theta Y, given X
+again. given D decomposes as a product of
+the posterior over theta X given D, times
+the posterior of theta Y, Y given X given
+D. Which means just as in maximum likelihood
+estimation where it can break up the
+estimation problem into one of estimating
+each cpd separately. We can do the same
+here only now we can do it using Bayesian
+estimation where instead of just picking a
+single parameter setting for, for the cpd
+we compute these separate posteriors
+separately and then put them together into
+a single posterior. Now it turns out that
+we could do even finer breakdown in the
+context of table CPDs. So here we have,
+when we're now looking at the binary case
+where X is a binary value random variable.
+So now we have two multi-nomials in our
+CPD, one for Y given X, one corresponding
+to the case of Y given X1 and the other to
+Y given X0. And it turns out that if;
+again in this model we're assuming that
+these are independent a priori. Which is
+what this diagram says, because you notice
+that there's no edges between them, so
+they're marginally independent, theta y
+given x one and theta y given x zero. If
+we're postulating that, that holds, as we
+are in this diagram, it turns out that
+they are also independent in the
+posterior. Now, that is a little bit
+trickier to show, because it turns out
+that you can't read it directly from the
+diagram, because in fact even given
+complete data, we have an active trail
+that goes from. theta Y. Given X. One
+through Y. One. Which since it's observed
+it activates a V. Structure. Instance
+theta Y given X0. But, it turns out. That
+if we go back to some of the examples of
+context-specific independence that we had
+in the case of specifically multiplexer
+CPD we can derive that these are in fact
+despite the appearance of an activated V
+structure conditionally independent in the
+posterior as well. And so once again, we
+can compute the posterior as a product of
+posteriors of the form p of theta X given
+D times the probability of theta Y given
+X1 given D. times the probability of theta
+one given X0. We can generalize this to a
+general Bayesian network and let?s assume
+that we have a Bayesian network with table
+CPD's that specified in terms of
+multinomial parameters of the form theta x
+given u where u is some assignment to X's
+parents, U. Then if, for each such
+multinomial parameter, we have dirichlet
+prior with appropriate hyper parameters.
+Then we can show using the kind of
+analysis that we just did, combined with
+the analysis of the posterior for a single
+multinomial. That the posterior is now a
+dirichlet, with hyperparameters that
+represent the. Prior that we had for that
+multinomial, plus the sufficient
+statistics that represent the count in the
+data of particular combinations of the
+parent and the child. And so, for example,
+for the entry in the multinomial
+representing the value little x1 for X,
+and little u for the parents U. We have
+this. A prior parameter plus the counts
+and the data for that combination of X and
+U. So. Now we know how to take a set of
+priors and use the data to update them to
+form posteriors. Now, let's think about
+where the priors might come from. And
+a priori it might seem very daunting, to
+construct a set of priors for all of the
+nodes in a Bayesian network. It turns out
+however that there is a general purpose
+scheme for doing that, that is both easy
+and has some good theoretical properties.
+And that scheme works as follows. So what
+we're going to do is we're going to define
+a prior Bayesian network that has some set
+of parameters theta zero. And we're going
+to define a single equivalent sample size.
+Which is going to be applicable or applied
+to all of the nodes in the Bayesian
+network. And so, in order to specify the
+parameter, the hyperparameter alpha X
+given U, for m, for an assignment X equals
+little x and U equals little u, we're
+simply going to compute the probability in
+this parameterized network of X and U, and
+we're going to multiply it by the
+equivalent sample size alpha. Now in many
+cases you're just going to use theta zero
+to be the uniform parameters and which
+makes it all a very easy computation. But
+this provides a simple coherent way to
+specify all of the hyper-parameters
+simultaneously. And so let's look at an
+example. Here is a network X Y that, that
+has no edge. And, and let's imagine that,
+that is our That is our prior network. And
+so we're going to in fact assume a uniform
+distribution, over the values, XY, and now
+let's. So Theta-0 is uniform. And now
+let's look at what we would get for
+different situations in a network where we
+have x being a parent of y. Which is the
+network whose parameters we actually want
+to estimate. And so what we would get for,
+and let's assume they're both binary, x
+and y. And so x is going to be distributed
+as a parameter with, Dirichlet with
+hyperparameters alpha over two, alpha over
+two. And Y is going to be distributed.
+Remember, so not [inaudible], not X. Theta
+of X is going to be distributed this way.
+And theta of Y given XO is going to be
+distributed in the following way. It's a
+dirichlet, with hyperparameters alpha
+times the probability of X, Y. Which in
+the uniform distribution is a quarter. And
+similarly for theta y given x one is going
+to have the same Dirichlet distribution.
+And if you think about this, this makes
+perfect sense because it tells us that
+we've seen the same number of examples of
+X. As we have of y. It's just that in y we
+have to partition the examples of x, of y
+over those where we have x equals x0 and
+those we have x equals to x1. If on the
+other hand, we had say Dirichlet of alpha
+over two, alpha over two for the two
+except for the two multinomial?s
+corresponding to, to the corresponding to
+y. This one and this one. It would rep, it
+would, imply that we've seen twice as many
+Y's as we've seen X's. So let's see what
+kind of affect using the Bayesian
+estimation has in a pseudo real world
+example. So this is actually a real
+network. It was developed for monitoring
+patients in an ICU. And we call it the ICU
+alarm network. And it turns out that the
+ICU alarm network has 37 different
+variables. They represent things like
+whether the patient was [inaudible]. The
+patient's blood pressure, heart rate, and
+various other medical, events that might
+happen. And it turns out that, overall,
+the network has 504 parameters. Now there
+aren't actually data cases here. This was
+a hand constructed network. And so what
+we're going to do is we're going to sample
+instances from the network and then we're
+going to pretend that we don't know the
+network parameters and see the extent to
+which we can recover the network
+parameters via learning from the instances
+that we sampled from it. Now I should say
+that this is. A pseudo realistic learning
+problem. Because the instances that one
+samples from a network, are us, are always
+cleaner than the instances that one gets
+in the context of a real world data
+[inaudible], data set. Because it, in a
+real world scenario, it is rarely the case
+that the network whose structure you, the
+network whose, that you're trying to learn
+has the exact same structure as the true
+underlying distribution, from which the
+data were generated. And so, this is a
+much cleaner scenario. But still, it's
+useful and indicative. So what we see here
+are the results of learning as a function
+of the x axis, which is the number of
+samples. And the y-axis is a distant
+function between the true distribution and
+the learned distribution. And that distance
+function we're not going to talk about
+this at the moment it's the notion called
+relative entropy. It's also called kale
+divergence. But what we need to know about
+this for the purpose of the current
+discussion, is that when two distributions
+are identical it's zero, and otherwise
+it's non-negative. So what we see here is
+that the blue line Corresponds to maximum
+likelihood estimation. And we can see several
+things about the blue line. First of all
+it's very jagged. There is a lot of bumps
+in it. And second, it's consistently
+higher than all of the other lines. Which
+means that maximum likelihood estimation,
+although it does continue to get lower as
+we get more data, with as high as 5,000
+data points, we still haven't gotten close
+to the true underlying distribution.
+Conversely, let's see what happens with
+the Bayesian estimation and this is all
+Bayesian estimation with a uniform prior.
+And different equivalent sample size. So
+this is using the prior network with a
+uniform network and different values of
+alpha. And what we see here is that for
+alpha equals five, that's the green line.
+Alpha equal ten are almost sitting
+directly on top of each other. And they're
+both considerably lower than all of the
+other lines and also the maximum likelihood
+estimation. As we increase the prior
+strength so that we are, have a firmer
+belief in, in. An uniform prior. We can
+see that we move a little bit away. And
+now the performance becomes a little
+worse. But notice that by around 2000 data
+points, we're already pretty close to the
+case that we were for an equivalent sample
+size of five. For 50, which is this dark
+blue line, it takes a little bit longer to
+converge, and it doesn't quite make it.
+But even with a, an equivalent sample size
+of 50, which is pretty high you get
+convergence to the correct distribution
+much faster than you do from maximum
+likelihood estimation. So to summarize,
+in Bayesian networks if we're doing
+Bayesian parameter estimation, if we're
+willing to stipulate the parameters are
+independent a priori, then they're
+also independent in the posterior which
+allows us to maintain the posterior as a
+product of posteriors over individual
+parameters. For multinomial Bayesian
+networks, we can go ahead and con, perform
+Bayesian estimation using the exact same
+sufficient statistics that we use for
+maximum likelihood estimation. Which are the counts
+corresponding to a value of the variable
+and a value of the parents and whereas in
+the context of maximum likelihood estimation you
+would simply use the formula on the left,
+in the case of Bayesian estimation we're
+going to use the formula on the right
+which has exactly the same form, only it
+also accounts for the hyper parameters.
+And, in order to do this kind of process,
+we need a choice of prior, and we've
+shown how that can be effectively elicited
+using both a [inaudible] distributions
+specified as a Bayesian network, as well as
+an equivalent sample size.

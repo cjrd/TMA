@@ -1,0 +1,11 @@
+The man at the head of that group is John Wilbur (
+http://www.ncbi.nlm.nih.gov/CBBresearch/Wilbur/ ), a representative
+paper of his on the subject of building topics, or as he calls them
+themes, is Hagit Shatkay, W. John Wilbur: Finding Themes in Medline
+Documents: Probabilistic Similarity Search. ADL 2000: 183-192 but it
+is an EM algorithm described there.  I think what I'm remembering is
+in his "A theory of information with special application to search
+problems," Wilbur W.J.; Neuwald A.F., Computers and Chemistry, Volume
+24, Number 1, January 2000 , pp. 33-42(10) but I've lost access to
+that so I'll have to dig around a bit more for it to be sure.
+Anthony

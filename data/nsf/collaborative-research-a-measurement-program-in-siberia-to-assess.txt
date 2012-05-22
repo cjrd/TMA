@@ -1,0 +1,13 @@
+              This project involves conducting a field measurements program near Cherski,
+              Siberia to quantify the impacts of disturbance on the seasonal cycle of
+              atmospheric carbon dioxide and the discharge of carbon and nitrogen into the
+              Arctic Ocean in forest and shrubby tundra regions.  Coastal plain tundra in the
+              region has accumulated large stores of carbon in sediments during the
+              Pleistocene that has been slowly released to the atmosphere and ocean through
+              melting of previously frozen soils during the Holocene.  Disturbance,
+              particularly forest fires, of the vegetation exposes the soils to accelerated
+              carbon loss through more direct exposure to erosion.  The study will compare an
+              undisturbed region to recently disturbed areas and determine the effects of 
+              changes in temperature and hydrology on the rate of carbon flux.  The results
+              will be utilized in models to examine possible future disturbance effects,
+              particularly those that could be accelerated by warmer climate conditions.

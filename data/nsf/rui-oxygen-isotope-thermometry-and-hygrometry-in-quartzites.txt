@@ -1,0 +1,51 @@
+              Peck
+EAR-0106890
+
+
+This proposal details approaches for using the oxygen
+              isotope systematics of metaquartzites to: (1) retrieve peak (>800 deg C)
+              garnet-quartz fractionations for thermometry and (2) use water-controlled
+              retrograde diffusion in rutile and other trace phases as a paleohygrometer. 
+              Pure (>90% Qtz) quartzite is the ideal lithology for this study because it
+              satisfies the 'infinite reservoir' assumption with respect to modeling oxygen
+              diffusion in accessory minerals.  Laser fluorination will allow high-precision
+              analysis of equilibrium mineral pairs.  Samples will be selected from
+              well-studied localities in the southern Grenville Province with published
+              constraints on metamorphic conditions (T, P, cooling rates, and fluids).
+The
+              thermometry portion of this project will use the slow oxygen diffusion rate in
+              garnet (as determined by experimental studies) as a way to 'see-past' multiple
+              thermal events in polymetamorphic rocks.  Garnet commonly forms below its
+              closure temperature, so it will preserve oxygen isotope ratios from garnet
+              formation even through subsequent granulite-facies metamorphism.  Quartzite is
+              essentially momomineralic, so closed-system retrogression will not affect
+              quartz-garnet fractionations because quartz will have no other minerals with
+              which to exchange during cooling.  Samples will be rigorously characterized
+              with respect to oxygen isotope ratio, and also with BSE, CL, and conventional
+              microscopy to determine if they have behaved as closed systems.  This
+              thermometer will be extremely useful in high-grade polymetamorphic terrains
+              where more conventional cation thermometers are not applicable.
+Experiments
+              have shown that oxygen diffusion rates in minerals are a strong function of
+              water fugacity.  The proposed research will use published experiments and
+              measured oxygen isotope ratios to constrain water fugacities in slowly cooled
+              metamorphic rocks.  Intermineral fractionations and isotopic zoning will be
+              used, in conjunction with diffusion models, to develop an oxygen isotope
+              hygrometer.  Rutile will be a focus of this study because it behaves in the
+              opposite manner to other rock-forming minerals with respect to water effects on
+              oxygen diffusion rates (in rutile water causes slow oxygen diffusion).  Thus,
+              when used with other minerals, rutile provides good leverage for determining
+              the interplay between water fugacity and oxygen diffusion rate.  This oxygen
+              isotope hygrometer will allow the detection of even chemically unreactive
+              fluids which leave no chemical signature but can still flux melting and weaken
+              rocks.
+The last decade has seen an explosion of experimental work on oxygen
+              diffusion rates and equilibrium oxygen isotope fractionation factors, and also
+              the modeling of oxygen exchange between minerals during cooling. 
+              Unfortunately, few studies have combined these resources with the high
+              precision, small sample sizes, and high spatial resolution available from laser
+              fluorination to allow genuinely new information to be extracted from rocks. 
+              High-temperature thermometry and hygrometry are important avenues of timely
+              research which will provide new tools for understanding deep-crustal
+              processes.
+

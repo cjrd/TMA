@@ -1,0 +1,13 @@
+Hello list,
+Is there any public MCMC code for LDA? I'm trying to calculate a measure
+of fit, I'd like to implement the DIC but this needs Monte Carlo samples
+of course.
+Also, where I may find papers about MCMC and LDA? I'm working on a
+modification of LDA for hierarchical data (in my case, administrative
+procedures that can be thought of being "generated" by the laws they're
+referring to) and the likelihood is too complex to use variational
+inference.
+Oh, by the way, I tried using BUGS for LDA, but with 3 MB of data and a
+vocabulary of 8k terms it doesn't compile.
+Best regards,
+Matteo Dimai

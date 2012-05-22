@@ -1,0 +1,5 @@
+Dear Shibamouli,
+Our model can be viewed as a hybrid MLN specifically designed to marry
+logic with LDA.
+Best,
+Jerry

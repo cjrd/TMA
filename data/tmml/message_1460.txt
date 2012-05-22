@@ -1,0 +1,8 @@
+Hi Scrlett,
+I donot think that the source code for CORR-LDA is available.  However, the
+C code for LDA can be easily adapted to CORR-LDA which involves plugging in
+additional parameter estimation equations. That is easy to do.
+Only thing is that you have to complete the derivation of the update
+equations which is not available in the paper.
+regards
+veena

@@ -1,0 +1,18 @@
+              This Small Business Innovation Research (SBIR) Phase I project will develop a
+              novel method of
+interrogating the structural condition and cure state of
+              composite materials. It works by  propagating a sub-nanosecond voltage pulse
+              along an intrinsic microwave transmission-line fabricated directly in the
+              laminate. The transmission-line is formed using graphite-reinforcing fibers as
+              the conducting path. Changes in pulse propagation are used to monitor changes
+              in cure state, and detect various structural failures such as microcracking,
+              delamination, disbonding, marcelling, and moisture absorption. The fibers are
+              native to the material and constitute zero structural defect, and negligible
+              cost. 
+
+Applications include graphite composites, glass composites, composite
+              joints, and
+metal-adhesive joints.The commercial potential will be an
+              inexpensive and spatially continuous structural-health and cure monitoring
+              system with minimal invasiveness. 
+

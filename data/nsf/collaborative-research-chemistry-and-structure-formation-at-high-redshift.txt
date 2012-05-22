@@ -1,0 +1,41 @@
+              AST-0087172
+Phillip C. Stancil
+
+This is a collaborative research project with
+              Drs Stephen Lepp, (University of Nevada, Las Vegas, AST0087348), and Alexander
+              Dalgarno, (Harvard University, AST0088213). This program will construct models
+              to investigate the formation of the first cosmological objects. These models
+              will describe the history of the first bound objects to form from the
+              primordial gas in the early universe. They will include the coupled evolution
+              of the time-dependent, nonequilibrium chemical, atomic and molecular level
+              populations as well as the nonequilibrium rovibrational level populations of
+              the molecules with contributions due to chemical reactions in the primordial
+              gas. The models can be used to suggest strategies for observing structures in
+              the early universe in the Infrared from space.
+
+This program will use
+              astrophysical modeling to investigate the formation of the first cosmological
+              objects. These models will compute the coupled evolution of the time-dependent
+              nonequilibrium chemical, atomic and molecular level population, thermal, and
+              hydrodynamic history of the first bound objects to form from the primordial
+              gas. This will be the first time such extensive, coupled evolution models have
+              been attempted.  In addition, this project will investigate the explicit
+              nonequilibrium rovibrational level populations of the primordial molecules with
+              contributions due to chemical reactions, resulting in an improved determination
+              of molecular cooling and the prediction of the emission spectra of primordial
+              clouds. The emission spectra will be used to suggest the most likely ways these
+              objects may be observed with the next generation of infrared space telescopes.
+              The needed atomic and molecular data and derived cooling functions will be
+              assembled and posted on the World Wide Web. The data that is not available,
+              primarily involving rovibrational state-specific molecular collisions, will be
+              computed with established quantum-mechanical techniques. The studies of the
+              primordial gas will be extended to follow protogalaxy and protostar formation
+              under increasing metallicity and radiation field conditions to the beginning of
+              the era of Population II. These studies will be relevant to the interpretation
+              and planning of future space-based observations with NGST, SIRTF, FIRST, and
+              Astro-F and ground-based telescopes. Funding for this project was provided by
+              the NSF program for Extragalactic Astronomy & Cosmology (AST/EXC).
+
+***
+ 
+

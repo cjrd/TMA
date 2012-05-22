@@ -1,0 +1,4 @@
+Hi
+I am looking for datasets to  test LDA for my application.Please provide
+certain datasets in Blei's format so that i can get better results.
+Rohit

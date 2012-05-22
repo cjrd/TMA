@@ -1,0 +1,11 @@
+Not really beyond the introductory text there, no.  Depends on your
+vocabulary size and on how many samples you want to use for the
+particle filter and your ability and willingness to parallelize the
+handling of those samples.  This code hasn't been used for many
+problems so I have no general wisdom to offer about how many samples
+you'll need.  There are some heuristics people use for particle
+filters though.  And I never benchmarked directly against LDA-C since
+my problem was too big for it and I didn't bother doing so with a
+subset.
+Best of luck and let me know how it goes.  Here's hoping a loose bit
+doesn't fly off while you're working on it.

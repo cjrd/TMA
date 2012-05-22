@@ -1,0 +1,45 @@
+UMass Amherst Computer Science has a tenure track opening in the area of machine learning, especially graphical models.
+http://www.cs.umass.edu/content/faculty-position-computer-science-machine-learning
+Our department is highly ranked in AI, exceptionally collaborative, and has long-standing broad interests in machine learning.  In addition to myself, Andy Barto, Sridhar Mahadevan, David Jensen, Erik Learned-Miller, Bruce Croft, Shlomo Zilberstein and other ML-related faculty, last year we were joined by Hanna Wallach and Aria Haghighi.
+We will begin reviewing applications on December 1.
+Computer Science also has a tenure-track opening in bioinformatics, for which we will begin reviewing applications November 15; see http://www.cs.umass.edu/bioinfosearch
+Please forward this message to anyone who might be interested.
+Best wishes,
+Andrew
+=========
+Faculty Position in Computer Science, Machine Learning
+University of Massachusetts Amherst
+Department of Computer Science
+We invite applications for a tenure-track Assistant Professor in the
+area of machine learning, especially graphical models and the
+development of novel machine learning methodology for a diverse range
+of application areas.  Applicants must have completed (or be
+completing) a Ph.D. in Computer Science, or a related area, and should
+show evidence of exceptional research promise.
+Our department, which has a strong record of interdisciplinary
+collaboration, has prominent and growing strengths in various areas of
+machine learning and AI.  In addition, many of our faculty work in
+areas neighboring machine learning, including vision, robotics,
+natural language, information retrieval, data mining, computational
+social science, sensor networks and computer networks. We are highly
+supportive of junior faculty, providing both formal and informal
+mentoring.  We have a substantial history of NSF CAREER awards and
+other early research funding.  Computer Science has close ties to other
+departments including statistics/mathematics, engineering, biology,
+physics, linguistics and the social sciences, as well as new "green"
+initiatives.  Amherst, a historic New England town, is the center of
+a vibrant and culturally rich area that includes four other colleges.
+To apply, please send a cover letter referencing search R39789 with
+your vita, a research statement, a teaching statement, and at least
+three letters of recommendation.  Electronic submission of application
+materials in pdf format is preferred.  Send to facrec at cs.umass.edu.
+Alternatively, paper copies ofapplication materials may be sent to:
+Search R39789, c/o Chair of Faculty Recruiting, Department of Computer
+Science, University of Massachusetts, Amherst, MA 01003.
+We will begin to review applications on December 1, 2010 and will
+continue until the position is filled.  Salary will be commensurate
+with education and experience.  Inquiries and requests for more
+information can be sent to: facrec at cs.umass.edu
+The University of Massachusetts is an Affirmative Action/Equal
+Opportunity employer.  Women and members of minority groups are
+encouraged to apply.

@@ -1,0 +1,46 @@
+              This research will focus on galectins-1 and -3 as pre-mRNA splicing factors. 
+              Galectins are a family of saccharide-binding proteins that (i) has a specific
+              affinity for galactose/lactose and (ii) shares a characteristic amino acid
+              sequence in the carbohydrate recognition domain.  In terms of cell biology,
+              several galectins share another intriguing feature - dual localization.  Some
+              galectins are found in both the extracellular and intracellular compartments. 
+              This laboratory previously demonstrated that galectin-3 was a new and novel
+              splicing factor and documented that another family member, galectin-1,
+              exhibited nuclear localization and functioned as a splicing factor.  Thus, the
+              splicing activities of galectins-1 and -3 appear functionally redundant.  The
+              requirement of galectin-1 or -3 in pre-mRNA splicing indicates a second
+              biologic role for these proteins in addition to their carbohydrate-binding
+              activity.  Are the two activities connected or autonomous?  A galectin-1 mutant
+              incapable of binding lactose is splicing competent in an assay carried out in
+              the presence of lactose to inhibit endogenous galectins.  These preliminary
+              results hint that the splicing and carbohydrate-binding activities of
+              galectin-1 are independent.  Recently, using a yeast two-hybrid screen, this
+              laboratory identified Gemin4 as an interacting partner for galectin-1 (and, by
+              inference, galectin-3).  Using an in vitro assay, the laboratory determined
+              that both galectins directly bind to Gemin4.  Gemin4 is a component of the SMN
+              (survivor of motor neurons) complex - a large macromolecular machine containing
+              at least 12 polypeptides found in the nucleus and the cytoplasm.  The nuclear
+              SMN complex localizes to subnuclear structures termed gems and functions to
+              supply snRNP particles to the splicing apparatus. Preliminary
+              immunoprecipitation experiments using anti-SMN and anti-galectin-1 antisera
+              showed that both SMN and galectin-1 proteins are in a nuclear complex which
+              also contains galectin-3, Gemin2, hnRNP C and Sm B/B' and D polypeptides of the
+              snRNPs.  These data provide in vivo evidence that galectins interact with a
+              macromolecular complex involved in pre-mRNA splicing.  An emerging theme in
+              cell biology proposes that biosynthetic processes are orchestrated by complex
+              macromolecular machines that are dynamically changing and interconnected.  The
+              convergence of the SMN complex and galectins-1/-3 on the spliceosomal H-complex
+              makes it essential to characterize the various nuclear machines/complexes in
+              detail.  Thus, the specific objectives of this project include: (1) delineate
+              and characterize components and interactions of nuclear complexes in which
+              Gemin4 and galectins-1 and -3 have been found, (2) define the step(s) in which
+              galectins-1 and -3 participate in splicing and, (3) define the role of the
+              carbohydrate-binding site of galectins-1 and -3  in pre-mRNA splicing
+              activity.
+
+An emerging concept in cell biology is that biosynthetic processes
+              are orchestrated by complex, dynamically changing "machines" composed of many
+              individual molecules, at least some of which can associate with and dissociate
+              from the machine in response to changing cellular needs.  This research
+              promises to advance the understanding of this important process.
+

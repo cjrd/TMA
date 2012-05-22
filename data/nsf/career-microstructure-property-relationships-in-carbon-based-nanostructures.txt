@@ -1,0 +1,71 @@
+              This CAREER award supports theoretical research to elucidate the role of
+              microstructure in determining the properties of interfacial materials and
+              supports education activities that involve introducing various materials
+              modeling components to the materials science and engineering curriculum,
+              development of multimedia and visual teaching tools, and outreach to K-12
+              educational activities. Research will focus on mechanical properties of brittle
+              interfacial materials through the study of diamond interfaces and
+              nanocrystalline diamond model systems. Studies of mechanical properties of
+              interfacial brittle materials will focus on analyzing the role of
+              microstructure and environmental effects in brittle fracture with particular
+              emphasis on relating atomistic simulations to the large body of knowledge on
+              fracture mechanics. Its purely brittle nature and its potential for various
+              applications such those needed for developing micro- and nano-electromechanical
+              systems motivate the choice of nanocrystalline diamond, a model brittle
+              material. The PI will use atomistic simulations to address the questions: (i)
+              Is brittle crack propagation governed mainly by equilibrium thermodynamics or
+              is it dominated by kinetics? (ii) What are the effects of microstructure on
+              crack propagation, deflection and arrest? (iii) What are effects of temperature
+              and environment on fracture?  In order to explore a wide range of
+              microstructures and provide a highly reliable description of carbon-hydrogen
+              systems, atomistic simulations will be combined with tight-binding simulations.
+              Simulation results will be compared with those from continuum finite element
+              modeling approaches to the mechanics of interfacial materials. Educational
+              activities will focus on developing courses on materials theory and modeling,
+              and on restructuring lecture-based coursework into an interactive format at
+              both the undergraduate and graduate levels. A key aspect of educational
+              activities will be to expose students to the complementary nature of modeling
+              and experiment by developing coursework in collaboration with experimentalists.
+              A variety of multimedia tools and web resources will be integrated into
+              teaching to assist in achieving this objective. Cross-university web-assisted
+              teaching will be explored in order to broaden the repertoire of the engineering
+              curriculum. Platform independent, open source and interactive software for
+              visualization of molecular and other physical processes will also be developed.
+              This courseware and educational software will ultimately be shared with the
+              materials science community. The educational component also includes an
+              outreach program to expose K-12 students to materials science and materials
+              science career options.
+
+This CAREER award supports theoretical research and
+              education. The proposed research focuses on using simulation to elucidate the
+              role of the microsctructure of materials in determining their mechanical
+              properties. A simulation approach that couples two different simulation methods
+              that are accurate on different length scales will be used to provide an
+              atomistic description of brittle fracture in brittle interfacial materials
+              through the study of diamond interfaces and nanocrystalline diamond model
+              systems. The educational component of the proposal involves introducing
+              materials modeling and simulation into the materials science and engineering
+              curriculum through course development and restructuring, and involves
+              developing new simulation and visualization software tools for teaching which
+              will be shared with the materials science community.  The educational component
+              also includes an outreach program to expose K-12 students to materials science
+              and materials science career options.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

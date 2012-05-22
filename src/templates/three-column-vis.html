@@ -1,0 +1,57 @@
+{% extends "tmabase.html" %}    
+{% block head1 %} {{title}} {% endblock %}
+{% block head2 %} {{subtitle}}  {% endblock %} 
+{% block jscript %}
+{% if jsarray %}
+<script language="JavaScript" type="text/JavaScript" src="{{ STATIC_URL }}js/pie.js"></script>
+<script type="text/JavaScript">
+var array = {{jsarray|safe}}
+var elements = generate_pie_elements(array);
+var piec = null;
+function init() {
+	browser_adjust();
+	// create pie chart
+	piec = new PieChart(elements);
+	piec.initialize();
+}
+function highlight(i) {
+	piec.highlight(i);
+}
+function unhighlight() {
+	piec.unhighlight();
+}
+</script>
+{% endif %} 
+{% endblock %} 
+
+{% block data %} 
+<div id="main">
+<table><tr>
+
+<td width="25.0%">  
+<table class="dark">
+{{leftcol|safe}}    
+</table>
+</td>
+
+<td width="50.0%">  
+<table class="light">
+{{centercol|safe}}   
+</table>
+</td>
+
+<td width="25.0%"> 
+<table class="dark">
+{{rightcol|safe}}   
+</table>
+</td>
+</tr></table>
+</div>
+
+{% endblock %}                                                                                                         
+
+
+
+
+
+

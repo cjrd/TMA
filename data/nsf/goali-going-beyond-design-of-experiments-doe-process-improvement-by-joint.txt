@@ -1,0 +1,35 @@
+              The challenge for process control in many settings is that if a process is left
+              alone it will tend to drift and wander away from target and as a result,
+              quality will suffer. This is especially true in an industrial setting where
+              both process inputs and outputs continuously change. Traditional process
+              control has centered on detecting special causes that are suggested by
+              significant patterns in the data which point to the existence of unexpected
+              changes or signals. Many situations occur, however, where certain process
+              signals are anticipated because they are characteristic of a system or
+              operation. The approach to be used in this prjoect is to navigate to a good
+              operating region using design of experiments (DOE) to evaluate a set of
+              variables, then focus the control effort on the critical variables.  Process
+              transfer functions will be used to optimize the control adjustment of these
+              variables and use Cuscore statistics to efficiently monitor the process by
+              capitalizing on the structure of the anticipated signal.  For process
+              adjustment and monitoring, the following questions will be investigated:  (1)
+              What are the appropriate controllers and Cuscore statistics for common process
+              characterizations? (2) How well will the new monitoring algorithms work in
+              detecting signals? (3) How robust are the controllers and monitors to
+              approximations of (or deviations from) their key parameters?  
+
+The
+              contributions of this research will include both empirical and theoretical
+              developments to deliver improved output through better process understanding,
+              monitoring, and control. In particular, the research is expected to provide a
+              methodology for connecting the knowledge on experimental design and process
+              improvement, provide a full set of adjustment and Cuscore monitoring algorithms
+              and statistical evaluation of their properties, generate tools and charting
+              algorithms to improve daily process operation and control, and demonstrate the
+              feasibility of joint adjustment and monitoring for real industry applications.
+              This work includes a partnership with Springs Window Fashions Division, Inc.
+              (Middleton, WI). Springs is a leading manufacturer of home window treatments
+              and their processing operations will serve as a test bed for implementation of
+              the results. It also includes an opportunity for a graduate research assistant
+              to work on the project and with the company.
+

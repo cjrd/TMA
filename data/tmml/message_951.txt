@@ -1,0 +1,7 @@
+As long as we're posting links to things we haven't used, Hal Daume's
+Hierarchical Bayes Compiler also seems to have an implementation of
+the Pitman-Yor prior:
+http://www.umiacs.umd.edu/~hal/HBC/
+It looks pretty easy to use.
+Best,
+Matt

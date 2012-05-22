@@ -1,0 +1,6 @@
+Hi, Dear all
+I have solved the problem I put forward last time, in which I have
+mistakenly suppose w_m is independent to  w_(-m) and z.
+Thank Asli Celikyilmaz and you all very much.
+Best wishes.
+Justin. Cen

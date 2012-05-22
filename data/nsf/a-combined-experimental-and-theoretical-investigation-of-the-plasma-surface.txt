@@ -1,0 +1,86 @@
+              0078711
+Aydil
+
+Chemically reactive gas plasmas are used widely for etching
+              and deposition of thin films and enable a whole class of technologies in the
+              microelectronics industry.  Despite the wide spread use and importance of such
+              plasmas, optimization of plasma processes and design of plasma reactors rely
+              heavily upon trial-and-error experimentation.  There is a strong need for
+              fundamental understanding of the intricate and complex coupling between plasma
+              physics, homogeneous and heterogeneous chemistry, and species transport in
+              plasma reactors.  In particular, interactions of ions and radicals produced in
+              chemically reactive gas plasmas with surfaces exposed to the discharge remain
+              among the least understood aspects of plasma processing technologies.  This
+              lack of knowledge on surface reaction mechanisms and kinetics is a major
+              limitation to the predictive capabilities of plasma reactor models that aim to
+              integrate the plasma physics with gas phase and surface chemistry.
+
+A
+              research strategy that integrates plasma and surface diagnostics with atomistic
+              simulations is proposed to provide definitive conclusions about plasma-surface
+              interactions during deposition of hydrogenated amorphous and nanocrystalline
+              silicon films from SiH4/H2,/Ar glow discharges.  Si film deposition is chosen
+              as a prototypical chemical process because of its technological importance in
+              the semiconductor industry.  The proposed study aims at identifying the
+              elementary surface chemical reactions that govern the plasma deposition
+              mechanism, determining the corresponding reaction rates, and elucidating how
+              these surface kinetic processes affect the evolution of the structure and
+              composition of the surface.  Such knowledge can only be achieved through
+              synergistic analysis of the experimental and simulation results.
+
+To this
+              end, atomic-scale computer simulations will be employed to study the
+              interactions of silane molecular fragments, H atoms, and energetic ions from
+              the plasma with the deposition surfaces.  For detailed mechanistic study of
+              plasma-surface interactions, molecular-dynamics, molecular-statics, and Monte
+              Carlo simulators have been developed based on interatomic potential-energy
+              functions, which have been tested exhaustively to assess their validity in
+              comparison with ab initio calculations and experimental data.  In addition, ab
+              initio calculations within density functional theory will be used to generate
+              accurate chemical reaction energy surfaces and variational rate theory will be
+              employed to calculate the corresponding reaction rates.  Furthermore, hybrid
+              off-lattice kinetic Monte Carlo simulations will be implemented for full-scale
+              dynamical modeling of the plasma deposition process over realistic time scales.
+               These computational studies will identify surface chemical reactions that
+              occur on surfaces exposed to a chemically reactive plasma, analyze
+              quantitatively the energetics and kinetics of these reactions, and elucidate
+              the elementary steps of the plasma deposition mechanism.  The results of the
+              computer simulations will be compared with experimental data and the insights
+              gained from the simulations will be used to guide new experimental studies and
+              design new plasma deposition strategies.
+
+In situ surface and plasma
+              diagnostic methods will be used to study the phenomena occurring in the gas
+              phase and on surfaces during film growth.  Surface diagnostics will include in
+              situ attenuated total reflection Fourier transform infrared (ATR-FTIR)
+              spectroscopy and in situ spectroscopic ellipsometry.  ATR-FTIR will be at the
+              heart of our experimental plan: The PI's have developed this technique in order
+              to study surface physics and chemistry in a plasma environment.  ATR-FTIR will
+              be used to determine the growth surface composition as a function of the fluxes
+              and energies of species incident onto the surface.  The plasma gas-phase
+              diagnostics will include various spectroscopic methods, such as infrared and
+              visible emission spectroscopy, and line-of-sight threshold-ionization mass
+              spectroscopy to detect and measure the radical energies and fluxes impinging on
+              the surface.
+
+The proposed research is pioneering in linking experimental in
+              situ plasma and surface diagnostics with atomic-scale dynamical modeling and
+              theoretical surface reaction analysis to establish fundamental mechanistic and
+              quantitative understanding of deposition surface interactions with chemically
+              reactive plasmas and how this interactions evolve during the deposition
+              process.  In addition, the proposed research will set the stage for developing
+              an accurate chemical reaction database that can be utilized for equipment-scale
+              plasma reactor modeling.  Undertaking such a challenging research effort is
+              particularly timely given the recent experimental and theoretical advances in
+              the field.
+The scientific underpinnings of plasma processing are
+              multidisciplinary and cut across traditional boundaries between different
+              disciplines including physics, chemistry, chemical and electrical engineering. 
+              Thus, the proposed fundamental study in plasma-surface interactions provides an
+              ideal educational tool for training students and postdoctoral scholars in
+              addressing technologically important research problems using an integrated
+              experimental and theoretical approach.
+***
+
+
+

@@ -1,0 +1,8 @@
+Dave,
+Ah, I get it now!   It's like marginalizing out the finite discrete
+distribution with a Dirichlet prior, to yield a Dirichlet Compound
+Multinomial/Polya urn.
+The Sudderth dissertation does look like a valuable intro - there doesn't
+seem to be much if anything on the DP out in textbook form yet.
+thanks,
+Dave

@@ -1,0 +1,27 @@
+              The objective of this joint project involving the University of Michigan,
+              Imperial College (London), and Sandia National Laboratory (Livermore) is to
+              improve understanding and predictive capability of nitric oxide (NO) formation
+              from the prompt (Fenimore) pathway favored in diffusion and fuel-rich flames. 
+              Chemical species critical to the prompt mechanism are measured and compared to
+              the results from detailed kinetic models.  Temperature and concentrations of
+              NO, CH radical, and oxygen atoms are measured in a stable diffusion flame using
+              nonintrusive laser-based diagnostics.  The flame studied is a methane/air
+              diffusion flame stabilized on a Tsuji-type counterflow burner.  Species
+              measurements are made with nanosecond and picosecond laser-induced fluorescence
+              (LIF).  Temperatures are measured with coherent anti-Stokes Raman spectroscopy
+              (CARS) and quenching is measured directly by resolving the temporal decay of
+              the picosecond LIF signal.  Calibration is performed using Rayleigh scattering
+              (CH, O-atom) or by measuring known amounts of dopant (NO).  Flame strain rates
+              (air and fuel flows) are adjusted to provide various reaction conditions, and
+              nitric oxide is added to the fuel to measure destruction of NO by reaction with
+              hydrocarbons (reburn).
+
+Reduction of pollutant emissions, especially nitrogen
+              oxides, is a key issue in the design of energy conversion devices including
+              automobile engines, gas turbines, and home heating furnaces.  Depending on
+              flame conditions, formation of nitric oxide can proceed by two different
+              mechanisms:  the thermal (Zeldovich) mechanism or the prompt (Fenimore)
+              mechanism.  The thermal mechanism, which dominates in fuel-lean, premixed
+              systems, is fairly well characterized.  However, the prompt mechanism is poorly
+              understood.
+

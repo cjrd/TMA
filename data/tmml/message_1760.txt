@@ -1,0 +1,4 @@
+Excellent, thank you very much for your input and comments, Chong!
+I'll pass this info on to Jonathan, who wanted run further tests (he used a much smaller NYT dataset before: 57k documents). Hopefully we'll be able to welcome HDP to gensim soon :)
+Best,
+Radim

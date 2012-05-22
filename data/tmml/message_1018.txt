@@ -1,0 +1,33 @@
+Hi Xuerui,
+I was refering to latter case of having a distribution guiding how probable a word comes from an author or a recipient (or maybe as well from a pair).
+If one wants to learn user profiles from communication (corpus of messages), it might be inappropriate to assume that the whole message comes from the author (like in the AT-model) or from the author and the recipients (like in a variant of the AT-model which does not distinct between authors and recipients) or from a specific author-recipient-pair (like in the ART-model).
+The idea would be to try learning which part of the message comes from an author and which from a recipient.
+Best, Claudia
+________________________________
+Von: Xuerui Wang [mailto:xuerui at cs.umass.edu]
+Gesendet: Montag, 11. Oktober 2010 22:21
+An: Wagner, Claudia
+Cc: 'topic-models at lists.cs.princeton.edu'
+Betreff: Re: AW: [Topic-models] Implementations of the Author-Recipient-Topic model
+Hi Claudia,
+If you meant sampling an entity from a combined author/recipient sets without distinction, then it is exactly the author-topic (AT) model. We did conduct experiments comparing ART and AT and others in http://www.cs.umass.edu/~xuerui/papers/art_jair.pdf
+If you think of having a distribution to guide how probable a word comes from the author, a recipient, or an author-recipient pair, we didn't pursue in that direction. It could be interesting.
+Best,
+Xuerui
+Hi Xuerui,
+Many thanks for sharing your implementation!
+In the ART model you sample for each word an author-recipient-pair and since you want to learn topic-distributions of communication-pairs this makes of course perfectly sense.
+However, I wondered if you ever tried to sample an authors OR a recipients instead of sampling pairs and if this made a difference?
+I am asking, because from my point of view it makes also sense that a word in a message is either generated because of an author's specific interest (i.e.,  the author's topic distribution) OR because of an recipient's specific interest (i.e., the recipient's topic distribution) and not necessarily because of both of them.
+One could than also learn the "level of dedication", i.e. how dedicated a message (or in this case all author's messages) are to a given recipient (in the same way as the Citation-Influence-Model [1] learns the influence of a cited publication on a citing publication).
+Best, Claudia.
+[1] http://www.mpi-inf.mpg.de/~dietz/citinf.html
+___________________________________
+Claudia WAGNER
+Intelligent Information Systems Group
+DIGITAL - Institute of Information and Communication Technologies
+JOANNEUM RESEARCH Forschungsgesellschaft mbH
+Steyrergasse 17, A-8010 Graz, AUSTRIA
+phone: +43 316 876 2617   fax: +43 316 876 1403
+email: Claudia {dot} Wagner {at} joanneum {dot} at
+web: http://claudiawagner.info/

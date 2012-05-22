@@ -1,0 +1,10 @@
+Dear List:
+My first time writing to this list. :) I have gone through the archive of
+this mailing list back since last year regarding some of the discussion on
+the collapsed variational inference for LDA (Teh, Newman, and Welling's
+NIPS 2006 paper). However, I'm still not quite clear how Equation 15 is
+derived (by expanding the log of ratio of Gamma functions as described by
+the authors). Can anyone please explain this step in detail? I apologize
+if this might come across as a stupid question.
+Thank you very much in advance.
+-Pew Putthividhya

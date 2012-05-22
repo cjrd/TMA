@@ -1,0 +1,26 @@
+              Chemistry (12)
+In spite of the many types of kinetic and thermodynamic
+              information available through electrochemical techniques, few undergraduates
+              have the opportunity to carry out such experiments. This project seeks to
+              address this deficiency through the acquisition of a computer controlled
+              potentiostat. Use of the instrument is being implemented throughout the
+              chemistry curriculum beginning with Organic Chemistry and culminating in
+              undergraduate research. The project draws from a model developed by Holder at
+              Appalachian State University and adapts experiments from the research
+              literature. Experiments are selected which complement the material being
+              covered in a particular course, and which illustrate the usefulness of
+              electrochemical techniques for understanding molecular properties. The project
+              is particularly benefiting first generation college students, who comprise
+              approximately 40% of Coe's entering classes. An advisory committee of
+              electrochemistry professionals (from the University of Iowa, Cornell College,
+              and Collins Printed Circuits) has been formed to assist in evaluation and in
+              the development of new experiments suitable for use in undergraduate
+              laboratories. The advisory committee includes expertise from industry,
+              biochemistry, material science, and environmental engineering; the new
+              experiments being developed include these interdisciplinary areas. Students are
+              expected to gain a broad understanding of the use of electrochemistry to solve
+              chemical problems. Dissemination will include presentations at regional and
+              national meetings, publication in the chemical education literature and
+              research literature, and creation of an electrochemical education Web page.
+
+

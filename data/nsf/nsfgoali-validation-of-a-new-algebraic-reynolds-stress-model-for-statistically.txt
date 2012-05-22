@@ -1,0 +1,51 @@
+              Abstract
+CTS-0083229
+C. Petty, Michigan State University
+
+The ability to
+              predict the low-order statistical properties of turbulent flows is an important
+              aspect of modern engineering design.  The exact equations governing the
+              instantaneous pressure and velocity fields of constant density, Newtonian
+              fluids are known. However, the Reynolds averaged Navier-Stokes (RANS-) equation
+              for the mean velocity is statistically unclosed.  This closure problem has been
+              an intense area of research for more that fifty years.
+
+Current commercial
+              CFD codes offer closure models of varying complexity.  Although the Boussinesq
+              approximation for the Reynolds stress limits the utility of the k-e theory,
+              engineers attempting to understand the flow behavior within complex spatial
+              domains nevertheless apply this theory.  Unfortunately, for many practical
+              flows with streamline curvature, the use of a linear gradient type model for
+              the Reynolds stress may produce qualitatively results.  Significant efforts has
+              been expended to address the short comings of the k-e theory by developing
+              closure models for statistical correlation's that appear in the unclosed
+              second-order moment equation for the Reynolds stress.  The approach is less
+              appealing for design in astute as six additional non-linear partial
+              differential equations must be solved in addition to the vector-valued RANS
+              equation, the scalar-valued e-equation, and the continuity equation.  LES and
+              DNS methods are limited to benchmark flows for model calibration. 
+              Unfortunately, computational demands associated with LES and DNS prohibit the
+              use of these methods for routine engineering design calculations in complex
+              geometries.
+
+With this research a spatial smoothing approximation is used to
+              derive an algebraic preclosure representation for the Reynolds stress in terns
+              of a prestress correlation.  This novel theoretical approach stems directly
+              from the exact dynamical equation governing velocity fluctuations.  The
+              prestress, which is a self-correlation of an effective fluctuating force per
+              unit mass of fluid, stems from the divergence of fluctuations in the
+              instantaneous Reynolds stress and pressure fluctuations.  The working
+              hypothesis for the research is that the prestress correlation, which depends
+              explicitly on fourth order statistical quantities, is more amenable to a
+              universal phenomenological closure that the Reynolds stresses itself.
+
+The
+              resulting new algebraic Reynolds stress model will open up new opportunities
+              for engineering design.  An isotropic prestress (IPS-) model and algebraic
+              prestress (AAPS-) model will be validated for flows with strong streamline
+              curvature and integrated into a commercial software code, Fluent.  The new
+              closure model will be tested and optimized for a class of statistically
+              stationary benchmark flows with streamline curvature.  The IPS- and AAPS-
+              models will be used to describe the internal flow structures encountered in
+              hydrocyclone separators, industrial scale mixers, and swirl combustors.
+

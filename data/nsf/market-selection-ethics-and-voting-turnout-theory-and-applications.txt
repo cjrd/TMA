@@ -1,0 +1,37 @@
+              This project is divided into two parts. The objective of the first part is to
+              develop a theory of market selection, which would determine the methods of
+              forecasting and information gathering that are conducive to survival in a
+              market setting.  The objective of the second part is to develop a descriptive
+              ethical theory that may be used to explain contribution to public goods, voting
+              turnout in large elections and anomalies observed in experiments. 
+
+One of
+              the objectives of the theory of market selection is to examine influential
+              ideas in economics such as that agents with correct beliefs will drive agents
+              with incorrect beliefs out of the market. The results obtained so far motivate
+              a study of this claim in different market settings. They also motivate an
+              analysis of apparently similar (but, in fact, quite different) ideas such as
+              that better informed agents will drive out of the market poorly informed
+              agents.
+This project also seeks to determine the forecasting methods that, if
+              employed, would tend to dominate the market. The idea is to assume that agents
+              use dif-ferent forecasting methods to predict the probabilities of future
+              events and then determine which agents would accumulate more wealth. So,
+              instead of evaluating forecasting methods from an axiomatic viewpoint as usual
+              in econometric theory, it is proposed to determine which forecasting methods
+              should become predomi-nant in the market in the sense that the agents who
+              adopted these methods would influence prices.
+
+The second part of this
+              proposal constructs a model of voting turnout in large elections which should
+              provide comparative statics that are consistent with observation and an
+              explanation of vote choice as a function of factors like uncertainty about the
+              distribution of preference types, costs of voting, asymmetric information and
+              electoral rules.  In a large election, voters cannot be motivated solely by the
+              consequences of their vote because a single vote is not likely to change the
+              outcome of the election. A motivation for voting may be the desire to act
+              ethically. The project develops an ethical theory that would explain
+              significant turnout in elections, but that could also be tested and applied
+              outside the realm of elections. A starting point for this theory is rule
+              utilitarianism. 
+

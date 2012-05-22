@@ -1,0 +1,33 @@
+Hi
+We are implementing labelled LDA (as found in the Stanford topic
+modelling toolkit) as a means of applying multiple labels to
+documents. We felt that labelled LDA was the best theoretical approach
+for labelling our documents as it performed well in the papers we had
+read on multi-labelled data; as well as in the Blei papers looking at
+analysis of components of topics over time.
+We currently have around 60 topics, which are fairly unbalanced. Some
+are quite broad, some are very narrow, there are overlaps between
+topics; some topics are supersets of other topics (i.e. all document
+matching topic A also match topic B; but not all that match topic B
+match topic A).
+We are looking to classify around 20,000 new documents per day but
+have received very unsatisfactory results from our implementation of
+labelled LDA.
+We are trying to figure out where the issue might lie:
+1. Is it a problem with the training set? We have put around 4,000
+documents as part of our training set, ensuring that each topic
+received at least 50 labelled documents as part of the training.
+2. Is it a problem with having unbalanced topics (e.g. topics as
+'broad' as 'soccer' and as narrow as 'Computer security')?
+3. Is it a problem with having superset topics (e.g topic X, Y and Z
+which may be overlapping topics and all are subsets of topic A)?
+With best wishes
+Azeem
+Azeem Azhar
+azeem at azhar.co.uk
+t: +44.7974.222583
+f: +44.207.691.0464
+IM: 123azeem at gmail.com
+Skype: azeemazhar
+tw: azeem
+My blog is now at http://azeemazhar.com

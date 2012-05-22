@@ -1,0 +1,15 @@
+Dear friends:
+I have read the HDP matlab code by Yee. And I am trying to use HDP to
+analysis documents.
+My idea is as follow,  each word as a point, each document(paper) as a
+vector of counts of vocabulary, and collection of documents as a matrix,
+each row vector is just a vector of document.
+When use crf sampling, first sample table(document) associate with word,
+then sample class associate with table(document).
+Of course,the number of tables will change within different iteration of
+sampling, so will the number of documents, and finally reach a stable number
+of table(document), which is (or approximately) the number of
+document(paper) .
+I am not sure whether this representaion is reasonable.
+So, could anyone who experienced with HDP give me some advice?
+Thank you very much.

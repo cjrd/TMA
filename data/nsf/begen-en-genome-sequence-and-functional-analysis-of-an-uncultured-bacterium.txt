@@ -1,0 +1,34 @@
+              ABSTRACT
+
+At 80 by 600 microns, Epulopiscium is the largest heterotrophic
+              bacterium that has been identified to date.  It also has the unusual ability to
+              produce multiple live offspring internally.  This project takes an aggressive
+              approach to increase our understanding of the biology of this organism by
+              determining the complete genome sequence, and identifying the unique features
+              of Epulopiscium that have allowed these exceptional bacteria to attain cellular
+              sizes that are orders of magnitude larger than most bacteria.  These analyses
+              will identify genomic and cellular modifications that may have been employed in
+              the progenitor of all eukaryotes as a first step toward the development of the
+              contemporary eukaryotic cell.  Comparative analyses with the complete genome
+              sequences of endospore-forming bacteria will identify sporulation gene
+              homologues in the Epulopiscium genome that can serve as targets of future
+              analyses to determine the role of these genes in intracellular offspring
+              production.  Finally, this project will generate a physiological profile of
+              Epulopiscium sp. based on the complete genome sequence.  This component will
+              address how the normal environment of this species (the guts of surgeonfish)
+              may have enabled the evolution of these life-style novelties, and serve as a
+              framework for developing culture media to grow Epulopiscium in the laboratory
+              so that more detailed experiments on this species can be conducted. 
+              
+
+Collaborations, discussions, and data exchange with both domestic and
+              international groups that are studying Epulopiscium biology, spore-forming
+              bacteria, and extremely large bacteria will be encouraged. Training and
+              educational workshops will be held at The Institute for Genomic Research (TIGR)
+              in Rockville, Maryland for these biologists.  The project team will make every
+              attempt to ensure that underrepresented groups are included in the students and
+              post-doctoral candidates who will be involved for the duration of the proposed
+              study.  Sequence and microarray data will be continuously posted and updated on
+              our public web site (www.tigr.org).  
+
+

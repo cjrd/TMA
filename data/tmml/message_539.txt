@@ -1,0 +1,13 @@
+hi neal,
+you ask interesting questions, but you are hijacking the topic
+models list. both (1) the mathematical connections between
+KL-divergence and hellinger distance and (2) the foundational
+issues in empirical bayes are classical, well understood,
+heavily explored, extensively documented issues in the statistical
+literature. if you honestly cannot track down references, please
+get in touch with me out of band and i will provide some pointers.
+i and others have not been answering these questions on this list,
+on purpose. specific topic modeling questions.
+in the spirit of constructive criticism and attentional focus,
+jon.
+Neal Parikh wrote:

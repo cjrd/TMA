@@ -1,0 +1,47 @@
+              This project is part of the U.S. JGOFS Synthesis and Modeling Project (SMP)
+              aimed at the SMP objective of understanding Mechanistic Controls of Local
+              Carbon Balances, specifically the role of food web structure in controlling
+              particle flux, particle export, nutrient regeneration and DOC production in
+              oceanic systems. The collaborators will use data generated from the JGOFS
+              process studies to consolidate field measurements into formal, quantitative
+              descriptions of size and function-based food web groups and the material flows
+              between them. They will use inverse techniques to infer unknown (unmeasured)
+              material flows in the food webs. Finally they will use the trophic networks
+              derived to test the stability of the plankton-biogeochemical ecosystem
+              following potential perturbations to simulate changes due to ocean warming or
+              increased stratification. 
+Scientific reviews strongly support the assertion
+              that understanding how the biological pump operates requires detailed knowledge
+              of the relationships between food web structure, productivity, new production
+              and biological fluxes. The amount of material leaving the surface layer is
+              usually dependent on how it is partitioned among the plankton community. In an
+              idealized plankton community, most of the primary production that passes
+              through bacterioplankton and microzooplankton is likely to be recycled in the
+              surface layer. In contrast, a significant portion of the primary production
+              that passes through the mesozooplankton may become part of the sinking flux of
+              organic matter via fecal pellet production and active transport below the
+              euphotic zone due to vertical migration. Although many of the relevant
+              processes were measured in JGOFS, the resulting data have never been rigorously
+              condensed in a series of depictions of foodwebs consistent with all the data. 
+              
+This food web synthesis, a collaborative effort between Hugh Ducklow, George
+              Jackson and Mike Roman, aims to further an ecosystem-based synthesis of JGOFS
+              results. The goal is the construction or 'recovery' of a series of solutions to
+              foodweb networks consistent with observations from the four major US JGOFS
+              Process Studies in the North Atlantic (NABE); the Equatorial Pacific (EQPAC);
+              the Arabian Sea and the Southern Ocean Process Study (AESOPS -- Ross). The
+              project is based on the assumption that improved understanding of ecosystem
+              structure and function depends critically on knowledge of the component rate
+              processes, or inter-compartmental exchanges. There now exists a body of formal
+              techniques and theory for analyzing the holistic properties of such flux
+              networks. The research plan consists of four elements: 1. Consolidate field
+              measurements into descriptions of size and function-based food web groups and
+              the measured flows between them. 2. Use inverse techniques to infer unknown
+              (unmeasured) material flows in the food web. 3. Use biomass and rate
+              information to examine stability properties and how they differ, and how
+              characteristic flow structures generate basin scale contrasts in particle
+              export, nutrient regeneration, and DOC production in oceanic systems. 4. From
+              the derived stability properties, infer the vulnerability of different foodweb
+              structures (different ocean provinces) to ocean warming and changing
+              stratification.
+

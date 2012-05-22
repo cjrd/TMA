@@ -1,0 +1,15 @@
+Dear list,
+Does anyone know of any work on applying LDA (or other topic modeling methods) to bilingual parallel
+corpora for MT?   Since the two halves of the corpus can have different number of words (and
+different word orders), having the model generate words in pairs probably isn't right.  Rather, it
+seems like one ought to have two parallel LDA processes which share a common Dirichlet topic prior.
+To generate a bilingual document, one would draw a single common topic multinomial from this
+prior, representing our (reasonable) belief that the two versions of the document are about the same
+things.  One would then use this multinomial to independently generate the two versions of the
+document.  That is, for each word in the document version, one would independently draw a topic from
+the common cross-language topic multinomial, and then draw a word from the word multinomial P(w|z)
+for that language and topic.
+Does this sound reasonable?  And does anyone know of any work along these lines?   Surely there must
+be some...
+thanks,
+Dave

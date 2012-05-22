@@ -1,0 +1,158 @@
+
+In this video, I'd like to talk about how
+to evaluate a hypothesis that has been
+[inaudible] by your algorithm. In later
+videos, we'll build on this, to talk about
+how to prevent the problems of over
+fitting and under fitting as well. When we
+fit the parameters of our learning
+algorithm, we think about choosing the
+parameters to minimize the training error.
+One might think that getting a really low
+value of training error might be a good
+thing. But we've already seen that, just
+because a hypothesis has low training
+error, that doesn't mean it's necessary.
+Hypothesis and we already seen the example
+of how hypothesis can over fit, and there
+fulfill to generalize the new example that
+not in the training set. So how do you
+tell if hypothesis might be over fitting?
+In this simple example we could plot the
+hypothesis each of x and just see what is
+going on, that in general for problems
+with more features than just one feature,
+for problems with the large number of
+features like this, it becomes hard or
+maybe impossible to caught weather
+hypothesis. Practices functions looks
+like. And so, we need some other way to
+evaluate our hypothesis. The standard way
+to evaluate a direct hypothesis is as
+follows: Suppose we have a data set like
+this, here up to show ten training
+examples but of course usually we may have
+dozens, or hundreds, or maybe thousands of
+training examples. In order to make sure
+we can evaluate our hypothesis what we
+going to do is split the data we have into
+two portions. The first portion is going
+to be our usual training set. And the
+second portion is going to be our test
+set. And a pretty typical split of this,
+of all the data we have into a training
+set and test set, might be around, say, a
+70%, 30 percent split. With more of the
+data going to the training set, and
+relatively less to the test set. And so,
+now. If we have some data set. We will
+assign only say 70 percent of the data to
+be our training set. Where here M is as
+usual a number in our training examples
+and the remainder of our data might that
+be assigned to become our test sets. And
+here I'm going to use the notation M
+subscript test to denote the number of
+test examples. And so, in general this.
+Subscript test is going to denote examples
+that come from our test set so that X1
+subscript test comma Y1 subscript test is
+my first test example which I guess in
+this example, might be this example over
+here. Finally, one last detail. Where as
+here I've drawn this as though the first
+70 percent goes to the trading set and the
+last 30 percent to the test set if there
+is any sorted ordering to the data. That
+should be better to send a random 70
+percent of your data to the twenty-thirds
+and a random 30%. Your data to the test
+set. So, if your data were already
+randomly sorted you could just take the
+first 70 percent and last 30%. But if your
+data were not randomly ordered it would be
+better to randomly shuffle or to randomly
+reorder the examples in your training set.
+Before you know, sending the first 70
+percent to the training set and the last
+30 percent to the test set. Here then is a
+fairly typical procedure for how you would
+train and test a learning algorithm, maybe
+linear regression. First you learn the
+parameters theta from your training set,
+so you minimize the usual training error
+objective j of theta, where j of theta
+here was defined using that 70 percent of
+all the data you have. So that's only the
+training data. And then you will compute
+the test error, and I'm going to denote
+the test error as j subscript test, and so
+what you do is you take your parameter.
+Data that you've learned from the training
+set and plug it in here. And compute your
+test set error. Which I'm going to write
+as follows. So, this is basically the
+average square error as measured on your
+test set. This is pretty much what you
+would expect. So, run every test example
+through your hypothesis with parameter
+data and just measure the squared error
+the hypothesis has on you M subscript
+test, test exam. Apples. And of course
+this is the definition of the test set
+error if we are using mini regression and
+using this squared error metric. How about
+if we were doing a classification problem.
+And say using logistic regressions then.
+In that case the procedure for training
+and testing, say logistic regressions is
+pretty similar. First, we will learn the
+parameters from the training data. That
+first 70 percent of the data and then we
+will compute the test errors as follows.
+It is the same objective function. As we
+always use for logistic aggression, and
+now it is defined using our M subscript
+test, test examples. While this definition
+of the tested era J [inaudible] is
+perfectly reasonable, sometimes there's an
+alternative test set [inaudible] that
+might be easier to interpret, and that's
+the misclassification error. It's also
+called 01 misclassification error, 01
+denoting that either get an example right
+or you get an example wrong. Here's what I
+mean, define the error of a. That is each
+of x and give him the label y as equals to
+one if my hypothesis opens a value greater
+than the amount of five and y is equals to
+zero, or, if my hypothesis opens a value
+is 0.5 and y is equals to one. Right so
+proof of this case is basic respond to, if
+you hypothesis mislabel the example
+assuming you touch hold it to 0.5. Either
+thought it was more likely to be one, but
+is was actually zero. Or, your hypothesis
+[inaudible] zero, but the label was
+actually one. And otherwise, we define
+this error function to be zero. If, your
+hypothesis [inaudible] example Y
+correctly. We could then define the test
+error using the [inaudible] error metric
+to be one of M tests of sum from I=1 to M
+subscript. Rest of the error of each of XI
+test, [inaudible]. And so that is just one
+way of writing out that this is exactly
+the fraction of the examples is my test
+set. That my hypothesis has mislabeled,
+and so that's the definition of the
+[inaudible] using the misclassification
+error, or the 01 misclassification error
+metric. So that's the standard technique
+for evaluating how good a learned
+hypothesis is. And the next video will
+adapt these ideas helping us do things,
+like choose what features like degrees of
+polynomials to use in the learning
+algorithm or choose deregularization
+parameters for the new algorithm.

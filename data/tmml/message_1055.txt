@@ -1,0 +1,14 @@
+Dear Topic-Models List Members,
+I'd like to kindley ask if anyone is aware of any implementations of the Author-Recipient-Topic (ART) model [1]?
+Many Thanks in advance,
+Claudia.
+[1] http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.152.1590
+___________________________________
+Claudia WAGNER
+Intelligent Information Systems Group
+DIGITAL - Institute of Information and Communication Technologies
+JOANNEUM RESEARCH Forschungsgesellschaft mbH
+Steyrergasse 17, A-8010 Graz, AUSTRIA
+phone: +43 316 876 2617   fax: +43 316 876 1403
+email: Claudia {dot} Wagner {at} joanneum {dot} at
+web: http://claudiawagner.info/

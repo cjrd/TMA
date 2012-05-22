@@ -1,0 +1,4 @@
+Finale Doshi-Velez has Matlab code for several IBP inference schemes
+(including variational inference using stick-breaking) on her webpage:
+http://people.csail.mit.edu/finale/new-wiki/doku.php?id=publications_posters_presentations_code
+-Dave

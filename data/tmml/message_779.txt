@@ -1,0 +1,14 @@
+Greetings.
+Relevant work by Wang, McCallum, and Wei:
+"Topical N-Grams: Phrase and Topic Discovery, with an Application to
+Information Retrieval"
+http://portal.acm.org/citation.cfm?id=1442141
+This paper cites other related work and serves as a good starting point for
+exploring possible answers to your question.
+If there is more recent work of this kind, I will be interested to hear
+about it as well.  By looking for work that cites the above paper, I just
+spotted this pre-print by Blei and Lafferty, which I will look forward to
+reading:
+"Visualizing Topics with Multi-Word Expressions"
+http://arxiv.org/PS_cache/arxiv/pdf/0907/0907.1013v1.pdf
+Regards,

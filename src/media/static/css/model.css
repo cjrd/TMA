@@ -1,0 +1,167 @@
+button {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #222222;
+    background-image: -moz-linear-gradient(center top, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.11));
+    border-color: -moz-use-text-color -moz-use-text-color #222222;
+    border-radius: 0 0 0 0;
+    border-style: none none solid;
+    border-width: 0 0 1px;
+    box-shadow: 0 1px 3px #999999;
+    color: #FFFFFF;
+    font: 14px Helvetica Neue;
+    margin: 0;
+    padding: 6px 10px;
+    text-rendering: optimizelegibility;
+    text-shadow: 0 -1px 1px #222222;
+}
+
+button.first {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+button.last {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+button.active {
+    background-color: #416685;
+}
+
+button:hover {
+    background-color: steelblue;
+}
+
+#coherenceTable {
+    font: 16px Calibri, "Gill Sans", "Trebuchet MS", sans-serif;
+}
+
+h2 {
+    line-height: 0em;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.paper {
+
+    border: 50px solid transparent;
+    border-top: 35px solid transparent;
+    table-layout: fixed;
+    -o-border-image: url("/static/images/paper.png") 50;
+    -webkit-border-image: url("/static/images/paper.png") 50;
+    -moz-border-image: url("/static/images/paper.png") 50;
+    border-image: url("/static/images/paper.png") 50; /* TODO border-image doesn't show on ie9 */
+}
+
+.left_align {
+    float: left;
+    padding: 5px;
+}
+
+.right_align {
+    float: right;
+    padding: 5px;
+}
+
+.plot_title {
+    text-align: center;
+    font-weight: bold;
+    padding-left: 50px;
+}
+
+#coherence.paper {
+    padding-bottom: 20px;
+    font: 16px Calibri, "Gill Sans", "Trebuchet MS", sans-serif;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    width: 950px;
+}
+
+#model_info.paper {
+    padding-bottom: 20px;
+    font: 16px Calibri, "Gill Sans", "Trebuchet MS", sans-serif;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 950px;
+    overflow: hidden;
+
+}
+
+td.score {
+    text-align: center;
+}
+
+.tabs {
+    font-size: 10pt;
+    border: 2px solid;
+    border-color: #CDCDCD;
+
+}
+
+ul.tab_nav {
+    list-style: none;
+    margin: 0;
+    padding: 3px 5px 3px 3px;
+    background-color: #E6EEEE;
+    font-weight: bold;
+}
+
+ul.tab_nav li {
+    display: inline;
+    border: 1px;
+}
+
+ul.tab_nav li a {
+    padding: 3px 5px;
+    color: #000;
+    text-decoration: none;
+}
+
+ul.tab_nav li a.selected,
+ul.tab_nav li a:hover {
+    background-color: #F5EEEE;
+    color: #000;
+}
+
+ul.tab_nav li a:focus {
+    outline: 0;
+}
+
+div.tabs div {
+    padding: 5px;
+    background-color: #F5EEEE;
+    font-size: 11pt;
+}
+
+#likelihood {
+    text-align: center;
+    border: 0px solid black;
+    border-spacing: 0px;
+    width: 450px;
+    height: 450px;
+    padding: 0px;
+}
+
+#perplexity {
+    width: 450px;
+    text-align: center;
+    width: 450px;
+    height: 450px;
+}
+
+body {
+    margin: 20px;
+    padding: 20px;
+    font: 16px Calibri, "Gill Sans", "Trebuchet MS", sans-serif;
+
+}

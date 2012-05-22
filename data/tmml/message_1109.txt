@@ -1,0 +1,5 @@
+Hi,
+Maybe this is not relevant to LDA model but I prefer this definition - topic is a probability distribution over words that represents language of a discourse community.
+Best regards,
+Vladimir
+________________________________________

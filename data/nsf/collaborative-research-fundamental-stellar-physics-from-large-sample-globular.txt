@@ -1,0 +1,46 @@
+              AST 0098454
+Bolte
+
+In a collaborative research project, Dr. Eric Sandquist at
+              San Diego State University and Dr. Michael Bolte at the University of
+              California at Santa Cruz will use photometric observations of large numbers
+              (tens of thousands) of evolved low-mass stars in globular clusters to probe the
+              physical conditions found inside the stars. Because the observable properties
+              of a star evolve quickly once it finishes consuming its core hydrogen and
+              because a star's lifetime is primarily determined by its mass, stars of very
+              slightly different masses can be in very different phases of their lives. By
+              simply counting the numbers of stars present as a function of luminosity and
+              temperature, these researchers can estimate how quickly stars of approximately
+              80% of the mass of the Sun change under the influence of internal
+              processes.
+
+The investigators will pursue a number of definite tests of
+              stellar physics that can be conducted with these kinds of observations. In
+              several metal-poor clusters, a surplus of stars has been observed in the
+              subgiant evolutionary phase, which is an indication that there may be an
+              unusually efficient means of transporting energy away from the cores of those
+              stars. The red giant bump has long been known to test how deeply convective
+              motions penetrate into giant branch stars, and the investigators will test
+              mixing processes that this feature and counts of red giant stars at all
+              luminosities can provide. They also describe several new diagnostics that can
+              be applied to the helium fusion phases of a star's life ( the horizontal branch
+              and asymptotic giant branch). The asymptotic giant branch in particular has
+              been difficult to study because of its short duration. The diagnostics provide
+              practical methods of testing whether helium-burning stars evolve in ways
+              predicted by theory. Finally, they describe the constraints that can be placed
+              on the dynamical evolution of entire clusters by observations of blue straggler
+              stars -a population that appears to be created by collisions of stars or the
+              evolution of binary stars.
+
+The study will involve the analysis of CCD data
+              already collected from a number of heavily-populated globular clusters,
+              followed by thorough study of the incompleteness of the photometry -- a
+              computationally intensive step that has been responsible for the small number
+              of large-sample studies to date. To derive robust star counts, what is needed
+              is detailed understanding of the probability that cluster stars were lost in
+              the light of other stars or in noise as a function of stellar brightness and
+              distance from the cluster center.  Photometric studies of this kind are very
+              important stepping stones toward new tests of our understanding of stellar
+              physics and stellar populations.
+***
+

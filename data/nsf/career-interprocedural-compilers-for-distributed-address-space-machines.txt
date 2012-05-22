@@ -1,0 +1,16 @@
+              The goal of this project is to develop novel interprocedural techniques for
+              compiling scientific and engineering applications on distributed address space
+              parallel machines.  With recent advances in parallel and supercomputing
+              architectures, the application programmers have unprecedented computational
+              power available. However, it has also become increasingly difficult to harness
+              this power.  The parallelizing and  optimizing compilers usually turn out to be
+              inadequate, since they restrict the analysis to a single procedure level.
+              However, by developing a set of novel effective and efficient interprocedural
+              techniques, the efficacy of the parallel compilers can be enhanced
+              significantly, without significallty slowing the compilation process.  In
+              message passing machines and distributed shares memory machines, the
+              compilation process involves several complex tasks, including data
+              distribution, locality management, placement of communication and/or
+              synchronization, and aggregating remote memory accesses.  This project will
+              develop new interprocedural techniques for performing these phases of analysis
+              interprocedurally.

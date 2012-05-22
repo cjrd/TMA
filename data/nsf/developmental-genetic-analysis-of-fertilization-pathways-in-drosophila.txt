@@ -1,0 +1,67 @@
+              0211733
+Wakimoto
+
+Fertilization begins with the initial contact of the sperm
+              and the egg and ends with the joining of the paternal and maternal chromosomes
+              in the embryo.  The normal development of all sexually reproducing organisms
+              requires the exquisite coordination of the activities of the sperm and egg
+              during fertilization.  Current knowledge of the mechanisms underlying
+              fertilization has been obtained largely from morphological and biochemical
+              studies of marine invertebrates and mammals. These studies have led to the
+              discovery of a handful of molecules with confirmed roles in sperm-egg
+              interactions in these organisms.  The aim of the proposed project is to exploit
+              advantages of a genetic system to identify functionally important fertilization
+              molecules and pathways.  A collection of male sterile lines of Drosophila
+              melanogaster will be used to identify molecules expressed in sperm and
+              essential for successful fertilization.  Mutations that disrupt the sperm-egg
+              binding or sperm activation after entry into the egg will be the focus of more
+              extensive phenotypic and genetic mapping studies.  These studies will define
+              the types of genes that disrupt fertilization and their specificity during
+              development.The proposed project will also involve the continued
+              characterization two members of the "earliest developmental arrest" class of
+              paternal effect genes.  Mutations sneaky and space needle produce identical
+              paternal effect defects, with mutant sperm failing to undergo the changes
+              associated with activation after entry into the egg.  The function of the
+              Sneaky protein, a member of a newly discovered class of plasma membrane
+              proteins, will be studied by localizing the wild type, tagged and mutated
+              versions of the protein fusions.  The effects of other paternal effect
+              mutations, including space needle, on Sneaky function and localization will be
+              analyzed to identify interacting molecules.  Genetic and molecular mapping
+              studies of the space needle gene will be performed to identify the gene and
+              begin studies the function of its protein product.  These studies work toward
+              developing Drosophila into a powerful experimental system to investigate
+              sperm-egg interactions.  The results should be informative for assessing the
+              degree to which the molecular pathways of fertilization are conserved among
+              animals and used to mediate other cell-cell interactions during development.  
+              
+
+The overall aim of the proposed research is to understand the molecular
+              mechanisms of sperm-egg interactions during fertilization.  Dr. Wakimoto's
+              strategy takes advantage of a collection of mutant strains of Drosophila in
+              which males produce motile sperm that fail in the fertilization response. 
+              These mutants will be used to identify the molecular pathways that lead to
+              successful sperm-egg binding and sperm activation. 
+
+1) To assess the number
+              and types of mutants that are defective in sperm-egg interactions, they will:
+
+                  a) complete the phenotypic classification of putative fertilization
+              defective and paternal effect mutants,  
+     b) determine the number of genes
+              represented by the mutations through genetic complementation analysis         
+              and recombination mapping,.
+2) To determine the molecular function of two
+              genes, sneaky (snky) and space needle (spnl),  which are             required
+              for sperm activation after entry into the egg, they will:
+     a) define the
+              subcellular localization and the functional domains of the Sneaky protein, the
+              best                            characterized member of this class,
+     b)
+              assay the effects of another snky-like mutation, space needle (spnl) on the
+              localization, modification              and function of the Sneaky protein,
+  
+                 c) complete the phenotypic characterization and mapping of spnl mutations
+              toward identifying its protein           product.
+
+
+

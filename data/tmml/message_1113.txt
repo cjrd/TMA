@@ -1,0 +1,18 @@
+Nice, way to take the philosophical tone up a notch.
+An LDA "topic" is a distribution over a vocabulary that assigns high
+probability to a set of words that tend to appear in the same
+documents. It so happens that words that tend to cooccur in the same
+documents tend to have something to do with one another. When people
+look at a list of a bunch of words that have something to do with one
+another, they're pretty good at figuring out what that something is,
+and they say something like "these are words about business" or "these
+are words about chemistry." Since business and chemistry are topics
+(insofar as topics are things documents can be about), we say that LDA
+has discovered a business topic or a chemistry topic.
+None of this means that when (for example) a comparative literature
+professor uses the word "topic" he or she really means "a distribution
+over a vocabulary of words." All it means is that topic models produce
+distributions over vocabularies that human beings tend to interpret as
+being related to specific topics, regardless of what a "topic"
+actually is.
+Matt

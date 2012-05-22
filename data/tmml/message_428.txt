@@ -1,0 +1,14 @@
+Since I have zero experience in Java, I think I'll have to leave those
+solutions behind for now, but I am quite glad that lots of people are
+thinking about the problem, and these are great answers.  Sounds like
+a topic people have been wanting to talk about.
+My current setup:  filter against NLTK (I'm a python person, mostly)
+common english stopwords, then filter against uniques.   @dave:  I
+haven't tried filtering against ultra commons, which is genius!
+In my machine, 25k docs, 50 topics (8 GB of memory), 20k unique words,
+and it still took 4 hours for 100 iterations.  I mean, this is
+fantastic compared to LSI, and I'm very glad to have lda-c in the
+toolbox, but I'd love to see even faster.
+Also, my clusters don't make a lot of intuitive sense, perhaps since
+my corpus (rss feeds) is very wide-ranging.
+Gregg

@@ -1,0 +1,4 @@
+Dear Mr Subramanya,
+I am curious to know what do you mean by online LDA? Are you looking for
+some code available online? Or do you mean something like 'online LDA'?
+regards

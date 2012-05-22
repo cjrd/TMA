@@ -1,0 +1,16 @@
+              This Small Business Innovation Research (SBIR) Phase II project will develop and
+              test algorithms for active control of blade vibration and engine stability
+              (stall and surge) using an eddy current sensor (ECS) array.   The approach
+              utilizes signal analysis and diagnostic tools in active control algorithms for
+              the detection of engine faults.  Phase II will extend the functionality of the
+              ECS system beyond diagnostics to active and automatic real-time control of gas
+              turbine engines.
+
+An ECS array is currently the favored sensor system for
+              installation on the Joint Strike Fighter, in which a software system upgrade
+              capable of using ECS data to compute the necessary indicators and estimate the
+              disturbances needed is desirable for active vibration and engine stability
+              control.  It would reduce the number of new sensors needed for active control
+              and potentially save millions of dollars.  Large commercial markets are
+              indicated in commercial aircraft and gas turbine power plants.
+

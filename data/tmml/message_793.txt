@@ -1,0 +1,13 @@
+Hello all,
+I've been thinking lately about a "deterministic annealing" strategy
+of beginning Gibbs sampling with hyperparameter values which encourage
+more uniform distributions, and progressively making the
+hyperparameter values smaller as the sampling progresses, so as to
+encourage greater sparsity.   This would be an alternative to
+temperature-based annealing, which some people do use I know.      I
+have seen this strategy pay off handsomely with other algorithms (vMF
+mixture modeling where the concentration parameter was progressively
+increased at each EM iteration).   Has anybody done any work along
+these lines for topic modeling?
+thanks,
+Dave

@@ -1,0 +1,43 @@
+               0073984
+O'Day
+
+Chemical transformations of arsenic in the environment
+              control its mobility, bioavailability, and toxicity.  These processes include
+              inorganic or biological oxidation and reduction, biologically mediated
+              methylation, adsorption to and desorption from mineral surfaces, and mineral
+              precipitation, co-precipitation, and dissolution.  Arsenic is a well-known
+              toxin at elevated concentrations and a known carcinogen in chronic exposure. 
+              Because arsenic is commonly found in streams and groundwaters of the arid and
+              simi-arid western  U.S., understanding of retention mechanisms by stream
+              subsurface sediments is important for evaluating arsenic mobility and migration
+              into drinking water sources.
+
+We are using synchrotron X-ray absorption
+              spectroscopy and supporting characterization methods to determine the primary
+              modes of arsenic speciation in hyporheic zone sediments from two streams, one
+              receiving  As(III) from geothermal sources, and one with elevated arsenic and
+              metal concentrations from mining and weathering of sulfide tailings.  We will
+              identify speciation in sediments at the molecular level, document changes in
+              oxidation state and ligand environment as a function of sediment depth, and
+              assess the importance of biological mediation.  We will use a combination of
+              X-ray absorption near-edge structure (XANES) and extended X-ray absorption fine
+              structure (EXAFS) analyses, and appropriate arsenic reference compounds, to
+              quantitatively determine arsenic speciation.  Complementary characterization
+              methods will include laboratory and  synchrotron powder X-ray diffraction,
+              scanning electron microscopy and microprobe, and selective extraction methods. 
+              Secondary ion mass spectrometry (SIMS) of sulfur isotope ratios will be used to
+              identify biologically precipitated sulfur compounds.  This molecular
+              information will be evaluated with thermodynamic calculations of surface and
+              hyporheic zone water chemistry measured in the field to determine stable and
+              metastable species and the chemical affinity of arsenic transformation
+              reactions.  Molecular speciation identified in field samples will be linked to
+              reaction rates of arsenic oxidation or reduction measured in simplified
+              laboratory systems.  We will develop a windowed flow-through cell for
+              real-time, in situ X-ray aborption measurements of arsenic redox reaction in
+              simplified systems.  The outcome will be a quantitative understanding at the
+              molecular scale of biotic and abiotic speciation reactions that control arsenic
+              partitioning in stream hyporheic zones.  This level of understanding is
+              important for development of general rate expressions for arsenic oxidation and
+              reduction reactions that are transferable among different geochemical
+              environments.
+

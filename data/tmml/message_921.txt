@@ -1,0 +1,9 @@
+Hi,
+Does anyone know of an implementation (matlab/c/c++) of the supervised
+variant of LDA as proposed in
+"A Bayesian Hierarchical Model for Learning Natural Scene Categories"
+(http://vision.stanford.edu/documents/Fei-FeiPerona2005.pdf),
+where a variable for the scene type is introduced on top of the topic
+multinomial (not sLDA).
+Regards,
+Nikhil

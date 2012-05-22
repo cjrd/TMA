@@ -1,0 +1,32 @@
+              ITR/AP: Simulation-Based Medical Planning for Cardiovascular Disease
+
+The
+              current paradigm for interventional and surgery planning for the treatment of
+              congenital and acquired cardiovascular disease relies exclusively on diagnostic
+              imaging data to define the present state of the patient, empirical data to
+              evaluate the efficacy of  prior  treatments  for  similar  patients,  and  the
+              judgement  of  the  surgeon  to  decide  on  a  preferred  treatment.  The
+              individual variability and inherent complexity of  human  biological  systems 
+              is  such  that  diagnostic  imaging  and  empirical  data  alone  are
+              insufficient to predict the outcome of a given treatment for an individual
+              patient. 
+
+The specific objectives described in the present proposal are to
+              develop a Problem  Solving Environment for Simulation-Based Medical Planning
+              combining (i) the construction of patient-specific preoperative geometric
+              models of the human vascular system directly from medical imaging data, (ii)
+              the modification of these models to incorporate multiple potential
+              interventional and surgical plans, (iii) the generation  of  finite  element 
+              meshes  of  the  treatment  plans,  (iv)  the  simulation  of  blood  flow  in 
+              these patient-specific models, and (v) the visualization and quantification of
+              resulting physiologic information. Techniques for identifying vessel boundaries
+              from computed tomography (CT) and magnetic resonance imaging (MRI) data using
+              two- and three-dimensional level set methods will be improved to enhance
+              accuracy and efficiency. 
+The ultimate result of the successful completion of
+              the outlined tasks will be the development of an integrated Problem Solving
+              Environment for Simulation-Based Medical Planning incorporating image
+              segmentation, geometric modeling, mesh generation, computational mechanics, and
+              scientific visualization techniques.
+
+

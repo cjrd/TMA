@@ -1,0 +1,7 @@
+Hi,
+Can we not take the concept from Topic link LDA (
+http://www.cs.mcgill.ca/~icml2009/papers/379.pdf) where we model the
+coauthors in the form of a graph. I tried doing this on social media but am
+implementing the RART model and would like to know if any one has tried it.
+Sincerely
+Tanmoy Mukherjee

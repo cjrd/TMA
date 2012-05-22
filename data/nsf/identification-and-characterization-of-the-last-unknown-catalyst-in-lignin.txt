@@ -1,0 +1,32 @@
+              The end products of the phenylpropanoid pathway play important roles in plant
+              structure and plant growth and development, as well as in plants' defenses
+              against biotic and abiotic stresses.  Phenylpropanoid pathway-derived
+              metabolites are important in both human health and in agricultural contexts. 
+              An important gap in our understanding of phenylpropanoid metabolism is
+              represented by p-coumarate 3-hydroxylase (C3H), the only enzyme of the pathway
+              that has not been characterized, and the enzyme encoded by the only gene of the
+              pathway that has not been cloned.  The 3-hydroxylase is an enigmatic enzyme. 
+              It has eluded all attempts over the last thirty years to unambiguously
+              characterize it in detail at the enzymatic level. This research project focuses
+              on a new mutant of Arabidopsis that is likely to be defective in the gene
+              encoding this enzyme.
+Past research has shown that Arabidopsis is an excellent
+              model plant for the isolation of previously unidentified phenylpropanoid
+              pathway genes.  By screening for plants that fail to accumulate soluble
+              fluorescent phenylpropanoid secondary metabolites, a number of new Arabidopsis
+              mutants that display a reduced epidermal fluorescence (ref) phenotype have been
+              identified. One of these mutants, ref8, is defective in C3H activity.  The
+              identification of the ref8 mutant provides a unique opportunity to isolate the
+              gene encoding C3H. A preliminary phenotypic characterization of the ref8 mutant
+              has been conducted, and the C3H gene has been cloned.  C3H is a cytochrome
+              P450-dependent monooxygenase, the activity of which has been verified by
+              expression of the wild-type gene in yeast.  The goals of this project are to
+              characterize this poorly-studied enzyme, to clarify its role in the
+              phenylpropanoid pathway, to identify when and where the protein is expressed,
+              and to determine why ref8 mutations lead to alterations in plant growth and
+              development.
+
+	
+ 
+
+

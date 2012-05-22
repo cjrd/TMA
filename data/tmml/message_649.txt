@@ -1,0 +1,33 @@
+hi all,
+this is a subject worth discussing on this list, and i imagine that
+many of its members have worthwhile opinions on the matter.  please
+chime in!
+indeed, there are a number of approaches to selecting the number of
+topics and i agree with adnan that how you do it depends largely on
+what you are trying to do.  the easiest situation is when someone says
+"here is a corpus.  give me a topic model with 53 topics right now!"
+sadly, this rarely happens.
+another easy situation is when there is a task that you care about,
+and for which you can measure performance.  for example, in our work
+on supervised LDA jon mcauliffe and i were seeking the best predictive
+model.  so, we used cross-validated predictive accuracy to select the
+number of topics.  (see blei and mcauliffe, NIPS 2007).
+it's a little trickier when you are fitting a topic model for more
+exploratory ends.  perplexity is akin to using per-word average
+held-out likelihood as a measure of goodness.  i.e., this is a measure
+of how well the model fits documents that have not yet been seen.
+held-out likelihood (or perplexity) is typically used to compare topic
+models.  i think it's sort of reasonable, but notice that it's not the
+same as measuring (vague notions like) "topic quality" or "exploratory
+power."
+a third alternative is to use bayesian nonparametric methods, like the
+hierarchical dirichlet process, to explore different numbers of
+topics.  be warned, however, that this doesn't entirely solve the
+problem.  while you don't have to nail down a specific number of
+topics, hyperparameters must still be chosen.  they will affect your
+results.
+and there are other ways too.  this is part of the larger field of
+model selection.  again, please chime in!
+best,
+dave
+2009/9/12 Adnan Duric <aduric at gmail.com>:

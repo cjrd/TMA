@@ -1,0 +1,11 @@
+Hi list readers,
+Is there any particular reason why in Blei 2003 in eq. 15 on line 2
+and 3 of that equation,
+\log \theta_i is substituted with \Psi(\gamma_i) - \Psi(\sum_{k=1}^K \gamma_k)
+instead of \Psi(\alpha_i) - \Psi(\sum_{k=1}^K \alpha_k) ?
+I know these are suff. statistics but shouldn't log \theta involve alphas when
+computed with respect to p distribution and gammas only if computed
+with respect to
+variational q distribution?
+Happy easter
+Mateusz Berezecki

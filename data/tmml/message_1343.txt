@@ -1,0 +1,16 @@
+LxMLS-2011 (http://lxmls.it.pt/)
+1st Lisbon Machine Learning School - "Learning For the Web"
+Lisbon, Portugal
+July 20-25, 2011
+http://lxmls.it.pt
+======================================================================
+Call for Participation
+======================================================================
+We invite everyone interested in Machine Learning and Natural Language
+Processing to attend LxMLS 2011,
+which will take place July 20-25 at Instituto Superior T?cnico (IST), a
+leading Engineering and Science school in Portugal.
+The summer school is organized jointly by IST, Instituto de Telecomunica??es
+and Spoken Language Systems Lab-L2F.
+In its debut year, the topic of the school is "Learning for the Web."
+Topics and Intended Audience

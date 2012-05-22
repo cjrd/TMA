@@ -1,0 +1,7 @@
+Darren,
+The answer is no.
+In general: It is the *variance* of the chain that is converging to a
+constant. Usually you don't get a variance 0!
+So you always have some variance on the chain, even as the number of
+samples goes to infinity and your chain is converged.
+Laura

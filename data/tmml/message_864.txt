@@ -1,0 +1,20 @@
+the answer generally seems to be "LDA doesn't do that".  At NAACL this
+year, however, there was a paper "Term Weighting Schemes for Latent
+Dirichlet Allocation" (Wilson and Chew,
+http://aclweb.org/anthology-new/N/N10/N10-1070.pdf) which actually
+does term weighting in LDA.
+Rather than discard stopwords, they weight words by information
+content (-log(P(w))), or by pointwise MI between w and d.  Unlike the
+work on hyperparameter optimization, or Dave Andrzejewski's Dirichlet
+forest stuff, the goal is not to segregate high-frequency words into
+their own topics where they are highly salient, but rather to push the
+salience of stopwords down for *all* topics.  They do this by giving
+these words low weight, and computing probabilities based on masses
+derived from weighted counts.  They show gains on a cross-lingual IR
+task.
+Seemed like an interesting paper (though their eqn 7 seems wrong). I
+was wondering what people thought of this idea.   Resampling the topic
+for a "heavy" word token, as opposed to a "light" one,  would seem
+like a more abrupt change for the Gibbs sampler.
+thanks,
+Dave

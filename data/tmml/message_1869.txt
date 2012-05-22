@@ -1,0 +1,4 @@
+Hi,
+I am running hlda-c code. Can anyone tell in the command "./main heldout
+train test output" , what parameters should be pass as train and test?
+Thank you

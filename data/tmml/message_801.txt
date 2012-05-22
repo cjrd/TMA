@@ -1,0 +1,11 @@
+dear shivani
+when implementing variational inference or variational EM, i typically
+use percentage change in the variational bound as the convergence
+criterion.  for example, in our work on supervised topic modeling, jon
+mcauliffe and i ran EM until the relative change in the likelihood
+bound was less than 0.01%.  see the paper here:
+http://www.cs.princeton.edu/~blei/papers/BleiMcAuliffe2007.pdf
+looking at changes in the variational parameters is also a good idea,
+though one i haven't explored.
+best
+dave

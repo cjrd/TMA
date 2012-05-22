@@ -1,0 +1,101 @@
+              This research project deals with a development of highly  accurate approximate
+              solution techniques for wave-type  phenomena characterized by linear hyperbolic
+              equations.  Potential applications include, but are not limited to  numerical
+              simulation of propagation of acoustic, elastic,  and electromagnetic waves, as
+              well as to analysis of various  coupled systems. Several features of this
+              research are  significant. For example, high-order radiating boundary 
+              conditions are critical for treating unbounded domain  problems, and split
+              boundary operators promise high accuracy  while providing  a posteriori
+              indicator of the error  introduce by domain truncation. High-Order Temporal 
+              Approximations including new, implicit, unconditionally  stable TG
+              (Taylor-Galerkin) schemes promise high accuracy  while balancing in an optimal
+              way the variable high-order  spatial approximations. Also, hp-data structures
+              and  adaptive methods involve date structure in which the mesh  size h and the
+              spectral order p of a finite element  approximation of a spatial variation of
+              the dependent  variables can be varied throughout the (spatial) mesh. If  these
+              parameters can be orchestrated in an optimal way,  exponential convergence can
+              be attained, meaning that highly  accurate results are  possible with few
+              degrees of freedom.  Smart algorithms are developed in that by monitoring
+              errors  in the hp-TG schemes and in radiating boundary operators,  automatic
+              changes in solution algorithms can be introduced.  The research yields highly
+              accurate computational methods  having a potential of reliably resolving the
+              fine-scale and  large-scale features of scattering and radiation phenomena 
+              needed in advanced designs.                                                    
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             
+                                                                                             

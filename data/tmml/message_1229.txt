@@ -1,0 +1,5 @@
+Hi all,
+I am a student researching on topic models. Sometimes, I find it difficult to download the datasets used in some researchers' papers. But the datasets are very important to verify codes implemented by ourselves. So can we build a common space for the datasets and associated links for topic modeling?
+Moreover, I wonder whether there are some baseline datasets  and available links for original LDA.
+Thanks,
+Michael Gao

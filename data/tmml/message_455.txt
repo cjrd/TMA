@@ -1,0 +1,8 @@
+In support of Dave's suggestion, I have a MapReduce implementation of
+the AD-LDA algorithm; it works well in hundreds of our experiments
+using blog data, scientific paper data, music lyric data, social
+network data and annotated image data.
+The experiments show that if the communication cost can be further
+reduced, the scalability would be better.  When we have thousands of
+computers, I do not care too much on the computing time, but the
+scalability (speedup) does matter.

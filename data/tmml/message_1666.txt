@@ -1,0 +1,13 @@
+(forwarding to the topic-models list)
+Hi Tuanjie,
+1. Yes, the "top topics" for a given document are those that have the
+highest weights in the appropriate row of gamma
+2. If you want to, you can interpret each row of gamma as an
+unnormalized probability distribution over the K topics for the
+corresponding document?just normalize the row so that it sums to 1.
+(There's a more involved answer to this question, which can be found
+in the archives of this mailing list.) But if all you want is to rank
+the topics for each document then the normalization is irrelevant.
+Hope that helps!
+Best,
+Matt

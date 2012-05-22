@@ -1,0 +1,10 @@
+Hi
+I was reading the paper "Continuous time dynamic topic models" by Wang
+et al and came across a term that doesn't seem to be defined anywhere
+the paper.  In Equation 8 at the bottom of page 3, the value of the
+mean of the variational backward distribution, \~{m}_{t-1,w} is given
+in terms of $f_t$, but I cannot find a definition of $f_t$.  Comparing
+with the earlier paper "Dynamic Topic Models", it looks like it might
+be $\Delta_{s_t}$ but I'm unsure.  Could someone enlighten me?
+Thanks,
+Jonathan Halcrow

@@ -1,0 +1,63 @@
+              New growth and fabrication techniques, together with chemical and electrostatic
+              doping, are enabling an unprecedented control and manipulation of electrons in
+              solids.  Examples range from chemically synthesized semiconductor nanowires to
+              doped buckeyball crystals.  In many cases of interest the motion of itinerant
+              electrons is intentionally restricted by sample geometry or by strong lattice
+              commensurability effects.  Under these conditions, correlation effects are
+              strongly enhanced and transitions into "localized" Mott or Wigner crystal
+              states are possible.  Itinerant electrons proximate to such localized phases
+              often exhibit unusual behavior, in apparent conflict with standard Fermi liquid
+              theory.  Disentangling the subtle correlation effects and identifying the
+              underlying physics in such technologically important systems presents a
+              formidable challenge.
+
+In this theoretical award, the quantum physics of
+              correlated electrons will be explored by focusing on the behavior near, or even
+              in, the localized regime.  Specifically, the following will be
+              studied:
+
+Transport in carbon nanotubes proximate to superconductors,
+              studying the interplay between Luttinger liquid correlations and
+              superconducting proximity effects;
+
+Studying unidirectional charge density
+              waves (stripe phases) in single- and bi-layer quantum Hall systems at higher
+              Landau levels.  The goal is to describe the interstripe quasi-particle dynamics
+              in such phases by exploiting the connections between chiral Luttinger liquid
+              and composite Fermion approaches;
+
+Continuing to develop a theoretical
+              framework for describing the pseudogap regime of the cuprates - and Mott
+              insulators more generally - by quantum disordering a superconductor via a
+              proliferation of vortices.  In particular, the physics and implications of the
+              2D Bose metal," a normal (non-super) fluid of 2D quantum bosons, will be
+              explored;
+
+Obtaining and analyzing microscopic models of 2D electrons with
+              large ring exchange interactions which exhibit fractionalized quantum phases. 
+              O finterest are the statistics of the particles and the experimental
+              implications of the topological order.
+%%%
+New growth and fabrication
+              techniques, together with chemical and electrostatic doping, are enabling an
+              unprecedented control and manipulation of electrons in solids.  Examples range
+              from chemically synthesized semiconductor nanowires to doped buckeyball
+              crystals.  In many cases of interest the motion of itinerant electrons is
+              intentionally restricted by sample geometry or by strong lattice
+              commensurability effects.  Under these conditions, correlation effects are
+              strongly enhanced and transitions into "localized" Mott or Wigner crystal
+              states are possible.  Itinerant electrons proximate to such localized phases
+              often exhibit unusual behavior, in apparent conflict with standard Fermi liquid
+              theory.  Disentangling the subtle correlation effects and identifying the
+              underlying physics in such technologically important systems presents a
+              formidable challenge.
+
+In this theoretical award, the quantum physics of
+              correlated electrons will be explored by focusing on the behavior near, or even
+              in, the localized regime.  The results will be of great fundamental interest
+              and will also influence the development of devices based on these
+              phenomena.
+***
+
+
+

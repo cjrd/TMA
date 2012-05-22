@@ -1,0 +1,12 @@
+Hi Ayan,
+The framework we used in that paper counts words and tags as essentially
+equal weight observations (although in different "channels").  I think there
+are a few ways you could formalize the idea of giving different weights to
+the different observation types.  In general, you'd start by introducing a
+different parameter for each information channel's topic mixture (so one
+theta for tags and another for words).  Then you have some flexibility in
+choosing how your model should tie these parameters together to get the
+properties you want (e.g. maybe a shared prior, maybe a learned convex
+mixture, etc).
+Good luck,
+dan

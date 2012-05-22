@@ -1,0 +1,25 @@
+              EIA-0204028 Alexandru Nicolau University of California-Irvine An Application
+              Development Environment for Complex Heterogeneous Distributed Real-Time
+              Embedded Computing Platforms
+
+This proposal, describes a number of
+              coordinated strategies that will develop to ensure robust and automatic
+              composition of ( DRE) distributed real-time and embedded systems, based on
+              advances in architectural and resource descriptions that enable concurrent
+              exploration.  The DRE applications to be explored in this work are
+              representative of a range of real world distributed computing scenarios form
+              Grids to microelectronic systems-on-chip (SOCs).  SOC-based computing resources
+              incorporating diverse sensing and substantial processing capabilities are
+              useful in many DRE application domains, such as avionics, biomedical computing
+              resources and tele-medicine, remote sensing, space exploration, and command and
+              control systems.  Examples of domains that could benefit from these advances
+              include: automated transportation systems distance learning, tele-medicine,
+              analysis for combat situations, video conferencing, virtual reality simulation,
+              and weather forecasting and analyses.
+
+The core of our proposal focuses on
+              coordinated compile-time and runtime strategies that enable simultaneous and
+              integrated optimization of (1) DRE application and middleware software and (2)
+              the underlying hardware platform consisting of distributed high-performance
+              processing elements and customized memory systems.
+

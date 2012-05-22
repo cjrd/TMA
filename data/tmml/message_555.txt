@@ -1,0 +1,5 @@
+Has anybody on this list used the MALLET implementation of LDA in java
+code?
+I'd like to modify it to output P ( topic | word ) and have some
+questions about where various bits of information are stored.
+Paul Deane

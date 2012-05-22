@@ -1,0 +1,18 @@
+              0086924
+Chen
+The broad, long term objective of the proposed research is to
+              develop a high speed noninvasive endoscopic functional optical coherence
+              tomographic (OCT) system using microelectromechanical system (MEMS) technology
+              for early diagnosis of tumors in gastrointestinal (GI), respiratory, and
+              urogenital tracts.  Functional optical coherence tomography uses coherent
+              gating techniques to obtain information on tissue structure and blood flow
+              dynamics at discrete spatial locations in highly scattering biological tissues.
+               The exceptionally high spatial resolution (2~10 mm) of functional OCT allows
+              noninvasive imaging of both in vivo tissue structure and blood flow dynamics
+              simultaneously.  The applicants propose to combine the advances in biomedical
+              imaging and MEMS technology to develop a high speed, compact, and fast
+              endoscopic functional OCT with a miniaturized probe.  This is a collaborative
+              project that involves principal investigators with expertise in biomedical
+              optics, endoscopic imaging, and silicon and polymer MEMS technology.
+
+

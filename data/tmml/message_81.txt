@@ -1,0 +1,8 @@
+Hi All,
+I managed to run the topic estimation on my document collection. Now, I want to run Inference on my collection, I run the following command:
+./lda inf settings.txt [model] mydata [name]
+There are two parameters in this command , model and name which I dont know how should I set them, is model parameter a file name? what is "name"?
+Also, I want to see the topics assigned to each word, for the following command:
+python topics.py <beta file> <vocab file> <n words>
+I am not sure which beta file I should use (there are 1000, also what is the vocabulary file and words?
+Thanks in advance

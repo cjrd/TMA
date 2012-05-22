@@ -1,0 +1,8 @@
+Hello,
+It seems very interesting indeed. I will try implementing this "form" of LDA
+with my own dataset and keep you updated with the results.
+One remark, though, given the distributions of artists, and predominancy of
+genres such as rock, I don't think topic will closely match genres (in their
+usual acceptions). Or did you mean creating original genres ?
+Also, some users will listen (or download) to only one artists, and, as
+such, the distribution of topics over this user won't be very relevant.

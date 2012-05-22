@@ -1,0 +1,14 @@
+Hello Ayan:
+Dirichlet distrbution is a member of the exponential family (Example 3.3.4
+in The Bayesian Choice, 2004) therefore "enjoy" conjugate priors. It is
+however a non-standard type of distribution over R^p with (p+1) parameters,
+as illustrated in the special case of the Beta distribution just before
+Example 3.3.15 in The Bayesian Choice (2004, p.122) [from the comments
+section of Professor Gelman's blog -- Professor Christian Robert].
+But it is more intuitive to use Professor Gelman's solution in this blog
+post:
+http://www.stat.columbia.edu/~cook/movabletype/archives/2009/04/conjugate_prior.html
+In case you are interested in similar algorithms, there is another comment
+relating to that.
+Thanks and Best Regards,
+S.

@@ -1,0 +1,13 @@
+Dear all,
+Given *x* ~ Dirichlet(*a*), E(x_i) = a_i / (a_1 + ... + a_n).
+I wonder how to calculate E(x_i * x_j), that is, the expected value of the
+product of two elements in *x*. (or generally three or more elements also)
+I looked for materials, but no help.
+Could anyone tell me how to do it or refer me to some related materials?
+Thanks,
+Yohan Jo
+==========================================
+Yohan Jo
+Users & Information Lab
+Korea Advanced Institute of Science and Technology
+==========================================

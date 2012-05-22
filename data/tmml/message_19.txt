@@ -1,0 +1,24 @@
+I didn't take any remarks that way and would welcome insightful
+criticism in any case; rather I wanted to put a suitable disclaimer on
+my suggestions before they found their way unchecked into someone's
+code somewhere as well as introduce a clarification of exactly what
+suggestions I am trying to make.
+I just maintained as sufficient statistics for theta_d the relevant
+counts, so thought you might have been talking about alpha.
+Two possible ways of sampling mixed in my response:
+1. Take all the tokens for a document out at the start of sampling for
+that document and fold them back into the counts later (one by one, or
+all at the end).  (Lose alpha term of distribution until tokens
+re-enter the counts for that document).
+2. Copy the counts as they were at the beginning of sampling for the
+document, and sample from distributions that use those old counts
+(Slightly old distribution, since it reflects state as it was at start
+of document sampling instead of as it would be if we were updating
+token-by-token.)  I speculate that this would slow down convergence,
+but can't recall.  Tried this because I was worried about local
+extrema at the time as well as irritated by apparent order asymmetry
+within a document - batch parameter updates for backprop training of
+neural nets provided some of the inspiration for this.  Rereading what
+you wrote, I think we might be talking about the same thing - sample &
+fix theta_d for all the tokens in a document.  Certainly wanted to
+avoid exponential situation in sampling from joint distribution.

@@ -1,0 +1,16 @@
+I did roughly this using sequential Bayes.
+I don't think (b) is possible because the distribution you are focused on is
+a map from topics to word probabilities.  There isn't anything else left
+that characterizes topics after you eliminate how they relate to words and
+documents.  I remember someone on this list did a tree-based differential
+compression scheme for topic distribution samples when facing a similar
+problem though, which I didn't do, but he was still storing at least one
+full sample, i.e. dense matrix from topics => words.  Maybe you can approach
+your goal with some form of compression suited to your data.  Like having a
+similarity measure on words and using cluster centers under that similarity
+measure as the words in LDA, but that is almost begging the question.
+In my code (c) only really held as long as the number of topics was small.
+As for (d), in the context of my code that would help on (c), and quite a
+bit since after training the sample set could be averaged into just one
+matrix.
+http://code.google.com/p/lda1pfs/

@@ -1,0 +1,27 @@
+              This Small Grant for Exploratory Research (SGER) provides funding for the
+              development of a taxonomy of contingency logistics systems, formulate a general
+              model of such systems, develop  approaches for characterizing  contingency
+              logistics system decision support systems and exploration of empirical data to
+              suggest how such decisions are structured in practice.  The contingencies faced
+              by such systems may be due to (1) a change in the system performance objective,
+              (2) changes in available system resources or (3) changes in system demands.  
+              System objectives may change from efficiency as a goal, to timely delivery.  
+              System resources may change due to catastrophic events; technology changes
+              etc.,  and system demands may change due to the product life cycle evolving
+              from ramp up stage to operational stage to the ramp down stage.  
+
+The
+              requirements for a contingency logistics system to have an effective list of
+              alternate control parameters are as follows. (1) selection apriori of a finite
+              number of possible styles of operation, (2) repeated investments to preserve
+              the viability of these possible styles of operation, and (3) adjustment of the
+              mode of operation in response to changes in the environment.   The investment
+              in maintenance of possible alternatives thus takes away from the available
+              resources when contingent actions are not required, but provides effectiveness
+              when contingencies do in fact surface.  Results of this research will offer an
+              environment to examine  alternate ways to organize prototype systems;  use of
+              control rules and switching schemes between rules in the presence of
+              contingencies; and their impact on system response as well as other performance
+              objectives.  These results will prove useful in the organization and planning
+              for contingency rich logistics environments.
+

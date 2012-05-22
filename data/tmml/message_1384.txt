@@ -1,0 +1,12 @@
+Dear Charles, list,
+Thanks for this hint.  Indeed, the JIT compiler does a fair bit of run-time
+optimisation, as can easily be checked using the -Xint flag when starting the JVM.
+Regarding the question about debugging: What definitely helps in Java, is Sun's
+VisualVM profiler, which seems to have missed to get the airplay it deserves:
+http://download.oracle.com/javase/6/docs/technotes/guides/visualvm/index.html
+This tool allows you to watch and analyse running threads in real-time. In C,
+somewhat more intricate to use but similarly effective, is the trio gdb, gprof
+and valgrind.
+ps -- also thanks to Mateusz Beresecki for a hint on caching.
+Best regards
+gregor

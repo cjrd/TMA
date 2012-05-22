@@ -1,0 +1,5 @@
+In equation 2.4 of
+*http://www.cse.buffalo.edu/faculty/mbeal/thesis/beal03_2.pdf*<http://www.cse.buffalo.edu/faculty/mbeal/thesis/beal03_2.pdf>
+Are y' and the vector y vectors of continuous numbers, rather than discrete
+counts?
+-Robin Kramer

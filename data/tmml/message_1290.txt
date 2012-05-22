@@ -1,0 +1,5 @@
+Hi everyone,
+Can anyone provide me with a paper that first time proposed Gibbs
+sampling based LDA?
+Regards,
+Peng

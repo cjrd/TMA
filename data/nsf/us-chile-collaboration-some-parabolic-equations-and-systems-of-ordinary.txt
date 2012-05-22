@@ -1,0 +1,23 @@
+              0204032
+Ward
+
+This is a collaborative research project between Dr. James R.
+              Ward of University of Alabama at Birmingham, and Dr. Raul Manasevich and Marta
+              Garcia-Huidobro of Universidad de Chile and Pontifica Universidad Catolica de
+              Chile respectively. The investigators intend to work on the mathematical
+              analysis of boundary value problems for partial differential equations.  These
+              problems appear in modeling both slow and fast diffusion, and are useful in the
+              study of populations and diseases, porous media, and problems that are
+              inherently nonlinear.  The investigators will use topological tools, such as
+              degree and homotopy indexes, that are useful indicators of system
+              behavior.
+
+Each side brings their own strengths to the collaboration:  Drs.
+              Garcia-Huidobro and Manasevich have extensive experience in quasilinear
+              differential equations and bifurcations, while Dr. Ward has worked at length
+              with the topological tools to be used in their joint effort.
+
+
+
+    
+

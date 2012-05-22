@@ -1,0 +1,8 @@
+Hi all,
+Is there a paper that specifically introduces Hierarchical Dirichlet Process
+LDA?    I know it's presented in "Hierarchical Dirichlet Processes" by Teh
+et al, along with lots of other HDP-related topics, but is there a specific
+HDP-LDA work one can consult/reference?   (Note I'm talking here about the
+"flat" infinite topic model, not hLDA.)
+thanks,
+Dave

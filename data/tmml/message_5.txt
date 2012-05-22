@@ -1,0 +1,27 @@
+Greetings all,
+LDA (fit with Gibbs sampling) is also part of the MALLET package:
+http://mallet.cs.umass.edu.
+We have run this implementation on hundreds of thousands of documents.
+It has an easy-to-use command-line interface.  For example:
+$ text2vectors --input ~/research/data/text/20_newsgroups/comp.* --
+skip-header --remove-stopwords --output ~/comp5.mallet
+$ vectors2topics --input ~/comp5.mallet --show-topics-interval 5 --
+num-iterations 1000
+Or for "Topical N-grams," jointly discovering topics and phrases
+[Wang & McCallum 2005]:
+$ text2vectors --input ~/research/data/text/20_newsgroups/comp.* --
+skip-header --keep-sequence-bigrams --remove-stopwords --output ~/
+comp5b.mallet
+$ vectors2topics --use-ngrams --input ~/comp5b.mallet --show-topics-
+interval 5 --num-iterations 1000
+Best,
+Andrew
+"A Note on Topical N-grams". Xuerui Wang and Andrew McCallum.
+University of Massachusetts Technical Report UM-CS-2005-071, 2005.
+(Discover topics like Latent Dirichlet Allocation, but model phrases
+in addition to single words on a per-topic basis. For example, in the
+Politics topic, "white house" has special meaning as a colocation,
+while in the RealEstate topic, modeling the individual words is
+sufficient. Our TNG model produces much cleaner, more interpretable
+topics.)
+http://www.cs.umass.edu/~mccallum/papers/tng-tr05.pdf

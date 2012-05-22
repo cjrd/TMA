@@ -1,0 +1,39 @@
+              This award from the Major Research Instrumentation will support instrument
+              development at the University of Florida. A group of physicists and chemists
+              with a common need for broadband spectroscopic probing of materials with
+              ultrafast time resolution have teamed together to develop a high brightness,
+              high repetition rate femtosecond laser chirped pulse amplifier system capable
+              of providing high intensity pulses over a range of wavelengths spanning 3
+              decades from 200 nm to 20 microns.  Pulses with temporal duration approaching
+              10 femtoseconds and intensities nearing 100 Petawatts per square centimeter
+              will be delivered at a repetition rate of 10 Kilohertz.  In addition, the
+              instrument will have the capability to 'sculpt' temporal pulse shapes to
+              produce 'pulse shapes on demand'. Applications will include investigations of
+              ultrafast chemical reactions in dendrimers, studies of nonlinear optical
+              properties of carbon nanotubes, investigations of protein folding, and coherent
+              control of solid state phase transitions and molecular motion. The instrument
+              will be operated by a campus wide shared facility serving cross disciplinary
+              training ground for future scientists with programs in the application of
+              ultrafast optical techniques to problems in physics, chemistry, biology and
+              materials. It will allso be part of a teaching activity for undergraduate
+              studenbts in science  and engineering through established NSF-funded summer REU
+              programs.
+
+
+This award from the Major Research Instrumentation will support
+              instrument development at the University of Florida. A group of physicists and
+              chemists with a common need for broadband spectroscopic capability to probe
+              materials with ultrafast time resolution will develop a high brightness, high
+              repetition rate femtosecond laser chirped pulse amplifier system capable of
+              providing high intensity pulses over a range of wavelengths. The instrument
+              will have the capability to 'sculpt' temporal pulse shapes to produce 'pulse
+              shapes on demand'. Applications will include investigations of ultrafast
+              chemical reactions in dendrimers, studies of nonlinear optical properties of
+              carbon nanotubes, investigations of protein folding, and coherent control of
+              solid state phase transitions and molecular motion. The instrument will be
+              operated by a campus wide shared facility serving cross disciplinary training
+              ground for future scientists with programs in the application of ultrafast
+              optical techniques to problems in physics, chemistry, biology and materials. It
+              will also be part of a teaching activity for undergraduate students in science
+              and engineering through established NSF-funded summer REU programs.  
+

@@ -1,0 +1,8 @@
+Hi,
+Check the readme file for the correct usage parameters:
+lda est [alpha] [k] [settings] [data] [random/seeded/*] [directory]
+This works for me:
+./lda est 1.0 50 settings.txt ../ap/ap.dat random test
+where alpha = 1.0, k = 50
+Regards,
+Adnan

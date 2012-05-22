@@ -1,0 +1,34 @@
+              0132270
+Saxena
+
+To obtain high quality data at physical conditions of Earth's
+              core and mantle, we need to modify our present equipment and develop new
+              techniques of heating our samples at ultra-high pressures and for measuring the
+              temperature and pressure.  Funds from this grant will fully exploit the
+              diamond-anvil techniques to study materials of geophysical importance at high
+              to ultra-high pressures and temperatures. We will study the nature of the
+              problems in laser heating as related to large temperature gradients (cool
+              diamond to the hot sample), chromatic aberration (use of refractive optical
+              elements, even chromatically corrected, results in the severe temperature
+              errors that vary significantly with the chosen position of a spectral region)
+              and poor knowledge of emissivity (wavelength dependent emissivity, needed for
+              use of the Planck function). A combination of laser-heating systems, optical
+              systems and methods for the determination of emissivity of several metals and
+              oxides will be explored.  A new method of temperature determination using a
+              digital imaging camera will also be tested. 
+Additional developments will
+              include: i) the use of moissanite (SiC) anvils at high pressures (~ 50 GPa) to
+              reach temperatures close to 2000 K, ii) design of a cell that provides easy
+              access to the sample for the electrical leads and still maintains all the
+              benefits of the Mao- Bell design and is easily cooled with a good inert
+              atmosphere around the diamonds, and iii) building of cells which can be both
+              electrically and laser heated with in-situ x-ray diffraction of the heated
+              sample at one bar or few bars of pressure to measure thermal expansion and
+              melting temperatures of solids. We will attempt to provide a solution to the
+              key problem of simultaneous measurement of pressure and temperature.
+              
+***
+
+
+
+

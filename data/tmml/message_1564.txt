@@ -1,0 +1,11 @@
+Hi,
+I have gone through the research paper on Corr-LDA, and am planning on using
+Corr-LDA for annotation of medical imaging data. However, I could not find
+any implementation of Corr-LDA on the web, or in the lda package on the CRAN
+database.
+Can anyone, who has worked with Corr-LDA, point me to relevant links of such
+an implementation (other than in R), or any user manual where I can get
+instructions on how to implement this in CRAN lda package (the former option
+would be more preferable)?
+Thanks,
+Mustafa

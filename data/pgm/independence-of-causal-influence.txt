@@ -1,0 +1,237 @@
+
+So, we previously talked about the
+importance of allowing CPD
+representations that encode additional
+structure in the local dependency model
+of a variable on it's parents. And we
+talked about the cases are tree CPD's
+which allow us to depend on different
+variables in different context. But none
+of that helps us deal with the situation
+that we use as a motivation for this which
+is where we have a variable such, as for
+example, cough that depends on multiple
+different factors: pneumonia, flu,
+tuberculosis, bronchitis, and so on and so
+forth. This doesn't lend itself say to a
+tree CPD because it's not the case that
+you depend on one only in certain context
+and not and not in others. Really you
+depend on all of them and all of them sort
+of contribute something to the probability
+of exhibiting a cough. So, one way for
+capturing that kind of interaction is
+a model called the noisy OR CPD.
+And the noisy a noisy OR [CPD] can, is best
+understood by simply considering, a
+slightly larger graphical model, where we
+have, where we're trying, where we break
+down the dependencies of Y on its
+parents, X1 up to XK, by introducing a
+bunch of intervening variables. So let's
+imagine that this is, again, like cough
+variable. And this is different diseases,
+for example. And what we're doing here is
+we're introducing an intermediate variable
+that captures the event that this disease
+X1, if present, causes a cough by itself. So,
+this is X1 by itself causes a cough or
+causes Y. You can think of it,
+each of these as a noisy transmitter. If
+you have the disease, say, if X1 is true,
+then Z1 sort of says, fine, X1
+succeeded in it's intent to make Y true.
+X2 has it's own little filter called Z2.
+And Z2 makes that same decision relative
+to X2. And so, ultimately, Y is true. So Y
+is true if, someone succeeded in making it true,
+which means that Y is a deterministic OR of its parents Z1 up to Zk,
+Z0 up to Zk. So, now let's make this a
+little bit more precise. So, the
+probability of Zi being true given Xi. There's two cases. If Xi equals zero, well
+Xi isn't even trying to make Zi true. So in
+this case the probability of Zi equals one
+is zero. If Xi is not true, Zi doesn't get turned on, ever. If Z, if
+Xi is true, then there's some probability
+for Zi to get turned on. And that
+probability is something called Lambda i.
+And Lambda i is in the interval [0,1]. And you
+can think of it as defining some kind of
+penetrance of, how good is Xi at turning Y
+on? So if we actually write this down as a
+probability and we just consider the CPD of
+Y equals zero, so why doesn't get turned
+on, given some set of cases X1 up to Xk.
+So now we're asking, what is the
+probablity that all of these guys failed
+to turn on the variable Y? So, what I forgot to say is that Z0 is what's called a
+leak probability and that's the probablity
+that Y gets turned on just by itself. And
+that has, that happens when probability
+lands to zero. So, when does Y fail to get
+turned on? First of all, when it doesn't
+get turned on by the leak. So
+that's one minus [inaudible] to zero.
+Times, the probability that none of the
+causes that are on, so none of causes
+that are on. Which are the x size that are
+equal to one turn Y on. And so, that's a
+product of one minus Lambda i for all of
+the XI's that are on. So, that gives us
+the probability of Y equals one. And
+obviously the probability of Y equals
+one is just the compliment of that. One
+minus. Sorry, this should be zero. But, since the noisy OR
+CPD, and you can generalize this to a
+much broader notion of independence of
+causal influence. This is called
+independence of causal influence, because
+it assumes that you have a bunch of causes
+for a variable, and each of them acts
+independently to affect the truth of that
+variable. So, there's no interactions
+between the different causes. They each
+have their own separate mechanism, and
+ultimately, it's all aggregated together
+in, in a single, in a single variable, z,
+from which the truth of y is then, is then
+determined from this aggregate effect of
+all of the, All of these [inaudible] ZIs
+of the different causes. So, one example
+of this is, we've already seen the noisy
+[inaudible]. But you easily generalize
+this to a broad range of other cases.
+There's noisy [inaudible], where the
+aggregation function is and, and. There's
+noisy maxes, which apply in the non binary
+case, when causes might not just be turned
+on or off, but rather, different sort of
+extensive being turned on. And then Z is
+actually sort of the maximal extent. Of,
+of. Of the being independent effect of
+this cause and so on. So there is a large
+range of different models, all of which
+fits into this family. [inaudible],
+probably the one most commonly used but
+the other ones have been used in other
+settings as well. One model that might not
+immediately be seen to fit into this
+framework but actually does is a model
+that corresponds to the sigmoid CPD. So
+what's a sigmoid CPD? A [inaudible] CPD
+says that each XI induces a continuous
+variable which represents WI-XI. So
+imagine if each XI is discreet. Then ZI is
+just a continuous value WI, which
+parameterizes this edge. And it tell us,
+sort of, how much force, XI is going to
+exert on making Y true. So if WI is zero,
+it tells us that XI exerts no influence
+whatsoever. If WI is positive, XY is going
+to make, Y, more likely to be true. And if
+WI is negative, it's going to make Y less
+likely to be true. All of these influences
+are aggregated together in this expression
+for the variable Z, which effectively adds
+up all of these different insolences, plus
+an additional bias term. W. Zero. And now
+we need to turn this ultimately into the
+probability of the variable Y., which is
+the variable that we care about. And in
+order to do that, what we're going to do
+is we're going to pass this continuous
+quantity z, which is real number between
+negative infinity and infinity, through a
+Sigmoid function. The Sigmoid function is
+defined as follows, and it's a function
+that, some of you have seen in the context
+of machine learning, for example. So
+Sigmoid takes the variable, the value, the
+continuous value z, exponentiates it, and
+then divides one plus that exponent of z,
+and Since E. Of Z., since E. To the power
+of Z. Is a positive number, this gives us
+a number that is always an interval of 01.
+And if we look at what this function looks
+like. It looks like this, so this is the
+Sigmoid function. The X. Axis here is, the
+value Z., and the Y. Axis is the Sigmoid
+function. And you can see that as'z' gets
+very negative the probability goes to
+zero. As'z' gets very high the probability
+gets close to one and there is this
+interval in the middle where intermediate
+values are taken. You can, so this is kind
+of like a squelching function that, that
+sort of squashes the function on both
+ends. Let's look at the behavior of the
+Sigmoid C. P. D. As a function of
+different parameters. So here is a case
+where all of the X. Sides have the same
+parameter W. And, so what we see here is
+the value of this parameter w and over
+here is the number of xi that are true.
+So, let's look at first this axis over
+here. The more parents that are true, the
+more parents that are on the higher. The
+probability of Y to be true, okay? And
+this holds for any value of W, because
+these are all positive influences, okay?
+So the more parents are true, the more
+things are pushing Y to take, the value
+true. This axis over here is the axis of
+the weight. And we can see this, for low
+weights, you need an awful lot of X's to
+get Y to be true. But as W increases, Y
+becomes true with a lot fewer positive
+influences. This graph on the right now.
+Is what we get when we basically just
+increase the amplitude of the whole
+system. We mulitply both W and W0 by a
+factor of ten. And what happens is that,
+that means that the exponent gets pushed
+up through extreme values much quicker. Z
+gets effectively multiplied by a factor of
+ten. And that means that the transition
+becomes considerably sharper. That gives
+us a little bit of an intuition on how the
+[inaudible] function and how the
+[inaudible] CBD behaves. So what are some
+examples of this kind of a, this kind of a
+an a application of this. So, I showed
+this network on an earlier part of this
+course. It's the CPS network and it's used
+for the, it was developed for the Stanford
+Medical School, for the diagnosis of
+internal diseases and, so, up here we have
+things that represent pre disposing
+factors. And there is actually a fairly
+eclectic range here. So, for example, one
+predisposing factor is intimate contact
+with small rodents, 'cause that's the
+contributing factor at the [inaudible]
+virus. And so there's a whole range of
+predisposing factors. Down here, in the
+middle, we have the [inaudible]. And down
+at the bottom we have symptoms and test
+results. Now, as I previously mentioned,
+there is approximately 500, variables in
+this network. And they take an average
+about four values. So the total number of
+entries in a joined distribution [sound]
+over this space would be. Approximately
+four to the 500 are different parameters,
+which is clearly, an attractable number.
+If we were to take this network, and just,
+if we take this distribution
+representative using the network shown in
+this diagram, we get considerable
+sparsification, and the [inaudible] form.
+Has approximately, 134,000,000,
+parameters, which is still much too many,
+to have a human estimate. By using, as in
+this case they use a noisy Max. Cpd. They
+brought out the number of parameters to
+about 8,000 total parameters, to this net
+worth which is a much more attractable
+number to deal with.

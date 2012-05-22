@@ -1,0 +1,21 @@
+Dear list,
+I've made a small update to the ILDA package (v0.93). It completely supersedes
+the version posted earlier and is available now on my page:
+http://arbylon.net/resources.html
+The major change is that I connected the simple corpus generator and visual
+matrix display to the IldaGibbs class, so one can visually observe how topics
+are created and that they indeed have meaningful content (see Griffiths' and
+Steyvers' description of the illustrative synthetic dataset, published in their
+2004 PNAS paper, "Learning Scientific Topics").
+Moreover, I added the example corpus as a separate package because in addition
+to the information I could extract from the data provided by the late Sam Roweis
+and the sources on nips.cc, there's some new relational data:  (1) citations
+between NIPS papers and  (2) "mentionings", i.e., names of NIPS authors
+mentioned in papers, which yields another modality of reference (and influence)
+between work. From other sources I've included information on authors, category
+labels, volume. It's a cozy little test corpus for "multi-modalilty" topic model
+and other text mining applications.
+So far, I really had a hard time looking for a corpus with full text and
+multiple modalities of meta-data. Maybe I wasn't the only one...
+Cheers
+gregor

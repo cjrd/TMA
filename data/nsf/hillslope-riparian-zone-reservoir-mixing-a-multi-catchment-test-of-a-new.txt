@@ -1,0 +1,43 @@
+              9805475
+McDonnell
+
+Understanding and predicting streamwater chemical response
+              to perturbations such as climate change and non-point source pollutants
+              requires knowledge of the hydrologic mechanisms controlling streamflow
+              generation and biogeochemical mechanisms influencing solutes transport. 
+              Despite the nearly two decades of intensive research in small catchments, no
+              quantitative framework has emerged that specifies the measurements necessary to
+              characterize a given catchment or even provides a context for the
+              interpretation of field measurements.  The proposed project seeks to develop
+              such a framework through a combined modeling and field effort.
+
+Previous
+              research has indicated that hillslope-riparian reservoir mixing may be the most
+              important control on stream chemistry at the watershed scale.  We will conduct
+              a field-modeling study of hillslope-riparian zone mixing at 3 catchments
+              (Panola Mountain, Sleeper River and Maimai New Zealand) spanning a wide range
+              of geomorphic and hydrologic conditions.  Our research is based on realizations
+              that:  (1) the hillslope may not contribute much directly to streamflow during
+              storm events, (2) the chemical signature of the hillslope is not apparent in
+              the stream during events, thus challenging our traditional view of the stream
+              as integrator of the catchment, and (3) we may not be able to construct whole
+              (including the hillslope) catchment models based upon stream chemistry and
+              hydrology for prediction of future conditions.  The ultimate goal is objective
+              delineation of catchments (based on prescribed measurements) into homogeneous
+              reservoirs to provide a general methodology to interpret field observations and
+              develop predictive models.  The physical connections among these reservoirs
+              define the hydrologic flowpaths in the catchment.  By working at multiple
+              catchments, we hope to be able to discern patterns that are not specific to one
+              catchemtn.
+
+Uncertainty analysis will be used.  Our objectives are to:  (i)
+              develop a new TOPMODEL-based hydrogeochemical reservoir mixing to test our
+              perceptual understanding of flow pathways and runoff production mechanism,
+              consistent with hydrometric measurements, (ii) determine what catchment factors
+              determine hillslope influence on stream chemistry using a watershed
+              cross-comparison, (iii) quantify when hillslope water becomes riparian water,
+              (iv) develop a data-based reservoir mixing model with robust structure to apply
+              generally to upland catchments.  This study represents an innovative attempt to
+              link a reservoir mixing, model constrained by both isotope and geochemical data
+              within a topographically-driven hydrologic model at the catchment scale.
+

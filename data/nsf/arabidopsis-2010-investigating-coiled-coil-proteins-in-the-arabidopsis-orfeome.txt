@@ -1,0 +1,64 @@
+              Proteins containing long coiled-coil domains have been found in animals and
+              yeast to be involved in attaching signaling molecules to the large, solid-state
+              components of the cell, such as membrane systems, centromeres, centrosomes, or
+              the nuclear scaffold. There is growing evidence that they play an important
+              role in the spatial and temporal regulation of protein positioning in the cell.
+              In contrast, this group of proteins has been barely investigated in
+              plants.
+
+The goal of this Arabidopsis 2010 project is to identify all
+              Arabidopsis proteins that contain long stretches of coiled-coil domains, and to
+              functionally characterize a subgroup that has been implicated in plant nuclear
+              envelope targeting. Preliminary research has identified over 1000 predicted
+              coiled-coil proteins in the Arabidopsis genome, almost 70% of which are
+              "unknown proteins". Examples of coiled-coil proteins with sorting signals for
+              all major compartments of the plant cell have been identified.
+
+To begin a
+              functional investigation of this large and uncharacterized protein class in
+              Arabidopsis, a twofold approach will be taken:
+
+(1) An automated
+              computational platform will be established on a multi-processor cluster that
+              will allow: (a) to identify all long (50 amino acids or longer) coiled-coil
+              proteins in Arabidopsis by structural prediction algorithms; (b) to integrate
+              the output with a battery of sequence and structure analysis programs to
+              establish predicted nuclear, organellar, and membrane localization, family
+              relationships, functional domains, and other relevant features; and (c) to
+              create a publicly available, searchable database of Arabidopsis coiled-coil
+              proteins, to which experimental data such as subcellular location,
+              protein-protein interactions, and mutant phenotypes will be added.
+
+(2) A
+              group of 16 coiled-coil proteins of unknown function, which bind to Arabidopsis
+              WPP-domain proteins, will be functionally investigated. The WPP domain is a
+              nuclear envelope-targeting domain unique to plants, which is involved in
+              positioning Ran GTPase activating protein (RanGAP) at the nuclear rim. A group
+              of coiled-coil proteins has been experimentally identified, which specifically
+              recognize the WPP domain. The hypothesis is that some of the identified
+              proteins are specific subcellular anchors for WPP-domain proteins. This will be
+              tested by investigating: (a) the in vitro and in vivo binding specificity of
+              the full-length proteins; (b) their subcellular localization; (c) knockout or
+              RNAi phenotypes; and (d) the effect of coiled-coil protein knockouts on the
+              subcellular positioning of WPP-domain protein-GFP fusions.
+
+The first
+              approach will provide an accessible bounty of information about features that
+              can help build informed hypotheses about the function of individual proteins.
+              The second approach will directly investigate the function of 16 coiled-coil
+              "unknown proteins" on a molecular, cellular, and whole-plant level.
+
+A list
+              of the accession numbers of the genes to be analyzed during this project can be
+              found at http://www.arabidopsis.org/info/2010_projects/index.html. Experimental
+              data will be made available by publication and subsequently by incorporation
+              into a publicly available database accessible as link from
+              http://www.biosci.ohio-state.edu/~plantbio/Faculty/meier.html. Resources such
+              as Arabidopsis lines and plasmids will be made available through the ABRC. This
+              project will provide training opportunities for graduate and undergraduate
+              students at the interface of molecular cell biology and bioinformatics. On a
+              broader scope, the investigation of spatial organization of signaling in plant
+              cells might lead to future approaches in developmental engineering of crop
+              plants. 
+
+

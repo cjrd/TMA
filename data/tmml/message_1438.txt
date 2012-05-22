@@ -1,0 +1,19 @@
+Roi,
+Please take a look at our new paper
+David Andrzejewski, Xiaojin Zhu, Mark Craven, and Ben Recht.
+A framework for incorporating general domain knowledge into Latent
+Dirichlet Allocation using First-Order Logic.
+(IJCAI-11), 2011.
+http://pages.cs.wisc.edu/~jerryzhu/pub/foldall.pdf
+This can be formulated as a simple First-Order Logic preference, something
+like
+\forall i: z_i=z_{i+1}
+or, if you want them to differ,
+\forall i: NOT(z_i=z_{i+1})
+and the model will attempt to enforce this preference while optimizing the
+LDA objective via stochastic optimization.  You can throw in other
+preferences pretty easily since all you need to do is to formulate them in
+FOL.  David Andrzejewski (http://people.llnl.gov/andrzejewski1) has an
+alpha implementation.
+Best,
+Jerry

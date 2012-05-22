@@ -1,0 +1,62 @@
+Dear All,
+how can I compute P(d|z) for train and test documents in CTM model?
+z=topic
+d=document
+After I have ran ctm with est and inf parameters the results dir contents
+are as follows:
+000-cov.dat
+000-inv-cov.dat
+000-lambda.dat
+000-log-beta.dat
+000-log-det-inv-cov.dat
+000-mu.dat
+000-nu.dat
+000-param.txt
+000.beta
+000.other
+005.beta
+005.gamma
+005.other
+010-cov.dat
+010-inv-cov.dat
+010-lambda.dat
+010-log-beta.dat
+010-log-det-inv-cov.dat
+010-mu.dat
+010-nu.dat
+010-param.txt
+010.beta
+010.gamma
+010.other
+015.beta
+015.gamma
+015.other
+020.beta
+020.gamma
+020.other
+025.beta
+025.gamma
+025.other
+030.beta
+030.gamma
+030.other
+final-cov.dat
+final-inv-cov.dat
+final-lambda.dat
+final-log-beta.dat
+final-log-det-inv-cov.dat
+final-mu.dat
+final-nu.dat
+final-param.txt
+final.beta
+final.gamma
+final.other
+likelihood.dat
+result-ctm-lhood.dat
+result-lambda.dat
+result-nu.dat
+result-phi-sum.dat
+result-word-assgn.dat
+word-assignments.dat
+Regards,
+Mohammad Moghimi

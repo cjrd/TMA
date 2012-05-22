@@ -1,0 +1,29 @@
+              EIA - 0203892
+Smith, Lloyd
+University of Wisconsin 
+
+TITLE: ITR:
+              Multiple-Word DNA Computing on Surfaces
+
+
+This effort will extend the scope
+              and power of surface-based DNA computing in two major respects:  i) by scale-up
+              of the size of problem addressed experimentally, ii) by increasing
+              computational generality by extending capabilities to the solution of
+              circuit-SAT problems.
+
+Goal (i) will be scaling up the computing process
+              using a problem size of 24 bits as a target goal.  24 bits corresponds to a
+              solution space size of 1.7 x 107 elements, a factor of ten million increase
+              over the 4 bit problem addressed previously.
+
+Goal (ii) - For a computing
+              model to be general, that is, capable of efficiently simulating algorithms used
+              in conventional electronic computing, it must be able to efficiently simulate
+              circuits.  The ability to simulate Boolean formulas is not sufficient.  In
+              theoretical work, it is shown that the surface-based approach, when using
+              multiple words and the MARK, DESTROY-UNMARKED, UNMARK, and APPEND operations,
+              is such a generalizable approach to computing, but it has not been implemented
+              experimentally.  This proposal seeks to implement this approach experimentally
+              and to apply it to the solution of circuit-SAT problems.
+

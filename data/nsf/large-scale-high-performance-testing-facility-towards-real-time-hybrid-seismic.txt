@@ -1,0 +1,49 @@
+              The George E. Brown, Jr. Network for Earthquake Engineering Simulation (NEES)
+              Program is a project funded under the NSF Major Research Equipment Program. 
+              This cooperative agreement, under the NEES Program, establishes a NEES
+              large-scale laboratory experimentation equipment site towards real-time hybrid
+              seismic testing at the University at Buffalo, The State University of New York,
+              Buffalo, NY.  The University at Buffalo will design, construct, install,
+              commission, and operate a modular and highly flexible dynamic testing facility
+              for large-scale geotechnical and structural earthquake engineering
+              experimentation.  This equipment will be operation by September 30, 2004 or
+              earlier and will be managed as a national shared-use NEES equipment site, with
+              teleobservation and teleoperation capabilities, to provide new earthquake
+              engineering research testing capabilities for large structural systems through
+              2014.  This NEES equipment site will be connected to the NEES collaboratory
+              through the University's vBNS connection, with Gigabit Ethernet capabilities. 
+              Shared-use access and training with be coordinated through the NEES Consortium.
+               This award is an outcome of the peer review of proposals submitted to program
+              solicitation NSF 00-6, "NEES: Earthquake Engineering Research Equipment."  The
+              following equipment is provided under this award:  (1) Three 100 ton dynamic
+              actuators equipped with dual 400 gpm servovalves, +/- 500 mm stroke, (2) two
+              200 ton static actuators with 15 gpm servovalves, +/- 500 mm stroke, (3)
+              hydraulic distribution lines and manifolds, (4) surge tank and accumulators,
+              (5) two hydraulic pumps of 185 gpm each for continuous operation which along
+              with the accumulator banks can provide maximum flow of 1600 gpm for 30 seconds,
+              (6) digital control system, (7) test control package for both static and
+              dynamic tests, (8) upgrade and expansion of existing data acquisition system to
+              accommodate teleobservation, teleoperation, teletransmission, and telestorage,
+              (9) data management and processing system to accommodate real-time systems,
+              data acquisition, storage, distribution and analysis, and test instrumentation,
+              (10) equipment for teleobservation and teleoperation capabilities so that
+              experiments on the equipment will be observable and controllable via high
+              performance network connections, (11) video imaging equipment with the eventual
+              goal of streaming real-time video, and (12) sensors and measurement devices. 
+              The experimental facility allows for multiple configurations of full-scale
+              component tests combined simultaneously with real-time numerical simulations to
+              investigate the seismic behavior of large structural systems incorporating use
+              of actuators, reactions walls, strong floor, and shake tables (one moveable). 
+              Further, the equipment will be used to develop new hybrid testing algorithms
+              for near full-scale/large-scale testing.  The University has committed $4
+              million for expansion and infrastructure improvements of the Structural
+              Engineering and Earthquake Simulation Laboratory in Ketter Hall on the
+              University at Buffalo campus to house the upgraded and new equipment.  This
+              expansion includes a new research laboratory area with a strong floor and
+              reaction walls, control rooms and offices for training and data processing,
+              service areas, storage and office spaces, and a new 40 metric ton crane.  The
+              University at Buffalo will integrate this large-scale, high performance testing
+              equipment into its research program and undergraduate and graduate curricula,
+              provide training opportunities for outside researchers through on site courses,
+              host visiting scholars, and develop a web-based teleoperation simulator of the
+              NEES equipment.

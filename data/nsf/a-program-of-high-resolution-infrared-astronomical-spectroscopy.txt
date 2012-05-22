@@ -1,0 +1,55 @@
+              AST-0205518
+Lacy
+
+With previous NSF support, Dr. John Lacy, at the University
+              of Texas, developed the Texas Echelon Cross Echelle Spectrograph (TEXES). TEXES
+              can be used in several modes: high resolution cross-dispersed, low to medium
+              resolution long-slit, and source-acquisition imaging. It operates in the 5-25
+              micrometer spectral region. TEXES's high resolution capabilities are unique. No
+              other mid-infrared astronomical spectrograph has a comparable combination of
+              resolution and sensitivity. TEXES is operated by the instrument team, but is
+              available to all members of the astronomical community. Observational projects
+              to be carried out by Dr. Lacy and colleagues with this award include studies of
+              molecular gas in star-formation regions, ionized gas in ultracompact HII
+              regions, molecules in protoplanetary disks, and molecules in planetary
+              atmospheres. 
+
+Infrared spectroscopy provides several unique probes of
+              interstellar molecules, notably the ability
+to study molecules like C2H2 and
+              CH4 without permanent dipole moments. Initial observations
+with TEXES of C2H2
+              and HCN in the KL star-formation region in Orion show the lines to consist
+of
+              multiple narrow components indicative of fine-scale clumping of the gas.
+              Further observations
+will provide information about the interaction of a
+              protostellar wind with surrounding gas, as well
+as measurements of the
+              abundances of several molecules showing the influence of star formation
+              on
+molecular cloud chemistry. Six regions of high-mass star formation will be
+              studied. Ultracompact HII regions are prominent sign-posts of young, very
+              massive stars, but their structure and especially their longevity is not well
+              understood. Infrared ionic fine-structure lines have significant advantages
+              over other probes of such obscured ionized gas in that they provide information
+              about abundances, physical conditions, and kinematics without the large thermal
+              broadening of hydrogen lines. A survey of ultracompact H II regions of various
+              morphologies will be carried out with the goal of distinguishing among
+              different models of these objects. In contrast to near-infrared and millimeter
+              observations, mid-infrared spectroscopy of gas disks around young stars probes
+              the 1-10 AU planet-forming region. Lines of H2, H2O, and possibly C2H2 and NH3
+              should be observable with TEXES, although initial observations appear to
+              contradict conclusions from spectra taken with the ISO satellite. If line
+              Doppler profiles can be measured, they will provide information on the
+              distribution of molecules with radius in the disks, perhaps showing the
+              signature of forming planets. Mid-infrared spectroscopy is probably the most
+              important probe of the atmospheres of the giant planets. Most of their emitted
+              radiation is in the mid-infrared, and their molecular constituents have their
+              spectral signatures in the mid-infrared. TEXES will be used for a variety of
+              planetary studies, with current plans concentrating on stratospheric molecules
+              and atmospheres of moons. 
+***
+
+
+

@@ -1,0 +1,7 @@
+Dear Sir,
+I am one of the users of the code of lda [lda-c] and hierarchial-lda
+[hlda-c] provided on the website. I am using it on ubuntu.
+The code compiles fine but is not being able to execute. When I use the
+command lda [...] [...].. .. .. ..
+It says that 'lda' command does not exist.
+Please help me out.

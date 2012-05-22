@@ -1,0 +1,20 @@
+Dear Li Quingshan,
+I am not sure whether I understood your concern right. There are two
+concepts that are referred to with the term likelihood.
+a) The training (or test,holdout,...) likelihood of a corpus. This
+describes the quality of the inferred parameters and model.
+b) The likelihood of a topic given a document, where we actually mean
+the probability of a topic given a document.
+I got the impression that Alexandre, Heinrich, and ap.dat are talking
+about a) but your question refers to b). Is that right?
+When you say likelihood of topic in a document, do you refer to the
+topic with the highest proportion in the document's topic mixture theta?
+So you want to choose the topic_d := argmax_t theta_d(t)?
+Lets call topic_d the topic that dominates the document. You can use it
+as a rough approximation if you want to find a hard cluster
+(partitioning) of documents.
+But the LDA model is much richer than this, as a document may have more
+than one dominating topics. Even words may have more than one dominating
+topic.
+Cheers,
+Laura

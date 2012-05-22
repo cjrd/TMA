@@ -1,0 +1,22 @@
+Hello,
+Some weeks ago I asked about which model selection measures could I try
+with LDA. BIC was suggested, but when I implemented it it didn't provide
+any conclusive results.
+I have downloaded and ported to Python the MCMC Java code provided by
+Gregor Heinrich (if anyone needs the Python code, I can send it), I was
+thinking about implementing the DIC, but has anyone any suggestions on
+how should I do it? The MCMC procedure samples z topics only and I don't
+know exactly how am I supposed to calculate the deviance.
+I was thinking about calculating log(p(w |\theta, z, \alpha, \beta)),
+but in the end it should simplify to the sum of the \beta associated to
+the words (and topics) that are present in the corpus. Is it that
+simple? Shouldn't I rather use log(p(w,z | \theta, \alpha, \beta))? Or
+something else? Also, I don't know which \theta should I use. The
+"final" ones, those that I get at the end of the sampling, or
+sample-specific ones, this is, \theta_k =
+(\sum{z_k}/N)*(\alpha/(\alpha*M)) for the k-th topic (as in Steyvers,
+Griffiths)? I suppose the second ones. Same for phi?
+I know that these might sound like stupid questions, but I'm really
+confused. Thanks in advance.
+All the best,
+Matteo Dimai

@@ -1,0 +1,4 @@
+The multi-corpus inference technique in Biro, Szabo, Benczur: LDA in web
+spam filtering is pretty well-suited to collections that incrementally grow
+through the addition of small documents. I think it's used in GibbsLDA++ and
+I also (ab?)used it in my LDA1PFS for that purpose.

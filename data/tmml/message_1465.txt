@@ -1,0 +1,12 @@
+A frequentist approach would be to count the occurrences of each word in the
+corpus.  Business will probably occur more frequently than hockey.   These
+words are what I call "topic-specific stop words".  They are not
+"language-specific stop words" like "a", "an" or "the", but they are
+topic-specific.  For example,  some "sports"-related stop words might be
+"sports", "games", etc.
+So you may want to count the occurrence of each word within a specific
+topic, then remove the highest-occurring words.
+Another radically different idea is to use WordNet.  Words that have more
+senses (e.g., business) in WordNet, need to be weeded out.
+Regards,
+Shibamouli

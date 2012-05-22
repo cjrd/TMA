@@ -1,0 +1,20 @@
+Yeah, I'll take a look at it. Thanks! I started this whole exercise
+using PostgreSQL full-text search. That works fine because
+a. PostgreSQL's lexical analyzer (which they call a parser) finds
+hyperlinks in text and treats them as what they are, hyperlinks. ;-)
+It also finds email addresses and phone numbers, I think, but those
+are rare in tweets.
+b. The other entities - hashtags and usernames - can be expressed as
+hyperlinks. '@znmeb' translates to 'http://twitter.com/#!/znmeb', and
+'#seriously' translates into
+'http://twitter.com/#!/search/%23seriously'.
+It's actually somewhat easier than that now because Twitter parses
+(lexes, actually) the entities out for you and puts them in the object
+if you ask for them. But that doesn't work if you get your tweets from
+the Search API.
+So really all I need is for hyperlinks to be terms - I can make the
+rest of it work. But the hyperlinks need to be preserved - no breaking
+up into chunks or deleting colons, slashes, dots, etc. And Twitter
+will be or already is sending links out wrapped with their own t.co
+link shortener, so there can be a common dictionary of external
+hyperlinks.

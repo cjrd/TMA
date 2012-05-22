@@ -1,0 +1,35 @@
+              This collaborative project with Clemen (0084383) and Gelman (0084368) will
+              develop and demonstrate improved methods for using expert judgment in
+              environmental risk analysis.  Risk-analytic models rely heavily on parameter
+              estimates obtained using either informal or formal expert judgments.  Such
+              methods can be sensitive to two problems: biases in experts coding their
+              knowledge into probability distributions (such as overconfidence bias), and the
+              typically uncertain degree of dependence in judgments between experts (e.g.,
+              each expert's judgment combines his reading of a common scientific literature
+              and his own experience and interpretations).  The project will analyze the
+              properties of two state-of-the-art methods for combining expert judgments: the
+              "classical" method developed by Roger Cooke and colleagues at Delft University
+              of Technology and the "copula" method developed by Robert Clemen and colleagues
+              at Duke University.  It will compare the methods mathematically and by
+              evaluating their performance on synthetic and actual expert judgment data sets.
+               In addition, the project will develop improved methods for combining
+              distributions based on fully Bayesian methods for incorporating overconfidence
+              and dependence among experts, and compare them with the two existing
+              methods.
+
+The project will lead to better methods and an improved
+              understanding of alternative methods for combining expert judgment in
+              environmental risk analysis.  Many parameters in a risk-analysis model cannot
+              be measured directly, for physical or ethical reasons (e.g., one typically
+              cannot trace pollutants far from their source nor conduct toxicity studies on
+              humans).  As a result, parameter estimates are often based on expert judgment. 
+              In most cases, the expert judgment is applied informally, as when the model
+              builders use their own "best guess" estimates of parameter values.  In some
+              cases (such as risks associated with nuclear power), judgments (in the form of
+              probability distributions) are elicited from a panel of experts.  However,
+              there is at present no standard method for combining judgments from multiple
+              experts, and limited understanding of the properties of alternative methods. 
+              This research will lead to better understanding of alternative methods and,
+              ultimately, to better use of expert judgment.
+
+

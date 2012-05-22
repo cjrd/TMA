@@ -1,0 +1,11 @@
+Here's some more context for these ideas - the Hutter Prize for text
+compression:
+http://www.hutter1.net/prize/hrules.htm
+and Matt Mahoney's research:
+http://www.mattmahoney.net/dc/
+especially the rationale for the compression benchmark:
+http://mattmahoney.net/dc/rationale.html
+It would be quite interesting to see how a topic model does on or
+contributes to an approach to these types of benchmarks, especially
+for the sake of seeing how well long-range dependencies can be modeled
+by them and how much they contribute to good predictions.

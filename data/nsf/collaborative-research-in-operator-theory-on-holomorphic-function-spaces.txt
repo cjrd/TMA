@@ -1,0 +1,65 @@
+              ABSTRACT.   Professor Bourdon and his collaborator Joel Shapiro of
+Michigan
+              State University will investigate problems arising from the
+interaction
+              between the modern theory of linear operators and the
+classical theory of
+              analytic functions. The problems to be studied involve
+norms, decomposability,
+              and numerical ranges of composition operators as
+well as the chaotic behavior
+              of both composition operators and operators
+commuting with backward shifts.
+              Insights and tools developed during the
+course of the project will be applied
+              to other classes of linear operators
+on Hilbert and Banach spaces.
+
+   Many
+              of the differential and integral equations that physicists and
+engineers use
+              to model physical processes may be viewed as linear
+operators on spaces of
+              functions. This viewpoint, pioneered by David
+Hilbert, led to the development
+              of function-theoretic operator theory,
+which is the branch of mathematics
+              inspiring the problems that are the
+focus of Bourdon and Shapiro's project. A
+              number of these problems concern
+the notion of numerical range of a linear
+              operator, an object that has
+relevance to quantum physics and that has proven
+              useful to engineers in
+determining the stability of certain control systems.
+              Other problems
+relate to the chaotic behavior of linear operators. That linear
+              operators
+can give rise to chaotic systems is a relatively recent discovery
+              which 
+has led to unexpected connections between operator theory and
+              dynamical
+systems. The idea of decomposability--the study of how to break
+              a
+complicated linear system up into simpler ones--has been shown to
+              have
+surprising connections with such chaotic behavior. The final group
+              of
+problems involves norm calculations for composition operators. The norm
+of
+              an operator measures how much the operator can stretch the unit ball of
+the
+              space on which it acts. Computer experimentation should yield
+insights and
+              intuition concerning both composition-operator norms and
+numerical ranges.
+              Through such experimentation, undergraduate students at
+Washington and Lee
+              University will be given an opportunity to participate
+in the project. The
+              training and research experience provided to these
+students by the project
+              contribute to its human-resources impact.
+
+
+

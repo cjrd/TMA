@@ -1,0 +1,19 @@
+              This action funds an NSF Postdoctoral Research Fellowship in Biological
+              Informatics for FY2001.  The fellowship supports research and training at the
+              postdoctoral level at the intersection of biology and the informational,
+              computational, mathematical, and statistical sciences. The goal of the
+              fellowship is to provide training to a young scientist in preparation for a
+              career in biological informatics in which research and education will be
+              integrated. There is an increasing need for training in biological informatics
+              at all occupational levels, and it is expected that Fellows trained through
+              these fellowships will play important roles in training of the future
+              workforce.
+
+The research and training plan for this fellowship is entitled
+              "Development of alternative clustering methods for genomic expression analysis
+              and characterization of coregulated genes in yeast."  This project is
+              developing fuzzy k-means clustering for analysis of genomic expression data,
+              with the goal of identifying coregulated yeast genes that are not identified by
+              traditional methods.  After identifying sets of coregulated genes, multiple
+              algorithms will be applied to identify sequence motifs that contribute to the
+              regulation of expression.

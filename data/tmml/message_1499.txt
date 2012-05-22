@@ -1,0 +1,6 @@
+per-word perplexity may be more illustrative because it is a positive number
+typically in the hundreds or thousands: ppx(corpus) = exp(- log p(corpus |
+model) / corpusSize). you may use this or base-2 log and exp.
+for illustrative interpretations of this, see:
+http://en.wikipedia.org/wiki/Perplexity
+one may interpret this as the

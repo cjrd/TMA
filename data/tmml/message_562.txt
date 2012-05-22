@@ -1,0 +1,4 @@
+Dave,
+Thanks! I should have figured that out - I guess I was just fooled by
+the complete alphas themselves not having to be normalized.
+Dave

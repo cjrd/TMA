@@ -1,0 +1,27 @@
+Dear All,
+The motivation for supervised LDA reads like this in the original
+paper: "The goal is to infer latent topics predictive of the response. Given
+an unlabeled document, we infer its topic structure using a fitted model,
+then form its prediction."
+I understand that the primary goal here is to infer the label of a
+document. My question is: does this supervision (i.e. labels of documents)
+help in having a better representation of the document in the topic space? I
+know that the supervision changes the underlying topic structure but my
+question is whether supervised topic model is the best way to do a
+*semi-supervised
+clustering* of the documents where the goal is little bit different. In that
+scenario, we assume that the labels are given and we want to modify the
+representation of the document in the topic space by incorporating these
+labels and our final goal is to do a better clustering of the documents.
+My hunch is that, supervised LDA is not the best way to model such
+problem as the observations are explained by both topic-word distributions
+and parameter $\eta$. This means that if you try to see the posterior of
+$\theta$ (document-topic distribution), everything will not be captured over
+there. Anybody has some idea about some work on a problem anything similar
+to this?
+Thanks,
+Ayan Acharya
+(Graduate Student,
+Electrical and Computer Engineering,
+University of Texas at Austin, USA
+Webpage: http://www.ideal.ece.utexas.edu/~ayan/)

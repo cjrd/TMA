@@ -1,0 +1,44 @@
+              0225673
+Baru
+
+The GEOscience Network (GEON) project seeks to bring
+              leading-edge information management research to bear on creating a
+              cyberinfrastructure for the solid earth geosciences to interlink
+              multidisciplinary geoscience data sets in 4D space.  The need to manage the
+              growing amounts of diverse Earth science data has been recognized through a
+              series of NSF-sponsored community meetings on Geoinformatics.  The GEON
+              collaboration between IT researchers, who represent key technology areas
+              relevant to GEON, and Earth science researchers, who represent a broad cross
+              section of Earth science sub-disciplines, will provide the foundation for a
+              national Geoinformatics program.
+
+There is a pressing need in the Earth
+              sciences for a national information infrastructure that enables the community
+              to share databases and tools to enable interdisciplinary analysis of networked
+              data sets in studying a wide range of phenomena including the interplay between
+              tectonics and the evolution of sedimentary basins;  the role of mountain
+              building in the evolution of climate and life;  broader predictive
+              understanding and modeling capabilities of geologic hazards, such as
+              earthquakes and volcanoes;  the 4D reconstruction of  the Earth through time; 
+              and, managing the natural resources of our planet. Each of these problems
+              requires interdisciplinary research to discover relationships among Earth
+              science disciplines, and depends on the community's ability to construct an
+              integrated geoscience information system.  The goal of GEON is to develop the
+              necessary IT foundations and create such a system.
+
+Many past and on-going
+              projects in the geosciences have produced valuable sub-disciplinary and
+              disciplinary databases.  Numerous national centers and organizations such as
+              IRIS, UNAVCO, the National Center for Ecological Analysis and Synthesis
+              (NCEAS), the Southern California Earthquake Center  (SCEC), as well as
+              government agencies such as the U.S. Geological Survey (USGS), are contributing
+              research and data to the community.  Building on this base, the imperative now
+              is to take a step beyond research resulting in disciplinary databases, towards
+              a new paradigm for interdisciplinary information integration and tool sharing
+              via the creation of the GEON cyberinfrastructure.  The research products and
+              services arising from GEON will be available to the entire scientific community
+              and will transform the way in which geoscience research is conducted, opening
+              unprecedented avenues for research and collaboration and providing the
+              foundation for creating geoscience collaboratories.
+***
+

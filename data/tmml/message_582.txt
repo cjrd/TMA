@@ -1,0 +1,8 @@
+Hi all,
+I have very recently looked at the LDA model and tried to implement it in
+java using the papers by Blei. I could understand the parameter estimation
+part. However, I am unclear as to how can I estimate the relevance of a
+document with respect to a query using this model. Could you please suggest
+me in this regard or give me a reference where I can understand the
+procedure?
+Thanks in Advance

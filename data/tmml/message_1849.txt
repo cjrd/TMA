@@ -1,0 +1,4 @@
+This is where you draw multiple independent samples from your sampler,
+use them to a estimate marginal distribution for each variable, and then
+assign the mode of that distribution to the variable.   It could be
+samples from the same chain, or if your model is identifiable, samples

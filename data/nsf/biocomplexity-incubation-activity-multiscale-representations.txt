@@ -1,0 +1,25 @@
+              Bar-Yam, Yaneer
+DMS-0083885
+
+Abstract:
+Recently, systems and fields ranging
+              from physics to Meteorology, from chemistry to biology, and even from
+              psychology to economics and political science have been recognized as having
+              common features which identify them as complex systems.  Complex systems have
+              structure and behavior on multiple scales of time and space.  However, complex
+              systems methods are lacking a formal multiscale methodology,.  This project of
+              formalizing multiscale descriptions of complex systems is a stage in the
+              development of a unifying approach, which will be useful to solve important
+              problems.  In this incubation activity the researchers will develop
+              collaborations and core research that will enable implementing this formalism
+              for problems of hurricane prediction, the sign of robust computer networks, and
+              the analysis of high throughput data generation in biology.
+
+This incubation
+              activity will lay the groundwork for this generally useful methodology to be
+              pursued by a community that includes selected members of the faculty of
+              Brandeis University, Boston University, Harvard University, MIT, Tufts
+              University, University of Massachusetts, Yale University, and other academic
+              institutions.  Interdisciplinary supervision will be integrated through a core
+              program developing the multiscale methodologies.
+

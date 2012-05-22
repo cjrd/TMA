@@ -1,0 +1,8 @@
+Li Li --
+Mallet (http://mallet.cs.umass.edu/topics.php) has a multi-threaded version
+of the fast-sampled LDA method described here:
+*Efficient Methods for Topic Model Inference on Streaming Document
+Collections* Limin Yao, David Mimno and Andrew McCallum. KDD, 2009, Paris,
+France. PDF <http://www.cs.umass.edu/~mimno/papers/fast-topic-model.pdf> slides
+on fast sampling<http://www.cs.umass.edu/~mimno/slides/fast-sparse-sampling.pdf>
+Dave

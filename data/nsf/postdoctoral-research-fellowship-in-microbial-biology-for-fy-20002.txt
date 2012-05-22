@@ -1,0 +1,23 @@
+              This action funds an NSF Postdoctoral Research Fellowship in Microbial Biology
+              for 2000.
+
+The research and training plan is in the area of Microbial
+              Genetics and is entitled "Molecular Biology of Anaerobic Ethylbenzene
+              Oxidation".  The goal of this research is to advance the understanding of the
+              processes involved in the microbial metabolism of aromatic hydrocarbons under
+              anaerobic conditions.  Recent biochemical investigation of anaerobic
+              ethylbenzene degradation with the denitrifying bacterium Azoarcus sp. strain
+              EB1 has led to a proposed pathway for ethylbenzene mineralization.  DNA
+              microarray analysis and 2-dimensional gel electrophoresis experiments are used
+              to identify genes differentially expressed during anaerobic growth of Azoarcus.
+               These experiments will lead to identification and functional analysis of genes
+              involved in ethylbenzene mineralization, with special consideration of the gene
+              associated with ethylbenzene dehydrogenase (a novel enzyme found within
+              Azoarcus which catalyzes the removal of a hydride from an aromatic hydrocarbon,
+              initiating anaerobic ethylbenzene oxidation).  The genetic tools developed
+              here, in addition to furthering knowledge of hydrocarbon metabolism, will also
+              be helpful in identifying environmental factors involved in regulation of
+              ethylbenzene degradation and will help to maximize the potential use of these
+              organisms for bioremediation applications.
+
+

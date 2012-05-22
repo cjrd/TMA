@@ -1,0 +1,5 @@
+You can use KL divergence or mutual information I guess, since here we are
+talking about random vectors ..
+Also see this paper:  "Topic-Link LDA: Joint Models of Topic and Author
+Community".  They have incorporated topic similarity in their model.
+Shibamouli

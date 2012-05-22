@@ -1,0 +1,21 @@
+In reply to your last comment, if I may add something, I am currently
+working on the relation between a topic (in a topic model environment) and
+an hypothetical underlying human concept, in various situations. What I
+wanted to say in my first reply is that it will be very difficult to
+correlate every topics with every concept (here, musical genre). You will
+have some "perfect" topics (only 1 musical genre for, say, the first ten
+artists in the topic), and some topics with mixed artists from various
+genres. As Harry said, in this case, he favors the idea of topics being
+composed of "close" artists. If you find, in some topics, artists from both
+Hip-Hop & RnB, I believe it is a good result in itself.
+Introducing correlation between topics means that we rather like to identify
+topics as concepts (here, musical concepts, not necessarily genres, such as
+electronic music, or oldies), and to find the underlying relations that
+exist in our mind between those. My point of view is that it is a difficult
+task, even if we shift our concept from genre to a broader musical concept.
+I've observed that identifying each topic with a unit of sense is a rare
+event (and it depends on the number of topics you choose, which could be, in
+this case, tricky). This is why I think that staying with mixed topics,
+which don't correspond to our acception of genre, doesn't seem to be a
+suboptimal solution, if the point is to provide recommendations.
+Xavier

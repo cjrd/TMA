@@ -1,0 +1,6 @@
+hi dave,
+yes, you should use the \phi_n variables for this.  you'll need to
+adapt the code.  the function that creates word-assigments.dat will do
+the trick.
+best,
+dave

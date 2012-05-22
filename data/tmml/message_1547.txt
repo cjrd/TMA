@@ -1,0 +1,12 @@
+Harry,
+For what it's worth, you might want to try the correlated topic model
+instead of (or in addition to) LDA.  Recall that the CTM assumes that topics
+can be correlated -- or anticorrelated -- with one another (in LDA, they're
+more independent).
+This could help with sparsity (it gives you information about other genres
+they like if you only know of one).  I also suspect that there's a lot of
+correlation in music preferences.  For example, there's probably a
+correlation between people who like hip-hop and r&b, just like there's a
+correlation between people who like rock and heavy metal.
+Cheers,
+Sean

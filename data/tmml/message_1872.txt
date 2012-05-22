@@ -1,0 +1,5 @@
+I have downloaded the code for CTM and built it on my laptop. I tried
+random and seeded CTM, while the random version gave the answer relatively
+fast (1-2 minutes), the seeded version ran too slow (I ran it for 1 hour
+but no result returned). I'm wondering is there any bug in my
+pre-processing program. Can anyone give me some hint on this.

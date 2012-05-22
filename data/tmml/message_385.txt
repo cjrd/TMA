@@ -1,0 +1,7 @@
+Hi, all
+Why is the E step of LDA iterative? I mean the updating formula of \gamma
+and \phi.
+In my algorithm, there are more variables to be updated in E step,
+is there any situation that such iterative E step does not converge or
+oscillate repeatedly?
+Shao

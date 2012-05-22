@@ -1,0 +1,14 @@
+hi all,
+I am a newbie in topic modeling.
+I ran parameter estimation on 100 topic model LDA using David blei's C
+implementation
+on AP corpus(provided along with code).
+The value of gamma parameter over different documents and different topic is
+0.0076798508 most of the time. Is this supposed to be this way?
+Initial value of alpha I had taken was 0.4.
+I am also attaching final.gamma file.
+Can anyone please tell me whether the values of gamma are expected to be
+this way or not.
+Sorry ,if the question is so naive.
+thanks,
+ajai.

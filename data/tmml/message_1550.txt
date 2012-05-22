@@ -1,0 +1,7 @@
+Dear all,
+I am sorry about taking your time to answer some questions about applying Gibbs sampling for supervised LDA.
+As we known, Jonathan Chang has provided the demo of Gibbs sampling for sLDA in his R package for LDA. In this demo, slda.em.R uses a function ".slda.collapsed.gibbs.sampler" which cannot be found in this demo. Therefore, I cannot catch the idea of the Gibbs sampling for sLDA very much. In the previous mail of topic-models, Jonathan Chang has provided a draft documentation [1] on the exact sampling equations. For sLDA of [1], p(y_d|z_d,b,a) is added, and the Likelihood function for Gibbs sampling is obtained as (D.24). But I don't  know how to update the value of y_d and z_d in the iteration of Gibbs sampling. And whether the values of a and b are constant or not? How to set the values of a and b?
+Could anyone please help me on these questions or please let me know if there is any reference on this? I really appreciate your help.
+[1] http://lists.cs.princeton.edu/pipermail/topic-models/attachments/20110210/89b1646c/attachment-0001.pdf
+Best regards,
+wluo

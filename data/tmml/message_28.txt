@@ -1,0 +1,4 @@
+I think you can record each \phi_n in the variational procedure to achieve
+this issue.
+Best
+Chong

@@ -1,0 +1,7 @@
+Hello,
+The paper mentions that due to the non-conjugacy of the distribution
+(log-normal and multinomial), it is hard/not possible to construct a
+Gibbs sampler for the CTM, and a Metropolis-Hastings sampler would
+have to be used. I haven't heard of any such implementations though -
+the one Tanmoy linked to uses variational bayes.
+Cheers,

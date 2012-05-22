@@ -1,0 +1,7 @@
+K, the number of topics, is far less than N, the number of words.
+Otherwise it wouldn't be doing much compression.
+Each word can be assigned to each topic with some probability, usually
+very small. That is what allows for polysemy.
+Aaron Zinman
+Fluid Interfaces Group
+MIT Media Lab

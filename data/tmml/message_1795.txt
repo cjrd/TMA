@@ -1,0 +1,9 @@
+Hi all,
+as I am playing around with David Blei's hlda implementation I wrote a
+script that converts the .txt files in a directory into the format
+needed by hlda (and ldac). It also provides some options like stopword
+removal. Maybe some of you find it useful. You can find a small
+description and the code download at my github account:
+https://github.com/JoKnopp/text2ldac
+Best regards,
+Johannes

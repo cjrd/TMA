@@ -1,0 +1,16 @@
+Dear all,
+I am wondering about the independence assumption of documents in corpus
+described in the document ?Parameter estimation for text analysis? [Gregor
+Heinrich] which is very good document about LDA with Gibbs sampling.
+The generative model of LDA here was described a bit different from the
+original paper of [Blei, 2003] in which the multinominal probability (a k*V
+matrix \phi in this document) is drawn from a Dir(\beta). Note that \beta
+here is a hyper parameter, not a k*V matrix like in the original paper.
+The equation (60) of probability of a corpus in the document of Heinrich is
+given:
+P(corpus|\alpha,\beta) = Product of p(document_i|\alpha,\beta)
+This is what makes me confused about the proper of this equation. Should the
+documents in the corpus be independent given \phi (k*V matrix, corresponding
+to \beta in the original paper) or not???
+Thank you,
+Nguyen Cam Tu

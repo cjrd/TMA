@@ -1,0 +1,41 @@
+              0110462
+Yanofsky
+
+Plant reproductive development has been the subject of
+              intensive investigation in recent years, and members of the MADS-box family of
+              regulatory genes have been shown to control key aspects of this complex
+              process.  The carpels and resulting fruit are arguably the most complex plant
+              organs, and the AGAMOUS (AG) clade of MADS-box genes is necessary for carpel
+              and fruit development.  There are four closely related genes within this
+              monophyletic clade, including AG, SHATTERPROOF1 (SHP1), SHP2 and AGL11.  The AG
+              gene, which encodes the C function of the widely-recognized ABC model of flower
+              organ identity, is necessary for carpel identity.  The SHP genes act
+              redundantly during fruit development to specify differentiation of the
+              dehiscence zone, a process that is required for seed dispersal.  Mutant alleles
+              for AGL11, the final member of this important clade of genes have been
+              isolated.  The initial analyses of agl11 mutants demonstrate that AGL11 is
+              required for normal ovule and seed development, and for the normal process of
+              seed dispersal.  Moreover, when mutations in AGL11 are combined with mutations
+              in both SHP1 and SHP2, ovule development is completely abolished.  These
+              studies indicate that AGL11, SHP1 and SHP2 act redundantly to specify ovule
+              identity.  With agl11-mutant alleles in hand, the next step is not only to
+              define the roles of AGL11 during ovule/carpel/seed/fruit development, but to
+              fully dissect the individual and redundant activities of the AG clade of genes.
+               These studies should have far-reaching implications for the study of similar
+              developmental processes in diverse plant species. Initial studies will focus on
+              a detailed description of the agl11 and agl11 shp1 shp2 mutant phenotypes. 
+              Unstable  alleles of AG will be made in order to fully explore the individual
+              and overlapping activities of AG with the other members of this gene clade. 
+              Interactions will be explored between AGL11 and the other AG-clade genes with
+              the many known genes involved in ovule and carpel development.  These studies
+              will involve the introduction of mutant alleles for these ovule/carpel
+              development genes into the agl11 and agl11 shp1 shp2 mutant backgrounds.  In
+              parallel with these genetic studies, the  expression of AGL11 RNA will be
+              monitored in each of these mutants and we will monitor the expression of each
+              of the ovule/carpel development genes in the agl11 and agl11 shp1 shp2
+              backgrounds.  Together these studies should provide a conceptual framework for
+              understanding the genetic and molecular interactions that underlie
+              ovule/carpel/seed/fruit development in Arabidopsis.  
+ 
+
+

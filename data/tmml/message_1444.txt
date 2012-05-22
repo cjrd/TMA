@@ -1,0 +1,4 @@
+I tried to use markov logic networks to do something like topical n-grams
+but in the end I couldn't get it to perform on even a corpus with two
+documents and a few thousand words total without the n-grams bit.
+How does your thing perform, Jerry?

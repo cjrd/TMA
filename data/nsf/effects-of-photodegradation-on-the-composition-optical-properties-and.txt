@@ -1,0 +1,58 @@
+              ABSTRACT
+
+OCE-0241946
+
+River-transported dissolved organic matter (DOM) is
+              the main source of terrestrial dissolved organic   carbon in the sea.  
+              Chemical, photochemical and microbial processes that occur in estuaries can  
+              dramatically alter the molecular composition, reactivity and optical properties
+              of riverine DOM before it   is discharged into the oceans.  Many rivers and
+              estuaries are net heterotrophic as indicated by CO2   supersaturation and
+              efflux, which in turn indicates that terrestrial DOM is being respired at high
+              rates.    High rates of respiration imply that terrestrial DOM undergoes
+              structural degradation and loss of source   specificity. Thus, without a better
+              understanding of the chemical and photochemical alterations that   riverine
+              components undergo in estuaries, we may be incorrectly interpreting the
+              chemical signatures   (i.e., source specificity) and optical properties of DOM
+              ultimately discharged to the coastal zone. 
+
+In this study, researchers at
+              the Old Dominion University will attempt to quantify variations in the
+              molecular size distributions, molecular-level characteristics, microbial
+              availability, and optical properties of riverine and estuarine DOM as a  
+              function of light exposure and initial DOM composition. The proposed
+              experiments will test the following hypotheses:   (1) Photochemical alteration
+              of aquatic DOM will lead to measurable shifts in molecular-weight distributions
+              and functional group composition; the types and magnitudes of the shifts will
+              depend upon the chemical characteristics of the initial DOM.  (2) Photochemical
+              alterations of the DOM will change its bioavailability; whether the
+              bioavailability increases or decreases will depend upon the chemical
+              characteristics of the initial and photochemically altered material.   
+
+A
+              multiple molecular-level approach, including direct temperature-resolved mass
+              spectrometry (DT- MS), pyrolysis-gas chromatography-mass spectrometry (PyGCMS),
+              Fourier transform infrared spectroscopy (FTIR), and nuclear magnetic resonance
+              spectroscopy (NMR), will be used to characterize light-mediated changes in
+              molecular-level composition within estuarine DOM and representative source
+              materials believed to contribute significantly to estuarine DOM.  DT-MS and
+              PyGCMS will be   performed on both ultrafiltered size fractions (UDOM) and
+              size-exclusion chromatography (SEC) fractions isolated from the water samples.
+              Changes in DOM structure, composition, functional groups  and oxidation as
+              revealed by spectroscopic, chromatographic, and MS techniques will then be
+              related to photochemically induced changes in DOM bioavailability
+              (incorporation and respiration).  
+
+ This study will be the first attempt to
+              evaluate in detail the role of photochemical degradation/alteration processes
+              on modulating the composition, microbial availability, and optical properties
+              of DOM discharged from rivers and estuaries to ocean margins.  By combining
+              mass spectrometry, FTIR, NMR, and optical property measurements with microbial
+              availability determinations, the investigators expect to identify the
+              functional groups and higher order structures responsible for varying both the
+              optical properties and the bioavailability of the DOM pool.  The use of SEC and
+              ultrafiltration to provide information on DOM size will indicate whether the
+              size spectrum shifts significantly during photodegradation and whether this
+              shift impacts DOM bioavailability.   
+
+

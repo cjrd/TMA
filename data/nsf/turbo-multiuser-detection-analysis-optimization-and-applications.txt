@@ -1,0 +1,45 @@
+              Wang, Xiaodong
+Columbia University
+
+Objectives and Significance: The turbo
+              principle [27 ],namely,the strategy that exploits the iterated
+exchange of
+              soft information between di .erent blocks in a communication receiver,has grown
+              to be a powerful
+tool in attacking a diverse set of problems in
+              communications.In particular,the turbo multiuser detection
+(MUD)paradigm [59
+              ]has attracted signi .cant recent attention as an e .ective technique for joint
+              decoding
+in multiuser communication systems.However to date the performance of
+              various turbo MUD schemes
+is largely demonstrated via simulations,and the
+              impact of turbo MUD on the network performance (e.g.,
+throughput and delay)has
+              not been explored systematically.It also remains unclear at this time how
+              the
+upper-layer functionalities (such as ARQ protocol,power control,and
+              admission control)should be designed
+to exploit the physical-layer turbo
+              MUD.The objective of the proposed project is to develop analytical tools
+              to
+assess and optimize the performance of various turbo MUD methods,and to
+              apply these esults to c oss-layer
+design in wireless networks.
+Recently a
+              technique known as density evolution [66,67 ]has been developed in the coding
+              community that
+permits analysis of iterative decoding algorithm for in
+              .nite-length codewords.In this proposal,under the
+density evolution
+              framework,we outline a research plan aimed at understanding of the design and
+              analysis of
+turbo multiuser detection for a variety of channel conditions and
+              receiver structures,and the design of some
+upper-layer functionalities which
+              takes into account the physical layer turbo MUD.While in this study we
+focus
+              on multiuser CDMA systems,the general principle is applicable to several
+              systems,such as space-time
+coding systems,OFDM systems,and intersymbol
+              interference systems.

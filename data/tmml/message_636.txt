@@ -1,0 +1,7 @@
+Hi,
+I have a question about topic models. As I know, most topic models deal with
+static collection. I wonder is there any research on topic model to tackle
+dynamic text collections which may change increasingly and dynamically so
+that the model should have the ability to update as rapidly as possible.
+thanks
+Song

@@ -1,0 +1,12 @@
+In variational LDA, for each individual word token we define a
+probability distribution over topics. I think of this as dividing the
+words into fractional words. The gamma variable for document d and
+topic k is the sum of all the word fractions for topic k in that
+document, plus a smoothing constant. For example, if I have 100 words
+in my document and they are all assigned 75% to topic 8, the "gamma"
+value for topic 8 will be ~75.
+Technically this vector is the parameters of a Dirichlet distribution
+over topics for that document, but you can interpret these values as
+the posterior probability of topics in the document by normalizing the
+vector to sum to 1.
+-David

@@ -1,0 +1,9 @@
+Hi Gregg and everyone,
+Aaron Zinman wrote:
+Results with a Gibbs sampler: Java vs. Java with JNI C saved 40% time
+(on the well-known NIPS data set). Pure native C is marginally faster.
+As an alternative to computing clusters, a $200 graphics adapter might
+be a solution, too. We've got some promising results parallelising lda-c
+on a G80 GPU using the CUDA API. Hope we can open the code soon.
+Best
+gregor

@@ -1,0 +1,23 @@
+              This Small Business Innovation Research (SBIR) Phase I project will demonstrate
+              the feasibility of using magnetic tensor gradiometry to both locate and
+              determine the depth of  buried underground and/or submerged underwater ferrous
+              pipes.  Detection and location of subsurface pipes is of great importance to
+              the utility, natural gas, and petroleum industries.  Existing techniques such
+              as Ground Penetrating Radar suffer from a number of limitations, including the
+              inability to accurately scan through multi-component soil and water.  This
+              technique uses passive magnetic gradiometry to detect underground and
+              underwater ferrous pipes, and is unaffected by the presence of water. 
+              Commercial magnetometer-based pipe locators do not measure enough component of
+              the magnetic field and the magnetic gradient to be able to correctly find the
+              depth of the buried pipe.  During Phase I, the feasibility of detecting and
+              locating one ferrous pipe in the presence of other ferrous pipes in the
+              vicinity will be studied.
+
+A magnetic tensor gradiometer based pipe locator
+              will first find applications in the natural gas, petroleum, and the utility
+              industries.  In addition, the gradiometer could be easily adapted to find
+              underground structures, underwater vehicles, buried current-carrying
+              conductors, buried unexploded ordnance and mines and concealed weapons.
+
+
+

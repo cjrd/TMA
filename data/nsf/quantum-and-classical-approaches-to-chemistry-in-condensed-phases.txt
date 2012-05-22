@@ -1,0 +1,21 @@
+              In this project supported by the Theoretical and Computational Chemistry Program
+              of the Chemistry Division, Schwartz will study chemical reaction dynamics in
+              condensed phases and complex systems using both quantum mechanical and
+              classical methods. The PI will develop his existing approach to extended modes
+              in liquids as well as a quantum Kramers methodology for examining the dynamics
+              of chemical reactions in condensed phases.  A new enzymatic system will be
+              studied in detail using both this quantum methodology and a classical approach
+              to discover rate-promoting vibrations in complex systems.  The investigation of
+              the dynamics of enzyme reactions and the search for "promoting vibrations"
+              addresses central problems in chemical and biological systems, such as the
+              catalytic importance of such vibrations.
+
+This project presents a balance
+              between developing new theory and applying it to interesting and important
+              problems in both isotropic fluid systems as well as in highly anisotropic
+              environments such as enzymes.  The proposed research will provide an approach
+              for predicting rates for chemical reactions in which quantum effects are
+              important.  The results are applicable to biological systems as well as to
+              systems in other branches of chemistry and materials science where electron-
+              and proton-transfer reactions are important.
+

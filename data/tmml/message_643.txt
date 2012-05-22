@@ -1,0 +1,31 @@
+PostDoc Position at L3S Research Center, Germany
+================================================
+The L3S Research Center, Hannover, Germany, invites applications for a
+PostDoc Position
+to coordinate L3S participation in the EU Integrated Project GLOCAL,
+starting in January 2010. The project focuses on mining, indexing and
+searching textual, audio-visual and user-generated media on the Web,
+using the notion of EVENT as central concept, covering personal, group
+as well as global events.
+Your research will focus on topics in the following areas:
+* Data Mining and Event Detection
+* Search and Information Retrieval
+* Semantic Enrichment
+* Social Networks and Web 2.0
+in a challenging and unique research environment.
+You should possess good knowledge and publications in one or several
+areas relevant for the topics specified in this announcement, as well
+as project management and proposal skills.  Good proficiency in
+English is expected, as well as an outstanding Ph.D. in computer
+science.
+The salary amounts to German TV-L E14, which is roughly 40.000 to
+50.000 Euro gross income per year.
+Please submit your application including the usual documents as well as a list
+of references, preferrably by email, to
+Prof. Dr. Wolfgang Nejdl
+L3S Research Center
+Appelstrasse 9a
+30167 Hannover, Germany
+http://www.L3S.de/
+http://www.kbs.uni-hannover.de/~nejdl/
+E-Mail: nejdl at L3S.de

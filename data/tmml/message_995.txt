@@ -1,0 +1,22 @@
+Blei's LDA code: A simple C version that is bulky and slow and uses VEM
+My very own matlab implementation: Super lame naive piece of code
+R's TopicModels package: Unable to scale with corpus size. Fails on corpus
+size
+of > 5000 documents
+Jonathan's R lda package: Does not have inference support...but does have
+workarounds
+Mahout's LDA package: Does not spit out the document representations in the
+topic space, no inference support for unseen documents.
+About the Mahout package I am still answering the above question. I rephrase
+it as given below: I found a great implementation of PLDA in Mahout. However
+there were certain things that were not clear to me. Firstly the "state" of the
+LDA that is spit out by each iteration of the EM algorithm (distributed EM) is
+just the global state (p(w|t))
+1) The document representations do not constitute the state (or is not
+written out by the Mahout package) ?
+2) How does inference work for new documents work in Mahout, is the support
+still not available.
+If any of you have been using PLDA in Mahout, your inputs will be greatly
+appreciated.
+Regards,
+Shivani

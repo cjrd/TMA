@@ -1,0 +1,57 @@
+              This proposal is a joint proposal submitted by investigators at the George
+              Washington University and the College of William and Mary.  
+
+In spite of
+              lower error rates and far higher capacities, WDM (Wavelength Division
+              Multiplexing) optical networks have yet to compete with their electronic
+              counterparts in the marketplace.  The main reason is the prohibitive cost of
+              the hardware, which puts optical networks out of reach for all but a few
+              users.
+The research proposed here takes aim at some of these prohibitive costs
+              and is intended to help network designers answer some questions related to
+              dimensioning and component-sizing that can help reduce hardware costs.
+
+The
+              proposed research takes as a starting point an all-optical circuit-switched
+              multifiber  avelength-routing ring, a tested technology, and asks the question
+              ``Can high performance be obtained with less hardware?'' While many aspects of
+              a network (ranging from manufacturability to higher-level software design) make
+              up the overall cost, this project focuses on reducing costs by limiting the
+              complexity (crosspoints) of optical switches and from more effectively using
+              available bandwidth by time-slotting.
+
+Three types of resource allocation
+              problems that arise from these cost considerations will be investigated and
+              algorithms that perform resource allocation will be designed and
+              evaluated.
+
+The first type of problem involves limiting the flexibility of
+              fiber-to-fiber switches in an effort to reduce the cost of manufacturing
+              switches. Preliminary results indicate that near-optimal throughput can be
+              obtained even with significant reduction in the connectivity of the switch.
+              Some research questions that will be addressed in this case are: how does
+              performance vary quantitatively with limitations in switching to fibers? does
+              wavelength allocation differ fundamentally with these restrictions?
+
+The
+              second type of problem involves constructing larger networks from smaller
+              rings. Research questions for this problem include:  how should all-optical
+              multiple rings be connected in a cost-effective manner, especially by using
+              fiber-switching limitations? how should wavelengths be partitioned (if at all)
+              for inter-ring and intra-ring sessions?
+
+The third type of problem involves
+              efficiently scheduling multi-rate sessions in an optical network with slots
+              (time-division multiplexing). The practical feasibility of this technology has
+              already been demonstrated. The focus here is on resource allocation problems
+              that, by more effectively using bandwidth with fiber-switching limitations,
+              reduce overall network cost.
+
+Finally, an integrative approach will be taken
+              to study network performance when all three types of design features are
+              present. The research results are intended to be applicable in the near future,
+              and therefore the initial approach will use a combination of simulation and
+              modeling, whereas later the PIs will aim for a deeper theoretical understanding
+              of the problem.
+
+

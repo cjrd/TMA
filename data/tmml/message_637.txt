@@ -1,0 +1,6 @@
+Hi everybody
+I face to a problem when i run the LDA program written by Blei in my ubuntu
+system. In terminal it says Segmentation fault.
+Is anyone know where it is wrong?
+Best!
+fengjiao

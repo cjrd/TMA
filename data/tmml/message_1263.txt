@@ -1,0 +1,21 @@
+Longer documents will naturally tend to use more topics; the
+document-level mixing proportions are all nonzero so the expected
+number of words allocated to any topic is increasing in document
+length. Then shorter documents will include fewer topics (and
+generally more common topics).
+In regard to your original question (Chris's response is
+comprehensive, but I'd already typed mine :) ) -  One (possible)
+reason for choosing a Poisson distribution for the document length is
+that if we envision the number of times word i appears in the document
+(say N_i) is drawn from a Poisson  with rate mu_i then the joint
+distribution of (N_1, ..., N_W) | \sum N_i is multinomial with
+parameter vector given by (mu_1, ..., mu_W) (normalized to sum to 1).
+Of course, another possible reason is that it's the go-to distribution
+for counts, and since inference is effectively conditional on document
+length in LDA it doesn't matter what distribution we put down -
+information doesn't flow back up to the parameters we care about.
+Assuming that document length is generally uninformative with regard
+to thematic content certainly has its roots earlier than the original
+LDA paper, and is presumably on solid ground. But it is implicit in
+the formulation of LDA and should be evaluated for a particular
+application.

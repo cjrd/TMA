@@ -1,0 +1,5 @@
+Hello all,
+I don't know how to get Eq.(15) from (14), I can understand the first and fourth terms about Dirichlet distribution, but cannot figure out?the other three terms related to multinomial distribution.
+I apprecate any explanation or recommendation some papers or books.
+Thanks,
+Jin

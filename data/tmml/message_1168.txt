@@ -1,0 +1,7 @@
+Thanks Gregor, Laura and Arnim. Thats was very useful.
+We already have a LDA based topic model that classifies documents. I was
+pondering how to relate this model to Topic Maps and Ontologies. Now I can
+see how it might fail for hierarchies and direction. I will take a look at
+the correlation models and other references you mentioned.
+Thanks
+/antony

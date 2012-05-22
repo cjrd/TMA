@@ -1,0 +1,21 @@
+Dear friends:
+I am reading HDP matlab codes these days.
+I have problem understanding the marginal likelihood computation especially
+for multinomial data. In directory npbayes-r1\distributions\@Multinomial,
+marglikelihood.m
+function lik = marglikelihood(qq,ss);
+lik = - cat(2,qq.lik);
+qq = adddata(qq,ss);
+lik = lik + cat(2,qq.lik);
+(1)Why we should first subtract likelihood, then add new likelihood?
+(2) Anyone can tell me *a clear expression* of the marginal likelihood when
+h (parameter) is Dirichlet and f (data distribution ) is multinomial ?
+I derived my expression according to equation (30) in HDP paper, but still
+not very exactly as
+the matlab code for multinomial data case.
+(3) In adddata.m under directory npbayes-r1\distributions\@Multinomial,
+What glob.Zi and glob.ZZ represent and how their index orginized?
+I think the key to these problems is the expression of marginal likelihood
+for multinomial case. I will be very appreciated if anyone can give me some
+explanation of one of these 3 questions.
+Thank you.

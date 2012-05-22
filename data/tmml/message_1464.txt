@@ -1,0 +1,2 @@
+Because I think such a graph will have a concavity that will give you a beta
+depending on the data you have.

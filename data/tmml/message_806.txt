@@ -1,0 +1,11 @@
+Hi Dear all,
+I now understand the basic idea of hLDA, but for the initialization of model
+inference by Gibbs sampling, I am still not so clear.
+David Blei has replied to one mail in this list talking about it:
+https://lists.cs.princeton.edu/pipermail/topic-models/2008-July/000294.html
+I am wondering whether there are some papers discuss more detailedly  about
+this point?
+Thanks.
+Best regards.
+Justin Cen
+2010-01-09

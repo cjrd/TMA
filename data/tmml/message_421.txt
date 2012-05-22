@@ -1,0 +1,19 @@
+FastLDA provides major speedups on Gibbs Sampling
+(www.ics.uci.edu/~iporteou/rtp378-porteous.pdf), and using native code
+will (obviously) be fastest.  You can try comparing various
+implementations, but all vanilla Gibbs sampler implementations of LDA
+should basically have the same performance given the algorithm is
+essentially the same.
+Reducing any aspect of those loops will make it faster, whether that is
+less documents, a smaller vocabulary, less topics, or fewer iterations.
+Vocab is an area where you can easily cut back--stemming, stopwording
+aggressively, or other filtering techniques not only makes your
+computation faster, it also reduces noise in the system resulting in
+better topic models.  For example, I've been able to easily reduce a
+corpus from 200k words to 30k with better results.
+I'm sure others have much smarter things to say on Variational EM vs
+Gibbs, so I'll punt on that.
+Also if you have multiple machines lying around, there are papers out
+there on parallelizing LDA.
+Aaron
+Gregg Lind wrote:

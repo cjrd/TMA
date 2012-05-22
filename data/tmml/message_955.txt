@@ -1,0 +1,11 @@
+Hi Scott,
+I ran into this problem a while ago and figured out the right file format.
+I'm including a link to my post to this list where I described the format
+of the file.  I just generated it from a MALLET state file, so I don't know
+how to get it from the lda-c code.  I'm not even familiar with the output
+that lda-c gives you, but if you have a theta for each document and a phi
+for each topic, for each document you can find the most probable topic for
+each word.  The math is easy enough.
+https://lists.cs.princeton.edu/pipermail/topic-models/2010-August/000893.html
+<https://lists.cs.princeton.edu/pipermail/topic-models/2010-August/000893.html>Matt
+Gardner

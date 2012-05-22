@@ -1,0 +1,12 @@
+Sorry for the brevity...
+The sum term in Eq. 7 "counts" the expected number of times that topic i
+was seen with any word in the document (i.e., summing over all topics
+yields  the document length). In order to avoid re-calculation of this
+sum at every iteration, it is useful to instead start with equal
+distribution 1/ntopics and then add only the change of phi (that is
+found via Eq. 6).
+And: compute_likelihood() should correspond to the free energy, i.e.,
+rather the lower bound on the likelihood, Eq. 15.
+Hope that helps
+gregor
+Yuan Miaolong wrote:

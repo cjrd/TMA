@@ -1,0 +1,18 @@
+Hi, I'm MS student at KAIST who are studying LDA.
+I have some basic questions about LDA.
+Please help me~
+1. We inference LDA model to get p(theta, z|w, alpha,beta)=p(theta,
+z,w|alpha, beta) / p(w|alpha,beta).
+we can get p(w|alpha, beta) by variational inference or EP or others.
+But how can I get p(theta, z|alpha,beta)?
+2. In final.gamma file, there is a  [# of topic] * [# of docs] matrix.
+Is this p(theta, z| w, alpha, beta)?
+If then, why gamma is related to p(theta, z| w, alpha, beta)?
+3. I think gamma is related to D(theta| gamma) = p(w|alpha,beta)
+Because gamma is scalar in this program, we should think
+gamma_1=gamma_2=...=gamma_A  (A=# of subtopics)
+Then how can I get p(theta, z) from D(theta|gamma)?
+Maybe I can get p(theta, z) from D(theta|gamma) by sampling, but I think it
+has different value every time.
+I'll look forward to the answer mail.
+Best regards, SeungRyul.

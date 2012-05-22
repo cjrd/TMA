@@ -1,0 +1,2 @@
+Hello Anthony,
+I'll have a look, cheers! Can you give any ballpark figure about how it compares to LDA-C, so that I know what to expect, performance-wise?

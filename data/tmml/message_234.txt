@@ -1,0 +1,22 @@
+Hi Topic Model List Members,
+suppose p(x|\theta) is multinomial and p(\theta|\alpha) is Dirichlet,
+then conjugacy indicates that if we fixed \alpha and observed N data items x
+with histogram \beta,
+the posterior of \theta is Dir(\alpha + \beta), from this we can see that
+the final result of LDA should have the following equation satisfied for
+each document,
+\alpha + sum(\phi) = \gamma   ----------- (1)
+however, since \alpha is solved from the sufficient statistics of \gamma,
+then from John's VMP paper, another equation satisfies,
+M * (psi(\alpha) - psi(sum(\alpha))) = M * (psi(mean \gamma) - psi(sum(mean
+\gamma)))   ----------- (2)
+This indicates that \alpha should be close to the mean of \gamma, does that
+mean,
+if there are too many words for each document, the solution for \alpha would
+not be accuracy,
+since (1) and (2) will not be satisfied simultaneously?
+I have tested it experimentally, when there are very few words, (1)
+satisfies, but if there are many words,
+the \alpha + sum(\phi) is always bigger than \gamma for a nearly constant
+value.
+Yuanlong Shao

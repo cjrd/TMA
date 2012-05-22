@@ -1,0 +1,26 @@
+Dear all,
+Machine learning is an emerging and fast changing scientific area that
+is crossing many disciplinary boundaries.  What I often find amazing
+about the community is how diverse it is, drawing inspiration from so
+many sources, and getting applied in, and transforming so many
+different fields.
+To help me understand the machine learning community better, and to
+solicit opinions of members of the community with regards the role and
+place of machine learning in relation to other disciplines and in the
+university, I have put together a survey, at:
+https://opinio.ucl.ac.uk/s?s=13907
+I would really appreciate it if you can spend 5-10 minutes completing
+it, thank you very much!  If you are busy just think of it as
+procrastination :)
+This survey is conducted as part of the UCL Post Graduate Certificate
+in Learning and Teaching in Higher Education course on curriculum
+development PGCLTHE-D
+(http://www.ucl.ac.uk/calt/masters/modules/EDUCGC02.html). No
+personally identifying information will be collected.
+If you are interested in the outcome of the survey I will be happy to
+get in touch with you after it has closed (please just drop me an
+email separately).
+Apologies in advance for cross-posting.
+Best regards,
+-yw
+ps: Rebecca please post on pascal mailing list for me.  Thank you!

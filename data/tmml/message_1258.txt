@@ -1,0 +1,6 @@
+Hi Franco,
+Since I am not quite familiar with gibbs sampling, can you give me some
+examples of the quantities which could represent the gibbs sampling's
+performance? Thanks a lot.
+Regards,
+Peng

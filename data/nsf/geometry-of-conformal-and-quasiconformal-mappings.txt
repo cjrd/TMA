@@ -1,0 +1,102 @@
+              
+Abstract for DMS - 0103626
+
+The PI, Christopher Bishop,  will study the
+              geometric properties
+of conformal mappings in the plane and quasiconformal
+              mappings in space,
+focusing on the expansion properties of such maps and
+              investigating
+various applications to geometric function theory, dynamics
+              and
+topology.  The PI has shown that a result of Dennis Sullivan's
+concerning
+               the geometry of convex
+bodies in hyperbolic three space implies a
+              factorization
+theorem for conformal mappings in the plane and this, in
+              turn,
+implies  uniform bounds on the amount of
+contraction a conformal map in
+              the plane can have.  Finding the best constants
+in the factorization  theorem
+              has consequences for well
+known problems such as dimension distortion,
+              integral means and Brennan's
+conjecture.  The PI will continue his work
+              on
+limit sets of Kleinian groups, a natural and important class of fractal
+              sets.
+The questions here are mainly to estimate the fractal dimension of these
+              sets
+and study the behavior of the dimension as the group is deformed. 
+The
+              PI will also  work on the metric properties
+of harmonic measures, particularly
+              results which quantify the 
+idea that harmonicmeasure cannot be concentrated
+              on a small set.  Problems include the
+lower density conjecture, stability of
+              harmonic measure and the growth rate
+of diffusion limited aggregation.  A few
+              other questions
+involving  quasiconformal and biLipschitz maps are also
+              considered.
+
+
+Conformal mappings are a class of functions which are
+              important
+in many area of mathematics and which are closely related
+to mnay
+              physical problems (fluid flow, heat conduction, 
+electric fields, random
+              growth models, ...) and have been 
+intensively studied for many years.  One of
+              the fundamental 
+properties of such maps is expansion; they tend to push
+              
+points farther apart on average.   Making this precise has 
+motivated much
+              research in mathematical analysis.
+The  PI has discovered a new way of
+              quantifying
+this expansion by approximating conformal maps by (the
+              more
+general class of) quasiconformal maps and showing these
+approximations
+              may be taken with a very  strong 
+expansion property.  This has given a
+              clearer understanding of some
+known results and has led to progress on new
+              problems.
+In particular, it implies new results about Kleinian groups
+(these
+              are important examples of conformal dynamical systems, 
+and hence a
+              contribution to the more general area of 
+dynamical systems, fractals and
+              chaos).  The PI's approach 
+also ties the behavior of conformal maps to the
+              geometry 
+three dimensional hyperbolic space; this connection seems 
+to be
+              new and should lead to many interesting problems 
+and  more interaction
+              between the areas of complex 
+analysis and three dimensional topology (already
+              connected 
+in other ways).  He will also investigate the
+              computational
+aspects of this connection which may lead to new methods 
+of
+              computing conformal maps and Greens functions (important
+for a variety of
+              applications).  The PI will also continue 
+his investigation of other problems
+              including the geometry  of random
+paths such as Brownian motion, the stability
+              under
+perturbation of certain dynamical systems and fundamental
+geometric
+              properties of conformal and quasiconformal mappings.
+

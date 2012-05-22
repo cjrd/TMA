@@ -1,0 +1,20 @@
+              Duffy 
+0112532 
+
+The investigators will develop new theoretical techniques
+              and conduct new high pressure and temperature experiments to examine the
+              melting curves, crystal structures, and high-temperature equations of state
+              (EOS) of the following materials: MgO, SiO2, MgSiO3, and Au.   They will
+              accomplish this by developing a major extension of the density functional
+              theory - molecular dynamics (DFT-MD) method and applying it to minerals of the
+              Earth's deep mantle.  The approach is to develop empirical "optimal" potentials
+              from the results of a DFT-MD simulation.  This optimal potential can then be
+              used in further calculations involving much larger systems and longer run
+              durations.  From this, the investigators can determine crystal structures,
+              melting curves, liquid viscosities, compressibilities, elastic constants and
+              other thermoelastic properties directly at lower mantle P-T conditions. They
+              will also carry out detailed comparison of their simulation results with
+              laser-heated synchrotron experiments on MgO, SiO2, and Au to assess the
+              reliability of the OP method. In particular, they will focus on measurements of
+              melting curves of these materials at high pressure to provide a sensitive test
+              of the optimal potential calculations. 

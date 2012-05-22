@@ -1,0 +1,4 @@
+Hi
+Yes the topic number should be k, but please have a look at equation(2) in
+section 3, the author assumes N topics and N words, why? why do they assume
+#topic=#words?

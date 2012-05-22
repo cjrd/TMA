@@ -1,0 +1,73 @@
+              	A grant has been awarded to Dr. Steven James and Dr. Kazuo Hiraizumi,
+              co-principal investigators at Gettysburg College, to procure two major items of
+              equipment through the Major Research Instrumentation Program of the NSF.  A
+              computerized system that integrates photodocumentation with image analysis and
+              a preparative ultracentrifuge will allow the two faculty and their students to
+              conduct research that cannot be executed with the equipment currently available
+              at Gettysburg College.  The goals of this grant are to expand the scope and
+              quality of training in molecular and cellular biology for undergraduates.
+              Gettysburg College provides a research-intensive learning environment for
+              undergraduates in the sciences.  Experiential, hands-on learning is encouraged
+              by requiring student-faculty collaborative research for the B.S. degrees in
+              Biology and Biochemistry/Molecular Biology (BMB).  Students in these degree
+              programs write a research prospectus, spend at least a full semester on their
+              research, write a scientific paper on their work that is evaluated by faculty,
+              and present their research to their peers during an end-of-semester colloquium.
+               All BMB majors are required to conduct individualized research and over 60% of
+              Biology majors choose the B.S. track; a substantial number of these students go
+              on to graduate school.  The instrumentation procured with NSF support will
+              allow undergraduates working with Drs. James and Hiraizumi to perform
+              cutting-edge research, thereby giving them excellent preparation for graduate
+              school and careers in science. 
+
+	The focus of Dr. James' research is the
+              regulation of the cell cycle, a carefully orchestrated series of events that
+              coordinates chromosome replication with nuclear and cell division.  Dr. James
+              studies the role of genes that regulate this process, using as a model system
+              the bread mold Aspergillus.  The focus of Dr. Hiraizumi's research is
+              population and evolutionary genetics of gene regulation.  He studies genes that
+              code for a group of digestive enzymes called peptidases, using the fruit fly
+              Drosophila melanogaster.  Both faculty employ techniques of molecular genetics,
+              cell biology, and biochemistry in their research.  In these fields, a most
+              fundamental question involves the relationship between the DNA sequence of a
+              gene and the function of the protein that it encodes.  Mutations in the
+              sequence of DNA often cripple or destroy the resulting protein, which can
+              produce devastating effects.  To understand the relationship between DNA
+              sequence, protein function, and the physiological effects of mutations requires
+              sophisticated instrumentation for isolating molecules and measuring their
+              activity.  First, the ultracentrifuge provided by support from this NSF-MRI
+              grant will enable isolation of large amounts of maximally pure DNA and protein.
+               This preparative ultracentrifuge subjects particles or molecules to high
+              centrifugal force and separates them based on differences in their density,
+              size or shape.  Second, the photodocumentation /image analysis system will be
+              used to measure the activity of both normal and mutant proteins.  These
+              proteins will be isolated and purified using the ultracentrifuge, or by a
+              different technique called gel electrophoresis.  Gel electrophoresis separates
+              molecules through a gel matrix subjected to electrical current.  DNA can also
+              be separated in this manner.  To detect and measure the molecules of interest,
+              they are chemically stained or radioactively labeled.   The resulting signals
+              are stored as electronic files, which can be analyzed for quantitative
+              differences with a high degree of sensitivity and precision.  This helps to
+              determine which genes are turned on under various conditions, how much of the
+              protein is present, and whether there are differences in the activity of a
+              protein between genetically different individuals.
+
+	The research conducted
+              by these faculty and their students addresses questions that have potential
+              medical applications.  For example, many genes that regulate cell division can
+              undergo mutation that leads to cancer.  In all organisms, cell division is
+              governed by a similar set of genes.  Thus, investigating the regulation of
+              genes that control cell division in a simple, easy-to-study model organism such
+              as Aspergillus aids in understanding the molecular and cellular processes
+              leading to cancer in more complex, less tractable organisms such as humans. 
+              Recently, scientists discovered surprising similarity in the DNA sequence of
+              human and fruit fly genes.  A mutation in a peptidase-coding gene could produce
+              debilitating effects, such as a form of neuronal ceroid lipofuscinosis, a fatal
+              hereditary neurodegenerative disease in humans.  The use of the fruit fly
+              peptidases as a model provides information on how mutations affect the
+              physiological function of these enzymes in other organisms, including humans. 
+              Thus, with support from the NSF-MRI grant, Gettysburg College undergraduates
+              will benefit from expanded opportunities to perform modern research on relevant
+              biological problems.  These experiences will in turn prepare them for graduate
+              studies in molecular and cellular biology and careers in biomedical research.
+

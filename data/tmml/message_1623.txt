@@ -1,0 +1,9 @@
+Dear Chaorong Wu,
+Joint sentiment/topic model for sentiment analysis (2009)
+http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.163.5917&rep=rep1&type=pdf
+or:
+A comparative study of Bayesian models for unsupervised sentiment detection
+(2010)
+http://oro.open.ac.uk/23784/1/W10-2918.pdf
+Best
+Arnim

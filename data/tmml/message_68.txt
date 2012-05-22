@@ -1,0 +1,4 @@
+Mark Steyvers & Tom Griffiths have a nice introduction on LDA/topic
+modeling written for a wider audience:
+http://psiexp.ss.uci.edu/research/papers/SteyversGriffithsLSABookFormatted.pdf
+Gabriel Murray wrote:

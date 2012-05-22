@@ -1,0 +1,10 @@
+Hi, Radim
+what new york times data do you use? mine is
+New York Times:
+The New York Times (NYT) dataset contains about 1.8 million documents, with about 461 million tokens and a vocabulary size of 8,000. These articles are from the years 1987 to 2007,
+the vocab is at http://www.cs.princeton.edu/~chongw/nyt-vocab.dat
+for kappa=0.8, tau0=1, and batchsize=500, i got topics like this
+http://www.cs.princeton.edu/~chongw/nyt-topics.txt
+i also found that if the number of documents is small, the online algorithm doesn't work well.
+best
+chong

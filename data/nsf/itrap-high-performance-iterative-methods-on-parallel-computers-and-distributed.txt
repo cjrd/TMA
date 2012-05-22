@@ -1,0 +1,26 @@
+              The numerical solution of large, sparse systems of linear equations and
+              eigenvalue problems is central to many scientific and engineering applications.
+              Iterative methods executed on parallel computers often provide the only means
+              of solving these problems. Most parallel implementations of iterative methods
+              have adopted a fine grain allocation of equations to different processors.
+              However, recent architectural and computational advances suggest that
+              fine-grain methods may be inadequate. Specifically, high network latencies and
+              synchronization overheads may make fine grain methods ill suited to clusters of
+              workstations (COWs) and massively parallel processors (MPPs). In addition,
+              partitioning a problem to a large number of processors may lead to load
+              imbalances and processor idling. The increasing use of Computational Grids
+              consisting of heterogeneous networks only makes these problems worse. Achieving
+              high performance requires new levels of sophistication in parallel algorithms
+              and in the interaction of the implementation with the runtime system.
+
+This
+              project will advance the state of the art in high performance, parallel
+              iterative methods by exploring algorithms that combine coarse and fine
+              granularity, and dynamic resource utilization schemes. It will build a new
+              multigrain implementation level on top of traditional parallelization methods
+              to introduce coarser granularity during the preconditioning step. It will
+              identify system-aware iterative algorithms and algorithmic patterns that enable
+              dynamic load balancing, and use them to exploit available runtime system
+              information. The resulting codes will be made available to the community.
+ 
+

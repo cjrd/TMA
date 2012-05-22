@@ -1,0 +1,10 @@
+hello gregor:
+Thanks a million for your quick response. I have try to add "epsilon
+= 1.e-12" to every element in the two 1*N matrix and then try to calculate
+the KL divergence and the answer is not NAN now. Is this right? There is a
+question if I do that the sum of the N elements will be bigger than 1,
+instead of equaling 1. Will this influence the correction of the outcome?
+Thank you very much!
+BR,
+Shuang
+2011/7/2 Gregor Heinrich <gregor at arbylon.net>

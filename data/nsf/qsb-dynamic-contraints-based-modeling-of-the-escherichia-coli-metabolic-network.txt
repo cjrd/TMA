@@ -1,0 +1,12 @@
+              The overall goal is to develop quantitative descriptions of bacterial metabolism
+              to help elucidate the genotype-phenotype relation. The focus is on augmenting
+              network analysis and phenotype prediction by accounting for genetic-level
+              capabilities and control mechanisms.  The tasks are to perform a sensitivity
+              analysis of a simplified E. coli network model contained using Lagrange
+              multipliers from nonlinear programming and to collect data on constraints for a
+              large scale dynamic FBA simulation from the literature and existing online
+              databases. The union of biochemical engineering and system analysis
+              investigators will provide significant cross-training to the student
+              involved.
+
+

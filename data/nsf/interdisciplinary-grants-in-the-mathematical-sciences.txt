@@ -1,0 +1,38 @@
+              This grant will provide an immersion experience for Prof. Jerome Spanier and Dr.
+              Rong Kong at one of the premier Biomedical Optics institutions in the world,
+              the Beckman Laser Institute and Medical Clinic (BLIMC) at the University of
+              California at Irvine (UCI).  A major thrust of the research program at BLIMC is
+              to understand how light propagates in heterogeneous tissue.  This understanding
+              is essential to the use of the laser as an effective non-invasive diagnostic
+              and therapeutic tool.  The immersion of a small group of mathematical
+              scientists at UCI, where there is access to an elaborate training program that
+              prepares physical scientists for work in photomedicine, will deepen
+              understanding of basic biological questions and provide accurate quantitative
+              comparisons of Monte Carlo-based computer algorithms with clinical
+              measurements.  The latter is key to the development of real-time imaging
+              techniques for non-invasive, early detection and
+treatment of cancer, based on
+              the use of laser probes.
+
+Benefits to be derived from the grant experience
+              include: a. acceleration of the education of a cadre of mathematical scientists
+              in the biology and medicine essential to an effective collaboration between
+              applied
+mathematicians and biomedical scientists; b. cultivation of a rich
+              platform for additional training of mathematicians and scientists in the
+              emerging field of tissue optics; c. enhancement of an important
+              multidisciplinary research program aimed at real-time imaging of heterogeneous
+              tissue using hand held
+laser probes in clinical settings; d. dissemination of
+              new, important mathematical and computational methods for detection and
+              treatment of disease through publications in the biomedical and applied
+              mathematics literature and oral presentations at conferences attended by both
+              mathematicians and biomedical scientists.
+
+This year of intense interaction
+              will be followed by an ongoing collaboration between the two universities aimed
+              at substantively improving their joint capability to quantify optical
+              heterogeneities in tissues.  This IGMS project is jointly supported by the MPS
+              Office of  Multidisciplinary Activities (OMA) and the Division of  Mathematical
+              Sciences (DMS).
+

@@ -1,0 +1,97 @@
+.paper {
+	text-align: justify;
+	margin-left:auto;
+    margin-right:auto;
+    width:500px;
+    table-layout: fixed;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+	border: 50px solid transparent;
+  -o-border-image: url("/static/images/paper.png") 50;
+    -webkit-border-image: url("/static/images/paper.png") 50;
+    -moz-border-image: url("/static/images/paper.png") 50;
+    border-image: url("/static/images/paper.png") 50; /* border-image doesn't show on ie9 */
+}
+
+body {
+    margin: 20px;
+    padding: 20px;
+    font: 16px Calibri, "Gill Sans", "Trebuchet MS", sans-serif;
+
+}
+
+h2 {
+    line-height: 0em;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+.container {
+    margin: 20px 0px 20px 0px;
+}
+
+.container_title {
+    margin: 0;
+    padding: 3px 5px 3px 3px;
+    background-color: #E6EEEE;
+    font-weight: bold;
+    border: 2px solid #CDCDCD;
+    text-align: center;
+}
+
+div.container_title a {
+    font-size: 15px;
+    color: black;
+}
+.container_title{
+    background-color: #E6EEEE;
+    border: 2px solid #CDCDCD;
+    font-weight: bold;
+    margin: 0;
+    padding: 3px 5px 3px 3px;
+    text-align: center;
+}
+
+
+
+.tabs {
+    font-size: 10pt;
+    border: 2px solid #CDCDCD;
+}
+
+ul.tab_nav {
+    list-style: none;
+    margin: 0;
+    padding: 3px 5px 3px 3px;
+    background-color: #E6EEEE;
+    font-weight: bold;
+}
+
+ul.tab_nav li {
+    display: inline;
+    border: 1px;
+}
+
+ul.tab_nav li a {
+    padding: 3px 5px;
+    color: #000;
+    text-decoration: none;
+}
+
+ul.tab_nav li a.selected,
+ul.tab_nav li a:hover {
+    background-color: #F5EEEE;
+    color: #000;
+}
+
+ul.tab_nav li a:focus {
+    outline: 0;
+}
+
+div.tabs div {
+    padding: 5px;
+    padding-top: 12px;
+    background-color: #F5EEEE;
+    font-size: 11pt;
+}

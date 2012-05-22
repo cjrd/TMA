@@ -1,0 +1,9 @@
+You may also be interested in Online LDA, which uses online
+variational Bayes to fit topics incrementally. The paper is at
+http://www.cs.princeton.edu/~blei/papers/HoffmanBleiBach2010b.pdf
+and Python code implementing it is available on my website at
+http://www.cs.princeton.edu/~mdhoffma
+and a (much faster but less readable) implementation is in Vowpal Wabbit:
+http://hunch.net/~vw/
+Best,
+Matt

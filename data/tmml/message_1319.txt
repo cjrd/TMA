@@ -1,0 +1,15 @@
+Hi,
+About temporal modeling or revolution of topics:
+Here is our work titled "Probabilistic Latent Sequential Motifs:
+Discovering Temporal Activity patterns in Video scenes.
+http://bmvc10.dcs.aber.ac.uk/proc/conference/paper117/paper117.pdf
+Though this work is primarily motivated by video activity analysis, it
+can be applied to other data sets too.
+In this paper we have also referred to other temporal models like:
+1. Dynamic topic model -
+http://video.google.com/videoplay?docid=3077213787166426672#
+2. Hidden topic Markov models -  http://www.cs.huji.ac.il/~amitg/htmm.html
+3. Topics over time  http://www.cs.umass.edu/~mccallum/papers/tot-kdd06.pdf
+4. Markov clustering topic model http://www.dcs.qmul.ac.uk/~sgg/papers/HospedalesGongXiang_ICCV09.pdf
+regards
+Jagan

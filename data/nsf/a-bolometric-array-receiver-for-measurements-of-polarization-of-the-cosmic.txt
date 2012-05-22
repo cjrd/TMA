@@ -1,0 +1,22 @@
+              Church, Sarah E., and Bock, James J.
+"A Bolometric Array Receiver for
+              Measurements of Polarization of the Cosmic Microwave Background
+              Radiation"
+AST-0096778
+
+This program will develop an instrument package to
+              detect and characterize the weak polarization signal of the Cosmic Microwave
+              Background (CMB) over 100 square degrees at frequencies of 100, 150, and 220
+              GHz.  The awardees will construct a bolometer array called QUEST that will
+              simultaneously observe 37 pixels on the sky in two orthogonal directions of
+              linear polarization.    They will work in collaboration with researchers at
+              University of Cardiff, Wales, who will develop a 2.6-meter-diameter telescope
+              as the platform for QUEST, to be located at the Mauna Kea Observatory in
+              Hawaii.   CMB polarization has not yet been detected, but potentially contains
+              much important cosmological information regarding the state of the universe at
+              the time of recombination. The  QUEST experiment will enable limits to be set
+              on the cosmic inflationary potential that are 3 times more sensitive than
+              expected from the space-based Planck Surveyor telescope. 
+***
+
+

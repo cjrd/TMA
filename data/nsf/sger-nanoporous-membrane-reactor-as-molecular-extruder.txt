@@ -1,0 +1,23 @@
+              Abstract - Lin - 0080761
+
+This research involves the development of a
+              nanomembrane reactor as a molecular extruder for efficient production of
+              chemicals.  The reactor contains an inorganic membrane with catalytically
+              active straight nanopores, and can be considered as a bundle of nano-sized
+              reactor tubes.  By adjusting the nanopore dimensions, selecting an appropriate
+              active coating species, and optimizing the reaction conditions, the PI can
+              manipulate the reaction mechanism or path for synthesis of molecules at high
+              yield or with special properties, unattainable by the conventional
+              technologies.  The research is aimed at demonstrating the synthesis methodology
+              of the straight-nanopore membranes and the technical feasibility of the
+              membrane reactor concept incorporating them, for the production of polyethylene
+              nanofibers.
+
+For this initial exploratory phase, alumina-silica membranes
+              with straight pores of 3-5 nm diameter and 10-100 mm in length will be tested. 
+              They will be constructed by modifying straight Anopore alumina membranes by
+              atomic layer chemical vapor deposition of silica.  The internal pore surfaces
+              of the nanopores will be modified by a metallocene catalyst.  The reactor will
+              be tested by using it to synthesize polyethylene nanofibers with polymer chains
+              oriented in one direction.  
+

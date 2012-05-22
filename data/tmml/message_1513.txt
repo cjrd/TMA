@@ -1,0 +1,35 @@
+* Apologies for cross-posting *
+This is sent on behalf or the 2011 edition of IEEE/WIC/ACM WI-IAT
+conference organizing committee.
+****************************************************************************
+The 2011 IEEE/WIC/ACM INTERNATIONAL JOINT CONFERENCE ON
+WEB INTELLIGENCE (WI 2011)
+INTELLIGENT AGENT TECHNOLOGY (IAT 2011)
+CALL FOR PAPERS
+****************************************************************************
+August 22 - 27, 2011, Lyon, France
+http://wi-iat-2011.org
+Sponsored By
+IEEE Computer Society
+Web Intelligence Consortium (WIC)
+Association for Computing Machinery (ACM)
+****************************************************************************
+Full Papers submission (WI and IAT): March 15, 2011
+Notification of paper acceptance (WI and IAT): May 23, 2011
+Workshop paper submissions: March 21, 2011
+Notification of Workshop paper acceptance: June 1, 2011
+Demo paper submissions: April 4, 2011
+Notifications of Demo paper acceptance: May 23, 2011
+Industry Track paper submissions: March 21, 2011
+Notification of Industry Track paper acceptance: June 1, 2011
+Camera-ready copies of accepted papers: June 10, 2011
+Workshops and Industry track: August 22, 2011
+Conference: August 23-25, 2011
+Summer School: August 26-27, 2011
+##################################################################
+For more information on the different calls and submission:
+http://wi-iat-2011.org
+*** Contact Information ***
+Email:wi-iat11 at liris.cnrs.fr
+The WIC Office
+Email:wi10 at wi-consortium.org

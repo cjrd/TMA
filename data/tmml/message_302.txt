@@ -1,0 +1,7 @@
+Dear Limin,
+a derivation of the LDA Gibbs sampler with explanation of the particular
+steps and some other things related to LDA can be found in a technical
+note under http://www.arbylon.net/publications/text-est.pdf .
+Best regards
+gregor
+Limin Yao wrote:

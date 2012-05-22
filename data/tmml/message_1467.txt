@@ -1,0 +1,6 @@
+Hmm, I didn't consider this.  OK, then how about the following?
+General words should have more WordNet senses (synsets), right?  Then you
+can just look up words that have more senses ..
+Another idea is to try some ontology, where upper levels will be more
+general than lower levels, like for example, an ontology of mammals will
+have "hominids" in the upper level and "man" in the lower level.

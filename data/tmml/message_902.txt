@@ -1,0 +1,6 @@
+Hi Pradipto and all:
+Thanks for clarification even in the Saturday night!
+I'll change to test set perplexity to choose the number of topics.
+If my purpose is to plot the convergence of Gibbs Sampling, which log
+likelihood is better? Say, log P(w,z) or just log P(w|z) ?
+Liangjie

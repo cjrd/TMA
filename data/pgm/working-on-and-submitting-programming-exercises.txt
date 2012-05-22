@@ -1,0 +1,79 @@
+
+In this video, I wanna just quickly step
+you through the logistics of how to work
+in whole works, and just pause, and how to
+use the submission system, which will let
+you verify right away that you've got the
+right answer for your machine learning
+program exercise. Here's my octave window,
+and let's just go to my desktop. I saved
+the files for my first exercise some of
+the files on my desktop in this directory,
+emclassex1, and we provide a number of
+files and ask you to edit some of them.
+So, the first file we should read the
+detail of. Pdf file for this [inaudible]
+exercise to get the details. But one of
+the files we ask you to edit is this file
+called warm up exercise where, you know,
+the exercise is really just to make sure
+that you're familiar with the submission
+system. And all you need to do is, return
+the 5x5 identity matrix. So the solution
+to this exercise, I'll just show you, is
+to write A=i5, right. So that modifies
+this function. To generate the five by
+five identity matrix and this function
+warm-up exercise now returns, you know,
+the five by five identity matrix and I'm
+just gonna save it. So I've done the first
+part of this homework. Going back to my
+Octave window let's now go to my directory
+using /NG/Desktop/MLclass/EX1 and if I
+want to make sure that I've implemented
+this in type one Octave size like so, and
+yup it returns [inaudible] 5x5 entity
+matrix that we've just wrote the code to
+create, and I can now submit the code as
+follows and I type submit in this
+directory and I'm ready to submit part one
+so I enter you know, choice one. So that
+we find e mail address. I am going to
+cross word tight and this is my this is a
+internal testing sight so your, your
+version of website may look a bit
+different but that's my e mail address and
+this is my submission password ans let me
+just type down here So I have ENGXCS so
+Stanford IBDU and my submission password
+is 9YC75. Ussgf, and when I hit enter, it
+connects to the server and submits it and
+right away, it tells you, you know, it
+just says, congratulations, you have
+successfully completed homework part one
+and this gives you a verification that
+you, you, you got this part right. And, if
+you don't send them the right answer then,
+you know, it will give you a message
+indicating that you haven't quite gotten
+it right yet. And, by the way You can also
+cau, you can use this submission password
+and you can generate new passwords. It
+doesn't matter. But you can also use your
+regular website login password. But
+because, you know, this password here is
+typed in, in clear text, you know, on your
+monitor we gave you this extra submission
+password in case you don't want to type in
+your website's normal password on to a
+window that depending on your operating
+system this password may or may appear as
+text when you type it in to the Octave
+sub, Octaive submission script. So that's
+how you submit a [inaudible] after you've
+done it. Good luck and I hope you get
+[inaudible] help to get all of them right.
+And finally and [inaudible] with you, I
+wanna tell you about vectorization which
+is a way to get your [inaudible] to run
+much more efficiently. [sound]

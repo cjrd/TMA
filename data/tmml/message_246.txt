@@ -1,0 +1,9 @@
+hi laura
+i've had good luck using metropolis hastings interleaved with gibbs
+sampling.  you can read about it in casella and robert or gelman et al.
+in the exchangeable dirichlet, the single parameter is much like the
+scaling parameter in the DP.  so, you can also use the tricks in
+escobar and west for sampling that parameter.
+i hope this helps.
+best,
+dave

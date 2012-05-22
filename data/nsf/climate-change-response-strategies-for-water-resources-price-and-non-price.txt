@@ -1,0 +1,55 @@
+              Global climate change affects the long-term availability and short-term
+              variability of water resources. Potential regional impacts could include
+              increased frequency and magnitude of droughts and floods, and long-term changes
+              in mean renewable water supplies through changes in precipitation, temperature
+              and other factors. Given the tremendous uncertainty that exists regarding the
+              impacts of global climate change on regional water supplies, it would be of
+              great value to identify institutional means of increasing the responsiveness of
+              water demand to changes in scarcity. This study expands the growing climate
+              change literature to address the critical question of water resource response
+              strategies.
+
+This project analyzes water system flexibility by estimating the
+              effects of higher prices, alternative price structures and non-price utility
+              conservation policies on water demand in 12 U.S. cities. While price is
+              theoretically the more cost-effective tool, in a second-best world, price
+              increases sufficient to induce water conservation are not always politically
+              feasible; efficiency and watersavings comparisons of price and non-price tools,
+              and among various non-price tools, are therefore critical. This research
+              assesses the potential of price and non-price water conservation policies as
+              climate change response strategies and scarcity management tools.
+
+More
+              specifically, the project econometrically estimates household responsiveness to
+              changes in water price, conservation incentives, regulations and education
+              programs, controlling for differences in consumers' economic, social and
+              climatic environment. To that end, the research team has obtained the first
+              specific data on residential end-uses of water in multiple U.S. cities, which
+              precisely disaggregate all household water uses (i.e., shower, indoor faucet,
+              toilet, dishwasher, leak, swimming pool, hot tub, sprinkler) from total metered
+              consumption. The proposed approach models demand for each specific end use
+              individually, using seemingly unrelated regression estimation (SURE)
+              techniques. Finally, the project will estimate the portion of cross-city
+              variation in price elasticity that is due to factors beyond the control of
+              policymakers, like income or family size, as well as that portion that can be
+              highly sensitive to policy, like appliance choices. The research provides an
+              approximate upper bound on the magnitude of water conservation achievable
+              through reasonable price and non-price policies in the urban residential
+              sector. These results will provide information critical to utilities,
+              governments and society at large, which face increased variability and scarcity
+              of water resources due to climate change.
+
+The research  establishes reliable
+              estimates of the price elasticity of demand for water in specific household
+              activities. With this information, household water uses can be ranked according
+              to their price-responsiveness, an indicator of both the value of specific water
+              uses and the extent to which savings are possible in these uses. Having
+              identified the water uses that consumers, themselves, will reduce, given the
+              shift in budget constraint caused by a price increase or change in price
+              structure, the project determines which types of non-price policies most
+              closely resemble price changes, in terms of their effect on water demand. This
+              is the first attempt to identify specific potential efficiency improvements in
+              non-price utility conservation programs. The research also augments the
+              conflicting evidence available on the absolute and relative effectiveness of
+              non-price water demand policies.
+

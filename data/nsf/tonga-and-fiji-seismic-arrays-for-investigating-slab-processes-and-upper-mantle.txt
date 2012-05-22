@@ -1,0 +1,23 @@
+              Abstract for proposal EAR0001158 (PH #51x; Spring 2000 Panel)
+
+Title: Tonga
+              and Fiji Seismic Arrays for Investigating Slab Processes and Upper Mantle Phase
+              Transformations
+
+PI's: Douglas A. Wiens and Gideon Smith, Washington
+              University
+
+The detailed structure of the Tonga subduction zone is being
+              studied with seismic data from two dense seismic arrays. The arrays are to be
+              deployed for about a year, one within the active island arc (Tonga), the other
+              in the backarc environment (Fiji). Data from the arrays is used to characterize
+              and model seismic wave propagation effects within the subducting oceanic plate
+              and the adjacent mantle. These wave propagation effects result from
+              interactions with seismic velocity discontinuities in and near the subducting
+              plate. The depths, velocity contrasts, and sharpness of the velocity
+              discontinuities will be used to help better understand the temperature,
+              mineralogy and presence of water in the subducting slab and the surrounding
+              mantle at greater spatial detail than is possible from data recorded
+              teleseismically. Dense array data also allows higher precision studies of the
+              mechanics of deep earthquakes. 
+

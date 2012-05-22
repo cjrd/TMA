@@ -1,0 +1,12 @@
+hi,
+Not very proficient with Java (none C), downloaded the LDA-J port and tried
+in eclipse.
+1) Can you explain what the output (I ran for 'ap' data) means?
+2) What part of the package/program did the 'ap-topics.pdf' (the discovery
+of topic list) got generated? Which is what I ultimately should be able to
+produce, the topics discovery.
+3) Anyone can provide code (Java) for preparing the document in SVMLight
+format?
+Appreciate your help.
+Regards
+Rao

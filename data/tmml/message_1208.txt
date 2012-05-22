@@ -1,0 +1,5 @@
+It's also worth noting that most versions of lda will be using some form of
+prior on the word distributions, which will avoid zeroes even if the words
+never occur in training. The words not occurring in the document won't be an
+issue because the predictive distribution over queries is mediated by the
+topics rather than the words.

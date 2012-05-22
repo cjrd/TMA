@@ -1,0 +1,10 @@
+I've look at my code for a couple of hours before seeking help here.
+In response to my previous thread, I created a python script to test FastLDA's
+sampling method to see it works.
+I compare collapsed gibbs sampling from "finding scientific topics" and "Fast
+LDA" by Ian Porteous to see if the latter really speed up, if not comparable.
+I ran them over a small sample of 100 documents , 15 topics beta = 0.01 and
+alpha = 50/T
+The test result shows that the latter is much slower than the former! Can anyone
+please tell me  it is more possible a implementation/logic problem than using a
+wrong setting here? I'm willing to send my script if anyone offers to help.

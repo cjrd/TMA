@@ -1,0 +1,18 @@
+Dear all,
+I am a PhD student at computer engineering dept. Sharif University of
+Technology, Iran. My research interest is language modeling. I am
+currently working on PLSA and LDA to combine them with n-gram for
+language modeling.
+I read the LDA paper (Blei et al., 2003) several times but I did not
+undrestand some parts of it. I have some questions about LDA. Do anyone
+knowes:
+- If W=w1w2...wn is a sequence of words (e.g. a document) how P(W) is
+computed in LDA model (for a training document or a new document)?
+- What is the interpretation of variational parameters gamma and phi?
+- In LDA model, what parameters plays the role of P(z|d) (that is used in
+PLSA model)?
+- What does this sentence mean? "LDA extend PLSA model by introducing a
+Dirichlet prior on teta"
+I am looking forward to hearing from you.
+Regards,
+M. Bahrani

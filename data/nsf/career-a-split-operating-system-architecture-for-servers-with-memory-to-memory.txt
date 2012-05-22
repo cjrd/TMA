@@ -1,0 +1,44 @@
+              This proposal aims to investigate the impact of the new I/O
+technologies on the
+              operating system architecture of the network servers. 
+The key ingredient of
+              the proposed approach is the memory-to-memory 
+intra-server interconnect which
+              allows non-intrusive communication 
+between hosts and intelligent devices.
+              Memory-to-memory communication 
+eliminates or significantly reduces the 
+              overhead typically associated with 
+conventional communication protocols. This
+              benefit has been extensively 
+studied to improve the performance of
+              distributed applications but has not 
+been  yet explored in support of the
+              operating system performance. 
+
+The research will focus on how to split the
+              operating system functionality
+across a cluster of computing nodes and
+              intelligent devices. Two novel 
+operating mechanisms based on memory-to-memory
+              communication will be 
+explored: (i) direct application-to-device
+              communication to offload the 
+TCP/IP protocol processing to TCP servers
+              executed on intelligent network 
+interfaces or dedicated nodes, and (ii)
+              direct communication between  
+memory-mapped file servers and TCP servers. 
+              The research will also 
+investigate how to use memory-to-memory communication
+              to support cooperative 
+file and network servers for availability and
+              load-balancing.
+
+This research has been considerably motivated by the
+              increasing interest
+in VIA, InfiniBand, and programmable device controllers.
+              Its ultimate goal is 
+to contribute  to the understanding of how systems
+              software should be designed
+to exploit and combine these new technologies. 

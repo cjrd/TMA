@@ -1,0 +1,71 @@
+              Proposal: DMS-0075477
+PI: Yakov eliashberg et al
+
+
+Abstract:
+The program
+              ``Low-dimensional contact geometry" is organized jointly
+by the American
+              Institute of Mathematics (AIM) and the Department
+of Mathematics of Stanford
+              University.  It will run from
+mid-August till mid-December 2000. The program
+              will end with a
+a Contact Geometry Workshop. The goal of the program is to
+              capitalize 
+on recent progress in contact geometry. It seems that the time is
+              ripe now
+for new breakthroughs in the field, and that the concentration of
+              both
+established and young researchers in contact and symplectic geometry and
+              
+related areas, as well as participation of several graduate students, may
+              
+help to produce new remarkable results.  The organizers feel that a
+              
+coherent picture of contact geometry in 3 dimensions is within reach.
+In
+              particular,  the participants will try to achieve a complete 
+classification
+              of contact structures for large classes of 3-manifolds, 
+to make further
+              advances in the theory of Legendrian and transversal
+knots in contact
+              3-manifolds, and to establish further properties of contact
+3-manifolds which
+              serve as boundaries of symplectic 4-manifolds.
+
+Contact geometry was born
+              more than two centuries ago in the work of 
+Huygens, Hamilton, Jacobi as a
+              geometric language for optics. It was 
+soon realized that it has applications
+              in many other areas, including
+non-holonomic mechanics and thermodynamics. One
+              encounters contact geometry 
+in everyday life when parking a car, skating,
+              using a refrigerator, or 
+watching the beautiful play of light in a glass of
+              water. Sophus Lie, 
+Elie Cartan, Darboux and many other great mathematicians
+              devoted a lot of 
+their work to this subject. However, till very recently most
+              of the results 
+were of a local nature. With the birth of symplectic and
+              contact topology 
+in the Eighties, the subject was reborn, and  the last
+              decade  witnessed a
+number of breakthrough discoveries. There were found new
+              important 
+interactions with Hamiltonian mechanics, symplectic and
+              sub-Riemannian 
+geometry, foliation theory, complex geometry and analysis,
+              topological 
+hydrodynamics, 3-dimensional topology, and knot
+              theory.
+
+
+Details of the program can be found at
+              http:/math.stanford.edu/contact.html
+ 
+

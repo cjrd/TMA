@@ -1,0 +1,6 @@
+I would like to pointout to this paper "Reading Tea Leaves: How Humans
+Interpret Topic Models " where they discussed better hold out data may infer
+lesser semantic meanings.
+Also the paper by Hanna Wallach has some interesting points "Evaluation
+Methods for Topic Models"
+Sincerely

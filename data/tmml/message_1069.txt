@@ -1,0 +1,6 @@
+Please disregard my previews email. Here is the corrected version.
+The article titled "
+Rational Research Model for Ranking Semantic Entities http://baggins.nottingham.edu.my/~wangwei/publications/rarerank.pdf
+presents an interesting subject: ResearchRank or RareRank algorithm wherein it uses a directed graph combined with LDA.
+Here is the main correction:  The http://swse.deri.org search engine uses the ReConRank not RareRank. Too many "Re" in that papers confused me.
+Still RareRank as described in that paper is quite interesting.

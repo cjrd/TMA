@@ -1,0 +1,8 @@
+Variation in the length of documents should not matter in terms of finding
+good topics. In terms of getting good estimates of the posterior
+distribution of topics for a given document, shorter documents might have
+more variability in their estimated distributions, but should still work.
+Welling, Teh, and Kappen (UAI 2008) has a discussion of the effect of
+small counts on various inference algorithms:
+http://www.ics.uci.edu/~welling/publications/papers/HybridVBMC-v6.pdf
+-David

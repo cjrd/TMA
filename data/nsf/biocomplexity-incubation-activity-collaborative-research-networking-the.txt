@@ -1,0 +1,44 @@
+              This workshop will bring together a multidisciplinary collection of
+              mathematicians, statisticians, computer scientists, biological scientists, and
+              social scientists for the purpose of developing models of complex networks in
+              both human and biological systems, with special emphasis given to integration
+              of social and ecological networks.  The specific objectives used to structure
+              the workshop are:  (1) establishing common ground; (2) modeling of complex
+              systems; (3) interfacing and extension; (4) visualization and exploration; and
+              (5) data quality issues.  Thirty experts in the various disciplines have been
+              invited to participate in a three-day workshop at the Duke Marine Laboratory in
+              March of 2001.  Prior to the meeting, in order to establish common ground, we
+              will distribute to each participant a statement of purpose, key readings, and a
+              lexicon of analogous terms used in the various disciplines.  The workshop will
+              commence with a full day of focused presentations, a second day devoted to
+              breakout groups focusing on the last four objectives, and a final day where
+              breakout group summaries and recommendations will be synthesized using
+              rapporteurs.  The attendees will: identify the common issues of complexity
+              across disciplines, the limitations to cross fertilizations of ideas, and ways
+              to overcome these limitations; explore the appropriateness of various
+              mathematical and statistical network models and analyses developed by
+              mathematicians, statisticians, and social and biological scientists applicable
+              to the study of complex biological systems; explore the inclusion of human
+              system dynamics, both of a trophic and non-trophic nature, into models of
+              complex biological systems; develop and improve computer based tools for the
+              exploratory visual analysis of complex biological systems; and, address issues
+              concerning the quality of data used in modeling biocomplexity in food webs and
+              trophic networks. 
+
+Both social scientists and ecologists use network models
+              to study complexity.  However, current computer-based methods of the study of
+              complexity in human and biological systems are not fully developed.  Most
+              significantly, these models lack integration of human and ecological networks. 
+              Until now, there has been much work done on a variety of fields in complexity,
+              but there has been little contact among researchers in the various fields, each
+              field forming an "invisible college."  Recently, social scientists and
+              ecologists have recognized their parallel efforts and have begun collaboration.
+               Short-term products of this workshop will include publications from the
+              attendees, but the greater significance will come in the long-term with
+              increased collaboration among scientists from different backgrounds.  This
+              workshop will aid in promoting such collaboration and has the potential to
+              contribute significantly to a better understanding of various problems in the
+              study of biocomplexity.  This incubation activity was funded as part of the
+              FY2000 Biocomplexity Special Competition.
+
+

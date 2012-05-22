@@ -1,0 +1,37 @@
+Hi All,
+As title.  I try to use TMVE to generate visualization application for some
+of my text.
+I aggregated all the text into one file, that's the only way I know to
+generate lda file.
+The issue I counter is:
+python src/tmve.py survey701.tmv
+Traceback (most recent call last):
+File "src/tmve.py", line 245, in <module>
+main()
+File "src/tmve.py", line 240, in main
+myrelations = relations(db(database_filename))
+File "/home/yshen1/liuyq/tmve/trunk/src/db.py", line 5, in __init__
+self.con = sqlite3.connect(filename)
+sqlite3.OperationalError: unable to open database file
+Exception AttributeError: "db instance has no attribute 'con'" in <bound
+method db.__del__ of <db.db instance at 0x139c8c0>> ignored
+yshen1 at dev-ss01:~/liuyq/tmve/trunk$ vi survey701.tmv
+yshen1 at dev-ss01:~/liuyq/tmve/trunk$ python src/tmve.py survey701.tmv
+Traceback (most recent call last):
+File "src/tmve.py", line 245, in <module>
+main()
+File "src/tmve.py", line 242, in main
+build_ajax(project_name, template_name, html_strings, html_inserts,
+myrelations)
+File "src/tmve.py", line 225, in build_ajax
+xml_rigamroll(src_filepath, token_dst_filepath, token_html_strings,
+html_inserts, template, myrelations, token)
+File "src/tmve.py", line 145, in xml_rigamroll
+dst_html_file = open(dst_filename, 'w')
+IOError: [Errno 36] File name too long:
+'survey701/docs/I_want_to_find_parts_for_my_ford_galaxie.__Instead,_I_get_73_pages_of_garbage_that_has_nothing_to_do_with_my_car._This_is_so_frustrating.__Scrolling_through_page_after_page_of_aftermarket_junk_like_racing_seats,_halogen_headlamps,_universal_this_or_that._Something_is_broken_in_your_system..html'
+Text content is used as html file name. I remove those extraordinary long
+lines, and the generation process runs successfully.
+Curious how the tmve wiki demo handle this problem? How the demo perserve
+document title, and content while generating lda file?
+Spark

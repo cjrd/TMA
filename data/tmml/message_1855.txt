@@ -1,0 +1,59 @@
+========================== CALL FOR PAPERS ===========================
+Elsevier - Computer Communications Journal
+Special Issue on Information-Centric Networking
+*** Submission deadline: April. 15, 2012 ***
+======================================================================
+Information-Centric  Networking (ICN) is  proposed as  an architecture
+for  the  future  Internet.   The  basic  idea is  to  make  units  of
+information accessible to the  networking protocols and turn them into
+the unit of networking.  Main  advantages are conjectured to come from
+a much better support for  mobility, data security, as well as caching
+and  replication. ICN  has by  now been  investigated in  a  number of
+projects.
+This special  issue aims  to collect new,  innovative material  on the
+theory,  the  design,  and  the  practical applicability  of  ICN.  In
+particular, material that advances  the level of maturity, scalability
+and real-life dependability of ICN are welcome.
+Topics of interest include (but are not limited to) the following:
+- Analytic models for  the behavior of information-centric networking,
+especially for scalability properties
+- Models for  workloads (both amount of  traffic as well  as kinds and
+size of objects along with request patterns)
+- Capacity analysis of ICN
+- Caching in ICN, in  particular, cache placement and cache management
+(e.g.,  replacement algorithms) along  with resource  management for
+caches, links, and routers
+- Coexistence of ICN protocol stacks  with legacy stacks (e.g., IP) as
+well as  coexistence of  multiple ICNs with  each other on  the same
+network fabric
+- Suitability  of  ICN for  all  kinds  of  workloads, in  particular,
+streaming and interactive multimedia workloads
+- Security in ICN
+- Mobility support by ICN
+- Energy efficiency of ICN
+- Active objects in ICN,  adding functionality and execution semantics
+to information objects
+- Consistency and  coherence models  for replicated, static  or active
+information  objects,  along  with  revision handling  and  updating
+protocols
+- Structuring applications on top of ICN (both legacy and possible new
+applications) as well as suitable application programming interfaces
+(complementing or replacing a "socket"-style interface standard)
+- Interoperability between different ICN solutions
+- Practical experience, test-beds, open-source software
+Tentative Schedule
+Submission deadline: April. 15, 2012
+Author notification: June 30, 2012
+Revised paper due: July 31, 2012
+Final author notification: September 1, 2012
+Guest Editors
+Bengt Ahlgren, Swedish Insitute of Computer Science
+Holger Karl, Universitat Paderborn
+Dirk Kutscher, NEC Laboratories, Europe
+Lixia Zhang, UCLA
+Instructions for submission:
+The   submission   website   for    this   journal   is   located   at
+http://ees.elsevier.com/comcom.  To ensure  that  all manuscripts  are
+correctly  identified  for consideration  by  the  Special Issue,  the
+authors should select  "Special Issue: Information-Centric Networking"
+when they reach the "Article Type" step in the submission process.

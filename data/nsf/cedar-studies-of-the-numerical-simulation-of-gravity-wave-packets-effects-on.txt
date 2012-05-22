@@ -1,0 +1,16 @@
+              The investigators will study the effects of gravity wave packets on the chemical
+              exothermic heating in the mesopause region.  Chemical exothermic heating is an
+              important heat source in the mesopause region, and there is much evidence that
+              gravity waves interact with hydroxyl nightglow emissions.  A detailed,
+              time-dependent study including fully nonlinear chemistry required to understand
+              and quantify these wave effects has yet to be performed.  The investigators
+              will use state of the art models specifically designed for these tasks,
+              including the Spectral Full-Wave Model, which simulates a time-dependent
+              gravity wave packet, and a time-dependent, nonlinear, 2-D chemistry model that
+              solves the coupled continuity equations of chemically active minor species. 
+              Hydroxyl chemistry will be included in the modeling to better understand the
+              complex interplay between dynamics and airglow emissions.  The main thrust of
+              the research will be to understand the forcing of the mean state minor species
+              distributions and associated chemical exothermic heating due to waves.  The
+              results are relevant to global climate modeling used to study the effects of
+              global change on the middle atmosphere.

@@ -1,0 +1,6 @@
+Hello All,
+Just to make sure if my understanding is correct.
+I have looked at the final.gamma, which is p(topic_j | doc_i) for a document i and topic j.
+but some of the entries show much higher than one.
+Is this because the value was not normalized?
+Thank you very much in advance.

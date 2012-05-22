@@ -1,0 +1,12 @@
+hi lara
+(+ cc the group)
+yes that R code is correct.  for computing the entire set of probabilities
+at once, consider using apply or---even better---hadley wickham's plyr
+package (aaply).  if "gammas" is the D x K gamma matrix, the probabilities
+are:
+gammas <- gammas - alpha
+thetas <- aaply(gammas, 1, function (row) (row)/sum(row))
+thetas will be a D x K matrix of probabilities.  (note: aaply is not a typo.
+that is the command in plyr.)
+best
+dave

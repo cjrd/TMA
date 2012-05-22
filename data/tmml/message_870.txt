@@ -1,0 +1,13 @@
+hi bin
+another option is to use supervised LDA in the multinomial regression
+setting.  chong wang, fei--fei li, and i wrote about this in the
+context of image classification,
+http://www.cs.princeton.edu/~blei/papers/WangBleiFeiFei2009.pdf
+chong has placed code on-line,
+http://www.cs.princeton.edu/~chongw/slda/index.html
+for a more general perspective on supervised LDA, jon mcauliffe and i
+recently submitted this paper to statistical science:
+http://arxiv.org/abs/1003.0783
+(the link may not be active yet, but it will be soon.)
+best
+dave

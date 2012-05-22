@@ -1,0 +1,20 @@
+I thought about this, but what put me off was the fact that the entropy
+will be different depending on what else is in the current document -
+you could treat it as a single-word document, I suppose, but I don't
+think it's clear that conclusions you draw from this will hold for
+documents in general.
+I guess the first thing that came to my mind was a measure of variance
+in p(w) to measure the generality of w. One option would be to look at
+the variance in p(w|z) for all z; a slightly more complicated one (but I
+think more informative) would be the variance in the unconditional p(w)
+with all other model parameters integrated out.
+Incidentally, what you're talking about is, I think, highly related to
+the concept of burstiness, which was kicked around for a while in the
+mid 90s before the emergence of topic models. Informally, a word is more
+bursty if it occurs many times in few documents, and less bursty if its
+occurrence is roughly constant across documents. This is what inclines
+me to want to integrate out the topic mixing proportions, as your
+measure would describe the behaviour of the word across all possible
+documents. A classic reference would be Church and Gale's 1995 paper,
+Poisson Mixtures.
+David Andrzejewski wrote:

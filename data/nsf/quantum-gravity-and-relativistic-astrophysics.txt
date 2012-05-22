@@ -1,0 +1,40 @@
+              This project contains two components: (1) The astrophysical research focuses on
+              a program to produce approximate gravitational waveforms to provide useful
+              information to ongoing gravitational wave detection experiments on a faster
+              time scale than that likely to be needed for an accurate numerical simulation.
+              In their last few orbits of inspiral, and in their final plunge
+and merger,
+              these binaries strongly curve spacetime and strongly emit gravitational waves.
+              A complete understanding of this process, and of the gravitational waveforms
+              produced, will require much further development of supercomputer evolution
+              codes. The approach here is to use an approximation scheme for the gradual
+              late-stage binary inspiral followed by supercomputer evolution for the final
+              inward plunge and merger of the holes. The method exploits the fact that the
+              spacetime of the gradual inspiral differs very little from that of a perfectly
+              periodic binary. This gradual inspiral is therefore approximated by an exactly
+              periodic orbit. These periodic orbits can be used to construct a
+              quasiequilibrium sequence representing the gradual pre-plunge decrease in
+              radius of the binary, and to give a good approximation to the corresponding
+              gravitational waveform. (2) An outstanding problem in theoretical physics is
+              how to reconcile the principles of quantum theory with those of general
+              relativity. In general relativity, spacetime does not have any fixed structure
+              which is not dynamical but governs dynamics from outside as an unmoved mover.
+              On the other hand, quantum theory depends on such structures. This project
+              views Einstein's theory as a model on which one can clarify how to quantize a
+              system with no external structure without introducing an external structure.
+              The first main theme here is that foliations can be viewed not as fixed
+              elements but as free variables which help us to build phase space from
+              spacetime foliation. The second main theme is more specific. A black hole is
+              formed by a spherical collapse of quantum matter that produces quantum geometry
+              without its own degrees of freedom will be studied. A mean geometry and its
+              fluctuations will be determined, and a study will be made of how the radiation
+              produced on this background differs from the thermal radiation fields. 
+
+At
+              present, relativistic gravitation is of crucial interest both at the frontier
+              of astrophysics
+and at the frontier of theoretical physics. This project
+              contains research of both types. In addition to its broad impacts on the two
+              frontiers of gravitational physics, this project will also provide broad
+              theoretical training to postdoctoral researchers and students. 
+

@@ -1,0 +1,46 @@
+              This Small Business Innovation Research Phase II project will design, fabricate
+              and test a
+prototype gas-cluster ion-beam (GCIB) sputtering tool for depth
+              profiles with
+monolayer-specific surface analysis of thin films. Applications
+              will be to multilayer
+thin films of key importance in the microelectronics
+              industries including semiconductors,
+metals in magnetic sensors, and
+              dielectrics in photonic and micro-optical devices. The
+sputtering tool is
+              expected to meet aggressive performance specifications including
+              depth
+resolution of less than 1 nm in conjunction with mass spectrometry. This
+              GCIB tool will
+be designed particularly for in-situ sputtering with
+              surface-analytical instruments
+including the secondary-ion mass spectrometer
+              (SIMS), the Auger electron spectrometer
+(AES) and the x-ray photoelectron
+              spectrometer (XPS). The overriding motivation is the
+critical need in
+              microelectronics for techniques to obtain accurate sputter depth
+measurements.
+              The Phase-I effort demonstrated those GCIB methods with argon clusters
+sputter
+              with near-atomic smoothness, high depth resolution and high secondary-ion
+              yields.
+Minor instrumental design issues limited the cluster beam exposure
+              uniformity and this
+artificially limited the average depth resolution
+              measured. Straightforward engineering
+solutions are well known and are
+              expected to yield improvements in Phase II that will
+provide depth resolution
+              of well below 1 nm.
+
+The proposed technology will enable analysis of
+              next-generation microelectronics devices
+having much thinner films. Epion is
+              the first and only to manufacture GCIB systems. The
+tool to be prototyped will
+              enable and have a wide applicability to many areas of the
+electronic materials
+              processing and manufacturing industry.
+

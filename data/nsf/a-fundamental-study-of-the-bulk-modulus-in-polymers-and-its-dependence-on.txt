@@ -1,0 +1,47 @@
+              A fundamental study of the bulk modulus of polymers is proposed with the aim of
+              determining how it depends on chemical structure.  The hypothesis that the bulk
+              modulus arises primarily from intramolecular relaxations while the shear
+              modulus depends on intermolecular (or intersegmental) relaxations will be
+              tested using model systems in which the strength of the b-relaxation can be
+              systematically varied by changing, for example, tacticity, crosslink density,
+              or conversion.  Comparison of the time-dependent bulk modulus with the
+              time-dependent shear modulus will also be made in order to resolve the issue of
+              whether or not the dispersions in these viscoelastic properties involve a
+              similar spectrum of relaxation times and arise from the same molecular origins.
+               Three model systems will be investigated, including i) poly(methyl
+              methacrylate) as a function of tacticity, ii) a heterocyclic network based on
+              hexamethylene diisocyanate and hexyl isocyanate as a function of crosslink
+              density, and iii) a dicyanate ester/polycyanurate thermosetting material as a
+              function of crosslink density and conversion.  The measurements will be made
+              using a pressurizable mercury dilatometer which has been built specifically for
+              determination of the time-dependent bulk modulus and bulk compliance in stress-
+              and strain-controlled modes, respectively.  Temperature control in the
+              instrument is stable to better than 0.01 K, and measurement temperatures will
+              cover a broad temperature range from far below to above the glass temperature
+              with measurements made in the glass following conventional protocol. 
+              Time-temperature superposition will be used to construct master curves from
+              which the relaxation or retardation time spectra can be obtained.  The master
+              curves and relaxation (or retardation) time spectra for the model compounds
+              will be compared in a given family to determine the effects of tacticity,
+              crosslink density, and conversion on the bulk modulus, in addition to being
+              compared to the data from the shear modulus.  The results for the thermosetting
+              system will also be used to test whether a general model based on concepts of
+              time-temperature and time-conversion superposition is able to quantitatively
+              describe the time, temperature, and conversion dependence of the bulk modulus
+              in a reacting system. 
+
+
+The proposed research program will provide
+              excellent training for the graduate student involved in the project and will
+              also involve an undergraduate researcher.  Efforts will be made to include
+              women and underrepresented minorities through special recruiting efforts at
+              women's and minority colleges in the Texas and southwest region.  An attempt
+              will be made to include undergraduate students who participate in the TTU
+              McNair Scholars Program for first generation college students (often
+              minorities).  In addition to providing excellent training for the students
+              involved in the program, the work will also be broadly disseminated within the
+              scientific community by presentation at national forums and publication in both
+              proceedings conferences and archival journals.  The results of the project will
+              also be incorporated to the extent feasible in both undergraduate and graduate
+              courses taught by the PI.
+

@@ -1,0 +1,21 @@
+It's not yet part of a packaged release, but the current development
+version of Mallet 2.0 (available through our Mercurial repository, see
+http://mallet.cs.umass.edu/download.php) contains an extremely fast
+multithreaded Gibbs sampling implementation. The class is called
+cc.mallet.topics.ParallelTopicModel, if anyone would like to try it. See
+the documentation on that site for info on using Mallet to load text data,
+remove stopwords, etc.
+The sampler implements a method that allows us to cache almost all of the
+computation involved in generating the sampling distribution for a topic,
+making a small number of changes after each update. I haven't run it head
+to head against the FastLDA Gibbs algorithm from the recent KDD paper
+(I've also seen a variational algorithm called FastLDA -- we need better
+names!), but I suspect they would be comparable. The multithreaded
+parallelism is the very simple approximate parallel algorithm presented by
+Newman et al. in last year's NIPS. I was able to run a 500 topic model on
+about 70,000,000 words for 1000 iterations in about five hours.
+Regarding Java vs. C -- my experience is that a minimalist, carefully
+written java implementation is basically as fast as a C implementation.
+Java lets you do things that can be slow, but "Java is slow" is soooo
+1998. :)
+-David

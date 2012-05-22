@@ -1,0 +1,4 @@
+Also of potential interest to this thread are the lines of work on
+Unsupervised HMM and Unsupervised CRFs.  Please gscholar for more info ..
+that's the best I can come up with  :-)
+Shibamouli

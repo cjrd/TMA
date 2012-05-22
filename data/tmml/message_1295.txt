@@ -1,0 +1,3 @@
+Hi all
+??? In the paper "Topic sentiment mixture: modeling facets and opinons in weblogs", the author present an alternative HMM structure, it means that every state contains another four ?states, so how do we use HMM?to describe the initial state, the state transition matrix and the ouput probability matrix ?
+????Has anyone ever read the paper can help me? Thank you very much.

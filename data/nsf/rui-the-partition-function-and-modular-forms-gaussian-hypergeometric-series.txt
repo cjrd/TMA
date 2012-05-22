@@ -1,0 +1,15 @@
+              This award will support the investigator's ongoing research in the field of
+              number theory.  For example, the investigator will continue his study of the
+              interplay between  the theory of modular forms and partition theory.  He will
+              also  study  the "Gaussian hypergeometric series'' and their relationships to
+              elliptic curves, modular forms, p-adic analysis, arithmetic geometry, and
+              combinatorics.  In addition, the award will  enable the investigator to expand
+              his efforts in undergraduate education and research.
+
+Number Theory is a very
+              old branch of mathematics which has its roots in the study of the whole
+              numbers.  In modern times it has become an important tool in many applied
+              endeavors.  For example, cryptosystems which enable secure transmission of data
+              over the internet are based on Number Theory, as are error correcting codes for
+              reliable data transmission. 
+

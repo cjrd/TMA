@@ -1,0 +1,25 @@
+              AST 0205990
+Reynolds
+
+Black holes are responsible for some of the most
+              dramatic phenomena seen in the current universe.  Furthermore, the environment
+              immediately around a black hole is a naturally occurring laboratory in which
+              many exotic physical processes will occur and can be studied. Some of the most
+              interesting phenomena are associated with the "twisting" and "dragging" of
+              space and time due to the rotation of the black hole.  This project will
+              conduct a theoretical exploration of the effect that a spinning black hole will
+              have on its astrophysical surroundings.  This is an extremely timely study
+              since modern X-ray telescopes are already starting to observe such
+              effects.
+
+Theory suggests that magnetic fields will be crucial for the
+              phenomena associated with black hole spin.  Guided by past work, Dr. Reynolds
+              and his collaborators will split the investigation into three parts.  1)
+              Conducting computer simulations of the gaseous flows (including the magnetic
+              fields) in the vicinity of a black hole. 2) Employing simplifying assumptions
+              and approximations to study the complex behavior of magnetic loops in the
+              region very close to the black hole.  3) Computing predictions that can be
+              directly tested by current and future observations with the XMM-Newton X-ray
+              observatory.
+***
+

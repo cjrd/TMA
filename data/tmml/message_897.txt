@@ -1,0 +1,19 @@
+hi hong,
+thanks for pointing us to your paper.  it was very interesting.
+there is something that confused me.  i understood the perspective of
+your model as a sophisticated slda with a binary vector response.
+however, it wasn't clear to me how the components of the z variable
+are interpretable as the "class" for each word or paragraph.  while
+you set the dimension of z to be the same as the number of classes,
+your predictive model (equation 1) is a multivariate logistic
+regression from z-bar to y.  i don't see what ties the c-th component
+of z to the c-th class in y.  is z observed in your data?  (from the
+graphical model, it doesn't seem to be.)
+if there's no conceptual block to it, i think it would be interesting
+to explore the effect of the number of topics on your predictive
+performance.
+i'd also be interested to hear about the future work that you mention,
+where you model label sparsity with lasso-style regularization.
+thanks again for sending the paper.
+best
+dave

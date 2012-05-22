@@ -1,0 +1,12 @@
+              
+
+PHY-0099729
+W. Gibbs
+New Mexico State
+Several studies will be undertaken
+              in order to understand the interaction between hadrons in a nuclear setting. 
+              It is intended to test the idea that the same effective potentials which are
+              used for interactions between nucleons can be used for interactions between
+              other hadrons.  Cases to be considered include proton-proton, pion-nucleon,
+              nucleon-nucleon, lamda-nucleon, and pion-pion interactions.
+

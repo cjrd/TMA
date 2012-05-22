@@ -1,0 +1,28 @@
+All,
+I've recently implemented an HDP-LDA, based on the Teh et al 2006
+paper on HDP's.   I'm using the Chinese Restaurant Franchise sampling
+method, which integrates everything out, but explicitly assigns
+observations to tables (rather than just sampling table count
+statistics).    A couple of questions:
+1) How do people initialize this model?
+The obvious way is to start it off with some number of topics, say
+T=50, and let it add or remove topics during subsequent iterations.
+But another way is to start it off with 0 topics, and initialize it by
+sampling topics, just as in a regular Gibbs iteration, except you're
+not first subtracting counts for the current value of each variable
+(resampling), because there isn't a value yet.  Instead, the algorithm
+adds topics during initialization.   I find this latter strategy gives
+quite interesting topic structure in just a single pass through the
+data, which seems compelling, but it tends to leave a very large
+number of tokens concentrated on Topic #1, and I'm not sure it is
+best.
+2)  What are "reasonable" values for hyperparameters?
+I'm sampling the hyperparameters, alpha0 (the weight/pseudo-count for
+creating a new table), and gamma (the weight for creating a new
+topic), using a gamma hyperprior as in the paper.   But I'm not sure
+about the values I see, and I might have a bug.   The paper has
+Gamma(1,1) for alpha0 and Gamma(1,0.1) for gamma, but I often see
+values like 20 or 30, or single-digit values for one and double-digit
+values for the other.   What are ballpark "reasonable" values?
+thanks,
+Dave

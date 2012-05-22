@@ -1,0 +1,4 @@
+Hi Mailing List,
+Does anyone know if the large datasets used for the online LDA [1] and HDP
+[2] experiments are publicly available? Specifically, I'm looking for the
+82k-document PNAS dataset from [2] and the 350k-document Nature dataset

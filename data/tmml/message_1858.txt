@@ -1,0 +1,20 @@
+Dear all,
+I am looking for a method to incrementally update LDA parameters by fitting
+*previously unseen data* which is added to *already seen* documents. So the
+problem is to:
+- label new pairs (document,word) with topics and,
+- update the document (theta) and topic distributions (beta) to take into
+account new evidence.
+My guess is the following: for each new document, i use the
+standard Gibbs-sampler to label each new-word and, at the end of this
+new-data labeling step, I update \theta and \beta by using the expectation
+of the Dirichlet distribution where pseudo counts are computed by taking
+into account all the available data.
+However I am not sure that this empirical technique has some theoretical
+guarantee. The labeling of new data may produce a perturbation of the
+parameter of the model
+which may change the topic-labeling of the training data.
+Can anyone provide me some ideas or references for new data fitting and
+incremental update of LDA?
+Thanks,
+Nicola

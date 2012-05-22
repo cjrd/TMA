@@ -1,0 +1,9 @@
+I am learning non parameter topic model by reading the follow paper:
+Y. Teh, M. Jordan, M. Beal, and D. Blei. *Hierarchical Dirichlet processes*.
+Journal of the American Statistical Association, 2006. 101[476]:1566-1581
+And I find a simple implement of non parameter topic model in MALLET
+toolkit : mallet-2.0.7-RC1.zip.
+i run this code 100 times. The results of number of topic  in each time are
+different.
+My question is :
+the  number of topic  in each running result are  different. Is that true?

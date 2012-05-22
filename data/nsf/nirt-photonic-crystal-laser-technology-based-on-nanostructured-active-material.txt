@@ -1,0 +1,40 @@
+              This proposal was submitted in response to the solicitation "Nanoscale Science
+              and Engineering" (NSF 00-119). The goal of this project is to develop laser and
+              optoelectronic device technologies that achieve photon and electron confinement
+              to generate 0-dimensional states, based on advances in nanolithography and dry
+              etching to fabricate nanocrystals containing self-organized quantum dots. A
+              decrease of a semiconductor laser's volume to its minimum size, while
+              maintaining high Q, along with a decrease in the electronic confinement
+              potential, may result in revolutionary advances in device operation.  These
+              include high-speed operation below and at threshold, and high efficiency in the
+              spontaneous regime below threshold. In the ultimate limits of small active
+              volume and sufficiently high Q the system can enter the quantum reversible
+              regime necessary to create quantum-entangled states. Both these quantum limits
+              of the photons and electron-hole pairs are possible using III-V nanostructured
+              active material and nanostructured photonic crystals. The materials to be
+              employed in these studies will be GaAs/AlGaAs/InGaAs strained layer
+              heterostructures grown by molecular beam epitaxy, which will be fabricated into
+              photonic crystal lasers and microcavities. The III-V heterostructures will be
+              grown at the University of Texas/Austin Microelectronics Research Center, and
+              photonic crystal fabrication will take place at the California Institute of
+              Technology(CIT) and at UT-Austin. The III-V nanostructures will be optimized
+              for high-speed operation based on studies to be carried out at CIT.
+              Manufacturable processes for the nanolithography will be developed at
+              UT-Austin. Graduate research assistants working towards Ph.D. degrees represent
+              a major component of this research. The expected impact of the research is the
+              development of a new technology for low power, high speed optoelectronic
+              interconnects suitable for wavelength division multiplexing and low power
+              transceivers for optical interconnects, and new devices useful for exchange of
+              quantum information. 
+%%% 
+The project addresses basic materials science and
+              engineering research issues in a topical area of materials science with high
+              technological relevance. An important feature of the program is the integration
+              of research and education through the training of students in a fundamentally
+              and technologically significant area. The project will develop strong
+              technical, communication, and organizational/management skills in students
+              through unique educational experiences made possible by a collaborative
+              forefront research environment. The project is co-supported by the DMR/EM,
+              ECS/PFET, and EEC Divisions.
+*** 
+

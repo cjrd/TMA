@@ -1,0 +1,3 @@
+i'm specifically looking for a list of companies to see how techniques like
+LDA are used in the wild.  thanks for the heads up!  anything else out
+there?

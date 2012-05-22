@@ -1,0 +1,36 @@
+              Early Bird is a large-scale, cooperative effort among five institutions in the
+              U.S., one in Scotland and two in Australia to determine the evolutionary
+              relationships among all major groups of birds. The project will make these
+              relationships known to the research community and the public, and make it
+              possible to use these relationships as a comparative framework with which to
+              organize and understand the vast amount of information already available on
+              avian ecology, evolution, physiology, and behavior.  The project will generate
+              large amounts of DNA sequence data for all major avian lineages from a series
+              of carefully selected genes. These data will be integrated with existing and
+              new morphological and fossil data to bring all relevant evidence to bear on the
+              problem. Extensive analysis of the evidence will be conducted with the rapidly
+              expanding suite of computational tools available for the inference of
+              relationships, divergence times, and evolutionary patterns.  The data will be
+              made accessible to other researchers in an online database with tools for
+              analysis and export, and to the general public through a website with
+              background information on the importance of evolutionary relationships,
+              progress reports on the project, and interactive educational tools with which
+              interested persons can explore the data themselves.
+The immediate results of
+              this project will be to provide a detailed, comprehensive and robust estimate
+              of the "family tree" of avian relationships, and to facilitate the use of that
+              tree to organize and interpret other information about birds. The impact of
+              this project on science and society will be far-reaching. Birds are among the
+              most prominent and engaging creatures in most ecosystems worldwide.  They have
+              been the subject of an extraordinary number and diversity of scientific studies
+              that figure largely in our understanding of the natural world and humanity's
+              place in it.  Their position high in many food chains together with their great
+              mobility makes them sensitive indicators of environmental quality, and
+              monitoring of bird populations is widely used to set conservation and
+              management priorities. Their powers of flight, physical beauty, and captivating
+              behaviors amaze and inspire us, and birds provide tremendous amounts of
+              recreation for serious hunters and birders, as well as millions of backyard
+              birdwatchers each year.  All of these human interactions with birds will be
+              enriched by a better understanding of avian evolutionary history and genetic
+              diversity, which Early Bird will provide. 
+

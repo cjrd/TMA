@@ -1,0 +1,8 @@
+Hi Everyone,
+I'm investigating use LDA for collaborative filtering tasks. In Blei's
+original paper, the authors map vocabulary to movie, document to user.
+However, as we know a document consists of a bag of words, multiple
+occurrences of the same words is possible. So my question is how many
+occurrences do you use for each movie?
+For example, a user rate movie A 3-star, movie B 2-star, what's the user's
+corresponding document? Is it "A B" or "A A A B B"?

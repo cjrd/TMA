@@ -1,0 +1,12 @@
+              This Small Business Innovation Research (SBIR) Phase I project addresses
+              security of operating systems. This approach is based on developing
+              specifications that capture security-relevant behaviors of programs, and
+              constraining their execution to ensure adherence to these specifications. Since
+              all security-relevant operations are administered through system calls, program
+              behaviors are modeled in terms of sequences of system calls made by them,
+              together with their arguments.
+
+The system will achieve enhanced security
+              without compromising on functionality by (a) being able to protect against
+              known as well as novel kinds of attacks, (b) maintaining a very low false-alarm
+              rate, and (c) reduced maintenance needs.

@@ -1,0 +1,13 @@
+Suppose I have a collapsed Gibbs sampler, and want to estimate marginal
+probabilities for each of the latent variables in the model.   I can
+think of two ways to do this, the first one legit, the second not so legit:
+1) Continue to run the sampler after equilibrium, and collects stats on
+each N'th sample to estimate the marginals.
+2) Treat the sampling conditional as if it were a marginal.  That is,
+after equilibrium, for each variable, decrement the counts for its
+current state, compute the conditional distribution for sampling, treat
+that as your marginal, put the counts back, and go on to the next variable.
+Option 2) is obviously quicker, but is surely wrong technically; the
+question is, how inaccurate would it be?
+thanks,
+Dave

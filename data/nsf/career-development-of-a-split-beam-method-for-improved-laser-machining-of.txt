@@ -1,0 +1,26 @@
+              This Faculty Early Career Development (CAREER) award supports research efforts
+              focusing on numerically modeling the relationships between the thermal
+              transients caused by single- and dual-laser machining and the complex stresses
+              that ultimately lead to premature fractures.  A probabilistic fracture model
+              will be integrated with the stress calculations to help quantify the time and
+              location of fracture as the laser progresses along the cutting path.  The
+              resulting models will then be used with laser machining experiments to develop
+              and optimize a process of simultaneously scoring the surface to help control
+              the path and quality of the final fracture.  Another intriguing method that
+              will be studied involves the use of the dual-laser to "actively stress" the
+              fracture prone region into a state of thermoelastic compression to lower the
+              probability of premature fracture.  
+
+The research program will also have a
+              strong educational component that will provide high school and undergraduate
+              students with hands-on research experience through focused outreach efforts. 
+              All of the research and the evolving laser manufacturing methodology will be
+              integrated with the curricula at three Washington State University campuses
+              using the Washington Higher Education Telecommunications System (WHETS) and
+              video.  As a result, the new methodologies will be able to reach a wide variety
+              of individuals by using a blend of kinesthetic and visual methods that include
+              numerous hands-on experiences combined with live and video demonstrations.  The
+              overall goals of the project are to develop more efficient laser machining
+              techniques for ceramics while at the same time helping to create and foster a
+              positive image of engineering and manufacturing. 
+

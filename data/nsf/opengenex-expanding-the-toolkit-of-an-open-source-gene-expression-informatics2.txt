@@ -1,0 +1,14 @@
+              OpenGeneX will provide a toolkit of capabilities for gene expression data
+              management and analysis in an extensible system.  The work will focus on core
+              capabilities, such as addition of links to the database schema and an
+              object-layer application programming interface and a data upload tool for
+              automated loading into the database.  In order to support uniform, efficient
+              data analysis, a framework for incorporating new methods and defining protocols
+              will be developed.  The analysis protocol manager will be designed to permit
+              storing and tracking of analysis procedures and validated and tested in a
+              community-wide effort.  A variety of analysis tools, including data
+              preprocessing and normalization as well as statistical validation clustering
+              methods will be developed. A prototype of peer-to-peer database connectivity
+              will be created to test for supporting diverse gene expression resources in a
+              cost-effective manner.  The project is open source, so that other freely
+              available software can be incorporated, rather than redesigned.

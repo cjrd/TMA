@@ -1,0 +1,17 @@
+              0115851  Field  The objective of this research project is to develop a
+              denitrification bioreactor using H2S as the main electron donor for the
+              simultaneous removal of carbon, nitrogen and sulfur from refinery condensates. 
+              The denitrifying bioreactor will be the first stage of a two-stage biological
+              process followed by a nitrification reactor, supplying nitrate via effluent
+              recirculation. Under the joint NSF-CONACyT program, this project forms part of
+              an international collaboration with the Mexican Institute of Petroleum (IMP)
+              and the scientific research funded by this grant will provide a basis for the
+              IMP to develop the proposed technology.  This research is needed due to the
+              complex microbial ecology of the system.  This research will characterize the
+              microbial consortium in the condensate-fed denitrifying bioreactor. 
+              Subsequently, the strategies of controlling the reactor to maximize the removal
+              of sulfide, phenols and nitrogen will be identified.  The effect of phenols on
+              the autotrophic denitrification process will be studied.  An important aspect
+              of the research will be to control the oxidation of sulfide to form insoluble
+              elemental sulfur, instead of complete oxidation to sulfate, so that it can be
+              physically separated for reuse. ***

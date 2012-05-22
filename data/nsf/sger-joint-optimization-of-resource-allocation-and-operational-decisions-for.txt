@@ -1,0 +1,26 @@
+              This Small Grant for Exploratory Research (SGER) will focus on the manufacture
+              of integrated circuits (ICs) and the provision of air travel as the central
+              examples of such manufacturing and service industries. The goal is to develop
+              mathematical models that provide a basis for determining how to allocate scarce
+              resources among a variety of possible methods available to improve yield. 
+              Among the key questions to be  addressed are:  (1) How do different
+              yield-altering interventions affect the parameters of the yield distribution? 
+              (2) How are operational decisions affected by changes in yield distributions? 
+              (3) Under which stochastic and/or parametric orders of yield distributions does
+              a company benefit economically?  (4) How can the magnitude of this benefit be
+              quantified?   These questions will be answered  using techniques from
+              operations research, including Markov decision processes,
+              stochastic/variability orderings, and stochastic programming.  The increasing
+              complexity of production processes and the ability to create and manage a large
+              number of market segments in service industries have served to elevate the
+              importance of yield management to manufacturers and service providers
+              alike.
+
+There is an extensive body of literature dealing with mathematical
+              models necessary to make production-inventory decisions in the manufacturing
+              context, or analogously, to decide how much capacity to make available in a
+              particular fare-class, or how much to overbook, in the service industry
+              context.  This research will provide a bridge between two disparate bodies of
+              literature by developing common models to evaluate yield-altering
+              interventions.
+

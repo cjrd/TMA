@@ -1,0 +1,11 @@
+Hello all,
+I am trying to use the CTM library provided on the website. I am not able to
+compile it since it needs atlas library to compile.
+I downloaded atlas library from
+http://math-atlas.sourceforge.net/atlas_install/
+But I am facing problem installing it, even though I tried through root
+login.
+Can anybody help me regarding which library I should install for
+successfully compiling ctm?
+Regards,
+Bhavana

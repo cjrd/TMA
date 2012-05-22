@@ -1,0 +1,34 @@
+Hi List,
+I've been going through my notes on formulation of optimization
+problem in LDA, as stated in equations 12 and 13 and I don't seem to
+be able to retrace my steps as I made some shortcuts/etc I did not
+write down. This said I've tried going through these equations (from
+the LDA paper) manually again and here are my findings:
+eq. 12
+- If the right side of the equation E_q [ log p(\theta, z, w) ] - E_q
+[ log q(\theta, z) ] is called L then L is simply negative D_KL(q ||
+p) ?
+- If L is - D_KL(q || p) then eq.13 is log p (w) = -D_KL(q || p) +
+D_KL(q || p) = 0 which makes no sense at all ?
+Taking the difference of log p(w) - (E_q [ log p(\theta, z, w) ] - E_q
+[ log q(\theta, z) ]) as mentioned in the paper results in
+log p(w) - (E_q [ log p(\theta, z, w) ] - E_q [ log q(\theta, z) ]) =
+log p(w) - E_q [ log p(\theta, z, w) ] + E_q [ log q(\theta, z) ] =
+log p(w) + E_q [ log q(\theta, z) ] - E_q [ log p(\theta, z, w) ] =
+log p(w) + E_q [ log \frac{ q(\theta, z) }{ log p(\theta, z, w) } ] =
+log p(w) + D_KL(q || p)
+which is different from D_KL(q || p) mentioned to the paper!
+This means that
+Left hand side - lower bound = log p(w) + D_KL
+With the above in mind it is impossible to make the formulation in
+equation 13. that says
+log p(w) - Lower bound = D_KL
+because we get
+log p(w) - lower bound = log p(w) + D_KL
+Clearly, there is an extra log p(w) term which should not be there
+according to the original equations by David.
+I am doing something wrong now, and I don't remember what was that the
+last time I was going through the paper.
+Or maybe it's a late hour here. In any case, I clearly need some help :-)
+best,
+Mateusz Berezecki

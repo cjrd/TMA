@@ -1,0 +1,20 @@
+The mean and the mode of a Dirichlet distribution are different.  For
+any set of counts, the posterior mean is
+E[\theta_i] \propto n_i + \alpha_i
+If (n_i + \alpha_i) > 1 for all i, the posterior Dirichlet is unimodal
+and the MAP estimate is indeed
+MAP[\theta_i] \propto n_i + \alpha_i - 1
+For Dirichlet distributions with parameters < 1, the probability mass is
+highest at the edges and corners of the simplex.  For a visualization,
+see page 35 of the following slides:
+http://www.gatsby.ucl.ac.uk/~ywteh/research/npbayes/mlss2007.pdf
+In these cases, the (possibly non-unique) MAP estimate will be at the
+boundary of the simplex.  To derive its form, you'd need to add the
+constraints enforcing positivity to the Lagrangian.
+In these cases, however, the MAP estimate is not going to produce
+sensible predictions, since it will assign zero probability to
+unobserved words.  Either variational methods, or Gibbs samplers,
+improve on this by accounting for uncertainty in the posterior distribution.
+Regards,
+Erik
+Simon Lacoste-Julien wrote:

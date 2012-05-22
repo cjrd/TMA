@@ -1,0 +1,6 @@
+hi sean
+that is an implementation of the algorithm in daniels and kass
+(biometrics 2001).
+best
+dave
+2011/11/21 ??? (Zhibo Xiao) / Sean <xiaozhibo at gmail.com>:

@@ -1,0 +1,5 @@
+Given the discussion of hierarchical LDA on this list, I'm wondering if
+anyone has a soure-code shareable C (or java or whatever) implementation
+rather than the Matlab implementation?
+Thanks
+Paul Deane

@@ -1,0 +1,45 @@
+Hi Yanli,
+(3)  \theta_m //is// the multinational distribution according to which
+z is distributed, in document m, but your two other interpretations OK.
+z_{m,n} = the topic assigned to word n in document m in Gibbs sampler
+\Theta = p(z|d) = a set of D probability topic-distributions, one for each doc
+(think of \Theta as a DxT matrix, where each row is normalized)
+\theta_m = the proportion of topics in document m (the mth row of the matrix)
+p(z | \theta_m) = \theta_m(z)   (the mth row, zth column of \Theta)
+\theta_m is the probability distribution not a parameter.
+One thing to keep in mind is that \theta_m is the same for
+all words in the document, but changes between documents.
+In the Gibbs sampling paradigm, the natural way to represent
+\theta_m(z) = \frac{ N_mz + \alpha_z }{ \sum_z (N_mz + \alpha_z) }
+where N_mz is the count of how many words were assigned to
+topic z in document m.
+first about the priors:
+There are two of them, one for the distribution p(z|d)  ( \vec{alpha} )
+and one p(w|z) (\vec{beta} in Griffiths, or \vec{\eta} in Blei et al figure 7).
+\alpha_z describes your prior belief of seeing topic z in a document
+before you have observed any of its word counts.
+\beta_w describes your prior belief of seeing word w in a topic before
+having observed any words of that topic.
+Usually \vec{alpha} and \vec{beta} are taken to be uniform priors,
+and serve to smooth the distributions. It is best to pick values for
+these parameters <<1 so that the LDA model gives sparse representations.
+\theta_m = p(z|m)
+prior  Dirichlet( \vec{\alpha} )
+posterior p(z|doc=m, D) = Dirichlet( N_mz + \alpha_z )
+N_mz is the count of how many words were assigned to
+topic z in document m.
+\phi_z = p(w|z)
+prior  Dirichlet( \vec{\beta} )
+posterior p(w|z,D) = Dirichlet( N_zw + \beta_w )
+N_zw is the count of how many times word w appears in topic z
+note that z_{m,n} (the topic assignment R.V. for whole corpus)
+is sufficient to compute all the counts N_mz and N_zw.
+Don't be confused by the z, sometimes it refers to a realization
+of the topic-assignment r.v. and sometimes it is a R.V.
+I highly recommend you look at this paper that starts from scratch and covers
+the Gibbs sampling approach to LDA very well:
+G. Heinrich, Parameter estimation for text analysis, Technical report,
+Fraunhofer IGD, 15 September 2009.
+http://www.arbylon.net/publications/text-est2.pdf
+Yours,
+Ivan

@@ -1,0 +1,21 @@
+Hi all,
+I conducted an experiment on large scale image database using LDA.
+I used 160,000 images for training the LDA and 110,000 images (previously unseen) for measuring
+the perplexity.
+Training of LDA was done using different number of topics. Maximum number of iteration , termination criteria etc were kept same for training using different number of topic.
+And Number of topics vs perplexity results are shown below:
+Num of topics perplexity
+20 74179
+40 76521
+60 78290
+80 81163
+100 83685
+120 85195
+I was expecting perplexity to decrease with increasing number of topics.
+whereas , in my experiment perplexity increase with increase in number of topics.
+Can anyone please explain this behavior?
+Any kind of comments will be immensely helpful.
+Thanks
+Vikas Verma
+Speech and Vision Lab
+IIT Madras

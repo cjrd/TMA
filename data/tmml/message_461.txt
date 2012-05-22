@@ -1,0 +1,5 @@
+Hi -- to clarify my question: I was referring to two dependent _latent_
+discrete variables y = {y_i} and z = {z_i} (or rather exchangeable
+sets), the other variable (set), u = {u_i}, is assumed observed.
+Best
+gregor

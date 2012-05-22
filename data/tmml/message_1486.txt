@@ -1,0 +1,5 @@
+I agree with Ben's idea of using variances.  In fact, variance of (p(w|z)
+for all z) can be a pretty good generality score.  I'm not sure about the
+significance of variance in the unconditional p(w), but maybe Ben can throw
+some light on this.
+Shibamouli

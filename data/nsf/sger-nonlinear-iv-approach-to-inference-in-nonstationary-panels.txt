@@ -1,0 +1,39 @@
+              The project explores a nonlinear IV approach to inference in general
+              nonstationary panels with unit roots.  The approach relies on the standard IV
+              methods with instruments  constructed from nonlinear transformations of
+              integrated processes. Though the  methodology is very simple to implement, it
+              provides extremely effective tools for testing  unit roots in panels. Our tests
+              for unit roots in panels are simply based on individual  nonlinear IV t-ratios,
+              which are nothing but the usual t-ratios based on the IV estimators  using as
+              instruments the integrable transformations of lagged levels.
+
+ Such nonlinear
+              IV based tests have many desirable properties and can be used for very  general
+              models. The test statistics have Gaussian limit distributions at each cross- 
+              sectional level, and more importantly, they are asymptotically independent
+              across different cross-sectional units. The asymptotic Gaussianity and
+              independence indeed hold under very mild conditions that allow for
+              cross-sectional dependency and heterogeneity.  In contrast, virtually all of
+              the related work done previously assumes either cross- sectional independence
+              or specific forms of dependency across individual units. Needless to say, the
+              assumption of cross-sectional independence is highly unrealistic for many 
+              economic panels of interest. Any presumption on the form of cross-sectional
+              dependency  may also severely restrict the applicability of the tests. Our
+              asymptotics only require the time dimension to be large, so the tests are valid
+              for panels with both large and small cross-sectional dimensions.  
+
+The
+              proposed tests for unit roots allow not only for the cross-sectional
+              dependencies of  nnovations, but also for the presence of cointegration across
+              cross-sectional units in levels. Unbalanced panels and panels with
+              heterogeneous individual shortrun dynamics and cross-sectionally related
+              dynamics are also permitted. The proposed tests also make it possible to more
+              carefully formulate the unit root and cointegration hypotheses in panels,  and
+              use order statistics to test for and against the presence of unit roots and
+              cointegration
+in only a fraction of individual units. None of the currently
+              available tests can be used to test for unit roots in such general panels. Some
+              preliminary simulations indicate that our nonlinear IV based tests perform very
+              well in finite samples even for panels with relatively small time and
+              cross-sectional dimensions.
+

@@ -1,0 +1,6 @@
+hi --- technically, your weighting term is larger than 1 now, yes. But 10^12
+should be way below the values that dominate your KL divergence... If not
+(extremely high-dimensional data), you may decrease epsilon (double precision is
+1.11e-16) or catch the p = 0 cases...
+Best regards
+gregor

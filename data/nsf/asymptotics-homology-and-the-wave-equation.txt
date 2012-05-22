@@ -1,0 +1,67 @@
+              
+Abstract for DMS - 0104116.
+
+This proposal consists of seven items. The
+              first item is a joint
+project of the two principal investigators and returns
+              to previous
+joint work on the wave trace for a manifold with boundary, in
+              order to
+sharpen and simplify the earlier results by defining the wave
+              trace,
+not as a trace on the space of initial data of the wave equation,
+              but
+as a trace on the space of boundary data.  The second item is a
+              joint
+project of Guillemin and K. Okikiolu and involves refinements of
+              a
+recent result on ``two-tiered'' asymptotics for Szego estimates. The
+third
+              item is a joint project of Guillemin with C. Zara, and concerns
+the interplay
+              between graph theory and topology on GKM manifolds. The
+fourth item is a joint
+              project of Melrose and P. Loya extending the
+Atiyah-Patodi-Singer index
+              theorem to manifolds with corners. The
+fifth item involves on-going work of
+              Melrose and R. Mazzeo and the
+beginning of a project with D. Grieser to
+              analyze the Laplacian on
+singular algebraic varieties by blow-up and
+              pseudodifferential
+methods. The sixth project involves Melrose, A. Hassell and
+              A. Vasy in
+the description of scattering by potentials which are smooth up
+              to
+infinity. The final item is a joint project of Melrose and J. Wunsch
+in
+              which the propagation of singularities for waves on manifolds with
+conic
+              singularities is investigated.
+
+A common theme of the items above is the wave
+              equation and related
+techniques. For instance, one of the important
+              applications of the joint
+project of the two principal investigators will be
+              to the understanding of
+the reflection of waves in a domain in the plane. For
+              a convex planar
+domain the results of this project should shed light on the
+              celebrated
+problem: "Can one hear the shape of a drum", that is, do the
+              frequencies of
+vibration of a planar domain, corresponding to the head of a
+              drum,
+determine its shape? Earlier work of the investigators showed that
+              these
+frequencies of vibration determine the so-called "length spectrum" of
+              the
+domain, namely the lengths of inscribed polygons of
+              minimal
+circumference. One result of the investigation above should be
+              a
+determination of the SHAPES of these polygons as well.
+
+

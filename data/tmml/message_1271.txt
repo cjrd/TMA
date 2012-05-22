@@ -1,0 +1,8 @@
+Hi,
+I just came across a paper titled "What?s Worthy of Comment? Content and
+Comment Volume in Political Blogs" by Tae Yano and Noah Smith that seems
+to address document length prediction expressed as comment "volume" for
+a blog post. Although I don't think it implements the original poisson
+assumption in David Blei's original LDA paper.
+Pradipto
+David Blei wrote:

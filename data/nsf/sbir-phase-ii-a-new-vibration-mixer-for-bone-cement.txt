@@ -1,0 +1,27 @@
+              This SBIR Phase II project is aimed at developing a novel vibration mixer for
+              the mixing of surgical grade bone cement.  Self-curing polymethylmethacrylate
+              (PMMA) or acrylic bone cement is used extensively in total joint replacements,
+              in the repair of bony defects and in the fixation of pathological fractures. 
+              For surgical use, the methylmethacrylate polymer and the liquid monomer are
+              hand mixed.  This hand-mixing entraps air bubbles making the cement porous. 
+              Presence of these bubbles adversely affects the mechanical properties of bone
+              cement, making it much weaker under load and may contribute to early failure of
+              cemented artificial joints.  Results of the Phase I study indicate that
+              ultrasonic vibration during cement mixing
+significantly reduced its porosity
+              and increased the fatigue life and mechanical strength of bone cement, compared
+              to hand-mixed cement.  Recently, it was  shown that combining sonication and
+              vacuum mixing reduced the porosity and further improved the fatigue life,
+              compared to either mixing methods alone.
+
+During the Phase II study,  the
+              frequency and amplitude of sonication and the vacuum pressure to obtain the
+              best mechanical properties of the cement will be optimized.  Subsequently, a
+              new cement mixer will be designed and built incorporating these mixing
+              features.  It is expected that the improved mechanical properties of vibrated
+              bone cement will reduce the incidence of cement fracture and this will improve
+              the success rate of total joint replacements.  Considering that cement mixers
+              are used in several thousand hospitals in the United States alone, we expect
+              this new cement mixer to be adopted by a large number of Orthopaedic surgeons
+              in these hospitals.
+

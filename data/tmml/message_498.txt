@@ -1,0 +1,10 @@
+Eric,
+Thanks for this paper; I got a good insight out of it re the
+stochastic nature of Gibbs sampling vs. EM.   I wonder how embedding a
+bigram or higher instead of a unigram for the P(w|z) would fare.  That
+ought to be easy to do, since you're assigning the topic to the entire
+document.
+Also related to document clustering, there's an interesting-looking
+paper in the NIPS topic workshop this year that models topics with vMF
+distributions, rather than multinomials.
+Dave

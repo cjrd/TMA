@@ -1,0 +1,44 @@
+              
+PI: S.-Y. Alice Chang and Fengbo Hang, Princeton
+              University
+DMS-0209504
+
+Abstract:
+
+Some impact of topology on variational
+              problems
+
+In this project, we will focus on variational problems involving
+              vector- 
+valued maps. In particular, we will study upper and lower bounds
+              of
+the energy functional for maps with suitable topological information,
+the
+              weak sequential approximation of Sobolev maps by smooth maps and
+the structure
+              of singular sets for solutions of some variational
+problems. Various tools
+              from geometric measure theory and differential
+and algebraic topology are used
+              in handling these issues. On the other
+hand, our approach to the problems
+              sheds light on new relations among
+these topics.
+
+Variational problems
+              involving vector-valued maps appear naturally in 
+analysis, geometry and
+              physics. Besides their mathematical interests and 
+importance, they are
+              crucial to various models in mathematical physics. 
+Typical examples include
+              models for superconductivity, magnetic material 
+and liquid crystals. The
+              research in this area will lead to better 
+understanding of certain type of
+              physics phenomenon as well as new 
+impetus in mathematics in this
+              direction.
+
+
+

@@ -1,0 +1,5 @@
+Hi all,
+Just a quick public service announcement: JCDL is an excellent venue for
+topic modeling, particularly more applied work that might be interesting
+outside the core machine learning conferences.
+-David

@@ -1,0 +1,362 @@
+
+So now we're getting into Bayesian
+land. And we're finally going to start
+talking about the actual representations
+that are going to be the bread and butter
+of what we're going to describe in this
+class. And so, we're going to start by
+defining the basic semantics of a Bayesian
+network, and how it's constructed
+from a set of factors. So let's
+start by looking at a running example
+that will see us throughout a large part
+of, at least, the first part of this course
+and this is what we call the student
+example. So in the student example we have
+a student who's taking the class for a
+grade and we're going to use the first
+letter of, of the word to denote the name
+of the random variable, just like we did in
+previous examples. So here, the random
+variable is going to be G. Now the grade
+of the student obviously depends on how
+difficult the course that he or she is
+taking and the intelligence of the
+student. So that gives us, in addition to
+G. We also have D and I, and we're going
+to add just a couple of extra random
+variables just to make things a little bit
+more interesting. So we're going to assume
+that the student has taken the SAT. So he
+may, may or may not have scored well on
+the SAT's. So that's another random
+variable S. And then finally we have this
+case of the disappearing line. We also
+have the recommendation letter L that the
+student gets from the instructor of the
+class. Okay? And we're going to grossly
+oversimplify this problem by, basically,
+binarizing everything except for grades.
+So, everything has only two values except
+for grades that has three. And then,
+only so that I can write things
+compactly. This is not a limitation of the
+framework, it's just so the
+probability distribution won't become
+unmanageable. Okay, so now let's think
+about how we can construct the
+dependencies of this in this
+probability distribution. Okay, so let's
+start with the random variable grade. I am
+gonna put it in the middle and ask ourselves
+what the grade of the student depends on
+and it seems just, you know, from a completely
+intuitive perspective it seems
+clear that the grade of the student
+depends on the difficulty of the course and on the intelligence of the students.
+So, we already have a little baby Bayesian
+network with three random variables, let's
+now take the other random variables and
+introduce them into the mix, so for example
+the SAT score of the student doesn't seem
+to depend on the difficulty of the course
+or on the grade the student gets in the
+course, the only thing it's likely to
+depend on, in the context of this model, is
+the intelligence of the student. And
+finally, caricaturing the way in which
+instructors write recommendation letters,
+we're going to assume that the quality of
+a letter depends only on the student's
+grades. The professor's teaching, you
+know, 600 students or maybe 100,000 online
+students. And so, the only thing that one
+can say about the student is by looking
+as their actual grade record. And so, regardless of anything else, the quality of the letter depends only on the grade.
+So, this a model for the dependencies. It's only one model that one
+can construct for these dependencies. So,
+for example, I could easily imagine other
+models. For instance, ones that have the
+students who are brighter taking harder
+courses. In which case, there might be
+potentially an edge between I and D but
+we're not going to use that model (so let's
+erase that), because we are going to stick
+with the simpler model for the time being.
+But this is only to highlight the fact
+that a model is not set in stone. It's a
+representation of how we believe the world
+works. So here is a model drawn out a
+little bit more nicely than in the
+picture before. And now, lets think about
+what we need to do in order to turn this
+into our representation of probability
+distribution, because right now all it is,
+is a bunch of you know, of nodes stuck
+together with edges, so how do we actually
+get this to represent the probability
+distribution? And the way in which we're
+going to do that, is we're going to
+annotate each of the nodes in the network
+with what's called, with CPDs. So we
+previously defined CPDs. CPDs - just as a
+reminder - is a Conditional Probability
+Distribution, I'm using the abreviation
+here. And each of these is a CPD, so we
+have five nodes, we have five CPDs. Now if
+you look at some of these CPDs, they're
+kind of degenerate. So, for example, the
+difficulty CPD isn't actually conditioned
+on anything. It's just an unconditional
+probability distribution that tell us, for
+example, that courses are only 40% likely
+to be difficult and 60 % likely to be
+easy. Here is a similar unconditional
+probability distribution for intelligence.
+Now this gets more interesting when you
+look at the actual conditional probability
+distributions. So here, for example, is a
+CPD that we've seen before. This is the
+CPD of the grades A, B, and C. So, here is
+the conditional probability
+distribution that we've already seen
+before for the probability of grade given
+intelligence and difficulty. And we've
+already discussed how each of these rows
+necessarily sums to one because of the
+probability distribution over the variable
+grade. And we have two other CPDs here in
+this case the probability of SAT scores given
+intelligence and the probability of a recommendation
+letter given a grade. So, just to write
+this out completely, we have P(D) . P(I)
+I, P(G given I,D), P (L given G) and P (S given I)
+And that now, is a
+fully parameterized Bayesian network and
+what we'll show next is how this
+Bayesian network produces a
+joint-probability distribution over these
+five variables. So here are my CPD's and
+what we are going to define now is the
+chain rule for Bayesian networks, and
+that chain rule basically takes these
+CPDS, all these little CPDS, and basically
+multiplies them together, like that. Now,
+before we think of what that means, let us
+first note that this is actually a factor
+product in exactly the same way that we
+just defined. So here, we have five
+factors, they have overlapping scopes. And
+what we end up with is a factor product
+that gives us a big, big factor,
+whose scope is five variables. What
+does that translate into when we apply the
+chain rule for Bayesian network in the
+context of this particular example? So, let's
+look us at this particular assignment and, remember,
+there's going to be a bunch of these
+different assignments, and I'm just going
+to compute this other probability of this
+one. So the probability of d0, i1, g3, s1
+and l1. Well, so the first thing you need
+is the probability of d0, and the
+probability of d0 is 0.6. The next thing,
+from the next factor, is the probability of
+i1, which is 0.3. What about the next one?
+The next now is a conditional factor
+and for that, we need the probability of g3,
+because we have g3 here. So we want from
+this column over here, and which row do we
+want? We want to pick the row
+that corresponds to d0 and i1, which is this
+row, so 0.02. Continuing on, we know now
+that wenow have g3. So we want from
+this row. And we want the probability of
+l1, so we want this entry. 0.01... And
+finally, here we have probability of s1
+given, given i1. So, that would be this one
+over here, 0.8. And in this exact
+same fashion, we're going to end up
+defining all of the entries in this joint
+probability distribution. Great, so, what
+does that give us as a definition? A Bayesian network is a directed, acyclic graph.
+Acyclic means it has no cycles, that is you can't traverse the edges and
+get back to where you started. This is
+typically abbreviated as a DAG, and we're
+going to use the letter G to denote directed acyclic graphs. And the
+nodes of this directed acyclic graph
+represent the random variables that we're
+interested in reasoning about, X1 up to
+Xn. And for each node in the graph,
+Xi, we have a CPD that denotes the
+dependence of Xi on its parent in the
+graph G. Okay? So, this is a set of
+variables. So, this would be like the
+probability of G -grade- given I -intelligence- and D -difficulty-. So, this
+would be G, the Xi would be G and the
+parents of G, ofXi, would be I and D. And
+the BN, the Bayesian network, represents a
+joint probability distribution, via the
+chain rule for Bayesian networks, which is
+the rule that's written over here and this
+is just a generalization of the rule that
+we wrote on the previous slide, where we
+multiplied one CPD for each variable, here
+we have again, we're
+multiplying over all the variables I and
+multiplying the CPD for each of the Xis
+and this is once again, a factor product.
+So, that's great and I just defined the
+joint probability distribution. Now, whose
+to say that, that joint probability
+distribution is even a joint probability distribution?
+So, what you have to show in
+order to demonstrate that something's a
+joint probability distribution? The first
+thing you have to show is that it is
+greater or equal to zero, because
+probability distributions are always non-negative.
+As so, in order to do that,
+we need to show that, for this distribution P
+and the way in, and this, as it happens,
+is quite trivial, because P is a product of factors
+Actually, the products of CPDs
+and CPDs are non-negative, and if you
+multiply a bunch of non-negative factors,
+you get a non-negative factor.
+That's fairly straightforward. Next one's
+a little bit trickier. The other thing we
+have to show or to demonstrate so that,
+something's a legal distribution, is to
+prove that it sums to one. So how
+do we prove that something's sums
+to one, that this probability distribution
+sums up to one? So, lets, actually
+work through this, and one of the reasons
+for working through this is not just to
+convince you that I'm not lying to you.
+But more importantly, the techniques that
+we're going to use for this simple
+argument are going to accompany us
+throughout much of the first part of the
+course. And so, it's worth going through
+this in a little bit of detail, but I'm
+going to show that in the context of the
+example of the distribution that we just
+showed, we just end up cluttered with
+notation, but the, but the idea is still
+exactly the same. So, to sum up, over
+all possible assigments, D, I, G, S, L of
+this, hopefully,
+probability distribution that I just
+defined. The P of D, I, G, S, and L, okay? So
+we're gonna break this up using the chain
+rule for Bayesian networks.
+Because that's how we define this distribution P.
+Okay, now here is the magic trick that we
+use whenever we deal with distributions
+like that. It's to notice that when we
+have the summation over several random
+variables here, and here, inside the
+summation we have a bunch of functions
+inside here. Only some of the...
+... each factor only involves a small
+subset of the variables. And, when you
+do, when you have a situation like that,
+you can push in the summations. So,
+specifically, we're going to start out by
+pushing in the summation over L. And,
+which factors involve L? Only the last
+one, so we can move in the summation over
+L to this position, ending up with the
+following expression, so notice there's now
+the summation over here, that's the first
+trick.
+A second trick is using definition of CPDs and we observe here
+that the summation over L is summing up
+over all possible mutually exclusive and
+exhaustive values of the variable L in
+its conditional probability distribution
+P of L given G, and that means, basically,
+we're summing up over a row of the CPD, and
+that means that the sum has to be one. And
+so this term effectively cancels out,
+which gives us this. And now, we do exactly
+the same thing. We can take S, and move it
+over here, and that gives us that. And
+this too, is a sum over a row of a CPD.
+So, this too, is canceled and can be written
+as 1. And we can do the same with G, and
+again. This has to be equal to one so we
+can cancel this and so on, and so forth,
+and so, by the end of this, you're going to
+have have canceled all of
+the variables in this summation, and what
+remains is 1. Now, this is a very simple
+proof, but these tools of pushing
+information and removing variables that
+are not relevant are going to turn out to
+be very important. Okay, so now thi is just
+the final little bit of terminology that
+will again accompany us later on, we are
+going to say that the distribution P
+factorizes over G means that we can represent
+it over the graph G, if we can and call it
+using the chain rule for Bayesian
+networks. So, a distribution factorizes
+over a graph G, if I can represent
+it in this way, as a product of these
+conditional probabilities. Well, let me
+just conclude this with a little
+example, which is, arguably, the very
+first example of a Bayesian network ever.
+It was an example of Bayesian networks
+before anybody even called them Bayesian
+networks. And it was defined, actually, by
+statistical geneticists who were trying to
+mull the notion of genetic inheritance 
+in a population. And so, here is an
+example of genetic inheritance of blood
+type. So, let me just give a little bit of a
+background on the genetics of this. So, in
+this very simple, oversimplified example,
+a person's genotype is defined by two
+values, because we have two copies
+of each of those
+chromosomes in this case. And so,
+for each chromosome, we have three possible
+values, so we have, either the A value,
+the B value, or the O value. These are
+familiar to many of you from blood types,
+which is what we're modeling here. And so
+the total number of genotypes that we have
+is listed over here. We have the AA
+genotype. AB, AO, BO, BB, and OO. So, we have
+a total of six distinct genotypes.
+However, we have fewer phenotypes, because
+it turns out that AA and AO manifest
+exactly the same way as a blood type A.
+And BO and BB manifests as blood type B,
+and so we have only four phenotypes. So,
+how do we model genetic inheritance in a
+Bayesian network? Here is a little
+Bayesian network for genetic inheritance.
+We can see that for each individual, say
+Marge, we have a genotype variable which
+takes on six values, and one of the six
+values, which we saw before, and the
+phenotype, in this case, the blood type,
+depends only on the person's genotype. We
+also see that a person's genotype depends
+on the genotype of her parents. Because,
+after all, she inherits one chromosome
+from her mother, and one chromosome from
+her father. And so, a person's
+individual genotype just depends on those
+two variables. And so, this is very nice
+and very compelling Bayesian network,
+because everything just fits in
+beautifully in terms of, things really do
+depend  only on the variables
+that we stipulate, and the models
+they depend on.

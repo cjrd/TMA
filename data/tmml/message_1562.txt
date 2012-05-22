@@ -1,0 +1,44 @@
+Dear All,
+Has anyone encountered this error when using the HDP code by with split-merge operations.
+This is what i got when i set the split-merge parameter to 'true'.
+my screen result:
+Microsoft Windows XP [Version 5.1.2600]
+(C) Copyright 1985-2001 Microsoft Corp.
+C:\hdp\may13\bin\Debug>may13 --algorithm train --data wordcounts.txt --directory
+?train_dir
+Program starts with following parameters:
+algorithm:????????? = train
+data_path:????????? = wordcounts.txt
+directory:????????? = train_dir
+max_iter??????????? = 1000
+save_lag??????????? = 100
+init_topics???????? = 0
+random_seed???????? = 1305286920
+gamma_a???????????? = 5.00
+gamma_b???????????? = 0.10
+alpha_a???????????? = 0.10
+alpha_b???????????? = 0.10
+eta???????????????? = 0.50
+#restricted_scans?? = 5
+split-merge???????? = yes
+sampling hyperparam = yes
+reading data from wordcounts.txt
+number of docs? : 48
+number of terms : 545
+number of total words : 66121
+starting with 31 topics
+iter = 00000, #topics = 0032, #tables = 0050, gamma = 3.36917, alpha = 0.00735,
+likelihood = -325083.64755
+like.log = -1589.42, scan.log =? 0.00, ratio.log = -1589.42, merge (--- R ---)
+like.log = -2172.13, scan.log =? 0.00, ratio.log = -2172.13, merge (--- R ---)
+like.log = -2916.65, scan.log =? 0.00, ratio.log = -2916.65, merge (--- R ---)
+like.log = -1178.41, scan.log =? 0.00, ratio.log = -1178.41, merge (--- R ---)
+like.log = -2852.91, scan.log =? 0.00, ratio.log = -2852.91, merge (--- R ---)
+gsl: init.c:33: ERROR: permutation length n must be positive integer
+Default GSL error handler invoked.
+This application has requested the Runtime to terminate it in an unusual way.
+Please contact the application's support team for more information.
+This didnt happen when i left the split-merge parameter at the default 'false'. Any ideas on what could be wrong?
+Best regards.
+Toyin.
+HEU

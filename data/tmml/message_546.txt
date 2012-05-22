@@ -1,0 +1,12 @@
+Of course in a formal evaluation you always need multiple judgements of
+anything subjective.  However, when understanding if KL versus L1 distance
+produces better kNN for your data set, seeing the diff between
+hot dog sausage sauerkraut
+biscuit treat cookie
+milk tea coffee
+and
+hot dog sausage sauerkraut
+pencil pen paper
+car motorcycle gasoline
+is pretty darn clear, and reflects my experience.
+Aaron

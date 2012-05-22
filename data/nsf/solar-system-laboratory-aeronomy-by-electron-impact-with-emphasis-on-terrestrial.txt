@@ -1,0 +1,10 @@
+              This work combines laboratory astrophysics with basic rate process models in
+              order to provide a broadly applicable research methodology for the aeronomy and
+              planetary atmospheres community.  The research project will: 1) investigate the
+              physical chemistry controlling the thermal properties of the atomic oxygen
+              dominated upper thermosphere, 2) establish accurate models of rate processes
+              for species of primary importance to aeronomy, utilizing wherever possible, a
+              combination of experimental and theoretical quantities for each process, and 3)
+              establish an experimental design for the measurement of atomic nitrogen
+              electron impact cross sections, with an accompanying atomic model for both N
+              and N+.
