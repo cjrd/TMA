@@ -1,1 +1,0 @@
-/Users/cradreed/Research/TMBrowse/trunk/src/../data/pgm/using-a-markov-chain.txt
