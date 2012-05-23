@@ -1,0 +1,4 @@
+name: john q public
+email: someone@somewhere.com
+django-secret-key: 0123456789!abc123
+bing-api-key: 12345678901234567890123456789012345678901

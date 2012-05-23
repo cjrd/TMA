@@ -2,6 +2,8 @@ import os
 import pdb
 
 # User Limits
+import shutil
+
 MAX_UPLOAD_SIZE = 20*10e6
 MAX_WWW_DL_SIZE = 50*10e6
 
@@ -25,7 +27,10 @@ ALG_LOCS = {
 
 # read personal settings
 usettings = {}
-with open(os.path.join(TRUNK_PATH, 'user-settings.txt'), 'r') as usetts:
+sett_file = os.path.join(TRUNK_PATH, 'user-settings.txt')
+if os.path.exists(sett_file):
+    shutil.copy(os.path.join(TRUNK_PATH,'user-settings-TEMPLATE.txt'), sett_file)
+with open(sett_file, 'r') as usetts:
     for line in usetts:
         splt = line.strip().split(':')
         usettings[splt[0].strip()] = ':'.join(splt[1:]).strip()
