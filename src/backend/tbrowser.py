@@ -292,7 +292,7 @@ def get_wiki_pmi_coherence(topics, numterms=NUM_TERMS):   # TODO make sure the t
     
     
 # Coherence from Newman, 2011 Automatic (search index with Bing)   
-def get_bing_coherence_dict(terms_dict, corpus_dbloc, numtitles=100):#(terms, corpus_dbloc, numterms=NUM_TERMS, numtitles=100):
+def get_bing_coherence_dict(terms_dict, corpus_dbloc, numtitles=50):#(terms, corpus_dbloc, numterms=NUM_TERMS, numtitles=100):
     dbase = db(corpus_dbloc)
     # do we have a de-stemming table?                        
     destem = dbase.check_table_existence("termid_to_prestem")
@@ -316,9 +316,9 @@ def get_bing_coherence_dict(terms_dict, corpus_dbloc, numtitles=100):#(terms, co
         print '-topic %i of %i: %s' % (i, len(terms_dict), search_qry),
 
         tmatches = 0
-        for j in xrange(0,numtitles + 10,10):
-            json_response = bing.search(query=search_qry, sources='web', web_count=10, web_offset=j+1) 
-            responses = json_response['SearchResponse']['Web']['Results']
+        for j in xrange(0,numtitles + 50, 50):
+            json_response = bing.search(qry=search_qry, top=50, skip=j)
+            responses = json_response['d']['results']
             title_terms = map(lambda resp: resp['Title'].strip().lower().split(), responses) #TODO make case sensitive if desired  TODO make stemming optional
             title_terms = [item for sublist in title_terms for item in sublist]
             title_terms = map(stem, title_terms) # make list of lists into flat list
