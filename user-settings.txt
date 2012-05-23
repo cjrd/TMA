@@ -1,4 +1,4 @@
-name: colorado reed
-email: colorado.j.reed@gmail.com
+name: john doe
+email: someone@somewhere.com
 django-secret-key: 0123456789!
 bing-api-key: 12345678901234567890123456789012345678901
