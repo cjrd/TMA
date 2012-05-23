@@ -1,4 +1,4 @@
-#a class to control the djangoiation of the tbrowser
+# a class to control the djangoiation of the tbrowser
 import shutil
 from django.shortcuts import render_to_response
 from django.template import Context, RequestContext  
@@ -18,7 +18,6 @@ import random
 import os
 from time import time
 import cPickle as pickle
-
 
 NUM_TERMS = 8
 TOP_TOPIC_OBJ = 'top_topic_terms.obj'
@@ -238,7 +237,9 @@ def get_topic_coherence_scores(topics, corpus_dbloc, numterms=NUM_TERMS): # TODO
 
 # From Newman, 2010 Automatic Evaluation of Topic Models
 def get_wiki_pmi_coherence(topics, numterms=NUM_TERMS):   # TODO make sure the terms are already stemmed
-    dbase = db(WIKI_COCC_DB) 
+    dbase = db(WIKI_COCC_DB)
+    if not dbase.check_table_existence('co_occ'):
+        return {}
     scores = {}
     rtime = time()
     tid_dict = {} # keep terms and cooccurence counts in memory for caching

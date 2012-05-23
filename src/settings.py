@@ -1,5 +1,7 @@
 import os
+import sys
 import pdb
+
 
 # User Limits
 import shutil
@@ -18,6 +20,9 @@ WORKDIR = os.path.join(TRUNK_PATH, 'tmaout')
 DATA_DIR = os.path.join(TRUNK_PATH,'data')
 DEFAULT_STOP_WORDS = os.path.join(SRC_PATH,'backend/aux/stop_words.txt') # TODO add default stop-word file location to user settings
 
+# add the trunk location to the pythonpath
+sys.path.append(TRUNK_PATH)
+
 # set up appropriate algorithms TODO make sure algorithms are installed correctly
 ALG_LOCS = {
     'lda':os.path.join(TRUNK_PATH, 'lib/lda-c-dist'),
@@ -28,7 +33,7 @@ ALG_LOCS = {
 # read personal settings
 usettings = {}
 sett_file = os.path.join(TRUNK_PATH, 'user-settings.txt')
-if os.path.exists(sett_file):
+if not  os.path.exists(sett_file):
     shutil.copy(os.path.join(TRUNK_PATH,'user-settings-TEMPLATE.txt'), sett_file)
 with open(sett_file, 'r') as usetts:
     for line in usetts:
@@ -37,6 +42,7 @@ with open(sett_file, 'r') as usetts:
 
 # Set wikipedia cooccurence database location TODO set a flag that determines whether user has database
 WIKI_COCC_DB = os.path.join(DATA_DIR,'wiki_cocc_100percent.sqlite') # TODO: move this somewhere else?
+print WIKI_COCC_DB
 WIKI_NUM_ABST = 3925809 # hardcoded number of abstracts in wiki database
 
 # bing api key, make sure to set in user-settings.txt
