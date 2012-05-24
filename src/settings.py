@@ -42,8 +42,7 @@ with open(sett_file, 'r') as usetts:
 
 # Set wikipedia cooccurence database location TODO set a flag that determines whether user has database
 WIKI_COCC_DB = os.path.join(DATA_DIR,'wiki_cocc_100percent.sqlite') # TODO: move this somewhere else?
-print WIKI_COCC_DB
-WIKI_NUM_ABST = 3925809 # hardcoded number of abstracts in wiki database
+WIKI_NUM_ABST = 3925809 # hardcoded number of abstracts in wiki database 
 
 # bing api key, make sure to set in user-settings.txt
 BING_API_KEY = usettings['bing-api-key']

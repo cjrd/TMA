@@ -193,11 +193,11 @@ class relations:
     def get_related_docs(self, token):
         token_doc_info = []
         if isinstance(token, Topic):
-            token_doc_info = self.mydb.get_topic_docs(token.id)
+            token_doc_info = self.mydb.get_top_topic_docs(token.id)
         elif isinstance(token, Document):
-            token_doc_info = self.mydb.get_doc_docs(token.id) #TODO: id vs doc_id: make docs, topics, etc more consistent
+            token_doc_info = self.mydb.get_top_doc_docs(token.id) #TODO: id vs doc_id: make docs, topics, etc more consistent
         elif isinstance(token, Term):
-            token_doc_info = self.mydb.get_term_docs(token.id)
+            token_doc_info = self.mydb.get_top_term_docs(token.id)
         
         token_docs = {}
         for info in token_doc_info:
@@ -266,11 +266,11 @@ class relations:
     def get_related_topics(self, token):
         token_topic_info = []
         if isinstance(token, Topic):
-            token_topic_info = self.mydb.get_topic_topics(token.topic_id)
+            token_topic_info = self.mydb.get_top_topic_topics(token.topic_id)
         elif isinstance(token, Document):
-            token_topic_info = self.mydb.get_doc_topics(token.id)
+            token_topic_info = self.mydb.get_top_doc_topics(token.id)
         elif isinstance(token, Term):
-            token_topic_info = self.mydb.get_term_topics(token.id)
+            token_topic_info = self.mydb.get_top_term_topics(token.id)
         
         topics = {}
         for info in token_topic_info:
@@ -290,7 +290,7 @@ class relations:
     
     
     def get_related_terms(self, term, top_n = 10): 
-        # terms_info = self.mydb.get_term_terms(term.id)
+        # terms_info = self.mydb.get_top_term_terms(term.id)
         term_id = term.id
         term_topic_dist = pickle.load(open(self.term_topic_obj_loc,'rb'))
         top_terms = [] 
@@ -333,12 +333,12 @@ class relations:
     
     def get_term_count(self, term):
         total = 0;
-        for doc_info in self.mydb.get_term_docs(term.id):
+        for doc_info in self.mydb.get_top_term_docs(term.id):
             total += doc_info[3]
         return total
 
     def get_overall_score(self, topic):
         total = 0;
-        for doc_info in self.mydb.get_topic_docs(topic.topic_id):
+        for doc_info in self.mydb.get_top_topic_docs(topic.topic_id):
             total += doc_info[3]
         return total

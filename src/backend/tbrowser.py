@@ -5,6 +5,7 @@ from django.template import Context, RequestContext
 from django.http import HttpResponse
 from django.utils.html import escape
 from settings import BING_API_KEY, WIKI_COCC_DB, WIKI_NUM_ABST
+from urllib2 import HTTPError
 
 from src.backend.relations import relations, Document, Topic, Term
 from src.backend.db import db  
@@ -316,8 +317,12 @@ def get_bing_coherence_dict(terms_dict, corpus_dbloc, numtitles=50):#(terms, cor
         print '-topic %i of %i: %s' % (i, len(terms_dict), search_qry),
 
         tmatches = 0
-        for j in xrange(0,numtitles + 50, 50):
-            json_response = bing.search(qry=search_qry, top=50, skip=j)
+        for j in xrange(0,numtitles, 50):
+            try:
+                json_response = bing.search(qry=search_qry, top=50, skip=j)
+            except HTTPError:
+                print 'Error accessing Bing -- make sure your API key is correct' # TODO propagate this message to the display
+                return {}
             responses = json_response['d']['results']
             title_terms = map(lambda resp: resp['Title'].strip().lower().split(), responses) #TODO make case sensitive if desired  TODO make stemming optional
             title_terms = [item for sublist in title_terms for item in sublist]
@@ -605,14 +610,17 @@ def get_term_page(request, alg_db, term_title, termid, term_cutoff=NUM_TERMS, do
         'rightcol':topic_column, 'title':term.get_safe_title(), 'alg':alg}, context_instance=RequestContext(request))  
     
 def get_topic_page(request, alg_db, topic_title, topicid, term_cutoff=NUM_TERMS, doc_cutoff=10, topic_cutoff=10, alg=''):  
-   # init
+    """
+    returns the topic page to the user with related terms, documents, and topics
+    TODO: make this page also display the top N terms of the topic
+    """
+    
     myrelations = relations(alg_db)
     if not topic_title[0] == '{':
         topic_title = '{' + ', '.join(topic_title.strip().split()) + '}'
     topic = Topic(myrelations, topicid, topic_title)
 
-
-    # related terms    
+    # related terms
     terms = topic.get_terms(term_cutoff)
     term_column = ''#make_column(terms, 'terms')  
     term_num = 0
@@ -622,8 +630,7 @@ def get_topic_page(request, alg_db, topic_title, topicid, term_cutoff=NUM_TERMS,
     term_column = add_title('related terms',term_column)  
     term_column = add_canvas(term_column) 
     jsarray = get_js_topic_term_pie_array(myrelations, topic, terms)
-    
-    
+
     # related docs 
     docs = myrelations.get_top_related_docs(topic, doc_cutoff)
     doc_keys = docs.keys()

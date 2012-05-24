@@ -28,9 +28,10 @@ DEBUG = True
 def upload_file(request):
     # file parameters TODO: set up relative path directories for distribution and on server
     c = {}
-    notfs = []
+    notifs = []
     form = None
     c.update(csrf(request))
+    form_errors = False
     if request.method == 'POST':         
         wbasedir = WORKDIR
         workdir = tempfile.mkdtemp(dir = wbasedir, suffix = '_formdata')
@@ -43,7 +44,8 @@ def upload_file(request):
         except StopUpload: # TODO this is not working as expected
             error_message = "Uploaded data must be < %0.1f Mb" % (settings.MAX_UPLOAD_SIZE/1000000.0)
             print error_message
-            notfs.append(error_message)
+            form_errors = True
+            notifs.append(error_message)
             form_is_valid = False
 
         if form_is_valid:
@@ -202,9 +204,14 @@ def upload_file(request):
             analyzer.createJSLikeData()
             # TODO better way to progress to the next stage? How to use a nice AJAX updater?
             return HttpResponseRedirect('/' +  '_'.join(workdir.split('/')[-1].split('_')[0:-1]) + '/' + analyzer.params['alg'] + '/topic-list')
+        else:
+            form_errors = True
     if not form: # data was not actually valid (TODO perhaps do a try/catch and wind up here...)
         form = AnalysisForm()
-    retpage = render_to_response('init-page.html', {'form': form, 'notifications':notfs}, context_instance=RequestContext(request))
+    if form_errors:
+        notifs.insert(0,'There were errors, see below')
+        
+    retpage = render_to_response('init-page.html', {'form': form, 'notifications':notifs}, context_instance=RequestContext(request))
     return retpage
 
 def perplexity_form(request, algloc):
@@ -267,7 +274,6 @@ def res_disp(request, folder, alg, res, param = ''):
         output = get_doc_doc_graph(request, alg_db, alg=alg) 
     elif res == "termterm":
         output = get_term_term_graph(request, alg_db, alg=alg)
-
     elif res == "model":
         bing_coh_dict_loc = os.path.join(algloc,"bing_coherence_dict.obj")
         bing_coh_dict = {}
@@ -280,9 +286,10 @@ def res_disp(request, folder, alg, res, param = ''):
         output = get_doc_text(os.path.join(dataloc,'paradocs'), param)
     elif res == "bing-coherence":
         bing_coh_dict_loc = os.path.join(algloc,"bing_coherence_dict.obj")
+        bing_coh_dict = {}
         if os.path.exists(bing_coh_dict_loc):
             bing_coh_dict = pickle.load(open(bing_coh_dict_loc,'rb'))
-        else:
+        if bing_coh_dict =={}:
             topic_terms_dic = pickle.load( open(os.path.join(algloc,TOP_TOPIC_OBJ)) ) # TODO handle the case if the topic term dict is not present
             bing_coh_dict = get_bing_coherence_dict(topic_terms_dic, corpus_dbloc, numtitles = 50)
             pickle.dump(bing_coh_dict, open(bing_coh_dict_loc,'wb'))

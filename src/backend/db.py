@@ -4,7 +4,10 @@ import pdb
 # doc_topic: higher is better   -
 # topic_term: higher is better  -
 # topic_topic: lower is better  -
-# term_term: lower is better    -  
+# term_term: lower is better    -
+
+# TODO: this can e different for various algorithms... How to handle?
+# Perhaps consider having each Analyzer define its topic/document/term simularity, etc
 
 class db:
     def __init__(self, filename):
@@ -78,54 +81,31 @@ class db:
     def get_topic_terms(self, topic_id, cutoff=-1):
         self.cur.execute('SELECT * FROM topic_term WHERE topic=? ORDER BY score DESC LIMIT ?', [topic_id, cutoff])
         return self.cur.fetchall()
-                                     
-    def get_topic_docs(self, topic_id):
-        self.cur.execute('SELECT * FROM doc_topic WHERE topic=?', [topic_id])
-        return self.cur.fetchall()
-    def get_top_topic_docs(self, topic_id, num=1):                            
+
+    def get_top_topic_docs(self, topic_id, num=-1):                            
         self.cur.execute('SELECT * FROM doc_topic WHERE topic=? ORDER BY score DESC LIMIT ?', [topic_id,num])
         return self.cur.fetchall() 
 
-    def get_term_docs(self, term_id):
-        self.cur.execute('SELECT * FROM doc_term WHERE term=?', [term_id])
-        return self.cur.fetchall() 
-    def get_top_term_docs(self, term_id, num=1):
-        self.cur.execute('SELECT * FROM doc_term WHERE term=? ORDER BY score  LIMIT ?', [term_id,num])
+    def get_top_term_docs(self, term_id, num=-1):
+        self.cur.execute('SELECT * FROM doc_term WHERE term=? ORDER BY score LIMIT ?', [term_id,num])
         return self.cur.fetchall()
-                                     
-    def get_topic_topics(self, topic_id):
-        self.cur.execute('SELECT * FROM topic_topic WHERE topic_a=? OR topic_b=?', [topic_id, topic_id])
-        return self.cur.fetchall()  
-    def get_top_topic_topics(self, topic_id, num=1):
+
+    def get_top_topic_topics(self, topic_id, num=-1):
         self.cur.execute('SELECT * FROM topic_topic WHERE topic_a=? OR topic_b=? ORDER BY score LIMIT ?', [topic_id, topic_id, num])
         return self.cur.fetchall()    
 
-    def get_doc_docs(self, doc_id):
-        self.cur.execute('SELECT * FROM doc_doc WHERE doc_a=? OR doc_b=?', [doc_id, doc_id])
-        return self.cur.fetchall()
-    def get_top_doc_docs(self, doc_id,num=1):
+    def get_top_doc_docs(self, doc_id,num=-1):
         self.cur.execute('SELECT * FROM doc_doc WHERE doc_a=? OR doc_b=? ORDER BY score  LIMIT ?', [doc_id, doc_id, num])
         return self.cur.fetchall() 
     
-    def get_top_doc_topics(self, doc_id, num=1):
+    def get_top_doc_topics(self, doc_id, num=-1):
         self.cur.execute('SELECT * FROM doc_topic WHERE doc=? ORDER BY score DESC LIMIT ?', [doc_id, num])
         val = self.cur.fetchall() 
         return val 
-        
-    def get_doc_topics(self, doc_id):
-        self.cur.execute('SELECT * FROM doc_topic WHERE doc=?', [doc_id])
-        return self.cur.fetchall()
 
-    def get_term_terms(self, term_id):
-        self.cur.execute('SELECT * FROM term_term WHERE term_a=? OR term_b=?', [term_id, term_id])
-        return self.cur.fetchall() 
-        
-    def get_top_term_terms(self, term_id, num=1):
+    def get_top_term_terms(self, term_id, num=-1):
         self.cur.execute('SELECT * FROM term_term WHERE term_a=? OR term_b=? ORDER BY score LIMIT ?', [term_id, term_id, num])
 
-    def get_term_topics(self, term_id):
-        self.cur.execute('SELECT * FROM topic_term WHERE term=?', [term_id])
-        return self.cur.fetchall() 
     def get_top_term_topics(self, term_id, num = 1):  # TODO this should phase out the other method
         self.cur.execute('SELECT * FROM topic_term WHERE term=? ORDER BY score DESC LIMIT ?', [term_id, num])
         return self.cur.fetchall()         

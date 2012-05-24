@@ -68,8 +68,6 @@
 </script>
 
 <script language="JavaScript" type="text/javascript">
-
-
     jQuery(document).ready(function() {
         var ajax_load = "<img src='{{ STATIC_URL }}images/ajax-loading.gif' alt='loading...' style='vertical-align: middle; align:right'/>";
         var jsonUrl = "../bing-coherence";
@@ -103,9 +101,9 @@
                     jQuery("#coherenceTable").trigger("sorton", [sorting]);
                 }
         );
-
     });
 </script>
+
 <script language="JavaScript" type="text/javascript">
     jQuery(document).ready(function() {
         var lp_data = [];
