@@ -248,11 +248,11 @@ class relations:
             token_topic_info = self.mydb.get_top_doc_topics(token.id, num)
         elif isinstance(token, Term):
             token_topic_info = self.mydb.get_top_term_topics(token.id, num)
-        
+
         topics = {}
         for info in token_topic_info:
             score = info[3]
-            if score != 0 and not (isinstance(token, Document) and score < 1): #check for reverse pairs in topic-topic search
+            if score != 0: #check for reverse pairs in topic-topic search
                 if (isinstance(token, Topic) and info[2] == int(token.topic_id)) or isinstance(token, Term):
                     t = self.get_topic(info[1])
                     if t != None:

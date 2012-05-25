@@ -57,15 +57,20 @@ def build_graph_json(collection, myrelations, related_item_fnct):
         
     for ct, item in enumerate(collection):                  # TODO must make the SQL queries more efficient!    
         name = item.get_safe_title() + '-' + str(item.id)
-        topics = myrelations.get_top_related_topics(item)   
-
-        topic_keys = topics.keys()
-        topic_keys.sort(lambda x, y: -cmp(topics[x], topics[y])) 
-        try: 
-            group = topic_keys[0]         
+        group = myrelations.get_top_related_topics(item, 1)
+        try:
+            group = group.keys()[0]
         except IndexError:
-            print 'Warning: ' + name + ' did not have related topics, will omit.'
+            print 'Warning: %s (%i) did not have related topics, will omit.' % (name, item.id)
             continue
+
+#        topic_keys = topics.keys()
+#        topic_keys.sort(lambda x, y: -cmp(topics[x], topics[y]))
+#        try:
+#            group = topic_keys[0]
+#        except IndexError:
+#            print 'Warning: ' + name + ' did not have related topics, will omit.'
+#            continue
             
         node_str += '{"name":"%s","group":%s}' % (name, str(group.id))
         if not ct == len(collection)-1:

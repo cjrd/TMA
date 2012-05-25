@@ -35,7 +35,7 @@
             var form = jQuery("#initform");
             form.submit(function(e) {
                 jQuery("#sendbutton").attr('disabled', true);
-                jQuery("#sendspan").prepend('<img alt="loading" src="{{ STATIC_URL }}images/ajax-loading-bar.gif" style="vertical-align: middle;"/>')
+                jQuery("#wait_img").show();
                 jQuery("#sb_div").append('<div class="help-text" style="text-align:right; width:auto;"> Note: this analysis may take several minutes</div>')
             });
 
@@ -157,6 +157,7 @@
 
             <div id="sb_div">
                 <span style="display: block; text-align: right;" id="sendspan">
+                    <img id="wait_img" alt="loading" src="{{ STATIC_URL }}images/ajax-loading-bar.gif" style="vertical-align: middle; display:none;"/>
                     <input id="sendbutton" type="submit" value="Analyze">
                 </span>
             </div>
