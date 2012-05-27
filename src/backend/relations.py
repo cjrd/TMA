@@ -28,7 +28,7 @@ class Document:
     def get_safe_title(self):
         safe_title = slugify(self.title)
         return safe_title
-#
+
 #    def get_display(self):
 #        return template.get_doc_display(self)
 
@@ -240,7 +240,7 @@ class relations:
 
         return token_docs 
             
-    def get_top_related_topics(self, token, num=1): # TODO this should replace the get_related_terms function eventually  
+    def get_top_related_topics(self, token, num=1): # TODO this should replace the get_related_topics function eventually
         token_topic_info = []
         if isinstance(token, Topic):
             token_topic_info = self.mydb.get_top_topic_topics(token.topic_id, num)
@@ -303,7 +303,7 @@ class relations:
             score = 0   
             for i in xrange(len(term_topic_dist[term_id])):   
                 score += math.pow(term_topic_dist[term_id][i] - term_topic_dist[term_comp_id][i], 2)
-            if score != 0: 
+            if score > 0:
                 if len(top_terms) < top_n or score < max_score:   
                     newterm = Term(term_comp_id,'boola')  
                     newterm.score = score

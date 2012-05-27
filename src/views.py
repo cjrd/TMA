@@ -200,7 +200,7 @@ def upload_file(request):
             analyzer.do_analysis()
             # save the analyzer for later use
             pickle.dump(analyzer,open(os.path.join(analyzer.get_param('outdir'), 'analyzer.obj'),'w'))
-            tmveoutdir = analyzer.create_browser_db()
+            analyzer.create_relations()
             analyzer.createJSLikeData()
             # TODO better way to progress to the next stage? How to use a nice AJAX updater?
             return HttpResponseRedirect('/' +  '_'.join(workdir.split('/')[-1].split('_')[0:-1]) + '/' + analyzer.params['alg'] + '/topic-list')
@@ -270,10 +270,6 @@ def res_disp(request, folder, alg, res, param = ''):
         output = get_topic_page(request, alg_db, prm_text, int(prm_id), term_cutoff=10, doc_cutoff=10, alg=alg);
     elif res == 'documents':
         output = get_doc_page(request, alg_db, prm_text, int(prm_id), os.path.join(dataloc,'paradocs'), topic_cutoff=10, doc_cutoff=10, alg=alg);
-    elif res == "docdoc":
-        output = get_doc_doc_graph(request, alg_db, alg=alg) 
-    elif res == "termterm":
-        output = get_term_term_graph(request, alg_db, alg=alg)
     elif res == "model":
         bing_coh_dict_loc = os.path.join(algloc,"bing_coherence_dict.obj")
         bing_coh_dict = {}
@@ -303,7 +299,7 @@ def res_disp(request, folder, alg, res, param = ''):
 
     else:
         output = HttpResponse('<html><body><strong>Page Not Found (TODO: implement a better "page not found" page)</strong></html></body>')
-    del(alg_db)
+    del alg_db
     print 'took %f seconds' % (time()-tst)
     
     return output

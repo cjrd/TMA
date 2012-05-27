@@ -187,7 +187,7 @@ class AnalysisForm(forms.Form):
        help_text="""Describes how the topics will be initialized.
        "random" initializes each topic randomly; "seeded" initializes each topic to a distribution smoothed from a randomly
         chosen document.""")
-    lda_alpha = forms.FloatField(required=False, label='alpha', initial='', help_text="[initial] Dirichlet hyperparameter -- default = 50 / (number of topics)")
+    lda_alpha = forms.FloatField(required=False, label='alpha', initial='', help_text="[initial] Dirichlet hyperparameter -- default = 50 / (number of topics); note: this heuristic stems from using ~ average number of words per file / number of topics")
     lda_alpha_tech = forms.CharField(required=False, label = 'alpha technique',
        widget=Select(
            choices=(

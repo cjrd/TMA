@@ -21,7 +21,7 @@ library(lasso2)
 #
 # Output
 #   Ihat:   matrix of 0/1, with 1 indicating an edge in the graph
-lam = read.table('/Users/cradreed/Research/TMBrowse/develarea/tmpkk2OnQ_formdata/ctm/final-lambda.dat')
+lam = read.table('/Users/cradreed/Research/TMA/tmaout/tmp3sVK1F_formdata/ctm/final-lambda.dat')
 lam = unlist(lam) 
 x = matrix(lam, nrow=2000, ncol=10, byrow=T)
 x = x[,1:9]

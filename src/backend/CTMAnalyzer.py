@@ -1,4 +1,5 @@
 from TMAnalyzer import TMAnalyzer
+from src.settings import SRC_PATH
 from time import time
 import os
 import math
@@ -27,6 +28,8 @@ class CTMAnalyzer(TMAnalyzer):
         
     
     def do_analysis(self):
+         """
+         """
          # write settings file to outputdir 
          settingsout = "em max iter %(em_max_iter)i\n\
          var max iter %(var_max_iter)d\n\
@@ -46,34 +49,38 @@ class CTMAnalyzer(TMAnalyzer):
          os.system(cmd)
          print 'finished CTM analysis in %f seconds' % (time()-stime)     
          
-    def create_browser_db(self):
-        # put the CTM output data into the correct format for the browser
-        if self.params['nterms'] == -1 or self.params['ndocs'] == -1:
-            print 'Must set parameter "nterms" and "ndocs" before calling createBrowser with CTM' # TODO lighten this requirement?
-        bfile = open('%(outdir)s/final-log-beta.dat' % self.params, 'r')
-        boutfile = open('%(outdir)s/final.beta' % self.params, 'w')
-        for tnum in xrange(self.params['ntopics']):
-            for wnum in xrange(self.params['nterms']): # TODO add try catch in case param is set wrong
-                boutfile.write('%f ' % float(bfile.readline()))
-            boutfile.write('\n')     
-        boutfile.close()
-        bfile.close()                                                     
-        
-        gfile = open('%(outdir)s/final-lambda.dat' % self.params, 'r')    # lambda file has documents as the rows and topics as the columns 
-        goutfile = open('%(outdir)s/final.gamma' % self.params, 'w')
-        for dnum in xrange(self.params['ndocs']):   
-            for wnum in xrange(self.params['ntopics']):
-                val = float(gfile.readline())     
-                if not val:
-                    val = -100
-                goutfile.write('%f ' % math.exp(val))
-            goutfile.write('\n')
-            pass 
-            
-        goutfile.close()
-        gfile.close()
-               
-        return super(CTMAnalyzer, self).create_browser_db()
+#    def create_browser_db(self):
+#        """
+#
+#        """
+#        # put the CTM output data into the correct format for the browser
+#        if self.params['nterms'] == -1 or self.params['ndocs'] == -1:
+#            print 'Must set parameter "nterms" and "ndocs" before calling createBrowser with CTM' # TODO lighten this requirement?
+#        bfile = open('%(outdir)s/final-log-beta.dat' % self.params, 'r')
+#        boutfile = open('%(outdir)s/final.beta' % self.params, 'w')
+#        for tnum in xrange(self.params['ntopics']):
+#            for wnum in xrange(self.params['nterms']): # TODO add try catch in case param is set wrong
+#                boutfile.write('%f ' % float(bfile.readline()))
+#            boutfile.write('\n')
+#        boutfile.close()
+#        bfile.close()
+#
+#        gfile = open('%(outdir)s/final-lambda.dat' % self.params, 'r')    # lambda file has documents as the rows and topics as the columns
+#        goutfile = open('%(outdir)s/final.gamma' % self.params, 'w')
+#        for dnum in xrange(self.params['ndocs']):
+#            for wnum in xrange(self.params['ntopics']):
+#                val = float(gfile.readline())
+#                if not val:
+#                    val = -100
+#                goutfile.write('%f ' % math.exp(val))
+#            goutfile.write('\n')
+#            pass
+#
+#        goutfile.close()
+#        gfile.close()
+#
+#        return super(CTMAnalyzer, self).create_browser_db()
+
     def createJSLikeData(self):
         # transform the likelihood data
         linfile = open('%s/likelihood.dat' % self.params['outdir'], 'r')          
@@ -89,20 +96,47 @@ class CTMAnalyzer(TMAnalyzer):
             else:
                 jsout.write(']')
         jsout.close()      
-            
-    
+
+    def create_relations(self):
+        """
+        NOTE: this method should be called after 'do_analysis'
+        """
+        dbase = self.init_rel_db()
+
+        # write the vocab to the database (STD)
+
+        # write doc title to database (STD)
+
+        # write topics, i.e. top 3 terms (STD)
+
+        # doc-term (STD)
+
+        # doc_doc (doc1, doc2, score
+
+        # calculate the hellinger distance using an R-script
+        heldist_cmd = "Rscript %s %s %i" % (os.path.join(SRC_PATH,'backend/aux/hellinger-ctm.r'),self.params['outdir'] + '/' , self.params['ntopics'])
+        os.system(heldist_cmd)
+        # write the results to a database
+        doc_doc_scores = []
+        with open(os.path.join(self.params['outdir'], 'hellinger-docs.csv'), 'r') as hdistf:
+            for i, doc in enumerate(hdistf):
+                dscores = doc.strip().split()
+                for j in xrange(len(dscores)):
+                    if j > i:
+                        doc_doc_scores.append((i, j, 1.0/float(dscores[j])))
+        self.ins_docdoc(doc_doc_scores, dbase)
         
-if __name__=="__main__":
-    prms = {'outdir':'ctmtestout','corpusfile':'/Users/cradreed/Research/TMBrowse/develarea/tmpiOVSwN_formdata/tmpq62vA7_corpus/corpus.dat',\
-        'ctmdir':'/Users/cradreed/Research/TMBrowse/current/lib/ctm-dist', 'nterms':3255, 'ndocs':301}       
-    ctmtest = CTMAnalyzer(prms) 
-    print 'testing analysis'
-    # ctmtest.do_analysis()
-    print 'finished analysis'
-    print
-    
-    print 'testing browser' 
-    ctmtest.createBrowser('/Users/cradreed/Research/TMBrowse/current/lib/tmve');
-    print 'finished browser'        
+        # doc_topic
+
+        # topic_terms
+
+        # topic_topic
+
+        # term_term
+        self.create_rel_indices(dbase) # TODO implement
+
+
+
+           
 
     

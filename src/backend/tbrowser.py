@@ -63,14 +63,6 @@ def build_graph_json(collection, myrelations, related_item_fnct):
         except IndexError:
             print 'Warning: %s (%i) did not have related topics, will omit.' % (name, item.id)
             continue
-
-#        topic_keys = topics.keys()
-#        topic_keys.sort(lambda x, y: -cmp(topics[x], topics[y]))
-#        try:
-#            group = topic_keys[0]
-#        except IndexError:
-#            print 'Warning: ' + name + ' did not have related topics, will omit.'
-#            continue
             
         node_str += '{"name":"%s","group":%s}' % (name, str(group.id))
         if not ct == len(collection)-1:

@@ -17,23 +17,27 @@ import cPickle as pickle
 # term_topic: higher is better       
 
 
+# DOCS
 def get_doc_score(doca, docb):
     score = 0
     total = 0
     for topic_id in xrange(len(doca)):
         thetaa = doca[topic_id]
         thetab = docb[topic_id]
-        if not ((thetaa != 0.0 and thetab == 0.0) or (thetaa == 0.0 and thetab != 0.0)):
+        if not ((thetaa != 0.0 and thetab == 0.0) or (thetaa == 0.0 and thetab != 0.0)): # TODO this is comparing floats?
             score += math.pow(thetaa - thetab, 2)
     return 0.5 * score
 
+
+# TOPICS
 def get_topic_score(topica, topicb):
+    # len(topic) = size of vocabulary
     score = 0
-    total = math.pow(abs(math.sqrt(100) - math.sqrt(0)), 2) * len(topica)
+    total = math.pow(abs(math.sqrt(100) - math.sqrt(0)), 2) * len(topica) # TODO what in the world is this???
     for term_id in xrange(len(topica)):
-        thetaa = abs(topica[term_id])
-        thetab = abs(topicb[term_id])
-        score += math.pow(abs(math.sqrt(thetaa) - math.sqrt(thetab)), 2) # colo: why take abs here?
+        thetaa = abs(topica[term_id]) # why is this called thata when its taken from the beta file?
+        thetab = abs(topicb[term_id]) # furthermore, these are log(beta), so why take abs?
+        score += math.pow(abs(math.sqrt(thetaa) - math.sqrt(thetab)), 2) # why take abs before squaring?
     return 0.5 * score / total
 
 # def get_term_score(terma, termb):
@@ -58,18 +62,18 @@ def write_doc_doc(con, cur, gamma_file):
     read_file.close()
     for i in xrange(len(docs)):
         for j in xrange(len(docs[i])):
-            docs[i][j] = math.pow(abs(docs[i][j]), 2)
+            docs[i][j] = math.pow(docs[i][j], 2)
     
     print len(docs)
     for a in xrange(len(docs)):
         if a % 1000 == 0:
             print "doc " + str(a)
         doc_by_doc = {}
-        for b in xrange(a, len(docs)):
+        for b in xrange(a, len(docs)): # TODO why compute doc-doc score with itself, should we go from a+1?
             score = get_doc_score(docs[a], docs[b])
-            if score == 0:
+            if score == 0: # TODO this is bad: comparing floats..
                 continue  # only include the docs if they are not exactly the same (also a sanity check...)?
-            elif len(doc_by_doc) < 100:
+            elif len(doc_by_doc) < 100: # save the top 100 related docs
                 doc_by_doc[score] = (a, b)
             else:
                 max_score = max(doc_by_doc.keys())   
@@ -88,7 +92,7 @@ def write_doc_doc(con, cur, gamma_file):
     con.commit()
 
  
-# directly uses gamma theta(?) values
+# directly uses gamma [theta] values
 def write_doc_topic(con, cur, gamma_file):
     cur.execute('CREATE TABLE doc_topic (id INTEGER PRIMARY KEY, doc INTEGER, topic INTEGER, score FLOAT)')
     con.commit()
@@ -100,8 +104,7 @@ def write_doc_topic(con, cur, gamma_file):
         for i in xrange(len(doc)):
             cur.execute('INSERT INTO doc_topic (id, doc, topic, score) VALUES(NULL, ?, ?, ?)', [doc_no, i, doc[i]])
         doc_no = doc_no + 1
-    con.commit() 
-    
+    con.commit()
     cur.execute('CREATE INDEX doc_topic_idx1 ON doc_topic(doc)')
     cur.execute('CREATE INDEX doc_topic_idx2 ON doc_topic(topic)')  
     cur.execute('CREATE INDEX doc_topic_idx_score ON doc_topic(score)')
@@ -151,13 +154,13 @@ def write_topic_topic(con, cur, beta_file):
     cur.execute('CREATE TABLE topic_topic (id INTEGER PRIMARY KEY, topic_a INTEGER, topic_b INTEGER, score FLOAT)')
     con.commit()  
     
-    # for each line in the beta file
+    # for each line (topic with length V) in the beta file
     read_file = file(beta_file, 'r')
     topics = []
     topic_no = 0
     for topic in read_file:
         topics.append(map(float, topic.split()))
-        topic_no = topic_no +1
+        topic_no += 1
     
     topica_count = 0
     topic_by_topic = []
@@ -165,15 +168,15 @@ def write_topic_topic(con, cur, beta_file):
         #topic_sim = r
         topicb_count = 0
         for topicb in topics:
-            if topic_by_topic.count((topicb_count, topica_count)) != 0:
-                topicb_count +=1
+            if topic_by_topic.count((topicb_count, topica_count)): # make sure we don't compare topics > 1 time
+                topicb_count += 1
                 continue
             score = get_topic_score(topica, topicb)
             cur.execute('INSERT INTO topic_topic (id, topic_a, topic_b, score) VALUES(NULL, ?, ?, ?)', [topica_count, topicb_count, score])
             
             topic_by_topic.append((topica_count, topicb_count))
-            topicb_count = topicb_count + 1
-        topica_count = topica_count + 1
+            topicb_count += 1
+        topica_count += 1
     con.commit() 
     
     cur.execute('CREATE INDEX topic_topic_idx1 ON topic_topic(topic_a)')
@@ -210,10 +213,9 @@ def write_doc_term(con, cur, wordcount_file, no_words):
         doc = doc.split()[1:]
         terms = {}
         for term in doc:
-            terms[int(term.split(':')[0])] = int(term.split(':')[1])
+            terms[int(term.split(':')[0])] = int(term.split(':')[1]) # create a term:ct dictionary for each document
 
         for i in xrange(no_words):
-            score = 0
             if terms.has_key(i):
                 score = terms[i]
                 execution_string = 'INSERT INTO doc_term (id, doc, term, score) VALUES(NULL, ?, ?, ?)'
@@ -296,7 +298,7 @@ def generate_db(filename, doc_wordcount_file, beta_file, gamma_file, vocab_file,
     term_obj = os.path.join(os.path.dirname(filename), 'term_betas.obj')
     create_term_term_object(term_obj, beta_file, len(vocab))
        
-    # doc-term appears to be how many times the term was in the document (colo:should it be relative?)
+    # doc-term appears to be how many times the term was in the document (should it be relative? -- onlh if we're comparing)
     print "writing doc_term to db..."
     write_doc_term(con, cur, doc_wordcount_file, len(vocab))
 
