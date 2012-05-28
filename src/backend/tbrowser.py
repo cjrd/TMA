@@ -121,7 +121,6 @@ def get_summary_page(request, alg_db, numterms = NUM_TERMS, numcolumns = 3, alg=
             for j in xrange(numterms):
                 line = []
                 for k in xrange(colct):
-                   # pdb.set_trace()
                     term_title = topics[ct-colct+k].get_term(j).title
                     term_id = topics[ct-colct+k].get_term(j).id
                     line.append({'title':term_title, 'id':term_id})
@@ -598,7 +597,7 @@ def get_term_page(request, alg_db, term_title, termid, term_cutoff=NUM_TERMS, do
     doc_column = make_column(doc_keys[:doc_cutoff], 'documents')
 
     # related topics
-    topics = myrelations.get_related_topics(term)
+    topics = myrelations.get_top_related_topics(term, topic_cutoff)
     topic_keys = topics.keys()
     topic_keys.sort(lambda x, y: -cmp(topics[x], topics[y])) 
     topic_column = make_column(topic_keys[:topic_cutoff], 'topics')

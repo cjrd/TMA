@@ -35,11 +35,16 @@ class db:
         self.cur.execute(stmt)
         return self.cur.fetchall()
 
-    def execute(self, stmt):
-        self.cur.execute(stmt)
+    def execute(self, stmt, args=None):
+        if args:
+            self.cur.execute(stmt, args)
+        else:
+            self.cur.execute(stmt)
+        self.commit()
 
     def executemany(self, stmt, itms):
         self.cur.executemany(stmt, itms)
+        self.commit()
         
     def check_table_existence(self, table_name):
         qry = "SELECT name FROM sqlite_master WHERE type='table' AND name='%s'" % table_name
@@ -87,15 +92,15 @@ class db:
         return self.cur.fetchall() 
 
     def get_top_term_docs(self, term_id, num=-1):
-        self.cur.execute('SELECT * FROM doc_term WHERE term=? ORDER BY score LIMIT ?', [term_id,num])
+        self.cur.execute('SELECT * FROM doc_term WHERE term=? ORDER BY score DESC LIMIT ?', [term_id,num])
         return self.cur.fetchall()
 
     def get_top_topic_topics(self, topic_id, num=-1):
-        self.cur.execute('SELECT * FROM topic_topic WHERE topic_a=? OR topic_b=? ORDER BY score LIMIT ?', [topic_id, topic_id, num])
+        self.cur.execute('SELECT * FROM topic_topic WHERE topic_a=? OR topic_b=? ORDER BY score DESC LIMIT ?', [topic_id, topic_id, num])
         return self.cur.fetchall()    
 
     def get_top_doc_docs(self, doc_id,num=-1):
-        self.cur.execute('SELECT * FROM doc_doc WHERE doc_a=? OR doc_b=? ORDER BY score  LIMIT ?', [doc_id, doc_id, num])
+        self.cur.execute('SELECT * FROM doc_doc WHERE doc_a=? OR doc_b=? ORDER BY score DESC LIMIT ?', [doc_id, doc_id, num])
         return self.cur.fetchall() 
     
     def get_top_doc_topics(self, doc_id, num=-1):
@@ -104,7 +109,7 @@ class db:
         return val 
 
     def get_top_term_terms(self, term_id, num=-1):
-        self.cur.execute('SELECT * FROM term_term WHERE term_a=? OR term_b=? ORDER BY score LIMIT ?', [term_id, term_id, num])
+        self.cur.execute('SELECT * FROM term_term WHERE term_a=? OR term_b=? ORDER BY score DESC LIMIT ?', [term_id, term_id, num])
 
     def get_top_term_topics(self, term_id, num = 1):  # TODO this should phase out the other method
         self.cur.execute('SELECT * FROM topic_term WHERE term=? ORDER BY score DESC LIMIT ?', [term_id, num])

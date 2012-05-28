@@ -1,8 +1,10 @@
+from itertools import combinations
 from TMAnalyzer import TMAnalyzer
-from src.settings import SRC_PATH
+from src.backend.math_utils import logistic_normal
 from time import time
 import os
-import math
+import numpy as np
+import pdb
 
 class CTMAnalyzer(TMAnalyzer):
     
@@ -101,39 +103,70 @@ class CTMAnalyzer(TMAnalyzer):
         """
         NOTE: this method should be called after 'do_analysis'
         """
-        dbase = self.init_rel_db()
+        self.init_rel_db()
 
         # write the vocab to the database (STD)
+        self.write_terms_table()
 
         # write doc title to database (STD)
+        self.write_docs_table()
 
         # write topics, i.e. top 3 terms (STD)
-
-        # doc-term (STD)
-
-        # doc_doc (doc1, doc2, score
-
-        # calculate the hellinger distance using an R-script
-        heldist_cmd = "Rscript %s %s %i" % (os.path.join(SRC_PATH,'backend/aux/hellinger-ctm.r'),self.params['outdir'] + '/' , self.params['ntopics'])
-        os.system(heldist_cmd)
-        # write the results to a database
-        doc_doc_scores = []
-        with open(os.path.join(self.params['outdir'], 'hellinger-docs.csv'), 'r') as hdistf:
-            for i, doc in enumerate(hdistf):
-                dscores = doc.strip().split()
-                for j in xrange(len(dscores)):
-                    if j > i:
-                        doc_doc_scores.append((i, j, 1.0/float(dscores[j])))
-        self.ins_docdoc(doc_doc_scores, dbase)
-        
-        # doc_topic
+        beta = np.loadtxt(os.path.join(self.params['outdir'],'final-log-beta.dat'))
+        beta.shape = (self.params['ntopics'], len(beta)/self.params['ntopics'])
+        indices = self._get_rev_srt_ind(beta)
+        self.write_topics_table(top_term_mat=beta, indices=indices)
 
         # topic_terms
+        self.write_topic_terms(beta)
+
+        # doc-term (STD)
+        self.write_doc_term(beta)
 
         # topic_topic
+        self.write_topic_topic(np.exp(beta))
 
         # term_term
-        self.create_rel_indices(dbase) # TODO implement
+        self.write_term_term(np.exp(beta))
+
+        # doc_doc
+        lam = np.loadtxt(os.path.join(self.params['outdir'],'final-lambda.dat'))
+        lam.shape = (len(lam)/self.params['ntopics'], self.params['ntopics'])
+        lam = lam[:,:-1]
+        nu = np.loadtxt(os.path.join(self.params['outdir'],'final-nu.dat'))
+        nu.shape = (len(nu)/self.params['ntopics'], self.params['ntopics'])
+        nu = nu[:,:-1]
+        theta_est = []
+
+        for i in xrange(len(lam)):
+            samples = logistic_normal(lam[i,:], np.diag(nu[i,:]), n=100) # n=100 found adequate through aux experiments
+            theta_est.append(np.sqrt(samples).mean(axis=0))
+
+        scores = np.zeros([len(lam), len(lam)])
+        for combo in  combinations(xrange(len(lam)), 2): # generator for all possible doc combinations
+            scores[combo[0],combo[1]] = 1/(2 - 2 * sum(theta_est[combo[0]] * theta_est[combo[1]] )) # make score inverse Hellinger so higher is better
+        scores = scores + scores.T # for accurate top K doc-docs TODO is there a better way to do this?
+        score_inds = self._get_rev_srt_ind((scores))[:,:50] # take the top fifty related docs
+
+        db_list = []
+        idxs = {} # so we don't have duplicates in the database
+        for i in xrange(scores.shape[0]):
+            for j in score_inds[i,:]:
+                j = int(j)
+                minv = min(i,j)
+                maxv = max(i,j)
+                if not idxs.has_key('%i %i' % (minv,maxv)):
+                        db_list.append((minv, maxv, round(scores[minv,maxv], 4))) # TODO this could probably be replaced with a generator
+                        idxs['%i %i' % (minv,maxv)] = 1
+
+
+        self.ins_docdoc(db_list)
+
+        # doc_topic
+        self.write_doc_topic(np.array(theta_est))
+
+        # create indices for fast lookup
+        self.create_db_indices()
 
 
 

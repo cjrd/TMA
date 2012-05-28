@@ -1,6 +1,21 @@
-import string
-
 verbose = False
+
+def generic_generator(*args):
+    """
+    A helpful abstraction to pass results to sqlite3.executemany
+    author: skipper seabold
+    """
+    for zips in zip(*args):
+        yield zips
+
+def file_generator(fhandle):
+    """
+    A generator for an open file handle that strips lines
+    author: skipper seabold
+    """
+    for line in fhandle:
+        yield line.strip()
+
 
 def set_verbose(value):
     global verbose
@@ -39,7 +54,7 @@ class messages:
     def print_file_read_error(filename, strerror):
         print 'Error reading file \'' + filename + '\': ' + strerror
     print_file_read_error = Callable(print_file_read_error)
-    
+
     def print_malformed_file(filetype, filename = '', expectation = '', linenum = 0, line = ''):
         if filename == '':
             print filetype + ' file is malformed.'
@@ -47,8 +62,8 @@ class messages:
             print filetype + ' file \'' + filename + '\' is malformed.'
 
         if expectation != '':
-            	print 'Expected ' + expectation + ' on line ' + str(linenum) + ':'
-            	print line
+                print 'Expected ' + expectation + ' on line ' + str(linenum) + ':'
+                print line
     print_malformed_file = Callable(print_malformed_file)
 
     def print_error(error):
@@ -59,9 +74,3 @@ class messages:
         print 'Warning: ' + warning
     print_warning = Callable(print_warning)
 
-# constant strings
-COMMENT_BEGIN = '#'
-DATABASE_PREFIX = 'database:'
-TEMPLATE_PREFIX = 'template:'
-HTML_STRINGS_PREFIX = 'html-strings:'
-HTML_INSERTS_PREFIX = 'html-inserts:'

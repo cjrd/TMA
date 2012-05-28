@@ -4,9 +4,10 @@ import cPickle as pickle
 import math
 import urllib2
 import sys   
-import pdb 
+import pdb
+from src.backend.math_utils import hellinger_distance
 from src.backend.tma_utils import slugify
-
+import numpy as np
 #template = None
 #
 #def import_template(template_name):
@@ -115,7 +116,7 @@ class Term:
 class relations:
     def __init__(self, mydb):
         self.mydb = mydb 
-        self.term_topic_obj_loc = path.join(path.dirname(mydb.get_db_loc()), 'term_betas.obj')
+        self.term_topic_obj_loc = path.join(path.dirname(mydb.get_db_loc()), 'top_term_mat.obj')
         self.topics = [] # do we need these?
         self.docs = []
         self.terms = []
@@ -292,34 +293,43 @@ class relations:
     def get_related_terms(self, term, top_n = 10): 
         # terms_info = self.mydb.get_top_term_terms(term.id)
         term_id = term.id
-        term_topic_dist = pickle.load(open(self.term_topic_obj_loc,'rb'))
-        top_terms = [] 
-        max_score = 100000000    
-                        
-        # compute the Hellinger distance using the topic distributions for each term  (lower is better) 
-        for term_comp_id in xrange(len(term_topic_dist)):
-            if term_id == term_comp_id:
-                continue    
-            score = 0   
-            for i in xrange(len(term_topic_dist[term_id])):   
-                score += math.pow(term_topic_dist[term_id][i] - term_topic_dist[term_comp_id][i], 2)
-            if score > 0:
-                if len(top_terms) < top_n or score < max_score:   
-                    newterm = Term(term_comp_id,'boola')  
-                    newterm.score = score
-                    top_terms.append(newterm)
-                    top_terms.sort(key=lambda x: x.score)
-                    if not len(top_terms) < top_n:
-                        del(top_terms[-1])          
-                    max_score = top_terms[-1].score 
+        top_term_mat = pickle.load(open(self.term_topic_obj_loc,'rb'))
+        max_score = 100000000
 
-        for i in xrange(len(top_terms)):
-            top_terms[i].set_title(self.mydb.get_term_title(top_terms[i].id)[0][0])
-        
-        # to maintain data consistency when accessing terms in other context (since the Title isn't set here)
-        Term.all_terms = {}                                
-        
+        # compute the inverse Hellinger distance using the topic distributions for each term  (lower is better)
+        term = top_term_mat[term_id,:]
+        scores = hellinger_distance(term, top_term_mat)
+        scores[term_id] = max_score
+        scores = 1/scores
+        top_term_ids = np.argsort(scores)[::-1][:top_n]
+        top_terms = []
+        for ttid in top_term_ids:
+            top_terms.append(Term(int(ttid), self.mydb.get_term_title(int(ttid))[0][0]))
+#        top_terms = map(lambda ttid: Term(ttid, self.mydb.get_term_title(ttid)[0][0]), top_term_ids) # TODO better way to get titles?
+        #Term.all_terms = {}
+
         return top_terms
+
+#        for term_comp_id in xrange(len(top_term_mat)):
+#            if term_id == term_comp_id:
+#                continue
+#            score = 0
+#            for i in xrange(len(top_term_mat[term_id])):
+#                score += math.pow(top_term_mat[term_id][i] - top_term_mat[term_comp_id][i], 2)
+#            if score > 0:
+#                if len(top_terms) < top_n or score < max_score:
+#                    newterm = Term(term_comp_id,'frogtoes') # titles do not matter TODO this is inefficient
+#                    newterm.score = score
+#                    top_terms.append(newterm)
+#                    top_terms.sort(key=lambda x: x.score)
+#                    if not len(top_terms) < top_n:
+#                        del(top_terms[-1])
+#                    max_score = top_terms[-1].score
+#
+#        for i in xrange(len(top_terms)):
+#            top_terms[i].set_title(self.mydb.get_term_title(top_terms[i].id)[0][0])
+#
+#        # to maintain data consistency when accessing terms in other context (since the Title isn't set here)
 
     def get_relative_percent(self, topic, term):
         topics = self.get_related_topics(term)

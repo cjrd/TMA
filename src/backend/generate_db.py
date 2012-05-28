@@ -295,7 +295,7 @@ def generate_db(filename, doc_wordcount_file, beta_file, gamma_file, vocab_file,
     # sse across topics for the terms O(V^2) calculation -- this is THE bottleneck
     print "creating term_term obj..."
     #write_term_term(con, cur, beta_file, len(vocab)) 
-    term_obj = os.path.join(os.path.dirname(filename), 'term_betas.obj')
+    term_obj = os.path.join(os.path.dirname(filename), 'top_term_mat.obj')
     create_term_term_object(term_obj, beta_file, len(vocab))
        
     # doc-term appears to be how many times the term was in the document (should it be relative? -- onlh if we're comparing)

@@ -61,8 +61,6 @@ class LDAAnalyzer(TMAnalyzer):
         os.system(cmd)
         print 'finished LDA analysis in %f seconds' % (time()-stime)
 
-    
-         
     def create_browser_db(self):
         return super(LDAAnalyzer, self).create_browser_db()
         

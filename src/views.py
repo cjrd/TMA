@@ -242,7 +242,7 @@ def res_disp(request, folder, alg, res, param = ''):
     # pdb.set_trace()       
     dataloc = os.path.join(WORKDIR, folder + '_formdata');
     algloc = os.path.join(dataloc,alg)
-    alg_db = db(os.path.join(algloc, 'tmvedb.sqlite'))
+    alg_db = db(os.path.join(algloc, 'tma.sqlite')) # TODO move hard coding to settings file
 
     corpus_dbloc = os.path.join(dataloc, 'corpus', 'corpusdb.sqlite') 
     toplist_numcolumns = 3  
