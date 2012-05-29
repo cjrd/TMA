@@ -3,6 +3,7 @@ from TMAnalyzer import TMAnalyzer
 import os  
 from time import time
 import pdb
+import numpy as np
 
 class LDAAnalyzer(TMAnalyzer):
     def __init__(self, params):
@@ -61,17 +62,14 @@ class LDAAnalyzer(TMAnalyzer):
         os.system(cmd)
         print 'finished LDA analysis in %f seconds' % (time()-stime)
 
-    def create_browser_db(self):
-        return super(LDAAnalyzer, self).create_browser_db()
-        
     def createJSLikeData(self):
         # transform the likelihood data
-        linfile = open('%s/likelihood.dat' % self.params['outdir'], 'r')          
-        ldata = linfile.readlines()   
-        linfile.close()  
-        jsout = open('%s/js_likelihood.dat'% self.params['outdir'],'w')   
+        linfile = open('%s/likelihood.dat' % self.params['outdir'], 'r')
+        ldata = linfile.readlines()
+        linfile.close()
+        jsout = open('%s/js_likelihood.dat'% self.params['outdir'],'w')
         jsout.write('[')
-        for i, line in enumerate(ldata):   
+        for i, line in enumerate(ldata):
             lik = line.strip().split()[0]
             jsout.write(lik)
             if not i == len(ldata)-1:
@@ -79,7 +77,47 @@ class LDAAnalyzer(TMAnalyzer):
             else:
                 jsout.write(']')
         jsout.close()
-    
+
+    def create_relations(self):
+        """
+        NOTE: this method should be called after 'do_analysis'
+        """
+        self.init_rel_db()
+
+        # write the vocab to the database (STD)
+        self.write_terms_table()
+
+        # write doc title to database (STD)
+        self.write_docs_table()
+
+        # write topics, i.e. top 3 terms (STD)
+        beta = np.loadtxt(os.path.join(self.params['outdir'],'final.beta'))
+        indices = self._get_rev_srt_ind(beta)
+        self.write_topics_table(top_term_mat=beta, indices=indices)
+
+        # topic_terms
+        self.write_topic_terms(beta)
+
+        # doc-term (STD)
+        self.write_doc_term(beta)
+
+        # topic_topic
+        self.write_topic_topic(np.exp(beta))
+
+        # term_term
+        self.write_term_term(np.exp(beta))
+
+        # doc_doc
+        gamma = np.loadtxt(os.path.join(self.params['outdir'],'final.gamma'))
+        theta = gamma / gamma.sum(1)[:,np.newaxis]
+        self.write_doc_doc(theta**0.5)
+
+        # doc_topic
+        self.write_doc_topic(gamma)
+
+        # create indices for fast lookup
+        self.create_db_indices()
+
     def kf_perplexity(self, trainf_list, testf_list, test_wc, param='ntopics', start = -1, stop = -1, step = 5):
         """
         Calculates the LDA perplexity given the training and testing files in trainf_list and testf_list, respectively

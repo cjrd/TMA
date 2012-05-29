@@ -13,7 +13,7 @@ def logistic_normal(mean, cov, n):
     samples = np.exp(samples)
     return samples/samples.sum(axis=1)[:, np.newaxis]
 
-def hellinger_distance(doca, docb, axis=1):
+def hellinger_distance(sqrt_doca, sqrt_docb, axis=1):
     """
     Returns the Hellinger Distance between documents.
 
@@ -23,5 +23,5 @@ def hellinger_distance(doca, docb, axis=1):
 
     Note that this expects to be given proper probability distributions.
     """
-    return np.sum((doca**.5 - docb**.5)**2, axis=axis)
+    return np.sum((sqrt_doca - sqrt_docb)**2, axis=axis)
 

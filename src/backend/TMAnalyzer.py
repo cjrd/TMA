@@ -98,7 +98,8 @@ class TMAnalyzer(object):
         # TODO make distance metric a user option
         execution_str = 'INSERT INTO topic_topic (id, topic_a, topic_b, score) VALUES(NULL, ?, ?, ?)'
         for i in xrange(top_term_mat.shape[0]):
-            scores = 1/hellinger_distance(top_term_mat[i,:], top_term_mat[i+1:,:])
+            scores = 1/hellinger_distance(top_term_mat[i,:]**0.5, top_term_mat[i+1:,:]**0.5)
+            scores[np.where(np.isinf(scores))] = -1
             res = generic_generator((i,)*len(scores), range(i+1, i+1+len(scores)), scores)
             self.dbase.executemany(execution_str, res)
 
@@ -178,12 +179,29 @@ class TMAnalyzer(object):
             res = generic_generator((doc_no,)*len(doc), range(len(doc)), doc)
             self.dbase.executemany(execution_str, res)
         
-
-    def ins_docdoc(self, vals):
+    def write_doc_doc(self, doc_top_mat):
         """
-
         """
-        self.dbase.executemany("INSERT INTO  doc_doc('id', 'doc_a', 'doc_b', 'score') VALUES(NULL, ?, ?, ?)", vals)
+        ndocs = doc_top_mat.shape[0]
+        scores = np.zeros([ndocs, ndocs])
+        for i in xrange(ndocs):
+            scores[i, i+1:] = 1/hellinger_distance(doc_top_mat[i,:]**0.5, doc_top_mat[i+1:,:]**0.5)
+        scores[np.where(np.isinf(scores))] = -1
+        scores = scores + scores.T # for accurate top K doc-docs
+        score_inds = self._get_rev_srt_ind((scores))[:,:30] # take the top thirty related docs (lower bound) TODO make an option?
+        db_list = []
+        idxs = {} # so we don't have duplicates in the database
+        for i in xrange(scores.shape[0]):
+            for j in score_inds[i,:]:
+                j = int(j)
+                minv = min(i,j)
+                maxv = max(i,j)
+                if not idxs.has_key('%i %i' % (minv,maxv)):
+                        db_list.append((minv, maxv, round(scores[minv,maxv], 3))) # TODO this could probably be replaced with a generator
+                        idxs['%i %i' % (minv,maxv)] = 1
+        self.dbase.executemany("INSERT INTO  doc_doc('id', 'doc_a', 'doc_b', 'score') VALUES(NULL, ?, ?, ?)", db_list)
+        
+        
 
     def _check_tlist(self, terms_file):
         if not hasattr(self, 'terms_list'):

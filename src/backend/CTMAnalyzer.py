@@ -49,39 +49,7 @@ class CTMAnalyzer(TMAnalyzer):
          print cmd
          stime = time()
          os.system(cmd)
-         print 'finished CTM analysis in %f seconds' % (time()-stime)     
-         
-#    def create_browser_db(self):
-#        """
-#
-#        """
-#        # put the CTM output data into the correct format for the browser
-#        if self.params['nterms'] == -1 or self.params['ndocs'] == -1:
-#            print 'Must set parameter "nterms" and "ndocs" before calling createBrowser with CTM' # TODO lighten this requirement?
-#        bfile = open('%(outdir)s/final-log-beta.dat' % self.params, 'r')
-#        boutfile = open('%(outdir)s/final.beta' % self.params, 'w')
-#        for tnum in xrange(self.params['ntopics']):
-#            for wnum in xrange(self.params['nterms']): # TODO add try catch in case param is set wrong
-#                boutfile.write('%f ' % float(bfile.readline()))
-#            boutfile.write('\n')
-#        boutfile.close()
-#        bfile.close()
-#
-#        gfile = open('%(outdir)s/final-lambda.dat' % self.params, 'r')    # lambda file has documents as the rows and topics as the columns
-#        goutfile = open('%(outdir)s/final.gamma' % self.params, 'w')
-#        for dnum in xrange(self.params['ndocs']):
-#            for wnum in xrange(self.params['ntopics']):
-#                val = float(gfile.readline())
-#                if not val:
-#                    val = -100
-#                goutfile.write('%f ' % math.exp(val))
-#            goutfile.write('\n')
-#            pass
-#
-#        goutfile.close()
-#        gfile.close()
-#
-#        return super(CTMAnalyzer, self).create_browser_db()
+         print 'finished CTM analysis in %f seconds' % (time()-stime)
 
     def createJSLikeData(self):
         # transform the likelihood data
@@ -129,41 +97,24 @@ class CTMAnalyzer(TMAnalyzer):
         # term_term
         self.write_term_term(np.exp(beta))
 
-        # doc_doc
+        # doc_doc -- custom for CTM -- TODO perhaps port some of this code to helper methods/functions
         lam = np.loadtxt(os.path.join(self.params['outdir'],'final-lambda.dat'))
         lam.shape = (len(lam)/self.params['ntopics'], self.params['ntopics'])
         lam = lam[:,:-1]
         nu = np.loadtxt(os.path.join(self.params['outdir'],'final-nu.dat'))
         nu.shape = (len(nu)/self.params['ntopics'], self.params['ntopics'])
         nu = nu[:,:-1]
-        theta_est = []
+        sqrt_theta = []
 
         for i in xrange(len(lam)):
             samples = logistic_normal(lam[i,:], np.diag(nu[i,:]), n=100) # n=100 found adequate through aux experiments
-            theta_est.append(np.sqrt(samples).mean(axis=0))
+            sqrt_theta.append(np.sqrt(samples).mean(axis=0))
+        sqrt_theta = np.array(sqrt_theta)
+        self.write_doc_doc(sqrt_theta)
 
-        scores = np.zeros([len(lam), len(lam)])
-        for combo in  combinations(xrange(len(lam)), 2): # generator for all possible doc combinations
-            scores[combo[0],combo[1]] = 1/(2 - 2 * sum(theta_est[combo[0]] * theta_est[combo[1]] )) # make score inverse Hellinger so higher is better
-        scores = scores + scores.T # for accurate top K doc-docs TODO is there a better way to do this?
-        score_inds = self._get_rev_srt_ind((scores))[:,:50] # take the top fifty related docs
-
-        db_list = []
-        idxs = {} # so we don't have duplicates in the database
-        for i in xrange(scores.shape[0]):
-            for j in score_inds[i,:]:
-                j = int(j)
-                minv = min(i,j)
-                maxv = max(i,j)
-                if not idxs.has_key('%i %i' % (minv,maxv)):
-                        db_list.append((minv, maxv, round(scores[minv,maxv], 4))) # TODO this could probably be replaced with a generator
-                        idxs['%i %i' % (minv,maxv)] = 1
-
-
-        self.ins_docdoc(db_list)
 
         # doc_topic
-        self.write_doc_topic(np.array(theta_est))
+        self.write_doc_topic(np.array(sqrt_theta))
 
         # create indices for fast lookup
         self.create_db_indices()
