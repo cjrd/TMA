@@ -27,7 +27,7 @@ void print_usage_and_exit()
     printf("      --alpha_a:        shape for 2nd-level concentration parameter, default 1.0\n");
     printf("      --alpha_b:        scale for 2nd-level concentration parameter, default 1.0\n");
     printf("      --sample_hyper:   sample 1st and 2nd-level concentration parameter, yes or no, default \"no\"\n");
-    printf("      --eta:            topic Dirichlet parameter, default 0.5\n");
+    printf("      --eta:             topic Dirichlet parameter, default 0.5\n");
     printf("      --split_merge:    try split-merge or not, yes or no, default \"no\"\n");
     printf("      --restrict_scan:  number of intermediate scans, default 5 (-1 means no scan)\n");
 
@@ -157,7 +157,7 @@ int main(int argc, char** argv)
                                          max_iter, save_lag,
                                          num_restricted_scan,
                                          sample_hyperparameter,
-                                         split_merge);
+                                          split_merge);
 
         hdp * hdp_instance = new hdp();
 
@@ -193,6 +193,29 @@ int main(int argc, char** argv)
         delete hdp_hyperparam;
         delete hdp_instance;
         delete c;
+    }
+    
+    if (!strcmp(algorithm, "testlike"))
+    {
+        corpus* c = new corpus();
+        c->read_data(data_path);
+        
+        hdp_hyperparameter * hdp_hyperparam = new hdp_hyperparameter();
+        hdp_hyperparam->setup_parameters(gamma_a, gamma_b,
+                                         alpha_a, alpha_b,
+                                         max_iter, save_lag,
+                                         num_restricted_scan,
+                                         sample_hyperparameter,
+                                         split_merge);
+        hdp * hdp_instance = new hdp();
+        hdp_instance->load(model_path);
+        hdp_instance->setup_state(c, hdp_hyperparam);
+        hdp_instance->test_like(directory);
+        
+        delete hdp_hyperparam;
+        delete hdp_instance;
+        delete c;
+        
     }
     gsl_rng_free(RANDOM_NUMBER);
 }

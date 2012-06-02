@@ -20,6 +20,7 @@ public:
 public:
     void run(const char * directory);
     void run_test(const char * directory);
+    void test_like(const char * directory);
 
     void setup_state(const corpus * c,
                      double _eta, int init_topics,

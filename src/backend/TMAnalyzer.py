@@ -23,20 +23,13 @@ class TMAnalyzer(object):
         raise NotImplementedError( "Should have implemented do_analysis in subclass analyzer" )
         
     
-    def create_browser_db(self):
-        print 'generating tma database'
-        stime = time()
-        generate_db(
-            filename = self.params['outdir'] + '/tma.sqlite',
-            doc_wordcount_file = self.params['corpusfile'] ,
-            top_term_mat = self.params['outdir'] + '/final.beta',
-            gamma_file = self.params['outdir'] + '/final.gamma',
-            vocab_file = self.params['vocabfile'],
-            doc_file = self.params['titlesfile']
-        )
-        rtime = time() - stime
-        print 'finished generating database in  %0.1f seconds' % rtime 
-           
+    def create_relations(self):
+        raise NotImplementedError( "Should have implemented do_analysis in subclass analyzer" )
+    
+    def kf_perplexity(self, trainf_list, testf_list, test_wc, param='ntopics', start = -1, stop = -1, step = 5):
+        print "Perplexity calculation not implemented, will return None"
+        return None
+
     def get_params(self):
         return self.params
 
@@ -48,7 +41,8 @@ class TMAnalyzer(object):
             if self.params.has_key(prm):
                 self.params[prm] = dict[prm]
             else:
-                raise Exception("unkown parameter value: %s\nNOTE: first initialize each analyzer" % prm)
+                self.params[prm] = dict[prm]
+                print "WARNING: unkown parameter value: %s\nNOTE: first initialize each analyzer" % prm
 
     def init_rel_db(self):
         self.dbase = db(self.params['outdir'] + '/tma.sqlite')
@@ -106,7 +100,7 @@ class TMAnalyzer(object):
     def write_topic_terms(self, top_term_mat):
         """
         Write the topic x term matrix to the database
-        @param top_term_mat: topics x terms matrix
+        @param top_term_mat: topics x terms matrix, does not need to be normalised but a larger score should be better
         """
         ntops = top_term_mat.shape[0]
         nterms = top_term_mat.shape[1]
@@ -115,7 +109,6 @@ class TMAnalyzer(object):
             topic = top_term_mat[topic_no,:]
             res = generic_generator((topic_no,)*nterms, range(nterms), topic)
             self.dbase.executemany(execution_str, res)
-
 
         
     def write_term_term(self, top_term_mat):
@@ -133,7 +126,7 @@ class TMAnalyzer(object):
         @param terms_file: the file of terms (default is self.params['vocabfile'])
         """
         self._check_tlist(terms_file)
-        if indices is not None:
+        if indices is None:
             indices = self._get_rev_srt_ind(top_term_mat)
         title_list = []
         for i in xrange(indices.shape[0]):
@@ -148,7 +141,7 @@ class TMAnalyzer(object):
         find the reverse sorted indices of the supplied matrix
         @param mat: the matrix that will be used to find the reverse sorted indices
         """
-        return np.argsort(mat)[:,::-1] # TODO is fliplr faster than [:, ::-1] is 4x faster than np.fliplr?
+        return np.argsort(mat)[:,::-1] # this is ~ 4x faster than fliplr
 
 
     def write_doc_term(self, wordcount_file=None):

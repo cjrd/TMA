@@ -37,14 +37,13 @@ def upload_file(request):
         workdir = tempfile.mkdtemp(dir = wbasedir, suffix = '_formdata')
 
         # custom data-upload for security
-        request.upload_handlers = [FSUploadHandler()]
+        request.upload_handlers.insert(0,FSUploadHandler())
         try:
             form = AnalysisForm(request.POST, request.FILES)
             form_is_valid = form.is_valid()
         except StopUpload: # TODO this is not working as expected
             error_message = "Uploaded data must be < %0.1f Mb" % (settings.MAX_UPLOAD_SIZE/1000000.0)
             print error_message
-            form_errors = True
             notifs.append(error_message)
             form_is_valid = False
 

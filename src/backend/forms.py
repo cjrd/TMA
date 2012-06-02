@@ -35,7 +35,7 @@ class AnalysisForm(forms.Form):
                                        ('files','Individual Files'),
                                        ('paras','Paragraphs (Lines)')
                                        )), help_text='Specify whether to treat each individual file as a document or each paragraph/line as a document.')
-    upload_file  = forms.FileField(required=False, widget=(forms.FileInput(attrs={'size':'13'})), label='upload file', help_text='Upload a text file or zip archive. The zip archive can contain text and/or pdf files.')
+    upload_file  = forms.FileField(required=False, widget=forms.FileInput(attrs={'size':'13'}), label='upload file', help_text='Upload a text file or zip archive. The zip archive can contain text and/or pdf files.')
     upload_dockind = forms.CharField(required=False, label = 'document representation',
                                widget=Select(
                                    choices=(

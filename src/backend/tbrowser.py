@@ -168,7 +168,10 @@ def get_model_page(request, alg_db, corpus_dbloc, dataloc, alg='', num_terms=NUM
 
     wiki_abs_scores = get_wiki_pmi_coherence(topics)
     for tid in wiki_abs_scores:
-        wiki_abs_scores[tid] = round(median(wiki_abs_scores[tid]), 2)
+        if len(wiki_abs_scores[tid]) > 0:
+            wiki_abs_scores[tid] = round(median(wiki_abs_scores[tid]), 2)
+        else:
+            wiki_abs_scores[tid] = -1 # TODO verify why this happens --- it's usually with strange words
 
     # build "topic dictionaries" for faster django access
     top_dicts = []

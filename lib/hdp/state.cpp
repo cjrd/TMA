@@ -347,10 +347,10 @@ void hdp_state::iterate_gibbs_state(bool remove, bool permute,
     double_vec q;
     double_vec f;
     doc_state* d_state = NULL;
-    for (int j = 0; j < m_num_docs; j++)
+    for (int j = 0; j < m_num_docs; j++) // for each doc
     {
         d_state = m_doc_states[j];
-        for (int i = 0; i < d_state->m_doc_length; i++)
+        for (int i = 0; i < d_state->m_doc_length; i++) // for each term in doc
         {
             sample_word_assignment(d_state, i, remove, q, f);
         }
@@ -798,6 +798,7 @@ double hdp_state::data_likelihood()
             }
         }
     }
+    //printf("data likelihood: %0.2f\n", likelihood);
     return likelihood;
 }
 
@@ -1211,7 +1212,7 @@ void hdp_state::doc_table_state_update(doc_state* d_state, int t, int update, in
 double hdp_state::sample_table_assignment_sm(doc_state* d_state, int t, bool remove,
         int k0, int k1, int target_k)
 {
-    // since we are deading with two tables, situations are much easier.
+    // since we are dealing with two tables, situations are much easier.
     if (remove) doc_table_state_update(d_state, t, -1);
 
     double p0 = log(m_num_tables_by_z[k0]);

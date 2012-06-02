@@ -93,6 +93,9 @@ td.score {
     background-color: white;
 }
 
+th.header {
+    text-align: left;
+}
 
 #perplexity_form {
     border: 2px solid #CDCDCD;

@@ -128,6 +128,7 @@ class LDAAnalyzer(TMAnalyzer):
         """
         # TODO much of this could be parallelized with the appropriate resources
         # TODO fix repititious use of settings files (perhaps fix the c code so we can just pass these params)
+        # TODO fix code repetition with other analyzers
         if len(trainf_list) != len(testf_list):
             print 'Train and test lists must be the same length in LDAAnalyzer kf_perplexity'
             return None

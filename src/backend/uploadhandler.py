@@ -13,7 +13,7 @@ class FSUploadHandler(FileUploadHandler):
 
     def handle_raw_input(self, input_data, META, content_length, boundary, encoding=None):
         # TODO what if data does not specify content_length?
-        if content_length > settings.MAX_UPLOAD_SIZE:
+        if content_length > settings.MAX_UPLOAD_SIZE or content_length is None:
             raise StopUpload(connection_reset=True)
 
     def receive_data_chunk(self, raw_data, start):

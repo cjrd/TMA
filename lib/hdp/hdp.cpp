@@ -103,7 +103,7 @@ void hdp::run(const char * directory)
 
         double likelihood = m_state->joint_likelihood(m_hdp_param);
         
-        // colo addition to check for convergence 
+        // colo addition to check for "convergence" TODO provide interface options
         float improve_metric = (best_likelihood - likelihood) / best_likelihood;
         if (improve_metric > MIN_IMPROVE_VALUE){
             no_improvect = 0;
@@ -114,7 +114,15 @@ void hdp::run(const char * directory)
             m_state->save_state_ex(name);
             
         }
+        else if(likelihood > best_likelihood){
+            // always save the very best state
+            sprintf(name, "%s/mode", directory);
+            m_state->save_state(name);
+            sprintf(name, "%s/mode.bin", directory);
+            m_state->save_state_ex(name);
+        }
         else no_improvect++;
+        
 
         time(&current); dif = difftime (current,start);
 
@@ -124,19 +132,7 @@ void hdp::run(const char * directory)
 
         fprintf(file, "%8.2f %05d %04d %05d %.5f %.5f %.5f ",
                 dif, iter, m_state->m_num_topics, m_state->m_total_num_tables,
-                likelihood, m_state->m_gamma, m_state->m_alpha);
-        
-        
-//        if (likelihood > best_likelihood)
-//        {       
-//            best_likelihood = likelihood;
-//            sprintf(name, "%s/mode", directory);
-//            m_state->save_state(name);
-//            sprintf(name, "%s/mode.bin", directory);
-//            m_state->save_state_ex(name);
-//        }
-        
-        
+                likelihood, m_state->m_gamma, m_state->m_alpha);        
 
         if (m_hdp_param->m_save_lag != -1 && (iter % m_hdp_param->m_save_lag == 0))
         {
@@ -234,6 +230,22 @@ void hdp::run(const char * directory)
     if (m_hdp_param->m_split_merge_sampler)
         printf("accepte rate: %.2lf\%\n", 100.0 * (double)acc/tot);
 
+}
+
+void hdp::test_like(const char * directory)
+{   
+    // TODO is this implementation correct (I don't think so but the numbers are reasonable...)
+    double old_likelihood = m_state->table_partition_likelihood() + m_state->data_likelihood();
+    m_hdp_param->m_sample_hyperparameter = false;
+    m_state->iterate_gibbs_state(false, false, m_hdp_param, false); 
+    double likelihood = m_state->joint_likelihood(m_hdp_param) - old_likelihood; 
+    printf("test likelihood: %.5f\n", likelihood);
+    
+    char name[500];
+    sprintf(name, "%s-test-loglike.dat", directory);
+    FILE* file = fopen(name, "w");
+    fprintf(file, "%.5f", likelihood);
+    fclose(file);
 }
 
 void hdp::run_test(const char * directory)

@@ -6,8 +6,8 @@ import pdb
 # User Limits
 import shutil
 
-MAX_UPLOAD_SIZE = 20*10e6
-MAX_WWW_DL_SIZE = 50*10e6
+MAX_UPLOAD_SIZE = 20*10e5
+MAX_WWW_DL_SIZE = 50*10e5
 
 # Django settings
 DEBUG = True
