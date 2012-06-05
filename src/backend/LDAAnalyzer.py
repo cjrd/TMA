@@ -62,6 +62,24 @@ class LDAAnalyzer(TMAnalyzer):
         os.system(cmd)
         print 'finished LDA analysis in %f seconds' % (time()-stime)
 
+    def kf_perplexity(self, trainf_list, testf_list, test_wc, param='ntopics', start = -1, stop = -1, step = 5):
+        """
+            Calculates the LDA perplexity given the training and testing files in trainf_list and testf_list, respectively
+            @param trainf_list: list of paths of the training corpora
+            @param testf_list: list of paths of the corresponding testing corpora (must be same length as trainf_list)
+            @param test_wc: the total number of words in each test corpus
+            @return the perplexity for each fold
+        """
+        def _handle_ppt(self, test_wci):
+            lfile = os.path.splitext(self.params['outdir'])[0] + '/' + self.params['infname'] + '-ctm-lhood.dat'
+            lhoods = open(lfile).readlines()
+            return round(((sum(map(lambda x: float(x.strip()), lhoods))*-1.0)/test_wci), 3)
+
+        train_params = {'type':'est'}
+        test_params = {'type':'inf'}
+        ppts = self.general_kf_ppt(trainf_list, testf_list, test_wc, param, start, stop, step, train_params, test_params, _handle_ppt)
+        return ppts
+
     def createJSLikeData(self):
         # transform the likelihood data
         linfile = open('%s/likelihood.dat' % self.params['outdir'], 'r')
@@ -118,54 +136,7 @@ class LDAAnalyzer(TMAnalyzer):
         # create indices for fast lookup
         self.create_db_indices()
 
-    def kf_perplexity(self, trainf_list, testf_list, test_wc, param='ntopics', start = -1, stop = -1, step = 5):
-        """
-        Calculates the LDA perplexity given the training and testing files in trainf_list and testf_list, respectively
-        @param trainf_list: list of paths of the training corpora
-        @param testf_list: list of paths of the corresponding testing corpora (must be same length as trainf_list)
-        @param test_wc: the total number of words in each test corpus
-        @return the perplexity for each fold
-        """
-        # TODO much of this could be parallelized with the appropriate resources
-        # TODO fix repititious use of settings files (perhaps fix the c code so we can just pass these params)
-        # TODO fix code repetition with other analyzers
-        if len(trainf_list) != len(testf_list):
-            print 'Train and test lists must be the same length in LDAAnalyzer kf_perplexity'
-            return None
 
-        if start < 0 or stop < 0 or step < 0:
-            start = self.get_param(param)
-            stop = start
-            step = 1
-
-        k = len(trainf_list)
-        orig_outdir = self.get_param('outdir')
-
-        orig_corpusfile = self.get_param('corpusfile')
-        train_params = {'type':'est'}
-        test_params = {'type':'inf'}
-        ppts = [[] for i in range(k)]
-
-        for i in  xrange(k):
-            for param_val in xrange(start, stop+1, step):
-                # train the model
-                train_out = os.path.join(orig_outdir, 'kf'+ str(k) + '_f' + str(i) + '_' + param + str(param_val))
-                if not os.path.exists(train_out):
-                    os.mkdir(train_out)
-                train_params["corpusfile"] = trainf_list[i]
-                train_params["outdir"] = train_out
-                train_params[param] = param_val
-                self.set_params(train_params)
-                self.do_analysis()
-
-                test_params["infname"] = "inf" + str(i)
-                test_params["corpusfile"] = testf_list[i]
-                self.set_params(test_params)
-                self.do_analysis()
-                lhoods = open(self.params['infname'] + '-lda-lhood.dat').readlines() # TODO add error catching in case there was an inference problem
-                ppts[i].append([param_val, round(exp((sum(map(lambda x: float(x.strip()), lhoods))*-1.0)/test_wc[i]), 3)])
-        self.set_params({'outdir':orig_outdir, 'corpusfile':orig_corpusfile}) # return the analyzer to its original state
-        return ppts
 
 
    

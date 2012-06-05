@@ -1,4 +1,5 @@
 from itertools import combinations
+from math import exp
 from TMAnalyzer import TMAnalyzer
 from src.backend.math_utils import logistic_normal
 from time import time
@@ -45,11 +46,39 @@ class CTMAnalyzer(TMAnalyzer):
          setfile.close()                                                                                             
          
          # do the analysis
-         cmd = '%(ctmdir)s/ctm %(type)s %(corpusfile)s %(ntopics)i %(init)s %(outdir)s %(outdir)s/%(settingsfile)s' % self.params       
+         if self.params['type'] == 'est':
+            cmd = '%(ctmdir)s/ctm %(type)s %(corpusfile)s %(ntopics)i %(init)s %(outdir)s %(outdir)s/%(settingsfile)s' % self.params
+         else:
+            infname = 'inf'
+            if self.params.has_key("infname"):
+                infname = self.params["infname"]
+            self.params['infname'] = os.path.splitext(self.params['outdir'])[0] + '/' + infname
+            cmd = '%(ctmdir)s/ctm inf %(corpusfile)s %(outdir)s/final %(infname)s %(outdir)s/%(settingsfile)s ' % self.params
+
          print cmd
          stime = time()
          os.system(cmd)
          print 'finished CTM analysis in %f seconds' % (time()-stime)
+
+    def kf_perplexity(self, trainf_list, testf_list, test_wc, param='ntopics', start = -1, stop = -1, step = 5):
+        """
+            Calculates the CTM perplexity given the training and testing files in trainf_list and testf_list, respectively
+            @param trainf_list: list of paths of the training corpora
+            @param testf_list: list of paths of the corresponding testing corpora (must be same length as trainf_list)
+            @param test_wc: the total number of words in each test corpus
+            @return the perplexity for each fold
+        """
+        def _handle_ppt(self, test_wci):
+            lfile = self.params['infname'] + '-ctm-lhood.dat'
+            lhoods = open(lfile).readlines()
+#            pdb.set_trace()
+            ppt = round(((sum(map(lambda x: float(x.strip()), lhoods))*-1.0)/test_wci), 3)
+            return ppt
+
+        train_params = {'type':'est'}
+        test_params = {'type':'inf'}
+        ppts = self.general_kf_ppt(trainf_list, testf_list, test_wc, param, start, stop, step, train_params, test_params, _handle_ppt)
+        return ppts
 
     def createJSLikeData(self):
         # transform the likelihood data
@@ -65,7 +94,9 @@ class CTMAnalyzer(TMAnalyzer):
                 jsout.write(',')
             else:
                 jsout.write(']')
-        jsout.close()      
+        jsout.close()
+
+    
 
     def create_relations(self):
         """

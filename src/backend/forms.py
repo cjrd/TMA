@@ -216,6 +216,13 @@ class AnalysisForm(forms.Form):
     help_split_merge_url = '<a href="http://arxiv.org/pdf/1201.1657.pdf" target="_blank"> A Split-Merge MCMC Algorithm for the Hierarchical Dirichlet Process (2012)</a>'
     hdp_max_iters = forms.IntegerField(required=False, label='max iterations', initial='500', help_text="The maximum number of Gibbs iterations")
     hdp_init_ntopics = forms.IntegerField(required=False, label='initial # of topics', initial='0', help_text="Set the initial number of topics")
+    hdp_sample_hyper = forms.CharField(required=False, label = 'sample hyperparameters',
+       widget=Select(
+           choices=(
+           ('true','true'),
+           ('false','false')
+           )),
+       initial='false', help_text="Sample hyperparameters as described in " + help_hdp_url)
     hdp_gamma_a = forms.FloatField(required=False, label='gamma shape', initial='1.0', help_text="Shape for 1st-level concentration parameter, see " + help_hdp_url)
     hdp_gamma_b = forms.FloatField(required=False, label='gamma scale', initial='1.0', help_text="Scale for 1st-level concentration parameter, see " + help_hdp_url)
     hdp_alpha_a = forms.FloatField(required=False, label='alpha shape', initial='1.0', help_text="Shape for 2nd-level concentration parameter, see " + help_hdp_url)
@@ -255,7 +262,7 @@ class AnalysisForm(forms.Form):
      (score_old - score) / abs(score_old) is less than this value (or
      after the maximum number of iterations).  Note that the score is
      the lower bound on the likelihood for a particular document""")
-    ctm_em_max_iter = forms.IntegerField(required=False, label='max variational iterations', initial='100', help_text="The maximum number of iterations of variational EM")
+    ctm_em_max_iter = forms.IntegerField(required=False, label='max EM iterations', initial='100', help_text="The maximum number of iterations of variational EM")
     ctm_em_conv_thresh = forms.FloatField(required=False, label='EM conv thresh', initial='1e-4', help_text="""The convergence criteria for varitional EM.  Stop if (score_old -
      score) / abs(score_old) is less than this value (or after the
      maximum number of iterations).  Note that "score" is the lower

@@ -242,7 +242,7 @@ void hdp::test_like(const char * directory)
     printf("test likelihood: %.5f\n", likelihood);
     
     char name[500];
-    sprintf(name, "%s-test-loglike.dat", directory);
+    sprintf(name, "%s/test-loglike.dat", directory);
     FILE* file = fopen(name, "w");
     fprintf(file, "%.5f", likelihood);
     fclose(file);

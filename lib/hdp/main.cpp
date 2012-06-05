@@ -26,9 +26,9 @@ void print_usage_and_exit()
     printf("      --gamma_b:        scale for 1st-level concentration parameter, default 1.0\n");
     printf("      --alpha_a:        shape for 2nd-level concentration parameter, default 1.0\n");
     printf("      --alpha_b:        scale for 2nd-level concentration parameter, default 1.0\n");
-    printf("      --sample_hyper:   sample 1st and 2nd-level concentration parameter, yes or no, default \"no\"\n");
+    printf("      --sample_hyper:   sample 1st and 2nd-level concentration parameter, true or false, default \"false\"\n");
     printf("      --eta:             topic Dirichlet parameter, default 0.5\n");
-    printf("      --split_merge:    try split-merge or not, yes or no, default \"no\"\n");
+    printf("      --split_merge:    try split-merge or not, true or false, default \"false\"\n");
     printf("      --restrict_scan:  number of intermediate scans, default 5 (-1 means no scan)\n");
 
     printf("\n      testing parameters:\n");
@@ -84,13 +84,13 @@ int main(int argc, char** argv)
         else if (!strcmp(argv[i], "--split_merge"))
         {
            ++i;
-            if (!strcmp(argv[i], "yes") ||  !strcmp(argv[i], "YES"))
+            if (!strcmp(argv[i], "true") ||  !strcmp(argv[i], "TRUE"))
                 split_merge = true;
         }
         else if (!strcmp(argv[i], "--sample_hyper"))
         {
            ++i;
-            if (!strcmp(argv[i], "yes") ||  !strcmp(argv[i], "YES"))
+            if (!strcmp(argv[i], "true") ||  !strcmp(argv[i], "TRUE"))
                 sample_hyperparameter = true;
         }
         else

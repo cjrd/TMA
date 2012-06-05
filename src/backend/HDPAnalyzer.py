@@ -89,46 +89,13 @@ class HDPAnalyzer(TMAnalyzer):
         @return the perplexity for each fold
         """
 
-        # TODO fix code repetition with other analyzers
-        
-        if len(trainf_list) != len(testf_list):
-            print 'Train and test lists must be the same length in LDAAnalyzer kf_perplexity'
-            return None
-
-        if start < 0 or stop < 0 or step < 0:
-            start = self.get_param(param)
-            stop = start
-            step = 1
-
-        k = len(trainf_list)
-        orig_outdir = self.get_param('outdir')
-
-        orig_corpusfile = self.get_param('corpusfile')
         train_params = {'algorithm':'train'}
         test_params = {'algorithm':'testlike'}
-        ppts = [[] for i in range(k)]
 
-        for i in  xrange(k):
-            for param_val in xrange(start, stop+1, step):
-                # train the model
-                train_out = os.path.join(orig_outdir, 'kf'+ str(k) + '_f' + str(i) + '_' + param + str(param_val))
-                if not os.path.exists(train_out):
-                    os.mkdir(train_out)
-                train_params["corpusfile"] = trainf_list[i]
-                train_params["outdir"] = train_out
-                train_params[param] = param_val
-                self.set_params(train_params)
-                self.do_analysis()
-                test_params["saved_model"] = os.path.join(train_out,'mode.bin')
-               # train_params["outdir"] = os.path.join(orig_outdir, "inf" + str(i)) # technically this isn't a dir since it also prefixes the file
-                test_params["corpusfile"] = testf_list[i]
-                self.set_params(test_params)
-                self.do_analysis()
-                lhood = float(open(os.path.join(self.params['outdir'], 'test-loglike.dat')).readline().strip())
-                ppts[i].append([param_val, round(math.exp(-1*lhood/test_wc[i]), 3)]) # TODO add error catching in case there was an inference problem
-
-        self.set_params({'outdir':orig_outdir, 'corpusfile':orig_corpusfile}) # return the analyzer to its original state
-        return ppts
+        def _handle_ppt(self, test_wci):
+            lhood = float(open(os.path.join(self.params['outdir'], 'test-loglike.dat')).readline().strip())
+            return round((-1*lhood/test_wci), 3)
+        return self.general_kf_ppt(trainf_list, testf_list, test_wc, param, start, stop, step, train_params, test_params, _handle_ppt)
 
     def createJSLikeData(self):
         # transform the likelihood data
@@ -159,8 +126,9 @@ class HDPAnalyzer(TMAnalyzer):
         self.write_docs_table()
         top_term_mat = np.loadtxt('%s/mode-topics.dat' % self.params['outdir'])
         top_term_mat /= top_term_mat.sum(1)[:,np.newaxis] # normalize
+        top_term_mat = np.log(top_term_mat)
 
-        # write topics, i.e. top 3 terms (STD) -- need
+        # write topics, i.e. top 3 terms (STD)
         self.write_topics_table(top_term_mat=top_term_mat)
 
         # topic_terms

@@ -165,7 +165,7 @@ def upload_file(request):
                     'gamma_b':form.cleaned_data['hdp_gamma_b'],
                     'alpha_a':form.cleaned_data['hdp_alpha_a'],
                     'alpha_b':form.cleaned_data['hdp_alpha_b'],
-                    'sample_hyper':'no',
+                    'sample_hyper':form.cleaned_data['hdp_sample_hyper'],
                     'eta':form.cleaned_data['hdp_eta'],
                     'split_merge':form.cleaned_data['hdp_split_merge'],
                     'restrict_scan': 5,

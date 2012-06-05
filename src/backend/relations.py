@@ -50,7 +50,7 @@ class Topic:
         return (self.id, self.title) == (other.id, other.title)
 
     def get_term(self, rank): # this may be unneeded
-        if self.terms == {}:
+        if self.terms == {} or rank >= len(self.ranked_terms):
             self.terms = self.rel.get_topic_terms(self)
             self.ranked_terms = sorted(self.terms, key=self.terms.get, reverse=True)
         

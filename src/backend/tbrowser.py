@@ -20,8 +20,8 @@ import os
 from time import time
 import cPickle as pickle
 
-NUM_TERMS = 8
-TOP_TOPIC_OBJ = 'top_topic_terms.obj'
+NUM_TERMS = 8 # TODO move this to settings
+TOP_TOPIC_OBJ = 'top_topic_terms.obj' # TODO move this to settings
 
 def get_rel_page(request, alg_db, dataloc, alg=''):
     myrelations = relations(alg_db)
@@ -618,7 +618,6 @@ def get_topic_page(request, alg_db, topic_title, topicid, term_cutoff=NUM_TERMS,
     if not topic_title[0] == '{':
         topic_title = '{' + ', '.join(topic_title.strip().split()) + '}'
     topic = Topic(myrelations, topicid, topic_title)
-
     # related terms
     terms = topic.get_terms(term_cutoff)
     term_column = ''#make_column(terms, 'terms')  
