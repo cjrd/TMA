@@ -1,19 +1,20 @@
 # a class to control the djangoiation of the tbrowser
 import shutil
 from django.shortcuts import render_to_response
-from django.template import Context, RequestContext  
+from django.template import Context, RequestContext
 from django.http import HttpResponse
 from django.utils.html import escape
 from settings import BING_API_KEY, WIKI_COCC_DB, WIKI_NUM_ABST
 from urllib2 import HTTPError
+import math
 
 from src.backend.relations import relations, Document, Topic, Term
-from src.backend.db import db  
+from src.backend.db import db
 from src.backend.tma_utils import slugify, remove_non_ascii, median
 from lib.simplebing.SBing import SBing
 from lib.porter2 import stem
 
-import pdb     
+import pdb
 from math import exp, log
 import random
 import os
@@ -26,35 +27,35 @@ TOP_TOPIC_OBJ = 'top_topic_terms.obj' # TODO move this to settings
 def get_rel_page(request, alg_db, dataloc, alg=''):
     myrelations = relations(alg_db)
     # build the doc-doc   
-    ddata = build_graph_json(myrelations.get_docs(), myrelations, myrelations.get_top_related_docs) 
+    ddata = build_graph_json(myrelations.get_docs(), myrelations, myrelations.get_top_related_docs)
     # and term-term graphs       
     tdata =  {}
     # tdata = build_graph_json(myrelations.get_terms(), myrelations, myrelations.get_top_related_terms)
-    
+
     # acquire the topics
     topdata = build_topic_json(myrelations)
     # feed the results into the heavily customized template        
     ret_val = render_to_response("model-relationships.html", {'alg':alg, 'doc_data':ddata, 'term_data':tdata, 'top_data':topdata}, context_instance=RequestContext(request))
-    
-    return ret_val 
-    
 
-def build_topic_json(myrelations):  
-    topdata="[" 
-    topics= myrelations.get_topics()  
+    return ret_val
+
+
+def build_topic_json(myrelations):
+    topdata="["
+    topics= myrelations.get_topics()
     for top in topics:
         topdata += '{"id":%i, "title":"%s"},' % (top.id, top.title)
-    topdata = topdata[0:len(topdata)-1] + ']'# remove trailing comma 
-    return topdata 
-    
+    topdata = topdata[0:len(topdata)-1] + ']'# remove trailing comma
+    return topdata
 
-def build_graph_json(collection, myrelations, related_item_fnct):  
+
+def build_graph_json(collection, myrelations, related_item_fnct):
     node_str = '"nodes":['
     link_str = '"links":['
     id_to_ind = {}
     for i in xrange(len(collection)):
         id_to_ind[collection[i].id] = i
-        
+
     for ct, item in enumerate(collection):                  # TODO must make the SQL queries more efficient!    
         name = item.get_safe_title() + '-' + str(item.id)
         group = myrelations.get_top_related_topics(item, 1)
@@ -63,80 +64,80 @@ def build_graph_json(collection, myrelations, related_item_fnct):
         except IndexError:
             print 'Warning: %s (%i) did not have related topics, will omit.' % (name, item.id)
             continue
-            
+
         node_str += '{"name":"%s","group":%s}' % (name, str(group.id))
         if not ct == len(collection)-1:
-            node_str += ','         
-        
+            node_str += ','
+
         # form links by finding related items (for now take top item for each link)
         ritems = related_item_fnct(item)
-        item_keys = ritems.keys()       
+        item_keys = ritems.keys()
         item_keys.sort(lambda x, y: -cmp(ritems[x], ritems[y]))
-        source = ct;   
+        source = ct;
         # TODO, make multiple options for view graph (based on similarity score value, number of similar items, etc)  
-        target = id_to_ind[item_keys[0].id] 
+        target = id_to_ind[item_keys[0].id]
         if not target == None:
-            link_str += '{"source":%s,"target":%s,"value":%s}' % (str(source), str(target), str(ritems[item_keys[0]]))  
+            link_str += '{"source":%s,"target":%s,"value":%s}' % (str(source), str(target), str(ritems[item_keys[0]]))
             if not ct == len(collection)-1:
-                link_str += ','   
-        
+                link_str += ','
+
     node_str += ']'
-    link_str += ']'   
+    link_str += ']'
     data_str = '{' + node_str + ',' + link_str + '}'
-    
-    return data_str  
-    
-def get_doc_text(docloc, title_wID, numbytes=500):  
+
+    return data_str
+
+def get_doc_text(docloc, title_wID, numbytes=500):
     doc_title = " ".join(title_wID.split('-')[0:-1])
     try:
         doc_text_file = open(os.path.join(docloc, slugify(unicode(doc_title))),'r')
     except IOError:
         doc_text_file = open(os.path.join(docloc, slugify(unicode(doc_title)) + '.txt'),'r') # TODO fix hack
     txt = doc_text_file.read(numbytes)
-    doc_text_file.close() 
-    doc_text = escape(remove_non_ascii(txt)) 
+    doc_text_file.close()
+    doc_text = escape(remove_non_ascii(txt))
     doc_text += "...<br /> <div style=\"text-align:center; margin-top: 10px;\"> <input type=\"button\" name=\"b1\" value=\"View full document\" onclick=\"openlw('" + title_wID + "')\" /> </div>"
     return HttpResponse(doc_text)
 
 
 
 def get_summary_page(request, alg_db, numterms = NUM_TERMS, numcolumns = 3, alg=''):
+    """
+    Returns the Analyzer's summary page
+    @param request: the django request object
+    @param alg_db: the algorithm database
+    @param numterms: the number of terms to display for the topics
+    @param numcolumns: the number of columns to use to display the topics
+    @param alg: the name of the algorithm e.g. 'LDA' or "HDP'
+    """
     myrelations = relations(alg_db)
     topics= myrelations.get_topics()
 
-    # HACK: now place into groups of numcolumns for the table TODO find a better way to do this -- use divs instead of tables
-    colct = min(len(topics), numcolumns) # number of columns for the data table
-    table_topics = []
-    ct = 0
-    title_line = []
+    ncol = min(len(topics), numcolumns) # number of columns for the data table
+    disp_tops = []
+    topic_row = []
 
-    # restructure the data for easy table filling in the template file TODO restructure to use CSS and avoid this mess!
+    ct = 1
     for i in xrange(len(topics)):
-        topics[i].get_terms(numterms) # get the top numterms terms (prep)
+        topic_trms = map( lambda x: {'title':x.title, 'id':x.id}, topics[i].get_terms(numterms)) # get the top numterms terms
+        topic_row.append({'title':topics[i].title, 'id':topics[i].topic_id, 'terms':topic_trms})
 
-        title_line.append({'title':topics[i].title, 'id':topics[i].topic_id})
-        ct += 1
-        if ct % colct == 0:
-            terms_line = []
-            for j in xrange(numterms):
-                line = []
-                for k in xrange(colct):
-                    term_title = topics[ct-colct+k].get_term(j).title
-                    term_id = topics[ct-colct+k].get_term(j).id
-                    line.append({'title':term_title, 'id':term_id})
-                terms_line.append(line)
-            table_topics.append({'title_line':title_line, 'terms_line':terms_line})
-            title_line = []
-    # pdb.set_trace()
+        if ct == ncol or i==len(topics)-1: # group nicely into rows for django
+            ct = 1
+            disp_tops.append(topic_row)
+            topic_row = []
+        else:
+            ct += 1
+
     template = 'summary.html'
-    
-    return render_to_response(template, {'table_topics':table_topics, 'alg':alg}, context_instance=RequestContext(request))
+
+    return render_to_response(template, {'disp_topics':disp_tops, 'alg':alg}, context_instance=RequestContext(request))
 
 def get_model_page(request, alg_db, corpus_dbloc, dataloc, alg='', num_terms=NUM_TERMS, bing_dict={}, form=None): # TODO stem the terms once for bing and wiki calculations
     """
     Obtain/save the appropriate data for the model-description page
     @param request: the django request object
-    @param alg_db: the algorithm database from generate_db
+    @param alg_db: the algorithm database
     @param corpus_dbloc: the location of the corpus specific database (contains cooccurence information)
     @param dataloc: the location of the data for this analysis
     @param alg: the algorithm used for this analysis
@@ -175,7 +176,7 @@ def get_model_page(request, alg_db, corpus_dbloc, dataloc, alg='', num_terms=NUM
 
     # build "topic dictionaries" for faster django access
     top_dicts = []
-    
+
     srt_tc_scores = sorted(tc_scores.values(), reverse=False)
     srt_search_title_scores = sorted(search_title_scores.values(), reverse=False)
     srt_wiki_abs_scores = sorted(wiki_abs_scores.values(), reverse=False)
@@ -283,16 +284,19 @@ def get_wiki_pmi_coherence(topics, numterms=NUM_TERMS):   # TODO make sure the t
                 if db_cocc_lookup:
                     cocc_dict[min_tid][max_tid] = dbase.get_wiki_cocc(tid1, tid2, min(t1_occ, t2_occ))
                 co_occs = cocc_dict[min_tid][max_tid]
-                    
+
                 numer = (co_occs + 1)*WIKI_NUM_ABST # +1 is for smoothing
                 denom = t1_occ*t2_occ
                 scores[topics[i].id].append( log((float(numer))/denom))
     return scores
     # compute PMI using mean/median of log(n(both)/n(w1)n(w2))
-    
-    
-# Coherence from Newman, 2011 Automatic (search index with Bing)   
-def get_bing_coherence_dict(terms_dict, corpus_dbloc, numtitles=50):#(terms, corpus_dbloc, numterms=NUM_TERMS, numtitles=100):
+
+
+
+def get_bing_coherence_dict(terms_dict, corpus_dbloc, numtitles=50):
+    """
+    Coherence from Newman, 2011 Automatic (search index with Bing)
+    """
     dbase = db(corpus_dbloc)
     # do we have a de-stemming table?                        
     destem = dbase.check_table_existence("termid_to_prestem")
@@ -300,7 +304,7 @@ def get_bing_coherence_dict(terms_dict, corpus_dbloc, numtitles=50):#(terms, cor
     scores = {}
     # Store more meta data so we can click through and see more of the anlaysis (e.g. which terms appeared in titles, frequency, cooccurance, which titles we were working with, etc)
 
-    print 'Querying Bing...'                                                  
+    print 'Querying Bing...'
     for i, key in enumerate(terms_dict):
         terms = terms_dict[key]
         topic_terms = []
@@ -311,7 +315,7 @@ def get_bing_coherence_dict(terms_dict, corpus_dbloc, numtitles=50):#(terms, cor
                 trm_title = trm[0]
             topic_terms.append(trm_title)
         topic_terms.sort() # sort for linear overlapping scans with search titles 
-        search_qry = ' '.join(topic_terms)   
+        search_qry = ' '.join(topic_terms)
         topic_terms = map(stem, topic_terms) # TODO make stemming optional on match?
         print '-topic %i of %i: %s' % (i, len(terms_dict), search_qry),
 
@@ -328,10 +332,10 @@ def get_bing_coherence_dict(terms_dict, corpus_dbloc, numtitles=50):#(terms, cor
             title_terms = map(stem, title_terms) # make list of lists into flat list
             title_terms.sort()
             tle_n = 0
-            top_n=0                                                      
+            top_n=0
             # presorting the lists allows linear scans 
-            while tle_n < len(title_terms) and top_n < len(topic_terms): 
-                cval = cmp(title_terms[tle_n], topic_terms[top_n]) 
+            while tle_n < len(title_terms) and top_n < len(topic_terms):
+                cval = cmp(title_terms[tle_n], topic_terms[top_n])
                 if cval == 0: # match 
                     tmatches += 1
                     tle_n += 1
@@ -341,17 +345,14 @@ def get_bing_coherence_dict(terms_dict, corpus_dbloc, numtitles=50):#(terms, cor
                     top_n += 1
         print ': %i' % tmatches
         scores[key] = tmatches
-   #sleep(1) # don't overwhelm Bing?   
     return scores
 
 def kfold_perplexity(request, analyzer, k=5, start=-1, stop=-1, step= -1, param="ntopics", pertest=0.20, current_step=None, current_fold=None):
     """
     Divides the corpus into k folds and computes the perplexity of each fold given the other k-1 folds
-       @param request: the django request object
-       @param k: divide the corpus into k folds
+    @param request: the django request object
+    @param k: divide the corpus into k folds
     """
-    #load the previous analyzer and do pdb.set_trace()
-    #analyzer = pickle.load(open())
 
     # construct the k-fold corpus
     corpus_file = analyzer.get_param('corpusfile')
@@ -414,100 +415,84 @@ def _write_data(data, file, do_append):
         data_out.close()
     except:
         print '\n\nWARNING unable to save data into %s' % file
-        
+
 def _sum_words_in_doc_line(dl):
     terms = dl.strip().split()[1:]
     return sum(map(lambda x: int(x.split(":")[1]), terms))
 
 
-def doc_graph(request, alg_db, alg=''):   # TODO: make this more django-like and fix alignment issues
+def doc_graph(request, alg_db, alg=''):
+    """
+    Create a table-like graph of doc: topic distribution
+    """
     myrelations = relations(alg_db)
-    docs = myrelations.get_docs()
-    
-    docs_table = ""
-    topics_table = ""
-    
-    for doc in docs:
-        docs_table += '<table class="doc-graph-table"><tr><td class="dark-hover"><a href="../documents/' + doc.get_safe_title() + '-' + str(doc.id) + '">' + doc.title + '</a></td></tr></table>\n'
-        topics_table += '<table class="high-contrast-table"><tr>'
-        topics = myrelations.get_related_topics(doc)
+    documents = myrelations.get_docs()
+
+    docs_data = []
+    for doc in documents:
+        topics = myrelations.get_top_related_topics(doc, -1)
         topic_keys = topics.keys()
         topic_keys.sort(lambda x, y: -cmp(topics[x], topics[y]))
-        
-        total_percent = 0
-        remaining_topics = ''
-        
+
         total_score_sum = 0
         for key in topic_keys:
             total_score_sum += topics[key]
-        
-        for topic in topic_keys:
-            per = topics[topic] / total_score_sum
-            if (per != 0):
-                topics_table += '<td class="clickable" width="' + str(per * 100) + '%" title="' + topic.title + '" onclick="window.location.href=\'../topics/' + topic.get_safe_title() + '-' + str(topic.id) + '\'"></td>\n'
-                total_percent += per
-            else:
-                if remaining_topics == '':
-                    remaining_topics = topic.title
-                elif len(remaining_topics) < 150:
-                    remaining_topics += ', ' + topic.title
 
-        if len(remaining_topics) >= 150:
-            remaining_topics += '...'
-
-        if remaining_topics != '' and (100 - total_percent) > 0:
-            topics_table += '<td width="' + str((1 - total_percent) * 100) + '%" title="' + remaining_topics + '">&nbsp;</td>\n'
-        
-        topics_table += '</tr></table>\n'
-
-    doc_graph = '<div id="graph">\n<table width="100.0%">\n<tr><td width="50%">\n\n' + docs_table + '\n</td><td class="bars">\n' + topics_table + '\n</td></tr>\n</table></div>'
-    template = 'table-graph.html'
-    return render_to_response(template, {'data':doc_graph, 'alg':alg}, context_instance=RequestContext(request))
-    
-def term_graph(request, alg_db, alg=''):   # TODO: make this more django-like
-    myrelations = relations(alg_db)  
-    nterm_disp = 500;
-    terms = myrelations.get_terms(nterm_disp)     # TODO use AJAX to  pull out more terms as desired
-    terms_table = ""
-    topics_table = ""  
-    
-    for term in terms:
-        terms_table += '<table class="doc-graph-table"><tr><td class="dark-hover"><a href="../terms/' + term.get_safe_title() + '-' + str(term.id) + '">' + term.title + '</a></td></tr></table>\n'
-        topics_table += '<table class="high-contrast-table"><tr>\n'
-        topics = myrelations.get_related_topics(term)
-        topic_keys = topics.keys()
-        topic_keys.sort(lambda x, y: cmp(topics[x], topics[y]))
-
-        total_percent = 0
+        tops_data = []
         remaining_topics = ''
-
         for topic in topic_keys:
-            per = myrelations.get_relative_percent(topic, term)
-            if (per != 0):
-                topics_table += '<td class="clickable" width="' + str(per * 100) + '%" title="' + topic.title +  '" onclick="window.location.href=\'../topics/' + topic.get_safe_title() + '-' + str(topic.id) + '\'"></td>\n'
-                total_percent += per
+            rel_pct = (topics[topic] / total_score_sum)*100
+            if rel_pct > 0:
+                tops_data.append({'rel_pct':rel_pct, 'get_safe_title':topic.get_safe_title(), 'title':topic.title, 'id':topic.id})
             else:
                 if remaining_topics == '':
                     remaining_topics = topic.title
                 elif len(remaining_topics) < 150:
                     remaining_topics += ', ' + topic.title
+                else:
+                    break
+        if len(remaining_topics) >= 150:
+            remaining_topics += '...'
+        docs_data.append({'group_data': doc, 'data':tops_data, 'remainder':{'title':remaining_topics}})
+
+
+    return render_to_response('table-graph.html', {'input':docs_data, 'alg':alg, 'group_data_type': 'documents', 'data_type':'topics'}, context_instance=RequestContext(request))
+
+def term_graph(request, alg_db, alg=''):
+    myrelations = relations(alg_db)
+    nterm_disp = 100
+    terms = myrelations.get_terms(nterm_disp)     # TODO use AJAX to pull out more terms as desired -- sort by frequency
+
+    terms_data = []
+    for trm in terms:
+        topics = myrelations.get_top_related_topics(trm, -1)
+        topic_keys = topics.keys()
+        topic_keys.sort(lambda x, y: -cmp(topics[x], topics[y])) # TODO are these sorts necessary since we're now sorting in database?
+
+        remaining_topics = ''
+        tops_data = []
+        for topic in topic_keys:
+            rel_pct = myrelations.get_relative_percent(topic, trm)
+            if rel_pct > 0:
+                tops_data.append({'rel_pct':rel_pct, 'get_safe_title':topic.get_safe_title(), 'title':topic.title, 'id':topic.id})
+            else:
+                if remaining_topics == '':
+                    remaining_topics = topic.title
+                elif len(remaining_topics) < 150:
+                    remaining_topics += ', ' + topic.title
+                else:
+                    break
 
         if len(remaining_topics) >= 150:
             remaining_topics += '...'
+        terms_data.append({'group_data': trm, 'data':tops_data, 'remainder':{'title':remaining_topics}})
 
-        if remaining_topics != '' and (100 - total_percent) > 0:
-            topics_table += '<td width="' + str((1 - total_percent) * 100) + '%" title="' + remaining_topics + '">&nbsp;</td>\n'
+    return render_to_response('table-graph.html', {'input':terms_data, 'alg':alg, 'group_data_type': 'terms', 'data_type':'topics'}, context_instance=RequestContext(request))
 
-        topics_table += '</tr></table>\n' 
-
-    term_graph = '<div id="graph">\n<table width="100.0%">\n<tr><td width="20.0%">\n\n' + terms_table + '\n</td><td class="bars">\n' + topics_table + '\n</td></tr>\n</table></div>'    
-    template = 'table-graph.html'
-    return render_to_response(template, {'data':term_graph, 'alg':alg}, context_instance=RequestContext(request))
-
-def term_list(request, alg_db, alg=''):   # TODO: make this more django-like  
-    myrelations = relations(alg_db)  
+def term_list(request, alg_db, alg=''):   # TODO: make this more django-like
+    myrelations = relations(alg_db)
     terms = myrelations.get_terms()
-    
+
     terms_table = '<div ><table onmouseover="show_count_bar()" onmouseout="hide_count_bar()">\n'
     for i in range(0, len(terms), 8):
         terms_table += '<tr>\n'
@@ -518,219 +503,211 @@ def term_list(request, alg_db, alg=''):   # TODO: make this more django-like
             else:
                 terms_table += '<td class="blank"></td>'
         terms_table += '</tr>\n'
-    terms_table += '</table></div>\n' 
-    terms_table = '<div id="list">' + terms_table + '</div>' 
+    terms_table += '</table></div>\n'
+    terms_table = '<div id="list">' + terms_table + '</div>'
     terms_table += '<div onmouseover="show_count_bar()" onmouseout="hide_count_bar()"><table class="hidden"><tr><td class="count"></td><td class="total"></td></tr></table></div>'
     template = 'table-graph.html'
     return render_to_response(template, {'data':terms_table, 'alg':alg}, context_instance=RequestContext(request))
-               
-def topic_graph(request, alg_db, alg=''):   # TODO: make this more django-like and fix alignment issues    
-    myrelations = relations(alg_db)  
-    topics = myrelations.get_topics() 
-    
-    topics_table = ""
-    terms_table = ""
-    
-    for topic in topics:                    
-        topics_table += '<table class="doc-graph-table" width="250px"><tr><td class="dark-hover" onclick="window.location.href=\'../topics/' + topic.get_safe_title() + '-' + str(topic.id) + '\'">' + topic.title + '</td></tr></table>\n'
-        terms_table += '<table width="100%" class="high-contrast-table"><tr>\n'
-        terms = myrelations.get_topic_terms(topic)
-        term_keys = terms.keys()
-        term_keys.sort(lambda x, y: -cmp(terms[x], terms[y]))
-        
-        total_percent = 0
+
+def topic_graph(request, alg_db, alg='', maxterms=100):
+    """
+    Build a topic-term graph to display the prevalence of each term in each topic
+    """
+    myrelations = relations(alg_db)
+    topics_list = myrelations.get_topics()
+
+    topics_data = []
+    for topic in topics_list:
+        # extract the topic title and id
+        terms = topic.get_terms(maxterms)
+
         remaining_terms = ''
         topic.get_terms()
-        for term in term_keys:
-            per = topic.get_relative_percent(term)
-            if (per != 0):
-                terms_table += '<td class="clickable" width="' + str(per*100) + '%" title="' + term.title + '" onclick="window.location.href=\'../terms/' + term.get_safe_title() + '-' + str(term.id) + '\'"></td>\n'
-                total_percent += per
+        terms_data = []
+        for trm in terms:
+            rel_pct = round(topic.get_relative_percent(trm),4)
+            if rel_pct > 0:
+                terms_data.append({'rel_pct':rel_pct, 'get_safe_title':trm.get_safe_title(), 'title':trm.title, 'id':trm.id})
             else:
                 if remaining_terms == '':
-                    remaining_terms = term.title
-                elif len(remaining_terms) < 150: #make 150 a const
-                    remaining_terms += ', ' + term.title
+                    remaining_terms = trm.title
+                elif len(remaining_terms) < 150:
+                    remaining_terms += ', ' + trm.title
                 else:
                     break
-
         if len(remaining_terms) >= 150:
             remaining_terms += '...'
 
-        if (100 - total_percent) > 0:
-            terms_table += '<td width="' + str((1 - total_percent)*100) + '%" title="' + remaining_terms + '">&nbsp;</td>\n'
-        
-        terms_table += '</tr></table>\n'
-                                                                                                                                                                                  
-    topic_graph = '<div id="graph">\n<table width="100.0%">\n<tr><td width="35%">\n\n' + topics_table + '\n</td><td class="bars">\n' + terms_table + '\n</td></tr>\n</table></div>'
-    template = 'table-graph.html'
-    return render_to_response(template, {'data':topic_graph, 'alg':alg}, context_instance=RequestContext(request))
-    
-def topic_presence_graph(request, alg_db, alg=''):
-    myrelations = relations(alg_db)  
-    topics = myrelations.get_topics() 
-    
-    topic_table = '<table width="100%">\n'
-   
-    max_overall_score = myrelations.get_overall_score(topics[0])
-    for topic in topics:
-        overall_topic_score = myrelations.get_overall_score(topic) # colo: this is causing problems  with hdp
-        width = overall_topic_score / max_overall_score * 100.0
-        topic_table += '<tr><td><table width="' + str(width)  + '%" ><tr><td class="high-contrast" title="' + str(int(overall_topic_score)) + '"onclick="window.location.href=\'../topics/' + topic.get_safe_title() + '-' + str(topic.id) + '\'">' + topic.title + '</td></tr></table></td></tr>\n'
-    
-    topic_table += '</table>'
-    template = 'table-graph.html'       
-    topic_table = '<div id="graph">\n' + topic_table   + '</div>' # TODO: fix HDP topic graph output
-    return render_to_response(template, {'data':topic_table, 'alg':alg}, context_instance=RequestContext(request))
+        topics_data.append({'group_data': topic, 'data':terms_data, 'remainder':{'title':remaining_terms}})
 
-# TODO address repeated code here, as well as unoptimized database queries: need to fix!  OPTIMIZE
+    return render_to_response('table-graph.html', {'input':topics_data, 'alg':alg, 'group_data_type': 'topics', 'data_type':'terms'}, context_instance=RequestContext(request))
+
+def topic_presence_graph(request, alg_db, alg=''):
+    """
+    Returns a graph of the relative presence of each topic (bar graph)
+    """
+    myrelations = relations(alg_db)
+    topics = myrelations.get_topics()
+
+    top_data=[]
+    max_overall_score = myrelations.get_overall_score(topics[0])
+    for tpc in topics:
+        overall_topic_score = myrelations.get_overall_score(tpc)
+        width = overall_topic_score / max_overall_score * 100.0
+        top_data.append({'group_data':tpc, 'data':[{'rel_pct':width}]})
+
+    return render_to_response('table-graph.html', {'input':top_data, 'alg':alg, 'group_data_type': 'topics'}, context_instance=RequestContext(request))
+
+# TODO address repeated code, as well as possibly unoptimized database queries
 def get_term_page(request, alg_db, term_title, termid, term_cutoff=NUM_TERMS, doc_cutoff=10, topic_cutoff=10, alg=''):
+    """
+    returns the term page to the user with related terms, documents, and topics
+    """
     # init
     myrelations = relations(alg_db)
-    term = Term(termid, term_title)   
-    
-    # related terms
-    top_related_terms = myrelations.get_related_terms(term, term_cutoff)             
-    terms_column = make_column(top_related_terms, 'terms')     
-    
-    # related docs
-    docs = myrelations.get_related_docs(term)
-    doc_keys = docs.keys()       
-    doc_keys.sort(lambda x, y: -cmp(docs[x], docs[y]))
-    doc_column = make_column(doc_keys[:doc_cutoff], 'documents')
+    term = Term(termid, term_title)
 
     # related topics
+    # pie array
     topics = myrelations.get_top_related_topics(term, topic_cutoff)
     topic_keys = topics.keys()
-    topic_keys.sort(lambda x, y: -cmp(topics[x], topics[y])) 
-    topic_column = make_column(topic_keys[:topic_cutoff], 'topics')
-    
-    return render_to_response("three-column-vis.html", {'leftcol':terms_column, 'centercol':doc_column,
-        'rightcol':topic_column, 'title':term.get_safe_title(), 'alg':alg}, context_instance=RequestContext(request))  
-    
-def get_topic_page(request, alg_db, topic_title, topicid, term_cutoff=NUM_TERMS, doc_cutoff=10, topic_cutoff=10, alg=''):  
+    topic_keys.sort(lambda x, y: -cmp(topics[x], topics[y]))
+    piearray = get_js_term_topics_pie_array(myrelations, term, topic_keys)
+
+    topics = myrelations.get_top_related_topics(term, topic_cutoff)
+    topic_keys = topics.keys()
+    topic_keys.sort(lambda x, y: -cmp(topics[x], topics[y]))
+    leftcol = {'piearray':piearray, 'data': topic_keys[:topic_cutoff], 'webname':'topics'}
+
+    # related docs
+    docs = myrelations.get_top_related_docs(term, doc_cutoff)
+    doc_keys = docs.keys()
+    doc_keys.sort(lambda x, y: -cmp(docs[x], docs[y]))
+    midcol = {'data': doc_keys[:doc_cutoff], 'webname':'documents'}
+
+    # related terms
+    top_related_terms = myrelations.get_related_terms(term, term_cutoff)
+    rightcol = {'data': top_related_terms[:term_cutoff], 'webname':'terms'}
+
+
+
+    return render_to_response("three-column-vis.html", {'leftcol':leftcol, 'midcol':midcol, 'rightcol':rightcol, 'title':term.title}, context_instance=RequestContext(request))
+
+def get_topic_page(request, alg_db, topic_title, topicid, term_cutoff=NUM_TERMS, doc_cutoff=10, topic_cutoff=10, alg=''):
     """
     returns the topic page to the user with related terms, documents, and topics
-    TODO: make this page also display the top N terms of the topic
     """
-    
+
     myrelations = relations(alg_db)
     if not topic_title[0] == '{':
         topic_title = '{' + ', '.join(topic_title.strip().split()) + '}'
     topic = Topic(myrelations, topicid, topic_title)
+
     # related terms
     terms = topic.get_terms(term_cutoff)
-    term_column = ''#make_column(terms, 'terms')  
-    term_num = 0
-    for trm in terms:
-        term_column += '<tr class="list"><td id="' + trm.get_safe_title() + '" onmouseover="highlight(' + str(term_num) + ')" onmouseout="unhighlight()" onclick="window.location.href=\'../terms/' + trm.get_safe_title() + '-' + str(trm.id) + '\'">' + trm.title + '</td></tr>\n'
-        term_num += 1                     
-    term_column = add_title('related terms',term_column)  
-    term_column = add_canvas(term_column) 
-    jsarray = get_js_topic_term_pie_array(myrelations, topic, terms)
+    # add an interactive pie chart
+    piearray = get_js_topic_term_pie_array(topic, terms) # TODO replace this in template
+    leftcol = {'piearray':piearray, 'data':terms, 'webname':'terms'}
 
-    # related docs 
+
+#    # related docs
     docs = myrelations.get_top_related_docs(topic, doc_cutoff)
     doc_keys = docs.keys()
-    doc_keys.sort(lambda x, y: -cmp(docs[x], docs[y]))  
-    doc_column =  make_column(doc_keys[0:doc_cutoff],'documents')
-                                
-    # related topics
-    topics = myrelations.get_related_topics(topic)
+    doc_keys.sort(lambda x, y: -cmp(docs[x], docs[y]))
+    midcol = {'data': doc_keys[0:doc_cutoff],  'webname':'documents'}
+
+#    # related topics
+    topics = myrelations.get_top_related_topics(topic, topic_cutoff)
     topic_keys = topics.keys()
     topic_keys.sort(lambda x, y: cmp(topics[x], topics[y]))
-    topic_column = make_column(topic_keys[0:topic_cutoff], 'topics')
+    rightcol = {'data': topic_keys[0:topic_cutoff], 'webname':'topics'}
 
-    return render_to_response("three-column-vis.html", {'leftcol':term_column, 'centercol':doc_column,
-        'rightcol':topic_column, 'title':topic.title, 'jsarray':jsarray}, context_instance=RequestContext(request))    
-        
- 
+    return render_to_response("three-column-vis.html", {'leftcol':leftcol, 'midcol':midcol, 'rightcol':rightcol, 'title':topic.title}, context_instance=RequestContext(request))
+
+
 def get_doc_page(request, alg_db, doc_title, docid, docloc, doc_cutoff=10, topic_cutoff=10, alg=''):
-    # init   
-    
-    myrelations = relations(alg_db)         
-    doc = Document(docid, doc_title)   
-                 
-    # related topics
+    """
+    return the document page to the user with related terms and topics and the document text
+    TODO limit the length of the document returned to first XY bytes
+    """
+
+    myrelations = relations(alg_db)
+    doc = Document(docid, doc_title)
+
     topics = myrelations.get_top_related_topics(doc, topic_cutoff)
-    topic_keys = topics.keys()  
-    topic_keys.sort(lambda x, y: -cmp(topics[x], topics[y]))   
-    topic_keys = topic_keys[:topic_cutoff]
-    topic_column = ''   
-    topic_num = 0
-    for top in topic_keys:
-           topic_column += '<tr class="list"><td id="' + top.get_safe_title() + '" onmouseover="highlight(' + str(topic_num) + ')" onmouseout="unhighlight()" onclick="window.location.href=\'../topics/' + top.get_safe_title() + '-' + str(top.id) + '\'">' + top.title + '</td></tr>\n'
-           topic_num += 1  
-    topic_column = add_title('related topics', topic_column) 
-    topic_column = add_canvas(topic_column)     
-    
+    piearray = get_js_doc_topic_pie_array(topics)
+    # related topics
+    topic_keys = topics.keys()
+    topic_keys.sort(lambda x, y: -cmp(topics[x], topics[y]))
+    leftcol = {'piearray':piearray, 'data':topic_keys[:topic_cutoff], 'webname':'topics'}
+
+
     # related documents      
-    docs = myrelations.get_related_docs(doc)
+    docs = myrelations.get_top_related_docs(doc, doc_cutoff)
     doc_keys = docs.keys()
     doc_keys.sort(lambda x, y: cmp(docs[x], docs[y]))
-    doc_column = make_column(doc_keys[0:doc_cutoff], 'documents')
-    jsarray = get_js_doc_topic_pie_array(myrelations, doc)
+    rightcol = {'data':doc_keys[:topic_cutoff], 'webname':'documents'}
+
+
 
     try:
         doc_text_file = open(os.path.join(docloc, slugify(unicode(doc_title))),'r')
     except IOError:
         doc_text_file = open(os.path.join(docloc, slugify(unicode(doc_title)) + '.txt'),'r') # TODO fix hack
 
-    txt = doc_text_file.read()
-    doc_text = '<tr class="doc"><td>\n' + escape(remove_non_ascii(txt)) + '\n</td></tr>' 
+    midcol = {'doctext':doc_text_file.read()}
     doc_text_file.close()
-    return render_to_response("three-column-vis.html", {'leftcol':topic_column, 'centercol':doc_text,
-        'rightcol':doc_column, 'title':doc.title, 'jsarray':jsarray, 'alg':alg}, context_instance=RequestContext(request))    
-             
-def add_title(title, txt):
-    return '<tr class="title"> <td> ' + title + ' </td> </tr>\n' + txt  
-    
-def add_canvas(txt):
-    return '<tr>\n<td style="background-color: #FFFFFF; border-left: solid 1px #9C9C9C;border-right: solid 1px #9C9C9C;  border-top: 5px solid #9C9C9C;"><canvas height="200" width="200" id="canvas"></canvas></td>\n</tr>\n' + txt   
-    
-def make_column(itrable, name):
-    column = ''   
-    for it in itrable:
-        column += '<tr class="list"><td onclick="window.location.href=\'../' + name + '/' + it.get_safe_title() + '-' + str(it.id) + '\'">' + it.title + '</td></tr>\n'
-    column = add_title('related ' + name, column) 
-    return column
-             
+    return render_to_response("three-column-vis.html", {'leftcol':leftcol,
+        'rightcol':rightcol, 'midcol':midcol, 'title':doc.title}, context_instance=RequestContext(request))
 
-def get_js_doc_topic_pie_array(relations, doc):
+# TODO these three methods have some redundency and could use generators instead of strings
+def get_js_doc_topic_pie_array(topics):
+    """
+    obtain the topic-term data in appropriate data format for flot
+    """
     array_string = "["
-
-    topics = relations.get_related_topics(doc)
     topic_keys = topics.keys()
     topic_keys.sort(lambda x, y: -cmp(topics[x], topics[y]))
     key_count = 0
     for key in topic_keys:
-        array_string += "[" + str(topics[key]) + ", " + "\"../topics/" + key.get_safe_title() + '-' + str(key.topic_id) + "\", \"" + key.get_safe_title() + "\"]"
+        array_string += "{label:\"" + key.get_safe_title() + "\", data:" + str(topics[key]) + "}"
         key_count += 1
         if key_count != len(topic_keys):
             array_string += ", "
-
     array_string += "]"
-
     return array_string
 
-def get_js_topic_term_pie_array(relations, topic, terms):
+def get_js_topic_term_pie_array(topic, terms):
+    """
+    obtain the topic-term data in appropriate data format for flot
+    """
     array_string = "["
-                                         
     term_count = 0
-    term_score_total = 0
     for term in terms:
         rel_percent = exp(topic.terms[term])
-        array_string += "[" + str(rel_percent) + ", " + "\"../terms/" + term.get_safe_title() + '-' + str(term.id) + "\", \"" + term.get_safe_title() + "\"]"
+        array_string += "{label:\"" + term.get_safe_title() + "\", data:" + str(rel_percent) + "}"
         term_count += 1
-        term_score_total += rel_percent
         if term_count != len(terms):
             array_string += ", "
-    if term_score_total < topic.term_score_total:
-        array_string += ', [' + str(topic.term_score_total-term_score_total) + ', \"\", \"\"]'
-
     array_string += "]"
-
     return array_string
+
+def get_js_term_topics_pie_array(myrelations, term, topic_keys):
+    """
+    obtain the term-topic data in appropriate data format for flot
+    """
+    array_string = "["
+    topic_ct = 0
+    for topic in topic_keys:
+        rel_percent = myrelations.get_relative_percent(topic, term)/100.0
+        array_string += "{label:\"" + topic.get_safe_title() + "\", data:" + str(rel_percent) + "}"
+        topic_ct += 1
+        if topic_ct != len(topic_keys):
+            array_string += ", "
+    array_string += "]"
+    return array_string
+
+
 
              
         

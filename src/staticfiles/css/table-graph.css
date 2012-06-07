@@ -1,0 +1,38 @@
+div.databox {
+    float: left;
+    outline: white 2px solid;
+    height: 25px;
+}
+
+div.dataremain {
+    margin: 0px;
+    height: 25px;
+    width: auto;
+}
+
+div.graph_item {
+    width: 100%;
+    overflow: auto;
+    margin-top: 20px;
+}
+
+div.graph_title {
+    float: left;
+    width: 23.5%;
+    overflow: auto;
+    margin-right: 1%;
+    font-size: 13px;
+    padding-top: 7px;
+    height: 18px;
+}
+
+div.graph_data {
+    float: left;
+    width: 75%;
+}
+
+#main {
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 30px;
+}

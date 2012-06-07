@@ -1,6 +1,46 @@
 {% extends "tmabase.html" %}
-{% block head1 %} {{alg}}{% endblock %}
-{% block head2 %} {{subtitle}} {% endblock %}  
-{% block data %}
-{{data|safe}}
+
+{% block jscript %}
+<script language="JavaScript" src="{{ STATIC_URL }}js/jquery-latest.js" type="text/JavaScript"></script>
+<script type='text/javascript' src='{{ STATIC_URL }}js/endless.js'></script>
+{% endblock %}
+
+{% block css %}
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/table-graph.css">
+{% endblock %}
+
+{% block head1 %} {{ alg }}{% endblock %}
+
+{% block head2 %} {{ subtitle }} {% endblock %}
+
+{% block thebody %}
+    <div id="main">
+    {% load endless %}
+
+    {% paginate input %}
+        {% for entry in input %}
+            <div class="graph_item">
+                <div class="graph_title light-data"
+                     onclick="window.location.href='../{{ group_data_type }}/{{ entry.group_data.get_safe_title }}-{{ entry.group_data.id }}'">
+                    {{ entry.group_data.title }}
+                </div>
+                <div class="graph_data">
+                    {% for datum in entry.data %}
+                        <div {% if data_type %}
+                                onclick="window.location.href='../{{ data_type }}/{{ datum.get_safe_title}}-{{ datum.id }}'"
+                                class="databox dark-data"
+                                {% else %}
+                                class="databox dark-title"
+                                {% endif %}
+                                style="width:{{ datum.rel_pct }}%;" title="{{ datum.title }}">
+                        </div>
+                    {% endfor %}
+                    {% if entry.remainder %}
+                        <div class="dataremain dark-title" title="{{ entry.remainder.title }}"></div>
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+    {% show_more %}
+    </div>
 {% endblock %}

@@ -1,52 +1,108 @@
-{% extends "tmabase.html" %}    
-{% block head1 %} {{title}} {% endblock %}
-{% block head2 %} {{subtitle}}  {% endblock %} 
+{% extends "tmabase.html" %}
+
+{% block head1 %} {{ title }} {% endblock %}
+
 {% block jscript %}
-{% if jsarray %}
-<script language="JavaScript" type="text/JavaScript" src="{{ STATIC_URL }}js/pie.js"></script>
-<script type="text/JavaScript">
-var array = {{jsarray|safe}}
-var elements = generate_pie_elements(array);
-var piec = null;
-function init() {
-	browser_adjust();
-	// create pie chart
-	piec = new PieChart(elements);
-	piec.initialize();
-}
-function highlight(i) {
-	piec.highlight(i);
-}
-function unhighlight() {
-	piec.unhighlight();
-}
-</script>
-{% endif %} 
-{% endblock %} 
+    {% if leftcol.piearray %}
+        <script language="javascript" type="text/javascript" src="{{ STATIC_URL }}js/jquery-latest.js"></script>
+        <script language="javascript" type="text/javascript" src="{{ STATIC_URL }}js/flot/jquery.flot.js"></script>
+        <script language="javascript" type="text/javascript" src="{{ STATIC_URL }}js/flot/jquery.flot.pie.js"></script>
 
-{% block data %} 
-<div id="main">
-<table><tr>
+        <script language="JavaScript" type="text/javascript">
+            jQuery(document).ready(function() {
+                var piearray = {{leftcol.piearray|safe}};
+                jQuery("#piegraph").width("250px");
+                jQuery("#piegraph").height("200px");
+                jQuery.plot(jQuery("#piegraph"), piearray,
+                        {
+                            series: {
+                                pie: {
+                                    show: true,
+                                    radius: 3 / 4,
+                                    combine: {
+                                        color: '#999',
+                                        threshold: 0.05
+                                    }
+                                }
+                            },
+                            legend: {
+                                show: false
+                            },
+                            grid: {
+                                hoverable: true,
+                                clickable: true
+                            }
+                        });
+//                jQuery("#piegraph").bind("plothover", pieHover);
+                jQuery("#piegraph").bind("plotclick", function(event, pos, obj) {
+                    if (!obj) {
+                        return;
+                    }
+                    jQuery("#lc-" + obj.series.label).click();
+                });
+            });
 
-<td width="25.0%">  
-<table class="dark">
-{{leftcol|safe}}    
-</table>
-</td>
 
-<td width="50.0%">  
-<table class="light">
-{{centercol|safe}}   
-</table>
-</td>
+        </script>
+    {% endif %}
+{% endblock %}
 
-<td width="25.0%"> 
-<table class="dark">
-{{rightcol|safe}}   
-</table>
-</td>
-</tr></table>
-</div>
+{% block css %}
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/three-column.css"/>
+{% endblock %}
+
+
+{% block thebody %}
+    <div id="thecontent">
+        <div id="center" class="column">
+            {% if midcol.data %}
+                <ul class="cell-list">
+                    <li class="cell-title dark-title"> related {{ midcol.webname }} </li>
+                    {% for entry in midcol.data %}
+                        <li id="mc-{{entry.safe_title }}" class="cell-elem light-data"
+                            onclick="window.location.href='../{{ midcol.webname }}/{{entry.get_safe_title}}-{{entry.id}}'">
+                            {{ entry.title }}
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <div class="paper">
+                    {{ midcol.doctext }}
+                </div>
+            {% endif %}
+        </div>
+
+        <div id="left" class="column">
+            {% if leftcol.piearray %}
+                <div id="piegraph"></div>
+            {% endif %}
+
+            <ul class="cell-list">
+                <li class="cell-title dark-title"> related {{ leftcol.webname }} </li>
+                {% for entry in leftcol.data %}
+                    <li id="lc-{{entry.get_safe_title }}" class="cell-elem light-data"
+                        onclick="window.location.href='../{{ leftcol.webname }}/{{entry.get_safe_title}}-{{entry.id}}'">
+                        {{ entry.title }}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div id="right" class="column">
+            <ul class="cell-list">
+                <li class="cell-title dark-title"> related {{ rightcol.webname }} </li>
+                {% for entry in rightcol.data %}
+                    <li id="rc-{{entry.safe_title }}" class="cell-elem light-data"
+                        onclick="window.location.href='../{{ rightcol.webname }}/{{entry.get_safe_title}}-{{entry.id}}'">
+                        {{ entry.title }}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+
+    </div>
 
 {% endblock %}                                                                                                         
 

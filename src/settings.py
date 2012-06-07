@@ -1,11 +1,8 @@
 import os
 import sys
-import pdb
-
-
-# User Limits
+import pdb    
 import shutil
-
+# User Limits
 MAX_UPLOAD_SIZE = 20*10e5
 MAX_WWW_DL_SIZE = 50*10e5
 
@@ -22,6 +19,7 @@ DEFAULT_STOP_WORDS = os.path.join(SRC_PATH,'backend/aux/stop_words.txt') # TODO 
 
 # add the trunk location to the pythonpath
 sys.path.append(TRUNK_PATH)
+sys.path.append(os.path.join(TRUNK_PATH, 'lib'))
 
 # set up appropriate algorithms TODO make sure algorithms are installed correctly
 ALG_LOCS = {
@@ -171,6 +169,7 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'endless_pagination',
     # Uncomment the next line to enable the admin:
     # 'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
@@ -185,6 +184,11 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.contrib.auth.context_processors.auth',
     'django.contrib.messages.context_processors.messages',
 )
+# For endless pagination
+TEMPLATE_CONTEXT_PROCESSORS += (
+     'django.core.context_processors.request',
+)
+
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to

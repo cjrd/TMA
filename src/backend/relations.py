@@ -60,6 +60,11 @@ class Topic:
         return self.ranked_terms[rank]
 
     def get_terms(self, cutoff=-1):
+        """
+        Obtain the top cutoff terms for the given topic (default=all terms)
+        @param cutoff: the number of terms to return
+        @return: the top cutoff terms for the given topic (default=all terms)
+        """
         if self.terms == {}:
             self.terms = self.rel.get_topic_terms(self, cutoff)
             self.ranked_terms = sorted(self.terms, key=self.terms.get, reverse=True)  
@@ -77,20 +82,22 @@ class Topic:
             end = len(self.ranked_terms)
         return map(lambda x: [x.title, x.id], self.ranked_terms[st:end])
 
-    def get_relative_percent(self, term):
-        self.get_terms(10)
-        #rank = self.ranked_terms.index(term)
+    def get_relative_percent(self, term, threshold = 0.005):
+        """
+        @return the relative percent of probability assigned to the given term
+        """
+        if not self.terms.has_key(term):
+            self.get_terms()
         if self.term_score_total == 0:
             for t in self.ranked_terms:
                 self.term_score_total += math.exp(self.terms[t])
+
         percent = (math.exp(self.terms[term]) / self.term_score_total)
 
-
-        if percent < .005:
+        if percent < threshold:
             return 0
         else:
-            return percent
-        
+            return percent*100
 
 class Term:
     all_terms = {}
@@ -134,6 +141,10 @@ class relations:
             return Term(term_id, title_qry[0][0])
 
     def get_topics(self):
+        """
+        obtain a list of topics from the database
+        @return a list of topics from the database default sorted by overall_score, i.e. total likelihood
+        """
         if self.topics == []:
             topics_info = self.mydb.get_topics_info()  
             
@@ -190,33 +201,8 @@ class relations:
             if term != None:
                 topic_terms[term] = score
         return topic_terms
-
-    def get_related_docs(self, token):
-        token_doc_info = []
-        if isinstance(token, Topic):
-            token_doc_info = self.mydb.get_top_topic_docs(token.id)
-        elif isinstance(token, Document):
-            token_doc_info = self.mydb.get_top_doc_docs(token.id) #TODO: id vs doc_id: make docs, topics, etc more consistent
-        elif isinstance(token, Term):
-            token_doc_info = self.mydb.get_top_term_docs(token.id)
         
-        token_docs = {}
-        for info in token_doc_info:
-            doc_id = info[1]
-            if isinstance(token, Document) and info[1] == int(token.id):
-                doc_id = info[2]
-            score = info[3]
-            if score != 0: #TODO: is there better way to do this?
-                doc_info = self.mydb.get_doc_info(doc_id)
-                if doc_info != []:
-                    title = doc_info[0][1]
-                    token_docs[Document(doc_id, title)] = score
-                #if len(token_docs.keys()) > 30:
-                    #break
-        
-        return token_docs 
-        
-    def get_top_related_docs(self, token, num=2):  # TODO: phase out other technique
+    def get_top_related_docs(self, token, num=1):  # TODO: phase out other technique
         token_doc_info = []
         if isinstance(token, Topic):
             token_doc_info = self.mydb.get_top_topic_docs(token.id,num)
@@ -241,7 +227,10 @@ class relations:
 
         return token_docs 
             
-    def get_top_related_topics(self, token, num=1): # TODO this should replace the get_related_topics function eventually
+    def get_top_related_topics(self, token, num=1):
+        """
+        get the top related topics for (1) other topics, (2) documents, (3) terms
+        """
         token_topic_info = []
         if isinstance(token, Topic):
             token_topic_info = self.mydb.get_top_topic_topics(token.topic_id, num)
@@ -264,33 +253,11 @@ class relations:
                         topics[t] = score 
         return topics
     
-    def get_related_topics(self, token):
-        token_topic_info = []
-        if isinstance(token, Topic):
-            token_topic_info = self.mydb.get_top_topic_topics(token.topic_id)
-        elif isinstance(token, Document):
-            token_topic_info = self.mydb.get_top_doc_topics(token.id)
-        elif isinstance(token, Term):
-            token_topic_info = self.mydb.get_top_term_topics(token.id)
-        
-        topics = {}
-        for info in token_topic_info:
-            score = info[3]
-            if score != 0 and not (isinstance(token, Document) and score < 1): #check for reverse pairs in topic-topic search
-                if (isinstance(token, Topic) and info[2] == int(token.topic_id)) or isinstance(token, Term):
-                    t = self.get_topic(info[1])
-                    if t != None:
-                        topics[t] = score #TODO: topic init needs work
-                else:
-                    t = self.get_topic(info[2])
-                    if t != None:
-                        topics[t] = score
+    def get_related_terms(self, term, top_n = 10):
+        """
+        Get the top_n terms related to the given term
+        """
 
-        
-        return topics
-    
-    
-    def get_related_terms(self, term, top_n = 10): 
         # terms_info = self.mydb.get_top_term_terms(term.id)
         term_id = term.id
         top_term_mat = pickle.load(open(self.term_topic_obj_loc,'rb'))
@@ -305,49 +272,29 @@ class relations:
         top_terms = []
         for ttid in top_term_ids:
             top_terms.append(Term(int(ttid), self.mydb.get_term_title(int(ttid))[0][0]))
-#        top_terms = map(lambda ttid: Term(ttid, self.mydb.get_term_title(ttid)[0][0]), top_term_ids) # TODO better way to get titles?
-        #Term.all_terms = {}
-
         return top_terms
 
-#        for term_comp_id in xrange(len(top_term_mat)):
-#            if term_id == term_comp_id:
-#                continue
-#            score = 0
-#            for i in xrange(len(top_term_mat[term_id])):
-#                score += math.pow(top_term_mat[term_id][i] - top_term_mat[term_comp_id][i], 2)
-#            if score > 0:
-#                if len(top_terms) < top_n or score < max_score:
-#                    newterm = Term(term_comp_id,'frogtoes') # titles do not matter TODO this is inefficient
-#                    newterm.score = score
-#                    top_terms.append(newterm)
-#                    top_terms.sort(key=lambda x: x.score)
-#                    if not len(top_terms) < top_n:
-#                        del(top_terms[-1])
-#                    max_score = top_terms[-1].score
-#
-#        for i in xrange(len(top_terms)):
-#            top_terms[i].set_title(self.mydb.get_term_title(top_terms[i].id)[0][0])
-#
-#        # to maintain data consistency when accessing terms in other context (since the Title isn't set here)
-
     def get_relative_percent(self, topic, term):
-        topics = self.get_related_topics(term)
-        score = 0
-        topica = ''#topics should be universal instead
-        for t in topics.keys():
-            score += topics[t];
-            if int(t.topic_id) == int(topic.topic_id):
-                topica = t
-        return topics[topica] / score
+        """
+        Obtain the relative percent of the topic in the given term
+        """
+        topics = self.get_top_related_topics(term, -1)
+        return 100*math.exp(topics[topic]) / sum(map(math.exp,topics.values()))
+
     
     def get_term_count(self, term):
+        """
+        Obtain the term count of the given term
+        """
         total = 0;
         for doc_info in self.mydb.get_top_term_docs(term.id):
             total += doc_info[3]
         return total
 
     def get_overall_score(self, topic):
+        """
+        Obtain the overall (likelihood) score of the given topic
+        """
         total = 0;
         for doc_info in self.mydb.get_top_topic_docs(topic.topic_id):
             total += doc_info[3]

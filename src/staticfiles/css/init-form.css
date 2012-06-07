@@ -1,5 +1,9 @@
 /*FORM CSS*/
 
+#main{
+    width: 500px;
+    margin: auto;
+}
 div.single-field {
     padding: 10px 10px 0px 10px;
     position: relative;

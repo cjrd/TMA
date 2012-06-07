@@ -1,70 +1,39 @@
 <!DOCTYPE html>
 <html>
-<head>   
-	<meta charset="UTF-8"> 
-	<script language="JavaScript" src="{{ STATIC_URL }}js/jquery-latest.js" type="text/JavaScript"></script>
-	<script language="JavaScript" type="text/JavaScript" src="{{ STATIC_URL }}js/browser_adjust.js"></script>
-	<script language="JavaScript" src="{{ STATIC_URL }}js/search.js" type="text/JavaScript"></script>
-	<script language="JavaScript" src="{{ STATIC_URL }}js/bottom_bar_chart.js" type="text/JavaScript"></script>  
-	{% block jscript %}{% endblock %}  
-	<link rel="stylesheet" href="{{ STATIC_URL }}css/BasicBrowser.css" />
-	<meta http-equiv="Content-Type" content="text/html" />
-	<title>{% block title %}TMA{% endblock %}</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html"/>
+    <link rel="shortcut icon" href="{{ STATIC_URL }}images/favicon.ico" type="image/vnd.microsoft.com"/>
+    {% block jscript %}
+    {% endblock %}
+
+    {% block standcss %}
+        <link rel="stylesheet" href="{{ STATIC_URL }}css/standard.css"/>
+    {% endblock %}
+
+    {% block css %}
+    {% endblock %}
+
+    <title>{% block title %}TMA{% endblock %}</title>
 </head>
 
-<body onload="init()" >                   
-	<div id="navigation">    
-	<table><tr>                
-	    <td class="linked"><a>Topics</a>
-	      <ul> 
-	        <li><a href="../topic-list">List of Terms</a></li> 
-	        <li><a href="../topic-graph">Term Distributions</a></li> 
-	        <li><a href="../topic-presence">Relative Presence</a></li>
-	      </ul> 
-	    </td> 
-	    <td class="linked"><a>Documents</a>
-	      <ul>
-	        <li><a href="../doc-graph">Topic Distributions</a></li>
-	      </ul> 
-	    </td>
-	    <td class="linked"><a>Terms</a>
-	      <ul> 
-	        <li><a href="../term-list">List by Frequency</a></li> 
-	        <li><a href="../term-graph">Topic Distributions</a></li> 
-	       </ul> 
-	    </td>
-	    <td class="linked"><a>About</a>
-	      <ul>
-	        <li><a href="http://www.cs.princeton.edu/~blei/lda-c/">LDA</a></li>
-	      </ul> 
-	    </td>  
-	    <td></td>
-	</tr></table>
-	</div>
+<body {% block bodyelem %} {% endblock %}>
+{% block navbar %}
+    {% include "navigation-bar.html" %}
+{% endblock %}
 
-{% block thebody %} 
-<div id="top"> </div>
-<div id="header">
-	<h1>
-		{% block head1 %}
-		{% if alg %}
-		{{alg}} Topics
-		{% else %}
-		TMA
-		{% endif %}
-		{% endblock %}</h1>
-		<h2>{% block head2 %} {% endblock %}</h2>
-	</div>
-    <hr noshade style="width:80%;">
-	{% block data %}
-	<strong> IMPLEMENT ME </strong>
-	{% endblock %}
-</div>   
+{% block bodyheader %}
+    <div id="header">
+        <h1>
+            {% block head1 %}
+            {% endblock %}
+        </h1>
+        <hr>
+    </div>
+{% endblock %}
 
-<div id="footer">
-	<br>
-	<hr noshade>
-</div>
+{% block thebody %}
+
 {% endblock %}
 </body>
 </html>          
