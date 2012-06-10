@@ -1,0 +1,27 @@
+{% load endless %}
+
+{% lazy_paginate RPP input %}
+{% for entry in input %}
+    <div class="graph_item">
+        <div class="graph_title light-data"
+             onclick="window.location.href='../{{ group_data_type }}/{{ entry.group_data.get_safe_title }}-{{ entry.group_data.id }}'">
+            {{ entry.group_data.title }}
+        </div>
+        <div class="graph_data">
+            {% for datum in entry.data %}
+                <div {% if data_type %}
+                        onclick="window.location.href='../{{ data_type }}/{{ datum.get_safe_title}}-{{ datum.id }}'"
+                        class="databox dark-data"
+                     {% else %}
+                        class="databox dark-title"
+                     {% endif %}
+                        style="width:{{ datum.rel_pct }}%;" title="{{ datum.title }}">
+                </div>
+            {% endfor %}
+            {% if entry.remainder %}
+                <div class="dataremain dark-title" title="{{ entry.remainder.title }}"></div>
+            {% endif %}
+        </div>
+    </div>
+{% endfor %}
+{% show_more %}

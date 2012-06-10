@@ -1,21 +1,16 @@
-from src.backend.db import db
-from os import path  
+from os import path
 import cPickle as pickle
 import math
-import urllib2
-import sys   
 import pdb
 from src.backend.math_utils import hellinger_distance
 from src.backend.tma_utils import slugify
 import numpy as np
-#template = None
-#
-#def import_template(template_name):
-#    global template
-#    sys.path.append("templates/" + template_name)
-#    template = __import__(template_name)
+
 
 class Document:
+    """
+    Class to represent the documents by title and id
+    """
     def __init__(self, doc_id, title):
         self.id = doc_id
         self.title = unicode(str(title),errors='ignore')
@@ -30,11 +25,13 @@ class Document:
         safe_title = slugify(self.title)
         return safe_title
 
-#    def get_display(self):
-#        return template.get_doc_display(self)
 
 class Topic:
-    def __init__(self, rel, topic_id, title):
+    """
+    Class to represent the topics obtained from the analyzer
+    """
+    max_score = -1
+    def __init__(self, rel, topic_id, title, score = -1):
         self.rel = rel
         self.topic_id = topic_id 
         self.id = topic_id 
@@ -42,6 +39,7 @@ class Topic:
         self.terms = {}
         self.ranked_terms = []
         self.term_score_total = 0
+        self.score = score
 
     def __hash__(self):
         return hash((self.id, self.title))
@@ -68,8 +66,7 @@ class Topic:
         if self.terms == {}:
             self.terms = self.rel.get_topic_terms(self, cutoff)
             self.ranked_terms = sorted(self.terms, key=self.terms.get, reverse=True)  
-        
-        return self.ranked_terms[:cutoff] 
+        return self.ranked_terms[:cutoff]
 
     def get_safe_title(self):
         safe_title = slugify(self.title)
@@ -78,33 +75,21 @@ class Topic:
     def get_terms_list(self, st=0, end = None):
         if self.terms == {}:
             print 'Call topics.get_terms(number) before calling get_terms_string'
-        if end == None:
+        if end is None:
             end = len(self.ranked_terms)
         return map(lambda x: [x.title, x.id], self.ranked_terms[st:end])
 
-    def get_relative_percent(self, term, threshold = 0.005):
-        """
-        @return the relative percent of probability assigned to the given term
-        """
-        if not self.terms.has_key(term):
-            self.get_terms()
-        if self.term_score_total == 0:
-            for t in self.ranked_terms:
-                self.term_score_total += math.exp(self.terms[t])
-
-        percent = (math.exp(self.terms[term]) / self.term_score_total)
-
-        if percent < threshold:
-            return 0
-        else:
-            return percent*100
-
 class Term:
+    """
+    Class to represent the  terms by id and title and keep track of obtained terms to avoid excessive DB queries
+    """
     all_terms = {}
+    max_occ = -1
 
-    def __init__(self, term_id, title):
+    def __init__(self, term_id, title, count=-1):
         self.id = term_id
         self.title = str(title)
+        self.count = count
         Term.all_terms[term_id] = self
 
     def __hash__(self):
@@ -114,24 +99,29 @@ class Term:
         return (self.id, self.title) == (other.id, other.title)
 
     def get_safe_title(self):
-        return self.title
+        return slugify(unicode(self.title))
         
     def set_title(self, title):
         self.title = str(title)
         
 
 class relations:
+    """
+    General class to calculate and determine relations between topics, terms, and documents
+    """
+
     def __init__(self, mydb):
         self.mydb = mydb 
         self.term_topic_obj_loc = path.join(path.dirname(mydb.get_db_loc()), 'top_term_mat.obj')
-        self.topics = [] # do we need these?
+        self.topics = [] # TODO do we actually need these or are they redundant?
         self.docs = []
         self.terms = []
-        self.term_score_range = (0, 0) 
-        
-         
+
 
     def get_term(self, term_id):
+        """
+        obtain the term corresponding to term_id
+        """
         if Term.all_terms.has_key(term_id):
             return Term.all_terms[term_id]
         else: 
@@ -140,58 +130,111 @@ class relations:
                 return None
             return Term(term_id, title_qry[0][0])
 
-    def get_topics(self):
+
+    def get_topics(self, cutoff = -1, start_val = -1, end_val = -1):
         """
         obtain a list of topics from the database
         @return a list of topics from the database default sorted by overall_score, i.e. total likelihood
         """
-        if self.topics == []:
-            topics_info = self.mydb.get_topics_info()  
-            
+        use_range = (start_val < end_val) and start_val > -1
+        if use_range or cutoff != -1 or self.topics == []:
+            self.topics = []
+            if use_range:
+                cutoff = end_val
+
+            topics_info = self.mydb.get_topics_info(cutoff)
+            Topic.max_score = topics_info[0][2]
+            if use_range:
+                topics_info = topics_info[start_val:end_val]
+
             for topic_info in topics_info:
                 topic_id = topic_info[0]
                 title = topic_info[1]
-                self.topics.append(Topic(self, topic_id, title))
+                score = topic_info[2]
+                self.topics.append(Topic(self, topic_id, title, score))
 
-        self.topics.sort(lambda x, y: -cmp(self.get_overall_score(x), self.get_overall_score(y)))  
-        
+        #self.topics.sort(lambda x, y: -cmp(self.get_overall_score(x), self.get_overall_score(y))) # TODO can we precalculate this score and include it with the topics? -- similar to count for the terms
 
         return self.topics
 
-    def get_terms(self, cutoff = -1):
-        if self.terms == []:
-            terms_info = self.mydb.get_term_info(cutoff)
-            for term_info in terms_info:
-                term_id = term_info[0]
-                self.terms.append(self.get_term(term_id))
-            self.terms.sort(lambda x, y: -cmp(self.get_term_count(x), self.get_term_count(y)))
-            self.term_score_range = (self.get_term_count(self.terms[-1]), self.get_term_count(self.terms[0]))
-        return self.terms
 
     def get_topic(self, topic_id):
+        """
+        return the topic corresonding to topic_id
+        """
         topic_info = self.mydb.get_topic_info(topic_id )
-        if topic_info == []:
+        if not topic_info:
             return None
         title = topic_info[0][1]
         return Topic(self, topic_id, title)
 
-    def get_docs(self):
-        if self.docs == []:
-            docs_info = self.mydb.get_docs_info()
+
+    def get_terms(self, cutoff = -1, start_val = -1, end_val = -1):
+        """
+        Obtain a list of terms in the specified range or cut off [start_val:end_val] or [:cutoff], resp.
+        """
+        use_range = (start_val < end_val) and start_val > -1
+        if use_range:
+            cutoff = end_val
+
+        terms_info = self.mydb.get_term_info(cutoff)
+        Term.max_occ = terms_info[0][2]
+        if use_range:
+            terms_info = terms_info[-(end_val - start_val):]
+
+        for term_info in terms_info:
+            term_id = term_info[0]
+            term_title = term_info[1]
+
+            if len(term_info) > 2:
+                term_count = term_info[2]
+            else:
+                term_count = -1
+
+            term = Term(term_id, term_title, term_count)
+            # add to the global terms list as well
+            if not Term.all_terms.has_key(term_id):
+                Term.all_terms[term_id] = term
+            self.terms.append(term)
+
+        return self.terms
+
+
+    def get_docs(self, cutoff = -1, start_val = -1, end_val = -1):
+        """
+        Obtain a list of docs in the specified range or cut off [start_val:end_val] or [:cutoff], resp.
+        """
+        use_range = (start_val < end_val) and start_val > -1
+        if use_range:
+            cutoff = end_val
+
+        if self.docs == [] or (len(self.docs) < end_val != -1):
+            docs_info = self.mydb.get_docs_info(cutoff)
+            if use_range:
+                docs_info = docs_info[-(end_val - start_val):]
             for doc_info in docs_info:
                 doc_id = doc_info[0]
                 title = doc_info[1]
                 self.docs.append(Document(doc_id, title))
+        if use_range:
+            return self.docs[-start_val:end_val]
+        else:
+            return self.docs
 
-        return self.docs
 
     def get_doc(self, doc_id):
+        """
+        Obtain the document corresponding to doc_id
+        """
         doc_info = self.mydb.get_doc_info(doc_id )
         title = doc_info[0][1]
         return Document(self, doc_id, title)
     
         
     def get_topic_terms(self, topic, cutoff=-1):
+        """
+        Obtain the most likely terms for a given topic [:cutoff] where default is to return all terms
+        """
         topic_terms_info = self.mydb.get_topic_terms(topic.topic_id, cutoff)
         topic_terms = {}
         for info in topic_terms_info:
@@ -201,13 +244,17 @@ class relations:
             if term != None:
                 topic_terms[term] = score
         return topic_terms
-        
-    def get_top_related_docs(self, token, num=1):  # TODO: phase out other technique
+
+
+    def get_top_related_docs(self, token, num=1):
+        """
+        Obtain the most likely documents for a given term (token) where default is to return the top document
+        """
         token_doc_info = []
         if isinstance(token, Topic):
             token_doc_info = self.mydb.get_top_topic_docs(token.id,num)
         elif isinstance(token, Document):
-            token_doc_info = self.mydb.get_top_doc_docs(token.id,num) #TODO: id vs doc_id: make docs, topics, etc more consistent
+            token_doc_info = self.mydb.get_top_doc_docs(token.id,num)
         elif isinstance(token, Term):
             token_doc_info = self.mydb.get_top_term_docs(token.id,num)
 
@@ -226,7 +273,8 @@ class relations:
                     #break
 
         return token_docs 
-            
+
+
     def get_top_related_topics(self, token, num=1):
         """
         get the top related topics for (1) other topics, (2) documents, (3) terms
@@ -252,13 +300,13 @@ class relations:
                     if t != None:
                         topics[t] = score 
         return topics
-    
+
+
     def get_related_terms(self, term, top_n = 10):
         """
         Get the top_n terms related to the given term
         """
 
-        # terms_info = self.mydb.get_top_term_terms(term.id)
         term_id = term.id
         top_term_mat = pickle.load(open(self.term_topic_obj_loc,'rb'))
         max_score = 100000000
@@ -274,28 +322,42 @@ class relations:
             top_terms.append(Term(int(ttid), self.mydb.get_term_title(int(ttid))[0][0]))
         return top_terms
 
-    def get_relative_percent(self, topic, term):
+    def get_top_in_term_rel_pct(self, topic, term, *args, **kwargs):
         """
         Obtain the relative percent of the topic in the given term
         """
         topics = self.get_top_related_topics(term, -1)
         return 100*math.exp(topics[topic]) / sum(map(math.exp,topics.values()))
 
-    
-    def get_term_count(self, term):
-        """
-        Obtain the term count of the given term
-        """
-        total = 0;
-        for doc_info in self.mydb.get_top_term_docs(term.id):
-            total += doc_info[3]
-        return total
 
-    def get_overall_score(self, topic):
+    def get_term_in_top_rel_pct(self, term, topic, *args, **kwargs):
         """
-        Obtain the overall (likelihood) score of the given topic
+        @return the relative percent of probability assigned to the given term in the topic
         """
-        total = 0;
-        for doc_info in self.mydb.get_top_topic_docs(topic.topic_id):
-            total += doc_info[3]
-        return total
+        threshold = 0.005 # default value
+        if kwargs.has_key('threshold'):
+            threshold = kwargs['threshold']
+
+        if not topic.terms.has_key(term):
+            topic.get_terms()
+        if topic.term_score_total == 0:
+            for t in topic.ranked_terms:
+                topic.term_score_total += math.exp(topic.terms[t])
+
+        percent = (math.exp(topic.terms[term]) / topic.term_score_total)
+
+        if percent < threshold:
+            return 0
+        else:
+            return percent*100
+
+
+#    def get_overall_score(self, topic):
+#        """
+#        Obtain the overall (likelihood) score of the given topic
+#        """
+#        total = 0;
+#        for doc_info in self.mydb.get_top_topic_docs(topic.topic_id):
+#            total += doc_info[3]
+#        print str(topic.topic_id),str(total)
+#        return total

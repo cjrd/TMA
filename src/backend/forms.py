@@ -21,10 +21,10 @@ class AnalysisForm(forms.Form):
     toy_data = forms.CharField(required=False, label = 'dataset',
                                widget=Select(
                                    choices=(
-                                       ('nsf','NSF Grants [1166 abstracts]'),
-                                       ('nyt','New York Times [845 articles]'),
                                        ('tmml','Topic Models Mailing Archive [1887 messages]'),
-                                       ('pgm','Coursera PGM Video Transcripts [92 transcripts]')
+                                       ('pgm','Coursera PGM Video Transcripts [92 transcripts]'),
+                                       ('nsf','NSF Grants [1166 abstracts]'),
+                                       ('nyt','New York Times [845 articles]')
                                        )),
                                help_text='Test datasets to evaluate various topic models and parameters. See <a href='' target="_blank">TODO</a> for more information on the datasets.')
     # upload data

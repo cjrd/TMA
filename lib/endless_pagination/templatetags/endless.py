@@ -1,0 +1,521 @@
+import re
+
+from django import template
+
+from endless_pagination import settings, models, utils
+from endless_pagination.paginator import DefaultPaginator, LazyPaginator, EmptyPage
+
+register = template.Library()
+
+@register.tag
+def paginate(parser, token, paginator_class=None):
+    """
+    Usage::
+    
+        {% paginate objects %}
+    
+    After this call, in the template context the *objects* variable is replaced
+    with only the objects of the current page.
+    
+    You can also mantain your *objects* original variable (commonly a queryset)
+    and add to context another name referring to objects of the current page, 
+    e.g.::
+    
+        {% paginate objects as page_objects %}
+        
+    The number of paginated object is taken from settings, but you can
+    override the default, e.g.::
+    
+        {% paginate 20 objects %}
+        
+    Of course you can mix it all::
+    
+        {% paginate 20 objects as paginated_objects %}
+        
+    By default, the first page is displayed the first time you load the page,
+    but you can easily change this, e.g.::
+    
+        {% paginate objects starting from page 3 %}
+        
+    This can be also achieved using a template variable you passed in the
+    context, e.g.::
+    
+        {% paginate objects starting from page page_number %}
+        
+    If the passed page number does not exist then first page is displayed.
+    
+    If you have multiple paginations in the same page, you can change the
+    querydict key for the single pagination, e.g.::
+    
+        {% paginate objects using article_page %}
+        
+    In this case *article_page* is intended to be a context variable, but you can
+    hardcode the key using quotes, e.g.::
+
+        {% paginate objects using 'articles_at_page' %}
+    
+    Again, you can mix it all (the order of arguments is important)::
+    
+        {% paginate 20 objects starting from page 3 using page_key as paginated_objects %}
+    
+    Additionally you can pass a path to be used for the pagination::
+
+        {% paginate 20 objects using page_key with pagination_url as paginated_objects %}
+    
+    If you want the first page to contain a different number of items than
+    subsequent pages you can separate the two values with a comma, e.g. if 
+    you want 3 items on the first page and 10 on other pages::
+
+    {% paginate 3,10 objects %}
+
+    You must use this tag before calling the {% show_more %} one.
+    """
+    # args validation
+    try:
+        tag_name, tag_args = token.contents.split(None, 1)
+    except ValueError:
+        message = "%r tag requires arguments" % token.contents.split()[0]
+        raise template.TemplateSyntaxError, message
+        
+    # use regexp to catch args    
+    p = r'^(((?P<first_page>\w+)\,)?(?P<per_page>\w+)\s+)?(?P<objects>\w+)(\s+starting\s+from\s+page\s+(?P<number>\w+))?(\s+using\s+(?P<key>[\"\'\w]+))?(\s+with\s+(?P<override_path>\w+))?(\s+as\s+(?P<var_name>\w+))?$'
+    e = re.compile(p)
+    match = e.match(tag_args)
+    if match is None:
+        message = "Invalid arguments for %r tag" % token.contents.split()[0]
+        raise template.TemplateSyntaxError, message
+    
+    # get objects
+    kwargs = match.groupdict()
+    objects = kwargs.pop("objects")
+        
+    # call the node
+    return PaginateNode(paginator_class, objects, **kwargs)
+    
+@register.tag
+def lazy_paginate(parser, token):
+    """
+    Paginate objects without hitting the database with a *select count* query.
+
+    Use this the same way as *paginate* tag when you are not interested
+    in the total number of pages.
+    """
+    return paginate(parser, token, paginator_class=LazyPaginator)
+    
+class PaginateNode(template.Node):
+    """
+    Insert into context the objects of the current page and
+    the django paginator's *page* object.
+    """
+    def __init__(self, paginator_class, objects, first_page=None, per_page=None, 
+        var_name=None, number=None, key=None, override_path=None):
+        self.paginator = paginator_class or DefaultPaginator
+        self.objects = template.Variable(objects)
+        # if var_name is not passed then will be queryset name
+        self.var_name = objects if var_name is None else var_name
+        # if per_page is not passed then is taken from settings
+        self.per_page_variable = None
+        if per_page is None:
+            self.per_page = settings.PER_PAGE
+        elif per_page.isdigit():
+            self.per_page = int(per_page)
+        else:
+            self.per_page_variable = template.Variable(per_page)
+        # manage first page: if it is not passed then *per_page* is used
+        self.first_page_variable = None
+        if first_page is None:
+            self.first_page = None
+        elif first_page.isdigit():
+            self.first_page = int(first_page)
+        else: 
+            self.first_page_variable = template.Variable(first_page)
+        # manage page number when is not specified in querystring
+        self.page_number_variable = None
+        if number is None:
+            self.page_number = 1
+        elif number.isdigit():
+            self.page_number = int(number)
+        else:
+            self.page_number_variable = template.Variable(number)
+        # set the querystring key attribute
+        self.querystring_key_variable = None
+        if key is None:
+            self.querystring_key = settings.PAGE_LABEL
+        elif key[0] in ('"', "'") and key[-1] == key[0]:
+            self.querystring_key = key[1:-1]
+        else:
+            self.querystring_key_variable = template.Variable(key)
+        self.override_path_variable = None
+        if override_path is None:
+            self.override_path = None
+        else:
+            self.override_path_variable = template.Variable(override_path)
+    
+    def render(self, context):
+        # get page number to use if it is not specified in querystring
+        if self.page_number_variable is None:
+            default_number = self.page_number
+        else:
+            default_number = int(self.page_number_variable.resolve(context))
+        
+        # get number of items to show on each page
+        if self.per_page_variable is None:
+            per_page = self.per_page
+        else:
+            per_page = int(self.per_page_variable.resolve(context))
+    
+        # get number of items to show in the first page
+        if self.first_page_variable is None:
+            first_page = self.first_page or per_page
+        else:
+            first_page = int(self.first_page_variable.resolve(context))
+        
+        # user can override settings querystring key in the template
+        if self.querystring_key_variable is None:
+            querystring_key = self.querystring_key
+        else:
+            querystring_key = self.querystring_key_variable.resolve(context)
+        
+        if self.override_path_variable is None:
+            override_path = self.override_path
+        else:
+            override_path = self.override_path_variable.resolve(context)
+        
+        # request is used to get requested page number
+        page_number = utils.get_page_number_from_request(context["request"],
+            querystring_key, default=default_number)
+        
+        objects = self.objects.resolve(context)
+        paginator = self.paginator(objects, per_page, first_page=first_page,
+            orphans=settings.ORPHANS)
+        
+        # get the page, user in settings can manage the case it is empty
+        try:
+            page = paginator.page(page_number)
+        except EmptyPage:
+            page = paginator.page(1)
+        
+        # populate context with new data
+        context["endless_default_number"] = default_number
+        context["endless_querystring_key"] = querystring_key
+        context["endless_page"] = page
+        context[self.var_name] = page.object_list
+        context["endless_override_path"] = override_path
+        return ""
+
+    
+@register.inclusion_tag("endless/show_more.html", takes_context=True)
+def show_more(context, label=None, loading=settings.LOADING):
+    """
+    Show the link to get the next page in a Twitter-like pagination.
+    Usage::
+    
+        {% show_more %}
+    
+    Alternatively you can override the label passed to the
+    default template::
+    
+        {% show_more "even more" %}
+        
+    You can override the loading text too::
+    
+        {% show_more "even more" "working" %}
+    
+    Must be called after {% paginate objects %}.
+    """
+    # this can raise a PaginationError 
+    # (you have to call paginate before including the show more template)
+    page = utils.get_page_from_context(context)
+    # show the template only if there is a next page
+    if page.has_next():
+        request = context["request"]
+        page_number = page.next_page_number()
+        # querystring
+        querystring_key = context["endless_querystring_key"]
+        querystring = utils.get_querystring_for_page(request, page_number,
+            querystring_key, default_number=context["endless_default_number"])
+        return {
+            'path': context["endless_override_path"] or request.path,
+            'querystring_key': querystring_key,
+            'querystring': querystring,
+            'loading': loading,
+            'label': label,
+            'request': request,
+        }
+    # no next page, nothing to see
+    return {}
+    
+    
+@register.tag
+def get_pages(parser, token):
+    """
+    Usage::
+    
+        {% get_pages %}
+    
+    This is mostly used for digg-style pagination.
+    This call inserts in the template context a *pages* variable, as a sequence
+    of page links. You can use *pages* in different ways:
+    
+        - just print *pages* and you will get digg-style pagination displayed::
+    
+            {{ pages }}
+            
+        - display pages count::
+        
+            {{ pages|length }}
+            
+        - get a specific page::
+            
+            {# the current selected page #}
+            {{ pages.current }} 
+            
+            {# the first page #}
+            {{ pages.first }} 
+            
+            {# the last page #}
+            {{ pages.last }} 
+            
+            {# the previous page (or nothing if you are on first page) #}
+            {{ pages.previous }} 
+            
+            {# the next page (or nothing if you are in last page) #}
+            {{ pages.next }}
+            
+            {# the third page #}
+            {{ pages.3 }}
+            {# this means page.1 is the same as page.first #}
+            
+        - iterate over *pages* to get all pages::
+        
+            {% for page in pages %}
+                {# display page link #}
+                {{ page }} 
+                
+                {# the page url (beginning with "?") #}
+                {{ page.url }} 
+                
+                {# the page path #}
+                {{ page.path }} 
+                
+                {# the page number #}
+                {{ page.number }} 
+                
+                {# a string representing the page (commonly the page number) #}
+                {{ page.label }}
+                
+                {# check if the page is the current one #}
+                {{ page.is_current }}
+                
+                {# check if the page is the first one #}
+                {{ page.is_first }}
+                
+                {# check if the page is the last one #}
+                {{ page.is_last }} 
+            {% endfor %}
+        
+    You can change the variable name, e.g.::
+    
+        {% get_pages as page_links %}
+    
+    Must be called after {% paginate objects %}.
+    """
+    # args validation
+    try:
+        tag_name, args = token.contents.split(None, 1)
+    except ValueError:
+        var_name = "pages"
+    else:
+        args = args.split()
+        if len(args) == 2 and args[0] == "as":
+            var_name = args[1]
+        else:
+            message = "%r tag invalid arguments" % tag_name
+            raise template.TemplateSyntaxError, message
+            
+    # call the node
+    return GetPagesNode(var_name)
+    
+class GetPagesNode(template.Node):
+    """
+    Insert into context the page list.
+    """
+    def __init__(self, var_name):
+        self.var_name = var_name 
+    
+    def render(self, context):
+        # this can raise a PaginationError 
+        # (you have to call paginate before including the get pages template)
+        page = utils.get_page_from_context(context)
+        default_number = context.get("endless_default_number")
+        
+        # put the PageList instance in the context
+        context[self.var_name] = models.PageList(context["request"], page,
+            context["endless_querystring_key"],
+            default_number=context["endless_default_number"],
+            override_path=context["endless_override_path"])
+        return ""
+        
+        
+@register.tag
+def show_pages(parser, token):
+    """
+    Show page links.
+    Usage::
+    
+        {% show_pages %}
+        
+    It is only a shortcut for::
+    
+        {% get_pages %}
+        {{ pages }}
+    
+    You can set *ENDLESS_PAGE_LIST_CALLABLE* in your settings.py as a callable 
+    used to customize the pages that are displayed.
+    The callable takes the current page number and the total number of pages
+    and must return a sequence of page numbers that will be displayed.
+    The sequence can contain other values:
+    
+        - *"previous"*: will display the previous page in that position
+        - *"next"*: will display the next page in that position
+        - *None*: a separator will be displayed in that position
+        
+    Here is an example of custom calable that displays previous page, then
+    first page, then a separator, then current page, then next page::
+    
+        def get_page_numbers(current_page, num_pages):
+            return ("previous", 1, "...", current_page, "next")
+    
+    If *ENDLESS_PAGE_LIST_CALLABLE* is *None* an internal callable is used,
+    generating a digg-style pagination.
+    
+    Must be called after {% paginate objects %}.
+    """
+    # args validation
+    if len(token.contents.split()) != 1:
+        message = "%r tag takes no arguments" % token.contents.split()[0]
+        raise template.TemplateSyntaxError, message
+    # call the node
+    return ShowPagesNode()
+    
+class ShowPagesNode(template.Node):
+    """
+    Show the pagination.
+    """
+    def render(self, context):
+        # this can raise a PaginationError 
+        # (you have to call paginate before including the get pages template)
+        page = utils.get_page_from_context(context)
+        # unicode representation of the sequence of pages
+        pages = models.PageList(context["request"], page, 
+            context["endless_querystring_key"],
+            default_number=context["endless_default_number"],
+            override_path=context["endless_override_path"])
+        return unicode(pages)
+        
+        
+@register.tag
+def show_current_number(parser, token):
+    """
+    Show (or insert in the context) the current page number.
+    This tag can be useful for example to change page title according to
+    current page number.
+    To just show current page number::
+    
+        {% show_current_number %}
+        
+    If you use multiple paginations in the same page you can get the page
+    number for a specific pagination using the querystring key, e.g.::
+    
+        {% show_current_number using mykey %}
+        
+    Default page when no querystring is specified is 1. If you changed it in 
+    the *paginate* template tag, you have to call  *show_current_number* 
+    according to your choice, e.g.::
+        
+        {% show_current_number starting from page 3 %}
+    
+    This can be also achieved using a template variable you passed in the
+    context, e.g.::
+    
+        {% show_current_number starting from page page_number %}
+        
+    Of course, you can mix it all (the order of arguments is important)::
+    
+        {% show_current_number starting from page 3 using mykey %}
+        
+    If you want to insert the current page number in the context, without
+    actually displaying it in the template, use the *as* argument, i.e.::
+    
+        {% show_current_number as page_number %}
+        {% show_current_number starting from page 3 using mykey as page_number %}
+    """
+    # args validation
+    try:
+        tag_name, args = token.contents.split(None, 1)
+    except ValueError:
+        tag_name = token.contents[0]
+        number = None
+        key = None
+        var_name = None
+    else:
+        # use regexp to catch args    
+        p = r'^(starting\s+from\s+page\s+(?P<number>\w+))?\s*(using\s+(?P<key>[\"\'\w]+))?\s*(as\s+(?P<var_name>\w+))?$'
+        e = re.compile(p)
+        match = e.match(args)
+        if match is None:
+            message = "Invalid arguments for %r tag" % tag_name
+            raise template.TemplateSyntaxError, message    
+        # get objects
+        groupdict = match.groupdict()
+        number = groupdict["number"]
+        key = groupdict["key"]
+        var_name = groupdict["var_name"]
+    # call the node
+    return ShowCurrentNumberNode(number, key, var_name)
+    
+class ShowCurrentNumberNode(template.Node):
+    """
+    Show the page number taken from context.
+    """
+    def __init__(self, number, key, var_name):
+        # page number
+        self.page_number_variable = None
+        if number is None:
+            self.page_number = 1
+        elif number.isdigit():
+            self.page_number = int(number)
+        else:
+            self.page_number_variable = template.Variable(number)
+        
+        # querystring key
+        self.querystring_key_variable = None
+        if key is None:
+            self.querystring_key = settings.PAGE_LABEL
+        elif key[0] in ('"', "'") and key[-1] == key[0]:
+            self.querystring_key = key[1:-1]
+        else:
+            self.querystring_key_variable = template.Variable(key)
+            
+        # var name
+        self.var_name = var_name
+    
+    def render(self, context):
+        # get page number to use if it is not specified in querystring
+        if self.page_number_variable is None:
+            default_number = self.page_number
+        else:
+            default_number = int(self.page_number_variable.resolve(context))
+            
+        # user can override settings querystring key in the template
+        if self.querystring_key_variable is None:
+            querystring_key = self.querystring_key
+        else:
+            querystring_key = self.querystring_key_variable.resolve(context)
+        
+        page_number = utils.get_page_number_from_request(context["request"],
+            querystring_key, default=default_number)
+        if self.var_name is None:
+            return unicode(page_number)
+        context[self.var_name] = page_number
+        return u''

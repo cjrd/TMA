@@ -102,22 +102,21 @@ class LDAAnalyzer(TMAnalyzer):
         """
         self.init_rel_db()
 
+        # doc-term (STD)
+        wc_db = self.write_doc_term()
+
         # write the vocab to the database (STD)
-        self.write_terms_table()
+        self.write_terms_table(wcs=wc_db)
 
         # write doc title to database (STD)
         self.write_docs_table()
 
         # write topics, i.e. top 3 terms (STD)
         beta = np.loadtxt(os.path.join(self.params['outdir'],'final.beta'))
-        indices = self._get_rev_srt_ind(beta)
-        self.write_topics_table(top_term_mat=beta, indices=indices)
 
-        # topic_terms
+
+        # topic_terms - NOTE should be negative valued
         self.write_topic_terms(beta)
-
-        # doc-term (STD)
-        self.write_doc_term(beta)
 
         # topic_topic
         self.write_topic_topic(np.exp(beta))
@@ -131,7 +130,10 @@ class LDAAnalyzer(TMAnalyzer):
         self.write_doc_doc(theta**0.5)
 
         # doc_topic
-        self.write_doc_topic(gamma)
+        self.write_doc_topic(theta)
+
+        # write topics
+        self.write_topics_table(top_term_mat=beta, doc_top_mat=theta)
 
         # create indices for fast lookup
         self.create_db_indices()

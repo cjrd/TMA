@@ -59,8 +59,8 @@ class db:
         self.cur.execute('CREATE INDEX %s' % index)
         self.commit()
     
-    def get_topics_info(self):
-        self.cur.execute('SELECT * FROM topics')
+    def get_topics_info(self, cutoff=-1):
+        self.cur.execute('SELECT * FROM topics ORDER BY score DESC LIMIT ?', [cutoff])
         return self.cur.fetchall()
 
     def get_topic_info(self, topic_id):
@@ -68,15 +68,15 @@ class db:
         return self.cur.fetchall()
 
     def get_term_info(self, cutoff = -1):
-        self.cur.execute('SELECT * FROM terms limit ?', [cutoff])
+        self.cur.execute('SELECT * FROM terms ORDER BY count DESC limit ?', [cutoff])
         return self.cur.fetchall()
 
     def get_term_title(self, term_id):
         self.cur.execute('SELECT title FROM terms WHERE id=?', [term_id])
         return self.cur.fetchall()
 
-    def get_docs_info(self):
-        self.cur.execute('SELECT * FROM docs')
+    def get_docs_info(self, cutoff=-1):
+        self.cur.execute('SELECT * FROM docs LIMIT ?', [cutoff])
         return self.cur.fetchall()
 
     def get_doc_info(self, doc_id):
@@ -111,7 +111,7 @@ class db:
     def get_top_term_terms(self, term_id, num=-1):
         self.cur.execute('SELECT * FROM term_term WHERE term_a=? OR term_b=? ORDER BY score DESC LIMIT ?', [term_id, term_id, num])
 
-    def get_top_term_topics(self, term_id, num = 1):  # TODO this should phase out the other method
+    def get_top_term_topics(self, term_id, num = 1):
         self.cur.execute('SELECT * FROM topic_term WHERE term=? ORDER BY score DESC LIMIT ?', [term_id, num])
         return self.cur.fetchall()         
         

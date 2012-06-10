@@ -84,7 +84,7 @@ class TMAnalyzer(object):
 
     def get_param(self, param):
         """
-        retrun 'param' from self.params
+        return 'param' from self.params
         @param: param desired 'param' from self.params
         @return: the parameter 'param' from self.params
         """
@@ -110,17 +110,19 @@ class TMAnalyzer(object):
         self.dbase = db(self.params['outdir'] + '/tma.sqlite')
         self.dbase.add_table("doc_doc (id INTEGER PRIMARY KEY, doc_a INTEGER, doc_b INTEGER, score FLOAT)")
         self.dbase.add_table("doc_topic (id INTEGER PRIMARY KEY, doc INTEGER, topic INTEGER, score FLOAT)")
-        self.dbase.add_table("topics (id INTEGER PRIMARY KEY, title VARCHAR(100))")
+        self.dbase.add_table("topics (id INTEGER PRIMARY KEY, title VARCHAR(100), score FLOAT)")
         self.dbase.add_table("topic_term (id INTEGER PRIMARY KEY, topic INTEGER, term INTEGER, score FLOAT)")
         self.dbase.add_table("topic_topic (id INTEGER PRIMARY KEY, topic_a INTEGER, topic_b INTEGER, score FLOAT)")
         self.dbase.add_table("doc_term (id INTEGER PRIMARY KEY, doc INTEGER, term INTEGER, score FLOAT)")
-        self.dbase.add_table("terms (id INTEGER PRIMARY KEY, title VARCHAR(100))")
+        self.dbase.add_table("terms (id INTEGER PRIMARY KEY, title VARCHAR(100), count INTEGER)")
         self.dbase.add_table("docs (id INTEGER PRIMARY KEY, title VARCHAR(100))")
 
     def create_db_indices(self):
         """
         Create indexes in TMA database for fast lookup
         """
+        self.dbase.add_index('topics_score_idx ON topics(score)')
+        self.dbase.add_index('terms_ct_idx ON terms(count)')
         self.dbase.add_index('doc_doc_idx1 ON doc_doc(doc_a)')
         self.dbase.add_index('doc_doc_idx2 ON doc_doc(doc_b)')
         self.dbase.add_index('doc_doc_idx_score ON doc_doc(score)')
@@ -137,14 +139,19 @@ class TMAnalyzer(object):
         self.dbase.add_index('doc_term_idx2 ON doc_term(term)')
         self.dbase.add_index('doc_term_score ON doc_term(term)') 
         
-    def write_terms_table(self, terms_file=None):
+    def write_terms_table(self, terms_file=None, wcs={}):
         """
         Write the terms to the database (id, title)
         @param terms_file: the file containing 1 term per line where line 0 is id=0, line 1 is id=1, etc
+        @param wcs: word count dictionary
         """
         self._check_tlist(terms_file)
         for i, trm in enumerate(self.terms_list):
-            self.dbase.execute('INSERT INTO terms(id, title) VALUES(?, ?)', (i, trm)) # explictly write id so term ids match (not off by one)
+            if wcs.has_key(i):
+                count = wcs[i]
+            else:
+                count = -1
+            self.dbase.execute('INSERT INTO terms(id, title, count) VALUES(?, ?, ?)', (i, trm, count)) # explictly write id so term ids match (not off by one)
 
     def write_docs_table(self, docs_file=None):
         """
@@ -170,7 +177,7 @@ class TMAnalyzer(object):
             res = generic_generator((i,)*len(scores), range(i+1, i+1+len(scores)), scores)
             self.dbase.executemany(execution_str, res)
 
-    def write_topics_table(self, top_term_mat, indices=None, terms_file=None):
+    def write_topics_table(self, top_term_mat, doc_top_mat, indices=None, terms_file=None):
         """
         For each topic, write the first 3 most probably words to the database
         @param top_term_mat: topics x terms matrix, should represent log-lieklihood for accurate calculations
@@ -181,12 +188,13 @@ class TMAnalyzer(object):
         if indices is None:
             indices = self._get_rev_srt_ind(top_term_mat)
         title_list = []
+        tscores = doc_top_mat.sum(0) # topic scores are the total log-prob across the docs
         for i in xrange(indices.shape[0]):
             title = "{%s, %s, %s}" % (self.terms_list[indices[i, 0]],
                                     self.terms_list[indices[i, 1]],
                                     self.terms_list[indices[i, 2]])
-            title_list.append([i, title])
-        self.dbase.executemany('INSERT INTO topics (id, title) VALUES(?, ?)', title_list)
+            title_list.append([i, title, tscores[i]])
+        self.dbase.executemany('INSERT INTO topics (id, title, score) VALUES(?, ?, ?)', title_list)
 
     def write_topic_terms(self, top_term_mat):
         """
@@ -220,27 +228,40 @@ class TMAnalyzer(object):
         return np.argsort(mat)[:,::-1] # this is ~ 4x faster than fliplr
 
 
-    def write_doc_term(self, wordcount_file=None):
+    def write_doc_term(self, wordcount_file=None, return_wcs=True):
         """
         write the document-term relationship to the database, term-doc simply uses tf counts
         @param wordcount_file: a file in lda-c format with each line representing one document and
         term-id:term-count
         """
         # TODO should these be normalized?
-        if wordcount_file is not None:
+        if wordcount_file is None:
             wordcount_file = self.params['corpusfile']
 
+        if return_wcs:
+            wcs = {}
         execution_str = 'INSERT INTO doc_term (id, doc, term, score) VALUES(NULL, ?, ?, ?)'
         for doc_no, doc in enumerate(open(wordcount_file, 'r')):
             doc = doc.split()[1:]
             terms = {}
             for term in doc:
-                terms[int(term.split(':')[0])] = int(term.split(':')[1])
+                trm_id = int(term.split(':')[0])
+                trm_ct = int(term.split(':')[1])
+                terms[trm_id] = trm_ct
+
+                if return_wcs:
+                    if wcs.has_key(trm_id):
+                        wcs[trm_id] += trm_ct
+                    else:
+                        wcs[trm_id] = trm_ct
 
             keys = terms.keys()
             res = generic_generator((doc_no,)*len(keys),
                                     keys, (terms[i] for i in keys))
             self.dbase.executemany(execution_str, res)
+            
+        if return_wcs:
+            return wcs
 
     def write_doc_topic(self, doc_top_mat):
         """

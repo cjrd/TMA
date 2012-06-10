@@ -104,8 +104,12 @@ class CTMAnalyzer(TMAnalyzer):
         """
         self.init_rel_db()
 
+
+        # doc-term (STD)
+        wc_db = self.write_doc_term()
+
         # write the vocab to the database (STD)
-        self.write_terms_table()
+        self.write_terms_table(wcs=wc_db)
 
         # write doc title to database (STD)
         self.write_docs_table()
@@ -113,14 +117,10 @@ class CTMAnalyzer(TMAnalyzer):
         # write topics, i.e. top 3 terms (STD)
         beta = np.loadtxt(os.path.join(self.params['outdir'],'final-log-beta.dat'))
         beta.shape = (self.params['ntopics'], len(beta)/self.params['ntopics'])
-        indices = self._get_rev_srt_ind(beta)
-        self.write_topics_table(top_term_mat=beta, indices=indices)
+
 
         # topic_terms
         self.write_topic_terms(beta)
-
-        # doc-term (STD)
-        self.write_doc_term(beta)
 
         # topic_topic
         self.write_topic_topic(np.exp(beta))
@@ -141,11 +141,17 @@ class CTMAnalyzer(TMAnalyzer):
             samples = logistic_normal(lam[i,:], np.diag(nu[i,:]), n=100) # n=100 found adequate through aux experiments
             sqrt_theta.append(np.sqrt(samples).mean(axis=0))
         sqrt_theta = np.array(sqrt_theta)
+        # doc-doc
         self.write_doc_doc(sqrt_theta)
 
+        theta = sqrt_theta**2
+        theta = theta / theta.sum(1)[:,np.newaxis]
 
         # doc_topic
-        self.write_doc_topic(np.array(sqrt_theta))
+        self.write_doc_topic(np.array(theta))
+
+        # write topics
+        self.write_topics_table(top_term_mat=beta, doc_top_mat = theta)
 
         # create indices for fast lookup
         self.create_db_indices()

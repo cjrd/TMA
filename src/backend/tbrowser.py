@@ -13,6 +13,7 @@ from src.backend.db import db
 from src.backend.tma_utils import slugify, remove_non_ascii, median
 from lib.simplebing.SBing import SBing
 from lib.porter2 import stem
+from lib.endless_pagination.decorators import page_template
 
 import pdb
 from math import exp, log
@@ -34,6 +35,7 @@ def get_rel_page(request, alg_db, dataloc, alg=''):
 
     # acquire the topics
     topdata = build_topic_json(myrelations)
+
     # feed the results into the heavily customized template        
     ret_val = render_to_response("model-relationships.html", {'alg':alg, 'doc_data':ddata, 'term_data':tdata, 'top_data':topdata}, context_instance=RequestContext(request))
 
@@ -87,6 +89,7 @@ def build_graph_json(collection, myrelations, related_item_fnct):
 
     return data_str
 
+
 def get_doc_text(docloc, title_wID, numbytes=500):
     doc_title = " ".join(title_wID.split('-')[0:-1])
     try:
@@ -99,8 +102,6 @@ def get_doc_text(docloc, title_wID, numbytes=500):
     doc_text += "...<br /> <div style=\"text-align:center; margin-top: 10px;\"> <input type=\"button\" name=\"b1\" value=\"View full document\" onclick=\"openlw('" + title_wID + "')\" /> </div>"
     return HttpResponse(doc_text)
 
-
-
 def get_summary_page(request, alg_db, numterms = NUM_TERMS, numcolumns = 3, alg=''):
     """
     Returns the Analyzer's summary page
@@ -112,7 +113,6 @@ def get_summary_page(request, alg_db, numterms = NUM_TERMS, numcolumns = 3, alg=
     """
     myrelations = relations(alg_db)
     topics= myrelations.get_topics()
-
     ncol = min(len(topics), numcolumns) # number of columns for the data table
     disp_tops = []
     topic_row = []
@@ -204,7 +204,6 @@ def get_model_page(request, alg_db, corpus_dbloc, dataloc, alg='', num_terms=NUM
     return ret_val
 
 
-
 def save_topic_terms(topics, loc, numterms=NUM_TERMS):
     """
     Save the top numterms terms from each topic into a dictionary on file named TOP_TOPIC_OBJ in loc
@@ -236,6 +235,7 @@ def get_topic_coherence_scores(topics, corpus_dbloc, numterms=NUM_TERMS): # TODO
     del(dbase)
     return scores
 
+
 # From Newman, 2010 Automatic Evaluation of Topic Models
 def get_wiki_pmi_coherence(topics, numterms=NUM_TERMS):   # TODO make sure the terms are already stemmed
     dbase = db(WIKI_COCC_DB)
@@ -264,7 +264,6 @@ def get_wiki_pmi_coherence(topics, numterms=NUM_TERMS):   # TODO make sure the t
                     continue
                 tid_dict[titles[-1]] = [res[0], res[1]] # res[0] is the term_id res[1] is the occurance
 
-
         for m in xrange(1,numterms):
             tid1 = tid_dict[titles[m]][0]
             t1_occ = tid_dict[titles[m]][1]
@@ -290,8 +289,6 @@ def get_wiki_pmi_coherence(topics, numterms=NUM_TERMS):   # TODO make sure the t
                 scores[topics[i].id].append( log((float(numer))/denom))
     return scores
     # compute PMI using mean/median of log(n(both)/n(w1)n(w2))
-
-
 
 def get_bing_coherence_dict(terms_dict, corpus_dbloc, numtitles=50):
     """
@@ -347,6 +344,7 @@ def get_bing_coherence_dict(terms_dict, corpus_dbloc, numtitles=50):
         scores[key] = tmatches
     return scores
 
+
 def kfold_perplexity(request, analyzer, k=5, start=-1, stop=-1, step= -1, param="ntopics", pertest=0.20, current_step=None, current_fold=None):
     """
     Divides the corpus into k folds and computes the perplexity of each fold given the other k-1 folds
@@ -360,10 +358,11 @@ def kfold_perplexity(request, analyzer, k=5, start=-1, stop=-1, step= -1, param=
     kf_dir = os.path.join(corpus_dir, 'kf_divide' + str(k))
     trainf_list = [os.path.join(kf_dir, 'train' + str(knum) + '.dat') for knum in range(k)]
     testf_list = [os.path.join(kf_dir, 'test' + str(knum) + '.dat') for knum in range(k)]
-
+    # some initialization
     corpus = open(corpus_file).readlines()
     test_wc = [0]*k
     wc_obj = os.path.join(kf_dir,'wcs.obj')
+    
     # if necessary, split up the corpus
     if not os.path.exists(wc_obj):
         if not os.path.exists(kf_dir):
@@ -405,6 +404,7 @@ def kfold_perplexity(request, analyzer, k=5, start=-1, stop=-1, step= -1, param=
     print ppxs
     return ppxs
 
+
 def _write_data(data, file, do_append):
     write_level = 'w'
     if os.path.exists(file) and do_append:
@@ -413,7 +413,7 @@ def _write_data(data, file, do_append):
         data_out = open(file, write_level)
         data_out.write(str(data)) # TODO write this as a csv
         data_out.close()
-    except:
+    except IOError:
         print '\n\nWARNING unable to save data into %s' % file
 
 def _sum_words_in_doc_line(dl):
@@ -421,142 +421,135 @@ def _sum_words_in_doc_line(dl):
     return sum(map(lambda x: int(x.split(":")[1]), terms))
 
 
-def doc_graph(request, alg_db, alg=''):
+@page_template('table-graph-entry.html')
+def table_graph_rel(request, type, alg_db, alg='', template='table-graph.html', extra_context=None, RPP=49):
     """
-    Create a table-like graph of doc: topic distribution
+    constructs a table-graph to display relationships in the data
     """
+    # check for ajax pagination
+    if request.GET.has_key('page'):
+        page = int(request.GET['page'])
+        start_val = (page-1)*RPP
+        end_val = page*RPP
+    else:
+        start_val = 0
+        end_val = RPP
+
     myrelations = relations(alg_db)
-    documents = myrelations.get_docs()
 
-    docs_data = []
-    for doc in documents:
-        topics = myrelations.get_top_related_topics(doc, -1)
-        topic_keys = topics.keys()
-        topic_keys.sort(lambda x, y: -cmp(topics[x], topics[y]))
+    if type == 'doc-graph':
+        main_objs = myrelations.get_docs(start_val=start_val, end_val=end_val)
+        rel_pct_fct = lambda top, doc, tops: 100*tops[top]/sum(tops.values())
+        get_top_related_fnct = myrelations.get_top_related_topics
+        group_data_type = "documents"
+        data_type = "topics"
+    elif type == 'term-graph':
+        main_objs = myrelations.get_terms(start_val=start_val, end_val=end_val)
+        rel_pct_fct = myrelations.get_top_in_term_rel_pct
+        get_top_related_fnct = myrelations.get_top_related_topics
+        group_data_type = "terms"
+        data_type = "topics"
+    elif type == 'topic-graph':
+        main_objs = myrelations.get_topics(start_val=start_val, end_val=end_val)
+        rel_pct_fct = myrelations.get_term_in_top_rel_pct
+        get_top_related_fnct = myrelations.get_topic_terms
+        group_data_type = "topics"
+        data_type = "terms"
 
-        total_score_sum = 0
-        for key in topic_keys:
-            total_score_sum += topics[key]
+#    if len(main_objs) == RPP: # hack to enable a "load more" from the paginator TODO make elegant
+#        main_objs.append(-1)
 
-        tops_data = []
-        remaining_topics = ''
-        for topic in topic_keys:
-            rel_pct = (topics[topic] / total_score_sum)*100
+    context = {'input':table_object_gen(main_objs, get_top_related_fnct, rel_pct_fct), 'alg':alg, 'group_data_type': group_data_type, 'data_type':data_type, 'RPP':RPP}
+    if extra_context:
+        context.update(extra_context)
+
+    return render_to_response(template, context, context_instance=RequestContext(request))
+
+
+def table_object_gen(main_objs, get_top_related_fnct, get_rel_pct_fnct, max_compare_objs=100):
+    """
+    Generate table-graph items
+    @param
+    """
+#    pdb.set_trace()
+    for mobjs in main_objs:
+        citems = get_top_related_fnct(mobjs, max_compare_objs)
+        citem_keys = citems.keys()
+        citem_keys.sort(lambda x, y: -cmp(citems[x], citems[y])) # TODO are these sorts necessary since we're now sorting in database? Need to revise relations
+
+        remiaing_title = ''
+        cdata = []
+        for citem in citem_keys:
+            rel_pct = get_rel_pct_fnct(citem, mobjs, citems)
             if rel_pct > 0:
-                tops_data.append({'rel_pct':rel_pct, 'get_safe_title':topic.get_safe_title(), 'title':topic.title, 'id':topic.id})
+                cdata.append({'rel_pct':rel_pct, 'get_safe_title':citem.get_safe_title(), 'title':citem.title, 'id':citem.id})
             else:
-                if remaining_topics == '':
-                    remaining_topics = topic.title
-                elif len(remaining_topics) < 150:
-                    remaining_topics += ', ' + topic.title
+                if remiaing_title == '':
+                    remiaing_title = citem.title
+                elif len(remiaing_title) < 150:
+                    remiaing_title += ', ' + citem.title
                 else:
                     break
-        if len(remaining_topics) >= 150:
-            remaining_topics += '...'
-        docs_data.append({'group_data': doc, 'data':tops_data, 'remainder':{'title':remaining_topics}})
+        if len(remiaing_title) >= 150:
+            remiaing_title += '...'
 
+        yield dict(group_data=mobjs, data=cdata, remainder={'title': remiaing_title})
 
-    return render_to_response('table-graph.html', {'input':docs_data, 'alg':alg, 'group_data_type': 'documents', 'data_type':'topics'}, context_instance=RequestContext(request))
-
-def term_graph(request, alg_db, alg=''):
-    myrelations = relations(alg_db)
-    nterm_disp = 100
-    terms = myrelations.get_terms(nterm_disp)     # TODO use AJAX to pull out more terms as desired -- sort by frequency
-
-    terms_data = []
-    for trm in terms:
-        topics = myrelations.get_top_related_topics(trm, -1)
-        topic_keys = topics.keys()
-        topic_keys.sort(lambda x, y: -cmp(topics[x], topics[y])) # TODO are these sorts necessary since we're now sorting in database?
-
-        remaining_topics = ''
-        tops_data = []
-        for topic in topic_keys:
-            rel_pct = myrelations.get_relative_percent(topic, trm)
-            if rel_pct > 0:
-                tops_data.append({'rel_pct':rel_pct, 'get_safe_title':topic.get_safe_title(), 'title':topic.title, 'id':topic.id})
-            else:
-                if remaining_topics == '':
-                    remaining_topics = topic.title
-                elif len(remaining_topics) < 150:
-                    remaining_topics += ', ' + topic.title
-                else:
-                    break
-
-        if len(remaining_topics) >= 150:
-            remaining_topics += '...'
-        terms_data.append({'group_data': trm, 'data':tops_data, 'remainder':{'title':remaining_topics}})
-
-    return render_to_response('table-graph.html', {'input':terms_data, 'alg':alg, 'group_data_type': 'terms', 'data_type':'topics'}, context_instance=RequestContext(request))
-
-def term_list(request, alg_db, alg=''):   # TODO: make this more django-like
-    myrelations = relations(alg_db)
-    terms = myrelations.get_terms()
-
-    terms_table = '<div ><table onmouseover="show_count_bar()" onmouseout="hide_count_bar()">\n'
-    for i in range(0, len(terms), 8):
-        terms_table += '<tr>\n'
-        for j in range(8):
-            if (i + j) < len(terms):
-                term_count = myrelations.get_term_count(terms[i+j])
-                terms_table += '<td title="' + str(int(term_count)) + '" onclick="window.location.href=\'../terms/' + terms[i+j].get_safe_title() + '-' + str(terms[i+j].id) + '\'" onmouseover="count_adjust(' + str(100.0*(term_count - myrelations.term_score_range[0]) /(myrelations.term_score_range[1] - myrelations.term_score_range[0])+1) + ')">' + terms[i+j].title + '</td>\n'
-            else:
-                terms_table += '<td class="blank"></td>'
-        terms_table += '</tr>\n'
-    terms_table += '</table></div>\n'
-    terms_table = '<div id="list">' + terms_table + '</div>'
-    terms_table += '<div onmouseover="show_count_bar()" onmouseout="hide_count_bar()"><table class="hidden"><tr><td class="count"></td><td class="total"></td></tr></table></div>'
-    template = 'table-graph.html'
-    return render_to_response(template, {'data':terms_table, 'alg':alg}, context_instance=RequestContext(request))
-
-def topic_graph(request, alg_db, alg='', maxterms=100):
+        
+@page_template('table-graph-entry.html')
+def presence_graph(request, item, alg_db, alg='', template='table-graph.html', extra_context=None, RPP=49):
     """
-    Build a topic-term graph to display the prevalence of each term in each topic
+    Returns a graph of the relative presence of each item (bar graph)
     """
+    if request.GET.has_key('page'):
+        page = int(request.GET['page'])
+        start_val = (page-1)*RPP
+        end_val = page*RPP
+    else:
+        start_val = 0
+        end_val = RPP
+
     myrelations = relations(alg_db)
-    topics_list = myrelations.get_topics()
+    if item == "topics":
+        mobjs = myrelations.get_topics()
+        score_fnct = lambda topic: topic.score
+        max_score = Topic.max_score
+        title_fnct = lambda score,width: str(width) + '%'
+    elif item == "terms":
+        mobjs = myrelations.get_terms(start_val=start_val, end_val=end_val)
+        score_fnct = lambda term: term.count
+        max_score = Term.max_occ
+        title_fnct = lambda score, width: str(score) + ' occurences, ' + str(width) + '% of max'
 
-    topics_data = []
-    for topic in topics_list:
-        # extract the topic title and id
-        terms = topic.get_terms(maxterms)
+    context = {'input':get_bar_chart(mobjs, score_fnct, max_score, title_fnct), 'alg':alg, 'group_data_type': item, 'RPP':RPP}
+    if extra_context:
+        context.update(extra_context)
+        
+    return render_to_response(template, context, context_instance=RequestContext(request))
 
-        remaining_terms = ''
-        topic.get_terms()
-        terms_data = []
-        for trm in terms:
-            rel_pct = round(topic.get_relative_percent(trm),4)
-            if rel_pct > 0:
-                terms_data.append({'rel_pct':rel_pct, 'get_safe_title':trm.get_safe_title(), 'title':trm.title, 'id':trm.id})
-            else:
-                if remaining_terms == '':
-                    remaining_terms = trm.title
-                elif len(remaining_terms) < 150:
-                    remaining_terms += ', ' + trm.title
-                else:
-                    break
-        if len(remaining_terms) >= 150:
-            remaining_terms += '...'
 
-        topics_data.append({'group_data': topic, 'data':terms_data, 'remainder':{'title':remaining_terms}})
+def get_bar_chart(mobjs, score_fnct, max_score, title_fnct):
+        for obj in mobjs:
+            score = score_fnct(obj)
+            width = round(float(score) / max_score * 100.0, 2)
+            yield {'group_data':obj, 'data':[{'rel_pct':width, 'title':title_fnct(score,width)}]}
 
-    return render_to_response('table-graph.html', {'input':topics_data, 'alg':alg, 'group_data_type': 'topics', 'data_type':'terms'}, context_instance=RequestContext(request))
 
-def topic_presence_graph(request, alg_db, alg=''):
-    """
-    Returns a graph of the relative presence of each topic (bar graph)
-    """
-    myrelations = relations(alg_db)
-    topics = myrelations.get_topics()
+#def term_list(request, alg_db, alg='', template='table-graph.html', extra_context=None, RPP=49):
+#    # check for ajax pagination
+#
+#
+#
+#
+#    myrelations = relations(alg_db)
+#
+#
+#    context = {'input':get_bar_chart(terms, score_fnct, title_fnct), 'alg':alg, 'group_data_type': 'topics', 'RPP':RPP}
+#    if extra_context:
+#        context.update(extra_context)
+#
+#    return render_to_response(template, context, context_instance=RequestContext(request))
 
-    top_data=[]
-    max_overall_score = myrelations.get_overall_score(topics[0])
-    for tpc in topics:
-        overall_topic_score = myrelations.get_overall_score(tpc)
-        width = overall_topic_score / max_overall_score * 100.0
-        top_data.append({'group_data':tpc, 'data':[{'rel_pct':width}]})
-
-    return render_to_response('table-graph.html', {'input':top_data, 'alg':alg, 'group_data_type': 'topics'}, context_instance=RequestContext(request))
 
 # TODO address repeated code, as well as possibly unoptimized database queries
 def get_term_page(request, alg_db, term_title, termid, term_cutoff=NUM_TERMS, doc_cutoff=10, topic_cutoff=10, alg=''):
@@ -589,15 +582,13 @@ def get_term_page(request, alg_db, term_title, termid, term_cutoff=NUM_TERMS, do
     top_related_terms = myrelations.get_related_terms(term, term_cutoff)
     rightcol = {'data': top_related_terms[:term_cutoff], 'webname':'terms'}
 
-
-
     return render_to_response("three-column-vis.html", {'leftcol':leftcol, 'midcol':midcol, 'rightcol':rightcol, 'title':term.title}, context_instance=RequestContext(request))
+
 
 def get_topic_page(request, alg_db, topic_title, topicid, term_cutoff=NUM_TERMS, doc_cutoff=10, topic_cutoff=10, alg=''):
     """
     returns the topic page to the user with related terms, documents, and topics
     """
-
     myrelations = relations(alg_db)
     if not topic_title[0] == '{':
         topic_title = '{' + ', '.join(topic_title.strip().split()) + '}'
@@ -608,7 +599,6 @@ def get_topic_page(request, alg_db, topic_title, topicid, term_cutoff=NUM_TERMS,
     # add an interactive pie chart
     piearray = get_js_topic_term_pie_array(topic, terms) # TODO replace this in template
     leftcol = {'piearray':piearray, 'data':terms, 'webname':'terms'}
-
 
 #    # related docs
     docs = myrelations.get_top_related_docs(topic, doc_cutoff)
@@ -648,8 +638,6 @@ def get_doc_page(request, alg_db, doc_title, docid, docloc, doc_cutoff=10, topic
     doc_keys.sort(lambda x, y: cmp(docs[x], docs[y]))
     rightcol = {'data':doc_keys[:topic_cutoff], 'webname':'documents'}
 
-
-
     try:
         doc_text_file = open(os.path.join(docloc, slugify(unicode(doc_title))),'r')
     except IOError:
@@ -659,6 +647,7 @@ def get_doc_page(request, alg_db, doc_title, docid, docloc, doc_cutoff=10, topic
     doc_text_file.close()
     return render_to_response("three-column-vis.html", {'leftcol':leftcol,
         'rightcol':rightcol, 'midcol':midcol, 'title':doc.title}, context_instance=RequestContext(request))
+
 
 # TODO these three methods have some redundency and could use generators instead of strings
 def get_js_doc_topic_pie_array(topics):
@@ -699,17 +688,10 @@ def get_js_term_topics_pie_array(myrelations, term, topic_keys):
     array_string = "["
     topic_ct = 0
     for topic in topic_keys:
-        rel_percent = myrelations.get_relative_percent(topic, term)/100.0
+        rel_percent = myrelations.get_top_in_term_rel_pct(topic, term)/100.0
         array_string += "{label:\"" + topic.get_safe_title() + "\", data:" + str(rel_percent) + "}"
         topic_ct += 1
         if topic_ct != len(topic_keys):
             array_string += ", "
     array_string += "]"
     return array_string
-
-
-
-             
-        
-        
-                         

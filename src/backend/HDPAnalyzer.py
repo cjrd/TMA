@@ -119,8 +119,11 @@ class HDPAnalyzer(TMAnalyzer):
         """
         self.init_rel_db()
 
+        # doc-term (STD)
+        wc_db = self.write_doc_term()
+
         # write the vocab to the database (STD)
-        self.write_terms_table()
+        self.write_terms_table(wcs=wc_db)
 
         # write doc title to database (STD)
         self.write_docs_table()
@@ -128,14 +131,8 @@ class HDPAnalyzer(TMAnalyzer):
         top_term_mat /= top_term_mat.sum(1)[:,np.newaxis] # normalize
         top_term_mat = np.log(top_term_mat)
 
-        # write topics, i.e. top 3 terms (STD)
-        self.write_topics_table(top_term_mat=top_term_mat)
-
         # topic_terms
         self.write_topic_terms(top_term_mat)
-
-        # doc-term (STD)
-        self.write_doc_term(top_term_mat)
 
         # topic_topic
         self.write_topic_topic(top_term_mat)
@@ -159,6 +156,9 @@ class HDPAnalyzer(TMAnalyzer):
 
         # doc_topic
         self.write_doc_topic(doc_top_mat)
+
+        # write topics, i.e. top 3 terms (STD)
+        self.write_topics_table(top_term_mat=top_term_mat, doc_top_mat=doc_top_mat)
 
         # create indices for fast lookup
         self.create_db_indices()

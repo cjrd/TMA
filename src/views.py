@@ -14,12 +14,13 @@ from src.backend.forms import AnalysisForm, PerplexityForm
 from src.backend.DataCollector import DataCollector
 from django.core.files.uploadhandler import StopUpload
 from src import settings
-
+from src.backend.relations import Term
 import pdb
 from time import time
 import tempfile
 import os
 import cPickle as pickle
+
 
 
 DEBUG = True
@@ -101,6 +102,8 @@ def upload_file(request):
            #
            ### Now run the appropriate topic model on the appropriate data and return the TMA ###
            #
+            # make sure the terms from the previous analyzer are not in main memory
+            Term.all_terms = {}
             # parse processing options
             unioptions = form.cleaned_data['process_unioptions']
             doStem = 'stem' in unioptions
@@ -254,15 +257,15 @@ def res_disp(request, folder, alg, res, param = ''):
     if res == 'topic-list' or res =='summary': #TODO, make this one or the other
         output = get_summary_page(request, alg_db, numcolumns=toplist_numcolumns, alg=alg)  
     elif res == 'doc-graph':
-        output = doc_graph(request, alg_db, alg=alg)   
-    elif res == 'term-graph':  # this has output problems...
-        output = term_graph(request, alg_db, alg=alg)  
-    elif res == 'term-list':                       
-        output = term_list(request, alg_db, alg=alg)  
+        output = table_graph_rel(request, res, alg_db, alg=alg, RPP=99)
+    elif res == 'term-graph':
+        output = table_graph_rel(request, res, alg_db, alg=alg, RPP=49)
     elif res == 'topic-graph':
-        output = topic_graph(request, alg_db, alg=alg)    
-    elif res == 'topic-presence':                         
-        output = topic_presence_graph(request, alg_db, alg=alg) 
+        output = table_graph_rel(request, res, alg_db, alg=alg, RPP=29)
+    elif res == 'term-list':                       
+        output = presence_graph(request, 'terms', alg_db, alg=alg, RPP=199)
+    elif res == 'topic-presence':
+        output = presence_graph(request, 'topics', alg_db, alg=alg, RPP=99)
     elif res == 'terms':                                    
         output = get_term_page(request, alg_db, prm_text, int(prm_id), alg=alg) 
     elif res == 'topics':
