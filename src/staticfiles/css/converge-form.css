@@ -36,3 +36,7 @@ div.help-text{
 .small_int {
     width: 35px;
 }
+
+.tabs a{
+   text-decoration:underline;
+}

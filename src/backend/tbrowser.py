@@ -200,7 +200,7 @@ def get_model_page(request, alg_db, corpus_dbloc, dataloc, alg='', num_terms=NUM
             top_dicts[i]['topic_likelihood'] = log_like[topics[i].id]
             top_dicts[i]['topic_likelihood_alpha'] = round(srt_log_like.index(log_like[topics[i].id])/float(ntopics-1),3)
     rgb = {"r":255,"g":171,"b":115}
-    ret_val = render_to_response("model-converge.html", {'form': form, 'rgb':rgb, 'like_data':ldata, 'topics':top_dicts, "query_bing":search_title_scores=={}}, context_instance=RequestContext(request))
+    ret_val = render_to_response("model-analysis.html", {'form': form, 'rgb':rgb, 'like_data':ldata, 'topics':top_dicts, "query_bing":search_title_scores=={}}, context_instance=RequestContext(request))
     return ret_val
 
 

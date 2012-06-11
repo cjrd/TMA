@@ -191,7 +191,14 @@ var gload = function(jdata, leg_data) {
             fade(d, true);
         })
         .on("mouseout", function(d, i) {
-            fade(d, false);
+            if (!d.clicked)
+                fade(d, false);
+        })
+        .on("click", function(d){
+            if (d.clicked)
+                d.clicked = false
+            else
+                d.clicked = true
         })
         .style("fill", function(d) {
             return fill(d.id)

@@ -26,7 +26,6 @@
     height: 500px; /*the height of the main area */
     overflow: scroll;
     border-left: 4px black solid;
-
 }
 
 #bottompanel {
@@ -34,7 +33,6 @@
     height: 130px;
     padding-top: 10px;
     border-top: 4px black solid;
-
 }
 
 #bottomtitle {
@@ -73,58 +71,6 @@
     width: 75%;
 }
 
-/*#legend table {*/
-/*border-width: 0px;*/
-/*border-spacing: 0px;*/
-
-/*}*/
-
-/*#legend td {*/
-/*border-width: 0px;*/
-/*padding-top: 7px;*/
-/*padding-bottom: 7px;*/
-/*text-align: left;*/
-
-/*}*/
-
-/*table.disp {*/
-/*border-width: 6px;*/
-/*border-spacing: 0px;*/
-/*border-style: solid;*/
-/*border-color: black;*/
-/*border-collapse: separate;*/
-/*background-color: white;*/
-/*}*/
-
-/*table.disp th {*/
-/*border-width: thin;*/
-/*padding: 1px;*/
-/*border-style: solid;*/
-/*border-color: black;*/
-/*background-color: white;*/
-/*-moz-border-radius:;*/
-/*}*/
-
-/*table.disp td {*/
-/*border-width: 4px;*/
-/*padding: 5px;*/
-/*border-style: solid;*/
-/*border-color: black;*/
-/*background-color: white;*/
-/*}*/
-
-/*table.disp td.title {*/
-/*font-weight: bold;*/
-/*font-size: 11pt;*/
-/*border-width: 4px;*/
-/*padding: 1px;*/
-/*border-style: solid;*/
-/*border-color: black;*/
-/*background-color: white;*/
-/*width: 200px;*/
-/*height: 35px;*/
-/*overflow: scroll;*/
-/*}*/
 
 path {
     stroke: #15317E;

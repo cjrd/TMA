@@ -27,11 +27,11 @@ class CTMAnalyzer(TMAnalyzer):
                 raise Exception("unkown parameter value for CTMAnalyzer: %s" % prm)
         ctmparams['alg'] = 'ctm'    
         super(CTMAnalyzer, self).__init__(ctmparams)   
-        
-        
+
     
     def do_analysis(self):
          """
+         Run the Correlated Topic model with the specified parameters
          """
          # write settings file to outputdir 
          settingsout = "em max iter %(em_max_iter)i\n\
@@ -104,7 +104,6 @@ class CTMAnalyzer(TMAnalyzer):
         """
         self.init_rel_db()
 
-
         # doc-term (STD)
         wc_db = self.write_doc_term()
 
@@ -114,10 +113,10 @@ class CTMAnalyzer(TMAnalyzer):
         # write doc title to database (STD)
         self.write_docs_table()
 
-        # write topics, i.e. top 3 terms (STD)
+
         beta = np.loadtxt(os.path.join(self.params['outdir'],'final-log-beta.dat'))
         beta.shape = (self.params['ntopics'], len(beta)/self.params['ntopics'])
-
+        beta = beta[:-1, :]
 
         # topic_terms
         self.write_topic_terms(beta)
@@ -131,7 +130,7 @@ class CTMAnalyzer(TMAnalyzer):
         # doc_doc -- custom for CTM -- TODO perhaps port some of this code to helper methods/functions
         lam = np.loadtxt(os.path.join(self.params['outdir'],'final-lambda.dat'))
         lam.shape = (len(lam)/self.params['ntopics'], self.params['ntopics'])
-        lam = lam[:,:-1]
+        lam = lam[:,:-1] # remove the 0 column
         nu = np.loadtxt(os.path.join(self.params['outdir'],'final-nu.dat'))
         nu.shape = (len(nu)/self.params['ntopics'], self.params['ntopics'])
         nu = nu[:,:-1]
@@ -155,6 +154,8 @@ class CTMAnalyzer(TMAnalyzer):
 
         # create indices for fast lookup
         self.create_db_indices()
+
+        self.params['ntopics'] -= 1 # remove identifiability column
 
 
 
