@@ -71,8 +71,8 @@ class db:
         self.cur.execute('SELECT * FROM terms ORDER BY count DESC limit ?', [cutoff])
         return self.cur.fetchall()
 
-    def get_term_title(self, term_id):
-        self.cur.execute('SELECT title FROM terms WHERE id=?', [term_id])
+    def get_term(self, term_id):
+        self.cur.execute('SELECT * FROM terms WHERE id=? limit 1', [term_id])
         return self.cur.fetchall()
 
     def get_docs_info(self, cutoff=-1):

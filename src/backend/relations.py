@@ -11,15 +11,19 @@ class Document:
     """
     Class to represent the documents by title and id
     """
+
     def __init__(self, doc_id, title):
         self.id = doc_id
         self.title = unicode(str(title),errors='ignore')
-   
+
+
     def __hash__(self):
         return hash((self.id, self.title))
 
+
     def __eq__(self, other):
         return (self.id, self.title) == (other.id, other.title)
+
 
     def get_safe_title(self):
         safe_title = slugify(self.title)
@@ -30,6 +34,7 @@ class Topic:
     """
     Class to represent the topics obtained from the analyzer
     """
+
     max_score = -1
     def __init__(self, rel, topic_id, title, score = -1):
         self.rel = rel
@@ -41,13 +46,19 @@ class Topic:
         self.term_score_total = 0
         self.score = score
 
+
     def __hash__(self):
         return hash((self.id, self.title))
+
 
     def __eq__(self, other):
         return (self.id, self.title) == (other.id, other.title)
 
-    def get_term(self, rank): # this may be unneeded
+
+    def get_term(self, rank): # TODO this may be unneeded  and possibly inaccurate
+        """
+        obtain the rank-th most likely term for the given topic
+        """
         if self.terms == {} or rank >= len(self.ranked_terms):
             self.terms = self.rel.get_topic_terms(self)
             self.ranked_terms = sorted(self.terms, key=self.terms.get, reverse=True)
@@ -56,6 +67,7 @@ class Topic:
             return None
         
         return self.ranked_terms[rank]
+
 
     def get_terms(self, cutoff=-1):
         """
@@ -68,9 +80,11 @@ class Topic:
             self.ranked_terms = sorted(self.terms, key=self.terms.get, reverse=True)  
         return self.ranked_terms[:cutoff]
 
+
     def get_safe_title(self):
         safe_title = slugify(self.title)
         return safe_title
+
 
     def get_terms_list(self, st=0, end = None):
         if self.terms == {}:
@@ -79,28 +93,33 @@ class Topic:
             end = len(self.ranked_terms)
         return map(lambda x: [x.title, x.id], self.ranked_terms[st:end])
 
+
 class Term:
     """
     Class to represent the  terms by id and title and keep track of obtained terms to avoid excessive DB queries
     """
-    all_terms = {}
+    all_terms = {} # keep track of the acquired terms to limit db queries
     max_occ = -1
 
-    def __init__(self, term_id, title, count=-1):
+    def __init__(self, term_id, title, count):
         self.id = term_id
         self.title = str(title)
         self.count = count
         Term.all_terms[term_id] = self
 
+
     def __hash__(self):
         return hash((self.id, self.title))
+
 
     def __eq__(self, other):
         return (self.id, self.title) == (other.id, other.title)
 
+
     def get_safe_title(self):
         return slugify(unicode(self.title))
-        
+
+    
     def set_title(self, title):
         self.title = str(title)
         
@@ -125,48 +144,10 @@ class relations:
         if Term.all_terms.has_key(term_id):
             return Term.all_terms[term_id]
         else: 
-            title_qry = self.mydb.get_term_title(term_id)
-            if  title_qry == []:
+            term_qry = self.mydb.get_term(term_id)
+            if  term_qry == []:
                 return None
-            return Term(term_id, title_qry[0][0])
-
-
-    def get_topics(self, cutoff = -1, start_val = -1, end_val = -1):
-        """
-        obtain a list of topics from the database
-        @return a list of topics from the database default sorted by overall_score, i.e. total likelihood
-        """
-        use_range = (start_val < end_val) and start_val > -1
-        if use_range or cutoff != -1 or self.topics == []:
-            self.topics = []
-            if use_range:
-                cutoff = end_val
-
-            topics_info = self.mydb.get_topics_info(cutoff)
-            Topic.max_score = topics_info[0][2]
-            if use_range:
-                topics_info = topics_info[start_val:end_val]
-
-            for topic_info in topics_info:
-                topic_id = topic_info[0]
-                title = topic_info[1]
-                score = topic_info[2]
-                self.topics.append(Topic(self, topic_id, title, score))
-
-        #self.topics.sort(lambda x, y: -cmp(self.get_overall_score(x), self.get_overall_score(y))) # TODO can we precalculate this score and include it with the topics? -- similar to count for the terms
-
-        return self.topics
-
-
-    def get_topic(self, topic_id):
-        """
-        return the topic corresonding to topic_id
-        """
-        topic_info = self.mydb.get_topic_info(topic_id )
-        if not topic_info:
-            return None
-        title = topic_info[0][1]
-        return Topic(self, topic_id, title)
+            return Term(term_id, term_qry[0][1], term_qry[0][2])
 
 
     def get_terms(self, cutoff = -1, start_val = -1, end_val = -1):
@@ -198,6 +179,42 @@ class relations:
             self.terms.append(term)
 
         return self.terms
+
+
+    def get_topics(self, cutoff = -1, start_val = -1, end_val = -1):
+        """
+        obtain a list of topics from the database
+        @return a list of topics from the database default sorted by overall_score, i.e. total likelihood
+        """
+        use_range = (start_val < end_val) and start_val > -1
+        if use_range or cutoff != -1 or self.topics == []:
+            self.topics = []
+            if use_range:
+                cutoff = end_val
+
+            topics_info = self.mydb.get_topics_info(cutoff)
+            Topic.max_score = topics_info[0][2]
+            if use_range:
+                topics_info = topics_info[start_val:end_val]
+
+            for topic_info in topics_info:
+                topic_id = topic_info[0]
+                title = topic_info[1]
+                score = topic_info[2]
+                self.topics.append(Topic(self, topic_id, title, score))
+
+        return self.topics
+
+
+    def get_topic(self, topic_id):
+        """
+        return the topic corresonding to topic_id
+        """
+        topic_info = self.mydb.get_topic_info(topic_id )
+        if not topic_info:
+            return None
+        title = topic_info[0][1]
+        return Topic(self, topic_id, title)
 
 
     def get_docs(self, cutoff = -1, start_val = -1, end_val = -1):
@@ -241,7 +258,7 @@ class relations:
             term_id = info[2]
             score = info[3]
             term =self.get_term(term_id)
-            if term != None:
+            if term is not None:
                 topic_terms[term] = score
         return topic_terms
 
@@ -264,7 +281,7 @@ class relations:
             if isinstance(token, Document) and info[1] == int(token.id):
                 doc_id = info[2]
             score = info[3]
-            if score != 0: #TODO: is there better way to do this?
+            if score: #TODO: is there better way to do this?
                 doc_info = self.mydb.get_doc_info(doc_id)
                 if doc_info != []:
                     title = doc_info[0][1]
@@ -290,14 +307,14 @@ class relations:
         topics = {}
         for info in token_topic_info:
             score = info[3]
-            if score != 0: #check for reverse pairs in topic-topic search
+            if score: #check for reverse pairs in topic-topic search
                 if (isinstance(token, Topic) and info[2] == int(token.topic_id)) or isinstance(token, Term):
                     t = self.get_topic(info[1])
-                    if t != None:
+                    if t is not None:
                         topics[t] = score #TODO: topic init needs work
                 else:
                     t = self.get_topic(info[2])
-                    if t != None:
+                    if t is not None:
                         topics[t] = score 
         return topics
 
@@ -306,7 +323,6 @@ class relations:
         """
         Get the top_n terms related to the given term
         """
-
         term_id = term.id
         top_term_mat = pickle.load(open(self.term_topic_obj_loc,'rb'))
         max_score = 100000000
@@ -319,7 +335,9 @@ class relations:
         top_term_ids = np.argsort(scores)[::-1][:top_n]
         top_terms = []
         for ttid in top_term_ids:
-            top_terms.append(Term(int(ttid), self.mydb.get_term_title(int(ttid))[0][0]))
+            ttid = int(ttid)
+            trm = self.get_term(ttid)
+            top_terms.append(trm)
         return top_terms
 
     def get_top_in_term_rel_pct(self, topic, term, *args, **kwargs):
@@ -340,7 +358,7 @@ class relations:
 
         if not topic.terms.has_key(term):
             topic.get_terms()
-        if topic.term_score_total == 0:
+        if not topic.term_score_total:
             for t in topic.ranked_terms:
                 topic.term_score_total += math.exp(topic.terms[t])
 
@@ -350,14 +368,3 @@ class relations:
             return 0
         else:
             return percent*100
-
-
-#    def get_overall_score(self, topic):
-#        """
-#        Obtain the overall (likelihood) score of the given topic
-#        """
-#        total = 0;
-#        for doc_info in self.mydb.get_top_topic_docs(topic.topic_id):
-#            total += doc_info[3]
-#        print str(topic.topic_id),str(total)
-#        return total

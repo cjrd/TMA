@@ -308,7 +308,9 @@
                     sorts the table by that column. The terms are ordered by the descending probability of the term
                     given
                     the topic.
-                    Click on the appropriate "explanation header" to learn more about the given measure.
+                    Click on the appropriate "explanation header" to learn more about the given measure, or see <a
+                        href="https://github.com/cjrd/TMA/wiki/Quantitative-Analysis" target="_blank">TMA wiki</a> for
+                    more detailed information.
                 </p>
             </div>
 
@@ -333,13 +335,9 @@
                     of &Sigma;<sup>M</sup><sub>m=2</sub> &Sigma;<sup>m-1</sup><sub>l=1</sub>
                     log[ (D<sub>m,l</sub> + 1)/D<sub>l</sub> ] for each of the <em> M </em> choose 2
                     combinations of terms for the topic, where D<sub>m,l</sub> is the number of documents in the corpus
-                    that
-                    contain both term 'm' and term 'l'
-                    and D<sub>l</sub> is the number of documents in the corpus that cotain term 'l'. Rather than use the
-                    combined sum over all <em>M</em>
-                    choose 2 combinations, this Topic Coherence score reports the median. Less negative scores indicate
-                    a
-                    better topic.
+                    that contain both term 'm' and term 'l'
+                    and D<sub>l</sub> is the number of documents in the corpus that cotain term 'l'. Less negative
+                    scores indicate a better topic.
                 </p>
             </div>
 
@@ -363,7 +361,7 @@
                     over all wikipedia documents as their "wikipedia document windows." To avoid the arbitrary nature of
                     using ten words, we search for cooccrence in
                     the entire abstracts of all wikipedia documents. See TODO (insert database URL) for the wikipedia
-                    database. Larger scores indicate a better topic.
+                    database. Larger scores indicate a better topic. Note: a -1 indicates that a term in the topic was not found in the wikipedia abstracts and therefore a valid coherence score could not be determined.
 
                 </p>
             </div>

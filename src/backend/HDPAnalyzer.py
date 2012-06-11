@@ -98,7 +98,9 @@ class HDPAnalyzer(TMAnalyzer):
         return self.general_kf_ppt(trainf_list, testf_list, test_wc, param, start, stop, step, train_params, test_params, _handle_ppt)
 
     def createJSLikeData(self):
-        # transform the likelihood data
+        """
+        transform the model likelihood data for plot display on analysis page
+        """
         linfile = open('%s/state.log' % self.params['outdir'], 'r')          
         ldata = linfile.readlines()   
         linfile.close()  
@@ -127,7 +129,7 @@ class HDPAnalyzer(TMAnalyzer):
 
         # write doc title to database (STD)
         self.write_docs_table()
-        top_term_mat = np.loadtxt('%s/mode-topics.dat' % self.params['outdir'])
+        top_term_mat = np.loadtxt('%s/mode-topics.dat' % self.params['outdir'])  # add 0.01 to the counts to avoid -infty
         top_term_mat /= top_term_mat.sum(1)[:,np.newaxis] # normalize
         top_term_mat = np.log(top_term_mat)
 

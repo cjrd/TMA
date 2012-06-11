@@ -145,20 +145,23 @@ def get_model_page(request, alg_db, corpus_dbloc, dataloc, alg='', num_terms=NUM
     """
 
     alg_loc = "%s/%s" % (dataloc, alg)
-    # prep the likelihood results
+    # prep the model likelihood results
     lin = open(os.path.join(alg_loc,'js_likelihood.dat'), 'r')
     ldata = lin.readline().strip()
     lin.close()
 
+    # likelihood
     myrelations = relations(alg_db)
     topics = myrelations.get_topics()
     log_like = {}
     for tpc in topics:
         terms = myrelations.get_topic_terms(tpc, num_terms)
         log_like[tpc.id] = round( sum(terms.values()), 2)
-    tc_scores = get_topic_coherence_scores(topics, corpus_dbloc) # vetted for id alignment in array
+
+    # topic coherence
+    tc_scores = get_topic_coherence_scores(topics, corpus_dbloc)
     for tid in tc_scores:
-        tc_scores[tid] = round(median(tc_scores[tid]),2)
+        tc_scores[tid] = round(sum(tc_scores[tid]),2)
 
     # see if we already acquired the bing scores, if not, save the topic_terms for AJAX queries
     search_title_scores = {}
@@ -167,6 +170,7 @@ def get_model_page(request, alg_db, corpus_dbloc, dataloc, alg='', num_terms=NUM
     else:
         save_topic_terms(topics, alg_loc, num_terms)
 
+    # wikipedia scores
     wiki_abs_scores = get_wiki_pmi_coherence(topics)
     for tid in wiki_abs_scores:
         if len(wiki_abs_scores[tid]) > 0:
@@ -217,16 +221,18 @@ def save_topic_terms(topics, loc, numterms=NUM_TERMS):
     pickle.dump(topic_terms, open(os.path.join(loc, TOP_TOPIC_OBJ),'wb'))
 
 
-# Coherence from Mimno, 2011 Topic Coherence        
-def get_topic_coherence_scores(topics, corpus_dbloc, numterms=NUM_TERMS): # TODO incorporate this with summary page?
-    # TODO make sure this calculation is correct
+
+def get_topic_coherence_scores(topics, corpus_dbloc, numterms=NUM_TERMS):
+    """
+    Coherence from (Mimno, 2011 Topic Coherence...)
+    """
     dbase = db(corpus_dbloc)
     scores = {}#[[] for i in range(len(topics))]
     for i in xrange(len(topics)):
         scores[topics[i].id] = []
         topics[i].get_terms(numterms) # prep the top numterms terms
         for m in xrange(1,numterms):
-            for l in xrange(0,m): # [x]range goes to m-1
+            for l in xrange(m): # [x]range goes from 0 to m-1
                 dl_set = set(dbase.get_doc_occ(topics[i].get_term(l).id)) # TODO: could optimize the intersection by sorting the sqlite query
                 dm_set = set(dbase.get_doc_occ(topics[i].get_term(m).id))
                 dl = len(dl_set)
@@ -268,7 +274,7 @@ def get_wiki_pmi_coherence(topics, numterms=NUM_TERMS):   # TODO make sure the t
             tid1 = tid_dict[titles[m]][0]
             t1_occ = tid_dict[titles[m]][1]
             for l in xrange(0,m): # [x]range goes to m-1
-                tid2 = tid_dict[titles[l]][0]   ##topics[i].get_term(l).title
+                tid2 = tid_dict[titles[l]][0]
                 t2_occ = tid_dict[titles[l]][1]
                 min_tid = min(tid1,tid2)
                 max_tid = max(tid1,tid2)
@@ -292,14 +298,15 @@ def get_wiki_pmi_coherence(topics, numterms=NUM_TERMS):   # TODO make sure the t
 
 def get_bing_coherence_dict(terms_dict, corpus_dbloc, numtitles=50):
     """
-    Coherence from Newman, 2011 Automatic (search index with Bing)
+    Coherence from (Newman, 2011 Automatic...) (search index with Bing)
     """
     dbase = db(corpus_dbloc)
+
     # do we have a de-stemming table?                        
     destem = dbase.check_table_existence("termid_to_prestem")
     bing = SBing(BING_API_KEY)
     scores = {}
-    # Store more meta data so we can click through and see more of the anlaysis (e.g. which terms appeared in titles, frequency, cooccurance, which titles we were working with, etc)
+    # TODO store more meta data so we can click through and see more of the anlaysis (e.g. which terms appeared in titles, frequency, cooccurance, which titles we were working with, etc)
 
     print 'Querying Bing...'
     for i, key in enumerate(terms_dict):
@@ -545,7 +552,7 @@ def get_term_page(request, alg_db, term_title, termid, term_cutoff=NUM_TERMS, do
     """
     # init
     myrelations = relations(alg_db)
-    term = Term(termid, term_title)
+    term = Term(termid, term_title, count=-1)
 
     # related topics
     # pie array
