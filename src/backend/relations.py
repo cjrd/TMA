@@ -302,7 +302,7 @@ class relations:
         return topics
 
 
-    def get_related_terms(self, term, top_n = 10):
+    def get_top_related_terms(self, term, top_n = 10):
         """
         Get the top_n terms related to the given term
         """

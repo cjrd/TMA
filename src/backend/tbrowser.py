@@ -31,7 +31,7 @@ def get_rel_page(request, alg_db, dataloc, alg=''):
     ddata = build_graph_json(myrelations.get_docs(), myrelations, myrelations.get_top_related_docs)
     # and term-term graphs       
     tdata =  {}
-    # tdata = build_graph_json(myrelations.get_terms(), myrelations, myrelations.get_top_related_terms)
+    #tdata = build_graph_json(myrelations.get_terms(), myrelations, myrelations.get_top_related_terms)
 
     # acquire the topics
     topdata = build_topic_json(myrelations)
@@ -456,9 +456,6 @@ def table_graph_rel(request, type, alg_db, alg='', template='table-graph.html', 
         group_data_type = "topics"
         data_type = "terms"
 
-#    if len(main_objs) == RPP: # hack to enable a "load more" from the paginator TODO make elegant
-#        main_objs.append(-1)
-
     context = {'input':table_object_gen(main_objs, get_top_related_fnct, rel_pct_fct), 'alg':alg, 'group_data_type': group_data_type, 'data_type':data_type, 'RPP':RPP}
     if extra_context:
         context.update(extra_context)
@@ -529,26 +526,16 @@ def presence_graph(request, item, alg_db, alg='', template='table-graph.html', e
 
 
 def get_bar_chart(mobjs, score_fnct, max_score, title_fnct):
-        for obj in mobjs:
-            score = score_fnct(obj)
-            width = round(float(score) / max_score * 100.0, 2)
-            yield {'group_data':obj, 'data':[{'rel_pct':width, 'title':title_fnct(score,width)}]}
-
-
-#def term_list(request, alg_db, alg='', template='table-graph.html', extra_context=None, RPP=49):
-#    # check for ajax pagination
-#
-#
-#
-#
-#    myrelations = relations(alg_db)
-#
-#
-#    context = {'input':get_bar_chart(terms, score_fnct, title_fnct), 'alg':alg, 'group_data_type': 'topics', 'RPP':RPP}
-#    if extra_context:
-#        context.update(extra_context)
-#
-#    return render_to_response(template, context, context_instance=RequestContext(request))
+    """
+    Obtain a horizontal bar chart of the object's presence in mobjs
+    @param score_fnct: the function to score each of the objects in mobjs
+    @param max_score: the highest score of the objects represented in mobjs
+    @title_fnct: given (score,width) the title function returns the tile of the bar graph that is displayed on mouse hover
+    """
+    for obj in mobjs:
+        score = score_fnct(obj)
+        width = round(float(score) / max_score * 100.0, 2)
+        yield {'group_data':obj, 'data':[{'rel_pct':width, 'title':title_fnct(score, width)}]}
 
 
 # TODO address repeated code, as well as possibly unoptimized database queries
@@ -579,7 +566,7 @@ def get_term_page(request, alg_db, term_title, termid, term_cutoff=NUM_TERMS, do
     midcol = {'data': doc_keys[:doc_cutoff], 'webname':'documents'}
 
     # related terms
-    top_related_terms = myrelations.get_related_terms(term, term_cutoff)
+    top_related_terms = myrelations.get_top_related_terms(term, term_cutoff)
     rightcol = {'data': top_related_terms[:term_cutoff], 'webname':'terms'}
 
     return render_to_response("three-column-vis.html", {'leftcol':leftcol, 'midcol':midcol, 'rightcol':rightcol, 'title':term.title}, context_instance=RequestContext(request))
@@ -631,8 +618,7 @@ def get_doc_page(request, alg_db, doc_title, docid, docloc, doc_cutoff=10, topic
     topic_keys.sort(lambda x, y: -cmp(topics[x], topics[y]))
     leftcol = {'piearray':piearray, 'data':topic_keys[:topic_cutoff], 'webname':'topics'}
 
-
-    # related documents      
+    # related documents
     docs = myrelations.get_top_related_docs(doc, doc_cutoff)
     doc_keys = docs.keys()
     doc_keys.sort(lambda x, y: cmp(docs[x], docs[y]))
@@ -666,6 +652,7 @@ def get_js_doc_topic_pie_array(topics):
     array_string += "]"
     return array_string
 
+
 def get_js_topic_term_pie_array(topic, terms):
     """
     obtain the topic-term data in appropriate data format for flot
@@ -680,6 +667,7 @@ def get_js_topic_term_pie_array(topic, terms):
             array_string += ", "
     array_string += "]"
     return array_string
+
 
 def get_js_term_topics_pie_array(myrelations, term, topic_keys):
     """

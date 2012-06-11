@@ -11,7 +11,9 @@ import numpy as np
 import cPickle as pickle
 
 class TMAnalyzer(object):
-    """"Base class for topic model analyzers, e.g. LDAAnalyzer"""
+    """"
+    Base class for topic model analyzers, e.g. LDAAnalyzer
+    """
     
     def __init__(self, params): 
         if not params.has_key('outdir'):
