@@ -52,6 +52,7 @@
 
 
 {% block thebody %}
+
     <div id="thecontent">
         <div id="center" class="column">
             {% if midcol.data %}
@@ -66,7 +67,12 @@
                 </ul>
             {% else %}
                 <div class="paper">
-                    {{ midcol.doctext }}
+
+                   {%  for line in midcol.doc %}
+                       <p>
+                        {{ line }}
+                       </p>
+                   {% endfor %}
                 </div>
             {% endif %}
         </div>

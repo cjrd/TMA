@@ -100,8 +100,17 @@ class CTMAnalyzer(TMAnalyzer):
 
     def create_relations(self):
         """
+        This method uses the document termcounts, topics x terms matrix and documents x topics matrix to determine the following relationships:
+        - term x term
+        - topic x term
+        - topic x topic
+        - document x document
+        - document x topic
+        - document x term
+
         NOTE: this method should be called after 'do_analysis'
         """
+
         self.init_rel_db()
 
         # doc-term (STD)
@@ -116,7 +125,6 @@ class CTMAnalyzer(TMAnalyzer):
 
         beta = np.loadtxt(os.path.join(self.params['outdir'],'final-log-beta.dat'))
         beta.shape = (self.params['ntopics'], len(beta)/self.params['ntopics'])
-        beta = beta[:-1, :]
 
         # topic_terms
         self.write_topic_terms(beta)
@@ -130,10 +138,8 @@ class CTMAnalyzer(TMAnalyzer):
         # doc_doc -- custom for CTM -- TODO perhaps port some of this code to helper methods/functions
         lam = np.loadtxt(os.path.join(self.params['outdir'],'final-lambda.dat'))
         lam.shape = (len(lam)/self.params['ntopics'], self.params['ntopics'])
-        lam = lam[:,:-1] # remove the 0 column
         nu = np.loadtxt(os.path.join(self.params['outdir'],'final-nu.dat'))
         nu.shape = (len(nu)/self.params['ntopics'], self.params['ntopics'])
-        nu = nu[:,:-1]
         sqrt_theta = []
 
         for i in xrange(len(lam)):
@@ -155,7 +161,6 @@ class CTMAnalyzer(TMAnalyzer):
         # create indices for fast lookup
         self.create_db_indices()
 
-        self.params['ntopics'] -= 1 # remove identifiability column
 
 
 

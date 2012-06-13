@@ -10,7 +10,7 @@ import math
 
 from src.backend.relations import relations, Document, Topic, Term
 from src.backend.db import db
-from src.backend.tma_utils import slugify, remove_non_ascii, median
+from src.backend.tma_utils import slugify, remove_non_ascii, median, gen_clean_text
 from lib.simplebing.SBing import SBing
 from lib.porter2 import stem
 from lib.endless_pagination.decorators import page_template
@@ -26,6 +26,9 @@ NUM_TERMS = 8 # TODO move this to settings
 TOP_TOPIC_OBJ = 'top_topic_terms.obj' # TODO move this to settings
 
 def get_rel_page(request, alg_db, dataloc, alg=''):
+    """
+    returns the interactive (d3) relationship page
+    """
     myrelations = relations(alg_db)
     # build the doc-doc   
     ddata = build_graph_json(myrelations.get_docs(), myrelations, myrelations.get_top_related_docs)
@@ -43,6 +46,9 @@ def get_rel_page(request, alg_db, dataloc, alg=''):
 
 
 def build_topic_json(myrelations):
+    """
+    create a json array of the topics
+    """
     topdata="["
     topics= myrelations.get_topics()
     for top in topics:
@@ -52,6 +58,9 @@ def build_topic_json(myrelations):
 
 
 def build_graph_json(collection, myrelations, related_item_fnct):
+    """
+    build the array for the d3 relationship graph
+    """
     node_str = '"nodes":['
     link_str = '"links":['
     id_to_ind = {}
@@ -91,6 +100,9 @@ def build_graph_json(collection, myrelations, related_item_fnct):
 
 
 def get_doc_text(docloc, title_wID, numbytes=500):
+    """
+    Obtain the text of the document without any surrounding html
+    """
     doc_title = " ".join(title_wID.split('-')[0:-1])
     try:
         doc_text_file = open(os.path.join(docloc, slugify(unicode(doc_title))),'r')
@@ -242,8 +254,11 @@ def get_topic_coherence_scores(topics, corpus_dbloc, numterms=NUM_TERMS):
     return scores
 
 
-# From Newman, 2010 Automatic Evaluation of Topic Models
+
 def get_wiki_pmi_coherence(topics, numterms=NUM_TERMS):   # TODO make sure the terms are already stemmed
+    """
+    Coherence score from (Newman, 2010 Automatic Evaluation of Topic Models)
+    """
     dbase = db(WIKI_COCC_DB)
     if not dbase.check_table_existence('co_occ'):
         return {}
@@ -603,7 +618,7 @@ def get_topic_page(request, alg_db, topic_title, topicid, term_cutoff=NUM_TERMS,
 #    # related topics
     topics = myrelations.get_top_related_topics(topic, topic_cutoff)
     topic_keys = topics.keys()
-    topic_keys.sort(lambda x, y: cmp(topics[x], topics[y]))
+    topic_keys.sort(lambda x, y: -cmp(topics[x], topics[y]))
     rightcol = {'data': topic_keys[0:topic_cutoff], 'webname':'topics'}
 
     return render_to_response("three-column-vis.html", {'leftcol':leftcol, 'midcol':midcol, 'rightcol':rightcol, 'title':topic.title}, context_instance=RequestContext(request))
@@ -628,16 +643,15 @@ def get_doc_page(request, alg_db, doc_title, docid, docloc, doc_cutoff=10, topic
     # related documents
     docs = myrelations.get_top_related_docs(doc, doc_cutoff)
     doc_keys = docs.keys()
-    doc_keys.sort(lambda x, y: cmp(docs[x], docs[y]))
+    doc_keys.sort(lambda x, y: -cmp(docs[x], docs[y]))
     rightcol = {'data':doc_keys[:topic_cutoff], 'webname':'documents'}
 
     try:
         doc_text_file = open(os.path.join(docloc, slugify(unicode(doc_title))),'r')
     except IOError:
         doc_text_file = open(os.path.join(docloc, slugify(unicode(doc_title)) + '.txt'),'r') # TODO fix hack
-
-    midcol = {'doctext':doc_text_file.read()}
-    doc_text_file.close()
+    midcol = {'doc':gen_clean_text(doc_text_file)}
+    
     return render_to_response("three-column-vis.html", {'leftcol':leftcol,
         'rightcol':rightcol, 'midcol':midcol, 'title':doc.title}, context_instance=RequestContext(request))
 

@@ -23,6 +23,10 @@ def ids_to_key(id1, id2):
     ids = sorted([id1,id2])
     return ids[0], ids[1]
 
+def gen_clean_text(file_obj):
+    for line in file_obj:
+        yield remove_non_ascii(line)
+
 def mean(alist):
     return float(sum(alist))/len(alist)
 

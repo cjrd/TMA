@@ -98,6 +98,14 @@ class LDAAnalyzer(TMAnalyzer):
 
     def create_relations(self):
         """
+        This method uses the document termcounts, topics x terms matrix and documents x topics matrix to determine the following relationships:
+        - term x term
+        - topic x term
+        - topic x topic
+        - document x document
+        - document x topic
+        - document x term
+
         NOTE: this method should be called after 'do_analysis'
         """
         self.init_rel_db()

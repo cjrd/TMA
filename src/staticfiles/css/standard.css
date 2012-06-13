@@ -239,7 +239,7 @@ ul.nav-sub {
     position: absolute;
     padding: 10px;
     top: 25px;
-    left: -2px;
+    left: -1px;
     z-index: 598;
     background: #D1D1D1;
     border-right: 1px solid #000;

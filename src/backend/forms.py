@@ -227,7 +227,7 @@ class AnalysisForm(forms.Form):
     hdp_gamma_b = forms.FloatField(required=False, label='gamma scale', initial='1.0', help_text="Scale for 1st-level concentration parameter, see " + help_hdp_url)
     hdp_alpha_a = forms.FloatField(required=False, label='alpha shape', initial='1.0', help_text="Shape for 2nd-level concentration parameter, see " + help_hdp_url)
     hdp_alpha_b = forms.FloatField(required=False, label='alpha scale', initial='1.0', help_text="Scale for 2nd-level concentration parameter, see " + help_hdp_url)
-    hdp_eta = forms.FloatField(required=False, label='topic Dirichlet param', initial='0.5', help_text="The topic Dirichlet parameter, see the eta parameter in " + help_hdp_url)
+    hdp_eta = forms.FloatField(required=False, label='topic Dirichlet param', initial='0.5', help_text="The topic Dirichlet parameter is the concentration parameter used for the topic draws, i.e. topic_i ~ Dir(&eta; * v) where &eta; is the topic Dirichlet parameter, and v is the vocabulary vector.")
     hdp_split_merge = forms.CharField(required=False, label = 'use split-merge MCMC',
        widget=Select(
            choices=(

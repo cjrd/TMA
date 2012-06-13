@@ -65,20 +65,21 @@ class HDPAnalyzer(TMAnalyzer):
         super(HDPAnalyzer, self).__init__(hdpparams)
     
     def do_analysis(self):
-
-         # do the analysis
-         if self.params['algorithm'] == 'train':
-             cmd = '%(hdpdir)s/hdp --data %(corpusfile)s --algorithm %(algorithm)s --directory %(outdir)s\
-                --max_iter %(max_iter)d --save_lag %(save_lag)d --init_topics %(init_topics)i --gamma_a %(gamma_a)f\
-                --gamma_b %(gamma_b)f --alpha_a %(alpha_a)f --alpha_b %(alpha_b)f --sample_hyper %(sample_hyper)s\
-                --eta %(eta)f --split_merge %(split_merge)s --restrict_scan %(restrict_scan)s' % self.params
-         elif self.params['algorithm'] == 'testlike':
-            cmd = '%(hdpdir)s/hdp --algorithm %(algorithm)s --data %(corpusfile)s\
-             --saved_model %(saved_model)s  --directory %(outdir)s' % self.params
-         print cmd
-         stime = time()
-         os.system(cmd)
-         print 'finished HDP analysis in %f seconds' % (time()-stime)     
+        """
+        Execute the HDP with the specified parameters
+        """
+        if self.params['algorithm'] == 'train':
+            cmd = '%(hdpdir)s/hdp --data %(corpusfile)s --algorithm %(algorithm)s --directory %(outdir)s\
+               --max_iter %(max_iter)d --save_lag %(save_lag)d --init_topics %(init_topics)i --gamma_a %(gamma_a)f\
+               --gamma_b %(gamma_b)f --alpha_a %(alpha_a)f --alpha_b %(alpha_b)f --sample_hyper %(sample_hyper)s\
+               --eta %(eta)f --split_merge %(split_merge)s --restrict_scan %(restrict_scan)s' % self.params
+        elif self.params['algorithm'] == 'testlike':
+           cmd = '%(hdpdir)s/hdp --algorithm %(algorithm)s --data %(corpusfile)s\
+            --saved_model %(saved_model)s  --directory %(outdir)s' % self.params
+        print cmd
+        stime = time()
+        os.system(cmd)
+        print 'finished HDP analysis in %f seconds' % (time()-stime)
 
     def kf_perplexity(self, trainf_list, testf_list, test_wc, param='ntopics', start = -1, stop = -1, step = 5):
         """
@@ -117,6 +118,14 @@ class HDPAnalyzer(TMAnalyzer):
 
     def create_relations(self):
         """
+        This method uses the document termcounts, topics x terms matrix and documents x topics matrix to determine the following relationships:
+        - term x term
+        - topic x term
+        - topic x topic
+        - document x document
+        - document x topic
+        - document x term
+
         NOTE: this method should be called after 'do_analysis'
         """
         self.init_rel_db()
@@ -129,24 +138,23 @@ class HDPAnalyzer(TMAnalyzer):
 
         # write doc title to database (STD)
         self.write_docs_table()
-        top_term_mat = np.loadtxt('%s/mode-topics.dat' % self.params['outdir'])  # add 0.01 to the counts to avoid -infty
+        top_term_mat = np.loadtxt('%s/mode-topics.dat' % self.params['outdir'])
         top_term_mat /= top_term_mat.sum(1)[:,np.newaxis] # normalize
         top_term_mat = np.log(top_term_mat)
 
-        # topic_terms
+        # topic_terms -- expects log probabilities
         self.write_topic_terms(top_term_mat)
 
-        # topic_topic
-        self.write_topic_topic(top_term_mat)
+        # topic_topic -- expects probabilities
+        self.write_topic_topic(np.exp(top_term_mat))
 
-        # term_term
-        self.write_term_term(top_term_mat)
+        # term_term  -- expects probabilities
+        self.write_term_term(np.exp(top_term_mat))
 
         # load/form top_doc matrix
         mw_mat = np.loadtxt('%s/mode-word-assignments.dat' % self.params['outdir'], skiprows=1)
         ndocs = np.max(mw_mat[:,0]) + 1
         ntops = np.max(mw_mat[:,2]) + 1
-        
 
         doc_top_mat = np.zeros([ndocs, ntops])
         for i in xrange(mw_mat.shape[0]):

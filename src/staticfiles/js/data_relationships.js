@@ -22,7 +22,7 @@ function openlw(doc) {
     myLightWindow.activateWindow({
         href: '../documents/' + doc,
         type: 'external',
-        width: '800'
+        width: '950'
     });
 }
 
