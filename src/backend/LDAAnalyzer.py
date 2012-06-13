@@ -71,7 +71,7 @@ class LDAAnalyzer(TMAnalyzer):
             @return the perplexity for each fold
         """
         def _handle_ppt(self, test_wci):
-            lfile = os.path.splitext(self.params['outdir'])[0] + '/' + self.params['infname'] + '-ctm-lhood.dat'
+            lfile = self.params['infname'] + '-lda-lhood.dat'
             lhoods = open(lfile).readlines()
             return round(((sum(map(lambda x: float(x.strip()), lhoods))*-1.0)/test_wci), 3)
 

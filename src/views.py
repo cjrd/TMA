@@ -23,8 +23,6 @@ import cPickle as pickle
 
 
 
-DEBUG = True
-
 @csrf_exempt # TODO pass a csrf like the perplexity form
 def upload_file(request):
     # file parameters TODO: set up relative path directories for distribution and on server
@@ -63,9 +61,12 @@ def upload_file(request):
             if len(website) > 0:
                 webdir = tempfile.mkdtemp(dir=workdir, suffix='_webdata')
                 data_collector = DataCollector(webdir, MAX_WWW_DL_SIZE)
-                data_collector.collect_www_data(website)
-                has_web_data = True
-                is_valid = True              
+                wwwres = data_collector.collect_www_data(website)
+                if wwwres == -12:
+                    notifs.append("WWW data collection not allowed by robots.txt")
+                else:
+                    has_web_data = True
+                    is_valid = True
                 # TODO: Add checking for appropriate filetypes and return the amount of data processed            
             
             # handle uploaded files
@@ -94,118 +95,120 @@ def upload_file(request):
             else:
                 is_valid = is_valid or False
 
-            # use sample data if no other data was chosen TODO is this ideal?
+            # use sample data if no other data was chosen TODO is this a good idea?
             sample_data_name = ''
-            if not is_valid:
+            if not is_valid and notifs == []:
                 sample_data_name = form.cleaned_data['toy_data']
                 is_valid = True
            #
            ### Now run the appropriate topic model on the appropriate data and return the TMA ###
            #
+            if is_valid:
             # make sure the terms from the previous analyzer are not in main memory
-            Term.all_terms = {}
-            # parse processing options
-            unioptions = form.cleaned_data['process_unioptions']
-            doStem = 'stem' in unioptions
-            sw_file = None
-            if 'remove_stop' in unioptions:
-                sw_file=DEFAULT_STOP_WORDS
-            remove_case =  'remove_case' in unioptions
+                Term.all_terms = {}
+                # parse processing options
+                unioptions = form.cleaned_data['process_unioptions']
+                doStem = 'stem' in unioptions
+                sw_file = None
+                if 'remove_stop' in unioptions:
+                    sw_file=DEFAULT_STOP_WORDS
+                remove_case =  'remove_case' in unioptions
 
-            corpus = Corpus(workdir, stopwordfile=sw_file, remove_case = remove_case, dostem = doStem) #TODO: fix hardcoding
-            if has_upload_data:
-                corpus.setattr('usepara', form.cleaned_data['upload_dockind'] == 'paras')
-                corpus.add_data(upload_data_name, ext[1:]) # TODO return to user if it is not a txt or dat or zip file
-            if has_web_data or has_arxiv_data:
-                corpus.setattr('usepara', form.cleaned_data['url_dockind'] == 'paras')
-                corpus.add_data(webdir, 'folder')
-            if sample_data_name:
-                corpus.setattr('usepara', False)
-                corpus.add_data(os.path.join(DATA_DIR, sample_data_name),'folder')
-            st = time()
+                corpus = Corpus(workdir, stopwordfile=sw_file, remove_case = remove_case, dostem = doStem) #TODO: fix hardcoding
+                if has_upload_data:
+                    corpus.setattr('usepara', form.cleaned_data['upload_dockind'] == 'paras')
+                    corpus.add_data(upload_data_name, ext[1:]) # TODO return to user if it is not a txt or dat or zip file
+                if has_web_data:
+                    corpus.setattr('usepara', form.cleaned_data['url_dockind'] == 'paras')
+                    corpus.add_data(webdir, 'folder')
+                if has_arxiv_data:
+                    corpus.setattr('usepara', form.cleaned_data['url_dockind'] == 'paras')
+                    corpus.add_data(arxiv_dir, 'folder')
+                if sample_data_name:
+                    corpus.setattr('usepara', False)
+                    corpus.add_data(os.path.join(DATA_DIR, sample_data_name),'folder')
+                st = time()
 
-            # decide whether to do tfidf cleaning
-            tfidf_cleanf = form.cleaned_data['process_tfidf']
-            if tfidf_cleanf > 0 and tfidf_cleanf < 1.0:
-                corpus.tfidf_clean(int(corpus.get_vocab_ct()*tfidf_cleanf))
-                print 'TF-IDF cleaning took %0.2fs' % (time()-st)
+                # decide whether to do tfidf cleaning
+                tfidf_cleanf = form.cleaned_data['process_tfidf']
+                if tfidf_cleanf > 0 and tfidf_cleanf < 1.0:
+                    corpus.tfidf_clean(int(corpus.get_vocab_ct()*tfidf_cleanf))
+                    print 'TF-IDF cleaning took %0.2fs' % (time()-st)
 
-            corpusdir = corpus.get_work_dir()
-            corpusfile = corpus.get_corpus_file()
-            tmoutdir = workdir + '/' + algotype
-            vocabfile = os.path.join(corpusdir,'vocab.txt')
-            titlesfile = os.path.join(corpusdir,'titles.txt')
-            corpus.write_vocab(vocabfile)
-            corpus.write_titles(titlesfile)
+                corpusdir = corpus.get_work_dir()
+                corpusfile = corpus.get_corpus_file()
+                tmoutdir = workdir + '/' + algotype
+                vocabfile = os.path.join(corpusdir,'vocab.txt')
+                titlesfile = os.path.join(corpusdir,'titles.txt')
+                corpus.write_vocab(vocabfile)
+                corpus.write_titles(titlesfile)
 
-            # TODO: make it possible to run multiple algos in one run & compare them :) -- perhaps using an uploaded settings file (too much computation for online version?)
-            # set the algortihm params
-            gblparams =  {'corpusfile':corpusfile,'vocabfile':vocabfile, 'titlesfile':titlesfile, 'outdir':tmoutdir, 'wordct':corpus.get_word_ct()}
-            if doLDA:
-                alphaval = form.cleaned_data['lda_alpha']
-                if not alphaval:
-                    alphaval = form.cleaned_data['std_ntopics']/50.0
-                ldaparams = {
-                    'type':'est',
-                    'alphaval':alphaval,
-                    'ntopics':form.cleaned_data['std_ntopics'],
-                    'alpha':form.cleaned_data['lda_alpha_tech'],
-                    'init':form.cleaned_data['lda_topic_init'],
-                    'ldadir': ALG_LOCS['lda'],
-                    'var_max_iter':form.cleaned_data['lda_var_max_iter'],
-                    'var_convergence':form.cleaned_data['lda_var_conv_thresh'],
-                    'em_max_iter':form.cleaned_data['lda_em_max_iter'],
-                    'em_convergence':form.cleaned_data['lda_em_conv_thresh']
-                    }
-                ldaparams = dict(gblparams.items() + ldaparams.items())
-                analyzer = LDAAnalyzer(ldaparams)
-            elif doHDP:
-                hdpparams = {
-                    'algorithm':'train',
-                    'max_iter':form.cleaned_data['hdp_max_iters'],
-                    'init_topics':form.cleaned_data['hdp_init_ntopics'],
-                    'gamma_a':form.cleaned_data['hdp_gamma_a'],
-                    'gamma_b':form.cleaned_data['hdp_gamma_b'],
-                    'alpha_a':form.cleaned_data['hdp_alpha_a'],
-                    'alpha_b':form.cleaned_data['hdp_alpha_b'],
-                    'sample_hyper':form.cleaned_data['hdp_sample_hyper'],
-                    'eta':form.cleaned_data['hdp_eta'],
-                    'split_merge':form.cleaned_data['hdp_split_merge'],
-                    'restrict_scan': 5,
-                    'hdpdir': ALG_LOCS['hdp'],
-                    'save_lag':-1,
-                    'ndocs':corpus.get_doc_ct()
-                    }
-                hdpparams = dict(gblparams.items() + hdpparams.items())
-                analyzer = HDPAnalyzer(hdpparams)
-            elif doCTM:
-                ctmparams = {'type':'est',
-                    'ntopics':form.cleaned_data['std_ntopics'],
-                    'init':form.cleaned_data['ctm_topic_init'],
-                    'ctmdir': ALG_LOCS['ctm'],
-                    'var_max_iter':form.cleaned_data['ctm_var_max_iter'],
-                    'var_convergence':form.cleaned_data['ctm_var_conv_thresh'],
-                    'em_max_iter':form.cleaned_data['ctm_em_max_iter'],
-                    'em_convergence':form.cleaned_data['ctm_em_conv_thresh'],
-                    'cg_max_iter':-1,
-                    'cg_convergence':1e-6,
-                    'lag':50,
-                    'covariance_estimate':form.cleaned_data['ctm_cov_tech'],
-                    'nterms':corpus.get_vocab_ct(),
-                    'ndocs': corpus.get_doc_ct()}
-                ctmparams = dict(gblparams.items() + ctmparams.items())
-                analyzer = CTMAnalyzer(ctmparams)
+                # TODO: make it possible to run multiple algos in one run & compare them :) -- perhaps using an uploaded settings file (too much computation for online version?)
+                # set the algortihm params
+                gblparams =  {'corpusfile':corpusfile,'vocabfile':vocabfile, 'titlesfile':titlesfile, 'outdir':tmoutdir, 'wordct':corpus.get_word_ct()}
+                if doLDA:
+                    alphaval = form.cleaned_data['lda_alpha']
+                    if not alphaval:
+                        alphaval = form.cleaned_data['std_ntopics']/50.0
+                    ldaparams = {
+                        'type':'est',
+                        'alphaval':alphaval,
+                        'ntopics':form.cleaned_data['std_ntopics'],
+                        'alpha':form.cleaned_data['lda_alpha_tech'],
+                        'init':form.cleaned_data['lda_topic_init'],
+                        'ldadir': ALG_LOCS['lda'],
+                        'var_max_iter':form.cleaned_data['lda_var_max_iter'],
+                        'var_convergence':form.cleaned_data['lda_var_conv_thresh'],
+                        'em_max_iter':form.cleaned_data['lda_em_max_iter'],
+                        'em_convergence':form.cleaned_data['lda_em_conv_thresh']
+                        }
+                    ldaparams = dict(gblparams.items() + ldaparams.items())
+                    analyzer = LDAAnalyzer(ldaparams)
+                elif doHDP:
+                    hdpparams = {
+                        'algorithm':'train',
+                        'max_iter':form.cleaned_data['hdp_max_iters'],
+                        'init_topics':form.cleaned_data['hdp_init_ntopics'],
+                        'gamma_a':form.cleaned_data['hdp_gamma_a'],
+                        'gamma_b':form.cleaned_data['hdp_gamma_b'],
+                        'alpha_a':form.cleaned_data['hdp_alpha_a'],
+                        'alpha_b':form.cleaned_data['hdp_alpha_b'],
+                        'sample_hyper':form.cleaned_data['hdp_sample_hyper'],
+                        'eta':form.cleaned_data['hdp_eta'],
+                        'split_merge':form.cleaned_data['hdp_split_merge'],
+                        'restrict_scan': 5,
+                        'hdpdir': ALG_LOCS['hdp'],
+                        'save_lag':-1,
+                        'ndocs':corpus.get_doc_ct()
+                        }
+                    hdpparams = dict(gblparams.items() + hdpparams.items())
+                    analyzer = HDPAnalyzer(hdpparams)
+                elif doCTM:
+                    ctmparams = {'type':'est',
+                        'ntopics':form.cleaned_data['std_ntopics'],
+                        'init':form.cleaned_data['ctm_topic_init'],
+                        'ctmdir': ALG_LOCS['ctm'],
+                        'var_max_iter':form.cleaned_data['ctm_var_max_iter'],
+                        'var_convergence':form.cleaned_data['ctm_var_conv_thresh'],
+                        'em_max_iter':form.cleaned_data['ctm_em_max_iter'],
+                        'em_convergence':form.cleaned_data['ctm_em_conv_thresh'],
+                        'cg_max_iter':-1,
+                        'cg_convergence':1e-6,
+                        'lag':50,
+                        'covariance_estimate':form.cleaned_data['ctm_cov_tech'],
+                        'nterms':corpus.get_vocab_ct(),
+                        'ndocs': corpus.get_doc_ct()}
+                    ctmparams = dict(gblparams.items() + ctmparams.items())
+                    analyzer = CTMAnalyzer(ctmparams)
 
-                if DEBUG:
                     print analyzer.get_params()
 
-            analyzer.do_analysis()
-            # save the analyzer for later use
-            pickle.dump(analyzer,open(os.path.join(analyzer.get_param('outdir'), 'analyzer.obj'),'w'))
-            analyzer.create_relations()
-            analyzer.createJSLikeData()
-            # TODO better way to progress to the next stage? How to use a nice AJAX updater?
-            return HttpResponseRedirect('/' +  '_'.join(workdir.split('/')[-1].split('_')[0:-1]) + '/' + analyzer.params['alg'] + '/topic-list')
+                analyzer.do_analysis()
+                # save the analyzer for later use
+                pickle.dump(analyzer,open(os.path.join(analyzer.get_param('outdir'), 'analyzer.obj'),'w'))
+                analyzer.create_relations()
+                analyzer.createJSLikeData()
+                return HttpResponseRedirect('/' +  '_'.join(workdir.split('/')[-1].split('_')[0:-1]) + '/' + analyzer.params['alg'] + '/topic-list')
         else:
             form_errors = True
     if not form: # data was not actually valid (TODO perhaps do a try/catch and wind up here...)

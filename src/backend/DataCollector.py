@@ -1,29 +1,41 @@
-import urllib2, cookielib, re, os
-#from urllib import quote_plus
+import robotparser, urllib2, cookielib, re, os
 import urlparse
-import sys
 from lib.bs321.BeautifulSoup import BeautifulSoup
 import pdb
 from src.backend.tma_utils import slugify
 import random
+
+
 class DataCollector:
     """
-    TODO write me
+    This class controls data collection for TMA
     """
 
     def __init__(self, data_folder, max_dc=100):
         """
-        TODO write me
-        set the max data collection at 100 mb
+        @param data_folder: specifies where to save the data
+        @param max_dc: the maximum downloaded content size in MB
         """
         self.data_folder = data_folder
         self.max_dc = max_dc
         self.tot_dl = 0
 
-    def collect_www_data(self, url, filetype='pdf', size_limit=5):
+
+    def collect_www_data(self, url, size_limit=5):
         """
-        TODO check for robots.txt and select the type of file
+        Collect data from the provided url -- currently limited to pdf collection
+        @param size_limit: individual file size limit in MB
+        @return: -12 if collection rejected by robots.txt
         """
+
+        # check robots.txt
+        rp = robotparser.RobotFileParser()
+        up = urlparse.urlparse(url)
+        rp.set_url("http://" +  up.hostname + "/robots.txt")
+        rp.read()
+        if not rp.can_fetch("*", url):
+            print "Data collection disallowed by robots.txt"
+            return -12
 
         cj = cookielib.CookieJar()
         opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj))
@@ -54,7 +66,6 @@ class DataCollector:
                         self.tot_dl += cl
                         print '%s, %0.2f Mb' % (fname, cl)
                         self._stream_to_file(open_url, save_file)
-
                 else:
                     continue
 
@@ -68,8 +79,14 @@ class DataCollector:
 
 
     def collect_arxiv_data(self, authors=None, cats=None):
-#        pdb.set_trace()
+        """
+        Collect pdf data from arXiv with specified authors and category
+        @param authors: The authors to be searched, separate authors with ' OR ' , note: author queries are exact
+        e.g. 'Michael I. Jordan OR Michael Jordan OR David Blei OR David M. Blei', searches for the publications of the two authors with various spellings.
+        @param cats: category restrictions
+        """
         # TODO handle possible errors in data collection
+
         # extract params from form
         qry = 'http://export.arxiv.org/api/query?search_query='
         if cats:
@@ -84,7 +101,7 @@ class DataCollector:
             authors = map(lambda x: '%22' + x.replace(' ', '+') + '%22', authors)
             authors = map(lambda x: "au:" + x, authors)
             authors = '+OR+'.join(authors)
-            authors = '%28' + authors.replace(' ','+') + '%29' #quote_plus(authors)
+            authors = '%28' + authors.replace(' ','+') + '%29'
             if cats:
                 qry += "+AND+"
             qry += authors
@@ -103,6 +120,7 @@ class DataCollector:
         print 'downloading: %s, %i' % (authors, len(pdf_urls))
         print titles
         print len(pdf_urls)
+
         # randomly grab the urls so we don't have all article from one author in online version (i.e. with limitations)
         ct = 0
         for urlnum in random.sample(range(len(pdf_urls)), len(pdf_urls)):
@@ -110,41 +128,24 @@ class DataCollector:
                 ct += 1
         print '\n$$$$\nAdded %i files from arXiv, total downloaded content at %0.2f Mb\n$$$$\n' % (ct, self.tot_dl)
 
+
     def _stream_to_file(self, open_url, save_file):
+        """
+        helper function to stream the data to file
+        """
         with open(save_file, 'wb') as file_writer: # TODO do I want to leave the filename the same as dl fname?
             d_size = float(open_url.headers['Content-Length'])/1000000
+
             if self.tot_dl + d_size > self.max_dc:
                 return False
+
             print 'Downloading file: %s' % save_file.split('/')[-1]
+
             for datum in open_url:
                 file_writer.write(datum)
+
             file_writer.close()
             self.tot_dl += d_size
+
             return True
-
-if __name__ == '__main__':
-    #dc = DataCollector('/Users/cradreed/scratch')
-    #    dc.collect_www_data('http://highenergy.physics.uiowa.edu/~creed/')
-    #dc.collect_arxiv_data("Mary Hall Reno OR Michael Jordan OR Michael I. Jordan")
-#    sys.exit(1)
-#    url = "http://www.physics.uiowa.edu/personnel/faculty.html"
-#    page = urllib2.urlopen(url)
-#    soup = BeautifulSoup(page)
-#    dds = soup.findAll('dd')
-#    for el in dds:
-#        fac = re.sub("\\&\S+;","",el.text).split()
-#        fac = filter(lambda x: not '.' in x, fac)
-#        fac = ' '.join(fac)
-#        dc.collect_arxiv_data(fac)
-#        break
-
-    import os
-    from src.backend.tma_utils import slugify
-    dataloc = '/Users/cradreed/Desktop/TM-TestData/testdata_news_fuel_845docs.txt'
-    outdir = "/Users/cradreed/Research/TMBrowse/current/data/nyt"
-    infile = open(dataloc,'r')
-    for ct, line in enumerate(infile):
-        outfile = open(os.path.join(outdir,'article_%i.txt' % ct),'w')
-        outfile.write(line)
-        outfile.close()
 

@@ -533,7 +533,7 @@ def presence_graph(request, item, alg_db, alg='', template='table-graph.html', e
         mobjs = myrelations.get_topics()
         score_fnct = lambda topic: topic.score
         max_score = Topic.max_score
-        title_fnct = lambda score,width: str(width) + '%'
+        title_fnct = lambda score,width: str(width) + '% of max'
     elif item == "terms":
         mobjs = myrelations.get_terms(start_val=start_val, end_val=end_val)
         score_fnct = lambda term: term.count

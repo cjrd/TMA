@@ -15,7 +15,7 @@ def logistic_normal(mean, cov, n):
 
 def hellinger_distance(sqrt_doca, sqrt_docb, axis=1):
     """
-    Returns the Hellinger Distance between documents.
+    Returns the (squared) Hellinger Distance between documents.
 
     @para doca: is expected to be a 1d array (ie., a single document),
     @param docb: is expected to be a 2d array(ie., the rest of the documents in the

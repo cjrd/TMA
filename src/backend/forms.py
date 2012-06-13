@@ -5,7 +5,7 @@ from django.forms.widgets import  Select
 from django import forms
 
 class AnalysisForm(forms.Form):
-    std_algo = forms.CharField(required=False, label = 'algorithm',
+    std_algo = forms.CharField(required=False, label = 'model',
        widget=Select(
            choices=(
            ('lda','Latent Dirichlet Allocation'),
