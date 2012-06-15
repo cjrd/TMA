@@ -1,4 +1,4 @@
-# a class to control the djangoiation of the tbrowser
+# a class to control the djangoization of the tbrowser
 import shutil
 from django.shortcuts import render_to_response
 from django.template import Context, RequestContext

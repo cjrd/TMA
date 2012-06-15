@@ -1,0 +1,172 @@
+/*FORM CSS*/
+
+#main{
+    width: 500px;
+    margin: auto;
+}
+div.single-field {
+    padding: 10px 10px 0px 10px;
+    position: relative;
+    width: 360px;
+    margin: 0 auto;
+}
+
+div.single-field input{
+    width: 40px;
+}
+
+div.single-field ul{
+    padding:  0px;
+    margin:  0px;
+}
+
+div.single-field ul input{
+    width:20px;
+}
+
+div.single-field ul label{
+    width:300px;
+}
+
+.adv div.single-field label{
+    width: 200px;
+}
+div.data_box div.single-field label{
+    width:125px;
+}
+#data_arxiv div.single-field label{
+    width: 200px;
+}
+
+div.note{
+    font-weight: bold;
+    text-align: center;
+    margin:3px;
+    font-style: italic;
+}
+
+#notebar {
+    width:100%;
+    height:30px;
+    background:#f5b581;
+    border:1px solid #BD9E9E;
+}
+#xbtn {
+    height:10px;
+    line-height:5px;
+    float:right;
+    font-family: sans-serif;
+    padding: 3px;
+    margin-right:10px;
+    border-radius:2px;
+    box-shadow:0px 0px 2px 2px #000000;
+    color: black;
+    font-weight:bold;
+    margin-top:5px;
+    margin-bottom:5px;
+    cursor: pointer;
+}​
+
+div.processing div.single-field{
+    padding-top:  0px;
+    padding-bottom:  0px;
+    margin: 0px 0px 0px 25px;
+}
+
+div.processing ul{
+    list-style: none;
+    padding-top: 0px;
+}
+
+form {
+    padding: 0px;
+    margin: 10px 0;
+    position: relative;
+}
+
+label {
+    width: 135px;
+    display: inline-block ;
+    font-size: 12pt;
+    text-align: left;
+    font-weight: bold;
+}
+
+span.error {
+    color: red;
+}
+
+div.help-text{
+    font-size: 10pt;
+    font-style:italic;
+    color: #2B3856;
+    width:280px;
+    margin: auto;
+    text-align: left;
+
+}
+span.help-ptr{
+   background: url("/static/images/qmark.jpg") no-repeat center right;
+   width:20px;
+   height: 15px;
+   display: inline-block;
+   cursor: help;
+}
+
+
+.linkarea{
+    cursor: pointer;
+}
+
+fieldset {
+    border:1px solid #BD9E9E;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+legend {
+  padding: 0.2em 0.5em;
+  color:#BD9E9E;
+  font-size:25px;
+  text-align:right;
+  }
+
+#advanced_params_title{
+    margin-top: 30px;
+}
+
+#sendbutton{
+    width:70px;
+    font-weight: bold;
+    
+}
+
+ul.tab_nav {
+    list-style: none;
+    margin: 0;
+    padding: 3px 5px 3px 3px;
+    background-color: #E6EEEE;
+    font-size: 16px;
+    font-family: Calibri,"Gill Sans","Trebuchet MS",sans-serif;
+}
+
+.data_box{
+    padding: 50px;
+    
+}
+
+#data_form input{
+    width: 180px;
+}
+
+div.active{
+  background-image: url("/static/images/simple-arrow-down.png");
+  background-repeat:no-repeat;
+  background-position: right;
+}
+
+div.inactive{
+  background-image: url("/static/images/simple-arrow-right.png");
+  background-repeat:no-repeat;
+  background-position: right;
+}

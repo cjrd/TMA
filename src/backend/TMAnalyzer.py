@@ -148,13 +148,20 @@ class TMAnalyzer(object):
         @param wcs: word count dictionary
         """
         self._check_tlist(terms_file)
+        self.dbase.executemany('INSERT INTO terms(id, title, count) VALUES(?, ?, ?)', self._term_table_gen(wcs))
+
+    def _term_table_gen(self, wcs):
+        """
+        called after tlist is initialized
+        """
         for i, trm in enumerate(self.terms_list):
             if wcs.has_key(i):
                 count = wcs[i]
             else:
                 count = -1
-            self.dbase.execute('INSERT INTO terms(id, title, count) VALUES(?, ?, ?)', (i, trm, count)) # explictly write id so term ids match (not off by one)
+            yield (i, trm, count)
 
+            
     def write_docs_table(self, docs_file=None):
         """
         Write the documents to the database (id, title)
@@ -241,41 +248,45 @@ class TMAnalyzer(object):
             wordcount_file = self.params['corpusfile']
 
         if return_wcs:
-            wcs = {}
+            self.wcs = {}
+
         execution_str = 'INSERT INTO doc_term (id, doc, term, score) VALUES(NULL, ?, ?, ?)'
+        self.dbase.executemany(execution_str, self._doc_term_gen(wordcount_file, return_wcs))
+            
+        if return_wcs:
+            return self.wcs
+
+    def _doc_term_gen(self, wordcount_file, return_wcs):
         for doc_no, doc in enumerate(open(wordcount_file, 'r')):
             doc = doc.split()[1:]
-            terms = {}
             for term in doc:
                 trm_id = int(term.split(':')[0])
                 trm_ct = int(term.split(':')[1])
-                terms[trm_id] = trm_ct
-
                 if return_wcs:
-                    if wcs.has_key(trm_id):
-                        wcs[trm_id] += trm_ct
+                    if self.wcs.has_key(trm_id):
+                        self.wcs[trm_id] += trm_ct
                     else:
-                        wcs[trm_id] = trm_ct
-
-            keys = terms.keys()
-            res = generic_generator((doc_no,)*len(keys),
-                                    keys, (terms[i] for i in keys))
-            self.dbase.executemany(execution_str, res)
-            
-        if return_wcs:
-            return wcs
+                        self.wcs[trm_id] = trm_ct
+                yield (doc_no, trm_id, trm_ct)
 
     def write_doc_topic(self, doc_top_mat):
         """
         Write the doc-topic relationships to the db
         @param doc_top_mat: a document x topic matrix where higher scores indicate greater similarity
         """
+        def _doc_topic_gen(doc_top_mat):
+            for doc_no in xrange(doc_top_mat.shape[0]):
+                doc = doc_top_mat[doc_no,:]
+                for top_no in xrange(len(doc)):
+                    yield (doc_no, top_no, doc[top_no])
+
         execution_str = 'INSERT INTO doc_topic (id, doc, topic, score) VALUES(NULL, ?, ?, ?)'
-        for doc_no in xrange(doc_top_mat.shape[0]):
-            doc = doc_top_mat[doc_no,:]
-            res = generic_generator((doc_no,)*len(doc), range(len(doc)), doc)
-            self.dbase.executemany(execution_str, res)
-        
+        self.dbase.executemany(execution_str, _doc_topic_gen(doc_top_mat))
+
+    
+
+
+            
     def write_doc_doc(self, doc_top_mat):
         """
         Write the doc-doc relationships to the db

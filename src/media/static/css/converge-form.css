@@ -1,0 +1,42 @@
+/*FORM CSS*/
+
+
+div.single-field {
+    padding: 10px 10px 0px 10px;
+    position: relative;
+}
+
+form {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px 0;
+    position: relative;
+}
+
+label {
+    width: 150px;
+    display: inline-block ;
+    font-size: 1.2em;
+}
+
+span.error {
+    color: red;
+}
+
+div.help-text{
+    font-size: 10pt;
+    font-style:italic;
+    color: #2B3856;
+    width:250px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-align: left;
+}
+
+.small_int {
+    width: 35px;
+}
+
+.tabs a{
+   text-decoration:underline;
+}

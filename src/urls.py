@@ -7,7 +7,7 @@ from django.views.decorators.cache import cache_page
 
 
 urlpatterns = patterns('',
-    (r'^tma/$', upload_file),
+    (r'^(?i)tma/$', process_form),
     (r'^([^/]+)/([a-zA-Z0-9]+)/([^/]+)?/([^/]+)?/?$',res_disp),   # , cache_page(60*30)(res_disp) (add this to cache)
 )
 

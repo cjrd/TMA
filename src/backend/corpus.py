@@ -13,7 +13,7 @@ class Corpus:  # TODO use tma_utils TextCleaner
     A corpus class for TMA, parses textual data.
 
     """
-    # TODO: add in functionality for webpages, textdocs, blogs, etc; removeDuplicates (clean the corpus for duplicate pdfs, txts, etc)
+
     
     def __init__(self, workdir, remove_case=True, stopwordfile=None, usepara=False, dostem=True,
             minwords = 25, parafolder='paradocs', corpus_db='corpusdb.sqlite', make_stem_db=-1):
@@ -57,6 +57,9 @@ class Corpus:  # TODO use tma_utils TextCleaner
         self.minwords = minwords # minimum number of valid words to form a paragraph
     
     def add_data(self, dataname, datatype):
+        """
+        add data of zip, folder, txt or dat
+        """
         datatype = datatype.strip().lower()
         if datatype == 'zip':  # TODO add more types of data
             self.parse_zip(dataname)
@@ -64,6 +67,9 @@ class Corpus:  # TODO use tma_utils TextCleaner
             self.parse_folder(dataname)
     
     def parse_zip(self, dataname):
+        """
+        parse zip data
+        """
         unzipdir = tempfile.mkdtemp(dir=self.workdir, suffix='_unzipdir')
         # unzip file into temp dir       
         #pdb.set_trace()
@@ -138,14 +144,7 @@ class Corpus:  # TODO use tma_utils TextCleaner
                 continue
             useparanum = 1
             totparanum = 1
-            for paraline in infile:   
-#                if totparanum == 1:
-#                    title = ' '.join(paraline.strip().split()[:10]).lower() # TODO hardcoded and need to work on optimization (memory could be an issue with large datasets)
-#                    title = slugify(unicode(title,errors='ignore'))
-#                    title = title[:50] # only use 50 characters    TODO more elegant way than hardcoding 50 chars?
-#                    if len(title) == 0:
-#                        title = 'no-title-' + str(self.no_title_ct)
-#                        self.no_title_ct += 1
+            for paraline in infile:
                 totparanum += 1
                 words = paraline.split()
                 for wrd in words:
@@ -180,9 +179,7 @@ class Corpus:  # TODO use tma_utils TextCleaner
                 if sum(wordcounts.values()) > self.minwords: 
                     self.write_doc_line(cfile, wordcounts, dbase, prestem_dic)
                     self.titles.append(title)
-                    #print title
-                    #os.system('ln -s %s %s' % (tfile, os.path.join(self.paradir, title))) # TODO was this needed?
-        cfile.close()      
+        cfile.close()
         dbase.commit()
         if not self.parsed_data:
             dbase.add_index('term_doc_pair_idx1 ON term_doc_pair(term)')

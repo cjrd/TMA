@@ -1,3 +1,5 @@
+
+
 button {
     -moz-border-bottom-colors: none;
     -moz-border-image: none;
@@ -41,23 +43,6 @@ button:hover {
     font: 16px Calibri, "Gill Sans", "Trebuchet MS", sans-serif;
 }
 
-h2 {
-    line-height: 0em;
-    font-size: 20px;
-    font-style: italic;
-    margin-bottom: 30px;
-}
-
-.paper {
-
-    border: 50px solid transparent;
-    border-top: 35px solid transparent;
-    table-layout: fixed;
-    -o-border-image: url("/static/images/paper.png") 50;
-    -webkit-border-image: url("/static/images/paper.png") 50;
-    -moz-border-image: url("/static/images/paper.png") 50;
-    border-image: url("/static/images/paper.png") 50; /* TODO border-image doesn't show on ie9 */
-}
 
 .left_align {
     float: left;
@@ -66,6 +51,12 @@ h2 {
 
 .right_align {
     float: right;
+    padding: 5px;
+}
+
+.center_align {
+    margin-right: auto;
+    margin-left: auto;
     padding: 5px;
 }
 
@@ -99,69 +90,30 @@ h2 {
 
 td.score {
     text-align: center;
+    background-color: white;
 }
 
-.tabs {
-    font-size: 10pt;
-    border: 2px solid;
-    border-color: #CDCDCD;
-
+th.header {
+    text-align: left;
 }
 
-ul.tab_nav {
-    list-style: none;
-    margin: 0;
-    padding: 3px 5px 3px 3px;
-    background-color: #E6EEEE;
-    font-weight: bold;
-}
-
-ul.tab_nav li {
-    display: inline;
-    border: 1px;
-}
-
-ul.tab_nav li a {
-    padding: 3px 5px;
-    color: #000;
-    text-decoration: none;
-}
-
-ul.tab_nav li a.selected,
-ul.tab_nav li a:hover {
-    background-color: #F5EEEE;
-    color: #000;
-}
-
-ul.tab_nav li a:focus {
-    outline: 0;
-}
-
-div.tabs div {
-    padding: 5px;
-    background-color: #F5EEEE;
-    font-size: 11pt;
+#perplexity_form {
+    border: 2px solid #CDCDCD;
 }
 
 #likelihood {
     text-align: center;
     border: 0px solid black;
     border-spacing: 0px;
-    width: 450px;
+    width: 700px;
     height: 450px;
     padding: 0px;
 }
 
-#perplexity {
-    width: 450px;
+#perplexity_graph {
+    width: 550px;
     text-align: center;
-    width: 450px;
+    width: 550px;
     height: 450px;
 }
 
-body {
-    margin: 20px;
-    padding: 20px;
-    font: 16px Calibri, "Gill Sans", "Trebuchet MS", sans-serif;
-
-}

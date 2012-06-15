@@ -1,5 +1,6 @@
 import pdb
 from django.core.files.uploadhandler import FileUploadHandler, StopUpload
+from django.views.decorators.csrf import csrf_protect
 from src import settings
 
 

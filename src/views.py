@@ -1,7 +1,7 @@
 from django.core.context_processors import csrf
 from django.http import HttpResponseRedirect
 from settings import WORKDIR, DATA_DIR, DEFAULT_STOP_WORDS, MAX_WWW_DL_SIZE, ALG_LOCS
-from django.views.decorators.csrf import csrf_exempt
+from django.views.decorators.csrf import csrf_exempt, csrf_protect
 from django.utils import simplejson
 
 from src.backend.uploadhandler import FSUploadHandler
@@ -24,19 +24,24 @@ import cPickle as pickle
 
 
 @csrf_exempt # TODO pass a csrf like the perplexity form
-def upload_file(request):
+def process_form(request):
+    request.upload_handlers.insert(0,FSUploadHandler())
+    return _process_form(request)
+
+@csrf_protect
+def _process_form(request):
     # file parameters TODO: set up relative path directories for distribution and on server
-    c = {}
+    """
+    Process TMA submission form and return errors/problems to user
+    """
     notifs = []
     form = None
-    c.update(csrf(request))
+#    c.update(csrf(request))
     form_errors = False
     if request.method == 'POST':         
         wbasedir = WORKDIR
         workdir = tempfile.mkdtemp(dir = wbasedir, suffix = '_formdata')
 
-        # custom data-upload for security
-        request.upload_handlers.insert(0,FSUploadHandler())
         try:
             form = AnalysisForm(request.POST, request.FILES)
             form_is_valid = form.is_valid()
@@ -241,13 +246,14 @@ def perplexity_form(request, algloc):
 
 def res_disp(request, folder, alg, res, param = ''):  
 
-    alg = alg.upper()
+    alg = alg.lower()
     
     # TODO implement better error catching 
     # pdb.set_trace()       
     dataloc = os.path.join(WORKDIR, folder + '_formdata');
-    algloc = os.path.join(dataloc,alg)
-    alg_db = db(os.path.join(algloc, 'tma.sqlite')) # TODO move hard coding to settings file
+    algloc = os.path.join(dataloc, alg)
+    tma_dbase = os.path.join(algloc, 'tma.sqlite')
+    alg_db = db(tma_dbase)
 
     corpus_dbloc = os.path.join(dataloc, 'corpus', 'corpusdb.sqlite') 
     toplist_numcolumns = 3  
