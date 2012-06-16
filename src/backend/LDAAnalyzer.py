@@ -127,12 +127,12 @@ class LDAAnalyzer(TMAnalyzer):
         self.write_topic_terms(beta)
 
         # topic_topic
-        self.write_topic_topic(np.exp(beta))
+        self.write_topic_topic(np.exp(beta)) 
 
         # term_term
         self.write_term_term(np.exp(beta))
 
-        # doc_doc
+        # doc_doc creation
         gamma = np.loadtxt(os.path.join(self.params['outdir'],'final.gamma'))
         theta = gamma / gamma.sum(1)[:,np.newaxis]
         self.write_doc_doc(theta**0.5)
