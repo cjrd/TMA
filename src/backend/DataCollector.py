@@ -21,10 +21,10 @@ class DataCollector:
         self.tot_dl = 0
 
 
-    def collect_www_data(self, url, size_limit=5):
+    def collect_www_data(self, url, fsize_limit=5):
         """
         Collect data from the provided url -- currently limited to pdf collection
-        @param size_limit: individual file size limit in MB
+        @param fsize_limit: individual file size limit in MB
         @return: -12 if collection rejected by robots.txt
         """
 
@@ -46,7 +46,6 @@ class DataCollector:
 
         # find the pdfs
         data_urls = soup.findAll(name='a', attrs={'href': re.compile('\.pdf')})
-        data_sizes = []
         for data in data_urls:
             dn_url = data['href']
             if 'http' not in dn_url:
@@ -58,12 +57,10 @@ class DataCollector:
                 cl = open_url.headers['Content-Length']
                 if cl:
                     cl = float(cl) / 1000000
-                    data_sizes.append(cl)
-                    if cl < size_limit and cl + self.tot_dl < self.max_dc:
+                    if cl < fsize_limit and cl + self.tot_dl < self.max_dc:
                         # download file to dataloc
                         fname = dn_url.split('/')[-1].lower()
                         save_file = os.path.join(self.data_folder, fname)
-                        self.tot_dl += cl
                         print '%s, %0.2f Mb' % (fname, cl)
                         self._stream_to_file(open_url, save_file)
                 else:

@@ -1,6 +1,6 @@
 from django.core.context_processors import csrf
 from django.http import HttpResponseRedirect
-from settings import WORKDIR, DATA_DIR, DEFAULT_STOP_WORDS, MAX_WWW_DL_SIZE, ALG_LOCS
+from settings import WORKDIR, DATA_DIR, DEFAULT_STOP_WORDS, MAX_WWW_DL_SIZE, MAX_WWW_FS, ALG_LOCS
 from django.views.decorators.csrf import csrf_exempt, csrf_protect
 from django.utils import simplejson
 
@@ -46,7 +46,7 @@ def _process_form(request):
             form = AnalysisForm(request.POST, request.FILES)
             form_is_valid = form.is_valid()
         except StopUpload: # TODO this is not working as expected
-            error_message = "Uploaded data must be < %0.1f Mb" % (settings.MAX_UPLOAD_SIZE/1000000.0)
+            error_message = "Uploaded data must be < %0.1f Mb" % (settings.MAX_UPLOAD_SIZE)
             print error_message
             notifs.append(error_message)
             form_is_valid = False
@@ -66,7 +66,7 @@ def _process_form(request):
             if len(website) > 0:
                 webdir = tempfile.mkdtemp(dir=workdir, suffix='_webdata')
                 data_collector = DataCollector(webdir, MAX_WWW_DL_SIZE)
-                wwwres = data_collector.collect_www_data(website)
+                wwwres = data_collector.collect_www_data(website, MAX_WWW_FS)
                 if wwwres == -12:
                     notifs.append("WWW data collection not allowed by robots.txt")
                 else:
@@ -76,7 +76,7 @@ def _process_form(request):
             
             # handle uploaded files
             upfile = form.cleaned_data['upload_file']
-            if upfile == None:
+            if upfile is None:
                 is_valid = is_valid or False   
             else:
                 ext = os.path.splitext(upfile.name)[1]
