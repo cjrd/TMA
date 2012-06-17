@@ -2,7 +2,6 @@
 
 {% block jscript %}
     <script language="JavaScript" src="{{ STATIC_URL }}js/jquery-latest.js" type="text/JavaScript"></script>
-    <script language="JavaScript" src="{{ STATIC_URL }}js/horz-tabs.js" type="text/JavaScript"></script>
     <script language="JavaScript" src="{{ STATIC_URL }}js/init-page.js" type="text/JavaScript"></script>
 {% endblock %}
 
@@ -30,7 +29,7 @@
                 <div id="xbtn">x</div>
                 {% for note in notifications %}
                     <div class="note">
-                        {{ note }}
+                        {{ note|safe }}
                     </div>
                 {% endfor %}
             </div>

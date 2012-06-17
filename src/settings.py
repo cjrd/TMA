@@ -7,6 +7,8 @@ MAX_UPLOAD_SIZE = 20 # in MB
 MAX_WWW_DL_SIZE = 100 # in MB
 MAX_WWW_FS = 5 # max filesize in MB
 REMOVE_DWNLD = True # delete the downloaded content after processing
+MAX_NUM_TERMS = 5000
+MAX_NUM_TOPICS = 200
 
 # Django settings
 DEBUG = True

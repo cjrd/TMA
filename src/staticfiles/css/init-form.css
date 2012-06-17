@@ -47,9 +47,12 @@ div.note{
 
 #notebar {
     width:100%;
-    height:30px;
     background:#f5b581;
     border:1px solid #BD9E9E;
+}
+#notebar a{
+    text-decoration: underline;
+    color: blue;
 }
 #xbtn {
     height:10px;

@@ -102,15 +102,16 @@ class Corpus:  # TODO use tma_utils TextCleaner
         pdflist = map(lambda x: x.strip(), pdflist)
         self.pdf_list.extend(pdflist)
         toparsetexts = []
-        print '--- beginning pdf to text conversion ---'      
-        for pdf in pdflist:
-            doctitle = self._obtain_clean_title(pdf)
-            txtname = self.textdir + '/%s.txt' % doctitle 
-            cmd = 'pdftotext %s %s' % (pdf, txtname) # TODO: figure out and print which documents did not convert 
-            os.system(cmd)
-            toparsetexts.append(txtname)
-            self.rawtextfiles.append(txtname) 
-        print '--- finished pdf to text conversion ---'             
+        if len(pdflist):
+            print '--- beginning pdf to text conversion ---'
+            for pdf in pdflist:
+                doctitle = self._obtain_clean_title(pdf)
+                txtname = self.textdir + '/%s.txt' % doctitle
+                cmd = 'pdftotext %s %s' % (pdf, txtname) # TODO: figure out and print which documents did not convert
+                os.system(cmd)
+                toparsetexts.append(txtname)
+                self.rawtextfiles.append(txtname)
+            print '--- finished pdf to text conversion ---'
                            
         print '---adding text to corpus---'    
         # add textual data
@@ -146,7 +147,6 @@ class Corpus:  # TODO use tma_utils TextCleaner
                 dbase.add_table('termid_to_prestem(id INTEGER PRIMARY KEY, prestem VARCHAR)')
             
         # add the data to the corpus
-        print toparsetexts
         for tfile in toparsetexts:
             title = tfile.split('/')[-1].split('.')[0].replace('-',' ')
             wordcounts = dict() 
@@ -178,7 +178,6 @@ class Corpus:  # TODO use tma_utils TextCleaner
                                 prestem_dic[wrd] = prestem
                                  
                 if self.usepara:
-                    print wordcounts
                     if sum(wordcounts.values()) > self.minwords:
                         self.write_doc_line(cfile, wordcounts, dbase, prestem_dic)
                         usetitle = title + ' [P%d]' % useparanum
@@ -234,17 +233,18 @@ class Corpus:  # TODO use tma_utils TextCleaner
             self.no_title_ct += 1  
         return doctitle
 
-    def tfidf_clean(self, top_k_terms=5000):
+    def tfidf_clean(self, top_k_terms=5000, min_df=5):
         """
         Use tf-idf to clean the corpus.
         Takes the top tf-idf score of each term and retains the top top_k_terms terms
         Warning: by default tfidf_clean changes the corpus's corpusfile to the cleaned version
         and moves the original version to {{original_name}}-pre_tfidf
+        @param top_k_terms: keep the top_k_terms terms by tf-idf rank
+        @param min_df: minimum document frequency for the terms
         """
         if not self.corpus_used:
             print "WARNING: You must first parse some data before calling tfidf_clean"
             return False
-
         orig_corpusfile = self.corpusfile + '-pre_tfidf'
         shutil.move(self.corpusfile, orig_corpusfile)
 
@@ -271,7 +271,6 @@ class Corpus:  # TODO use tma_utils TextCleaner
         # determine the minimum tf-idf score
         srt_tfidf = sorted(tfidf_list, reverse=True)
         min_score = srt_tfidf[top_k_terms]
-        print 'TF-IDF removed %i of %i terms, keeping %i terms. Min TF-IDF score is: %0.3f' % (len(tfidf_list)-top_k_terms, len(tfidf_list), top_k_terms, min_score)
 
         # rewrite the corpus to file, only allowing terms whose max(tf-idf) score exceeds the minimum
         old_to_new_dict = dict()
@@ -285,7 +284,7 @@ class Corpus:  # TODO use tma_utils TextCleaner
             doc_term_ct = 0
             for tc_pair in term_ct_pairs:
                 tid = int(tc_pair[0])
-                if tfidf_list[tid] < min_score:
+                if tfidf_list[tid] < min_score or df_list[tid] < min_df:
                     continue
                 if not old_to_new_dict.has_key(tid):
                     old_to_new_dict[tid] = self.vocabct
@@ -296,6 +295,8 @@ class Corpus:  # TODO use tma_utils TextCleaner
             writeline = str(doc_term_ct) + " " + writeline
             writefile.write(writeline + '\n')
         writefile.close()
+        remove_ct = len(tfidf_list)-len(old_to_new_dict)
+        print 'Processing removed %i of %i terms, keeping %i terms. Min TF-IDF score is: %0.4f' % (remove_ct, len(tfidf_list), len(old_to_new_dict), min_score)
 
         # update the appropriate databases TODO: perhaps wait to form the databases for efficiecy
         dbase = db(self.corpus_db)

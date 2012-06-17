@@ -1,9 +1,9 @@
 import pdb
 from django.contrib.admin.widgets import FilteredSelectMultiple
 from django.forms.forms import BoundField
-from django.forms.widgets import  Select
+from django.forms.widgets import  Select, HiddenInput
 from django import forms
-
+from src.settings import MAX_NUM_TOPICS
 class AnalysisForm(forms.Form):
     std_algo = forms.CharField(required=False, label = 'model',
        widget=Select(
@@ -12,22 +12,28 @@ class AnalysisForm(forms.Form):
            ('ctm','Correlated Topic Model'),
            ('hdp','Hierarchical Dirichlet Process')
            )), help_text='Select the desired topic-modeling algorithm -- specific details for the slected algorithm can be found under \'Advanced Options\'')
-    std_ntopics = forms.IntegerField(required=False, label='number of topics', initial='10', widget=forms.TextInput(attrs={"id":"numtops"}), help_text='Select the number of topics for parametric topic models (HDP does not require this parameter).')
+    std_ntopics = forms.IntegerField(required=False, label='number of topics', max_value=MAX_NUM_TOPICS,  initial='10', widget=forms.TextInput(attrs={"id":"numtops"}), help_text='Select the number of topics for parametric topic models (HDP does not require this parameter).')
     std_ntopics.auto_id="ntopics"
-    process_minwords = forms.IntegerField(required=False, label='min doc words: ', initial='25', help_text='Minimum number of words that constitute a document (removes documents whose word count falls below this threshold).')
-    process_tfidf = forms.FloatField(required=False, label='valid tf-idf fraction: ', initial='0.7', help_text='Sort the terms in the vocabulary by their <a href="http://en.wikipedia.org/wiki/Tf*idf" target="_blank">TF-IDF </a> scores and keep the top \'tf-idf fraction\' -- this technique removes uninformative terms. Set to the tf-idf fraction > 1.0 to not remove any terms.')
+    process_minwords = forms.IntegerField(required=True, label='min doc words: ', min_value=0,  initial='25', help_text='Minimum number of words that constitute a document (removes documents whose word count falls below this threshold <em>after</em> data cleaning).')
+    process_min_df = forms.IntegerField(required=True, label='min doc freq: ', initial='5', min_value=0, help_text='Minimum number of documents a term must appear within in order to not be removed from the corpus.')
+    process_tfidf = forms.FloatField(required=True, label='valid tf-idf fraction: ', initial='0.7', help_text='Sort the terms in the vocabulary by their maximum <a href="http://en.wikipedia.org/wiki/Tf*idf" target="_blank">TF-IDF </a> scores and keep the top \'tf-idf fraction\' -- this technique removes uninformative terms. Set to the tf-idf fraction > 1.0 to not remove any terms.')
     unichoices = (('stem','stem words'),('remove_case','remove case'), ('remove_stop','remove stop words'))
     process_unioptions = forms.MultipleChoiceField(label='', required=False,  choices=unichoices, widget=forms.CheckboxSelectMultiple(attrs={'checked' : 'checked'}))
     # toy data
+    # Note: toy data must have the appropriate suffix (e.g. .txt)
     toy_data = forms.CharField(required=False, label = 'dataset',
                                widget=Select(
                                    choices=(
-                                       ('tmml','Topic Models Mailing Archive [1887 messages]'),
+                                       ('tmml','Topic Models Email List Archive [1887 messages]'),
                                        ('pgm','Coursera PGM Video Transcripts [92 transcripts]'),
+                                       ('ap','Associated Press Articles [1085 articles]'),
                                        ('nsf','NSF Grants [1166 abstracts]'),
                                        ('nyt','New York Times [845 articles]')
                                        )),
-                               help_text='Test datasets to evaluate various topic models and parameters. See <a href='' target="_blank">TODO</a> for more information on the datasets.')
+                               help_text='Test datasets to evaluate various topic models and parameters. See <a href="https://github.com/cjrd/TMA/wiki/Example-datasets" target="_blank">documentation</a> for more information on the datasets.')
+    toy_selected =forms.CharField(required=True, label = '',
+       widget=HiddenInput(),
+       initial='')
     # upload data
     url_website = forms.URLField(label='website', required=False, help_text='A maximum of 50 MB of pdfs will be downloaded from the given URL, e.g. provide a URL with  a collection of research papers such as <a href="http://mlg.eng.cam.ac.uk/pub/" target="_blank">http://mlg.eng.cam.ac.uk/pub/</a>.')
     url_dockind = forms.CharField(required=False, label = 'document representation',

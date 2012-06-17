@@ -20,6 +20,11 @@ Place color references here
     cursor: pointer;
 }
 
+p{
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
 #header {
     text-align: center;
     margin-left: auto;

@@ -30,15 +30,28 @@ jQuery(document).ready(function() {
         jQuery("#sb_div").append('<div class="help-text" style="text-align:right; width:auto;"> Note: this analysis may take several minutes</div>')
     });
 
-    // show upload data screen initially
+    // show upload data screen initially TODO what if the back button is used?
+    var tabContainers = jQuery('div.tabs > div');
+    tabContainers.hide();
     jQuery("#data_toy").show();
     jQuery("#data_toy_button").addClass('selected');
+    jQuery('#id_toy_selected').val("#data_toy");
+    jQuery('div.tabs ul.tab_nav a').click(
+        function () {
+            if (jQuery(this).hasClass('selected')) {
+                return false;
+            }
+            tabContainers.hide().filter(this.hash).show();
+            jQuery('div.tabs ul.tab_nav a').removeClass('selected');
+            jQuery(this).addClass('selected');
+            jQuery('#id_toy_selected').val(this.hash);
+            return false;
+        });
 
     jQuery(".help-text").hide();
 
 
     var current_alg = jQuery("#id_std_algo").val();
-    //        vertical expand and compression
     var vert_tabs = jQuery('.container');
 
     if (jQuery("#" + current_alg + "_adv_container").hasClass("notops")) {

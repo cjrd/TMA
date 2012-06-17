@@ -2,7 +2,9 @@
     <span class="error">{{ error|escape }}</span>
 {% endfor %}
 <div class="single-field">
-    <label> {{ field.label }} :</label>
+    {% if field.label %}
+        <label> {{ field.label }} :</label>
+    {% endif %}
     {{ field }}
     {% if field.help_text %}
         <span class="help-ptr" onclick="showhelp('{{field.auto_id}}')"> </span>

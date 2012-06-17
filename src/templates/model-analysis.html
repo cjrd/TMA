@@ -104,6 +104,8 @@
 
     <script language="JavaScript" type="text/javascript">
         jQuery(document).ready(function() {
+            jQuery("#likelihood").height("450px"); // strange error that changes the height
+            jQuery("#perplexity_graph").height("560px"); // strange error that changes the height
             var lp_data = [];
             for (var i = 0; i < like_data.length; i++) {
                 lp_data.push([i + 1, like_data[i]]);
@@ -130,7 +132,6 @@
                 ]
             };
             jQuery.plot(jQuery("#likelihood"), [lp_data], options);
-//            jQuery.plot(jQuery("#perplexity_graph"), [], {});
         });
     </script>
 

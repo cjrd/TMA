@@ -1,6 +1,6 @@
 from django.core.context_processors import csrf
 from django.http import HttpResponseRedirect
-from settings import WORKDIR, DATA_DIR, DEFAULT_STOP_WORDS, MAX_WWW_DL_SIZE, MAX_WWW_FS, ALG_LOCS
+from settings import WORKDIR, DATA_DIR, DEFAULT_STOP_WORDS, MAX_WWW_DL_SIZE, MAX_WWW_FS, ALG_LOCS, REMOVE_DWNLD, MAX_NUM_TERMS
 from django.views.decorators.csrf import csrf_exempt, csrf_protect
 from django.utils import simplejson
 
@@ -24,7 +24,7 @@ import cPickle as pickle
 
 @csrf_exempt # TODO pass a csrf like the perplexity form
 def process_form(request):
-    request.upload_handlers.insert(0,FSUploadHandler())
+    request.upload_handlers.insert(0, FSUploadHandler())
     return _process_form(request)
 
 @csrf_protect
@@ -58,11 +58,12 @@ def _process_form(request):
             algotype = form.cleaned_data['std_algo']
             doHDP = algotype == 'hdp'
             doLDA = algotype == 'lda'
-            doCTM = algotype == 'ctm'                           
+            doCTM = algotype == 'ctm'
+            datatype = form.cleaned_data['toy_selected'] # what type of data to process?
             
             # handle pdf collection from a given website TODO: put limitations and security checks, etc
             website = form.cleaned_data['url_website']
-            if len(website) > 0:
+            if datatype=="#data_url" and len(website) > 0:
                 webdir = tempfile.mkdtemp(dir=workdir, suffix='_webdata')
                 data_collector = DataCollector(webdir, MAX_WWW_DL_SIZE)
                 wwwres = data_collector.collect_www_data(website, MAX_WWW_FS)
@@ -72,12 +73,11 @@ def _process_form(request):
                     has_web_data = True
                     is_valid = True
                 # TODO: Add checking for appropriate filetypes and return the amount of data processed            
-            
             # handle uploaded files
             upfile = form.cleaned_data['upload_file']
             if upfile is None:
                 is_valid = is_valid or False   
-            else:
+            elif datatype=="#data_upload":
                 ext = os.path.splitext(upfile.name)[1]
                 upload_data_name = workdir + '/outdata' + ext
                 outfile = open(upload_data_name, 'wb+')
@@ -90,7 +90,7 @@ def _process_form(request):
             # handle arXiv files
             arxiv_authors = form.cleaned_data['arxiv_author']
             arxiv_cats = request.POST.getlist('arxiv_subject')
-            if arxiv_authors:
+            if arxiv_authors and datatype=="#data_arxiv":
                 arxiv_dir = tempfile.mkdtemp(dir=workdir, suffix='_arxivdata')
                 data_collector = DataCollector(arxiv_dir, MAX_WWW_DL_SIZE)
                 data_collector.collect_arxiv_data(arxiv_authors, arxiv_cats)
@@ -99,9 +99,9 @@ def _process_form(request):
             else:
                 is_valid = is_valid or False
 
-            # use sample data if no other data was chosen TODO is this a good idea?
+            # use example data
             sample_data_name = ''
-            if not is_valid and notifs == []:
+            if datatype=="#data_toy":
                 sample_data_name = form.cleaned_data['toy_data']
                 is_valid = True
            #
@@ -122,7 +122,7 @@ def _process_form(request):
                 if not minwords > 0:
                     minwords = 0
 
-                corpus = Corpus(workdir, stopwordfile=sw_file, remove_case = remove_case, dostem = doStem, minwords=minwords) #TODO: fix hardcoding
+                corpus = Corpus(workdir, stopwordfile=sw_file, remove_case = remove_case, dostem = doStem, minwords=minwords)
                 if has_upload_data:
                     corpus.setattr('usepara', form.cleaned_data['upload_dockind'] == 'paras')
                     corpus.add_data(upload_data_name, ext[1:]) # TODO return to user if it is not a txt or dat or zip file
@@ -136,18 +136,26 @@ def _process_form(request):
                 if sample_data_name:
                     corpus.setattr('usepara', False)
                     corpus.add_data(os.path.join(DATA_DIR, sample_data_name),'folder')
-                st = time()
 
                 # remove downloaded pdfs if desired (save some space)
                 if REMOVE_DWNLD:
                     corpus.clean_pdfs()
 
-                # decide whether to do tfidf cleaning
+                # decide whether to do tfidf cleaning and min-doc-freq removal
                 tfidf_cleanf = form.cleaned_data['process_tfidf']
-                if tfidf_cleanf > 0 and tfidf_cleanf < 1.0:
-                    corpus.tfidf_clean(int(corpus.get_vocab_ct()*tfidf_cleanf))
-                    print 'TF-IDF cleaning took %0.2fs' % (time()-st)
-                    
+                if not (tfidf_cleanf > 0 and tfidf_cleanf < 1.0):
+                    tfidf_cleanf = 1.0
+
+                min_df = form.cleaned_data['process_min_df']
+                if min_df > corpus.get_doc_ct():
+                    min_df = corpus.get_doc_ct()
+
+                # do tfidf cleaning if necessary
+                tfidf_keep = min(MAX_NUM_TERMS, int(corpus.get_vocab_ct()*tfidf_cleanf))
+                if tfidf_keep < corpus.get_vocab_ct() or min_df > 0 :
+                    st = time()
+                    corpus.tfidf_clean(tfidf_keep, min_df=min_df)
+                    print 'Data cleaning took %0.2fs' % (time()-st)
 
                 corpusdir = corpus.get_work_dir()
                 corpusfile = corpus.get_corpus_file()
@@ -223,6 +231,9 @@ def _process_form(request):
                 analyzer.create_relations()
                 analyzer.createJSLikeData()
                 return HttpResponseRedirect('/tma/' +  '_'.join(workdir.split('/')[-1].split('_')[0:-1]) + '/' + analyzer.params['alg'] + '/topic-list')
+            else:
+                notifs.append('Unable to process data.')
+                notifs.append('See <a target="_blank" href="http://github.com/cjrd/TMA/wiki/TMA-Interface">the TMA interface documentation</a> for assistance.')
         else:
             form_errors = True
     if not form: # data was not actually valid (TODO perhaps do a try/catch and wind up here...)
