@@ -22,7 +22,6 @@ import os
 import cPickle as pickle
 
 
-
 @csrf_exempt # TODO pass a csrf like the perplexity form
 def process_form(request):
     request.upload_handlers.insert(0,FSUploadHandler())
@@ -119,13 +118,18 @@ def _process_form(request):
                     sw_file=DEFAULT_STOP_WORDS
                 remove_case =  'remove_case' in unioptions
 
-                corpus = Corpus(workdir, stopwordfile=sw_file, remove_case = remove_case, dostem = doStem) #TODO: fix hardcoding
+                minwords = form.cleaned_data['process_minwords']
+                if not minwords > 0:
+                    minwords = 0
+
+                corpus = Corpus(workdir, stopwordfile=sw_file, remove_case = remove_case, dostem = doStem, minwords=minwords) #TODO: fix hardcoding
                 if has_upload_data:
                     corpus.setattr('usepara', form.cleaned_data['upload_dockind'] == 'paras')
                     corpus.add_data(upload_data_name, ext[1:]) # TODO return to user if it is not a txt or dat or zip file
                 if has_web_data:
                     corpus.setattr('usepara', form.cleaned_data['url_dockind'] == 'paras')
                     corpus.add_data(webdir, 'folder')
+
                 if has_arxiv_data:
                     corpus.setattr('usepara', form.cleaned_data['url_dockind'] == 'paras')
                     corpus.add_data(arxiv_dir, 'folder')
@@ -134,11 +138,16 @@ def _process_form(request):
                     corpus.add_data(os.path.join(DATA_DIR, sample_data_name),'folder')
                 st = time()
 
+                # remove downloaded pdfs if desired (save some space)
+                if REMOVE_DWNLD:
+                    corpus.clean_pdfs()
+
                 # decide whether to do tfidf cleaning
                 tfidf_cleanf = form.cleaned_data['process_tfidf']
                 if tfidf_cleanf > 0 and tfidf_cleanf < 1.0:
                     corpus.tfidf_clean(int(corpus.get_vocab_ct()*tfidf_cleanf))
                     print 'TF-IDF cleaning took %0.2fs' % (time()-st)
+                    
 
                 corpusdir = corpus.get_work_dir()
                 corpusfile = corpus.get_corpus_file()
@@ -213,7 +222,7 @@ def _process_form(request):
                 pickle.dump(analyzer,open(os.path.join(analyzer.get_param('outdir'), 'analyzer.obj'),'w'))
                 analyzer.create_relations()
                 analyzer.createJSLikeData()
-                return HttpResponseRedirect('/' +  '_'.join(workdir.split('/')[-1].split('_')[0:-1]) + '/' + analyzer.params['alg'] + '/topic-list')
+                return HttpResponseRedirect('/tma/' +  '_'.join(workdir.split('/')[-1].split('_')[0:-1]) + '/' + analyzer.params['alg'] + '/topic-list')
         else:
             form_errors = True
     if not form: # data was not actually valid (TODO perhaps do a try/catch and wind up here...)

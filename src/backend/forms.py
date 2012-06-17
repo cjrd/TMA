@@ -14,7 +14,8 @@ class AnalysisForm(forms.Form):
            )), help_text='Select the desired topic-modeling algorithm -- specific details for the slected algorithm can be found under \'Advanced Options\'')
     std_ntopics = forms.IntegerField(required=False, label='number of topics', initial='10', widget=forms.TextInput(attrs={"id":"numtops"}), help_text='Select the number of topics for parametric topic models (HDP does not require this parameter).')
     std_ntopics.auto_id="ntopics"
-    process_tfidf = forms.FloatField(required=False, label='valid tf-idf fraction:', initial='0.7', help_text='Sort the terms in the vocabulary by their <a href="http://en.wikipedia.org/wiki/Tf*idf" target="_blank">TF-IDF </a> scores and keep the top \'tf-idf fraction\' -- this technique removes uninformative terms. Set to the tf-idf fraction > 1.0 to not remove any terms.')
+    process_minwords = forms.IntegerField(required=False, label='min doc words: ', initial='25', help_text='Minimum number of words that constitute a document (removes documents whose word count falls below this threshold).')
+    process_tfidf = forms.FloatField(required=False, label='valid tf-idf fraction: ', initial='0.7', help_text='Sort the terms in the vocabulary by their <a href="http://en.wikipedia.org/wiki/Tf*idf" target="_blank">TF-IDF </a> scores and keep the top \'tf-idf fraction\' -- this technique removes uninformative terms. Set to the tf-idf fraction > 1.0 to not remove any terms.')
     unichoices = (('stem','stem words'),('remove_case','remove case'), ('remove_stop','remove stop words'))
     process_unioptions = forms.MultipleChoiceField(label='', required=False,  choices=unichoices, widget=forms.CheckboxSelectMultiple(attrs={'checked' : 'checked'}))
     # toy data

@@ -17,13 +17,24 @@ class Corpus:  # TODO use tma_utils TextCleaner
     
     def __init__(self, workdir, remove_case=True, stopwordfile=None, usepara=False, dostem=True,
             minwords = 25, parafolder='paradocs', corpus_db='corpusdb.sqlite', make_stem_db=-1):
+        """
+        @param workdir: directory to save and manipulate corpus data as desired
+        @param remove_case: remove the case from terms in the corpus
+        @param stopwordfile: file containing the stopwords
+        @param usepara: use paragraphs as documents
+        @param dostem: stem the terms
+        @param minwords: minimum number of words to constitute a document
+        @param parafolder: name of paragraph/document folder
+        @param corpus_db: name of corpus database
+        @param make_stem_db: include a stemming database
+        """
         self.workdir = os.path.join(workdir,'corpus')
         os.mkdir(self.workdir)
         self.textdir = os.path.join(self.workdir, 'textdir')
         os.system('mkdir %s' % self.textdir)
         self.remove_case = remove_case
         self.rawtextfiles = []
-        self.titles = [] # stores the (inferred) title of each document TODO: make better titles and use more efficiently
+        self.titles = [] # stores the (inferred) title of each document
         self.docct = 0
         self.vocabct = 0
         self.wordct = 0
@@ -34,6 +45,7 @@ class Corpus:  # TODO use tma_utils TextCleaner
         self.no_title_ct = 0 # keep track of documents with no title 
         self.corpus_db = os.path.join(self.workdir,corpus_db)
         self.parsed_data = False
+        self.pdf_list = []
 
         # keep a db to reverse stem words
         if make_stem_db == -1:
@@ -69,6 +81,7 @@ class Corpus:  # TODO use tma_utils TextCleaner
     def parse_zip(self, dataname):
         """
         parse zip data
+        @param dataname: location of the zip file
         """
         unzipdir = tempfile.mkdtemp(dir=self.workdir, suffix='_unzipdir')
         # unzip file into temp dir       
@@ -86,7 +99,8 @@ class Corpus:  # TODO use tma_utils TextCleaner
         # obtain list of all pdfs (TODO add heterogenous file types)
         pdflist = os.popen("find %s -name '*.pdf' -type f" % folder) 
         pdflist = pdflist.readlines()
-        pdflist = map(lambda x: x.strip(), pdflist)                  
+        pdflist = map(lambda x: x.strip(), pdflist)
+        self.pdf_list.extend(pdflist)
         toparsetexts = []
         print '--- beginning pdf to text conversion ---'      
         for pdf in pdflist:
@@ -106,7 +120,6 @@ class Corpus:  # TODO use tma_utils TextCleaner
             doctitle = self._obtain_clean_title(txtf)
             txtname = self.textdir + '/%s.txt' % doctitle 
             try:
-                #shutil.move(txtf,txtname)
                 os.system('ln -s %s %s' % (txtf, txtname))
             except IOError:
                 print 'Warning: will not include %s, could not parse text file' % txtf 
@@ -133,13 +146,14 @@ class Corpus:  # TODO use tma_utils TextCleaner
                 dbase.add_table('termid_to_prestem(id INTEGER PRIMARY KEY, prestem VARCHAR)')
             
         # add the data to the corpus
+        print toparsetexts
         for tfile in toparsetexts:
             title = tfile.split('/')[-1].split('.')[0].replace('-',' ')
             wordcounts = dict() 
             prestem_dic = dict() 
             try:
                 infile = open(tfile,'r')
-            except:
+            except IOError:
                 print 'WARNING: could not find %s, will not include' % tfile
                 continue
             useparanum = 1
@@ -156,7 +170,7 @@ class Corpus:  # TODO use tma_utils TextCleaner
                         if self.dostem:
                             wrd = stem(wrd)
                         if wordcounts.has_key(wrd):
-                            wordcounts[wrd] = wordcounts[wrd] + 1
+                            wordcounts[wrd] += 1
                         else:
                             wordcounts[wrd] = 1     
                             # keep track of the unstemmed forms of new words for later reference. TODO this currently keeps the unstemmed form of the  first encounter of a stemmed word: perhaps make more general?
@@ -164,7 +178,8 @@ class Corpus:  # TODO use tma_utils TextCleaner
                                 prestem_dic[wrd] = prestem
                                  
                 if self.usepara:
-                    if sum(wordcounts.values()) > self.minwords: 
+                    print wordcounts
+                    if sum(wordcounts.values()) > self.minwords:
                         self.write_doc_line(cfile, wordcounts, dbase, prestem_dic)
                         usetitle = title + ' [P%d]' % useparanum
                         self.titles.append(usetitle)    
@@ -190,6 +205,9 @@ class Corpus:  # TODO use tma_utils TextCleaner
         self.parsed_data = True
         
     def write_doc_line(self, cfile, wordcounts, dbase, prestem_dic = None):
+        """
+        write a document line in lda-c format
+        """
         cfile.write('%d ' % len(wordcounts))
         for wkey in wordcounts.keys():  
             if not self.vocab.has_key(wkey):
@@ -197,7 +215,6 @@ class Corpus:  # TODO use tma_utils TextCleaner
                 self.vocabct += 1 
                 if self.make_stem_db and prestem_dic:
                     dbase.insert_termid_prestem(self.vocab[wkey], prestem_dic[wkey])
-                     
             dbase.insert_term_doc_pair(self.vocab[wkey], self.docct)
             cfile.write('%d:%d ' % (self.vocab[wkey],wordcounts[wkey]))
         cfile.write('\n')
@@ -205,11 +222,14 @@ class Corpus:  # TODO use tma_utils TextCleaner
         self.docct += 1 
         
     def _obtain_clean_title(self, path):
+        """
+        obtain the slugified title of a document
+        """
         splitname = path.split('/')[-1].split('.')
         # remove unwanted filetitles
         splitname = map(slugify, map(unicode,splitname))  
         doctitle = ''.join(splitname[ : len(splitname) - 1])
-        if len(doctitle) == 0: 
+        if len(doctitle) == 0:
             doctitle = "notitle" + str(self.no_title_ct)
             self.no_title_ct += 1  
         return doctitle
@@ -315,6 +335,9 @@ class Corpus:  # TODO use tma_utils TextCleaner
             self.vocab[oldid_to_term[k]] = v
 
     def write_document(self, loc, text):
+        """
+        write the 'text' of a document to 'loc'
+        """
         ofile = open(loc, 'w')
         ofile.write(text)
         ofile.close()
@@ -335,7 +358,7 @@ class Corpus:  # TODO use tma_utils TextCleaner
         retword = re.sub('[-\\d.,?;:\'")(!`}{\]\[]','',wrd.strip()) # remove punctuation and such
         if self.remove_case:
             retword = retword.lower()
-        if self.notvalidreg.match(retword) or self.stopwords.has_key(retword) or len(retword) < 3: # TODO make minimum word length a param
+        if self.notvalidreg.match(retword) or self.stopwords.has_key(retword.lower()) or len(retword) < 3: # TODO make minimum word length a param
             retword = '' 
         return retword 
         
@@ -368,4 +391,12 @@ class Corpus:  # TODO use tma_utils TextCleaner
 
     def setattr(self, attr, value):
         setattr(self, attr, value)
-        
+
+    def clean_pdfs(self):
+        """
+        remove the pdfs from the given directory
+        if no directory is provided try to remove the pdfs specificed in parse_folder
+        """
+        if self.pdf_list:
+            for pdf in self.pdf_list:
+                os.remove(pdf)

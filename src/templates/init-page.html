@@ -35,7 +35,7 @@
                 {% endfor %}
             </div>
         {% endif %}
-        <form action="." method="post" enctype="multipart/form-data" id="initform">{% csrf_token %}
+        <form action="/tma/" method="post" enctype="multipart/form-data" id="initform">{% csrf_token %}
             <div id="analysis_form">
                 <fieldset>
                     <legend>Analysis</legend>
