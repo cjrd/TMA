@@ -20,6 +20,7 @@ from time import time
 import tempfile
 import os
 import cPickle as pickle
+from src.settings import MAX_NUM_TOPICS
 
 
 @csrf_exempt # TODO pass a csrf like the perplexity form
@@ -253,9 +254,10 @@ def perplexity_form(request, algloc):
             start = form.cleaned_data['start']
             stop = form.cleaned_data['stop']
             step = form.cleaned_data['step']
-            current_step = form.cleaned_data['current_step']
-            current_fold = form.cleaned_data['current_fold']
-            perplex_res = kfold_perplexity(request, pickle.load(open(os.path.join(algloc, 'analyzer.obj'))), param='ntopics',
+            if start <= MAX_NUM_TOPICS and stop <= MAX_NUM_TOPICS:
+                current_step = form.cleaned_data['current_step']
+                current_fold = form.cleaned_data['current_fold']
+                perplex_res = kfold_perplexity(request, pickle.load(open(os.path.join(algloc, 'analyzer.obj'))), param='ntopics',
                                            k=nfolds, start=start, stop=stop, step=step, current_step=current_step, current_fold=current_fold)
     else:
         form = PerplexityForm()

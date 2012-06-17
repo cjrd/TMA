@@ -224,7 +224,16 @@
                 jQuery("#sendwrapper").prepend("<div id='load_bar' style='float:left;'> <img src='{{ STATIC_URL }}images/ajax-loading-bar.gif' alt='loading bar...' style='vertical-align: middle;' /></div>");
                 jQuery("#id_current_step").val(min_param_val)
                 jQuery("#id_current_fold").val(1)
-                process_next(1, min_param_val)
+                if (max_param_val <= {{ max_ntopics }}){
+                    process_next(1, min_param_val)
+                }
+                else{
+                    jQuery("#sendbutton").attr('disabled', false);
+                    jQuery(".error").remove();
+                    jQuery("#load_bar").remove();
+                    alert("The maximum number of topics may not exceed " + {{ max_ntopics }})
+                }
+
                 e.preventDefault();
             });
         });
