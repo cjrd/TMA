@@ -37,14 +37,14 @@
         <form action="/tma/" method="post" enctype="multipart/form-data" id="initform">{% csrf_token %}
             <div id="analysis_form">
                 <fieldset>
-                    <legend>Analysis</legend>
+                    <legend align="right">Analysis</legend>
                     {% include "algorithm-form.html" %}
                 </fieldset>
             </div>
 
             <div id="data_form">
                 <fieldset>
-                    <legend>Data</legend>
+                    <legend align="right">Data</legend>
                     <div class="tabs">
 
                         <ul class="tab_nav">
@@ -62,7 +62,7 @@
 
             <div class="processing">
                 <fieldset>
-                    <legend>Processing</legend>
+                    <legend align="right">Processing</legend>
                     {% include "processing-form.html" %}
                 </fieldset>
             </div>
