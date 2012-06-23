@@ -135,8 +135,17 @@ class relations:
         self.topics = [] # TODO do we actually need these or are they redundant?
         self.docs = []
         self.terms = []
+        self.num_topics = -1
 
 
+    def get_num_topics(self):
+        """
+        return the number of topics present in self.mydb
+        """
+        if self.num_topics < 0:
+            self.num_topics = len(self.mydb.get_topics_info())
+        return self.num_topics
+    
     def get_term(self, term_id):
         """
         obtain the term corresponding to term_id

@@ -224,15 +224,20 @@
                 jQuery("#sendwrapper").prepend("<div id='load_bar' style='float:left;'> <img src='{{ STATIC_URL }}images/ajax-loading-bar.gif' alt='loading bar...' style='vertical-align: middle;' /></div>");
                 jQuery("#id_current_step").val(min_param_val)
                 jQuery("#id_current_fold").val(1)
-                if (max_param_val <= {{ max_ntopics }}){
-                    process_next(1, min_param_val)
+                if (max_param_val <= {{ max_ntopics }}) {
+                    if ({{ do_ppx|lower }}) {
+                        process_next(1, min_param_val)
+                    }
+                    else {
+                        alert("Perplexity analysis is only available in the offline version. See https://github.com/cjrd/TMA/wiki to install locally.")
+                    }
                 }
-                else{
-                    jQuery("#sendbutton").attr('disabled', false);
-                    jQuery(".error").remove();
-                    jQuery("#load_bar").remove();
+                else {
                     alert("The maximum number of topics may not exceed " + {{ max_ntopics }})
                 }
+                jQuery("#sendbutton").attr('disabled', false);
+                jQuery(".error").remove();
+                jQuery("#load_bar").remove();
 
                 e.preventDefault();
             });
@@ -371,7 +376,8 @@
                     over all wikipedia documents as their "wikipedia document windows." To avoid the arbitrary nature of
                     using ten words, we search for cooccrence in
                     the entire abstracts of all wikipedia documents. See TODO (insert database URL) for the wikipedia
-                    database. Larger scores indicate a better topic. Note: a -1 indicates that a term in the topic was not found in the wikipedia abstracts and therefore a valid coherence score could not be determined.
+                    database. Larger scores indicate a better topic. Note: a -1 indicates that a term in the topic was
+                    not found in the wikipedia abstracts and therefore a valid coherence score could not be determined.
 
                 </p>
             </div>

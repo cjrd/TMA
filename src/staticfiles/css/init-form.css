@@ -174,3 +174,11 @@ div.inactive{
   background-repeat:no-repeat;
   background-position: right;
 }
+
+#captchadiv{
+    text-align:center;
+}
+
+img.captcha{
+    vertical-align: middle;
+}

@@ -54,7 +54,9 @@ class DataCollector:
 
             try:
                 open_url = urllib2.urlopen(dn_url, timeout=8)
-                cl = open_url.headers['Content-Length']
+                cl = None
+                if open_url.headers.has_key('Content-Length'):
+                    cl = open_url.headers['Content-Length']
                 if cl:
                     cl = float(cl) / 1000000
                     if cl < fsize_limit and cl + self.tot_dl < self.max_dc:
@@ -131,7 +133,9 @@ class DataCollector:
         helper function to stream the data to file
         """
         with open(save_file, 'wb') as file_writer: # TODO do I want to leave the filename the same as dl fname?
-            d_size = float(open_url.headers['Content-Length'])/1000000
+            d_size = float('inf')
+            if open_url.headers.has_key('Content-Length'):
+                d_size = float(open_url.headers['Content-Length'])/1000000
 
             if self.tot_dl + d_size > self.max_dc:
                 return False

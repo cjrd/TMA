@@ -4,6 +4,32 @@
 <script language="JavaScript" src="{{ STATIC_URL }}js/jquery-latest.js" type="text/JavaScript"></script>
 <script type='text/javascript' src='{{ STATIC_URL }}js/endless.js'></script>
 <script type='text/javascript' src='{{ STATIC_URL }}js/endless_on_scroll.js'></script>
+
+{% if color_bars %}
+    <script type="text/javascript" src="{{ STATIC_URL }}js/d3.js"></script>
+    <script type="text/javascript">
+    var topic_hash = {};
+    var t_ct = 0;
+    function color_bars(){
+          d3.selectAll(".databox").style("background", function() {
+              if (this.onclick.toString() in topic_hash){
+                  var tnum = topic_hash[this.onclick.toString()];
+              }
+              else{
+                  var tnum = t_ct++;
+                  topic_hash[this.onclick.toString()] = tnum;
+              }
+		  return "hsl(" + tnum / {{ num_topics }} * 360 + ",30%,70%)";
+		});
+    }
+
+    jQuery(document).ready(function(){
+        color_bars();
+    })
+    </script>
+{% endif %}
+<script type='text/javascript'>
+</script>
 {% endblock %}
 
 {% block css %}
@@ -18,4 +44,5 @@
     <div id="main">
     {% include "table-graph-entry.html" %}
     </div>
+
 {% endblock %}

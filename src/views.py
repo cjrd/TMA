@@ -20,7 +20,7 @@ from time import time
 import tempfile
 import os
 import cPickle as pickle
-from src.settings import MAX_NUM_TOPICS
+from src.settings import MAX_NUM_TOPICS, ALLOW_PERPLEX
 
 
 @csrf_exempt # TODO pass a csrf like the perplexity form
@@ -326,7 +326,10 @@ def res_disp(request, folder, alg, res, param = ''):
         output = HttpResponse(simplejson.dumps(bing_coh_dict), mimetype='application/javascript')
 
     elif res == "perplexity":
-        output = perplexity_form(request, algloc)
+        if ALLOW_PERPLEX:
+            output = perplexity_form(request, algloc)
+        else:
+            output = None
         #perplex_res = kfold_perplexity(request, pickle.load(open(os.path.join(algloc, 'analyzer.obj'))))
         #output = HttpResponse(simplejson.dumps(perplex_res), mimetype='application/javascript')
 

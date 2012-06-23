@@ -1,6 +1,6 @@
 
-titles =  ["Topic Models Email List Archive", "Coursera PGM Video Transcripts", "NSF Grants", "New York Times"]
-page = "Installation" 
+titles =  ["Cablegate", "Muse", "NIH Map", "TMVE", "Topical Guide", "Twahpic"]
+page = "related-projects" 
 title_esc = []
 
 for ttl in titles:    

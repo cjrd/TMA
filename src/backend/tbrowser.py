@@ -21,7 +21,7 @@ import random
 import os
 from time import time
 import cPickle as pickle
-from src.settings import MAX_NUM_TOPICS
+from src.settings import MAX_NUM_TOPICS, ALLOW_PERPLEX
 
 NUM_TERMS = 8 # TODO move this to settings
 TOP_TOPIC_OBJ = 'top_topic_terms.obj' # TODO move this to settings
@@ -217,7 +217,7 @@ def get_model_page(request, alg_db, corpus_dbloc, dataloc, alg='', num_terms=NUM
             top_dicts[i]['topic_likelihood'] = log_like[topics[i].id]
             top_dicts[i]['topic_likelihood_alpha'] = round(srt_log_like.index(log_like[topics[i].id])/float(ntopics-1),3)
     rgb = {"r":255,"g":171,"b":115}
-    ret_val = render_to_response("model-analysis.html", {'form': form,'max_ntopics': MAX_NUM_TOPICS, 'rgb':rgb, 'like_data':ldata, 'topics':top_dicts, "query_bing":search_title_scores=={}}, context_instance=RequestContext(request))
+    ret_val = render_to_response("model-analysis.html", {'form': form,'max_ntopics': MAX_NUM_TOPICS, 'rgb':rgb, 'like_data':ldata, 'topics':top_dicts, "query_bing":search_title_scores=={}, 'do_ppx':ALLOW_PERPLEX}, context_instance=RequestContext(request))
     return ret_val
 
 
@@ -459,6 +459,7 @@ def table_graph_rel(request, type, alg_db, alg='', template='table-graph.html', 
         end_val = RPP
 
     myrelations = relations(alg_db)
+    num_topics = myrelations.get_num_topics()
 
     if type == 'doc-graph':
         main_objs = myrelations.get_docs(start_val=start_val, end_val=end_val)
@@ -466,20 +467,23 @@ def table_graph_rel(request, type, alg_db, alg='', template='table-graph.html', 
         get_top_related_fnct = myrelations.get_top_related_topics
         group_data_type = "documents"
         data_type = "topics"
+        color_bars = True
     elif type == 'term-graph':
         main_objs = myrelations.get_terms(start_val=start_val, end_val=end_val)
         rel_pct_fct = myrelations.get_top_in_term_rel_pct
         get_top_related_fnct = myrelations.get_top_related_topics
         group_data_type = "terms"
         data_type = "topics"
+        color_bars = True
     elif type == 'topic-graph':
         main_objs = myrelations.get_topics(start_val=start_val, end_val=end_val)
         rel_pct_fct = myrelations.get_term_in_top_rel_pct
         get_top_related_fnct = myrelations.get_topic_terms
         group_data_type = "topics"
         data_type = "terms"
+        color_bars = False
 
-    context = {'input':table_object_gen(main_objs, get_top_related_fnct, rel_pct_fct), 'alg':alg, 'group_data_type': group_data_type, 'data_type':data_type, 'RPP':RPP}
+    context = {'input':table_object_gen(main_objs, get_top_related_fnct, rel_pct_fct), "num_topics":num_topics, "color_bars":color_bars, 'alg':alg, 'group_data_type': group_data_type, 'data_type':data_type, 'RPP':RPP}
     if extra_context:
         context.update(extra_context)
 

@@ -1,13 +1,7 @@
 import sqlite3  
 import pdb
-# doc_doc: lower is better      -
-# doc_topic: higher is better   -
-# topic_term: higher is better  -
-# topic_topic: lower is better  -
-# term_term: lower is better    -
 
-# TODO: this can e different for various algorithms... How to handle?
-# Perhaps consider having each Analyzer define its topic/document/term simularity, etc
+# Higher scores should ALWAYS indicate a stronger/better relationship
 
 class db:
     def __init__(self, filename):

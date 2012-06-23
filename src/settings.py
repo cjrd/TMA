@@ -9,6 +9,7 @@ MAX_WWW_FS = 5 # max filesize in MB
 REMOVE_DWNLD = True # delete the downloaded content after processing
 MAX_NUM_TERMS = 5000
 MAX_NUM_TOPICS = 200
+ALLOW_PERPLEX = True # enable perplexity analysis
 
 # Django settings
 DEBUG = True
