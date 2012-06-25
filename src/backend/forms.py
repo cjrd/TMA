@@ -24,9 +24,9 @@ class AnalysisForm(forms.Form):
     toy_data = forms.CharField(required=False, label = 'dataset',
                                widget=Select(
                                    choices=(
+                                       ('ap','Associated Press Articles [1085 articles]'),
                                        ('tmml','Topic Models Email List Archive [1887 messages]'),
                                        ('pgm','Coursera PGM Video Transcripts [92 transcripts]'),
-                                       ('ap','Associated Press Articles [1085 articles]'),
                                        ('nsf','NSF Grants [1166 abstracts]'),
                                        ('nyt','New York Times [845 articles]')
                                        )),
@@ -35,23 +35,23 @@ class AnalysisForm(forms.Form):
        widget=HiddenInput(),
        initial='')
     # upload data
-    url_website = forms.URLField(label='website', required=False, help_text='A maximum of 50 MB of pdfs will be downloaded from the given URL, e.g. provide a URL with  a collection of research papers such as <a href="http://mlg.eng.cam.ac.uk/pub/" target="_blank">http://mlg.eng.cam.ac.uk/pub/</a>.')
+    url_website = forms.URLField(label='website', required=False, help_text='A maximum of 50 MB of pdfs will be downloaded from the given URL, e.g. provide a URL with  a collection of research papers such as <a href="http://mlg.eng.cam.ac.uk/pub/" target="_blank">http://mlg.eng.cam.ac.uk/pub/</a>. See the <a href="https://github.com/cjrd/TMA/wiki/TMA-Interface">Interface Documentation </a> for more information.')
     url_dockind = forms.CharField(required=False, label = 'document representation',
                                widget=Select(
                                    choices=(
                                        ('files','Individual Files'),
                                        ('paras','Paragraphs (Lines)')
-                                       )), help_text='Specify whether to treat each individual file as a document or each paragraph/line as a document.')
-    upload_file  = forms.FileField(required=False, widget=forms.FileInput(attrs={'size':'13'}), label='upload file', help_text='Upload a text file or zip archive. The zip archive can contain text and/or pdf files.')
+                                       )), help_text='Specify whether to treat each individual file as a document or each paragraph/line as a document. See the <a href="https://github.com/cjrd/TMA/wiki/TMA-Interface">Interface Documentation </a>')
+    upload_file  = forms.FileField(required=False, widget=forms.FileInput(attrs={'size':'13'}), label='upload file', help_text='Upload a text file or zip archive. The zip archive can contain text and/or pdf files. See the <a href="https://github.com/cjrd/TMA/wiki/TMA-Interface">Interface Documentation </a>for more information.')
     upload_dockind = forms.CharField(required=False, label = 'document representation',
                                widget=Select(
                                    choices=(
                                        ('files','Individual Files'),
                                        ('paras','Paragraphs (Lines)')
-                                       )), help_text='Specify whether to treat each individual file as a document or each paragraph/line as a document.')
+                                       )), help_text='Specify whether to treat each individual file as a document or each paragraph/line as a document. See the <a href="https://github.com/cjrd/TMA/wiki/TMA-Interface">Interface Documentation </a>for more information.')
     arxiv_author = forms.CharField(required=False, label='author',help_text='Search <a href="http://www.arxiv.org">arXiv.org</a> for publications by the specified authors.\
         Separate multiple authors or various spellings using \'OR\', e.g. \'Michael I. Jordan OR Michael Jordan OR David Blei OR David M. Blei\', to search for the publications of the two authors.\
-        Restrict the author search to specific fields using the \'subjects\' selector below (hold ctrl to select multiple subjects).')
+        Restrict the author search to specific fields using the \'subjects\' selector below (hold ctrl to select multiple subjects). See the <a href="https://github.com/cjrd/TMA/wiki/TMA-Interface">Interface Documentation </a> for more information.')
     arxiv_subject= forms.CharField(required=False, label = 'subjects (default=all)',
        widget=Select(attrs={"multiple":"multiple"},
            choices=(
