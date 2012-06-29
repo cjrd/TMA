@@ -3,7 +3,6 @@ from django.core.files.uploadhandler import FileUploadHandler, StopUpload
 from django.views.decorators.csrf import csrf_protect
 from src import settings
 
-
 class FSUploadHandler(FileUploadHandler):
     """
     This uploadhandler limits the size of uploaded files as determined by settings.MAX_UPLOAD_SIZE

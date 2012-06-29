@@ -6,7 +6,7 @@ import pdb
 import os    
 from time import time
 from src.backend.math_utils import hellinger_distance
-from src.backend.utils import file_generator, generic_generator
+from src.backend.tma_utils import file_generator, generic_generator
 import numpy as np
 import cPickle as pickle
 

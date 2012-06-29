@@ -1,17 +1,17 @@
 from django.core.context_processors import csrf
 from django.http import HttpResponseRedirect
-from settings import WORKDIR, DATA_DIR, DEFAULT_STOP_WORDS, MAX_WWW_DL_SIZE, MAX_WWW_FS, ALG_LOCS, REMOVE_DWNLD, MAX_NUM_TERMS
+from settings import WORKDIR, DATA_DIR, DEFAULT_STOP_WORDS, MAX_WWW_DL_SIZE, MAX_WWW_FS, ALG_LOCS, REMOVE_DWNLD, MAX_NUM_TERMS, TM_RUNTIME_LIMIT
 from django.views.decorators.csrf import csrf_exempt, csrf_protect
 from django.utils import simplejson
 
 from src.backend.uploadhandler import FSUploadHandler
 from src.backend.corpus import Corpus
-from src.backend.LDAAnalyzer import LDAAnalyzer
-from src.backend.HDPAnalyzer import HDPAnalyzer 
-from src.backend.CTMAnalyzer import CTMAnalyzer
+from src.backend.ldaanalyzer import LDAAnalyzer
+from src.backend.hdpanalyzer import HDPAnalyzer
+from src.backend.ctmanalyzer import CTMAnalyzer
 from src.backend.tbrowser import *
 from src.backend.forms import AnalysisForm, PerplexityForm
-from src.backend.DataCollector import DataCollector
+from src.backend.datacollector import DataCollector
 from django.core.files.uploadhandler import StopUpload
 from src import settings
 from src.backend.relations import Term
@@ -23,14 +23,13 @@ import cPickle as pickle
 from src.settings import MAX_NUM_TOPICS, ALLOW_PERPLEX
 
 
-@csrf_exempt # TODO pass a csrf like the perplexity form
+@csrf_exempt
 def process_form(request):
     request.upload_handlers.insert(0, FSUploadHandler())
     return _process_form(request)
 
 @csrf_protect
 def _process_form(request):
-    # file parameters TODO: set up relative path directories for distribution and on server
     """
     Process TMA submission form and return errors/problems to user
     """
@@ -110,7 +109,7 @@ def _process_form(request):
            #
             if is_valid:
             # make sure the terms from the previous analyzer are not in main memory
-                Term.all_terms = {}
+#                Term.all_terms = {}
                 # parse processing options
                 unioptions = form.cleaned_data['process_unioptions']
                 doStem = 'stem' in unioptions
@@ -168,7 +167,7 @@ def _process_form(request):
 
                 # TODO: make it possible to run multiple algos in one run & compare them :) -- perhaps using an uploaded settings file (too much computation for online version?)
                 # set the algortihm params
-                gblparams =  {'corpusfile':corpusfile,'vocabfile':vocabfile, 'titlesfile':titlesfile, 'outdir':tmoutdir, 'wordct':corpus.get_word_ct()}
+                gblparams =  {'corpusfile':corpusfile,'vocabfile':vocabfile, 'titlesfile':titlesfile, 'outdir':tmoutdir, 'wordct':corpus.get_word_ct(), 'timelimit':TM_RUNTIME_LIMIT}
                 if doLDA:
                     alphaval = form.cleaned_data['lda_alpha']
                     if not alphaval:

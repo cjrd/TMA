@@ -1,5 +1,5 @@
 import pdb
-from TMAnalyzer import TMAnalyzer
+from tmanalyzer import TMAnalyzer
 import os        
 import math     
 from time import time
@@ -53,7 +53,8 @@ class HDPAnalyzer(TMAnalyzer):
             'hdpdir':'hdp',
             'ndocs':-1,
             'wordct':-1,
-            'saved_model':'mode.bin'
+            'saved_model':'mode.bin',
+            'timelimit':-1
             }
 
         for prm in params.keys():
@@ -69,12 +70,12 @@ class HDPAnalyzer(TMAnalyzer):
         Execute the HDP with the specified parameters
         """
         if self.params['algorithm'] == 'train':
-            cmd = '%(hdpdir)s/hdp --data %(corpusfile)s --algorithm %(algorithm)s --directory %(outdir)s\
+            cmd = 'ulimit -t %(timelimit)d; %(hdpdir)s/hdp --data %(corpusfile)s --algorithm %(algorithm)s --directory %(outdir)s\
                --max_iter %(max_iter)d --save_lag %(save_lag)d --init_topics %(init_topics)i --gamma_a %(gamma_a)f\
                --gamma_b %(gamma_b)f --alpha_a %(alpha_a)f --alpha_b %(alpha_b)f --sample_hyper %(sample_hyper)s\
                --eta %(eta)f --split_merge %(split_merge)s --restrict_scan %(restrict_scan)s' % self.params
         elif self.params['algorithm'] == 'testlike':
-           cmd = '%(hdpdir)s/hdp --algorithm %(algorithm)s --data %(corpusfile)s\
+           cmd = 'ulimit -t %(timelimit)d; %(hdpdir)s/hdp --algorithm %(algorithm)s --data %(corpusfile)s\
             --saved_model %(saved_model)s  --directory %(outdir)s' % self.params
         print cmd
         stime = time()

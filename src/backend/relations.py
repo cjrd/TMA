@@ -98,14 +98,14 @@ class Term:
     """
     Class to represent the  terms by id and title and keep track of obtained terms to avoid excessive DB queries
     """
-    all_terms = {} # keep track of the acquired terms to limit db queries
+#    all_terms = {} # keep track of the acquired terms to limit db queries
     max_occ = -1
 
     def __init__(self, term_id, title, count):
         self.id = term_id
         self.title = str(title)
         self.count = count
-        Term.all_terms[term_id] = self
+#        Term.all_terms[term_id] = self
 
 
     def __hash__(self):
@@ -150,13 +150,13 @@ class relations:
         """
         obtain the term corresponding to term_id
         """
-        if Term.all_terms.has_key(term_id):
-            return Term.all_terms[term_id]
-        else: 
-            term_qry = self.mydb.get_term(term_id)
-            if  term_qry == []:
-                return None
-            return Term(term_id, term_qry[0][1], term_qry[0][2])
+#        if Term.all_terms.has_key(term_id):
+#            return Term.all_terms[term_id]
+#        else:
+        term_qry = self.mydb.get_term(term_id)
+        if  term_qry == []:
+            return None
+        return Term(term_id, term_qry[0][1], term_qry[0][2])
 
 
     def get_terms(self, cutoff = -1, start_val = -1, end_val = -1):
@@ -183,8 +183,8 @@ class relations:
 
             term = Term(term_id, term_title, term_count)
             # add to the global terms list as well
-            if not Term.all_terms.has_key(term_id):
-                Term.all_terms[term_id] = term
+            # if not Term.all_terms.has_key(term_id):
+            #    Term.all_terms[term_id] = term
             self.terms.append(term)
 
         return self.terms

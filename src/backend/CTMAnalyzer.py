@@ -1,6 +1,6 @@
 from itertools import combinations
 from math import exp
-from TMAnalyzer import TMAnalyzer
+from tmanalyzer import TMAnalyzer
 from src.backend.math_utils import logistic_normal
 from time import time
 import os
@@ -18,7 +18,7 @@ class CTMAnalyzer(TMAnalyzer):
             'corpusfile':'corpus.dat', 'vocabfile':'vocab.txt', 'init':'seed',
             'ctmdir':'./','var_max_iter':20, 'var_convergence':1e-6, 'em_max_iter':100, 'em_convergence':1e-4,  
             'outdir':'ctmout', 'settingsfile':'settings.txt', 'cg_max_iter':-1, 'cg_convergence':1e-6, 'lag':10,
-            'covariance_estimate':'mle', 'nterms':-1, 'ndocs': -1, 'wordct':-1}
+            'covariance_estimate':'mle', 'nterms':-1, 'ndocs': -1, 'wordct':-1, 'timelimit':-1}
 
         for prm in params.keys():
             if ctmparams.has_key(prm):
@@ -47,13 +47,13 @@ class CTMAnalyzer(TMAnalyzer):
          
          # do the analysis
          if self.params['type'] == 'est':
-            cmd = '%(ctmdir)s/ctm %(type)s %(corpusfile)s %(ntopics)i %(init)s %(outdir)s %(outdir)s/%(settingsfile)s' % self.params
+            cmd = 'ulimit -t %(timelimit)d; %(ctmdir)s/ctm %(type)s %(corpusfile)s %(ntopics)i %(init)s %(outdir)s %(outdir)s/%(settingsfile)s' % self.params
          else:
             infname = 'inf'
             if self.params.has_key("infname"):
                 infname = self.params["infname"]
             self.params['infname'] = os.path.splitext(self.params['outdir'])[0] + '/' + infname
-            cmd = '%(ctmdir)s/ctm inf %(corpusfile)s %(outdir)s/final %(infname)s %(outdir)s/%(settingsfile)s ' % self.params
+            cmd = 'ulimit -t %(timelimit)d; %(ctmdir)s/ctm inf %(corpusfile)s %(outdir)s/final %(infname)s %(outdir)s/%(settingsfile)s ' % self.params
 
          print cmd
          stime = time()

@@ -10,6 +10,7 @@ REMOVE_DWNLD = True # delete the downloaded content after processing
 MAX_NUM_TERMS = 5000
 MAX_NUM_TOPICS = 200
 ALLOW_PERPLEX = True # enable perplexity analysis
+TM_RUNTIME_LIMIT = 10000000 # maximum runtime in seconds (default = 115 days)
 
 # Django settings
 DEBUG = True

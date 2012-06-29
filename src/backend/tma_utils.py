@@ -11,9 +11,24 @@ def slugify(value):
     value = unicodedata.normalize('NFKD', value).encode('ascii', 'ignore')
     value = unicode(re.sub('[^\w\s-]', '', value).strip().lower())
     return re.sub('[-\s]+', '-', value)    
-    
+
+def generic_generator(*args):
+    """
+    A helpful abstraction to pass results to sqlite3.executemany
+    """
+    for zips in zip(*args):
+        yield zips
+
+def file_generator(fhandle):
+    """
+    A generator for an open file handle that strips lines
+    """
+    for line in fhandle:
+        yield line.strip()
+        
 def remove_non_ascii(txt):
-    return "".join(i for i in txt if ord(i)<128)  
+    return "".join(i for i in txt if ord(i)<128)
+
     
 def ids_to_key(id1, id2):
     if type(id1) != int:

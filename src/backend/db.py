@@ -4,6 +4,9 @@ import pdb
 # Higher scores should ALWAYS indicate a stronger/better relationship
 
 class db:
+    """
+    This class interfaces to a sqlite database and has convienince methods for extracting data
+    """
     def __init__(self, filename):
         self.con = sqlite3.connect(filename)
         self.cur = self.con.cursor() 

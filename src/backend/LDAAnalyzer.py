@@ -1,5 +1,5 @@
 from math import exp
-from TMAnalyzer import TMAnalyzer
+from tmanalyzer import TMAnalyzer
 import os  
 from time import time
 import pdb
@@ -25,7 +25,7 @@ class LDAAnalyzer(TMAnalyzer):
         ldaparams = {'type':'est', 'alphaval':1.0, 'ntopics':10, 'titlesfile':'titles.txt', 
             'corpusfile':'corpus.dat', 'vocabfile':'vocab.txt', 'init':'random',
             'ldadir':'./','var_max_iter':20, 'var_convergence':1e-6, 'em_max_iter':100, 'em_convergence':1e-4,
-            'alpha':'estimate', 'outdir':'ldaout', 'settingsfile':'settings.txt', 'infname':'', 'wordct':-1, 'alpha_tech':'estimate'}
+            'alpha':'estimate', 'outdir':'ldaout', 'settingsfile':'settings.txt', 'infname':'', 'wordct':-1, 'alpha_tech':'estimate', 'timelimit':-1}
 
         for prm in params.keys():
             if ldaparams.has_key(prm):
@@ -49,13 +49,13 @@ class LDAAnalyzer(TMAnalyzer):
             setfile.close()
 
         if self.params['type'] == 'est':
-            cmd = '%(ldadir)s/lda est %(alphaval)f %(ntopics)d %(outdir)s/%(settingsfile)s %(corpusfile)s %(init)s %(outdir)s' % self.params
+            cmd = 'ulimit -t %(timelimit)d; %(ldadir)s/lda est %(alphaval)f %(ntopics)d %(outdir)s/%(settingsfile)s %(corpusfile)s %(init)s %(outdir)s' % self.params
         else:
             infname = 'inf'
             if self.params.has_key("infname"):
                 infname = self.params["infname"]
             self.params['infname'] = os.path.splitext(self.params['outdir'])[0] + '/' + infname
-            cmd = '%(ldadir)s/lda inf %(outdir)s/%(settingsfile)s %(outdir)s/final %(corpusfile)s %(infname)s' % self.params
+            cmd = 'ulimit -t %(timelimit)d; %(ldadir)s/lda inf %(outdir)s/%(settingsfile)s %(outdir)s/final %(corpusfile)s %(infname)s' % self.params
 
         print '\n' + cmd + '\n'
         stime = time()

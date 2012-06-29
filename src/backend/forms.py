@@ -5,6 +5,7 @@ from django.forms.widgets import  Select, HiddenInput
 from django import forms
 from src.settings import MAX_NUM_TOPICS
 class AnalysisForm(forms.Form):
+    # STANDARD FIELDS
     std_algo = forms.CharField(required=False, label = 'model',
        widget=Select(
            choices=(
@@ -14,12 +15,15 @@ class AnalysisForm(forms.Form):
            )), help_text='Select the desired topic-modeling algorithm -- specific details for the slected algorithm can be found under \'Advanced Options\'')
     std_ntopics = forms.IntegerField(required=False, label='number of topics', max_value=MAX_NUM_TOPICS,  initial='10', widget=forms.TextInput(attrs={"id":"numtops"}), help_text='Select the number of topics for parametric topic models (HDP does not require this parameter).')
     std_ntopics.auto_id="ntopics"
+
+    # PROCESSING FIELDS
     process_minwords = forms.IntegerField(required=True, label='min doc words: ', min_value=0,  initial='25', help_text='Minimum number of words that constitute a document (removes documents whose word count falls below this threshold <em>after</em> data cleaning).')
     process_min_df = forms.IntegerField(required=True, label='min doc freq: ', initial='5', min_value=0, help_text='Minimum number of documents a term must appear within in order to not be removed from the corpus.')
     process_tfidf = forms.FloatField(required=True, label='valid tf-idf fraction: ', initial='0.7', help_text='Sort the terms in the vocabulary by their maximum <a href="http://en.wikipedia.org/wiki/Tf*idf" target="_blank">TF-IDF </a> scores and keep the top \'tf-idf fraction\' -- this technique removes uninformative terms. Set to the tf-idf fraction > 1.0 to not remove any terms.')
     unichoices = (('stem','stem words'),('remove_case','remove case'), ('remove_stop','remove stop words'))
     process_unioptions = forms.MultipleChoiceField(label='', required=False,  choices=unichoices, widget=forms.CheckboxSelectMultiple(attrs={'checked' : 'checked'}))
-    # toy data
+
+    # TOY DATA
     # Note: toy data must have the appropriate suffix (e.g. .txt)
     toy_data = forms.CharField(required=False, label = 'dataset',
                                widget=Select(
@@ -34,7 +38,8 @@ class AnalysisForm(forms.Form):
     toy_selected =forms.CharField(required=True, label = '',
        widget=HiddenInput(),
        initial='')
-    # upload data
+
+    # UPLOAD DATA
     url_website = forms.URLField(label='website', required=False, help_text='A maximum of 50 MB of pdfs will be downloaded from the given URL, e.g. provide a URL with  a collection of research papers such as <a href="http://mlg.eng.cam.ac.uk/pub/" target="_blank">http://mlg.eng.cam.ac.uk/pub/</a>. See the <a href="https://github.com/cjrd/TMA/wiki/TMA-Interface">Interface Documentation </a> for more information.')
     url_dockind = forms.CharField(required=False, label = 'document representation',
                                widget=Select(
@@ -49,6 +54,7 @@ class AnalysisForm(forms.Form):
                                        ('files','Individual Files'),
                                        ('paras','Paragraphs (Lines)')
                                        )), help_text='Specify whether to treat each individual file as a document or each paragraph/line as a document. See the <a href="https://github.com/cjrd/TMA/wiki/TMA-Interface">Interface Documentation </a>for more information.')
+    # ARXIV DATA
     arxiv_author = forms.CharField(required=False, label='author',help_text='Search <a href="http://www.arxiv.org">arXiv.org</a> for publications by the specified authors.\
         Separate multiple authors or various spellings using \'OR\', e.g. \'Michael I. Jordan OR Michael Jordan OR David Blei OR David M. Blei\', to search for the publications of the two authors.\
         Restrict the author search to specific fields using the \'subjects\' selector below (hold ctrl to select multiple subjects). See the <a href="https://github.com/cjrd/TMA/wiki/TMA-Interface">Interface Documentation </a> for more information.')
@@ -217,8 +223,7 @@ class AnalysisForm(forms.Form):
      maximum number of iterations).  Note that "score" is the lower
      bound on the likelihood for the whole corpus.""")
 
-
-    # HDP params
+    # HDP PARAMS
     help_hdp_url = '<a href="http://www.cs.berkeley.edu/~jordan/papers/hdp.pdf" target="_blank"> Hierarchical Dirichlet Process (2005)</a>'
     help_split_merge_url = '<a href="http://arxiv.org/pdf/1201.1657.pdf" target="_blank"> A Split-Merge MCMC Algorithm for the Hierarchical Dirichlet Process (2012)</a>'
     hdp_max_iters = forms.IntegerField(required=False, label='max iterations', initial='500', help_text="The maximum number of Gibbs iterations")
@@ -275,7 +280,7 @@ class AnalysisForm(forms.Form):
      maximum number of iterations).  Note that "score" is the lower
      bound on the likelihood for the whole corpus.""")
 
-
+    # RETRIEVERS
     def std_group(self):
         return self._get_fields('std_')
     def lda_group(self):
@@ -300,6 +305,7 @@ class AnalysisForm(forms.Form):
         for field in filtered_vals:
             yield BoundField(self, field[1], field[0])
 
+            # TODO
 class PerplexityForm(forms.Form):
     param = forms.CharField(required=False, label = 'parameter',
        widget=Select(

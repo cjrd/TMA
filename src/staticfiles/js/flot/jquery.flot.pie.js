@@ -69,7 +69,7 @@ More detail and specific examples can be found in the included HTML file.
 		var centerTop = null;
 		var total = 0;
 		var redraw = true;
-		var redrawAttempts = 10;
+		var redrawAttempts = 30;
 		var shrink = 0.95;
 		var legendWidth = 0;
 		var processed = false;
