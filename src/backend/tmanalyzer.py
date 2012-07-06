@@ -1,7 +1,6 @@
 from itertools import imap, combinations
 from math import exp
 from src.backend.db import db
-from src.backend.generate_db import generate_db
 import pdb
 import os    
 from time import time

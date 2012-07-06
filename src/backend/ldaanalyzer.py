@@ -127,7 +127,7 @@ class LDAAnalyzer(TMAnalyzer):
         self.write_topic_terms(beta)
 
         # topic_topic
-        self.write_topic_topic(np.exp(beta)) 
+        self.write_topic_topic(np.exp(beta))
 
         # term_term
         self.write_term_term(np.exp(beta))
