@@ -27,7 +27,7 @@ class DataCollector:
         @param fsize_limit: individual file size limit in MB
         @return: -12 if collection rejected by robots.txt
         """
-
+        
         # check robots.txt
         rp = robotparser.RobotFileParser()
         up = urlparse.urlparse(url)
@@ -68,7 +68,7 @@ class DataCollector:
                 else:
                     continue
 
-            except urllib2.HTTPError:
+            except:
                 print 'Problem accessing %s' % dn_url
                 continue
 

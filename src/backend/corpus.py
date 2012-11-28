@@ -270,6 +270,9 @@ class Corpus:  # TODO use tma_utils TextCleaner
 
         # determine the minimum tf-idf score
         srt_tfidf = sorted(tfidf_list, reverse=True)
+        if top_k_terms >= len(srt_tfidf):
+            top_k_terms = len(srt_tfidf) - 1
+            print "warning tf_idf number of terms exceed length of tfidf scores:", len(srt_tfidf)
         min_score = srt_tfidf[top_k_terms]
 
         # rewrite the corpus to file, only allowing terms whose max(tf-idf) score exceeds the minimum
