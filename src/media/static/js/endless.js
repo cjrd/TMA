@@ -1,5 +1,5 @@
 (function($) {
-    $(document).ready(function(){
+    $(document).ready(function() {
         $("a.endless_more").live("click", function() {
             var container = $(this).closest(".endless_container");
             var loading = container.find(".endless_loading");
@@ -9,7 +9,14 @@
             $.get($(this).attr("href"), data, function(data) {
                 container.before(data);
                 container.remove();
+                try {
+                    color_bars();
+                }
+                catch(err) {
+                    // color_bars was not defined
+                }
             });
+
             return false;
         });
         $("a.endless_page_link").live("click", function() {
@@ -18,7 +25,8 @@
                 var data = "querystring_key=" + $(this).attr("rel").split(" ")[0];
                 page_template.load($(this).attr("href"), data);
                 return false;
-            };
-        }); 
+            }
+
+        });
     });
 })(jQuery);

@@ -5,8 +5,8 @@ jQuery(document).ready(function() {
     jQuery('div.tabs ul.tab_nav a').click(
         function () {
             if (jQuery(this).hasClass('selected')) {
-               // tabContainers.hide();
-               // jQuery('div.tabs ul.tab_nav a').removeClass('selected');
+                tabContainers.hide();
+                jQuery('div.tabs ul.tab_nav a').removeClass('selected');
                 return false;
             }
             tabContainers.hide().filter(this.hash).show();
