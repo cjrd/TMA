@@ -1,7 +1,4 @@
 The Topic Model Analyzer (TMA) is a simple tool for exploring and analyzing your real-world data with modern topic models. 
-Using a modern, javascript-enabled web-browser (preferably not IE, yet...), navigate to http://geordi.cs.uiowa.edu/tma and begin using TMA on any reasonably sized dataset.
-NOTE: To prevent security vulnerabilities, the online TMA has vastly reduced functionality.
-NOTE: As of 11 April 2013, the online TMA is broken and I no longer have access to the server. I will attempt to find a new vps and rehost TMA soon!
 
 TMA is distributed under GPL 3.0.
 
